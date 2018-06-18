@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Datumorphism | The study of the data as a means for information about the world</title>
+<meta name="generator" content="Jekyll v3.8.2" />
+<meta property="og:title" content="Datumorphism" />
+<meta name="author" content="OctoMiao" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The study of the data as a means for information about the world" />
+<meta property="og:description" content="The study of the data as a means for information about the world" />
+<link rel="canonical" href="http://localhost:4000/til/til-grid.html" />
+<meta property="og:url" content="http://localhost:4000/til/til-grid.html" />
+<meta property="og:site_name" content="Datumorphism" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/til/til-grid.html","author":{"@type":"Person","name":"OctoMiao"},"description":"The study of the data as a means for information about the world","@type":"WebPage","headline":"Datumorphism","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+            <a class="navbar-item" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item" href="/">Home</a>
+
+              
+              
+              <a class="navbar-item" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+          <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    <!-- Random TIL -->
+<script type="text/javascript">
+function generateRandomPosts()
+{
+     $.getJSON("/til/til.json", function(data) {
+         console.log("[til.json loaded for random posts]");
+         var postsCount = data.length;
+         var posts = data;
+         var randomIndexUsed = [ ];
+         var counter = 0;
+         var numberOfPosts = 1; //Number of posts to be displayed
+         var divRandomPosts = $("#random_til");
+         //divRandomPosts.append('<h2>Random TIL</h2><hr />');
+         while (counter < numberOfPosts)
+         {
+             var randomIndex = Math.floor(Math.random() * postsCount);
+             if (randomIndexUsed.indexOf(randomIndex) == "-1")
+             {
+                 var postHREF = posts[randomIndex].href;
+                 var postTitle = posts[randomIndex].title;
+                 //var postSummary = posts[randomIndex].summary;
+                 if (counter == (numberOfPosts - 1))
+                 {
+                     divRandomPosts.append('<li style="text-align:center;list-style-type:none;"><a href="' + postHREF + '">' + postTitle + '</a></li>');
+                 }
+                 else
+                 {
+                     divRandomPosts.append('<li><a href="' + postHREF + '">' + postTitle + '</a></li>');
+                 }
+                 randomIndexUsed.push(randomIndex);
+                 counter++;
+             }
+         }
+     });
+}
+$(document).ready(function() {
+     generateRandomPosts();
+});
+</script>
+
+<h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
+
+<hr />
+
+<div id="random_til" style="border:1px solid grey;padding-bottom:2em;margin-bottom: 2em;">
+<h2 class="til-subsection">A Random #TIL# for You</h2>
+</div>
+
+<div class="tiles">
+
+
+
+
+
+
+
+
+
+
+<div class="controls">
+
+<span style="display: inline-block;margin-right: 1em;margin-bottom: 1em;">
+  <label>Filter:</label>
+
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter mix-btn-programming" data-filter=".mix-programming">Programming</button>
+  <button class="filter mix-btn-physics" data-filter=".mix-physics">Physics</button>
+  <button class="filter mix-btn-math" data-filter=".mix-math">Math</button>
+  <button class="filter mix-btn-astro" data-filter=".mix-astro">Astro</button>
+  <button class="filter mix-btn-misc" data-filter=".mix-misc">MISC</button>
+</span>
+
+<span style="display: inline-block;">
+  <label>Sort:</label>
+
+  <button class="sort" data-sort="date:desc">Date Desc</button>
+  <button class="sort" data-sort="date:random">Date Random</button>
+  <button class="sort" data-sort="date:asc">Date Asc</button>
+</span>
+</div>
+
+<div id="Mix-Container" class="mix-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+
+
+<div style="text-align: center;"><a class="btn" href="/til/alltils/">All TILs</a></div>
+
+
+
+</div>
+<!-- /.tiles -->
+
+<hr />
+
+<div class="tiles">
+
+
+
+
+
+</div>
+<!-- /.tiles -->
+
+<script src="/assets/js/mixitup.min.js"></script>
+
+<script type="text/javascript">
+var containerEl = document.querySelector('#Mix-Container');
+var mixer = mixitup('#Mix-Container', {
+    load: {
+        sort: 'date:desc'
+    }
+}
+);
+</script>
+
+<style type="text/css">
+button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+.controls{
+  padding: 2%;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #fff;
+  border: 1px solid #666;
+  color: #666;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.mix-btn-programming {
+
+}
+.mix-btn-programming.active {
+
+}
+
+.mix-btn-physics {
+
+}
+.mix-btn-math {
+
+}
+.mix-btn-astro {
+
+}
+.mix-btn-misc {
+
+}
+
+
+.mix-container{
+  padding: 2% 2% 0;
+  text-align: justify;
+  /*font-size: 0.1px;*/
+
+
+  -webkit-backface-visibility: hidden;
+}
+
+.mix-container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.mix-container .mix,
+.mix-container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.mix-container .mix{
+  text-align: left;
+  margin-bottom: 2%;
+  display: inline-block;
+}
+
+.mix-container .mix.mix-programming{
+  border-bottom: 2px solid limegreen;
+  border-top: 2px solid limegreen;
+  height: 10em;
+}
+
+.mix-container .mix.mix-physics{
+  border-bottom: 2px solid #D46A6A;
+  border-top: 2px solid #D46A6A;
+  height: 10em;
+}
+
+.mix-container .mix.mix-math{
+  border-bottom: 2px solid #518bbf;
+  border-top: 2px solid #518bbf;
+  height: 10em;
+}
+
+.mix-container .mix.mix-astro{
+  border-bottom: 2px solid #ceb354;
+  border-top: 2px solid #ceb354;
+  height: 10em;
+}
+
+.mix-container .mix.mix-scifi{
+  border-bottom: 2px solid #323f61;
+  border-top: 2px solid #323f61;
+  height: 10em;
+}
+.mix-container .mix.mix-misc{
+  border-bottom: 2px solid #f900c3;
+  border-top: 2px solid #f900c3;
+  height: 10em;
+}
+
+.mix-container .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.mix-container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+.mix {
+  position: relative;
+}
+.mix-categories {
+position: absolute;
+}
+.mix-title {
+position: absolute;
+top: 3em;
+}
+.mix-date {
+position: absolute;
+bottom: 0;
+left: 0;
+font-size: 60%;
+}
+
+@media all and (min-width: 420px){
+  .mix-container .mix,
+  .mix-container .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .mix-container .mix,
+  .mix-container .gap{
+    width: 23.5%;
+  }
+}
+</style>
+
+
+  </div>
+
+</article>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a href="http://openmetric.org">OctoMiao</a>.
+       <span class="icon">
+         <a href="http://github.com/emptymalei/jekyll-data"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

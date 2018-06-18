@@ -1,0 +1,39 @@
+<!-- Random TIL -->
+<script type="text/javascript">
+function generateRandomPosts()
+{
+     $.getJSON("{{ site.baseurl }}/til/til.json", function(data) {
+         console.log("[til.json loaded for random posts]");
+         var postsCount = data.length;
+         var posts = data;
+         var randomIndexUsed = [ ];
+         var counter = 0;
+         var numberOfPosts = 1; //Number of posts to be displayed
+         var divRandomPosts = $("#random_til");
+         //divRandomPosts.append('<h2>Random TIL</h2><hr />');
+         while (counter < numberOfPosts)
+         {
+             var randomIndex = Math.floor(Math.random() * postsCount);
+             if (randomIndexUsed.indexOf(randomIndex) == "-1")
+             {
+                 var postHREF = posts[randomIndex].href;
+                 var postTitle = posts[randomIndex].title;
+                 //var postSummary = posts[randomIndex].summary;
+                 if (counter == (numberOfPosts - 1))
+                 {
+                     divRandomPosts.append('<li style="text-align:center;list-style-type:none;"><a href="' + postHREF + '">' + postTitle + '</a></li>');
+                 }
+                 else
+                 {
+                     divRandomPosts.append('<li><a href="' + postHREF + '">' + postTitle + '</a></li>');
+                 }
+                 randomIndexUsed.push(randomIndex);
+                 counter++;
+             }
+         }
+     });
+}
+$(document).ready(function() {
+     generateRandomPosts();
+});
+</script>

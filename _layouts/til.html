@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+
+{% include til/random-til.html %}
+
+
+<div class="post">
+  <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
+  <h2 class="post-title">{{ page.title }}</h2>
+  {{ content }}
+
+    <div id="random_til" style="border:1px solid grey;padding-bottom:2em;">
+    <h2 class="til-subsection">A Random #TIL# for You</h2>
+    </div>
+  {% include pagination.html %}
+
+
+</div>
