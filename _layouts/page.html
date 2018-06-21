@@ -1,14 +1,49 @@
----
-layout: default
----
-<article class="post">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+  {%- include head.html -%}
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+  <body>
 
-</article>
+    {%- include header.html -%}
+
+
+    <div class="hero is-primary" style="margin-bottom:2em;">
+      <div class="hero-body">
+        <div class="container">
+          <div class="container has-text-centered">
+
+              <h1 class="title is-2 has-text-centered">{{ page.title | escape }}</h1>
+
+            <h2 class="subtitle is-3 has-text-centered">
+              {{ page.description | escape }}
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+          <article class="post">
+
+
+            <div class="post-content">
+              {{ content }}
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

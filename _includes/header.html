@@ -4,13 +4,11 @@
   <section class="hero is-primary is-medium">
     <!-- Hero head: will stick at the top -->
     <!-- <div class="hero-head"> -->
-      <nav class="navbar">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item">
-            <a class="navbar-item" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+            <a class="navbar-item has-text-weight-bold" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
             <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
-            </a>
             <span class="navbar-burger burger" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
@@ -20,16 +18,15 @@
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
 
-              <a class="navbar-item{% if page.url == site.baseurl %} is-active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+              <a class="navbar-item{% if page.url == '/' %} is-active{% endif %} has-text-weight-bold" href="{{ site.baseurl }}"><i class="fas fa-home"></i></a>
 
-              {% for link in site.data.navigation %}
+              {% for link in site.data.navigation.main %}
               {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
-              {% assign domain
-              = site.url %}
+              {% assign domain = site.url %}
               {% endif %}
-              <a class="navbar-item{% if page.url == site.baseurl %} is-active{% endif %}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+              <a class="navbar-item{% if page.url == link.url %} is-active{% endif %} has-text-weight-bold" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
               {% endfor %}
 
               {% comment %} The code below dynamically
@@ -39,7 +36,7 @@
               {% if node.title != null %}
               {% if node.layout == "page" %}
               {% unless node.exclude %}
-              <a class="navbar-item{% if page.url == node.url %} is-active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+              <a class="navbar-item{% if page.url == node.url %} is-active{% endif %} has-text-weight-bold" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
               {% endunless %}
               {% endif %}
               {% endif %}
@@ -51,5 +48,32 @@
       </nav>
     <!-- </div> -->
   </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
 
 </header>

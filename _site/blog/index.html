@@ -2,19 +2,19 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Datumorphism | The study of the data as a means for information about the world</title>
-<meta name="generator" content="Jekyll v3.8.2" />
-<meta property="og:title" content="Datumorphism" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Blog | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Blog" />
 <meta name="author" content="OctoMiao" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The study of the data as a means for information about the world" />
-<meta property="og:description" content="The study of the data as a means for information about the world" />
+<meta name="description" content="Some general posts" />
+<meta property="og:description" content="Some general posts" />
 <link rel="canonical" href="http://localhost:4000/blog/" />
 <meta property="og:url" content="http://localhost:4000/blog/" />
 <meta property="og:site_name" content="Datumorphism" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/blog/","author":{"@type":"Person","name":"OctoMiao"},"description":"The study of the data as a means for information about the world","@type":"WebPage","headline":"Datumorphism","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/blog/","author":{"@type":"Person","name":"OctoMiao"},"description":"Some general posts","headline":"Blog","@type":"WebPage","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -23,13 +23,11 @@
 <body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
     <!-- Hero head: will stick at the top -->
     <!-- <div class="hero-head"> -->
-      <nav class="navbar">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item">
-            <a class="navbar-item" rel="author" href="/">Datumorphism</a>
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
             <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
-            </a>
             <span class="navbar-burger burger" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
@@ -39,14 +37,17 @@
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
 
-              <a class="navbar-item" href="/">Home</a>
+              <a class="navbar-item has-text-weight-bold" href=""><i class="fas fa-home"></i></a>
 
               
               
-              <a class="navbar-item" href="http://localhost:4000/til/" >TIL</a>
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
               
               
-              <a class="navbar-item" href="http://localhost:4000/blog/" >Blog</a>
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item is-active has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
               
 
               
@@ -59,7 +60,27 @@
               
               
               
-              <a class="navbar-item" href="/about/">About</a>
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
               
               
               
@@ -93,48 +114,73 @@
       </nav>
     <!-- </div> -->
   </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
 
 </header>
-<main class="main--content" aria-label="Content">
+<div class="hero is-primary" style="margin-bottom:2em;">
+      <div class="hero-body">
+        <div class="container">
+          <div class="container has-text-centered">
+
+              <h1 class="title is-2 has-text-centered">Blog</h1>
+
+            <h2 class="subtitle is-3 has-text-centered">
+              Some general posts
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <main class="main--content" aria-label="Content">
     <div class="columns">
       <div class="column">
         <div class="content is-medium">
           <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-  </header>
 
-  <div class="post-content">
-    <div class="hero">
-<div class="hero-body">
-  <div class="container has-text-centered">
-    <h1 class="title">
-      Blog
-    </h1>
-    <!-- <h2 class="subtitle">
-      The study of the data as a means for information about the world
-
-    </h2> -->
-  </div>
-</div>
-</div>
-
-
-<div class="section">
+            <div class="post-content">
+              <div class="section">
 
   <div class="tile is-ancestor">
   <div class="tile is-12 is-vertical is-parent"><!-- <h2 class="title">Posts</h2> --><div class="tile is-child box">
       <span class="post-meta">May 20, 2016</span>
-      <a class="post-link" href="/blog/2016-05-20-welcome-to-jekyll.html">
+      <a class="post-link" href="/blog/welcome-to-jekyll/">
         <h3>Welcome</h3>
       </a></div></div>
 
 </div></div>
 
-  </div>
+            </div>
 
-</article>
+          </article>
 
         </div>
       </div>

@@ -8,3 +8,8 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 1024px)
+.navbar {
+    min-height: 4.75rem !important;
+}

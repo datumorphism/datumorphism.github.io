@@ -1,9 +1,28 @@
 # Site navigation links
-
+main:
 - title: TIL
   url: /til/
   excerpt: "Pieces of Knowledge"
 
+- title: Wiki
+  url: /wiki/
+  excerpt: "My Wiki"
+
 - title: Blog
   url: /blog/
   excerpt: "Blog"
+
+
+
+# documentation links
+wiki:
+  - title: Wiki
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/

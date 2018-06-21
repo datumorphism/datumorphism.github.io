@@ -1,36 +1,64 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{% include hero.html %}
+  {%- include head.html -%}
 
-<div class="section">
-  <!-- {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%} -->
+  <body>
 
-  {{ content }}
+    {%- include header.html -%}
+    {% include hero.html %}
 
-  <div class="tile is-ancestor">
-  <div class="tile is-12 is-vertical is-parent">
-    {%- if site.posts.size > 0 -%}
-    <!-- <h2 class="title">{{ page.list_title | default: "Posts" }}</h2> -->
-    {%- for post in site.posts -%}
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <div class="tile is-child box">
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        <h3>{{ post.title | escape }}</h3>
-      </a>
-      {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-      {%- endif -%}
+    <main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+
+
+          <div class="section">
+            <!-- {%- if page.title -%}
+              <h1 class="page-heading">{{ page.title }}</h1>
+            {%- endif -%} -->
+
+            {{ content }}
+
+            <div class="tile is-ancestor">
+            <div class="tile is-12 is-vertical is-parent">
+              {%- if site.posts.size > 0 -%}
+              <!-- <h2 class="title">{{ page.list_title | default: "Posts" }}</h2> -->
+              {%- for post in site.posts -%}
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <div class="tile is-child box">
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  <h3>{{ post.title | escape }}</h3>
+                </a>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </div>
+              {%- endfor -%}
+            </div>
+
+          </div>
+
+            {%- endif -%}
+
+          </div>
+
+
+
+        </div>
+      </div>
     </div>
-    {%- endfor -%}
-  </div>
+    </main>
 
-</div>
 
-  {%- endif -%}
 
-</div>
+
+
+
+
+{%- include footer.html -%}
+</body>
+
+</html>
