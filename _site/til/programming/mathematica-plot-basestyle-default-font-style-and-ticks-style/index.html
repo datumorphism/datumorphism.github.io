@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Mathematica Plot Default Font Style and Ticks Style: BaseStyle | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Mathematica Plot Default Font Style and Ticks Style: BaseStyle" />
+<meta name="author" content="OctoMiao" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mathematica Plot Default Font Style and Ticks Style BaseStyle" />
+<meta property="og:description" content="Mathematica Plot Default Font Style and Ticks Style BaseStyle" />
+<link rel="canonical" href="http://localhost:4000/til/programming/mathematica-plot-basestyle-default-font-style-and-ticks-style/" />
+<meta property="og:url" content="http://localhost:4000/til/programming/mathematica-plot-basestyle-default-font-style-and-ticks-style/" />
+<meta property="og:site_name" content="Datumorphism" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-12-04T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/til/programming/mathematica-plot-basestyle-default-font-style-and-ticks-style/","author":{"@type":"Person","name":"OctoMiao"},"description":"Mathematica Plot Default Font Style and Ticks Style BaseStyle","headline":"Mathematica Plot Default Font Style and Ticks Style: BaseStyle","dateModified":"2015-12-04T00:00:00-05:00","datePublished":"2015-12-04T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/til/programming/mathematica-plot-basestyle-default-font-style-and-ticks-style/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item has-text-weight-bold" href=""><i class="fas fa-home"></i></a>
+
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+          <div class="post">
+  <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
+  <h2 class="post-title">Mathematica Plot Default Font Style and Ticks Style: BaseStyle</h2>
+  <p>Most of time, the plot generated using Mathematica is not a good one for projectors because the font size and ticks size are small. <code class="highlighter-rouge">BaseStyle</code> is a good solution to this problem. Here is an example from Wolfram Language</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Plot[Sin[x]^2, {x, 0, 2 Pi}, PlotLabel -&gt; Sin[x]^2, LabelStyle -&gt; Black, FrameTicksStyle -&gt; Larger, BaseStyle -&gt; \
+{FontWeight -&gt; "Bold", FontSize -&gt; 18}]
+</code></pre></div></div>
+
+<p>As shown in the example, <code class="highlighter-rouge">LabelStyle-&gt;Black</code> and <code class="highlighter-rouge">FrameTicksStyle-&gt;Larger</code> are also very useful when producing slides for projectors.</p>
+
+<p>More on Wolfram Language: <a href="https://reference.wolfram.com/language/tutorial/FormatsForTextInGraphics.html">Formats for Text in Graphics</a>.</p>
+
+
+  <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/til/programming/latex-automatically-adjust-figure/" class="btn" title="LaTeX Automatically Adjust Figure">Previous</a>
+      
+      
+        <a href="http://localhost:4000/til/programming/mathematica-smooth-plot/" class="btn" title="Mathematica Smooth Plot">Next</a>
+      
+</nav><!-- /.pagination -->
+
+
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a href="http://openmetric.org">OctoMiao</a>.
+       <span class="icon">
+         <a href="http://github.com/emptymalei/jekyll-data"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

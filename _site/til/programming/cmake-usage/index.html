@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>CMake Usage | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="CMake Usage" />
+<meta name="author" content="OctoMiao" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to use CMake to generate makefiles" />
+<meta property="og:description" content="How to use CMake to generate makefiles" />
+<link rel="canonical" href="http://localhost:4000/til/programming/cmake-usage/" />
+<meta property="og:url" content="http://localhost:4000/til/programming/cmake-usage/" />
+<meta property="og:site_name" content="Datumorphism" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-09-21T00:00:00-04:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/til/programming/cmake-usage/","author":{"@type":"Person","name":"OctoMiao"},"description":"How to use CMake to generate makefiles","headline":"CMake Usage","dateModified":"2017-09-21T00:00:00-04:00","datePublished":"2017-09-21T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/til/programming/cmake-usage/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item has-text-weight-bold" href=""><i class="fas fa-home"></i></a>
+
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+          <div class="post">
+  <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
+  <h2 class="post-title">CMake Usage</h2>
+  <p>Write your CMakeLists.txt such as</p>
+
+<figure class="highlight"><pre><code class="language-txt" data-lang="txt">cmake_minimum_required(VERSION 3.7)
+project(my_parallel_program)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES main.cpp include/looper.h include/hamiltonian.h include/stepper.h include/recorder.h)
+add_executable(my_parallel_out ${SOURCE_FILES})
+
+# for parallel using openmp
+SET(CMAKE_CXX_COMPILER /usr/local/Cellar/gcc/7.2.0/bin/g++)
+SET(GCC_COVERAGE_COMPILE_FLAGS "-fopenmp")
+SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )</code></pre></figure>
+
+<p>Make a directory to store the compiled files, such as build using <code class="highlighter-rouge">mkdir build</code>. <code class="highlighter-rouge">cd build</code>, then execute</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">make .. <span class="nt">-G</span><span class="s2">"Unix Makefiles"</span></code></pre></figure>
+
+<p>CMake will generate all the file need within the current directory, i.e., <code class="highlighter-rouge">build</code>.</p>
+
+<p>With the generated Makefile, we <code class="highlighter-rouge">make</code> to compile the program.</p>
+
+
+  <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/til/programming/cpp-allocating-memory-multidimensional-array/" class="btn" title="Allocating Memory for Multidimensional Array in C++">Previous</a>
+      
+      
+        <a href="http://localhost:4000/til/programming/cpp-int-multiply/" class="btn" title="C++ int Multiplication">Next</a>
+      
+</nav><!-- /.pagination -->
+
+
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a href="http://openmetric.org">OctoMiao</a>.
+       <span class="icon">
+         <a href="http://github.com/emptymalei/jekyll-data"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

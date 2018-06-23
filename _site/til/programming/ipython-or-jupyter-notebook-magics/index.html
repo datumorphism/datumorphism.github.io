@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>IPython or Jupyter Notebook Magics | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="IPython or Jupyter Notebook Magics" />
+<meta name="author" content="OctoMiao" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="IPython or Jupyter Notebook Magics" />
+<meta property="og:description" content="IPython or Jupyter Notebook Magics" />
+<link rel="canonical" href="http://localhost:4000/til/programming/ipython-or-jupyter-notebook-magics/" />
+<meta property="og:url" content="http://localhost:4000/til/programming/ipython-or-jupyter-notebook-magics/" />
+<meta property="og:site_name" content="Datumorphism" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-12-04T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/til/programming/ipython-or-jupyter-notebook-magics/","author":{"@type":"Person","name":"OctoMiao"},"description":"IPython or Jupyter Notebook Magics","headline":"IPython or Jupyter Notebook Magics","dateModified":"2015-12-04T00:00:00-05:00","datePublished":"2015-12-04T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/til/programming/ipython-or-jupyter-notebook-magics/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item has-text-weight-bold" href=""><i class="fas fa-home"></i></a>
+
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+          <div class="post">
+  <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
+  <h2 class="post-title">IPython or Jupyter Notebook Magics</h2>
+  <p>Summary of the <a href="https://www.udemy.com/get-started-with-the-ipython-notebook/learn/#/lecture/1077138">video lectures on IPython</a>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">%</code> is line level magic, which only affects the code starting from the position of it, while <code class="highlighter-rouge">%%</code> is cell level magic;</li>
+  <li>List all the magics: <code class="highlighter-rouge">%lsmagic</code>;</li>
+  <li>Timing of a cell: <code class="highlighter-rouge">%timeit </code>, for example, <code class="highlighter-rouge">%timeit np.cos(1.3)</code>;</li>
+  <li>Write the content of the cell to a file by using <code class="highlighter-rouge">%%writefile output.py</code>;</li>
+  <li>Bash commands can be used in the command mod, by simply using a <code class="highlighter-rouge">!</code>, for example, <code class="highlighter-rouge">!ls -l</code> (Tab to autocomplete);</li>
+  <li><code class="highlighter-rouge">%run output.py</code> can run the file;</li>
+  <li>Run a background job using <code class="highlighter-rouge">%%python --bg --out output.txt</code> then followed by the python code;</li>
+  <li>Plots inline can be made using <code class="highlighter-rouge">%matplotlib inline</code>;</li>
+</ul>
+
+
+  <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/til/programming/import-in-python/" class="btn" title="Import in Python">Previous</a>
+      
+      
+        <a href="http://localhost:4000/til/programming/latex-automatically-adjust-figure/" class="btn" title="LaTeX Automatically Adjust Figure">Next</a>
+      
+</nav><!-- /.pagination -->
+
+
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a href="http://openmetric.org">OctoMiao</a>.
+       <span class="icon">
+         <a href="http://github.com/emptymalei/jekyll-data"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>The Great Chrome Dev Tool | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="The Great Chrome Dev Tool" />
+<meta name="author" content="OctoMiao" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to use the chrome dev tool wisely" />
+<meta property="og:description" content="How to use the chrome dev tool wisely" />
+<link rel="canonical" href="http://localhost:4000/til/programming/chrome-dev-tool-usage/" />
+<meta property="og:url" content="http://localhost:4000/til/programming/chrome-dev-tool-usage/" />
+<meta property="og:site_name" content="Datumorphism" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-09-28T00:00:00-04:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/til/programming/chrome-dev-tool-usage/","author":{"@type":"Person","name":"OctoMiao"},"description":"How to use the chrome dev tool wisely","headline":"The Great Chrome Dev Tool","dateModified":"2016-09-28T00:00:00-04:00","datePublished":"2016-09-28T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/til/programming/chrome-dev-tool-usage/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item has-text-weight-bold" href=""><i class="fas fa-home"></i></a>
+
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column">
+        <div class="content is-medium">
+          <div class="post">
+  <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
+  <h2 class="post-title">The Great Chrome Dev Tool</h2>
+  <p>Chrome dev tool is not only super useful for front-end dev but also helpful to users.</p>
+
+<h2 id="contenteditable">contentEditable</h2>
+
+<p>By setting</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>document.body.contentEditable = true
+</code></pre></div></div>
+
+<p>one can just start edit the content of the whole web page.</p>
+
+<h2 id="display-data-in-a-table">Display Data in a Table</h2>
+
+<p>Reading nested lists can be painful. Suppose we have an array</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var arraydata = [{a:1,b:2},{a:2,c:5},{b:4,e:1}]
+</code></pre></div></div>
+
+<p>the function</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.table(arraydata)
+</code></pre></div></div>
+
+<p>give us a table that is associated with the array.</p>
+
+<figure>
+  <p><img src="../assets/programming/chrome-dev-tools-console.table.png" alt="" /></p>
+  <figcaption>
+console.table()
+</figcaption>
+</figure>
+
+<h2 id="clear-the-output">Clear the Output</h2>
+
+<p>Simple and easy</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clear()
+</code></pre></div></div>
+
+<h2 id="inspect">inspect()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>inspect($('.sidebar'))
+</code></pre></div></div>
+
+<p>will list all the element that has class <code class="highlighter-rouge">sidebar</code>.</p>
+
+<figure>
+  <p><img src="../assets/programming/chrome-dev-tools-inspect.png" alt="" /></p>
+  <figcaption>
+inspect($('.sidebar'))
+</figcaption>
+</figure>
+
+<h2 id="dir">dir()</h2>
+
+<p>List out all the properties of a element using</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dir($("div"))
+</code></pre></div></div>
+
+<figure>
+  <p><img src="../assets/programming/chrome-dev-tool-dir.png" alt="" /></p>
+  <figcaption>
+div($('div'))
+</figcaption>
+</figure>
+
+<h2 id="and-more">And more</h2>
+
+<ol>
+  <li><a href="https://medium.freecodecamp.com/10-tips-to-maximize-your-javascript-debugging-experience-b69a75859329#.cj9742xlv">Things you probably didn’t know you could do with Chrome’s Developer Console</a></li>
+  <li><a href="https://zhuanlan.zhihu.com/p/22665710">中文版：天啦噜！原来Chrome自带的开发者工具还能这么用！</a></li>
+</ol>
+
+
+  <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/til/programming/matplotlib-gridlines/" class="btn" title="Gridlines in Matplotlib">Previous</a>
+      
+      
+        <a href="http://localhost:4000/til/math/differential-transformation-method-solving-equations/" class="btn" title="Solving Equations Using Differential Transformation Method">Next</a>
+      
+</nav><!-- /.pagination -->
+
+
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a href="http://openmetric.org">OctoMiao</a>.
+       <span class="icon">
+         <a href="http://github.com/emptymalei/jekyll-data"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
