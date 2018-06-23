@@ -23,6 +23,65 @@
   <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
   <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
 <body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
     <!-- Hero head: will stick at the top -->
@@ -149,9 +208,32 @@
     <div class="columns">
       <div class="column">
         <div class="content is-medium">
-          <div class="post">
-  <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
-  <h2 class="post-title">Run a program in the background on ubuntu</h2>
+          <article class="post">
+
+
+<header class="post-header">
+  <h1 class="has-text-centered is-size-1" itemprop="name headline"><a href="/til">Today I Learned</a></h1>
+  <h2 class="post-title has-text-centered is-size-2" itemprop="name headline">Run a program in the background on ubuntu</h2>
+  <p class="post-meta has-text-centered">
+    <time class="dt-published" datetime="2015-12-04T00:00:00-05:00" itemprop="datePublished">Dec 4, 2015
+    </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">OctoMiao</span></span>
+     • <span style="font-style: regular;">{</span>
+     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#programming">⸢programming⸥</a></span>
+     
+     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#basics">⸢basics⸥</a></span>
+     
+     }
+    
+    
+     • <span style="font-style: regular;">[</span>
+     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/tags/#linux">#Linux#</a></span>
+     
+     ]
+    
+  </p>
+</header>
+
+<div class="post-content e-content" itemprop="articleBody">
   <ol>
   <li>Make it excuable: <code class="highlighter-rouge">chmod +x program.py</code></li>
   <li>Use no hang up: <code class="highlighter-rouge">nohup /path/to/program.py &amp;</code>. <code class="highlighter-rouge">nohup</code> keep the program running even in one closes the terminal. <code class="highlighter-rouge">python /path/to/program.py &amp;</code> also keeps it running in the terminal in background. But it terminates the program if one logs out. To redirect the output to another file, <code class="highlighter-rouge">nohup comp-range-de.py &gt; comp-range-de.out 2&gt;&amp;1&amp;</code> or <code class="highlighter-rouge">nohup comp-range-de.py &amp;&gt; comp-range-de.out&amp;</code> for short.</li>
@@ -193,19 +275,33 @@ xxx    13040 11369  0 17:10 pts/0    00:00:00 <span class="nb">grep</span> <span
 xxx@ipython-notebook:~/abc/py<span class="nv">$ </span><span class="nb">kill </span>12921</code></pre></figure>
 
 
+</div>
 
-  <nav class="pagination" role="navigation">
+<a class="u-url" href="/til/programming/run-program-in-background-ubuntu/" hidden></a>
+
+  <nav role="navigation" aria-label="pagination" style="margin-top:5em;">
+  <div class="columns is-desktop">
+    <div class="column is-4">
+      </div>
+      <div class="column is-2 is-pulled-left">
       
-        <a href="http://localhost:4000/til/programming/python-writing-loops/" class="btn" title="Python Various Ways of Writing Loops">Previous</a>
+        <a href="http://localhost:4000/til/programming/python-writing-loops/" class="is-pulled-left" title="Python Various Ways of Writing Loops"><button class="button is-primary is-pulled-left">Previous</button> </a>
       
+      </div>
+      <div class="column is-2 is-pulled-right">
       
-        <a href="http://localhost:4000/til/programming/matplotlib-x-y-limit-and-aspect-ratio/" class="btn" title="matplotlib x y limit and aspect ratio">Next</a>
+        <a href="http://localhost:4000/til/programming/matplotlib-x-y-limit-and-aspect-ratio/" class="is-pulled-right" title="matplotlib x y limit and aspect ratio"><button class="button is-primary is-pulled-right">Next</button></a>
       
+    </div>
+    <div class="column is-4">
+      </div>
+      </div>
 </nav><!-- /.pagination -->
 
 
 
-</div>
+
+</article>
 
         </div>
       </div>

@@ -14,14 +14,73 @@
 <meta property="og:url" content="http://localhost:4000/wiki/regular-experssions/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-06-23T17:19:31-04:00" />
+<meta property="article:published_time" content="2018-06-23T19:16:33-04:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/wiki/regular-experssions/","author":{"@type":"Person","name":"OctoMiao"},"description":"Some quick start material on regular expression.","headline":"Regular Expression Basics","dateModified":"2018-06-20T15:58:49-04:00","datePublished":"2018-06-23T17:19:31-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/regular-experssions/"},"@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/wiki/regular-experssions/","author":{"@type":"Person","name":"OctoMiao"},"description":"Some quick start material on regular expression.","headline":"Regular Expression Basics","dateModified":"2018-06-20T15:58:49-04:00","datePublished":"2018-06-23T19:16:33-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/regular-experssions/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
   <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
   <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
 <body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
@@ -152,13 +211,48 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title has-text-centered">Regular Expression Basics</h1>
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Regular Expression Basics</h1>
+    <p class="post-meta has-text-centered">
+      <time class="dt-published" datetime="2018-06-23T19:16:33-04:00" itemprop="datePublished">Jun 23, 2018
+      </time>
+       • <span style="font-style: regular;">{</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#basics">⸢Basics⸥</a></span>
+       
+       }
+      
+      
+       • <span style="font-style: regular;">[</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/tags/#regular-expression">#Regular Expression#</a></span>
+       
+       ]
+      
+    </p>
   </header>
 
-  <div class="post-content">
+  <div class="post-content e-content" itemprop="articleBody">
     
 
   </div>
+
+  <a class="u-url" href="/wiki/regular-experssions/" hidden></a>
+
+<nav role="navigation" aria-label="pagination" style="margin-top:5em;">
+  <div class="columns is-desktop">
+    <div class="column is-4">
+      </div>
+      <div class="column is-2 is-pulled-left">
+      
+      </div>
+      <div class="column is-2 is-pulled-right">
+      
+        <a href="http://localhost:4000/wiki/time-series-data/" class="is-pulled-right" title="Short-Time-Fourier-Transform"><button class="button is-primary is-pulled-right">Next</button></a>
+      
+    </div>
+    <div class="column is-4">
+      </div>
+      </div>
+</nav><!-- /.pagination -->
+
 
 </article>
 

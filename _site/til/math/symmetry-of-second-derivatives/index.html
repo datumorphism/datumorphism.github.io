@@ -23,6 +23,65 @@
   <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
   <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
 <body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
     <!-- Hero head: will stick at the top -->
@@ -149,9 +208,30 @@
     <div class="columns">
       <div class="column">
         <div class="content is-medium">
-          <div class="post">
-  <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
-  <h2 class="post-title">Symmetry of second derivatives</h2>
+          <article class="post">
+
+
+<header class="post-header">
+  <h1 class="has-text-centered is-size-1" itemprop="name headline"><a href="/til">Today I Learned</a></h1>
+  <h2 class="post-title has-text-centered is-size-2" itemprop="name headline">Symmetry of second derivatives</h2>
+  <p class="post-meta has-text-centered">
+    <time class="dt-published" datetime="2015-02-15T00:00:00-05:00" itemprop="datePublished">Feb 15, 2015
+    </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">OctoMiao</span></span>
+     • <span style="font-style: regular;">{</span>
+     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#math">⸢math⸥</a></span>
+     
+     }
+    
+    
+     • <span style="font-style: regular;">[</span>
+     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/tags/#derivative">#Derivative#</a></span>
+     
+     ]
+    
+  </p>
+</header>
+
+<div class="post-content e-content" itemprop="articleBody">
   <p><a href="https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives#Requirement_of_continuity">This wikipedia page</a> shows an example of symmetry breaking of the second derivatives, that is $\partial_x\partial_y f \ne \partial_y\partial_x f$. The example is</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
@@ -162,19 +242,33 @@ f(x,y) = \begin{cases}
 
 <p>A image of the function is shown on wikipedia.</p>
 
+</div>
 
-  <nav class="pagination" role="navigation">
+<a class="u-url" href="/til/math/symmetry-of-second-derivatives/" hidden></a>
+
+  <nav role="navigation" aria-label="pagination" style="margin-top:5em;">
+  <div class="columns is-desktop">
+    <div class="column is-4">
+      </div>
+      <div class="column is-2 is-pulled-left">
       
-        <a href="http://localhost:4000/til/math/feynman-tricks/" class="btn" title="Feynman Trick">Previous</a>
+        <a href="http://localhost:4000/til/math/feynman-tricks/" class="is-pulled-left" title="Feynman Trick"><button class="button is-primary is-pulled-left">Previous</button> </a>
       
+      </div>
+      <div class="column is-2 is-pulled-right">
       
-        <a href="http://localhost:4000/til/programming/filter-prime-numbers/" class="btn" title="Python Onliner: Filter Prime Numbers">Next</a>
+        <a href="http://localhost:4000/til/programming/filter-prime-numbers/" class="is-pulled-right" title="Python Onliner: Filter Prime Numbers"><button class="button is-primary is-pulled-right">Next</button></a>
       
+    </div>
+    <div class="column is-4">
+      </div>
+      </div>
 </nav><!-- /.pagination -->
 
 
 
-</div>
+
+</article>
 
         </div>
       </div>
