@@ -88,6 +88,8 @@ collections:
   til:
     output: true
     permalink: /:collection/:path/
+  reading:
+    output: true
 
 # Defaults
 defaults:
@@ -121,6 +123,18 @@ defaults:
       comments: false
       sidebar:
         nav: "wiki"
+  # _reading
+  - scope:
+      path: ""
+      type: reading
+    values:
+      layout: reading
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "reading"
   # _til
   - scope:
       path: ""
