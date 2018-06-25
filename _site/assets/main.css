@@ -9,10 +9,10 @@
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 1024px)
+/* @media screen and (min-width: 1024px)
 .navbar {
     min-height: 4.75rem !important;
-}
+} */
 
 #query-summary {
   position: fixed;
@@ -24,4 +24,47 @@
 
 mark{
     background: rgba(119,41,83,0.4)
+}
+
+
+/* code terminal */
+
+$terminal-window-height: 30px;
+
+.language-terminal {
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: calc(#{$terminal-window-height} + 1em) 1em 1em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  box-shadow: 0 0.25em 1em rgba($base-color, 0.25);
+  background-color: $base-color;
+
+  &::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $terminal-window-height;
+    margin: 0;
+    padding: (0.5 * $terminal-window-height) 0;
+    background: mix($base-color, #fff, 25%);
+    color: mix($base-color, #fff, 50%);
+    font-size: (2 * $terminal-window-height);
+    line-height: 0;
+    text-indent: (0.5 * $terminal-window-height);
+  }
+
+  .highlight-code {
+    margin: 0;
+    padding: 0;
+    background-color: initial;
+    color: #fff;
+  }
+}
+/* code terminal END */
+
+code {
+  overflow: pre-wrap !important;
 }
