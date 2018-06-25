@@ -22,7 +22,7 @@ layout: default
       {% endif %}
       {% if page.tags %}
        • <span style="font-style: regular;">[</span>{% for tag in page.tags %}
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}#</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="{{ site.url }}{{ site.baseurl }}/wiki/?keywords={{ tag }}">#{{ tag }}#</a></span>
        {% endfor %}
        ]
       {% endif %}

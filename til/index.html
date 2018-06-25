@@ -51,12 +51,17 @@ Here we generate all the tags.
   <article class="post-item">
         <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
         <span style="float: right;">
-        {% if post.tags %}
-        [{% for tag in post.tags %}
-      <a class="codinfox-tag-mark" href="{{ site.baseurl }}/til/#{{ tag | slugify }}">#{{ tag }}#</a>
-      {% endfor %}]
-      {% endif %}
-      </span>
+          {% if post.category != null %}
+             { {% for category in post.category %}
+                <a class="keywords-mark" href="{{ site.baseurl }}/til/?keywords={{ category | slugify }}">⸢{{ category }}⸥</a>
+                {% endfor %} }
+          {% endif %}
+        {% if post.tag %}
+        [{% for tag in post.tag %}
+        <a class="codinfox-tag-mark" href="{{ site.baseurl }}/til/#{{ tag | slugify }}">#{{ tag }}#</a>
+        {% endfor %}]
+        {% endif %}
+        </span>
       </p>
   </article>
   {% endif %}
@@ -65,3 +70,5 @@ Here we generate all the tags.
 {% endfor %}
 
 </div>
+
+{% include highlight-get-params.html %}
