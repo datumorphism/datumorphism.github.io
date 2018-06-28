@@ -78,7 +78,7 @@ Here we generate all the categories.
           <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
           <span style="float: right;">
           {% for tag in post.tags %}[
-        <a class="keywords-mark" href="{{ site.url }}{{ site.baseurl }}/wiki/?keywords={{ tag }}">#{{ tag }}#</a>
+        <a class="keywords-mark" href="{{ site.url }}{{ site.baseurl }}/wiki/?keywords={{ tag }}">#{{ tag }}</a>
         ]{% endfor %}
         </span>
         </p>
@@ -98,7 +98,7 @@ Here we generate all the categories.
           <span style="float: right;">
         {% if post.tags %}
           [{% for tag in post.tags %}
-        <a class="codinfox-tag-mark" href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}#</a>
+        <a class="codinfox-tag-mark" href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
         {% endfor %}]
         {% endif %}
         </span>

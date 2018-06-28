@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Feynman Trick | Datumorphism</title>
+<title>Certificate Errors in urllib | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Feynman Trick" />
+<meta property="og:title" content="Certificate Errors in urllib" />
 <meta name="author" content="OctoMiao" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The following identity is true," />
-<meta property="og:description" content="The following identity is true," />
-<link rel="canonical" href="http://localhost:4000/til/math/feynman-tricks/" />
-<meta property="og:url" content="http://localhost:4000/til/math/feynman-tricks/" />
+<meta name="description" content="Dealing with errors when scraping data" />
+<meta property="og:description" content="Dealing with errors when scraping data" />
+<link rel="canonical" href="http://localhost:4000/til/data/python-urllib-ssl/" />
+<meta property="og:url" content="http://localhost:4000/til/data/python-urllib-ssl/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2015-02-15T00:00:00-05:00" />
+<meta property="article:published_time" content="2018-06-25T00:00:00-04:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/til/math/feynman-tricks/","author":{"@type":"Person","name":"OctoMiao"},"description":"The following identity is true,","headline":"Feynman Trick","dateModified":"2015-02-15T00:00:00-05:00","datePublished":"2015-02-15T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/til/math/feynman-tricks/"},"@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/til/data/python-urllib-ssl/","author":{"@type":"Person","name":"OctoMiao"},"description":"Dealing with errors when scraping data","headline":"Certificate Errors in urllib","dateModified":"2018-06-25T00:00:00-04:00","datePublished":"2018-06-25T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/til/data/python-urllib-ssl/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -241,21 +241,23 @@
 
 <header class="post-header">
   <h1 class="has-text-centered is-size-1" itemprop="name headline"><a href="/til">Today I Learned</a></h1>
-  <h2 class="post-title has-text-centered is-size-2" itemprop="name headline">Feynman Trick</h2>
+  <h2 class="post-title has-text-centered is-size-2" itemprop="name headline">Certificate Errors in urllib</h2>
   <p class="post-meta has-text-centered">
-    <time class="dt-published" datetime="2015-02-15T00:00:00-05:00" itemprop="datePublished">Feb 15, 2015
+    <time class="dt-published" datetime="2018-06-25T00:00:00-04:00" itemprop="datePublished">Jun 25, 2018
     </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">OctoMiao</span></span>
      • <span style="font-style: regular;">{</span>
      <span style="padding-right: 0.2em;padding-left: 0.2em;">
        
-       <a href="http://localhost:4000/til/?keywords=math">⸢math⸥</a>
+       <a href="http://localhost:4000/til/?keywords=data">⸢data⸥</a>
      </span>
      
      }
     
     
      • <span style="font-style: regular;">[</span>
-     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/til/#integration">#Integration</a></span>
+     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/til/#web">#Web</a></span>
+     
+     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/til/#web-scraping">#Web Scraping</a></span>
      
      ]
     
@@ -263,13 +265,25 @@
 </header>
 
 <div class="post-content e-content" itemprop="articleBody">
-  <p>The following identity is true,</p>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Import modules
+import urllib.request, urllib.parse, urllib.error, ssl
 
-<script type="math/tex; mode=display">\frac{1}{AB} = \int_0^1 \frac{1}{[A + (B - A) x ]^2} dx .</script>
+# Ignore SSL certificate errors
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+# Retrieve data
+# The context = ctx will ignore the errors from certificates
+url = 'https://www.google.com'
+html = urllib.request.urlopen(url, context=ctx).read()
+</code></pre></div></div>
+
+<p>References: <a href="https://www.youtube.com/watch?v=mhaHWiSPxxE">Worked Example: BeautifulSoup (Chapter 12)</a></p>
 
 </div>
 
-<a class="u-url" href="/til/math/feynman-tricks/" hidden></a>
+<a class="u-url" href="/til/data/python-urllib-ssl/" hidden></a>
 
   <nav role="navigation" aria-label="pagination" style="margin-top:5em;">
   <div class="columns is-desktop">
@@ -277,12 +291,12 @@
       </div>
       <div class="column is-2 is-pulled-left">
       
-        <a href="http://localhost:4000/til/math/eigensystem-of-a-special-matrix/" class="is-pulled-left" title="Eigensystem of A Special Matrix"><button class="button is-primary is-pulled-left">Previous</button> </a>
+        <a href="http://localhost:4000/til/programming/pandas-new-column-from-other/" class="is-pulled-left" title="Calculated Columns in Pandas"><button class="button is-primary is-pulled-left">Previous</button> </a>
       
       </div>
       <div class="column is-2 is-pulled-right">
       
-        <a href="http://localhost:4000/til/math/symmetry-of-second-derivatives/" class="is-pulled-right" title="Symmetry of second derivatives"><button class="button is-primary is-pulled-right">Next</button></a>
+        <a href="http://localhost:4000/til/programming/regular-experssions/" class="is-pulled-right" title="Regular Expression TIL"><button class="button is-primary is-pulled-right">Next</button></a>
       
     </div>
     <div class="column is-4">

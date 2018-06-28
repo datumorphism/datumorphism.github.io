@@ -38,13 +38,13 @@ Here we generate all the tags.
 <div class="tags">
 {% for tag in tags %}
 <span class="tag">
-<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a></span>
+<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> #{{ tag }} </a></span>
 {% endfor %}
 </div>
 </div>
 
 {% for tag in tags %}
-<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+<h2 id="{{ tag | slugify }}">#{{ tag }}</h2>
 <ul class="codinfox-category-list">
   {% for post in site.til %}
   {% if post.tags contains tag %}
@@ -58,7 +58,7 @@ Here we generate all the tags.
           {% endif %}
         {% if post.tag %}
         [{% for tag in post.tag %}
-        <a class="codinfox-tag-mark" href="{{ site.baseurl }}/til/#{{ tag | slugify }}">#{{ tag }}#</a>
+        <a class="codinfox-tag-mark" href="{{ site.baseurl }}/til/#{{ tag | slugify }}">#{{ tag }}</a>
         {% endfor %}]
         {% endif %}
         </span>
