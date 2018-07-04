@@ -11,17 +11,16 @@ tag:
 excerpt: Python default parameters might be changed with each run
 ---
 
-As we might use default parameters in python functions, such as
+As one might need default parameters in python functions, such as
 
 ```
 def func(inp = []):
     inp.append(1)
     return inp
 ```
+they might cause trouble. Python functions are objects of a certain identity. Everytime you run it, the input `inp` changes. The consequence is that the function returns different results.
 
-this might cause trouble. Since python functions are objects of a certain identity no matter how many times you run it, the input `inp` would be changed with each run.
-
-The better strategy is to use `None`.
+A better strategy is to use `None`. Here is an example:
 
 
 ```
@@ -32,6 +31,5 @@ def func(inp = None):
 
     return inp
 ```
-
 
 For references, please read: [Default Parameter Values in Python](http://effbot.org/zone/default-values.htm).
