@@ -268,16 +268,15 @@
 </header>
 
 <div class="post-content e-content" itemprop="articleBody">
-  <p>As we might use default parameters in python functions, such as</p>
+  <p>As one might need default parameters in python functions, such as</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def func(inp = []):
     inp.append(1)
     return inp
 </code></pre></div></div>
+<p>they might cause trouble. Python functions are objects of a certain identity. Everytime you run it, the input <code class="highlighter-rouge">inp</code> changes. The consequence is that the function returns different results.</p>
 
-<p>this might cause trouble. Since python functions are objects of a certain identity no matter how many times you run it, the input <code class="highlighter-rouge">inp</code> would be changed with each run.</p>
-
-<p>The better strategy is to use <code class="highlighter-rouge">None</code>.</p>
+<p>A better strategy is to use <code class="highlighter-rouge">None</code>. Here is an example:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def func(inp = None):
 
@@ -325,7 +324,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <p>
-        <strong>Datumorphism</strong> by <a href="http://openmetric.org">OctoMiao</a>.
+        <strong>Datumorphism</strong> by <a>Datumorphism Collective</a>.
        <span class="icon">
          <a href="https://github.com/datumorphism"><i class="fab fa-github"></i></a>
        </span>

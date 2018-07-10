@@ -68,3 +68,37 @@ $terminal-window-height: 30px;
 code {
   overflow: pre-wrap !important;
 }
+
+/* code environment */
+
+figure {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  position: relative !important;
+  overflow: hidden !important;
+  padding-bottom: 1em;
+}
+
+
+
+figure figcaption {
+    background: rgba(236, 233, 233, 0.75) !important;
+      color: #888282 !important;
+      padding: 2px 5px 0px 5px !important;
+      bottom: 0em !important;
+      text-align: center;
+      margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90%;
+}
+
+figure img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+pre {
+  text-align: left;
+}
