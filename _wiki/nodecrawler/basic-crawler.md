@@ -11,7 +11,7 @@ tag:
 source:
 - name: 02-实现一个简单的爬虫@ninthakeey
   title: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/02-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%88%AC%E8%99%AB/'
-notify: 'The original Chinese articles are written by ninthakeey. It has been translated and remixed by Datumorphism'
+notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
 weight: 2
 ---
 

@@ -11,7 +11,7 @@ tag:
 source:
 - name: 01-基础环境搭建@ninthakeey
   title: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/01-%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'
-notify: 'The original Chinese articles are written by ninthakeey. It has been translated and remixed by Datumorphism'
+notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
 weight: 1
 ---
 
