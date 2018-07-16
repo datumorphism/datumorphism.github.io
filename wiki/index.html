@@ -72,7 +72,10 @@ Here we generate all the categories.
   {% for ct in cats %}
   <h2 id="{{ ct | slugify }}">{{ ct }}</h2>
   <ul class="codinfox-category-list">
-    {% for post in site.wiki %}
+    {% assign allwikis = site.wiki %}
+    {% assign allwikis = allwikis | sort:"weight" %}
+
+    {% for post in allwikis %}
     {% if post.category contains ct %}
      <article class="post-item">
           <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>

@@ -26,6 +26,25 @@ layout: default
        {% endfor %}
        ]
       {% endif %}
+      {% if page.source %}
+      <article class="message">
+        <div class="message-header">
+          <p>Source:</p>
+        </div>
+        <div class="message-body">
+          <ul>
+          {% for sour in page.source %}
+            <li><a href="{{ sour.link }}" style="text-decoration:none;">{{ sour.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      </article>
+      {% endif %}
+      {% if page.notify %}
+      <div class="notification is-primary">
+         {{ page.notify }}
+       </div>
+      {% endif %}
     </p>
   </header>
 

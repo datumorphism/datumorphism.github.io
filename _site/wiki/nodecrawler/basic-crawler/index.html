@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Basic Node Crawler | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Basic Node Crawler" />
+<meta name="author" content="Datumorphism Collective" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The study of the data as a means for information about the world" />
+<meta property="og:description" content="The study of the data as a means for information about the world" />
+<link rel="canonical" href="http://localhost:4000/wiki/nodecrawler/basic-crawler/" />
+<meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/basic-crawler/" />
+<meta property="og:site_name" content="Datumorphism" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-07-15T21:46:58-04:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/wiki/nodecrawler/basic-crawler/","author":{"@type":"Person","name":"Datumorphism Collective"},"description":"The study of the data as a means for information about the world","headline":"Basic Node Crawler","dateModified":"2018-07-15T00:00:00-04:00","datePublished":"2018-07-15T21:46:58-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/basic-crawler/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/code/base16-solarized.light.css">
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item has-text-weight-bold" href="/"><i class="fas fa-home"></i></a>
+
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/reading/" >Reading</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column is-12">
+        <div class="content is-medium">
+          <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Basic Node Crawler</h1>
+    <p class="post-meta has-text-centered">
+      <time class="dt-published" datetime="2018-07-15T21:46:58-04:00" itemprop="datePublished">Jul 15, 2018
+      </time>
+       • <span style="font-style: regular;">{</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#node-crawler">⸢Node Crawler⸥</a></span>
+       
+       }
+      
+      
+       • <span style="font-style: regular;">[</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Node">#Node</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Crawler">#Crawler</a></span>
+       
+       ]
+      
+      
+      <article class="message">
+        <div class="message-header">
+          <p>Source:</p>
+        </div>
+        <div class="message-body">
+          <ul>
+          
+            <li><a href="" style="text-decoration:none;">02-实现一个简单的爬虫@ninthakeey</a></li>
+          
+          </ul>
+        </div>
+      </article>
+      
+      
+      <div class="notification is-primary">
+         The original Chinese articles are written by ninthakeey. It has been translated and remixed by Datumorphism
+       </div>
+      
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="prerequisites">Prerequisites</h2>
+
+<ol>
+  <li>Nodejs &gt;= 8.9</li>
+</ol>
+
+<h2 id="overview">Overview</h2>
+
+<p>A model for a crawler is as follows.</p>
+
+<p>A crawler requests data from the server, while the server responds with some data. Here is a graphic illustration</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+----------+                +-----------+
+|          |  HTTP Request  |           |
+|          +----------------&gt;           |
+|  Nodejs  |                |  Servers  |
+|          &lt;----------------+           |
+|          |  HTTP Response |           |
++----------+                +-----------+
+</code></pre></div></div>
+
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title card-toggle">HTTP Requests</p>
+	</header>
+	<div class="card-content is-hidden">
+		<div class="content">
+			For a good introduction of HTTP requests, please refer to this video on youtube: <a href="https://www.youtube.com/watch?v=po3zYOe00O4">Explained HTTP, HTTPS, SSL/TLS</a>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/po3zYOe00O4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+		</div>
+	</div>
+</div>
+
+<h2 id="api">API</h2>
+
+<p>As for the first step, we need to find which url to request. Chrome and Firefox based browsers come with the developer’s tool.</p>
+
+<p>In this tutorial, we will be using bilibili.com as an example, which is a video hosting website in China. Bilibili hosts many videos. Along with each video, the status such as the number of viewers of the videos is also displayed. To find out which API we should use, we simple turn on Chrome dev tool, look in to the Network tab and find it among the XHR.</p>
+
+<p><img src="../assets/chrome-dev-tool-for-api.jpg" alt="" /></p>
+
+<p>One we obtained the API, we should start coding.</p>
+
+<h2 id="the-code">The Code</h2>
+
+<p>All we need to do is to request from <code class="highlighter-rouge">https://api.bilibili.com/x/web-interface/archive/stat?aid=26763233</code> and display the data.</p>
+
+<p>We will use the package <a href="https://visionmedia.github.io/superagent/"><code class="highlighter-rouge">superagent</code></a> to send HTTP requests.</p>
+
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title card-toggle">superagent</p>
+	</header>
+	<div class="card-content is-hidden">
+		<div class="content">
+			'superagent' is a lightweight node package for ajax API.
+		</div>
+	</div>
+</div>
+
+<p>For a first taste of the code, we will run everything on repl.it. Please hit the button on the bottom right corner of the following embed environment to run the code. The code can also be modified as you wish. The results shown in the terminal contains the returned data which is in JSON format as usual.</p>
+
+<iframe height="400px" width="100%" src="https://repl.it/@emptymalei/crawler-demo-bili?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<p>There is absolute no magic here. The annotated code is provided.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">superagent</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'superagent'</span><span class="p">)</span>
+<span class="c1">// we use superagent to request from server</span>
+<span class="nx">superagent</span>
+	<span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://api.bilibili.com/x/web-interface/archive/stat'</span><span class="p">)</span>
+  <span class="c1">// send GET requests to url</span>
+	<span class="p">.</span><span class="nx">query</span><span class="p">({</span> <span class="na">aid</span><span class="p">:</span><span class="mi">26763233</span> <span class="p">})</span>
+  <span class="c1">// here goes the parameters for the request</span>
+  <span class="c1">// we could also use https://api.bilibili.com/x/web-interface/archive/stat?aid=26763233</span>
+  <span class="c1">// as the get url and leave this query function no arguments</span>
+  <span class="c1">// query function will take the dict of parameters</span>
+  <span class="c1">// and append the to the url as ?aid=26763233</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="nx">res</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">))</span>
+  <span class="c1">// excute console.log() if the response is successfull</span>
+  <span class="c1">// console.log() prints the results in the terminal</span>
+	<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span>
+  <span class="c1">// catch error and print it in terminal if it fails</span></code></pre></figure>
+
+<h2 id="local-manipulation">Local Manipulation</h2>
+
+<p>However, we should not run a production crawler on repl.it. It is the best practice to set up your local programming environment according to the previous article of this series and program on your own computer.</p>
+
+<p>First of all, we create a folder <code class="highlighter-rouge">node-simple-spider</code> (or whatever you like) to contain all the files. To install the dependency <code class="highlighter-rouge">superagent</code>, we open a terminal and go to this folder. Inside this folder, we type in the terminal</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm i superagent --save
+</span></code></pre></div></div>
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title card-toggle">npm and node packages</p>
+	</header>
+	<div class="card-content is-hidden">
+		<div class="content">
+			'npm' is the node package manager. The command we typed in will install the package 'superagent' inside this folder.
+		</div>
+	</div>
+</div>
+
+<p>We create a file with the name <code class="highlighter-rouge">index.js</code> in the folder. We copy and paste the following code to the file.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">superagent</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'superagent'</span><span class="p">)</span>
+
+<span class="nx">superagent</span>
+	<span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://api.bilibili.com/x/web-interface/archive/stat'</span><span class="p">)</span>
+	<span class="p">.</span><span class="nx">query</span><span class="p">({</span><span class="na">aid</span><span class="p">:</span><span class="mi">26763233</span><span class="p">})</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="nx">res</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">))</span>
+	<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span></code></pre></figure>
+
+<p>To run the code, use</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">node index.js
+</span></code></pre></div></div>
+<p>in the terminal. The result will be printed in the terminal as follows:</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">{ code: 0,
+  message: '0',
+  ttl: 1,
+  data:
+   { aid: 26763233,
+     view: 113830,
+     danmaku: 757,
+     reply: 260,
+     favorite: 12947,
+     coin: 2859,
+     share: 228,
+     like: 1833,
+     now_rank: 0,
+     his_rank: 47,
+     no_reprint: 1,
+     copyright: 1 }
+}
+</span></code></pre></div></div>
+
+<h2 id="dump-data-to-file">Dump Data to File</h2>
+
+<p>We can barely do anything with the data if the program only prints it in the terminal. To analyze the data, one simple solution is to save the data in a file.</p>
+
+<p>Node.js comes with a package <code class="highlighter-rouge">fs</code> which can be used to save data to a file. The code to achieve this is:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">superagent</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'superagent'</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">)</span>
+<span class="c1">// fs is a standard package that comes with Node.js</span>
+<span class="nx">superagent</span>
+	<span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://api.bilibili.com/x/web-interface/archive/stat'</span><span class="p">)</span>
+	<span class="p">.</span><span class="nx">query</span><span class="p">({</span> <span class="na">aid</span><span class="p">:</span><span class="mi">26763233</span> <span class="p">})</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="c1">// dump data in a JSON file</span>
+		<span class="k">try</span><span class="p">{</span>
+			<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s1">'data.json'</span><span class="p">,</span> <span class="nx">res</span><span class="p">.</span><span class="nx">text</span><span class="p">,</span> <span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  				<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'The data is written to data.json!'</span><span class="p">);</span>
+			<span class="p">});</span>
+		<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+		<span class="p">}</span>
+	<span class="p">})</span>
+	<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span></code></pre></figure>
+
+<p>We run the code in the terminal. The code will generate a data file <code class="highlighter-rouge">data.json</code> in the same folder.</p>
+
+<p class="notes--primary"><code class="highlighter-rouge">fs.writeFile</code> will generate the file with each run. A file with the same name will be overwritten. To append data to a file, simply replace <code class="highlighter-rouge">fs.writeFile</code> with <code class="highlighter-rouge">fs.appendFile</code>.</p>
+
+<h2 id="useful-links">Useful Links</h2>
+
+<ol>
+  <li><a href="https://www.npmjs.com/package/superagent">SuperAgent</a></li>
+</ol>
+
+  </div>
+
+  <a class="u-url" href="/wiki/nodecrawler/basic-crawler/" hidden></a>
+
+<nav role="navigation" aria-label="pagination" style="margin-top:5em;">
+  <div class="columns is-desktop">
+    <div class="column is-4">
+      </div>
+      <div class="column is-2 is-pulled-left">
+      
+      </div>
+      <div class="column is-2 is-pulled-right">
+      
+        <a href="http://localhost:4000/wiki/nodecrawler/node-crawler-introduction/" class="is-pulled-right" title="Introduction to Node Crawler Series"><button class="button is-primary is-pulled-right">Next</button></a>
+      
+    </div>
+    <div class="column is-4">
+      </div>
+      </div>
+</nav><!-- /.pagination -->
+
+
+</article>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a>Datumorphism Collective</a>.
+       <span class="icon">
+         <a href="https://github.com/datumorphism"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+
+    </div>
+  </div>
+</footer>
+<!-- <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="/assets/js/home-chart.js"></script> -->
+
+<script src="/assets/js/collapse.js"></script>
+</body>
+
+</html>

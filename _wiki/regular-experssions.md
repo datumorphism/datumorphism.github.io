@@ -7,6 +7,7 @@ category:
 - 'Basics'
 tag:
 - 'Regular Expression'
+weight: 1
 ---
 
 ## List of Keys

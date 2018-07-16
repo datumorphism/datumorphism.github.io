@@ -8,6 +8,7 @@ category:
 tag:
 - 'Short-Time-Fourier-Transform'
 - STFT
+weight: 1
 ---
 
 
