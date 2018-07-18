@@ -1,0 +1,39 @@
+{% assign allwikis = site.wiki %}
+{% assign allwikis = allwikis | sort:"weight" %}
+
+<div class="is-clearfix"></div>
+
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    {% assign nweight = (page.weight | plus:'1') %}
+    {% assign pweight = (page.weight | minus:'1') %}
+
+{% for post in allwikis %}
+{% if post.category == page.category %}
+    {% if post.weight == pweight %}
+        <a class="pagination-previous" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Previous</a>
+    {% endif %}
+    {% if post.weight == nweight %}
+        <a class="pagination-next" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Next</a>
+    {% endif %}
+    <li style="list-style:none;">
+      <a class="pagination-link {% if post.weight == page.weight %}is-current{% endif %}" aria-label="{{ post.title }}" aria-current="page" href="{{ post.url | prepend: site.baseurl }}">{{ post.weight }}</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  {% if post.weight == pweight %}
+      <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+  {% endif %}
+</div>
+ -->
+{% endif %}
+{% endfor %}
+</ul>
+</nav>

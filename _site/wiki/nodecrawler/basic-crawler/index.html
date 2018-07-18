@@ -14,9 +14,9 @@
 <meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/basic-crawler/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-07-15T21:46:58-04:00" />
+<meta property="article:published_time" content="2018-07-18T18:58:54-04:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/wiki/nodecrawler/basic-crawler/","author":{"@type":"Person","name":"Datumorphism Collective"},"description":"The study of the data as a means for information about the world","headline":"Basic Node Crawler","dateModified":"2018-07-15T00:00:00-04:00","datePublished":"2018-07-15T21:46:58-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/basic-crawler/"},"@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/wiki/nodecrawler/basic-crawler/","author":{"@type":"Person","name":"Datumorphism Collective"},"description":"The study of the data as a means for information about the world","headline":"Basic Node Crawler","dateModified":"2018-07-15T00:00:00-04:00","datePublished":"2018-07-18T18:58:54-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/basic-crawler/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -241,7 +241,7 @@
   <header class="post-header">
     <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Basic Node Crawler</h1>
     <p class="post-meta has-text-centered">
-      <time class="dt-published" datetime="2018-07-15T21:46:58-04:00" itemprop="datePublished">Jul 15, 2018
+      <time class="dt-published" datetime="2018-07-18T18:58:54-04:00" itemprop="datePublished">Jul 18, 2018
       </time>
        • <span style="font-style: regular;">{</span>
        <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#node-crawler">⸢Node Crawler⸥</a></span>
@@ -272,7 +272,7 @@
       
       
       <div class="notification is-primary">
-         The original Chinese articles are written by ninthakeey. It has been translated and remixed by Datumorphism
+         The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism
        </div>
       
     </p>
@@ -320,7 +320,16 @@
 
 <p>In this tutorial, we will be using bilibili.com as an example, which is a video hosting website in China. Bilibili hosts many videos. Along with each video, the status such as the number of viewers of the videos is also displayed. To find out which API we should use, we simple turn on Chrome dev tool, look in to the Network tab and find it among the XHR.</p>
 
-<p><img src="../assets/chrome-dev-tool-for-api.jpg" alt="" /></p>
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title card-toggle">screenshot of an example page</p>
+	</header>
+	<div class="card-content is-hidden">
+		<div class="content">
+    <img src="../assets/chrome-dev-tool-for-api.jpg" />
+		</div>
+	</div>
+</div>
 
 <p>One we obtained the API, we should start coding.</p>
 
@@ -347,22 +356,22 @@
 
 <p>There is absolute no magic here. The annotated code is provided.</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">superagent</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'superagent'</span><span class="p">)</span>
-<span class="c1">// we use superagent to request from server</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// we use superagent to request from server</span>
+<span class="kd">const</span> <span class="nx">superagent</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'superagent'</span><span class="p">)</span>
 <span class="nx">superagent</span>
-	<span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://api.bilibili.com/x/web-interface/archive/stat'</span><span class="p">)</span>
   <span class="c1">// send GET requests to url</span>
-	<span class="p">.</span><span class="nx">query</span><span class="p">({</span> <span class="na">aid</span><span class="p">:</span><span class="mi">26763233</span> <span class="p">})</span>
+	<span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://api.bilibili.com/x/web-interface/archive/stat'</span><span class="p">)</span>
   <span class="c1">// here goes the parameters for the request</span>
   <span class="c1">// we could also use https://api.bilibili.com/x/web-interface/archive/stat?aid=26763233</span>
   <span class="c1">// as the get url and leave this query function no arguments</span>
   <span class="c1">// query function will take the dict of parameters</span>
   <span class="c1">// and append the to the url as ?aid=26763233</span>
-	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="nx">res</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">))</span>
+	<span class="p">.</span><span class="nx">query</span><span class="p">({</span> <span class="na">aid</span><span class="p">:</span><span class="mi">26763233</span> <span class="p">})</span>
   <span class="c1">// excute console.log() if the response is successfull</span>
   <span class="c1">// console.log() prints the results in the terminal</span>
-	<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span>
-  <span class="c1">// catch error and print it in terminal if it fails</span></code></pre></figure>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="nx">res</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">))</span>
+  <span class="c1">// catch error and print it in terminal if it fails</span>
+	<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span></code></pre></figure>
 
 <h2 id="local-manipulation">Local Manipulation</h2>
 
@@ -422,13 +431,13 @@
 <p>Node.js comes with a package <code class="highlighter-rouge">fs</code> which can be used to save data to a file. The code to achieve this is:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">superagent</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'superagent'</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">)</span>
 <span class="c1">// fs is a standard package that comes with Node.js</span>
+<span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">)</span>
 <span class="nx">superagent</span>
 	<span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://api.bilibili.com/x/web-interface/archive/stat'</span><span class="p">)</span>
 	<span class="p">.</span><span class="nx">query</span><span class="p">({</span> <span class="na">aid</span><span class="p">:</span><span class="mi">26763233</span> <span class="p">})</span>
-	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
 		<span class="c1">// dump data in a JSON file</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
 		<span class="k">try</span><span class="p">{</span>
 			<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s1">'data.json'</span><span class="p">,</span> <span class="nx">res</span><span class="p">.</span><span class="nx">text</span><span class="p">,</span> <span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
   				<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'The data is written to data.json!'</span><span class="p">);</span>
@@ -453,22 +462,90 @@
 
   <a class="u-url" href="/wiki/nodecrawler/basic-crawler/" hidden></a>
 
-<nav role="navigation" aria-label="pagination" style="margin-top:5em;">
-  <div class="columns is-desktop">
-    <div class="column is-4">
-      </div>
-      <div class="column is-2 is-pulled-left">
-      
-      </div>
-      <div class="column is-2 is-pulled-right">
-      
-        <a href="http://localhost:4000/wiki/nodecrawler/node-crawler-introduction/" class="is-pulled-right" title="Introduction to Node Crawler Series"><button class="button is-primary is-pulled-right">Next</button></a>
-      
-    </div>
-    <div class="column is-4">
-      </div>
-      </div>
-</nav><!-- /.pagination -->
+
+
+
+
+<div class="is-clearfix"></div>
+
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    
+    
+
+
+
+    
+        <a class="pagination-previous" href="/wiki/nodecrawler/node-crawler-introduction/" title="Introduction to Node Crawler Series">Previous</a>
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Introduction to Node Crawler Series" aria-current="page" href="/wiki/nodecrawler/node-crawler-introduction/">1</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+      <strong><a class="post-link" href="/wiki/nodecrawler/node-crawler-introduction/">Introduction to Node Crawler Series</a></strong>
+  
+</div>
+ -->
+
+
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link is-current" aria-label="Basic Node Crawler" aria-current="page" href="/wiki/nodecrawler/basic-crawler/">2</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+    
+    
+        <a class="pagination-next" href="/wiki/nodecrawler/manage-data-using-mongodb/" title="Manage Data Using MongoDB">Next</a>
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Manage Data Using MongoDB" aria-current="page" href="/wiki/nodecrawler/manage-data-using-mongodb/">3</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+</ul>
+</nav>
 
 
 </article>

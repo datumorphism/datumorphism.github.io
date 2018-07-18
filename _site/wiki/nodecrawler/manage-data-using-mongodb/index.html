@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Short-Time-Fourier-Transform | Datumorphism</title>
+<title>Manage Data Using MongoDB | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Short-Time-Fourier-Transform" />
+<meta property="og:title" content="Manage Data Using MongoDB" />
 <meta name="author" content="Datumorphism Collective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Some quick start material on regular expression." />
-<meta property="og:description" content="Some quick start material on regular expression." />
-<link rel="canonical" href="http://localhost:4000/wiki/time-series-data/" />
-<meta property="og:url" content="http://localhost:4000/wiki/time-series-data/" />
+<meta name="description" content="The study of the data as a means for information about the world" />
+<meta property="og:description" content="The study of the data as a means for information about the world" />
+<link rel="canonical" href="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
+<meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-07-18T18:58:54-04:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/wiki/time-series-data/","author":{"@type":"Person","name":"Datumorphism Collective"},"description":"Some quick start material on regular expression.","headline":"Short-Time-Fourier-Transform","dateModified":"2018-06-20T15:58:49-04:00","datePublished":"2018-07-18T18:58:54-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/time-series-data/"},"@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/","author":{"@type":"Person","name":"Datumorphism Collective"},"description":"The study of the data as a means for information about the world","headline":"Manage Data Using MongoDB","dateModified":"2018-07-18T00:00:00-04:00","datePublished":"2018-07-18T18:58:54-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -239,48 +239,129 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Short-Time-Fourier-Transform</h1>
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Manage Data Using MongoDB</h1>
     <p class="post-meta has-text-centered">
       <time class="dt-published" datetime="2018-07-18T18:58:54-04:00" itemprop="datePublished">Jul 18, 2018
       </time>
        • <span style="font-style: regular;">{</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#time-series-data">⸢Time Series Data⸥</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#node-crawler">⸢Node Crawler⸥</a></span>
        
        }
       
       
        • <span style="font-style: regular;">[</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Short-Time-Fourier-Transform">#Short-Time-Fourier-Transform</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Node">#Node</a></span>
        
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=STFT">#STFT</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Crawler">#Crawler</a></span>
        
        ]
       
       
+      <article class="message">
+        <div class="message-header">
+          <p>Source:</p>
+        </div>
+        <div class="message-body">
+          <ul>
+          
+            <li><a href="" style="text-decoration:none;">03-保存数据到数据库@ninthakeey</a></li>
+          
+          </ul>
+        </div>
+      </article>
+      
+      
+      <div class="notification is-primary">
+         The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism
+       </div>
       
     </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="short-time-fourier-transform">Short-Time-Fourier-Transform</h1>
+    <p>In most cases, databases makes the management of data quite convenient. In this article, we would scrape data using the code we discussed before but write data into MongoDB.</p>
 
-<p>We Fourier transform the time series data using a Fourier transform, with some window function</p>
+<p>For installation of MongoDB, please refer to the <a href="https://docs.mongodb.com/manual/installation/">official documentation</a>.</p>
 
-<p>\begin{equation}
-   \tilde Y[n,k] = \sum_m Y[n+m] W[m] e^{-i \lambda_k m},
-\end{equation}</p>
+<h2 id="the-code">The Code</h2>
 
-<p>where $\lambda_k=2\pi k/N$ and $W[m]$ is the window function at $m$.</p>
+<p>To write data to MongoDB using Node.js, we choose the package <a href="https://github.com/mafintosh/mongojs#readme"><code class="highlighter-rouge">mongojs</code></a>, which provides almost exactly the standard MongoDB syntax.</p>
 
-<h1 id="references-and-notes">References and Notes</h1>
+<p>To install <code class="highlighter-rouge">mongojs</code>,</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm i mongojs --save
+</span></code></pre></div></div>
 
-<ol>
-  <li><a href="https://www.coursera.org/learn/practical-time-series-analysis/lecture/pPtHq/course-introduction">Cousera</a></li>
-</ol>
+<p>Here is a module that can write data to MongoDB. We create a file named <code class="highlighter-rouge">dao.js</code> and copy pase the following code into it.</p>
+
+<pre><code class="language-JavaScript">// use mongojs
+const mongojs = require('mongojs')
+// connect to the database 'simple_spider' in MongoDB and use collection 'test'
+const localdb = mongojs('simple_spider', ['test'])
+// a function that saves data to MongoDB
+const saveData = (data,cb) =&gt; {
+	localdb.test.save(data, (err, res)=&gt;{
+	 	cb &amp;&amp; cb(err, res)
+	})
+}
+// a function that prints out the data to console
+const printAllData = (cb) =&gt; {
+	localdb.test.find({},(err, docs)=&gt;{
+		console.log(docs)
+		cb &amp;&amp; cb(err, docs)
+	})
+}
+// close connection to MongoDB in case of memory leak
+const closeMongo = () =&gt; localdb.close()
+// expose the functions in this module to the program
+module.exports = {
+	saveData,printAllData,closeMongo
+}
+</code></pre>
+
+<p>Three functions are provided in this module, <code class="highlighter-rouge">saveData</code>, <code class="highlighter-rouge">printAllData</code> and <code class="highlighter-rouge">closeMongo</code>. We will grab our previous code and call the functions from this module. We would like to modify the <code class="highlighter-rouge">index.js</code> file to make it look like the following.</p>
+
+<pre><code class="language-JavaScript">const superagent = require('superagent')
+const fs = require('fs')
+const dao = require('./dao')
+superagent
+	.get('https://api.bilibili.com/x/web-interface/archive/stat')
+	.query({ aid:26763233 })
+	.then(res =&gt; {
+    // obtain the data to be saved
+		const data = res.body.data
+		dao.saveData(data, (err,res)=&gt;{
+			console.log('saved data')
+			// save data to MongoDB and close connection
+			dao.printAllData( () =&gt; dao.closeMongo() )
+		})
+	})
+	.catch(err =&gt; console.error(err))
+</code></pre>
+
+<p>Run the code with the command</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">node index
+</span></code></pre></div></div>
+<p>and we obtaint he following output:</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">saved data
+[ { _id: 5b41d634f3df89032c834d5b,
+    aid: 26186448,
+    view: 619751,
+    danmaku: 12053,
+    reply: 3500,
+    favorite: 14961,
+    coin: 40699,
+    share: 1676,
+    like: 20751,
+    now_rank: 0,
+    his_rank: 1,
+    no_reprint: 1,
+    copyright: 1 } ]
+</span></code></pre></div></div>
+<p>With this print out, we would have already have out data stored in our MongoDB.</p>
 
   </div>
 
-  <a class="u-url" href="/wiki/time-series-data/" hidden></a>
+  <a class="u-url" href="/wiki/nodecrawler/manage-data-using-mongodb/" hidden></a>
 
 
 
@@ -295,14 +376,10 @@
 
 
 
-
-
-
-
     
     
     <li style="list-style:none;">
-      <a class="pagination-link is-current" aria-label="Short-Time-Fourier-Transform" aria-current="page" href="/wiki/time-series-data/">1</a>
+      <a class="pagination-link " aria-label="Introduction to Node Crawler Series" aria-current="page" href="/wiki/nodecrawler/node-crawler-introduction/">1</a>
     </li>
 <!--
 <div class="columns">
@@ -320,6 +397,50 @@
 
 
 
+
+
+
+    
+        <a class="pagination-previous" href="/wiki/nodecrawler/basic-crawler/" title="Basic Node Crawler">Previous</a>
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basic Node Crawler" aria-current="page" href="/wiki/nodecrawler/basic-crawler/">2</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+      <strong><a class="post-link" href="/wiki/nodecrawler/basic-crawler/">Basic Node Crawler</a></strong>
+  
+</div>
+ -->
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link is-current" aria-label="Manage Data Using MongoDB" aria-current="page" href="/wiki/nodecrawler/manage-data-using-mongodb/">3</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
 
 
 </ul>

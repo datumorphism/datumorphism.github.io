@@ -57,7 +57,16 @@ As for the first step, we need to find which url to request. Chrome and Firefox 
 
 In this tutorial, we will be using bilibili.com as an example, which is a video hosting website in China. Bilibili hosts many videos. Along with each video, the status such as the number of viewers of the videos is also displayed. To find out which API we should use, we simple turn on Chrome dev tool, look in to the Network tab and find it among the XHR.
 
-![](../assets/chrome-dev-tool-for-api.jpg)
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title card-toggle">screenshot of an example page</p>
+	</header>
+	<div class="card-content is-hidden">
+		<div class="content">
+    <img src="../assets/chrome-dev-tool-for-api.jpg"/>
+		</div>
+	</div>
+</div>
 
 One we obtained the API, we should start coding.
 
@@ -84,22 +93,22 @@ For a first taste of the code, we will run everything on repl.it. Please hit the
 
 There is absolute no magic here. The annotated code is provided.
 {% highlight JavaScript %}
-const superagent = require('superagent')
 // we use superagent to request from server
+const superagent = require('superagent')
 superagent
-	.get('https://api.bilibili.com/x/web-interface/archive/stat')
   // send GET requests to url
-	.query({ aid:26763233 })
+	.get('https://api.bilibili.com/x/web-interface/archive/stat')
   // here goes the parameters for the request
   // we could also use https://api.bilibili.com/x/web-interface/archive/stat?aid=26763233
   // as the get url and leave this query function no arguments
   // query function will take the dict of parameters
   // and append the to the url as ?aid=26763233
-	.then(res => res && console.log(res.body))
+	.query({ aid:26763233 })
   // excute console.log() if the response is successfull
   // console.log() prints the results in the terminal
-	.catch(err => console.error(err))
+	.then(res => res && console.log(res.body))
   // catch error and print it in terminal if it fails
+	.catch(err => console.error(err))
 {% endhighlight %}
 
 ## Local Manipulation
@@ -165,13 +174,13 @@ We can barely do anything with the data if the program only prints it in the ter
 Node.js comes with a package `fs` which can be used to save data to a file. The code to achieve this is:
 {% highlight JavaScript %}
 const superagent = require('superagent')
-const fs = require('fs')
 // fs is a standard package that comes with Node.js
+const fs = require('fs')
 superagent
 	.get('https://api.bilibili.com/x/web-interface/archive/stat')
 	.query({ aid:26763233 })
-	.then(res => {
 		// dump data in a JSON file
+	.then(res => {
 		try{
 			fs.writeFile('data.json', res.text, err => {
   				console.log('The data is written to data.json!');
