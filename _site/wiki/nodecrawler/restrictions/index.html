@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Manage Data Using MongoDB | Datumorphism</title>
+<title>Restrictions of Websites | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Manage Data Using MongoDB" />
+<meta property="og:title" content="Restrictions of Websites" />
 <meta name="author" content="Datumorphism Collective" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The study of the data as a means for information about the world" />
 <meta property="og:description" content="The study of the data as a means for information about the world" />
-<link rel="canonical" href="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
-<meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
+<link rel="canonical" href="http://localhost:4000/wiki/nodecrawler/restrictions/" />
+<meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/restrictions/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-07-19T14:01:32-04:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/","author":{"@type":"Person","name":"Datumorphism Collective"},"description":"The study of the data as a means for information about the world","headline":"Manage Data Using MongoDB","dateModified":"2018-07-18T00:00:00-04:00","datePublished":"2018-07-19T14:01:32-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/"},"@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/wiki/nodecrawler/restrictions/","author":{"@type":"Person","name":"Datumorphism Collective"},"description":"The study of the data as a means for information about the world","headline":"Restrictions of Websites","dateModified":"2018-07-19T00:00:00-04:00","datePublished":"2018-07-19T14:01:32-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/restrictions/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -239,7 +239,7 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Manage Data Using MongoDB</h1>
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Restrictions of Websites</h1>
     <p class="post-meta has-text-centered">
       <time class="dt-published" datetime="2018-07-19T14:01:32-04:00" itemprop="datePublished">Jul 19, 2018
       </time>
@@ -264,7 +264,7 @@
         <div class="message-body">
           <ul>
           
-            <li><a href="" style="text-decoration:none;">03-保存数据到数据库@ninthakeey</a></li>
+            <li><a href="" style="text-decoration:none;">04-应对网站的限制@ninthakeey</a></li>
           
           </ul>
         </div>
@@ -279,107 +279,121 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>In most cases, databases makes the management of data quite convenient. In this article, we would scrape data using the code we discussed before but write data into MongoDB.</p>
+    <p>Beware that scraping data off websites is neither always allowed nor as easy as a few lines of code. The preceding articles enable you to scrape many data, however, website have counter measures. In this article, we will be dealing with some of the common ones.</p>
 
-<p>For installation of MongoDB, please refer to the <a href="https://docs.mongodb.com/manual/installation/">official documentation</a>.</p>
+<h2 id="request-frequency">Request Frequency</h2>
 
-<h2 id="the-code">The Code</h2>
+<p>Some websites have limitations on the frequency of API requests. The solution to this is simply a brief pause after each request. In Node.js, the function <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp"><code class="highlighter-rouge">setInterval</code></a> enables this.</p>
 
-<p>To write data to MongoDB using Node.js, we choose the package <a href="https://github.com/mafintosh/mongojs#readme"><code class="highlighter-rouge">mongojs</code></a>, which provides almost exactly the standard MongoDB syntax.</p>
+<pre><code class="language-JavaScript">// ... require packages here
 
-<p>To install <code class="highlighter-rouge">mongojs</code>,</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm i mongojs --save
-</span></code></pre></div></div>
-
-<p>Here is a module that can write data to MongoDB. We create a file named <code class="highlighter-rouge">dao.js</code> and copy pase the following code into it.</p>
-
-<pre><code class="language-JavaScript">// use mongojs
-const mongojs = require('mongojs')
-// connect to the database 'simple_spider' in MongoDB and use collection 'test'
-const localdb = mongojs('simple_spider', ['test'])
-// a function that saves data to MongoDB
-const saveData = (data,cb) =&gt; {
-	localdb.test.save(data, (err, res)=&gt;{
-	 	cb &amp;&amp; cb(err, res)
-	})
-}
-// a function that prints out the data to console
-const printAllData = (cb) =&gt; {
-	localdb.test.find({},(err, docs)=&gt;{
-		console.log(docs)
-		cb &amp;&amp; cb(err, docs)
-	})
-}
-// close connection to MongoDB in case of memory leak
-const closeMongo = () =&gt; localdb.close()
-// expose the functions in this module to the program
-module.exports = {
-	saveData,printAllData,closeMongo
-}
+// define the function fetch to get data
+const fetch = (aid) =&gt; superagent
+		.get('https://api.bilibili.com/x/web-interface/archive/stat')
+		.query({ aid:aid })
+		.then(res =&gt; {
+			const data = res.body.data
+			dao.saveData(data, (err,res)=&gt;{
+				console.log('saved data, aid=' + aid)
+			})
+		})
+		.catch(err =&gt; console.error(err))
+// fetch data for every 2000ms
+// increment aid to scrape other aid's
+let aid = 26186448
+setInterval(() =&gt; fetch(aid++), 2000)
 </code></pre>
 
 <div class="card">
 <header class="card-header">
-<p class="card-header-title card-toggle"> = () =&gt; </p>
+<p class="card-header-title card-toggle">setInterval</p>
 </header>
 <div class="card-content is-hidden">
 <div class="content">
-      <p>In Node.js, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a> is keystroke saver for function expressions. It comes without <code class="highlighter-rouge">this</code>, arguments, super, etc.</p>
-
-      <p>In the above code, the expression</p>
-      <pre><code class="language-JavaScript">const printAllData = (cb) =&gt; {
-  // ...
-}
+      <p><code class="highlighter-rouge">setInterval</code> is used as</p>
+      <pre><code class="language-JavaScript">setInterval(function(){ alert("Hello"); }, 3000);
 </code></pre>
-      <p>defines a function named <code class="highlighter-rouge">printAllData</code> with argument <code class="highlighter-rouge">cb</code> and does something as indicated inside the curly bracket.</p>
+      <p>The function inside is a callback function.</p>
+
+      <p>As mentioned previously, <code class="highlighter-rouge">() =&gt; </code> defines a function. In our case, we have called the function <code class="highlighter-rouge">fetch</code> increment <code class="highlighter-rouge">aid</code> using <code class="highlighter-rouge">aid++</code>.</p>
     </div>
 </div>
 </div>
 
-<p>Three functions are provided in this module, <code class="highlighter-rouge">saveData</code>, <code class="highlighter-rouge">printAllData</code> and <code class="highlighter-rouge">closeMongo</code>. We will grab our previous code and call the functions from this module. We would like to modify the <code class="highlighter-rouge">index.js</code> file to make it look like the following.</p>
+<p>Node.js provides other approaches such as the new ES8 syntax <code class="highlighter-rouge">async/await</code> which make it possible to rewrite the code into function chaining again.</p>
+<pre><code class="language-JavaScript">// create a new Promise object
+const sleep = (ms) =&gt; new Promise((suc,fail) =&gt; setTimeout(suc, ms));
+(async ()=&gt;{
+	for(;;){
+		await sleep(2000)
+		console.log(new Date())
+	}
+})()
+</code></pre>
+<p>This piece of code will print out the date and time every 2000ms.</p>
 
-<pre><code class="language-JavaScript">const superagent = require('superagent')
-const fs = require('fs')
-const dao = require('./dao')
-superagent
+<div class="card">
+<header class="card-header">
+<p class="card-header-title card-toggle">async/await</p>
+</header>
+<div class="card-content is-hidden">
+<div class="content">
+      <p>Node.js is single-threaded. As we have mentioned when explaining the function <code class="highlighter-rouge">fs.writeFile()</code>, Node.js has non-blocking I/O. In fact, concurrency is probably at the heart of Node.js, which means we execute one process out of the multiple running processes. Concurrency can make your code more efficient.</p>
+
+      <p>In the first block of code, we have used <code class="highlighter-rouge">setInterval</code> callback function. However, callback is kind of messy. It’s much better if we could use function chaining. <code class="highlighter-rouge">Promise</code> is exactly what we need to achieve this.</p>
+
+      <p><code class="highlighter-rouge">async</code> tells Node.js that we are defining an asynchronous function, while <code class="highlighter-rouge">await</code> tells it to wait for the async function to parse things. It’s basically an alternative to <code class="highlighter-rouge">.then</code> and <code class="highlighter-rouge">.catch</code> functions.</p>
+
+      <p>The code above doesn’t chain functions a lot but it’s worth mentioning here.</p>
+
+      <p><a href="https://medium.com/platformer-blog/node-js-concurrency-with-async-await-and-promises-b4c4ae8f4510">This article</a> explains the concurrency in Node.js pretty well.</p>
+    </div>
+</div>
+</div>
+
+<h2 id="user-agent-verification">User-Agent Verification</h2>
+
+<p>Some services will require some certain browsers to get a successfull response. The way they do it is to verify the <code class="highlighter-rouge">User-Agent</code> (UA) data in the HTTP requests. In this case, we have to request with some fake UA data.</p>
+
+<p>The package <code class="highlighter-rouge">superagent</code> can help us set UA.</p>
+<pre><code class="language-JavaScript">superagent
 	.get('https://api.bilibili.com/x/web-interface/archive/stat')
-	.query({ aid:26763233 })
+	.set({ 'User-Agent': 'Opera/9.80 balabala...' }) // set User-Agent here
+	.query({ aid:aid })
 	.then(res =&gt; {
-    // obtain the data to be saved
-		const data = res.body.data
-		dao.saveData(data, (err,res)=&gt;{
-			console.log('saved data')
-			// save data to MongoDB and close connection
-			dao.printAllData( () =&gt; dao.closeMongo() )
-		})
+		// do something
 	})
 	.catch(err =&gt; console.error(err))
 </code></pre>
 
-<p>Run the code with the command</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">node index
-</span></code></pre></div></div>
-<p>and we obtaint he following output:</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">saved data
-[ { _id: 5b41d634f3df89032c834d5b,
-    aid: 26186448,
-    view: 619751,
-    danmaku: 12053,
-    reply: 3500,
-    favorite: 14961,
-    coin: 40699,
-    share: 1676,
-    like: 20751,
-    now_rank: 0,
-    his_rank: 1,
-    no_reprint: 1,
-    copyright: 1 } ]
-</span></code></pre></div></div>
-<p>With this print out, we would have already have out data stored in our MongoDB.</p>
+<p>It would be even better if we could change UA everytime. Here is a list of UA.</p>
+
+<pre><code class="language-JavaScript">const USER_AGENTS = [
+    'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.12) Gecko/20070731 Ubuntu/dapper-security Firefox/1.5.0.12',
+    'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)',
+    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20',
+    'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6',
+    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.71 Safari/537.1 LBBROWSER',
+    'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0) ,Lynx/2.8.5rel.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/1.2.9',
+    'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)',
+    'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)',
+    'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E)',
+    'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:2.0b13pre) Gecko/20110307 Firefox/4.0b13pre',
+    'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52',
+    'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.12) Gecko/20070731 Ubuntu/dapper-security Firefox/1.5.0.12',
+    'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; LBBROWSER)',
+    'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6',
+    'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6',
+    'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)',
+    'Opera/9.25 (Windows NT 5.1; U; en), Lynx/2.8.5rel.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/1.2.9',
+    'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+];
+</code></pre>
 
   </div>
 
-  <a class="u-url" href="/wiki/nodecrawler/manage-data-using-mongodb/" hidden></a>
+  <a class="u-url" href="/wiki/nodecrawler/restrictions/" hidden></a>
 
 
 
@@ -419,8 +433,6 @@ superagent
 
 
     
-        <a class="pagination-previous" href="/wiki/nodecrawler/basic-crawler/" title="Basic Node Crawler">Previous</a>
-    
     
     <li style="list-style:none;">
       <a class="pagination-link " aria-label="Basic Node Crawler" aria-current="page" href="/wiki/nodecrawler/basic-crawler/">2</a>
@@ -435,17 +447,17 @@ superagent
 
 <div class="column">
   
-      <strong><a class="post-link" href="/wiki/nodecrawler/basic-crawler/">Basic Node Crawler</a></strong>
-  
 </div>
  -->
 
 
 
     
+        <a class="pagination-previous" href="/wiki/nodecrawler/manage-data-using-mongodb/" title="Manage Data Using MongoDB">Previous</a>
+    
     
     <li style="list-style:none;">
-      <a class="pagination-link is-current" aria-label="Manage Data Using MongoDB" aria-current="page" href="/wiki/nodecrawler/manage-data-using-mongodb/">3</a>
+      <a class="pagination-link " aria-label="Manage Data Using MongoDB" aria-current="page" href="/wiki/nodecrawler/manage-data-using-mongodb/">3</a>
     </li>
 <!--
 <div class="columns">
@@ -457,6 +469,8 @@ superagent
 
 <div class="column">
   
+      <strong><a class="post-link" href="/wiki/nodecrawler/manage-data-using-mongodb/">Manage Data Using MongoDB</a></strong>
+  
 </div>
  -->
 
@@ -464,10 +478,8 @@ superagent
 
     
     
-        <a class="pagination-next" href="/wiki/nodecrawler/restrictions/" title="Restrictions of Websites">Next</a>
-    
     <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Restrictions of Websites" aria-current="page" href="/wiki/nodecrawler/restrictions/">4</a>
+      <a class="pagination-link is-current" aria-label="Restrictions of Websites" aria-current="page" href="/wiki/nodecrawler/restrictions/">4</a>
     </li>
 <!--
 <div class="columns">

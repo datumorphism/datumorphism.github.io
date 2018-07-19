@@ -57,6 +57,28 @@ module.exports = {
 }
 ```
 
+
+
+<div class="card">
+<header class="card-header">
+<p class="card-header-title card-toggle"> = () => </p>
+</header>
+<div class="card-content is-hidden">
+<div class="content" markdown="1">
+In Node.js, [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) is keystroke saver for function expressions. It comes without `this`, arguments, super, etc.
+
+In the above code, the expression
+```JavaScript
+const printAllData = (cb) => {
+  // ...
+}
+```
+defines a function named `printAllData` with argument `cb` and does something as indicated inside the curly bracket.
+</div>
+</div>
+</div>
+
+
 Three functions are provided in this module, `saveData`, `printAllData` and `closeMongo`. We will grab our previous code and call the functions from this module. We would like to modify the `index.js` file to make it look like the following.
 
 ```JavaScript

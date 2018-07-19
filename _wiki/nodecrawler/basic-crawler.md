@@ -197,6 +197,18 @@ We run the code in the terminal. The code will generate a data file `data.json` 
 `fs.writeFile` will generate the file with each run. A file with the same name will be overwritten. To append data to a file, simply replace `fs.writeFile` with `fs.appendFile`.
 {: .notes--primary}
 
+<div class="card">
+<header class="card-header">
+<p class="card-header-title card-toggle">Non-blocking I/O</p>
+</header>
+<div class="card-content is-hidden">
+<div class="content" markdown="1">
+The function `fs.writeFile()` performs the I/O asynchronously. The next line of code runs without waiting for the I/O to finish. This is different from Python. We will explain and explore more asynchronous feature in the future.
+</div>
+</div>
+</div>
+
+
 
 ## Useful Links
 

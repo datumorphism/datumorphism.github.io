@@ -103,6 +103,11 @@ pre {
   content: "\2660 \A0\A0\A0";
 }
 
+.card-header:after {
+  content: "  \A0\A0\A0   \21B5  \A0\A0\A0 ";
+  transform: scale(1);
+  padding-top: 0.5em;
+}
 /* Design Notes div with different styles */
 
 .notes--info, .notes--success, .notes--warning, .notes--error, .notes--primary {
