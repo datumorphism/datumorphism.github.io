@@ -61,7 +61,7 @@ module.exports = {
 
 <div class="card">
 <header class="card-header">
-<p class="card-header-title card-toggle"> = () => </p>
+<p class="card-header-title card-toggle"> () => </p>
 </header>
 <div class="card-content is-hidden">
 <div class="content" markdown="1">
