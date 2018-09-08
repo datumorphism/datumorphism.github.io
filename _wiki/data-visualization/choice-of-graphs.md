@@ -12,6 +12,7 @@ source:
   title: ''
 notify: ''
 weight: 1
+published: false
 ---
 
 ## Computer Realization
