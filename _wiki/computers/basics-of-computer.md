@@ -1,5 +1,5 @@
 ---
-title: "Basic of Computers"
+title: "Basics of Computers"
 excerpt: "Essential knowledge of computers"
 last_modified_at: 2018-09-13
 toc: true
@@ -12,7 +12,7 @@ references:
 - name: "How integers are stored in memory using two’s complement"
   title: 'https://medium.com/@LeeJulija/how-integers-are-stored-in-memory-using-twos-complement-5ba04d61a56c'
 notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers.'
-weight: 2
+weight: 1
 ---
 
 ## Storage, Precision, Error, etc
