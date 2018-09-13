@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Regular Expression TIL | Datumorphism</title>
+<title>Basic of Computers | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Regular Expression TIL" />
+<meta property="og:title" content="Basic of Computers" />
 <meta name="author" content="Datumorphism Collective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Some quick start material on regular expression." />
-<meta property="og:description" content="Some quick start material on regular expression." />
-<link rel="canonical" href="http://localhost:4000/til/programming/regular-experssions/" />
-<meta property="og:url" content="http://localhost:4000/til/programming/regular-experssions/" />
+<meta name="description" content="Essential knowledge of computers" />
+<meta property="og:description" content="Essential knowledge of computers" />
+<link rel="canonical" href="http://localhost:4000/wiki/computers/basic-of-computer/" />
+<meta property="og:url" content="http://localhost:4000/wiki/computers/basic-of-computer/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-09-13T17:49:11-04:00" />
 <script type="application/ld+json">
-{"description":"Some quick start material on regular expression.","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/til/programming/regular-experssions/","headline":"Regular Expression TIL","dateModified":"2018-06-20T15:58:49-04:00","datePublished":"2018-09-13T17:49:11-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/til/programming/regular-experssions/"},"@context":"http://schema.org"}</script>
+{"description":"Essential knowledge of computers","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/computers/basic-of-computer/","headline":"Basic of Computers","dateModified":"2018-09-13T00:00:00-04:00","datePublished":"2018-09-13T17:49:11-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/computers/basic-of-computer/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -238,55 +238,147 @@
         <div class="content is-medium">
           <article class="post">
 
-
-<header class="post-header">
-  <h1 class="has-text-centered is-size-1" itemprop="name headline"><a href="/til">Today I Learned</a></h1>
-  <h2 class="post-title has-text-centered is-size-2" itemprop="name headline">Regular Expression TIL</h2>
-  <p class="post-meta has-text-centered">
-    <time class="dt-published" datetime="2018-09-13T17:49:11-04:00" itemprop="datePublished">Sep 13, 2018
-    </time>
-     • <span style="font-style: regular;">{</span>
-     <span style="padding-right: 0.2em;padding-left: 0.2em;">
+  <header class="post-header">
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Basic of Computers</h1>
+    <p class="post-meta has-text-centered">
+      <time class="dt-published" datetime="2018-09-13T17:49:11-04:00" itemprop="datePublished">Sep 13, 2018
+      </time>
+       • <span style="font-style: regular;">{</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#computer">⸢Computer⸥</a></span>
        
-       <a href="http://localhost:4000/til/?keywords=basics">⸢basics⸥</a>
-     </span>
-     
-     }
-    
-    
-     • <span style="font-style: regular;">[</span>
-     <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/til/#regular-expression">#regular expression</a></span>
-     
-     ]
-    
-  </p>
-</header>
+       }
+      
+      
+       • <span style="font-style: regular;">[</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Computer">#Computer</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Basics">#Basics</a></span>
+       
+       ]
+      
+      
+      
+      <div class="notification is-primary">
+         I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers.
+       </div>
+      
+    </p>
+  </header>
 
-<div class="post-content e-content" itemprop="articleBody">
-  <p>Hi This is a test</p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="storage-precision-error-etc">Storage, Precision, Error, etc</h2>
+
+<p>To have some understanding of how the numbers processed in computers, we have to understan how the numbers are stored first.</p>
+
+<p>Computers stores everything in binary form <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Suppose we randomly get some segments in the memory, we have no idea what that stands for since we do not know the type of data it represents.</p>
+
+<p>Some of the most used data types in data science are</p>
+
+<ol>
+  <li>integer,</li>
+  <li>float,</li>
+  <li>string,</li>
+  <li>time.</li>
+</ol>
+
+<h3 id="integers">Integers</h3>
+
+<p>Integers can occupy $2^0$, $2^1$, $2^2$, $2^3$ bytes in memory.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 byte : | | | | | | | | |
+2 bytes: | | | | | | | | | | | | | | | | |
+4 bytes: | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+...
+</code></pre></div></div>
+<p>Each of the blocks is 1 bit.</p>
+
+<p>Integers can be</p>
+
+<ol>
+  <li>Unsigned</li>
+  <li>Signed</li>
+</ol>
+
+<p>The sign can occupy one bit. However, the compiler has to know that this is a signed number otherwise it iterprets it into different numbers.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|1|0|0|1|0|1|0|1|
+</code></pre></div></div>
+
+<h3 id="float">Float</h3>
+
+<p>In computers, floating-point representation of a number is</p>
+
+<p>\begin{equation}
+   S\times M \times b^{E-e},
+\end{equation}</p>
+
+<p>where $S$ is the sign, $M$ is the mantissa, $E$ is the integer exponent, $b$ is the base and $e$ is the bias of the exponent.</p>
+
+<p><strong>Round off</strong> is the bias from the machine accuracy and it accumulates.</p>
+
+<p><strong>Truncation error</strong> is the difference between  the true answer and teh answer obtained. The reason for this is that we are doing numerical calculations by descretizing the functions. This error is the discrepancy on a ideal computer that n round off is present.</p>
+
+<p>As the round off error gets magnified and finally swamp the useful answer in the calculation, the method is unstable. An algrimth like this can work on a ideal computer but not a practical one.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I have always been speculating that we probably would have a lot of decimal computer theories if Charles Babbage built that difference engine. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  <a class="u-url" href="/wiki/computers/basic-of-computer/" hidden></a>
+
+
+
+
+
+<div class="is-clearfix"></div>
+
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link is-current" aria-label="Basic of Computers" aria-current="page" href="/wiki/computers/basic-of-computer/">2</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
 
 </div>
 
-<a class="u-url" href="/til/programming/regular-experssions/" hidden></a>
 
-  <nav role="navigation" aria-label="pagination" style="margin-top:5em;">
-  <div class="columns is-desktop">
-    <div class="column is-4">
-      </div>
-      <div class="column is-2 is-pulled-left">
-      
-        <a href="http://localhost:4000/til/programming/pandas-parallel-multiprocessing/" class="is-pulled-left" title="Pandas with MultiProcessing"><button class="button is-primary is-pulled-left">Previous</button> </a>
-      
-      </div>
-      <div class="column is-2 is-pulled-right">
-      
-    </div>
-    <div class="column is-4">
-      </div>
-      </div>
-</nav><!-- /.pagination -->
+<div class="column">
+  
+</div>
+ -->
 
 
+
+
+
+
+
+
+
+
+</ul>
+</nav>
 
 
 </article>
