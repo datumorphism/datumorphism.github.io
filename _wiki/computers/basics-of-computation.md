@@ -1,6 +1,6 @@
 ---
-title: "Basics of Computers"
-excerpt: "Essential knowledge of computers"
+title: "Basics of Computation"
+excerpt: "Essential knowledge of computations"
 last_modified_at: 2018-09-13
 toc: true
 category:
@@ -31,7 +31,7 @@ Some of the most used data types in data science are
 
 ### Integers
 
-Integers can occupy $2^0$, $2^1$, $2^2$, $2^3$ bytes in memory. 
+Integers can occupy $2^0$, $2^1$, $2^2$, $2^3$ bytes in memory.
 
 ```
 1 byte : | | | | | | | | |
