@@ -4,9 +4,9 @@ excerpt: "Essential knowledge of computations"
 last_modified_at: 2018-09-13
 toc: true
 category:
-- 'Computer'
+- 'Computation'
 tag:
-- 'Computer'
+- 'Computation'
 - 'Basics'
 references:
 - name: "How integers are stored in memory using two’s complement"
