@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Basics of Network | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Basics of Network" />
+<meta name="author" content="Datumorphism Collective" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Essential knowledge of internet" />
+<meta property="og:description" content="Essential knowledge of internet" />
+<link rel="canonical" href="http://localhost:4000/wiki/computation/basics-of-network/" />
+<meta property="og:url" content="http://localhost:4000/wiki/computation/basics-of-network/" />
+<meta property="og:site_name" content="Datumorphism" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-10-03T17:27:14-04:00" />
+<script type="application/ld+json">
+{"description":"Essential knowledge of internet","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/computation/basics-of-network/","headline":"Basics of Network","dateModified":"2018-09-23T00:00:00-04:00","datePublished":"2018-10-03T17:27:14-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/computation/basics-of-network/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/code/base16-solarized.light.css">
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item has-text-weight-bold" href="/"><i class="fas fa-home"></i></a>
+
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/reading/" >Reading</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column is-12">
+        <div class="content is-medium">
+          <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Basics of Network</h1>
+    <p class="post-meta has-text-centered">
+      <time class="dt-published" datetime="2018-10-03T17:27:14-04:00" itemprop="datePublished">Oct 3, 2018
+      </time>
+       • <span style="font-style: regular;">{</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#computation">⸢Computation⸥</a></span>
+       
+       }
+      
+      
+       • <span style="font-style: regular;">[</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Internet">#Internet</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Basics">#Basics</a></span>
+       
+       ]
+      
+      
+      
+      <div class="notification is-primary">
+         I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers and internet.
+       </div>
+      
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="http-keywords">HTTP Keywords</h2>
+
+<ol>
+  <li>Hyper Text Transfer Protocal: deliver hyper text from server to local browser etc.</li>
+  <li>Based on TCP/IP</li>
+  <li>Current version:  HTTP/2</li>
+  <li>Server  - Client</li>
+  <li>Client can request through GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT, PATCH.</li>
+  <li>Transfer anything defined by Content-Type</li>
+  <li>Connectionless Protocol: doesn’t maintain the connection all the time</li>
+  <li>Stateless protocal: <a href="https://www.zhihu.com/question/23202402/answer/300614865">A very nice explanation</a></li>
+</ol>
+
+<h2 id="url-keywords">URL Keywords</h2>
+
+<ol>
+  <li>Uniform Resource Locator</li>
+  <li>Interpret each part of this URL: http://abc.com:8000/folder/file.html#title1location?param1=123&amp;param2=234</li>
+  <li>No limits on length of URL by HTTP itself. However, some servers or clients do set limits.</li>
+</ol>
+
+<p>Difference between URI and URL and URN: <a href="https://danielmiessler.com/study/url-uri/">The Difference Between URLs and URIs</a> checkout the Venn diagram.</p>
+
+<p><img src="../assets/URI-vs-URL.png" alt="" /></p>
+
+<p><em>From <a href="https://danielmiessler.com/study/url-uri/">The Difference Between URLs and URIs</a></em></p>
+
+<h2 id="how-http-works">How HTTP Works</h2>
+
+<p>HTTP Request: use Chrome Dev Tool -&gt; Network to find out the requests, including GET and Response.</p>
+
+<div style="position: relative; padding-bottom: 1em; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/po3zYOe00O4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="how-to-request">How to Request</h3>
+
+<ol>
+  <li><code class="highlighter-rouge">GET</code>: request for the page</li>
+  <li><code class="highlighter-rouge">HEAD</code>: similar to <code class="highlighter-rouge">GET</code> but only for the head</li>
+  <li><code class="highlighter-rouge">POST</code>: post data to the uri; data is in the body; might replace existing data</li>
+  <li><code class="highlighter-rouge">PUT</code>:</li>
+  <li><code class="highlighter-rouge">DELETE</code>: request a deletion of the page</li>
+  <li><code class="highlighter-rouge">CONNECT</code>: HTTP/1.1</li>
+  <li><code class="highlighter-rouge">OPTIONS</code>: allow the user to request for info about the server</li>
+  <li><code class="highlighter-rouge">TRACE</code>: mostly used for diagnostic purpose</li>
+</ol>
+
+<p><code class="highlighter-rouge">GET</code> will attach data on the URL, while <code class="highlighter-rouge">POST</code> will attach data in the package. Thus <code class="highlighter-rouge">POST</code> is safer.</p>
+
+  </div>
+
+  <a class="u-url" href="/wiki/computation/basics-of-network/" hidden></a>
+
+
+
+
+
+<div class="is-clearfix"></div>
+
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    
+    
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basics of Computation" aria-current="page" href="/wiki/computation/basics-of-computation/">1</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+    
+        <a class="pagination-previous" href="/wiki/computation/basics-of-programming/" title="Basics of Programming">Previous</a>
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basics of Programming" aria-current="page" href="/wiki/computation/basics-of-programming/">2</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+      <strong><a class="post-link" href="/wiki/computation/basics-of-programming/">Basics of Programming</a></strong>
+  
+</div>
+ -->
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link is-current" aria-label="Basics of Network" aria-current="page" href="/wiki/computation/basics-of-network/">3</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+
+
+    
+    
+        <a class="pagination-next" href="/wiki/computation/basics-of-database/" title="Basics of Database">Next</a>
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basics of Database" aria-current="page" href="/wiki/computation/basics-of-database/">4</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+
+
+
+</ul>
+</nav>
+
+
+</article>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a>Datumorphism Collective</a>.
+       <span class="icon">
+         <a href="https://github.com/datumorphism"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+
+    </div>
+  </div>
+</footer>
+<!-- <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="/assets/js/home-chart.js"></script> -->
+
+<script src="/assets/js/collapse.js"></script>
+</body>
+
+</html>
