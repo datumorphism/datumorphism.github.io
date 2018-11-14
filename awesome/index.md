@@ -26,7 +26,7 @@ exclude: true
         <h2 id="{{ cat[0] }}">{{ cat[0] }}</h2>
         <ol type="1">
             {% for item in cat[1] %}
-            <li> <a href="#{{ item.link }}" style="text-decoration: none;" target="_blank">  {{ item.name }} </a> {% if item.keywords %} [<div class="tags" style="display: inline;"> {% for kw in item.keywords %} <span class="tag">{{ kw }}</span> {% endfor %} </div>] {% endif %}: {{ item.description }}
+            <li> <a href="{{ item.link }}" style="text-decoration: none;" target="_blank">  {{ item.name }} </a> {% if item.keywords %} [<div class="tags" style="display: inline;"> {% for kw in item.keywords %} <span class="tag">{{ kw }}</span> {% endfor %} </div>] {% endif %}: {{ item.description }}
             </li>
             {% endfor %}
         </ol>
