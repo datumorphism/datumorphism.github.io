@@ -1,7 +1,7 @@
 ---
 title: "Basics of Database"
 excerpt: "Essential knowledge of database"
-last_modified_at: 2018-10-03
+date: 2018-10-03
 toc: true
 category:
 - 'Computation'

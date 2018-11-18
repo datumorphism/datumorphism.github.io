@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Node Crawler Series"
 excerpt: "Installing node.js and mongodb."
-last_modified_at: 2018-07-15
+date: 2018-07-15
 toc: true
 category:
 - 'Node Crawler'

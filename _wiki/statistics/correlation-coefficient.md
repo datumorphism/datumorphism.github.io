@@ -1,7 +1,7 @@
 ---
 title: "Correlation Coefficient and Covariance for Numeric Data"
 excerpt: "Detecting correlations using correlations for numeric data"
-last_modified_at: 2018-11-18
+date: 2018-11-18
 toc: true
 category:
 - 'Statistics'

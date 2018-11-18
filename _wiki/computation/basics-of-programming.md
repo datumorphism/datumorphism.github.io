@@ -1,7 +1,7 @@
 ---
 title: "Basics of Programming"
 excerpt: "Essential knowledge of programming"
-last_modified_at: 2018-09-23
+date: 2018-09-23
 toc: true
 category:
 - 'Computation'

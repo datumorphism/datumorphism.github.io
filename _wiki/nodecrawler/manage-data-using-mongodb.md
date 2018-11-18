@@ -1,7 +1,7 @@
 ---
 title: "Manage Data Using MongoDB"
 excerpt: ""
-last_modified_at: 2018-07-18
+date: 2018-07-18
 toc: true
 category:
 - 'Node Crawler'

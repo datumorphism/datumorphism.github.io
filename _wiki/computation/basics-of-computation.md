@@ -1,7 +1,7 @@
 ---
 title: "Basics of Computation"
 excerpt: "Essential knowledge of computations"
-last_modified_at: 2018-09-13
+date: 2018-09-13
 toc: true
 category:
 - 'Computation'

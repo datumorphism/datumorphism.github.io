@@ -1,7 +1,7 @@
 ---
 title: "Normalization Methods for Numeric Data"
 excerpt: "Detecting correlations using correlations for numerical data"
-last_modified_at: 2018-11-18
+date: 2018-11-18
 toc: true
 category:
 - 'Statistics'
@@ -12,7 +12,7 @@ tag:
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   title: ''
-weight: 4
+weight: 3
 ---
 
 

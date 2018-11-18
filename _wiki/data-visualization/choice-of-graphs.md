@@ -1,7 +1,7 @@
 ---
 title: "Choice of Graphs"
 excerpt: ""
-last_modified_at: 2018-08-08
+date: 2018-08-08
 toc: true
 category:
 - 'Data Visualization'

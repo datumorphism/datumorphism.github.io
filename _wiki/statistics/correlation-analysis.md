@@ -1,7 +1,7 @@
 ---
 title: "Chi-square Correlation Test for Nominal Data"
 excerpt: "Detecting correlations using Pearson's chi square correlation test"
-last_modified_at: 2018-11-18
+date: 2018-11-18
 toc: true
 category:
 - 'Statistics'
