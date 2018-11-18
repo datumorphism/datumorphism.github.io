@@ -27,7 +27,7 @@ This method is linear and straightforward.
 
 Suppose we are analyzing series A, with elements $a_i$. We already know the min and max of the series, $a_{min}$ and $a_{max}$.
 
-Now we would like to normalize the series to be within the range $[a_{min}', a_{max}']$. We simply solve the value of $a'_i$ in 
+Now we would like to normalize the series to be within the range $[a_{min}', a_{max}']$. We simply solve the value of $a' _ i$ in 
 $$
 \frac{(a'_i - a_{min}')}{ ( a'_{max} - a'_{min}  ) } = \frac{(a_i - a_{min})}{ ( a_{max} - a_{min}  ) },
 $$
