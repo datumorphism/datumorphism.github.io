@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Manage Data Using MongoDB | Datumorphism</title>
+<title>Normalization Methods for Numeric Data | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Manage Data Using MongoDB" />
+<meta property="og:title" content="Normalization Methods for Numeric Data" />
 <meta name="author" content="Datumorphism Collective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The study of the data as a means for information about the world" />
-<meta property="og:description" content="The study of the data as a means for information about the world" />
-<link rel="canonical" href="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
-<meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
+<meta name="description" content="Detecting correlations using correlations for numerical data" />
+<meta property="og:description" content="Detecting correlations using correlations for numerical data" />
+<link rel="canonical" href="http://localhost:4000/wiki/statistics/normalization-methods/" />
+<meta property="og:url" content="http://localhost:4000/wiki/statistics/normalization-methods/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-11-18T16:02:16-05:00" />
 <script type="application/ld+json">
-{"description":"The study of the data as a means for information about the world","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/","headline":"Manage Data Using MongoDB","dateModified":"2018-07-18T00:00:00-04:00","datePublished":"2018-11-18T16:02:16-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/"},"@context":"http://schema.org"}</script>
+{"description":"Detecting correlations using correlations for numerical data","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/statistics/normalization-methods/","headline":"Normalization Methods for Numeric Data","dateModified":"2018-11-18T00:00:00-05:00","datePublished":"2018-11-18T16:02:16-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/statistics/normalization-methods/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -248,147 +248,81 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Manage Data Using MongoDB</h1>
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Normalization Methods for Numeric Data</h1>
     <p class="post-meta has-text-centered">
       <time class="dt-published" datetime="2018-11-18T16:02:16-05:00" itemprop="datePublished">Nov 18, 2018
       </time>
        • <span style="font-style: regular;">{</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#node-crawler">⸢Node Crawler⸥</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#statistics">⸢Statistics⸥</a></span>
        
        }
       
       
        • <span style="font-style: regular;">[</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Node">#Node</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Statistics">#Statistics</a></span>
        
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Crawler">#Crawler</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Basics">#Basics</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Normalization">#Normalization</a></span>
        
        ]
       
       
-      <article class="message">
-        <div class="message-header">
-          <p>Source:</p>
-        </div>
-        <div class="message-body">
-          <ul>
-          
-            <li><a href="" style="text-decoration:none;">03-保存数据到数据库@ninthakeey</a></li>
-          
-          </ul>
-        </div>
-      </article>
-      
-      
-      <div class="notification is-primary">
-         The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism
-       </div>
       
     </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>In most cases, databases makes the management of data quite convenient. In this article, we would scrape data using the code we discussed before but write data into MongoDB.</p>
+    <ul id="markdown-toc">
+  <li><a href="#min-max-normalization" id="markdown-toc-min-max-normalization">Min-max Normalization</a></li>
+  <li><a href="#z-score-normalization" id="markdown-toc-z-score-normalization">Z-score Normalization</a></li>
+  <li><a href="#decimal-scaling" id="markdown-toc-decimal-scaling">Decimal Scaling</a></li>
+</ul>
 
-<p>For installation of MongoDB, please refer to the <a href="https://docs.mongodb.com/manual/installation/">official documentation</a>.</p>
+<p>Normalization of data is critical for statistical analysis and feature engineering.</p>
 
-<h2 id="the-code">The Code</h2>
+<h2 id="min-max-normalization">Min-max Normalization</h2>
 
-<p>To write data to MongoDB using Node.js, we choose the package <a href="https://github.com/mafintosh/mongojs#readme"><code class="highlighter-rouge">mongojs</code></a>, which provides almost exactly the standard MongoDB syntax.</p>
+<p>This method is linear and straightforward.</p>
 
-<p>To install <code class="highlighter-rouge">mongojs</code>,</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm i mongojs --save
-</span></code></pre></div></div>
+<p>Suppose we are analyzing series A, with elements $a_i$. We already know the min and max of the series, $a_{min}$ and $a_{max}$.</p>
 
-<p>Here is a module that can write data to MongoDB. We create a file named <code class="highlighter-rouge">dao.js</code> and copy pase the following code into it.</p>
+<p>Now we would like to normalize the series to be within the range $[a_{min}’, a_{max}’]$. We simply solve the value of $a’<em>i$ in 
+<script type="math/tex">\frac{(a'_i - a_{min}')}{ ( a'_{max} - a'_{min}  ) } = \frac{(a_i - a_{min})}{ ( a_{max} - a_{min}  ) },</script>
+where everything on the right hand side is known and $a</em>{min}’$ and $a_{max}’$ are chosen as the new min and max to be scaled to.</p>
 
-<pre><code class="language-JavaScript">// use mongojs
-const mongojs = require('mongojs')
-// connect to the database 'simple_spider' in MongoDB and use collection 'test'
-const localdb = mongojs('simple_spider', ['test'])
-// a function that saves data to MongoDB
-const saveData = (data,cb) =&gt; {
-	localdb.test.save(data, (err, res)=&gt;{
-	 	cb &amp;&amp; cb(err, res)
-	})
-}
-// a function that prints out the data to console
-const printAllData = (cb) =&gt; {
-	localdb.test.find({},(err, docs)=&gt;{
-		console.log(docs)
-		cb &amp;&amp; cb(err, docs)
-	})
-}
-// close connection to MongoDB in case of memory leak
-const closeMongo = () =&gt; localdb.close()
-// expose the functions in this module to the program
-module.exports = {
-	saveData,printAllData,closeMongo
-}
-</code></pre>
+<div class="notes--warning">
+  <p>The problem with this method is that the min and max has to be known, which is not always the case.</p>
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle"> () =&gt; </p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
-      <p>In Node.js, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a> is keystroke saver for function expressions. It comes without <code class="highlighter-rouge">this</code>, arguments, super, etc.</p>
-
-      <p>In the above code, the expression</p>
-      <pre><code class="language-JavaScript">const printAllData = (cb) =&gt; {
-  // ...
-}
-</code></pre>
-      <p>defines a function named <code class="highlighter-rouge">printAllData</code> with argument <code class="highlighter-rouge">cb</code> and does something as indicated inside the curly bracket.</p>
-    </div>
-</div>
+  <p>Another problem is that outliers would have a big effect on this method. Such examples could be the prices of houses. There might be one house in the database that has an extremely low price such as 1 euro, or extermely high price such as one billion euros.</p>
 </div>
 
-<p>Three functions are provided in this module, <code class="highlighter-rouge">saveData</code>, <code class="highlighter-rouge">printAllData</code> and <code class="highlighter-rouge">closeMongo</code>. We will grab our previous code and call the functions from this module. We would like to modify the <code class="highlighter-rouge">index.js</code> file to make it look like the following.</p>
+<h2 id="z-score-normalization">Z-score Normalization</h2>
 
-<pre><code class="language-JavaScript">const superagent = require('superagent')
-const fs = require('fs')
-const dao = require('./dao')
-superagent
-	.get('https://api.bilibili.com/x/web-interface/archive/stat')
-	.query({ aid:26763233 })
-	.then(res =&gt; {
-    // obtain the data to be saved
-		const data = res.body.data
-		dao.saveData(data, (err,res)=&gt;{
-			console.log('saved data')
-			// save data to MongoDB and close connection
-			dao.printAllData( () =&gt; dao.closeMongo() )
-		})
-	})
-	.catch(err =&gt; console.error(err))
-</code></pre>
+<p>Z-score normalization method normalizes the data using the standard deviation since standard deviation measures how are the data points devivate from the mean.</p>
 
-<p>Run the code with the command</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">node index
-</span></code></pre></div></div>
-<p>and we obtaint he following output:</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">saved data
-[ { _id: 5b41d634f3df89032c834d5b,
-    aid: 26186448,
-    view: 619751,
-    danmaku: 12053,
-    reply: 3500,
-    favorite: 14961,
-    coin: 40699,
-    share: 1676,
-    like: 20751,
-    now_rank: 0,
-    his_rank: 1,
-    no_reprint: 1,
-    copyright: 1 } ]
-</span></code></pre></div></div>
-<p>With this print out, we would have already have out data stored in our MongoDB.</p>
+<script type="math/tex; mode=display">a'_i = \frac{ (a_i - \bar A) }{ \sigma_A }</script>
+
+<div class="notes--info">
+  <p>For a series with only one value, $a’_i = 0$. For series of the form $ (a, -a, a, -a) $ where $a&gt; 0$,</p>
+
+  <script type="math/tex; mode=display">\sigma_A = a.</script>
+
+  <p>Then we have the normalized series to be
+<script type="math/tex">( 1, -1, 1, -1 )</script></p>
+</div>
+
+<h2 id="decimal-scaling">Decimal Scaling</h2>
+
+<p>Basically shifting the data with some powers of 10.</p>
+
+<script type="math/tex; mode=display">a'_i = a_i/ 10^j</script>
+
+<p>choose $j$ so that the new values are not larger than 1.</p>
 
   </div>
 
-  <a class="u-url" href="/wiki/nodecrawler/manage-data-using-mongodb/" hidden></a>
+  <a class="u-url" href="/wiki/statistics/normalization-methods/" hidden></a>
 
 
 
@@ -405,56 +339,6 @@ superagent
 
 
 
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Introduction to Node Crawler Series" aria-current="page" href="/wiki/nodecrawler/node-crawler-introduction/">1</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
-
-
-
-
-
-
-
-
-
-    
-        <a class="pagination-previous" href="/wiki/nodecrawler/basic-crawler/" title="Basic Node Crawler">Previous</a>
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Basic Node Crawler" aria-current="page" href="/wiki/nodecrawler/basic-crawler/">2</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-      <strong><a class="post-link" href="/wiki/nodecrawler/basic-crawler/">Basic Node Crawler</a></strong>
-  
-</div>
- -->
-
-
-
 
 
 
@@ -462,31 +346,7 @@ superagent
     
     
     <li style="list-style:none;">
-      <a class="pagination-link is-current" aria-label="Manage Data Using MongoDB" aria-current="page" href="/wiki/nodecrawler/manage-data-using-mongodb/">3</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
-
-
-
-
-
-    
-    
-        <a class="pagination-next" href="/wiki/nodecrawler/restrictions/" title="Restrictions of Websites">Next</a>
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Restrictions of Websites" aria-current="page" href="/wiki/nodecrawler/restrictions/">4</a>
+      <a class="pagination-link " aria-label="Chi-square Correlation Test for Nominal Data" aria-current="page" href="/wiki/statistics/correlation-analysis/">1</a>
     </li>
 <!--
 <div class="columns">
@@ -510,7 +370,7 @@ superagent
     
     
     <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Optimization" aria-current="page" href="/wiki/nodecrawler/optimization/">5</a>
+      <a class="pagination-link " aria-label="Correlation Coefficient and Covariance for Numeric Data" aria-current="page" href="/wiki/statistics/correlation-coefficient/">2</a>
     </li>
 <!--
 <div class="columns">
@@ -524,6 +384,38 @@ superagent
   
 </div>
  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link is-current" aria-label="Normalization Methods for Numeric Data" aria-current="page" href="/wiki/statistics/normalization-methods/">4</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
 
 
 </ul>

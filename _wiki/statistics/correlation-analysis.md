@@ -12,7 +12,6 @@ tag:
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   title: ''
-notify: "This is not the most popular statistian's view"
 weight: 1
 ---
 

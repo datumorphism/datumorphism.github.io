@@ -1,6 +1,6 @@
 ---
-title: "Correlation Coefficient and Covariance for Numerical Data"
-excerpt: "Detecting correlations using correlations for numerical data"
+title: "Correlation Coefficient and Covariance for Numeric Data"
+excerpt: "Detecting correlations using correlations for numeric data"
 last_modified_at: 2018-11-18
 toc: true
 category:
@@ -12,7 +12,6 @@ tag:
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   title: ''
-notify: "This is not the most popular statistian's view"
 weight: 2
 ---
 
