@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Manage Data Using MongoDB | Datumorphism</title>
+<title>Correlation Coefficient and Covariance for Numerical Data | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Manage Data Using MongoDB" />
+<meta property="og:title" content="Correlation Coefficient and Covariance for Numerical Data" />
 <meta name="author" content="Datumorphism Collective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The study of the data as a means for information about the world" />
-<meta property="og:description" content="The study of the data as a means for information about the world" />
-<link rel="canonical" href="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
-<meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
+<meta name="description" content="Detecting correlations using correlations for numerical data" />
+<meta property="og:description" content="Detecting correlations using correlations for numerical data" />
+<link rel="canonical" href="http://localhost:4000/wiki/statistics/correlation-coefficient/" />
+<meta property="og:url" content="http://localhost:4000/wiki/statistics/correlation-coefficient/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-11-18T15:43:31-05:00" />
 <script type="application/ld+json">
-{"description":"The study of the data as a means for information about the world","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/","headline":"Manage Data Using MongoDB","dateModified":"2018-07-18T00:00:00-04:00","datePublished":"2018-11-18T15:43:31-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/"},"@context":"http://schema.org"}</script>
+{"description":"Detecting correlations using correlations for numerical data","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/statistics/correlation-coefficient/","headline":"Correlation Coefficient and Covariance for Numerical Data","dateModified":"2018-11-18T00:00:00-05:00","datePublished":"2018-11-18T15:43:31-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/statistics/correlation-coefficient/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -248,147 +248,146 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Manage Data Using MongoDB</h1>
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Correlation Coefficient and Covariance for Numerical Data</h1>
     <p class="post-meta has-text-centered">
       <time class="dt-published" datetime="2018-11-18T15:43:31-05:00" itemprop="datePublished">Nov 18, 2018
       </time>
        • <span style="font-style: regular;">{</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#node-crawler">⸢Node Crawler⸥</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#statistics">⸢Statistics⸥</a></span>
        
        }
       
       
        • <span style="font-style: regular;">[</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Node">#Node</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Statistics">#Statistics</a></span>
        
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Crawler">#Crawler</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Basics">#Basics</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Correlation">#Correlation</a></span>
        
        ]
       
       
-      <article class="message">
-        <div class="message-header">
-          <p>Source:</p>
-        </div>
-        <div class="message-body">
-          <ul>
-          
-            <li><a href="" style="text-decoration:none;">03-保存数据到数据库@ninthakeey</a></li>
-          
-          </ul>
-        </div>
-      </article>
-      
       
       <div class="notification is-primary">
-         The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism
+         This is not the most popular statistian's view
        </div>
       
     </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>In most cases, databases makes the management of data quite convenient. In this article, we would scrape data using the code we discussed before but write data into MongoDB.</p>
+    <ul id="markdown-toc">
+  <li><a href="#covariances" id="markdown-toc-covariances">Covariances</a>    <ul>
+      <li><a href="#review-of-standard-deviation" id="markdown-toc-review-of-standard-deviation">Review of Standard Deviation</a></li>
+      <li><a href="#generalize-standard-deviation-to-covariances" id="markdown-toc-generalize-standard-deviation-to-covariances">Generalize Standard Deviation to Covariances</a></li>
+    </ul>
+  </li>
+  <li><a href="#correlation-coefficient" id="markdown-toc-correlation-coefficient">Correlation Coefficient</a></li>
+</ul>
 
-<p>For installation of MongoDB, please refer to the <a href="https://docs.mongodb.com/manual/installation/">official documentation</a>.</p>
+<h2 id="covariances">Covariances</h2>
 
-<h2 id="the-code">The Code</h2>
-
-<p>To write data to MongoDB using Node.js, we choose the package <a href="https://github.com/mafintosh/mongojs#readme"><code class="highlighter-rouge">mongojs</code></a>, which provides almost exactly the standard MongoDB syntax.</p>
-
-<p>To install <code class="highlighter-rouge">mongojs</code>,</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm i mongojs --save
-</span></code></pre></div></div>
-
-<p>Here is a module that can write data to MongoDB. We create a file named <code class="highlighter-rouge">dao.js</code> and copy pase the following code into it.</p>
-
-<pre><code class="language-JavaScript">// use mongojs
-const mongojs = require('mongojs')
-// connect to the database 'simple_spider' in MongoDB and use collection 'test'
-const localdb = mongojs('simple_spider', ['test'])
-// a function that saves data to MongoDB
-const saveData = (data,cb) =&gt; {
-	localdb.test.save(data, (err, res)=&gt;{
-	 	cb &amp;&amp; cb(err, res)
-	})
-}
-// a function that prints out the data to console
-const printAllData = (cb) =&gt; {
-	localdb.test.find({},(err, docs)=&gt;{
-		console.log(docs)
-		cb &amp;&amp; cb(err, docs)
-	})
-}
-// close connection to MongoDB in case of memory leak
-const closeMongo = () =&gt; localdb.close()
-// expose the functions in this module to the program
-module.exports = {
-	saveData,printAllData,closeMongo
-}
-</code></pre>
-
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle"> () =&gt; </p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
-      <p>In Node.js, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a> is keystroke saver for function expressions. It comes without <code class="highlighter-rouge">this</code>, arguments, super, etc.</p>
-
-      <p>In the above code, the expression</p>
-      <pre><code class="language-JavaScript">const printAllData = (cb) =&gt; {
-  // ...
-}
-</code></pre>
-      <p>defines a function named <code class="highlighter-rouge">printAllData</code> with argument <code class="highlighter-rouge">cb</code> and does something as indicated inside the curly bracket.</p>
-    </div>
-</div>
+<div class="notes--info">
+  <p>Correlation coefficient is also known as Pearson’s product moment coefficient.</p>
 </div>
 
-<p>Three functions are provided in this module, <code class="highlighter-rouge">saveData</code>, <code class="highlighter-rouge">printAllData</code> and <code class="highlighter-rouge">closeMongo</code>. We will grab our previous code and call the functions from this module. We would like to modify the <code class="highlighter-rouge">index.js</code> file to make it look like the following.</p>
+<h3 id="review-of-standard-deviation">Review of Standard Deviation</h3>
 
-<pre><code class="language-JavaScript">const superagent = require('superagent')
-const fs = require('fs')
-const dao = require('./dao')
-superagent
-	.get('https://api.bilibili.com/x/web-interface/archive/stat')
-	.query({ aid:26763233 })
-	.then(res =&gt; {
-    // obtain the data to be saved
-		const data = res.body.data
-		dao.saveData(data, (err,res)=&gt;{
-			console.log('saved data')
-			// save data to MongoDB and close connection
-			dao.printAllData( () =&gt; dao.closeMongo() )
-		})
-	})
-	.catch(err =&gt; console.error(err))
-</code></pre>
+<p>For a series of data A, we have the standard deviations
+<script type="math/tex">\sigma_A = \sqrt{ \frac{ \sum (a_i - \bar A)^2 }{ n } },</script>
+where $n$ is the number of elements in series A. Now imagine we have two series
+$(a_i - \bar A)$ and $(a_j - \bar A)$. The geometric mean squared for $i=j$ is 
+<script type="math/tex">M_i^2 = (a_i - \bar A)^2</script>
+So standard deviation is in fact a measure of the mean of <strong>geometric mean of the deviation of each element</strong>.</p>
 
-<p>Run the code with the command</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">node index
-</span></code></pre></div></div>
-<p>and we obtaint he following output:</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">saved data
-[ { _id: 5b41d634f3df89032c834d5b,
-    aid: 26186448,
-    view: 619751,
-    danmaku: 12053,
-    reply: 3500,
-    favorite: 14961,
-    coin: 40699,
-    share: 1676,
-    like: 20751,
-    now_rank: 0,
-    his_rank: 1,
-    no_reprint: 1,
-    copyright: 1 } ]
-</span></code></pre></div></div>
-<p>With this print out, we would have already have out data stored in our MongoDB.</p>
+<h3 id="generalize-standard-deviation-to-covariances">Generalize Standard Deviation to Covariances</h3>
+
+<p>Similarly, for two series A and B of the same length, we could define a quantity to measure the geometric mean of the deviation of the two series correspondingly
+<script type="math/tex">\sigma_{A,B}^2 = \frac{ \sum (a_i - \bar A) (b_i - \bar B) }{ n },</script>
+which is named the covariance of A and B, i.e., $\text{Cov} ({A,B})$.</p>
+
+<p>Using some trivial techniques, we find that
+<script type="math/tex">Cov{A,B} = E( A,B ) - \bar A \bar B.</script></p>
+
+<div class="notes--info">
+
+  <p>At a first glance, the square in the definition seems to be only for notation purpose at this point.</p>
+
+  <p>Meanwhile, using this idea of the mean of geometric mean, we could easily generalize it to the covariance of three series,
+<script type="math/tex">\sigma_{A,B,C}^3 = \frac{ \sum (a_i - \bar A) (b_i - \bar B)(c_i - \bar C) }{ n },</script>
+or even arbitrary N series,
+<script type="math/tex">\sigma_{A_1, A_2, ..., A_N }^N = \frac{ \sum_{i=1}^{n} \text{ geometric mean of the ith elements to the Nth power }  }{ n }  = \frac{ \sum (a_{1,i} - \bar A_1) \cdots (a_{N,i} - \bar A_{N})}{ n },</script>
+which should be called the covariance of all the N series, $\text{Cov} ({A_1, A_2,\cdots, A_N })$.</p>
+</div>
+
+<p>Covariance measures the correlation of these two series. To see this, we assume that we have two series A = B, which leads to $\sigma_{A,B} = \sigma_{A}$. Suppose we have two series at a completely opposite phase,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>index</th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>-1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>we have $\sigma_{A,B} = -1 $. The negative sign tells us that our series are anti-correlated.</p>
+
+<h2 id="correlation-coefficient">Correlation Coefficient</h2>
+
+<p>However, we would find that the value of the covariance depends on the values of the standard deviation of each series, which makes it hard to determine how strong the correlation is.</p>
+
+<p>The obvious normalization factor is the multiplication of covariance of the two series, $\sigma_A$ and $\sigma_B$, i.e.,
+<script type="math/tex">r_{A,B} = \frac{ \text{Cov}(A,B)  } { \sigma_{A} \sigma_{B} } = \frac{ \sum_i (a_i - \bar A) (b_i - \bar B) }{ n\sigma_{A} \sigma_{B} }</script></p>
+
+<div class="notes--info">
+  <p>The geometric mean view of it is
+<script type="math/tex">r_{A,B} = \frac{ \sum_{i} ( \text{Sign}(a_i - \bar A) M_{i}^a ) ( \text{Sign}(b_i - \bar B) M_i^b ) }{ \sum_i { M_i^a } \sum_j { M_j^b } }</script>
+which is some kind of geometric mean of the geometric mean of each series.</p>
+</div>
 
   </div>
 
-  <a class="u-url" href="/wiki/nodecrawler/manage-data-using-mongodb/" hidden></a>
+  <a class="u-url" href="/wiki/statistics/correlation-coefficient/" hidden></a>
 
 
 
@@ -405,10 +404,42 @@ superagent
 
 
 
+
+
+
+
+    
+        <a class="pagination-previous" href="/wiki/statistics/correlation-analysis/" title="Chi-square Correlation Test for Nominal Data">Previous</a>
     
     
     <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Introduction to Node Crawler Series" aria-current="page" href="/wiki/nodecrawler/node-crawler-introduction/">1</a>
+      <a class="pagination-link " aria-label="Chi-square Correlation Test for Nominal Data" aria-current="page" href="/wiki/statistics/correlation-analysis/">1</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+      <strong><a class="post-link" href="/wiki/statistics/correlation-analysis/">Chi-square Correlation Test for Nominal Data</a></strong>
+  
+</div>
+ -->
+
+
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link is-current" aria-label="Correlation Coefficient and Covariance for Numerical Data" aria-current="page" href="/wiki/statistics/correlation-coefficient/">2</a>
     </li>
 <!--
 <div class="columns">
@@ -434,94 +465,6 @@ superagent
 
 
 
-
-    
-        <a class="pagination-previous" href="/wiki/nodecrawler/basic-crawler/" title="Basic Node Crawler">Previous</a>
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Basic Node Crawler" aria-current="page" href="/wiki/nodecrawler/basic-crawler/">2</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-      <strong><a class="post-link" href="/wiki/nodecrawler/basic-crawler/">Basic Node Crawler</a></strong>
-  
-</div>
- -->
-
-
-
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link is-current" aria-label="Manage Data Using MongoDB" aria-current="page" href="/wiki/nodecrawler/manage-data-using-mongodb/">3</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
-
-
-
-
-
-    
-    
-        <a class="pagination-next" href="/wiki/nodecrawler/restrictions/" title="Restrictions of Websites">Next</a>
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Restrictions of Websites" aria-current="page" href="/wiki/nodecrawler/restrictions/">4</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
-
-
-
-
-
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Optimization" aria-current="page" href="/wiki/nodecrawler/optimization/">5</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
 
 
 </ul>

@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Manage Data Using MongoDB | Datumorphism</title>
+<title>Chi-square Correlation Test for Nominal Data | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Manage Data Using MongoDB" />
+<meta property="og:title" content="Chi-square Correlation Test for Nominal Data" />
 <meta name="author" content="Datumorphism Collective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The study of the data as a means for information about the world" />
-<meta property="og:description" content="The study of the data as a means for information about the world" />
-<link rel="canonical" href="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
-<meta property="og:url" content="http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/" />
+<meta name="description" content="Detecting correlations using Pearson’s chi square correlation test" />
+<meta property="og:description" content="Detecting correlations using Pearson’s chi square correlation test" />
+<link rel="canonical" href="http://localhost:4000/wiki/statistics/correlation-analysis/" />
+<meta property="og:url" content="http://localhost:4000/wiki/statistics/correlation-analysis/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-11-18T15:43:31-05:00" />
 <script type="application/ld+json">
-{"description":"The study of the data as a means for information about the world","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/","headline":"Manage Data Using MongoDB","dateModified":"2018-07-18T00:00:00-04:00","datePublished":"2018-11-18T15:43:31-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/nodecrawler/manage-data-using-mongodb/"},"@context":"http://schema.org"}</script>
+{"description":"Detecting correlations using Pearson’s chi square correlation test","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/statistics/correlation-analysis/","headline":"Chi-square Correlation Test for Nominal Data","dateModified":"2018-11-18T00:00:00-05:00","datePublished":"2018-11-18T15:43:31-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/statistics/correlation-analysis/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -248,147 +248,288 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Manage Data Using MongoDB</h1>
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Chi-square Correlation Test for Nominal Data</h1>
     <p class="post-meta has-text-centered">
       <time class="dt-published" datetime="2018-11-18T15:43:31-05:00" itemprop="datePublished">Nov 18, 2018
       </time>
        • <span style="font-style: regular;">{</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#node-crawler">⸢Node Crawler⸥</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#statistics">⸢Statistics⸥</a></span>
        
        }
       
       
        • <span style="font-style: regular;">[</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Node">#Node</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Statistics">#Statistics</a></span>
        
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Crawler">#Crawler</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Basics">#Basics</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Correlation">#Correlation</a></span>
        
        ]
       
       
-      <article class="message">
-        <div class="message-header">
-          <p>Source:</p>
-        </div>
-        <div class="message-body">
-          <ul>
-          
-            <li><a href="" style="text-decoration:none;">03-保存数据到数据库@ninthakeey</a></li>
-          
-          </ul>
-        </div>
-      </article>
-      
       
       <div class="notification is-primary">
-         The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism
+         This is not the most popular statistian's view
        </div>
       
     </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>In most cases, databases makes the management of data quite convenient. In this article, we would scrape data using the code we discussed before but write data into MongoDB.</p>
+    <ul id="markdown-toc">
+  <li><a href="#steps" id="markdown-toc-steps">Steps</a></li>
+  <li><a href="#define-the-series" id="markdown-toc-define-the-series">Define the Series</a></li>
+  <li><a href="#count-co-ocurrences" id="markdown-toc-count-co-ocurrences">Count Co-ocurrences</a></li>
+  <li><a href="#how-to-use-the-number-chi-square" id="markdown-toc-how-to-use-the-number-chi-square">How to Use the Number Chi-square</a></li>
+</ul>
 
-<p>For installation of MongoDB, please refer to the <a href="https://docs.mongodb.com/manual/installation/">official documentation</a>.</p>
+<p>In this article, we will discuss the chi-square correlation test for detecting correlations between two series.</p>
 
-<h2 id="the-code">The Code</h2>
+<h2 id="steps">Steps</h2>
 
-<p>To write data to MongoDB using Node.js, we choose the package <a href="https://github.com/mafintosh/mongojs#readme"><code class="highlighter-rouge">mongojs</code></a>, which provides almost exactly the standard MongoDB syntax.</p>
+<ol>
+  <li>Find out all the possible values of the two nominal series A and B;</li>
+  <li>Count the co-occurrences of the combinations (A, B);</li>
+  <li>Calculate the expected co-occurrences of the combinations (A, B);</li>
+  <li>Calculate chi-square;</li>
+  <li>Determine whether the hypothesis can be rejected.</li>
+</ol>
 
-<p>To install <code class="highlighter-rouge">mongojs</code>,</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm i mongojs --save
-</span></code></pre></div></div>
+<h2 id="define-the-series">Define the Series</h2>
 
-<p>Here is a module that can write data to MongoDB. We create a file named <code class="highlighter-rouge">dao.js</code> and copy pase the following code into it.</p>
+<p>Suppose we are analyzing two series A and B. Series A can take values $a_1$ and $a_2$, while series B can take values $b_1$ , $b_2$ and $b_3$.</p>
 
-<pre><code class="language-JavaScript">// use mongojs
-const mongojs = require('mongojs')
-// connect to the database 'simple_spider' in MongoDB and use collection 'test'
-const localdb = mongojs('simple_spider', ['test'])
-// a function that saves data to MongoDB
-const saveData = (data,cb) =&gt; {
-	localdb.test.save(data, (err, res)=&gt;{
-	 	cb &amp;&amp; cb(err, res)
-	})
-}
-// a function that prints out the data to console
-const printAllData = (cb) =&gt; {
-	localdb.test.find({},(err, docs)=&gt;{
-		console.log(docs)
-		cb &amp;&amp; cb(err, docs)
-	})
-}
-// close connection to MongoDB in case of memory leak
-const closeMongo = () =&gt; localdb.close()
-// expose the functions in this module to the program
-module.exports = {
-	saveData,printAllData,closeMongo
-}
-</code></pre>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+A &:= \{a1, a2\} \\
+B &:= \{b1,b2,b3\}
+\end{align} %]]></script>
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle"> () =&gt; </p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
-      <p>In Node.js, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a> is keystroke saver for function expressions. It comes without <code class="highlighter-rouge">this</code>, arguments, super, etc.</p>
+<p>As an example, we will use the following A and B series for our calculations in this article.</p>
 
-      <p>In the above code, the expression</p>
-      <pre><code class="language-JavaScript">const printAllData = (cb) =&gt; {
-  // ...
-}
-</code></pre>
-      <p>defines a function named <code class="highlighter-rouge">printAllData</code> with argument <code class="highlighter-rouge">cb</code> and does something as indicated inside the curly bracket.</p>
-    </div>
+<table>
+  <thead>
+    <tr>
+      <th>index</th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>a1</td>
+      <td>b2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>a1</td>
+      <td>b2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>a1</td>
+      <td>b1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>a2</td>
+      <td>b1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>a2</td>
+      <td>b3</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>a2</td>
+      <td>b2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>a1</td>
+      <td>b2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>a2</td>
+      <td>b2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="count-co-ocurrences">Count Co-ocurrences</h2>
+
+<p>To analyze correlations between the two series, we need to look at whether the values of series A and those of series B would occur together. For example, we would like to know the possibility of values for B if we have $a_1$ occurred.</p>
+
+<div class="notes--info">
+  <p>One of the extreme examples is that A and B are exactly the same. In this case, we would know that the value for B is always the same as A for each row. Then we would know that all the possible combinations of (A, B) are</p>
+  <ol>
+    <li>(a1, a1)</li>
+    <li>(a2, a2)</li>
+  </ol>
+
+  <p>We could construct the occurrence table.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th> </th>
+        <th>a1</th>
+        <th>a2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>a1</td>
+        <td>number of occurrences</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>a2</td>
+        <td>0</td>
+        <td>number of occurrences</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
+
+<p>Now we construct a contigency table to denote the ocurrences of the values,  (A, B).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>a1</th>
+      <th>a2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>b1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>b2</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>b3</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where the cells are filled with the number of occurrences of the corresponding combinations. For example, the combination (a1, b1) occurred once, thus 1 in the first row first column.</p>
+
+<p>This table records the <strong>observed frequencies</strong>, which we denote as table O and each cell is denoted as $o_{ij}$.</p>
+
+<div class="notes--info">
+  <p>This table tells us about the possible correlations already. Imagine we have two columns that are exactly the same, we would have a table that have large number of occurences on the diagonal elements.</p>
 </div>
 
-<p>Three functions are provided in this module, <code class="highlighter-rouge">saveData</code>, <code class="highlighter-rouge">printAllData</code> and <code class="highlighter-rouge">closeMongo</code>. We will grab our previous code and call the functions from this module. We would like to modify the <code class="highlighter-rouge">index.js</code> file to make it look like the following.</p>
+<div class="notes--warning">
+  <p>However, those numbers in the table depends on the number of rows that we have in our original table. To find the actual correlation, we need to normalize it. We could simply divided everything by the total number of rows in the original table. But Pearson had a better idea.</p>
+</div>
 
-<pre><code class="language-JavaScript">const superagent = require('superagent')
-const fs = require('fs')
-const dao = require('./dao')
-superagent
-	.get('https://api.bilibili.com/x/web-interface/archive/stat')
-	.query({ aid:26763233 })
-	.then(res =&gt; {
-    // obtain the data to be saved
-		const data = res.body.data
-		dao.saveData(data, (err,res)=&gt;{
-			console.log('saved data')
-			// save data to MongoDB and close connection
-			dao.printAllData( () =&gt; dao.closeMongo() )
-		})
-	})
-	.catch(err =&gt; console.error(err))
-</code></pre>
+<p>Pearson’s chi-square correlation is a smart idea.</p>
 
-<p>Run the code with the command</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">node index
-</span></code></pre></div></div>
-<p>and we obtaint he following output:</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">saved data
-[ { _id: 5b41d634f3df89032c834d5b,
-    aid: 26186448,
-    view: 619751,
-    danmaku: 12053,
-    reply: 3500,
-    favorite: 14961,
-    coin: 40699,
-    share: 1676,
-    like: 20751,
-    now_rank: 0,
-    his_rank: 1,
-    no_reprint: 1,
-    copyright: 1 } ]
-</span></code></pre></div></div>
-<p>With this print out, we would have already have out data stored in our MongoDB.</p>
+<p>First of all, we define an expectation table E. Each element of E is calculated as</p>
+
+<script type="math/tex; mode=display">e_{ij} = \frac{ \text{number of} a_i * \text{ number of} b_j }{ \text{ total number of rows in original table } }</script>
+
+<div class="notes--info">
+  <p>Basically, we have the total number of possible occurrences divided by the total number of rows. Suppose we have A and B exactly the same, and they all have the same values, a1.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>index</th>
+        <th>A</th>
+        <th>B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>a1</td>
+        <td>a1</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Then we expect $e_11 = n$, where $n=8$ is the number of rows.</p>
+</div>
+
+<p>Now if we compare the original table with this one,</p>
+
+<script type="math/tex; mode=display">o_{ij} - e_{ij}</script>
+
+<p>we get the deviation from the expected table. With a few little twitches, we would define</p>
+
+<script type="math/tex; mode=display">\chi^2 = \sum_{i,j} \frac{ (o_{ij} - e_{ij})^2 } { e_{ij} }</script>
+
+<div class="notes--info">
+  <p>If A and B are the same and each possible values occurred m times, then we would have</p>
+
+  <script type="math/tex; mode=display">o_{ij} = e_{ij} = \delta_{ij} * m.</script>
+
+  <p>Then we get 
+<script type="math/tex">\chi^2 = 0</script></p>
+
+  <p>Then we say this chi-square analysis doesn’t reject our hypothesis that these two columns are correlated.</p>
+</div>
+
+<h2 id="how-to-use-the-number-chi-square">How to Use the Number Chi-square</h2>
+
+<p>The final question is how to use the result. We usually have a threshold $\chi_0^2$. Whenever our calculated value is larger than this one, we decide that our analysis reject the hypothesis that the two columns are correlated.
+This value $\chi_0^2$ can be found in the textbooks.</p>
+
 
   </div>
 
-  <a class="u-url" href="/wiki/nodecrawler/manage-data-using-mongodb/" hidden></a>
+  <a class="u-url" href="/wiki/statistics/correlation-analysis/" hidden></a>
 
 
 
@@ -405,10 +546,40 @@ superagent
 
 
 
+
+
+
+
     
     
     <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Introduction to Node Crawler Series" aria-current="page" href="/wiki/nodecrawler/node-crawler-introduction/">1</a>
+      <a class="pagination-link is-current" aria-label="Chi-square Correlation Test for Nominal Data" aria-current="page" href="/wiki/statistics/correlation-analysis/">1</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+
+
+
+
+    
+    
+        <a class="pagination-next" href="/wiki/statistics/correlation-coefficient/" title="Correlation Coefficient and Covariance for Numerical Data">Next</a>
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Correlation Coefficient and Covariance for Numerical Data" aria-current="page" href="/wiki/statistics/correlation-coefficient/">2</a>
     </li>
 <!--
 <div class="columns">
@@ -434,94 +605,6 @@ superagent
 
 
 
-
-    
-        <a class="pagination-previous" href="/wiki/nodecrawler/basic-crawler/" title="Basic Node Crawler">Previous</a>
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Basic Node Crawler" aria-current="page" href="/wiki/nodecrawler/basic-crawler/">2</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-      <strong><a class="post-link" href="/wiki/nodecrawler/basic-crawler/">Basic Node Crawler</a></strong>
-  
-</div>
- -->
-
-
-
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link is-current" aria-label="Manage Data Using MongoDB" aria-current="page" href="/wiki/nodecrawler/manage-data-using-mongodb/">3</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
-
-
-
-
-
-    
-    
-        <a class="pagination-next" href="/wiki/nodecrawler/restrictions/" title="Restrictions of Websites">Next</a>
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Restrictions of Websites" aria-current="page" href="/wiki/nodecrawler/restrictions/">4</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
-
-
-
-
-
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Optimization" aria-current="page" href="/wiki/nodecrawler/optimization/">5</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-</div>
- -->
 
 
 </ul>
