@@ -7,12 +7,12 @@ category:
 - 'Dynamical System'
 tag:
 - 'Dynamical System'
-- 'Basics'
+- 'ODE'
 - 'Finite Difference Method'
 references:
 - name: ""
   title: ''
-notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers.'
+notify: 'Difference equations are fun!'
 weight: 1
 ---
 
