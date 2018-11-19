@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Basics of SQL | Datumorphism</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Basics of SQL" />
+<meta name="author" content="Datumorphism Collective" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Essential knowledge of programming" />
+<meta property="og:description" content="Essential knowledge of programming" />
+<link rel="canonical" href="http://localhost:4000/wiki/computation/basics-of-sql/" />
+<meta property="og:url" content="http://localhost:4000/wiki/computation/basics-of-sql/" />
+<meta property="og:site_name" content="Datumorphism" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-19T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Essential knowledge of programming","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/computation/basics-of-sql/","headline":"Basics of SQL","dateModified":"2018-11-19T00:00:00-05:00","datePublished":"2018-11-19T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/computation/basics-of-sql/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/bulma/bulma.css">
+  <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/code/base16-solarized.light.css">
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
+      messageStyle: "none"
+   });
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      },
+      equationNumbers: { autoNumber: "AMS" }
+    }
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Datumorphism" /></head>
+<body><header class="site-header" role="banner"><section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <!-- <div class="hero-head"> -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" rel="author" href="/">Datumorphism</a>
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+
+              <a class="navbar-item has-text-weight-bold" href="/"><i class="fas fa-home"></i></a>
+
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/til/" >TIL</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/wiki/" >Wiki</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/reading/" >Reading</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/awesome/" >Awesome</a>
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="http://localhost:4000/blog/" >Blog</a>
+              
+
+              
+
+               
+              
+              
+              
+              
+              
+              
+              
+              <a class="navbar-item has-text-weight-bold" href="/about/">About</a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+  </script>
+
+</header>
+<main class="main--content" aria-label="Content">
+    <div class="columns">
+      <div class="column is-12">
+        <div class="content is-medium">
+          <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Basics of SQL</h1>
+    <p class="post-meta has-text-centered">
+      <time class="dt-published" datetime="2018-11-19T00:00:00-05:00" itemprop="datePublished">Nov 19, 2018
+      </time>
+       • <span style="font-style: regular;">{</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#computation">⸢Computation⸥</a></span>
+       
+       }
+      
+      
+       • <span style="font-style: regular;">[</span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Programming">#Programming</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Basics">#Basics</a></span>
+       
+       ]
+      
+      
+      
+      <div class="notification is-primary">
+         I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers.
+       </div>
+      
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <div class="notes--info">
+  <p>Adding a new field to data:</p>
+
+  <ol>
+    <li>Relational: requires a new column</li>
+    <li>Non-Relational: just add the field to one single document, thus can be easily decentralized.</li>
+  </ol>
+</div>
+
+<h2 id="basics-and-background">Basics and Background</h2>
+
+<ol>
+  <li>SQL: Structured Query Language</li>
+  <li>
+    <p>Relational Database:</p>
+
+    <ol>
+      <li>usually in tables</li>
+      <li>rows are called records</li>
+      <li>columns are certain types of data. Data type of rows are specified:
+        <ol>
+          <li>INTEGER</li>
+          <li>TEXT</li>
+          <li>DATE</li>
+          <li>REAL, real numbers</li>
+          <li>NULL</li>
+          <li>…</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>RDBMS: Relational Database Management System, most RDBMS use SQL as the query language. SQLite is one of the RDBMS.
+    <ol>
+      <li>SQLite: open source and minimal</li>
+      <li>MySQL: powerful and popular, also open source, controlled by Oracle, not really scalable.</li>
+      <li>PostgreSQL: open source, even slower than MySQL.</li>
+      <li>OracleDB: not open source</li>
+      <li>SQL Server: from Microsoft, not open source, and only on windows.</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="sql">SQL</h2>
+
+<div class="notes--warning">
+  <p>Semicolon in SQL is a statement terminator. Just use it.</p>
+</div>
+
+<div class="notes--info">
+  <p><strong>Capitalization Strategy</strong></p>
+
+  <p>For readablilty</p>
+
+  <ol>
+    <li>Capitalize clauses</li>
+    <li>Capitalize table names etc</li>
+  </ol>
+
+  <p>On stackoverflow: <a href="https://stackoverflow.com/questions/608196/why-should-i-capitalize-my-sql-keywords">stackoverflow</a></p>
+</div>
+
+<h2 id="statements-for-manipulation">Statements for Manipulation</h2>
+
+<ol>
+  <li>
+    <p>Create table</p>
+
+    <pre><code class="language-SQL">
+   CREATE TABLE table_name (
+       column_1 data_type,
+       column_2 data_type,
+       column_3 data_type
+     );
+</code></pre>
+
+    <p>Constraints can be included when creating tables. I am using the example from <a href="https://www.codecademy.com/courses/learn-sql-manipulation/lessons/manipulation/exercises/delete">CodeAcademy</a>.</p>
+
+    <pre><code class="language-SQL">
+   CREATE TABLE awards (
+   --id should be integer, and is the primary key
+      id INTEGER PRIMARY KEY,
+   --recipient should be text and can not be null
+      recipient TEXT NOT NULL,
+   --default values for a column
+      award_name TEXT DEFAULT "Grammy"
+   );
+</code></pre>
+
+    <p>As mentioned in the basics section, primary keys should be unique to identify the specific row.</p>
+  </li>
+  <li>
+    <p>Insert new row</p>
+
+    <pre><code class="language-SQL">   INSERT INTO table_name (column_1, column_2, column_3)
+   VALUES (some_value_1, some_value_2, some_value_3);
+</code></pre>
+  </li>
+  <li>
+    <p>Update some values</p>
+
+    <pre><code class="language-SQL">   -- Specify the table
+   UPDATE table_name
+   -- choose column to be updated
+   SET column_1 = some_other_value_1
+   -- specify row location
+   WHERE column_2 = some_specific_value_to_locate_the_row;
+</code></pre>
+  </li>
+  <li>
+    <p>Add new columns</p>
+
+    <pre><code class="language-SQL">   -- speficy table
+   ALTER table_name
+   -- add column and specify data type, here I use TEXT
+   ADD COLUMN column_4 TEXT
+</code></pre>
+  </li>
+  <li>
+    <p>Delete rows</p>
+
+    <pre><code class="language-SQL">   DELETE FROM celebs
+   -- I use column_4 as an example
+   -- Delete every row if column_4 has NULL values
+   WHERE column_4 IS NULL;
+</code></pre>
+  </li>
+</ol>
+
+<h2 id="statements-for-queries">Statements for Queries</h2>
+
+<ol>
+  <li>
+    <p>Select from table; select returns <em>result set</em> which is a new table.</p>
+
+    <pre><code class="language-SQL">   -- Select out everything from table
+   SELECT * FROM table_name;
+   -- Select out the values of a specific column
+   SELECT column_1 FROM table_name;
+</code></pre>
+  </li>
+  <li>
+    <p>Select specific columns</p>
+
+    <pre><code class="language-SQL">   SELECT column_1, column_2
+   FROM table_name;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">AS</code> keyword: allows you to select the column and return it as the specified new name of the column; the database is NOT modified.</p>
+
+    <pre><code class="language-SQL">   SELECT column_1 AS 'A NEW NAME'
+   FROM table_name;
+</code></pre>
+  </li>
+  <li>
+    <p>Select and show only the distinct values of the column</p>
+
+    <pre><code class="language-SQL">   SELECT DISTINCT column_1
+   FROM table_name;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">WHERE</code> key: using operators such as <code class="highlighter-rouge">=, !=, &gt;, &lt;, &gt;=, &lt;=</code> to filter results</p>
+
+    <pre><code class="language-SQL">   SELECT * FROM table_name
+   WHERE column_1 = 0;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">LIKE</code> key: patern specified like <code class="highlighter-rouge">AA_B</code> where <code class="highlighter-rouge">_</code> is for a single character.</p>
+
+    <pre><code class="language-SQL">   SELECT * FROM table_name
+   WHERE column_1 LIKE `AA_B`
+</code></pre>
+
+    <p>Wildcards: <code class="highlighter-rouge">_</code>, <code class="highlighter-rouge">%</code> for 0 or more characters.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">BETWEEN</code>, <code class="highlighter-rouge">AND</code>, <code class="highlighter-rouge">OR</code>:</p>
+
+    <pre><code class="language-SQL">   SELECT *
+   FROM movies
+   WHERE name BETWEEN 'D%' AND 'G%';
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">SORT BY</code>: Can be either <code class="highlighter-rouge">DESC</code> or <code class="highlighter-rouge">ASC</code> and goes after where</p>
+
+    <pre><code class="language-SQL">   SELECT * FROM movies
+   WHERE year &gt; 2014
+   ORDER BY name DESC;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">LIMIT</code></p>
+
+    <pre><code class="language-SQL">   SELECT *
+   FROM movies
+   ORDER BY imdb_rating DESC
+   LIMIT 3;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">CASE</code>:</p>
+
+    <pre><code class="language-SQL">   SELECT name,
+    CASE
+      WHEN genre = 'romance' THEN 'fun'
+      WHEN genre = 'comedy' THEN 'fun'
+      ELSE 'serious'
+    END
+   FROM movies;
+</code></pre>
+  </li>
+</ol>
+
+<h2 id="aggregate">Aggregate</h2>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">COUNT</code>:</p>
+
+    <pre><code class="language-SQL">   SELECT COUNT(*)
+   FROM tabe_name;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">SUM</code>:</p>
+
+    <pre><code class="language-SQL">   SELECT SUM(column_1)
+   FROM table_name;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">MAX</code> and <code class="highlighter-rouge">MIN</code>:</p>
+
+    <pre><code class="language-SQL">   SELECT MAX(column_1)
+   FROM table_name;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">AVG</code>: average</p>
+
+    <pre><code class="language-SQL">   SELECT AVG(column_1)
+   FROM table_name;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">ROUND</code>: round to specified decimals</p>
+
+    <pre><code class="language-SQL">   --round the price to integers
+   SELECT name, ROUND(price,0)
+   FROM fake_apps;
+
+   --round the price to integers
+   --even with other keys as arguments
+   SELECT name, ROUND(AVG(price),0)
+   FROM fake_apps;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">GROUP BY</code>: group by column values</p>
+
+    <pre><code class="language-SQL">   SELECT price, COUNT(*)
+   FROM fake_apps
+   WHERE downloads &gt; 20000
+   GROUP BY price;
+</code></pre>
+
+    <p>or</p>
+
+    <pre><code class="language-SQL">   SELECT category, SUM(downloads)
+   FROM fake_apps
+   GROUP BY category;
+</code></pre>
+
+    <p>References can be used in <code class="highlighter-rouge">GROUP BY</code></p>
+
+    <pre><code class="language-SQL">   SELECT category, SUM(downloads)
+   FROM fake_apps
+   GROUP BY 1;
+   --1 here is identical to category
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">HAVING</code>: The problem with <code class="highlighter-rouge">WHERE</code> is that it goes before <code class="highlighter-rouge">GROUP BY</code>. What if we need to filter the groups?</p>
+
+    <pre><code class="language-SQL">   SELECT price, ROUND(AVG(downloads))
+   FROM fake_apps
+   GROUP BY price
+   HAVING COUNT(price) &gt; 9;
+</code></pre>
+  </li>
+</ol>
+
+<h2 id="multiple-tables">Multiple Tables</h2>
+
+<p>The <strong>normalization</strong> is explained in <a href="../basics-of-database/#normalization">DB Normalization</a>.</p>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">JOIN</code>: Join tables with specified column</p>
+
+    <pre><code class="language-SQL">   SELECT *
+   FROM orders
+   JOIN subscriptions
+   ON orders.subscription_id = subscriptions.subscription_id
+   WHERE description = 'Fashion Magazine';
+</code></pre>
+  </li>
+  <li>
+    <p>Inner Join: only join the rows that have common values on the specified join columns.</p>
+
+    <pre><code class="language-SQL">   SELECT COUNT(*)
+   FROM newspaper;
+   --Output 60
+
+   SELECT COUNT(*)
+   FROM online;
+   --Output 65
+
+   SELECT COUNT(*)
+   FROM newspaper
+   JOIN online
+   ON online.id = newspaper.id;
+   --Output 50 &lt;= 60 or 65
+</code></pre>
+  </li>
+  <li>
+    <p>Left Join: simply plug all the right table onto left tables, where the values of the specified column match. The number of rows will be the number of rows for the left table.</p>
+
+    <pre><code class="language-SQL">   SELECT *
+   FROM newspaper
+   LEFT JOIN online
+   ON newspaper.id=online.id
+   WHERE online.id IS NULL;
+</code></pre>
+  </li>
+  <li>
+    <p>Cross join: combine all the information</p>
+
+    <pre><code class="language-SQL">   SELECT month,
+   COUNT(*) as subscribers
+   FROM months
+   CROSS JOIN newspaper
+   WHERE months.month &gt; newspaper.start_month AND months.month &lt; newspaper.end_month
+   GROUP BY months.month;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">UNION</code>: stack tables</p>
+
+    <pre><code class="language-SQL">   SELECT *
+   FROM newspaper
+   UNION
+   SELECT *
+   FROM online;
+</code></pre>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">WITH</code>: create a result with alias</p>
+  </li>
+</ol>
+
+<h2 id="references-and-notes">References and Notes</h2>
+
+<ol>
+  <li><a href="https://www.codecademy.com/articles/what-is-rdbms-sql">What is a Relational Database Management System (RDBMS)?</a></li>
+  <li><a href="https://www.codecademy.com/articles/sql-commands">List of SQL commands</a></li>
+</ol>
+
+  </div>
+
+  <a class="u-url" href="/wiki/computation/basics-of-sql/" hidden></a>
+
+
+
+
+
+<div class="is-clearfix"></div>
+
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    
+    
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basics of Computation" aria-current="page" href="/wiki/computation/basics-of-computation/">1</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basics of Programming" aria-current="page" href="/wiki/computation/basics-of-programming/">2</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basics of Network" aria-current="page" href="/wiki/computation/basics-of-network/">3</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+    
+        <a class="pagination-previous" href="/wiki/computation/basics-of-database/" title="Basics of Database">Previous</a>
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link " aria-label="Basics of Database" aria-current="page" href="/wiki/computation/basics-of-database/">4</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+      <strong><a class="post-link" href="/wiki/computation/basics-of-database/">Basics of Database</a></strong>
+  
+</div>
+ -->
+
+
+
+
+
+
+
+    
+    
+    <li style="list-style:none;">
+      <a class="pagination-link is-current" aria-label="Basics of SQL" aria-current="page" href="/wiki/computation/basics-of-sql/">5</a>
+    </li>
+<!--
+<div class="columns">
+
+<div class="column">
+
+</div>
+
+
+<div class="column">
+  
+</div>
+ -->
+
+
+</ul>
+</nav>
+
+
+</article>
+
+        </div>
+      </div>
+    </div>
+    </main><footer class="footer">
+  <data class="u-url" href="/"></data>
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Datumorphism</strong> by <a>Datumorphism Collective</a>.
+       <span class="icon">
+         <a href="https://github.com/datumorphism"><i class="fab fa-github"></i></a>
+       </span>
+       <span class="icon">
+      <a href="/feed.xml"><i class="fas fa-rss"></i></a>
+       </span>
+      </p>
+
+    </div>
+  </div>
+</footer>
+<!-- <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="/assets/js/home-chart.js"></script> -->
+
+<script src="/assets/js/collapse.js"></script>
+
+</body>
+
+</html>

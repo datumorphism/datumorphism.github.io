@@ -132,7 +132,7 @@ pre {
     -moz-osx-font-smoothing:grayscale
 }
 .notes--info:before {
-    content:"\f05a\A0\A0\A0";
+    content:"INFO\A0\A0\A0";
     padding-bottom: 1em;
     opacity: 0.3;
 }
@@ -178,4 +178,40 @@ pre {
 .card {
   margin-top:1em;
   margin-bottom:1em;
+}
+
+#markdown-toc
+{
+   border-style: dashed;
+    border-width: thin;
+    border-color: #9C9C9C;
+    padding: 1em 1em 1em 2em;
+    white-space: nowrap;
+    display: inline-block;
+    float: right;
+    max-width: 45%;
+    word-wrap: break-word;
+    overflow: auto;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+#markdown-toc>ul,>ol,>dl {
+    margin-bottom: 0 !important;
+}
+
+#markdown-toc::-webkit-scrollbar {
+    height: 2px;
+}
+
+#markdown-toc::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#markdown-toc::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: rgba(170, 51, 17, 0.5);
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
 }
