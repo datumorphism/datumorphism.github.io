@@ -5,6 +5,7 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/bulma/bulma.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/bulma/bulma-divider.min.css" | relative_url }}">
   <link rel="stylesheet" href="/assets/bulmawatch/united/bulmaswatch.min.css">
   <link rel="stylesheet" href="{{ "/assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/code/base16-solarized.light.css" | relative_url }}">
@@ -28,6 +29,14 @@
   <meta name="msapplication-TileImage" content="{{site.baseurl}}/assets/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+
+
+  {% if include.extra == "plotly" %}
+  <script src="{{ "/assets/js/plotly-latest.min.js" | relative_url }}">
+  </script>
+  {% endif %}
+
+  
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },

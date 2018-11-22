@@ -11,7 +11,7 @@ tag:
 - 'Correlation'
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
-  title: ''
+  link: ''
 weight: 2
 ---
 

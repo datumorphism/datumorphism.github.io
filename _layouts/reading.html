@@ -33,6 +33,23 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="is-divider" data-content="END"></div>
+
+  {% if page.references %}
+      <article class="message">
+        <div class="message-header">
+          <p>References:</p>
+        </div>
+        <div class="message-body">
+          <ul>
+          {% for ref in page.references %}
+            <li><a href="{{ ref.link }}" style="text-decoration:none;">{{ ref.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      </article>
+  {% endif %}
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
 {% include pagination.html %}

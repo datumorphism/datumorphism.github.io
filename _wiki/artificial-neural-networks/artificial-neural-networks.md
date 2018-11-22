@@ -11,7 +11,7 @@ tag:
 - 'Basics'
 references:
 - name: ""
-  title: ''
+  link: ''
 notify: 'Machine Learning!'
 weight: 1
 ---

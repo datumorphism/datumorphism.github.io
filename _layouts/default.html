@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{% if page.charts %}
+  {%- include head.html extra="plotly" -%}
+{% else %}
+{%- include head.html -%}
+{% endif %}
+
 
   <body>
 
@@ -19,6 +24,12 @@
 
     {%- include footer.html -%}
     {%- include footer-assets.html -%}
+
+  {% if page.charts %}
+    {% for chart in page.charts %}
+      {% include extras/plotly.html data=chart.data target=chart.target %}
+    {% endfor %}
+  {% endif %}
 
   </body>
 

@@ -11,7 +11,7 @@ tag:
 - 'Finite Difference Method'
 references:
 - name: ""
-  title: ''
+  link: ''
 notify: 'Difference equations are fun!'
 weight: 1
 ---

@@ -1,0 +1,5 @@
+<script>
+
+var data = {{ include.data }};
+Plotly.newPlot('{{ include.target }}', data, {displaylogo: false});
+</script>

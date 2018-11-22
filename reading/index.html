@@ -65,14 +65,14 @@ Here we generate all the tags.
       <i class="far fa-star"></i> Summary: {{ post.summary }}</span>
            </div>
            {% endif %}
-           {% if post.ref %}
+           {% if post.references %}
            <div style="margin-left:2em;"><span style="display:block;font-size:90%;color:#c0c0c0;">
         <i class="fa fa-paperclip" aria-hidden="true"></i> References:</span>
-              {% for reference in post.ref %}
+              {% for reference in post.references %}
                  {% if reference.link %}
-                    <span style="display:block;font-size:90%;color:#c0c0c0;padding-left:1em;"> - <a href="{{ reference.link }}" style="color:#c0c0c0;">{{ reference.title }}</a></span>
+                    <span style="display:block;font-size:90%;color:#c0c0c0;padding-left:1em;"> - <a href="{{ reference.link }}" style="color:#c0c0c0;">{{ reference.name }}</a></span>
                     {% else %}
-                    <span style="display:block;font-size:90%;color:#c0c0c0;padding-left:1em;"> - {{ reference.title }}</span>
+                    <span style="display:block;font-size:90%;color:#c0c0c0;padding-left:1em;"> - {{ reference.name }}</span>
                  {% endif %}
               {% endfor %}
            </div>
