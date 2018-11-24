@@ -12,7 +12,7 @@ tag:
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   link: ''
-weight: 2
+weight: 3
 ---
 
 * ToC

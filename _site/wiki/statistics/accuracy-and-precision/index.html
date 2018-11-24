@@ -5,20 +5,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Basics of Database | Datumorphism</title>
+<title>Accuracy and Precision | Datumorphism</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Basics of Database" />
+<meta property="og:title" content="Accuracy and Precision" />
 <meta name="author" content="Datumorphism Collective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Essential knowledge of database" />
-<meta property="og:description" content="Essential knowledge of database" />
-<link rel="canonical" href="http://localhost:4000/wiki/computation/basics-of-database/" />
-<meta property="og:url" content="http://localhost:4000/wiki/computation/basics-of-database/" />
+<meta name="description" content="Accuracy and precision in statistics" />
+<meta property="og:description" content="Accuracy and precision in statistics" />
+<link rel="canonical" href="http://localhost:4000/wiki/statistics/accuracy-and-precision/" />
+<meta property="og:url" content="http://localhost:4000/wiki/statistics/accuracy-and-precision/" />
 <meta property="og:site_name" content="Datumorphism" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-10-03T00:00:00-04:00" />
+<meta property="article:published_time" content="2018-11-18T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Essential knowledge of database","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/computation/basics-of-database/","headline":"Basics of Database","dateModified":"2018-10-03T00:00:00-04:00","datePublished":"2018-10-03T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/computation/basics-of-database/"},"@context":"http://schema.org"}</script>
+{"description":"Accuracy and precision in statistics","author":{"@type":"Person","name":"Datumorphism Collective"},"@type":"BlogPosting","url":"http://localhost:4000/wiki/statistics/accuracy-and-precision/","headline":"Accuracy and Precision","dateModified":"2018-11-18T00:00:00-05:00","datePublished":"2018-11-18T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wiki/statistics/accuracy-and-precision/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/bulma/bulma.css">
@@ -260,181 +260,77 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Basics of Database</h1>
+    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Accuracy and Precision</h1>
     <p class="post-meta has-text-centered">
-      <time class="dt-published" datetime="2018-10-03T00:00:00-04:00" itemprop="datePublished">Oct 3, 2018
+      <time class="dt-published" datetime="2018-11-18T00:00:00-05:00" itemprop="datePublished">Nov 18, 2018
       </time>
        • <span style="font-style: regular;">{</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#computation">⸢Computation⸥</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/#statistics">⸢Statistics⸥</a></span>
        
        }
       
       
        • <span style="font-style: regular;">[</span>
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Database">#Database</a></span>
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Statistics">#Statistics</a></span>
        
        <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Basics">#Basics</a></span>
+       
+       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="http://localhost:4000/wiki/?keywords=Measurement">#Measurement</a></span>
        
        ]
       
       
       
-      <div class="notification is-primary">
-         I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers and internet.
-       </div>
-      
     </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h2 id="basics-of-database">Basics of Database</h2>
-
-<h3 id="relations">Relations</h3>
-
-<ol>
-  <li>Union: $A\cup B$</li>
-  <li>Intersection: $A\cap B$</li>
-  <li>$A - B$</li>
-  <li>Cartesian Product: $A \times B$</li>
-</ol>
-
-<h3 id="query">Query</h3>
-
-<ol>
-  <li>Union in database: will combine the data with matching common columns.</li>
-  <li>
-    <p>NaturalJoin and EquiJoin:</p>
-
-    <pre><code class="language-SQL"> --EquiJoin where we specify what condition is used to join
- SELECT * FROM table1 JOIN table2 ON (table1.id = table2.id)
- --NaturalJoin where conditions are chosen by the database automatically
- SELECT * FROM table1 NATURAL JOIN table2
-</code></pre>
-  </li>
-  <li>Procedural language: derived from structural programming, focuses on breaking task into variables, data structures, and subroutines.</li>
-</ol>
-
-<h3 id="sql">SQL</h3>
-
-<p class="notes--info"><a href="https://www.red-gate.com/simple-talk/sql/learn-sql-server/sql-server-index-basics/">Nice Article about Index</a></p>
-
-<ol>
-  <li>B-tree: nodes has subnodes; Read wikipedia for more.</li>
-  <li>Index architectures:
     <ol>
-      <li>Clustered indices: sort data based on the key column, thus no row locator is needed.</li>
-      <li>Non-clustered indices: store both column and row locator so that sorting is not needed.</li>
-    </ol>
-  </li>
-  <li>“If the table has a clustered index, or the index is on an indexed view, the row locator is the clustered index key for the row.” from HackerRank.</li>
-  <li>Leaf vs Non-leaf:
-    <ol>
-      <li>Leaf level pages (nodes): the end of the search through B-tree;</li>
-      <li>Non-leaf pages (nodes): root and intermediate</li>
-    </ol>
-  </li>
-  <li>Fill factor: the leaf level pages are not always filled with data. You can specify some pages to be reserved for future growth of data. The value is from 1 to 100 percent. Server side default is usually 0 which means that all leaf pages are filled.</li>
-  <li>
-    <p>Composite index:</p>
-
-    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">index_name</span>
- <span class="k">ON</span> <span class="k">table_name</span><span class="p">(</span><span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">);</span>
-</code></pre></div>    </div>
-  </li>
+  <li>Accuracy: the measurement compared to the truth</li>
+  <li>Precision: variability of repeated measurements; the more precise, the less variations during each measurement.</li>
 </ol>
 
-<h3 id="olap">OLAP</h3>
-
-<p class="notes--info">OLAP Explained: <a href="https://apandre.wordpress.com/data/datacube/">OLAP Cubes</a> explained the operations such as SLICE (slice by one dimensions so that we get a N-1 subset of the data), DICE (slice more than two dimensions), DRILL DOWN/UP (navigate among levels of data), ROLL-UP (aggrete, consolidate, involves all the data relations for one or more dimensions), PIVOT (rotation).</p>
-
-<ol>
-  <li>OLAP: Online analytical processing, with a core of OLAP cube (multidimensional cube, hypercube).</li>
-  <li>Aggregations: speed up time.</li>
-  <li>
-    <p>Both star schema and snowflake schema are the souce of the cube metadata for OLAP.</p>
-  </li>
-  <li>
-    <p>About how those operations works, please find the quiz at <a href="https://www.hackerrank.com/challenges/olap-operation-types-2/forum">OLAP Operation Types @ HackerRank</a></p>
-
-    <p>An example is</p>
-
-    <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code> --Aggregation number of rows
- n1*n2*n3,
- --Rollup number of rows
- n1*n2*n3+n1+n1*n2+1
- --Cube number of rows
- n1*n2*n3+n1*n2+n2*n3+n1*n3+n1+n2+n3+1
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h3 id="relational-calculus">Relational Calculus</h3>
-
-<div class="notes--info">
-  <p>Operators:</p>
-  <ol>
-    <li>∀ = forall : https://en.wikipedia.org/wiki/Turned_A</li>
-    <li>
-      <table>
-        <tbody>
-          <tr>
-            <td>= such that : https://en.wikipedia.org/wiki/Set-builder_notation</td>
-          </tr>
-        </tbody>
-      </table>
-    </li>
-    <li>∧ = logical conjunction (and) : https://en.wikipedia.org/wiki/List_of_logic_symbols</li>
-    <li>→ = is a function</li>
-  </ol>
-
-  <p>Stolen from HackerRank: https://www.hackerrank.com/challenges/databases-relational-calculus/forum/comments/325506</p>
-</div>
-
-<h3 id="database-key">Database Key</h3>
-
-<ol>
-  <li>Primary key: unique values for each row of data; can not contain null values.</li>
-</ol>
-
-<h3 id="normalization">Normalization</h3>
-
-<div class="notes--info">
-  <p>Dependency</p>
-
-  <p>Dependency means a column that determines others.</p>
-
-  <p>Partial dependency means that we have some column that depends on only some of the columns but has nothing to do with some other columns. In this case we can see some kind of redundency. Hence in 2NF we remove partial dependency.</p>
-
-  <p>Transitive dependency is that if x determines y, y determines z, then x determines z, which is the transitive dependency.</p>
-</div>
-
-<ol>
-  <li>NF: Normal Form,e.g., 1NF Rules, 2NF Rules, 3NF Rules. Refer to <a href="https://www.guru99.com/database-normalization.html">this article</a>. BCNF (Boyce-Codd normal form) please refer to wiki. 4NF is also explained well in <a href="https://en.wikipedia.org/wiki/Fourth_normal_form">wiki</a>.</li>
-  <li>
-    <p><a href="https://www.studytonight.com/dbms/database-normalization.php">studytonight</a></p>
-
-    <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   1NF = can not be broken down into more elementary tables : Single value on each field; no repeating groups (for example table with multiple columns of products which are in principle the same is NOT 1NF)
-
-   2NF = 1NF + no partial dependency: non-key columns depends on primary keys.
-
-   3NF = 2NF + Transitive functional dependency of non-prime attribute on any super key should be removed.
-
-   BCNF = A 3NF table that does not have multiple overlapping candidate keys is guaranteed to be in BCNF
-</code></pre></div>    </div>
-  </li>
-  <li><a href="https://en.wikipedia.org/wiki/Superkey">Superkey</a>:  set of attributes within a table whose values can be used to uniquely identify a tuple</li>
-  <li>Candidate key: column(s) to identify unique records</li>
-  <li>Nonkey Dependency: simply as the name indicates</li>
-</ol>
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>Accurate</td>
+      <td>Inaccurate</td>
+    </tr>
+    <tr>
+      <td>Precise</td>
+      <td>Close to true value, small variations in each measurement</td>
+      <td>Far from true value, small variations in each measurement</td>
+    </tr>
+    <tr>
+      <td>Imprecise</td>
+      <td>Close to true value, large variations in each measurement</td>
+      <td>Far from true value, large variations in each measurement</td>
+    </tr>
+  </tbody>
+</table>
 
   </div>
 
   <div class="is-divider" data-content="END"></div>
 
   
+      <article class="message">
+        <div class="message-header">
+          <p>References:</p>
+        </div>
+        <div class="message-body">
+          <ul>
+          
+            <li><a href="" style="text-decoration:none;">Elements of Statistics by Stephen Bernstein and Ruth Bernstein</a></li>
+          
+          </ul>
+        </div>
+      </article>
+      
 
 
-  <a class="u-url" href="/wiki/computation/basics-of-database/" hidden></a>
+  <a class="u-url" href="/wiki/statistics/accuracy-and-precision/" hidden></a>
 
 
 
@@ -455,10 +351,12 @@
 
 
 
+
+
     
     
     <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Basics of Computation" aria-current="page" href="/wiki/computation/basics-of-computation/">1</a>
+      <a class="pagination-link is-current" aria-label="Accuracy and Precision" aria-current="page" href="/wiki/statistics/accuracy-and-precision/">1</a>
     </li>
 <!--
 <div class="columns">
@@ -487,8 +385,10 @@
 
     
     
+        <a class="pagination-next" href="/wiki/statistics/correlation-analysis/" title="Chi-square Correlation Test for Nominal Data">Next</a>
+    
     <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Basics of Programming" aria-current="page" href="/wiki/computation/basics-of-programming/">2</a>
+      <a class="pagination-link " aria-label="Chi-square Correlation Test for Nominal Data" aria-current="page" href="/wiki/statistics/correlation-analysis/">2</a>
     </li>
 <!--
 <div class="columns">
@@ -509,42 +409,12 @@
 
 
 
-    
-        <a class="pagination-previous" href="/wiki/computation/basics-of-network/" title="Basics of Network">Previous</a>
-    
-    
-    <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Basics of Network" aria-current="page" href="/wiki/computation/basics-of-network/">3</a>
-    </li>
-<!--
-<div class="columns">
-
-<div class="column">
-
-</div>
-
-
-<div class="column">
-  
-      <strong><a class="post-link" href="/wiki/computation/basics-of-network/">Basics of Network</a></strong>
-  
-</div>
- -->
-
-
-
-
-
-
-
-
-
 
 
     
     
     <li style="list-style:none;">
-      <a class="pagination-link is-current" aria-label="Basics of Database" aria-current="page" href="/wiki/computation/basics-of-database/">4</a>
+      <a class="pagination-link " aria-label="Correlation Coefficient and Covariance for Numeric Data" aria-current="page" href="/wiki/statistics/correlation-coefficient/">3</a>
     </li>
 <!--
 <div class="columns">
@@ -565,10 +435,8 @@
 
     
     
-        <a class="pagination-next" href="/wiki/computation/basics-of-sql/" title="Basics of SQL">Next</a>
-    
     <li style="list-style:none;">
-      <a class="pagination-link " aria-label="Basics of SQL" aria-current="page" href="/wiki/computation/basics-of-sql/">5</a>
+      <a class="pagination-link " aria-label="Normalization Methods for Numeric Data" aria-current="page" href="/wiki/statistics/normalization-methods/">4</a>
     </li>
 <!--
 <div class="columns">
@@ -582,6 +450,12 @@
   
 </div>
  -->
+
+
+
+
+
+
 
 
 
