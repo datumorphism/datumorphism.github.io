@@ -215,3 +215,14 @@ pre {
     background: rgba(170, 51, 17, 0.5);
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
 }
+
+.footnotes::before {
+    content: 'FOOTNOTES';
+}
+
+.footnotes {
+    border-top: .2em solid transparent;
+    -o-border-image: 100% 0 0 linear-gradient(90deg, currentColor 6em, transparent 0);
+       border-image: 100% 0 0 linear-gradient(90deg, currentColor 6em, transparent 0);
+    padding-top: 1em;
+  }
