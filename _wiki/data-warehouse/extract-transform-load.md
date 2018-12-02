@@ -1,6 +1,6 @@
 ---
 title: "Extract, Transform and Load"
-excerpt: ""
+excerpt: "Extract, Clean, Transform, Load, and Refresh"
 date: 2018-11-23
 toc: true
 category:
@@ -15,4 +15,3 @@ weight: 2
 published: false
 ---
 
-## 

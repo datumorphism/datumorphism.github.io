@@ -351,6 +351,78 @@
   <li>Virtual warehouse: views not tables</li>
 </ol>
 
+<h2 id="fact-and-dimension">Fact and Dimension</h2>
+
+<p><strong>Fact</strong> is the value of something specified by the <strong>dimension</strong>. For example, we have a table that tells us the revenue of the year 2018 for keyboards is 3 million euros.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="highlighter-rouge">Year</code></th>
+      <th><code class="highlighter-rouge">Category</code></th>
+      <th>Revenue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2017</td>
+      <td>Keyboard</td>
+      <td>2,500,000</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Headset</td>
+      <td>200,000</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Keyboard</td>
+      <td>3,000,000</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Headset</td>
+      <td>134,000</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The columns <code class="highlighter-rouge">Year</code> and <code class="highlighter-rouge">Category</code> serve as dimensions and <code class="highlighter-rouge">Revenue</code> serves as the fact.</p>
+
+<p>The dimension tells us what we are talking about and the fact tells us the values. For the previous example, we could set up a coordinate system, with two axes, <code class="highlighter-rouge">Year</code> and <code class="highlighter-rouge">Category</code>. On the <code class="highlighter-rouge">Year</code> axis, we have two values, <code class="highlighter-rouge">2017</code> and <code class="highlighter-rouge">2018</code>. On the <code class="highlighter-rouge">Category</code> axis, we have two values <code class="highlighter-rouge">Keyboard</code> and <code class="highlighter-rouge">Headset</code>. If we are looking for the revenue of keyboards in 2018, then we are looking for <code class="highlighter-rouge">2018</code> and <code class="highlighter-rouge">Headset</code>. It is clearly a 2 dimensional <strong>data cube</strong>.</p>
+
+<p>In princple, we could have N dimensional <strong>data cube</strong>. For example, we would like to look at the revenue of</p>
+
+<ol>
+  <li>keyboards (<code class="highlighter-rouge">Category</code>),</li>
+  <li>in 2018 (<code class="highlighter-rouge">Year</code>),</li>
+  <li>in Cologne (<code class="highlighter-rouge">City</code>),</li>
+  <li>sold offline (<code class="highlighter-rouge">Channel</code>).</li>
+</ol>
+
+<p>Then we have a 4 dimensional dataset. Revenue is the fact and <code class="highlighter-rouge">Category</code>, <code class="highlighter-rouge">Year</code>, <code class="highlighter-rouge">City</code> and <code class="highlighter-rouge">Channel</code> are the dimensions.</p>
+
+<h2 id="concept-hierarchies">Concept Hierarchies</h2>
+
+<p>Concept hierarchies are crucial to OLAP operations.</p>
+
+<p>We consider a data cube about revenue with the dimension <code class="highlighter-rouge">Date</code> with values such as 2018-11-26. We would like to know the monthly revenue, the quarterly revenue, and the annual revenue. It’s straightforward to calculate those. The idea is that monthly, quarterly, and annual revenue form a hierarchy: day $\in$ month $\in$ quarter $\in$ year. This is a convention used by everyone on this planet.</p>
+
+<p>In some other cases, concept hierarchies are very much designed instead of being a convention. Suppose we record the prices of houses. It would be nice to categorize the prices into different ranges of prices. Some would say, we divide them into five ranges:</p>
+<ol>
+  <li>below 25 percentile</li>
+  <li>25 to 50 percentile</li>
+  <li>50 to 75 percentile</li>
+  <li>above 75 percentile</li>
+</ol>
+
+<p>Others would say, we divide them into 100 euros segments</p>
+<ol>
+  <li>0 to 100 euros</li>
+  <li>100 to 200 euros</li>
+  <li>…</li>
+</ol>
+
 <div class="footnotes">
   <ol>
     <li id="fn:1">
