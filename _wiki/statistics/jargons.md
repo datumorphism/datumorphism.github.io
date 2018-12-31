@@ -45,3 +45,8 @@ Sample
 | Physical | physical objects | physical subset of the physical population |
 | Measurement | measurement of the physical population |  measurement of the physical sample  |
 
+
+## Hypothesis
+
+1. Statistical hypothesis: hyposthesis about the measurement population
+2. Research hypothesis or scientific hypothesis or working hypothesis: hypothesis about the physical population

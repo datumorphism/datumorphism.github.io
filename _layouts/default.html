@@ -2,11 +2,11 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% if page.charts %}
-  {%- include head.html extra="plotly" -%}
+  {%- include head.html plotly=true -%}
 {% else %}
-{%- include head.html -%}
+  {%- include head.html -%}
 {% endif %}
-
+  
 
   <body>
 
@@ -29,6 +29,12 @@
     {% for chart in page.charts %}
       {% include extras/plotly.html data=chart.data target=chart.target %}
     {% endfor %}
+  {% endif %}
+
+  {% if page.mermaid %}
+  {% for graph in page.mermaid %}
+   {% include extras/mermaid.html data=chart.data target=chart.target %} 
+  {% endfor %}
   {% endif %}
 
   </body>

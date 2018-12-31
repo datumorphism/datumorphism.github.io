@@ -49,7 +49,7 @@ which is named the covariance of A and B, i.e., $\text{Cov} ({A,B})$.
 
 Using some trivial techniques, we find that
 $$
-Cov{A,B} = E( A,B ) - \bar A \bar B.
+\mathrm{Cov}({A,B}) = E( A,B ) - \bar A \bar B.
 $$
 
 <div class="notes--info" markdown="1">
@@ -64,7 +64,7 @@ or even arbitrary N series,
 $$
 \sigma_{A_1, A_2, ..., A_N }^N = \frac{ \sum_{i=1}^{n} \text{ geometric mean of the ith elements to the Nth power }  }{ n }  = \frac{ \sum (a_{1,i} - \bar A_1) \cdots (a_{N,i} - \bar A_{N})}{ n },
 $$
-which should be called the covariance of all the N series, $\text{Cov} ({A_1, A_2,\cdots, A_N })$.
+which should be called the covariance of all the N series, $\mathrm{Cov} ({A_1, A_2,\cdots, A_N })$.
 </div>
 
 
@@ -82,6 +82,11 @@ Covariance measures the correlation of these two series. To see this, we assume 
 | 7 | 1 | -1 |
 
 we have $\sigma_{A,B} = -1 $. The negative sign tells us that our series are anti-correlated.
+
+
+<div class="notes--info" markdown="1">
+Covariance is also related to [dispersion matrix](../multidimensional-data).
+</div>
 
 ## Correlation Coefficient
 

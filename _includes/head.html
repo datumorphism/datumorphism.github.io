@@ -31,10 +31,14 @@
 
 
 
-  {% if include.extra == "plotly" %}
+  {% if include.plotly == true %}
   <script src="{{ "/assets/js/plotly-latest.min.js" | relative_url }}">
   </script>
   {% endif %}
+
+
+
+
 
   
   <script type="text/x-mathjax-config">
