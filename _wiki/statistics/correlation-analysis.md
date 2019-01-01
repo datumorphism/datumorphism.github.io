@@ -151,3 +151,8 @@ Then we say this chi-square analysis doesn't reject our hypothesis that these tw
 The final question is how to use the result. We usually have a threshold $\chi_0^2$. Whenever our calculated value is larger than this one, we decide that our analysis reject the hypothesis that the two columns are correlated.
 This value $\chi_0^2$ can be found in the textbooks.
 
+
+## Other Methods
+
+1. [Kendall rank correlation coefficient](https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient)
+2. [Spearman's rank correlation coefficient](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient)
