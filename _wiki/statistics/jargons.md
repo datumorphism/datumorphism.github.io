@@ -50,3 +50,8 @@ Sample
 
 1. Statistical hypothesis: hyposthesis about the measurement population
 2. Research hypothesis or scientific hypothesis or working hypothesis: hypothesis about the physical population
+
+
+## Loss Functions
+
+1. RSS: residual sum-of-squares: $(\mathbf Y - \hat{\mathbf Y})^T(\mathbf Y - \hat{\mathbf Y})$ where $\mathbf Y$ is the actual data and $\hat{\mathbf Y}$ is the prediction
