@@ -31,11 +31,6 @@
     {% endfor %}
   {% endif %}
 
-  {% if page.mermaid %}
-  {% for graph in page.mermaid %}
-   {% include extras/mermaid.html data=chart.data target=chart.target %} 
-  {% endfor %}
-  {% endif %}
 
   </body>
 

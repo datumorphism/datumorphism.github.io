@@ -36,6 +36,10 @@
   </script>
   {% endif %}
 
+  {% if page.mermaid %}
+  <script src="{{ "/assets/mermaid/mermaid.min.js" | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ "/assets/mermaid/mermaid.css" | relative_url }}" />
+  {% endif %}
 
 
 
