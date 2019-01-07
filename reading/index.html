@@ -15,7 +15,7 @@ Here we generate all the tags.
 {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 
-{% assign rawtags = rawtags | split:'|' | sort %}
+{% assign rawtags = rawtags | split:'|' | sort | reverse %}
 
 {% assign tags = "" %}
 
@@ -61,27 +61,27 @@ Here we generate all the tags.
 
         {% if post.summary %}
            <div style="margin-left:2em;">
-           <span style="display:block;font-size:90%;color:#c0c0c0;">
+           <span style="display:block;font-size:90%;">
       <i class="far fa-star"></i> Summary: {{ post.summary }}</span>
            </div>
            {% endif %}
            {% if post.references %}
-           <div style="margin-left:2em;"><span style="display:block;font-size:90%;color:#c0c0c0;">
+           <div style="margin-left:2em;"><span style="display:block;font-size:90%;">
         <i class="fa fa-paperclip" aria-hidden="true"></i> References:</span>
               {% for reference in post.references %}
                  {% if reference.link %}
-                    <span style="display:block;font-size:90%;color:#c0c0c0;padding-left:1em;"> - <a href="{{ reference.link }}" style="color:#c0c0c0;">{{ reference.name }}</a></span>
+                    <span style="display:block;font-size:90%;padding-left:1em;"> - <a href="{{ reference.link }}">{{ reference.name }}</a></span>
                     {% else %}
-                    <span style="display:block;font-size:90%;color:#c0c0c0;padding-left:1em;"> - {{ reference.name }}</span>
+                    <span style="display:block;font-size:90%;padding-left:1em;"> - {{ reference.name }}</span>
                  {% endif %}
               {% endfor %}
            </div>
         {% endif %}
 
-        {% if post.categories != null %}
+        {% if post.types != null %}
          <div style="margin-left:2em;">
-         <span style="display:block;font-size:90%;color:#c0c0c0;"><i class="far fa-folder" aria-hidden="true"></i> Categories: {% for category in post.categories %}
-            { {{ category }} }
+         <span style="display:block;font-size:90%;"><i class="far fa-folder" aria-hidden="true"></i> Types: {% for type in post.types %}
+            { {{ type }} }
             {% endfor %}
          </span>
          </div>
@@ -89,12 +89,25 @@ Here we generate all the tags.
 
          {% if post.tags != null %}
            <div style="margin-left:2em;">
-           <span style="display:block;font-size:90%;color:#c0c0c0;"><i class="fa fa-hashtag" aria-hidden="true"></i> Tags: {% for tag in post.tags %}
+           <span style="display:block;font-size:90%;"><i class="fa fa-hashtag" aria-hidden="true"></i> Tags: {% for tag in post.tags %}
               <a class="codinfox-tag-mark" href="{{ site.baseurl }}/reading/#{{ tag | slugify }}">#{{ tag }}</a>
               {% endfor %}
            </span>
            </div>
            {% endif %}
+
+           {% if post.status != null %}
+         <div style="margin-left:2em;">
+         <span style="display:block;font-size:90%;"><i class="fas fa-tasks" aria-hidden="true"></i> Status: 
+         {% if post.status == 'Done' or post.status == 'done' or post.status == 'Finished' or post.status == 'finished' or post.status == '100%%' %}
+         <i class="fas fa-check has-text-success"></i>
+         {% else %}
+         {{ post.status }}
+         {% endif %}
+         </span>
+         </div>
+         {% endif %}
+
 
       </p>
   </article>

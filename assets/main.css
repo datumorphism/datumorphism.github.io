@@ -115,7 +115,7 @@ pre {
     margin:10px 0;
 }
 .notes--info:before, .notes--success:before, .notes--warning:before, .notes--error:before, .notes--primary:before {
-    font-family:FontAwesome;
+    font-family: "Font Awesome 5 Free";
     font-style:normal;
     font-weight:400;
     speak:none;
@@ -132,22 +132,22 @@ pre {
     -moz-osx-font-smoothing:grayscale
 }
 .notes--info:before {
-    content:"INFO\A0\A0\A0";
+    content:"\00A7\A0\A0\A0 NOTE \A0\A0\A0";
     padding-bottom: 1em;
     opacity: 0.3;
 }
 .notes--success:before {
-    content:'\f00c\A0\A0\A0';
+    content:'\00A7\A0\A0\A0 NOTE \A0\A0\A0';
     padding-bottom: 1em;
     opacity: 0.3;
 }
 .notes--warning:before {
-    content:'\f071\A0\A0\A0';
+    content:'\00A7\A0\A0\A0 NOTE \A0\A0\A0';
     padding-bottom: 1em;
     opacity: 0.3;
 }
 .notes--error:before {
-    content:'\f057\A0\A0\A0';
+    content:'\00A7\A0\A0\A0 NOTE \A0\A0\A0';
     padding-bottom: 1em;
     opacity: 0.3;
 }
