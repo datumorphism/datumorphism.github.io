@@ -10,7 +10,7 @@ tag:
 - 'Crawler'
 source:
 - name: 04-应对网站的限制@ninthakeey
-  title: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/04-%E5%BA%94%E5%AF%B9%E7%BD%91%E7%AB%99%E7%9A%84%E9%99%90%E5%88%B6/'
+  link: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/04-%E5%BA%94%E5%AF%B9%E7%BD%91%E7%AB%99%E7%9A%84%E9%99%90%E5%88%B6/'
 notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
 weight: 4
 ---

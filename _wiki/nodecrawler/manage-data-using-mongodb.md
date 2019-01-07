@@ -10,7 +10,7 @@ tag:
 - 'Crawler'
 source:
 - name: 03-保存数据到数据库@ninthakeey
-  title: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/03-%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/'
+  link: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/03-%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/'
 notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
 weight: 3
 ---
