@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-A blog about data scraping, data analysis, and data presentation.
+A blog about data scraping, statistics, machine learning, and data visualization.
+
 
 
 <div class="columns">
