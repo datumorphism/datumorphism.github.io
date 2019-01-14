@@ -331,5 +331,5 @@ plt.show()
 ```
 
 <figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/fit.png.png)
+![](../assets/physicists-crash-course-neural-network/fit.png)
 </figure>
