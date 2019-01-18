@@ -23,6 +23,17 @@ weight: 1
 | Precise |  Close to true value, small variations in each measurement | Far from true value, small variations in each measurement  |
 | Imprecise |  Close to true value, large variations in each measurement  |  Far from true value, large variations in each measurement  |
 
+Here is an example. Suppose we have a huge population (with true mean $M_0$) and we draw samples from it. For the first time, we have sample $S_1$. We could calculate the mean of the sample, $M_1$. Then we do it for a second time, and get sample $S_2$ and its mean $M_2$. It is not suprising that $M_1$ might not be the same as $M_2$.
+
+Now we do this for 1000 times and get 1000 means, $\\{M_i\\}$. These means  $\\{M_i\\}$ is actually a distribution. Then we can calculate the expectation of these means and get $E(M_i) = M_e$. 
+
+In an ideal world, we would have the expectation value of all the sample means $M_e$ equal to the true mean $M_0$. In this case, our estimation of mean is not biased and **accurate**. The difference $M_e-M_0$ (or the absolute value of it) measures the accuracy.
+
+Since all the sample means form a distribution. We would expect that most of the cases, the sample mean is close to the true mean. We would have a dispersion of this distribution. The dispersion is the precision. 
+
+It is quite similar to shooting. If someone shoots all his bullets on almost the same point on the target, we would say he is precise. But the point may not be at the center of the target, then we say he is not accurate.
+
+
 ## Population and Sample
 
 Physical Population and Measurement Population
