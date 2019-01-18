@@ -66,3 +66,10 @@ Sample
 ## Loss Functions
 
 1. RSS: residual sum-of-squares: $(\mathbf Y - \hat{\mathbf Y})^T(\mathbf Y - \hat{\mathbf Y})$ where $\mathbf Y$ is the actual data and $\hat{\mathbf Y}$ is the prediction
+
+## Z Transformation
+
+If we have our dataset as an array $\\{X_i\\}$, $\mu$ is the mean, $\sigma$ is the variance. A z transformation standardizes the dataset by
+$$
+Z_i = \frac{ X_i - \mu }{\sigma}.
+$$
