@@ -12,6 +12,7 @@ tag:
 references:
 - name: "Schaum's Outline of Theories and Problems of Elements of Statistics II, by Ruth Bernstein and Stephen Bernstein"
   title: ''
+notify: "The name confidence interval is rather misleading."
 weight: 2
 published: true
 ---
@@ -34,15 +35,19 @@ P( \mu \in [\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_
 $$
 
 
-Here $z_{\alpha/2}$ is the [$z$ value](/wiki/statistics/jargons/#z-transformation) which makes the probability to be in between $[-z_{\alpha/2}, z_{\alpha/2}]$ to be $1-\alpha$.
+Here $z_{\alpha/2}$ is the [$z$ value](/wiki/statistics/jargons/#z-transformation) which makes the probability to be in between $[-z_{\alpha/2}, z_{\alpha/2}]$ to be $1-\alpha$. As shown in the following figure.
 
 <figure markdown="1">
-![](../assets/1-alpha.jpg)
+![](../assets/gaussian-alpha.png)
 <figcaption markdown="1">
-Fig 12-11 in Schaum's Outline of Theories and Problems of Elements of Statistics II, by Ruth Bernstein and Stephen Bernstein
+The definition of $\alpha$ for a normal distribution. In a probability distribution, the area under the curve should be 1. Or the integral of the curve from $-\infty$ to $\infty$ should be 1. $\alpha$ is the sum of the two red areas. In this example, we actually have $\alpha=0.05$.
 </figcaption>
 </figure>
 
-We randomly choose one sample from the bunch of samples. The probability that $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ in one sample contains the true mean $\mu_p$ is given by $1-\alpha$. 
+Confidence level is a **weird measurement of our statistical confidence**.
 
-$[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ is our confidence interval for a $1-\alpha$ confidence.
+Imagine we are drawing 100 samples from the population and calculate the range $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$. We would have 100 different ranges. How many of them would actually contain the true mean? The answer is probably around $(1-\alpha)$ fraction of all the 100 calculations. When we have a huge amount of samples, this probability becomes quite faithful.
+
+Why is this a representation of our confidence? Imagine we choose one sample from this 100 calculations. The probability that this specific number $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ (with all the numbers substituted using the sample values, for example $[-1,2]$, which is different from every other sample calculations) contains the true mean is also $(1-\alpha)$.
+
+In other words, $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ is the interval that we are $1-\alpha$ confident that we have captured the true mean. From this point of view, **the name confidence interval is rather misleading.**
