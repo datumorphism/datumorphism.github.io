@@ -40,7 +40,7 @@ Here $z_{\alpha/2}$ is the [$z$ value](/wiki/statistics/jargons/#z-transformatio
 <figure markdown="1">
 ![](../assets/gaussian-alpha.png)
 <figcaption markdown="1">
-The definition of $\alpha$ for a normal distribution. In a probability distribution, the area under the curve should be 1. Or the integral of the curve from $-\infty$ to $\infty$ should be 1. $\alpha$ is the sum of the two red areas. In this example, we actually have $\alpha=0.05$.
+The definition of $\alpha$ for a [normal distribution](/wiki/distributions/normal-distribution). In a probability distribution, the area under the curve should be 1. Or the integral of the curve from $-\infty$ to $\infty$ should be 1. $\alpha$ is the sum of the two red areas. In this example, we actually have $\alpha=0.05$.
 </figcaption>
 </figure>
 
