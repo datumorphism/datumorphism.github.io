@@ -70,6 +70,9 @@ Sample
 ## Z Transformation
 
 If we have our dataset as an array $\\{X_i\\}$, $\mu$ is the mean, $\sigma$ is the variance. A z transformation standardizes the dataset by
+
 $$
 Z_i = \frac{ X_i - \mu }{\sigma}.
 $$
+
+Note that $\mu$ is the sample mean and $\sigma$ is the sample standard deviation.
