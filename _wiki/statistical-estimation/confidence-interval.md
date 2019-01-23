@@ -10,8 +10,8 @@ tag:
 - 'Basics'
 - 'Confidence Interval'
 references:
-- name: "Schaum's Outline of Theories and Problems of Elements of Statistics II, by Ruth Bernstein and Stephen Bernstein"
-  title: ''
+- name: "Schaum's Outline of Theories and Problems of Elements of Statistics II, by Ruth Bernstein and Stephen Bernstein. Chapter 13, 14"
+  link: ''
 notify: "The name confidence interval is rather misleading."
 weight: 2
 published: true
@@ -160,6 +160,6 @@ $$
 
 If this is not the case, then how good is the approximation? To answer this question, we need to know the distribution of $\frac{\bar X - \mu}{\sigma_{\bar x}}$. It is called t distribution. Since this distribution is know. We simple replace the assumed normal distribution of the sample mean using this t distribution. We will still have our confidence limits and confidence levels using this t distribution.
 
-### How Large is Macroscopic?
+### What Sample Size is Required for Macroscopic View?
 
 If the sample size is larger than 30!
