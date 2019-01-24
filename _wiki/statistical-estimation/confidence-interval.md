@@ -24,12 +24,12 @@ We will use upper cases for the abstract variable and lower cases for the actual
 
 ## Why is Confidence Interval Needed?
 
-Suppose I sample the population multiple times, mean value $\mu_i$ of the sample is calculated for each sample. It is a good question to ask how different these $\mu_i$ are compared to the true mean $\mu_0p$ of the population.
+Suppose I sample the population multiple times, the mean value $\mu_i$ of the sample is calculated for each sample. It is a good question to ask how different these $\mu_i$ are compared to the true mean $\mu_p$ of the population.
 
 
 ## Confidence Interval
 
-This theorem states that the probability that the true mean $\mu_0$ falls into a specific range can be calculated using
+This theorem states that the probability for the true mean $\mu_0$ to fall into a specific range can be calculated using
 
 $$
 P( \mu \in [\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ] ) = 1-\alpha.
@@ -48,7 +48,7 @@ The derivation of this formula is easy. It can be found in many textbooks such a
 
 Does it make sense?
 
-Let's go to the extreme case, again! Suppose we have a infinite sample size then we should actually be calculating the true mean $\mu_p$. Thus $\bar X=\mu_p$. That being said, in this extreme case,
+Let's go to the extreme case, again! Suppose we have an infinite sample size then we should actually be calculating the true mean $\mu_p$. Thus $\bar X=\mu_p$. That being said, in this extreme case,
 
 $$
 [\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]
@@ -74,7 +74,7 @@ The definition of $\alpha$ for a [normal distribution](/wiki/distributions/norma
 
 
 
-Confidence level is a **weird measurement of our statistical confidence**.
+The confidence level is a **weird measurement of our statistical confidence**.
 
 Imagine we are drawing 100 samples from the population and calculate the range $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$. We would have 100 different ranges. How many of them would actually contain the true mean? The answer is probably around $(1-\alpha)$ fraction of all the 100 calculations. When we have a huge amount of samples, this probability becomes quite faithful.
 
@@ -150,7 +150,7 @@ $$
 
 ### Microscopic View
 
-When we have little sample size, we do not have the macroscopic view to neglect the "glitches". 
+When we have a small sample size, we do not have the macroscopic view to neglect the "glitches". 
 
 We have been talking the approximations
 
@@ -158,7 +158,7 @@ $$
 \frac{\bar X - \mu}{\sigma_{\bar x}}  \sim  \frac{\bar X - \mu}{ S_{\bar x} } .
 $$
 
-If this is not the case, then how good is the approximation? To answer this question, we need to know the distribution of $\frac{\bar X - \mu}{\sigma_{\bar x}}$. It is called t distribution. Since this distribution is know. We simple replace the assumed normal distribution of the sample mean using this t distribution. We will still have our confidence limits and confidence levels using this t distribution.
+If this is not the case, then how good is the approximation? To answer this question, we need to know the distribution of $\frac{\bar X - \mu}{\sigma_{\bar x}}$. It is called t distribution. Since this distribution is known. We simply replace the assumed normal distribution of the sample mean using this t distribution. We will still have our confidence limits and confidence levels using this t distribution.
 
 ### What Sample Size is Required for Macroscopic View?
 
