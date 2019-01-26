@@ -1,5 +1,14 @@
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-8">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <p class="title">Today I Learned <a href="{{ "/til/" | relative_url }}" class="is-pulled-right"><i class="fas fa-link"></i></a></p>
+        <p class="subtitle">Learn something each day</p>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </article>
+    </div>
     <div class="tile">
       <div class="tile is-parent is-vertical">
         <article class="tile is-child notification is-primary">
@@ -18,15 +27,6 @@
         </article>
       </div>
     </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-danger">
-        <p class="title">Today I Learned <a href="{{ "/til/" | relative_url }}" class="is-pulled-right"><i class="fas fa-link"></i></a></p>
-        <p class="subtitle">Learn something each day</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </article>
-    </div>
   </div>
   <div class="tile is-parent">
       <div class="tile is-vertical">
@@ -39,7 +39,7 @@
             </div>
           </div>
         </article>
-        <article class="tile is-child notification is-success">
+        <article class="tile is-child notification is-primary">
           <div class="content">
             <p class="title">Reading <a href="{{ "/reading/" | relative_url }}" class="is-pulled-right"><i class="fas fa-link"></i></a></p>
             <p class="subtitle">Read and learn</p>
