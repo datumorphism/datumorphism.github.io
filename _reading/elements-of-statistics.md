@@ -20,12 +20,12 @@ references:
     link: 
 ---
 
-## The Reading Club
+## Evening Reading
 
-We host this regularly on Sunday. Discussions are performed through Skype.
+This has been my evening reading book.
 
 <div class="notes--error" markdown="1">
-This book is relatively old. So it is quite important to identify those contents that do not apply to modern data mining tasks. During our discussion, we usually talk about the applications in the real-world problem so we are thinking about whether the techniques are still useful.
+This book is quite good. It doesn't go very deep on some topics but it explains things well in a concise way on many topics.
 </div>
 
 
