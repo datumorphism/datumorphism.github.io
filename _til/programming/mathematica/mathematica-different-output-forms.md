@@ -23,7 +23,7 @@ Here is a incomplete list of different output forms in Mathematica.
 
 
 <figure markdown="1">
-![](../assets/programming/mathematica-different-output-forms.png)
+![](../assets/mathematica-different-output-forms.png)
 <figcaption>
 Different forms.
 </figcaption>

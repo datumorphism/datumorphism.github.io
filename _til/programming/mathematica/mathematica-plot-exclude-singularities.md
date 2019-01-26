@@ -28,7 +28,7 @@ Plot[1/(1 - 0.3 x), {x, 2, 5}, Frame -> True,
 What we get is a plot
 
 <figure markdown="1">
-![](../assets/programming/mathematica-plot-exclude-singularities/mathematica-plot-with-singularity-point.png)
+![](../assets/mathematica-plot-exclude-singularities/mathematica-plot-with-singularity-point.png)
 <figcaption>
 A plot with singularity point. Mathematica Plot brings in an extra line at the singularity.
 </figcaption>
