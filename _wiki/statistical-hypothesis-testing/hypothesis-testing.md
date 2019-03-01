@@ -4,7 +4,7 @@ excerpt: "hypothesis testing is about the probability of alternative hypothesis 
 date: 2019-01-20
 toc: true
 category:
-- 'Statistics'
+- 'Statistics Hypothesis Testing'
 tag:
 - 'Statistics'
 - 'Basics'

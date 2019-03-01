@@ -4,7 +4,7 @@ excerpt: "Testing your hypothesis using p value"
 date: 2019-01-20
 toc: true
 category:
-- 'Statistics'
+- 'Statistics Hypothesis Testing'
 tag:
 - 'Statistics'
 - 'Basics'
