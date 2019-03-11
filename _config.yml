@@ -133,6 +133,18 @@ defaults:
       comments: true
       sidebar:
         nav: "wiki"
+  # _survival manual
+  - scope:
+      path: ""
+      type: manual
+    values:
+      layout: manual
+      read_time: false
+      author_profile: false
+      share: false
+      comments: true
+      sidebar:
+        nav: "manual"
   # _reading
   - scope:
       path: ""
