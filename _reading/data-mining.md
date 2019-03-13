@@ -14,7 +14,7 @@ category:
 tag:
 - 'data mining'
 summary: How data mining was done in the past
-status: 50%
+status: 70%
 references:
   - name: "Data Mining: Concepts and Techniques"
     link: https://www.amazon.com/Data-Mining-Concepts-Techniques-Management/dp/0123814790
