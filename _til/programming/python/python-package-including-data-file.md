@@ -9,8 +9,8 @@ category:
 tag:
 - Python
 references:
-    - name: Including non-Python files with setup.py
-      link: https://stackoverflow.com/Questions/1612733/including-non-python-files-with-setup-py
+  - name: Including non-Python files with setup.py
+    link: https://stackoverflow.com/Questions/1612733/including-non-python-files-with-setup-py
 excerpt: Add Data Files to Python Package using manifest.in and setup.py
 ---
 
