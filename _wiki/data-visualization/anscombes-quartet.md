@@ -172,7 +172,7 @@ charts:
 
 ## Anscombe's Quartet
 
-Anscombe's quartet is a brilliant idea that shows the importance and convinience of visual representation of data.
+Anscombe's quartet is a brilliant idea that shows the importance and convenience of visual representation of data.
 
 Anscombe's quartet has four datasets. The values of each dataset are shown below.
 
@@ -194,7 +194,7 @@ These datasets seems to be quite different. But they are quite similar statistic
 
 1. The averages of x and y are 9.0 and 7.5, respectively.
 2. The variances of x and y are 3.162 and 1.937 respectively.
-3. They event fit to the same linear line $y = 0.5 x + 3$ with the same least square loss.
+3. They even fit to the same linear line $y = 0.5 x + 3$ with the same least square loss.
 
 However, we immediately spot the differences between them when we visualize them in a coordinate system.
 
@@ -216,7 +216,7 @@ However, we immediately spot the differences between them when we visualize them
 </div>
 
 
-## What are differences between the datasets?
+## What are the differences between the datasets?
 
 There are probably a million different ways to tell them apart. A very simple calculation is the percentile. For example, the medians of the x data are (9.0, 9.0, 9.0, 8.0). The medians of the y data are (7.58, 8.14, 7.11, 7.04).
 
@@ -229,5 +229,5 @@ Here we simply plot the box plots. This tells us that some of the data is quite 
 </div>
 
 
-There are many insights from this example. But the most important one is that we should plot out the data everytime we are working on EDA. Even if visualization is not a choice at the moment. We usually calculate more statistical measures. For example, we calculate the mean and median together as centroids to get a feeling of how skewed the data is.
+There are many insights from this example. But the most important one is that we should plot out the data every time we are working on EDA. Even if visualization is not a choice at the moment. We usually calculate more statistical measures. For example, we calculate the mean and median together as centroids to get a feeling of how skewed the data is.
 {: .notes--warning}
