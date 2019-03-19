@@ -136,7 +136,7 @@ charts:
         }]"
   layout: "{
         xaxis: {
-            range: [ -1, 3 ]
+            range: [ -1, 4 ]
         },
         legend: {'orientation': 'h'}
         }"
@@ -164,7 +164,7 @@ charts:
         }]"
   layout: "{
         xaxis: {
-            range: [ -1, 3 ]
+            range: [ -1, 4 ]
         },
         legend: {'orientation': 'h'}
         }"
@@ -229,5 +229,5 @@ Here we simply plot the box plots. This tells us that some of the data is quite 
 </div>
 
 
-There are many insights from this example. But the most important one is that we should plot out the data every time we are working on EDA. Even if visualization is not a choice at the moment. We usually calculate more statistical measures. For example, we calculate the mean and median together as centroids to get a feeling of how skewed the data is.
+There are many insights from this example. But the most important one is that we should plot out the data every time we are working on EDA. Even when visualization is not a choice at the moment, we usually calculate more statistical measures. For example, we calculate the mean and median together as centroids to get a feeling of how skewed the data is.
 {: .notes--warning}
