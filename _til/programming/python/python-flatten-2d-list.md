@@ -22,3 +22,22 @@ This will result in
 ```
 [1, 2, 3, 4, 6, 7, 8, 9, 10]
 ```
+
+Why is this even working?
+
+The function `sum(an_iterable_object)` will simply use the operator `+` for the iterable object that was passed on to it. I can take in an optional parameter, i.e.,
+
+```
+sum(a_iterable_object, where_do_the_summation_start)
+``` 
+
+The operations would be like this:
+
+```
+result = where_do_the_summation_start or 0
+
+for i in an_iterable_object:
+   result = result + i 
+```
+
+Suppose we have a nested list `[ [1,2,3], [4,5] ]`, for each iteration, sum would simply concat the sublists together.
