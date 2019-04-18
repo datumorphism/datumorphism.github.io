@@ -28,13 +28,13 @@ Why is this even working?
 The function `sum(an_iterable_object)` will simply use the operator `+` for the iterable object that was passed on to it. I can take in an optional parameter, i.e.,
 
 ```
-sum(a_iterable_object, where_do_the_summation_start)
+sum(a_iterable_object, where_should_the_summation_start)
 ``` 
 
 The operations would be like this:
 
 ```
-result = where_do_the_summation_start or 0
+result = where_should_the_summation_start or 0
 
 for i in an_iterable_object:
    result = result + i 
