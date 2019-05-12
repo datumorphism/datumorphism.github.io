@@ -2,7 +2,7 @@
 layout: til
 title: "Assigning Values to Multiple Variables"
 date: 2015-12-04
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 - basics

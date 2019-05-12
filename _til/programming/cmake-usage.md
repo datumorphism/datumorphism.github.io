@@ -2,7 +2,7 @@
 layout: til
 title: CMake Usage
 date: 2017-09-21
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

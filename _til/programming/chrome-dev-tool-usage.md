@@ -3,7 +3,7 @@ layout: til
 title: "The Great Chrome Dev Tool"
 date: 2016-09-28
 modified: 2016-09-28
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

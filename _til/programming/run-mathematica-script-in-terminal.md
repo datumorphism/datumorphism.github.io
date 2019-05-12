@@ -2,7 +2,7 @@
 layout: til
 title: "How to Run Mathematica Script in Terminal"
 date: 2017-05-08
-author: OctoMiao
+author: Lei Ma
 category:
 - 'programming'
 - 'basics'

@@ -4,7 +4,7 @@ title:  "Human Graphical Perception of Quantitative Information in Data Visualiz
 date: 2019-03-17
 subtitle: ""
 speaker: "Lei Ma"
-author: OctoMiao
+author: Lei Ma
 comments: true
 types: 
 - 'paper'

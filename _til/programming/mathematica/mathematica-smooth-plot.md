@@ -2,7 +2,7 @@
 layout: til
 title: "Mathematica Smooth Plot"
 date: 2015-12-04
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 tag:

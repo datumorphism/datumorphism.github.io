@@ -3,7 +3,7 @@ layout: reading
 title:  "Information Theory and Statistical Mechanics"
 date: 2019-03-01 #2014-08-27T11:57:41-04:00
 subtitle: "Max entropy principle from Jaynes, E. T. (1957)."
-author: OctoMiao
+author: Lei Ma
 comments: true
 types: 
 - 'paper'

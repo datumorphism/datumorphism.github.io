@@ -2,7 +2,7 @@
 layout: til
 title: "Git Branch Options"
 date: 2016-11-27
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming
