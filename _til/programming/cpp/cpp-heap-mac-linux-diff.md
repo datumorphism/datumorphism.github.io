@@ -2,7 +2,7 @@
 layout: til
 title: "Heap on Mac and Linux"
 date: 2017-09-26
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

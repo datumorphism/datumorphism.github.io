@@ -2,7 +2,7 @@
 layout: til
 title: "Python Long String"
 date: 2018-12-31
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 - basics

@@ -3,7 +3,7 @@ layout: til
 title: "Calculated Columns in Pandas"
 date: 2018-05-20
 modified: 2018-05-20
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 - basics

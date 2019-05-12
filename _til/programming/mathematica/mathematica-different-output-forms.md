@@ -3,7 +3,7 @@ layout: til
 title: "Mathematica Different Output Forms"
 date: 2016-11-28
 modified: 2016-09-28
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

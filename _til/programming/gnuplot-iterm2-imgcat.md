@@ -3,7 +3,7 @@ layout: til
 title: "GNUPLOT Inline Output in iterm2"
 date: 2017-04-07
 modified: 2017-04-07
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

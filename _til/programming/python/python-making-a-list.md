@@ -2,7 +2,7 @@
 layout: til
 title: "Python Making a List"
 date: 2015-12-04
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 - basics

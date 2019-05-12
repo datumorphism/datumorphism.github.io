@@ -2,7 +2,7 @@
 layout: til
 title: "Command Line Russian Roulette"
 date: 2017-05-09
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

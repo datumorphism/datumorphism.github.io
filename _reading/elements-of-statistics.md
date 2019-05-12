@@ -5,7 +5,7 @@ date: 2018-11-01 #2014-08-27T11:57:41-04:00
 modified: 2019-01-26
 subtitle: "by Ruth Bernstein and Stephen Bernstein"
 speaker: "Lei Ma"
-author: OctoMiao
+author: Lei Ma
 comments: true
 types: 
 - 'book'

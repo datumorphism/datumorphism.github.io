@@ -2,7 +2,7 @@
 layout: til
 title: "Solving Equations Using Differential Transformation Method"
 date: 2016-10-11
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - math

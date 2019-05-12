@@ -2,7 +2,7 @@
 layout: til
 title: "Certificate Errors in urllib"
 date: 2018-06-25
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - data

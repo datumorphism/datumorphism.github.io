@@ -2,7 +2,7 @@
 layout: til
 title: Fitt's Law
 date: 2018-07-22
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - misc
