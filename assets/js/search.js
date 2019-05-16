@@ -116,7 +116,7 @@
     this.matches = function (str, crit) {
       if (!str) return false
   
-      str = str.trim().toLowerCase()
+      //str = str.trim().toLowerCase()
       crit = crit.trim().toLowerCase()
   
       return crit.split(' ').filter(function (word) {
@@ -302,7 +302,33 @@
       resultsContainer: null,
       json: [],
       success: Function.prototype,
-      searchResultTemplate: '<a class="list-item" href="{url}" title="{desc}">{title}</a>',
+      searchResultTemplate: `<a class="list-item" style="display:block;" href="{url}" title="{description}">
+      <div class="card">
+      <div class="card-content">
+        <div class="content">{title} 
+          <div class="field is-grouped is-grouped-multiline">
+            <div class="control">
+              <div class="tags">
+                <span class="tag is-info">#{category}</span>
+              </div>
+            </div>
+            
+            <div class="control">
+              <div class="tags">
+                <span class="tag is-danger">[{tags}]</span>
+              </div>
+            </div>
+
+            <div class="control">
+              <div class="tags">
+                <span class="tag is-dark">{type}</span>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+          </a>`,
       templateMiddleware: Function.prototype,
       sortMiddleware: function () {
         return 0
