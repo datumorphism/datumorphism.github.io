@@ -237,3 +237,22 @@ div.mermaid {
     border-top: 2px solid black;
     margin-top: 2em;
 }
+
+.all-knowledge-cards {
+  background-color : #31B0D5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: #46b8da;
+}
+
+#all-knowledge-cards--button {
+  z-index: 999;
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+
+#all-knowledge-cards--button a {
+  color: white;
+}
