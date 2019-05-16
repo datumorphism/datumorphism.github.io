@@ -2,7 +2,7 @@
 layout: til
 title: "C++ range-for-statement"
 date: 2017-09-12T00:00:00.000Z
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 tag:

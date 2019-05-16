@@ -1,0 +1,27 @@
+---
+---
+[
+  {% for post in site.cards %}
+    {
+      "type"     : "card",
+      "title"    : "{{ post.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "category" : "{{ post.category }}",
+      "tags"     : ["{{ post.tags | join: '", "' }}"],
+      "date"     : "{{ post.date }}",
+      "description"  : "{{ post.excerpt | replace: '$', ' ' | replace: '\', ' ' | replace: '_', ' ' | strip_html | strip_newlines | escape }}"
+    },
+  {% endfor %}
+  {% for post in site.til %}
+    {
+      "type"     : "til",
+      "title"    : "{{ post.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "category" : "{{ post.category }}",
+      "tags"     : ["{{ post.tags | join: '", "' }}"],
+      "date"     : "{{ post.date }}",
+      "description"  : "{{ post.excerpt | replace: '$', ' ' | replace: '\', ' ' | replace: '_', ' ' | strip_html | strip_newlines | escape }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+
+]

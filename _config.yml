@@ -43,6 +43,8 @@ minima:
 collections:
   til:
     output: true
+  cards:
+    output: true
 
 permalink: /:categories/:year-:month-:day-:title:output_ext
 
@@ -96,6 +98,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   til:
+    output: true
+    permalink: /:collection/:path/
+  cards:
     output: true
     permalink: /:collection/:path/
   reading:
@@ -169,6 +174,18 @@ defaults:
       comments: false
       sidebar:
         nav: "til"
+  # _cards
+  - scope:
+      path: ""
+      type: cards
+    values:
+      layout: cards
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "cards"
 
 
 

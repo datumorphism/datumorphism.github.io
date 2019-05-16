@@ -2,7 +2,7 @@
 layout: til
 title: "Mathematica Plot Default Font Style and Ticks Style: BaseStyle"
 date: 2015-12-04
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 tag:

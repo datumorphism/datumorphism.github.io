@@ -2,7 +2,7 @@
 layout: til
 title: "List All Folders in Linux or Mac"
 date: 2017-08-01
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

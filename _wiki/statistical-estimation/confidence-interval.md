@@ -12,7 +12,7 @@ tag:
 references:
 - name: "Schaum's Outline of Theories and Problems of Elements of Statistics II, by Ruth Bernstein and Stephen Bernstein. Chapter 13, 14"
   link: ''
-notify: "The name confidence interval is rather misleading."
+notify: "Confidence interval is the interval that we are about a certain degree of confident that we have captured the true mean. From this point of view, the name confidence interval is rather misleading."
 weight: 2
 published: true
 ---
@@ -26,13 +26,17 @@ We will use upper cases for the abstract variable and lower cases for the actual
 
 Suppose I sample the population multiple times, the mean value $\mu_i$ of the sample is calculated for each sample. It is a good question to ask how different these $\mu_i$ are compared to the true mean $\mu_p$ of the population.
 
+In this article, we would need to specify several notations.
+
+1. $X$ is the quantity we are measuring.
+2. $\bar X$ is the mean of the quantity $X$.
 
 ## Confidence Interval
 
-This theorem states that the probability for the true mean $\mu_0$ to fall into a specific range can be calculated using
+This theorem states that the probability for the true mean $\mu_p$ to fall into a specific range can be calculated using
 
 $$
-P( \mu \in [\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ] ) = 1-\alpha.
+P( \mu_p \in [\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ] ) = 1-\alpha.
 $$
 
 
@@ -79,6 +83,7 @@ The confidence level is a **weird measurement of our statistical confidence**.
 Imagine we are drawing 100 samples from the population and calculate the range $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$. We would have 100 different ranges. How many of them would actually contain the true mean? The answer is probably around $(1-\alpha)$ fraction of all the 100 calculations. When we have a huge amount of samples, this probability becomes quite faithful.
 
 Why is this a representation of our confidence? Imagine we choose one sample from this 100 calculations. The probability that this specific number $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ (with all the numbers substituted using the sample values, for example $[-1,2]$, which is different from every other sample calculations) contains the true mean is also $(1-\alpha)$.
+
 
 In other words, $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ is the interval that we are $1-\alpha$ confident that we have captured the true mean. From this point of view, **the name confidence interval is rather misleading.**
 

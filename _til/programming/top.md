@@ -2,7 +2,7 @@
 layout: til
 title: "TOP Command"
 date: 2016-07-21
-author: OctoMiao
+author: Lei Ma
 category:
 - 'programming'
 - 'basics'

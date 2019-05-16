@@ -27,7 +27,7 @@
 
   {% if page.charts %}
     {% for chart in page.charts %}
-      {% include extras/plotly.html data=chart.data target=chart.target %}
+      {% include extras/plotly.html data=chart.data target=chart.target layout=chart.layout %}
     {% endfor %}
   {% endif %}
 

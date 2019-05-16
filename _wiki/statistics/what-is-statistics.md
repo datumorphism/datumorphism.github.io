@@ -23,7 +23,13 @@ In our lab, we found **a huge amount of similar robots on a planet** (**physical
 
 To describe the data, we could calculate the mean of the weight. We found that the mean weight is 93kg (**descriptive statistics**). 
 
-How can we know the mean weight of this kind of robot? We know the mean weight of those robot that we selected. We need a link to the actual mean weight of all the robots on the planet (**inferential statistics, estimation**).
+We could simply give a number to standard for the mean weight of all the robots. (**point estimate**) We could tell a number as the mean weight of all the robots together with a range that tells us how disperse our measurement is.
 
-In the end, we will have a conclusion of the mean weight of all the robots on the planet. Then again, how could we be sure that our conclusion is correct (**hypothesis testing**)?
+How can we know the mean weight of this kind of robot? We know the mean weight of those robot that we selected and measured. We need to link this to the actual mean weight of all the robots on the planet (**inferential statistics**). To establish a good connection between the mean weight of the robots we measured and the mean weight of all the robots, we also require an analysis of how would the mean weight distribute if we could repeatedly choose some robots using the same procedure and do the measurement. (maybe something related to **the central limit theorem**?)
+
+In the end, we will have a conclusion of the mean weight of all the robots on the planet with some kind of confidence. Then again, how could we be sure that our conclusion is correct (**hypothesis testing**)? How robust is our conclusion? Do we find our conclusion wrong if we do the measurement again?
+
+## Statistics and Statistics of Statistics
+
+Through the example above, we already feel that we mean to study our measurement "statistically". In reality, repeated measurement of the robots through multiple sampling is usually expensive. So we should study the statistics of similar samplings and use the result in the future. This is more like the statistics of statistics.
 

@@ -2,7 +2,7 @@
 layout: til
 title: "Git Asks for Password Whenever I Pull or Push"
 date: 2017-05-11
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

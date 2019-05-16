@@ -2,7 +2,7 @@
 layout: til
 title: "Python Code Style"
 date: 2015-12-04
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 - basics

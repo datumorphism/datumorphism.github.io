@@ -2,7 +2,7 @@
 layout: til
 title: "Allocating Memory for Multidimensional Array in C++"
 date: 2017-09-14
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

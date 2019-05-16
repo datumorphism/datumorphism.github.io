@@ -2,7 +2,7 @@
 layout: til
 title: "Python Datetime on Different OS"
 date: 2018-12-31
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 - basics
