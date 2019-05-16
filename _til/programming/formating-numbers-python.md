@@ -2,7 +2,7 @@
 layout: til
 title: "Formatting Numbers in Python"
 date: 2016-10-11
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

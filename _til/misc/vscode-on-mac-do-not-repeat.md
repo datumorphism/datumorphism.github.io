@@ -2,7 +2,7 @@
 layout: til
 title: VSCode on Mac Do Not Repeat
 date: 2018-12-31
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - misc

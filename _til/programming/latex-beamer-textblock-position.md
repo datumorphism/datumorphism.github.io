@@ -2,7 +2,7 @@
 layout: til
 title: "Positioning textblock in LaTeX Beamer"
 date: 2017-01-17
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

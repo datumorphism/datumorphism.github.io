@@ -2,7 +2,7 @@
 layout: til
 title: "git pull multi remote"
 date: 2016-11-22
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

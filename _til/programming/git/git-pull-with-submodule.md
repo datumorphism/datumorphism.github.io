@@ -2,7 +2,7 @@
 layout: til
 title: "Git Pull with Submodule"
 date: 2017-02-03
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

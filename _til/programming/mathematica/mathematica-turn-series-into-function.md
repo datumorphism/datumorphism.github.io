@@ -2,7 +2,7 @@
 layout: til
 title: "Turn a Series Expansion into Function in Mathematica"
 date: 2017-05-15
-author: OctoMiao
+author: Lei Ma
 category:
 - programming
 tag:

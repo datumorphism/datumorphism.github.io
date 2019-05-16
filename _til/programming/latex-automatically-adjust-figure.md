@@ -2,7 +2,7 @@
 layout: til
 title: "LaTeX Automatically Adjust Figure"
 date: 2015-12-04
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming

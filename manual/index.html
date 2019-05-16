@@ -1,0 +1,117 @@
+---
+layout: page
+title: Survival Manual
+description: A survival manual for data scientists
+exclude: true
+---
+
+
+
+{% comment %}
+{% for post in site.wiki %}
+{{ post.category }}
+{% endfor %}
+{% endcomment %}
+
+{% comment %}
+Here we generate all the categories.
+{% endcomment %}
+
+{% assign rawcats = "" %}
+{% for post in site.manual %}
+{% assign tcats = post.category | join:'|' | append:'|' %}
+{% assign rawcats = rawcats | append:tcats %}
+{% endfor %}
+
+{% assign rawcats = rawcats | split:'|' | sort %}
+
+{% assign cats = "" %}
+
+{% for cat in rawcats %}
+{% if cat != "" %}
+
+{% if cats == "" %}
+{% assign cats = cat | split:'|' %}
+{% endif %}
+
+{% unless cats contains cat %}
+{% assign cats = cats | join:'|' | append:'|' | append:cat | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+
+<div class="columns is-desktop">
+  <div class="column is-2">
+
+      <aside class="menu">
+        <p class="menu-label">
+          Categories
+        </p>
+        <ul class="menu-list">
+          {% for ct in cats %}
+          <li><a href="#{{ ct | slugify }}" class="codinfox-category-mark" style="color:#999;text-decoration: none;"> {{ ct }} </a></li>
+          {% endfor %}
+          <li><a href="#no-category" class="codinfox-category-mark" style="color:#999;text-decoration: none;"> MISC </a></li>
+        </ul>
+      </aside>
+
+    </div>
+
+<div class="column">
+  <div class="posts">
+    {% comment %}
+  <p>
+  {% for ct in cats %}
+  <a href="#{{ ct | slugify }}" class="codinfox-category-mark" style="color:#999;text-decoration: none;"> {{ ct }} </a> &nbsp;&nbsp;
+  {% endfor %}
+  <a href="#no-category" class="codinfox-category-mark" style="color:#999;text-decoration: none;"> No Category </a> &nbsp;&nbsp;
+  </p>
+  {% endcomment %}
+
+  {% for ct in cats %}
+  <h2 id="{{ ct | slugify }}">{{ ct }}</h2>
+  <ul class="codinfox-category-list">
+    {% assign allwikis = site.manual %}
+    {% assign allwikis = allwikis | sort:"weight" %}
+
+    {% for post in allwikis %}
+    {% if post.category contains ct %}
+     <article class="post-item">
+          <p><span class="post-meta">{{ post.weight }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+          <span style="float: right;">
+          {% for tag in post.tags %}[
+        <a class="keywords-mark" href="{{ site.url }}{{ site.baseurl }}/manual/?keywords={{ tag }}">#{{ tag }}</a>
+        ]{% endfor %}
+        </span>
+        </p>
+    </article>
+
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  <h2 id="no-category">MISC</h2>
+  <ul class="codinfox-category-list">
+    {% for post in site.manual %}
+    {% unless post.category %}
+    <article class="post-item">
+          <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+          <span style="float: right;">
+        {% if post.tags %}
+          [{% for tag in post.tags %}
+        <a class="codinfox-tag-mark" href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
+        {% endfor %}]
+        {% endif %}
+        </span>
+        </p>
+    </article>
+    {% endunless %}
+    {% endfor %}
+  </ul>
+
+  </div>
+  </div>
+
+{% include highlight-get-params.html %}

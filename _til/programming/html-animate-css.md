@@ -2,7 +2,7 @@
 layout: til
 title: "HTML Animations Using CSS: AnimateCSS"
 date: 2015-12-04
-author: OctoMiao
+author: Lei Ma
 comments: true
 category:
 - programming
