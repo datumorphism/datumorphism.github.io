@@ -92,7 +92,9 @@ var app = new Vue({
     },
     methods: {
         getWords: function (sentence) {
-            return [...new Set(sentence.replace(/[^a-zA-Z\s]/g, '').split(' '))]
+            return [...new Set(sentence.replace(/[^a-zA-Z\s]/g, '').toLowerCase().split(' '))].filter(function (el) {
+                return el != '';
+                })
         },
         getIntersect: function (one, two) {
             return one.filter(value => two.includes(value))
