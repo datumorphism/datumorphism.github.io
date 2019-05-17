@@ -24,6 +24,12 @@ $$
 d_J(A,B) = 1 - J(A,B).
 $$
 
+## Properties
+
+If the two sets are the same, $A=B$, we have $J(A,B)=1$ or $d_J(A,B)=0$. We have maximum similarity.
+
+If the two sets have nothing in common, we have $J(A,B)=0$ or $d_J(A,B)=1$. We have minimum similarity.
+
 ## Examples
 
 <div id="app">
