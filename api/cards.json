@@ -12,6 +12,17 @@
       "description"  : "{{ post.excerpt | replace: '$', ' ' | replace: '\', ' ' | replace: '_', ' ' | strip_html | strip_newlines | escape }}"
     },
   {% endfor %}
+  {% for post in site.wiki %}
+    {
+      "type"     : "wiki",
+      "title"    : "{{ post.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "category" : "{{ post.category }}",
+      "tags"     : ["{{ post.tags | join: '", "' }}"],
+      "date"     : "{{ post.date }}",
+      "description"  : "{{ post.excerpt | replace: '$', ' ' | replace: '\', ' ' | replace: '_', ' ' | strip_html | strip_newlines | escape }}"
+    },
+  {% endfor %}
   {% for post in site.til %}
     {
       "type"     : "til",

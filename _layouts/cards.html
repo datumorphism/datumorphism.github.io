@@ -21,9 +21,9 @@ layout: default
      • <span style="font-style: regular;">{</span>{% for cate in page.category %}
      <span style="padding-right: 0.2em;padding-left: 0.2em;">
        {% comment %}
-       <a href="{{ site.url }}{{ site.baseurl }}/cards/#{{ cate | slugify }}">⸢{{ cate }}⸥</a>
+       <a href="{{ site.url }}{{ site.baseurl }}/cards/all/#{{ cate | slugify }}">⸢{{ cate }}⸥</a>
        {% endcomment %}
-       <a href="{{ site.url }}{{ site.baseurl }}/cards/?keywords={{ cate | slugify }}">⸢{{ cate }}⸥</a>
+       <a href="{{ site.url }}{{ site.baseurl }}/cards/all/?keywords={{ cate | slugify }}">⸢{{ cate }}⸥</a>
      </span>
      {% endfor %}
      }
