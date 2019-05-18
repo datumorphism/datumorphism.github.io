@@ -10,6 +10,9 @@ tag:
 references:
 - name: Cosine Similarity
   link: https://en.wikipedia.org/wiki/Cosine_similarity
+related:
+- name: Jaccard Similarity
+  link: /cards/jaccard-similarity
 ---
 
 As simple as inner product of two vectors
@@ -19,7 +22,16 @@ d_{cos} = \frac{\vec A}{\vert \vec A \vert}  \cdot \frac{\vec B }{ \vert \vec B 
 $$
 
 
+
+
 ## Examples
+
+To use cosine similarity, we have to vectorize the words first. There are many different methods to achieve this. For the purpose of illustrating cosine similarity, we use term frequency.
+
+Term frequency is the occurrence of the words. We do not deal with duplications so duplicate words will have some effect on the similarity. 
+
+In principle, we could also use word set for a sentence to remove the effect of duplicate words. In most cases, if a word is repeating, it would indeed make the sentences different. If duplicating words are becoming a problem, we will consider using [tf-idf](http://www.tfidf.com/).
+{: .notes--warning}
 
 <div id="app">
 <div class="columns">
@@ -47,7 +59,7 @@ $$
 
 <div class="columns">
     <div class="column has-text-centered">
-    Union: (( unionWords ))
+    Union as Vector Element Labels: (( unionWords ))
   </div>
 </div>
 
@@ -88,8 +100,13 @@ var app = new Vue({
         sentenceTwo: { 'sentence': 'You are a robot'}
     },
     methods: {
-        getWords: function (sentence) {
+        getUniqueWords: function (sentence) {
             return [...new Set(sentence.replace(/[^a-zA-Z\s]/g, '').toLowerCase().split(' '))].filter(function (el) {
+                return el != '';
+                })
+        },
+        getWords: function (sentence) {
+            return sentence.replace(/[^a-zA-Z\s]/g, '').toLowerCase().split(' ').filter(function (el) {
                 return el != '';
                 })
         },
