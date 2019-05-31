@@ -25,7 +25,7 @@ This specific sample mean $\mu_0$ is nothing but like an **advanced** educated g
 	</header>
 	<div class="card-content is-hidden">
 		<div class="content">
-			FIn statistical estimation theory, we would tell the sample value with some indication of the degrees of faithfulness. For example, we would tell the sample mean together with a <a href="/wiki/statistical-estimation/confidence-interval/">confidence interval</a>.
+			In statistical estimation theory, we would tell the sample value with some indication of the degrees of faithfulness. For example, we would tell the sample mean together with a <a href="/wiki/statistical-estimation/confidence-interval/">confidence interval</a>.
 		</div>
 	</div>
 </div>
