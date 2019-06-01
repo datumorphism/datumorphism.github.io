@@ -40,7 +40,7 @@ We could tell that there are two types of errors:
 
 We all make mistakes. The question is, what kind of mistakes.
 
-The name I and II doesn't really matter, it is crucial that we design our null hypothesis correctly.
+If we forget about the name "Null Hypothesis" and only consider just any hypothesis, the name I and II won't matter. So there is a reason that we design our null hypothesis correctly.
 
 <div class="card">
 	<header class="card-header">
@@ -48,7 +48,7 @@ The name I and II doesn't really matter, it is crucial that we design our null h
 	</header>
 	<div class="card-content is-hidden">
 		<div class="content">
-			For cancer screening, we definitely don't want to miss out some real cancer samples. If we are using "the sample is a cancer sample" as $H_0$, we would like to reduce type I errors. However, if we are using "the sample is not a cancer sample" as $H_0$, we would like to reduce type II errors.
+			For cancer screening, we definitely don't want to miss out some real cancer samples. If we are using "the sample is a cancer sample" as a hypothesis, we would like to reduce type I errors. However, if we are using "the sample is not a cancer sample" as a hypothesis, we would like to reduce type II errors. In fact, null hypothesis should be the statement "the sample is not a cancer sample".
 		</div>
 	</div>
 </div>
@@ -65,4 +65,7 @@ Here I quote this very wise paragraph from *Elements of Statistics II* as shown 
 
 We will denote the threshold of the hypothesis testing as $p_t$. If the $p < p_t$, then we reject our hypothesis. Here $p_t$ is linked to our risk of type I errors. The larger the threshold we choose, the higher the risk of making type I errors.
 
-In hypothesis testing, it is crucial that we place the actual hypothesis we would like to find out under test so that type I error is the type of error we care about.
+In hypothesis testing, it is crucial that we place the actual null hypothesis $H_0$ we would like to test so that type I error is the type of error we care about.
+
+However, I believe that the theory doesn't prevent us from using a non-null hypothesis if we insist. But null hypothesis is the most important one when we are dealing with new findings. If you have different opinions, I would appreciate it if you leave a comment.
+{: .notes--warning}
