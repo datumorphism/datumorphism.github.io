@@ -98,24 +98,30 @@ Pearson's chi-square correlation is a smart idea.
 First of all, we define an expectation table E. Each element of E is calculated as
 
 $$
-e_{ij} = \frac{ \text{number of} a_i * \text{ number of} b_j }{ \text{ total number of rows in original table } }
+e_{ij} = \frac{ \text{number of } a_i * \text{ number of } b_j }{ \text{ total number of rows in original table } }
 $$
 
 <div class="notes--info" markdown="1">
-Basically, we have the total number of possible occurrences divided by the total number of rows. Suppose we have A and B exactly the same, and they all have the same values, a1.
+This $e_{ij}$ serves as the average occurance of each combinations of $a_i$ and $b_j$. If we have $a_i$ in each row but only one $b_j$ occurrences, the average is 1. This mean that given $b_j$ we would definitely only see one $a_i$.
+
+When we have multiple $a_i$ and $b_j$, this average still works. Suppose we have $a_1$ occurred 4 times in total and we have a total of 8 rows. Assuming that this $a_1$ will appear randomly in the rows, what is the average probability to see this $a_1$ if we choose a random row? It is $4/8=0.5$. Then we will expect $1\times 0.5=0.5$ occurrences $a_1$ for one occurance of $b_2$. If we have 3 occurances of $b_2$, we would expect to see $3\times 0.5==1.5$ occurrences of $a_1$.
+
+This is why it is treated as expected frequencies of each combinations.
+
+As a side note, suppose we have A and B exactly the same, and they all have the same values, a1.
 
 | index | A | B |
 |--|---|---|
-| 1 | a1 | a1 |
-| 2 | a1 | a1 |
-| 3 | a1 | a1 |
-| 4 | a1 | a1 |
-| 5 | a1 | a1 |
-| 6 | a1 | a1 |
-| 7 | a1 | a1 |
-| 8 | a1 | a1 |
+| 1 | a1 | b1 |
+| 2 | a1 | b1 |
+| 3 | a1 | b1 |
+| 4 | a1 | b1 |
+| 5 | a1 | b1 |
+| 6 | a1 | b1 |
+| 7 | a1 | b1 |
+| 8 | a1 | b1 |
 
-Then we expect $e_11 = n$, where $n=8$ is the number of rows.
+Then we expect $e_{11} = n$, where $n=8$ is the number of rows.
 </div>
 
 Now if we compare the original table with this one,
