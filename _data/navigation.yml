@@ -19,6 +19,13 @@ main:
 - title: Awesome
   url: /awesome/
   excerpt: "Awesome Tools"
+  subnav:
+    - title: Tools
+      url: /awesome/
+      excerpt: "Awesome tools related to data science"
+    - title: Cheatsheets
+      url: /awesome/cheatsheets
+      excerpt: "Cheatsheets on data science"
 
 - title: Blog
   url: /blog/

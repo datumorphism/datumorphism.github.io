@@ -26,7 +26,22 @@
               {% else %}
               {% assign domain = site.url %}
               {% endif %}
+              {% if link.subnav == blank %}
               <a class="navbar-item{% if page.url == link.url %} is-active{% endif %} has-text-weight-bold" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+              {% else %}
+              <div class="navbar-item has-text-weight-bold has-dropdown is-hoverable">
+                <a class="navbar-link" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>
+                  {{ link.title }}
+                </a>
+                <div class="navbar-dropdown is-primary" style="color:white;background-color:#e9541f;">
+                  {% for subnav in link.subnav %}
+                  <a class="navbar-item" href="{{ domain }}{{ subnav.url }}" {% if subnav.url contains 'http' %}target="_blank" {% endif %}>
+                    {{ subnav.title }}
+                  </a>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %}
               {% endfor %}
 
               {% comment %} The code below dynamically
