@@ -1,0 +1,35 @@
+- meta:
+  - title: Prerequisites
+  - order: 1
+- content:
+  - name: Programming
+    lists:
+      - name: Python
+      - name: C++
+    alternatives:
+      - name: R
+      - name: Matlab
+    description: Just choose one
+  - name: Computer Science
+    lists:
+      - name: Data Structures
+      - name: Complexity
+    description: These theories make people think faster. They don't pose direct limits on what data scientist can do but they will definitely give data scientists a boost.
+  - name: Math
+    lists:
+      - name: Statistics
+      - name: Linear Algebra
+      - name: Calculus
+      - name: Differential Equations
+    description: Some basic understanding of these is absolutely required. Higher levels of these topics will also be listed in details.
+  - name: EDA Tools
+    lists:
+      - name: SQL
+      - name: numpy
+      - name: scipy
+      - name: pandas
+      - name: dask
+      - name: matplotlib
+      - name: seaborn
+      - name: plotly
+    description: These tools are used almost everywhere in data science.

@@ -1,0 +1,11 @@
+- name: Regression
+  lists:
+    - name: Linear Regression
+    - name: Higher-order Regression
+  description:
+- name: Classification
+  lists:
+    - name: Logistic Regression
+    - name: SVM
+    - name: Tree
+  description:

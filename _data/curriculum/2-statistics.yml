@@ -1,0 +1,12 @@
+- meta:
+  - title: Statistics
+  - order: 2
+- content:
+  - name: Descriptive statistics
+    description: It is crucial for the interpretations in statistics.
+  - name: Inferential statistics
+    lists:
+      - name: Hypothesis Testing
+      - name: Bayesian inference
+      - name: Frequentist inference
+    description: To get closer to the ultimate question about causality
