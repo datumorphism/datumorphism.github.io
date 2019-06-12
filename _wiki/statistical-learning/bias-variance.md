@@ -115,8 +115,9 @@ The more parameters we introduce in the model, it is more likely to reduce the b
 <p class="card-header-title card-toggle">Free Parameters</p>
 </header>
 <div class="card-content is-hidden">
-<div class="content">
+<div class="content" markdown="1">
 Fermi once said,
+
 > I remember my friend Johnny von Neumann used to say, with four parameters I can fit an elephant, and with five I can make him wiggle his trunk.
 
 There is a [nice story](http://lilith.fisica.ufmg.br/~dsoares/fdyson.htm) about Dyson and Fermi behind this.
