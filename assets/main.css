@@ -256,3 +256,12 @@ div.mermaid {
 #all-knowledge-cards--button a {
   color: white;
 }
+
+.MJXc-display {
+  overflow-x: overlay !important;
+  overflow-y: hidden !important;
+}
+
+::-webkit-scrollbar {
+  height: 1px;  /* height of horizontal scrollbar ← You're missing this */
+}
