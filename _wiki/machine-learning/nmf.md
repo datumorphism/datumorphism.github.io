@@ -29,9 +29,9 @@ $$
 \mathbf P = P_k \mathbf V^k.
 $$
 
-This is immediately obvious to us since we have been dealing with rank 2 $(k, 1)$ basis vectors and we are basically talking about the $k$ coordinates for a point. 
+This is immediately obvious to us since we have been dealing with rank 2 $(k, 1)$ basis vectors and we are basically talking about the $k$ coordinates for a point.
 
-In fact, this point is represented by a matrix of rank 2 $(k, 1)$ given this basis. 
+In fact, this point is represented by a matrix of rank 2 $(k, 1)$ given this basis.
 
 $$
 \mathbf P \to \begin{pmatrix} P_1, P_2, \cdots, P_k \end{pmatrix}
@@ -69,7 +69,7 @@ Using these representations of the abstract vectors, we could represent the poin
 
 $$
 \mathbf P \to \begin{pmatrix}
-P_1, P_2, \cdots, P_k 
+P_1, P_2, \cdots, P_k
 \end{pmatrix} \begin{pmatrix}
 1 & 0 & \cdots & 0 \\
 0 & 1 & \cdots & 0 \\
@@ -93,7 +93,7 @@ Now we ask this question:
 
 The answer is yes.
 
-While it is easier to perceive using the above matrix picture, it is much more convinent to use the index notation. 
+While it is easier to perceive using the above matrix picture, it is much more convinent to use the index notation.
 
 In physics, we are already dealing with this situition. We use spherical harmonics to decompose a field.
 
@@ -132,17 +132,17 @@ $$
 P_{11} & P_{12} & \cdots & P_{1k} \\
 P_{21} & P_{22} & \cdots & P_{2k} \\
 \vdots & \vdots & \ddots & \vdots \\
-P_{n1} & P_{n2} & \cdots & P_{nk} 
+P_{n1} & P_{n2} & \cdots & P_{nk}
 \end{pmatrix} = \begin{pmatrix}
 H_{11} & H_{12} & \cdots & H_{1r} \\
 H_{21} & H_{22} & \cdots & H_{2r} \\
 \vdots & \vdots & \ddots & \vdots \\
-H_{n1} & H_{n2} & \cdots & H_{nr} 
+H_{n1} & H_{n2} & \cdots & H_{nr}
 \end{pmatrix} \begin{pmatrix}
 W_{11} & W_{12} & \cdots & W_{1k} \\
 W_{21} & W_{22} & \cdots & W_{2k} \\
 \vdots & \vdots & \ddots & \vdots \\
-W_{r1} & W_{r2} & \cdots & W_{rk} 
+W_{r1} & W_{r2} & \cdots & W_{rk}
 \end{pmatrix} \leftarrow \begin{pmatrix}
 \mathbf H_1 \\
 \mathbf H_2 \\
@@ -177,7 +177,7 @@ $$
 \end{pmatrix} \begin{pmatrix}
 \mathbf W_1 \\
 \mathbf W_2 \\
-\vdots \\ 
+\vdots \\
 \mathbf W_r
 \end{pmatrix}
 $$
@@ -199,7 +199,10 @@ Hmmm this is not providing more insights to me. It seems to be rewriting the ori
 NMF is a dimension reduction method that decomposes $X_{n}^{\phantom{n}k}$ using
 
 $$
+\begin{equation}
 X_{n}^{\phantom{n}k} \sim H_n^{\phantom{n}r} W_r^{\phantom{r}k}.
+\label{eq-nmf}
+\end{equation}
 $$
 
 while requiring the elements of the decomposition being nonnegative. **But there are many possible decompositions!** Then we require this approximation to be as accurate as possible.
@@ -213,3 +216,29 @@ $$
 $$
 
 So NMF will require this Frobenius distance to be minimal.
+
+## Why Does It Even Work?
+
+Well, it doesn't always work. **We might have many different NMFs for one single matrix.**
+
+
+<div class="card">
+<header class="card-header">
+<p class="card-header-title card-toggle">Compare with SVD</p>
+</header>
+<div class="card-content is-hidden">
+<div class="content">
+
+For a $n\times p$ matrix $\mathbf X$, we use SVD to get the singular value,
+
+$$
+\mathbf{U}^{\mathbf T}\mathbf{X} = \mathbf{D}\mathbf{V}^{\mathbf T}.
+$$
+
+In this case, we have $\mathbf D$ being uniquly determined but neither $\mathbf U$ nor $\mathbf V$.
+
+</div>
+</div>
+</div>
+
+How do we find a proper decomposition using NMF? We put restrictions on it, such as penalties. Apart from this, we also need to choose the rank of the decomposition $r$ in Eq. ($\ref{eq-nmf}$). Even if we fixed all these problems, NMF is computation expensive.
