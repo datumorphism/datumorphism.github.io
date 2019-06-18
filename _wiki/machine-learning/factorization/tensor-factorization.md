@@ -18,6 +18,8 @@ references:
   name: Penrose graphical notation
 - link: https://math.stackexchange.com/questions/455478/what-is-the-practical-difference-between-abstract-index-notation-and-ordinary
   name: What is the practical difference between abstract index notation and “ordinary” index notation
+- link: https://medium.com/@keremturgutlu/tensor-decomposition-fast-cnn-in-your-pocket-f03e9b2a6788
+  name: "Tensor Decomposition: Fast CNN in your pocket"
 weight: 3
 ---
 
