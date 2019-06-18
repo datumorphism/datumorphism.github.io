@@ -8,6 +8,9 @@ tag:
 - 'Matrix'
 - 'Factorization'
 - 'Linear Algebra'
+references:
+- name: Matrix and Tensor Factorization from a Machine Learning Perspective
+  link: http://statmath.wu.ac.at/research/talks/resources/talkfreudenthaler.pdf
 ---
 
 Given a matrix $\mathbf X \to X_{m}^{\phantom{m}n}$, we can decompose it into three matrices
@@ -19,3 +22,12 @@ $$
 where $D_{k}^{\phantom{k}l}$ is diagonal.
 
 Here we actually have $\mathbf U$ being constructed by the eigenvectors of $\mathbf X \mathbf X^{\mathrm T}$, while $\mathbf V$ is being cunstructed by the eigenvectors of $\mathbf X^{\mathrm T} \mathbf X$ (which is also the reason we keep the transpose).
+
+I find this slide from Christoph Freudenthaler very useful. The original slide has been added as a reference to this article.
+
+<figure markdown="1">
+![](../assets/svd/svd-visualized.jpg)
+<figcaption markdown="1">
+SVD visualized by Christoph Freudenthaler
+</figcaption>
+</figure>
