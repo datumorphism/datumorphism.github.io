@@ -1,0 +1,42 @@
+---
+layout: page
+title: Cards
+description: Knowledge Snippet
+exclude: true
+---
+
+<div id="all-knowledge-cards--button">
+    <button class="all-knowledge-cards"><a href="{{ "/cards/" | relative_url }}" >Full List of Knowledge Cards</a></button>
+</div>
+
+
+<section class="section">
+  <div class="container">
+    <!-- Html Elements for Search -->
+    <div id="search-container">
+      <div class="field has-addons has-addons-centered">
+        <div class="control has-icons-right is-expanded">
+          <input class="input is-large is-info" type="text" id="search-input" placeholder="search knowledge cards">
+          <span class="icon is-large is-right">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </div>
+      <div class="list is-hoverable" id="results-container">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Script pointing to search-script.js -->
+<script src="{{ "/assets/js/search.js" | relative_url }}" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ "/api/cards.json" | relative_url }}'
+  })
+</script>
