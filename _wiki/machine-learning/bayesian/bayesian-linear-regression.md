@@ -14,6 +14,8 @@ references:
   link: https://towardsdatascience.com/introduction-to-bayesian-linear-regression-e66e60791ea7
 - name: "Linear Regression: A Bayesian Point of View"
   link: https://wiseodd.github.io/techblog/2017/01/05/bayesian-regression/
+- name: zjost/bayesian-linear-regression
+  link: https://github.com/zjost/bayesian-linear-regression
 weight: 22
 ---
 
