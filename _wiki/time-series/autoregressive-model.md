@@ -63,6 +63,8 @@ $$
 \end{align*}
 $$
 
+We could also write this into a combination of first order derivative and second order derivative form but I think it is better to be only first order derivative.
+
 
 </div>
 </div>
