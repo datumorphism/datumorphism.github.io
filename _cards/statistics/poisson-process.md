@@ -20,6 +20,9 @@ references:
 
 <div id="graph_rate"></div>
 
+
+<div id="graph_interval_hist"></div>
+
 {% include extras/poisson-process.html %}
 {% include extras/plotlyjs.html %}
 
@@ -43,6 +46,7 @@ references:
     }
 
     all_event = []
+    all_event_diff = []
 
     var data = [{
         x: [get_event_time],
@@ -98,8 +102,11 @@ references:
 
         var time = get_event_time();
         console.log('event at: ', time)
+        time_unix_time = time.getUnixTime()
 
-        all_event.push(time.getUnixTime())
+    time_diff = time_unix_time - all_event[all_event.length-1]
+    all_event_diff.push(time_diff)
+    all_event.push(time_unix_time)
 
         var update = {
             x: [
@@ -154,6 +161,22 @@ references:
         Plotly.relayout('graph_rate', minuteView);
         Plotly.extendTraces('graph_rate', update_rate, [0])
 
+        // interval distribution
+
+        data_interval_hist = [{
+            x: all_event_diff,
+            type: 'histogram',
+        }]
+
+        layout_interval_hist = {
+            xaxis: {
+                title: {
+                    text: 'Event Interval'
+                }
+            }
+        };
+
+        Plotly.newPlot('graph_interval_hist', data_interval_hist, layout_interval_hist)
     })
 
     p.start()
