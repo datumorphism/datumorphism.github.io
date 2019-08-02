@@ -8,7 +8,7 @@ category:
 tag:
 - 'Algorithms'
 - 'Basics'
-weight: 10
+weight: 31
 references:
 - name: 'MapReduce Introduction'
   link: https://www.tutorialspoint.com/map_reduce/map_reduce_introduction.htm

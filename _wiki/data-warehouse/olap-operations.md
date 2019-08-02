@@ -11,7 +11,6 @@ references:
 - name: "Data Mining, Section 4.2.5, by Jiawei Han, Micheline Kamber, Jian Pei"
   link: ''
 weight: 3
-published: false
 ---
 
 
