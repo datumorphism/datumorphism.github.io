@@ -6,8 +6,6 @@ permalink: /about/
 
 Datumorphism is my notebook about programming, data scraping, statistics, machine learning, and data visualization.
 
-As a physicist, I have been
-
 
 <div class="columns">
   <div class="column">
@@ -25,8 +23,8 @@ As a physicist, I have been
 
   <div class="column">
     <div class="notification is-success">
-      <a class="button is-success is-inverted is-centered" style="display:block;" href="http://computational.neutrino.xyz/">Computational Notebook</a>
-      Notes about computer science, computational methods, etc.
+      <a class="button is-success is-inverted is-centered" style="display:block;" href="http://computational.neutrino.xyz/">Lei Ma</a>
+      Visit this page if you would like to know more about me.
     </div>
   </div>
 
