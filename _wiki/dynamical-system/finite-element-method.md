@@ -10,11 +10,16 @@ tag:
 - 'PDE'
 - 'Finite Element Method'
 references:
-- name: ""
-  link: ''
-notify: 'Difference equations are fun!'
+- name: "Freitag, K. J. (2007). Neural networks and differential equations."
+  link:
+- name: "COMSOL Multiphysics has a nice article"
+  link: "https://www.comsol.com/multiphysics/finite-element-method"
+notify: 'Differential equations are fun!'
 weight: 3
 ---
+
+* ToC
+{:toc}
 
 
 ## Differential Equations and Boundary Conditions
@@ -100,7 +105,7 @@ Triangulation is basically setting up the basis function in a discretized space 
 Triangulation from [comsol multiphysics](https://www.comsol.com/multiphysics/finite-element-method).
 </figcaption>
 </figure>
-   
+
 
 At each point $x$, there is a hat function responsible for the approximation within $[x-\Delta x, x+\Delta x]$.
 
@@ -135,14 +140,3 @@ $$
 where $\psi(x_0)$ takes care of the boundary condition at $x_0$.
 
 With two set of basis functions the matrix form of the equation is double sized.
-
-
-
-
-
-
-## References and Notes
-
-
-1. Freitag, K. J. (2007). Neural networks and differential equations.
-2. [COMSOL Multiphysics has a nice article](https://www.comsol.com/multiphysics/finite-element-method)

@@ -10,25 +10,22 @@ tag:
 - 'ODE'
 - 'Finite Difference Method'
 references:
-- name: ""
-  link: ''
-notify: 'Difference equations are fun!'
+- name: "Adams Methods @ MIT Web Course"
+  link: "http://web.mit.edu/10.001/Web/Course_Notes/Differential_Equations_Notes/node6.html"
+- name: "Adams' Method @ Wolfram MathWorld"
+  link: "http://mathworld.wolfram.com/AdamsMethod.html"
+notify: 'Differential equations are fun!'
 weight: 1
 ---
 
-
+* ToC
+{:toc}
 
 
 For a first order differentiation $\frac{\partial f}{\partial t}$, we might have many finite differencing methods.
 
-1. Forward Euler Method: $(f_{i+1} - f_i)/\Delta t$
-
-
 
 ## Euler Method
-
-
-
 
 For linear first ODE,
 
@@ -48,7 +45,7 @@ $$
 y_{n+1} = y_n + \delta x \cdot  f(x_n, y_n).
 \label{euler-method-discretized-form-y-n-plus-1}
 $$
-   
+
 
 This is also called **forward Euler** differencing. It is first order accurate in $\Delta t$.
 
@@ -150,7 +147,22 @@ In fact the AB and AM methods to the first order are
 `scipy.odeint` uses `adams` for nonstiff equations, where even higher order are used. The return infodictionary entry `nqu` shows the orders for each successful step.
 </div>
 
-## Refs & Notes
 
-1. [Adams Methods @ MIT Web Course](http://web.mit.edu/10.001/Web/Course_Notes/Differential_Equations_Notes/node6.html)
-2. [Adams' Method @ Wolfram MathWorld](http://mathworld.wolfram.com/AdamsMethod.html)
+## Runge-Kutta
+
+## Adaptive Stepsize for R-K
+
+
+## Modified Midpoint Method
+
+$$
+\begin{align}
+   z_0 &= y(x) \\
+   z_1 &= z_0 + h f(x,z_0) \\
+   z_{m+1} &= z_{m-1} + 2h f(x+mh,z_m) \\
+   y(x+H) &\approx y_n = \frac{1}{2} \left( z_n + z_{n-1} + h f(x+H,z_n) \right) .
+\end{align}
+$$
+
+
+This method contains only the even powers of $h$ thus we can gain two orders of precision at a time by calculating one more correction.

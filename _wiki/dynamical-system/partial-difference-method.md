@@ -9,14 +9,12 @@ tag:
 - 'Dynamical System'
 - 'PDE'
 - 'Finite Difference Method'
-references:
-- name: ""
-  title: ''
-notify: 'Difference equations are fun!'
+notify: 'Differential equations are fun!'
 weight: 2
 ---
 
-
+* ToC
+{:toc}
 
 ## Forward Time Centered Space
 
@@ -28,9 +26,6 @@ $$
 $$
 
 FTCS is an explicit method and is not stable.
-
-
-
 
 
 ## Lax Method
