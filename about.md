@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-A blog about data scraping, statistics, machine learning, and data visualization.
+Datumorphism is my notebook about programming, data scraping, statistics, machine learning, and data visualization.
 
+As a physicist, I have been
 
 
 <div class="columns">

@@ -12,7 +12,7 @@ tag:
 references:
 - link: "https://www.coursera.org/learn/inferential-statistics/lecture/UvETp/6-02-the-sign-test"
   name: 'The sign test @ inferential statistics'
-weight: 2
+weight: 4
 published: true
 ---
 
@@ -48,7 +48,7 @@ $$
 \frac{number of yes}{total experiments} = \frac{6}{8} = 75%.
 $$
 
-It seems that we have more experts find that the expensive wine taste better. 
+It seems that we have more experts find that the expensive wine taste better.
 
 Is the expensive wine really better? Remember that we could have fluctuations when drawing samples from the population. We need a statistical test.
 
