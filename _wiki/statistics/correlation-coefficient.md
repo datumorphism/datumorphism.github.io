@@ -33,8 +33,12 @@ $$
 \sigma_A = \sqrt{ \frac{ \sum (a_i - \bar A)^2 }{ n } },
 $$
 
-where $n$ is the number of elements in series A. Now imagine we have two series
-$(a_i - \bar A)$ and $(a_j - \bar A)$. The geometric mean squared for $i=j$ is 
+where $n$ is the number of elements in series A.
+
+Standard deviation is very easy to understand. It is basically the average Eucleadian distance between the data points and average value. In this article, we will take another point of view.
+
+Now imagine we have two series
+$(a_i - \bar A)$ and $(a_j - \bar A)$. The geometric mean squared for $i=j$ is
 
 $$
 M_i^2 = (a_i - \bar A)^2.
@@ -42,6 +46,21 @@ $$
 
 From this point of view, standard deviation is in fact a measure of the mean of **geometric mean of the deviation of each element**.
 
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title card-toggle">Standard Deviation of the Sample</p>
+	</header>
+	<div class="card-content is-hidden">
+		<div class="content">
+If we are dealing with a sample instead of the whole population, the standard deivation should be defined as
+$$
+\sigma_A = \sqrt{ \frac{ \sum (a_i - \bar A)^2 }{ n - 1 } }.
+$$
+
+Why the $n-1$? We could easily understand this by taking the extreme cases. Suppose we have only 1 sample data point, the standard deviation knowledge that we can infer should be infinite since we have no idea what the standard deviation is.
+		</div>
+	</div>
+</div>
 
 ### Generalize Standard Deviation to Covariances
 
@@ -76,11 +95,21 @@ $$
 $$
 
 which should be called the covariance of all the N series, $\mathrm{Cov} ({A_1, A_2,\cdots, A_N })$.
+
+Of course, we do not use these since we could easily build a covariance matrix to indicate all the possible covariances between any two variables, for example,
+
+$$
+\mathbf{C} = \begin{pmatrix}
+\mathrm{Cov} (A_1, A_1) & \mathrm{Cov} (A_1, A_2) \\
+\mathrm{Cov} (A_2, A_1) & \mathrm{Cov} (A_2, A_2)
+\end{pmatrix}
+$$
+
 </div>
 
 
 
-Covariance measures the correlation of these two series. To see this, we assume that we have two series A = B, which leads to $\sigma_{A,B} = \sigma_{A}$. Suppose we have two series at a completely opposite phase, 
+Covariance measures the correlation of these two series. To see this, we assume that we have two series A = B, which leads to $\sigma_{A,B} = \sigma_{A}$. Suppose we have two series at a completely opposite phase,
 
 | index | A | B |
 |--|---|---|
