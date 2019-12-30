@@ -1,0 +1,29 @@
+- name: BigQuery
+  keywords:
+    - Warehouse
+  link: https://console.cloud.google.com/bigquery
+  description: Easy to use, from Google Cloud
+- name: Athena
+  keywords:
+    - Warehouse
+  link: https://aws.amazon.com/athena/
+  description: versatile, but requires more effort to maintain.
+- name: Redshift
+  keywords:
+    - Warehouse
+  link: https://aws.amazon.com/redshift/
+  description: scalable
+- name: Apache Airflow
+  keywords:
+    - Warehouse
+    - Pipeline
+  link: https://airflow.apache.org/
+  description: A quite heavy util to manage workflows
+- name: Luigi
+  keywords:
+    - Warehouse
+    - Pipeline
+  link: https://github.com/spotify/luigi
+  description: Lightweight, python
+
+
