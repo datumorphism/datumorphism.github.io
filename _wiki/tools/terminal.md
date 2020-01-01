@@ -9,10 +9,10 @@ tag:
 - 'Tools'
 - 'Command Line'
 - 'Terminal'
-weight: 0
+weight: 4
 references:
-- name: 'Must Have Git Aliases: Advanced Examples'
-  link: http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
+- name: 'Rapidly invoke an editor to write a long, complex, or tricky command'
+  link: https://app.enkipro.com/#/public/insight/557a202244b51154005882a2?signedUp=1
 ---
 
 
