@@ -13,3 +13,6 @@ tag:
 weight: 401
 ---
 
+
+Decision tree is a very effective methods in supervised learning.
+
