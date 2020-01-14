@@ -4,7 +4,7 @@ excerpt: "Again, just like in hypothesis testing, we/machines all make mistakes.
 date: 2019-05-31
 toc: true
 category:
-- 'Statistical Learning'
+- 'Machine Learning::Basics'
 tag:
 - 'Statistical Learning'
 - 'Basics'
@@ -91,7 +91,7 @@ $$
 
 We could define some quite general measures.
 
-1. **Accuracy**: 
+1. **Accuracy**:
   $$\frac{ \text{ TP + TN } }{ \text{P + N} }$$
 
 Now we recalculate the confusion matrix by dividing the values by some certain sums.
@@ -130,7 +130,7 @@ There are a few names to be emphasized.
 
 #### Confusion Matrix divided by the Row Sums
 
-As mentioned, the sum of the rows indicates the 
+As mentioned, the sum of the rows indicates the
 
 <table class="table">
   <thead>
@@ -163,7 +163,7 @@ There are a few names to be emphasized.
 
 We also have some other definitions of ratios, please refer to the bottom left corner of the table on the wikipedia page linked in the references.
 
-We will only define the F1 score ($\mathrm F_1$) here. As a F-measure, 
+We will only define the F1 score ($\mathrm F_1$) here. As a F-measure,
 
 $$
 \begin{align}

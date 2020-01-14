@@ -4,7 +4,7 @@ excerpt: "Nonnegative Matrix Factorizatioin has a bright future"
 date: 2019-06-13
 toc: true
 category:
-- 'Machine Learning'
+- 'Machine Learning::Factorization'
 tag:
 - 'Machine Learning'
 - 'Factorization'

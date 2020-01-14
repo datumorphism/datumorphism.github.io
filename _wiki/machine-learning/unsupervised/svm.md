@@ -4,7 +4,7 @@ excerpt: "unsupervised learning: support vector machine"
 date: 2018-08-17
 toc: true
 category:
-- 'Statistical Learning'
+- 'Machine Learning::Unsupervised Learning'
 tag:
 - 'SVM'
 - 'Unsupervised Learning'

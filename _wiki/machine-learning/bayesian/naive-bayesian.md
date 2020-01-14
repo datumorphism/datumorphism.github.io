@@ -4,7 +4,7 @@ excerpt: "Naive Bayesian"
 date: 2019-06-17
 toc: true
 category:
-- 'Machine Learning'
+- 'Machine Learning::Bayesian'
 tag:
 - 'Machine Learning'
 - 'Classification'

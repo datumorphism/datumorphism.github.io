@@ -4,7 +4,7 @@ excerpt: "machine learning"
 date: 2018-05-25
 toc: true
 category:
-- 'Statistical Learning'
+- 'Machine Learning::Basics'
 tag:
 - 'Statistical Learning'
 - 'Machine Learning'

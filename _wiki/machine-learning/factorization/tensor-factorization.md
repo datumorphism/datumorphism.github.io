@@ -4,7 +4,7 @@ excerpt: "A generalization of matrix factorization"
 date: 2019-06-17
 toc: true
 category:
-- 'Machine Learning'
+- 'Machine Learning::Factorization'
 tag:
 - 'Machine Learning'
 - 'Factorization'

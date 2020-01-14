@@ -4,7 +4,7 @@ excerpt: "Single layer neural network creates embedding space"
 date: 2019-06-13
 toc: true
 category:
-- 'Machine Learning'
+- 'Machine Learning::Embedding'
 tag:
 - 'Machine Learning'
 - 'Embeding'
