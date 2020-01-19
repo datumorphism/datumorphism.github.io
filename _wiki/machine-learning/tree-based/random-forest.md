@@ -122,7 +122,7 @@ Upper Limit of generalization error as functions of $\bar \rho$ and $s$.
 
 Similar to decision trees, random forest can also be used as regressors. Similar conclusion about the regressors can be proved.
 
-To see how the regressor works, we construct an artificial problem.
+To see how the regressor works, we construct an artificial problem. The code can be accessed [on GitHub](https://github.com/datumorphism/mini-code/blob/master/random_forest/random_forest_benchmark.ipynb).
 
 The data is generate by sin function.
 
