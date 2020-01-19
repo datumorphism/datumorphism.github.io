@@ -10,7 +10,7 @@ tag:
 - 'Supervised Learning'
 - 'Statistical Learning'
 - 'Basics'
-weight: 401
+weight: 2
 ---
 
 

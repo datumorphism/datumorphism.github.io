@@ -10,7 +10,7 @@ tag:
 - 'Supervised Learning'
 - 'Statistical Learning'
 - 'Basics'
-weight: 400
+weight: 1
 ---
 
 Tree-based learning
