@@ -4,7 +4,7 @@ excerpt: "unsupervised learning"
 date: 2018-05-25
 toc: true
 category:
-- 'Statistical Learning'
+- 'Machine Learning::Unsupervised Learning'
 tag:
 - 'Unsupervised Learning'
 - 'Statistical Learning'

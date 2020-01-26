@@ -4,7 +4,7 @@ excerpt: "Bias Variance Trade off"
 date: 2019-06-07
 toc: true
 category:
-- 'Statistical Learning'
+- 'Machine Learning::Basics'
 tag:
 - 'Statistical Learning'
 - 'Basics'

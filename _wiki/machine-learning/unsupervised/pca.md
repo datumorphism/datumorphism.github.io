@@ -4,7 +4,7 @@ excerpt: "unsupervised learning: principle component analysis"
 date: 2018-05-25
 toc: true
 category:
-- 'Statistical Learning'
+- 'Machine Learning::Unsupervised Learning'
 tag:
 - 'PCA'
 - 'Unsupervised Learning'

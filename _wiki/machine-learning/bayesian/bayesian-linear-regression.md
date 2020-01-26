@@ -4,7 +4,7 @@ excerpt: "Bayesian Linear Regression"
 date: 2019-06-18
 toc: true
 category:
-- 'Machine Learning'
+- 'Machine Learning::Bayesian'
 tag:
 - 'Machine Learning'
 - 'Regression'
