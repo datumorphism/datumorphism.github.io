@@ -64,6 +64,8 @@ Why the $n-1$? We could easily understand this by taking the extreme cases. Supp
 
 ### Generalize Standard Deviation to Covariances
 
+> Knowledge card: [Covariance matrix](/cards/statistics/covariance-matrix/).
+
 Similarly, for two series A and B of the same length, we could define a quantity to measure the geometric mean of the deviation of the two series correspondingly
 
 $$

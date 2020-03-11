@@ -116,7 +116,7 @@ which should be maximized.
 
 The idea behind PCA is to find the mixings of the features so that the new axes give us the largest variance. We could invent an algorithm to explore the whole parameters space (shifts, scales and rotations of the axes) and find the best parameters. However, this would be rather inefficient.
 
-Alternatively, we could use the [covariance matrix](/wiki/statistics/correlation-coefficient/).
+Alternatively, we could use the [covariance matrix](/cards/statistics/covariance-matrix/).
 
 <div class="card">
 	<header class="card-header">
