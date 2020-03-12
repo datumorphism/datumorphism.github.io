@@ -17,10 +17,12 @@ references:
 Covariance of two discrete series $A$ and $B$ is defined as
 
 $$
-\text{Cov} ({A,B}) = \sigma_{A,B}^2 = \frac{  (a_i - \bar A) (b_i - \bar B) }{ n },
+\text{Cov} ({A,B}) = \sigma_{A,B}^2 = \frac{  (a_i - \bar A) (b_i - \bar B) }{ n- 1 },
 $$
 
-where $n$ is the length of the series. One could show that
+where $n$ is the length of the series. The normalization factor is set to $1/(n-1)$ to mitigate the bias for small $n$.
+
+One could show that
 
 $$
 \mathrm{Cov}({A,B}) = E( A,B ) - \bar A \bar B.
@@ -33,13 +35,13 @@ At first glance, the square in the definition seems to be only for notation purp
 Meanwhile, using this idea of the mean of geometric mean, we could easily generalize it to the covariance of three series,
 
 $$
-\sigma_{A,B,C}^3 = \frac{ (a_i - \bar A) (b_i - \bar B)(c_i - \bar C) }{ n },
+\sigma_{A,B,C}^3 = \frac{ (a_i - \bar A) (b_i - \bar B)(c_i - \bar C) }{ n-1 },
 $$
 
 or even arbitrary N series,
 
 $$
-\sigma_{A_1, A_2, ..., A_N }^N = \frac{ \sum_{i=1}^{n} \text{ geometric mean of the ith elements to the Nth power }  }{ n }  = \frac{  (a_{1,i} - \bar A_1) \cdots (a_{N,i} - \bar A_{N})}{ n },
+\sigma_{A_1, A_2, ..., A_N }^N = \frac{ \sum_{i=1}^{n} \text{ geometric mean of the ith elements to the Nth power }  }{ n-1 }  = \frac{  (a_{1,i} - \bar A_1) \cdots (a_{N,i} - \bar A_{N})}{ n-1 },
 $$
 
 which should be called the covariance of all the N series, $\mathrm{Cov} ({A_1, A_2,\cdots, A_N })$.
