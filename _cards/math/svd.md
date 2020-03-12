@@ -21,7 +21,7 @@ $$
 
 where $D_{k}^{\phantom{k}l}$ is diagonal.
 
-Here we actually have $\mathbf U$ being constructed by the eigenvectors of $\mathbf X \mathbf X^{\mathrm T}$, while $\mathbf V$ is being cunstructed by the eigenvectors of $\mathbf X^{\mathrm T} \mathbf X$ (which is also the reason we keep the transpose).
+Here we have $\mathbf U$ being constructed by the eigenvectors of $\mathbf X \mathbf X^{\mathrm T}$, while $\mathbf V$ is being constructed by the eigenvectors of $\mathbf X^{\mathrm T} \mathbf X$ (which is also the reason we keep the transpose).
 
 I find this slide from Christoph Freudenthaler very useful. The original slide has been added as a reference to this article.
 

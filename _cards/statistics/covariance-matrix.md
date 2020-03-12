@@ -1,6 +1,6 @@
 ---
 title: "Covariance Matrix"
-excerpt: ""
+excerpt: "Also known as the second central moment is a measurement of the spread."
 date: 2020-03-10
 category:
 - 'Math'
@@ -59,7 +59,13 @@ $$
 \end{pmatrix}.
 $$
 
-For complex series, $\mathrm{Cov} (A_2, A_1) = \mathrm{Cov} (A_1, A_2)$.
+For real series, $\mathrm{Cov} (A_2, A_1) = \mathrm{Cov} (A_1, A_2)$.
+
+<div class="notes--info" markdown="1">
+
+The covariance matrix of complex numbers and quaternions is not necessariy symmetric. A more general concept of symmetries is Hermitian.
+
+</div>
 
 Given a dataset $X$,
 
@@ -75,4 +81,4 @@ $$
 C_{ij} = \operatorname{Cov}(\mathbf X_i, \mathbf X_j).
 $$
 
-The covariance becomes varance when $i=j$.
+The covariance becomes variance when $i=j$.

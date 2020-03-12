@@ -6,23 +6,37 @@ category:
 - 'Math'
 tag:
 - 'Linear Algebra'
+- 'Basics'
+references:
+  - name: Eigenvectors and Eigenvalues @ Explained Visually
+    link: https://setosa.io/ev/eigenvectors-and-eigenvalues/
+related:
+- name: Diagnolize Matrice
+  link: /cards/diagonalize-matrix
 ---
 
-To find the eigenvectors $\mathbf X$ of a matrix $\mathbf A$, we construct the eigen equation
+To find the eigenvectors $\mathbf x$ of a matrix $\mathbf A$, we construct the eigen equation
 
 $$
-$\mathbf A$ $\mathbf X$ = \lambda $\mathbf A$,
+\mathbf A \mathbf x = \lambda \mathbf x,
 $$
 
 where $\lambda$ is the eigenvalue.
 
-To make it seaier to understand, we rewrite it in the components form,
+We rewrite it in the components form,
 
 $$
-A_{ij} X_j = \lambda X_j.
+\begin{equation}
+A_{ij} x_j = \lambda x_i.
+\label{eqn-eigen-decomp-def}
+\end{equation}
 $$
 
 Mathematically speaking, it is straightforward to find the eigenvectors and eigenvalues.
+
+## Eigenvectors are Special Directions
+
+Judging from the definition in Eq.($\ref{eqn-eigen-decomp-def}$), the eigenvectors do not change direction under the operation of the matrix $\mathbf A$.
 
 
 ## Reconstruct $\mathbf A$
@@ -32,16 +46,16 @@ We can reconstruct $\mathbf A$ using the eigenvalues and eigenvectors.
 First of all, we will construct a matrix of eigenvectors,
 
 $$
-\mathbf P = \begin{pmatrix}\mathbf X_1 & \mathbf X_2 & \cdots & \mathbf X_n \end{pmatrix}.
+\mathbf P = \begin{pmatrix}\mathbf x_1 & \mathbf x_2 & \cdots & \mathbf x_n \end{pmatrix}.
 $$
 
 We also construct a diagonalized matrix $\mathbf \Lambda$
 
 $$
-\mathrm{diag} (\Lambda)  =  \begin{pmatrix}\lambda_1 & \lambda_2 & \cdots & \lambda_n \end{pmatrix}.
+\mathrm{diag} (\mathbf \Lambda)  =  \begin{pmatrix}\lambda_1 & \lambda_2 & \cdots & \lambda_n \end{pmatrix}.
 $$
 
-The original matrix $A$ is reconstrut by
+The original matrix $A$ is reconstruct by
 
 $$
 \mathbf A = \mathbf P \mathbf \Lambda \mathbf P^T.
