@@ -29,7 +29,7 @@ exclude: true
     <div class="column is-10">
         {% for cat in site.data.workflows %}
         <div class="is-divider" data-content="{{ cat[1].name }}"></div>
-        <h2 id="{{ cat[0] }}">{{ cat[1].name }}</h2>
+        <h2 id="{{ cat[0] }}">{{ cat[1].name }} (<a href="{{site.base_url}}/api/workflows/{{cat[0]}}.json">API</a>)</h2>
         <ol type="1">
             {% for item in cat[1].workflow %}
                 <li style="list-style-type:none; border-top: 2px solid #e95420;">
