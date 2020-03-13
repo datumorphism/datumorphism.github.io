@@ -29,7 +29,15 @@ exclude: true
     <div class="column is-10">
         {% for cat in site.data.workflows %}
         <div class="is-divider" data-content="{{ cat[1].name }}"></div>
-        <h2 id="{{ cat[0] }}">{{ cat[1].name }} (<a href="{{site.base_url}}/api/workflows/{{cat[0]}}.json">API</a>)</h2>
+        <h2 id="{{ cat[0] }}">{{ cat[1].name }} <a href="{{site.base_url}}/api/workflows/{{cat[0]}}.json">
+        <span class="tag is-link">API</span></a>
+        {% if cat[1].downloads %}
+            {% for download in cat[1].downloads %}
+                <a href="{{ download.path }}"><span class="tag is-link">{{ download.type }}</span></a>
+            {% endfor %}
+        {% endif %}
+        </h2>
+        <p class="is-size-5 notification">{{ cat[1].description }}</p>
         <ol type="1">
             {% for item in cat[1].workflow %}
                 <li style="list-style-type:none; border-top: 2px solid #e95420;">

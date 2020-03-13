@@ -1,5 +1,10 @@
 name: Exploratory Data Analysis
 description: EDA is one of the very first steps of my data science projects.
+downloads:
+  - type: PNG
+    path: eda/assets/eda.png
+  - type: PDF
+    path: eda/assets/eda.pdf
 workflow:
   - id: purpose
     name: Purpose of EDA

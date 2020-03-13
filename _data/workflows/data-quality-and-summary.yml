@@ -1,5 +1,10 @@
 name: Data Quality and Summary
 description: Validating the data quality and generate summary statistics reports.
+downloads:
+  - type: PNG
+    path: data-quality-and-summary/assets/data-quality-and-summary.png
+  - type: PDF
+    path: data-quality-and-summary/assets/data-quality-and-summary.pdf
 workflow:
 - id: rows-columns
   name: Rows and Columns
