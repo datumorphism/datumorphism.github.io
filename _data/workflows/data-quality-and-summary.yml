@@ -1,0 +1,163 @@
+name: Data Quality and Summary
+description: Validating the data quality and generate summary statistics reports.
+workflow:
+- id: rows-columns
+  name: Rows and Columns
+  description: The questions to be answered serve as guides in EDA
+  steps:
+    - id: rows-columns--rows
+      name: Rows
+      description:
+      steps:
+        - id: rows-columns--rows--descriptions
+          name: Descriptions
+          description: What does the row mean?
+        - id: rows-columns--rows--count
+          name: Count
+          description:
+    - id: rows-columns--columns
+      name: Columns
+      description:
+      steps:
+        - id: rows-columns--columns--descriptions
+          name: Descriptions
+          description: What does the column mean?
+        - id: rows-columns--columns--count
+          name: Count
+          description: How many columns?
+- id: types-formats
+  name: Types and Formats
+  description:
+  steps:
+    - id: types-formats--datatypes
+      name: Data Types
+      description: What is each column consists of?
+      steps:
+        - id: types-formats--datatypes--types
+          name: Types of data
+          description: Ordinal, Nominal, Interval, Generative, etc
+        - id: types-formats--datatypes--consistent
+          name: Is the type of the data correct
+    - id: types-formats--formats
+      name: Data Formats
+      description:
+      steps:
+        - id: types-formats--formats--dates
+          name: Are the dates loaded as dates?
+          description:
+        - id: types-formats--formats--numbers
+          name: Are the numbers loaded as numbers?
+          description: Are they strings?
+        - id: types-formats--formats--financial
+          name: Are the financial values correct?
+          description: Are they strings or numbers? EU format, US format?
+- id: missing
+  name: Missing Values
+  description: Are there missing values in each column
+  steps:
+    - id: missing--notation
+      name: Different types of missing values
+      description: Notations of missing values are different in different datasets. Read the documentation of the dataset to find out.
+      steps:
+        - id: missing--notation--standard
+          name: Standard missing values
+          description: nan, nat, None, na, null...
+        - id: missing--notation--filled
+          name: Represented with a specific value
+          description: -1, 0, MISSING, ...
+    - id: missing--percentage
+      name: Percentage of missing values in each column
+      description:
+    - id: missing--visualization
+      name: Visualizations
+      description: e.g., missingno python package
+- id: duplications
+  name: Duplications
+  description: Are there duplications of rows/columns?
+  steps:
+    - id: duplications--validate
+      name: Validate by yourself
+      description: Do not trust the metadata and documentation of the dataset. Duplications of fields may occur when the documentation says they are unique.
+- id: distributions
+  name: Distributions
+  description:
+  steps:
+    - id: distributions--generation
+      name: What is the generation process?
+      description:
+      steps:
+        - id: distributions--generation--eg-hist
+          name: Is it a histogram analysis of another row?
+          description:
+        - id: distributions--generation--eg-comb
+          name: Is it a linear combination of other rows?
+          description:
+    - id: distributions--visualize
+      name: Visualize the distributions of the values
+      description: Know all the values
+      steps:
+        - id: distributions--values--valuecount
+          name: Value count bar plot
+          description: For descrete data, list all possible values and counts
+        - id: distributions--values--hist-kde
+          name: Histogram and KDE
+          description: for continuous data, use histograms or KDE.
+        - id: distributions--values--boxplot
+          name: Boxplot
+          description: Boxplot is easier to understand for business people
+        - id: distributions--values--scatter
+          name: Scatter plot
+          description: Gut feeling of where the data points are located
+        - id: distributions--values--contour
+          name: Contour plot
+          description:
+    - id: distributions--summary
+      name: Numerical Summarization
+      description: Use summary statistics to find out the moments.
+      steps:
+        - id: distributions--summary--locations
+          name: Locations
+          description: Mean, median, quartiles, mode...
+        - id: distributions--summary--spreads
+          name: Spreads
+          description: range, variance, standard deviation, IQR
+        - id: distributions--summary--skewness
+          name: Skewness
+          description: asymmetries
+        - id: distributions--summary--kurtosis
+          name: Kurtosis
+          description:
+- id: corr-sim
+  name: Correlations, Similarities
+  description:
+  steps:
+    - id: corr-sim--pairplot
+      name: Pairplot
+      description:
+    - id: corr-sim--correlations
+      name: Correlations
+      description: Pearson, Kendall Tau Correlation
+    - id: corr-sim--distances
+      name: Distances
+      description: Calculate the distance between features or rows to understand the relations between them; Euclidean distance, Mahalanobis distance, Minkowski distance, Jaccard distance, ...
+- id: size
+  name: Size
+  description: How much space will the data take on our storage device?
+  steps:
+    - id: size--memory
+      name: Memory usage
+      description: To estimate the hardware requirements when deploying the model
+    - id: size--by-formats
+      name: Storage on Hard Drive in Different Formats
+      description: How much space will the dataset take in different formats?
+- id: combine
+  name: Combining Data Files
+  description: One dataset may come in different files, combine them carefully.
+  steps:
+    - id: combine--concat
+      name: Concat
+      description: The files should be concated with caution.
+      steps:
+        - id: combine--concat--overlap
+          name: Validate overlap
+          description: Check if there is an overlap between the files.

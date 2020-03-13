@@ -21,8 +21,11 @@ main:
   excerpt: "Awesome Tools"
   subnav:
     - title: Tools
-      url: /awesome/
+      url: /awesome/tools
       excerpt: "Awesome tools related to data science"
+    - title: Workflows
+      url: /awesome/workflows
+      excerpt: "Awesome workflows related to data science"
     - title: Cheatsheets
       url: /awesome/cheatsheets
       excerpt: "Cheatsheets on data science"
