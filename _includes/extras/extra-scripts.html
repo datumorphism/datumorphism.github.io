@@ -1,0 +1,10 @@
+{% if (include.src contains "http://") or (include.src contains "https://") %}
+<script src="{{ include.src }}"></script>
+{% else %}
+<script src="{{ include.src }}"></script>
+{% endif %}
+{% if include.js %}
+<script>
+    {{include.js}}
+</script>
+{% endif %}

@@ -6,7 +6,7 @@
 {% else %}
   {%- include head.html -%}
 {% endif %}
-  
+
 
   <body>
 
@@ -28,6 +28,19 @@
   {% if page.charts %}
     {% for chart in page.charts %}
       {% include extras/plotly.html data=chart.data target=chart.target layout=chart.layout %}
+    {% endfor %}
+  {% endif %}
+
+  {% if page.idyll %}
+  {% include extras/extra-scripts.html src="/assets/interactive/idyll/idyll-embed.min.js" %}
+    {% for idyll in page.idyll %}
+      {% include extras/idyll.html markup=idyll.markup target=idyll.target %}
+    {% endfor %}
+  {% endif %}
+
+  {% if page.scripts %}
+    {% for script in page.scripts %}
+      {% include extras/extra-scripts.html src=script.src js=script.js %}
     {% endfor %}
   {% endif %}
 
