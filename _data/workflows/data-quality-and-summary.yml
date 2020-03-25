@@ -30,6 +30,9 @@ workflow:
         - id: rows-columns--columns--count
           name: Count
           description: How many columns?
+        - id: rows-columns--columns--limits
+          name: Possible values or ranges
+          description: List the theoretical limits on the values and validate against the data.
 - id: types-formats
   name: Types and Formats
   description:
