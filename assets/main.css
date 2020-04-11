@@ -132,47 +132,72 @@ pre {
     -moz-osx-font-smoothing:grayscale
 }
 .notes--info:before {
-    content:"\00A7\A0\A0\A0 NOTE \A0\A0\A0";
+    content:"\00A7\A0\A0\A0";
     padding-bottom: 1em;
     opacity: 0.3;
 }
 .notes--success:before {
-    content:'\00A7\A0\A0\A0 NOTE \A0\A0\A0';
+    content:'\00A7\A0\A0\A0';
     padding-bottom: 1em;
     opacity: 0.3;
 }
 .notes--warning:before {
-    content:'\00A7\A0\A0\A0 NOTE \A0\A0\A0';
+    content:'\00A7\A0\A0\A0';
     padding-bottom: 1em;
     opacity: 0.3;
 }
 .notes--error:before {
-    content:'\00A7\A0\A0\A0 NOTE \A0\A0\A0';
+    content:'\00A7\A0\A0\A0';
     padding-bottom: 1em;
     opacity: 0.3;
 }
 .notes--info {
     /*color: #00529B;*/
     /*background-color: #BDE5F8;*/
-    border: 2px solid #772953;
+    /* border: 2px solid #772953; */
+    border-radius: 4px;
+    border-left: 4px solid #772953;
+    border-top: 1px dashed #772953;
+    border-bottom: 1px dashed #772953;
+    border-right: 1px dashed #772953;
 }
 .notes--success {
     /*color: #4F8A10;*/
     /*background-color: #DFF2BF;*/
-    border: 2px solid #38b44a;
+    /* border: 2px solid #38b44a; */
+    border-radius: 4px;
+    border-left: 4px solid #38b44a;
+    border-top: 1px dashed #38b44a;
+    border-bottom: 1px dashed #38b44a;
+    border-right: 1px dashed #38b44a;
 }
 .notes--warning {
     /*color: #9F6000;*/
     /*background-color: #FEEFB3;*/
-    border: 2px solid #efb73e;
+    /* border: 2px solid #efb73e; */
+    border-radius: 4px;
+    border-left: 4px solid #efb73e;
+    border-top: 1px dashed #efb73e;
+    border-bottom: 1px dashed #efb73e;
+    border-right: 1px dashed #efb73e;
 }
 .notes--error {
     /*color: #D8000C;*/
     /*background-color: #FFBABA;*/
-    border: 2px solid #df382c;
+    /* border: 2px solid #df382c; */
+    border-radius: 4px;
+    border-left: 4px solid #df382c;
+    border-top: 1px dashed #df382c;
+    border-bottom: 1px dashed #df382c;
+    border-right: 1px dashed #df382c;
 }
 .notes--primary {
-  border: 2px solid #e95420;
+  /* border: 2px solid #e95420; */
+  border-radius: 4px;
+  border-left: 4px solid #e95420;
+  border-top: 1px dashed #e95420;
+  border-bottom: 1px dashed #e95420;
+  border-right: 1px dashed #e95420;
 }
 
 .card {
