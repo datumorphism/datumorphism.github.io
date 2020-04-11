@@ -19,6 +19,8 @@ references:
 
 In this article, we will explain how decision trees work and build a tree by hand.
 
+> The code used in this article can be found in [this repo](https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb).
+
 ## Definition of the problem
 
 We will decide whether one should go to work today. In this demo project, we consider the following features.
@@ -249,4 +251,5 @@ Fully grown trees will most likely to overfit the data. Besides, fully grown tre
 
 Applying the Occam's razor, we prefer smaller trees as long as the trees can explain the data well.
 {: .notes--warning}
+
 
