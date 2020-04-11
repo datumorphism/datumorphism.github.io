@@ -7,7 +7,7 @@ downloads:
     path: eda/assets/eda.pdf
 workflow:
   - id: purpose
-    name: Purpose of EDA
+    name: Objectives of EDA
     description: The questions to be answered serve as guides in EDA
     steps:
       - id: purpose--polish
@@ -28,9 +28,10 @@ workflow:
             description:
           - id: purpose--data-quality--questions
             name: Can one answer the questions semi-quantitatively using the data?
+            description: Is the dispersion of the target value small enough?
       - id: domain
         name: Retrieve Domain Knowledge and Anomalies
-        description:
+        description: Determine the ranges, outliers of the dataset; Talk to domain experts and validate with domain experts.
       - id: next
         name: Propose the Next Steps
   - id: communication
