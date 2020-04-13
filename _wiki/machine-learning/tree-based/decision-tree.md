@@ -15,6 +15,9 @@ weight: 2
 references:
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms."
     link: "https://doi.org/10.1017/CBO9781107298019"
+related:
+  - name: Gini Impurity
+    link: /cards/machine-learning/measurement/gini-impurity
 ---
 
 In this article, we will explain how decision trees work and build a tree by hand.
