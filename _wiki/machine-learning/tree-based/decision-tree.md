@@ -255,4 +255,4 @@ Fully grown trees will most likely to overfit the data. Besides, fully grown tre
 Applying the Occam's razor, we prefer smaller trees as long as the trees can explain the data well.
 {: .notes--warning}
 
-
+To achieve this, we will either have to limit how the trees grow during training, or pruning the trees after the trees are built.
