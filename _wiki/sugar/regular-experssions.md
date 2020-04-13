@@ -213,6 +213,7 @@ Regex comes with several flags that can be used to define the way of searching. 
 3. Practice on repl.it
 
    <iframe height="400px" width="100%" src="https://repl.it/@emptymalei/regular-expressions?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+4. [extendsclass](https://extendsclass.com/regex-tester.html) is an online regex tester with a regular expression visualizer.
 
 
 ## References
