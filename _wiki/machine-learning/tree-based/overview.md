@@ -13,4 +13,4 @@ tag:
 weight: 1
 ---
 
-Tree-based learning
+Decision tree is an easy-to-interpret method in supervised learning. Though simple, it is being used in some widely used algorithms such as random forest.

@@ -119,6 +119,9 @@ workflow:
         - id: distributions--values--contour
           name: Contour plot
           description:
+    - id: distributions-dispersion
+      name: Dispersion of the target value
+      description: Is the dispersion of the target value small enough for the algorithm to perform a good prediction?
     - id: distributions--summary
       name: Numerical Summarization
       description: Use summary statistics to find out the moments.

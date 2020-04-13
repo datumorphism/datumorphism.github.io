@@ -12,19 +12,22 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+          itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
       {% if page.category %}
-       • <span style="font-style: regular;">{</span>{% for cate in page.category %}
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="{{ site.url }}{{ site.baseurl }}/wiki/#{{ cate | slugify }}">⸢{{ cate }}⸥</a></span>
-       {% endfor %}
-       }
+      • <span style="font-style: regular;">{</span>{% for cate in page.category %}
+      <span style="padding-right: 0.2em;padding-left: 0.2em;"><a
+          href="{{ site.url }}{{ site.baseurl }}/wiki/#{{ cate | slugify }}">⸢{{ cate }}⸥</a></span>
+      {% endfor %}
+      }
       {% endif %}
       {% if page.tags %}
-       • <span style="font-style: regular;">[</span>{% for tag in page.tags %}
-       <span style="padding-right: 0.2em;padding-left: 0.2em;"><a href="{{ site.url }}{{ site.baseurl }}/wiki/?keywords={{ tag }}">#{{ tag }}</a></span>
-       {% endfor %}
-       ]
+      • <span style="font-style: regular;">[</span>{% for tag in page.tags %}
+      <span style="padding-right: 0.2em;padding-left: 0.2em;"><a
+          href="{{ site.url }}{{ site.baseurl }}/wiki/?keywords={{ tag }}">#{{ tag }}</a></span>
+      {% endfor %}
+      ]
       {% endif %}
       {% if page.source %}
       <article class="message">
@@ -33,47 +36,83 @@ layout: default
         </div>
         <div class="message-body">
           <ul>
-          {% for sour in page.source %}
+            {% for sour in page.source %}
             <li><a href="{{ sour.link }}" style="text-decoration:none;">{{ sour.name }}</a></li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </div>
       </article>
       {% endif %}
       {% if page.notify %}
       <div class="notification is-primary">
-         {{ page.notify }}
-       </div>
+        {{ page.notify }}
+      </div>
       {% endif %}
     </p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <div class="columns">
+    <div class="column is-8">
+      {% if page.summary %}
+      <div class="is-divider" data-content="SUMMARY"></div>
+      <div class="notification is-light">
+        <p>
+          {{ page.summary }}
+        </p>
+      </div>
+      {% endif %}
+      <div class="is-divider" data-content="ARTICLE"></div>
+      <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
 
-  <div class="is-divider" data-content="END"></div>
+    <div class="column is-4">
 
-  {% if page.references %}
+      {% if page.authors %}
+      <div class="is-divider" data-content="AUTHORS"></div>
+      {% for author in page.authors %}
+      {% assign author_db = site.data.authors[author.id] %}
+      <div class="box is-size-7">
+        <article class="media">
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>{{ author_db.name }}</strong>
+                {% if author_db.github %}
+                <a href="https://github.com/{{author_db.github}}"><i class="fab fa-github-square"></i></a>
+                {% endif %}
+                <br>
+                {{author_db.description}}
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% if page.references %}
+      <div class="is-divider" data-content="REFERENCES"></div>
       <article class="message">
         <div class="message-header">
           <p>References:</p>
         </div>
         <div class="message-body">
-          <ul>
-          {% for ref in page.references %}
+          <ol>
+            {% for ref in page.references %}
             <li><a href="{{ ref.link }}" style="text-decoration:none;">{{ ref.name }}</a></li>
-          {% endfor %}
-          </ul>
+            {% endfor %}
+          </ol>
         </div>
       </article>
       {% endif %}
+      {% include utterances-comments.html %}
+    </div>
+  </div>
 
-
+  <div class="is-divider" data-content="PAGES"></div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
 
-{% include collection-pagination.html %}
-
-{% include utterances-comments.html %}
+  {% include collection-pagination.html %}
 </article>
