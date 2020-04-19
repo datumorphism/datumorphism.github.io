@@ -16,9 +16,16 @@ references:
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms."
     link: "https://doi.org/10.1017/CBO9781107298019"
 related:
-  - name: Gini Impurity
-    link: /cards/machine-learning/measurement/gini-impurity
+  - name: "Gini Impurity"
+	link: "/cards/machine-learning/measurement/gini-impurity"
+  - name: "Information Gain"
+    link: "/cards/machine-learning/measurement/information-gain"
+supplementary:
+  - name: "Python code used in this article"
+    link: "https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb"
 ---
+
+
 
 In this article, we will explain how decision trees work and build a tree by hand.
 
@@ -48,7 +55,7 @@ In theory, we would expect a decision tree of the following.
 
 <div class="mermaid">
 graph TD
-	A[health] --> |feeling bad| E[stay home]
+  A[health] --> |feeling bad| E[stay home]
   A[health] --> |feeling good| B[weather]
   B --> |bad weather| E
   B --> |good weather| C[holiday]
@@ -256,3 +263,45 @@ Applying the Occam's razor, we prefer smaller trees as long as the trees can exp
 {: .notes--warning}
 
 To achieve this, we will either have to limit how the trees grow during training, or pruning the trees after the trees are built.
+
+## Remarks
+
+The Iterative Dichotomizer 3 algorithm, aka ID3 algorithm, is one of the most famous implementations of the decision tree. The following is the "flowchart" of the algorithm.
+
+
+<div class="mermaid">
+graph TD
+  Leaf("Prepare samples in node")
+  MajorityVote["Calculate majority vote"]
+  Assign[Assign label to node]
+  Leaf --> MajorityVote --> Assign
+  Assign --> Split1[Split on feature 1]
+  Assign --> Splitdots["..."]
+  Assign --> Splitd[Split on feature d]
+  subgraph "split on a subset of features"
+  Split1 --> |"Split on feature 1"|B1["Calculate gain of split"]
+  Splitdots --> |"..."| Bdots["..."]
+  Splitd --> |"Split on feature d"| Bd["Calculate gain of split"]
+  end
+  B1 --> C["Use the split with the largest gain"]
+  Bdots --> C
+  Bd --> C
+  C --> Left["Prepare samples in left node"]
+  C --> Right["Prepare samples in right node"]
+
+  subgraph "left node"
+  MajorityVoteL["Calculate majority vote"]
+  AssignL(Assign label to left node)
+  Left --> MajorityVoteL --> AssignL
+  end
+
+  subgraph "right node"
+  MajorityVoteR["Calculate majority vote"]
+  Right -->  MajorityVoteR
+  AssignR(Assign label to right node)
+  MajorityVoteR --> AssignR
+  end
+
+</div>
+
+To "calculate gain of split", we use information gain or Gini impurity.
