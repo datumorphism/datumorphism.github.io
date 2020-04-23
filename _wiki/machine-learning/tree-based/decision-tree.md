@@ -17,7 +17,7 @@ references:
     link: "https://doi.org/10.1017/CBO9781107298019"
 related:
   - name: "Gini Impurity"
-	link: "/cards/machine-learning/measurement/gini-impurity"
+    link: "/cards/machine-learning/measurement/gini-impurity"
   - name: "Information Gain"
     link: "/cards/machine-learning/measurement/information-gain"
 supplementary:
@@ -257,12 +257,14 @@ A decision tree trained with a fake "impure dataset" that doesn't always fit int
 
 ## Overfitting
 
-Fully grown trees will most likely to overfit the data. Besides, fully grown trees grow exponentially as the number of features grow.
+Fully grown trees will most likely to overfit the data since they always try to grow pure leafs. Besides, fully grown trees grow exponentially as the number of features grow which requires a lot of computation resources.
 
 Applying the Occam's razor, we prefer smaller trees as long as the trees can explain the data well.
 {: .notes--warning}
 
 To achieve this, we will either have to limit how the trees grow during training, or pruning the trees after the trees are built.
+
+Pruning of a tree is achieved by replacing subtrees at a node with a leaf if some certain conditions based on cost estimations.
 
 ## Remarks
 
