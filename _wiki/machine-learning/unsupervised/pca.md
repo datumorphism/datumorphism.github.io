@@ -15,7 +15,7 @@ weight: 901
 
 > We use the Einstein summation notation in this article.
 
-Principal Component Analysis (PCA) is a commonly used trick for dimensionality reduction so that the new features represens most of the variances of the data.
+Principal Component Analysis (PCA) is a commonly used trick for dimensionality reduction so that the new features represents most of the variances of the data.
 
 <div class="card">
 	<header class="card-header">
@@ -25,7 +25,7 @@ Principal Component Analysis (PCA) is a commonly used trick for dimensionality r
 		<div class="content">
 In theory, a dataset can be represented by a matrix if we specify the basis. However, the initial given basis is not always the most convinient one. Suppose we find a new set of basis for the dataset, the matrix representation may be simpler and easier to use.
 
-For convinience, we do not distinguish the representation and the abstract dataset in this article.
+For convenience, we do not distinguish the representation and the abstract dataset in this article.
 		</div>
 	</div>
 </div>
@@ -76,7 +76,7 @@ The transformation $\mathbf P$ select out features that represents the most vari
 
 In an ideal condition, the covariance matrix of the dataset matrix is diagonalized. This indicates that the dataset matrix features are not correlated, i.e., the basis axes are in the direction of the spread.
 
-In order to perform PCA, we have to accquire a new transformed dataset matrix $\mathbf Z$ so that the covariance matrix $\mathbf {C_{Z}}$ of $\mathbf Z$ is (mostly) diagonalized. It requires
+In order to perform PCA, we have to acquire a new transformed dataset matrix $\mathbf Z$ so that the covariance matrix $\mathbf {C_{Z}}$ of $\mathbf Z$ is (mostly) diagonalized. It requires
 
 $$
 \begin{align}

@@ -24,7 +24,7 @@ C++!
 ## Lectures
 
 1. [C++ Beginners Tutorial 1 (For Absolute Beginners)](https://www.youtube.com/watch?v=ki3B8a-jLrE)
-2.  [C++ Programming](https://www.youtube.com/watch?v=Rub-JsjMhWY)
+2. [C++ Programming](https://www.youtube.com/watch?v=Rub-JsjMhWY)
 3. [Introduction to C++](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/)
 4. [Coursear Course: C++ For C Programmers, Part A](https://www.coursera.org/learn/c-plus-plus-a)
 5. [Top C++ Courses and Tutorials](https://www.udemy.com/courses/development/programming-languages/C-plus-plus-tutorials/)

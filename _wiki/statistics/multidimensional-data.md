@@ -25,19 +25,16 @@ As defined in [Correlation Coefficient and Covariance for Numeric Data](../corre
 
 The generalized quantity is named as **dispersion matrix**. Suppose we have a $p$ dimensional dataset $X$,
 
-
-
 | index | $x_1$ |  $x_2$ | ... | $x_p$ |
 |--|--|--|--|--|
 | 1 |  2.3 | 12.3 | 83.2 | 9.3 |
 | ... |  ... | ... | ... | ... |
 | N |  3.1 | 5.6 | 23.6 | 8.2 |
 
-We could then calculate the pairwise covariance between the different dimensions. 
+We could then calculate the pairwise covariance between the different dimensions.
 
 | | $x_1$ |  $x_2$ | ... | $x_p$ |
 | $x_1$ |   |  |  | |
 | $x_2$ | | | | |
 | ... | | | | |
 | $x_p$ | | | | |
-

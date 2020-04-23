@@ -28,7 +28,6 @@ In this article, we will discuss the chi-square correlation test for detecting c
 4. Calculate chi-square;
 5. Determine whether the hypothesis can be rejected.
 
-
 ## Define the Series
 
 Suppose we are analyzing two series A and B. Series A can take values $a_1$ and $a_2$, while series B can take values $b_1$ , $b_2$ and $b_3$.
@@ -70,7 +69,6 @@ We could construct the occurrence table.
 | a1 |  number of occurrences | 0 |
 | a2 |  0 | number of occurrences |
 
-
 </div>
 
 Now we construct a contigency table to denote the ocurrences of the values,  (A, B).
@@ -93,7 +91,7 @@ This table tells us about the possible correlations already. Imagine we have two
 However, those numbers in the table depends on the number of rows that we have in our original table. To find the actual correlation, we need to normalize it. We could simply divided everything by the total number of rows in the original table. But Pearson had a better idea.
 </div>
 
-Pearson's chi-square correlation is a smart idea. 
+Pearson's chi-square correlation is a smart idea.
 
 First of all, we define an expectation table E. Each element of E is calculated as
 
@@ -136,7 +134,6 @@ $$
 \chi^2 = \sum_{i,j} \frac{ (o_{ij} - e_{ij})^2 } { e_{ij} }
 $$
 
-
 <div class="notes--info" markdown="1">
 If A and B are the same and each possible values occurred m times, then we would have
 
@@ -144,7 +141,7 @@ $$
 o_{ij} = e_{ij} = \delta_{ij} * m.
 $$
 
-Then we get 
+Then we get
 $$
 \chi^2 = 0
 $$
@@ -156,7 +153,6 @@ Then we say this chi-square analysis doesn't reject our hypothesis that these tw
 
 The final question is how to use the result. We usually have a threshold $\chi_0^2$. Whenever our calculated value is larger than this one, we decide that our analysis reject the hypothesis that the two columns are correlated.
 This value $\chi_0^2$ can be found in the textbooks.
-
 
 ## Other Methods
 

@@ -34,7 +34,7 @@ Apart from the tranditional way of running C++ code, Jupyter notebook has a clin
 
 #### Increment and Decrement Operator
 
-Increment/decrement operator has a very high precedence if applied from the left.
+The increment/decrement operator has very high precedence if applied from the left.
 
 ```cpp
 x = 2;
@@ -93,7 +93,7 @@ switch (age) {
 
 #### strings and string library
 
-`<string>` library is necessay for string data type but it is also included in other libs such as `<iostream>`.
+`<string>` library is necessary for string data type but it is also included in other libs such as `<iostream>`.
 
 #### Tips about Pointers
 
@@ -148,9 +148,9 @@ int factorial(int n) {
 
 #### Passing Arguments to Function by Value or Reference
 
-Passing by value is what we usally do. The function essentially copies the value of the parameters. Thus any change of the parameters inside function doesn't change the original passed variables.
+Passing by value is what we usually do. The function essentially copies the value of the parameters. Thus any change of the parameters inside a function doesn't change the original passed variables.
 
-Passing by reference is very different. It passes the pointer to the function and thus any change to the parameters will change the originally defiend variables.
+Passing by reference is very different. It passes the pointer to the function and thus any change to the parameters will change the originally defined variables.
 
 ```cpp
 #include <iostream>
@@ -236,7 +236,7 @@ int main() {
 
 #### Two Files to Write a New Class
 
-We usually write class seperately in different classes. In this case we need to create two files, TheClassYouNeed.h and TheClassYouNeed.cpp.
+We usually write class separately in different classes. In this case we need to create two files, TheClassYouNeed.h and TheClassYouNeed.cpp.
 
 In .h file we define the header.
 
@@ -308,7 +308,7 @@ Private members can not be accessed from derived class but **protected** members
 
 #### Pure Virtual Functions in Polymorphism
 
-When we use a pure virtual function in base class, the derived class must override it.
+When we use a pure virtual function in the base class, the derived class must override it.
 
 Base class with pure virtual function can **NOT** be used to create objects. Thus these classes are called **abstract classes**.
 
@@ -321,7 +321,7 @@ virtual void attack() = 0;
 
 Arrow: `->` is a combination of dereferencing and accessing member functions.
 
-Suppose we have a class called AClass. We are accessing its member  AValue. There are two different ways.
+Suppose we have a class called `AClass`. We are accessing its member `AValue`. There are two different ways.
 
 1. Using pointer
    ```cpp
@@ -339,7 +339,7 @@ Suppose we have a class called AClass. We are accessing its member  AValue. Ther
 
 ### Dynamic Memory
 
-There are two basic concepts of memory in C++, the stack and the heap. Declared variables in all the functions used in a program use memory from stack while the heap is some pool of memory ready for dynamical allocation.
+There are two basic concepts of memory in C++, the stack and the heap. Declared variables in all the functions used in a program use memory from the stack while the heap is some pool of memory ready for dynamical allocation.
 
 The stack memory is will be released when the function return at the last step. It is also FILO, aka first in last out.
 
@@ -369,7 +369,7 @@ delete ptr;
 
 #### NULL
 
-Assign a ponter NULL when defining it is a good habbit.
+Assign a pointer NULL when defining it is a good habit.
 
 ```cpp
 int *ptr = NULL;
@@ -387,7 +387,7 @@ delete [] ptr;
 ```
 
 
-Functions should be declared in the file that calls the function if it's defined in another file. The declaration of function can be seperate from the definition of the function.
+Functions should be declared in the file that calls the function if it's defined in another file. The declaration of function can be separate from the definition of the function.
 
 ```cpp
 void goldHeart();
@@ -408,7 +408,7 @@ void goldHeart() {
 
 ## Memory
 
-Allocate memory for two dimensional array
+Allocate memory for two-dimensional array
 
 ```cpp
    double (*a)[3] = new double[5000][3];

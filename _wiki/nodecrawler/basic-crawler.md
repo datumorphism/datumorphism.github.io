@@ -53,9 +53,9 @@ A crawler requests data from the server, while the server responds with some dat
 
 ## API
 
-As for the first step, we need to find which url to request. Chrome and Firefox based browsers come with the developer's tool.
+As for the first step, we need to find which url to request. Chrome and Firefox-based browsers come with the developer's tool.
 
-In this tutorial, we will be using bilibili.com as an example, which is a video hosting website in China. Bilibili hosts many videos. Along with each video, the status such as the number of viewers of the videos is also displayed. To find out which API we should use, we simple turn on Chrome dev tool, look in to the Network tab and find it among the XHR.
+In this tutorial, we will be using bilibili.com as an example, which is a video hosting website in China. Bilibili hosts many videos. Along with each video, the status such as the number of viewers of the videos is also displayed. To find out which API we should use, we simple turn on Chrome dev tool, look into the Network tab and find it among the XHR.
 
 <div class="card">
 	<header class="card-header">

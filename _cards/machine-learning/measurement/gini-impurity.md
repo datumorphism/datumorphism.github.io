@@ -15,6 +15,11 @@ references:
 related:
   - name: Decision Tree
     link: /wiki/machine-learning/tree-based/decision-tree
+  - name: Information Gain
+    link: /cards/machine-learning/measurement/information-gain
+supplementary:
+  - name: Code
+    link: https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb
 ---
 
 > The code used in this article can be found in [this repo](https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb).

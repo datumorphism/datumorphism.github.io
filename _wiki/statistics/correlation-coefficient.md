@@ -109,8 +109,6 @@ $$
 
 </div>
 
-
-
 Covariance measures the correlation of these two series. To see this, we assume that we have two series A = B, which leads to $\sigma_{A,B} = \sigma_{A}$. Suppose we have two series at a completely opposite phase,
 
 | index | A | B |
@@ -124,7 +122,6 @@ Covariance measures the correlation of these two series. To see this, we assume 
 | 7 | 1 | -1 |
 
 we have $\sigma_{A,B} = -1 $. The negative sign tells us that our series are anti-correlated.
-
 
 <div class="notes--info" markdown="1">
 Covariance is also related to [dispersion matrix](../multidimensional-data).

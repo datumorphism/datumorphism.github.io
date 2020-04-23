@@ -20,7 +20,7 @@ references:
   link: 'https://www.svm-tutorial.com/2014/11/svm-understanding-math-part-1/'
 ---
 
-SVM is calculating a hyperplane to seperate the data points into groups according to the label.
+SVM is calculating a hyperplane to separate the data points into groups according to the label.
 
 <div class="card">
 <header class="card-header">
@@ -54,11 +54,11 @@ $$
 
 ## A Few Key Concepts in SVM
 
-Though the concept of SVM is simple, one might find the algorithm to be quite complicated at the first glance.
+Though the concept of SVM is simple, one might find the algorithm to be quite complicated at first glance.
 
 ### Which hyperplane to choose
 
-Suppose we have two classes in our dataset, class A and B, our hyperplane will seperate the two classes.
+Suppose we have two classes in our dataset, class A and B, our hyperplane will separate the two classes.
 
 The plane has to make sure that most data points of class A and B are on the two sides of the hyperplane.
 
@@ -88,14 +88,14 @@ Maybe this one? We calculate the distance between the data points of class A and
 We would like to take the extreme limits, again, to understand which hyperplane works the best for the classification problem.
 
 
-### Why does that max margin stragety work
+### Why does that max-margin strategy work
 
 
 
 
 ### How is the hyperplane being used
 
-The the hyperplane could be represented with a normal vector $\hat{\mathbf n}$ and a shift $\beta_0$.
+The hyperplane could be represented with a normal vector $\hat{\mathbf n}$ and a shift $\beta_0$.
 
 <div class="card">
 <header class="card-header">

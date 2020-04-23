@@ -28,7 +28,6 @@ Now we ask the question:
 
 Does the expensive wine taste better?
 
-
 We find 10 experts and give them some experiments. The result is recorded then processed into the following table.
 
 | expert # | expensive is better |
@@ -72,7 +71,3 @@ We just performed a sign test. Here is a bit of summary.
 2. The alternative hypothesis: the wines taste different, i.e., $p_0! = 0.5$.
 
 We use the null hypothesis to calculate the probability of X success ($X=6$ in our example) from N tests ($N=8$ in our example). If the probability is too high, then we would think that the case we get from the sample is actually quite possible even if the wines are the same. Then we could not make a decision from the data.
-
-
-
-

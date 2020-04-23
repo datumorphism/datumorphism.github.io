@@ -69,7 +69,7 @@ const main = async (MAX_ID) => {
         // fetch data from website
         fetchData(i) // it return a Promise
         	.then(data => array.push(data))
-        await sleep(100) // block thread 100 ms    
+        await sleep(100) // block thread 100 ms
     }
     // wait for async threads
     while(array.length < MAX_ID){
@@ -83,11 +83,11 @@ main(1000);
 
 ## Resume Jobs
 
-For large sites, the data scraping time is incredibly long. Failure in power, windows update, or even a tiny unidentified bug in the code could interupt the program. It is crucial to be able to resume the crawler from last termination. Especially when the code is asynchronous, termination of program may lead to broken data.
+For large sites, the data scraping time is incredibly long. Failure in power, windows update, or even a tiny unidentified bug in the code could interrupt the program. It is crucial to be able to resume the crawler from the last termination. Especially when the code is asynchronous, termination of the program may lead to broken data.
 
-One of the solutions is to write some synchronous code and record the most recent data id which should be already in database and resume from this if interuptions should occur. The problem is that we have not utilized the full power of Node.js if we insist on synchronous code.
+One of the solutions is to write some synchronous code and record the most recent data id which should be already in the database and resume from this if interruptions should occur. The problem is that we have not utilized the full power of Node.js if we insist on the synchronous code.
 
-Basically, information about the latest run has to be recorded in order to resume the process. We will write all the data of a batch job to database and secure it.
+Basically, information about the latest run has to be recorded in order to resume the process. We will write all the data of a batch job to the database and secure it.
 
 One of the solutions is to create a database collection in MongoDB, say `package`. In this collection, we store two fields, `pid` and `status`, where `pid` is the batch job id and `status` is the status of this batch job. For example, we define `0`, `1`, and `-1` of status to be 'waiting', 'finished', and 'running', respectively.
 

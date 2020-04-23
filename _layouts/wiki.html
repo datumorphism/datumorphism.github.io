@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post">
+<article id="post" class="post">
 
   <header class="post-header">
     <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -67,7 +67,7 @@ layout: default
       </div>
     </div>
 
-    <div class="column is-4">
+    <div id="sidebar" class="column is-4" style="position: -webkit-sticky;position: sticky;top:0;">
 
       {% if page.authors %}
       <div class="is-divider" data-content="AUTHORS"></div>
@@ -92,8 +92,8 @@ layout: default
       {% endfor %}
       {% endif %}
       {% if page.references %}
-      <div class="is-divider" data-content="REFERENCES"></div>
-      <article class="message">
+      <div id="references" class="is-divider" data-content="REFERENCES"></div>
+      <article class="message is-primary">
         <div class="message-header">
           <p>References:</p>
         </div>
@@ -106,6 +106,37 @@ layout: default
         </div>
       </article>
       {% endif %}
+      {% if page.related %}
+      <div id="related" class="is-divider" data-content="RELATED"></div>
+      <article class="message is-info">
+        <div class="message-header">
+          <p>Related Articles:</p>
+        </div>
+        <div class="message-body">
+          <ol>
+            {% for ref in page.related %}
+            <li><a href="{{ ref.link }}" style="text-decoration:none;">{{ ref.name }}</a></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </article>
+      {% endif %}
+      {% if page.supplementary %}
+      <div id="supplementary" class="is-divider" data-content="SUPPLEMENTARY"></div>
+      <article class="message is-link">
+        <div class="message-header">
+          <p>Supplementary:</p>
+        </div>
+        <div class="message-body">
+          <ol>
+            {% for ref in page.supplementary %}
+            <li><a href="{{ ref.link }}" style="text-decoration:none;">{{ ref.name }}</a></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </article>
+      {% endif %}
+      <div id="comments" class="is-divider" data-content="COMMENTS"></div>
       {% include utterances-comments.html %}
     </div>
   </div>
@@ -116,3 +147,5 @@ layout: default
 
   {% include collection-pagination.html %}
 </article>
+
+{% include extras/navtools.html %}

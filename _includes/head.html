@@ -37,14 +37,15 @@
   {% endif %}
 
   {% if page.mermaid %}
-  <script src="{{ "/assets/mermaid/mermaid.min.js" | relative_url }}"></script>
-  <link rel="stylesheet" href="{{ "/assets/mermaid/mermaid.css" | relative_url }}" />
+  <!-- <script src="{{ "/assets/mermaid/mermaid.js" | relative_url }}"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.5.0/mermaid.min.js"></script>
+  <!-- <link rel="stylesheet" href="{{ "/assets/mermaid/mermaid.css" | relative_url }}" /> -->
   {% endif %}
 
 
 
 
-  
+
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] },
