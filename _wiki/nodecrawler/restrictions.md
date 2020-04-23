@@ -81,7 +81,7 @@ This piece of code will print out the date and time every 2000ms.
 <div class="content" markdown="1">
 Node.js is single-threaded. As we have mentioned when explaining the function `fs.writeFile()`, Node.js has non-blocking I/O. In fact, concurrency is probably at the heart of Node.js, which means we execute one process out of the multiple running processes. Concurrency can make your code more efficient.
 
-In the first block of code, we have used `setInterval` callback function. However, callback is kind of messy. It's much better if we could use function chaining. `Promise` is exactly what we need to achieve this.
+In the first block of code, we have used `setInterval` callback function. However, the callback is kind of messy. It's much better if we could use function chaining. `Promise` is exactly what we need to achieve this.
 
 `async` tells Node.js that we are defining an asynchronous function, while `await` tells it to wait for the async function to parse things. It's basically an alternative to `.then` and `.catch` functions.
 
@@ -95,7 +95,7 @@ The code above doesn't chain functions a lot but it's worth mentioning here.
 
 ## User-Agent Verification
 
-Some services will require some certain browsers to get a successfull response. The way they do it is to verify the `User-Agent` (UA) data in the HTTP requests. In this case, we have to request with some fake UA data.
+Some services will require some certain browsers to get a successful response. The way they do it is to verify the `User-Agent` (UA) data in the HTTP requests. In this case, we have to request with some fake UA data.
 
 The package `superagent` can help us set UA.
 ```JavaScript

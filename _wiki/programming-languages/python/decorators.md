@@ -37,7 +37,7 @@ def yet_another_function():
 ```
 
 
-When we excute `a_decoration_function`, we will have
+When we execute `a_decoration_function`, we will have
 
 ```
 Before yet_another_function

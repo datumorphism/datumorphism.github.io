@@ -29,7 +29,7 @@ To install `mongojs`,
 npm i mongojs --save
 ```
 
-Here is a module that can write data to MongoDB. We create a file named `dao.js` and copy pase the following code into it.
+Here is a module that can write data to MongoDB. We create a file named `dao.js` and copy/paste the following code into it.
 
 ```JavaScript
 // use mongojs

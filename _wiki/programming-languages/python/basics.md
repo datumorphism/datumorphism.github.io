@@ -18,7 +18,7 @@ weight: 201
 
 ## Numbers, Arithmetics
 
-Two types of numbers exisit,
+Two types of numbers exist,
 
 1. int
 2. float, 15 digits, other digits are float error
@@ -45,7 +45,7 @@ However, this was changed in Python 3.
 ## Variables, Functions, Conditions
 
 
-Variable name should start with either a letter or a underscore.
+A variable name should start with either a letter or an underscore.
 
 Variables defined inside a function is local and there is no way to find it or use it outside the function. It is even possible to reuse an already used global variable inside a function.
 

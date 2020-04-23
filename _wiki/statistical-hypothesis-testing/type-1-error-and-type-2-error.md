@@ -21,6 +21,7 @@ weight: 3
 ## Type I and Type II Errors
 
 In statistical hypothesis testing, we always have a null hypothesis $H_0$ which refers to the statement to be tested. We have two possible conclusions from a hypothesis testing,
+
 1. to accept the hypothesis, that is concluding that $H_0$ is true,
 2. to reject the hypothesis, that is concluding that $H_0$ is false.
 
@@ -33,6 +34,7 @@ However, it is possible that our conflusion is not correct. There are four possi
 | **Reject** $H_0$ **(after hypothesis testing)** | Type I Error | Correct |
 
 We could tell that there are two types of errors:
+
 1. Type I: The hypothesis $H_0$ is correct but we rejected it:
 2. Type II: the hypothesis $H_0$ is wrong but we accepted it.
 
@@ -59,7 +61,7 @@ If we look at the threshold of p-value in a hypothesis testing, we are basically
 Here I quote this very wise paragraph from *Elements of Statistics II* as shown in the reference.
 
 > A P value can be thought of as a descriptive statistic that measures how much support the data give to the null hypothesis: the smaller the P value, the less the support. But what level of support is considered so small that the null hypothesis should be rejected?
-> 
+>
 > -- 16.8 in the book Elements of Statistics II by Stephen Bernstein and Ruth Bernstein
 
 

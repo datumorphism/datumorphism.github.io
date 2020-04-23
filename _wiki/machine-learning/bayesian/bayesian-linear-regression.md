@@ -38,7 +38,7 @@ $$
 \epsilon = \hat y - y,
 $$
 
-which is required to have a minimun absolute value.
+which is required to have a minimum absolute value.
 
 We could use least squares to solve the problem. However, instead of using a deterministic estimator $\beta^m X_m^{\phantom{m}n}$, we assume a Gaussian random estimator
 
@@ -56,7 +56,7 @@ P(\hat y^n \mid [X_m^{\phantom{m}n}, \beta^m] ) = \frac{1}{\sqrt{2 \sigma^2 \pi}
 \end{equation}
 $$
 
-It is not surprising that requiring the maximum likelihood will lead to the same result as least squares due to log takes out exponential.
+It is not surprising that requiring the maximum likelihood will lead to the same result as least-squares due to log takes out exponential.
 
 
 ## Bayesian Linear Model

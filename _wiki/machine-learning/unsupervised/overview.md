@@ -45,7 +45,7 @@ Hierarchical Clustering
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Bottom-up hierarchical groups can be read out from dendrogram.
+Bottom-up hierarchical groups can be read out from the dendrogram.
 
 
 References and Notes

@@ -33,7 +33,6 @@ Since all the sample means form a distribution. We would expect that most of the
 
 It is quite similar to shooting. If someone shoots all his bullets on almost the same point on the target, we would say he is precise. But the point may not be at the center of the target, then we say he is not accurate.
 
-
 ## Population and Sample
 
 Physical Population and Measurement Population
@@ -56,12 +55,10 @@ Sample
 | Physical | physical objects | physical subset of the physical population |
 | Measurement | measurement of the physical population |  measurement of the physical sample  |
 
-
 ## Hypothesis
 
 1. Statistical hypothesis: hyposthesis about the measurement population
 2. Research hypothesis or scientific hypothesis or working hypothesis: hypothesis about the physical population
-
 
 ## Loss Functions
 
@@ -77,10 +74,7 @@ $$
 
 Note that $\mu$ is the sample mean and $\sigma$ is the sample standard deviation.
 
-
-
 ## Abbreviations
-
 
 1. MSE: mean squared error
 2. EPE: expected prediction error

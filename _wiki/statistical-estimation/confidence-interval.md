@@ -40,8 +40,9 @@ P( \mu_p \in [\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigm
 $$
 
 
-Here $z_{\alpha/2}$ is the [$z$ value](/wiki/statistics/jargons/#z-transformation) which makes the probability to be in between $[-z_{\alpha/2}, z_{\alpha/2}]$ to be $1-\alpha$. As shown in the following figure. $\sigma_{\bar x}$ is the **standard error of the mean for the sample**. 
-1. It is NOT the standard deviation of the sample data. 
+Here $z_{\alpha/2}$ is the [$z$ value](/wiki/statistics/jargons/#z-transformation) which makes the probability to be in between $[-z_{\alpha/2}, z_{\alpha/2}]$ to be $1-\alpha$. As shown in the following figure. $\sigma_{\bar x}$ is the **standard error of the mean for the sample**.
+
+1. It is NOT the standard deviation of the sample data.
 2. It is NOT the population standard deviation.
 3. It is NOT the standard error calculated using only the sample data.
 4. It depends on the sample size. The larger the sample size, the smaller it will be.
@@ -64,7 +65,7 @@ $$
 [\bar X, \bar X].
 $$
 
-We must have $z_{\alpha/2} \sigma_{\bar x} \to 0$ as sample size $n\to \infty$. $z_{\alpha/2}$ can not be always 0 so $\sigma_{\bar x} \to 0$ as $n\to \infty$. 
+We must have $z_{\alpha/2} \sigma_{\bar x} \to 0$ as sample size $n\to \infty$. $z_{\alpha/2}$ can not be always 0 so $\sigma_{\bar x} \to 0$ as $n\to \infty$.
 
 In fact, $\sigma_{\bar x} = \sigma_p / \sqrt{n}$ if our population is infinite. This is part of the central limit theorem.
 </div>
@@ -83,7 +84,6 @@ The confidence level is a **weird measurement of our statistical confidence**.
 Imagine we are drawing 100 samples from the population and calculate the range $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$. We would have 100 different ranges. How many of them would actually contain the true mean? The answer is probably around $(1-\alpha)$ fraction of all the 100 calculations. When we have a huge amount of samples, this probability becomes quite faithful.
 
 Why is this a representation of our confidence? Imagine we choose one sample from this 100 calculations. The probability that this specific number $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ (with all the numbers substituted using the sample values, for example $[-1,2]$, which is different from every other sample calculations) contains the true mean is also $(1-\alpha)$.
-
 
 In other words, $[\bar X - z_{\alpha/2} \sigma_{\bar x}, \bar X + z_{\alpha/2} \sigma_{\bar x} ]$ is the interval that we are $1-\alpha$ confident that we have captured the true mean. From this point of view, **the name confidence interval is rather misleading.**
 
@@ -114,7 +114,7 @@ $$
 <figure markdown="1">
 ![](../assets/gaussian-alpha-compare-different-sigma.png)
 <figcaption markdown="1">
-The larger the margin of error $E$, the harder to pin down the true mean. In the two panels, we have larger $E$ for the lower panel whose sample size is approximately 1/4 of the upper panel's. This is trivial since smaller samples leads to larger $\sigma_{\bar x}$ thus wider distribution. It is obvious that 
+The larger the margin of error $E$, the harder to pin down the true mean. In the two panels, we have larger $E$ for the lower panel whose sample size is approximately 1/4 of the upper panel's. This is trivial since smaller samples leads to larger $\sigma_{\bar x}$ thus wider distribution. It is obvious that
 In this example, we have $\alpha=0.05$.
 </figcaption>
 </figure>
@@ -131,7 +131,7 @@ $$
 As we mentioned, this is NOT what you calculate using the sample data only.
 
 <div class="notes--warning" markdown="1">
-Suppose we have have a sample with sample size $n$. We could calculate a standard deviation $S$ event a standard error of the mean $S_{\bar x}=S/\sqrt{n}$ using this sample data. However, $S_{\bar x}$ is an **estimation** of the standard error of the mean $\sigma_{\bar x}$ since we do not know the actual distribution of the sample.
+Suppose we have have a sample with a sample size $n$. We could calculate a standard deviation $S$ event a standard error of the mean $S_{\bar x}=S/\sqrt{n}$ using this sample data. However, $S_{\bar x}$ is an **estimation** of the standard error of the mean $\sigma_{\bar x}$ since we do not know the actual distribution of the sample.
 </div>
 
 For this problem, we have a macroscopic view and microscopic view.
@@ -145,17 +145,17 @@ In this case, we
 
 1. calculate the standard deviation of the sample, $S$,
 2. estimate the standard error of the mean $S_{\bar x}$ using $S_{\bar x}=S/\sqrt{n}$ where $n$ is the sample size,
-2. use $S_{\bar x}$ instead of (the unknown) $\sigma_{\bar x}$ to calculate the scalar $z_{\alpha/2}$.
+3. use $S_{\bar x}$ instead of (the unknown) $\sigma_{\bar x}$ to calculate the scalar $z_{\alpha/2}$.
 
 Basically, we assume that
 
 $$
-\frac{\bar X - \mu}{\sigma_{\bar x}}  \sim  \frac{\bar X - \mu}{ S_{\bar x} } 
+\frac{\bar X - \mu}{\sigma_{\bar x}}  \sim  \frac{\bar X - \mu}{ S_{\bar x} }
 $$
 
 ### Microscopic View
 
-When we have a small sample size, we do not have the macroscopic view to neglect the "glitches". 
+When we have a small sample size, we do not have the macroscopic view to neglect the "glitches".
 
 We have been talking the approximations
 

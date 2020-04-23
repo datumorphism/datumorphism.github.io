@@ -19,11 +19,11 @@ references:
 weight: 3
 ---
 
-Random forest is an ensemble method based on decision trees. Instead of using one decision tree and model on all the features, decision tree mehod can model on a random set of features (feature subspace) using many decision trees and make decisions by democratizing the trees.
+Random forest is an ensemble method based on decision trees. Instead of using one decision tree and model on all the features, the decision tree method can model on a random set of features (feature subspace) using many decision trees and make decisions by democratizing the trees.
 
 Given a proper dataset $\mathscr D(\mathbf X, \mathbf y)$, the ensemble of trees are denoted as $\{f_i(\mathbf X)\}$, will predict an ensemble of results. There are several key ideas in random forests.
 
-1. Are the predicted results representive?
+1. Are the predicted results representative?
 2. How to democratize the ensemble of results?
 3. What determines the quality of the predictions?
 
@@ -54,7 +54,7 @@ Thus we expect that the ensemble predicts the correct result if $M(\mathbf X, \m
 
 **Notice that these probabilities are over the trees,** i.e., the subscript $i$.
 
-If all the predictions in all the trees are predicting the correct values $\mathbf y$, the margin will be 1. If all the predictions are not correct, the margin is -1. If we have two predicted values and probabilties of each of the predictions are equal, the margin is 0.
+If all the predictions in all the trees are predicting the correct values $\mathbf y$, the margin will be 1. If all the predictions are not correct, the margin is -1. If we have two predicted values and probabilities of each of the predictions are equal, the margin is 0.
 
 ### Strength
 
@@ -66,7 +66,7 @@ $$
 
 ### Raw Margin
 
-Instead of using the probability of the predctions in the margin, the indicator function it self is also a measure of how well the predictions are. The **raw margin** is then defined as
+Instead of using the probability of the predictions in the margin, the indicator function it self is also a measure of how well the predictions are. The **raw margin** is then defined as
 
 $$
 M_{R,i}(\mathbf X, \mathbf y) = I (f_i(\mathbf X)=\mathbf y ) - \operatorname{max}_{\mathbf j\neq \mathbf y} I ( f_i(\mathbf X) = \mathbf j ).
@@ -96,7 +96,7 @@ $$
 
 i.e., the probability of getting the correct answer over the whole dataset.
 
-It has been proved that **the ensemble will converge in random forest as the number of trees gets large.** And the generalization error is proven to be related to the strength and the mean correlation,
+It has been proved that **the ensemble will converge in the random forest as the number of trees gets large.** And the generalization error is proven to be related to the strength and the mean correlation,
 
 $$
 P_{err} \leq \frac{\bar \rho (1-s^2) }{s^2}.
@@ -120,7 +120,7 @@ Upper Limit of generalization error as functions of $\bar \rho$ and $s$.
 
 ## Random Forest Regressor
 
-Similar to decision trees, random forest can also be used as regressors. Similar conclusion about the regressors can be proved.
+Similar to decision trees, a random forest can also be used as regressors. A similar conclusion about the regressors can be proved.
 
 To see how the regressor works, we construct an artificial problem. The code can be accessed [on GitHub](https://github.com/datumorphism/mini-code/blob/master/random_forest/random_forest_benchmark.ipynb).
 
