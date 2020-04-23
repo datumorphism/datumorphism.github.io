@@ -16,6 +16,16 @@ references:
   link: 'https://doi.org/10.1023/A:101093340'
 - name: 'Biau, G. (2012). Analysis of a Random Forests Model. J. Mach. Learn. Res., 13, 1063–1095.'
   link: 'https://doi.org/10.5555/2188385.2343682'
+related:
+  - name: "Gini Impurity"
+    link: "/cards/machine-learning/measurement/gini-impurity"
+  - name: "Information Gain"
+    link: "/cards/machine-learning/measurement/information-gain"
+  - name: "Decision Tree"
+    link: "/wiki/machine-learning/tree-based/decision-tree"
+supplementary:
+  - name: "Code used in this article"
+    link: "https://github.com/datumorphism/mini-code/tree/master/random_forest"
 weight: 3
 ---
 

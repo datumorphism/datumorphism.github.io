@@ -20,6 +20,8 @@ related:
     link: "/cards/machine-learning/measurement/gini-impurity"
   - name: "Information Gain"
     link: "/cards/machine-learning/measurement/information-gain"
+  - name: "Random Forest"
+    link: "/wiki/machine-learning/tree-based/random-forest"
 supplementary:
   - name: "Python code used in this article"
     link: "https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb"
