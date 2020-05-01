@@ -100,7 +100,11 @@ layout: default
         <div class="message-body">
           <ol>
             {% for ref in page.references %}
-            <li><a href="{{ ref.link }}" style="text-decoration:none;">{{ ref.name }}</a></li>
+            <li>{% if ref.key %}
+              <a name="{{ ref.key }}" href="#{{ ref.key }}" style="text-decoration:none;">
+                <span class="tag is-link is-light">{{ref.key}}</span>
+              </a>
+              {% endif %}<a href="{{ ref.link }}" style="text-decoration:none;">{{ ref.name }}</a></li>
             {% endfor %}
           </ol>
         </div>
