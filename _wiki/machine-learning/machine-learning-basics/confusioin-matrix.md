@@ -170,21 +170,56 @@ $$
 F_1 &= \frac{2}{ 1/\mathrm{Pression} + 1/\mathrm{Recall} } \\
 & = \frac{2}{ \frac{PP}{TP} + \frac{P}{TP} } \\
 & = \frac{2}{ \frac{PP+P}{TP} } \\
-& = \frac{2}{ \frac{ (TP + FP) + (TP + FN) }{TP} }
+& = \frac{2}{ \frac{ (TP + FP) + (TP + FN) }{TP} } \\
+& = \frac{1}{ 1 + \frac{ (FP + FN) }{2TP} }
 \end{align}
 $$
 
 ## Confused by the Names?
 
-There is a nice chart on [this wikipedia page](https://en.wikipedia.org/wiki/F1_score#/media/File:Precisionrecall.svg).
+There is a nice chart on [this wikipedia page](https://commons.wikimedia.org/wiki/File:Precisionrecall.svg).
+
+The different metrics can be visualized using color blocks. We use green to represent the amount of TP, orange to represent the amount of FP.
+
+<figure markdown="1">
+![](../confusion-matrix/confusion-matrix-less-tp-more-fp.png)
+<figcaption markdown="1">
+Low TP Rate;High FP Rate; Low Precision; Low Accuracy; Low Recall; Low F1
+</figcaption>
+</figure>
+
+<figure markdown="1">
+![](../confusion-matrix/confusion-matrix-more-tp-more-fp.png)
+<figcaption markdown="1">
+High TP Rate;High FP Rate; Not so good Precision; Not so good Accuracy; High Recall; Not so good F1
+</figcaption>
+</figure>
 
 
 <figure markdown="1">
-![]({{site.baseurl}}/wiki/statistical-learning/assets/general/positives-negatives-precision-recall.svg)
+![](../confusion-matrix/confusion-matrix-more-tp-less-fp.png)
 <figcaption markdown="1">
-[Walber, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Precisionrecall.svg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+High TP Rate;Low FP Rate; Good Precision; Good Accuracy; High Recall; Good F1
 </figcaption>
 </figure>
+
+<figure markdown="1">
+![](../confusion-matrix/confusion-matrix-less-tp-less-fp.png)
+<figcaption markdown="1">
+Low TP Rate;Low FP Rate; Low Precision; Low Accuracy; Low Recall; Low F1
+</figcaption>
+</figure>
+
+<figure markdown="1">
+![](../confusion-matrix/confusion-matrix-less-tp-lesser-fp.png)
+<figcaption markdown="1">
+Low TP Rate;Low FP Rate; High Precision; Low Accuracy; Low Recall; Low F1
+</figcaption>
+</figure>
+
+
+
+
 
 
 
