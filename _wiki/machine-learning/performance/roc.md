@@ -17,11 +17,10 @@ references:
 weight: 1
 ---
 
-
 <figure markdown="1">
 ![](../assets/roc/roc-color-blocks.png)
 <figcaption markdown="1">
-ROC Space
+ROC Space. The color boxes are indicating the confusion matrices. Refer to [Confusion Matrix](/wiki/machine-learning/machine-learning-basics/) for more details.
 </figcaption>
 </figure>
 
