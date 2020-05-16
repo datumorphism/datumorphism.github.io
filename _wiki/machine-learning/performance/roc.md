@@ -39,3 +39,11 @@ $$
 $$
 
 If AUC = 1, we have TP Rate = 1 for all FP Rate. This is the best performance a model could have.
+
+## How to Calculate ROC Curve
+
+> Not every model has an AUC. To get the AUC curve, we need a hyperparameter to be tuned to get different TP Rate and FP Rate.
+
+In logistic regression, a threshold $T$ is predetermined to decide which label to use in classifications.
+
+By tuning the threshold $T$, we get different TP Rate $TPR$ and FP Rate $FPR$, i.e., $TPR(T)$ and $FPR(T)$. The parametric relations between $TPR(T)$ and $FPR(T)$ forms the ROC curve.
