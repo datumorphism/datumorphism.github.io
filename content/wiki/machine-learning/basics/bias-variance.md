@@ -18,8 +18,6 @@ references:
 weight: 2
 ---
 
-* ToC
-{:toc}
 
 ## Bias and Variance
 
@@ -34,20 +32,12 @@ $$
 
 On the other hand, we could get another model using a specific model such as k-nearest neighbors, which we denote as $$k(X)$$.
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Why the two models?</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content" markdown="1">
+> Why the two models?
+>
+> Why are we talking about the perfect model and a model using a specific method?
+>
+> The perfect model $f(X)$ is our ultimate goal, while the model using a specific method $k(X)$ is our effort of approaching the ultimate model.
 
-Why are we talking about the perfect model and a model using a specific method?
-
-The perfect model $f(X)$ is our ultimate goal, while the model using a specific method $k(X)$ is our effort of approaching the ultimate model.
-
-</div>
-</div>
-</div>
 
 What is our bias? It measures the deficit between $k(X)$ and the perfect model $f(X)$,
 
@@ -57,16 +47,9 @@ $$
 
 Zero bias means we are matching the perfect model.
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">E[g(X)]</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
-Expectation of the function.
-</div>
-</div>
-</div>
+> E[g(X)]
+>
+> Expectation of the function.
 
 What is variance? Variance is about the model itself:
 
@@ -110,17 +93,10 @@ We have this Irreducible Error because the mean of the irreducible error is requ
 
 The more parameters we introduce in the model, it is more likely to reduce the bias. However, at some point, the more complexity we have in the model, the more wiggles the model will have. Thus the variance will be larger.
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Free Parameters</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content" markdown="1">
-Fermi once said,
-
-> I remember my friend Johnny von Neumann used to say, with four parameters I can fit an elephant, and with five I can make him wiggle his trunk.
-
-There is a [nice story](http://lilith.fisica.ufmg.br/~dsoares/fdyson.htm) about Dyson and Fermi behind this.
-</div>
-</div>
-</div>
+> Free Parameters
+>
+> Fermi once said,
+>
+> > I remember my friend Johnny von Neumann used to say, with four parameters I can fit an elephant, and with five I can make him wiggle his trunk.
+>
+> There is a [nice story](http://lilith.fisica.ufmg.br/~dsoares/fdyson.htm) about Dyson and Fermi behind this.

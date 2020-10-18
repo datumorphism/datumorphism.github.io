@@ -80,38 +80,29 @@ $$
 
 *which is insanely trivial since the representation of basis in this case is an identity matrix.*
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Spherical Harmonics</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content" markdown="1">
-
-Now we ask this question:
-
-**Can we decompose the point using some other basis?**
-
-The answer is yes.
-
-While it is easier to perceive using the above matrix picture, it is much more convinent to use the index notation.
-
-In physics, we are already dealing with this situition. We use spherical harmonics to decompose a field.
-
-$$
-\begin{equation}
-f(r=1, \theta, \varphi) = \sum_{\ell=0}^\infty \sum_{m=-\ell}^\ell f_\ell^m  Y_\ell^m (\theta, \varphi ).
-\end{equation}
-$$
-
-A general form of decomposition using rank 2 matrix is
-
-$$
-\mathbf P \to P_\ell^m V_m^\ell.
-$$
-
-</div>
-</div>
-</div>
+> Spherical Harmonics
+>
+> Now we ask this question:
+>
+> **Can we decompose the point using some other basis?**
+>
+> The answer is yes.
+>
+> While it is easier to perceive using the above matrix picture, it is much more convinent to use the index notation.
+>
+> In physics, we are already dealing with this situition. We use spherical harmonics to decompose a field.
+>
+> $$
+> \begin{equation}
+> f(r=1, \theta, \varphi) = \sum_{\ell=0}^\infty \sum_{m=-\ell}^\ell f_\ell^m  Y_\ell^m (\theta, \varphi ).
+> \end{equation}
+> $$
+>
+> A general form of decomposition using rank 2 matrix is
+>
+> $$
+> \mathbf P \to P_\ell^m V_m^\ell.
+> $$
 
 
 NMF is talking about the same idea: coordinate transformations,
@@ -161,38 +152,30 @@ $$
 
 Compare this with the decomposition of a point in cartesian coordinate system, this is a decomposition of each point on a basis spanned by $\mathbf W^i$.
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Another View?</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content" markdown="1">
+> Another View?
+>
+> $$
+> \begin{pmatrix}
+> \mathbf H^1 &
+> \mathbf H^2 &
+> \cdots  &
+> \mathbf H^r
+> \end{pmatrix} \begin{pmatrix}
+> \mathbf W_1 \\
+> \mathbf W_2 \\
+> \vdots \\
+> \mathbf W_r
+> \end{pmatrix}
+> $$
+>
+> Then we have the sum of a bunch of $(n, k)$ matrices,
+>
+> $$
+> \mathbf H^1 \mathbf W_1 + \mathbf H^2 \mathbf W_2 + \mathbf H^3 \mathbf W_3 \cdots
+> $$
+>
+> Hmmm this is not providing more insights to me. It seems to be rewriting the original matrix in "coordinate system" of r bases.
 
-$$
-\begin{pmatrix}
-\mathbf H^1 &
-\mathbf H^2 &
-\cdots  &
-\mathbf H^r
-\end{pmatrix} \begin{pmatrix}
-\mathbf W_1 \\
-\mathbf W_2 \\
-\vdots \\
-\mathbf W_r
-\end{pmatrix}
-$$
-
-Then we have the sum of a bunch of $(n, k)$ matrices,
-
-$$
-\mathbf H^1 \mathbf W_1 + \mathbf H^2 \mathbf W_2 + \mathbf H^3 \mathbf W_3 \cdots
-$$
-
-Hmmm this is not providing more insights to me. It seems to be rewriting the original matrix in "coordinate system" of r bases.
-
-</div>
-</div>
-</div>
 
 ## Nonnegative Matrix Factorization
 
@@ -222,23 +205,15 @@ So NMF will require this Frobenius distance to be minimal.
 Well, it doesn't always work. **We might have many different NMFs for one single matrix.**
 
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Compare with SVD</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
+> Compare with SVD
+>
+> For a $n\times p$ matrix $\mathbf X$, we use SVD to get the singular value,
+>
+> $$
+> \mathbf{U}^{\mathbf T}\mathbf{X} = \mathbf{D}\mathbf{V}^{\mathbf T}.
+> $$
+>
+> In this case, we have $\mathbf D$ being uniquly determined but neither $\mathbf U$ nor $\mathbf V$.
 
-For a $n\times p$ matrix $\mathbf X$, we use SVD to get the singular value,
-
-$$
-\mathbf{U}^{\mathbf T}\mathbf{X} = \mathbf{D}\mathbf{V}^{\mathbf T}.
-$$
-
-In this case, we have $\mathbf D$ being uniquly determined but neither $\mathbf U$ nor $\mathbf V$.
-
-</div>
-</div>
-</div>
 
 How do we find a proper decomposition using NMF? We put restrictions on it, such as penalties. Apart from this, we also need to choose the rank of the decomposition $r$ in Eq. ($\ref{eq-nmf}$). Even if we fixed all these problems, NMF is computation expensive.

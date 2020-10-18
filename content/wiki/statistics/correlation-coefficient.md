@@ -12,11 +12,10 @@ tag:
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   link: ''
-weight: 3
+weight: 4
 ---
 
-* ToC
-{:toc}
+
 
 ## Covariances
 

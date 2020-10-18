@@ -57,8 +57,8 @@ casted as
 
 $$
 \begin{align*}
-&(1-\beta_1 - \beta_2) T^t = -\beta_1 (T^t - T^{t - 1}) - \beta_2 (T^t - T^{t-1} + T^{t-1} - T^{t - 2}) + \beta^t + \beta^0 \\
-\Rightarrow &(1-\beta_1 - \beta_2) T^t = -dt \beta_1 (T^t - T^{t - 1})/dt - 2dt\beta_2 (T^t - T^{t-1} + T^{t-1} - T^{t - 2})/(2dt) + \beta^t + \beta^0 \\
+&(1-\beta_1 - \beta_2) T^t = -\beta_1 (T^t - T^{t - 1}) - \beta_2 (T^t - T^{t-1} + T^{t-1} - T^{t - 2}) + \beta^t + \beta^0 \\\\
+\Rightarrow &(1-\beta_1 - \beta_2) T^t = -dt \beta_1 (T^t - T^{t - 1})/dt - 2dt\beta_2 (T^t - T^{t-1} + T^{t-1} - T^{t - 2})/(2dt) + \beta^t + \beta^0 \\\\
 \Rightarrow &T^t = - dt \frac{\beta_1 + 2\beta_2}{1-\beta_1 - \beta_2} T'(t) + \frac{\beta^t + \beta^0}{1-\beta_1 - \beta_2}
 \end{align*}
 $$

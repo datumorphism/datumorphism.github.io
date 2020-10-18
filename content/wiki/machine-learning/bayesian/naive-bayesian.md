@@ -27,16 +27,9 @@ P(\mathbf Y \mid \mathbf X) = \frac{ P(\mathbf X \mid \mathbf Y) P(\mathbf Y) }{
 \end{equation}
 $$
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Why Don't We Just Calculate $P(\mathbf Y \mid \mathbf X)$</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
-Because it would be hard to calculate it if we have too many features. Actually $P(\mathbf X)$ is hard to calculate too.
-</div>
-</div>
-</div>
+> Why Don't We Just Calculate $P(\mathbf Y \mid \mathbf X)$
+>
+> Because it would be hard to calculate it if we have too many features. Actually $P(\mathbf X)$ is hard to calculate too.
 
 Being naive, we will assume that the features are independent of each other, i.e., don't have interactions with each other in terms of predictions. In this case we simply write the theorem as
 

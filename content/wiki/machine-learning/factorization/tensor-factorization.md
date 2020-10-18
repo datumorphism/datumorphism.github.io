@@ -32,14 +32,7 @@ We will be talking about tensors. We will skip the introduction to tensor.
 
 In this article, we follow a commonly used convention for tensors in physics, the abstract index notation. We will denote tensors as $T^{ab\cdots}_ {\phantom{ab\cdots}cd\cdots}$, where the latin indices such as $^{a}$ are simply a placebo for the slot for this "tensor machine". For a given basis (coordinate system), we can write down the components of this tensor $T^{\alpha\beta\cdots} _ {\phantom{\alpha\beta\cdots}\gamma\delta\cdots}$.
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Okay, But Why</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
-What is usually seen in blog posts is the use of component forms of tensors, $T^{\alpha\beta\cdots}_{\phantom{\alpha\beta\cdots}\gamma\delta\cdots}$. Those are the numbers for a given basis. We would like to keep it general.
-</div>
-</div>
-</div>
+> Okay, But Why
+>
+> What is usually seen in blog posts is the use of component forms of tensors, $T^{\alpha\beta\cdots}_{\phantom{\alpha\beta\cdots}\gamma\delta\cdots}$. Those are the numbers for a given basis. We would like to keep it general.
 

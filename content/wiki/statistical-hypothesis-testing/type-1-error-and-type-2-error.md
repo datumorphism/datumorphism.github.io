@@ -12,11 +12,9 @@ tag:
 references:
 - name: "Elements of Statistics II by Stephen Bernstein and Ruth Bernstein"
   link: 'https://books.google.de/books/about/Schaum_s_Outline_of_Elements_of_Statisti.html?id=3LhPwUhrVIcC'
-weight: 3
+weight: 2
 ---
 
-* ToC
-{:toc}
 
 ## Type I and Type II Errors
 

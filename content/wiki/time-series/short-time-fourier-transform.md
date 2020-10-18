@@ -13,7 +13,7 @@ weight: 1
 
 
 
-# Short-Time-Fourier-Transform
+## Short-Time-Fourier-Transform
 
 
 We Fourier transform the time series data using a Fourier transform, with some window function
@@ -26,7 +26,7 @@ where $\lambda_k=2\pi k/N$ and $W[m]$ is the window function at $m$.
 
 
 
-# References and Notes
+## References and Notes
 
 
 1. [Cousera](https://www.coursera.org/learn/practical-time-series-analysis/lecture/pPtHq/course-introduction)

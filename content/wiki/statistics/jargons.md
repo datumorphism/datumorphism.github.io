@@ -11,7 +11,7 @@ tag:
 references:
 - name: "Elements of Statistics by Stephen Bernstein and Ruth Bernstein"
   title: ''
-weight: 1
+weight: 2
 ---
 
 ## Accuracy and Precision
@@ -19,7 +19,8 @@ weight: 1
 1. Accuracy: the measurement compared to the truth
 2. Precision: variability of repeated measurements; the more precise, the less variations during each measurement.
 
-| | Accurate | Inaccurate |
+|   | Accurate | Inaccurate |
+|:----:|:-----:|:-----:|
 | Precise |  Close to true value, small variations in each measurement | Far from true value, small variations in each measurement  |
 | Imprecise |  Close to true value, large variations in each measurement  |  Far from true value, large variations in each measurement  |
 
@@ -52,6 +53,7 @@ Sample
 2. Measurement sample: measurement of the physical sample
 
 | | Population | Sample |
+|:----:|:-----:|:------:|
 | Physical | physical objects | physical subset of the physical population |
 | Measurement | measurement of the physical population |  measurement of the physical sample  |
 

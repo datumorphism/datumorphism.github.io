@@ -12,11 +12,8 @@ tag:
 references:
 - name: "The Elements of Statistical Learning by Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie"
   link: ''
-weight: 6
+weight: 7
 published: false
 ---
 
-
-* ToC
-{:toc}
 

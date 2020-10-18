@@ -10,12 +10,10 @@ tag:
 - 'Basics'
 - 'Covaraince'
 references:
-weight: 6
+weight: 8
 published: false
 ---
 
-* ToC
-{:toc}
 
 ## Descriptions of Multidimensional Data
 

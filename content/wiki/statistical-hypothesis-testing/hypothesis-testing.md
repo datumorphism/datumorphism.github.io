@@ -19,16 +19,10 @@ When we have a sample of the population, we immediately calculate the mean using
 
 This specific sample mean $\mu_0$ is nothing but like an **advanced** educated guess. Then again, how do we know if our this specific sample mean $\mu_0$ is a faithful representation of the population mean? In fact, this question is not limited to mean. It applies to any statistical measurement.
 
-<div class="card">
-	<header class="card-header">
-		<p class="card-header-title card-toggle">The Statistical Estimation Theory Solution to This Problem</p>
-	</header>
-	<div class="card-content is-hidden">
-		<div class="content">
-			In statistical estimation theory, we would tell the sample value with some indication of the degrees of faithfulness. For example, we would tell the sample mean together with a <a href="/wiki/statistical-estimation/confidence-interval/">confidence interval</a>.
-		</div>
-	</div>
-</div>
+> The Statistical Estimation Theory Solution to This Problem
+>
+> In statistical estimation theory, we would tell the sample value with some indication of the degrees of faithfulness. For example, we would tell the sample mean together with a [confidence interval](/wiki/statistical-estimation/confidence-interval/).
+
 
 The hypothesis testing theory solution to this problem is to tell whether our hypothesis is correct.
 

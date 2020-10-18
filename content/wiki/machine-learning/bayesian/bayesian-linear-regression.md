@@ -73,18 +73,10 @@ $$
 P( [X_m^{\phantom{m}n}, \beta^m] \mid \hat y^n  ) \propto P(\hat y^n \mid [X_m^{\phantom{m}n}, \beta^m] ) P([X_m^{\phantom{m}n}, \beta^m]).
 $$
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">Fall back to Maximum Likelihood</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content">
+> Fall back to Maximum Likelihood
+>
+> If $$P([X_m^{\phantom{m}n}, \beta^m]) = 1$$.
 
-If $$P([X_m^{\phantom{m}n}, \beta^m]) = 1$$.
-
-</div>
-</div>
-</div>
 
 We will assume a least information model for $P([X_m^{\phantom{m}n}, \beta^m])$, that is
 

@@ -12,11 +12,9 @@ tag:
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   title: ''
-weight: 2
+weight: 3
 ---
 
-* ToC
-{:toc}
 
 In this article, we will discuss the chi-square correlation test for detecting correlations between two series.
 

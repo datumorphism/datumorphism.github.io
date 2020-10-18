@@ -12,7 +12,7 @@ tag:
 references:
 - name: "The Elements of Statistical Learning by Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie"
   link: ''
-weight: 5
+weight: 6
 published: true
 ---
 
@@ -85,8 +85,8 @@ We have
 
 $$
 \begin{align}
-\partial_{\beta_m} L =& (\partial_{\beta_m} ( Y_i - X_{ij}\beta_j ) ) ( Y_i - X_{ik}\beta_k ) +  ( Y_i - X_{ij}\beta_j ) \partial_{\beta_m} ( Y_i - X_{ik}\beta_k ) \\
-=& - X_{ij} \delta_{jm}( Y_i - X_{ik}\beta_k ) + ( Y_i - X_{ij}\beta_j ) ( - X_{ik}\delta_{km} ) \\
+\partial_{\beta_m} L =& (\partial_{\beta_m} ( Y_i - X_{ij}\beta_j ) ) ( Y_i - X_{ik}\beta_k ) +  ( Y_i - X_{ij}\beta_j ) \partial_{\beta_m} ( Y_i - X_{ik}\beta_k ) \\\\
+=& - X_{ij} \delta_{jm}( Y_i - X_{ik}\beta_k ) + ( Y_i - X_{ij}\beta_j ) ( - X_{ik}\delta_{km} ) \\\\
 =& - 2 X_{im} ( Y_i - X_{ij}\beta_j )
 \end{align}
 $$
@@ -94,8 +94,8 @@ $$
 Solving $- 2 X_{im} ( Y_i - X_{ij}\beta_j ) = 0$, we have
 $$
 \begin{align}
-& 0 = X_{im} ( Y_i - X_{ij}\beta_j )  \\
-& X_{im} X_{ij}\beta_j   = X_{im} Y_i \\
+& 0 = X_{im} ( Y_i - X_{ij}\beta_j )  \\\\
+& X_{im} X_{ij}\beta_j   = X_{im} Y_i \\\\
 & \beta_j = ( X_{im} X_{ij} )^{-1} X_{im} Y_i
 \end{align}
 $$

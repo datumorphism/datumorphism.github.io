@@ -20,8 +20,6 @@ references:
 weight: 1
 ---
 
-* ToC
-{:toc}
 
 ## Confusion Matrix
 
@@ -29,6 +27,7 @@ It is much easier to understand the confusion matrix if we use a binary classifi
 
 Then we apply the classifier on the test dataset and we would only find four different kinds of results.
 
+{{< rawhtml >}}
 <table class="table">
   <thead>
     <tr>
@@ -50,22 +49,16 @@ Then we apply the classifier on the test dataset and we would only find four dif
     </tr>
   </tbody>
 </table>
+{{< /rawhtml >}}
 
 This table is easy enough to comprehend. We have discussed the Type I and Type II errors in [Types of Errors in Statistical Hypothesis Testing
 ](/wiki/statistical-hypothesis-testing/type-1-error-and-type-2-error/). here False Positive (FP) is Type I error and False Negative (FN) is Type II error.
 
-<div class="card">
-	<header class="card-header">
-		<p class="card-header-title card-toggle">Isn't FN type I error?</p>
-	</header>
-	<div class="card-content is-hidden">
-		<div class="content">
-			A first look at the table might lead us to conclude such as "FN is type I error" and "FP is type II error".
-
-			But remember types of errors is about hypothesis testing and we usually test our null hypothesis. Here a null hypothesis is the negative labels.
-		</div>
-	</div>
-</div>
+> Isn't FN type I error?
+>
+> A first look at the table might lead us to conclude such as "FN is type I error" and "FP is type II error".
+>
+> But remember types of errors is about hypothesis testing and we usually test our null hypothesis. Here a null hypothesis is the negative labels.
 
 Then we loop through all cats in the test dataset, find the results and put the numbers in the table.
 
@@ -101,6 +94,7 @@ Now we recalculate the confusion matrix by dividing the values by some certain s
 
 As mentioned in the previous sections, the sum of the columns are **P** (**Total Positives**) and **N** (**Total Negatives**). Dividing each column by the sum of the corresponding column gives us the prediction rate for each labels.
 
+{{< rawhtml >}}
 <table class="table">
   <thead>
     <tr>
@@ -122,6 +116,7 @@ As mentioned in the previous sections, the sum of the columns are **P** (**Total
     </tr>
   </tbody>
 </table>
+{{< /rawhtml>}}
 
 
 There are a few names to be emphasized.
@@ -132,6 +127,7 @@ There are a few names to be emphasized.
 
 As mentioned, the sum of the rows indicates the
 
+{{< rawhtml>}}
 <table class="table">
   <thead>
     <tr>
@@ -153,6 +149,7 @@ As mentioned, the sum of the rows indicates the
     </tr>
   </tbody>
 </table>
+{{< /rawhtml>}}
 
 There are a few names to be emphasized.
 
@@ -167,10 +164,10 @@ We will only define the F1 score ($\mathrm F_1$) here. As a F-measure,
 
 $$
 \begin{align}
-F_1 &= \frac{2}{ 1/\mathrm{Pression} + 1/\mathrm{Recall} } \\
-& = \frac{2}{ \frac{PP}{TP} + \frac{P}{TP} } \\
-& = \frac{2}{ \frac{PP+P}{TP} } \\
-& = \frac{2}{ \frac{ (TP + FP) + (TP + FN) }{TP} } \\
+F_1 &= \frac{2}{ 1/\mathrm{Pression} + 1/\mathrm{Recall} } \\\\
+& = \frac{2}{ \frac{PP}{TP} + \frac{P}{TP} } \\\\
+& = \frac{2}{ \frac{PP+P}{TP} } \\\\
+& = \frac{2}{ \frac{ (TP + FP) + (TP + FN) }{TP} } \\\\
 & = \frac{1}{ 1 + \frac{ (FP + FN) }{2TP} }
 \end{align}
 $$
@@ -181,41 +178,16 @@ There is a nice chart on [this wikipedia page](https://commons.wikimedia.org/wik
 
 The different metrics can be visualized using color blocks. We use green to represent the amount of TP, orange to represent the amount of FP.
 
-<figure markdown="1">
-![](../confusion-matrix/confusion-matrix-less-tp-more-fp.png)
-<figcaption markdown="1">
-Low TP Rate;High FP Rate; Low Precision; Low Accuracy; Low Recall; Low F1
-</figcaption>
-</figure>
-
-<figure markdown="1">
-![](../confusion-matrix/confusion-matrix-more-tp-more-fp.png)
-<figcaption markdown="1">
-High TP Rate;High FP Rate; Not so good Precision; Not so good Accuracy; High Recall; Not so good F1
-</figcaption>
-</figure>
+{{< figure src="../confusion-matrix/confusion-matrix-less-tp-more-fp.png" caption="Low TP Rate;High FP Rate; Low Precision; Low Accuracy; Low Recall; Low F1" >}}
 
 
-<figure markdown="1">
-![](../confusion-matrix/confusion-matrix-more-tp-less-fp.png)
-<figcaption markdown="1">
-High TP Rate;Low FP Rate; Good Precision; Good Accuracy; High Recall; Good F1
-</figcaption>
-</figure>
+{{< figure src="../confusion-matrix/confusion-matrix-more-tp-more-fp.png" caption="High TP Rate;High FP Rate; Not so good Precision; Not so good Accuracy; High Recall; Not so good F1" >}}
 
-<figure markdown="1">
-![](../confusion-matrix/confusion-matrix-less-tp-less-fp.png)
-<figcaption markdown="1">
-Low TP Rate;Low FP Rate; Low Precision; Low Accuracy; Low Recall; Low F1
-</figcaption>
-</figure>
+{{< figure src="../confusion-matrix/confusion-matrix-more-tp-less-fp.png" caption="High TP Rate;Low FP Rate; Good Precision; Good Accuracy; High Recall; Good F1" >}}
 
-<figure markdown="1">
-![](../confusion-matrix/confusion-matrix-less-tp-lesser-fp.png)
-<figcaption markdown="1">
-Low TP Rate;Low FP Rate; High Precision; Low Accuracy; Low Recall; Low F1
-</figcaption>
-</figure>
+{{< figure src="../confusion-matrix/confusion-matrix-less-tp-less-fp.png" caption="Low TP Rate;Low FP Rate; Low Precision; Low Accuracy; Low Recall; Low F1" >}}
+
+{{< figure src="../confusion-matrix/confusion-matrix-less-tp-lesser-fp.png" caption="Low TP Rate;Low FP Rate; High Precision; Low Accuracy; Low Recall; Low F1" >}}
 
 
 
