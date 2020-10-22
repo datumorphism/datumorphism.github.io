@@ -10,9 +10,8 @@ tag:
 references:
 - name: Cosine Similarity
   link: https://en.wikipedia.org/wiki/Cosine_similarity
-related:
-- name: Jaccard Similarity
-  link: /cards/jaccard-similarity
+links:
+- /cards/jaccard-similarity
 ---
 
 As simple as inner product of two vectors
@@ -28,7 +27,7 @@ $$
 
 To use cosine similarity, we have to vectorize the words first. There are many different methods to achieve this. For the purpose of illustrating cosine similarity, we use term frequency.
 
-Term frequency is the occurrence of the words. We do not deal with duplications so duplicate words will have some effect on the similarity. 
+Term frequency is the occurrence of the words. We do not deal with duplications so duplicate words will have some effect on the similarity.
 
 In principle, we could also use word set for a sentence to remove the effect of duplicate words. In most cases, if a word is repeating, it would indeed make the sentences different. If duplicating words are becoming a problem, we will consider using [tf-idf](http://www.tfidf.com/).
 {: .notes--warning}

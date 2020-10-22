@@ -10,9 +10,8 @@ tag:
 references:
   - name: Eigenvectors and Eigenvalues @ Explained Visually
     link: https://setosa.io/ev/eigenvectors-and-eigenvalues/
-related:
-- name: Diagnolize Matrice
-  link: /cards/diagonalize-matrix
+links:
+  - /cards/diagonalize-matrix
 ---
 
 To find the eigenvectors $\mathbf x$ of a matrix $\mathbf A$, we construct the eigen equation

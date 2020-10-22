@@ -10,11 +10,9 @@ tag:
 references:
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms."
     link: "https://doi.org/10.1017/CBO9781107298019"
-related:
-  - name: Decision Tree
-    link: /wiki/machine-learning/tree-based/decision-tree
-  - name: Gini Impurity
-    link: /cards/machine-learning/measurement/gini-impurity
+links:
+  - /wiki/machine-learning/tree-based/decision-tree
+  - /cards/machine-learning/measurement/gini-impurity
 supplementary:
   - name: Code
     link: https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb

@@ -33,6 +33,7 @@ params:
   project_indicator: "Notebooks" # This is the menu item for the list of projects and the title of project list page
   splash: "/img/splash/undraw_to_the_moon_v1mv.svg" # This is the splash image for the landing page. The image is shown in the top left of the page.
   powered_by: "love" # Optional, controls name display on footer
+  mermaid: true
   hide_author: false # Optional, set true to hide author name on posts
   images: # Suggested, controls default OpenGraph images controls author name display on meta tag
   github: "datumorphism" # Optional, to display link to github account in menu bar

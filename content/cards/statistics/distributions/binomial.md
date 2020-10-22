@@ -10,9 +10,8 @@ tag:
 references:
 - name: Binomial Distribution @ Wikipedia
   link: https://en.wikipedia.org/wiki/Binomial_distribution
-related:
-- name: Bernoulli Distribution
-  link: /cards/statistics/distribution/bernoulli
+links:
+  - /cards/statistics/distribution/bernoulli
 ---
 
 The number of successes in $n$ independent events where each trial has a success rate of $p$.

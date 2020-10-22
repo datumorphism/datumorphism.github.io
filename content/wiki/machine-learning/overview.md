@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning"
+title: "Machine Learning Overview"
 excerpt: "machine learning"
 date: 2018-05-25
 toc: true
@@ -9,7 +9,7 @@ tag:
 - 'Statistical Learning'
 - 'Machine Learning'
 - 'Basics'
-weight: 0
+weight: 1
 references:
   - name: "Mehta, P., Bukov, M., Wang, C. H., Day, A. G. R., Richardson, C., Fisher, C. K., & Schwab, D. J. (2019). A high-bias, low-variance introduction to Machine Learning for physicists. Physics Reports, 810, 1–124."
     link: "https://doi.org/10.1016/j.physrep.2019.03.001"

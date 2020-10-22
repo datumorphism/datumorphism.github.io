@@ -4,5 +4,4 @@ description: "Hypothesis testing in statistics"
 tags:
   - Statistics
 weight: 13
-type: project
 ---
