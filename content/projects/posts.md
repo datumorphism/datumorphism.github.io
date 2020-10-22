@@ -15,9 +15,8 @@ coordinators:
     description: LM
 date: 2019-04-07
 status: In Progress
-notes:
-  - name: All Posts
-    link: /posts
+sections:
+  - posts
 ---
 
 

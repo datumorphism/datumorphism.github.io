@@ -18,9 +18,8 @@ coordinators:
     description: LM
 date: 2019-04-07
 status: In Progress
-notes:
-  - name: All Knowledge Cards
-    link: /cards
+sections:
+  - cards
 ---
 
 

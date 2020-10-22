@@ -17,9 +17,8 @@ coordinators:
     description: LM is a data scientist
 date: 2019-04-07
 status: In Progress
-notes:
-  - name: All Reading Notes
-    link: /reading
+sections:
+  - reading
 ---
 
 

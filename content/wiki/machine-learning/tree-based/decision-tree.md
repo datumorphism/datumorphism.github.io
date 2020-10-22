@@ -25,7 +25,9 @@ supplementary:
 
 In this article, we will explain how decision trees work and build a tree by hand.
 
-> The code used in this article can be found in [this repo](https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb).
+{{< message class="link" >}}
+The code used in this article can be found in [this repo](https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb).
+{{< /message >}}
 
 ## Definition of the problem
 
@@ -37,13 +39,15 @@ We will decide whether one should go to work today. In this demo project, we con
 | weather | 0: bad weather, 1: good weather |
 | holiday | 1: holiday, 0: not holiday |
 
+{{< message class="info" >}}
 For more compact notations, we use the abstract notation $\\{0,1\\}^3$ to describe a set of three features each with 0 and 1 as possible values. In general, the notation $\\{0,1\\}^d$ indicates $d$ binary features.
-
+{{< /message >}}
 
 Our prediction will be a binary result, 0 or 1, with 0 indicates staying at home and 1 indicates going to work.
 
+{{< message class="info" >}}
 To be compact, this prediction can be denoted as $\\{0,1\\}^1$.
-
+{{< /message >}}
 
 ## How to Describe a Decision Tree
 
@@ -59,8 +63,9 @@ graph TD
   C --> |not holiday| G[go to the office]
 {{< /mermaid >}}
 
+{{< message class="info" >}}
 It is straight forward to prove that the max required depths and max required leaves of a model that maps $\\{0,1\\}^d$ to $\\{0,1\\}^1$ are $d+1$ and $2^d$. In our simple example, some of the branches are truncated based on our understanding of the problem. In principle, the branch "feeling bad" could also go on to the next level.
-
+{{< /message >}}
 
 ## Data
 
@@ -221,7 +226,9 @@ Here is an exmample of using data that doesn't always fit into our theoretical m
 
 Fully grown trees will most likely to overfit the data since they always try to grow pure leaves. Besides, fully grown trees grow exponentially as the number of features grow which requires a lot of computation resources.
 
+{{< message class="warning" >}}
 Applying Occam's razor, we prefer smaller trees as long as the trees can explain the data well.
+{{< /message >}}
 
 
 To achieve this, we will either have to limit how the trees grow during training, or pruning the trees after the trees are built.
