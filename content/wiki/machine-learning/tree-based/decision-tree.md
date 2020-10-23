@@ -13,9 +13,9 @@ references:
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms."
     link: "https://doi.org/10.1017/CBO9781107298019"
 links:
-  - /cards/machine-learning/measurement/gini-impurity.md
-  - /cards/machine-learning/measurement/information-gain.md
-  - /wiki/machine-learning/tree-based/random-forest.md
+  - cards/machine-learning/measurement/gini-impurity.md
+  - cards/machine-learning/measurement/information-gain.md
+  - wiki/machine-learning/tree-based/random-forest.md
 supplementary:
   - name: "Python code used in this article"
     link: "https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb"

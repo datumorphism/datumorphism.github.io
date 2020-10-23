@@ -17,9 +17,9 @@ references:
 - name: 'Biau, G. (2012). Analysis of a Random Forests Model. J. Mach. Learn. Res., 13, 1063–1095.'
   link: 'https://doi.org/10.5555/2188385.2343682'
 links:
-  - "/cards/machine-learning/measurement/gini-impurity"
-  - "/cards/machine-learning/measurement/information-gain"
-  - "/wiki/machine-learning/tree-based/decision-tree"
+  - cards/machine-learning/measurement/gini-impurity.md
+  - cards/machine-learning/measurement/information-gain.md
+  - wiki/machine-learning/tree-based/decision-tree.md
 supplementary:
   - name: "Code used in this article"
     link: "https://github.com/datumorphism/mini-code/tree/master/random_forest"

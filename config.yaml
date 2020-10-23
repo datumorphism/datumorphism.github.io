@@ -36,6 +36,7 @@ params:
   mermaid: true
   hide_author: false # Optional, set true to hide author name on posts
   images: # Suggested, controls default OpenGraph images controls author name display on meta tag
+  graphbutton: true
   github: "datumorphism" # Optional, to display link to github account in menu bar
   twitter: "" # Optional, to display link to twitter account in menu bar
   author: "Lei Ma" # Default author name and the name to be shown in the footer
@@ -52,9 +53,15 @@ outputFormats:
     isPlainText: true
     mediaType: "application/json"
     notAlternative: true
+  network:
+    baseName: "network"
+    isPlainText: true
+    mediaType: "application/json"
+    notAlternative: true
 
 outputs:
   home:
     - "HTML"
     - "RSS"
     - "data"
+    - "network"

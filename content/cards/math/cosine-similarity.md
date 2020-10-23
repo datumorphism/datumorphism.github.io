@@ -11,7 +11,7 @@ references:
 - name: Cosine Similarity
   link: https://en.wikipedia.org/wiki/Cosine_similarity
 links:
-- /cards/jaccard-similarity
+- cards/math/jaccard-similarity.md
 ---
 
 As simple as inner product of two vectors

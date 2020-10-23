@@ -11,7 +11,7 @@ references:
   - name: Eigenvectors and Eigenvalues @ Explained Visually
     link: https://setosa.io/ev/eigenvectors-and-eigenvalues/
 links:
-  - /cards/math/diagonalize-matrix.md
+  - cards/math/diagonalize-matrix.md
 ---
 
 To find the eigenvectors $\mathbf x$ of a matrix $\mathbf A$, we construct the eigen equation
