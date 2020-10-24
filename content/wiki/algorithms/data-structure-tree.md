@@ -9,9 +9,14 @@ tag:
 - 'Tree'
 - 'Data Structure'
 - 'Basics'
-weight: 11
+weight: 3
 ---
 
+
+## Recursively Traverse a Tree
+
+1. Top-down: node first, like a pre-order
+2. Bottom-up: like post-order
 
 ## BST: Binary Search Tree
 
