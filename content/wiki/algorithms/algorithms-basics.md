@@ -1,8 +1,9 @@
 ---
 title: "Some Basic Ideas of Algorithms"
-excerpt: "algoritms gives us life"
+description: "algoritms gives us life"
 date: 2018-03-20
-toc: true
+category:
+- 'Algorithms'
 tags:
 - 'Algorithms'
 - 'Basics'

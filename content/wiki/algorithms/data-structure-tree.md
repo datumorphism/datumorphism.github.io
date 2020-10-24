@@ -1,14 +1,15 @@
 ---
 title: "Data Structure: Tree"
-excerpt: "mind the data structure: here comes the tree"
+summary: "mind the data structure: here comes the tree"
 date: 2018-03-27
-toc: true
 category:
 - 'Algorithms'
-tag:
+tags:
 - 'Tree'
 - 'Data Structure'
 - 'Basics'
+links:
+  - wiki/algorithms/data-structure.md
 weight: 3
 ---
 

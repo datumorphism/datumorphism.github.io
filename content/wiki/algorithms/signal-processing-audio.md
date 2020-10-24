@@ -1,11 +1,10 @@
 ---
 title: "Audio Basics"
-excerpt: "basics about audio"
+description: "basics about audio"
 date: 2018-03-29
-toc: true
 category:
 - 'Algorithms'
-tag:
+tags:
 - 'Audio'
 - 'Signal Processing'
 - 'Basics'

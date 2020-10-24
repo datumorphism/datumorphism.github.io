@@ -1,11 +1,10 @@
 ---
 title: "Basics of MapReduce"
-excerpt: "mapreduce"
+description: "mapreduce"
 date: 2018-10-03
-toc: true
 category:
 - 'Algorithms'
-tag:
+tags:
 - 'Algorithms'
 - 'Basics'
 weight: 31
@@ -21,9 +20,7 @@ references:
 
 Centralized servers are not efficient for big data. Querying and processing data on centralized servers would reach bottleneck of the servers.
 
-<div style="position: relative; padding-bottom: 1em; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe width="100%" height="600" src="https://www.youtube.com/embed/bcjSe0xCHbE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+{{< youtube bcjSe0xCHbE>}}
 
 
 MapReduce is used to solve these problems of big data. The two videos are .

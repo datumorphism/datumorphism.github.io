@@ -1,13 +1,12 @@
 ---
 title: "Signal Processing"
-excerpt: "signal processing"
+description: "signal processing"
 date: 2018-03-20
-toc: true
 category:
-- 'Algorithms'
-tag:
-- 'Signal Processing'
-- 'Basics'
+  - 'Algorithms'
+tags:
+  - 'Signal Processing'
+  - 'Basics'
 weight: 20
 ---
 
