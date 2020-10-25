@@ -3,7 +3,7 @@ title: "Machine Learning Overview"
 description: "A brief overview of machine learning"
 date: 2018-05-25
 category:
-- 'Machine Learning::Basics'
+- 'Machine Learning'
 tags:
 - 'Statistical Learning'
 - 'Machine Learning'
