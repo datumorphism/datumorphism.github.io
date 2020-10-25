@@ -1,5 +1,5 @@
 ---
 title: "Linear Models"
 description: ""
-weight: 7
+weight: 5
 ---

@@ -3,5 +3,5 @@ title: "Bayesian Methods"
 description: "Bayesian statistics"
 tags:
   - Bayesian
-weight: 2
+weight: 8
 ---

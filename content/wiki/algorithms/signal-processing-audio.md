@@ -1,5 +1,5 @@
 ---
-title: "Audio Basics"
+title: "Signal Processing: Audio Basics"
 description: "basics about audio"
 date: 2018-03-29
 category:
@@ -8,6 +8,8 @@ tags:
 - 'Audio'
 - 'Signal Processing'
 - 'Basics'
+links:
+  - wiki/algorithms/singal-processing.md
 references:
 - name: "Basic Sound Processing in Python | SciPy 2015 | Allen Downey"
   link: "https://www.youtube.com/watch?v=0ALKGR0I5MA"
