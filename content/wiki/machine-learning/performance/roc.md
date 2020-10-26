@@ -1,13 +1,13 @@
 ---
 title: "Receiver Operating Characteristics: ROC"
-excerpt: "ROC is used to judging the performance of classifiers"
+description: "ROC is used to judging the performance of classifiers"
 date: 2020-05-13
-toc: true
 category:
-- 'Machine Learning::Performance'
-tag:
-- 'Machine Learning'
-- 'Basics'
+  - "Machine Learning"
+tags:
+  - "Machine Learning"
+  - "Performance"
+  - "Basics"
 links:
   - wiki/machine-learning/basics/confusion-matrix.md
 references:
@@ -16,14 +16,9 @@ references:
 weight: 1
 ---
 
-ROC space is the two dimensional space spanned by True Positive Rate and False Positive Rate.
+ROC space is the two-dimensional space spanned by True Positive Rate and False Positive Rate.
 
-<figure markdown="1">
-![](../assets/roc/roc-color-blocks.png)
-<figcaption markdown="1">
-ROC Space. The color boxes are indicating the confusion matrices. Refer to [Confusion Matrix](/wiki/machine-learning/basics/confusion-matrix/) for more details.
-</figcaption>
-</figure>
+{{< figure src="../assets/roc/roc-color-blocks.png" caption="ROC Space. The color boxes are indicating the confusion matrices. Green is the fraction of true positive. Orange is the fraction of false positive. Refer to [Confusion Matrix](/wiki/machine-learning/basics/confusion-matrix/) for more details.">}}
 
 
 ## AUC: Area under Curve

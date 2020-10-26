@@ -8,6 +8,7 @@ tags:
   - "Machine Learning"
   - "Feature Engineering"
   - "Statistics"
+  - "Data Types"
   - "Basics"
 references:
   - name: Level of Measurement
