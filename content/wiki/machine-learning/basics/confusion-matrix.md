@@ -162,15 +162,15 @@ We also have some other definitions of ratios, please refer to the bottom left c
 
 We will only define the F1 score ($\mathrm F_1$) here. As a F-measure,
 
-$$
+{{<m>}}
 \begin{align}
-F_1 &= \frac{2}{ 1/\mathrm{Pression} + 1/\mathrm{Recall} } \\\\
-& = \frac{2}{ \frac{PP}{TP} + \frac{P}{TP} } \\\\
-& = \frac{2}{ \frac{PP+P}{TP} } \\\\
-& = \frac{2}{ \frac{ (TP + FP) + (TP + FN) }{TP} } \\\\
+F_1 &= \frac{2}{ 1/\mathrm{Pression} + 1/\mathrm{Recall} } \\
+& = \frac{2}{ \frac{PP}{TP} + \frac{P}{TP} } \\
+& = \frac{2}{ \frac{PP+P}{TP} } \\
+& = \frac{2}{ \frac{ (TP + FP) + (TP + FN) }{TP} } \\
 & = \frac{1}{ 1 + \frac{ (FP + FN) }{2TP} }
 \end{align}
-$$
+{{</m>}}
 
 ## Confused by the Names?
 

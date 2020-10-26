@@ -25,11 +25,11 @@ There are many objectives in machine learning. Two of the most applied objective
 
 
 1. Input:
-   0. Domain knowledge $\tilde{\mathscr K_D}$.
+   1. Domain knowledge $\tilde{\mathscr K_D}$.
       1. on features,
       2. on target values,
       3. on relation between features and target values.
-   1. A dataset $\tilde{\mathscr D}(\tilde{\mathbf X}, \tilde{\mathbf Y})$ with $\tilde{\mathbf X}$ being the features and $\tilde{\mathbf Y}$ being the values to be predicted;
+   2. A dataset $\tilde{\mathscr D}(\tilde{\mathbf X}, \tilde{\mathbf Y})$ with $\tilde{\mathbf X}$ being the features and $\tilde{\mathbf Y}$ being the values to be predicted;
       1. features (domain set): $\tilde{\mathbf X}$,
       2. target values (label set): $\tilde{\mathbf Y}$.
       3. relations between features and target values: $f(\mathbf X) \to \mathbf Y$.

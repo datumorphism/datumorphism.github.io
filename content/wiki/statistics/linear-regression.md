@@ -1,11 +1,10 @@
 ---
 title: "Linear Regression"
-excerpt: "Linear regression of multidimensional data"
+description: "Linear regression of multidimensional data"
 date: 2019-01-01
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Linear Regression'
@@ -83,22 +82,23 @@ Minimizing it 'requires' $\partial_{\beta_m} L = 0$ and $\partial_{\beta_m}\part
 
 We have
 
-$$
+{{<m>}}
 \begin{align}
-\partial_{\beta_m} L =& (\partial_{\beta_m} ( Y_i - X_{ij}\beta_j ) ) ( Y_i - X_{ik}\beta_k ) +  ( Y_i - X_{ij}\beta_j ) \partial_{\beta_m} ( Y_i - X_{ik}\beta_k ) \\\\
-=& - X_{ij} \delta_{jm}( Y_i - X_{ik}\beta_k ) + ( Y_i - X_{ij}\beta_j ) ( - X_{ik}\delta_{km} ) \\\\
+\partial_{\beta_m} L =& (\partial_{\beta_m} ( Y_i - X_{ij}\beta_j ) ) ( Y_i - X_{ik}\beta_k ) +  ( Y_i - X_{ij}\beta_j ) \partial_{\beta_m} ( Y_i - X_{ik}\beta_k ) \\
+=& - X_{ij} \delta_{jm}( Y_i - X_{ik}\beta_k ) + ( Y_i - X_{ij}\beta_j ) ( - X_{ik}\delta_{km} ) \\
 =& - 2 X_{im} ( Y_i - X_{ij}\beta_j )
 \end{align}
-$$
+{{</m>}}
 
 Solving $- 2 X_{im} ( Y_i - X_{ij}\beta_j ) = 0$, we have
-$$
+
+{{<m>}}
 \begin{align}
-& 0 = X_{im} ( Y_i - X_{ij}\beta_j )  \\\\
-& X_{im} X_{ij}\beta_j   = X_{im} Y_i \\\\
+& 0 = X_{im} ( Y_i - X_{ij}\beta_j )  \\
+& X_{im} X_{ij}\beta_j   = X_{im} Y_i \\
 & \beta_j = ( X_{im} X_{ij} )^{-1} X_{im} Y_i
 \end{align}
-$$
+{{</m>}}
 
 In the abstract matrix notation,
 

@@ -1,5 +1,5 @@
 ---
 title: "Machine Learning"
-description: ""
+description: "To make machine learning and understand machine learning"
 weight: 8
 ---
