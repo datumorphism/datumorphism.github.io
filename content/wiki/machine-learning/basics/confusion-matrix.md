@@ -9,6 +9,8 @@ tags:
   - "Basics"
   - "Learning Metrics"
   - "Classification"
+links:
+  - "wiki/statistical-hypothesis-testing/type-1-error-and-type-2-error.md"
 references:
   - name: "Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874."
     link: "https://doi.org/10.1016/j.patrec.2005.10.010"
@@ -50,9 +52,9 @@ Then we apply the classifier on the test dataset and we would only find four dif
 {{< /rawhtml >}}
 
 This table is easy enough to comprehend. We have discussed the Type I and Type II errors in [Types of Errors in Statistical Hypothesis Testing
-](/wiki/statistical-hypothesis-testing/type-1-error-and-type-2-error/). here False Positive (FP) is Type I error and False Negative (FN) is Type II error.
+](/wiki/statistical-hypothesis-testing/type-1-error-and-type-2-error/). Here False Positive (FP) is Type I error and False Negative (FN) is Type II error.
 
-{{< message title="Isn't FN type I error?">}}
+{{< message title="Isn't FN type I error?" class="info">}}
 
 A first look at the table might lead us to conclude such as "FN is type I error" and "FP is type II error".
 
