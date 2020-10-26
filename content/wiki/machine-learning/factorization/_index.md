@@ -1,5 +1,7 @@
 ---
 title: "Factorization"
-description: ""
+description: "Factorization"
+tags:
+  - "Factorization"
 weight: 6
 ---

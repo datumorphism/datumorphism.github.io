@@ -1,14 +1,16 @@
 ---
-title: "Supervised Learning:Classification:Logistic Regression"
-excerpt: "unsupervised learning"
+title: "Logistic Regression"
+description: "logistics regression is a simple model for classification"
 date: 2018-05-25
-toc: true
 category:
-- 'Machine Learning::Linear Models'
-tag:
-- 'Unsupervised Learning'
-- 'Statistical Learning'
-- 'Basics'
-weight: 1001
+  - "Machine Learning"
+tags:
+  - "Unsupervised Learning"
+  - "Statistical Learning"
+  - "Basics"
+  - "Linear Models"
+  - "Supervised Learning"
+  - "Classification"
+weight: 2
 published: false
 ---

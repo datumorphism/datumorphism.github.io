@@ -1,14 +1,13 @@
 ---
 title: "Factorization"
-excerpt: "Tensor operations that reduces the dimensionality"
+excerpt: "Tensor operations that reduce the dimensionality"
 date: 2019-06-17
-toc: true
 category:
-- 'Machine Learning::Factorization'
+  - "Machine Learning"
 tag:
-- 'Machine Learning'
-- 'Factorization'
-- 'Tensor'
+  - "Machine Learning"
+  - "Factorization"
+  - "Tensor"
 weight: 1
 ---
 

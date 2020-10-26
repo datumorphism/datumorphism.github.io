@@ -10,7 +10,6 @@ tag:
 - 'Unsupervised Learning'
 - 'Statistical Learning'
 - 'Basics'
-weight: 950
 references:
 - name: 'Formulating the Support Vector Machine Optimization Problem'
   link: 'https://jeremykun.com/2017/06/05/formulating-the-support-vector-machine-optimization-problem/'
@@ -18,6 +17,9 @@ references:
   link: 'http://j2kun.github.io/svm-primal/index.html'
 - name: 'SVM - Understanding the math - Part 1 - The margin'
   link: 'https://www.svm-tutorial.com/2014/11/svm-understanding-math-part-1/'
+links:
+  - "wiki/machine-learning/linear/linear-methods.md"
+weight: 950
 ---
 
 SVM is calculating a hyperplane to separate the data points into groups according to the label.

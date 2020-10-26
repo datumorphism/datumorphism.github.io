@@ -1,15 +1,17 @@
 ---
-title: "Supervised Learning:Classification:Linear Discriminant Analysis"
-excerpt: "unsupervised learning"
+title: "Linear Discriminant Analysis"
+description: "LDA"
 date: 2018-05-25
-toc: true
 category:
-- 'Machine Learning::Linear Models'
+  - "Machine Learning"
 tag:
-- 'Unsupervised Learning'
-- 'Statistical Learning'
-- 'Basics'
-weight: 1002
+  - "Unsupervised Learning"
+  - "Supervised Learning"
+  - "Statistical Learning"
+  - "Basics"
+  - "Linear Models"
+  - "Classification"
+weight: 3
 published: false
 ---
 
