@@ -2,24 +2,22 @@
 title: "Confusion Matrix (Contingency Table)"
 excerpt: "Again, just like in hypothesis testing, we/machines all make mistakes. The question is, what kind of mistakes."
 date: 2019-05-31
-toc: true
 category:
-- 'Machine Learning::Basics'
-tag:
-- 'Statistical Learning'
-- 'Basics'
-- 'Learning Metrics'
-- 'Classification'
+  - "Machine Learning"
+tags:
+  - "Statistical Learning"
+  - "Basics"
+  - "Learning Metrics"
+  - "Classification"
 references:
-- name: 'Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874.'
-  link: 'https://doi.org/10.1016/j.patrec.2005.10.010'
-- name: 'Confusion_matrix#Table_of_confusion @ Wikipedia'
-  link: 'https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion'
-- name: 'F1 Score'
-  link: 'https://en.wikipedia.org/wiki/F1_score'
+  - name: "Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874."
+    link: "https://doi.org/10.1016/j.patrec.2005.10.010"
+  - name: "Confusion_matrix#Table_of_confusion @ Wikipedia"
+    link: "https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion"
+  - name: "F1 Score"
+    link: "https://en.wikipedia.org/wiki/F1_score"
 weight: 1
 ---
-
 
 ## Confusion Matrix
 
@@ -54,11 +52,12 @@ Then we apply the classifier on the test dataset and we would only find four dif
 This table is easy enough to comprehend. We have discussed the Type I and Type II errors in [Types of Errors in Statistical Hypothesis Testing
 ](/wiki/statistical-hypothesis-testing/type-1-error-and-type-2-error/). here False Positive (FP) is Type I error and False Negative (FN) is Type II error.
 
-> Isn't FN type I error?
->
-> A first look at the table might lead us to conclude such as "FN is type I error" and "FP is type II error".
->
-> But remember types of errors is about hypothesis testing and we usually test our null hypothesis. Here a null hypothesis is the negative labels.
+{{< message title="Isn't FN type I error?">}}
+
+A first look at the table might lead us to conclude such as "FN is type I error" and "FP is type II error".
+
+But remember types of errors is about hypothesis testing and we usually test our null hypothesis. Here a null hypothesis is the negative labels.
+{{< /message >}}
 
 Then we loop through all cats in the test dataset, find the results and put the numbers in the table.
 
@@ -158,7 +157,7 @@ There are a few names to be emphasized.
 #### Ratios, Scores, and More
 
 
-We also have some other definitions of ratios, please refer to the bottom left corner of the table on the wikipedia page linked in the references.
+We also have some other definitions of ratios, please refer to the bottom left corner of the table on the corresponding Wikipedia page linked in the references.
 
 We will only define the F1 score ($\mathrm F_1$) here. As a F-measure,
 
@@ -174,7 +173,7 @@ F_1 &= \frac{2}{ 1/\mathrm{Pression} + 1/\mathrm{Recall} } \\
 
 ## Confused by the Names?
 
-There is a nice chart on [this wikipedia page](https://commons.wikimedia.org/wiki/File:Precisionrecall.svg).
+There is a nice chart on [this Wikipedia page](https://commons.wikimedia.org/wiki/File:Precisionrecall.svg).
 
 The different metrics can be visualized using color blocks. We use green to represent the amount of TP, orange to represent the amount of FP.
 
