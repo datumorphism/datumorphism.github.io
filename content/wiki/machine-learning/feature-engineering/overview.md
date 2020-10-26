@@ -1,12 +1,12 @@
 ---
-title: "Feature Engineerng"
-excerpt: "feature engneerng is crucial"
+title: "Feature Engineering"
+description: "Feature engineering is crucial to the performance of our mdoel."
 date: 2019-06-17
-toc: true
 category:
-- 'Machine Learning::Feature Engineering'
-tag:
-- 'Machine Learning'
-weight: 0
+  - "Machine Learning"
+tags:
+  - "Machine Learning"
+  - "Feature Engineering"
+weight: 1
 ---
 
