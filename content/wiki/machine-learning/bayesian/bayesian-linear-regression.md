@@ -1,22 +1,21 @@
 ---
 title: "Bayesian Linear Regression"
-excerpt: "Bayesian Linear Regression"
+description: "Bayesian Linear Regression"
 date: 2019-06-18
-toc: true
 category:
-- 'Machine Learning::Bayesian'
-tag:
-- 'Machine Learning'
-- 'Regression'
-- 'Bayesian'
+  - 'Machine Learning'
+tags:
+  - 'Machine Learning'
+  - 'Regression'
+  - 'Bayesian'
 references:
-- name: Introduction to Bayesian Linear Regression
-  link: https://towardsdatascience.com/introduction-to-bayesian-linear-regression-e66e60791ea7
-- name: "Linear Regression: A Bayesian Point of View"
-  link: https://wiseodd.github.io/techblog/2017/01/05/bayesian-regression/
-- name: zjost/bayesian-linear-regression
-  link: https://github.com/zjost/bayesian-linear-regression
-weight: 22
+  - name: "Introduction to Bayesian Linear Regression"
+    link: https://towardsdatascience.com/introduction-to-bayesian-linear-regression-e66e60791ea7
+  - name: "Linear Regression: A Bayesian Point of View"
+    link: https://wiseodd.github.io/techblog/2017/01/05/bayesian-regression/
+  - name: "zjost/bayesian-linear-regression"
+    link: https://github.com/zjost/bayesian-linear-regression
+weight: 2
 ---
 
 ## Linear Regression and Likelihood
@@ -40,7 +39,7 @@ $$
 
 which is required to have a minimum absolute value.
 
-We could use least squares to solve the problem. However, instead of using a deterministic estimator $\beta^m X_m^{\phantom{m}n}$, we assume a Gaussian random estimator
+In linear regressions, we use least squares to solve the problem. In Bayesian linear regression, instead of using a deterministic estimator $\beta^m X_m^{\phantom{m}n}$, we assume a Gaussian random estimator
 
 $$
 \begin{equation}
@@ -56,7 +55,7 @@ P(\hat y^n \mid [X_m^{\phantom{m}n}, \beta^m] ) = \frac{1}{\sqrt{2 \sigma^2 \pi}
 \end{equation}
 $$
 
-It is not surprising that requiring the maximum likelihood will lead to the same result as least-squares due to log takes out exponential.
+It is not surprising that requiring the maximum likelihood will lead to the same result as the least-squares since the log operation takes out the exponential operation.
 
 
 ## Bayesian Linear Model
@@ -73,9 +72,9 @@ $$
 P( [X_m^{\phantom{m}n}, \beta^m] \mid \hat y^n  ) \propto P(\hat y^n \mid [X_m^{\phantom{m}n}, \beta^m] ) P([X_m^{\phantom{m}n}, \beta^m]).
 $$
 
-> Fall back to Maximum Likelihood
->
-> If $$P([X_m^{\phantom{m}n}, \beta^m]) = 1$$.
+{{< message title="Fall back to Maximum Likelihood" class="info">}}
+If $$P([X_m^{\phantom{m}n}, \beta^m]) = 1.$$
+{{</message>}}
 
 
 We will assume a least information model for $P([X_m^{\phantom{m}n}, \beta^m])$, that is

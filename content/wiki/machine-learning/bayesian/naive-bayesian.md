@@ -1,20 +1,22 @@
 ---
-title: "Naive Bayesian"
-excerpt: "Naive Bayesian"
+title: "Naive Bayes"
+description: "Naive Bayes"
 date: 2019-06-17
-toc: true
 category:
-- 'Machine Learning::Bayesian'
-tag:
-- 'Machine Learning'
-- 'Classification'
-- 'Bayesian'
+  - 'Machine Learning'
+tags:
+  - 'Machine Learning'
+  - 'Classification'
+  - 'Bayesian'
 references:
-- name: Naive Bayesian
-  link: https://www.saedsayad.com/naive_bayesian.htm
-- name: Naive Bayes classifier @ Wikipedia
-  link: https://en.wikipedia.org/wiki/Naive_Bayes_classifier
-weight: 21
+  - name: "Naive Bayesian"
+    link: https://www.saedsayad.com/naive_bayesian.htm
+  - name: "Naive Bayes classifier @ Wikipedia"
+    link: https://en.wikipedia.org/wiki/Naive_Bayes_classifier
+links:
+  - cards/statistics/bayes-theorem.md
+  - cards/statistics/conditional-probability-table.md
+weight: 1
 ---
 
 Naive Bayesian is a classifier using [Bayes' theorem](/cards/statistics/bayes-theorem) with 'naive' assumptioins.
@@ -27,11 +29,16 @@ P(\mathbf Y \mid \mathbf X) = \frac{ P(\mathbf X \mid \mathbf Y) P(\mathbf Y) }{
 \end{equation}
 $$
 
-> Why Don't We Just Calculate $P(\mathbf Y \mid \mathbf X)$
->
-> Because it would be hard to calculate it if we have too many features. Actually $P(\mathbf X)$ is hard to calculate too.
 
-Being naive, we will assume that the features are independent of each other, i.e., don't have interactions with each other in terms of predictions. In this case we simply write the theorem as
+{{< message title="Why Don't We Just Calculate $P(\mathbf Y \mid \mathbf X)$" class="info">}}
+
+Because it would be hard to calculate it if we have too many features. In fact, $P(\mathbf X)$ is hard to calculate too.
+
+For details of the calculation of $P(\mathbf Y \mid \mathbf X)$, please refer to [conditional probability table](/cards/statistics/conditional-probability-table.md).
+
+{{</message>}}
+
+Being "naive", we will assume that the features are independent of each other, i.e., don't have interactions with each other in terms of predictions. In this case, we simply write down the theorem as
 
 $$
 \begin{equation}

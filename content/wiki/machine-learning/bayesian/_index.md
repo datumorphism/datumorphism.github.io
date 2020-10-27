@@ -1,7 +1,8 @@
 ---
 title: "Bayesian Methods"
-description: "Bayesian statistics"
+description: "Machine learning based on bayesian statistics"
 tags:
-  - Bayesian
+  - "Bayesian"
+  - "Machine Learning"
 weight: 8
 ---
