@@ -1,14 +1,13 @@
 ---
 title: "Word2vec"
-excerpt: "Single layer neural network creates embedding space"
+excerpt: "Single-layer neural network creates embedding space"
 date: 2019-06-13
-toc: true
 category:
-- 'Machine Learning::Embedding'
-tag:
-- 'Machine Learning'
-- 'Embeding'
-- 'Word2vec'
+  - 'Machine Learning'
+tags:
+  - 'Machine Learning'
+  - 'Embedding'
+  - 'Word2vec'
 references:
   - link: http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
     name: Word2Vec Tutorial - The Skip-Gram Model
@@ -16,11 +15,12 @@ references:
     link: "http://jalammar.github.io/illustrated-word2vec/"
   - name: "On word embeddings - Part 1"
     link: "https://ruder.io/word-embeddings-1/index.html"
+links:
+  - cards/machine-learning/embedding/continuous-bag-of-words.md
+  - cards/machine-learning/embedding/continuous-skip-gram.md
+  - cards/machine-learning/embedding/negative-sampling.md
 weight: 2
 ---
-
-* ToC
-{:toc}
 
 
 Word2vec is a word embedding model that learns the probability of some words being neighbours in a sentence $p_{neighbours}(w_i, w_o)$.
