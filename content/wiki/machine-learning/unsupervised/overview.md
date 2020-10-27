@@ -1,32 +1,26 @@
 ---
 title: "Unsupervised Learning"
-excerpt: "unsupervised learning"
+excerpt: "unsupervised learning doesn't require a label for the dataset"
 date: 2018-05-25
-toc: true
 category:
-- 'Machine Learning::Unsupervised Learning'
+  - "Machine Learnin"
 tag:
-- 'Unsupervised Learning'
-- 'Statistical Learning'
-- 'Basics'
-weight: 900
+  - "Unsupervised Learning"
+  - "Statistical Learning"
+  - "Basics"
+weight: 1
 ---
-
 
 Unsupervised Learning!
 
 
-Principle components analysis
-----------------------------------------
+## Principle components analysis
 
 
+## Clustering
 
-Clustering
-----------------------
 
-K-means Clustering
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
+### K-means Clustering
 
 Algorithm:
 
@@ -35,18 +29,13 @@ Algorithm:
    1. Find centroid
    2. Find the point that is closest to the centroids. Assign that data point to the corresponding group of the centroids.
 
-.. admonition:: How Many Groups
-   :class: warning
+{{< message title="How Many Groups" class="warning" >}}
+The art of chosing K.
+{{</message>}}
 
-   The art of chosing K.
 
-
-Hierarchical Clustering
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
+### Hierarchical Clustering
 
 Bottom-up hierarchical groups can be read out from the dendrogram.
 
 
-References and Notes
--------------------------

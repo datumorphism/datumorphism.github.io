@@ -17,6 +17,8 @@ references:
 links:
   - cards/math/svd.md
   - cards/math/eigendecomposition.md
+  - wiki/machine-learning/unsupervised/pca.md
+  - wiki/machine-learning/unsupervised/svm.md
 weight: 2
 ---
 

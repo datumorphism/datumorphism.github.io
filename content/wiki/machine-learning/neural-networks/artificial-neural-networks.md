@@ -1,45 +1,47 @@
 ---
 title: "Artificial Neural Networks"
-excerpt: "Solving PDEs"
+description: "Solving PDEs"
 date: 2018-11-19
-toc: true
 category:
-- 'Artificial Neural Networks'
-tag:
-- 'Machine Learning'
-- 'Artificial Neural Networks'
-- 'Basics'
+  - 'Artificial Neural Networks'
+tags:
+  - 'Machine Learning'
+  - 'Artificial Neural Networks'
+  - 'Basics'
 references:
-- name: ""
-  link: ''
-notify: 'Machine Learning!'
+  - link: "https://doi.org/10.1016/0893-6080(89)90020-8"
+    name: "Hornik, K., Stinchcombe, M., & White, H. (1989). Multilayer feedforward networks are universal approximators. Neural Networks, 2(5), 359–366."
+  - link: "https://doi.org/10.1007/BF02551274"
+    name: "Cybenko, G. (1989). Approximation by superpositions of a sigmoidal function. Mathematics of Control, Signals, and Systems, 2(4), 303–314."
+  - link:
+    name: "Freitag, K. J. (2007). Neural networks and differential equations."
+  - name: "Tensorflow and deep learning - without a PhD by Martin Görner"
+    link: "https://www.youtube.com/watch?v=vq2nnJ4g6N0&t=663s"
+  - name: "Kolmogorov, A. N. (1957). On the Representation of Continuous Functions of Several Variables by Superposition of Continuous Functions of one Variable and Addition, Doklady Akademii. Nauk USSR, 114, 679-681."
+  - name: "Maxwell Stinchcombe, Halbert White (1989). Multilayer feedforward networks are universal approximators. Neural Networks, Vol 2, 5, 359-366."
+    link: "http://www.sciencedirect.com/science/article/pii/0893608089900208"
+  - name: "Performance Analysis of Various Activation Functions in Generalized MLP Architectures of Neural Networks"
+    link: "http://www.cscjournals.org/manuscript/Journals/IJAE/volume1/Issue4/IJAE-26.pdf"
+
 weight: 1
 ---
 
-
-
-
-Artificial neural networks works pretty well for some equation solving.
-
-
+Artificial neural networks works pretty well for solving some differential equations.
 
 ## Universal Approximators
 
+Maxwell Stinchcombe and Halber White proved that no theoretical constraints for the feedforward networks to approximate any measurable function. In principle, one can use feedforward networks to approximate measurable functions to any accuracy.
 
-Mawell Stinchcombe and Halber White proved that no theoretical constraints for the feedforward networks to approximate any measureable function. In principle one can use feedforward networks to approximate measurable functions to any accuracy.
-
-However the convergence slows done if we have a lot of hidden units. There is a balance between accuracy and convergence rate. More hidden units means slow convergence but more accuracy.
-
+However, the convergence slows down if we have a lot of hidden units. There is a balance between accuracy and convergence rate. More hidden units lead to slow convergence but more accuracy.
 
 Here is a quick review of the history of this topic.
 
-<div class="notes--info" markdown="1">
-**Kolmogorov's Theorem**
+{{< message title="Kolmogorov's Theorem" class="info">}}
 
-Kolmogorov's theorem shows that one can use finite number of carefully chosen continuous functions to exactly mix up by sums and multiplication with weights to a continuous multivariable fnction on a copact set.
+Kolmogorov's theorem shows that one can use a finite number of carefully chosen continuous functions to mix up by sums and multiplication with weights to a continuous multivariable function on a compact set.
 
 [Here is the exact math.](http://neuron.eng.wayne.edu/tarek/MITbook/chap2/2_3.html)
-</div>
+{{< /message >}}
 
 
 1. Cybenko 1989
@@ -50,31 +52,27 @@ Kolmogorov's theorem shows that one can use finite number of carefully chosen co
    \sum_k v_k \sigma(w_k x + u_k)
    $$
 
-   is a good approximation of continuous functions because it is dense in continous function space. In this result, $\sigma$ is a continuous sigmoidal function and the parameters are real.
+   is a good approximation of continuous functions because it is dense in continuous function space. In this result, $\sigma$ is a continuous sigmoidal function and the parameters are real.
 
 
 2. Hornik 1989
 
    "Single hidden layer feedforward networks can approximate any measurable functions arbitrarily well regardless of the activation function, the dimension of the input and the input space environment."
-   
+
    Reference: http://deeplearning.cs.cmu.edu/notes/Sonia_Hornik.pdf
 
 
 
-<div class="notes--info" markdown="1">
-**Dense**
+{{< message title="Dense" class="info">}}
 
 Set A is dense in set X means that we can use A to arbitarily approximate X. Mathematically for any given element in X, the neighbour of x always has nonzero intersection.
-</div>
+{{< /message >}}
 
-<div class="notes--info" markdown="1">
-**Measurable Function**
+{{< message title="Measurable Function" class="info">}}
 
-Basically it means continuous.
-</div>
+It means the function is continuous.
 
-
-
+{{< /message >}}
 
 
 
@@ -88,13 +86,7 @@ Basically it means continuous.
    $$
 
 
-   <figure markdown="1">
-   ![](../assets/artificial-neural-networks/sigmoidFunction.png)
-   <figcaption markdown="1">
-   Sigmoid function
-   </figcaption>
-   </figure>
-
+   {{< figure src="../assets/artificial-neural-networks/sigmoidFunction.png" title="Sigmoid function">}}
 
 2. Bipolar Sigmoid Function
 
@@ -102,43 +94,21 @@ Basically it means continuous.
    \frac{1-e^{-x}}{1+e^{-x}}
    $$
 
-   <figure markdown="1">
-   ![](../assets/artificial-neural-networks/bipolarSigmoid.png)
-   <figcaption markdown="1">
-   Bipolar Sigmoid
-   </figcaption>
-   </figure>
-
+   {{< figure src="../assets/artificial-neural-networks/bipolarSigmoid.png" title="Bipolar Sigmoid">}}
 
 3. Hyperbolic Tangent
 
    $$
    \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^{x} - e^{-x}}{e^x + e^{-x}}
    $$
-   
-   <figure markdown="1">
-   ![](../assets/artificial-neural-networks/tanh.png)
-   <figcaption markdown="1">
-   Hyperbolic tangent
-   </figcaption>
-   </figure>
 
-
+   {{< figure src="../assets/artificial-neural-networks/tanh.png" title="Hyperbolic tangent">}}
 
 4. Radial Basis Function
 
-   <figure markdown="1">
-   ![](../assets/artificial-neural-networks/unnormalized_radial_basis_functions.svg.png)
-   <figcaption markdown="1">
-   Two unnormalized Gaussian radial basis functions in one input dimension. The basis function centers are located at x1=0.75 and x2=3.25. Source [Unnormalized Radial Basis Functions](https://en.wikipedia.org/wiki/Radial_basis_function#/media/File:Unnormalized_radial_basis_functions.svg)
-   </figcaption>
-   </figure>
-
-
+   {{< figure src="../assets/artificial-neural-networks/unnormalized_radial_basis_functions.svg.png" title="Hyperbolic tangent" caption="Two unnormalized Gaussian radial basis functions in one input dimension. The basis function centers are located at x1=0.75 and x2=3.25. Source [Unnormalized Radial Basis Functions](https://en.wikipedia.org/wiki/Radial_basis_function#/media/File:Unnormalized_radial_basis_functions.svg)">}}
 
 5. Conic Section Function
-
-
 
 
 
@@ -155,21 +125,17 @@ with initial condition $y(0)=1$.
 
 To construct a single layered neural network, the function is decomposed using
 
-$$
+{{< m >}}
 \begin{align}
 y(t_i) & = y(t_0) + t_i v_k f(t_i w_k+u_k) \\
  &= 1+t_i v_k f(t_i w_k+u_k) ,
 \end{align}
-$$
+{{</m>}}
 
 where $y(t_0)$ is the initial condition and $k$ is summed over.
 
-<div class="notes--info" markdown="1">
-**Articifial Neural Network**
-
-
-</div>
-
+{{< message title="Articifial Neural Network">}}
+{{< /message >}}
 
 
 Presumably this should be the gate controlling trigering of the neuron or not. Therefore the following expit function serves this purpose well,
@@ -181,12 +147,10 @@ $$
 One important reason for chosing this is that a lot of expressions can be calculated analytically and easily.
 
 
-<div class="notes--info" markdown="1">
-**Fermi-Dirac Distribution**
+{{< message title="Fermi-Dirac Distribution">}}
 
-
-   Aha, the Fermi-Dirac distribution.
-</div>
+Aha, the Fermi-Dirac distribution.
+{{< /message >}}
 
 
 
@@ -207,13 +171,7 @@ Now the task becomes clear:
 
 
 
-
-
-
-
 ## Overfitting
-
-
 
 It is possible that we could over fit a network so that it works only for the training data. To avoid that, people use several strategies.
 
@@ -247,7 +205,7 @@ $$
 The function is parameterized using the network. Such parameterization is similar to collocation method in finite element method, where multiple basis is used for each location.
 
 
-One of the choice of the function $F$ is a linear combination,
+One of the choices of the function $F$ is a linear combination,
 
 $$
 F(x_i, \mathcal N_i) = x_i \mathcal N_i,
@@ -255,11 +213,10 @@ $$
 
 and $A(x_i)$ should take care of the boundary condition.
 
-<div class="notes--info" markdown="1">
-**Relation to finite element method**
+{{< message title="Relation to finite element method" >}}
 
-   This function is similar to the finite element function basis approximation. The goal in finite element method is to find the coefficients of each basis functions to achieve a good approximation. In ANN method, each sigmoid is the analogy to the basis functions, where we are looking for both the coefficients of sigmoids and the parameters of them. These sigmoid functions are some kind of adaptive basis functions.
-</div>
+This function is similar to the finite element function basis approximation. The goal in finite element method is to find the coefficients of each basis functions to achieve a good approximation. In ANN method, each sigmoid is the analogy to the basis functions, where we are looking for both the coefficients of sigmoids and the parameters of them. These sigmoid functions are some kind of adaptive basis functions.
+{{</message>}}
 
 
 With such parameterization, the differential equation itself is parameterized such that
@@ -277,19 +234,5 @@ $$
 at each point.
 
 
-
-
-
-
-
-
-
-## References and Notes
-
 [^Freitag2007]: Freitag, K. J. (2007). Neural networks and differential equations.
-
-1. [Tensorflow and deep learning - without a PhD by Martin Görner](https://www.youtube.com/watch?v=vq2nnJ4g6N0&t=663s).
-1. Kolmogorov, A. N. (1957). "On the Representation of Continuous Functions of Several Variables by Superposition of Continuous Functions of one Variable and Addition," Doklady Akademii. Nauk USSR, 114, 679-681.
-2. Maxwell Stinchcombe, Halbert White (1989). ["Multilayer feedforward networks are universal approximators"](http://www.sciencedirect.com/science/article/pii/0893608089900208). Neural Networks, Vol 2, 5, 359-366.
-1. [Performance Analysis of Various Activation Functions in Generalized MLP Architectures of Neural Networks](http://www.cscjournals.org/manuscript/Journals/IJAE/volume1/Issue4/IJAE-26.pdf)
 

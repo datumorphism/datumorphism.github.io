@@ -1,45 +1,44 @@
 ---
 title: "Boltzmann Machine"
-excerpt: "Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications."
+description: "Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications."
 date: 2017-08-27
-toc: true
 category:
-- 'Artificial Neural Networks'
-tag:
-- 'Machine Learning'
-- 'Artificial Neural Networks'
-- 'Basics'
+  - 'Artificial Neural Networks'
+tags:
+  - 'Machine Learning'
+  - 'Artificial Neural Networks'
+  - 'Basics'
 references:
-- name: ""
-  link: ''
-notify: 'Machine Learning!'
+  - name: ""
+    link: ''
 weight: 3
 ---
 
-Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications.
+Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neural nets but with complications and theoretical implications.
 
 
 ## Boltzmann Machine and Physics
 
 To obtain a good understanding of Boltzmann machine for a physicist, we begin with Ising model. We construct a system of neurons $\{ s_i\}$ which can take values of 1 or -1, where each pair of them $s_i$ and $s_j$ is connected by weight $J_{ij}$.
 
-This is described as a Boltzmann machine, or spin glass in physics. Spin glass is a type of material that is a composite of many spins pointing in different directions. In principle spin glass is hard to calculate.
+This is described as a Boltzmann machine, or spin glass in physics. Spin glass is a type of material that is a composite of many spins pointing in different directions. In principle, spin glass is hard to calculate.
 
-Neverthless we can make simplifications to this model. We require each spin to be connected to its nearest neighbours only. Such a model is called Ising model.
+Nevertheless we can make simplifications to this model. We require each spin to be connected to its nearest neighbours only. Such a model is called Ising model.
 
 Intuitively, those spins can be viewed as tiny magnets that can point up or down only. Each spin interacts with its neighbours. These interactions are calculated in terms of energy,
 
+$$
 \begin{equation}
    E = -\sum_{i,j} J_{ij} s_i s_j.
 \end{equation}
+$$
 
-Why do we care about energy? For a physics system, low energy means stable while high energy means unsatble since it might automatically change its configuration into low energy state. That being said, a system of spins is stable if the energy of all the interactions is low.
+Why do we care about energy? For a physics system, low energy means stable while high energy means unstable since it might automatically change its configuration into the low energy state. That being said, a system of spins is stable if the energy of all the interactions is low.
 
-To find out a low energy state, one of the numerical methods is Monte Carlo method.
+To find out a low energy state, one of the numerical methods is the Monte Carlo method.
 
 
-<div class="notes--info" markdown="1">
-### States
+{{< message title="States" class="info">}}
 
 We have been talking about the word state without being specifying the definition of it. In fact we can think of two different pictures of states. For the purpose of this discussion, we consider a system of $N$ particles and each of the particle has $m$ degrees of freedom.
 
@@ -48,13 +47,13 @@ The first strategy is to set up a $N\times m$ dimension space and describe the s
 The second strategy is to use a space of $m$ dimensions where each particle of the system is a point in such a space. Such a space is called $\mu$ space. In $\mu$ space, the distribution of each particle state is calculated using BBGKY chain.
 
 
-Once the macroscopic propertities of the system is assigned, the all possible states that leads to this macroscopic state show up with equal probability, aka, principle of **equal a priori probabilities**.
+Once the macroscopic properties of the system is assigned, all possible states that lead to this macroscopic state show up with equal probability, aka, the principle of **equal a priori probabilities**.
 
-</div>
+{{< /message >}}
 
 
-<div class="notes--info" markdown="1">
-### Partition Function
+{{< message title="Partition Function" class="info">}}
+
 
    Partition function $Z$ is useful as we calculate the statistical properties of the network,
 
@@ -67,7 +66,7 @@ Once the macroscopic propertities of the system is assigned, the all possible st
    \begin{equation}
       P = \frac{1}{Z} e^{-E}
     \end{equation}
-</div>
+{{< /message >}}
 
 
 ## Application of Boltzmann in Learning
@@ -104,7 +103,7 @@ We could update our weights using a rule compatible with the gradient of the pro
    \label{eq-weight-update-rule-boltzmann-machine}
 \end{equation}
 
-It's easily noticed that the first term is basically Hebbian learning rule, where similar activities enhences the weight. The second term is the some unlearning rule where we have to reduce some weights to relax to the actual working network. Simply put, we kill some connects that have negative effects on our learning network.
+It's easily noticed that the first term is basically Hebbian learning rule, where similar activities enhance the weight. The second term is the some unlearning rule where we have to reduce some weights to relax to the actual working network. Simply put, we kill some connections that have negative effects on our learning network.
 
 
 
@@ -113,17 +112,17 @@ It's easily noticed that the first term is basically Hebbian learning rule, wher
 
 In principle, a learning process can be as simple as a one on one map from the data to all the neurons in Boltzmann machine.
 
-Suppose we have a data set of an image which has 10 pixels and each pixel can take values of 0 and 1. We simply construct a network of 10 neurons. To remember the most prominent features of the image with this network, we update the weights and bias of the network to miminize the energy. Once done with minimization, the network we have could be used to generate similar images with similar features.
+Suppose we have a data set of an image with 10 pixels and each pixel can take values of 0 and 1. We simply construct a network of 10 neurons. To remember the most prominent features of the image with this network, we update the weights and bias of the network to miminize the energy. Once done with minimization, the network we have could be used to generate similar images with similar features.
 
 
 
 
 ### With Hidden Units
 
-The complexity of the previous model seems to be low. To introduce more degree of freedom, we introduce the hidden units.
+The complexity of the previous model seems to be low. To introduce more degrees of freedom, we introduce the hidden units.
 
 
-Hinton and Sejnowski worked out a algrimth for Boltzmann machine in 1983. The energy based learning rule for Boltzmann machine has two phases, the clamped phase (Phase+) and free phase (Phase-).
+Hinton and Sejnowski worked out an algorithm for Boltzmann machine in 1983. The energy-based learning rule for Boltzmann machine has two phases, the clamped phase (Phase+) and free phase (Phase-).
 
 1. Clamped phase: we attach the data to the visible units and initialize the hidden units to be some random states.
   a. Then we update the hidden units so that the energy is minimized with clamping.
@@ -135,21 +134,18 @@ Hinton and Sejnowski worked out a algrimth for Boltzmann machine in 1983. The en
   c. Repeat N times.
 
 
-
 With $\langle s_i s_j\rangle_{\mathrm{data}}$ and $\langle s_i s_j\rangle_{\mathrm{model}}$ found, we use the update rule \ref{eq-weight-update-rule-boltzmann-machine}.
 
 
-For some reference, Hinton has a set of lectures on [Coursera](https://www.coursera.org/learn/neural-networks/lecture/iitiK/boltzmann-machine-learning-12-min). He also has a lecture for more effective algrimths: [More efficient ways to get the statistics](https://www.coursera.org/learn/neural-networks/lecture/wlELo/optional-video-more-efficient-ways-to-get-the-statistics-15-mins).
+For some reference, Hinton has a set of lectures on [Coursera](https://www.coursera.org/learn/neural-networks/lecture/iitiK/boltzmann-machine-learning-12-min). He also has a lecture for more effective algorithms: [More efficient ways to get the statistics](https://www.coursera.org/learn/neural-networks/lecture/wlELo/optional-video-more-efficient-ways-to-get-the-statistics-15-mins).
 
 
 ## Minimizing Energy of Ising Model is Hebbian Learning
 
 
-<div class="notes--info" markdown="1">
-### Hebbian Learning Rule
-
-   Simply put, neurons act similarly at the same time would be more likely to be connected.
-</div>
+{{< message title="Hebbian Learning Rule" class="info">}}
+Simply put, neurons act similarly at the same time would be more likely to be connected.
+{{</message>}}
 
 A energy minimization procedure would be the same as Hebbian learning rule. Suppose we pick out two spins, $s_3 = 1$ and $s_8= 1$, the connected weight would be positive in order to have lower energy $-J_{38}s_3 s_8 = - J_{38}$. For spins with different signs, negative weight would be the choice to make sure the energy is lower. This is similar to Hebbian learning rule.
 

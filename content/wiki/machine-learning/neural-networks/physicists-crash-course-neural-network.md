@@ -1,18 +1,17 @@
 ---
 title: "A Physicist's Crash Course on Artificial Neural Network"
-excerpt: "Introduction to neural network and "
-date: 2015-5-2
-toc: true
+description: "A very very brief introduction to neural network for physicists"
+date: 2015-05-02
 category:
-- 'Artificial Neural Networks'
+  - 'Artificial Neural Networks'
 tag:
-- 'Machine Learning'
-- 'Artificial Neural Networks'
-- 'Basics'
+  - 'Machine Learning'
+  - 'Artificial Neural Networks'
+  - 'Basics'
 references:
-- name: ""
-  link: ''
-notify: 'Machine Learning!'
+  - name: ""
+    link: ''
+notify: "This is the notes for a class presentation when I was a student."
 weight: 2
 ---
 
@@ -21,34 +20,18 @@ weight: 2
 
 What a neuron does is to response when a stimulation is given. This response could be strong or weak or even null. If I would draw a figure, of this behavior, it looks like this.
 
-
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/neuron-response.png)
-<figcaption markdown="1">
-Neuron response
-</figcaption>
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/neuron-response.png" title="Neuron response" >}}
 
 Using simple single neuron responses, we could compose complicated responses. To achieve that, we study the transformations of the response first.
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/transformation-activation.png)
-<figcaption markdown="1">
-transformations
-</figcaption>
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/transformation-activation.png" title="transformations" >}}
 
 
 ## Artificial Neural Network
 
 A simple network is a collection of neurons that response to stimulations, which could be the responses of other neurons.
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/neural-network-simple.png)
-<figcaption markdown="1">
-neural network
-</figcaption>
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/neural-network-simple.png" title="neural network" >}}
 
 A given input signal is spreaded onto three different neurons. The neurons respond to this signal separately then summed together with different weights. In the language of math, given input $x$, output $y(x)$ is
 
@@ -56,19 +39,12 @@ $$ y(x) = \sum_{k=1}^{3} x v_k * \text{activation}( w_k * x + u_k )  $$
 
 where $\text{activation}$ is the activation function, i.e., the response behavior of the neuron. This is a single layer structure.
 
-A lot of different ways could be used to extend this network. 
-
+A lot of different ways could be used to extend this network.
 
 * Increase the number of neurons on one layer.
 * One can extend the number of layers.
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/multilayer.png)
-<figcaption markdown="1">
-Multilayer
-</figcaption>
-</figure>
-
+{{< figure src="../assets/physicists-crash-course-neural-network/multilayer.png" title="Multilayer">}}
 
 * We could also include interactions between the neurons.
 * Even memory can be simulated.
@@ -88,32 +64,19 @@ The first task can be done using one neuron. If a set of parameters are properly
 We have a input temperature and a output that tells us which is high temperature which is low temperature. In the following example, $T_1$ is low temperature, $T_2$, $T_3$ are high temperatures.
 
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/one-neuron-classification.png)
-<figcaption markdown="1">
-one neuron classification
-</figcaption>
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/one-neuron-classification.png" title="one neuron classification">}}
 
 Suppose we have only two neurons in the network.
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/two-neuron-network.png)
-<figcaption markdown="1">
-two neuron classification
-</figcaption>
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/two-neuron-network.png" title="two neuron classification">}}
 
-Seen from this example, we can expect neural network to be good at classification. 
+
+Seen from this example, we can expect neural network to be good at classification.
 
 And how is this going to help us with the identification of habitable places? Suppose we have three room with temperature $T_1$, $T_2$, $T_3$ respectively. Only $T_2$ falls into the region of high output value which corresponds to the habitable temperature in our net.
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/two-neuron-classification-result.png)
-<figcaption markdown="1">
-two neuron classification
-</figcaption>
-</figure>
+
+{{< figure src="../assets/physicists-crash-course-neural-network/two-neuron-classification-result.png" title="two neuron classification">}}
 
 That reminds me of Fourier Analysis. And there is a connection. The activation functions here, which is for a general purpose, are chosen to be universal approximators. These activations can be used to approximate all smooth functions well using a finite number of neurons. Fourier analysis, on the other hand requires infinite to be exact. However in some cases we don't need infinite Fourier terms as we only need a good approximation.
 
@@ -129,39 +92,35 @@ The Network NEEDS TRAINING. Just like human learning, the neural network have to
 
 This set of data, to have some insight, a human would put them on a plot.
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/data-points.png)
-<figcaption markdown="1">
-Data
-```
-thTrainingData1 = np.array([[0,1,2,3,4,5,6,7,8,9],[1,0.37,0.14,0.050,0.018,0.0067,0.0025,0.00091,0.0004,0.00012]])
-plt.figure(figsize=(15,9))
-plt.plot(thTrainingData1[0],thTrainingData1[1],'bs')
-plt.title("We have data")
-plt.show()
-```
-</figcaption>
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/data-points.png" caption="">}}
 
-A well trained human immediately recognize the pattern, which is somewhat close to a exponential decay behavior. However, we wouldn't do any numerical calculation of exponential functions. We just see it because we have seen a lot.
+> Data
+> ```
+> thTrainingData1 = np.array([[0,1,2,3,4,5,6,7,8,9],[1,0.37,0.14,0.050,0.018,0.0067,0.0025,0.00091,0.0004,0.00012]])
+> plt.figure(figsize=(15,9))
+> plt.plot(thTrainingData1[0],thTrainingData1[1],'bs')
+> plt.title("We have data")
+> plt.show()
+> ```
+
+
+A well-trained human immediately recognizes the pattern, which is somewhat close to a exponential decay behavior. However, we wouldn't do any numerical calculation of exponential functions. We just see it because we have seen a lot.
 
 We also expect that if we have one more data point from the same mechanism to be placed on the graph, it should appear near a line of exponential decay.
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/data-fit.png)
-<figcaption markdown="1">
-Data
-```
-plt.figure(figsize=(15,9))
-plt.plot(thTrainingData1[0],thTrainingData1[1],'bs',label='Old Data')
-plt.plot(np.linspace(0,9,100),np.exp(-np.linspace(0,9,100)),'m',label='Exponential')
-plt.plot(np.array([1.5]),np.array([0.21]),'ro',label='New Data')
-plt.title("We have got new data")
-plt.legend()
-plt.show()
-```
-</figcaption>
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/data-fit.png" >}}
+
+> Data
+> ```
+> plt.figure(figsize=(15,9))
+> plt.plot(thTrainingData1[0],thTrainingData1[1],'bs',label='Old Data')
+> plt.plot(np.linspace(0,9,100),np.exp(-np.linspace(0,9,100)),'m',label='Exponential')
+> plt.plot(np.array([1.5]),np.array([0.21]),'ro',label='New Data')
+> plt.title("We have got new data")
+> plt.legend()
+> plt.show()
+> ```
+
 
 OK. A red data point appears on the graph. It is close to the line of $f(x)=e^{-x}$. Not exactly on the line but close.
 
@@ -171,7 +130,7 @@ We feed in one input, $0$, the net will give us a result. However, the result is
 
 After the training, we get a set of parameters, which should be preserved. This is the structure we need. The machine has learned everything.
 
-Now keep the parameters fixed. Feed in a number $1.5$, the result from the net should be close to $2.2$. Now the net also learn the behavior of the data, nonetheless without calculating any exponential functions. 
+Now keep the parameters fixed. Feed in a number $1.5$, the result from the net should be close to $2.2$. Now the net also learn the behavior of the data, nonetheless without calculating any exponential functions.
 
 This is amazing. The machine doesn't have any idea of exponential but it can know the trend.
 
@@ -188,17 +147,17 @@ The problem to solve is the differential equation $\frac{d}{dt}y(t)= - y(t).$ Us
 The procedures are
 
 **Deal with the function first.**
-   
+
 1. The cost is $I=\sum_i\left( \frac{dy_i}{dt}+y_i \right)^2.$ Our purpose is to minimize this cost.
-   
-2. To calculate the differential of y, we can write down the explicit expression for it. 
-   
-   $$\frac{dy}{dt} = v_k f(t w_k+u_k) + t v_k f(tw_k+u_k) (1-f(tw_k+u_k))w_k,$$ 
-   
+
+2. To calculate the differential of y, we can write down the explicit expression for it.
+
+   $$\frac{dy}{dt} = v_k f(t w_k+u_k) + t v_k f(tw_k+u_k) (1-f(tw_k+u_k))w_k,$$
+
    where the function f is defined as a `trigf()`.
 
-3. So the cost becomes 
-   
+3. So the cost becomes
+
    $$I = \sum_i \left(  v_k f(t w_k+u_k) + t v_k f(tw_k+u_k) (1-f(tw_k+u_k)) w_k + y \right)^2.$$
 
 
@@ -207,12 +166,12 @@ def cost(v,w,u,t):
     v = np.array(v)   # Don't know why but np.asarray(v) doesn't work here.
     w = np.array(w)
     u = np.array(u)
-    
+
     fvec = np.array(trigf(t*w + u) )  # This is a vector!!!
     yt = 1 + np.sum ( t * v * fvec  )  # For a given t, this calculates the value of y(t), given the parameters, v, w, u.
-    
+
     return  ( np.sum (v*fvec + t * v* fvec * ( 1 -  fvec  ) * w ) + yt )   ** 2
-    
+
     # return np.sum(np.array( v*np.array( trigf( np.array( t*w ) + u ) ) )  +  np.array( t*np.array( v*np.array( trigf(np.array( t*w ) + u)) )  )  * ( 1 - np.array( trigf( np.array( t*w )+u) ) ) * w + ( 1 + np.array( t*np.array( v*np.array( trigf( np.array(t*w)+u ) ) ) ) ) ) # trigf() should return an array with the same length of the input.
 ```
 
@@ -241,7 +200,7 @@ def costTotal(v,w,u,t):
     costt = 0
     for temp in t:
         costt = costt + cost(v,w,u,temp)
-        
+
     return costt
 ```
 
@@ -254,14 +213,14 @@ print costTotal(np.ones(10),np.ones(10),2*np.ones(10),tlintest)
 print costTotal(np.ones(10),np.ones(10),np.ones(10),tlintest)
 ```
 
-Suppose the parameters are five dimensional and we have 10 data points.
+Suppose the parameters are five-dimensional and we have 10 data points.
 
 ```
 tlin = np.linspace(0,5,11)
 print tlin
 ```
 
-Define a list divier that splits an array into three arrays.
+Define a list divider that splits an array into three arrays.
 
 ```
 ## No need to define such a function! Use np.split(x,3) instead.
@@ -291,9 +250,9 @@ Plot!
 
 ```
 def functionYNNSt(v,w,u,t): # t is a single scalar value
-    
+
     t = np.array(t)
-    
+
     return 1 +  np.sum(t * v * trigf( t*w +u ) )
 
 
@@ -301,12 +260,12 @@ def functionYNNSt(v,w,u,t): # t is a single scalar value
 def functionYNN(v,w,u,t):
 
     t = np.array(t)
-    
+
     func = np.asarray([])
-    
+
     for temp in t:
         func = np.append(func, functionYNNSt(v,w,u,temp) )
-        
+
     return np.array(func)
 
 def functionY(t):
@@ -330,6 +289,4 @@ plt.legend()
 plt.show()
 ```
 
-<figure markdown="1">
-![](../assets/physicists-crash-course-neural-network/fit.png)
-</figure>
+{{< figure src="../assets/physicists-crash-course-neural-network/fit.png">}}
