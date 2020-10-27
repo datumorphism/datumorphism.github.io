@@ -1,6 +1,6 @@
 ---
 title: "Word2vec"
-excerpt: "Single-layer neural network creates embedding space"
+description: "Single-layer neural network creates embedding space"
 date: 2019-06-13
 category:
   - 'Machine Learning'
