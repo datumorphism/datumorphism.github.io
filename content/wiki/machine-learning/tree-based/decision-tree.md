@@ -2,13 +2,12 @@
 title: "Decision Tree"
 date: 2019-12-25
 category:
-- 'Machine Learning::Tree'
+  - "Machine Learning"
 tags:
-- 'Decision Tree'
-- 'Supervised Learning'
-- 'Statistical Learning'
-- 'Basics'
-weight: 2
+  - "Decision Tree"
+  - "Supervised Learning"
+  - "Statistical Learning"
+  - "Basics"
 references:
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms."
     link: "https://doi.org/10.1017/CBO9781107298019"
@@ -19,13 +18,13 @@ links:
 supplementary:
   - name: "Python code used in this article"
     link: "https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb"
+weight: 2
 ---
-
 
 
 In this article, we will explain how decision trees work and build a tree by hand.
 
-{{< message class="link" >}}
+{{< message class="info" >}}
 The code used in this article can be found in [this repo](https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb).
 {{< /message >}}
 
@@ -82,8 +81,6 @@ The following is a sample of the full dataset.
 |  4 |        1 |         0 |         1 |              0 |
 
 {{< card title="Full Data">}}
-
-
 
 |    |   health |   weather |   holiday |   go_to_office |
 |---:|---------:|----------:|----------:|---------------:|
@@ -215,7 +212,7 @@ This is a very good result. It is the same as our theoretical expectations.
 
 Surely it will. We forged the dataset based on the theoretical expectations.
 
-Here is an exmample of using data that doesn't always fit into our theoretical model.
+Here is an example of using data that doesn't always fit into our theoretical model.
 
 ![](../assets/decision-tree/decision_tree_100_impure.png)
 > A decision tree trained with a fake "impure dataset" that doesn't always fit into our theoretical model."
