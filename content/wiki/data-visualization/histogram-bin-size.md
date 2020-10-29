@@ -1,11 +1,9 @@
 ---
 title: "Bin Size of Histogram"
-excerpt: ""
 date: 2018-11-22
-toc: true
 category:
 - 'Data Visualization'
-tag:
+tags:
 - 'Data Visualization'
 weight: 2
 references:
@@ -22,7 +20,7 @@ charts:
           }
           }
       ]"
-  layout: 
+  layout:
 - target: histogram-2
   data: "[
       trace = { x: [1.45,2.20,0.75,1.23,1.25,1.25,3.09,1.99,2.00,0.78,1.32,2.25,3.15,3.85,0.52,0.99,1.38,1.75,1.21,1.75], type: 'histogram',
@@ -57,7 +55,7 @@ charts:
       ]"
 ---
 
-Histograms are good for understanding the distribution of your data. 
+Histograms are good for understanding the distribution of your data.
 
 ## The Bin Size Problem
 
@@ -68,13 +66,17 @@ As an example, we will use the following series as an example.
 
 If we use bin size 1, we get this spiky chart and it is not so informing.
 
+{{< rawhtml >}}
 <div id="histogram-1">
 </div>
+{{< /rawhtml >}}
 
 We could also set bin size to 2.
 
+{{< rawhtml >}}
 <div id="histogram-2">
 </div>
+{{< /rawhtml >}}
 
 In principle, we could keep tuning the bin size until we get something pretty and informing. But that would be quite depressing.
 
@@ -89,9 +91,10 @@ where $N$ is the lenght of the series.
 
 In our example, $N=20$. Then we have $B=4.5\sim 5$ which leads to a bin size of $0.67$.
 
-
+{{< rawhtml >}}
 <div id="histogram-squareroot">
 </div>
+{{< /rawhtml >}}
 
 We immediately see the peak of this distribution.
 
@@ -108,9 +111,10 @@ where $N$ is the lenght of the series.
 
 In our example, $N=20$. We have $B = 5$. The max and min of our series are $3.85$ and $0.52$, thus we have the bin size $W = 0.67$ which is the same as the square-root method.
 
-
+{{< rawhtml >}}
 <div id="histogram-sturges">
 </div>
+{{< /rawhtml >}}
 
 
 
@@ -123,6 +127,7 @@ $$W = 3.49 \sigma N^{-1/3}$$
 
 In our case, we have $N=20$ and $\sigma=0.86$, which leads to $W=1.1$.
 
+{{< rawhtml >}}
 <div id="histogram-scott">
 </div>
-
+{{< /rawhtml >}}

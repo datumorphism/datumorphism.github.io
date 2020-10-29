@@ -10,7 +10,7 @@ tag:
 scripts:
 - src: "https://unpkg.com/@stdlib/stdlib@0.0.32/dist/stdlib-flat.min.js"
 - src: "../assets/beta.js"
-charts: true
+charts:
 references:
 - name: Beta Distribution @ Wikipedia
   link: https://en.wikipedia.org/wiki/Beta_distribution

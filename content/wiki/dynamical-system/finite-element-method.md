@@ -1,11 +1,10 @@
 ---
 title: "Finite Element Method"
-excerpt: "Solving PDEs"
+description: "Solving PDEs"
 date: 2018-11-19
-toc: true
 category:
 - 'Dynamical System'
-tag:
+tags:
 - 'Dynamical System'
 - 'PDE'
 - 'Finite Element Method'
@@ -17,9 +16,6 @@ references:
 notify: 'Differential equations are fun!'
 weight: 3
 ---
-
-* ToC
-{:toc}
 
 
 ## Differential Equations and Boundary Conditions
@@ -40,7 +36,7 @@ which describes a 1D problem.
 * Dirichlet boundary condition: specify values for $u$, such as $u(0)=u_0$ and $u(L)=u_L$;
 * Neumann boundary condition: specifiy values for $u_{,x}$.
 
-If we have only Neumann boundary condition, the solution is not unique. The example for it is tossing a bar, which can have both Neumann BC at both ends but it is moving.
+If we have only Neumann boundary condition, the solution is not unique. One example for it is tossing a bar, which can have both Neumann BC at both ends but it is moving.
 
 
 ### Example Problems
@@ -60,7 +56,7 @@ $$
 #### Heat Transfer
 
 
-Define temperature on a bar at each point $u(x)$. Heat transfer is proportional to the head gradient, $j= - \kappa u_{,x}$. The quation would be
+Define temperature on a bar at each point $u(x)$. Heat transfer is proportional to the head gradient, $j= - \kappa u_{,x}$. The equation would be
 
 $$
 - \frac{dj}{dx} = f.
@@ -71,13 +67,13 @@ $$
 ### Strong Form and Weak Form of PDE
 
 
-Strong form of differential equations is basically the original form we write down. Strong form requires each term to be well defined at each point. However, we can derive a weak form that require each part to be well defined through the whole domain only, which is a relaxed requirement.
+The strong form of differential equations is the original form we write down. The strong form requires each term to be well defined at each point. However, we can derive a weak form that requires each part to be well defined through the whole domain only, which is a relaxed requirement.
 
 
 ## Galerkin Method
 
 
-Suppose we need to find the solution to equation
+Suppose we need to find the solution to the equation
 
 $$
 \mathcal L_{x} \psi(x) = f(x).
@@ -94,17 +90,12 @@ where $\phi_i(x)$ are the basis functions.
 **The purpose is to find the the coefficients** $u_i$. Galerkin method has three steps.
 
 1. discretize the space $x$ and function space: triangulation,
-2. discretize the function using weak form: assembly,
+2. discretize the function using the weak form: assembly,
 3. error estimation.
 
-Triangulation is basically setting up the basis function in a discretized space $x$. One of the choice is the hat function.
+Triangulation is basically setting up the basis function in a discretized space $x$. One of the choicesis the hat function.
 
-<figure markdown="1">
-![](../assets/finite-element-method/plot-using-linear-combinations.png)
-<figcaption markdown="1">
-Triangulation from [comsol multiphysics](https://www.comsol.com/multiphysics/finite-element-method).
-</figcaption>
-</figure>
+{{< figure src="../assets/finite-element-method/plot-using-linear-combinations.png" caption="Triangulation from [comsol multiphysics](https://www.comsol.com/multiphysics/finite-element-method).">}}
 
 
 At each point $x$, there is a hat function responsible for the approximation within $[x-\Delta x, x+\Delta x]$.

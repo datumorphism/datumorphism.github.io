@@ -1,20 +1,19 @@
 ---
 title: "t Distribution"
-excerpt: "t distribution"
+description: "t distribution"
 date: 2019-01-22
-toc: true
 category:
 - 'Distributions'
-tag:
+tags:
 - 'Distributions'
 - 't Distribution'
 references:
 - name: ""
   link: ''
 charts:
-- target: 
-  data: 
-  layout: 
+- target:
+  data:
+  layout:
 weight: 2
 published: false
 ---

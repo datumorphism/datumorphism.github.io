@@ -1,20 +1,16 @@
 ---
 title: "Partial Differential Equations"
-excerpt: "Solving PDEs"
+description: "Solving PDEs"
 date: 2018-11-19
-toc: true
 category:
 - 'Dynamical System'
-tag:
+tags:
 - 'Dynamical System'
 - 'PDE'
 - 'Finite Difference Method'
 notify: 'Differential equations are fun!'
 weight: 2
 ---
-
-* ToC
-{:toc}
 
 ## Forward Time Centered Space
 

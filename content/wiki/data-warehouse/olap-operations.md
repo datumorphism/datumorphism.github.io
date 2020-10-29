@@ -1,11 +1,10 @@
 ---
 title: "OLAP Operations"
-excerpt: "Some useful OLAP operations"
+description: "Some useful OLAP operations"
 date: 2018-11-23
-toc: true
 category:
 - 'Data Warehouse'
-tag:
+tags:
 - 'OLAP'
 references:
 - name: "Data Mining, Section 4.2.5, by Jiawei Han, Micheline Kamber, Jian Pei"
@@ -29,7 +28,7 @@ For example, we would like to know the revenue of the whole year. However, the r
 | 2018-12-30 | 1244 |
 | 2018-12-31 | 1302 |
 
-Roll-up is performed by summing up everything of the column revenue. It gives us the revenue of the whole year. Monthly and quarterly roll-up are also straightforward.
+Roll-up is performed by summing up everything of the column revenue. It gives us the revenue of the whole year. Monthly and quarterly roll-up is also straightforward.
 
 
 

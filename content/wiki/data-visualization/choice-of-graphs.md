@@ -1,16 +1,10 @@
 ---
 title: "Choice of Graphs"
-excerpt: ""
 date: 2018-08-08
-toc: true
 category:
 - 'Data Visualization'
-tag:
+tags:
 - 'Data Visualization'
-source:
-- name:
-  title: ''
-notify: ''
 weight: 1
 published: false
 ---

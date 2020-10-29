@@ -1,17 +1,15 @@
 ---
 title: "Data Storage"
-excerpt: ""
 date: 2018-11-23
-toc: true
 category:
 - 'Data Warehouse'
-tag:
+tags:
 - 'Data Warehouse'
-weight: 400
+weight: 4
 ---
 
 
-`tl;dr`: Use HDF5
+`tl;dr`: Use type safe formats such as HDF5 or parquet
 
 1. HDF5
 2. `BCOLZ <http://bcolz.blosc.org/en/latest/>`_ : not designed for multidimentional data.

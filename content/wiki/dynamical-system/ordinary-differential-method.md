@@ -1,11 +1,10 @@
 ---
 title: "Ordinary Differential Equations"
-excerpt: "Solving ODEs Using Finite Difference Methods"
+description: "Solving ODEs Using Finite Difference Methods"
 date: 2018-11-19
-toc: true
 category:
 - 'Dynamical System'
-tag:
+tags:
 - 'Dynamical System'
 - 'ODE'
 - 'Finite Difference Method'
@@ -17,10 +16,6 @@ references:
 notify: 'Differential equations are fun!'
 weight: 1
 ---
-
-* ToC
-{:toc}
-
 
 For a first order differentiation $\frac{\partial f}{\partial t}$, we might have many finite differencing methods.
 
@@ -57,7 +52,7 @@ Generally speaking, a simple iteraction will do the work.
 
 
 
-<div class="notes--info" markdown="1">
+{{< message title="Taylor Expansion of Functions" class="info">}}
 **Taylor Expansion of Functions**
 
 Suppose we have a function $f(x)$, Taylor expansion arround a point $x_0$ is
@@ -67,7 +62,7 @@ f(x) = f(x_0) + f'(x_0) (x - x_0) + \cdots
 $$
 
 This is also named Maclaurin series.
-</div>
+{{< /message >}}
 
 For linear first ODE,
 
@@ -141,11 +136,11 @@ In fact the AB and AM methods to the first order are
 - Adams-Moulton Method First Order = Backward Euler Method.
 
 
-<div class="notes--info" markdown="1">
+{{< message title="scipy.odeint" class="info">}}
 **scipy.odeint**
 
 `scipy.odeint` uses `adams` for nonstiff equations, where even higher order are used. The return infodictionary entry `nqu` shows the orders for each successful step.
-</div>
+{{< /message >}}
 
 
 ## Runge-Kutta
@@ -155,14 +150,14 @@ In fact the AB and AM methods to the first order are
 
 ## Modified Midpoint Method
 
-$$
+{{<m>}}
 \begin{align}
    z_0 &= y(x) \\
    z_1 &= z_0 + h f(x,z_0) \\
    z_{m+1} &= z_{m-1} + 2h f(x+mh,z_m) \\
    y(x+H) &\approx y_n = \frac{1}{2} \left( z_n + z_{n-1} + h f(x+H,z_n) \right) .
 \end{align}
-$$
+{{</m>}}
 
 
 This method contains only the even powers of $h$ thus we can gain two orders of precision at a time by calculating one more correction.

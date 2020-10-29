@@ -2,10 +2,9 @@
 title: "Extract, Transform and Load"
 excerpt: "Extract, Clean, Transform, Load, and Refresh"
 date: 2018-11-23
-toc: true
 category:
 - 'Data Warehouse'
-tag:
+tags:
 - 'Data Warehouse'
 - 'ETL'
 references:
@@ -23,12 +22,12 @@ weight: 2
 
 ## ETL Process
 
-<div class="notes--info" markdown="1">
+{{< message title="ETL" class="info" >}}
 **ETL**
 1. Extract: extract data from sources
 2. Transform: transform it to proper format
 3. Load: load it to data storage infrastructure
-</div>
+{{< /message >}}
 
 
 ### E for Extract

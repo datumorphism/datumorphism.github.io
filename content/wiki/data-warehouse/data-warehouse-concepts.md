@@ -1,11 +1,9 @@
 ---
 title: "Some Concepts about Data Warehouse"
-excerpt: ""
 date: 2018-11-23
-toc: true
 category:
 - 'Data Warehouse'
-tag:
+tags:
 - 'Data Warehouse'
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
@@ -46,7 +44,7 @@ The purpose of the data warehouse should be clear. In most cases, it is for the 
 
 ## Fact and Dimension
 
-**Fact** is the value of something specified by the **dimension**. For example, we have a table that tells us the revenue of the year 2018 for keyboards is 3 million euros. 
+**Fact** is the value of something specified by the **dimension**. For example, we have a table that tells us the revenue of the year 2018 for keyboards is 3 million euros.
 
 |  `Year` | `Category`  |  Revenue |
 |--|---|---|
@@ -60,7 +58,7 @@ The columns `Year` and `Category` serve as dimensions and `Revenue` serves as th
 The dimension tells us what we are talking about and the fact tells us the values. For the previous example, we could set up a coordinate system, with two axes, `Year` and `Category`. On the `Year` axis, we have two values, `2017` and `2018`. On the `Category` axis, we have two values `Keyboard` and `Headset`. If we are looking for the revenue of keyboards in 2018, then we are looking for `2018` and `Headset`. It is clearly a 2 dimensional **data cube**.
 
 
-In princple, we could have N dimensional **data cube**. For example, we would like to look at the revenue of 
+In princple, we could have N dimensional **data cube**. For example, we would like to look at the revenue of
 
 1. keyboards (`Category`),
 2. in 2018 (`Year`),
@@ -73,7 +71,7 @@ Then we have a 4 dimensional dataset. Revenue is the fact and `Category`, `Year`
 
 ## Concept Hierarchies
 
-Concept hierarchies are crucial to OLAP operations. 
+Concept hierarchies are crucial to OLAP operations.
 
 We consider a data cube about revenue with the dimension `Date` with values such as 2018-11-26. We would like to know the monthly revenue, the quarterly revenue, and the annual revenue. It's straightforward to calculate those. The idea is that monthly, quarterly, and annual revenue form a hierarchy: day $\in$ month $\in$ quarter $\in$ year. This is a convention used by everyone on this planet.
 
@@ -90,21 +88,4 @@ Others would say, we divide them into 100 euros segments
 
 
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-[^1]: In fact, this is not always the case. Sometimes, data products can be delivered using some assist of data warehouse if the data product doesn't rely on the performance of the data source.
+[^1]: In fact, this is not always the case. Sometimes, data products can be delivered using some assist of data warehouse if data product doesn't rely on the performance of the data source.

@@ -1,11 +1,9 @@
 ---
 title: "Boxplot"
-excerpt: ""
 date: 2019-08-20
-toc: true
 category:
 - 'Data Visualization'
-tag:
+tags:
 - 'Data Visualization'
 - 'Boxplot'
 - 'Outlier'

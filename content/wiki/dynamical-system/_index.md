@@ -1,5 +1,5 @@
 ---
 title: "Dynamical System"
-description: ""
+description: "The world is dynamic"
 weight: 7
 ---
