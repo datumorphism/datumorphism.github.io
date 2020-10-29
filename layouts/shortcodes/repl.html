@@ -1,0 +1,4 @@
+{{ $height := (.Get "height") }}
+{{ $width := (.Get "width") }}
+{{ $url := (.Get "url") }}
+<iframe height="{{ if $height }}{{$height}}{{else}}400px{{ end }}" width="{{ if $width }}{{$width}}{{else}}100%{{ end }}" src="{{ $url }}" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

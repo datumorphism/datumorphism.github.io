@@ -1,14 +1,17 @@
 ---
 title: "Basics of Database"
-excerpt: "Essential knowledge of database"
+description: "Essential knowledge of database"
 date: 2018-10-03
-toc: true
 category:
 - 'Computation'
-tag:
+tags:
 - 'Database'
 - 'Basics'
-notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers and internet.'
+references:
+  - link: "https://www.red-gate.com/simple-talk/sql/learn-sql-server/sql-server-index-basics/"
+    name: "SQL Server Index Basics"
+  - link: "https://apandre.wordpress.com/data/datacube/"
+    name: "OLAP Cubes"
 weight: 4
 ---
 
@@ -35,15 +38,14 @@ weight: 4
     --NaturalJoin where conditions are chosen by the database automatically
     SELECT * FROM table1 NATURAL JOIN table2
    ```
-3. Procedural language: derived from structural programming, focuses on breaking task into variables, data structures, and subroutines.
+3. Procedural language: derived from structural programming, focuses on breaking tasks into variables, data structures, and subroutines.
 
 
 ### SQL
 
 [Nice Article about Index](https://www.red-gate.com/simple-talk/sql/learn-sql-server/sql-server-index-basics/)
-{: .notes--info}
 
-1. B-tree: nodes has subnodes; Read wikipedia for more.
+1. B-tree: nodes have subnodes; Read Wikipedia for more.
 2. Index architectures:
    1. Clustered indices: sort data based on the key column, thus no row locator is needed.
    2. Non-clustered indices: store both column and row locator so that sorting is not needed.
@@ -51,7 +53,7 @@ weight: 4
 4. Leaf vs Non-leaf:
    1. Leaf level pages (nodes): the end of the search through B-tree;
    2. Non-leaf pages (nodes): root and intermediate
-5. Fill factor: the leaf level pages are not always filled with data. You can specify some pages to be reserved for future growth of data. The value is from 1 to 100 percent. Server side default is usually 0 which means that all leaf pages are filled.
+5. Fill factor: the leaf level pages are not always filled with data. You can specify some pages to be reserved for the future growth of data. The value is from 1 to 100 percent. Server-side default is usually 0 which means that all leaf pages are filled.
 6. Composite index:
 
    ```sql
@@ -61,12 +63,12 @@ weight: 4
 
 ### OLAP
 
-OLAP Explained: [OLAP Cubes](https://apandre.wordpress.com/data/datacube/) explained the operations such as SLICE (slice by one dimensions so that we get a N-1 subset of the data), DICE (slice more than two dimensions), DRILL DOWN/UP (navigate among levels of data), ROLL-UP (aggrete, consolidate, involves all the data relations for one or more dimensions), PIVOT (rotation).
+OLAP Explained: [OLAP Cubes](https://apandre.wordpress.com/data/datacube/) explained the operations such as SLICE (slice by one dimension so that we get an N-1 subset of the data), DICE (slice more than two dimensions), DRILL DOWN/UP (navigate among levels of data), ROLL-UP (aggregate, consolidate, involves all the data relations for one or more dimensions), PIVOT (rotation).
 {: .notes--info}
 
 1. OLAP: Online analytical processing, with a core of OLAP cube (multidimensional cube, hypercube).
 2. Aggregations: speed up time.
-3. Both star schema and snowflake schema are the souce of the cube metadata for OLAP.
+3. Both star schema and snowflake schema are the source of the cube metadata for OLAP.
 
 4. About how those operations works, please find the quiz at [OLAP Operation Types @ HackerRank](https://www.hackerrank.com/challenges/olap-operation-types-2/forum)
 
@@ -84,34 +86,32 @@ OLAP Explained: [OLAP Cubes](https://apandre.wordpress.com/data/datacube/) expla
 
 ### Relational Calculus
 
-<div markdown="1" class="notes--info">
-Operators: 
+{{< message title="Operators">}}
+Operators:
    1. ∀ = forall : https://en.wikipedia.org/wiki/Turned_A
    2. | = such that : https://en.wikipedia.org/wiki/Set-builder_notation
    3. ∧ = logical conjunction (and) : https://en.wikipedia.org/wiki/List_of_logic_symbols
    4. → = is a function
 
    Stolen from HackerRank: https://www.hackerrank.com/challenges/databases-relational-calculus/forum/comments/325506
-</div>
+{{< /message >}}
 
 
 ### Database Key
 
 1. Primary key: unique values for each row of data; can not contain null values.
 
-
-
 ### Normalization
 
-<div markdown="1" class="notes--info">
+{{< message title="Dependency">}}
 Dependency
 
    Dependency means a column that determines others.
 
-   Partial dependency means that we have some column that depends on only some of the columns but has nothing to do with some other columns. In this case we can see some kind of redundency. Hence in 2NF we remove partial dependency.
+   Partial dependency means that we have some column that depends on only some of the columns but has nothing to do with some other columns. In this case we can see some kind of redundancy. Hence in 2NF we remove partial dependency.
 
    Transitive dependency is that if x determines y, y determines z, then x determines z, which is the transitive dependency.
-</div>
+{{< /message >}}
 
 1. NF: Normal Form,e.g., 1NF Rules, 2NF Rules, 3NF Rules. Refer to [this article](https://www.guru99.com/database-normalization.html). BCNF (Boyce-Codd normal form) please refer to wiki. 4NF is also explained well in [wiki](https://en.wikipedia.org/wiki/Fourth_normal_form).
 2. [studytonight](https://www.studytonight.com/dbms/database-normalization.php)

@@ -1,14 +1,15 @@
 ---
 title: "Basics of MongoDB"
-excerpt: "MongoDB is a document based database"
+description: "MongoDB is a document based database"
 date: 2018-10-03
-toc: true
 category:
 - 'Computation'
-tag:
+tags:
 - 'Database'
 - 'Basics'
-notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers and internet.'
+references:
+  - name: "MongoDB Cheatsheet"
+    link: https://gist.github.com/emptymalei/8c6b4fbbf0d92ba0ffb856439ec9cc64
 weight: 6
 ---
 

@@ -1,14 +1,12 @@
 ---
 title: "Basics of Programming"
-excerpt: "Essential knowledge of programming"
+description: "Essential knowledge of programming"
 date: 2018-09-23
-toc: true
 category:
 - 'Computation'
-tag:
+tags:
 - 'Programming'
 - 'Basics'
-notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers.'
 weight: 2
 ---
 
@@ -44,3 +42,5 @@ def iterativeFactorial(n):
 print(recursiveFactorial(0))
 print(iterativeFactorial(0))
 ```
+
+{{< repl url="https://repl.it/@emptymalei/recursive-iterative?lite=true" >}}

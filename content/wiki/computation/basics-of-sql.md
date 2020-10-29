@@ -1,35 +1,37 @@
 ---
 title: "Basics of SQL"
-excerpt: "Essential knowledge of programming"
+description: "Essential knowledge of programming"
 date: '2018-11-19'
-toc: true
 category:
 - 'Computation'
-tag:
+tags:
 - 'Programming'
 - 'Basics'
-notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers.'
+references:
+  - name: "What is a Relational Database Management System (RDBMS)?"
+    link: https://www.codecademy.com/articles/what-is-rdbms-sql
+  - name: List of SQL commands
+    link: https://www.codecademy.com/articles/sql-commands
 weight: 5
 ---
 
 
-<div class="notes--info" markdown="1">
+{{< message >}}
 Adding a new field to data:
 
 1. Relational: requires a new column
 2. Non-Relational: just add the field to one single document, thus can be easily decentralized.
-</div>
+{{< /message >}}
 
 
 ## Basics and Background
-
 
 1. SQL: Structured Query Language
 2. Relational Database:
 
    1. usually in tables
    2. rows are called records
-   3. columns are certain types of data. Data type of rows are specified:
+   3. columns are certain types of data. Data types of rows are specified:
       1. INTEGER
       2. TEXT
       3. DATE
@@ -49,11 +51,11 @@ Adding a new field to data:
 ## SQL
 
 
-<div class="notes--warning" markdown="1">
+{{< message class="info" >}}
 Semicolon in SQL is a statement terminator. Just use it.
-</div>
+{{< /message >}}
 
-<div class="notes--info" markdown="1">
+{{< message title="Capitalization Strategy" class="info" >}}
 **Capitalization Strategy**
 
 For readablilty
@@ -62,7 +64,7 @@ For readablilty
 2. Capitalize table names etc
 
 On stackoverflow: [stackoverflow](https://stackoverflow.com/questions/608196/why-should-i-capitalize-my-sql-keywords)
-</div>
+{{< /message >}}
 
 ## Statements for Manipulation
 
@@ -373,13 +375,3 @@ The **normalization** is explained in [DB Normalization](../basics-of-database/#
 
 6. `WITH`: create a result with alias
 
-
-
-
-
-## References and Notes
-
-
-
-1. [What is a Relational Database Management System (RDBMS)?](https://www.codecademy.com/articles/what-is-rdbms-sql)
-2. [List of SQL commands](https://www.codecademy.com/articles/sql-commands)

@@ -1,14 +1,12 @@
 ---
 title: "Basics of Network"
-excerpt: "Essential knowledge of internet"
+description: "Essential knowledge of internet"
 date: 2018-09-23
-toc: true
 category:
 - 'Computation'
-tag:
+tags:
 - 'Internet'
 - 'Basics'
-notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers and internet.'
 weight: 3
 ---
 
@@ -42,18 +40,16 @@ Difference between URI and URL and URN: [The Difference Between URLs and URIs](h
 
 HTTP Request: use Chrome Dev Tool -> Network to find out the requests, including GET and Response.
 
+{{< youtube po3zYOe00O4>}}
 
-<div style="position: relative; padding-bottom: 1em; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/po3zYOe00O4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
 
 
 ### How to Request
 
-1. `GET`: request for the page 
+1. `GET`: request for the page
 2. `HEAD`: similar to `GET` but only for the head
 3. `POST`: post data to the uri; data is in the body; might replace existing data
-4. `PUT`: 
+4. `PUT`:
 5. `DELETE`: request a deletion of the page
 6. `CONNECT`: HTTP/1.1
 7. `OPTIONS`: allow the user to request for info about the server

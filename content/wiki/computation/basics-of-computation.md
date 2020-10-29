@@ -1,23 +1,22 @@
 ---
 title: "Basics of Computation"
-excerpt: "Essential knowledge of computations"
+description: "Essential knowledge of computations"
 date: 2018-09-13
-toc: true
 category:
-- 'Computation'
-tag:
-- 'Computation'
-- 'Basics'
+  - 'Computation'
+tags:
+  - 'Computation'
+  - 'Basics'
 references:
-- name: "How integers are stored in memory using two’s complement"
-  link: 'https://medium.com/@LeeJulija/how-integers-are-stored-in-memory-using-twos-complement-5ba04d61a56c'
+  - name: "How integers are stored in memory using two’s complement"
+    link: 'https://medium.com/@LeeJulija/how-integers-are-stored-in-memory-using-twos-complement-5ba04d61a56c'
 notify: 'I am transitioning from a physicist to a data scientist. While I am exploring the world of data, I find that I need to know some basics about computers.'
 weight: 1
 ---
 
 ## Storage, Precision, Error, etc
 
-To have some understanding of how the numbers processed in computers, we have to understan how the numbers are stored first.
+To have some understanding of how the numbers are processed in computers, we have to understand how the numbers are stored first.
 
 Computers stores everything in binary form [^1]. Suppose we randomly get some segments in the memory, we have no idea what that stands for since we do not know the type of data it represents.
 
@@ -46,7 +45,7 @@ Integers can be
 1. Unsigned
 2. Signed
 
-The sign can occupy one bit. However, the compiler has to know that this is a signed number otherwise it iterprets it into different numbers.
+The sign can occupy one bit. However, the compiler has to know that this is a signed number otherwise it interprets it into different numbers.
 ```
 |1|0|0|1|0|1|0|1|
 ```
@@ -64,9 +63,9 @@ where $S$ is the sign, $M$ is the mantissa, $E$ is the integer exponent, $b$ is 
 
 **Round off** is the bias from the machine accuracy and it accumulates.
 
-**Truncation error** is the difference between  the true answer and teh answer obtained. The reason or this is that we are doing numerical calculations by discretiszation of the functions. This error is the discrepancy on a ideal computer that n round off is present.
+**Truncation error** is the difference between  the true answer and the answer obtained. The reason or this is that we are doing numerical calculations by discretization of the functions. This error is the discrepancy on an ideal computer that n round off is present.
 
-As the round off error gets magnified and finally swamp the useful answer in the calculation, the method is unstable. An algrimth like this can work on a ideal computer but not a practical one.
+As the round off error gets magnified and finally swamp the useful answer in the calculation, the method is unstable. An algorithm like this can work on an ideal computer but not a practical one.
 
 
 [^1]: I have always been speculating that we probably would have a lot of decimal computer theories if Charles Babbage built that difference engine.
