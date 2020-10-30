@@ -1,12 +1,21 @@
 ---
 title: "Regular Expression Basics"
-excerpt: "Some quick start material on regular expression."
+description: "Some quick start material on regular expression."
 date: 2018-06-20T15:58:49-04:00
-toc: true
 category:
-- 'Basics'
-tag:
-- 'Regular Expression'
+  - 'Basics'
+tags:
+  - 'Regular Expression'
+  - RegEx
+references:
+  - name: Module Contents@Python3 Documentation
+    link: https://docs.python.org/3/library/re.html#module-contents
+  - name: Regex tutorial — A quick cheatsheet by examples by Jonny Fox
+    link: https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285
+  - name: regex101
+    link: https://regex101.com/
+  - name: extendsclass
+    link: https://extendsclass.com/regex-tester.html
 weight: 1
 ---
 
@@ -117,7 +126,7 @@ Regex comes with several flags that can be used to define the way of searching. 
    result = p.findall(line)
    print(result)
    # ['The', 'the']
-   ```   
+   ```
 2. multiline `m`: `re.M` in python
 3. global `g`
 4. Python `re` module also provides some other flags.[^1]
@@ -207,12 +216,11 @@ Regex comes with several flags that can be used to define the way of searching. 
 
 ## Links
 
-1. [Regex tutorial — A quick cheatsheet by examples
- by Jonny Fox](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
+1. [Regex tutorial — A quick cheatsheet by examples by Jonny Fox](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
 2. [regex101](https://regex101.com/) is an useful website for regex.
 3. Practice on repl.it
+   {{< repl url="https://repl.it/@emptymalei/regular-expressions?lite=true" >}}
 
-   <iframe height="400px" width="100%" src="https://repl.it/@emptymalei/regular-expressions?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 4. [extendsclass](https://extendsclass.com/regex-tester.html) is an online regex tester with a regular expression visualizer.
 
 
