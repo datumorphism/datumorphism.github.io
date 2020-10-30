@@ -1,11 +1,10 @@
 ---
 title: "Git"
-excerpt: "git the tool you need for your everyday work"
+description: "git the tool you need for your everyday work"
 date: 2016-06-22
-toc: true
 category:
 - 'Tools'
-tag:
+tags:
 - 'Tools'
 - 'Command Line'
 - 'Git'
@@ -27,7 +26,7 @@ references:
 
 ## Using Git with GUI
 
-Thare are huge ammounts of git commands! What if I don't want to use any of these?
+There are huge amounts of git commands! There are also a lot of GUIs if you don't like command line.
 
 - [GitHub Desktop](https://desktop.github.com/)
 - [GitKraken](https://www.gitkraken.com/)
@@ -35,11 +34,10 @@ Thare are huge ammounts of git commands! What if I don't want to use any of thes
 - ...
 
 
-
 ## Useful Commands
 
 -  To check all the commits related to a file, use ``git log -u``.
--  Try out ``git log -g`` before determine which reflog to deal with.
+-  Try out ``git log -g`` before determining which reflog to deal with.
 -  To compare the changes with the last commit, use
    ``git diff --cached HEAD~1``.
 
@@ -64,12 +62,12 @@ Among ``[alias]`` section of ``~/.gitconfig`` file:
 ## FAQ
 
 
-P: **I am too lasy to type in ``git add .``.**
+P: **I am too lazy to type in ``git add .``.**
 
 S: The magic potion is ``git commit -a`` which will do the staging and
 commit at the same time.
 
-P: **What has been changed since last stage?**
+P: **What has been changed since the latest stage?**
 
 S: ``git diff`` shows that.
 
@@ -87,10 +85,10 @@ P: **I accidentally added a file to staging.**
 
 S: Should unstage the file. ``git reset HEAD filename.md`` will do.
 
-P: **I want to discard the changes I made since last commit.**
+P: **I want to discard the changes I made since the latest commit.**
 
 S: **This can be dangerous.** ``git checkout -- filename.md`` can revert
-averything back to the last commit. But it discards all the changes and
+everything back to the last commit. But it discards all the changes and
 can not be recovered. DO NOT USE IT.
 
 P: **I need to check what has changed in every commits.**
@@ -146,13 +144,13 @@ How then?
 3. One your local machine, using `git clone ssh://<yourusername>@<your.server.name>/<path to repo>` will clone the empty repo to your local machine.
 
 
-Here I'll use my own machines as an example. After setting up the git server, I create initialized empty git repo on this server, under path `/home/neutrino/gitserver/` (where neutrino is my user name on this ubuntu machine)
+Here I'll use my own machine as an example. After setting up the git server, I create initialized empty git repo on this server, under path `/home/neutrino/gitserver/` (where neutrino is my user name on this ubuntu machine)
 
 ```bash
 git init --bare codebase.git
 ```
 
-Then I find this folder named `codebase.git` under this path `/home/neutrino/gitserver/`. The work on the server side is done now. This server has a name `physicists.edu` (which I made up), on my local machine I clone it by
+Then I find this folder named `codebase.git` under this path `/home/neutrino/gitserver/`. The work on the server-side is done now. This server has a name `physicists.edu` (which I made up), on my local machine I clone it by
 
 ```bash
 git clone ssh://neutrino@physicists.edu/home/neutrino/gitserver/codebase.git
@@ -169,7 +167,7 @@ What if I already have a repo locally and need to push it to this new server? Us
 git remote add newgitserver ssh://neutrino@physicists.edu/home/neutrino/gitserver/codebase.git
 ```
 
-Change newgitserver to whatever you like. After that `git push newgitserver` will push the codes to the new server.
+Change `newgitserver` to whatever you like. After that `git push newgitserver` will push the codes to the new server.
 
 Alternatively, you can change `.git/config` and name this new one the origin.
 

@@ -1,17 +1,16 @@
 ---
 title: "GNUPlot"
-excerpt: "quickly make a graph in your command line"
+description: "quickly make a graph in your command line"
 date: 2017-09-04
-toc: true
 category:
 - 'Tools'
-tag:
+tags:
 - 'Tools'
 - 'Command Line'
-weight: 3
 references:
 - name: 'GNUPLOT'
   link: http://www.gnuplot.info/
+weight: 3
 ---
 
 

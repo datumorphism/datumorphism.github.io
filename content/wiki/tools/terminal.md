@@ -1,18 +1,17 @@
 ---
 title: "Terminal"
-excerpt: "work more efficiently"
+description: "work more efficiently"
 date: 2019-12-31
-toc: true
 category:
 - 'Tools'
-tag:
+tags:
 - 'Tools'
 - 'Command Line'
 - 'Terminal'
-weight: 4
 references:
 - name: 'Rapidly invoke an editor to write a long, complex, or tricky command'
   link: https://app.enkipro.com/#/public/insight/557a202244b51154005882a2?signedUp=1
+weight: 4
 ---
 
 

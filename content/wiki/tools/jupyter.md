@@ -1,24 +1,24 @@
 ---
 title: "Jupyter Notebook"
-excerpt: "Jupyter Notebook is a useful tool for data scientists"
+description: "Jupyter Notebook is a useful tool for data scientists"
 date: 2018-06-20T15:58:49-04:00
 toc: true
 category:
-- 'Tools'
-tag:
-- 'Tools'
+- Tools
+tags:
+- Tools
 - Jupyter
-weight: 1
 references:
 - name: "Built-in magic command @ ipython"
   link: https://ipython.readthedocs.io/en/stable/interactive/magics.html
+weight: 1
 ---
 
 
 ## Magics
 
 1. `%lsmagic` will show all the magics, including line magics and cell magics.
-   
+
    1. Line magics are magics start with one `%`;
    2. Cell magics are magics that can be used in the whole cell even with line breaks, where the cell should start with `%%`.
 
@@ -41,7 +41,7 @@ references:
    for i in range(1000):
        i*i
    ```
-   
+
    `%timeit` is the corresponding line magic which times the function of the corresponding line.
 
 ## Documentation
