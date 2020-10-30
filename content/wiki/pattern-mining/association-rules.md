@@ -11,7 +11,7 @@ references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   link: ''
 links:
-  - /wiki/statistics/correlation-analysis-chi-square.md
+  - wiki/statistics/correlation-analysis-chi-square.md
 weight: 1
 ---
 

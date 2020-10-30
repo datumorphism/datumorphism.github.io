@@ -1,11 +1,10 @@
 ---
 title: "What is Statistics"
-excerpt: "An overview of statistics"
+description: "An overview of statistics"
 date: 2019-01-18
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 weight: 1
@@ -22,7 +21,7 @@ To describe the data, we could calculate the mean of the weight. We found that t
 
 We could simply give a number to standard for the mean weight of all the robots. (**point estimate**) We could tell a number as the mean weight of all the robots together with a range that tells us how disperse our measurement is.
 
-How can we know the mean weight of this kind of robot? We know the mean weight of those robot that we selected and measured. We need to link this to the actual mean weight of all the robots on the planet (**inferential statistics**). To establish a good connection between the mean weight of the robots we measured and the mean weight of all the robots, we also require an analysis of how would the mean weight distribute if we could repeatedly choose some robots using the same procedure and do the measurement. (maybe something related to **the central limit theorem**?)
+How can we know the mean weight of this kind of robot? We know the mean weight of those robots that we selected and measured. We need to link this to the actual mean weight of all the robots on the planet (**inferential statistics**). To establish a good connection between the mean weight of the robots we measured and the mean weight of all the robots, we also require an analysis of how would the mean weight distribute if we could repeatedly choose some robots using the same procedure and do the measurement. (maybe something related to **the central limit theorem**?)
 
 In the end, we will have a conclusion of the mean weight of all the robots on the planet with some kind of confidence. Then again, how could we be sure that our conclusion is correct (**hypothesis testing**)? How robust is our conclusion? Do we find our conclusion wrong if we do the measurement again?
 

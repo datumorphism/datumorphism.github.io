@@ -15,7 +15,7 @@ weight: 6
 published: true
 ---
 
-<div class="notes--warning" markdown="1">
+{{< message class="warning">}}
 In this article, we will use the Einstein summation convention. For example,
 $$
 X_{ij}\beta_ j
@@ -24,9 +24,9 @@ is equivalent to
 $$
 \sum_j X_{ij}\beta_ j
 $$
-</div>
+{{</message>}}
 
-<div class="notes--info" markdown="1">
+{{< message class="info">}}
 In statistics, we have at least three categories of quantities:
 
 1. data and labels
@@ -42,10 +42,8 @@ So we use the following conventions in this article.
 1. $\mathbf X$ or $X_{ij}$: data
 2. $\mathbf Y$ or $Y_{i}$: results
 3. $\hat{\mathbf Y}$ or $\hat Y_{i}$: predicted results
-</div>
+{{</message>}}
 
-* ToC
-{:toc}
 
 ## A Model
 

@@ -1,11 +1,10 @@
 ---
 title: "Normalization Methods for Numeric Data"
-excerpt: "Detecting correlations using correlations for numerical data"
+description: "Detecting correlations using correlations for numerical data"
 date: 2018-11-18
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Normalization'
@@ -30,11 +29,11 @@ $$
 $$
 where everything on the right hand side is known and $a_{min}'$ and $a_{max}'$ are chosen as the new min and max to be scaled to.
 
-<div class="notes--warning" markdown="1">
+{{< message class="warning" >}}
 The problem with this method is that the min and max has to be known, which is not always the case.
 
 Another problem is that outliers would have a big effect on this method. Such examples could be the prices of houses. There might be one house in the database that has an extremely low price such as 1 euro, or extermely high price such as one billion euros.
-</div>
+{{</message>}}
 
 ## Z-score Normalization
 
@@ -44,7 +43,7 @@ $$
 a'_i = \frac{ (a_i - \bar A) }{ \sigma_A }
 $$
 
-<div class="notes--info" markdown="1">
+{{< message class="info">}}
 For a series with only one value, $a'_i = 0$. For series of the form $ (a, -a, a, -a) $ where $a> 0$,
 
 $$
@@ -55,7 +54,7 @@ Then we have the normalized series to be
 $$
 ( 1, -1, 1, -1 )
 $$
-</div>
+{{< /message >}}
 
 ## Decimal Scaling
 

@@ -1,17 +1,19 @@
 ---
 title: "Correlation Coefficient and Covariance for Numeric Data"
-excerpt: "Detecting correlations using correlations for numeric data"
+description: "Detecting correlations using correlations for numeric data"
 date: 2018-11-18
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Correlation'
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   link: ''
+links:
+  - cards/statistics/covariance-matrix.md
+  - wiki/statistics/multidimensional-data.md
 weight: 4
 ---
 
@@ -19,9 +21,9 @@ weight: 4
 
 ## Covariances
 
-<div class="notes--info" markdown="1">
-Correlation coefficient is also known as Pearson's product moment coefficient.
-</div>
+{{< message class="info">}}
+Correlation coefficient is also known as the Pearson's product moment coefficient.
+{{</message>}}
 
 
 ### Review of Standard Deviation
@@ -34,7 +36,7 @@ $$
 
 where $n$ is the number of elements in series A.
 
-Standard deviation is very easy to understand. It is basically the average Eucleadian distance between the data points and average value. In this article, we will take another point of view.
+The standard deviation is very easy to understand. It is basically the average Eucleadian distance between the data points and the average value. In this article, we will take another point of view.
 
 Now imagine we have two series
 $(a_i - \bar A)$ and $(a_j - \bar A)$. The geometric mean squared for $i=j$ is
@@ -43,23 +45,17 @@ $$
 M_i^2 = (a_i - \bar A)^2.
 $$
 
-From this point of view, standard deviation is in fact a measure of the mean of **geometric mean of the deviation of each element**.
+From this point of view, the standard deviation is in fact a measure of the mean of **geometric mean of the deviation of each element**.
 
-<div class="card">
-	<header class="card-header">
-		<p class="card-header-title card-toggle">Standard Deviation of the Sample</p>
-	</header>
-	<div class="card-content is-hidden">
-		<div class="content">
-If we are dealing with a sample instead of the whole population, the standard deivation should be defined as
+{{< card title="Standard Deviation of the Sample" >}}
+
+If we are dealing with a sample instead of the whole population, the standard deviation should be defined as
 $$
 \sigma_A = \sqrt{ \frac{ \sum (a_i - \bar A)^2 }{ n - 1 } }.
 $$
 
-Why the $n-1$? We could easily understand this by taking the extreme cases. Suppose we have only 1 sample data point, the standard deviation knowledge that we can infer should be infinite since we have no idea what the standard deviation is.
-		</div>
-	</div>
-</div>
+Why the $n-1$? We could easily understand this by taking extreme cases. Suppose we have only 1 sample data point, the standard deviation knowledge that we can infer should be infinite since we have no idea what the standard deviation is.
+{{</card>}}
 
 ### Generalize Standard Deviation to Covariances
 
@@ -79,7 +75,7 @@ $$
 \mathrm{Cov}({A,B}) = E( A,B ) - \bar A \bar B.
 $$
 
-<div class="notes--info" markdown="1">
+{{< message class="info">}}
 
 At first glance, the square in the definition seems to be only for notation purpose at this point.
 
@@ -99,14 +95,14 @@ which should be called the covariance of all the N series, $\mathrm{Cov} ({A_1, 
 
 Of course, we do not use these since we could easily build a covariance matrix to indicate all the possible covariances between any two variables, for example,
 
-$$
+{{<m>}}
 \mathbf{C} = \begin{pmatrix}
 \mathrm{Cov} (A_1, A_1) & \mathrm{Cov} (A_1, A_2) \\
 \mathrm{Cov} (A_2, A_1) & \mathrm{Cov} (A_2, A_2)
 \end{pmatrix}
-$$
+{{</m>}}
 
-</div>
+{{</message>}}
 
 Covariance measures the correlation of these two series. To see this, we assume that we have two series A = B, which leads to $\sigma_{A,B} = \sigma_{A}$. Suppose we have two series at a completely opposite phase,
 
@@ -122,9 +118,9 @@ Covariance measures the correlation of these two series. To see this, we assume 
 
 we have $\sigma_{A,B} = -1 $. The negative sign tells us that our series are anti-correlated.
 
-<div class="notes--info" markdown="1">
+{{< message class="info">}}
 Covariance is also related to [dispersion matrix](../multidimensional-data).
-</div>
+{{</message>}}
 
 ## Correlation Coefficient
 

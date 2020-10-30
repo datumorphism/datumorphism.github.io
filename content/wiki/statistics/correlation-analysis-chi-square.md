@@ -1,17 +1,20 @@
 ---
 title: "Chi-square Correlation Test for Nominal Data"
-excerpt: "Detecting correlations using Pearson's chi square correlation test"
+description: "Detecting correlations using Pearson's chi square correlation test"
 date: 2018-11-18
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Correlation'
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
-  title: ''
+  link: ''
+- name: Kendall rank correlation coefficient
+  link: https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
+- name: Spearman's rank correlation coefficient
+  link: https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
 weight: 3
 ---
 
@@ -30,12 +33,12 @@ In this article, we will discuss the chi-square correlation test for detecting c
 
 Suppose we are analyzing two series A and B. Series A can take values $a_1$ and $a_2$, while series B can take values $b_1$ , $b_2$ and $b_3$.
 
-$$
+{{<m>}}
 \begin{align}
 A &:= \{a1, a2\} \\
 B &:= \{b1,b2,b3\}
 \end{align}
-$$
+{{</m>}}
 
 As an example, we will use the following A and B series for our calculations in this article.
 
@@ -55,7 +58,7 @@ As an example, we will use the following A and B series for our calculations in 
 
 To analyze correlations between the two series, we need to look at whether the values of series A and those of series B would occur together. For example, we would like to know the possibility of values for B if we have $a_1$ occurred.
 
-<div class="notes--info" markdown="1">
+{{< message class="info">}}
 One of the extreme examples is that A and B are exactly the same. In this case, we would know that the value for B is always the same as A for each row. Then we would know that all the possible combinations of (A, B) are
 1. (a1, a1)
 2. (a2, a2)
@@ -67,7 +70,7 @@ We could construct the occurrence table.
 | a1 |  number of occurrences | 0 |
 | a2 |  0 | number of occurrences |
 
-</div>
+{{</message>}}
 
 Now we construct a contigency table to denote the ocurrences of the values,  (A, B).
 
@@ -81,13 +84,13 @@ where the cells are filled with the number of occurrences of the corresponding c
 
 This table records the **observed frequencies**, which we denote as table O and each cell is denoted as $o_{ij}$.
 
-<div class="notes--info" markdown="1">
-This table tells us about the possible correlations already. Imagine we have two columns that are exactly the same, we would have a table that have large number of occurences on the diagonal elements.
-</div>
+{{< message class="info">}}
+This table tells us about the possible correlations already. Imagine we have two columns that are exactly the same, we would have a table that have large number of occurrences on the diagonal elements.
+{{</message>}}
 
-<div class="notes--warning" markdown="1">
-However, those numbers in the table depends on the number of rows that we have in our original table. To find the actual correlation, we need to normalize it. We could simply divided everything by the total number of rows in the original table. But Pearson had a better idea.
-</div>
+{{< message class="warning">}}
+However, those numbers in the table depend on the number of rows that we have in our original table. To find the actual correlation, we need to normalize it. We could simply divide everything by the total number of rows in the original table. But Pearson had a better idea.
+{{</message>}}
 
 Pearson's chi-square correlation is a smart idea.
 
@@ -97,8 +100,8 @@ $$
 e_{ij} = \frac{ \text{number of } a_i * \text{ number of } b_j }{ \text{ total number of rows in original table } }
 $$
 
-<div class="notes--info" markdown="1">
-This $e_{ij}$ serves as the average occurance of each combinations of $a_i$ and $b_j$. If we have $a_i$ in each row but only one $b_j$ occurrences, the average is 1. This mean that given $b_j$ we would definitely only see one $a_i$.
+{{< message class="info">}}
+This $e_{ij}$ serves as the average occurrence of each combinations of $a_i$ and $b_j$. If we have $a_i$ in each row but only one $b_j$ occurrences, the average is 1. This mean that given $b_j$ we would definitely only see one $a_i$.
 
 When we have multiple $a_i$ and $b_j$, this average still works. Suppose we have $a_1$ occurred 4 times in total and we have a total of 8 rows. Assuming that this $a_1$ will appear randomly in the rows, what is the average probability to see this $a_1$ if we choose a random row? It is $4/8=0.5$. Then we will expect $1\times 0.5=0.5$ occurrences $a_1$ for one occurance of $b_2$. If we have 3 occurances of $b_2$, we would expect to see $3\times 0.5==1.5$ occurrences of $a_1$.
 
@@ -118,7 +121,7 @@ As a side note, suppose we have A and B exactly the same, and they all have the 
 | 8 | a1 | b1 |
 
 Then we expect $e_{11} = n$, where $n=8$ is the number of rows.
-</div>
+{{</message>}}
 
 Now if we compare the original table with this one,
 
@@ -132,7 +135,7 @@ $$
 \chi^2 = \sum_{i,j} \frac{ (o_{ij} - e_{ij})^2 } { e_{ij} }
 $$
 
-<div class="notes--info" markdown="1">
+{{< message class="info">}}
 If A and B are the same and each possible values occurred m times, then we would have
 
 $$
@@ -145,11 +148,11 @@ $$
 $$
 
 Then we say this chi-square analysis doesn't reject our hypothesis that these two columns are correlated.
-</div>
+{{</message>}}
 
 ## How to Use the Number Chi-square
 
-The final question is how to use the result. We usually have a threshold $\chi_0^2$. Whenever our calculated value is larger than this one, we decide that our analysis reject the hypothesis that the two columns are correlated.
+The final question is how to use the result. We usually have a threshold $\chi_0^2$. Whenever our calculated value is larger than this one, we decide that our analysis rejects the hypothesis that the two columns are correlated.
 This value $\chi_0^2$ can be found in the textbooks.
 
 ## Other Methods

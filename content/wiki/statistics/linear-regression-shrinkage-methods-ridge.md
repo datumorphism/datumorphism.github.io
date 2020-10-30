@@ -1,11 +1,10 @@
 ---
 title: "Linear Regression - Shrinkage Methods - Ridge"
-excerpt: "Potentially better regression by including bias"
+description: "Potentially better regression by including bias"
 date: 2019-01-01
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Linear Regression'

@@ -1,11 +1,10 @@
 ---
 title: "Jargons"
-excerpt: "Jargons in statistics, accuracy, precision, population, sample, etl"
+description: "Jargons in statistics, accuracy, precision, population, sample, etl"
 date: 2018-11-24
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 references:
@@ -24,7 +23,7 @@ weight: 2
 | Precise |  Close to true value, small variations in each measurement | Far from true value, small variations in each measurement  |
 | Imprecise |  Close to true value, large variations in each measurement  |  Far from true value, large variations in each measurement  |
 
-Here is an example. Suppose we have a huge population (with true mean $M_0$) and we draw samples from it. For the first time, we have sample $S_1$. We could calculate the mean of the sample, $M_1$. Then we do it for a second time, and get sample $S_2$ and its mean $M_2$. It is not suprising that $M_1$ might not be the same as $M_2$.
+Here is an example. Suppose we have a huge population (with true mean $M_0$) and we draw samples from it. For the first time, we have sample $S_1$. We could calculate the mean of the sample, $M_1$. Then we do it for a second time, and get sample $S_2$ and its mean $M_2$. It is not surprising that $M_1$ might not be the same as $M_2$.
 
 Now we do this for 1000 times and get 1000 means, $\\{M_i\\}$. These means  $\\{M_i\\}$ is actually a distribution. Then we can calculate the expectation of these means and get $E(M_i) = M_e$.
 
@@ -38,7 +37,7 @@ It is quite similar to shooting. If someone shoots all his bullets on almost the
 
 Physical Population and Measurement Population
 
-1. Physical population: all the physical objects that satisfies the constraints of the measurement
+1. Physical population: all the physical objects that satisfy the constraints of the measurement
 2. Measurement population: the specified property of the physical population that is to be measured
 
 Finite and Infinite
@@ -59,7 +58,7 @@ Sample
 
 ## Hypothesis
 
-1. Statistical hypothesis: hyposthesis about the measurement population
+1. Statistical hypothesis: hypothesis about the measurement population
 2. Research hypothesis or scientific hypothesis or working hypothesis: hypothesis about the physical population
 
 ## Loss Functions

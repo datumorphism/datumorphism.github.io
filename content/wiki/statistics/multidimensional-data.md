@@ -1,17 +1,17 @@
 ---
 title: "Describing Multi-dimensional Data"
-excerpt: "Describing multi-dimensional data"
+description: "Describing multi-dimensional data"
 date: 2018-12-03
-toc: true
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
-- 'Covaraince'
-references:
+- 'Covariance'
+links:
+  - wiki/statistics/correlation-coefficient.md
 weight: 8
-published: false
+published: true
 ---
 
 
@@ -32,6 +32,7 @@ The generalized quantity is named as **dispersion matrix**. Suppose we have a $p
 We could then calculate the pairwise covariance between the different dimensions.
 
 | | $x_1$ |  $x_2$ | ... | $x_p$ |
+|--|--|--|--|--|
 | $x_1$ |   |  |  | |
 | $x_2$ | | | | |
 | ... | | | | |
