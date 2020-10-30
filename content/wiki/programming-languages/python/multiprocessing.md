@@ -2,10 +2,9 @@
 title: "The Python Language: Multi-Processing"
 description: "Python as a programming language"
 date: 2018-05-10
-toc: true
 category:
 - 'Programming Language'
-tag:
+tags:
 - 'Python'
 - 'Programming Language'
 - 'Basics'
@@ -14,7 +13,7 @@ references:
   link: http://sebastianraschka.com/Articles/2014_multiprocessing.html
 - name: Parallelism in one line A Better Model for Day to Day Threading Tasks
   link: http://chriskiehl.com/article/parallelism-in-one-line/
-weight: 103
+weight: 3
 ---
 
 

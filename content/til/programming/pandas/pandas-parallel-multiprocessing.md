@@ -7,10 +7,12 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 - Pandas
-excerpt: Adding new data to dataframe using multiprocessing
+links:
+  - wiki/programming-languages/python/multiprocessing.md
+description: Adding new data to dataframe using multiprocessing
 ---
 
 1. Define number of processes, `prs`;

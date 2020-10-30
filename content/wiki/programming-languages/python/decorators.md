@@ -2,14 +2,13 @@
 title: "The Python Language: Decorators"
 description: "Python as a programming language"
 date: 2018-03-20
-toc: true
 category:
 - 'Programming Language'
-tag:
+tags:
 - 'Python'
 - 'Programming Language'
 - 'Basics'
-weight: 102
+weight: 2
 ---
 
 

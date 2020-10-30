@@ -2,13 +2,14 @@
 title: "The C++ Language"
 description: "C++ as a programming language"
 date: 2018-03-20
-toc: true
 category:
 - 'Programming Language'
-tag:
+tags:
 - 'Programming Language'
 - 'Basics'
-weight: 200
+- 'C'
+- 'C++'
+weight: 1
 ---
 
 C++!

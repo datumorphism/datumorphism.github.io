@@ -2,17 +2,18 @@
 title: "The Python Language: Basics"
 description: "Python as a programming language"
 date: 2018-03-20
-toc: true
 category:
 - 'Programming Language'
-tag:
+tags:
 - 'Python'
 - 'Programming Language'
 - 'Basics'
 references:
 - name: "Superfunction"
   link: "http://www.pythonforbeginners.com/super/working-python-super-function"
-weight: 101
+- name: "Python Patterns - An Optimization Anecdote"
+  link: https://www.python.org/doc/essays/list2str/
+weight: 1
 ---
 
 

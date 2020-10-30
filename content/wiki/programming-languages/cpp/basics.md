@@ -2,19 +2,20 @@
 title: "The C++ Language: Basics"
 description: "C++ as a programming language"
 date: 2018-03-20
-toc: true
 category:
 - 'Programming Language'
-tag:
+tags:
 - 'Programming Language'
 - 'Basics'
-weight: 201
+- 'C'
+- 'C++'
+weight: 2
 ---
 
 
 ## Make it Work
 
-Apart from the tranditional way of running C++ code, Jupyter notebook has a clingkernel that make it possibel to run C++ in a Jupyter notebook. Here is the post: [Interactive C++ for HPC](http://johntfoster.github.io/posts/interactive-c%2B%2B-for-hpc.html).
+Apart from the traditional way of running C++ code, Jupyter notebook has a clingkernel that make it possibel to run C++ in a Jupyter notebook. Here is the post: [Interactive C++ for HPC](http://johntfoster.github.io/posts/interactive-c%2B%2B-for-hpc.html).
 
 
 ## Concepts

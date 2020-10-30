@@ -1,5 +1,5 @@
 ---
-title: "Programming Language"
+title: "Programming Languages"
 description: "Understand the source"
 tags:
   - Programming

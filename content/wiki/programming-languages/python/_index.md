@@ -9,7 +9,7 @@ tag:
 - 'Python'
 - 'Programming Language'
 - 'Basics'
-weight: 100
+weight: 1
 ---
 
 Python!
