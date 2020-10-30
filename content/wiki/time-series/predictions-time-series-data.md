@@ -1,11 +1,10 @@
 ---
 title: "Predictions Using Time Series Data"
-excerpt: "Seasonalities etc"
+description: "Seasonalities etc"
 date: 2019-06-21
-toc: true
 category:
 - 'Time Series Data'
-tag:
+tags:
 - 'Seasonality'
 references:
 - name: "Build Facebook's Prophet in PyMC3; Bayesian time series analyis with Generalized Additive Models"

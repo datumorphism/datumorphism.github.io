@@ -1,13 +1,15 @@
 ---
 title: "Short-Time-Fourier-Transform"
-excerpt: "Some quick start material on regular expression."
+description: "Some quick start material on regular expression."
 date: 2018-06-20T15:58:49-04:00
-toc: true
 category:
 - 'Time Series Data'
-tag:
+tags:
 - 'Short-Time-Fourier-Transform'
 - STFT
+references:
+  - link: https://www.coursera.org/learn/practical-time-series-analysis/lecture/pPtHq/course-introduction
+    name: "Practical Time Series Analysis @ Coursera"
 weight: 1
 ---
 
