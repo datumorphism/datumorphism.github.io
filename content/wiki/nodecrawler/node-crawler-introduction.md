@@ -1,17 +1,20 @@
 ---
 title: "Introduction to Node Crawler Series"
-excerpt: "Installing node.js and mongodb."
+description: "Installing node.js and mongodb."
 date: 2018-07-15
-toc: true
 category:
 - 'Node Crawler'
-tag:
+tags:
 - 'Node'
 - 'Crawler'
 references:
 - name: 01-基础环境搭建@ninthakeey
-  link: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/01-%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'
-notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
+  link: 'https://nintha.github.io/2018/07/08/node_spider_compass/01-base_env/'
+links:
+  - wiki/computation/basics-of-mongodb.md
+  - til/programming/database/mongodb-array-and-dict.md
+  - wiki/computation/basics-of-network.md
+notify: 'The original Chinese article is written by [ninthakeey](https://github.com/nintha). It has been translated and remixed by Datumorphism'
 weight: 1
 ---
 

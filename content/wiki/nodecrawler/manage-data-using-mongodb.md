@@ -1,17 +1,16 @@
 ---
 title: "Manage Data Using MongoDB"
-excerpt: ""
+description: ""
 date: 2018-07-18
-toc: true
 category:
 - 'Node Crawler'
-tag:
+tags:
 - 'Node'
 - 'Crawler'
 references:
 - name: 03-保存数据到数据库@ninthakeey
-  link: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/03-%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/'
-notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
+  link: 'https://nintha.github.io/2018/07/08/node_spider_compass/03-save_into_db/'
+notify: 'The original Chinese article is written by [ninthakeey](https://github.com/nintha). It has been translated and remixed by Datumorphism'
 weight: 3
 ---
 
@@ -59,12 +58,7 @@ module.exports = {
 
 
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle"> () => </p>
-</header>
-<div class="card-content is-hidden">
-<div class="content" markdown="1">
+{{< card title="() =>" >}}
 In Node.js, [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) is keystroke saver for function expressions. It comes without `this`, arguments, super, etc.
 
 In the above code, the expression
@@ -74,9 +68,7 @@ const printAllData = (cb) => {
 }
 ```
 defines a function named `printAllData` with argument `cb` and does something as indicated inside the curly bracket.
-</div>
-</div>
-</div>
+{{</card>}}
 
 
 Three functions are provided in this module, `saveData`, `printAllData` and `closeMongo`. We will grab our previous code and call the functions from this module. We would like to modify the `index.js` file to make it look like the following.
@@ -121,4 +113,4 @@ saved data
     no_reprint: 1,
     copyright: 1 } ]
 ```
-With this print out, we would have already have out data stored in our MongoDB.
+With this print out, we would confirm that our data is being stored in our MongoDB.

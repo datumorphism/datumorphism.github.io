@@ -1,21 +1,21 @@
 ---
 title: "Restrictions of Websites"
-excerpt: ""
 date: 2018-07-19
-toc: true
 category:
 - 'Node Crawler'
-tag:
+tags:
 - 'Node'
 - 'Crawler'
 references:
 - name: 04-应对网站的限制@ninthakeey
-  link: 'https://nintha.github.io/2018/07/08/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/04-%E5%BA%94%E5%AF%B9%E7%BD%91%E7%AB%99%E7%9A%84%E9%99%90%E5%88%B6/'
-notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
+  link: 'https://nintha.github.io/2018/07/08/node_spider_compass/04-against_website_limitation/'
+- name: "Node.JS Concurrency with Async/Await and Promises!"
+  link: https://medium.com/platformer-blog/node-js-concurrency-with-async-await-and-promises-b4c4ae8f4510
+notify: 'The original Chinese article is written by [ninthakeey](https://github.com/nintha). It has been translated and remixed by Datumorphism'
 weight: 4
 ---
 
-Beware that scraping data off websites is neither always allowed nor as easy as a few lines of code. The preceding articles enable you to scrape many data, however, website have counter measures. In this article, we will be dealing with some of the common ones.
+Beware that scraping data off websites is neither always allowed nor as easy as a few lines of code. The preceding articles enable you to scrape many data, however, man websites have counter measures. In this article, we will be dealing with some of the common ones.
 
 
 ## Request Frequency
@@ -42,12 +42,8 @@ let aid = 26186448
 setInterval(() => fetch(aid++), 2000)
 ```
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">setInterval</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content" markdown="1">
+{{< card title="setInterval" >}}
+
 `setInterval` is used as
 ```JavaScript
 setInterval(function(){ alert("Hello"); }, 3000);
@@ -55,9 +51,7 @@ setInterval(function(){ alert("Hello"); }, 3000);
 The function inside is a callback function.
 
 As mentioned previously, `() => ` defines a function. In our case, we have called the function `fetch` increment `aid` using `aid++`.
-</div>
-</div>
-</div>
+{{</card>}}
 
 
 Node.js provides other approaches such as the new ES8 syntax `async/await` which make it possible to rewrite the code into function chaining again.
@@ -73,12 +67,8 @@ const sleep = (ms) => new Promise((suc,fail) => setTimeout(suc, ms));
 ```
 This piece of code will print out the date and time every 2000ms.
 
-<div class="card">
-<header class="card-header">
-<p class="card-header-title card-toggle">async/await</p>
-</header>
-<div class="card-content is-hidden">
-<div class="content" markdown="1">
+{{< card title="async/await">}}
+
 Node.js is single-threaded. As we have mentioned when explaining the function `fs.writeFile()`, Node.js has non-blocking I/O. In fact, concurrency is probably at the heart of Node.js, which means we execute one process out of the multiple running processes. Concurrency can make your code more efficient.
 
 In the first block of code, we have used `setInterval` callback function. However, the callback is kind of messy. It's much better if we could use function chaining. `Promise` is exactly what we need to achieve this.
@@ -88,9 +78,7 @@ In the first block of code, we have used `setInterval` callback function. Howeve
 The code above doesn't chain functions a lot but it's worth mentioning here.
 
 [This article](https://medium.com/platformer-blog/node-js-concurrency-with-async-await-and-promises-b4c4ae8f4510) explains the concurrency in Node.js pretty well.
-</div>
-</div>
-</div>
+{{</card>}}
 
 
 ## User-Agent Verification

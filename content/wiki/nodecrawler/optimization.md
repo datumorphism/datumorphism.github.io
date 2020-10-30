@@ -1,17 +1,15 @@
 ---
 title: "Optimization"
-excerpt: ""
 date: 2018-07-19
-toc: true
 category:
 - 'Node Crawler'
-tag:
+tags:
 - 'Node'
 - 'Crawler'
 references:
 - name: 05-微小的优化@ninthakeey
-  link: 'https://nintha.github.io/2018/07/10/Node%E7%88%AC%E8%99%AB%E6%8C%87%E5%8C%97/05-%E5%BE%AE%E5%B0%8F%E7%9A%84%E4%BC%98%E5%8C%96/'
-notify: 'The original Chinese article is written by ninthakeey. It has been translated and remixed by Datumorphism'
+  link: 'https://nintha.github.io/2018/07/10/node_spider_compass/05-lite_optimization/'
+notify: 'The original Chinese article is written by [ninthakeey](https://github.com/nintha). It has been translated and remixed by Datumorphism'
 weight: 5
 ---
 
