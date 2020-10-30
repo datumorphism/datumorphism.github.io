@@ -1,11 +1,9 @@
 ---
 title: "Why Estimation Theory"
-excerpt: ""
 date: 2019-01-20
-toc: true
 category:
 - 'Statistical Estimation'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Estimation Theory'

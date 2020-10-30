@@ -12,6 +12,8 @@ tag:
 references:
 - name: "Schaum's Outline of Theories and Problems of Elements of Statistics II, by Ruth Bernstein and Stephen Bernstein, Chapter 16"
   title: ''
+links:
+  - wiki/statistical-estimation/confidence-interval.md
 weight: 1
 ---
 
