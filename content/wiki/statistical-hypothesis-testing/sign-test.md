@@ -1,11 +1,10 @@
 ---
 title: "Statistical Sign Test"
-excerpt: "Statistical test without assuming models"
+description: "Statistical test without assuming models"
 date: 2019-01-20
-toc: true
 category:
 - 'Statistical Hypothesis Testing'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Hypothesis Testing'
@@ -13,12 +12,9 @@ references:
 - link: "https://www.coursera.org/learn/inferential-statistics/lecture/UvETp/6-02-the-sign-test"
   name: 'The sign test @ inferential statistics'
 weight: 4
-published: true
 ---
 
-We have a small data set, but it doesn't satisfy t test conditions.
-
-Then we would use as little assumptions as possible.
+We have a small dataset, but it doesn't satisfy the t-test conditions. Then we would use as little assumptions as possible.
 
 ## Wine Taste
 
@@ -26,7 +22,7 @@ Suppose we have two bottles of wine, one of them is 300 euros while the other is
 
 Now we ask the question:
 
-Does the expensive wine taste better?
+Does expensive wine taste better?
 
 We find 10 experts and give them some experiments. The result is recorded then processed into the following table.
 
@@ -43,25 +39,25 @@ We find 10 experts and give them some experiments. The result is recorded then p
 
 Naively, we could simply count the number of yes and find the probability of yes in this sample, i.e.,
 
-$$
-\frac{number of yes}{total experiments} = \frac{6}{8} = 75%.
-$$
+{{<m>}}
+\frac{\text{number of yes}}{\text{total experiments}} = \frac{6}{8} = 75\%.
+{{</m>}}
 
-It seems that we have more experts find that the expensive wine taste better.
+It seems that we have more experts find that expensive wine tastes better.
 
-Is the expensive wine really better? Remember that we could have fluctuations when drawing samples from the population. We need a statistical test.
+Is expensive wine really better? Remember that we could have fluctuations when drawing samples from the population. We need a statistical test.
 
 The sign test fits perfectly into this scenario. If the wines are the same, then we would have a probability of 0.5 for an expert to identify the differences between the wines, $p_0=0.5$. Then we ask this question:
 
 What is the probability that we would find 6 experts that tell the difference out of 8 experts, given the condition that the wins are the same?
 
-This becomes a binomial distribution problem. To have 6 successful experiments out of 8 given success probability of 0.5, we have
+This becomes a binomial distribution problem. To have 6 successful experiments out of 8 given a success probability of 0.5, we have
 
 $$
 C_8^6 0.5^6(1-0.5)^2 = 28 * \frac{1}{2^6} * \frac{1}{2^2} = 0.109
 $$
 
-This mean that the probability that we find 6 experts speaking for the expensive wine is 0.109 even if the wines are not different by the taste. We usually don't think this is a rare event. That being said, we can not determine if the expensive wine tastes better by using these data.
+This means that the probability that we find 6 experts speaking for the expensive wine is 0.109 even if the wines are not different by the taste. We usually don't think this is a rare event. That being said, we can not determine if the expensive wine tastes better by using these data.
 
 ## The Sign Test
 

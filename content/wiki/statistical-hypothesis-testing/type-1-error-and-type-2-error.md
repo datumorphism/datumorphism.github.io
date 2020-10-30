@@ -1,11 +1,10 @@
 ---
 title: "Types of Errors in Statistical Hypothesis Testing"
-excerpt: "We all make mistakes. The question is, what kind of mistakes."
+description: "We all make mistakes. The question is, what kind of mistakes."
 date: 2019-05-31
-toc: true
 category:
 - 'Statistical Hypothesis Testing'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Hypothesis Testing'
@@ -23,7 +22,7 @@ In statistical hypothesis testing, we always have a null hypothesis $H_0$ which 
 1. to accept the hypothesis, that is concluding that $H_0$ is true,
 2. to reject the hypothesis, that is concluding that $H_0$ is false.
 
-However, it is possible that our conflusion is not correct. There are four possible results.
+However, it is possible that our conclusion is not correct. There are four possible results.
 
 
 |      | $H_0$ is True (Ground Truth) |  $H_0$ is False (Ground Truth) |
@@ -42,16 +41,9 @@ We all make mistakes. The question is, what kind of mistakes.
 
 If we forget about the name "Null Hypothesis" and only consider just any hypothesis, the name I and II won't matter. So there is a reason that we design our null hypothesis correctly.
 
-<div class="card">
-	<header class="card-header">
-		<p class="card-header-title card-toggle">Why is that</p>
-	</header>
-	<div class="card-content is-hidden">
-		<div class="content">
-			For cancer screening, we definitely don't want to miss out some real cancer samples. If we are using "the sample is a cancer sample" as a hypothesis, we would like to reduce type I errors. However, if we are using "the sample is not a cancer sample" as a hypothesis, we would like to reduce type II errors. In fact, null hypothesis should be the statement "the sample is not a cancer sample".
-		</div>
-	</div>
-</div>
+{{< card title="Why is it import that we design the null hypothesis carefully?" >}}
+For cancer screening, we definitely don't want to miss out some real cancer samples. If we are using "the sample is a cancer sample" as a hypothesis, we would like to reduce type I errors. However, if we are using "the sample is not a cancer sample" as a hypothesis, we would like to reduce type II errors. In fact, null hypothesis should be the statement "the sample is not a cancer sample".
+{{</card>}}
 
 
 If we look at the threshold of p-value in a hypothesis testing, we are basically managing the risks of different types of errors.
@@ -67,5 +59,6 @@ We will denote the threshold of the hypothesis testing as $p_t$. If the $p < p_t
 
 In hypothesis testing, it is crucial that we place the actual null hypothesis $H_0$ we would like to test so that type I error is the type of error we care about.
 
+{{< message class="warning">}}
 However, I believe that the theory doesn't prevent us from using a non-null hypothesis if we insist. But null hypothesis is the most important one when we are dealing with new findings. If you have different opinions, I would appreciate it if you leave a comment.
-{: .notes--warning}
+{{</message>}}
