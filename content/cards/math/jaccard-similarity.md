@@ -1,10 +1,10 @@
 ---
 title: "Jaccard Similarity"
-excerpt: ""
+description: ""
 date: 2019-05-06
 category:
 - 'Math'
-tag:
+tags:
 - 'Set'
 - 'Distance'
 references:

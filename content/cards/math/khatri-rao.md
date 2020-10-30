@@ -1,10 +1,10 @@
 ---
 title: "Khatri-Rao Product"
-excerpt: ""
+description: ""
 date: 2019-06-18
 category:
 - 'Math'
-tag:
+tags:
 - 'Tensor'
 - 'Linear Algebra'
 references:

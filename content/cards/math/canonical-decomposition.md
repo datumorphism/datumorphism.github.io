@@ -1,10 +1,10 @@
 ---
 title: "Canonical Decomposition"
-excerpt: "Canonical decomposition"
+description: "Canonical decomposition"
 date: 2019-06-18
 category:
 - 'Math'
-tag:
+tags:
 - 'Tensor'
 - 'Factorization'
 - 'Linear Algebra'

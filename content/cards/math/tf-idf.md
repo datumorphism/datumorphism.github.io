@@ -1,10 +1,10 @@
 ---
 title: "Term Frequency - Inverse Document Frequency"
-excerpt: ""
+description: ""
 date: 2019-05-06
 category:
 - 'Math'
-tag:
+tags:
 - 'NLP'
 references:
 - name: Tf-idf

@@ -1,10 +1,10 @@
 ---
 title: "Modes and Slices of Tensors"
-excerpt: "Simple decomposition of tensors"
+description: "Simple decomposition of tensors"
 date: 2019-06-18
 category:
 - 'Math'
-tag:
+tags:
 - 'Tensor'
 references:
 - name: Tensor Decompositions and Applications by Tamara G. Kolda and Brett W. Bader

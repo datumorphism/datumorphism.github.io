@@ -1,10 +1,10 @@
 ---
 title: "SVD: Singular Value Decomposition"
-excerpt: ""
+description: ""
 date: 2019-06-18
 category:
 - 'Math'
-tag:
+tags:
 - 'Matrix'
 - 'Factorization'
 - 'Linear Algebra'

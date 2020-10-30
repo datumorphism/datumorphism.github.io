@@ -1,15 +1,15 @@
 ---
 title: "Combinations"
-excerpt: ""
+description: ""
 date: 2019-04-07
 category:
 - 'Math'
-tag:
+tags:
 - 'Combinations'
 - 'Basics'
 references:
-- name: 
-  link: 
+- name:
+  link:
 ---
 
 Choose X from N is

@@ -1,10 +1,10 @@
 ---
 title: "Tucker Decomposition"
-excerpt: "Tucker decomposition of a generalization of SVD to higher ranks"
+description: "Tucker decomposition of a generalization of SVD to higher ranks"
 date: 2019-06-18
 category:
 - 'Math'
-tag:
+tags:
 - 'Tensor'
 - 'Factorization'
 - 'Linear Algebra'

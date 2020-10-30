@@ -1,10 +1,10 @@
 ---
 title: "n-gram"
-excerpt: ""
+description: ""
 date: 2019-05-19
 category:
 - 'Math'
-tag:
+tags:
 - 'NLP'
 references:
 - name: words/n-gram

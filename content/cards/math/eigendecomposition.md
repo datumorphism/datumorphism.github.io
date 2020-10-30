@@ -1,10 +1,10 @@
 ---
 title: "Eigenvalues and Eigenvectors"
-excerpt: ""
+description: ""
 date: 2019-05-06
 category:
 - 'Math'
-tag:
+tags:
 - 'Linear Algebra'
 - 'Basics'
 references:
