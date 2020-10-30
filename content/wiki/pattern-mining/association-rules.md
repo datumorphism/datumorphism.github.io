@@ -1,21 +1,19 @@
 ---
 title: "Association Rules"
-excerpt: "Frequent patterns using association rules"
+description: "Frequent patterns using association rules"
 date: 2019-01-06
-toc: true
 category:
 - 'Pattern Mining'
-tag:
+tags:
 - 'Basics'
 - 'Pattern'
 references:
 - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
   link: ''
+links:
+  - /wiki/statistics/correlation-analysis-chi-square.md
 weight: 1
 ---
-
-* ToC
-{:toc}
 
 Association rule is a method for pattern mining. In this article, we perform an association rule analysis of some demo data.
 
@@ -49,13 +47,13 @@ We have collected the following data. Beware that this small amount of data migh
 ## The Rule, Support, and Confidence
 
 
-Association rule should contain a rule, support, and confidence.
+Association rule has three components: the rule, the support, and the confidence.
 
 $$
 \text{Milk} \Rightarrow \text{Croissant} [ \text{support} = 2/5, \text{confidence} = 2/3  ]
 $$
 
-In this rule, the first part means that if the customers are buying milk they buy croissants too. **Support** is the probability of the records with both milk and croissant (2) among all the records (5). **Confidence** is the conditional probability that the records have croissant given milk in the record.
+In this rule, the first part is the rule it self, $\text{Milk} \Rightarrow \text{Croissant}$. It means that if the customers are buying milk they buy croissants too. The **support** is the probability of the records with both milk and croissant (2) among all the records (5). The **confidence** is the conditional probability that the records have croissant given milk in the record.
 
 Then we define two thresholds that tell us whether this rule is valid.
 
@@ -64,9 +62,9 @@ Then we define two thresholds that tell us whether this rule is valid.
 
 If the support and confidence are both larger than the thresholds, we say the rule is valid.
 
-<div class="notes--info" markdown="1">
+{{< message class="info" >}}
 Sometimes it is easier to deal with **support counts** instead of support probability itself.
-</div>
+{{< /message >}}
 
 It is, however, very hard to calculate association rules with many items without a smart idea. Suppose we have 10 items, the total number of possible association rules is 10!=3628800. It is not practical to explore all the possible combinations.
 
@@ -213,18 +211,22 @@ becomes vertical data format if we have
 
 Finding frequent itemsets becomes set operations. For examples, to calculate the support count of {coffee, croissant}, we will find the intersection of the two item id sets associated with coffee and croissant, i.e.,
 
+{{<m>}}
 \begin{equation}
-\\{2,3,4,5,11\\} \cap \\{1,2,3,4,7,8,9,10,11\\} = \\{ 2,3,4,11 \\}
+\{2,3,4,5,11\} \cap \{1,2,3,4,7,8,9,10,11\} = \{ 2,3,4,11 \}
 \end{equation}
+{{</m>}}
 
 
 ## The Right Way of Using Association Rules
 
 From the previous calculations, we find the association rule
 
+{{<m>}}
 \begin{equation}
 \text{coffee} \Rightarrow \text{croissant} [ \text{support} = 45\%,\text{confidence} = 83\% ]
 \end{equation}
+{{</m>}}
 
 We know that the support for croissants is 82%. The fact that the confidence of this association rule is 83% makes this association rule not so interesting. Even without buying coffee, 82% of the records already have croissants in it. Buying coffee first doesn't really increase the probability of purchasing croissant significantly.
 
