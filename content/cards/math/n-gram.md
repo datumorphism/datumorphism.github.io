@@ -1,6 +1,5 @@
 ---
 title: "n-gram"
-description: ""
 date: 2019-05-19
 category:
 - 'Math'
@@ -19,7 +18,7 @@ n-gram is a method to split words into set of substring elements so that those c
 
 Use the following examples to get your first idea about it. I created two columns so that we could **compare the n-grams of two different words side-by-side**.
 
-
+{{< rawhtml >}}
 <div id="app">
 
 <div class="columns">
@@ -61,7 +60,7 @@ Use the following examples to get your first idea about it. I created two column
 
 </div>
 
-{% include extras/vue.html %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <script>
 
@@ -162,3 +161,4 @@ var app = new Vue({
     }
 })
 </script>
+{{< /rawhtml >}}

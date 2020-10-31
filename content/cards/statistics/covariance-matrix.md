@@ -1,10 +1,10 @@
 ---
 title: "Covariance Matrix"
-excerpt: "Also known as the second central moment is a measurement of the spread."
+description: "Also known as the second central moment is a measurement of the spread."
 date: 2020-03-10
 category:
 - 'Math'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 references:
@@ -12,7 +12,9 @@ references:
   link: https://en.wikipedia.org/wiki/Covariance_matrix
 ---
 
-> We use Einstein's summation convention.
+{{< message class="info">}}
+We use Einstein's summation convention.
+{{</message>}}
 
 Covariance of two discrete series $A$ and $B$ is defined as
 
@@ -28,8 +30,8 @@ $$
 \mathrm{Cov}({A,B}) = E( A,B ) - \bar A \bar B.
 $$
 
-<div class="notes--info" markdown="1">
 
+{{< message class="info" >}}
 At first glance, the square in the definition seems to be only for notation purpose at this point.
 
 Meanwhile, using this idea of the mean of geometric mean, we could easily generalize it to the covariance of three series,
@@ -41,31 +43,34 @@ $$
 or even arbitrary N series,
 
 $$
-\sigma_{A_1, A_2, ..., A_N }^N = \frac{ \sum_{i=1}^{n} \text{ geometric mean of the ith elements to the Nth power }  }{ n-1 }  = \frac{  (a_{1,i} - \bar A_1) \cdots (a_{N,i} - \bar A_{N})}{ n-1 },
+\begin{align}
+\sigma_{A_1, A_2, ..., A_N }^N &= \frac{ \sum_{i=1}^{n} \text{ geometric mean of the ith elements to the Nth power }  }{ n-1 } \\\\
+&= \frac{  (a_{1,i} - \bar A_1) \cdots (a_{N,i} - \bar A_{N})}{ n-1 },
+\end{align}
 $$
 
 which should be called the covariance of all the N series, $\mathrm{Cov} ({A_1, A_2,\cdots, A_N })$.
 
 We do not use these since we could easily build a covariance matrix to indicate all the possible covariances between any two variables.
 
-</div>
+{{</message>}}
 
 For a complete picture of the data, we build a matrix for all the possible combinations of the covariances,
 
-$$
+{{<m>}}
 \mathbf{C} = \begin{pmatrix}
 \mathrm{Cov} (A_1, A_1) & \mathrm{Cov} (A_1, A_2) \\
 \mathrm{Cov} (A_2, A_1) & \mathrm{Cov} (A_2, A_2)
 \end{pmatrix}.
-$$
+{{</m>}}
 
 For real series, $\mathrm{Cov} (A_2, A_1) = \mathrm{Cov} (A_1, A_2)$.
 
-<div class="notes--info" markdown="1">
+{{< message class="info">}}
 
 The covariance matrix of complex numbers and quaternions is not necessariy symmetric. A more general concept of symmetries is Hermitian.
 
-</div>
+{{</message>}}
 
 Given a dataset $X$,
 

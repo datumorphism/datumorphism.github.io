@@ -1,10 +1,9 @@
 ---
 title: "Bayes' Theorem"
-excerpt: ""
 date: 2019-06-18
 category:
 - 'Math'
-tag:
+tags:
 - 'Statistics'
 - 'Bayesian'
 references:
@@ -21,15 +20,9 @@ $$
 1. $P(A\mid B)$: likelihood of A given B
 2. $P(A)$: marginal probability of A
 
-There is a nice tree diagram for the Bayes' theorem on wikipedia.
+There is a nice tree diagram for the Bayes' theorem on Wikipedia.
 
 
-<figure markdown="1">
-![](../assets/bayes-theorem/bayes-theorem.png)
-<figcaption markdown="1">
-Tree diagram of Bayes' theorem
-</figcaption>
-</figure>
-
+{{< figure src="../assets/bayes-theorem/bayes-theorem.png" caption="Tree diagram of Bayes' theorem" >}}
 
 

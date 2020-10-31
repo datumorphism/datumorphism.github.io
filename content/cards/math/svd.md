@@ -1,6 +1,5 @@
 ---
 title: "SVD: Singular Value Decomposition"
-description: ""
 date: 2019-06-18
 category:
 - 'Math'
@@ -25,9 +24,5 @@ Here we have $\mathbf U$ being constructed by the eigenvectors of $\mathbf X \ma
 
 I find this slide from Christoph Freudenthaler very useful. The original slide has been added as a reference to this article.
 
-<figure markdown="1">
-![](../assets/svd/svd-visualized.jpg)
-<figcaption markdown="1">
-SVD visualized by Christoph Freudenthaler
-</figcaption>
-</figure>
+{{< figure src="../assets/svd/svd-visualized.jpg" caption="SVD visualized by Christoph Freudenthaler">}}
+

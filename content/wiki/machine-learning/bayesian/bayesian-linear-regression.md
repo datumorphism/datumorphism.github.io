@@ -15,6 +15,8 @@ references:
     link: https://wiseodd.github.io/techblog/2017/01/05/bayesian-regression/
   - name: "zjost/bayesian-linear-regression"
     link: https://github.com/zjost/bayesian-linear-regression
+links:
+  - cards/statistics/bayes-theorem.md
 weight: 2
 ---
 

@@ -19,6 +19,8 @@ references:
     name: What is the practical difference between abstract index notation and “ordinary” index notation
   - link: https://medium.com/@keremturgutlu/tensor-decomposition-fast-cnn-in-your-pocket-f03e9b2a6788
     name: "Tensor Decomposition: Fast CNN in your pocket"
+links:
+  - cards/math/canonical-decomposition.md
 weight: 3
 ---
 
@@ -32,4 +34,5 @@ In this article, we follow a commonly used convention for tensors in physics, th
 {{< message title="Okay, But Why" class="info">}}
 
 What is usually seen in blog posts is the use of component forms of tensors, $T^{\alpha\beta\cdots}_{\phantom{\alpha\beta\cdots}\gamma\delta\cdots}$. Those are the numbers for a given basis. We would like to keep it general.
+
 {{</message>}}

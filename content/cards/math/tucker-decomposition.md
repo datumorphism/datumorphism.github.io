@@ -11,15 +11,13 @@ tags:
 references:
 - name: Matrix and Tensor Factorization from a Machine Learning Perspective
   link: http://statmath.wu.ac.at/research/talks/resources/talkfreudenthaler.pdf
+links:
+  - cards/math/modes-and-slices-of-tensor.md
 ---
 
 
 
 I find this slide from Christoph Freudenthaler very useful. For the definition of mode 1/2/3 unfold, please refer to [Modes and Slices of Tensors](../modes-and-slices-of-tensor).
 
-<figure markdown="1">
-![](../assets/tucker-decomposition/tucker-decomposition-visualized.jpg)
-<figcaption markdown="1">
-Tucker decomposition visualized by Christoph Freudenthaler
-</figcaption>
-</figure>
+{{< figure src="../assets/tucker-decomposition/tucker-decomposition-visualized.jpg" caption="Tucker decomposition visualized by Christoph Freudenthaler" >}}
+

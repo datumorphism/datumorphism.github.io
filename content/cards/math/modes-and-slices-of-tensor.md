@@ -12,17 +12,10 @@ references:
 ---
 
 
-<figure markdown="1">
-![](../assets/modes-and-slices-of-tensor/fibers-of-3rd-order-tensor.jpg)
-<figcaption markdown="1">
-Modes of a tensor
-</figcaption>
-</figure>
+{{< figure src="../assets/modes-and-slices-of-tensor/fibers-of-3rd-order-tensor.jpg" title="Modes of a tensor">}}
 
-<figure markdown="1">
-![](../assets/modes-and-slices-of-tensor/slices-of-3rd-order-tensor.jpg)
-<figcaption markdown="1">
-Slices of a tensor
-</figcaption>
-</figure>
+
+
+{{< figure src="../assets/modes-and-slices-of-tensor/slices-of-3rd-order-tensor.jpg" title="Slices of a tensor" >}}
+
 

@@ -4,13 +4,15 @@ description: "LDA"
 date: 2018-05-25
 category:
   - "Machine Learning"
-tag:
+tags:
   - "Unsupervised Learning"
   - "Supervised Learning"
   - "Statistical Learning"
   - "Basics"
   - "Linear Models"
   - "Classification"
+links:
+  - cards/statistics/bayes-theorem.md
 weight: 3
 published: false
 ---

@@ -1,20 +1,19 @@
 ---
 title: "Cosine Similarity"
-description: ""
 date: 2019-05-06
 category:
-- 'Math'
+  - 'Math'
 tags:
-- 'Set'
-- 'Distance'
+  - 'Set'
+  - 'Distance'
 references:
-- name: Cosine Similarity
-  link: https://en.wikipedia.org/wiki/Cosine_similarity
+  - name: Cosine Similarity
+    link: https://en.wikipedia.org/wiki/Cosine_similarity
 links:
-- cards/math/jaccard-similarity.md
+  - cards/math/jaccard-similarity.md
 ---
 
-As simple as inner product of two vectors
+As simple as the inner product of two vectors
 
 $$
 d_{cos} = \frac{\vec A}{\vert \vec A \vert}  \cdot \frac{\vec B }{ \vert \vec B \vert}
@@ -29,9 +28,11 @@ To use cosine similarity, we have to vectorize the words first. There are many d
 
 Term frequency is the occurrence of the words. We do not deal with duplications so duplicate words will have some effect on the similarity.
 
+{{< message class="warning">}}
 In principle, we could also use word set for a sentence to remove the effect of duplicate words. In most cases, if a word is repeating, it would indeed make the sentences different. If duplicating words are becoming a problem, we will consider using [tf-idf](http://www.tfidf.com/).
-{: .notes--warning}
+{{</message>}}
 
+{{< rawhtml >}}
 <div id="app">
 <div class="columns">
   <div class="column has-text-centered">
@@ -87,7 +88,7 @@ In principle, we could also use word set for a sentence to remove the effect of 
 
 </div>
 
-{% include extras/vue.html %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <script>
 
@@ -189,3 +190,4 @@ var app = new Vue({
     }
 })
 </script>
+{{< /rawhtml >}}

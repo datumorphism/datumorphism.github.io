@@ -1,10 +1,9 @@
 ---
 title: "Cramér's V"
-excerpt: ""
 date: 2019-07-20
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Correlation'
 references:

@@ -1,12 +1,11 @@
 ---
 title: "Jaccard Similarity"
-description: ""
 date: 2019-05-06
 category:
-- 'Math'
+  - 'Math'
 tags:
-- 'Set'
-- 'Distance'
+  - 'Set'
+  - 'Distance'
 references:
 - name: Jaccard index
   link: https://en.wikipedia.org/wiki/Jaccard_index
@@ -32,6 +31,7 @@ If the two sets have nothing in common, we have $J(A,B)=0$ or $d_J(A,B)=1$. We h
 
 ## Examples
 
+{{< rawhtml >}}
 <div id="app">
 <div class="columns">
   <div class="column has-text-centered">
@@ -82,7 +82,7 @@ If the two sets have nothing in common, we have $J(A,B)=0$ or $d_J(A,B)=1$. We h
 
 </div>
 
-{% include extras/vue.html %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <script>
 Vue.component('words-list', {
@@ -131,3 +131,4 @@ var app = new Vue({
     }
 })
 </script>
+{{</rawhtml>}}

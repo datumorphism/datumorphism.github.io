@@ -1,10 +1,9 @@
 ---
 title: "Poisson Process"
-excerpt: ""
 date: 2019-06-18
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Poisson Process'
 references:
@@ -14,17 +13,20 @@ references:
 
 ## Poisson Process
 
+{{< rawhtml >}}
 <div id="graph"></div>
+{{< /rawhtml >}}
 
 ## Statistics
 
+{{< rawhtml >}}
 <div id="graph_rate"></div>
-
 
 <div id="graph_interval_hist"></div>
 
-{% include extras/poisson-process.html %}
-{% include extras/plotlyjs.html %}
+<script src="/assets/utilities/js/poisson-process.min.js"></script>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <script>
         // define getUnixTime
@@ -181,3 +183,4 @@ references:
 
     p.start()
         </script>
+{{< rawhtml >}}

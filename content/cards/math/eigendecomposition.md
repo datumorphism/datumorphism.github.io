@@ -1,12 +1,11 @@
 ---
 title: "Eigenvalues and Eigenvectors"
-description: ""
 date: 2019-05-06
 category:
-- 'Math'
+  - 'Math'
 tags:
-- 'Linear Algebra'
-- 'Basics'
+  - 'Linear Algebra'
+  - 'Basics'
 references:
   - name: Eigenvectors and Eigenvalues @ Explained Visually
     link: https://setosa.io/ev/eigenvectors-and-eigenvalues/

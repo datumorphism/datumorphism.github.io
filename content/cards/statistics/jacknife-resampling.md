@@ -1,10 +1,10 @@
 ---
 title: "Jackknife Resampling"
-excerpt: "Jackknife resampling method"
+description: "Jackknife resampling method"
 date: 2020-01-26
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 references:
 - name: Jackknife Resampling
@@ -15,7 +15,7 @@ published: true
 
 Jackknife resampling is a method for estimation of the mean and higher order moments.
 
-Given a sample $\{x_i\}$ of size $n$ for the distribution $X$, the jackknife resampling estimates the mean by leaving out each data point systematically. $n$ estimations of the mean will be obtained, with each of the estimations $x_i$
+Given a sample $\\{x_i\\}$ of size $n$ for the distribution $X$, the jackknife resampling estimates the mean by leaving out each data point systematically. $n$ estimations of the mean will be obtained, with each of the estimations $x_i$
 
 $$
 \bar x_i = \frac{1}{n-1} \sum_{j\neq i} x_j.

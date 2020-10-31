@@ -1,6 +1,5 @@
 ---
 title: "Levenshtein Distance"
-description: ""
 date: 2019-05-19
 category:
 - 'Math'
@@ -8,32 +7,34 @@ tags:
 - 'Distance'
 - 'NLP'
 references:
-- name: levenshtein-distance @ trekhleb/javascript-algorithms
+- name: "levenshtein-distance @ trekhleb/javascript-algorithms"
   link: https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/string/levenshtein-distance
 ---
 
 Levenshtein distance calculates the number of operations needed to change one word to another by applying single-character edits (insertions, deletions or substitutions).
 
-The reference explains this concept very well. For consitency of this notes, I extracted a paragraph from it which explains the operations in Levenshtein algorithm. The source of the following paragraph is the first reference of this article.
+The reference explains this concept very well. For consistency, I extracted a paragraph from it which explains the operations in Levenshtein algorithm. The source of the following paragraph is the first reference of this article.
 
-> ![Levenshtein Matrix](../assets/levenshtein-distance/levenshtein-matrix.png)
->
-> - Cell `(0:1)` contains red number 1. It means that we need 1 operation to transform `M` to an empty string. And it is by deleting `M`. This is why this number is red.
-> - Cell `(0:2)` contains red number 2. It means that we need 2 operations to transform `ME` to an empty string. And it is by deleting `E` and `M`.
-> - Cell `(1:0)` contains green number 1. It means that we need 1 operation to transform an empty string to `M`. And it is by inserting `M`. This is why this number is green.
-> - Cell `(2:0)` contains green number 2. It means that we need 2 operations to transform an empty string to `MY`. And it is by inserting `Y` and  `M`.
-> - Cell `(1:1)` contains number 0. It means that it costs nothing to transform `M` into `M`.
-> - Cell `(1:2)` contains red number 1. It means that we need 1 operation to transform `ME` to `M`. And it is by deleting `E`.
-> - And so on...
->
-> From: [levenshtein-distance @ trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/string/levenshtein-distance)
+{{< message title="Levenshtein Matrix" class="info" >}}
 
+![Levenshtein Matrix](../assets/levenshtein-distance/levenshtein-matrix.png)
 
+- Cell `(0:1)` contains red number 1. It means that we need 1 operation to transform `M` to an empty string. And it is by deleting `M`. This is why this number is red.
+- Cell `(0:2)` contains red number 2. It means that we need 2 operations to transform `ME` to an empty string. And it is by deleting `E` and `M`.
+- Cell `(1:0)` contains green number 1. It means that we need 1 operation to transform an empty string to `M`. And it is by inserting `M`. This is why this number is green.
+- Cell `(2:0)` contains green number 2. It means that we need 2 operations to transform an empty string to `MY`. And it is by inserting `Y` and  `M`.
+- Cell `(1:1)` contains number 0. It means that it costs nothing to transform `M` into `M`.
+- Cell `(1:2)` contains red number 1. It means that we need 1 operation to transform `ME` to `M`. And it is by deleting `E`.
+- And so on...
+
+From: [levenshtein-distance @ trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/string/levenshtein-distance)
+
+{{</message>}}
 
 
 ## Examples
 
-
+{{< rawhtml >}}
 <div id="app">
 <div class="columns">
   <div class="column has-text-centered">
@@ -67,7 +68,7 @@ The reference explains this concept very well. For consitency of this notes, I e
 
 </div>
 
-{% include extras/vue.html %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <script>
 
@@ -163,3 +164,4 @@ var app = new Vue({
     }
 })
 </script>
+{{< /rawhtml >}}

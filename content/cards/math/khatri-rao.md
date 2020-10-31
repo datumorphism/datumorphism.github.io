@@ -1,15 +1,14 @@
 ---
 title: "Khatri-Rao Product"
-description: ""
 date: 2019-06-18
 category:
-- 'Math'
+  - 'Math'
 tags:
-- 'Tensor'
-- 'Linear Algebra'
+  - 'Tensor'
+  - 'Linear Algebra'
 references:
-- name: Kronecker product
-  link: https://en.wikipedia.org/wiki/Kronecker_product#Khatri%E2%80%93Rao_product
+  - name: Kronecker product
+    link: https://en.wikipedia.org/wiki/Kronecker_product#Khatri%E2%80%93Rao_product
 ---
 
 Choose X from N is
