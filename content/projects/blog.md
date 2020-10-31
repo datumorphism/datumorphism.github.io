@@ -16,8 +16,8 @@ coordinators:
 date: 2019-04-07
 status: In Progress
 sections:
-  - posts
+  - blog
 ---
 
 
-Read the posts [here](/posts).
+Read the posts [here](/blog).

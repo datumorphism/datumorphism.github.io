@@ -16,10 +16,10 @@ menu:
       identifier: about
       url: /about/
   topright:
-    - name: Posts
+    - name: Blog
       weight: 1
-      identifier: posts
-      url: /posts/
+      identifier: blog
+      url: /blog/
 
 taxonomies:
     tag: "tags"

@@ -1,4 +1,5 @@
 ---
+type: reading
 title:  "Data Mining: Concepts and Techniques"
 date: 2018-08-01 #2014-08-27T11:57:41-04:00
 modified: 2019-01-06
@@ -10,7 +11,7 @@ types:
 - 'book'
 category:
 - theory
-tag:
+tags:
 - 'data mining'
 summary: How data mining was done in the past
 status: 70%
