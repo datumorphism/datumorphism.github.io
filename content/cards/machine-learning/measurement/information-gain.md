@@ -1,11 +1,11 @@
 ---
 title: "Information Gain"
-excerpt: "The information is a measurement of the entropy of the dataset."
+description: "The information is a measurement of the entropy of the dataset."
 date: 2020-01-16
 category:
 - 'Machine Learning'
 - 'Measurement'
-tag:
+tags:
 - 'Data'
 references:
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms."
@@ -49,8 +49,4 @@ The information gain is thus
 $$
 Gain = S_m - S'_m.
 $$
-
-
-
-
 

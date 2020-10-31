@@ -1,10 +1,10 @@
 ---
 title: "skipgram: Continuous skip-gram"
-excerpt: "Use the center word to predict the context"
+description: "Use the center word to predict the context"
 date: 2020-01-16
 category:
 - 'Machine Learning::Embedding'
-tag:
+tags:
 - 'Word2vec'
 references:
   - name: "Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv:1301.3781"

@@ -1,10 +1,10 @@
 ---
 title: "Negative Sampling"
-excerpt: "negative sampling makes the calculations faster"
+description: "negative sampling makes the calculations faster"
 date: 2020-01-16
 category:
 - 'Machine Learning::Embedding'
-tag:
+tags:
 - 'Word2vec'
 references:
   - name: "Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv:1301.3781"
@@ -12,6 +12,9 @@ references:
     key: mikolov2013
   - name: "The Illustrated Word2vec"
     link: "http://jalammar.github.io/illustrated-word2vec/"
+links:
+  - cards/machine-learning/embedding/continuous-bag-of-words.md
+  - cards/machine-learning/embedding/continuous-skip-gram.md
 ---
 
 > Knowledge of [CBOW](/cards/machine-learning/embedding/continuous-bag-of-words/) or [skipgram](/cards/machine-learning/embedding/continuous-skip-gram/) is required.

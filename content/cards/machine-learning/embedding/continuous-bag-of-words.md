@@ -1,11 +1,11 @@
 ---
 title: "CBOW: Continuous Bag of Words"
-excerpt: "Use the context to predict the center word"
+description: "Use the context to predict the center word"
 date: 2020-01-16
 category:
-- 'Machine Learning::Embedding'
-tag:
-- 'Word2vec'
+  - 'Machine Learning::Embedding'
+tags:
+  - 'Word2vec'
 references:
   - name: "Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv:1301.3781"
     link: "https://arxiv.org/abs/1301.3781"
@@ -14,7 +14,9 @@ references:
     link: "http://jalammar.github.io/illustrated-word2vec/"
 ---
 
-> Here we encode all words presented in the corpus to demostrate the idea of CBOW. In the real world, we might want to remove some certain words such as `the`.
+{{< message class="info" >}}
+Here we encode all words presented in the corpus to demostrate the idea of CBOW. In the real world, we might want to remove some certain words such as `the`.
+{{</message>}}
 
 We use the following quote by Ford in Westworld as an example.
 

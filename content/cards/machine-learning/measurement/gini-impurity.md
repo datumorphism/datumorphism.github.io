@@ -1,6 +1,6 @@
 ---
 title: "Gini Impurity"
-excerpt: "The Gini impurity is a measurement of the impurity of a set."
+description: "The Gini impurity is a measurement of the impurity of a set."
 date: 2020-01-16
 category:
 - 'Machine Learning'
@@ -20,7 +20,9 @@ supplementary:
     link: https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb
 ---
 
-> The code used in this article can be found in [this repo](https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb).
+{{< message class="info" >}}
+The code used in this article can be found in [this repo](https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb).
+{{< /message >}}
 
 Suppose we have a dataset $\\{0,1\\}^{10}$, which has 10 records and 2 possible classes of objects $\\{0,1\\}$ in each record.
 
