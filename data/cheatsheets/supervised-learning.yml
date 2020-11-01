@@ -1,43 +1,45 @@
+name: Supervised Learning
+list:
 - name: k-Nearest Neighbors
   keywords:
     - Supervised Learning
     - Classification
-  link: 
+  link:
   tools:
     - scikit-learn
-  description: 
+  description:
 - name: Linear Regression
   keywords:
     - Supervised Learning
     - Regression
-  link: 
+  link:
   tools:
     - scikit-learn
-  description: 
+  description:
 - name: Lasso
   keywords:
     - Supervised Learning
     - Regression
     - Regularization
-  link: 
+  link:
   tools:
     - scikit-learn
-  description: 
+  description:
 - name: Ridge
   keywords:
     - Supervised Learning
     - Regression
     - Regularization
-  link: 
+  link:
   tools:
     - scikit-learn
-  description: 
+  description:
 - name: ElasticNet
   keywords:
     - Supervised Learning
     - Regression
     - Regularization
-  link: 
+  link:
   tools:
     - scikit-learn
-  description: 
+  description:

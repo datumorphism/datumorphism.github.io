@@ -5,8 +5,9 @@ description: Easy references
 exclude: true
 category:
 - 'Cheatsheets'
-weight: -1
 ---
+
+{{< awesomecheatsheets >}}
 
 <div class="columns is-desktop">
     <div class="column is-2">
@@ -33,5 +34,3 @@ weight: -1
         {% endfor %}
     </div>
 </div>
-
-{% include highlight-get-params.html %}

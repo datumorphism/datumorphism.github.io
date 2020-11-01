@@ -5,7 +5,6 @@ description: The path that I follow
 exclude: true
 category:
 - 'Curriculum'
-weight: 2
 ---
 
 
@@ -23,7 +22,7 @@ alternatives:
 
 ### Computer Science
 
-> These theories make people think faster. They don't pose direct limits on what data scientist can do but they will definitely give data scientists a boost.
+> These theories make people think faster. They don't pose direct limits on what data scientists can do but they will definitely give data scientists a boost.
 
 - Data Structures
 - Complexity

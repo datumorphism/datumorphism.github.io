@@ -1,0 +1,11 @@
+<div>
+    {{ range $.Site.Data.cheatsheets }}
+    <h3 id="{ cat[0] }">{{ .name }}</h3>
+    <ol type="1">
+        {{ range .list }}
+            <li> <a href="{{ .link }}" style="text-decoration: none;" target="_blank">  {{ .name }} </a> {{ if .keywords }} [<div class="tags" style="display: inline;"> {{ range .keywords }} <span class="tag">{{ . }}</span> {{ end }} </div>] {{ end }}: {{ .description }}
+            </li>
+        {{ end }}
+    </ol>
+    {{ end }}
+</div>

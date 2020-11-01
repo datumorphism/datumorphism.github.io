@@ -5,6 +5,7 @@ description: Curated list of researchers
 exclude: true
 ---
 
+{{< awesomeresearchers >}}
 
 <div class="columns is-desktop">
     <div class="column is-2">
@@ -31,5 +32,3 @@ exclude: true
         {% endfor %}
     </div>
 </div>
-
-{% include highlight-get-params.html %}

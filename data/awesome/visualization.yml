@@ -1,8 +1,10 @@
+name: "Visualization"
+list:
 - name: G2
   keywords:
     - Library
     - Javascript
-  link: 'https://antv.alipay.com/zh-cn/g2/3.x/demo/index.html' 
+  link: 'https://antv.alipay.com/zh-cn/g2/3.x/demo/index.html'
   description: AntV team
 - name: Viser
   keywords:
@@ -14,13 +16,13 @@
     - Library
     - Javascript
   link: https://github.com/svgdotjs/svg.js
-  description: 
+  description:
 - name: P5
   keywords:
     - Library
     - Javascript
   link: https://p5js.org/examples/
-  description: 
+  description:
 - name: Chartist
   keywords:
     - Library
