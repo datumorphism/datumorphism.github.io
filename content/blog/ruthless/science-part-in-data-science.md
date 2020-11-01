@@ -3,7 +3,7 @@ layout: post
 title: "The Science Part in Data Science"
 category:
 - blog
-tag:
+tags:
 - Ruthless Data Scientist
 comments: true
 author: "OctoMiao"

@@ -3,7 +3,7 @@ layout: post
 title: "Experiments in Biology"
 category:
 - blog
-tag:
+tags:
 - Ruthless Data Scientist
 comments: true
 author: "OctoMiao"
