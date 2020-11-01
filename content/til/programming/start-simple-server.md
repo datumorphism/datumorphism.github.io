@@ -9,7 +9,7 @@ category:
 tags:
 - 'Python'
 - 'Web'
-excerpt: With one line of python command
+summary: With one line of python command
 ---
 
 Sometimes we debug html locally but run into the error

@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - LaTeX
-excerpt: Positioning textblock in LaTeX Beamer using textpos package and eso pic package
+summary: Positioning textblock in LaTeX Beamer using textpos package and eso pic package
 ---
 
 There are times that we wanted to position an equation on the top right of the slide in beamer. The easiest way to do it is to use two packages: `textpos` and `eso-pic`. `textpos` package positions the textblock, while `eso-pic` sets up a grid system on the slides.

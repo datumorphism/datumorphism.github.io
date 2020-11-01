@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Git
-excerpt: My git asks for password every time I pull or push even with ssh configured.
+summary: My git asks for password every time I pull or push even with ssh configured.
 ---
 
 
@@ -19,7 +19,7 @@ However, git asks for password each time I pull or push, which made me very curi
 
 What I found is that I should use the short ssh name defined in ssh config instead of the full ssh path in git.
 
-For example, I have a ssh account `mk@urmy.sunshine.com`. For convenience I defined a short name for it.
+For example, I have an ssh account `mk@urmy.sunshine.com`. For convenience, I defined a short name for it.
 
 ```
 Host mksunshine

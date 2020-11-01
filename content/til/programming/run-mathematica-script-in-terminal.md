@@ -8,7 +8,7 @@ category:
 - 'basics'
 tags:
 - 'Mathematica'
-excerpt: Using math -run or wolfram -run we could execute a Mathematica script through ssh in terminal.
+summary: Using math -run or wolfram -run we could execute a Mathematica script through ssh in terminal.
 ---
 
 A Mathematica script that can be run though ssh should be pure script like a `.m` file of Mathematica.

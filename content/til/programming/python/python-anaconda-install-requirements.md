@@ -12,7 +12,7 @@ tags:
 references:
   - name: "Use 'pip install' in the virtual environment created by conda"
     link: https://github.com/ContinuumIO/anaconda-issues/issues/1429
-excerpt: Why is pip install -r requirements.txt not working?
+summary: Why is pip install -r requirements.txt not working?
 ---
 
 It is quite common to use `requirements.txt` to specify the python package requirements for the project. What is usually done is

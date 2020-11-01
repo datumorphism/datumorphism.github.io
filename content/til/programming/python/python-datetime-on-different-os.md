@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: Python datetime on different os behaves inconsistently
+summary: Python datetime on different os behaves inconsistently
 ---
 
 ## Python datetime on Linux and Mac
@@ -38,7 +38,7 @@ This is a difference between linux and mac.
 There is another example: https://repl.it/@emptymalei/Strange-Datetime-Parser-in-Python
 
 
-<iframe height="400px" width="100%" src="https://repl.it/@emptymalei/Strange-Datetime-Parser-in-Python?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+{{< repl url="https://repl.it/@emptymalei/Strange-Datetime-Parser-in-Python?lite=true" >}}
 
 In case the repl.it embedding does not work, here is the code.
 

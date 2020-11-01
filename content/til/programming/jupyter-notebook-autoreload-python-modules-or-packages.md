@@ -9,7 +9,7 @@ category:
 tags:
 - Python
 - Jupyter
-excerpt: Python package or python module autoreloading in jupyter notebook
+summary: Python package or python module autoreloading in jupyter notebook
 ---
 
 In many cases, we include local packages or modules in jupyter notebooks. While it makes the code easier to read, packages or modules have to be hot reloaded everytime we make some changes to them.

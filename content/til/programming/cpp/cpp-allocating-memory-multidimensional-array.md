@@ -8,10 +8,10 @@ category:
 - programming
 tags:
 - 'C++'
-excerpt: Some caveats
+summary: Some caveats
 ---
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 #include <typeinfo>
 
@@ -38,12 +38,11 @@ int main() {
   // std::cout << typeid(a5).name() << endl;
 
 }
-
-{% endhighlight %}
+```
 
 The outputs are
 
-{% highlight txt %}
+```txt
 gcc version 4.6.3
 
 PA1000_i
@@ -51,9 +50,9 @@ PA1000_A10_i
 PPi
 Pi
 Pi
-
-{% endhighlight %}
+```
 
 And multidimensional arrays by default are contiguous in memory.
 
 <script src="//repl.it/embed/LHJd/46.js"></script>
+{{< repl url="https://repl.it/@emptymalei/multidimensional-arrays?lite=true">}}

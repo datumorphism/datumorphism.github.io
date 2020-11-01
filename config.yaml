@@ -20,6 +20,10 @@ menu:
       weight: 1
       identifier: blog
       url: /blog/
+    - name: Tags
+      weight: 2
+      identifier: tags
+      url: /tags/
 
 taxonomies:
     tag: "tags"
@@ -41,6 +45,7 @@ params:
   hide_author: false # Optional, set true to hide author name on posts
   images: # Suggested, controls default OpenGraph images controls author name display on meta tag
   graphbutton: true
+  tagcloudbutton: true
   github: "datumorphism" # Optional, to display link to github account in menu bar
   twitter: "" # Optional, to display link to twitter account in menu bar
   author: "Lei Ma" # Default author name and the name to be shown in the footer

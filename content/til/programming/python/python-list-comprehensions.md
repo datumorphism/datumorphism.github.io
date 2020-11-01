@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: Python List Comprehensions
+summary: Python List Comprehensions
 ---
 
 An ipynb version of this section is [here](https://github.com/emptymalei/emptymalei.github.io/blob/master/_posts/til/assets/programming/python_list_comprehensions.ipynb).

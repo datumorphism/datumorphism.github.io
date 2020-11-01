@@ -8,7 +8,10 @@ category:
 - programming
 tags:
 - Git
-excerpt: Pull git repo with submodule
+summary: Pull git repo with submodule
+references:
+  - name: Easy way pull latest of all submodules @ stackoverflow.com
+    link: http://stackoverflow.com/questions/1030169/easy-way-pull-latest-of-all-submodules
 ---
 
 

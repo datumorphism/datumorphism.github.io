@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: eval is powerful but really dangerous
+summary: eval is powerful but really dangerous
 ---
 
 `eval` in python will try to execute the strings as python code.
@@ -37,4 +37,4 @@ exec(content)
 
 The code will execute the content of the file itself.
 
-<iframe height="600px" width="100%" src="https://repl.it/@emptymalei/Python-eval-in-code?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+{{< repl url="https://repl.it/@emptymalei/Python-eval-in-code?lite=true" >}}

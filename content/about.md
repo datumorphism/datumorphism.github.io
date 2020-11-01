@@ -4,7 +4,7 @@ title: About
 
 Datumorphism is my notebook about programming, data scraping, statistics, machine learning, and data visualization.
 
-
+{{< rawhtml >}}
 <div class="columns">
   <div class="column">
     <div class="notification is-success">
@@ -14,7 +14,7 @@ Datumorphism is my notebook about programming, data scraping, statistics, machin
   </div>
   <div class="column">
     <div class="notification is-success">
-      <a class="button is-success is-inverted is-centered" style="display:block;" href="http://intelligence.readthedocs.io/">Intelligence Notebook</a>
+      <a class="button is-success is-inverted is-centered" style="display:block;" href="http://intelligence.leima.is/">Intelligence Notebook</a>
       Notes about neuroscience, machine intelligence, and collective intelligence.
     </div>
   </div>
@@ -27,3 +27,4 @@ Datumorphism is my notebook about programming, data scraping, statistics, machin
   </div>
 
 </div>
+{{< /rawhtml >}}

@@ -8,13 +8,13 @@ category:
 - basics
 tags:
 - Python
-excerpt: Assigning Values to Multiple Variables
+summary: Assigning Values to Multiple Variables
 ---
 
 In python, assigning values to several variables can be done in a compact way using list manipulation.
 
-{% highlight python %}
+```python
 x1 = np.zeros(30)
 v1, w1, u1 = np.split(x1,3)[:3]
 print v1, w1, u1
-{% endhighlight %}
+```

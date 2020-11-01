@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Linux
-excerpt: Using ls and tree commands to list folders only
+summary: Using ls and tree commands to list folders only
 ---
 
 To list all folders, `ls` provides an option `-d`. Here is an example.

@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - 'MongoDB'
-excerpt: Array of dictionaries becomes hard to update in MongoDB.
+summary: Array of dictionaries becomes hard to update in MongoDB.
 ---
 
 

@@ -15,11 +15,11 @@ summary: Symmetry of second derivatives
 
 [This wikipedia page](https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives#Requirement_of_continuity) shows an example of symmetry breaking of the second derivatives, that is $\partial_x\partial_y f \ne \partial_y\partial_x f$. The example is
 
-$$
+{{<m>}}
 f(x,y) = \begin{cases}
 \frac{xy(x^2-y^2)}{x^2+y^2} & \mbox{ for } (x,y) \ne (0,0) \\
 0 & \mbox{ for } (x,y) = (0,0).
  \end{cases}
-$$
+{{</m>}}
 
 A image of the function is shown on wikipedia.

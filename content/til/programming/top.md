@@ -8,7 +8,7 @@ category:
 - 'basics'
 tags:
 - 'Linux'
-excerpt: Some tips about top command
+summary: Some tips about top command
 ---
 
 

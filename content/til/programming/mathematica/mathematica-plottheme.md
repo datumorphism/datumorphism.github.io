@@ -7,7 +7,7 @@ category:
 - programming
 tags:
 - Mathematica
-excerpt: Amazingly, Mathematica provides an option for plot that automatically generates beautiful plots.
+summary: Amazingly, Mathematica provides an option for plot that automatically generates beautiful plots.
 ---
 
 `PlotTheme->` option is great.

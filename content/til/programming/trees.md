@@ -8,7 +8,7 @@ tags:
 - 'Linux'
 date: 2018-03-20
 author: Lei Ma
-excerpt: Trees in computer science
+summary: Trees in computer science
 ---
 
 # Tree

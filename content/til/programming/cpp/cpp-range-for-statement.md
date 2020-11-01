@@ -7,10 +7,10 @@ category:
 - programming
 tags:
 - 'C++'
-excerpt: "In C++ we can use range-for-statement"
+summary: "In C++ we can use range-for-statement"
 ---
 
-{% highlight cpp %}
+```cpp
 # include <iostream>
 using namespace std;
 int main(){
@@ -21,11 +21,12 @@ int main(){
       cout << x << endl;
    }
 }
-{% endhighlight %}
+```
 
 What this does is to copy each element of array v into x and print it. For efficiency, we could use instead pointers.
 
-{% highlight cpp %} for(auto& x : v) { cout << &x << endl; } {% endhighlight %}
+```highlight cpp
+for(auto& x : v) { cout << &x << endl; }
+```
 
-<script src="//repl.it/embed/LAIt/5.js">
-</script>
+{{< repl url="https://repl.it/LAIt/5?lite=true" >}}

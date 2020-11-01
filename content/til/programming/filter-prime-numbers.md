@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Python
-excerpt: Python Onliner Filter Prime Numbers
+summary: Python Onliner Filter Prime Numbers
 ---
 
 Here are some one-liners from [Linghao:一行 Python 能实现什么丧心病狂的功能？](http://www.zhihu.com/question/37046157/answer/70629342)，

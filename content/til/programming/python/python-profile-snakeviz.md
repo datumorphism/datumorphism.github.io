@@ -8,7 +8,7 @@ category:
 - 'basics'
 tags:
 - 'Python'
-excerpt: Python snakeviz
+summary: Python snakeviz
 ---
 
 **snakeviz** is a very nice tool to inspect a python program and find out what happened when a function is called.

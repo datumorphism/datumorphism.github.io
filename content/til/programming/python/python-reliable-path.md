@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: Find the actual path to file
+summary: Find the actual path to file
 references:
 - name: "How to reliably open a file in the same directory as a Python script @ StackOverflow"
   link: https://stackoverflow.com/a/4060259
@@ -61,4 +61,5 @@ with open(os.path.join(__location__, 'my_file.json'), 'r') as f:
 
 ## Playground
 
-<iframe height="600px" width="100%" src="https://repl.it/@emptymalei/Reliable-Path-to-File?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+{{< repl url="https://repl.it/@emptymalei/Reliable-Path-to-File?lite=true" >}}
+

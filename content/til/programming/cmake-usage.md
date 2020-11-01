@@ -8,12 +8,12 @@ category:
 - programming
 tags:
 - 'C++'
-excerpt: How to use CMake to generate makefiles
+summary: How to use CMake to generate makefiles
 ---
 
 Write your CMakeLists.txt such as
 
-{% highlight txt %}
+```txt
 
 cmake_minimum_required(VERSION 3.7)
 project(my_parallel_program)
@@ -27,13 +27,13 @@ add_executable(my_parallel_out ${SOURCE_FILES})
 SET(CMAKE_CXX_COMPILER /usr/local/Cellar/gcc/7.2.0/bin/g++)
 SET(GCC_COVERAGE_COMPILE_FLAGS "-fopenmp")
 SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
-{% endhighlight %}
+```
 
 Make a directory to store the compiled files, such as build using `mkdir build`. `cd build`, then execute
 
-{% highlight bash %}
+```bash
 make .. -G"Unix Makefiles"
-{% endhighlight %}
+```
 
 CMake will generate all the file need within the current directory, i.e., `build`.
 

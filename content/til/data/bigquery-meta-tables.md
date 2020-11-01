@@ -9,7 +9,7 @@ category:
 tags:
 - Data Warehouse
 - Big Query
-excerpt: Meta tables are very useful when it comes to get bigquery table information programatically.
+summary: Meta tables are very useful when it comes to get bigquery table information programmatically.
 references:
 - name: Getting table metadata using INFORMATION_SCHEMA
   link: https://cloud.google.com/bigquery/docs/information-schema-tables

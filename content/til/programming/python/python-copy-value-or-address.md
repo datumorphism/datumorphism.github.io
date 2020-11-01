@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: Python copy values of scalars but addresses of lists
+summary: Python copy values of scalars but addresses of lists
 ---
 
 Python allows copying values of a scalar:

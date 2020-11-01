@@ -9,7 +9,7 @@ category:
 tags:
 - Web
 - Front-end
-excerpt: HTML Animations Using CSS AnimateCSS
+summary: HTML Animations Using CSS AnimateCSS
 ---
 
 

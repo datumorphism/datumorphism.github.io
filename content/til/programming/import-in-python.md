@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Python
-excerpt: Import in Python
+summary: Import in Python
 ---
 
 
@@ -16,26 +16,26 @@ As noted in [Structuring Your Project of Python Guide](http://docs.python-guide.
 
 The style
 
-{% highlight python %}
+```python
 from neuosc import *
-{% endhighlight %}
+```
 
 grabs everything in `neuosc` and put them in the global namespace which is more likely to override existing functions in global namespace.
 
 A better way is to import the exact function we need.
 
-{% highlight python %}
+```python
 from neuosc import par
-{% endhighlight %}
+```
 
 Other good import methods are
 
-{% highlight python %}
+```python
 import neuosc
-{% endhighlight %}
+```
 
 or
 
-{% highlight python %}
+```python
 import neuosc as ns
-{% endhighlight %}
+```

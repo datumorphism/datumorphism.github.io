@@ -9,7 +9,7 @@ category:
 tags:
 - Python
 - Matplotlib
-excerpt: matplotlib x y limit and aspect ratio
+summary: matplotlib x y limit and aspect ratio
 ---
 
 Use

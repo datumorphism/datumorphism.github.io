@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: Love switch statement? We can design a switch statement it in python.
+summary: Love switch statement? We can design a switch statement it in python.
 references:
   - name: "Dispatch Tables in Python"
     link: https://medium.com/better-programming/dispatch-tables-in-python-d37bcc443b0b

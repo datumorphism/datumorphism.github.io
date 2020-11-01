@@ -8,7 +8,7 @@ category:
 - 'basics'
 tags:
 - 'Linux'
-excerpt: Run a program in the background on ubuntu
+summary: Run a program in the background on ubuntu
 ---
 
 1. Make it excuable: `chmod +x program.py`
@@ -19,7 +19,7 @@ Source: [How to run the Python program in the background in Ubuntu machine? ](ht
 
 It is very important to understand the output of `ps`. Here is the man.
 
-{% highlight bash %}
+```bash
 PROCESS STATE CODES
        Here are the different values that the s, stat and state output
        specifiers (header "STAT" or "S") will display to describe the state of
@@ -42,13 +42,13 @@ PROCESS STATE CODES
        s    is a session leader
        l    is multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
        +    is in the foreground process group
-{% endhighlight %}
+```
 
 Meanwhile, another question is how to kill such a process.
 
-{% highlight bash %}
+```bash
 xxx@ipython-notebook:~/abc/py$ ps -eaf | grep vacOsc4CompSSConvention-moretol.py
 xxx    12921 11369 99 17:05 pts/0    00:04:49 python vacOsc4CompSSConvention-moretol.py
 xxx    13040 11369  0 17:10 pts/0    00:00:00 grep --color=auto vacOsc4CompSSConvention-moretol.py
 xxx@ipython-notebook:~/abc/py$ kill 12921
-{% endhighlight %}
+```

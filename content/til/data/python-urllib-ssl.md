@@ -9,10 +9,13 @@ category:
 tags:
 - Web
 - 'Web Scraping'
-excerpt: Dealing with errors when scraping data
+summary: Dealing with errors when scraping data
+references:
+  - name: "Worked Example: BeautifulSoup (Chapter 12)"
+    link: https://www.youtube.com/watch?v=mhaHWiSPxxE
 ---
 
-```
+```python
 # Import modules
 import urllib.request, urllib.parse, urllib.error, ssl
 

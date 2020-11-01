@@ -2,8 +2,6 @@
 title: Typography of this Website
 ---
 
-* To
-{:toc}
 
 ## Basic Syntax
 

@@ -9,7 +9,7 @@ category:
 tags:
 - Data Warehouse
 - Big Query
-excerpt: Generate a table with a column of continuous dates
+summary: Generate a table with a column of continuous dates
 ---
 
 

@@ -8,31 +8,31 @@ category:
 - 'basics'
 tags:
 - Python
-excerpt: Python Map vs For in Python
+summary: Python Map vs For in Python
 ---
 
 
 
-`map` is sometimes more convinient instead of for. The code
+`map` is sometimes more convenient instead of for. The code
 
-{% highlight python %}
+```python
 newlist = []
 for word in oldlist:
     newlist.append(word.upper())
-{% endhighlight %}
+```
 
 can be reformed using `map`
 
-{% highlight python %}
+```python
 newlist = map(str.upper, oldlist)
-{% endhighlight %}
+```
 
 `for` loop is sometimes slow because the dot evaluation inside is evaluated for each loop. Thus the following code is more efficient.
 
-{% highlight python %}
+```python
 upper = str.upper
 newlist = []
 append = newlist.append
 for word in oldlist:
     append(upper(word))
-{% endhighlight %}
+```

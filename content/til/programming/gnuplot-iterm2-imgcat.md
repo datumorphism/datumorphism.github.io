@@ -10,7 +10,7 @@ category:
 tags:
 - Visualization
 - gnuplot
-excerpt: Using gnuplot in iterm2 we can output result inside terminal combined with imgcat
+summary: Using gnuplot in iterm2 we can output result inside terminal combined with imgcat
 ---
 
 iterm2 has a function called imgcat which can show image inside terminal. Combined with it, gnuplot can output result in situ.

@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Linux
-excerpt: GNU screen key conflict with bash can be solved
+summary: GNU screen key conflict with bash can be solved
 ---
 
 In Bash/zsh/etc, `CTRL+A` moves the cursor to the beginning of the lines, which significantly speeds up the workflow. However, as GNU screen is considered, `CTRL+A` is the prefix of all commands, such as `CTRL+A + D` to detach a screen. Inside screen, `CTRL+A` won't move the cursor around.

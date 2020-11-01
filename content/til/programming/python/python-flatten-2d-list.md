@@ -8,7 +8,7 @@ category:
 - 'basics'
 tags:
 - 'Python'
-excerpt: Flatten 2D list using sum
+summary: Flatten 2D list using sum
 references:
 - name: How to make a flat list out of list of lists
   link: https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-list-of-lists

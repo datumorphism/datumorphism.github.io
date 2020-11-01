@@ -20,10 +20,10 @@ description: Adding new data to dataframe using multiprocessing
 3. Process each dataframe with one process;
 4. Merge processed dataframes into one.
 
-A piece of demo code is bellow.
+A piece of demo code is shown below.
 
 
-{% highlight python %}
+```python
 from multiprocessing import Pool
 from multiprocessing.dummy import Pool as ThreadPool
 
@@ -53,4 +53,4 @@ with ThreadPool(prs) as p:
 
 # Concat all chunks
 df_reconstructed = pd.concat(result)
-{% endhighlight %}
+```

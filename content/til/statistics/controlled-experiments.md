@@ -17,13 +17,13 @@ summary: The three levels of controlled experiments
 
 In science, we have three different meanings for the term controlled experiments.
 
-1. controlled extraneous variables: controll everything
+1. controlled extraneous variables: control everything
 2. controlled groups: groups with treatment compared to groups without treatment
-3. controlled treatments: more like an exploration of the treatment since each subjects recieve different treatments
+3. controlled treatments: more like an exploration of the treatment since each subject recieves different treatments
 
 
-<div class="notes--info" markdown=1>
+{{< message class="info" >}}
 Extraneous variables are the ones that are not correlated to the variables that we are experimenting on. If the variable has some kind of relation to the experimental variables, it is called confounding variable.
-</div>
+{{</message>}}
 
 Controlled groups is trying to eliminate the effect of uncontrolled variables by using the randomness in each group.

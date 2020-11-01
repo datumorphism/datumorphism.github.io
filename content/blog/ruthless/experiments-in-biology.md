@@ -12,5 +12,5 @@ published: true
 
 
 
-{{< figure src="/assets/blog/ruthless/my-neuroscience-experiment.png" caption="Inspired by [@hanlu.io](http://hanlu.io)">}}
+{{< figure src="../assets/ruthless/my-neuroscience-experiment.png" caption="Inspired by [@hanlu.io](http://hanlu.io)">}}
 

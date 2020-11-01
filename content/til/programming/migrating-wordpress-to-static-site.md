@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Web
-excerpt: Migrating Wordpress to Static
+summary: Migrating Wordpress to Static
 ---
 
 

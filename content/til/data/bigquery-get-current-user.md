@@ -9,7 +9,7 @@ category:
 tags:
 - Data Warehouse
 - Big Query
-excerpt: BigQuery Current User
+summary: BigQuery Current User
 ---
 
 You could get the current user id in BigQuery.

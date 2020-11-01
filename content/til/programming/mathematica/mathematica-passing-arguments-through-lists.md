@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Mathematica
-excerpt: We can pass a list of arguments using Sequence
+summary: We can pass a list of arguments using Sequence
 ---
 
 

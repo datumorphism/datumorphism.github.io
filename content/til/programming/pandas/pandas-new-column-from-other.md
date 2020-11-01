@@ -10,7 +10,7 @@ category:
 tags:
 - Python
 - Pandas
-excerpt: Create new columns in pandas
+summary: Create new columns in pandas
 ---
 
 Pandas has got two very useful functions called `groupby` and `transform`. In this TIL, I will demonstrate how to create new columns from existing columns.
@@ -23,6 +23,7 @@ df = pd.DataFrame( {'city':['London','London','Berlin','Berlin'], 'rent': [1000,
 
 which looks like
 
+{{< rawhtml >}}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -69,7 +70,7 @@ which looks like
   </tbody>
 </table>
 </div>
-
+{{< /rawhtml >}}
 
 I will create a new column called total, which will host the total rents of the corresponding cities.
 
@@ -77,7 +78,7 @@ I will create a new column called total, which will host the total rents of the 
 df['total'] = df.groupby('city').transform('sum')
 ```
 
-
+{{< rawhtml >}}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -129,7 +130,7 @@ df['total'] = df.groupby('city').transform('sum')
   </tbody>
 </table>
 </div>
-
+{{< /rawhtml >}}
 
 Next, I will create a new column called percent which will contain the percentage
 
@@ -137,7 +138,7 @@ Next, I will create a new column called percent which will contain the percentag
 df['percent'] = df['rent']/df['total']
 ```
 
-
+{{< rawhtml >}}
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -194,3 +195,4 @@ df['percent'] = df['rent']/df['total']
   </tbody>
 </table>
 </div>
+{{< /rawhtml >}}

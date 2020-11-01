@@ -8,7 +8,7 @@ category:
 tags:
 - Python
 - Matplotlib
-excerpt: Matplotlib provides many different backends
+summary: Matplotlib provides many different backends
 ---
 
 

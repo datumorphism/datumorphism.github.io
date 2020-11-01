@@ -9,6 +9,9 @@ category:
 tags:
 - Python
 description: Python Code Style
+references:
+  - name: Code Style of Python Guide
+    link: http://docs.python-guide.org/en/latest/writing/style/
 ---
 
 
@@ -19,7 +22,7 @@ description: Python Code Style
 **PEP 20 -- The Zen of Python**
 
 
-{% highlight text %}
+```text
 1. Beautiful is better than ugly.
 2. Explicit is better than implicit.
 3. Simple is better than complex.
@@ -39,4 +42,4 @@ description: Python Code Style
 17. If the implementation is hard to explain, it's a bad idea.
 18. If the implementation is easy to explain, it may be a good idea.
 19. Namespaces are one honking great idea -- let's do more of those!
-{% endhighlight %}
+```

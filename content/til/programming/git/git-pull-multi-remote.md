@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Git
-excerpt: working with multi remote
+summary: working with multi remote
 ---
 
 

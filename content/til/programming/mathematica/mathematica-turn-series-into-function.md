@@ -7,7 +7,10 @@ category:
 - programming
 tags:
 - Mathematica
-excerpt: Turn a series expansion in Mathematica into a function
+summary: Turn a series expansion in Mathematica into a function
+references:
+  - name: Converting Power Series to Normal Expressions
+    link: https://reference.wolfram.com/language/tutorial/ConvertingPowerSeriesToNormalExpressions.html
 ---
 
 `Series` in Mathematica returns a series with higher orders denoted as $\mathscr O[x^3]$. To define a function out of this returned expression, we have to truncate this tail using `Normal`.

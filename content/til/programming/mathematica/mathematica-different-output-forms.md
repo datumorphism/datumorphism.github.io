@@ -9,7 +9,7 @@ category:
 - programming
 tags:
 - Mathematica
-excerpt: Mathematica has many different output forms. Understanding them is extremely helpful when making plots.
+summary: Mathematica has many different output forms. Understanding them is extremely helpful when making plots.
 ---
 
 
@@ -21,13 +21,7 @@ Here is a incomplete list of different output forms in Mathematica.
 * InputForm
 
 
-
-<figure markdown="1">
-![](../assets/mathematica-different-output-forms.png)
-<figcaption>
-Different forms.
-</figcaption>
-</figure>
+{{< figure src="../assets/mathematica-different-output-forms.png" caption="Different forms." >}}
 
 
 Whenever we need to include some fractions or powers or exponential in the plot label or plot legends, the default behavior of Mathematica is extremely weird and makes no sense. With these different forms, we can choose whichever is best for the plot.

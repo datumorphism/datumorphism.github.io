@@ -8,7 +8,7 @@ category:
 - programming
 tags:
 - Python
-excerpt: Formatting numbers in python using format
+summary: Formatting numbers in python using format
 ---
 
 
@@ -16,9 +16,9 @@ excerpt: Formatting numbers in python using format
 
 For example, we can use scientific notation.
 
-{% highlight python %}
+```python
 print "{:e}".format(9887.2)
-{% endhighlight %}
+```
 
 will give us
 

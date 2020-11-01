@@ -9,13 +9,13 @@ category:
 tags:
 - Python
 - Pandas
-excerpt: Pandas Groupby Does Not Guarantee Unique Content in Groupby Columns, it also considers the datatypes. Dealing with mixed types requires additional attentioin.
+summary: Pandas Groupby Does Not Guarantee Unique Content in Groupby Columns, it also considers the datatypes. Dealing with mixed types requires additional attentioin.
 ---
 
 
 Pandas groupby also considers the data types.
 
-```
+```python
 import pandas as pd
 
 data = [{"student": 1, "score": 1}, {"student": "1", "score": 2}]

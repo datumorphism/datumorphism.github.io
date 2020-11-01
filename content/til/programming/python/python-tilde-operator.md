@@ -11,7 +11,7 @@ tags:
 references:
   - name: 'The tilde operator in Python @StackOverflow'
     link: https://stackoverflow.com/questions/8305199/the-tilde-operator-in-python/8305291
-excerpt: tilde operator may not work as you expected
+summary: tilde operator may not work as you expected
 ---
 
 `~` in python will invert the value. The actual method depends on the implementation of `__invert__` method of the argument.

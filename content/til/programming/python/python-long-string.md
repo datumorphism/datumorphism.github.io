@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: Python long string formatting
+summary: Python long string formatting
 ---
 
 
@@ -19,7 +19,7 @@ QUERY = (
     'LIMIT 100')
 ```
 
-is evquivalent to
+is equivalent to
 
 ```
 QUERY='SELECT name FROM `bigquery-public-data.usa_names.usa_1910_2013` WHERE state = "TX" LIMIT 100'

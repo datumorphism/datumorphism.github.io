@@ -7,7 +7,7 @@ category:
 - programming
 tags:
 - Mathematica
-excerpt: Mathematica Smooth Plot
+summary: Mathematica Smooth Plot
 ---
 
 

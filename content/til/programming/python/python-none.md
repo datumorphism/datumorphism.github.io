@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: == and is are different
+summary: == and is are different
 ---
 
 The operator `==` is true if the values of the objects are the same while the operar `is` is true if their id are the same.
@@ -136,5 +136,4 @@ is: False
 ==: False
 ```
 
-
-<iframe height="400px" width="100%" src="https://repl.it/@emptymalei/None-in-Python?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+{{< repl url="https://repl.it/@emptymalei/None-in-Python?lite=true" >}}

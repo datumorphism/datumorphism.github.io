@@ -10,10 +10,10 @@ tags:
 - 'Linux'
 - 'Mac'
 - 'C++'
-excerpt: Some caveats about heap on mac and linux
+summary: Some caveats about heap on mac and linux
 ---
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 
 int main() {
@@ -28,9 +28,9 @@ int main() {
    std::cout << a[-10] << std::endl;
 
 }
-{% endhighlight %}
+```
 
 This program runs on Mac without warning or error. However, it gives segmentation fault (core dump) error on ubuntu and cent os.
 
+{{< repl url="https://repl.it/Lfne/7?lite=true">}}
 
-<script src="//repl.it/embed/Lfne/7.js"></script>

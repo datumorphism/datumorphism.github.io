@@ -10,7 +10,7 @@ category:
 tags:
 - Web
 - Front-end
-excerpt: How to use the chrome dev tool wisely
+summary: How to use the chrome dev tool wisely
 ---
 
 Chrome dev tool is not only super useful for front-end dev but also helpful to users.
@@ -23,7 +23,7 @@ By setting
 document.body.contentEditable = true
 ```
 
-one can just start edit the content of the whole web page.
+one can just start editing the content of the whole web page.
 
 ## Display Data in a Table
 
@@ -43,12 +43,7 @@ give us a table that is associated with the array.
 
 
 
-<figure markdown="1">
-![](../assets/programming/chrome-dev-tools-console.table.png)
-<figcaption>
-console.table()
-</figcaption>
-</figure>
+{{< figure src="../assets/programming/chrome-dev-tools-console.table.png" caption="console.table()" >}}
 
 
 ## Clear the Output
@@ -68,12 +63,8 @@ inspect($('.sidebar'))
 
 will list all the element that has class `sidebar`.
 
-<figure markdown="1">
-![](../assets/programming/chrome-dev-tools-inspect.png)
-<figcaption>
-inspect($('.sidebar'))
-</figcaption>
-</figure>
+{{< figure src="../assets/programming/chrome-dev-tools-inspect.png" caption="inspect($('.sidebar'))" >}}
+
 
 
 ## dir()
@@ -84,12 +75,7 @@ List out all the properties of a element using
 dir($("div"))
 ```
 
-<figure markdown="1">
-![](../assets/programming/chrome-dev-tool-dir.png)
-<figcaption>
-div($('div'))
-</figcaption>
-</figure>
+{{< figure src="../assets/programming/chrome-dev-tool-dir.png" caption="div($('div'))" >}}
 
 
 ## And more

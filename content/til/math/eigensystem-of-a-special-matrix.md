@@ -16,27 +16,27 @@ summary: Eigenstates of a very special matrix
 
 One of the most used matrix in physics is
 
-$$
+{{<m>}}
 \begin{pmatrix}
 a + c \mathrm i & b \\
 b & a + c \mathrm i
 \end{pmatrix},
-$$
+{{</m>}}
 
 where $a$, $b$, $c$ are real numbers.
 
 It is interesting that as we go from
 
-$$
+{{<m>}}
 \begin{pmatrix}
 a + c \mathrm i & 0 \\
 0 & a + c \mathrm i
 \end{pmatrix},
-$$
+{{</m>}}
 
 to the previous matrix, the eigenstates change from
 
-$$
+{{<m>}}
 \begin{pmatrix}
 1 \\
 0
@@ -44,11 +44,11 @@ $$
 0 \\
 1
 \end{pmatrix}
-$$
+{{</m>}}
 
 to
 
-$$
+{{<m>}}
 \begin{pmatrix}
 1 \\
 1
@@ -56,7 +56,7 @@ $$
 1 \\
 -1
 \end{pmatrix}
-$$
+{{</m>}}
 
 no matter how small $b$ is.
 

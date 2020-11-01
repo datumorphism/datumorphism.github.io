@@ -9,7 +9,7 @@ category:
 tags:
 - Python
 - Jupyter
-excerpt: IPython or Jupyter Notebook Magics
+summary: IPython or Jupyter Notebook Magics
 ---
 
 Summary of the [video lectures on IPython](https://www.udemy.com/get-started-with-the-ipython-notebook/learn/#/lecture/1077138):

@@ -9,7 +9,7 @@ category:
 tags:
 - Python
 - Jupyter
-excerpt: Python package or python module autoreloading in jupyter notebook
+summary: Python package or python module autoreloading in jupyter notebook
 ---
 
 When we fire up our jupyter notebook/lab, we might find that jupyter doesn't load python kernels of conda environments by default. This is usually because the conda environment doesn't have a ipykernel to be loaded by jupyter.

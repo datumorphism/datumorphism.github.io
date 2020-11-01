@@ -8,7 +8,7 @@ category:
 - basics
 tags:
 - Python
-excerpt: If on int is dangerous
+summary: If on int is dangerous
 ---
 
 A bug that is so easy to miss.
