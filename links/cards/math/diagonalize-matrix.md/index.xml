@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cards/math/diagonalize-matrix.md on Datumorphism</title><link>/links/cards/math/diagonalize-matrix.md/</link><description>Recent content in cards/math/diagonalize-matrix.md on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><atom:link href="/links/cards/math/diagonalize-matrix.md/index.xml" rel="self" type="application/rss+xml"/><item><title>Eigenvalues and Eigenvectors</title><link>/cards/math/eigendecomposition/</link><pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate><guid>/cards/math/eigendecomposition/</guid><description>To find the eigenvectors $\mathbf x$ of a matrix $\mathbf A$, we construct the eigen equation
+$$ \mathbf A \mathbf x = \lambda \mathbf x, $$
+where $\lambda$ is the eigenvalue.
+We rewrite it in the components form,
+$$ \begin{equation} A_{ij} x_j = \lambda x_i. \label{eqn-eigen-decomp-def} \end{equation} $$
+Mathematically speaking, it is straightforward to find the eigenvectors and eigenvalues.
+Eigenvectors are Special Directions Judging from the definition in Eq.($\ref{eqn-eigen-decomp-def}$), the eigenvectors do not change direction under the operation of the matrix $\mathbf A$.</description></item></channel></rss>
