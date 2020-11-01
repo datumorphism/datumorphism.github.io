@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Python
 excerpt: Formatting numbers in python using format
 ---

@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Web
 - Front-end
 excerpt: How to use the chrome dev tool wisely

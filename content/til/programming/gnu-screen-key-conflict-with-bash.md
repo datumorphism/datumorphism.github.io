@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Linux
 excerpt: GNU screen key conflict with bash can be solved
 ---

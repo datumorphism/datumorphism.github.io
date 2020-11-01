@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Mathematica
 excerpt: Mathematica has many different output forms. Understanding them is extremely helpful when making plots.
 ---

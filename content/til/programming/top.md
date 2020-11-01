@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - 'programming'
 - 'basics'
-tag:
+tags:
 - 'Linux'
 excerpt: Some tips about top command
 ---

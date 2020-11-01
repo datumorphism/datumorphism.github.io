@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - 'programming'
 - 'basics'
-tag:
+tags:
 - Python
 excerpt: Python Map vs For in Python
 ---

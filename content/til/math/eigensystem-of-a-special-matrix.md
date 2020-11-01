@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - math
-tag:
+tags:
 - 'Linear Algebra'
 summary: Eigenstates of a very special matrix
 ---

@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - math
-tag:
+tags:
 - 'Differential Equation'
 summary: Differential transformation method can be used to solve differential equation even integro-differential equations.
 ---

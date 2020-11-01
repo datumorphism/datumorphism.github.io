@@ -5,7 +5,7 @@ date: 2015-12-04
 author: Lei Ma
 category:
 - programming
-tag:
+tags:
 - Mathematica
 excerpt: Mathematica Smooth Plot
 ---

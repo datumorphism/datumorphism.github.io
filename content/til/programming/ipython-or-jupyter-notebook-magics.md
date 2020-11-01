@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Python
 - Jupyter
 excerpt: IPython or Jupyter Notebook Magics

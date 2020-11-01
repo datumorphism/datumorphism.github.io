@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Linux
 excerpt: Using ls and tree commands to list folders only
 ---

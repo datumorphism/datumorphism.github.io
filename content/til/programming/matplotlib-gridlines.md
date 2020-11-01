@@ -5,7 +5,7 @@ date: 2016-9-26
 author: Lei Ma
 category:
 - programming
-tag:
+tags:
 - Python
 - Matplotlib
 excerpt: Adding gridlines in matplotlib

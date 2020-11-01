@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Web
 - Front-end
 excerpt: HTML Animations Using CSS AnimateCSS

@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - misc
-tag:
+tags:
 - 'Visual'
 excerpt: How fast can you move your mouse to target
 ---

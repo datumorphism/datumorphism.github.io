@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 excerpt: Python copy values of scalars but addresses of lists
 ---
@@ -39,7 +39,7 @@ print(a)
 print(b)
 # [1,0,3]
 ```
-The reason is quite easy to guess. The variable `a` and `b` for lists are pointers since it is much easier to hold the starting address of the lists and length instead of all the values. 
+The reason is quite easy to guess. The variable `a` and `b` for lists are pointers since it is much easier to hold the starting address of the lists and length instead of all the values.
 
 In the case of a copy of a list is really needed, we can use slicing:
 ```

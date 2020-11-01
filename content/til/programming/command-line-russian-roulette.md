@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Linux
 excerpt: Play russian roulette in your command line
 ---

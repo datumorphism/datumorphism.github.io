@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - 'programming'
 - 'basics'
-tag:
+tags:
 - 'Python'
 - 'Web'
 excerpt: With one line of python command

@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - 'MongoDB'
 excerpt: Array of dictionaries becomes hard to update in MongoDB.
 ---

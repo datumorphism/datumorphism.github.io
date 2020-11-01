@@ -5,7 +5,7 @@ date: 2017-05-15
 author: Lei Ma
 category:
 - programming
-tag:
+tags:
 - Mathematica
 excerpt: Turn a series expansion in Mathematica into a function
 ---

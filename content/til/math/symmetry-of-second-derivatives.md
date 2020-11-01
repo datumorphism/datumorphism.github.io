@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - math
-tag:
+tags:
 - Derivative
 summary: Symmetry of second derivatives
 ---

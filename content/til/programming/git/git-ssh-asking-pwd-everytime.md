@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Git
 excerpt: My git asks for password every time I pull or push even with ssh configured.
 ---

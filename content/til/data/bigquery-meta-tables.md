@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - data
-tag:
+tags:
 - Data Warehouse
 - Big Query
 excerpt: Meta tables are very useful when it comes to get bigquery table information programatically.

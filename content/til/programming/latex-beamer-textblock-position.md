@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - LaTeX
 excerpt: Positioning textblock in LaTeX Beamer using textpos package and eso pic package
 ---

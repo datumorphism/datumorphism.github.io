@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 references:
   - name: 'The tilde operator in Python @StackOverflow'

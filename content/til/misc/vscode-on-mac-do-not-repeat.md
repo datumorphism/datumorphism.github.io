@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - misc
-tag:
+tags:
 - 'VSCode'
 excerpt: Enable your key repeat in vscode on mac
 ---

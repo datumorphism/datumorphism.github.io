@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 excerpt: Python Making a List
 ---
@@ -15,7 +15,7 @@ Integrated with loops
 
 
 {% highlight python %}
-list_with_for_loop = [x for x in range(10)]  
+list_with_for_loop = [x for x in range(10)]
 print list_with_for_loop
 {% endhighlight %}
 
@@ -27,7 +27,7 @@ Even with conditions in the for loop
 
 
 {% highlight python %}
-list_with_for_loop_conditional = [x for x in range(10) if x%2 == 1]  
+list_with_for_loop_conditional = [x for x in range(10) if x%2 == 1]
 print list_with_for_loop_conditional
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ Nested loops in a list
 
 
 {% highlight python %}
-list_with_nested_loops = [ [x, y] for x in range(3) for y in range(3) ]  
+list_with_nested_loops = [ [x, y] for x in range(3) for y in range(3) ]
 print list_with_nested_loops
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ Another example of nested loops
 
 
 {% highlight python %}
-list_with_nested_loops_2 = [ x for x in range(y) for y in range(3)]  
+list_with_nested_loops_2 = [ x for x in range(y) for y in range(3)]
 print list_with_nested_loops_2
 {% endhighlight %}
 
@@ -60,11 +60,11 @@ print list_with_nested_loops_2
 
 
 {% highlight python %}
-matrix = [[11,12],[21,22]]  
-row = [1,2]  
-wrong_flatten_of_matrix = [x for x in row for row in matrix]  
-print "matrix is", matrix  
-print "flattened matrix is", wrong_flatten_of_matrix  
+matrix = [[11,12],[21,22]]
+row = [1,2]
+wrong_flatten_of_matrix = [x for x in row for row in matrix]
+print "matrix is", matrix
+print "flattened matrix is", wrong_flatten_of_matrix
 {% endhighlight %}
 
     matrix is [[11, 12], [21, 22]]
@@ -75,9 +75,9 @@ which is obviously **WRONG**. The correct code is given by the author as
 
 
 {% highlight python %}
-right_flatten_of_matrix = [x for row in matrix for x in row]  
-print "matrix is", matrix  
-print "flattened matrix is", right_flatten_of_matrix  
+right_flatten_of_matrix = [x for row in matrix for x in row]
+print "matrix is", matrix
+print "flattened matrix is", right_flatten_of_matrix
 {% endhighlight %}
 
     matrix is [[11, 12], [21, 22]]
@@ -90,13 +90,13 @@ With this possible confusion, the author proposed a line breaking solution
 
 
 {% highlight python %}
-right_flatten_of_matrix_line_breaking = [  
-    x   
-    for row in matrix   
-        for x in row  
-]  
-print "matrix is", matrix  
-print "flattened matrix is", right_flatten_of_matrix_line_breaking  
+right_flatten_of_matrix_line_breaking = [
+    x
+    for row in matrix
+        for x in row
+]
+print "matrix is", matrix
+print "flattened matrix is", right_flatten_of_matrix_line_breaking
 {% endhighlight %}
 
     matrix is [[11, 12], [21, 22]]

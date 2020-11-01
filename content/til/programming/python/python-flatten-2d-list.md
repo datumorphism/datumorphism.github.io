@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - 'programming'
 - 'basics'
-tag:
+tags:
 - 'Python'
 excerpt: Flatten 2D list using sum
 references:

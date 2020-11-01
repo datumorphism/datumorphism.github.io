@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - 'programming'
 - 'basics'
-tag:
+tags:
 - 'Linux'
 excerpt: Run a program in the background on ubuntu
 ---

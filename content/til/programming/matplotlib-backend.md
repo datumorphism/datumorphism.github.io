@@ -5,7 +5,7 @@ date: 2017-05-23
 author: Lei Ma
 category:
 - programming
-tag:
+tags:
 - Python
 - Matplotlib
 excerpt: Matplotlib provides many different backends

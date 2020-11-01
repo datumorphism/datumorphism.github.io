@@ -5,7 +5,7 @@ date: 2017-09-12T00:00:00.000Z
 author: Lei Ma
 category:
 - programming
-tag:
+tags:
 - 'C++'
 excerpt: "In C++ we can use range-for-statement"
 ---

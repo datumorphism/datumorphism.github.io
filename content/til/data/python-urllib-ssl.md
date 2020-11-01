@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - data
-tag:
+tags:
 - Web
 - 'Web Scraping'
 excerpt: Dealing with errors when scraping data

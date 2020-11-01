@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Web
 excerpt: Migrating Wordpress to Static
 ---

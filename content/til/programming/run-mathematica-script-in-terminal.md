@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - 'programming'
 - 'basics'
-tag:
+tags:
 - 'Mathematica'
 excerpt: Using math -run or wolfram -run we could execute a Mathematica script through ssh in terminal.
 ---

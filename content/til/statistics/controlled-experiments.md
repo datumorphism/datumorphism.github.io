@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - statistics
-tag:
+tags:
 - 'Statistics'
 - 'Science'
 summary: The three levels of controlled experiments

@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 - Matplotlib
 excerpt: matplotlib x y limit and aspect ratio

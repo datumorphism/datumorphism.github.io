@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - 'C++'
 excerpt: int multiplication in C++ should be processed with caution.
 ---

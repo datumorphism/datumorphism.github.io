@@ -6,7 +6,7 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 excerpt: Find the actual path to file
 references:
@@ -37,7 +37,7 @@ Python `os` module provides several useful functions.
    will return `__file__:  main.py`.
 
 2. `os.path.join` joins the strings into path, intelligently.
-   
+
    ```python
    print('os.path.join("datumorphism", "main.py"): ', os.path.join("datumorphism", "main.py") )
    ```

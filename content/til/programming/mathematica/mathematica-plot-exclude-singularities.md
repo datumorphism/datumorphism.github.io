@@ -5,7 +5,7 @@ date: 2017-03-22
 author: Lei Ma
 category:
 - programming
-tag:
+tags:
 - Mathematica
 excerpt: Mathematica Plot might include some non-existant lines sometimes, Exclusions is the potion for it.
 ---

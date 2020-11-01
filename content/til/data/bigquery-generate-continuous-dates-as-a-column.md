@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - data
-tag:
+tags:
 - Data Warehouse
 - Big Query
 excerpt: Generate a table with a column of continuous dates

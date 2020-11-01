@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - math
-tag:
+tags:
 - Integration
 summary: An identity about integral
 ---

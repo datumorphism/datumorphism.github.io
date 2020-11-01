@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Visualization
 - gnuplot
 excerpt: Using gnuplot in iterm2 we can output result inside terminal combined with imgcat

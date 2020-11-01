@@ -7,7 +7,7 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 - Pandas
 excerpt: Create new columns in pandas

@@ -5,7 +5,7 @@ date: 2017-05-19
 author: Lei Ma
 category:
 - programming
-tag:
+tags:
 - Mathematica
 excerpt: Amazingly, Mathematica provides an option for plot that automatically generates beautiful plots.
 ---

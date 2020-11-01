@@ -6,7 +6,7 @@ author: Lei Ma
 comments: true
 category:
 - programming
-tag:
+tags:
 - Mathematica
 excerpt: We can pass a list of arguments using Sequence
 ---

@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 category:
 - math
-tag:
+tags:
 - Geometry
 summary: Calculate the area enclosed by a line
 ---

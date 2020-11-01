@@ -6,12 +6,12 @@ author: Lei Ma
 category:
 - programming
 - basics
-tag:
+tags:
 - Python
 excerpt: Python datetime on different os behaves inconsistently
 ---
 
-## Python datetime on Linux and Mac 
+## Python datetime on Linux and Mac
 
 For the same code
 
@@ -50,7 +50,7 @@ def check_and_convert_to_datetime(input_date):
     """
     Convert input to *datetime* object.
 
-    This is the last effort of converting input to datetime. 
+    This is the last effort of converting input to datetime.
     The order of instance check is
 
     1. datetime.datetime
@@ -85,10 +85,10 @@ def check_and_convert_to_datetime(input_date):
             res = None
         return res
 
-## The following code produces 
+## The following code produces
 ## datetime.datetime(2018, 7, 11, 15, 33, 32, 311000)
 ## on linux
-## but it produces 
+## but it produces
 ## datetime.datetime(2018, 7, 11, 17, 33, 32, 311000)
 ## on mac
 

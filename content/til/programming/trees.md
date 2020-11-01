@@ -4,7 +4,7 @@ title: "tree in Linux"
 category:
 - 'programming'
 - 'basics'
-tag:
+tags:
 - 'Linux'
 date: 2018-03-20
 author: Lei Ma
