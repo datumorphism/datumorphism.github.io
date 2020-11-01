@@ -4,12 +4,11 @@ date: 2019-03-17
 subtitle: ""
 speaker: "Lei Ma"
 author: Lei Ma
-comments: true
 types:
 - 'paper'
 category:
 - theory
-tag:
+tags:
 - 'data visualization'
 summary: Data visualization caveats
 status: 100%

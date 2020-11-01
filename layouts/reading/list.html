@@ -4,7 +4,7 @@
 
 <!-- Hero content: will be in the middle -->
 <section>
-<div class="hero is-primary is-medium">
+<div class="hero is-warning is-medium">
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title is-1">
@@ -25,7 +25,7 @@
             <div class="hero-body">
                 <div class="container">
                     {{ partial "breadcrumb" . }}
-                    {{ range (.Paginate ( .Pages.ByWeight.Reverse )).Pages }} {{ partial "page-summary" . }} {{ end }}
+                    {{ range (.Paginate ( .Pages.ByWeight.Reverse )).Pages }} {{ partial "reading-list" . }} {{ end }}
                 </div>
                 <br>
                 <div class="container">

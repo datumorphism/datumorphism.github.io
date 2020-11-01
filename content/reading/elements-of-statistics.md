@@ -5,13 +5,13 @@ modified: 2019-01-26
 subtitle: "by Ruth Bernstein and Stephen Bernstein"
 speaker: "Lei Ma"
 author: Lei Ma
-comments: true
 types:
-- 'book'
+- book
 category:
 - theory
-tag:
-- 'statistics'
+tags:
+- statistics
+- basics
 summary: The basics and all of modern statistics
 status: 80%
 references:
@@ -23,8 +23,8 @@ references:
 
 This has been my evening reading book.
 
-<div class="notes--error" markdown="1">
+{{< message class="danger" >}}
 This book is quite good. It doesn't go very deep on some topics but it explains things well in a concise way on many topics.
-</div>
+{{</message>}}
 
 

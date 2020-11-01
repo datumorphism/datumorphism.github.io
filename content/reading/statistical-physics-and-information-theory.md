@@ -1,5 +1,5 @@
 ---
-title:  "Information Theory and Statistical Mechanics"
+title: "Information Theory and Statistical Mechanics"
 date: 2019-03-01 #2014-08-27T11:57:41-04:00
 subtitle: "Max entropy principle from Jaynes, E. T. (1957)."
 author: Lei Ma
@@ -8,7 +8,7 @@ types:
 - 'paper'
 category:
 - theory
-tag:
+tags:
 - 'intelligence'
 summary: Max entropy principle as a method to infer distributions of statistical systems
 status: 100%
@@ -19,7 +19,7 @@ references:
 
 ## What problem are we solving?
 
-For a large system consisting of small entities, the phase space could be extremely large. In this problem, we assume that only one quantitiy is measure on a macroscopic level. Then we have to find the values for other measurable quantities.
+For a large system consisting of small entities, the phase space could be extremely large. In this problem, we assume that only one quantity is measure on a macroscopic level. Then we have to find the values for other measurable quantities.
 
 
 ## Line of Reasoning
@@ -49,8 +49,7 @@ In Jaynes' paper, he mentioned several crucial problems.
 7. With the generality of the formalism, what else can we do with it to improve our statistical mechanics power? Based on the information we know, we have different formalism of statistical physics.
 
 
-Is this related to mutual information?
------------------------------------------
+## Is this related to mutual information?
 
 The idea is great.
 

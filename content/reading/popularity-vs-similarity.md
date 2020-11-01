@@ -5,10 +5,9 @@ modified: 2016-11-06
 subtitle: ""
 speaker: "OctoMiao"
 author: Lei Ma
-comments: true
 category:
 - theory
-tag:
+tags:
 - 'complex network'
 summary: Introduce geometry into the manifold of complex networks
 status: Done
@@ -16,10 +15,6 @@ references:
   - name: "Popularity versus similarity in growing networks"
     link: http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html
 ---
-
-
-* ToC
-{:toc}
 
 ## Background
 
@@ -31,13 +26,7 @@ Why are we interested in networks? Because a enormous categories of phenomena ca
 
 * Degrees
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/directed-degrees.svg.png)
-<figcaption markdown="1">
-Degrees. Source [wikipedia](https://en.wikipedia.org/wiki/File:DirectedDegrees.svg).
-</figcaption>
-</figure>
-
+{{< figure src="../assets/popularity-similarity-in-networks/directed-degrees.svg.png" caption="Degrees. Source [wikipedia](https://en.wikipedia.org/wiki/File:DirectedDegrees.svg).">}}
 
 ### Scaling in Networks
 
@@ -49,12 +38,8 @@ People have found a lot of scaling phenomena in networks.
 
 * Barabasi et al found that in random networks, scaling appears also [^2].
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/barabasi-scaling-random-networks.png)
-<figcaption markdown="1">
-Scaling of connectivities. Barabasi (1999).
-</figcaption>
-</figure>
+{{< figure src="../assets/popularity-similarity-in-networks/barabasi-scaling-random-networks.png" caption="Scaling of connectivities. Barabasi (1999)." >}}
+
 
 * And some theories like [^3], etc.
 
@@ -87,16 +72,16 @@ The problem about popularity is that we are all aware that popularity is not the
 
 Consider the following examples.
 
-1. You write a blog about neuroscience. In the past people usually put links on the blog, which is called blogroll or something. In the links, what you would include is something like facebook, google, maybe nature/science, and most likely some blogs or resources about neuroscience eventhough these websites may not be very popular. However, these links have similar contents as yours.
-2. We could also check the link you used in your articles and they are very likely to point to some websites that is also neuroscience.
+1. You write a blog about neuroscience. In the past people usually put links on the blog, which is called blogroll or something. In the links, what you would include is something like facebook, google, maybe nature/science, and most likely some blogs or resources about neuroscience even though these websites may not be very popular. However, these links have similar content as yours.
+2. We could also check the link you used in your articles and they are very likely to point to some websites that are also neuroscience.
 
-In some cases similar is also important.
+In some cases, similar is also important.
 
 
 
 ## Popularity and Similarity Together
 
-What we would expect is that larger popularity and small similarity (more similar) are the preferable connections. Thus competitions between the two determines the overall connection probability.
+What we would expect is that larger popularity and small similarity (more similar) are the preferable connections. Thus competition between the two determines the overall connection probability.
 
 To combine the two factors, we use the metric $\mathrm{Popularity}\times \mathrm{Similarity}$. Even though there is a competition between popularity and similarity, small values of $\mathrm{Popularity}\times \mathrm{Similarity}$ are more preferable connections, which takes similarity more seriously.
 
@@ -113,12 +98,7 @@ $$
 while time is the radius with $t=0$ at the center of the disc.
 
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/disc-of-similarity.png)
-<figcaption markdown="1">
-Disc of similarity. This figures shows the measure of similarity. 2 & 3 are more similar, given the fact that their angular distance $\lvert\theta_2-\theta_3\rvert$ is smaller that either $\theta_2-\theta_1$ or $\lvert\theta_3-\theta_1\rvert$. Papadopoulos et al (2012).
-</figcaption>
-</figure>
+{{< figure src="../assets/popularity-similarity-in-networks/disc-of-similarity.png" caption="Disc of similarity. This figures shows the measure of similarity. 2 & 3 are more similar, given the fact that their angular distance $\lvert\theta_2-\theta_3\rvert$ is smaller that either $\theta_2-\theta_1$ or $\lvert\theta_3-\theta_1\rvert$. Papadopoulos et al (2012)." >}}
 
 
 Now we are going to dynamically generate a network. The updating rules are listed bellow.
@@ -127,12 +107,10 @@ Now we are going to dynamically generate a network. The updating rules are liste
 2. As the node $i$ is created at time $t_i$, it is connected to $m$ previous nodes.
 3. The node $i$ is connected to node $j$'s if $t_j\theta_{ij}$ are the smallest. In this measure $t_j$ is the popularity of node $j$ and $\theta_{ij}$ is the similarity of the two nodes.
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/disc-popularity-similarity.png)
-<figcaption markdown="1">
-Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity.
-</figcaption>
-</figure>
+{{< figure src="../assets/popularity-similarity-in-networks/disc-popularity-similarity.png" caption="Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity." >}}
+
+
+
 
 
 **The key transformation of this problem** is to define a new radial coordinate system $r =\ln t$, so that the distance becomes log scale. Then we define the disc to be on a hyperbolic space so that the distance between any two points is calculated as [^4]
@@ -144,12 +122,7 @@ $$
 Minimizing $x_{ij}$ becomes equivalent to minimizing $t_j \theta_{ij}/2$ when dealing with the connectivity from a new born node $i$. **The competition between popularity and similarity is simply the minimization of distance between two nodes on a hyperbolic plane.**
 
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/disc-similarity-popularity-hyperbolic.png)
-<figcaption markdown="1">
-Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line. Papadopoulos et al (2012).
-</figcaption>
-</figure>
+{{< figure src="../assets/popularity-similarity-in-networks/disc-similarity-popularity-hyperbolic.png" caption="Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line. Papadopoulos et al (2012)." >}}
 
 Why is this definition of distance far superior than the previous measure of $\mathrm{Popularity}\times \mathrm{Similarity}$? Or why do I care? Because the universe/nature itself measures distance on hyperbolic space, i.e., Minkowski space. It also shows us the hint that by choosing a proper metric we might be able to define distance between any nodes in any systems. The only question becomes which geometry.
 
@@ -172,12 +145,7 @@ $$
 
 where $r_j$ is an old node and it drifts, $r_i$ is the node at current time. Why would we do this? As $\beta$ approaches 1, we fall back to the situation that the nodes are stationary and no drifting is allowed. On the other hand, $\beta$ approaches 0 means we have all the nodes drifting to the circle of current time.
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/disc-node-drift-beta-1.png)
-<figcaption markdown="1">
-Drift of nodes for $\beta=1$. All nodes are moving to a circle of current time.
-</figcaption>
-</figure>
+{{< figure src="../assets/popularity-similarity-in-networks/disc-node-drift-beta-1.png" caption="Drift of nodes for $\beta=1$. All nodes are moving to a circle of current time." >}}
 
 The drifting effectively decrease the connectivity of the old nodes since they are drifting away from the center. Another view of this fading is that the connection probability power law index $\gamma$ is larger, i.e.,
 
@@ -191,12 +159,8 @@ $$
 * Growth of Internet Autonomous System
 
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/internet-routers.png)
-<figcaption markdown="1">
-Internet AS on a hyperbolic disc. The radial coordinate is log of time, $r=\ln t$. Boguna et al (2010).
-</figcaption>
-</figure>
+{{< figure src="../assets/popularity-similarity-in-networks/internet-routers.png" caption="Internet AS on a hyperbolic disc. The radial coordinate is log of time, $r=\ln t$. Boguna et al (2010)." >}}
+
 
 Boguna et al modeled the growth of internet AS using the popularity similarity method and it shows exactly the same statistical result as the actual internet AS data [^6].
 
@@ -208,12 +172,7 @@ Boguna et al modeled the growth of internet AS using the popularity similarity m
 Krioukov et al came up with the idea that the whole universe can be mapped onto hyperbolic space and events are connected only to nearest neighbors. This in fact is already true in cosmology. Theories predicted that the matter density after inflation is power law, which can be explained by a dynamics generating of particle on a hyperbolic space. The authors created a map from the physical de Sitter space to hyperbolic space. Then the dynamic generation of the particles in the universe simple follows power law since the nodes generated this way has a power law distribution of degrees, i.e., a place that is dense initially is more likely to be dense after the inflation [^5].
 
 
-<figure markdown="1">
-![](../assets/popularity-similarity-in-networks/network-cosmology.png)
-<figcaption markdown="1">
-Map de Sitter space to hyperbolic space. Krioukov et al (2012).
-</figcaption>
-</figure>
+{{< figure src="../assets/popularity-similarity-in-networks/network-cosmology.png" caption="Map de Sitter space to hyperbolic space. Krioukov et al (2012)." >}}
 
 
 ## What else?
