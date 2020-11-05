@@ -245,7 +245,5 @@ Notes div {% highlight html %}
 Figure with Caption {% highlight html %}
 ![]({{ site.url }}/assets/programming/chrome-dev-tools-inspect.png) where {{ site.url }} is the configured url of the site.
 Alternatively, we can use the set attributes syntax in kramdown.
-{% highlight md %} This is a paragraph with some class.</description></item><item><title>Welcome</title><link>/blog/2016-05-20-welcome-to-jekyll/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/blog/2016-05-20-welcome-to-jekyll/</guid><description>Welcome</description></item><item><title>Workflows</title><link>/awesome/workflows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/awesome/workflows/</guid><description>Data Quality and Summary PNG PDF Validating the data quality and generate summary statistics reports.
-Rows and Columns : The questions to be answered serve as guides in EDA Rows Descriptions What does the row mean?
-Count Columns Descriptions What does the column mean?
-Count How many columns?</description></item></channel></rss>
+{% highlight md %} This is a paragraph with some class.</description></item><item><title>Welcome</title><link>/blog/2016-05-20-welcome-to-jekyll/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/blog/2016-05-20-welcome-to-jekyll/</guid><description>Welcome</description></item><item><title>Workflows</title><link>/awesome/workflows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/awesome/workflows/</guid><description>The scope of exploratory data analysis is not universally defined. Some of the contents discussed here may have crossed the line. The whole modeling process is never decoupled anyway. Data wrangling is mostly guided by the exploratory data analysis (EDA). In other words, the data cleaning process should be mostly guided by questions from business and stakeholder or out of curiosity.
+There are three key components in EDA.</description></item></channel></rss>
