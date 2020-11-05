@@ -1,7 +1,7 @@
 <div>
     {{ range $.Site.Data.workflows }}
     <div class="is-divider" data-content="{{ .name }}"></div>
-    <h2 id="{{ .name }}">{{ .name }}
+    <h2 id="{{ .name | urlize }}">{{ .name }}
     {{ if .downloads }}
         {{ range .downloads }}
             <a href="{{ .path }}"><span class="tag is-link">{{ .type }}</span></a>
