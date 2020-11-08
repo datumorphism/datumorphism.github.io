@@ -1,0 +1,22 @@
+{{ $filename := (.Get 0) }}
+{{ $showname := (.Get 1)}}
+
+
+{{ with $.Site.GetPage $filename }}
+
+<a class="box is-primary" href="{{ .Permalink }}">
+    <div class="media-content">
+        <div class="content">
+            <h6 class="title is-6">{{ .Title }}</h6>
+            <p>
+                {{ if .Params.description }}
+                {{ .Params.description | safeHTML | truncate 1000 }}
+                {{ else }}
+                {{ .Summary | safeHTML | truncate 1000 }}
+                {{ end }}
+            </p>
+        </div>
+    </div>
+</a>
+
+{{ end }}

@@ -1,0 +1,31 @@
+{{ $filename := (.Get 0) }}
+{{ $showname := (.Get 1)}}
+
+
+{{ with $.Site.GetPage $filename }}
+
+
+<span class="tooltip"><a href="{{ .Permalink }}">
+        {{ if $showname }}
+        {{ $showname }}
+        {{ else }}
+        {{ .Title }}
+        {{ end }}
+    </a>
+    <span class="tooltiptext">
+        {{ if .Params.description }}
+            <span style="font-size:90%;">
+                {{ .Params.description }}
+            </span>
+        {{ else }}
+
+            <span style="font-size:90%;">
+                {{ .Summary }}
+            </span>
+
+        {{ end }}
+    </span>
+</span>
+
+
+{{ end }}

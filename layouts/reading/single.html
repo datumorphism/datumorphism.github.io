@@ -179,7 +179,7 @@
                                             <ul>
                                             {{ range . }}
                                             {{ with $.Site.GetPage . }}
-                                                <li class="has-text-weight-bold"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                                {{ partial "network/linkcard" . }}
                                             {{ end }}
                                             {{ end }}
                                             </ul>
@@ -200,11 +200,11 @@
                                     <div class="content">
                                         <p>
                                             <strong>Links from: </strong>
-                                                <ul>
+                                                <div>
                                                 {{ range . }}
-                                                    <li class="has-text-weight-bold"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                                    {{ partial "network/linkcard" . }}
                                                 {{ end }}
-                                                </ul>
+                                                </div>
                                         </p>
                                     </div>
                                 </div>
