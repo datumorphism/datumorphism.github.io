@@ -62,6 +62,11 @@ outputFormats:
     isPlainText: true
     mediaType: "application/json"
     notAlternative: true
+  search:
+    baseName: "search"
+    isPlainText: true
+    mediaType: "application/json"
+    notAlternative: true
   network:
     baseName: "network"
     isPlainText: true
@@ -74,3 +79,4 @@ outputs:
     - "RSS"
     - "data"
     - "network"
+    - "search"
