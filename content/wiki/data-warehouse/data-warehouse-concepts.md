@@ -15,9 +15,9 @@ weight: 1
 
 The purpose of the data warehouse should be clear. In most cases, it is for the analysis of data, not for data production.[^1]
 
-1. Subject-oriented: since data warehouses are for decision makers, arrange them into subjects makes it much easier to access.
-2. Integraded: many sources are integrated for easy analysis
-3. Time-variant: observation time should be recorded since the data is also used to analyze time evolution
+1. Subject-oriented: since data warehouses are for decision-makers, arrange them into subjects makes it much easier to access.
+2. Integrated: many sources are integrated for easy analysis
+3. Time-variant: observation time should be recorded since the data is also used to analyze the time evolution
 4. Nonvolatile: simply for analysis
 
 
@@ -27,10 +27,11 @@ The purpose of the data warehouse should be clear. In most cases, it is for the 
 2. OLAP: online analytical processing
 
 |      | OLTP |  OLAP |
+|:---:|:-----:|:----:|
 | user |    customer  |   data scientist, managers   |
 | purpose | production | analysis  |
 | content | everything | cleaner data |
-| database | entity relation model, application oriented | star/snowflake model, subject oriented |
+| database | entity relation model, application-oriented | star/snowflake model, subject-oriented |
 | history | usually no need to record the history | history is crucial |
 | query | short and frequent read and write | read-only and but complicated analysis |
 
@@ -58,14 +59,14 @@ The columns `Year` and `Category` serve as dimensions and `Revenue` serves as th
 The dimension tells us what we are talking about and the fact tells us the values. For the previous example, we could set up a coordinate system, with two axes, `Year` and `Category`. On the `Year` axis, we have two values, `2017` and `2018`. On the `Category` axis, we have two values `Keyboard` and `Headset`. If we are looking for the revenue of keyboards in 2018, then we are looking for `2018` and `Headset`. It is clearly a 2 dimensional **data cube**.
 
 
-In princple, we could have N dimensional **data cube**. For example, we would like to look at the revenue of
+In principle, we could have N-dimensional **data cube**. For example, we would like to look at the revenue of
 
 1. keyboards (`Category`),
 2. in 2018 (`Year`),
 3. in Cologne (`City`),
 4. sold offline (`Channel`).
 
-Then we have a 4 dimensional dataset. Revenue is the fact and `Category`, `Year`, `City` and `Channel` are the dimensions.
+Then we have a 4-dimensional dataset. Revenue is the fact and `Category`, `Year`, `City` and `Channel` are the dimensions.
 
 
 
