@@ -16,6 +16,8 @@ references:
 - name: Spearman's rank correlation coefficient
   link: https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
 weight: 3
+links:
+  - wiki/statistics/correlation-coefficient.md
 ---
 
 

@@ -14,6 +14,7 @@ references:
 links:
   - cards/statistics/covariance-matrix.md
   - wiki/statistics/multidimensional-data.md
+  - wiki/statistics/correlation-analysis-chi-square.md
 weight: 4
 ---
 
@@ -95,12 +96,12 @@ which should be called the covariance of all the N series, $\mathrm{Cov} ({A_1, 
 
 Of course, we do not use these since we could easily build a covariance matrix to indicate all the possible covariances between any two variables, for example,
 
-{{<m>}}
+$$
 \mathbf{C} = \begin{pmatrix}
-\mathrm{Cov} (A_1, A_1) & \mathrm{Cov} (A_1, A_2) \\
+\mathrm{Cov} (A_1, A_1) & \mathrm{Cov} (A_1, A_2) \\\\
 \mathrm{Cov} (A_2, A_1) & \mathrm{Cov} (A_2, A_2)
 \end{pmatrix}
-{{</m>}}
+$$
 
 {{</message>}}
 
