@@ -47,13 +47,13 @@ We have collected the following data. Beware that this small amount of data migh
 ## The Rule, Support, and Confidence
 
 
-Association rule has three components: the rule, the support, and the confidence.
+The Association rule has three components: the rule, the support, and the confidence.
 
 $$
-\text{Milk} \Rightarrow \text{Croissant} [ \text{support} = 2/5, \text{confidence} = 2/3  ]
+\text{Milk} \Rightarrow \text{Croissant} [ \text{support} = 5/11, \text{confidence} = 5/7  ]
 $$
 
-In this rule, the first part is the rule it self, $\text{Milk} \Rightarrow \text{Croissant}$. It means that if the customers are buying milk they buy croissants too. The **support** is the probability of the records with both milk and croissant (2) among all the records (5). The **confidence** is the conditional probability that the records have croissant given milk in the record.
+In this rule, the first part is the rule it self, $\text{Milk} \Rightarrow \text{Croissant}$. It means that if the customers are buying milk they buy croissants too. The **support** is the probability of the records with both milk and croissant (5) among all the records (11). The **confidence** is the conditional probability that the records have croissant given milk in the record.
 
 Then we define two thresholds that tell us whether this rule is valid.
 
