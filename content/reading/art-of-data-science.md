@@ -29,7 +29,7 @@ references:
 4. Interpretation
 5. Communication
 
-The example about asthma in the US is a nice easy and clear example about the integration of these activities.
+The example of asthma in US is a nice, easy and clear example about the integration of these activities.
 
 
 ### Types of Questions
@@ -69,9 +69,10 @@ Some random thoughts.
 
 ### We need a knowledge database for the company
 
-Going through the data analysis process, I found that it is offen important to make connections to the current knowlege. For example, it is the key step to make sure the question is not answered.
+Going through the data analysis process, I found that it is often important to make connections to the current knowledge. For example, it is the key step to make sure the question is not answered.
 
-For academic research, it is usally done through looking up in the literature. When the ojective or question is related to some internal data and internal product, it is generally not possible to look up in some public database.
+For academic research, it is usually done through looking up in the literature. When the objective or question is related to some internal data and internal product, it is generally not possible to look up in some public database.
 
 Then we need a data analysis question/objective database. While developing the business, we could accumulate a lot of analysis/questions. If some questions are correlated to other questions, it is generally a good idea to make a connection.
+
 
