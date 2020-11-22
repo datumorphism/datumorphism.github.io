@@ -5,7 +5,7 @@ category:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'
-weight: 1
+weight: 3
 references:
 - name: "Anscombe's quartet @ Wikipedia"
   link: "https://en.wikipedia.org/wiki/Anscombe's_quartet"

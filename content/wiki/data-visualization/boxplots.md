@@ -7,7 +7,7 @@ tags:
 - 'Data Visualization'
 - 'Boxplot'
 - 'Outlier'
-weight: 3
+weight: 5
 ---
 
 

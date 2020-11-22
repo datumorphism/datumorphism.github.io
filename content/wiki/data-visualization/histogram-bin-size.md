@@ -5,7 +5,7 @@ category:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'
-weight: 2
+weight: 4
 references:
 - name: "Histogram @ Wikipedia"
   link: https://en.wikipedia.org/wiki/Histogram

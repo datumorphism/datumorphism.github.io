@@ -5,7 +5,7 @@ category:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'
-weight: 1
+weight: 6
 published: false
 ---
 
