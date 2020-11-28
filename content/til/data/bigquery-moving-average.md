@@ -1,10 +1,9 @@
 ---
-layout: til
 title: "Calculate Moving Average Using SQL/BigQquery"
 date: 2019-05-12
-author: Lei Ma
-comments: true
-category:
+authors:
+  - Lei Ma
+categories:
 - data
 tags:
 - Data Warehouse

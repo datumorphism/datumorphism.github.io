@@ -1,10 +1,9 @@
 ---
-layout: til
 title: "Certificate Errors in urllib"
 date: 2018-06-25
-author: Lei Ma
-comments: true
-category:
+authors:
+  - Lei Ma
+categories:
 - data
 tags:
 - Web

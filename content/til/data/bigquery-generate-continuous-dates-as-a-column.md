@@ -1,14 +1,13 @@
 ---
-layout: til
 title: "Generate a Column of Continuous Dates in BigQuery"
 date: 2019-05-12
-author: Lei Ma
-comments: true
-category:
-- data
+authors:
+  - Lei Ma
+categories:
+  - data
 tags:
-- Data Warehouse
-- Big Query
+  - Data Warehouse
+  - Big Query
 summary: Generate a table with a column of continuous dates
 ---
 

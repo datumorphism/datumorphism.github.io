@@ -1,10 +1,9 @@
 ---
-layout: til
 title: "Pandas Groupby Does Not Guarantee Unique Content in Groupby Columns"
 date: 2020-04-20
-author: Lei Ma
-comments: true
-category:
+authors:
+  - Lei Ma
+categories:
 - machine-learning
 tags:
 - Python

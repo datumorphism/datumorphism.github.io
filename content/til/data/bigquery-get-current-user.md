@@ -1,10 +1,9 @@
 ---
-layout: til
 title: "Get Current User in BigQuery"
 date: 2019-05-12
-author: Lei Ma
-comments: true
-category:
+authors:
+  - Lei Ma
+categories:
 - data
 tags:
 - Data Warehouse

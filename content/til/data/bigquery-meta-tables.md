@@ -1,10 +1,9 @@
 ---
-layout: til
 title: "BigQuery Meta Tables"
 date: 2019-05-12
-author: Lei Ma
-comments: true
-category:
+authors:
+  - Lei Ma
+categories:
 - data
 tags:
 - Data Warehouse
