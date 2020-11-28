@@ -13,14 +13,52 @@ references:
     link: https://www.saedsayad.com/naive_bayesian.htm
   - name: "Naive Bayes classifier @ Wikipedia"
     link: https://en.wikipedia.org/wiki/Naive_Bayes_classifier
+  - name: "Ross, S. M. (2021). Introduction to Probability and Statistics for Engineers and Scientists (6th ed.). Academic Press."
+    link: ""
 links:
   - cards/statistics/bayes-theorem.md
   - cards/statistics/conditional-probability-table.md
+  - wiki/pattern-mining/association-rules.md
 weight: 1
 ---
 
 Naive Bayesian is a classifier using {{< c "cards/statistics/bayes-theorem.md" >}} with 'naive' assumptions.
 
+
+## Problems with Conditional Probability Calculation
+
+By definition, the conditional probability of event $\mathbf Y$ given features  $\mathbf X$ is
+{{<m>}}
+\begin{equation}
+P(\mathbf Y\mid \mathbf X) = \frac{P(\mathbf Y, \mathbf X)}{ P(\mathbf X) },
+\label{def-cp-y-given-x}
+\end{equation}
+{{</m>}}
+where
+- $P(\mathbf X)$ is probability of an event having the features $\mathbf X$,
+- $P(\mathbf Y, \mathbf X)$ is the probability of the event $Y$ with features $\mathbf X$.
+
+In equation $\eqref{def-cp-y-given-x}$, the estimation of $P(\mathbf X)$ is not easy. Imagine the size of the space spanned by 10 features. It is a 10-dimensional space and a lot of combinations. This is usually not accurate in many limited datasets. An accurate estimation of the probability of one specific combination requires a large dataset with a lot of occurrences of events with all kinds of feature combinations.
+
+It is the same situation for the estimation of $P(\mathbf X \mid \mathbf Y)$ and $P(\mathbf Y, \mathbf X)$.
+
+
+On the other hand, the conditional probability of event $Y$ given a set of features $\mathbf X$ can also be calculated using the Bayes' theorem,
+{{<m>}}
+\begin{equation}
+P(\mathbf Y\mid \mathbf X) = \frac{P(\mathbf Y) P(\mathbf X \mid \mathbf Y)}{ P(\mathbf X) },
+\label{cp-by-bayes-theorem-init}
+\end{equation}
+{{</m>}}
+
+where
+- $P(\mathbf Y)$ is the probability of event $Y$.
+
+In equation $\eqref{cp-by-bayes-theorem-init}$, we will be calculating $P(\mathbf X\mid \mathbf Y)$ instead of $P( \mathbf Y\mid \mathbf X)$ which will be better defined in a small dataset.
+
+
+
+## Naive Bayes
 
 Suppose we are solving a classification problem, with features denoted as $\mathbf X$, and class results as $\mathbf Y$. We would like to train a classifier for the class results given some feature values. Bayes' theorem tells us the probability
 
@@ -31,12 +69,9 @@ P(\mathbf Y \mid \mathbf X) = \frac{ P(\mathbf X \mid \mathbf Y) P(\mathbf Y) }{
 $$
 
 
-{{< message title="Why Don't We Just Calculate $P(\mathbf Y \mid \mathbf X)$" class="info">}}
-
-Because it would be hard to calculate it if we have too many features. In fact, $P(\mathbf X)$ is hard to calculate too.
+{{< message title="Why Don't We Just Calculate $P(\mathbf Y \mid \mathbf X)$ Using the Naive Assumption in $\eqref{def-cp-y-given-x}$" class="info">}}
 
 For details of the calculation of $P(\mathbf Y \mid \mathbf X)$, please refer to [conditional probability table](/cards/statistics/conditional-probability-table).
-
 
 {{</message>}}
 
