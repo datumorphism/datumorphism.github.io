@@ -3,7 +3,7 @@
 		"type": {{ $hit.Section | jsonify }},
 		"title": {{ $hit.Params.title | jsonify }},
 		"url": {{ $hit.Permalink | jsonify }},
-		"category": {{ $hit.Params.category | jsonify }},
+		"category": {{ if $hit.Params.category }} {{ $hit.Params.category | jsonify }} {{ else }} {{ $hit.Params.categories | jsonify }} {{ end }},
 		"tags": {{ $hit.Params.tags | jsonify }},
 		"description": {{ if $hit.Params.description }}{{ $hit.Params.description | jsonify }}{{ else }}{{ $hit.Summary | jsonify }}{{ end }},
 		"authors": {{ $hit.Params.authors | jsonify }},
