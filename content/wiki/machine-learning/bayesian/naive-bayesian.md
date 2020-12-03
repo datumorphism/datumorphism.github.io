@@ -71,6 +71,9 @@ $$
 
 {{< message title="Why Don't We Just Calculate $P(\mathbf Y \mid \mathbf X)$ Using the Naive Assumption in $\eqref{def-cp-y-given-x}$" class="info">}}
 
+1. The calculation of $P(\mathbf Y, \mathbf X)$ requires a scan of the whole dataset which is quite costly.
+2. In a biased dataset, $P(\mathbf Y, \mathbf X)$ will be biased. Assuming $\mathbf Y$ indicates if the flight is late. $\mathbf Y$ has two possible values, NL (not late) and L (late). In this dataset, the data pipeline records the cases with L more reliably because these are more important. For $\mathbf Y=NL$, the dataset has a lot of missing records because these are not so important. In such a dataset, it is not reliable to calculate $P(\mathbf Y, \mathbf X)$. However, it is more reliable to calculate conditional probabilities such as $P(\mathbf Y\mid \mathbf X)$.
+
 For details of the calculation of $P(\mathbf Y \mid \mathbf X)$, please refer to [conditional probability table](/cards/statistics/conditional-probability-table).
 
 {{</message>}}
