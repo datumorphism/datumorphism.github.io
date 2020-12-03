@@ -10,7 +10,6 @@ categories:
 tags:
   - Python
   - OOP
-weight: null
 links:
   - wiki/programming-languages/python/basics.md
 updated: '2020-12-03'

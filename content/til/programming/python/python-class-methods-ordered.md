@@ -14,7 +14,6 @@ references:
   - name: Can I add attributes to class methods in Python?
     link: 'https://stackoverflow.com/a/48146924/1477359'
 license: CC BY-SA 4.0
-weight: null
 links:
   - wiki/programming-languages/python/basics.md
   - wiki/programming-languages/python/decorators.md
