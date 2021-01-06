@@ -9,3 +9,5 @@ tags:
 ---
 
 A bag is a set in which duplicate elements are allowed.
+
+An ordered bag is a list that we use in programming.
