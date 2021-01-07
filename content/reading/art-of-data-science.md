@@ -3,7 +3,7 @@ title:  "The Art of Data Science"
 date: 2019-04-19
 subtitle: "by Roger Peng and Elizabeth Matsui"
 speaker: "Lei Ma"
-author: OctoMiao
+author: LM
 types:
 - 'book'
 category:
@@ -11,7 +11,7 @@ category:
 tags:
 - 'data science'
 summary: A nice and elegant book on data science
-status: 10%
+status: 100%
 references:
   - name: "The Art of Data Science"
     link:
