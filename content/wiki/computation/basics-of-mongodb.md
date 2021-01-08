@@ -11,6 +11,8 @@ references:
   - name: "MongoDB Cheatsheet"
     link: https://gist.github.com/emptymalei/8c6b4fbbf0d92ba0ffb856439ec9cc64
 weight: 6
+links:
+  - "wiki/computation/basics-of-redis.md"
 ---
 
 This [MongoDB Cheatsheet](https://gist.github.com/emptymalei/8c6b4fbbf0d92ba0ffb856439ec9cc64) is my best friend.
