@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dev on Datumorphism</title><link>/tags/dev/</link><description>Recent content in dev on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics of Redis</title><link>/wiki/computation/basics-of-redis/</link><pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate><guid>/wiki/computation/basics-of-redis/</guid><description>Basics Redis is:
+NoSQL KeyValue In memory Data Structure Server binary safe strings lists, sets, sorted sets, hashes bitmaps, hyperloglogs Open source Redis is:
+Fast Low CPU Requirement Scalable Redis can be used as:
+Cache Analytics Leaderboard Queues Cookie storage Expiring data Messaging High I/O workloads API throttlings How to persist your data
+Snapshot AOF: Append Only File Pros:</description></item></channel></rss>
