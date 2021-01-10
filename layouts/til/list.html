@@ -27,7 +27,7 @@
 
                     <div class="columns is-desktop is-multiline">
                         {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
-                        {{ partial "til-list" . }}
+                        {{ partial "list/til-list" . }}
                         {{ end }}
                     </div>
 
