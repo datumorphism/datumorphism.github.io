@@ -1,0 +1,152 @@
+name: Feature Engineering
+description: Feature Engineering is one of the fundamental activities of data science. This is an practical outline of feature engineering in data science.
+downloads:
+  - type: PNG
+    path: feature-engineering/assets/feature-engineering.png
+  - type: PDF
+    path: feature-engineering/assets/feature-engineering.pdf
+workflow:
+- id: prior-knowledge
+  name: Prior Knowledge Simplifies Your Model
+  description: The more relevant prior knowledge you have, the simpler the model can be.
+  steps:
+    - id: prior-knowledge--applications
+      name: Applications
+      description: Prior knowledge, such as domain knowledge, can be used to
+      steps:
+        - id: prior-knowledge--applications--define
+          name: Define the problem more clearly
+          description:
+        - id: prior-knowledge--applications--filter
+          name: Filter out unnecessary features
+          description:
+        - id: prior-knowledge--applications--fe
+          name: Simplify feature engineering
+          description: "e.g., combining power and time into total energy used"
+        - id: prior-knowledge--applications--anomalies
+          name: Locate anomalies
+          description:
+- id: encoding
+  name: Encoding
+  description: Encode the features into numerical values for the model to process.
+  steps:
+    - id: encoding--methods
+      name: Methods
+      description:
+      steps:
+        - id: encoding--methods--categorical
+          name: Categorical Data Encoding
+          description:
+          steps:
+            - id: encoding--methods--categorical--binary
+              name: Binary Encoding
+              description:
+            - id: encoding--methods--categorical--onehot
+              name: One-hot Encoding
+              description:
+            - id: encoding--methods--categorical--numerical
+              name: Numerical Encoding
+              description:
+        - id: encoding--methods--datetime
+          name: Datetime
+          description:
+          steps:
+            - id: encoding--methods--datetime--disintegration
+              name: Disintegration
+              description:
+- id: feature-crossing
+  name: Feature Crossing
+  description: Introduce higher order features to make the model more linearly separable.
+  steps:
+    - id: feature-crossing--methods
+      name: Methods
+      description:
+      steps:
+        - id: feature-crossing--methods--powers
+          name: "Create $x^2$, $x^3$ from $x$"
+- id: scaling
+  name: Scaling
+  description: Scale the data to different ranges.
+  steps:
+    - id: scaling--methods
+      name: Methods
+      description:
+      steps:
+        - id: scaling--methods--location-and-spread
+          name: Rescale Based on Location and Spread
+          description:
+        - id: scaling--methods--minmax
+          name: MinMax
+          description: Scale data into a specific range
+- id: combining-features
+  name: Combining Features
+  description: Combine several features into one so that the new feature bears more relevant information.
+- id: sparse-cat
+  name: Sparse Categorical Data
+  description: "Some categorical data values do not have a large number of counts. Combining these low count values into one might be helpful."
+- id: normalization
+  name: Normalization
+  description: "For example, if a feature has a very high variance and we are working on a clustering method, it is easier if we normalize the data, e.g., log."
+- id: statistical-results
+  name: "Using Statistical Results as Features"
+  description:
+  steps:
+    - id:
+      name: Methods
+      description:
+      steps:
+        - id: statistical-results--average
+          name: "Use the Average of Several Features"
+          description:
+- id: text-feat
+  name: Extract Values from Texts
+  description:
+  steps:
+    - id: text-feat--methods
+      name: Methods
+      description:
+      steps:
+        - id: text-feat--methods--tfidf
+          name: TFIDF
+- id: loc-var-skew-kurt
+  name: "Location, Variability, Skewness and Kurtosis"
+  description:
+  steps:
+    - id: loc-var-skew-kurt--methods
+      name: Methods
+      description:
+      steps:
+        - id: loc-var-skew-kurt--methods--skew
+          name: Fix the Skewness
+          description:
+          steps:
+            - id: loc-var-skew-kurt--methods--skew--box-cox
+              name: Box Cox transform
+- id: feature-selection
+  name: "Feature Selection"
+  description:
+  steps:
+    - id: feature-selection--redundant
+      name: Remove Redundant Features
+      description:
+      steps:
+        - id: feature-selection--redundant--what
+          name: What are Redundant Features
+          description:
+          steps:
+            - id: feature-selection--redundant--what--noisy
+              name: Noisy features
+              description:
+            - id: feature-selection--redundant--what-corr
+              name: Features that are highly correlated to or duplicate of some other features
+              description:
+        - id: feature-selection--redundant--methods
+          name: Methods
+          description:
+          steps:
+            - id: feature-selection--redundant--methods--useful
+              name: Only Include Useful Features
+              description: Feature selection using domain knowledge, or feature selection algorithms.
+            - id: feature-selection--redundant--methods--corr
+              name: Remove High Correlated Features
+              description:

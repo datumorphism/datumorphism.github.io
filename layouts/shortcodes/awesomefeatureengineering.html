@@ -1,0 +1,71 @@
+<div>
+    {{ range $.Site.Data.workflows }}
+    <div class="is-divider" data-content="{{ .name }}"></div>
+    <h2 id="{{ .name | urlize }}">{{ .name }}
+    {{ if .downloads }}
+        {{ range .downloads }}
+            <a href="{{ .path }}"><span class="tag is-link">{{ .type }}</span></a>
+        {{ end }}
+    {{ end }}
+    </h2>
+    <p class="is-size-5 notification">{{ .description }}</p>
+    <ol type="1">
+        {{ range .workflow }}
+            <li style="list-style-type:none; border-top: 2px solid #e95420;">
+                <input type="checkbox"><span>  {{ .name }} : {{ .description }}</span>
+                {{ if .steps }}
+                <ol>
+                    {{ range.steps }}
+                    <li style="list-style-type:none;border-top: 1px dashed #e95420;">
+                        <input type="checkbox"><span>
+                            {{ if .related }} <a href="#{{.related}}" style="color: red;">{{ .name }} <i class="fas fa-bookmark"></i></a>
+                            {{ else }} {{ .name }}
+                            {{ end }}
+                        </span>
+                        {{ if .description }}
+                        <p class="is-size-6 notification" style="margin-left:1em;padding: 0.5em 0.5em 0.5em 0.5em;">
+                            {{ .description }}
+                        </p>
+                        {{ end }}
+                        {{ if .steps }}
+                        <ol>
+                            {{ range .steps }}
+                                <li style="list-style-type:none;">
+                                    <input type="checkbox"><span>
+                                        {{ if .related }} <a href="#{{.related}}" style="color: red;">{{ .name }} <i class="fas fa-bookmark"></i></a>
+                                        {{ else }} {{ .name }}
+                                        {{ end }}
+                                    </span>
+                                    {{ if .description }}
+                                    <p class="is-size-6 notification" style="margin-left:1em;padding: 0.5em 0.5em 0.5em 0.5em;">{{ .description }}</p>
+                                    {{ end }}
+                                    {{ if .steps }}
+                                        <ol>
+                                            {{ range .steps }}
+                                                <li style="list-style-type:none;">
+                                                    <input type="checkbox"><span>
+                                                        {{ if .related }} <a href="#{{.related}}" style="color: red;">
+                                                            {{ .name }} <i class="fas fa-bookmark"></i></a>
+                                                        {{ else }} {{ .name }}
+                                                        {{ end }}
+                                                    </span>
+                                                    {{ if .description }}
+                                                    <p class="is-size-6 notification" style="margin-left:1em;padding: 0.5em 0.5em 0.5em 0.5em;">{{ .description }}</p>
+                                                    {{ end }}
+                                                </li>
+                                            {{ end }}
+                                        </ol>
+                                    {{ end }}
+                                </li>
+                            {{ end }}
+                        </ol>
+                        {{ end }}
+                    </li>
+                    {{ end }}
+                </ol>
+                {{ end }}
+        </li>
+        {{ end }}
+    </ol>
+    {{ end }}
+</div>
