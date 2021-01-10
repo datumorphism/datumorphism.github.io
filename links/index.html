@@ -4,8 +4,7 @@
 <a href=/reading/ class=navbar-item>Reading Notes</a>
 <a href=/til/ class=navbar-item>TIL</a>
 <a href=/wiki/ class=navbar-item>Wiki</a></div></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item target=blank href=/blog/>Blog</a>
-<a class=navbar-item target=blank href=/tags/>Tags</a>
-<a class=navbar-item id=showModal><span class=icon><i class="fas fa-project-diagram"></i></span></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><section><div class="hero is-warning is-medium"><div class=hero-body><div class="container has-text-centered"><h1 class="title is-1">Links</h1><h2 class="subtitle is-3"></h2></div></div></div></section><div class="columns is-fullheight"><div class=column><section class="hero is-default is-bold"><div class=hero-body><div class=container><span class="tag is-light is-medium" style=margin:.5em><i class="far fa-bookmark" style=margin-right:.5em></i><a href=/links/wiki/model-selection/goodness-of-fit.md/ itemprop=headline>wiki/model-selection/goodness-of-fit.md</a> (4)</span>
+<a class=navbar-item target=blank href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item target=blank href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><section><div class="hero is-warning is-medium"><div class=hero-body><div class="container has-text-centered"><h1 class="title is-1">Links</h1><h2 class="subtitle is-3"></h2></div></div></div></section><div class="columns is-fullheight"><div class=column><section class="hero is-default is-bold"><div class=hero-body><div class=container><span class="tag is-light is-medium" style=margin:.5em><i class="far fa-bookmark" style=margin-right:.5em></i><a href=/links/wiki/model-selection/goodness-of-fit.md/ itemprop=headline>wiki/model-selection/goodness-of-fit.md</a> (4)</span>
 <span class="tag is-light is-medium" style=margin:.5em><i class="far fa-bookmark" style=margin-right:.5em></i><a href=/links/cards/machine-learning/measurement/gini-impurity.md/ itemprop=headline>cards/machine-learning/measurement/gini-impurity.md</a> (3)</span>
 <span class="tag is-light is-medium" style=margin:.5em><i class="far fa-bookmark" style=margin-right:.5em></i><a href=/links/cards/machine-learning/measurement/information-gain.md/ itemprop=headline>cards/machine-learning/measurement/information-gain.md</a> (3)</span>
 <span class="tag is-light is-medium" style=margin:.5em><i class="far fa-bookmark" style=margin-right:.5em></i><a href=/links/cards/statistics/bayes-theorem.md/ itemprop=headline>cards/statistics/bayes-theorem.md</a> (3)</span>
@@ -61,19 +60,4 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
 <strong>love</strong>.<br><a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer></footer><div class=modal><div class=modal-background></div><div class=modal-content><div id=network-graph style="margin-left:calc(50% - 50vw);width:100vw;height:100vh"></div></div><button class=modal-close style=color:#000>Close</button></div><script src=https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js></script><link href=/assets/network/netjsongraph.css rel=stylesheet><link href=/assets/network/netjsongraph-theme.css rel=stylesheet><script src=/assets/network/netjsongraph.js></script><script>d3.netJsonGraph("/network.json",{el:"#network-graph",metadata:true,linkDistance:100,linkStrength:1,charge:-1000,circleRadius:12,defaultStyle:false,linkClassProperty:"type",nodeClassProperty:"style",labelDy:"-1.8em",onClickNode:function(n){var overlay=d3.select(".njg-overlay"),overlayInner=d3.select(".njg-overlay > .njg-inner"),html="<p><b>id</b>: "+n.id+"</p>";if(n.label){html+="<p><b>label</b>: "+n.label+"</p>";}
-if(n.properties){for(var key in n.properties){if(!n.properties.hasOwnProperty(key)){continue;}
-if(k="link"){html+="<p><b>URL"+
-"</b>: <a href=\""+
-n.properties["link"]+
-"\">"+n.properties["link"]+"</a></p>";continue;}
-html+="<p><b>"+
-key.replace(/_/g," ")+
-"</b>: "+
-n.properties[key]+
-"</p>";}}
-if(n.linkCount){html+="<p><b>Connected Notes</b>: "+n.linkCount+"</p>";}
-if(n.local_addresses){html+="<p><b>local addresses</b>:<br>"+
-n.local_addresses.join("<br>")+
-"</p>";}
-overlayInner.html(html);overlay.classed("njg-hidden",false);overlay.style("display","block");removeOpenClass();d3.select(this).classed("njg-open",true);}});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script><script>$("#showModal").click(function(){$(".modal").addClass("is-active");});$(".modal-close").click(function(){$(".modal").removeClass("is-active");});</script><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a></p></div></div></footer></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
