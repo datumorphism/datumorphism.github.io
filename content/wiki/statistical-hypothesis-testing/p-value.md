@@ -5,7 +5,7 @@ date: 2019-01-20
 toc: true
 category:
 - 'Statistics Hypothesis Testing'
-tag:
+tags:
 - 'Statistics'
 - 'Basics'
 - 'Hypothesis Testing'

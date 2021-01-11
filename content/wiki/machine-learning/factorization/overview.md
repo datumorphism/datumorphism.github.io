@@ -4,7 +4,7 @@ excerpt: "Tensor operations that reduce the dimensionality"
 date: 2019-06-17
 category:
   - "Machine Learning"
-tag:
+tags:
   - "Machine Learning"
   - "Factorization"
   - "Tensor"

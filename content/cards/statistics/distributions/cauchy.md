@@ -4,7 +4,7 @@ excerpt: "also known as Breit–Wigner distribution"
 date: 2020-03-14
 category:
 - 'Statistics'
-tag:
+tags:
 - 'Statistics'
 - 'Distributions'
 references:

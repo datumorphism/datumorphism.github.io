@@ -5,7 +5,7 @@ date: 2018-03-20
 toc: true
 category:
 - 'Programming Language'
-tag:
+tags:
 - 'Python'
 - 'Programming Language'
 - 'Basics'

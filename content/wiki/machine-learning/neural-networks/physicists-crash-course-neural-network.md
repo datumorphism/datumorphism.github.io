@@ -4,7 +4,7 @@ description: "A very very brief introduction to neural network for physicists"
 date: 2015-05-02
 category:
   - 'Artificial Neural Networks'
-tag:
+tags:
   - 'Machine Learning'
   - 'Artificial Neural Networks'
   - 'Basics'
