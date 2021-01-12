@@ -12,10 +12,30 @@ references:
     name: "SQL Server Index Basics"
   - link: "https://apandre.wordpress.com/data/datacube/"
     name: "OLAP Cubes"
+  - link: "https://app.enkipro.com/#/insight/5daefca67cef0ef7a1970975"
+    name: "What is NoSQL"
+  - link: "http://blog.knuthaugen.no/2010/03/the-nosql-landscape.html"
+    name: "Analysis of the NoSQL Landscape"
 weight: 4
+links:
+  - wiki/computation/basics-of-mongodb.md
+  - wiki/computation/basics-of-redis.md
+  - wiki/computation/basics-of-sql.md
 ---
 
-## Basics of Database
+
+## NoSQL
+
+NoSQL = Not only SQL. The four main types of NoSQL databases are
+
+- Key-value store: Amazon Dynamo, [memcached](http://memcached.org), Amazon SimpleDB
+- Column-orient store: Google BigTable, Cassandra
+- Graph database: Neo4j, VertexDB
+- Document database: MongoDB
+- Object database: [ZODB](http://www.zodb.org/)
+
+
+## Database Operations
 
 
 ### Relations
