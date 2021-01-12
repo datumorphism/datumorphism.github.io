@@ -7,6 +7,7 @@ tags:
 - Ruthless Data Scientist
 comments: true
 author: "LM"
+date: 2020-11-01
 published: true
 ---
 

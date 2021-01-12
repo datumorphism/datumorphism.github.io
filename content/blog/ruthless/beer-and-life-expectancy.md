@@ -8,6 +8,7 @@ tags:
 comments: true
 author: "LM"
 meta: "Springfield"
+date: 2018-08-08
 published: true
 ---
 
