@@ -27,7 +27,7 @@ When we create a new conda environment using
 conda create --name my_project_env
 ```
 
-`pip` is not installed by default. However, pip is usually installed on a user level, which mean you could actually run the command
+`pip` is not installed by default. However, pip is usually installed on a user level, which means you could run the command
 
 ```
 pip install -r requirements.txt
