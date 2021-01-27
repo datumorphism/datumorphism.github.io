@@ -20,7 +20,7 @@ references:
     link: "http://gwyddion.net/documentation/user-guide-en/wavelet-transform.html"
 weight: 4
 links:
-  - "/wiki/time-series/short-time-fourier-transform.md"
+  - "wiki/time-series/short-time-fourier-transform.md"
 ---
 
 In general, given a complete set of function $\psi(x; \tilde x)$, we can decompose a function $F(\tilde x)$
