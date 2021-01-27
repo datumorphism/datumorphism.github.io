@@ -20,7 +20,7 @@ references:
     link: "http://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html"
 weight:
 links:
-  - ""
+  - "cards/statistics/bayes-theorem.md"
 ---
 
 In the view of statistics, we know everything about a physical system if we know the probability $p(\mathbf s)$ of all possible states of the physical system $\mathbf s$. Time can also be part of the state specification.
@@ -74,8 +74,8 @@ In the Bayesian world, we will separate the state vector $\mathbf s$ into the ob
 > $$
 > \begin{align}
 > \theta_{\mathrm{MLE}}
-> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log p(y \mid  \theta) \\
-> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log \prod_{y_i\in Y} p(y_i \mid  \theta) \\
+> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log p(y \mid  \theta) \\\\
+> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log \prod_{y_i\in Y} p(y_i \mid  \theta) \\\\
 > &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \sum_{y_i\in Y} \log p(y_i \mid  \theta)
 > \end{align}
 > $$
@@ -84,9 +84,9 @@ In the Bayesian world, we will separate the state vector $\mathbf s$ into the ob
 > $$
 > \begin{align}
 > \theta_{\mathrm{MAP}}
-> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} p(y \mid  \theta) p(\theta) \\
-> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log p(y \mid  \theta) + \log p(\theta) \\
-> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log \prod_{y_i\in Y} p(y_i \mid  \theta) + \log p(\theta) \\
+> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} p(y \mid  \theta) p(\theta) \\\\
+> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log p(y \mid  \theta) + \log p(\theta) \\\\
+> &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \log \prod_{y_i\in Y} p(y_i \mid  \theta) + \log p(\theta) \\\\
 > &= \mathop{\mathrm{arg\,max}}\limits_{\theta} \sum_{y_i\in Y} \log p(y_i \mid  \theta) + \log p(\theta)
 > \end{align}
 > $$
