@@ -16,10 +16,9 @@ coordinators:
     link: https://leima.is
     description: LM is a data scientist
 date: 2019-04-07
-status: In Progress
+status: Active
 sections:
   - reading
 ---
 
-
-Read the reading notes [here](/reading).
+I share my reading notes on some books.

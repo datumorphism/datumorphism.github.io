@@ -17,10 +17,9 @@ coordinators:
     link: https://leima.is
     description: LM
 date: 2019-04-07
-status: In Progress
+status: Active
 sections:
   - til
 ---
 
-
-Read the TIL [here](/til).
+I write some interesting learnings sometimes. These TILs are usually concise and shipped with references.

@@ -1,14 +1,14 @@
 ---
-title: "Blog Posts"
+title: "Awesome Stuff"
 images:
-  - "/projects/welcome.svg"
+  - "/projects/awesome.svg"
 categories:
   - Blog
 author:
   - name: LM
 tags:
   - Fun
-summary: "My blog posts for fun."
+summary: "Summarizations, workflows, experiences, fails, etc"
 coordinators:
   - name: LM
     link: https://leima.is
@@ -19,5 +19,4 @@ sections:
   - blog
 ---
 
-
-I rarely write blog posts. Those blog posts collections are for fun.
+I create workflows, checklists, and write about experiences here.

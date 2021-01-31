@@ -17,10 +17,9 @@ coordinators:
     link: https://leima.is
     description: LM
 date: 2019-04-07
-status: In Progress
+status: Active
 sections:
   - cards
 ---
 
-
-Read the cards [here](/wiki).
+Concise and atomic knowledge snippets that can be used as references.
