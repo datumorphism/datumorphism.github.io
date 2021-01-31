@@ -1,0 +1,49 @@
+<div class="is-divider" data-content=""></div>
+
+<section class="section is-dark">
+    <div class="columns is-desktop is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+        <div class="column">
+            <h2 class="title is-2 has-text-left has-text-primary" style="margin-bottom: 1em;">Recent
+                Updates</h2>
+
+            {{ range .Site.RegularPages.ByDate.Reverse | first 4 }}
+            <div class="notification is-primary is-light">
+                <p><a href="{{ .Permalink }}" class="has-text-primary" style="text-decoration: none;">{{ .Title }}</a></p>
+                <p>
+                    {{ if .Params.tags }}
+                    <div>
+                        <span style="display:block;font-size:80%;" class="has-text-primary" >
+                            <div class="tags is-small has-text-primary" style="display: inline;">
+                                {{ range $tag := .Params.tags }}
+                                <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}"
+                                    style="margin-right: 0.5em;"><span
+                                        class="is-warning is-small has-text-primary">#{{$tag}}</span></a>
+                                {{ end }}
+                            </div>
+                        </span>
+                    </div>
+                    {{ end }}
+                </p>
+            </div>
+            {{ end }}
+        </div>
+
+        <div class="column">
+            <h2 class="title is-2 has-text-left has-text-info" style="margin-bottom: 1em;">Top
+                Tags</h2>
+                    <div class="field is-grouped is-grouped-multiline">
+                        {{ range .Site.Taxonomies.tags.ByCount | first 70 }}
+                        <div class="control">
+                            <div class="tags has-addons">
+                                <a href="{{ .Page.Permalink }}" class="tag is-info is-light">{{ .Page.Title }}</a>
+                                <a href="{{ .Page.Permalink }}" class="tag">{{ .Count }}</a>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="is-divider"></div>
