@@ -1,7 +1,7 @@
 ---
 title: "Latent Variable Models"
 description: "Latent variable models brings us new insights on identifying the patterns of some sample data."
-date: 2021-01-11
+date: 2021-01-27
 authors:
   - "LM"
 categories:
