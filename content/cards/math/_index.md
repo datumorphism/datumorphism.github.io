@@ -1,5 +1,5 @@
 ---
 title: "Math"
-description: "Knowledge cards about math"
+description: "Knowledge snippets about math"
 weight: 1
 ---

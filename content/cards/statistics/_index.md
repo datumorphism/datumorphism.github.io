@@ -1,5 +1,5 @@
 ---
 title: "Statistics"
-description: "Knowledge cards about statistics"
+description: "Knowledge snippets about statistics"
 weight: 2
 ---

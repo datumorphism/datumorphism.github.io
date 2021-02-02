@@ -11,8 +11,6 @@ references:
     link: https://en.wikipedia.org/wiki/Kronecker_product#Khatri%E2%80%93Rao_product
 ---
 
-Choose X from N is
-
-$$
-C_N^X = \frac{N!}{ X! (N-X)! }
-$$
+{{< m >}}
+\mathbf{A} \ast \mathbf{B} = \left(\mathbf{A}_{ij} \otimes \mathbf{B}_{ij}\right)_{ij}
+{{< /m >}}

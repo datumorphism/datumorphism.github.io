@@ -22,9 +22,9 @@ Information gain is a frequently used metric in calculating the gain during a sp
 
 First o all, the entropy of a dataset if defined as
 
-$$
+{{< m >}}
 S = - sum_i p_i \log p_i - sum_i (1-p_i)\log p_i,
-$$
+{{< /m >}}
 
 where $p_i$ is the probability of a class.
 
@@ -32,21 +32,21 @@ The information gain is the difference between the entropy.
 
 For example, in a decision tree algorithm, we would split a node. Before splitting, we assign a label $m$ to the node,
 
-$$
+{{< m >}}
 S_m = - p_m \log p_m - (1-p_m)\log p_m.
-$$
+{{< /m >}}
 
 After the splitting, we have two groups that contributes to the entropy, group $L$ and group $R$,
 
-$$
+{{< m >}}
 S'_m = p_L (- p_m \log p_m - (1-p_m)\log p_m) + p_R (- p_m \log p_m - (1-p_m)\log p_m),
-$$
+{{< /m >}}
 
 where $p_L$ and $p_R$ are the probabilities of the two groups. Suppose we have 100 samples before splitting and 29 samples in the left group and 71 samples in the right group, we have $p_L = 29/100$ and $p_R = 71/100$.
 
 The information gain is thus
 
-$$
+{{< m >}}
 Gain = S_m - S'_m.
-$$
+{{< /m >}}
 

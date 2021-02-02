@@ -16,7 +16,7 @@ references:
 Mahalanobis distance is a distance calculated using the inverse of the covariance matrix as the metric. For two vectors $\mathbf x$ and $\mathbf y$, the Mahalanobis distance is
 
 $$
-d^2 = (x_i - \bar x) g_{i,j} (y_j - \bar y),
+d^2 = (x_i - \bar x) g_{ij} (y_j - \bar y),
 $$
 
 where $g_{ij} = (S^{-1})_{ij}$ and $\mathbf S$ is the covariance matrix.

@@ -1,5 +1,9 @@
 ---
 title: Akaike Information Criterion
+date: 2020-11-08
+tags:
+  - Bayes
+  - Model Selection
 references:
   - link: https://en.wikipedia.org/wiki/Akaike_information_criterion#:~:text=The%20Akaike%20information%20criterion%20(AIC,response%20to%20a%20training%20sample.
     name: Akaike Information Criterion @ Wikipedia
@@ -19,9 +23,9 @@ To be more precise, how much information is lost if we use our model dist $\hat 
 
 AIC defines this information loss as
 
-$$
+{{< m >}}
 \mathrm{AIC} = - 2 \ln p(y|\hat\theta) + 2k
-$$
+{{< /m >}}
 
 
 - $y$: data set

@@ -1,5 +1,6 @@
 ---
 title: "Minimum Description Length"
+date: 2020-11-08
 tags:
   - MDL
 references:

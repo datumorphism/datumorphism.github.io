@@ -25,11 +25,9 @@
         <section class="hero is-default is-bold">
             <div class="hero-body">
                 <div class="container">
-
+                    {{ partial "breadcrumb" . }}
                     <div class="columns is-desktop is-multiline">
-                        {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
-                        {{ partial "list/cards-list" . }}
-                        {{ end }}
+                        {{ partial "list-pages-by-cards" . }}
                     </div>
 
                 </div>

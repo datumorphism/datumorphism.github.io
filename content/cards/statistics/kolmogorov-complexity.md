@@ -1,5 +1,8 @@
 ---
 title: Kolmogorov Complexity
+date: 2020-11-08
+tags:
+  - Model Selection
 references:
   - link: https://people.cs.uchicago.edu/~fortnow/papers/kaikoura.pdf
     name: Fortnow, L. (2000). Kolmogorov complexity. (January), 1–14.

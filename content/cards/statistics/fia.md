@@ -1,6 +1,9 @@
 ---
 title: "Fisher Information Approximation"
+date: 2020-11-08
 tags:
+  - Bayes
+  - Model Selection
   - FIA
 ---
 

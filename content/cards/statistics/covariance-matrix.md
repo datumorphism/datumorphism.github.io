@@ -18,9 +18,9 @@ We use Einstein's summation convention.
 
 Covariance of two discrete series $A$ and $B$ is defined as
 
-$$
+{{< m >}}
 \text{Cov} ({A,B}) = \sigma_{A,B}^2 = \frac{  (a_i - \bar A) (b_i - \bar B) }{ n- 1 },
-$$
+{{< /m >}}
 
 where $n$ is the length of the series. The normalization factor is set to $1/(n-1)$ to mitigate the bias for small $n$.
 

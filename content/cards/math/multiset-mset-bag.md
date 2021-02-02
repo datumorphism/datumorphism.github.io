@@ -1,11 +1,18 @@
 ---
 title: "Multiset, mset or bag"
+description: ""
 date: 2020-12-27
+authors:
+  - "LM"
 category:
-- 'Math'
+  - 'Math'
 tags:
-- 'Sets'
-- 'Basics'
+  - 'Sets'
+  - 'Basics'
+references:
+  - name: "Multiset @ Wikipedia"
+    link: "https://en.wikipedia.org/wiki/Multiset"
+weight:
 ---
 
 A bag is a set in which duplicate elements are allowed.

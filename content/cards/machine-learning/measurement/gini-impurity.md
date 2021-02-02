@@ -49,26 +49,26 @@ For such an all-0 dataset, we would like to define its impurity as 0. Same with 
 
 Given a dataset $\\{0,1,...,d\\}^n$, the Gini impurity is calculated as
 
-$$
+{{< m >}}
 G = \sum_{i \in \{0,1,...,d\} } p(i)(1-p(i)),
-$$
+{{</m >}}
 
 where $p(i)$ is the probability of a random picked record being class $i$.
 
 In the above example, we have two classes, $\\{0,1\\}$. The probabilities are
 
-$$
+{{< m >}}
 \begin{align}
 p(0) =& 1\\
 p(1) =& 0
 \end{align}.
-$$
+{{< /m >}}
 
 The Gini impurity is
 
-$$
+{{< m >}}
 G = p(0)(1-p(0)) + p(1)(1-p(1)) = 0+0 = 0.
-$$
+{{< /m >}}
 
 ## Examples
 
@@ -91,9 +91,9 @@ Suppose we have another dataset with 50% of the values being 50%.
 
 The Gini impurity is
 
-$$
+{{< m >}}
 G = p(0)(1-p(0)) + p(1)(1-p(1)) = 0.5 * 0.5+ 0.5*0.5 = 0.5.
-$$
+{{< /m >}}
 
 For data with two possible values $\\{0,1\\}$, the maximum Gini impurity is 0.25. The following chart shows all the possible values of the Gini impurity for two-value dataset.
 
