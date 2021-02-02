@@ -19,7 +19,7 @@ links:
 SCQ-A: Situation + Conflict + Question + Answer
 ```
 
-SCA-A is a framework for problem solving.
+SCA-A is a framework for problem-solving.
 
 1. Situation: background knowledge, set the stage
 2. Complications: what is happening

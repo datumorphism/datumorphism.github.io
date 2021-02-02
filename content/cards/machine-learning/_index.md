@@ -1,5 +1,5 @@
 ---
 title: "Machine Learning"
-description: "Knowledge cards about machine learning"
+description: "Atomic knowledge on machine learning"
 weight: 3
 ---

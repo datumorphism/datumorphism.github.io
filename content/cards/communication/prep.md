@@ -22,5 +22,5 @@ PREP: Point + Reason + Example + Point
 
 1. Point: Make a point; PREP is a good method.
 2. Reason: Give the reason; Because it has a clear logic.
-3. Example: Show examples; The famous XYZ did ABC and everyone was convinced.
-4. Point: State the point for conclusion.
+3. Example: Show examples; The famous XYZ did ABC then everyone was convinced.
+4. Point: State the point for a conclusion.
