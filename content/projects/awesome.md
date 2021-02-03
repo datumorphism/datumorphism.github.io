@@ -19,4 +19,4 @@ sections:
   - blog
 ---
 
-I create workflows, checklists, and write about experiences here.
+I create workflows/checklists, and write about experiences here.

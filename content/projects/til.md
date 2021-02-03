@@ -22,4 +22,4 @@ sections:
   - til
 ---
 
-I write some interesting learnings sometimes. These TILs are usually concise and shipped with references.
+I write some exciting learnings sometimes. These TILs are usually concise and shipped with references.

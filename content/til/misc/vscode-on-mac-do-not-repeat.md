@@ -1,6 +1,6 @@
 ---
 layout: til
-title: VSCode on Mac Do Not Repeat
+title: VSCode on Mac Long Press Keys Not Repeating
 date: 2018-12-31
 author: Lei Ma
 comments: true

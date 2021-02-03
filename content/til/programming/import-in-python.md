@@ -20,7 +20,7 @@ The style
 from neuosc import *
 ```
 
-grabs everything in `neuosc` and put them in the global namespace which is more likely to override existing functions in global namespace.
+grabs everything in `neuosc` and put them in the global namespace which is more likely to override existing functions in the global namespace.
 
 A better way is to import the exact function we need.
 

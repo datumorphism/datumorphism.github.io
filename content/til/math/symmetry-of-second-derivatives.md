@@ -22,4 +22,4 @@ f(x,y) = \begin{cases}
  \end{cases}
 {{</m>}}
 
-A image of the function is shown on wikipedia.
+An image of the function is provided by wikipedia.

@@ -9,6 +9,9 @@ category:
 tags:
 - Python
 summary: Formatting numbers in python using format
+references:
+  - name: PyFormat
+    link: https://pyformat.info/
 ---
 
 

@@ -17,7 +17,7 @@ references:
 ---
 
 
-Differential transformation is a method that applies the Taylor expansion of the function. For arbitrary function we can Taylor expand it
+Differential transformation is a method that applies the Taylor expansion of the function. For an arbitrary function $f(x)$, we can Taylor expand it
 
 $$
 \begin{equation}

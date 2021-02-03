@@ -22,4 +22,4 @@ sections:
   - wiki
 ---
 
-A collection of topics on machine learning, data science, coding, and some math as wiki articles. These articles are meant to be part of a knowledgebase.
+This is a collection of articles on machine learning, data science, coding, and some math as wiki articles. These articles are meant to be part of a knowledge base.

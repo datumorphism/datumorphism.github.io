@@ -1,5 +1,5 @@
 ---
 title: "Algorithms"
-description: "I am reading and learning bit of algorithms in my work."
+description: "I am reading and learning algorithms for fun."
 weight: 1
 ---
