@@ -30,6 +30,11 @@ menu:
       identifier: graph
       url: /graph
       pre: '<i class="fas fa-project-diagram"></i>'
+    - name:
+      weight: 4
+      identifier: telegram
+      url: https://t.me/amneumarkt
+      pre: '<i class="fab fa-telegram"></i>'
 
 taxonomies:
     tag: "tags"
