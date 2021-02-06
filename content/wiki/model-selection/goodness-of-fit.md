@@ -1,5 +1,6 @@
 ---
 title: Goodness-of-fit
+date: 2020-11-08
 references:
   - link:
     name: Vandekerckhove, J., & Matzke, D. (2015). Model comparison and the principle of parsimony. Oxford Library of Psychology.
@@ -7,6 +8,7 @@ links:
   - wiki/model-selection/model-selection.md
   - wiki/model-selection/parsimony-of-models.md
   - wiki/model-selection/measures-of-generalizability.md
+weight: 2
 ---
 
 

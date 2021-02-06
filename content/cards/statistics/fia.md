@@ -5,10 +5,13 @@ tags:
   - Bayes
   - Model Selection
   - FIA
+links:
+  - cards/statistics/mdl.md
+  - cards/statistics/nml.md
 ---
 
 
-#FIA is a method to describe the [[minimum-description-length|minimum description length ( #MDL )]] of models,
+FIA is a method to describe the minimum description length ({{< c "cards/statistics/mdl.md" "MDL" >}}  ) of models,
 
 $$
 \mathrm{FIA} = -\ln p(y | \hat\theta) + \frac{k}{2} \ln \frac{n}{2\pi} + \ln \int_\Theta \sqrt{ \operatorname{det}[I(\theta)] d\theta }

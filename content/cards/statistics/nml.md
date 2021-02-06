@@ -2,6 +2,7 @@
 title: "Normalized Maximum Likelihood"
 date: 2020-11-08
 tags:
+  - Model Selection
   - NML
 ---
 
