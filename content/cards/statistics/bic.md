@@ -1,5 +1,6 @@
 ---
 title: Bayesian Information Criterion
+description: "BIC considers the number of parameters and the total number of data records."
 date: 2020-11-08
 tags:
   - Bayes
@@ -12,7 +13,7 @@ links:
   - cards/statistics/aic.md
 ---
 
-BIC is Bayesian information criterion, it replaced the $+2k$ term in {{< c "/cards/statistics/aic.md" "AIC" >}} with $k\ln n$
+BIC is Bayesian information criterion, it replaced the $+2k$ term in {{< c "/cards/statistics/aic.md" "AIC" >}} with $k\ln n$ to bring in punishment for the number of parameters of the model based on the number of data records,
 
 {{< m >}}
 \mathrm{BIC} = -2\ln p(y|\hat\theta) + k\ln n = \ln \left(\frac{n^k}{p^2}\right)

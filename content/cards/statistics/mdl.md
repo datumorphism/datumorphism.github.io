@@ -1,6 +1,6 @@
 ---
 title: "Minimum Description Length"
-description: "MDL is a measure of the well a model compresses the data"
+description: "MDL is a measure of how well a model compresses data"
 date: 2020-11-08
 categories:
   - Statistics
