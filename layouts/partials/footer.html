@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                Created and maintained by <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a>.
+                Created and maintained by <a href="{{ if $.Site.Params.authorURL }} {{ $.Site.Params.authorURL}} {{ else }} {{ .Site.BaseURL }} {{end}}">{{ .Site.Params.author }}</a>.
                 Acknowledgement: <a href="https://gohugo.io/">Hugo</a>,
                 <a href="https://themes.gohugo.io/bulma/">Bulma</a>, <a href="https://kausalflow.com">KausalFlow</a>.
                 {{ if .Site.Params.powered_by }}
