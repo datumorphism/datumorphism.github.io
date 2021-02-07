@@ -67,7 +67,7 @@ To choose a good model, we need a framework to compare two models. The compariso
 
 Many methods have been proposed to deal with the balance between [parsimony](/wiki/model-selection/parsimony-of-models) and [goodness-of-fit](/wiki/model-selection/goodness-of-fit), e.g.,
 
-- Information criteria (IC) such as AIC and BIC,
+- Information criteria (IC) such as {{< c "cards/statistics/aic.md" "AIC" >}} and {{< c "cards/statistics/bic.md" "BIC" >}},
 - Minimum description length ({{< c "cards/statistics/mdl.md" "MDL" >}}),
 - Bayes factors.
 
