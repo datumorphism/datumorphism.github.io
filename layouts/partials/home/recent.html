@@ -8,7 +8,9 @@
 
             {{ range .Site.RegularPages.ByDate.Reverse | first 4 }}
             <div class="notification is-primary is-light">
-                <p><a href="{{ .Permalink }}" class="has-text-primary" style="text-decoration: none;">{{ .Title }}</a></p>
+                <p>
+                    <span class="tag is-large">
+                    {{ .Section | humanize }}: </span><a href="{{ .Permalink }}" class="has-text-primary" style="text-decoration: none;">{{ .Title }}</a></p>
                 <p>
                     {{ if .Params.tags }}
                     <div>
