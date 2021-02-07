@@ -58,6 +58,7 @@ params:
   github: "datumorphism" # Optional, to display link to github account in menu bar
   twitter: "" # Optional, to display link to twitter account in menu bar
   author: "Lei Ma" # Default author name and the name to be shown in the footer
+  authorURL: "https://leima.is"
   editURL: "https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/"
   utterances: # comment system: utterances (https://utteranc.es/) parameters
     repo: "datumorphism/comments"  # repo="[ENTER REPO HERE]", the comments will appear as issues in this repository on github.
