@@ -1,7 +1,7 @@
 ---
 title: "Empirical Loss"
 description: "The loss calculated on all the data points"
-date: 2020-02-06
+date: 2021-02-06
 category:
 - 'Machine Learning'
 - 'Measurement'
