@@ -12,6 +12,16 @@ references:
 published: true
 ---
 
+Empirical risk $R$ is a measurement the goodness of fit based on empirical information. Empirical risk minimization minimizes the empirical risk to select a good model $\hat f$ out of all possible models $f$ in our hypothesis space for a dataset $\mathcal D$,
+
+{{< m >}}
+\hat f = \operatorname{argmin} R(f, \mathcal D).
+{{< /m >}}
+
+## Empirical Risk Example
+
+For example, the emprical risk can be represented by the negative log likelihood.
+
 A negative log likelihood (NLL) for a model $\theta$ of dataset $\mathcal D$
 
 {{< m >}}
@@ -34,3 +44,12 @@ where $\mathscr l$ is a loss. For example, one could design a stepwise loss in c
 {{< /m >}}
 
 Another possibility is surrogate loss which is continuous.
+
+
+## Regularized Risk
+
+However, ERM may lead to overfitting. One method to solve this is to add a penalty based on the complexity of the model $C(f)$,
+
+{{< m >}}
+R_{Reg}(f, \mathcal D) = R(f, \mathcal D) + \lambda C(f).
+{{< /m >}}
