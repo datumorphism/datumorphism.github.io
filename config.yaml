@@ -82,6 +82,11 @@ outputFormats:
     isPlainText: true
     mediaType: "application/json"
     notAlternative: true
+  dates:
+    baseName: "dates"
+    isPlainText: true
+    mediaType: "application/json"
+    notAlternative: true
 
 outputs:
   home:
@@ -90,3 +95,4 @@ outputs:
     - "data"
     - "network"
     - "search"
+    - "dates"

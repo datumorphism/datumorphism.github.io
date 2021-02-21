@@ -1,0 +1,8 @@
+[
+{{ range $i, $hit := (.Site.AllRegularPages.GroupByDate "2006-01-01") }}
+{{ if $i }}, {{ end }}{
+		"date": {{ $hit.Key }},
+		"count": {{ $hit.Pages | len }}
+	}
+{{ end }}
+]
