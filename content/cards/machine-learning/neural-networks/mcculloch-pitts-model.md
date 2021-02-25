@@ -1,7 +1,7 @@
 ---
 title: "McCulloch-Pitts Model"
 description: "Artificial neuron that separates the state space"
-date: 2021-02-25
+date: "2021-02-25"
 authors:
   - "LM"
 categories:
