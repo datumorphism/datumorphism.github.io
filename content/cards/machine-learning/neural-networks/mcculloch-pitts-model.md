@@ -24,4 +24,4 @@ The McCulloch-Pitts model maps the input $\\{x_1, x_2,\cdots, x_i \cdots, x_N \\
 y = \operatorname{sign}( w\cdot x - b).
 {{< /m >}}
 
-Since $w\cdot x - b = 0$ is a hyperplane, the McCulloch-Pitts model separates the state space using this hyperplane.
+Since $w\cdot x - b = 0$ is a hyperplane, the McCulloch-Pitts model separates the state space using this hyperplane. The shift $b$ determines the interception, and $w$ decides the slope.
