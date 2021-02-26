@@ -22,8 +22,7 @@ links:
 
 Rosenblatt's perceptron connects McCulloch-Pitts neurons in levels.
 
-
-![[inbox.ml/neural-net/assets/rosenblatt-perceptrons.png.png]]
+{{< figure src="../assets/rosenblatt-perceptron/rosenblatt-perceptrons.png" >}}
 
 Rosenblatt proprosed that we fix all the weights and leave the weights of the last neuron free.
 
