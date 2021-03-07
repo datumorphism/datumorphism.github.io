@@ -18,7 +18,7 @@ links:
   - "wiki/statistical-hypothesis-testing/hypothesis-testing.md"
 ---
 
-In many problems, we have to test if the distributions of several groups are the same. We will the null hypothesis:
+In many problems, we have to test if the distributions of several groups are the same. We will use the null hypothesis:
 
 The distributions of several groups are the same.
 
