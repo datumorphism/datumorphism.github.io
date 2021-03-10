@@ -165,4 +165,11 @@ To summarize, we could find the principal components by finding the eigenvectors
 
 It is straightforward to prove that the principal components are he orthonormal basis that spans the row space of $\mathbf X$ in our setup [^1].
 
+
+## Sparse PCA
+
+The principle components are correlated to many original components. In some problems, we prefer principle components that is only related to a few original features. For such problems, we need the Sparse PCA [^SPCA].
+
+
 [^1]: Shlens, J. (2003). [A Tutorial on Principal Component Analysis](https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf).
+[^SPCA]: Zou H, Hastie T, Tibshirani R. Sparse Principal Component Analysis. J Comput Graph Stat. 2006;15: 265–286. doi:10.1198/106186006X113430
