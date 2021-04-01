@@ -7,7 +7,9 @@ authors:
 categories:
   - "statistics"
 tags:
+  - "statistics"
   - "variacne"
+  - "ANOVA"
 references:
   - name: "Fox, J. Applied Regression Analysis and Generalized Linear Models. (SAGE Publications, 2015)."
     link: ""
@@ -95,4 +97,58 @@ F = \frac{\sigma_{between}}{\sigma_{in}}.
 $$
 
 The $p$ value can be looked up in a F-table.
+
+
+
+## Python Code
+
+
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.stats as stats
+
+# Generate Gaussian data
+a_dist = np.random.normal(loc=0, scale=1, size=1000)
+b_dist = np.random.normal(loc=0.5, scale=1, size=1000)
+
+# Create plot for the two distributions
+fig, ax = plt.subplots(figsize=(10, 6.18))
+ax.hist(a_dist, bins=50, density=True)
+ax.hist(b_dist, bins=50, density=True)
+ax.set_xlabel("Values")
+ax.set_title("Histogram of Distribution A and B")
+plt.show()
+
+```
+
+{{< figure src="../assets/anova/hist_a_and_b.png" >}}
+
+
+![[inbox.ml/statistics/analysis-of-variance/assets/hist_a_and_b.png]]
+
+Now we performance a one-way ANOVA.
+
+```python
+
+# One-way ANOVA
+stats.f_oneway(a_dist, b_dist)
+```
+
+We get
+
+```python
+F_onewayResult(statistic=135.10932572037217, pvalue=2.873326981106292e-30)
+```
+
+
+
+
+## N-way ANOVA
+
+ANOVA test can be done on the effect multiple categorical variables. For example, for two variables, we built a table with the rows being the classes of one variable and the columns being the classes of another variable. The samples spanned by these two directions can be used to test the effect of the variables on different combinations of the variables.
+
+
 
