@@ -7,9 +7,14 @@ tags:
 - 'Data Visualization'
 - 'Boxplot'
 - 'Outlier'
-weight: 5
+links:
+  - wiki/data-visualization/histogram.md
+weight: 6
 ---
 
+## Example
+
+{{< figure src="../assets/boxplots/boxplot-example.jpg" >}}
 
 ## The Whiskers in Boxplot
 

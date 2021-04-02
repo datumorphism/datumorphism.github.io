@@ -11,6 +11,8 @@ references:
   link: https://en.wikipedia.org/wiki/Histogram
 - name: "Choose Bin Sizes for Histograms in Easy Steps + Sturge’s Rule"
   link: https://www.statisticshowto.datasciencecentral.com/choose-bin-sizes-statistics/
+links:
+  - wiki/data-visualization/histogram.md
 charts:
 - target: histogram-1
   data: [{ "x": [1.45,2.20,0.75,1.23,1.25,1.25,3.09,1.99,2.00,0.78,1.32,2.25,3.15,3.85,0.52,0.99,1.38,1.75,1.21,1.75], type: 'histogram',
