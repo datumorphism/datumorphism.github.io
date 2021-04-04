@@ -15,6 +15,9 @@ references:
   - name: "Read J, Pfahringer B, Holmes G, Frank E. Classifier Chains for Multi-label Classification. 2009. pp. 254–269."
     link: "https://doi.org/10.1007/978-3-642-04174-7_17"
 weight:
+links:
+  - "wiki/machine-learning/performance/roc.md"
+  - "wiki/machine-learning/basics/confusion-matrix.md"
 ---
 
 ## Multi-label problem

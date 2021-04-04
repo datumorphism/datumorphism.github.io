@@ -64,6 +64,10 @@ params:
     repo: "datumorphism/comments"  # repo="[ENTER REPO HERE]", the comments will appear as issues in this repository on github.
     term: pathname               # issue-term="pathname"
     theme: github-light          # theme="github-light"
+  lyket:
+    api_key: "4df20b7e32f469fed5dc53f5ab39d8"
+    lyket_type: "updown"
+
 
 
 outputFormats:

@@ -89,21 +89,11 @@
 
 
 
-                        {{ if .Params.authors }}
-                        <div class="is-divider" data-content="AUTHORS"></div>
-                        {{ $authors := .Params.authors }}
-                        <div class="box is-size-7">
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>Authors: </strong> {{ delimit $authors ", " }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        {{end}}
+
+
+                        <div class="is-divider" data-content="Cite Me"></div>
+                        {{ partial "profile/citethis.html"  . }}
+
 
                         {{ partial "toc" .}}
 
@@ -153,25 +143,13 @@
                         {{ end }}
 
                         <div class="is-divider" data-content="CONNECTUME"></div>
-                        {{ $fileReference := lower (replace $.File "\\" "/") }}
-                        <div class="box is-size-7">
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>Current Ref: </strong><br>
-                                            <ul><li style="list-style: none;"><span class="tag is-primary is-light has-text-weight-bold">{{ $fileReference }}</span></li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                        {{ partial "network/currentref" . }}
+
 
                         {{ with .Params.links }}
                         <div class="box is-size-7">
                             <article class="media">
-                                <div class="media-content">
+                                <div class="media-content" style="width: 100%;">
                                     <div class="content">
                                         <p>
 
@@ -192,6 +170,7 @@
                         {{ end }}
 
                         {{ with .Site.Taxonomies.links }}
+                        {{ $fileReference := lower (replace $.File "\\" "/") }}
                         {{ $linkedFrom := index . $fileReference }}
                                                 {{ with $linkedFrom }}
                         <div class="box is-size-7">
