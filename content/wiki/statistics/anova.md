@@ -20,14 +20,14 @@ links:
   - "wiki/statistical-hypothesis-testing/hypothesis-testing.md"
 ---
 
-In many problems, we have to test if the distributions of several groups are the same. We will use the null hypothesis:
+In many problems, we have to test if several distributions associated with several groups of experiments are the same. The null hypothesis to be used is
 
 The distributions of several groups are the same.
 
 ANOVA tests the null hypothesis by comparing the variability between groups and within groups. If the variability between groups are significantly larger than the variability within groups, we are more confident that the distributions of different groups are different.
 
 
-We will use two groups as an example. We use a fake dataset:
+We will use two-group experiments as an example. We use a fake dataset:
 
 
 | Group A     |
@@ -53,7 +53,7 @@ We will use two groups as an example. We use a fake dataset:
 
 ## Within Group Variability
 
-The within group variablility is proportional to
+The within group variability is proportional to
 
 $$
 \sigma_{in} \propto \sum_{i_A} (x_{i_A} - \bar x^A ) + \sum_{i_B} (x_{i_B} - \bar x^B ),
@@ -61,7 +61,7 @@ $$
 
 where $\bar x^A$ is the mean within group $A$ and $\bar x^B$ is the mean within group $B$.
 
-We use limitation to get the normalizing constant. We can tolerate larger $\sum_{i_A} (x_{i_A} - \bar x^A ) + \sum_{i_B} (x_{i_B} - \bar x^B )$ if we have more data points $N_A+N_B$. On the other hand, the more groups we have, we can tolerate smaller $\sum_{i_A} (x_{i_A} - \bar x^A ) + \sum_{i_B} (x_{i_B} - \bar x^B )$.
+We will play "the extreme game" to get the normalizing constant. We can tolerate larger $\sum_{i_A} (x_{i_A} - \bar x^A ) + \sum_{i_B} (x_{i_B} - \bar x^B )$ if we have more data points $N_A+N_B$ since a sum is likely to be larger for more data points. On the other hand, the more groups we have, the smaller $\sum_{i_A} (x_{i_A} - \bar x^A ) + \sum_{i_B} (x_{i_B} - \bar x^B )$ can be tolerated since the groups will start to overlap more easily.
 
 A naive guess would lead to
 
@@ -77,7 +77,7 @@ where $k=2$ is the number of groups.
 
 The between group variability is measured by the differences in the group means.
 
-The mean of group A is $\bar x^A$ and the mean of group B is $\bar x^B$. Here we define the gran mean $\bar x = \sum_{\text{all in group A and B}} x_i/(N_A+N_B)$.
+The mean of group A is $\bar x^A$ and the mean of group B is $\bar x^B$. Here we define the grand mean to be $\bar x = \sum_{\text{all in group A and B}} x_i/(N_A+N_B)$.
 
 The variability between groups is proportional to the sum of variability based on the means
 
@@ -90,7 +90,7 @@ where $k=2$ is the number of groups.
 
 ## ANOVA
 
-ANOVA is essentially a F-test,
+ANOVA utilizes the F-test with F value defined as
 
 $$
 F = \frac{\sigma_{between}}{\sigma_{in}}.
@@ -99,10 +99,7 @@ $$
 The $p$ value can be looked up in a F-table.
 
 
-
 ## Python Code
-
-
 
 
 ```python
@@ -127,9 +124,7 @@ plt.show()
 {{< figure src="../assets/anova/hist_a_and_b.png" >}}
 
 
-![[inbox.ml/statistics/analysis-of-variance/assets/hist_a_and_b.png]]
-
-Now we performance a one-way ANOVA.
+Now we can performance a one-way ANOVA.
 
 ```python
 
@@ -148,7 +143,8 @@ F_onewayResult(statistic=135.10932572037217, pvalue=2.873326981106292e-30)
 
 ## N-way ANOVA
 
-ANOVA test can be done on the effect multiple categorical variables. For example, for two variables, we built a table with the rows being the classes of one variable and the columns being the classes of another variable. The samples spanned by these two directions can be used to test the effect of the variables on different combinations of the variables.
+ANOVA test can be done even if we have multiple categorical variables, i.e., multiple . For example, for two variables, we build a table to investigate the possible effects with the rows being the classes of one variable and the columns being the classes of another variable. The samples spanned by these two directions can be used to test the effect of the variables on different combinations of the variables.
+
 
 
 
