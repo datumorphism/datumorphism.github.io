@@ -27,11 +27,12 @@ There are several things to get into:
     - Message Queues
   - Connect to Website
     - Scraping
+      - {{< c "wiki/nodecrawler/" >}}
     - API
   - Other Data Services
 - {{< c "wiki/data-engeering-for-data-scientist/data-storage.md" "Data Storage">}}
   - Data Lake
-  - Data Warehouse
+  - {{< c "wiki/data-warehouse/" >}}
   - Message Queues
 - {{< c "wiki/data-engeering-for-data-scientist/data-processing.md" "Data Processing">}}
   - Streaming
@@ -39,6 +40,7 @@ There are several things to get into:
 - Data Buffer
   - Cache:
     - Redis
+      - {{< c "wiki/computation/basics-of-redis.md" >}}
   - Message Queues
     - Kafka
     - AWS Kinesis
