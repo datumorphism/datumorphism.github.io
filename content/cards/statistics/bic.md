@@ -3,7 +3,7 @@ title: Bayesian Information Criterion
 description: "BIC considers the number of parameters and the total number of data records."
 date: 2020-11-08
 tags:
-  - Bayes
+  - Bayesian
   - Model Selection
 references:
   - link: https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199957996.001.0001/oxfordhb-9780199957996-e-14

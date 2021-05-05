@@ -2,7 +2,7 @@
 title: "Bayes Factors"
 date: 2020-11-08
 tags:
-  - Bayes
+  - Bayesian
   - Model Selection
 ---
 

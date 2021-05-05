@@ -2,7 +2,7 @@
 title: Akaike Information Criterion
 date: 2020-11-08
 tags:
-  - Bayes
+  - Bayesian
   - Model Selection
 references:
   - link: https://en.wikipedia.org/wiki/Akaike_information_criterion#:~:text=The%20Akaike%20information%20criterion%20(AIC,response%20to%20a%20training%20sample.
