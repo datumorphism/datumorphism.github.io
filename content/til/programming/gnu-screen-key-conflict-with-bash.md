@@ -8,6 +8,7 @@ category:
 - programming
 tags:
 - Linux
+- Bash
 summary: GNU screen key conflict with bash can be solved
 ---
 

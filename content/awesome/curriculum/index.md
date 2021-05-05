@@ -2,9 +2,21 @@
 layout: page
 title: Curriculum
 description: The path that I follow
-exclude: true
 category:
-- 'Curriculum'
+  - 'Curriculum'
+tags:
+  - "roadmap"
+  - "career"
+references:
+  - name: "The Data Engineering Cookbook"
+    link: "https://github.com/andkret/Cookbook"
+    key: "Kretz2019"
+supplementary:
+  - name: "AI Expert Roadmap"
+    link: "https://i.am.ai/roadmap/#fundamentals"
+  - name: "The Data Engineering Cookbook"
+    link: "https://github.com/andkret/Cookbook"
+exclude: true
 ---
 
 
@@ -12,20 +24,32 @@ category:
 
 ### Programming
 
+- Bash:
+  - {{< c "tags/bash" "all posts with the bash tag" >}}
+- Python:
+  - {{< c "wiki/programming-languages/python" >}}
+  - {{< c "tags/python" "all posts with the python tag" >}}
+- C++:
+  - {{< c "wiki/programming-languages/cpp" >}}
+  - {{< c "tags/c++" "all posts with the C++ tag" >}}
 
-- Python
-- C++
 alternatives:
-- name: R
-- name: Matlab
+
+- R
+- Matlab
 
 
 ### Computer Science
 
 > These theories make people think faster. They don't pose direct limits on what data scientists can do but they will definitely give data scientists a boost.
 
-- Data Structures
-- Complexity
+- {{< c "wiki/computation/basics-of-computation.md" >}}
+- {{< c "wiki/algorithms/data-structure.md" >}}
+  - {{< c "wiki/algorithms/data-structure-tree.md" >}}
+  - {{< c "wiki/algorithms/data-structure-graph.md" >}}
+- Algorithms
+  - Complexity
+  - [HackerRank](https://www.hackerrank.com/domains/algorithms)
 
 
 ### Math
@@ -33,12 +57,24 @@ alternatives:
 > Some basic understanding of these is absolutely required. Higher levels of these topics will also be listed in details.
 
 - Statistics
+  - {{< c "cards/statistics/" "Statistics Concepts">}}
+  - {{< c "wiki/statistics/" "Statistical Methods">}}
 - Linear Algebra
+  - {{< c "tags/linear-algebra/">}}
 - Calculus
 - Differential Equations
+  - {{< c "tags/differential-equation/" >}}
 
 
-### EDA Tools
+## Engineering for Data Scientist
+
+I use the book by Adreas Kretz as a checklist [^Kretz2019].
+
+{{< c "wiki/data-engeering-for-data-scientist/checklist.md" >}}
+
+
+
+## EDA Tools
 
 > These tools are used almost everywhere in data science.
 
@@ -103,3 +139,7 @@ alternatives:
 ## Graphs and Networks
 
 ## Natural Language Processing
+
+
+
+[^Kretz2019]: {{< cite key="Kretz2019" >}}

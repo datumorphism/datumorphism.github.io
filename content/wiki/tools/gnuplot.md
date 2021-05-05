@@ -7,6 +7,7 @@ category:
 tags:
 - 'Tools'
 - 'Command Line'
+- 'Bash'
 references:
 - name: 'GNUPLOT'
   link: http://www.gnuplot.info/

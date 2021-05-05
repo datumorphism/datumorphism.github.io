@@ -9,6 +9,7 @@ category:
 tags:
 - Python
 - Jupyter
+- Bash
 summary: IPython or Jupyter Notebook Magics
 ---
 

@@ -58,3 +58,67 @@ HTTP Request: use Chrome Dev Tool -> Network to find out the requests, including
 
 
 `GET` will attach data on the URL, while `POST` will attach data in the package. Thus `POST` is safer.
+
+
+## Models
+
+### The OSI Model
+
+Refer to [The Open Systems Interconnection Model on Wikipedia](https://en.wikipedia.org/wiki/OSI_model).
+
+
+A nice visualization of the seven layers.
+
+{{< figure src="../assets/network/complete-osi-model-2.jpeg" caption="Source: https://www.studytonight.com/computer-networks/complete-osi-model" >}}
+
+
+
+
+### The Internet Procotcal Suite
+
+{{< figure src="../assets/network/800px-IP_stack_connections.svg.png" caption="Source: https://en.wikipedia.org/wiki/Internet_protocol_suite#/media/File:IP_stack_connections.svg" >}}
+
+
+
+#### About TCP/IP
+
+This is the Link Layer.
+
+
+
+## IP Address and Domain
+
+Some key concepts:
+
+- Address
+- Subnet: a sub network that shares the same subnet address
+- Subnet mask: 32-bit, mask the address to specify the subnet and host
+- Interface
+
+
+{{< figure src="../assets/network/cisco-ip-addresses.webp" caption="Source: https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html" >}}
+
+
+What is the slash 28 (/28) in the notation `255.255.255.240 (/28)`? It means 28 bits. See the illustration bellow [^cisco].
+
+```
+204.17.5.0 -      11001100.00010001.00000101.00000000
+255.255.255.240 - 11111111.11111111.11111111.11110000
+                  --------------------------|sub |---
+```
+
+
+## IaaS, Paas, Saas
+
+- Infrastructure as a Service
+- Platform as a Service
+- Software as a Service
+
+
+
+[^cisco]: [IP Addressing and Subnetting for New Users](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html)
+
+
+
+
+
