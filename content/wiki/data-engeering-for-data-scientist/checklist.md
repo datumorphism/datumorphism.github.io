@@ -29,11 +29,11 @@ There are several things to get into:
     - Scraping
     - API
   - Other Data Services
-- Data Storage
+- {{< c "wiki/data-engeering-for-data-scientist/data-storage.md" "Data Storage">}}
   - Data Lake
   - Data Warehouse
   - Message Queues
-- Data Processing
+- {{< c "wiki/data-engeering-for-data-scientist/data-processing.md" "Data Processing">}}
   - Streaming
   - Batch Processing
 - Data Buffer
@@ -46,7 +46,7 @@ There are several things to get into:
   - Query Data
   - Visualization
   - Analysis and Model Building
-- Scale Up
+- {{< c "wiki/data-engeering-for-data-scientist/scale-up.md" "Scale Up" >}}
   - Scale up storage
   - Scale up node
   - Parallel

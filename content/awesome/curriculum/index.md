@@ -17,6 +17,8 @@ supplementary:
   - name: "The Data Engineering Cookbook"
     link: "https://github.com/andkret/Cookbook"
 exclude: true
+links:
+  - "wiki/data-engeering-for-data-scientist/checklist/"
 ---
 
 
@@ -37,6 +39,19 @@ alternatives:
 
 - R
 - Matlab
+
+#### Python Libraries
+
+- Data
+  - numpy
+  - scipy
+  - pandas
+  - dask
+- Visualization
+  - matplotlib
+  - seaborn
+  - plotly
+- and your machine learning libraries
 
 
 ### Computer Science
@@ -74,18 +89,20 @@ I use the book by Adreas Kretz as a checklist [^Kretz2019].
 
 
 
-## EDA Tools
+## Data Storage and Retrieval
 
-> These tools are used almost everywhere in data science.
+- Database Basics
+  - {{< c "wiki/computation/basics-of-database.md" >}}
+- Data Files
+  - {{< c "cards/machine-learning/datatypes/data-file-formats.md" >}}
+- Query Language
+  - SQL
+    - {{< c "wiki/computation/basics-of-sql.md">}}
+    - {{< c "tags/sql" "SQL tag">}}
+  - PGSQL
+    - {{< c "tags/pgsql" "PGSQL tag">}}
 
-- SQL
-- numpy
-- scipy
-- pandas
-- dask
-- matplotlib
-- seaborn
-- plotly
+
 
 ## Statistics
 
