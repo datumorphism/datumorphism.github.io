@@ -9,10 +9,13 @@ tags:
 references:
 - name: "Murphy, K. P. (2012). Probabilistic Machine Learning: An Introduction."
   link: "https://mitpress.mit.edu/books/machine-learning-1"
+links:
+  - cards/machine-learning/learning-theories/learning-problem.md
+  - cards/machine-learning/learning-theories/structrual-risk-minimization.md
 published: true
 ---
 
-Empirical risk $R$ is a measurement the goodness of fit based on empirical information. Empirical risk minimization minimizes the empirical risk to select a good model $\hat f$ out of all possible models $f$ in our hypothesis space for a dataset $\mathcal D$,
+In a {{< c "cards/machine-learning/learning-theories/learning-problem.md" "learning problem">}}, empirical risk $R$ is a measurement the goodness of fit based on empirical information. Empirical risk minimization minimizes the empirical risk to select a good model $\hat f$ out of all possible models $f$ in our hypothesis space for a dataset $\mathcal D$,
 
 {{< m >}}
 \hat f = \operatorname{argmin} R(f, \mathcal D).

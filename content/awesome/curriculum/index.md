@@ -127,14 +127,43 @@ I use the book by Adreas Kretz as a checklist [^Kretz2019].
 
 > It is crucial for the interpretations in statistics.
 
+- Probability theory
+  - random variable
+  - probability distribution
+    - pdf
+    - pmf
+    - {{< c "tags/distributions/" "articles tagged with distributions">}}
+  - Bayes
+    - {{< c "tags/bayesian/" "Articles with tagged with Bayesian">}}
+- Summary statistics
+  - location
+  - variation
+  - correlation
+    - {{< c "cards/statistics/covariance-matrix.md" >}}
+    - {{< c "cards/statistics/explained-variation.md" >}}
+    - {{< c "wiki/statistics/correlation-coefficient.md" >}}
+- Laws
+  - Law of large numbers
+  - Central limit theorem
+  - Law of total variance
+  - much more
+- Probability Estimation
+  - Kernel density estimation
+
+
+
+
 ### Inferential statistics
 
 > To get closer to the ultimate question about causality
 
+- Parameter Estimation
+  - Maximum Likelihood
 - Hypothesis Testing
   - {{< c "wiki/statistical-hypothesis-testing" >}}
 - Inference
   - Bayesian inference
+    - Confidence interval
     - {{< c "tags/bayesian/" "Articles with tagged with Bayesian">}}
   - Frequentist inference
 
@@ -208,14 +237,52 @@ Data imputation
 
 ## Visualization
 
-### Types of Data
+### What to show
+
+- Relationship
+- Composition
+  - Compose to compare
+  - Compose to calculate (the total)
+  - Compose to form a distribution
+
 
 ### Types of Charts
 
+
+{{< figure src="assets/choosing-a-good-chart-09.png" caption="Know your charts. Source: [Chart Suggestions — A Thought-Starter](https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf)" >}}
+
+
+
 ### Grammar of Graphics
 
+- {{< c "reading/grammar-of-graphics/graph-creation.md" >}}
+- {{< c "reading/grammar-of-graphics" >}}
 
-## Statistical Learning
+### Tools
+
+- Python
+  - matplotlib
+    - {{< c "tags/matplotlib/" "articles tagged with matplotlib" >}}
+  - seaborn
+  - plotnine
+  - plotly
+- Dashboarding
+  - streamlit
+  - plotly dash
+
+## Machine Learning
+
+### Concepts
+
+- Features
+- Estimators
+- Risk
+  - {{< c "cards/machine-learning/learning-theories/empirical-risk-minimization.md" >}}
+  - {{< c "cards/machine-learning/learning-theories/structural-risk-minimization.md" >}}
+  - {{< c "cards/machine-learning/learning-theories/cross-validation.md" >}}
+
+
+
 
 ### Regression
 
@@ -233,7 +300,9 @@ Data imputation
 
 ## Graphs and Networks
 
-## Natural Language Processing
+## Neural Networks
+
+
 
 
 

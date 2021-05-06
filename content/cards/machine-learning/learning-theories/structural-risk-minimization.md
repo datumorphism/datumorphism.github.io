@@ -12,6 +12,7 @@ references:
   - name: "Murphy, K. P. (2012). Probabilistic Machine Learning: An Introduction."
     link: "https://mitpress.mit.edu/books/machine-learning-1"
 links:
+  - cards/machine-learning/learning-theories/learning-problem.md
   - cards/machine-learning/learning-theories/empirical-risk-minimization.md
 published: true
 ---
@@ -22,4 +23,4 @@ Though [Regularized Risk](/cards/machine-learning/learning-theories/empirical-ri
 
 There are two main categories of structural risk minimization method:
 - Cross-validation (CV),
-- Statistical Learning Theory (SLT).
+- Using Statistical Learning Theory (SLT).
