@@ -280,21 +280,46 @@ Data imputation
   - {{< c "cards/machine-learning/learning-theories/empirical-risk-minimization.md" >}}
   - {{< c "cards/machine-learning/learning-theories/structural-risk-minimization.md" >}}
   - {{< c "cards/machine-learning/learning-theories/cross-validation.md" >}}
+- Bias and Variance
+- Overfitting, Underfitting
+  - {{< c "wiki/model-selection/goodness-of-fit.md" >}}
+- Performance
+  - Regression
+    - R^2
+  - Classification
+    - F score
+    - Precision
+    - Recall
 
 
+### Frameworks
+
+#### Supervised
 
 
-### Regression
+##### Regression
 
 - Linear Regression
 - Higher-order Regression
 
 
-### Classification
+##### Classification
 
 - Logistic Regression
 - SVM
 - Tree
+
+
+#### Unsupervised
+
+
+
+#### Semi-supervised
+
+#### Reinforcement Learning
+
+
+
 
 
 

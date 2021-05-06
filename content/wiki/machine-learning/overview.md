@@ -14,6 +14,8 @@ references:
     link: "https://doi.org/10.1016/j.physrep.2019.03.001"
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms"
     link: "https://doi.org/10.1017/CBO9781107298019"
+links:
+  - cards/machine-learning/learning-theories/learning-problem.md
 ---
 
 
