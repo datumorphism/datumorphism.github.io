@@ -13,6 +13,7 @@ references:
 links:
   - wiki/machine-learning/tree-based/decision-tree.md
   - cards/machine-learning/measurement/gini-impurity.md
+  - cards/information/coding-theory-concepts.md
 supplementary:
   - name: Code
     link: https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb
