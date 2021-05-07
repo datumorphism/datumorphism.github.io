@@ -11,6 +11,6 @@ tags:
   - "Linear Models"
   - "Supervised Learning"
   - "Classification"
-weight: 2
+weight: 3
 published: false
 ---

@@ -13,7 +13,7 @@ tags:
   - "Classification"
 links:
   - cards/statistics/bayes-theorem.md
-weight: 3
+weight: 10
 published: false
 ---
 

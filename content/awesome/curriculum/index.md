@@ -300,14 +300,24 @@ Data imputation
 ##### Regression
 
 - Linear Regression
-- Higher-order Regression
+  - {{< c "wiki/machine-learning/linear/linear-methods.md" >}}
+- Polynomial Regression
+- Generalized Linear Model
+  - Poisson Regression: for counts
+    - {{< c "wiki/machine-learning/linear/poisson-regression.md" >}}
 
 
 ##### Classification
 
 - Logistic Regression
 - SVM
+  - {{< c "wiki/machine-learning/unsupervised/svm.md" >}}
 - Tree
+  - {{< c "wiki/machine-learning/tree-based/decision-tree.md" >}}
+- Naive Bayes
+  - {{< c "wiki/machine-learning/bayesian/naive-bayes.md" >}}
+- kNN
+- Gaussian Mixture
 
 
 #### Unsupervised
