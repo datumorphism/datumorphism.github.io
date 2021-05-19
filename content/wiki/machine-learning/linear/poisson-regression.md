@@ -16,6 +16,8 @@ references:
     link: "https://ademos.people.uic.edu/Chapter19.html"
   - name: "Poisson regression and non-normal loss (sklearn documentation)"
     link: "https://scikit-learn.org/stable/auto_examples/linear_model/plot_poisson_regression_non_normal_loss.html"
+  - name: "Beyond Multiple Linear Regression, Chapter 4 Poisson Regression"
+    link: "https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html"
 weight: 2
 published: true
 links:
