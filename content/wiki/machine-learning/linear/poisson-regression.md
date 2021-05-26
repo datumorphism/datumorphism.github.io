@@ -24,9 +24,9 @@ links:
   - "cards/statistics/poisson-process.md"
 ---
 
-Possion regression is a generalized linear model for count data.
+Poisson regression is a generalized linear model for count data.
 
-To model a dataset that is generated from a Poisson distribution, we only need to model the mean $\mu$ as it is the only paramters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is
+To model a dataset that is generated from a Poisson distribution, we only need to model the mean $\mu$ as it is the only parameters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is
 
 {{< m >}}
 \mu = \exp\left(\beta X\right).
