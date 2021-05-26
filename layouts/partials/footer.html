@@ -1,4 +1,6 @@
+{{ if eq $.Site.Params.netlify.identity true }}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{{ end }}
 <footer class="footer">
     <div class="container">
         <div class="content has-text-centered">
