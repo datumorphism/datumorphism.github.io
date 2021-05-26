@@ -18,6 +18,7 @@ links:
   - cards/statistics/fia.md
   - cards/statistics/nml.md
   - wiki/model-selection/model-selection.md
+  - cards/statistics/likelihood.md
 ---
 
 The minimum description length, aka, MDL, is based on the relations between regularity and data compression. (See {{< c "cards/statistics/kolmogorov-complexity.md" "Kolmogorov complexity" >}} for more about data descriptions.).

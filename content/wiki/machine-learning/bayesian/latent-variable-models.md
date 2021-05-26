@@ -22,6 +22,7 @@ weight:
 links:
   - "cards/statistics/bayes-theorem.md"
   - "wiki/machine-learning/basics/kl-divergence.md"
+  - "cards/statistics/likelihood.md"
 ---
 
 In the view of statistics, we know everything about a physical system if we know the probability $p(\mathbf s)$ of all possible states of the physical system $\mathbf s$. Time can also be part of the state specification.

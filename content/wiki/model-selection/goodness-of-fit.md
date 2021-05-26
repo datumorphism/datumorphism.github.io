@@ -12,6 +12,7 @@ links:
   - wiki/model-selection/model-selection.md
   - wiki/model-selection/parsimony-of-models.md
   - wiki/model-selection/measures-of-generalizability.md
+  - cards/statistics/likelihood.md
 weight: 2
 ---
 

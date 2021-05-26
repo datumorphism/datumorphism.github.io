@@ -17,6 +17,7 @@ references:
     link: https://github.com/zjost/bayesian-linear-regression
 links:
   - cards/statistics/bayes-theorem.md
+  - cards/statistics/likelihood.md
 weight: 2
 ---
 

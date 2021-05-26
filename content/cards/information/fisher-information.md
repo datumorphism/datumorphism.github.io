@@ -17,6 +17,7 @@ references:
 weight:
 links:
   - "cards/information/fraser-information.md"
+  - "cards/statistics/likelihood.md"
 ---
 
 

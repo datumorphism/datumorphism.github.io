@@ -4,6 +4,8 @@ date: 2020-11-08
 tags:
   - Model Selection
   - NML
+links:
+  - cards/statistics/likelihood.md
 ---
 
 

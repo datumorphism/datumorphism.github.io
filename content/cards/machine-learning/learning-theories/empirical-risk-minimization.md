@@ -12,6 +12,7 @@ references:
 links:
   - cards/machine-learning/learning-theories/learning-problem.md
   - cards/machine-learning/learning-theories/structrual-risk-minimization.md
+  - "cards/statistics/likelihood.md"
 published: true
 ---
 

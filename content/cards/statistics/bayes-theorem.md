@@ -9,6 +9,8 @@ tags:
 references:
 - name: Tree Diagram of Bayes Theorem @ Wikipedia
   link: https://en.wikipedia.org/wiki/Bayes%27_theorem#/media/File:Bayes'_Theorem_2D.svg
+links:
+  - "cards/statistics/likelihood.md"
 ---
 
 Bayes' Theorem is stated as

@@ -11,6 +11,7 @@ references:
     name: Vandekerckhove, J., & Matzke, D. (2015). Model comparison and the principle of parsimony. Oxford Library of Psychology.
 links:
   - wiki/model-selection/goodness-of-fit.md
+  - cards/statistics/likelihood.md
 ---
 
 Suppose we have a model that describes the data generation process behind a dataset. The distribution by the model is denoted as $\hat f$. The actual data generation process is described by a distribution $f$.

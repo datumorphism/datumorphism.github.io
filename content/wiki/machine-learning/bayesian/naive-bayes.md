@@ -19,6 +19,7 @@ links:
   - cards/statistics/bayes-theorem.md
   - cards/statistics/conditional-probability-table.md
   - wiki/pattern-mining/association-rules.md
+  - cards/statistics/likelihood.md
 weight: 1
 ---
 

@@ -158,7 +158,7 @@ I use the book by Adreas Kretz as a checklist [^Kretz2019].
 > To get closer to the ultimate question about causality
 
 - Parameter Estimation
-  - Maximum Likelihood
+  - Maximum Likelihood: {{< c "cards/statistics/likelihood.md" >}}
 - Hypothesis Testing
   - {{< c "wiki/statistical-hypothesis-testing" >}}
 - Inference
