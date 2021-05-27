@@ -10,6 +10,7 @@ tags:
   - "Basics"
 links:
   - wiki/machine-learning/basics/confusion-matrix.md
+  - wiki/machine-learning/linear/logistic-regression.md
 references:
   - name: "Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874."
     link: "https://doi.org/10.1016/j.patrec.2005.10.010"

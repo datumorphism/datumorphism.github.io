@@ -310,6 +310,7 @@ Data imputation
 ##### Classification
 
 - Logistic Regression
+  - {{< c "wiki/machine-learning/linear/logistic-regression.md" >}}
 - SVM
   - {{< c "wiki/machine-learning/unsupervised/svm.md" >}}
 - Tree
