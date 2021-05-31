@@ -16,7 +16,7 @@ references:
     link: "https://ermongroup.github.io/cs323-notes/probabilistic/gibbs/"
 weight: 1
 links:
-  - "wiki/machine-learning/neural-networks/boltzmann-machine.md"
+  - "wiki/machine-learning/energy-based-model/boltzmann-machine.md"
 ---
 
 

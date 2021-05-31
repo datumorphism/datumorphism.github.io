@@ -177,7 +177,7 @@ It is possible that we could over fit a network so that it works only for the tr
 
 1. Split data into two parts, one for training and one for testing. [A youtube video](https://www.youtube.com/watch?v=S4ZUwgesjS8)
 2. Throw more data in. At least 10 times as many as examples as the DoFs of the model.  [A youtube video](https://www.youtube.com/watch?v=S4ZUwgesjS8)
-3. Regularization by plugin a artifical term to the cost function, as an example we could add the . [A youtube video](https://www.youtube.com/watch?v=S4ZUwgesjS8)
+3. Regularization by plugin a artificial term to the cost function, as an example we could add the . [A youtube video](https://www.youtube.com/watch?v=S4ZUwgesjS8)
 
 
 ## Neural Network and Finite Element Method
