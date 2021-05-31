@@ -12,6 +12,8 @@ references:
     link: "https://www.youtube.com/watch?v=ER3DDBFzH2g"
   - name: "Bayesian Inference: Gibbs Sampling"
     link: "http://www.mit.edu/~ilkery/papers/GibbsSampling.pdf"
+  - name: "Gibbs sampling | Stanford CS323"
+    link: "https://ermongroup.github.io/cs323-notes/probabilistic/gibbs/"
 weight: 1
 links:
   - "wiki/machine-learning/neural-networks/boltzmann-machine.md"
