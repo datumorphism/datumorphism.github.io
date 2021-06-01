@@ -3,9 +3,11 @@ title: "MaxEnt Model"
 description: "Maximum Entropy models makes least assumption about the data"
 date: 2021-05-31
 category:
-  - 'Energy-based Model'
+  - "Energy-based Model"
 tags:
-  - 'Neural Network'
+  - "Neural Network"
+  - "Energy-based Model"
+  - "Entropy"
 references:
   - name: "Mehta P, Bukov M, Wang C-HH, Day AGRR, Richardson C, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2018;810: 122. doi:10.1016/j.physrep.2019.03.001"
     link: "https://arxiv.org/abs/1803.08823"
