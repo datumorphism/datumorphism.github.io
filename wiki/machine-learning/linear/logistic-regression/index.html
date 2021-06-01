@@ -10,37 +10,37 @@
 <a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
 <a href=/tags/linear-models><span class="tag is-warning is-small is-light">#Linear Models</span></a>
 <a href=/tags/supervised-learning><span class="tag is-warning is-small is-light">#Supervised Learning</span></a>
-<a href=/tags/classification><span class="tag is-warning is-small is-light">#Classification</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>In a classification problem, given a list of features values $x$ and their corresponding classes $\{c_i\}$, the posterior for of the classes, aka conditional probability of the classes, is</p>$$
+<a href=/tags/classification><span class="tag is-warning is-small is-light">#Classification</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>In a classification problem, given a list of features values $x$ and their corresponding classes $\{c_i\}$, the posterior for of the classes, aka conditional probability of the classes, is</p><p>$$
 p(C=c_i\mid X=x).
-$$<article class="message is-info is-light"><div class=message-header><p>Likelihood</p></div><div class=message-body><p>The likelihood of the data is</p><p>$$
+$$</p><article class="message is-info is-light"><div class=message-header><p>Likelihood</p></div><div class=message-body><p>The likelihood of the data is</p><p>$$
 p(X=x\mid C=c_i).
-$$</p></div></article><h2 id=logistic-regression-for-two-classes>Logistic Regression for Two Classes</h2><p>For two classes, the simplest model for the posterior is a linear model,</p>$$
+$$</p></div></article><h2 id=logistic-regression-for-two-classes>Logistic Regression for Two Classes</h2><p>For two classes, the simplest model for the posterior is a linear model,</p><p>$$
 \log \frac{p(C=c_1\mid X=x) }{p(C=c_2\mid X=x)} = \beta_0 + \beta_1 \cdot x,
-$$<p>which is equivalent to</p>$$
+$$</p><p>which is equivalent to</p><p>$$
 p(C=c_1\mid X=x) = \exp\left(\beta_0 + \beta_1 \cdot x\right) p(C=c_2\mid X=x) .
-$$<article class="message is-info is-light"><div class=message-header><p>Why</p></div><div class=message-body><p>The reason that we proposing a linear model for the quantity</p><p>$$
+$$</p><article class="message is-info is-light"><div class=message-header><p>Why</p></div><div class=message-body><p>The reason that we proposing a linear model for the quantity</p><p>$$
 \log \frac{p(C=c_1\mid X=x) }{p(C=c_2\mid X=x)},
-$$</p><p>is that it has a range from $-\infty$ to $\infty$ which matches the range of the linear model $ \beta_0 + \beta_1 \cdot x$.</p><p>We can also see in the following results that such relation guarantees that the conditional probabilities are restricted to 0 to 1 after applying the normalization constraint.</p></div></article><p>Using the normalization condition</p>$$
+$$</p><p>is that it has a range from $-\infty$ to $\infty$ which matches the range of the linear model $ \beta_0 + \beta_1 \cdot x$.</p><p>We can also see in the following results that such relation guarantees that the conditional probabilities are restricted to 0 to 1 after applying the normalization constraint.</p></div></article><p>Using the normalization condition</p><p>$$
 p(C=c_1\mid X=x) + p(C=c_2\mid X=x) = 1,
-$$<p>we can derive the posterior for each classes</p>$$
+$$</p><p>we can derive the posterior for each classes</p><p>$$
 \begin{align}
 p(C=c_2\mid X=x) &= \frac{1}{1 +  \exp\left(\beta_0 + \beta_1 \cdot x\right)} \\
 p(C=c_1\mid X=x) &= \frac{\exp\left(\beta_0 + \beta_1 \cdot x\right)}{1 + \exp\left(\beta_0 + \beta_1 \cdot x\right)}.
 \end{align}
-$$<figure><img src=../assets/logistic-regression/logistic_regression_two_class_probs.png alt="For simplicity, we are using $x'=\beta_0 + \beta_1 \cdot x$ in this figure."><figcaption><h4>The two conditional probabilities</h4><p>For simplicity, we are using $x'=\beta_0 + \beta_1 \cdot x$ in this figure.</p></figcaption></figure><article class="message is-info is-light"><div class=message-header><p>Limiting behavior</p></div><div class=message-body><ol><li>As $\beta_0 + \beta_1 \cdot x \to \infty$, we have $p(C=c_2\mid X=x) \to 0$ and $p(C=c_1\mid X=x)\to 1$.</li><li>As $\beta_0 + \beta_1 \cdot x \to 0$, we have $p(C=c_2\mid X=x) \to 0.5$ and $p(C=c_1\mid X=x)\to 0.5$.</li><li>As $\beta_0 + \beta_1 \cdot x \to -\infty$, we have $p(C=c_2\mid X=x) \to 1$ and $p(C=c_1\mid X=x)\to 0$.</li></ol></div></article><h2 id=logistic-regression-for-k-classes>Logistic Regression for $K$ Classes</h2><p>It is easily generalized to problems with $K$ classes.</p>$$
+$$</p><figure><img src=../assets/logistic-regression/logistic_regression_two_class_probs.png alt="For simplicity, we are using $x'=\beta_0 + \beta_1 \cdot x$ in this figure."><figcaption><h4>The two conditional probabilities</h4><p>For simplicity, we are using $x'=\beta_0 + \beta_1 \cdot x$ in this figure.</p></figcaption></figure><article class="message is-info is-light"><div class=message-header><p>Limiting behavior</p></div><div class=message-body><ol><li>As $\beta_0 + \beta_1 \cdot x \to \infty$, we have $p(C=c_2\mid X=x) \to 0$ and $p(C=c_1\mid X=x)\to 1$.</li><li>As $\beta_0 + \beta_1 \cdot x \to 0$, we have $p(C=c_2\mid X=x) \to 0.5$ and $p(C=c_1\mid X=x)\to 0.5$.</li><li>As $\beta_0 + \beta_1 \cdot x \to -\infty$, we have $p(C=c_2\mid X=x) \to 1$ and $p(C=c_1\mid X=x)\to 0$.</li></ol></div></article><h2 id=logistic-regression-for-k-classes>Logistic Regression for $K$ Classes</h2><p>It is easily generalized to problems with $K$ classes.</p><p>$$
 \begin{align}
 p(C=c_K\mid X=x) &= \frac{1}{1 +  \sum_k\exp\left(\beta_{k0} + \beta_k \cdot x\right)} \\
 p(C=c_k\mid X=x) &= \frac{\exp\left(\beta_{k0} + \beta_k \cdot x\right)}{1 + \sum_k\exp\left(\beta_{k0} + \beta_k \cdot x\right)}
 \end{align}
-$$<h2 id=why-not-non-linear>Why not non-linear</h2><p>The log of the posterior ratio can be more complex than linear models. In general, we have<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>$$
+$$</p><h2 id=why-not-non-linear>Why not non-linear</h2><p>The log of the posterior ratio can be more complex than linear models. In general, we have<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p><p>$$
 \log \frac{p(C=c_1\mid X=x) }{p(C=c_2\mid X=x)} = f(x),
-$$<p>so that</p>$$
+$$</p><p>so that</p><p>$$
 p(C=c_1\mid X=x) = \frac{\exp(f(x))}{ 1 + \exp(f(x)) }.
-$$<p>The logistic regression model we mentioned in the previous sections require</p>$$
+$$</p><p>The logistic regression model we mentioned in the previous sections require</p><p>$$
 f(x) = \beta_0 + \beta_1 \cdot x.
-$$<p>A more general additive model is</p>$$
+$$</p><p>A more general additive model is</p><p>$$
 f(x) = \sum_i f_i(x),
-$$<p>where we can apply algorithms such as local scoring to fit such models<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p><a name=friedman2000 href=#friedman2000 style=text-decoration:none><span class="tag is-link is-light">friedman2000</span></a>
+$$</p><p>where we can apply algorithms such as local scoring to fit such models<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p><a name=friedman2000 href=#friedman2000 style=text-decoration:none><span class="tag is-link is-light">friedman2000</span></a>
 <a href=https://projecteuclid.org/journals/annals-of-statistics/volume-28/issue-2/Additive-logistic-regression--a-statistical-view-of-boosting-With/10.1214/aos/1016218223.full style=text-decoration:none>Friedman J, Hastie T, Tibshirani R. Additive Logistic Regression. The Annals of Statistics. 2000. pp. 337–374. doi:10.1214/aos/1016218223</a>
 <a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2021-05-27T00:00:00+00:00>2021-05-27</time>
 by <span itemprop=author>Lei Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/machine-learning/linear/poisson-regression/?ref=footer" class=pagination-previous>« Poisson Regression</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media style=overflow-x:scroll><div class=media-content><div class=content><p>Lei Ma

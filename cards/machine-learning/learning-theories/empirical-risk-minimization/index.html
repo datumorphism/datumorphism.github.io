@@ -10,21 +10,22 @@
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/machine-learning/learning-theories/learning-problem/>learning problem</a>
 <span class=tooltiptext><span style=font-size:90%>The learning problem posed by Vapnik:1
 Given a sample: $\{z_i\}$ in the probability space $Z$; Assuming a probability measure on the probability space $Z$; Assuming a set of functions $Q(z, \alpha)$ (e.g. loss functions), where $\alpha$ is a set of parameters; A risk functional to be minimized by tunning &ldquo;the handles&rdquo; $\alpha$, $R(\alpha)$. The risk functional is
-$$ R(\alpha) = \int Q(z, \alpha) \,\mathrm d F(z). $$ A learning problem is the minimization of this risk.</span></span></span>
-, empirical risk $R$ is a measurement the goodness of fit based on empirical information. Empirical risk minimization minimizes the empirical risk to select a good model $\hat f$ out of all possible models $f$ in our hypothesis space for a dataset $\mathcal D$,</p>$$
+$$ R(\alpha) = \int Q(z, \alpha) \,\mathrm d F(z). $$
+A learning problem is the minimization of this risk.</span></span></span>
+, empirical risk $R$ is a measurement the goodness of fit based on empirical information. Empirical risk minimization minimizes the empirical risk to select a good model $\hat f$ out of all possible models $f$ in our hypothesis space for a dataset $\mathcal D$,</p><p>$$
 \hat f = \operatorname{argmin} R(f, \mathcal D).
-$$<h2 id=empirical-risk-example>Empirical Risk Example</h2><p>For example, the emprical risk can be represented by the negative log likelihood.</p><p>A negative log likelihood (NLL) for a model $\theta$ of dataset $\mathcal D$</p>$$
+$$</p><h2 id=empirical-risk-example>Empirical Risk Example</h2><p>For example, the emprical risk can be represented by the negative log likelihood.</p><p>A negative log likelihood (NLL) for a model $\theta$ of dataset $\mathcal D$</p><p>$$
 NLL(\theta) = -\log p(\mathcal D\mid\theta) = -\sum_n \log (y_n \mid x_n, \theta).
-$$<p>An empirical risk loss function $\mathcal L$ is</p>$$
+$$</p><p>An empirical risk loss function $\mathcal L$ is</p><p>$$
 \mathcal L(\theta) = \frac{1}{N} \sum_n \mathscr l(y_n, \theta; x_n),
-$$<p>where $\mathscr l$ is a loss. For example, one could design a stepwise loss in classification</p>$$
+$$</p><p>where $\mathscr l$ is a loss. For example, one could design a stepwise loss in classification</p><p>$$
 \mathscr l = \begin{cases}
 0, \qquad \text{if prediction matches data} \\
 1 \qquad \text{if prediction doesn't match data}
 \end{cases}
-$$<p>Another possibility is surrogate loss which is continuous.</p><h2 id=regularized-risk>Regularized Risk</h2><p>However, ERM may lead to overfitting. One method to solve this is to add a penalty based on the complexity of the model $C(f)$,</p>$$
+$$</p><p>Another possibility is surrogate loss which is continuous.</p><h2 id=regularized-risk>Regularized Risk</h2><p>However, ERM may lead to overfitting. One method to solve this is to add a penalty based on the complexity of the model $C(f)$,</p><p>$$
 R_{Reg}(f, \mathcal D) = R(f, \mathcal D) + \lambda C(f).
-$$</div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2021-02-18T00:00:00+00:00>2021-02-18</time>
+$$</p></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2021-02-18T00:00:00+00:00>2021-02-18</time>
 by <span itemprop=author>Lei Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/cards/machine-learning/learning-theories/learning-problem/?ref=footer" class=pagination-previous>« The Learning Problem</a>
 <a class=pagination-next href="https://datumorphism.leima.is/cards/machine-learning/learning-theories/structural-risk-minimization/?ref=footer">SRM: Structural Risk Minimization »</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media style=overflow-x:scroll><div class=media-content><div class=content><p>Lei Ma
 (2021). 'ERM: Empirical Risk Minimization', Datumorphism, 02 April. Available at: https://datumorphism.leima.is/cards/machine-learning/learning-theories/empirical-risk-minimization/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#empirical-risk-example>Empirical Risk Example</a></li><li><a href=#regularized-risk>Regularized Risk</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')

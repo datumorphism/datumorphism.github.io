@@ -22,19 +22,19 @@ $$
 $$
 with $j=0,1,2,&mldr;$.</p><p>Using least squares as our estimator, we minimize the RSS loss function $L$ by choosing the suitable parameters $\beta_j$. The loss function is</p><p>$$
 L = ( Y_i - X_{ij}\beta_j )( Y_i - X_{ik}\beta_k ).
-$$</p><p>Minimizing it &lsquo;requires&rsquo; $\partial_{\beta_m} L = 0$ and $\partial_{\beta_m}\partial_{\beta_n} L > 0 $.</p><p>We have</p>$$
+$$</p><p>Minimizing it &lsquo;requires&rsquo; $\partial_{\beta_m} L = 0$ and $\partial_{\beta_m}\partial_{\beta_n} L > 0 $.</p><p>We have</p><p>$$
 \begin{align}
 \partial_{\beta_m} L =& (\partial_{\beta_m} ( Y_i - X_{ij}\beta_j ) ) ( Y_i - X_{ik}\beta_k ) + ( Y_i - X_{ij}\beta_j ) \partial_{\beta_m} ( Y_i - X_{ik}\beta_k ) \\
 =& - X_{ij} \delta_{jm}( Y_i - X_{ik}\beta_k ) + ( Y_i - X_{ij}\beta_j ) ( - X_{ik}\delta_{km} ) \\
 =& - 2 X_{im} ( Y_i - X_{ij}\beta_j )
 \end{align}
-$$<p>Solving $- 2 X_{im} ( Y_i - X_{ij}\beta_j ) = 0$, we have</p>$$
+$$</p><p>Solving $- 2 X_{im} ( Y_i - X_{ij}\beta_j ) = 0$, we have</p><p>$$
 \begin{align}
 & 0 = X_{im} ( Y_i - X_{ij}\beta_j ) \\
 & X_{im} X_{ij}\beta_j   = X_{im} Y_i \\
 & \beta_j = ( X_{im} X_{ij} )^{-1} X_{im} Y_i
 \end{align}
-$$<p>In the abstract matrix notation,</p><p>$$
+$$</p><p>In the abstract matrix notation,</p><p>$$
 \boldsymbol \beta = ( \mathbf X^T \mathbf X )^{-1} \mathbf X^T \mathbf Y.
 $$</p></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2019-01-01T00:00:00+00:00>2019-01-01</time>
 by <span itemprop=author>Lei Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/statistics/normalization-methods/?ref=footer" class=pagination-previous>« Normalization Methods for Numeric Data</a>

@@ -5,12 +5,12 @@
 <a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
 <a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
 <a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="NMF: Nonnegative Matrix Factorizatioin"><meta itemprop=description content="Nonnegative Matrix Factorizatioin has a bright future"><meta itemprop=datePublished content="2019-06-13T00:00:00+00:00"><meta itemprop=dateModified content="2019-06-13T00:00:00+00:00"><meta itemprop=wordCount content="845"><meta itemprop=keywords content="Machine Learning,Factorization,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/factorization/>Factorization</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/factorization/nmf/>NMF: Nonnegative Matrix Factorizatioin</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">NMF: Nonnegative Matrix Factorizatioin</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/machine-learning><span class="tag is-warning is-small is-light">#Machine Learning</span></a>
+<a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="NMF: Nonnegative Matrix Factorizatioin"><meta itemprop=description content="Nonnegative Matrix Factorizatioin has a bright future"><meta itemprop=datePublished content="2019-06-13T00:00:00+00:00"><meta itemprop=dateModified content="2019-06-13T00:00:00+00:00"><meta itemprop=wordCount content="819"><meta itemprop=keywords content="Machine Learning,Factorization,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/factorization/>Factorization</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/factorization/nmf/>NMF: Nonnegative Matrix Factorizatioin</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">NMF: Nonnegative Matrix Factorizatioin</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/machine-learning><span class="tag is-warning is-small is-light">#Machine Learning</span></a>
 <a href=/tags/factorization><span class="tag is-warning is-small is-light">#Factorization</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><h2 id=decomposition>Decomposition</h2><p>To make it easier to understand, we start with a data point $\mathbf P$ in a $k$-dimensional space spanned by $k$ basis vectors $\mathbf V^k$. Naturally, we could write down the component decomposition of the point using the basis vectors $\mathbf V^k$,</p><p>$$
 \mathbf P = P_k \mathbf V^k.
 $$</p><p>This is immediately obvious to us since we have been dealing with rank 2 $(k, 1)$ basis vectors and we are talking about the $k$ coordinates for a point.</p><p>This point is represented by a matrix of rank 2 $(k, 1)$ given this basis.</p><p>$$
 \mathbf P \to \begin{pmatrix} P_1, P_2, \cdots, P_k \end{pmatrix}
-$$</p><p>If we assume a cartesian coordinate system, the basis are normal vectors.</p>$$
+$$</p><p>If we assume a cartesian coordinate system, the basis are normal vectors.</p><p>$$
 \mathbf V^1 \to \begin{pmatrix}
 1\\
 0\\
@@ -22,7 +22,7 @@ $$</p><p>If we assume a cartesian coordinate system, the basis are normal vector
 \vdots\\
 0
 \end{pmatrix}, \cdots
-$$<p>These representations of the basis vectors can be joined together</p>$$
+$$</p><p>These representations of the basis vectors can be joined together</p><p>$$
 \mathbf V \to
 \begin{pmatrix}
 1 & 0 & \cdots & 0 \\
@@ -30,7 +30,7 @@ $$<p>These representations of the basis vectors can be joined together</p>$$
 \vdots & \vdots & \vdots & \vdots\\
 0 & 0 & 0 & 1
 \end{pmatrix}
-$$<p>Using these representations of the abstract vectors, we could represent the point $\mathbf P$ using</p>$$
+$$</p><p>Using these representations of the abstract vectors, we could represent the point $\mathbf P$ using</p><p>$$
 \mathbf P \to \begin{pmatrix}
 P_1, P_2, \cdots, P_k
 \end{pmatrix} \begin{pmatrix}
@@ -39,7 +39,7 @@ P_1, P_2, \cdots, P_k
 \vdots & \vdots & \vdots & \vdots\\
 0 & 0 & 0 & 1
 \end{pmatrix},
-$$<p><em>which is insanely trivial since the representation of basis in this case is an identity matrix.</em></p><article class="message is-info is-light"><div class=message-header><p>Spherical Harmonics</p></div><div class=message-body><p>Now we ask this question:</p><p><strong>Can we decompose the point using some other basis?</strong></p><p>The answer is yes.</p><p>While it is easier to perceive using the above matrix picture, it is much more convinent to use the index notation.</p><p>In physics, we are already dealing with this situition. We use spherical harmonics to decompose a field.</p><p>$$
+$$</p><p><em>which is insanely trivial since the representation of basis in this case is an identity matrix.</em></p><article class="message is-info is-light"><div class=message-header><p>Spherical Harmonics</p></div><div class=message-body><p>Now we ask this question:</p><p><strong>Can we decompose the point using some other basis?</strong></p><p>The answer is yes.</p><p>While it is easier to perceive using the above matrix picture, it is much more convinent to use the index notation.</p><p>In physics, we are already dealing with this situition. We use spherical harmonics to decompose a field.</p><p>$$
 \begin{equation}
 f(r=1, \theta, \varphi) = \sum_{\ell=0}^\infty \sum_{m=-\ell}^\ell f_\ell^m Y_\ell^m (\theta, \varphi ).
 \end{equation}
@@ -47,7 +47,7 @@ $$</p><p>A general form of decomposition using rank 2 matrix is</p><p>$$
 \mathbf P \to P_\ell^m V_m^\ell.
 $$</p></div></article><p>NMF is talking about the same idea: coordinate transformations,</p><p>$$
 X_{n}^{\phantom{n}k} = H_n^{\phantom{n}r} W_r^{\phantom{r}k}.
-$$</p><p>We will view $X_{n}^{\phantom{n}k}$ as a vertical stack of $n$ points:</p>$$
+$$</p><p>We will view $X_{n}^{\phantom{n}k}$ as a vertical stack of $n$ points:</p><p>$$
 \begin{pmatrix}
 \mathbf P_1 \\
 \mathbf P_2 \\
@@ -76,25 +76,16 @@ W_{r1} & W_{r2} & \cdots & W_{rk}
 \end{pmatrix} \begin{pmatrix}
 \mathbf W^1 & \mathbf W^2 & \cdots & \mathbf W^k
 \end{pmatrix}
-$$<p>For a point $i$, we have</p><p>$$
+$$</p><p>For a point $i$, we have</p><p>$$
 \mathbf P_i = \mathbf H_i \begin{pmatrix}\mathbf W^1 & \mathbf W^2 & \cdots & \mathbf W^k \end{pmatrix}
-$$</p><p>Compare this with the decomposition of a point in the cartesian coordinate system, this is a decomposition of each point on a basis spanned by $\mathbf W^i$.</p><article class="message is-info is-light"><div class=message-header><p>Another View?</p></div><div class=message-body><p>$$
-\begin{pmatrix}
-\mathbf H^1 &
-\mathbf H^2 &
-\cdots &
-\mathbf H^r
-\end{pmatrix} \begin{pmatrix}
-\mathbf W_1 \<br>\mathbf W_2 \<br>\vdots \<br>\mathbf W_r
-\end{pmatrix}
-$$</p><p>Then we have the sum of a bunch of $(n, k)$ matrices,</p><p>$$
+$$</p><p>Compare this with the decomposition of a point in the cartesian coordinate system, this is a decomposition of each point on a basis spanned by $\mathbf W^i$.</p><article class="message is-info is-light"><div class=message-header><p>Another View?</p></div><div class=message-body><p>Then we have the sum of a bunch of $(n, k)$ matrices,</p><p>$$
 \mathbf H^1 \mathbf W_1 + \mathbf H^2 \mathbf W_2 + \mathbf H^3 \mathbf W_3 \cdots
-$$</p><p>This is not providing more insights to me. It seems to be rewriting the original matrix in &ldquo;a coordinate system&rdquo; of r bases.</p></div></article><h2 id=nonnegative-matrix-factorization>Nonnegative Matrix Factorization</h2><p>NMF is a dimension reduction method that decomposes $X_{n}^{\phantom{n}k}$ using</p>$$
+$$</p><p>This is not providing more insights to me. It seems to be rewriting the original matrix in &ldquo;a coordinate system&rdquo; of r bases.</p></div></article><h2 id=nonnegative-matrix-factorization>Nonnegative Matrix Factorization</h2><p>NMF is a dimension reduction method that decomposes $X_{n}^{\phantom{n}k}$ using</p><p>$$
 \begin{equation}
 X_{n}^{\phantom{n}k} \sim H_n^{\phantom{n}r} W_r^{\phantom{r}k}.
 \label{eq-nmf}
 \end{equation}
-$$<p>while requiring the elements of the decomposition to be nonnegative. <strong>But there are many possible decompositions!</strong> Then we require this approximation to be as accurate as possible.</p><p>How do we measure the approximations?</p><p>We use the Frobenius distance between the matrix $X_{n}^{\phantom{n}k}$ and $H_n^{\phantom{n}r} W_r^{\phantom{r}k}$,</p><p>$$
+$$</p><p>while requiring the elements of the decomposition to be nonnegative. <strong>But there are many possible decompositions!</strong> Then we require this approximation to be as accurate as possible.</p><p>How do we measure the approximations?</p><p>We use the Frobenius distance between the matrix $X_{n}^{\phantom{n}k}$ and $H_n^{\phantom{n}r} W_r^{\phantom{r}k}$,</p><p>$$
 \lVert X_{n}^{\phantom{n}k} - H_n^{\phantom{n}r} W_r^{\phantom{r}k} \rVert^2 \equiv \sum_{n,k} (X_{n}^{\phantom{n}k} - H_n^{\phantom{n}r} W_r^{\phantom{r}k})^2.
 $$</p><p>So NMF will require this Frobenius distance to be minimal.</p><h2 id=why-does-it-even-work>Why Does It Even Work?</h2><p>Well, it doesn&rsquo;t always work. <strong>We might have many different NMFs for one single matrix.</strong></p><article class="message is-warning is-light"><div class=message-header><p>Compare with SVD</p></div><div class=message-body><p>For a $n\times p$ matrix $\mathbf X$, we use SVD to get the singular value,</p><p>$$
 \mathbf{U}^{\mathbf T}\mathbf{X} = \mathbf{D}\mathbf{V}^{\mathbf T}.

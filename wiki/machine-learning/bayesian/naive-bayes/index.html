@@ -13,20 +13,17 @@
 $$ P(A\mid B) = \frac{P(B \mid A) P(A)}{P(B)} $$
 $P(A\mid B)$: likelihood of A given B $P(A)$: marginal probability of A There is a nice tree diagram for the Bayes&rsquo; theorem on Wikipedia.
 Tree diagram of Bayes&rsquo; theorem</span></span></span>
-with &lsquo;naive&rsquo; assumptions.</p><h2 id=problems-with-conditional-probability-calculation>Problems with Conditional Probability Calculation</h2><p>By definition, the conditional probability of event $\mathbf Y$ given features $\mathbf X$ is
-$$
+with &lsquo;naive&rsquo; assumptions.</p><h2 id=problems-with-conditional-probability-calculation>Problems with Conditional Probability Calculation</h2><p>By definition, the conditional probability of event $\mathbf Y$ given features $\mathbf X$ is<p>$$
 \begin{equation}
 P(\mathbf Y\mid \mathbf X) = \frac{P(\mathbf Y, \mathbf X)}{ P(\mathbf X) },
 \label{def-cp-y-given-x}
 \end{equation}
-$$
-where</p><ul><li>$P(\mathbf X)$ is probability of an event having the features $\mathbf X$,</li><li>$P(\mathbf Y, \mathbf X)$ is the probability of the event $Y$ with features $\mathbf X$.</li></ul><p>In equation $\eqref{def-cp-y-given-x}$, the estimation of $P(\mathbf X)$ is not easy. Imagine the size of the space spanned by 10 features. It is a 10-dimensional space and a lot of combinations. This is usually not accurate in many limited datasets. An accurate estimation of the probability of one specific combination requires a large dataset with a lot of occurrences of events with all kinds of feature combinations.</p><p>It is the same situation for the estimation of $P(\mathbf X \mid \mathbf Y)$ and $P(\mathbf Y, \mathbf X)$.</p><p>On the other hand, the conditional probability of event $Y$ given a set of features $\mathbf X$ can also be calculated using the Bayes&rsquo; theorem,
-$$
+$$</p>where</p><ul><li>$P(\mathbf X)$ is probability of an event having the features $\mathbf X$,</li><li>$P(\mathbf Y, \mathbf X)$ is the probability of the event $Y$ with features $\mathbf X$.</li></ul><p>In equation $\eqref{def-cp-y-given-x}$, the estimation of $P(\mathbf X)$ is not easy. Imagine the size of the space spanned by 10 features. It is a 10-dimensional space and a lot of combinations. This is usually not accurate in many limited datasets. An accurate estimation of the probability of one specific combination requires a large dataset with a lot of occurrences of events with all kinds of feature combinations.</p><p>It is the same situation for the estimation of $P(\mathbf X \mid \mathbf Y)$ and $P(\mathbf Y, \mathbf X)$.</p><p>On the other hand, the conditional probability of event $Y$ given a set of features $\mathbf X$ can also be calculated using the Bayes&rsquo; theorem,<p>$$
 \begin{equation}
 P(\mathbf Y\mid \mathbf X) = \frac{P(\mathbf Y) P(\mathbf X \mid \mathbf Y)}{ P(\mathbf X) },
 \label{cp-by-bayes-theorem-init}
 \end{equation}
-$$</p><p>where</p><ul><li>$P(\mathbf Y)$ is the probability of event $Y$.</li></ul><p>In equation $\eqref{cp-by-bayes-theorem-init}$, we will be calculating $P(\mathbf X\mid \mathbf Y)$ instead of $P( \mathbf Y\mid \mathbf X)$ which will be better defined in a small dataset.</p><h2 id=naive-bayes>Naive Bayes</h2><p>Suppose we are solving a classification problem, with features denoted as $\mathbf X$, and class results as $\mathbf Y$. We would like to train a classifier for the class results given some feature values. Bayes&rsquo; theorem tells us the probability</p><p>$$
+$$</p></p><p>where</p><ul><li>$P(\mathbf Y)$ is the probability of event $Y$.</li></ul><p>In equation $\eqref{cp-by-bayes-theorem-init}$, we will be calculating $P(\mathbf X\mid \mathbf Y)$ instead of $P( \mathbf Y\mid \mathbf X)$ which will be better defined in a small dataset.</p><h2 id=naive-bayes>Naive Bayes</h2><p>Suppose we are solving a classification problem, with features denoted as $\mathbf X$, and class results as $\mathbf Y$. We would like to train a classifier for the class results given some feature values. Bayes&rsquo; theorem tells us the probability</p><p>$$
 \begin{equation}
 P(\mathbf Y \mid \mathbf X) = \frac{ P(\mathbf X \mid \mathbf Y) P(\mathbf Y) }{ P(\mathbf X) }.
 \end{equation}

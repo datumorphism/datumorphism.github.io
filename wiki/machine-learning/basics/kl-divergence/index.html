@@ -6,40 +6,39 @@
 <a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
 <a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
 <a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="KL Divergence"><meta itemprop=description content="Kullback–Leibler divergence indicates the differences between two distributions"><meta itemprop=datePublished content="2021-04-05T00:00:00+00:00"><meta itemprop=dateModified content="2021-04-05T00:00:00+00:00"><meta itemprop=wordCount content="645"><meta itemprop=keywords content="probability,distance,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/basics/>Machine Learning Basics</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>KL Divergence</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">KL Divergence</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/probability><span class="tag is-warning is-small is-light">#probability</span></a>
-<a href=/tags/distance><span class="tag is-warning is-small is-light">#distance</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>Given two distributions $p(x)$ and $q(x)$, the Kullback-Leibler divergence is defined as</p>$$
+<a href=/tags/distance><span class="tag is-warning is-small is-light">#distance</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>Given two distributions $p(x)$ and $q(x)$, the Kullback-Leibler divergence is defined as</p><p>$$
 D_\text{KL}(p(x) \parallel q(x) ) = \int_{-\infty}^\infty p(x) \log\left(\frac{p(x)}{q(x)}\right)\, dx = \mathbb E_{p(x)} \left[\log\left(\frac{p(x)}{q(x)}\right) \right].
-$$<article class="message is-info is-light"><div class=message-header><p>Connection to Entropy</p></div><div class=message-body><p>Notice that this expression is quite similar to entropy,</p><p>$$
+$$</p><article class="message is-info is-light"><div class=message-header><p>Connection to Entropy</p></div><div class=message-body><p>Notice that this expression is quite similar to entropy,</p><p>$$
 H(p(x)) = \int_{-\infty}^{\infty} p(x) \log p(x) , dx.
 $$</p><p>The entropy describes the lower bound of the number of bits (if we use $\log_2$) of how the information can be compressed. By looking at the expression of the KL divergence, we intuitively interpret it as the information loss if we use distribution $q(x)$ to approximate distribution $p(x)$, <a href=https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained>Kurt2017</a></p><p>$$
 D_\text{KL}(p(x) \parallel q(x) ) = \mathbb E_{p(x)} \left[\log p(x)- \log q(x)\right] .
-$$</p></div></article><p>Kullback-Leibler divergence is also called relative entropy. In fact, KL divergence can be decomposed into cross entropy $H(p) = -\int_{-\infty}^\infty p(x) \log q(x), dx$ and entropy $H(p) = -\int_{-\infty}^\infty p(x) \log p(x), dx$</p>$$
+$$</p></div></article><p>Kullback-Leibler divergence is also called relative entropy. In fact, KL divergence can be decomposed into cross entropy $H(p) = -\int_{-\infty}^\infty p(x) \log q(x), dx$ and entropy $H(p) = -\int_{-\infty}^\infty p(x) \log p(x), dx$</p><p>$$
 D_\text{KL}(p \parallel q) = \int_{-\infty}^\infty p(x) \log p(x)\, dx - \int_{-\infty}^\infty p(x) \log q(x) \, dx = - H(p) + H(p, q),
-$$<p>which is</p>$$
+$$</p><p>which is</p><p>$$
 D_\text{KL}(p \parallel q) + H(p) = H(p, q).
-$$<h2 id=what-does-it-mean>What does it mean?</h2><p>We assume two uniform distributions,</p>$$
+$$</p><h2 id=what-does-it-mean>What does it mean?</h2><p>We assume two uniform distributions,</p><p>$$
 p(x) = \begin{cases}
 1/\Delta_p & \text{for } x\in [0, \Delta_p] \\
 0 & \text{else}
 \end{cases}
-$$<p>and</p>$$
+$$</p><p>and</p><p>$$
 p(x) = \begin{cases}
 1/\Delta_q & \text{for } x\in [0, \Delta_q] \\
 0 & \text{else}.
 \end{cases}
-$$<figure><img src=../assets/kl-divergence/kl-divergence-two-uniform.png></figure><p>We will assume $\Delta_q > \Delta_p$ for simplicity. The KL divergence is</p>$$
+$$</p><figure><img src=../assets/kl-divergence/kl-divergence-two-uniform.png></figure><p>We will assume $\Delta_q > \Delta_p$ for simplicity. The KL divergence is</p><p>$$
 D_\text{KL}(p\parallel q) = \int_0^{\Delta_p} \frac{1}{\Delta_p}\log\left( \frac{1/\Delta_p}{1/\Delta_q} \right) dx +\int_{\Delta_p}^{\Delta_q} \lim_{\epsilon\to 0} \epsilon \log\left( \frac{\epsilon}{1/\Delta_q} \right) dx,
-$$<p>where the second term is 0. We have the KL divergence</p>$$
+$$</p><p>where the second term is 0. We have the KL divergence</p><p>$$
 D_\text{KL}(p\parallel q) = \log\left( \frac{\Delta_q}{\Delta_p} \right).
-$$<p>The KL divergence is 0 if $\Delta_p = \Delta_q$, i.e., if the two distributions are the same.</p><h2 id=kl-divergence-of-two-gaussians>KL Divergence of Two Gaussians</h2><p>Assuming the two distributions are two Gaussians $p(x)=\frac{1}{\sigma_p\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_p)^2 }{2\sigma_p^2} \right)$ and $q(x)=\frac{1}{\sigma_q\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_q)^2 }{2\sigma_q^2} \right)$, the KL divergence is</p>$$
+$$</p><p>The KL divergence is 0 if $\Delta_p = \Delta_q$, i.e., if the two distributions are the same.</p><h2 id=kl-divergence-of-two-gaussians>KL Divergence of Two Gaussians</h2><p>Assuming the two distributions are two Gaussians $p(x)=\frac{1}{\sigma_p\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_p)^2 }{2\sigma_p^2} \right)$ and $q(x)=\frac{1}{\sigma_q\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_q)^2 }{2\sigma_q^2} \right)$, the KL divergence is</p><p>$$
 D_{\text{KL}}(p\parallel q) = \mathbb{E}_p \left[ \log \left(\frac{p}{q}\right) \right].
-$$<p>Notice that
-$$
+$$</p><p>Notice that<p>$$
 \log \left( \frac{p}{q} \right) = \log \left( \exp\left( - \frac{ (x - \mu_p)^2 }{2\sigma_p^2} + \frac{ (x - \mu_q)^2 }{2\sigma_q^2} \right) \right).
-$$</p><p>As a simpler version of the problem, we assume that $\sigma_p = \sigma_q = \sigma$, so that</p>$$
+$$</p></p><p>As a simpler version of the problem, we assume that $\sigma_p = \sigma_q = \sigma$, so that</p><p>$$
 \log \left( \frac{p}{q} \right) = \frac{ -(x - \mu_p)^2 + (x - \mu_q)^2 }{2\sigma^2} = \frac{ \mu_q^2 - \mu_p^2}{2\sigma^2} + \frac{ (\mu_p - \mu_q) x }{\sigma^2}.
-$$<p>The KL divergence becomes</p>$$
+$$</p><p>The KL divergence becomes</p><p>$$
 D_{\text{KL}} = \mathbb E_p \left[ \frac{ \mu_q^2 - \mu_p^2}{2\sigma^2} + \frac{ (\mu_p - \mu_q) x }{\sigma^2} \right] = \frac{ \mu_q^2 - \mu_p^2}{2\sigma^2} + \frac{ (\mu_p - \mu_q) }{\sigma^2} \mathbb E_p \left[ x \right] = \frac{ (\mu_q - \mu_p)^2}{2\sigma^2}.
-$$<p>One could easily see that $\mathbb E_p \left[ x \right]=\mu$ using symmetries. The KL divergence for two Gaussians is symmetric for the distributions.</p><p>As an example, we calculate the KL divergence for the example shown in the figure.</p><figure><img src=../assets/kl-divergence/two-gaussians.png></figure><p>To get some intutions, we calculate the integrant $p(x)\log\left(p(x)/q(x)\right)$. The area under curve will be the KL divergence.</p><figure><img src=../assets/kl-divergence/integrants.png></figure><h2 id=kl-divergence-is-not-necessarily-symmetric>KL Divergence is not necessarily symmetric</h2><p>Using the uniform distribution example, we realize that</p><p>$$
+$$</p><p>One could easily see that $\mathbb E_p \left[ x \right]=\mu$ using symmetries. The KL divergence for two Gaussians is symmetric for the distributions.</p><p>As an example, we calculate the KL divergence for the example shown in the figure.</p><figure><img src=../assets/kl-divergence/two-gaussians.png></figure><p>To get some intutions, we calculate the integrant $p(x)\log\left(p(x)/q(x)\right)$. The area under curve will be the KL divergence.</p><figure><img src=../assets/kl-divergence/integrants.png></figure><h2 id=kl-divergence-is-not-necessarily-symmetric>KL Divergence is not necessarily symmetric</h2><p>Using the uniform distribution example, we realize that</p><p>$$
 D_\text{KL}(q\parallel p) \to \infty,
 $$</p><p>which is very different from $D_\text{KL}(p\parallel q)$.</p><p>To illustrate the asymmetries using continuous , we will calculate the KL divergence of a Gaussian $p(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{p})^2 }{2\sigma^2} \right)$ and a Guassian mixture $q(x)=\frac{1}{2\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{q1})^2 }{2\sigma^2} \right) + \frac{1}{2\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{q2})^2 }{2\sigma^2} \right)$. The KL divergence $D_{\text{KL}}(p \parallel q)$ is</p><p>$$
 D_{\text{KL}}(p \parallel q) = \mathbb{E}_p \left[ \log\left( \frac{p}{q} \right) \right].

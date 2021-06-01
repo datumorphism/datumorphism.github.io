@@ -7,6 +7,8 @@ Given ${\theta}$, the probability of observing the value $X$, i.e., the likeliho
 $$ f(X\mid\theta). $$
 To describe the suitability of a model and the observables, we can use a the likelihood $f(X\mid \theta)$. One particular interesting property is the sensitivity of the likelihood in terms of the parameter $\theta$ change.</description></item><item><title>Coding Theory Concepts</title><link>https://datumorphism.leima.is/cards/information/coding-theory-concepts/</link><pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/information/coding-theory-concepts/</guid><description>The code function produces code words. The expected length of the code word is limited by the entropy from the source probability $p$.
 The Shannon information content, aka self-information, is described by
-$$ - \log_2 p(x=a), $$ for the case that $x=a$.
+$$ - \log_2 p(x=a), $$
+for the case that $x=a$.
 The Shannon entropy is the expected information content for the whole sequence with probability distribution $p(x)$,
-$$ \mathcal H = - \sum_x p(x\in X) \log_2 p(x). $$ The Shannon source coding theorem says that for $N$ samples from the source, we can roughly compress it into $N\mathcal H$.</description></item></channel></rss>
+$$ \mathcal H = - \sum_x p(x\in X) \log_2 p(x). $$
+The Shannon source coding theorem says that for $N$ samples from the source, we can roughly compress it into $N\mathcal H$.</description></item></channel></rss>

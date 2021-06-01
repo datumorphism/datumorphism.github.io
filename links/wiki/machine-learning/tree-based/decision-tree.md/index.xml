@@ -3,6 +3,7 @@ Given a proper dataset $\mathscr D(\mathbf X, \mathbf y)$, the ensemble of trees
 The first example we investigate is a pure 0 dataset.
 object 0 0 0 0 0 0 0 0 0 0 0 0 For such an all-0 dataset, we would like to define its impurity as 0.</description></item><item><title>Information Gain</title><link>https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/</link><pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/</guid><description>Information gain is a frequently used metric in calculating the gain during a split in tree-based methods.
 First o all, the entropy of a dataset if defined as
-$$ S = - sum_i p_i \log p_i - sum_i (1-p_i)\log p_i, $$ where $p_i$ is the probability of a class.
+$$ S = - sum_i p_i \log p_i - sum_i (1-p_i)\log p_i, $$
+where $p_i$ is the probability of a class.
 The information gain is the difference between the entropy.
 For example, in a decision tree algorithm, we would split a node. Before splitting, we assign a label $m$ to the node,</description></item></channel></rss>

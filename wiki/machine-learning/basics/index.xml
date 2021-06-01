@@ -4,7 +4,8 @@ $$ \begin{equation} Y = f(X) + \epsilon. \label{dataset-using-true-model} \end{e
 On the other hand, we build another model using a specific method such as k-nearest neighbors, which is denoted as $k(X)$.
 Why the two models?
 Why are we talking about the perfect model and a model using a specific method?</description></item><item><title>KL Divergence</title><link>https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/</link><pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/</guid><description>Given two distributions $p(x)$ and $q(x)$, the Kullback-Leibler divergence is defined as
-$$ D_\text{KL}(p(x) \parallel q(x) ) = \int_{-\infty}^\infty p(x) \log\left(\frac{p(x)}{q(x)}\right)\, dx = \mathbb E_{p(x)} \left[\log\left(\frac{p(x)}{q(x)}\right) \right]. $$ Connection to Entropy
+$$ D_\text{KL}(p(x) \parallel q(x) ) = \int_{-\infty}^\infty p(x) \log\left(\frac{p(x)}{q(x)}\right)\, dx = \mathbb E_{p(x)} \left[\log\left(\frac{p(x)}{q(x)}\right) \right]. $$
+Connection to Entropy
 Notice that this expression is quite similar to entropy,
 $$ H(p(x)) = \int_{-\infty}^{\infty} p(x) \log p(x) , dx. $$
 The entropy describes the lower bound of the number of bits (if we use $\log_2$) of how the information can be compressed.</description></item></channel></rss>

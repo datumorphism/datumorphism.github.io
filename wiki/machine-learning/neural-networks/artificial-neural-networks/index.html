@@ -17,12 +17,12 @@ $$</p><figure><img src=../assets/artificial-neural-networks/bipolarSigmoid.png><
 \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^{x} - e^{-x}}{e^x + e^{-x}}
 $$</p><figure><img src=../assets/artificial-neural-networks/tanh.png><figcaption><h4>Hyperbolic tangent</h4></figcaption></figure></li><li><p>Radial Basis Function</p><figure><img src=../assets/artificial-neural-networks/unnormalized_radial_basis_functions.svg.png alt="Two unnormalized Gaussian radial basis functions in one input dimension. The basis function centers are located at x1=0.75 and x2=3.25. Source Unnormalized Radial Basis Functions"><figcaption><h4>Hyperbolic tangent</h4><p>Two unnormalized Gaussian radial basis functions in one input dimension. The basis function centers are located at x1=0.75 and x2=3.25. Source <a href=https://en.wikipedia.org/wiki/Radial_basis_function#/media/File:Unnormalized_radial_basis_functions.svg>Unnormalized Radial Basis Functions</a></p></figcaption></figure></li><li><p>Conic Section Function</p></li></ol><h2 id=solving-differential-equations>Solving Differential Equations</h2><p>The problem here to solve is</p><p>$$
 \frac{d}{dt}y(t)= - y(t),
-$$</p><p>with initial condition $y(0)=1$.</p><p>To construct a single layered neural network, the function is decomposed using</p>$$
+$$</p><p>with initial condition $y(0)=1$.</p><p>To construct a single layered neural network, the function is decomposed using</p><p>$$
 \begin{align}
 y(t_i) & = y(t_0) + t_i v_k f(t_i w_k+u_k) \\
 &= 1+t_i v_k f(t_i w_k+u_k) ,
 \end{align}
-$$<p>where $y(t_0)$ is the initial condition and $k$ is summed over.</p><article class="message is-light is-light"><div class=message-header><p>Articifial Neural Network</p></div><div class=message-body></div></article><p>Presumably this should be the gate controlling trigering of the neuron or not. Therefore the following expit function serves this purpose well,</p><p>$$
+$$</p><p>where $y(t_0)$ is the initial condition and $k$ is summed over.</p><article class="message is-light is-light"><div class=message-header><p>Articifial Neural Network</p></div><div class=message-body></div></article><p>Presumably this should be the gate controlling trigering of the neuron or not. Therefore the following expit function serves this purpose well,</p><p>$$
 f(x) = \frac{1}{1+\exp(-x)}.
 $$</p><p>One important reason for chosing this is that a lot of expressions can be calculated analytically and easily.</p><article class="message is-light is-light"><div class=message-header><p>Fermi-Dirac Distribution</p></div><div class=message-body>Aha, the Fermi-Dirac distribution.</div></article><p>With the form of the function to be solved, we can define a cost</p><p>$$
 I=\sum_i\left( \frac{dy}{dt}(t_i)+y(t_i) \right)^2,

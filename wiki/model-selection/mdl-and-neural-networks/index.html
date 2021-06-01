@@ -18,9 +18,11 @@ One strategy is to apply constraints to the networks:
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/information/coding-theory-concepts/>Source Coding Theorem</a>
 <span class=tooltiptext><span style=font-size:90%>The code function produces code words. The expected length of the code word is limited by the entropy from the source probability $p$.
 The Shannon information content, aka self-information, is described by
-$$ - \log_2 p(x=a), $$ for the case that $x=a$.
+$$ - \log_2 p(x=a), $$
+for the case that $x=a$.
 The Shannon entropy is the expected information content for the whole sequence with probability distribution $p(x)$,
-$$ \mathcal H = - \sum_x p(x\in X) \log_2 p(x). $$ The Shannon source coding theorem says that for $N$ samples from the source, …</span></span></span>
+$$ \mathcal H = - \sum_x p(x\in X) \log_2 p(x). $$
+The Shannon source coding theorem says that for $N$ samples from the source, …</span></span></span>
 , we can encode the misfit and the model using Shannon information content <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. The description length for the misfit and the model corresponds to the Shannon information content. Thus we can define an expected description length and minimize it in the model so that we can balance the complexity of the model and the goodness of fit.</p><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p><a name=Hinton1993 href=#Hinton1993 style=text-decoration:none><span class="tag is-link is-light">Hinton1993</span></a>
 <a href=https://doi.org/10.1145/168304.168306 style=text-decoration:none>Hinton, G. E., & van Camp, D. (1993). Keeping the neural networks simple by minimizing the description length of the weights. Proceedings of the Sixth Annual Conference on Computational Learning Theory - COLT 93, 5–13.</a>
 <a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2021-02-14T00:00:00+00:00>2021-02-14</time>
