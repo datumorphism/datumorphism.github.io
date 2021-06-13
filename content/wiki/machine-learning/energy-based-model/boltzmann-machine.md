@@ -14,7 +14,9 @@ references:
   - name: "Hinton GE. Boltzmann Machines. 2007."
     link: "https://www.cs.toronto.edu/~hinton/csc321/readings/boltz321.pdf"
 links:
-  - cards/statistics/likelihood.md
+  - "cards/statistics/likelihood.md"
+  - "wiki/machine-learning/energy-based-model/restricted-boltzmann-machine.md"
+  - "wiki/machine-learning/energy-based-model/maxent-energy-based-model.md"
 weight: 3
 ---
 
