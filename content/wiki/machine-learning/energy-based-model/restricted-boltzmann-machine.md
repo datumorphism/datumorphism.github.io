@@ -26,6 +26,7 @@ links:
   - "wiki/machine-learning/energy-based-model/maxent-energy-based-model.md"
   - "cards/math/cholesky-decomposition.md"
   - "cards/math/hubbard-stratonovich-identity.md"
+  - "wiki/monte-carlo/gibbs-sampling.md"
 notify: "This article uses Mehta2018 extensively."
 weight: 4
 ---
@@ -195,15 +196,15 @@ The calculation of $\langle \cdot \rangle_{\text{model}}$ is easier in RBM.
 
 For first order Markov chains, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.
 
-In this simple situation, the distributions can be sampled using Gibbs sampling. To calculate $p(h\mid x)$, we will clamp our visible units to the data values then infer $h$ which will be used to infer $x$ based on $p(x\mid h)$. Iterate this process we will be able to sample the model, i.e.,
+In this simple situation, the distributions can be sampled using {{< c "wiki/monte-carlo/gibbs-sampling.md" "Gibbs sampling" >}}. To calculate $p(h\mid x)$, we will clamp our visible units to the data values then infer $h$ which will be used to infer $x$ based on $p(x\mid h)$. Iterate this process we will be able to sample the model, i.e.,
 
 {{< m >}}
-\begin{align}
+\begin{align*}
 & p(h\mid x_0) \to h_0 \\
 \Rightarrow & p(x\mid h_0) \to x_1 \\
 \Rightarrow & p(h\mid x_1) \to h_1 \\
 \Rightarrow & \cdots
-\end{align}
+\end{align*}
 {{< /m >}}
 
 
