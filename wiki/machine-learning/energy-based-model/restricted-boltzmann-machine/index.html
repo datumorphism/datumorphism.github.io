@@ -5,24 +5,27 @@
 <a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
 <a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
 <a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Restricted Boltzmann Machine"><meta itemprop=description content="Introducing latent variables to Boltzmann machine and restrict the connections within groups."><meta itemprop=datePublished content="2021-06-11T00:00:00+00:00"><meta itemprop=dateModified content="2021-06-11T00:00:00+00:00"><meta itemprop=wordCount content="1079"><meta itemprop=keywords content="Neural Network,Energy-based Model,Entropy,Restricted Boltzmann Machine,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/>Energy-based Model</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/>Restricted Boltzmann Machine</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Restricted Boltzmann Machine</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/neural-network><span class="tag is-warning is-small is-light">#Neural Network</span></a>
+<a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Restricted Boltzmann Machine"><meta itemprop=description content="Introducing latent variables to Boltzmann machine and restrict the connections within groups."><meta itemprop=datePublished content="2021-06-11T00:00:00+00:00"><meta itemprop=dateModified content="2021-06-11T00:00:00+00:00"><meta itemprop=wordCount content="1092"><meta itemprop=keywords content="Neural Network,Energy-based Model,Entropy,Restricted Boltzmann Machine,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/>Energy-based Model</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/>Restricted Boltzmann Machine</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Restricted Boltzmann Machine</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/neural-network><span class="tag is-warning is-small is-light">#Neural Network</span></a>
 <a href=/tags/energy-based-model><span class="tag is-warning is-small is-light">#Energy-based Model</span></a>
 <a href=/tags/entropy><span class="tag is-warning is-small is-light">#Entropy</span></a>
 <a href=/tags/restricted-boltzmann-machine><span class="tag is-warning is-small is-light">#Restricted Boltzmann Machine</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=NOTIFICATION></div><div class="notification is-warning is-light"><p>This article uses Mehta2018 extensively.</p></div><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>Latent variables introduce extra correlations between the nodes in a network. Introducing hidden units can also help us remove the direct connection between some nodes in a Boltzmann machine and create a restricted Boltzmann machine. A restricted Boltzmann machine requires less computation while having some expressing power.</p><figure><img src=../assets/restricted-boltzmann-machine/illustration-hidden-unit.jpg alt="Given Ising like interactions between the nodes, flipping node V1 is likely to also flip node V2 as they are connected through hidden unit H1. They are correlated. Removing the hidden unit leaves us two uncorrelated units."><figcaption><p>Given Ising like interactions between the nodes, flipping node V1 is likely to also flip node V2 as they are connected through hidden unit H1. They are correlated. Removing the hidden unit leaves us two uncorrelated units.</p></figcaption></figure><h2 id=the-ising-model>The Ising Model</h2><p>Given a Ising-like energy function (c.f.
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>MaxEnt Model</a>
-<span class=tooltiptext><span style=font-size:90%>Maximum Entropy models makes least assumption about the data</span></span></span>
+<span class=tooltiptext><span class=tooltip_title>MaxEnt Model</span>
+<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span></span></span>
 )</p><p>$$
 E(x) = - \sum_i h_i x_i - \frac{1}{2} \sum_{ij} J_{ij} x_i x_j,
 $$</p><p>The term $\sum_{ij} J_{ij} x_i x_j$ can be decomposed using the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/math/cholesky-decomposition/>Cholesky Decomposition</a>
-<span class=tooltiptext><span style=font-size:90%>Decomposing a matrix into two</span></span></span>
+<span class=tooltiptext><span class=tooltip_title>Cholesky Decomposition</span>
+<span class=tooltip_content>Decomposing a matrix into two</span></span></span>
 Cholesky decomposition,</p><p>$$
 \sum_{ij} J_{ij} x_i x_j = \sum_{ijk} W_{ik} W_{kj}^T x_i x_j = \sum_{ijk} W_{ik} W_{jk} x_i x_j.
 $$</p><p>The energy function can be rewritten as</p><p>$$
 E(x) = - \sum_i h_i x_i - \frac{1}{2} \sum_{ijk} W_{ik} W_{jk} x_i x_j.
 $$</p><p>The distribution (derived using
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>the Max Entropy principle</a>
-<span class=tooltiptext><span style=font-size:90%>Maximum Entropy models makes least assumption about the data</span></span></span>
+<span class=tooltiptext><span class=tooltip_title>MaxEnt Model</span>
+<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span></span></span>
 ) is</p><p>$$
 \begin{equation}
 p(x) \propto \exp{ \left( \sum_i h_i x_i + \frac{1}{2} \sum_{ijk} W_{ik} W_{jk} x_i x_j \right)}
@@ -30,7 +33,8 @@ p(x) \propto \exp{ \left( \sum_i h_i x_i + \frac{1}{2} \sum_{ijk} W_{ik} W_{jk} 
 \end{equation}
 $$</p><h2 id=latent-variables-from-energy-function-to-distribution>Latent Variables: From Energy Function to Distribution</h2><p>Using the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/math/hubbard-stratonovich-identity/>the Hubbard-Stratonovich Identity</a>
-<span class=tooltiptext><span style=font-size:90%>Very useful in calculating the partition function</span></span></span>
+<span class=tooltiptext><span class=tooltip_title>The Hubbard-Stratonovich Identity</span>
+<span class=tooltip_content>Very useful in calculating the partition function</span></span></span>
 , we transform equation $\eqref{eqn-boltzmann-dist-hopfield}$ into<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p><p>$$
 \begin{align}
 p(x) \propto &  \exp{\left( \sum_i h_i x_i \right)} \exp{ \left(\frac{1}{2} \sum_{ijk} W_{ik} W_{jk} x_i x_j \right)} \\
@@ -73,7 +77,8 @@ $$</p><p>with $\kappa^{(n)}=\partial^n_t K(t=0)$. This is a Taylor expansion aro
 \sum_k \ln \int \mathrm d h_k \exp{\left( b_k(h_k) \right)} \exp{\left( \sum_j x_j W_{jk}h_k \right)} = \sum_k \ln \int \mathrm d h_k Z q_k(h_k) e^{t h_k },
 $$</p><p>with $t=\sum_j x_j W_{jk}$.</p></div></article><h2 id=gradient-of-log-likelihood>Gradient of Log-likelihood</h2><p>In this section, we will focus on Bernoulli layers, i.e., $a_i(x_i) = a^0_i x_i$ and $b_k(h_k) = b^0_k h_k$</p><p>Using the results from
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>MaxEnt model</a>
-<span class=tooltiptext><span style=font-size:90%>Maximum Entropy models makes least assumption about the data</span></span></span>
+<span class=tooltiptext><span class=tooltip_title>MaxEnt Model</span>
+<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span></span></span>
 , we can find the gradient of the log-likelihood $\mathcal L(W_{ik}, a_i, b_k)$,</p><p>$$
 \begin{align}
 \partial_{W_{ik}} \mathcal L =& \langle x_i h_k \rangle_{\text{model}} - \langle x_i h_k \rangle_{\text{data}} \\
@@ -82,7 +87,8 @@ $$</p><p>with $t=\sum_j x_j W_{jk}$.</p></div></article><h2 id=gradient-of-log-l
 \end{align}
 $$</p><p>The calculation of $\langle \cdot \rangle_{\text{model}}$ is easier in RBM.</p><p>For first order Markov chains, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.</p><p>In this simple situation, the distributions can be sampled using
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>Gibbs sampling</a>
-<span class=tooltiptext><span style=font-size:90%>Gibbs sampling is a sampling method for Bayesian inference and MCMC</span></span></span>
+<span class=tooltiptext><span class=tooltip_title>Gibbs Sampling</span>
+<span class=tooltip_content>Gibbs sampling is a sampling method for Bayesian inference and MCMC</span></span></span>
 . To calculate $p(h\mid x)$, we will clamp our visible units to the data values then infer $h$ which will be used to infer $x$ based on $p(x\mid h)$. Iterate this process we will be able to sample the model, i.e.,</p><p>$$
 \begin{align*}
 & p(h\mid x_0) \to h_0 \\

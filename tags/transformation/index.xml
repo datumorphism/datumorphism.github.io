@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>transformation on Datumorphism</title><link>https://datumorphism.leima.is/tags/transformation/</link><description>Recent content in transformation on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Tue, 13 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://datumorphism.leima.is/tags/transformation/index.xml" rel="self" type="application/rss+xml"/><item><title>Box-Cox Transformation</title><link>https://datumorphism.leima.is/cards/statistics/box-cox/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/statistics/box-cox/</guid><description>Box-Cox transformation is a power transformation that involves logs and powers. It transforms data into normal distributions.
-The Box-Cox transfomation is defined as
-$$ y_i^{(\lambda)} = \begin{cases} \lambda ^{-1} (y_i^\lambda - 1) &amp;amp; \quad \text{if } \lambda \neq 0\
-\log(y_i) &amp;amp; \quad \text{if } \lambda = 0. \end{cases} $$
+The Box-Cox transformation is defined as
+$$ y_i^{(\lambda)} = \begin{cases} \lambda ^{-1} (y_i^\lambda - 1) &amp; \quad \text{if } \lambda \neq 0\\ \log(y_i) &amp; \quad \text{if } \lambda = 0. \end{cases} $$
 By selecting a proper $\lambda$, we get a Guassian distributed data, with a variable mean. The transformation take $y$ to
 $$ \rho(y^{(\lambda)}) =\frac{ \exp{\left( -(y^{(\lambda)} - \beta X)^{T} (y^{(\lambda)} - \beta X)/(2\sigma^2) \right) }}{(\sqrt{2\pi \sigma^2})^n} \prod_{i=1}^n \left\lvert \frac{d y_i^{(\lambda )}}{ dy_i } \right\rvert.</description></item></channel></rss>
