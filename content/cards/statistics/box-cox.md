@@ -26,28 +26,28 @@ links:
 
 Box-Cox transformation is a power transformation that involves logs and powers. It transforms data into normal distributions.
 
-The Box-Cox transfomation is defined as
+The Box-Cox transformation is defined as
 
-$$
+{{<m>}}
 y_i^{(\lambda)} = \begin{cases}
 \lambda ^{-1} (y_i^\lambda - 1) & \quad \text{if } \lambda \neq 0\\
 \log(y_i) & \quad \text{if } \lambda = 0.
 \end{cases}
-$$
+{{</m>}}
 
 By selecting a proper $\lambda$, we get a Guassian distributed data, with a variable mean. The transformation take $y$ to
 
-$$
+{{<m>}}
 \rho(y^{(\lambda)}) =\frac{ \exp{\left( -(y^{(\lambda)} - \beta X)^{T} (y^{(\lambda)} - \beta X)/(2\sigma^2) \right) }}{(\sqrt{2\pi \sigma^2})^n} \prod_{i=1}^n \left\lvert \frac{d y_i^{(\lambda )}}{ dy_i } \right\rvert.
-$$
+{{</m>}}
 
 The term
 
-$$
+{{<m>}}
 \prod_{i=1}^n \left\lvert \frac{d y_i^{(\lambda )}}{ dy_i } \right\rvert = \lvert J \rvert
-$$
+{{</m>}}
 
- is the Jacobian as we are establishing the relations between the pdf of the data before and after the transfomation.
+is the Jacobian as we are establishing the relations between the pdf of the data before and after the transfomation.
 
 
 
@@ -68,7 +68,7 @@ $$
 
 To find the proper $\lambda$, we write down the likelihood and maximize it. The likelihood is determined by the Gaussian distribution
 
-$$
+{{<m>}}
 L(\lambda, \beta, \sigma) = \rho(y^{(\lambda)}).
-$$
+{{</m>}}
 
