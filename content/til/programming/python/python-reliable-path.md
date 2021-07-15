@@ -36,7 +36,13 @@ Python `os` module provides several useful functions.
 
    will return `__file__:  main.py`.
 
-2. `os.path.join` joins the strings into path, intelligently.
+2. `os.path.abspath` retrieves the absolute path of the file.
+
+   ```python
+   file_absolute_path = os.path.abspath(__file__)
+   ```
+
+3. `os.path.join` joins the strings into path, intelligently.
 
    ```python
    print('os.path.join("datumorphism", "main.py"): ', os.path.join("datumorphism", "main.py") )
@@ -49,7 +55,7 @@ The following code will determine the path to the file.
 
 ```python
 __location__ = os.path.realpath(
-    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+    os.path.join(os.getcwd(), os.path.dirname(os.path.abspath(__file__))))
 ```
 
 As an example, we could read a file `my_file.json` located at the same folder as the python script.
