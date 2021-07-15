@@ -134,7 +134,7 @@ y(t_i) & = y(t_0) + t_i v_k f(t_i w_k+u_k) \\
 
 where $y(t_0)$ is the initial condition and $k$ is summed over.
 
-{{< message title="Articifial Neural Network">}}
+{{< message title="Artifacial Neural Network">}}
 {{< /message >}}
 
 
@@ -144,7 +144,7 @@ $$
 f(x) = \frac{1}{1+\exp(-x)}.
 $$
 
-One important reason for chosing this is that a lot of expressions can be calculated analytically and easily.
+One important reason for choosing this is that a lot of expressions can be calculated analytically and easily.
 
 
 {{< message title="Fermi-Dirac Distribution">}}
