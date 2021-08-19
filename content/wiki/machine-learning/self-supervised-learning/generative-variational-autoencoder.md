@@ -49,7 +49,7 @@ Another key component of VAE is the {{< c "cards/statistics/reparametrization-ex
 
 ## Loss Explanation
 
-{{< figure src="../assets/generative-variational-autoencoder/vae-loss-explained.png" caption="VAE Loss Explained" >}}
+{{< figure src="../assets/generative-variational-autoencoder/vae-loss-explained.png" caption="VAE Loss Explained [Doersch2016]" >}}
 
 
 
