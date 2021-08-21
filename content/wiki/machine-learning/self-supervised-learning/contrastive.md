@@ -14,9 +14,10 @@ references:
 weight: 5
 links:
   - "cards/machine-learning/learning-theories/noise-contrastive-estimation.md"
+  - "cards/information/mutual-information.md"
 ---
 
-Contrastive models learn to compare[^Liu2020]. Contrastive use special objective functions such as {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}}.
+Contrastive models learn to compare[^Liu2020]. Contrastive use special objective functions such as {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}} and {{< c "cards/information/mutual-information.md" >}}.
 
 
 
