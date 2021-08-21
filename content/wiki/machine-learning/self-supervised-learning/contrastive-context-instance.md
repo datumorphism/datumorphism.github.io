@@ -1,5 +1,5 @@
 ---
-title: "Contrastive Model: Max Mutual Info"
+title: "Contrastive Model: Context-Instance"
 date: 2021-08-13
 category:
   - "Machine Learning"
@@ -18,7 +18,14 @@ links:
   - "cards/machine-learning/learning-theories/noise-contrastive-estimation.md"
 ---
 
-To generate contrast, we can also use {{< c "cards/information/mutual-information.md" >}} as the objective. Take two encoded space from the encoder, $g_1$ and $g_2$, we shall maximize the mutual information between the two representations if they are representing the same thing.
+In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that "predict relative position"[^Liu2020]. Common tricks are
+
+- shuffling image sections like jigsaw, and
+- rotate the image.
+
+We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use {{< c "cards/information/mutual-information.md" >}} as the objective. Take two encoded space from the encoder, $g_1$ and $g_2$, we shall maximize the mutual information between the two representations if they are representing the same thing.
+
+## Deep InfoMax
 
 However, mutual information is hard to calculate. Models such as Deep InfoMax use {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}} instead[^Liu2020]. For Deep InfoMax, the loss function is
 
