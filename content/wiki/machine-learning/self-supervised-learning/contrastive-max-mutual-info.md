@@ -20,7 +20,11 @@ links:
 
 To generate contrast, we can also use {{< c "cards/information/mutual-information.md" >}} as the objective. Take two encoded space from the encoder, $g_1$ and $g_2$, we shall maximize the mutual information between the two representations if they are representing the same thing.
 
-However, mutual information is hard to calculate. Models such as Deep InfoMax use {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}} instead[^Liu2020].
+However, mutual information is hard to calculate. Models such as Deep InfoMax use {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}} instead[^Liu2020]. For Deep InfoMax, the loss function is
+
+{{< m >}}
+\mathcal L = \mathbb E_{v, x} \left[ -\ln \frac{e^{v^T\cdot s}}{e^{v^T\cdot s} + e^{v^T\cdot s^-}}  \right].
+{{< /m >}}
 
 {{< figure src="../assets/contrastive-max-mutual-info/deep-infomax-illustration.png" caption="Illustration of Deep InfoMax based on Liu2020." >}}
 
