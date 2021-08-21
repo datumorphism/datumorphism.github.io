@@ -22,6 +22,10 @@ To generate contrast, we can also use {{< c "cards/information/mutual-informatio
 
 However, mutual information is hard to calculate. Models such as Deep InfoMax use {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}} instead[^Liu2020].
 
+{{< figure src="../assets/contrastive-max-mutual-info/deep-infomax-illustration.png" caption="Illustration of Deep InfoMax based on Liu2020." >}}
+
+
+
 
 
 [^Liu2020]: {{< cite key="Liu2020" >}}
