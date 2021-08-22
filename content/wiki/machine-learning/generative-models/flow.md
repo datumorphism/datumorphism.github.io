@@ -11,7 +11,7 @@ tags:
 references:
   - name: "Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"
     link: "http://arxiv.org/abs/2006.08218"
-weight: 2
+weight: 3
 links:
   - "reading/normalizing-flow-introduction-1908.09257.md"
 ---

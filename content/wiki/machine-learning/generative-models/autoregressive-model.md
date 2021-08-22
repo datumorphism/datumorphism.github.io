@@ -11,7 +11,7 @@ tags:
 references:
   - name: "Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"
     link: "http://arxiv.org/abs/2006.08218"
-weight: 1
+weight: 2
 links:
   - "wiki/machine-learning/neural-networks/deep-autoregressive-networks.md"
   - "wiki/time-series/autoregressive-model.md"

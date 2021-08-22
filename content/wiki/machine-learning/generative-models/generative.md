@@ -1,21 +1,22 @@
 ---
-title: "Generative Model: Auto-Encoder"
+title: "An Introduction to Generative Models"
 date: 2021-08-13
 category:
   - "Machine Learning"
 tags:
   - "Self-supervised Learning"
   - "Generative Model"
-  - "Auto-Encoder"
   - "Basics"
 references:
   - name: "Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"
     link: "http://arxiv.org/abs/2006.08218"
-weight: 4
+weight: 1
 ---
 
-The simplest auto-encoder is rather simple.
+Discriminative model:
+- The conditional probability of class label on data (posterior) $p(C_k\mid x)$
 
-{{< figure src="../assets/generative-autoencoder/simple-ae-summary.png" >}}
-
-The loss can be chosen based on the demand, e.g., cross entropy for binary labels.
+Generative models:
+- Likelihood $p(x\mid C_k)$
+- Sample from the likelihood to generate data
+- With latent variables $z$ and some neural network parameters $\theta$: $P(x,z\mid \theta) = p(x\mid z, \theta)p(z)$
