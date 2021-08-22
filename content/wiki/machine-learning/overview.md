@@ -14,12 +14,28 @@ references:
     link: "https://doi.org/10.1016/j.physrep.2019.03.001"
   - name: "Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms"
     link: "https://doi.org/10.1017/CBO9781107298019"
+  - name: "Domingos, P. (2012). A few useful things to know about machine learning. Communications of the ACM, 55 (10), 78–87."
+    link: "https://doi.org/10.1145/2347736.2347755"
+    key: "Domingos2012"
 links:
   - cards/machine-learning/learning-theories/learning-problem.md
 ---
 
 
 ## What is Machine Learning
+
+In the core of machine learning models, we have three components[^Domingos2012]:
+
+- Representation: encode data and problem representation, i.e., propose a space to set a stage.
+- Evaluation: an objective function to be evaluated that guides the model.
+- Optimization: an algorithm to optimize the model so it learns what we want it to do.
+
+
+{{< figure src="../assets/overview/three-components-of-learning-algorithms.png" caption="Table from Domingos2012">}}
+
+
+
+## Machine Learning Workflow
 
 There are many objectives in machine learning. Two of the most applied objectives are classifications and regressions. In classifications and regression, the following four factors are relevant.
 
@@ -41,3 +57,5 @@ There are many objectives in machine learning. Two of the most applied objective
    1. Error of model: $L_{f, \mathscr D}(h) = \mathscr L(h(\mathbf X), f(\mathbf X))$, where $\mathscr L$ is distance operator.
 
 
+
+[^Domingos2012]: {{< cite key="Domingos2012" >}}
