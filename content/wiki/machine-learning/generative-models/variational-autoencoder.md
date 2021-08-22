@@ -16,13 +16,13 @@ references:
     key: "Doersch2016"
 weight: 4
 links:
-  - "wiki/machine-learning/self-supervised-learning/generative-autoencoder.md"
+  - "wiki/machine-learning/generative-models/autoencoder.md"
   - "wiki/machine-learning/bayesian/elbo.md"
   - "wiki/machine-learning/bayesian/latent-variable-models.md"
   - "cards/statistics/reparametrization-expectation-sampling.md"
 ---
 
-Variational Auto-Encoder (VAE) is very different from {{< c "wiki/machine-learning/self-supervised-learning/generative-autoencoder.md" >}}. In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,
+Variational Auto-Encoder (VAE) is very different from {{< c "wiki/machine-learning/generative-models/autoencoder.md" >}}. In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,
 
 {{< m >}}
 \begin{align}

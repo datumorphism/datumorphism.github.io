@@ -11,10 +11,10 @@ references:
   - name: "Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"
     link: "http://arxiv.org/abs/2006.08218"
     key: "Liu2020"
-weight: 7
+weight: 3
 ---
 
-It was discovered that the success of {{< c "wiki/machine-learning/self-supervised-learning/contrastive-context-instance.md" "mutual information based contrastive learning" >}} is more related to the encoder architecture and the negative sampling strategy[^Liu2020]. Instance-instance method is more direct in solving the contrastive problem. It take the instance itself directly and make comparisons for discrimination.
+It was discovered that the success of {{< c "wiki/machine-learning/contrastive-models/context-instance.md" "mutual information based contrastive learning" >}} is more related to the encoder architecture and the negative sampling strategy[^Liu2020]. Instance-instance method is more direct in solving the contrastive problem. It take the instance itself directly and make comparisons for discrimination.
 
 ## Cluster Discrimination
 

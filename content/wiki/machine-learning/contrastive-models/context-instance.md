@@ -12,7 +12,7 @@ references:
   - name: "Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"
     link: "http://arxiv.org/abs/2006.08218"
     key: "Liu2020"
-weight: 6
+weight: 2
 links:
   - "cards/information/mutual-information.md"
   - "cards/machine-learning/learning-theories/noise-contrastive-estimation.md"

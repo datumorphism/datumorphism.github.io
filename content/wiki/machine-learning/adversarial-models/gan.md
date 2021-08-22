@@ -1,5 +1,5 @@
 ---
-title: "Adversarial Model: Complete Input"
+title: "GAN"
 date: 2021-08-13
 category:
   - "Machine Learning"
@@ -15,7 +15,7 @@ references:
   - name: "Arjovsky M, Chintala S, Bottou L. Wasserstein GAN. arXiv [stat.ML]. 2017. Available: http://arxiv.org/abs/1701.07875"
     link: "http://arxiv.org/abs/1701.07875"
     key: "Arjovsky2017"
-weight: 8
+weight: 1
 ---
 
 

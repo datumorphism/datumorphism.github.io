@@ -1,6 +1,6 @@
 ---
 title: "Evidence Lower Bound: ELBO"
-description: "ELBO is an very important concept in veraitional methods"
+description: "ELBO is an very important concept in variational methods"
 date: 2021-04-12
 authors:
   - "LM"
