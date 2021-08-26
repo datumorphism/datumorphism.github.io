@@ -34,6 +34,10 @@ jobs:
         run: |
           pip install -r automation/requirements.txt
       - name: Fetch New Messages
+        env:
+          TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+          TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+          TELEGRAM_USERNAME: ${{ secrets.TELEGRAM_USERNAME }}
         run: |
           python automation/amneumarkt.py
       - name: Update Data
