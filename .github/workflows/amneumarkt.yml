@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - hugo
-  schedule:
-    - cron:  '* 4/8 * * *'
+  # schedule:
+    # - cron:  '* 4/8 * * *'
   workflow_dispatch:
     inputs:
       name:
