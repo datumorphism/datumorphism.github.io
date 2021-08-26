@@ -1,0 +1,51 @@
+name: Am Neumarkt
+
+on:
+  push:
+    branches:
+      - hugo
+  schedule:
+    - cron:  '* 4/8 * * *'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Fetch data'
+        required: false
+        default: 'gogogo'
+
+
+jobs:
+  deploy:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Get current directory and files
+        run: |
+          pwd
+          ls
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+      - name: Install Python Requirements
+        run: |
+          pip install -r automation/requirements.txt
+      - name: Fetch New Messages
+        run: |
+          python automation/amneumarkt.py
+      - name: Update Data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git status
+          git add .
+          git commit -m "Update Am Neumarkt Messages" || echo "Nothing to update"
+          git status
+      - name: Push changes to repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          branch: hugo

@@ -1,0 +1,219 @@
+{{ define "title"}} {{ .Title }} {{ end }}
+
+{{ define "style"}}
+<link rel="stylesheet" href="/css/blog-post.css">
+<link rel="stylesheet" href="/css/code-highlighting/dark.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+<!-- <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css"> -->
+{{ partial "extensions/plotlyjs.html" . }}
+
+{{ end }}
+
+{{ define "header"}} {{ partial "menu" .}}
+
+{{ end }}
+
+{{ define "main" }}
+
+
+
+<div class="container" itemscope itemtype="http://schema.org/BlogPosting">
+    {{ template "_internal/schema.html" . }}
+    <section class="section">
+        <div class="container">
+            <article class="post">
+
+                <header class="post-header">
+                    {{ partial "breadcrumb" . }}
+                    <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+                         {{ .Params.Title }}
+                    </h1>
+                    <h2 class="title is-6 has-text-centered">
+                            <i class="fas fa-tags" style="margin-right: 0.5em;"></i>
+                            {{ range $tag := .Params.tags }}
+                            <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}"><span class="tag is-warning is-small is-light">#{{$tag}}</span></a>
+                            {{ end }}
+                    </h2>
+
+
+
+                </header>
+
+                <div class="columns">
+                    <div class="column is-8">
+
+                        {{ if .Params.notify }}
+                        <div class="is-divider" data-content="NOTIFICATION"></div>
+                        <div class="notification is-warning is-light">
+                            <p>
+                                {{ .Params.notify | markdownify }}
+                            </p>
+                        </div>
+                        {{ end }}
+
+                        {{ if .Params.summary }}
+                        <div class="is-divider" data-content="SUMMARY"></div>
+                        <div class="notification is-light">
+                            <p>
+                                {{ .Params.summary | markdownify }}
+                            </p>
+                        </div>
+                        {{ end }}
+
+                        <div class="is-divider" data-content="ARTICLE"></div>
+
+                        <div class="content blog-post section" itemprop="articleBody">
+                            <!-- {{ partial "toc" .}} -->
+                            {{.Content}}
+                        </div>
+
+                        <p>{{ partial "post/meta" . }}</p>
+                        <div class="is-divider"></div>
+                        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                            {{ if .NextInSection }}
+                            <a  href="{{ .NextInSection.Permalink }}?ref=footer" class="pagination-previous">« {{ .NextInSection.Title | truncate 50 "..." }}</a>
+                            {{ end }}
+
+                            {{ if .PrevInSection }}
+                            <a class="pagination-next" href="{{ .PrevInSection.Permalink }}?ref=footer">{{ .PrevInSection.Title | truncate 50 "..."}} »</a>
+                            {{ end }}
+
+                          </nav>
+                        <!-- {{ partial "post/byauthor" . }} -->
+
+                        <!-- {{ partial "utterances-comments.html" . }} -->
+
+
+                    </div>
+                    <div class="column is-4">
+
+
+
+
+                        <div class="is-divider" data-content="Cite Me"></div>
+                        {{ partial "profile/citethis.html"  . }}
+
+                        {{ partial "toc" .}}
+
+
+                        {{ if .Params.references }}
+                        <div class="is-divider" data-content="REFERENCES"></div>
+                        <div class="box is-size-7">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>References: </strong><br>
+                                            <ol>
+                                                {{ range $ref := .Params.references }}
+                                                <li class="has-text-weight-bold">{{ if $ref.key }}
+                                                    <a name="{{ $ref.key }}" href="#{{ $ref.key }}" style="text-decoration:none;">
+                                                      <span class="tag is-link is-light">{{$ref.key}}</span>
+                                                    </a>
+                                                    {{ end }}<a href="{{ $ref.link }}" style="text-decoration:none;">{{ $ref.name }}</a></li>
+                                                {{ end }}
+                                            </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        {{ end }}
+
+                        {{ if .Params.supplementary }}
+                        <div class="is-divider" data-content="SUPPLEMENTARY"></div>
+                        <div class="box is-size-7">
+                            <article class="media is-link">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Supplementary: </strong><br>
+                                            <ol>
+                                                {{ range $supp := .Params.supplementary }}
+                                                <li class="has-text-weight-bold"><a href="{{ $supp.link }}" style="text-decoration:none;">{{ $supp.name }}</a></li>
+                                                {{ end }}
+                                            </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        {{ end }}
+
+                        <div class="is-divider" data-content="CONNECTUME"></div>
+                        {{ partial "network/currentref" . }}
+
+                        {{ with .Params.links }}
+                        <div class="box is-size-7">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+
+                                        <strong>Links to: </strong>
+                                            <ul>
+                                            {{ range . }}
+                                            {{ with $.Site.GetPage . }}
+                                                {{ partial "network/linkcard" . }}
+                                            {{ end }}
+                                            {{ end }}
+                                            </ul>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        {{ end }}
+
+                        {{ with .Site.Taxonomies.links }}
+                        {{ $fileReference := lower (replace $.File "\\" "/") }}
+                        {{ $linkedFrom := index . $fileReference }}
+                                                {{ with $linkedFrom }}
+                        <div class="box is-size-7">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Links from: </strong>
+                                                <div>
+                                                {{ range . }}
+                                                    {{ partial "network/linkcard" . }}
+                                                {{ end }}
+                                                </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+
+
+                        {{ if eq $.Site.Params.comments.use "giscus" }}
+                            {{ partial "comments/giscus-comments" . }}
+                        {{ else if eq $.Site.Params.comments.use "utterances" }}
+                            {{ partial "utterances-comments.html" . }}
+                        {{ end }}
+
+                    </div>
+
+                </div>
+            </article>
+        </div>
+    </section>
+</div>
+
+{{ partial "nav-buttons.html" . }}
+
+{{ end }}
+
+
+
+{{ define "footer"}}
+{{ partial "footer.html" .}}
+
+
+<!-- <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script> -->
+{{ end }}
