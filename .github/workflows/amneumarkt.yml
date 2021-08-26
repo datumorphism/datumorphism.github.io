@@ -1,9 +1,9 @@
 name: Am Neumarkt
 
 on:
-  push:
-    branches:
-      - hugo
+  # push:
+    # branches:
+      # - hugo
   # schedule:
     # - cron:  '* 4/8 * * *'
   workflow_dispatch:
