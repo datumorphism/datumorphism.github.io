@@ -2,7 +2,7 @@
 title: "Poisson Regression"
 description: ""
 date: 2021-05-07
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Basics"

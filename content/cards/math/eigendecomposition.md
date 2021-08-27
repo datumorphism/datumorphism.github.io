@@ -1,7 +1,7 @@
 ---
 title: "Eigenvalues and Eigenvectors"
 date: 2019-05-06
-category:
+categories:
   - 'Math'
 tags:
   - 'Linear Algebra'

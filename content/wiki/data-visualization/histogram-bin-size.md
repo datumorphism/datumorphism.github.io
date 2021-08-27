@@ -1,7 +1,7 @@
 ---
 title: "Bin Size of Histogram"
 date: 2018-11-22
-category:
+categories:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'

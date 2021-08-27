@@ -2,7 +2,7 @@
 title: "Comparison of MLOps Frameworks"
 description: "Preliminary Investigation"
 date: "2021-05-05"
-category:
+categories:
   - "MLOps"
 tags:
   - "MLOps"

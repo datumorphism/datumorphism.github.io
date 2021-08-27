@@ -2,7 +2,7 @@
 title: "Unsupervised Learning: SVM"
 description: "unsupervised learning: support vector machine"
 date: 2018-08-17
-category:
+categories:
   - 'Machine Learning'
 tags:
   - 'SVM'

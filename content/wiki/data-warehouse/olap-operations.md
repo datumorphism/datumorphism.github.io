@@ -2,7 +2,7 @@
 title: "OLAP Operations"
 description: "Some useful OLAP operations"
 date: 2018-11-23
-category:
+categories:
 - 'Data Warehouse'
 tags:
 - 'OLAP'

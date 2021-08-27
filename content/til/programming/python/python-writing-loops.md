@@ -3,7 +3,7 @@ layout: til
 title: "Python Various Ways of Writing Loops"
 date: 2015-12-04
 author: Lei Ma
-category:
+categories:
 - 'programming'
 - 'basics'
 tags:

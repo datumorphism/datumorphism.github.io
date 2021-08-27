@@ -3,7 +3,7 @@ layout: til
 title: "TOP Command"
 date: 2016-07-21
 author: Lei Ma
-category:
+categories:
 - 'programming'
 - 'basics'
 tags:

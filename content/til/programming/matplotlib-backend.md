@@ -3,7 +3,7 @@ layout: til
 title: "Some Tests on Matplotlib Backends"
 date: 2017-05-23
 author: Lei Ma
-category:
+categories:
 - programming
 tags:
 - Python

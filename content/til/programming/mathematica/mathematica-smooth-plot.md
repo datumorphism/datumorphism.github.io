@@ -3,7 +3,7 @@ layout: til
 title: "Mathematica Smooth Plot"
 date: 2015-12-04
 author: Lei Ma
-category:
+categories:
 - programming
 tags:
 - Mathematica

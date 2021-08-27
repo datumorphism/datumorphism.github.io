@@ -6,7 +6,7 @@ speaker: "Lei Ma"
 author: Lei Ma
 types:
 - 'paper'
-category:
+categories:
 - theory
 tags:
 - 'data visualization'

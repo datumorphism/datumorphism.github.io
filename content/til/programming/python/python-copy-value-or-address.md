@@ -3,7 +3,7 @@ layout: til
 title: "Copy Scalars and Lists in Python"
 date: 2018-07-03
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

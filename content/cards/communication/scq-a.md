@@ -2,7 +2,7 @@
 title: "SCQ-A"
 description: "SCQ-A is a framework for problem solving."
 date: 2021-01-03
-category:
+categories:
   - 'Communication'
 tags:
   - 'Communication'

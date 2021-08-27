@@ -2,7 +2,7 @@
 title: "Likelihood"
 description: "Likelihood is not necessarily a pdf"
 date: 2021-05-26
-category:
+categories:
   - "Statistics"
 tags:
   - "Statistics"

@@ -2,7 +2,7 @@
 title: "Factorization"
 excerpt: "Tensor operations that reduce the dimensionality"
 date: 2019-06-17
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Machine Learning"

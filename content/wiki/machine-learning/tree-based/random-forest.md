@@ -2,7 +2,7 @@
 title: "Random Forest"
 description: "random forest in machine learning"
 date: 2019-12-25
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Decision Tree"

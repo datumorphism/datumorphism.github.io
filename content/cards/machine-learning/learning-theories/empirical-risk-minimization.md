@@ -1,7 +1,7 @@
 ---
 title: "ERM: Empirical Risk Minimization"
 date: 2021-02-18
-category:
+categories:
 - 'Machine Learning::Theories'
 tags:
 - 'Data'

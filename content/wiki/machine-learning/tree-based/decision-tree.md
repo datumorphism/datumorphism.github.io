@@ -1,7 +1,7 @@
 ---
 title: "Decision Tree"
 date: 2019-12-25
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Decision Tree"

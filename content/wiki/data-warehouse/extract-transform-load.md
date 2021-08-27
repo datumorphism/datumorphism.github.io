@@ -2,7 +2,7 @@
 title: "Extract, Transform and Load"
 excerpt: "Extract, Clean, Transform, Load, and Refresh"
 date: 2018-11-23
-category:
+categories:
 - 'Data Warehouse'
 tags:
 - 'Data Warehouse'

@@ -4,7 +4,7 @@ title: "Git Pull with Submodule"
 date: 2017-02-03
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Git

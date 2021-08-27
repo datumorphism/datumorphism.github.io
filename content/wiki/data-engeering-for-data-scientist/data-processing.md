@@ -2,7 +2,7 @@
 title: "Data Processing"
 description: "Processing Data is essential."
 date: "2021-05-05"
-category:
+categories:
   - "Data Engineering"
 tags:
   - "Data Engineering"

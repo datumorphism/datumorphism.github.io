@@ -1,7 +1,7 @@
 ---
 title: "Levenshtein Distance"
 date: 2019-05-19
-category:
+categories:
 - 'Math'
 tags:
 - 'Distance'

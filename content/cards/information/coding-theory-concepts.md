@@ -1,7 +1,7 @@
 ---
 title: "Coding Theory Concepts"
 date: 2021-02-17
-category:
+categories:
   - 'Information'
 tags:
   - Information Theory

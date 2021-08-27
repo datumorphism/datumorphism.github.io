@@ -1,7 +1,7 @@
 ---
 layout: til
 title: "tree in Linux"
-category:
+categories:
 - 'programming'
 - 'basics'
 tags:

@@ -2,7 +2,7 @@
 title: "Association Rules"
 description: "Frequent patterns using association rules"
 date: 2019-01-06
-category:
+categories:
 - 'Pattern Mining'
 tags:
 - 'Basics'

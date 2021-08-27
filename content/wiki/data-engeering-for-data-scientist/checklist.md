@@ -2,7 +2,7 @@
 title: "Data Engineering for Data Scientists: Checklist"
 description: "A checklist to get a shallow understanding of the basics and the ecosystem"
 date: "2021-05-05"
-category:
+categories:
   - "Data Engineering"
 tags:
   - "Data Engineering"

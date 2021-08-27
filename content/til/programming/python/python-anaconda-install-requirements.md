@@ -3,7 +3,7 @@ layout: til
 title: "Installing requirements.txt in Conda Environments"
 date: 2019-03-13
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

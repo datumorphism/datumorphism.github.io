@@ -2,7 +2,7 @@
 title: "Confusion Matrix (Contingency Table)"
 excerpt: "Again, just like in hypothesis testing, we/machines all make mistakes. The question is, what kind of mistakes."
 date: 2019-05-31
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Statistical Learning"

@@ -4,7 +4,7 @@ title: "Calculated Columns in Pandas"
 date: 2018-05-20
 modified: 2018-05-20
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

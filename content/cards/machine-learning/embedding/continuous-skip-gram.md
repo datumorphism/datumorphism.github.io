@@ -2,7 +2,7 @@
 title: "skipgram: Continuous skip-gram"
 description: "Use the center word to predict the context"
 date: 2020-01-16
-category:
+categories:
 - 'Machine Learning::Embedding'
 tags:
 - 'Word2vec'

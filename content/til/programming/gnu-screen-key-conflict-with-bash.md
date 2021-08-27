@@ -4,7 +4,7 @@ title: "GNU Screen Key Conflict with Bash"
 date: 2017-05-08
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Linux

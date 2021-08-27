@@ -4,7 +4,7 @@ title: "List All Folders in Linux or Mac"
 date: 2017-08-01
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Linux

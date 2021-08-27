@@ -2,7 +2,7 @@
 title: "Tree-based Learning"
 description: "Tree-based learning"
 date: 2019-12-25
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Classification"

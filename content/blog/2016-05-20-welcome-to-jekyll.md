@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome"
-category:
+categories:
 - blog
 comments: true
 author: "OctoMiao"

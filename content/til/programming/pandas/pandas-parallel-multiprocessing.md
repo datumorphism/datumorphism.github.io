@@ -4,7 +4,7 @@ title: "Pandas with MultiProcessing"
 date: 2018-09-09
 modified: 2018-09-09
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

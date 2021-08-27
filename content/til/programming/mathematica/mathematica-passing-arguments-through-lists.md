@@ -4,7 +4,7 @@ title: "Passing Function Arguments Through Lists in Mathematica"
 date: 2017-02-20
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Mathematica

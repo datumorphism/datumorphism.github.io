@@ -5,7 +5,7 @@ date: 2016-09-28
 modified: 2016-09-28
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Web

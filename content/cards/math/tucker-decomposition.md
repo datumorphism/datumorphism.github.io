@@ -2,7 +2,7 @@
 title: "Tucker Decomposition"
 description: "Tucker decomposition of a generalization of SVD to higher ranks"
 date: 2019-06-18
-category:
+categories:
 - 'Math'
 tags:
 - 'Tensor'

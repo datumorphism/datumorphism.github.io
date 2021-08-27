@@ -2,7 +2,7 @@
 title: "Basics of Database"
 description: "Essential knowledge of database"
 date: 2018-10-03
-category:
+categories:
 - 'Computation'
 tags:
 - 'Database'

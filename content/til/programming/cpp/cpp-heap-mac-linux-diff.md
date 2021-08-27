@@ -4,7 +4,7 @@ title: "Heap on Mac and Linux"
 date: 2017-09-26
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - 'Linux'

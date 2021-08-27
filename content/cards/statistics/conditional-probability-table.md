@@ -2,7 +2,7 @@
 title: "Conditional Probability Table"
 description: "The conditional probability table is also called CPT"
 date: 2020-10-27
-category:
+categories:
   - "Math"
 tags:
   - "Statistics"

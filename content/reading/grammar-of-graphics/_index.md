@@ -7,7 +7,7 @@ speaker: "Lei Ma"
 author: LM
 types:
   - 'book'
-category:
+categories:
   - theory
 tags:
   - 'data visualization'

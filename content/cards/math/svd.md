@@ -1,7 +1,7 @@
 ---
 title: "SVD: Singular Value Decomposition"
 date: 2019-06-18
-category:
+categories:
 - 'Math'
 tags:
 - 'Matrix'

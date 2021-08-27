@@ -2,7 +2,7 @@
 title: "Negative Sampling"
 description: "negative sampling makes the calculations faster"
 date: 2020-01-16
-category:
+categories:
 - 'Machine Learning::Embedding'
 tags:
 - 'Word2vec'

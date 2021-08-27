@@ -1,7 +1,7 @@
 ---
 title: "Restrictions of Websites"
 date: 2018-07-19
-category:
+categories:
 - 'Node Crawler'
 tags:
 - 'Node'

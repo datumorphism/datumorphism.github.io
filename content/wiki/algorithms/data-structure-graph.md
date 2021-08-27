@@ -2,7 +2,7 @@
 title: "Data Structure: Graph"
 summary: "mind the data structure: here comes the graph"
 date: 2018-03-27
-category:
+categories:
 - 'Algorithms'
 tags:
 - 'Graph'

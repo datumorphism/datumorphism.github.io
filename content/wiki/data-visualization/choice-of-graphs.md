@@ -1,7 +1,7 @@
 ---
 title: "Choice of Graphs"
 date: 2018-08-08
-category:
+categories:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'

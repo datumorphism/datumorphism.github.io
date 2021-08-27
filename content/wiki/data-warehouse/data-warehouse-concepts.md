@@ -1,7 +1,7 @@
 ---
 title: "Some Concepts about Data Warehouse"
 date: 2018-11-23
-category:
+categories:
 - 'Data Warehouse'
 tags:
 - 'Data Warehouse'

@@ -2,7 +2,7 @@
 title: "Unsupervised Learning: PCA"
 description: "Principal component analysis is a method to remove redundancies of the features by looking into the variances."
 date: 2018-05-25
-category:
+categories:
 - 'Machine Learning'
 tags:
 - 'PCA'

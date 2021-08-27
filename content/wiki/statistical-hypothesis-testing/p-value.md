@@ -3,7 +3,7 @@ title: "p Value"
 excerpt: "Testing your hypothesis using p value"
 date: 2019-01-20
 toc: true
-category:
+categories:
 - 'Statistics Hypothesis Testing'
 tags:
 - 'Statistics'

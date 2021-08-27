@@ -2,7 +2,7 @@
 title: "Jargons"
 description: "Jargons in statistics, accuracy, precision, population, sample, etl"
 date: 2018-11-24
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

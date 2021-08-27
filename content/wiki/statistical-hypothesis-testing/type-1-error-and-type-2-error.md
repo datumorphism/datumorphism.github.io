@@ -2,7 +2,7 @@
 title: "Types of Errors in Statistical Hypothesis Testing"
 description: "We all make mistakes. The question is, what kind of mistakes."
 date: 2019-05-31
-category:
+categories:
 - 'Statistical Hypothesis Testing'
 tags:
 - 'Statistics'

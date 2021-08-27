@@ -1,7 +1,7 @@
 ---
 title: Goodness-of-fit
 date: 2020-11-08
-category:
+categories:
   - Model Selection
 tags:
   - Model Selection

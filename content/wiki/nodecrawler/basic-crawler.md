@@ -1,7 +1,7 @@
 ---
 title: "Basic Node Crawler"
 date: 2018-07-15
-category:
+categories:
 - 'Node Crawler'
 tags:
 - 'Node'

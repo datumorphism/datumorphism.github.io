@@ -1,7 +1,7 @@
 ---
 title: "Poisson Process"
 date: 2019-06-18
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

@@ -2,7 +2,7 @@
 title: "GNUPlot"
 description: "quickly make a graph in your command line"
 date: 2017-09-04
-category:
+categories:
 - 'Tools'
 tags:
 - 'Tools'

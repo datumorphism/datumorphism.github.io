@@ -2,7 +2,7 @@
 title: "Linear Methods"
 description: "linear methods"
 date: 2018-05-25
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Classification"

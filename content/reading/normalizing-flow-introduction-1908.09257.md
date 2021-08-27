@@ -6,7 +6,7 @@ speaker: "LM"
 author: Lei Ma
 types:
 - 'paper'
-category:
+categories:
 - theory
 tags:
 - 'machine learning'

@@ -2,7 +2,7 @@
 title: "Data Structure: Tree"
 summary: "mind the data structure: here comes the tree"
 date: 2018-03-27
-category:
+categories:
 - 'Algorithms'
 tags:
 - 'Tree'

@@ -2,7 +2,7 @@
 title: "Ordinary Differential Equations"
 description: "Solving ODEs Using Finite Difference Methods"
 date: 2018-11-19
-category:
+categories:
 - 'Dynamical System'
 tags:
 - 'Dynamical System'

@@ -4,7 +4,7 @@ title: "git pull multi remote"
 date: 2016-11-22
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Git

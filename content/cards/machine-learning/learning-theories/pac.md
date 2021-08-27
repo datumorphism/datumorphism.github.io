@@ -1,7 +1,7 @@
 ---
 title: "PAC: Probably Approximately Correct"
 date: 2020-01-16
-category:
+categories:
 - 'Machine Learning::Theories'
 tags:
 - 'Data'

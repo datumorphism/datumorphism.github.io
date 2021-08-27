@@ -2,7 +2,7 @@
 title: "Deep Autoregressive Network"
 description: "DARN"
 date: 2021-02-15
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Machine Learning"

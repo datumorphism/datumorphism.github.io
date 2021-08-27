@@ -2,7 +2,7 @@
 title: "Introduction to Node Crawler Series"
 description: "Installing node.js and mongodb."
 date: 2018-07-15
-category:
+categories:
 - 'Node Crawler'
 tags:
 - 'Node'

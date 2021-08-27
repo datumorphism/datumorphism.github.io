@@ -5,7 +5,7 @@ description: "Convert continuous values into bins in pandas"
 date: 2021-03-10
 authors:
   - "LM"
-category:
+categories:
   - programming
   - basics
 tags:

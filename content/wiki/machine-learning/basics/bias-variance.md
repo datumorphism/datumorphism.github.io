@@ -2,7 +2,7 @@
 title: "Bias-Variance"
 description: "Bias Variance Trade off is a key concept in statistical learning"
 date: 2019-06-07
-category:
+categories:
   - "Machine Learning"
   - "Basics"
 tags:

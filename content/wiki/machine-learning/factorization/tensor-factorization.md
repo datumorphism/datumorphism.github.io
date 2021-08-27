@@ -2,7 +2,7 @@
 title: "Tensor Factorization"
 description: "A generalization of matrix factorization"
 date: 2019-06-17
-category:
+categories:
   - 'Machine Learning'
 tags:
   - 'Machine Learning'

@@ -1,7 +1,7 @@
 ---
 title: "Anscombe's quartet"
 date: 2019-03-18
-category:
+categories:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'

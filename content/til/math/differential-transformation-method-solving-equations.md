@@ -4,7 +4,7 @@ title: "Solving Equations Using Differential Transformation Method"
 date: 2016-10-11
 author: Lei Ma
 comments: true
-category:
+categories:
 - math
 tags:
 - 'Differential Equation'

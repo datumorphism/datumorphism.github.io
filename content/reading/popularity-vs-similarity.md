@@ -5,7 +5,7 @@ modified: 2016-11-06
 subtitle: ""
 speaker: "OctoMiao"
 author: Lei Ma
-category:
+categories:
 - theory
 tags:
 - 'complex network'

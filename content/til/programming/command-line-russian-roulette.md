@@ -4,7 +4,7 @@ title: "Command Line Russian Roulette"
 date: 2017-05-09
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Linux

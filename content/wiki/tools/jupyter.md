@@ -3,7 +3,7 @@ title: "Jupyter Notebook"
 description: "Jupyter Notebook is a useful tool for data scientists"
 date: 2018-06-20T15:58:49-04:00
 toc: true
-category:
+categories:
 - Tools
 tags:
 - Tools

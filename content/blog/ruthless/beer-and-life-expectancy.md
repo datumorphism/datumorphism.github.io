@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Beer and Life Expectancy"
-category:
+categories:
 - blog
 tags:
 - Ruthless Data Scientist

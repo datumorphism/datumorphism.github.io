@@ -2,7 +2,7 @@
 title: "What is Statistics"
 description: "An overview of statistics"
 date: 2019-01-18
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

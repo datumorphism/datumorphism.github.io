@@ -5,7 +5,7 @@ date: 2017-04-07
 modified: 2017-04-07
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Visualization

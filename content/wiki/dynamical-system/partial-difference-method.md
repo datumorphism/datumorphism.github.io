@@ -2,7 +2,7 @@
 title: "Partial Differential Equations"
 description: "Solving PDEs"
 date: 2018-11-19
-category:
+categories:
 - 'Dynamical System'
 tags:
 - 'Dynamical System'

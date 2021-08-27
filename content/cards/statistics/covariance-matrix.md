@@ -2,7 +2,7 @@
 title: "Covariance Matrix"
 description: "Also known as the second central moment is a measurement of the spread."
 date: 2020-03-10
-category:
+categories:
 - 'Math'
 tags:
 - 'Statistics'

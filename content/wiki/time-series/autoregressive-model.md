@@ -2,7 +2,7 @@
 title: "Autoregressive Model"
 description: "Time series modeling"
 date: 2018-06-20T15:58:49-04:00
-category:
+categories:
 - 'Time Series Data'
 tags:
 - 'ARMA'

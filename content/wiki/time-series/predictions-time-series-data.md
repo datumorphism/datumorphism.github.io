@@ -2,7 +2,7 @@
 title: "Predictions Using Time Series Data"
 description: "Seasonalities etc"
 date: 2019-06-21
-category:
+categories:
 - 'Time Series Data'
 tags:
 - 'Seasonality'

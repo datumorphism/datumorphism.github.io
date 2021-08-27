@@ -2,7 +2,7 @@
 title: "MaxEnt Model"
 description: "Maximum Entropy models makes least assumption about the data"
 date: 2021-05-31
-category:
+categories:
   - "Energy-based Model"
 tags:
   - "Neural Network"

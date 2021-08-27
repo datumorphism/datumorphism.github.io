@@ -2,7 +2,7 @@
 title: "Manage Data Using MongoDB"
 description: ""
 date: 2018-07-18
-category:
+categories:
 - 'Node Crawler'
 tags:
 - 'Node'

@@ -3,7 +3,7 @@ layout: til
 title: "Add Data Files to Python Package"
 date: 2019-03-13
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

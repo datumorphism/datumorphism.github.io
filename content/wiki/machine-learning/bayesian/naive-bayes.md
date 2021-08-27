@@ -2,7 +2,7 @@
 title: "Naive Bayes"
 description: "Naive Bayes"
 date: 2019-06-17
-category:
+categories:
   - 'Machine Learning'
 tags:
   - 'Machine Learning'

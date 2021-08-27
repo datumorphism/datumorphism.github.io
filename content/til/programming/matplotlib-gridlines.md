@@ -3,7 +3,7 @@ layout: til
 title: "Gridlines in Matplotlib"
 date: 2016-9-26
 author: Lei Ma
-category:
+categories:
 - programming
 tags:
 - Python

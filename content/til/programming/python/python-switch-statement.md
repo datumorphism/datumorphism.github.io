@@ -3,7 +3,7 @@ layout: til
 title: "Switch statement in Python"
 date: 2019-08-20
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

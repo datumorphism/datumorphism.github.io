@@ -7,7 +7,7 @@ speaker: "Lei Ma"
 author: Lei Ma
 types:
 - 'book'
-category:
+categories:
 - theory
 tags:
 - 'data mining'

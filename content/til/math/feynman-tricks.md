@@ -5,7 +5,7 @@ date: 2015-02-15 # not necessarily the date created but to ensure the sorting of
 modified: 2015-08-18 # 2015-02-03 #2014-08-27T11:57:41-04:00
 author: Lei Ma
 comments: true
-category:
+categories:
 - math
 tags:
 - Integration

@@ -3,7 +3,7 @@ layout: til
 title: "Python Long String"
 date: 2018-12-31
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

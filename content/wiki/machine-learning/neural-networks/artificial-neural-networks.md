@@ -2,7 +2,7 @@
 title: "Artificial Neural Networks"
 description: "Solving PDEs"
 date: 2018-11-19
-category:
+categories:
   - 'Artificial Neural Networks'
 tags:
   - 'Machine Learning'

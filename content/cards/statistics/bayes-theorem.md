@@ -1,7 +1,7 @@
 ---
 title: "Bayes' Theorem"
 date: 2019-06-18
-category:
+categories:
 - 'Math'
 tags:
 - 'Statistics'

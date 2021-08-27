@@ -4,7 +4,7 @@ title: "Git Branch Options"
 date: 2016-11-27
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Git

@@ -3,7 +3,7 @@ layout: til
 title: "Python Making a List"
 date: 2015-12-04
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

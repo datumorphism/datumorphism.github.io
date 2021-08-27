@@ -2,7 +2,7 @@
 title: "Gibbs Sampling"
 description: "Gibbs sampling is a sampling method for Bayesian inference and MCMC"
 date: 2021-01-01
-category:
+categories:
 - "Monte Carlo"
 tags:
 - 'Statistics'

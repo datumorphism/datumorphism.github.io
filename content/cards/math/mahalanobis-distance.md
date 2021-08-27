@@ -2,7 +2,7 @@
 title: "Mahalanobis Distance"
 description: "Distance between a point and a distribution by measuring the distance between the point and the mean of the distribution using the coordinate system defined by the principal components."
 date: 2020-03-11
-category:
+categories:
 - 'Math'
 tags:
 - 'Distance'

@@ -1,7 +1,7 @@
 ---
 title: "Histogram"
 date: 2019-08-20
-category:
+categories:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'

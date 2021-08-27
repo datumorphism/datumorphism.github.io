@@ -2,7 +2,7 @@
 title: "Statistical Sign Test"
 description: "Statistical test without assuming models"
 date: 2019-01-20
-category:
+categories:
 - 'Statistical Hypothesis Testing'
 tags:
 - 'Statistics'

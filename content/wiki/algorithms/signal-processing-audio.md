@@ -2,7 +2,7 @@
 title: "Signal Processing: Audio Basics"
 description: "basics about audio"
 date: 2018-03-29
-category:
+categories:
 - 'Algorithms'
 tags:
 - 'Audio'

@@ -2,7 +2,7 @@
 title: "Basics of MongoDB"
 description: "MongoDB is a document based database"
 date: 2018-10-03
-category:
+categories:
 - 'Computation'
 tags:
 - 'Database'

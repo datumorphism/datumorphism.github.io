@@ -3,7 +3,7 @@ layout: til
 title: "Start a Simple Server"
 date: 2016-09-17
 author: Lei Ma
-category:
+categories:
 - 'programming'
 - 'basics'
 tags:

@@ -2,7 +2,7 @@
 title: "WWH"
 description: ""
 date: 2021-01-03
-category:
+categories:
   - 'Communication'
 tags:
   - 'Communication'

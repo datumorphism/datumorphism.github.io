@@ -4,7 +4,7 @@ title: "IPython or Jupyter Notebook Magics"
 date: 2015-12-04
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Python

@@ -1,7 +1,7 @@
 ---
 title: "Jaccard Similarity"
 date: 2019-05-06
-category:
+categories:
   - 'Math'
 tags:
   - 'Set'

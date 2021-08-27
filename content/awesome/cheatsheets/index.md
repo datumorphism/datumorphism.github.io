@@ -3,8 +3,8 @@ layout: page
 title: Cheatsheets
 description: Easy references
 exclude: true
-category:
-- 'Cheatsheets'
+categories:
+    - 'Cheatsheets'
 ---
 
 {{< awesomecheatsheets >}}

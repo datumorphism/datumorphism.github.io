@@ -4,7 +4,7 @@ title: "Auto-reload Python Packages or Python Modules in Jupyter Notebook"
 date: 2019-05-12
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Python

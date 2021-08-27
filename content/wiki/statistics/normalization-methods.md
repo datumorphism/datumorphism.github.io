@@ -2,7 +2,7 @@
 title: "Normalization Methods for Numeric Data"
 description: "Detecting correlations using correlations for numerical data"
 date: 2018-11-18
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

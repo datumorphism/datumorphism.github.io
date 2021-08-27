@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Audiolization of Covid 19 Data in Europe"
-category:
+categories:
   - blog
 tags:
   - Ruthless Data Scientist

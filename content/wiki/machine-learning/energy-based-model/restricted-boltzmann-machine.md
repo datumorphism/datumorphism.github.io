@@ -2,7 +2,7 @@
 title: "Restricted Boltzmann Machine"
 description: "Introducing latent variables to Boltzmann machine and restrict the connections within groups."
 date: 2021-06-11
-category:
+categories:
   - "Energy-based Model"
 tags:
   - "Neural Network"

@@ -3,7 +3,7 @@ layout: til
 title: "eval in Python is Dangerous"
 date: 2019-08-13
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

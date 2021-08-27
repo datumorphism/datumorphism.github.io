@@ -3,7 +3,7 @@ layout: til
 title: "Flatten 2D List in Python"
 date: 2019-01-23
 author: Lei Ma
-category:
+categories:
 - 'programming'
 - 'basics'
 tags:

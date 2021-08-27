@@ -2,7 +2,7 @@
 title: "Data Storage"
 description: "Storing big data"
 date: "2021-05-05"
-category:
+categories:
   - "Data Engineering"
 tags:
   - "Data Engineering"

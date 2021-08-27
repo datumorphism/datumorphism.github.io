@@ -2,7 +2,7 @@
 title: "Describing Multi-dimensional Data"
 description: "Describing multi-dimensional data"
 date: 2018-12-03
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

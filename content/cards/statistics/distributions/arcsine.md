@@ -2,7 +2,7 @@
 title: "Arcsine Distribution"
 excerpt: ""
 date: 2020-03-14
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

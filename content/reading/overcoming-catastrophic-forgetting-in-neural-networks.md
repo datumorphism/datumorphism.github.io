@@ -6,7 +6,7 @@ subtitle: ""
 speaker: "Lei Ma"
 authors:
   - Lei Ma
-category:
+categories:
   - theory
 tags:
   - 'neural network'

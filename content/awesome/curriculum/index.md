@@ -2,7 +2,7 @@
 layout: page
 title: Curriculum
 description: The path that I follow
-category:
+categories:
   - 'Curriculum'
 tags:
   - "roadmap"

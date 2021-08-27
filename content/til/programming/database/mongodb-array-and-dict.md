@@ -4,7 +4,7 @@ title: "Arrays and Dicts in MongoDB"
 date: 2019-08-14
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - 'MongoDB'

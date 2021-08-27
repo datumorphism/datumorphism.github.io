@@ -3,7 +3,7 @@ layout: til
 title: "Mathematica Provides Great PlotTheme Options"
 date: 2017-05-19
 author: Lei Ma
-category:
+categories:
 - programming
 tags:
 - Mathematica

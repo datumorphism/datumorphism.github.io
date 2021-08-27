@@ -1,7 +1,7 @@
 ---
 title: "Combinations"
 date: 2019-04-07
-category:
+categories:
 - 'Math'
 tags:
 - 'Combinations'

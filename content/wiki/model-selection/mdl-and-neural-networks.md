@@ -1,7 +1,7 @@
 ---
 title: MDL and Neural Networks
 date: 2021-02-14
-category:
+categories:
   - Model Selection
 tags:
   - Model Selection

@@ -2,7 +2,7 @@
 title: "Amazon CloudWatch Logs"
 description: "CloudWatch logs as a tool for pipeline logs"
 date: 2019-03-11
-category:
+categories:
   - 'Tools'
 tags:
   - 'Tools'

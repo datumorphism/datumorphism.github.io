@@ -1,7 +1,7 @@
 ---
 title: "VC Dimension"
 date: 2021-02-21
-category:
+categories:
   - Learning Theory
 tags:
   - Learning Theory

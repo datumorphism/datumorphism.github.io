@@ -2,7 +2,7 @@
 title: "Signal Processing"
 description: "signal processing"
 date: 2018-03-20
-category:
+categories:
   - 'Algorithms'
 tags:
   - 'Signal Processing'

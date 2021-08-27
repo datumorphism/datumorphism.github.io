@@ -3,7 +3,7 @@ layout: til
 title: "matplotlib x y limit and aspect ratio"
 date: 2016-07-21
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

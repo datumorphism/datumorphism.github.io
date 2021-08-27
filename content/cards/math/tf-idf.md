@@ -1,7 +1,7 @@
 ---
 title: "Term Frequency - Inverse Document Frequency"
 date: 2019-05-06
-category:
+categories:
 - 'Math'
 tags:
 - 'NLP'

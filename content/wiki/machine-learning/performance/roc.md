@@ -2,7 +2,7 @@
 title: "Receiver Operating Characteristics: ROC"
 description: "ROC is used to judging the performance of classifiers"
 date: 2020-05-13
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Machine Learning"

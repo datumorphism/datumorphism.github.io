@@ -2,7 +2,7 @@
 title: "Linear Discriminant Analysis"
 description: "LDA"
 date: 2018-05-25
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Unsupervised Learning"

@@ -1,7 +1,7 @@
 ---
 title: "Why Estimation Theory"
 date: 2019-01-20
-category:
+categories:
 - 'Statistical Estimation'
 tags:
 - 'Statistics'

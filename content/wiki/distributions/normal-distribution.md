@@ -2,7 +2,7 @@
 title: "Normal Distribution"
 description: "Gaussian distribution"
 date: 2019-01-22
-category:
+categories:
 - 'Distributions'
 tags:
 - 'Distributions'

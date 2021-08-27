@@ -2,7 +2,7 @@
 title: "A Physicist's Crash Course on Artificial Neural Network"
 description: "A very very brief introduction to neural network for physicists"
 date: 2015-05-02
-category:
+categories:
   - 'Artificial Neural Networks'
 tags:
   - 'Machine Learning'

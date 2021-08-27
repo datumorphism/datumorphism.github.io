@@ -2,7 +2,7 @@
 title: "Some Basic Ideas of Algorithms"
 description: "Algoritms give us life"
 date: 2018-03-20
-category:
+categories:
 - 'Algorithms'
 tags:
 - 'Algorithms'

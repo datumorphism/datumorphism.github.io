@@ -4,7 +4,7 @@ title: "LaTeX Automatically Adjust Figure"
 date: 2015-12-04
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - LaTeX

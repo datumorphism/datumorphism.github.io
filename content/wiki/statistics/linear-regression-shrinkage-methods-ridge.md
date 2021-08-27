@@ -2,7 +2,7 @@
 title: "Linear Regression - Shrinkage Methods - Ridge"
 description: "Potentially better regression by including bias"
 date: 2019-01-01
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

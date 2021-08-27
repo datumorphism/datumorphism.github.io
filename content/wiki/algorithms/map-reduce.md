@@ -2,7 +2,7 @@
 title: "Basics of MapReduce"
 description: "mapreduce"
 date: 2018-10-03
-category:
+categories:
 - 'Algorithms'
 tags:
 - 'Algorithms'

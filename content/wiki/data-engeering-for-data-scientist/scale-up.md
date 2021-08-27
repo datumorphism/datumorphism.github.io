@@ -2,7 +2,7 @@
 title: "Scale Up"
 description: "scale up your services"
 date: "2021-05-05"
-category:
+categories:
   - "Data Engineering"
 tags:
   - "Data Engineering"

@@ -4,7 +4,7 @@ title: "Python Onliner: Filter Prime Numbers"
 date: 2015-12-04
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Python

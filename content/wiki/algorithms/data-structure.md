@@ -2,7 +2,7 @@
 title: "Data Structure"
 description: "mind the data structure"
 date: 2018-03-20
-category:
+categories:
 - 'Algorithms'
 tags:
 - 'Data Structure'

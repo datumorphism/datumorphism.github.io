@@ -3,7 +3,7 @@ layout: til
 title: "Python Default Parameters Tripped Me Up"
 date: 2017-06-03
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

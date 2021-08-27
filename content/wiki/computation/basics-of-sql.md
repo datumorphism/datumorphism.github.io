@@ -2,7 +2,7 @@
 title: "Basics of SQL"
 description: "Essential knowledge of programming"
 date: '2018-11-19'
-category:
+categories:
 - 'Computation'
 tags:
 - 'Programming'

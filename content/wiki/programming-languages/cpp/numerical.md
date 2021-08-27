@@ -2,7 +2,7 @@
 title: "The C++ Language: Numerical Methods"
 description: "C++ as a programming language"
 date: 2018-03-20
-category:
+categories:
 - 'Programming Language'
 tags:
 - 'Numerical Methods'

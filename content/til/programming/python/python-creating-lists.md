@@ -3,7 +3,7 @@ layout: til
 title: "Python Creating Lists"
 date: 2015-12-04
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

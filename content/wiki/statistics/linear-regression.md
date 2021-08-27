@@ -2,7 +2,7 @@
 title: "Linear Regression"
 description: "Linear regression of multidimensional data"
 date: 2019-01-01
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

@@ -1,7 +1,7 @@
 ---
 title: "The Learning Problem"
 date: 2021-05-06
-category:
+categories:
 - 'Machine Learning::Theories'
 tags:
 - 'Learning Theory'

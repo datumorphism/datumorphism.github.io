@@ -2,7 +2,7 @@
 title: "Data Types and Level of Measurement in Machine Learning"
 description: "identifying the data types and level of measurement is important in data science"
 date: 2020-01-15
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Machine Learning"

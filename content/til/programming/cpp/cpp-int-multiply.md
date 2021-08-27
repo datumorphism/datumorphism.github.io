@@ -4,7 +4,7 @@ title: C++ int Multiplication
 date: 2017-09-21
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - 'C++'

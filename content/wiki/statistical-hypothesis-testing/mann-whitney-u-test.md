@@ -2,7 +2,7 @@
 title: "Mann-Whitney U Test"
 description: "Non-parametric test using ranking"
 date: 2019-01-20
-category:
+categories:
 - 'Statistical Hypothesis Testing'
 tags:
 - 'Statistics'

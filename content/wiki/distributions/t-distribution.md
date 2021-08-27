@@ -2,7 +2,7 @@
 title: "t Distribution"
 description: "t distribution"
 date: 2019-01-22
-category:
+categories:
 - 'Distributions'
 tags:
 - 'Distributions'

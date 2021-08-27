@@ -2,7 +2,7 @@
 title: "The Hubbard-Stratonovich Identity"
 description: "Very useful in calculating the partition function"
 date: 2021-06-17
-category:
+categories:
   - "Math"
 references:
   - name: "Hubbard J. Calculation of Partition Functions. Physical Review Letters. 1959. pp. 77–78. doi:10.1103/physrevlett.3.77"

@@ -2,7 +2,7 @@
 title: "NMF: Nonnegative Matrix Factorizatioin"
 description: "Nonnegative Matrix Factorizatioin has a bright future"
 date: 2019-06-13
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Machine Learning"

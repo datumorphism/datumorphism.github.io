@@ -2,7 +2,7 @@
 title: "Jackknife Resampling"
 description: "Jackknife resampling method"
 date: 2020-01-26
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

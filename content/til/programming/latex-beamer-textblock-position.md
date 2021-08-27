@@ -4,7 +4,7 @@ title: "Positioning textblock in LaTeX Beamer"
 date: 2017-01-17
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - LaTeX

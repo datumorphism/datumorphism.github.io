@@ -7,7 +7,7 @@ author: Lei Ma
 comments: true
 types:
 - 'paper'
-category:
+categories:
 - theory
 tags:
 - 'machine learning'

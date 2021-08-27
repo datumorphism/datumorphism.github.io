@@ -1,7 +1,7 @@
 ---
 title: "Cramér's V"
 date: 2019-07-20
-category:
+categories:
 - 'Statistics'
 tags:
 - 'Statistics'

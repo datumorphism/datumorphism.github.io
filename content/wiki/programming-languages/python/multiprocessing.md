@@ -2,7 +2,7 @@
 title: "The Python Language: Multi-Processing"
 description: "Python as a programming language"
 date: 2018-05-10
-category:
+categories:
 - 'Programming Language'
 tags:
 - 'Python'

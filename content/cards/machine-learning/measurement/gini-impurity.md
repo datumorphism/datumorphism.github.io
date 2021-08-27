@@ -2,7 +2,7 @@
 title: "Gini Impurity"
 description: "The Gini impurity is a measurement of the impurity of a set."
 date: 2020-01-16
-category:
+categories:
 - 'Machine Learning'
 - 'Measurement'
 tags:

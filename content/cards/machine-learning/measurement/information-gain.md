@@ -2,7 +2,7 @@
 title: "Information Gain"
 description: "The information is a measurement of the entropy of the dataset."
 date: 2020-01-16
-category:
+categories:
 - 'Machine Learning'
 - 'Measurement'
 tags:

@@ -2,7 +2,7 @@
 title: "Unsupervised Learning"
 excerpt: "unsupervised learning doesn't require a label for the dataset"
 date: 2018-05-25
-category:
+categories:
   - "Machine Learnin"
 tags:
   - "Unsupervised Learning"

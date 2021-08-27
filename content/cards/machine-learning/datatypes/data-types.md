@@ -1,7 +1,7 @@
 ---
 title: "Data Types"
 date: 2020-01-16
-category:
+categories:
   - 'Machine Learning'
 tags:
   - 'Data'

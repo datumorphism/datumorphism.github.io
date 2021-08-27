@@ -2,7 +2,7 @@
 title: "Basics of Programming"
 description: "Essential knowledge of programming"
 date: 2018-09-23
-category:
+categories:
 - 'Computation'
 tags:
 - 'Programming'

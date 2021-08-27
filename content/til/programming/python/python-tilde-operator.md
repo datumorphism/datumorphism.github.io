@@ -3,7 +3,7 @@ layout: til
 title: "Python Tilde Operator"
 date: 2019-08-15
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

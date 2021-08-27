@@ -2,7 +2,7 @@
 title: "Statistical Hypothesis Testing"
 description: "hypothesis testing is about the probability of alternative hypothesis if the null hypothesis is true, or even more general"
 date: 2019-01-20
-category:
+categories:
 - 'Statistical Hypothesis Testing'
 tags:
 - 'Statistics'

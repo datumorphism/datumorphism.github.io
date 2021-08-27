@@ -3,7 +3,7 @@ layout: til
 title: "Run a program in the background on ubuntu"
 date: 2015-12-04
 author: Lei Ma
-category:
+categories:
 - 'programming'
 - 'basics'
 tags:

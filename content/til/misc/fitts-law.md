@@ -4,7 +4,7 @@ title: Fitt's Law
 date: 2018-07-22
 author: Lei Ma
 comments: true
-category:
+categories:
 - misc
 tags:
 - 'Visual'

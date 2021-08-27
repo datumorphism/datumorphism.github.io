@@ -2,7 +2,7 @@
 title: "Regular Expression Basics"
 description: "Some quick start material on regular expression."
 date: 2018-06-20T15:58:49-04:00
-category:
+categories:
   - 'Basics'
 tags:
   - 'Regular Expression'

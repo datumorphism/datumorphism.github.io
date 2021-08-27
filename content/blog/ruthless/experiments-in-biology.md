@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Experiments in Biology"
-category:
+categories:
 - blog
 tags:
 - Ruthless Data Scientist

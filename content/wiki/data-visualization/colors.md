@@ -1,7 +1,7 @@
 ---
 title: "Principles of Colors"
 date: 2020-11-20
-category:
+categories:
 - 'Data Visualization'
 tags:
 - 'Data Visualization'

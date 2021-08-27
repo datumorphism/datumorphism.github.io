@@ -2,7 +2,7 @@
 title: "Terminal"
 description: "work more efficiently"
 date: 2019-12-31
-category:
+categories:
 - 'Tools'
 tags:
 - 'Tools'

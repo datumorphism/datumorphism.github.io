@@ -2,7 +2,7 @@
 title: "Modes and Slices of Tensors"
 description: "Simple decomposition of tensors"
 date: 2019-06-18
-category:
+categories:
 - 'Math'
 tags:
 - 'Tensor'

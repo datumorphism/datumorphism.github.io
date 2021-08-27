@@ -2,7 +2,7 @@
 title: "Git"
 description: "git the tool you need for your everyday work"
 date: 2016-06-22
-category:
+categories:
 - 'Tools'
 tags:
 - 'Tools'

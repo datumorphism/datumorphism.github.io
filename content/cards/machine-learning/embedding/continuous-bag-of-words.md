@@ -2,7 +2,7 @@
 title: "CBOW: Continuous Bag of Words"
 description: "Use the context to predict the center word"
 date: 2020-01-16
-category:
+categories:
   - 'Machine Learning::Embedding'
 tags:
   - 'Word2vec'

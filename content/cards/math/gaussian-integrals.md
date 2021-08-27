@@ -2,7 +2,7 @@
 title: "Gaussian Integrals"
 description: "Gaussian integral is one of the most useful things if one could write it down."
 date: 2021-05-11
-category:
+categories:
   - 'Math'
 tags:
   - 'Integral'

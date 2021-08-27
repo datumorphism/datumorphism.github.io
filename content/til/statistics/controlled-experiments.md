@@ -5,7 +5,7 @@ date: 2018-12-04 # not necessarily the date created but to ensure the sorting of
 modified: 2018-12-04 # 2015-02-03 #2014-08-27T11:57:41-04:00
 author: Lei Ma
 comments: true
-category:
+categories:
 - statistics
 tags:
 - 'Statistics'

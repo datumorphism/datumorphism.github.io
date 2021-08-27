@@ -2,7 +2,7 @@
 title: "Logistic Regression"
 description: "logistics regression is a simple model for classification"
 date: 2021-05-27
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Unsupervised Learning"

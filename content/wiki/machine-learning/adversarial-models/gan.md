@@ -1,7 +1,7 @@
 ---
 title: "GAN"
 date: 2021-08-13
-category:
+categories:
   - "Machine Learning"
 tags:
   - "Self-supervised Learning"

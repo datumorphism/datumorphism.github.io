@@ -3,7 +3,7 @@ layout: til
 title: "== and is in Python"
 date: 2020-04-01
 author: Lei Ma
-category:
+categories:
 - programming
 - basics
 tags:

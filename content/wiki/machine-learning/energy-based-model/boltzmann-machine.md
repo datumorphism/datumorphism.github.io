@@ -2,7 +2,7 @@
 title: "Boltzmann Machine"
 description: "Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications."
 date: 2017-08-27
-category:
+categories:
   - 'Energy-based Model'
 tags:
   - 'Machine Learning'

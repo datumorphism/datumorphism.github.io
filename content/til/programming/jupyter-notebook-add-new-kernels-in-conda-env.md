@@ -4,7 +4,7 @@ title: "Add New Kernels to Jupyter Notebook in Conda Environment"
 date: 2019-05-12
 author: Lei Ma
 comments: true
-category:
+categories:
 - programming
 tags:
 - Python

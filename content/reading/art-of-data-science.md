@@ -6,7 +6,7 @@ speaker: "Lei Ma"
 author: LM
 types:
 - 'book'
-category:
+categories:
 - guides
 tags:
 - 'data science'

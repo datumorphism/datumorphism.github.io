@@ -2,7 +2,7 @@
 title: "Bayesian Linear Regression"
 description: "Bayesian Linear Regression"
 date: 2019-06-18
-category:
+categories:
   - 'Machine Learning'
 tags:
   - 'Machine Learning'

@@ -2,7 +2,7 @@
 title: "Diagnolize Matrices"
 description: "Diagnolizing a matrix is a transformation using its eigen space."
 date: 2020-03-11
-category:
+categories:
   - 'Math'
 tags:
   - 'Linear Algebra'

@@ -2,7 +2,7 @@
 title: "Confidence Interval"
 description: "Estimates from a sample can be entitled a confidence interval"
 date: 2019-01-20
-category:
+categories:
 - 'Statistical Estimation'
 tags:
 - 'Statistics'

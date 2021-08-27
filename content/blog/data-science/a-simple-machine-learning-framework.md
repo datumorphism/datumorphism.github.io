@@ -1,6 +1,6 @@
 ---
 title: "A Simple Machine Learning Project Framework"
-category:
+categories:
 - blog
 tags:
 - Data Science

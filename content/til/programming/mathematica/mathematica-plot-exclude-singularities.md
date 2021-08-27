@@ -3,7 +3,7 @@ layout: til
 title: "Mathematica Exclude Singularities in Plot"
 date: 2017-03-22
 author: Lei Ma
-category:
+categories:
 - programming
 tags:
 - Mathematica

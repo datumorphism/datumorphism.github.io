@@ -1,7 +1,7 @@
 ---
 title: "n-gram"
 date: 2019-05-19
-category:
+categories:
 - 'Math'
 tags:
 - 'NLP'

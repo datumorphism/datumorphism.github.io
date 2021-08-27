@@ -2,7 +2,7 @@
 title: "Basics of Network"
 description: "Essential knowledge of internet"
 date: 2018-09-23
-category:
+categories:
 - 'Computation'
 tags:
 - 'Internet'

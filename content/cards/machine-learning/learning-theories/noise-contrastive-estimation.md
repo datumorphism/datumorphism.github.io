@@ -1,7 +1,7 @@
 ---
 title: "Noise Contrastive Estimation: NCE"
 date: 2021-08-13
-category:
+categories:
 - 'Machine Learning::Theories'
 tags:
 - 'Learning Theory'

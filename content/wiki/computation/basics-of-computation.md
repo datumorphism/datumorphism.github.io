@@ -2,7 +2,7 @@
 title: "Basics of Computation"
 description: "Essential knowledge of computations"
 date: 2018-09-13
-category:
+categories:
   - 'Computation'
 tags:
   - 'Computation'

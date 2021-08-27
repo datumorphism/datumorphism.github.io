@@ -2,7 +2,7 @@
 title: "Some ML Workflow Frameworks"
 description: "Managing workflows in machine learning projects is not trivial."
 date: 2021-01-13
-category:
+categories:
   - "Tools"
 tags:
   - "Machine Learning"

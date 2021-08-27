@@ -2,7 +2,7 @@
 title: "PREP"
 description: "PREP is a framework for making your point."
 date: 2021-01-03
-category:
+categories:
   - 'Communication'
 tags:
   - 'Communication'

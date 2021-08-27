@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Science Part in Data Science"
-category:
+categories:
 - blog
 tags:
 - Ruthless Data Scientist
