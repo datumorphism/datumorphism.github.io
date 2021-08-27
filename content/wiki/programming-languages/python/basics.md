@@ -13,6 +13,8 @@ references:
   link: "http://www.pythonforbeginners.com/super/working-python-super-function"
 - name: "Python Patterns - An Optimization Anecdote"
   link: https://www.python.org/doc/essays/list2str/
+links:
+  - "wiki/programming-languages/python/_index.md"
 weight: 1
 ---
 

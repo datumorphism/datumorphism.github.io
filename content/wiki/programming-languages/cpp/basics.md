@@ -9,6 +9,8 @@ tags:
 - 'Basics'
 - 'C'
 - 'C++'
+links:
+  - "wiki/programming-languages/cpp/_index.md"
 weight: 2
 ---
 

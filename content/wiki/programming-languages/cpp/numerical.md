@@ -13,6 +13,8 @@ tags:
 references:
   - name: "std::vector"
     link: http://en.cppreference.com/w/cpp/container/vector
+links:
+  - "wiki/programming-languages/cpp/_index.md"
 weight: 3
 ---
 

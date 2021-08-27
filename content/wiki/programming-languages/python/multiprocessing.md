@@ -13,6 +13,8 @@ references:
   link: http://sebastianraschka.com/Articles/2014_multiprocessing.html
 - name: Parallelism in one line A Better Model for Day to Day Threading Tasks
   link: http://chriskiehl.com/article/parallelism-in-one-line/
+links:
+  - "wiki/programming-languages/python/_index.md"
 weight: 3
 ---
 

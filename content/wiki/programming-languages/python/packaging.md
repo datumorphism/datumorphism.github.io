@@ -15,6 +15,8 @@ references:
   - name: "Python Packaging User Guide — Python Packaging User Guide."
     link: "https://packaging.python.org/"
     key: "documentation"
+links:
+  - "wiki/programming-languages/python/_index.md"
 weight: 5
 ---
 

@@ -18,6 +18,8 @@ references:
   - name: "squidfunk. squidfunk/mkdocs-material: Technical documentation that just works. In: GitHub [Internet]. [cited 28 Aug 2021]. Available: https://github.com/squidfunk/mkdocs-material"
     link: "https://squidfunk.github.io/mkdocs-material/"
     key: "mdm"
+links:
+  - "wiki/programming-languages/python/_index.md"
 weight: 8
 ---
 

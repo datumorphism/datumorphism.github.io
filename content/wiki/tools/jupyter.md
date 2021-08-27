@@ -11,6 +11,8 @@ tags:
 references:
 - name: "Built-in magic command @ ipython"
   link: https://ipython.readthedocs.io/en/stable/interactive/magics.html
+links:
+  - "wiki/programming-languages/python/_index.md"
 weight: 1
 ---
 

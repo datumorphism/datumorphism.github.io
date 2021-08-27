@@ -16,6 +16,7 @@ references:
 - name: How to Use Generators and yield in Python
   link: https://realpython.com/introduction-to-python-generators/
 links:
+  - "wiki/programming-languages/python/_index.md"
   - til/programming/python/python-list-comprehensions.md
 weight: 4
 ---
