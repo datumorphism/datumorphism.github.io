@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cards/information/cross-entropy.md on Datumorphism</title><link>https://datumorphism.leima.is/links/cards/information/cross-entropy.md/</link><description>Recent content in cards/information/cross-entropy.md on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><atom:link href="https://datumorphism.leima.is/links/cards/information/cross-entropy.md/index.xml" rel="self" type="application/rss+xml"/><item><title>Logistic Regression</title><link>https://datumorphism.leima.is/wiki/machine-learning/linear/logistic-regression/</link><pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/linear/logistic-regression/</guid><description>In a classification problem, given a list of features values $x$ and their corresponding classes $\{c_i\}$, the posterior for of the classes, aka conditional probability of the classes, is
+$$ p(C=c_i\mid X=x). $$
+Likelihood
+The likelihood of the data is
+$$ p(X=x\mid C=c_i). $$
+Logistic Regression for Two Classes For two classes, the simplest model for the posterior is a linear model,
+$$ \log \frac{p(C=c_1\mid X=x) }{p(C=c_2\mid X=x)} = \beta_0 + \beta_1 \cdot x, $$</description></item></channel></rss>
