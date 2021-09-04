@@ -33,7 +33,7 @@ $$
 
 ## Using Jensen's Inequality
 
-In many models, we are interested in the log probability density $\log p(X)$ which can be decomposed using an auxillary density of the latent variable $q(Z)$,
+In many models, we are interested in the log probability density $\log p(X)$ which can be decomposed using an auxiliary density of the latent variable $q(Z)$,
 
 {{< m >}}
 \begin{align}
