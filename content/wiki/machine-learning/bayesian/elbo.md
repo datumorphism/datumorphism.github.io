@@ -25,7 +25,7 @@ This article reuses a lot of materials from the references. Please see the refer
 
 {{< /message >}}
 
-Given a probability distribution density $p(X)$ and a latent variable $Z$, we have the marginalization of the join probability being
+Given a probability distribution density $p(X)$ and a latent variable $Z$, we have the marginalization of the joint probability
 
 $$
 \int dZ p(X, Z) = p(X).

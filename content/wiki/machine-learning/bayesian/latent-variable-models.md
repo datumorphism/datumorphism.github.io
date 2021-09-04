@@ -27,9 +27,9 @@ links:
 
 In the view of statistics, we know everything about a physical system if we know the probability $p(\mathbf s)$ of all possible states of the physical system $\mathbf s$. Time can also be part of the state specification.
 
-> As an example, we will classify fruits into oranges and non oranges. We will have the state vector $\mathbf s = (\text{is orange}, \text{texture } x)$. Our goal is to find the join probability $p(\text{is orange}, x)$.
+> As an example, we will classify fruits into oranges and non oranges. We will have the state vector $\mathbf s = (\text{is orange}, \text{texture } x)$. Our goal is to find the joint probability $p(\text{is orange}, x)$.
 
-The reality, we only have sample data. This sample data usually can not cover all the possible states of the system. Thus a direct calculation to find the join probability $p(\mathbf s)$ is not feasible. We do not have so much information nor computing power.
+The reality, we only have sample data. This sample data usually can not cover all the possible states of the system. Thus a direct calculation to find the joint probability $p(\mathbf s)$ is not feasible. We do not have so much information nor computing power.
 
 > A formal description is to set the generating process on a measure space $\{Y, \Sigma_Y\}$ with measure $\phi$. We will need to define this space using a sample drawn from it.
 
