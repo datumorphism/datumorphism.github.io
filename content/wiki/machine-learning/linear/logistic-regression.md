@@ -17,9 +17,14 @@ references:
   - name: "Friedman J, Hastie T, Tibshirani R. Additive Logistic Regression. The Annals of Statistics. 2000. pp. 337–374. doi:10.1214/aos/1016218223"
     link: "https://projecteuclid.org/journals/annals-of-statistics/volume-28/issue-2/Additive-logistic-regression--a-statistical-view-of-boosting-With/10.1214/aos/1016218223.full"
     key: "friedman2000"
+  - name: "Mehta P, Wang C-H, Day AGR, Richardson C, Bukov M, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2019;810: 1–124. doi:10.1016/j.physrep.2019.03.001"
+    link: "https://linkinghub.elsevier.com/retrieve/pii/S0370157319300766"
+    key: "Mehta2019"
 weight: 3
 links:
   - "cards/statistics/likelihood.md"
+  - "cards/information/cross-entropy.md"
+  - "cards/machine-learning/neural-networks/uni-polar-sigmoid.md"
 published: true
 ---
 
@@ -85,6 +90,8 @@ p(C=c_1\mid X=x) &= \frac{\exp\left(\beta_0 + \beta_1 \cdot x\right)}{1 +  \exp\
 
 {{< figure src="../assets/logistic-regression/logistic_regression_two_class_probs.png" title="The two conditional probabilities" caption="For simplicity, we are using $x'=\beta_0 + \beta_1 \cdot x$ in this figure." >}}
 
+This is the {{< c "cards/machine-learning/neural-networks/uni-polar-sigmoid.md" "sigmoid function" >}}
+
 {{< message title="Limiting behavior" class="info" >}}
 
 1. As $\beta_0 + \beta_1 \cdot x \to \infty$, we have $p(C=c_2\mid X=x) \to 0$ and $p(C=c_1\mid X=x)\to 1$.
@@ -92,6 +99,24 @@ p(C=c_1\mid X=x) &= \frac{\exp\left(\beta_0 + \beta_1 \cdot x\right)}{1 +  \exp\
 3. As $\beta_0 + \beta_1 \cdot x \to -\infty$, we have $p(C=c_2\mid X=x) \to 1$ and $p(C=c_1\mid X=x)\to 0$.
 
 {{< /message >}}
+
+## Relation to Cross Entropy
+
+For two classes, we can write down the likelihood as
+
+{{< m >}}
+\pi_{i=1}^{N} p^{y_i} p^{1-y_i},
+{{< /m >}}
+
+where $p$ is the probability of label $y_i=c_1$ and $1-p$ is probability of label $y_i=c_2$.
+
+Taking the neglog, we find that
+
+{{< m >}}
+-l = sum_{i=1}^N ( -y_i \log p - (1-y_i)\log (1-p) ).
+{{< /m >}}
+
+This is the {{< c "cards/information/cross-entropy.md" "cross entropy" >}}
 
 
 ## Logistic Regression for $K$ Classes
