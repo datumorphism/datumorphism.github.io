@@ -44,7 +44,7 @@ $$</p><h2 id=kl-divergence>KL Divergence</h2><p>In a latent variable model, we m
 <span class=tooltip_content>Kullback–Leibler divergence indicates the differences between two distributions</span></span></span>
 is</p><p>$$
 \begin{align}
-D_\text{KL}(q(Z|\theta)\parallel p(Z|X)) =& -\mathbb E_q \log\frac{p(X|Z)}{q(Z|\theta)} \\
+D_\text{KL}(q(Z|\theta)\parallel p(Z|X)) =& -\mathbb E_q \log\frac{p(Z|X)}{q(Z|\theta)} \\
 =& -\mathbb E_q \log\frac{p(X, Z)/p(X)}{q(Z|\theta)} \\
 =& -\mathbb E_q \log\frac{p(X, Z)}{q(Z|\theta)} - \mathbb E_q \log\frac{1}{p(X)} \\
 =& - L + \log p(X).
