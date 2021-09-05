@@ -95,7 +95,7 @@ The {{< c "wiki/machine-learning/basics/kl-divergence.md" "KL divergence" >}} is
 
 {{< m >}}
 \begin{align}
-D_\text{KL}(q(Z|\theta)\parallel p(Z|X)) =& -\mathbb E_q \log\frac{p(X|Z)}{q(Z|\theta)} \\
+D_\text{KL}(q(Z|\theta)\parallel p(Z|X)) =& -\mathbb E_q \log\frac{p(Z|X)}{q(Z|\theta)} \\
 =& -\mathbb E_q \log\frac{p(X, Z)/p(X)}{q(Z|\theta)} \\
 =& -\mathbb E_q \log\frac{p(X, Z)}{q(Z|\theta)} - \mathbb E_q \log\frac{1}{p(X)} \\
 =& - L + \log p(X).
