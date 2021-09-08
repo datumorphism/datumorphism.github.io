@@ -104,7 +104,7 @@ class Messages:
             self._add_tags(i) for i in self.new_messages
         ]
 
-        return self.existing_messages + self.new_messages
+        return self.new_messages + self.existing_messages
 
     def _existing_messages(self):
         """Load messages from json file"""

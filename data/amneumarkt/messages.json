@@ -1,6 +1,635 @@
 [
     {
         "_": "Message",
+        "id": 255,
+        "peer_id": {
+            "_": "PeerChannel",
+            "channel_id": 1320526773
+        },
+        "date": "2021-09-08 11:45:22+00:00",
+        "message": "#ML \n\n\ud83d\ude02\nJ\u00fcrgen Schmidhuber invented transformers in the 90s.\n\nhttps://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html",
+        "out": true,
+        "mentioned": false,
+        "media_unread": false,
+        "silent": false,
+        "post": true,
+        "from_scheduled": false,
+        "legacy": false,
+        "edit_hide": false,
+        "pinned": false,
+        "from_id": null,
+        "fwd_from": null,
+        "via_bot_id": null,
+        "reply_to": null,
+        "media": {
+            "_": "MessageMediaWebPage",
+            "webpage": {
+                "_": "WebPage",
+                "id": 3057319053458191438,
+                "url": "https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html",
+                "display_url": "people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html",
+                "hash": 0,
+                "type": "photo",
+                "site_name": "people.idsia.ch",
+                "title": "2021: 30th anniversary of linear Transformer principle",
+                "description": "1991: Nets learn to program nets with outer product fast weights",
+                "photo": {
+                    "_": "Photo",
+                    "id": 5977959667436989420,
+                    "access_hash": -871040862937674503,
+                    "file_reference": "b'\\x00a9\\x16\\xf1\\xeajB\\x96M\\xe2\\xc6\\x98\\x18j9W\\xb3M\\xcc\\xd3'",
+                    "date": "2021-03-26 08:56:54+00:00",
+                    "sizes": [
+                        {
+                            "_": "PhotoStrippedSize",
+                            "type": "i",
+                            "bytes": "b\"\\x01\\x14(\\xd2`\\xdc\\x9d\\xd4\\xd5s\\xb8\\x0eN:\\xd4\\xa0\\x1ex\\xa8\\xe3\\x88\\xa3\\xee\\xe7\\x9a\\x00\\x93\\xbf?\\x855\\xce\\x10c9\\xe0f\\x97a\\xdc\\x0f\\xa7J\\x1dw'|\\xd0\\x007w\\xc5\\x14*\\xb8'-\\xf4\\xe3\\xde\\x8a\\x07rM\\xa39\\xa4\\xd8=\\xff\\x00:(\\xa0@PR\\xec\\x1e\\xff\\x00\\x9d\\x14P\\x02\\x04\\x00\\xe7\\x9f\\xce\\x8a(\\xa0\\x0f\""
+                        },
+                        {
+                            "_": "PhotoSize",
+                            "type": "m",
+                            "w": 320,
+                            "h": 160,
+                            "size": 18876
+                        },
+                        {
+                            "_": "PhotoSizeProgressive",
+                            "type": "x",
+                            "w": 754,
+                            "h": 377,
+                            "sizes": [
+                                3898,
+                                12280,
+                                32730,
+                                46373,
+                                66777
+                            ]
+                        }
+                    ],
+                    "dc_id": 4,
+                    "has_stickers": false,
+                    "video_sizes": []
+                },
+                "embed_url": null,
+                "embed_type": null,
+                "embed_width": null,
+                "embed_height": null,
+                "duration": null,
+                "author": null,
+                "document": null,
+                "cached_page": null,
+                "attributes": []
+            }
+        },
+        "reply_markup": null,
+        "entities": [
+            {
+                "_": "MessageEntityHashtag",
+                "offset": 0,
+                "length": 3
+            },
+            {
+                "_": "MessageEntityUrl",
+                "offset": 63,
+                "length": 77
+            }
+        ],
+        "views": 48,
+        "forwards": 0,
+        "replies": {
+            "_": "MessageReplies",
+            "replies": 0,
+            "replies_pts": 960,
+            "comments": true,
+            "recent_repliers": [],
+            "channel_id": 1159907975,
+            "max_id": null,
+            "read_max_id": null
+        },
+        "edit_date": "2021-09-08 13:33:19+00:00",
+        "post_author": "Markt Mai",
+        "grouped_id": null,
+        "restriction_reason": [],
+        "ttl_period": null,
+        "tags": [
+            "ML"
+        ]
+    },
+    {
+        "_": "Message",
+        "id": 254,
+        "peer_id": {
+            "_": "PeerChannel",
+            "channel_id": 1320526773
+        },
+        "date": "2021-09-01 15:43:39+00:00",
+        "message": "#fun \n\nThis is cool.\n\nhttps://github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics/",
+        "out": true,
+        "mentioned": false,
+        "media_unread": false,
+        "silent": false,
+        "post": true,
+        "from_scheduled": false,
+        "legacy": false,
+        "edit_hide": true,
+        "pinned": false,
+        "from_id": null,
+        "fwd_from": null,
+        "via_bot_id": null,
+        "reply_to": null,
+        "media": {
+            "_": "MessageMediaWebPage",
+            "webpage": {
+                "_": "WebPage",
+                "id": 3891914976676299200,
+                "url": "https://github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics/",
+                "display_url": "github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics",
+                "hash": -1710038818,
+                "type": "photo",
+                "site_name": "The GitHub Blog",
+                "title": "Request for proposals: Defining standardized GitHub metrics",
+                "description": "The GitHub Social Impact and Policy teams are issuing a Request for Proposal (RFP) for a researcher to define a list of publicly available GitHub platform usage metrics by country for international development, public policy and economics disciplines.",
+                "photo": {
+                    "_": "Photo",
+                    "id": 5883194297837267803,
+                    "access_hash": 9142688333036299894,
+                    "file_reference": "b\"\\x00a6\\x03H\\xd7\\xf6'F\\xbf\\xc8a\\xaf\\xae\\t\\xa9]\\xa8g47\"",
+                    "date": "2020-11-17 14:37:40+00:00",
+                    "sizes": [
+                        {
+                            "_": "PhotoStrippedSize",
+                            "type": "i",
+                            "bytes": "b'\\x01\\x15(\\xd9\\xa2\\x8ak6\\x18\\x0e\\xd4\\x00\\xa4\\x9c\\xe0Rd\\xfa\\x8a\\x8c\\xb1\\xdc1\\x92{\\xd2s\\xbb;M\\x02$\\xdc}h\\xa6\\xe0\\xe3\\xa1\\x14P2Z0=(\\xa2\\x80\\x10(\\x074c\\x9c\\xd1E\\x00-\\x14Q@\\x1f'"
+                        },
+                        {
+                            "_": "PhotoSize",
+                            "type": "m",
+                            "w": 320,
+                            "h": 168,
+                            "size": 9072
+                        },
+                        {
+                            "_": "PhotoSize",
+                            "type": "x",
+                            "w": 800,
+                            "h": 420,
+                            "size": 37097
+                        },
+                        {
+                            "_": "PhotoSize",
+                            "type": "y",
+                            "w": 1201,
+                            "h": 630,
+                            "size": 64402
+                        }
+                    ],
+                    "dc_id": 4,
+                    "has_stickers": false,
+                    "video_sizes": []
+                },
+                "embed_url": null,
+                "embed_type": null,
+                "embed_width": null,
+                "embed_height": null,
+                "duration": null,
+                "author": "Mala Kumar",
+                "document": null,
+                "cached_page": {
+                    "_": "Page",
+                    "url": "https://github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics/",
+                    "blocks": [
+                        {
+                            "_": "PageBlockCover",
+                            "cover": {
+                                "_": "PageBlockPhoto",
+                                "photo_id": 5882974361151974213,
+                                "caption": {
+                                    "_": "PageCaption",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "credit": {
+                                        "_": "TextEmpty"
+                                    }
+                                },
+                                "url": null,
+                                "webpage_id": null
+                            }
+                        },
+                        {
+                            "_": "PageBlockTitle",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Request for proposals: Defining standardized GitHub metrics"
+                            }
+                        },
+                        {
+                            "_": "PageBlockAuthorDate",
+                            "author": {
+                                "_": "TextPlain",
+                                "text": "Mala Kumar"
+                            },
+                            "published_date": "2021-08-31 17:00:23+00:00"
+                        },
+                        {
+                            "_": "PageBlockParagraph",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "The GitHub Social Impact and Policy teams are issuing a "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Request for Proposals (RFP)"
+                                        },
+                                        "url": "https://socialimpact.github.com/assets/img/GitHub_RFP-StandardizedMetrics_FINAL.pdf",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " for a researcher to define a list of publicly available GitHub platform usage metrics by country for international development, public policy, and economics disciplines."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "_": "PageBlockParagraph",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "GitHub is the home for more than 65 million developers from all corners of the world, making it the world\u2019s largest code hosting platform. Metrics on platform usage can play a valuable role in research across many disciplines. Already, GitHub platform usage has been used to inform digital engagement, digital readiness, and tech maturity at regional (multi-country) and national levels. An example is the "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Portulans Institute\u2019s Network Readiness Index 2020"
+                                        },
+                                        "url": "https://networkreadinessindex.org/wp-content/uploads/2020/10/NRI-2020-Final-Report-October2020.pdf",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "."
+                                    },
+                                    {
+                                        "_": "TextSuperscript",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "_": "PageBlockParagraph",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "While GitHub publishes an annual snapshot of platform engagement through its "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "State of the Octoverse"
+                                        },
+                                        "url": "https://octoverse.github.com/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " reports, it doesn\u2019t currently maintain its own publicly available standardized list of platform usage metrics."
+                                    },
+                                    {
+                                        "_": "TextSuperscript",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "2"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " Third-party platforms, like GHTorrent, are used by researchers instead. While GHTorrent has been a valuable resource for the computer science industry, it\u2019s not designed for research in international development and public policy. Researchers have expressed the need for a smaller list of metrics that are updated regularly, grouped by country, and are in a more accessible format such as a .csv file."
+                                    },
+                                    {
+                                        "_": "TextSuperscript",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "3"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "_": "PageBlockHeader",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "About the RFP"
+                            }
+                        },
+                        {
+                            "_": "PageBlockParagraph",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "The GitHub "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Tech for Social Good"
+                                        },
+                                        "url": "https://socialimpact.github.com/tech-for-social-good/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " and "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "GitHub Policy"
+                                        },
+                                        "url": "https://github.com/about/developer-policy",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " teams are issuing this RFP for background research and guidance on what a list of publicly available GitHub platform usage metrics by country should include and how frequently it should be updated. The metrics would be targeted to researchers in international development, public policy, and economics, but may be used in other disciplines. Example platform usage metrics may be the number and location of active entities, which include users, repositories, and organizations. Metrics may also include pull requests, repository forks, and engagement on "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "issues"
+                                        },
+                                        "url": "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " and "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Discussions"
+                                        },
+                                        "url": "https://docs.github.com/en/discussions",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ". The scope of this RFP does not include data from private GitHub repositories or GitHub Enterprise accounts."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "_": "PageBlockParagraph",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "We invite individual(s) or organizations to "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "apply by Monday, 4 October 2021"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ". If you have any clarifying questions, please send an email to the contacts listed in the "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "RFP"
+                                        },
+                                        "url": "https://socialimpact.github.com/assets/img/GitHub_RFP-StandardizedMetrics_FINAL.pdf",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "_": "PageBlockDivider"
+                        },
+                        {
+                            "_": "PageBlockParagraph",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextSuperscript",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "1"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "GitHub has conducted desk research to find other examples. For more information, please reference the document "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "here"
+                                        },
+                                        "url": "https://docs.google.com/document/d/1Yg3fy4r6XVyWCS9XWAIkUQ4-RU8kGogyqZN1zbmRKzM/edit?usp=sharing",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ".\n"
+                                    },
+                                    {
+                                        "_": "TextSuperscript",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "2"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "GitHub releases global time-based data on platform usage through the GH Archive program: "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "https://www.gharchive.org/"
+                                        },
+                                        "url": "https://www.gharchive.org/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ".\n"
+                                    },
+                                    {
+                                        "_": "TextSuperscript",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "3"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "GHTorrent geocodes user entries. See here for more information: "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "https://ghtorrent.org/relational.html"
+                                        },
+                                        "url": "https://ghtorrent.org/relational.html",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "_": "PageBlockParagraph",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Tags: "
+                                        }
+                                    },
+                                    {
+                                        "_": "TextEmpty"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "social impact"
+                                        },
+                                        "url": "https://github.blog/tag/social-impact/",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "photos": [
+                        {
+                            "_": "Photo",
+                            "id": 5882974361151974213,
+                            "access_hash": 6091003491941656136,
+                            "file_reference": "b'\\x00a6\\x03HD\\xf6\\xcc\\xb0\\x96^\\x0b\\x8d\\xd2 V\\xafr\\xb3\\x88\\xd3'",
+                            "date": "2020-11-17 14:37:40+00:00",
+                            "sizes": [
+                                {
+                                    "_": "PhotoStrippedSize",
+                                    "type": "i",
+                                    "bytes": "b'\\x01\\x15(\\xd9\\xa2\\x8ak6\\x18\\x0e\\xd4\\x00\\xa4\\x9c\\xe0Rd\\xfa\\x8a\\x8c\\xb1\\xdc1\\x92{\\xd2s\\xbb;M\\x02$\\xdc}h\\xa6\\xe0\\xe3\\xa1\\x14P2Z0=(\\xa2\\x80\\x10(\\x074c\\x9c\\xd1E\\x00-\\x14Q@\\x1f'"
+                                },
+                                {
+                                    "_": "PhotoSize",
+                                    "type": "m",
+                                    "w": 320,
+                                    "h": 168,
+                                    "size": 9072
+                                },
+                                {
+                                    "_": "PhotoSize",
+                                    "type": "x",
+                                    "w": 800,
+                                    "h": 420,
+                                    "size": 37097
+                                },
+                                {
+                                    "_": "PhotoSize",
+                                    "type": "y",
+                                    "w": 1201,
+                                    "h": 630,
+                                    "size": 64402
+                                }
+                            ],
+                            "dc_id": 4,
+                            "has_stickers": false,
+                            "video_sizes": []
+                        }
+                    ],
+                    "documents": [],
+                    "part": false,
+                    "rtl": false,
+                    "v2": false,
+                    "views": null
+                },
+                "attributes": []
+            }
+        },
+        "reply_markup": null,
+        "entities": [
+            {
+                "_": "MessageEntityHashtag",
+                "offset": 0,
+                "length": 4
+            },
+            {
+                "_": "MessageEntityUrl",
+                "offset": 22,
+                "length": 90
+            }
+        ],
+        "views": 63,
+        "forwards": 1,
+        "replies": {
+            "_": "MessageReplies",
+            "replies": 0,
+            "replies_pts": 955,
+            "comments": true,
+            "recent_repliers": [],
+            "channel_id": 1159907975,
+            "max_id": null,
+            "read_max_id": null
+        },
+        "edit_date": "2021-09-01 15:43:36+00:00",
+        "post_author": "Markt Mai",
+        "grouped_id": null,
+        "restriction_reason": [],
+        "ttl_period": null,
+        "tags": [
+            "fun"
+        ]
+    },
+    {
+        "_": "Message",
         "id": 253,
         "peer_id": {
             "_": "PeerChannel",
@@ -51308,518 +51937,5 @@
         "restriction_reason": [],
         "ttl_period": null,
         "tags": []
-    },
-    {
-        "_": "Message",
-        "id": 254,
-        "peer_id": {
-            "_": "PeerChannel",
-            "channel_id": 1320526773
-        },
-        "date": "2021-09-01 15:43:39+00:00",
-        "message": "#fun \n\nThis is cool.\n\nhttps://github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics/",
-        "out": true,
-        "mentioned": false,
-        "media_unread": false,
-        "silent": false,
-        "post": true,
-        "from_scheduled": false,
-        "legacy": false,
-        "edit_hide": true,
-        "pinned": false,
-        "from_id": null,
-        "fwd_from": null,
-        "via_bot_id": null,
-        "reply_to": null,
-        "media": {
-            "_": "MessageMediaWebPage",
-            "webpage": {
-                "_": "WebPage",
-                "id": 3891914976676299200,
-                "url": "https://github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics/",
-                "display_url": "github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics",
-                "hash": -1710038818,
-                "type": "photo",
-                "site_name": "The GitHub Blog",
-                "title": "Request for proposals: Defining standardized GitHub metrics",
-                "description": "The GitHub Social Impact and Policy teams are issuing a Request for Proposal (RFP) for a researcher to define a list of publicly available GitHub platform usage metrics by country for international development, public policy and economics disciplines.",
-                "photo": {
-                    "_": "Photo",
-                    "id": 5883194297837267803,
-                    "access_hash": 9142688333036299894,
-                    "file_reference": "b\"\\x00a6\\x03H\\xd7\\xf6'F\\xbf\\xc8a\\xaf\\xae\\t\\xa9]\\xa8g47\"",
-                    "date": "2020-11-17 14:37:40+00:00",
-                    "sizes": [
-                        {
-                            "_": "PhotoStrippedSize",
-                            "type": "i",
-                            "bytes": "b'\\x01\\x15(\\xd9\\xa2\\x8ak6\\x18\\x0e\\xd4\\x00\\xa4\\x9c\\xe0Rd\\xfa\\x8a\\x8c\\xb1\\xdc1\\x92{\\xd2s\\xbb;M\\x02$\\xdc}h\\xa6\\xe0\\xe3\\xa1\\x14P2Z0=(\\xa2\\x80\\x10(\\x074c\\x9c\\xd1E\\x00-\\x14Q@\\x1f'"
-                        },
-                        {
-                            "_": "PhotoSize",
-                            "type": "m",
-                            "w": 320,
-                            "h": 168,
-                            "size": 9072
-                        },
-                        {
-                            "_": "PhotoSize",
-                            "type": "x",
-                            "w": 800,
-                            "h": 420,
-                            "size": 37097
-                        },
-                        {
-                            "_": "PhotoSize",
-                            "type": "y",
-                            "w": 1201,
-                            "h": 630,
-                            "size": 64402
-                        }
-                    ],
-                    "dc_id": 4,
-                    "has_stickers": false,
-                    "video_sizes": []
-                },
-                "embed_url": null,
-                "embed_type": null,
-                "embed_width": null,
-                "embed_height": null,
-                "duration": null,
-                "author": "Mala Kumar",
-                "document": null,
-                "cached_page": {
-                    "_": "Page",
-                    "url": "https://github.blog/2021-08-31-request-for-proposals-defining-standardized-github-metrics/",
-                    "blocks": [
-                        {
-                            "_": "PageBlockCover",
-                            "cover": {
-                                "_": "PageBlockPhoto",
-                                "photo_id": 5882974361151974213,
-                                "caption": {
-                                    "_": "PageCaption",
-                                    "text": {
-                                        "_": "TextEmpty"
-                                    },
-                                    "credit": {
-                                        "_": "TextEmpty"
-                                    }
-                                },
-                                "url": null,
-                                "webpage_id": null
-                            }
-                        },
-                        {
-                            "_": "PageBlockTitle",
-                            "text": {
-                                "_": "TextPlain",
-                                "text": "Request for proposals: Defining standardized GitHub metrics"
-                            }
-                        },
-                        {
-                            "_": "PageBlockAuthorDate",
-                            "author": {
-                                "_": "TextPlain",
-                                "text": "Mala Kumar"
-                            },
-                            "published_date": "2021-08-31 17:00:23+00:00"
-                        },
-                        {
-                            "_": "PageBlockParagraph",
-                            "text": {
-                                "_": "TextConcat",
-                                "texts": [
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "The GitHub Social Impact and Policy teams are issuing a "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "Request for Proposals (RFP)"
-                                        },
-                                        "url": "https://socialimpact.github.com/assets/img/GitHub_RFP-StandardizedMetrics_FINAL.pdf",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": " for a researcher to define a list of publicly available GitHub platform usage metrics by country for international development, public policy, and economics disciplines."
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "_": "PageBlockParagraph",
-                            "text": {
-                                "_": "TextConcat",
-                                "texts": [
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "GitHub is the home for more than 65 million developers from all corners of the world, making it the world\u2019s largest code hosting platform. Metrics on platform usage can play a valuable role in research across many disciplines. Already, GitHub platform usage has been used to inform digital engagement, digital readiness, and tech maturity at regional (multi-country) and national levels. An example is the "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "Portulans Institute\u2019s Network Readiness Index 2020"
-                                        },
-                                        "url": "https://networkreadinessindex.org/wp-content/uploads/2020/10/NRI-2020-Final-Report-October2020.pdf",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "."
-                                    },
-                                    {
-                                        "_": "TextSuperscript",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "1"
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "_": "PageBlockParagraph",
-                            "text": {
-                                "_": "TextConcat",
-                                "texts": [
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "While GitHub publishes an annual snapshot of platform engagement through its "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "State of the Octoverse"
-                                        },
-                                        "url": "https://octoverse.github.com/",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": " reports, it doesn\u2019t currently maintain its own publicly available standardized list of platform usage metrics."
-                                    },
-                                    {
-                                        "_": "TextSuperscript",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "2"
-                                        }
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": " Third-party platforms, like GHTorrent, are used by researchers instead. While GHTorrent has been a valuable resource for the computer science industry, it\u2019s not designed for research in international development and public policy. Researchers have expressed the need for a smaller list of metrics that are updated regularly, grouped by country, and are in a more accessible format such as a .csv file."
-                                    },
-                                    {
-                                        "_": "TextSuperscript",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "3"
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "_": "PageBlockHeader",
-                            "text": {
-                                "_": "TextPlain",
-                                "text": "About the RFP"
-                            }
-                        },
-                        {
-                            "_": "PageBlockParagraph",
-                            "text": {
-                                "_": "TextConcat",
-                                "texts": [
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "The GitHub "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "Tech for Social Good"
-                                        },
-                                        "url": "https://socialimpact.github.com/tech-for-social-good/",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": " and "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "GitHub Policy"
-                                        },
-                                        "url": "https://github.com/about/developer-policy",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": " teams are issuing this RFP for background research and guidance on what a list of publicly available GitHub platform usage metrics by country should include and how frequently it should be updated. The metrics would be targeted to researchers in international development, public policy, and economics, but may be used in other disciplines. Example platform usage metrics may be the number and location of active entities, which include users, repositories, and organizations. Metrics may also include pull requests, repository forks, and engagement on "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "issues"
-                                        },
-                                        "url": "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": " and "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "Discussions"
-                                        },
-                                        "url": "https://docs.github.com/en/discussions",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": ". The scope of this RFP does not include data from private GitHub repositories or GitHub Enterprise accounts."
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "_": "PageBlockParagraph",
-                            "text": {
-                                "_": "TextConcat",
-                                "texts": [
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "We invite individual(s) or organizations to "
-                                    },
-                                    {
-                                        "_": "TextBold",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "apply by Monday, 4 October 2021"
-                                        }
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": ". If you have any clarifying questions, please send an email to the contacts listed in the "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "RFP"
-                                        },
-                                        "url": "https://socialimpact.github.com/assets/img/GitHub_RFP-StandardizedMetrics_FINAL.pdf",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "."
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "_": "PageBlockDivider"
-                        },
-                        {
-                            "_": "PageBlockParagraph",
-                            "text": {
-                                "_": "TextConcat",
-                                "texts": [
-                                    {
-                                        "_": "TextSuperscript",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "1"
-                                        }
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "GitHub has conducted desk research to find other examples. For more information, please reference the document "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "here"
-                                        },
-                                        "url": "https://docs.google.com/document/d/1Yg3fy4r6XVyWCS9XWAIkUQ4-RU8kGogyqZN1zbmRKzM/edit?usp=sharing",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": ".\n"
-                                    },
-                                    {
-                                        "_": "TextSuperscript",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "2"
-                                        }
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "GitHub releases global time-based data on platform usage through the GH Archive program: "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "https://www.gharchive.org/"
-                                        },
-                                        "url": "https://www.gharchive.org/",
-                                        "webpage_id": 0
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": ".\n"
-                                    },
-                                    {
-                                        "_": "TextSuperscript",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "3"
-                                        }
-                                    },
-                                    {
-                                        "_": "TextPlain",
-                                        "text": "GHTorrent geocodes user entries. See here for more information: "
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "https://ghtorrent.org/relational.html"
-                                        },
-                                        "url": "https://ghtorrent.org/relational.html",
-                                        "webpage_id": 0
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "_": "PageBlockParagraph",
-                            "text": {
-                                "_": "TextConcat",
-                                "texts": [
-                                    {
-                                        "_": "TextBold",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "Tags: "
-                                        }
-                                    },
-                                    {
-                                        "_": "TextEmpty"
-                                    },
-                                    {
-                                        "_": "TextUrl",
-                                        "text": {
-                                            "_": "TextPlain",
-                                            "text": "social impact"
-                                        },
-                                        "url": "https://github.blog/tag/social-impact/",
-                                        "webpage_id": 0
-                                    }
-                                ]
-                            }
-                        }
-                    ],
-                    "photos": [
-                        {
-                            "_": "Photo",
-                            "id": 5882974361151974213,
-                            "access_hash": 6091003491941656136,
-                            "file_reference": "b'\\x00a6\\x03HD\\xf6\\xcc\\xb0\\x96^\\x0b\\x8d\\xd2 V\\xafr\\xb3\\x88\\xd3'",
-                            "date": "2020-11-17 14:37:40+00:00",
-                            "sizes": [
-                                {
-                                    "_": "PhotoStrippedSize",
-                                    "type": "i",
-                                    "bytes": "b'\\x01\\x15(\\xd9\\xa2\\x8ak6\\x18\\x0e\\xd4\\x00\\xa4\\x9c\\xe0Rd\\xfa\\x8a\\x8c\\xb1\\xdc1\\x92{\\xd2s\\xbb;M\\x02$\\xdc}h\\xa6\\xe0\\xe3\\xa1\\x14P2Z0=(\\xa2\\x80\\x10(\\x074c\\x9c\\xd1E\\x00-\\x14Q@\\x1f'"
-                                },
-                                {
-                                    "_": "PhotoSize",
-                                    "type": "m",
-                                    "w": 320,
-                                    "h": 168,
-                                    "size": 9072
-                                },
-                                {
-                                    "_": "PhotoSize",
-                                    "type": "x",
-                                    "w": 800,
-                                    "h": 420,
-                                    "size": 37097
-                                },
-                                {
-                                    "_": "PhotoSize",
-                                    "type": "y",
-                                    "w": 1201,
-                                    "h": 630,
-                                    "size": 64402
-                                }
-                            ],
-                            "dc_id": 4,
-                            "has_stickers": false,
-                            "video_sizes": []
-                        }
-                    ],
-                    "documents": [],
-                    "part": false,
-                    "rtl": false,
-                    "v2": false,
-                    "views": null
-                },
-                "attributes": []
-            }
-        },
-        "reply_markup": null,
-        "entities": [
-            {
-                "_": "MessageEntityHashtag",
-                "offset": 0,
-                "length": 4
-            },
-            {
-                "_": "MessageEntityUrl",
-                "offset": 22,
-                "length": 90
-            }
-        ],
-        "views": 63,
-        "forwards": 1,
-        "replies": {
-            "_": "MessageReplies",
-            "replies": 0,
-            "replies_pts": 955,
-            "comments": true,
-            "recent_repliers": [],
-            "channel_id": 1159907975,
-            "max_id": null,
-            "read_max_id": null
-        },
-        "edit_date": "2021-09-01 15:43:36+00:00",
-        "post_author": "Markt Mai",
-        "grouped_id": null,
-        "restriction_reason": [],
-        "ttl_period": null,
-        "tags": [
-            "fun"
-        ]
     }
 ]
