@@ -11,6 +11,10 @@ from telethon.tl.types import (
 PeerChannel
 )
 
+from dotenv import load_dotenv
+
+load_dotenv("automation/.env")
+
 
 class Markdown:
     """
