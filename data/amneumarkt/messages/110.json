@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 110,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-10 07:51:52+00:00",
+    "message": "Naturally Occurring Equivariance in Neural Networks\nhttps://distill.pub/2020/circuits/equivariance",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6293705991850693537,
+            "url": "https://distill.pub/2020/circuits/equivariance/",
+            "display_url": "distill.pub/2020/circuits/equivariance",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Distill",
+            "title": "Naturally Occurring Equivariance in Neural Networks",
+            "description": "Neural networks naturally learn many transformed copies of the same feature, connected by symmetric weights.",
+            "photo": {
+                "_": "Photo",
+                "id": 5946324235414776733,
+                "access_hash": -1327468991904231229,
+                "file_reference": "b'\\x00aFH\\xf0\\xba\\x13\\xb4\"U\\xb6&\\xaa\\xea^\\xf2\\x8e\\x98\\xfe\\x9c\\xcc'",
+                "date": "2020-12-08 18:22:14+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1a(\\xb0\\xb0J\\x1fq\\r\\xde\\x90\\xc56\\xee\\x11\\xb1W\\x83\\x8d\\xe4a\\xb3\\xf4\\xe2\\x85\\x91I;N{\\xff\\x00O\\xe9@u\\xb9Gd\\xc66\\xccm\\x9a\\x9e\\xc5\\x1dC\\xf9\\x8aFq\\x8c\\xd4\\xeb\"\\xec-\\xc8\\x03\\xd7\\x8aTu+\\xc1\\xe0q\\xcd\\x00>\\x8a\\xad%\\xe2\\xa4\\x9b\\x08\\xe78\\xebE+\\xa1]\\x0eP\\xbe{b0\\x0f\\xf7\\xb29\\xa1\\x19\\t!W\\x1c\\x7fZ\\x97\\xbd\\x14\\xc7r\\x10c\\x119(\\x00\\xee:\\xd4\\xaa\\xc3\\x04\\xe0\\x8e})p0x\\xa5\\x14\\x05\\x8c\\xe9\\xf6\\x19\\xd8\\x907)\\xe3\\x9a)$\\x03\\xed2\\xf0:\\x8a+EM\\r$\\xfa\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 205,
+                        "size": 18555
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 461,
+                        "h": 296,
+                        "size": 29038
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Gabriel Goh",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 52,
+            "length": 46
+        }
+    ],
+    "views": 111,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

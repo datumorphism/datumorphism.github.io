@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 214,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-22 10:46:08+00:00",
+    "message": "https://pudding.cool/2021/03/wine-model/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7047216343036608074,
+            "url": "https://pudding.cool/2021/03/wine-model/",
+            "display_url": "pudding.cool/2021/03/wine-model",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The Pudding",
+            "title": "Wine & Math: A model pairing",
+            "description": "We built a model that attempts to predict a wine\u2019s quality",
+            "photo": {
+                "_": "Photo",
+                "id": 5952644872496327751,
+                "access_hash": 2305640923509802673,
+                "file_reference": "b'\\x00aFH\\xef\\x8c\\xf6$\\x8a\\x0eXG\\xb0\\x82j\\x98\\xefv(\\xb1\\xcd'",
+                "date": "2021-03-18 14:16:20+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd6\\xa8\\xcc\\xf1\\x8e\\xad\\xfaS\\xdc\\x16B\\x01\\xc5@-\\xb8\\xe5\\xb9\\xa9(\\x97\\xceC\\x9f\\x9b\\xa5\"\\xcd\\x1bc\\r\\xc9\\xedQ,\\x08\\x18\\xa6\\xe3\\xefN\\xfb*g94\\xc4OE64\\x11\\xae\\x01\\'\\xeah\\xa4\\x03\\xa8\\xa2\\x8a\\x06&\\x06s\\xde\\x96\\x8a(\\x10QE\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 10526
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 419,
+                        "size": 49351
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 628,
+                        "sizes": [
+                            6857,
+                            17550,
+                            38930,
+                            54108,
+                            83058
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 40
+        }
+    ],
+    "views": 147,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,348 @@
+{
+    "_": "Message",
+    "id": 219,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-04-01 16:30:36+00:00",
+    "message": "AI researchers allege that machine learning is alchemy | Science | AAAS\nhttps://www.sciencemag.org/news/2018/05/ai-researchers-allege-machine-learning-alchemy",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5350737517880086972,
+            "url": "https://www.sciencemag.org/news/2018/05/ai-researchers-allege-machine-learning-alchemy",
+            "display_url": "sciencemag.org/news/2018/05/ai-researchers-allege-machine-learning-alchemy",
+            "hash": -1716694385,
+            "type": "photo",
+            "site_name": "Science",
+            "title": "AI researchers allege that machine learning is alchemy",
+            "description": "Study cites ways to bolster scientific foundations of artificial intelligence",
+            "photo": {
+                "_": "Photo",
+                "id": 6006970659692980190,
+                "access_hash": 2883118539927676534,
+                "file_reference": "b'\\x00aFH\\xef\\xde\\xe6\\xbbJP\\xaejm\\x9a\\xf3\\xbe\\x1f\\xfb\\xcb\\t\\xf6'",
+                "date": "2018-05-03 15:23:26+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 51,
+                        "size": 1119
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 17745
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 100721
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 212042
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Matthew Hutson",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.sciencemag.org/news/2018/05/ai-researchers-allege-machine-learning-alchemy",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 5797677289905957700,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Gradient descent relies on trial and error to optimize an algorithm, aiming for minima in a 3D landscape."
+                                },
+                                "credit": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Alexander Amini, Daniela Rus. Massachusetts Institute of Technology, adapted by M. Atarod/"
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Science"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "AI researchers allege that machine learning is alchemy"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Matthew Hutson"
+                        },
+                        "published_date": "2018-05-03 15:15:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Ali Rahimi, a researcher in artificial intelligence (AI) at Google in San Francisco, California, took a swipe at his field last December\u2014and received a 40-second ovation for it. Speaking at an AI conference, Rahimi charged that machine learning algorithms, in which computers learn through trial and error, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "have become a form of \"alchemy.\""
+                                    },
+                                    "url": "http://www.argmin.net/2017/12/05/kitchen-sinks/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " Researchers, he said, do not know why some algorithms work and others don't, nor do they have rigorous criteria for choosing one AI architecture over another. Now, in a paper presented on 30 April at the International Conference on Learning Representations in Vancouver, Canada, Rahimi and his collaborators "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "document examples"
+                                    },
+                                    "url": "https://openreview.net/forum?id=rJWF0Fywf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " of what they see as the alchemy problem and offer prescriptions for bolstering AI's rigor."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\"There's an anguish in the field,\" Rahimi says. \"Many of us feel like we're operating on an alien technology.\""
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The issue is distinct from "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "AI's reproducibility problem"
+                                    },
+                                    "url": "http://science.sciencemag.org/content/359/6377/725",
+                                    "webpage_id": 5444295160425428986
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", in which researchers can't replicate each other's results because of inconsistent experimental and publication practices. It also differs from the \"black box\" or \"interpretability\" problem in machine learning: the difficulty of "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "explaining how a particular AI has come to its conclusions"
+                                    },
+                                    "url": "http://science.sciencemag.org/content/357/6346/22",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". As Rahimi puts it, \"I'm trying to draw a distinction between a machine learning system that's a black box and an entire field that's become a black box.\""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Without deep understanding of the basic tools needed to build and train new algorithms, he says, researchers creating AIs resort to hearsay, like medieval alchemists. \"People gravitate around cargo-cult practices,\" relying on \"folklore and magic spells,\" adds Fran\u00e7ois Chollet, a computer scientist at Google in Mountain View, California. For example, he says, they adopt pet methods to tune their AIs' \"learning rates\"\u2014how much an algorithm corrects itself after each mistake\u2014without understanding why one is better than others. In other cases, AI researchers training their algorithms are simply stumbling in the dark. For example, they implement what's called \"stochastic gradient descent\" in order to optimize an algorithm's parameters for the lowest possible failure rate. Yet despite thousands of academic papers on the subject, and countless ways of applying the method, the process still relies on trial and error."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Rahimi's paper highlights the wasted effort and suboptimal performance that can result. For example, it notes that when other researchers stripped most of the complexity from a state-of-the-art language translation algorithm, it actually translated from English to German or French better and more efficiently, showing that its creators didn't fully grasp what those extra parts were good for. Conversely, sometimes the bells and whistles tacked onto an algorithm are the only good parts, says Ferenc Husz\u00e1r, a machine learning researcher at Twitter in London. In some cases, he says, the core of an algorithm is technically flawed, implying that its good results are \"attributable entirely to other tricks applied on top.\""
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Rahimi offers several suggestions for learning which algorithms work best, and when. For starters, he says, researchers should conduct \"ablation studies\" like those done with the translation algorithm: deleting parts of an algorithm one at a time to see the function of each component. He calls for \"sliced analysis,\" in which an algorithm's performance is analyzed in detail to see how improvement in some areas might have a cost elsewhere. And he says researchers should test their algorithms with many different conditions and settings, and should report performances for all of them."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Ben Recht, a computer scientist at the University of California, Berkeley, and coauthor of Rahimi's alchemy keynote talk, says AI needs to borrow from physics, where researchers often shrink a problem down to a smaller \"toy problem.\" \"Physicists are amazing at devising simple experiments to root out explanations for phenomena,\" he says. Some AI researchers are already taking that approach, testing image recognition algorithms on small black-and-white handwritten characters before tackling large color photos, to better understand the algorithms' inner mechanics."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Csaba Szepesv\u00e1ri, a computer scientist at DeepMind in London, says the field also needs to reduce its emphasis on competitive testing. At present, a paper is more likely to be published if the reported algorithm beats some benchmark than if the paper sheds light on the software's inner workings, he says. That's how the fancy translation algorithm made it through peer review. \"The purpose of science is to generate knowledge,\" he says. \"You want to produce something that other people can take and build on.\""
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Not everyone agrees with Rahimi and Recht's critique. Yann LeCun, Facebook's chief AI scientist in New York City, worries that shifting too much effort away from bleeding-edge techniques toward core understanding could slow innovation and discourage AI's real-world adoption. \"It's not alchemy, it's engineering,\" he says. \"Engineering is messy.\""
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Recht sees a place for methodical and adventurous research alike. \"We need both,\" he says. \"We need to understand where failure points come so that we can build reliable systems, and we have to push the frontiers so that we can have even more impressive systems down the line.\""
+                        }
+                    },
+                    {
+                        "_": "PageBlockFooter",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "doi:10.1126/science.aau0577"
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5797677289905957700,
+                        "access_hash": 1820514890025539357,
+                        "file_reference": "b\"\\x00aFH\\xef\\xf3\\xb4^\\xe1\\xfc\\xb6G.31J\\x06\\xd2\\xb4d'\"",
+                        "date": "2020-07-15 08:07:42+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd9\\xa6I \\x8d\\x0b\\x1f\\xc8w\\xa2Y\\x04k\\x9e\\xfd\\x85Sy\\xcb\\x9ep1\\xda\\xa5\\xdf\\xa0\\xae\\x96\\xe3b\\xba\\x91fc\\'\\xddc\\xd3\\xd2\\xae\\xac\\xd1\\xbfF\\x19\\xf45Kp=\\x85 `O\\xdd\\xebY\\xa9T[\\xa2\\xdc\\xa0\\xcd**(\\x01\\x11\\x82s\\xcf\\xafj+U\\xb1#\\xdc+\\x0c0\\x06\\xab\\xcdl\\xb2G\\x84D\\x07\\xd7\\x14QT\\x84\\xca\\xafk\"\\xb7\\xca{g\\xadY\\xb4\\x89\\x94o|n\\xc7\\x00v\\xa2\\x8am\\xe8JJ\\xe5\\xb0r(\\xa2\\x8a\\x82\\xcf'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 17745
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 100721
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 720,
+                                "size": 212042
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 72,
+            "length": 86
+        }
+    ],
+    "views": 169,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

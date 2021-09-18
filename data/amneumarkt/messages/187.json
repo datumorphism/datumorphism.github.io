@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 187,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-12 06:57:27+00:00",
+    "message": "#ML\n\n\nMachine Learning, Kolmogorov Complexity, and Squishy Bunnies\nhttp://www.theorangeduck.com/page/machine-learning-kolmogorov-complexity-squishy-bunnies",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5977550396351396953,
+            "url": "https://theorangeduck.com/page/machine-learning-kolmogorov-complexity-squishy-bunnies",
+            "display_url": "theorangeduck.com/page/machine-learning-kolmogorov-complexity-squishy-bunnies",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Theorangeduck",
+            "title": "Machine Learning, Kolmogorov Complexity, and Squishy Bunnies",
+            "description": "Computer Science, Machine Learning, Programming, Art, Mathematics, Philosophy, and Short Fiction",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 67,
+            "length": 88
+        }
+    ],
+    "views": 123,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-12 06:57:46+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

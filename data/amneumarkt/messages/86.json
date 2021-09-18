@@ -1,0 +1,78 @@
+{
+    "_": "Message",
+    "id": 86,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-13 15:02:21+00:00",
+    "message": "Wow what is gonna happen to microsoft\n\nhttps://twitter.com/gvanrossum/status/1326932991566700549\n\n> Guido van Rossum\n> @gvanrossum\n> I decided that retirement was boring and have joined the Developer Division at Microsoft. To do what? Too many options to say! But it\u2019ll make using Python better for sure (and not just on Windows :-). There\u2019s lots of open source here. Watch this space.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8720606893242930424,
+            "url": "https://twitter.com/gvanrossum/status/1326932991566700549",
+            "display_url": "twitter.com/gvanrossum/status/1326932991566700549",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Twitter",
+            "title": "Guido van Rossum",
+            "description": "I decided that retirement was boring and have joined the Developer Division at Microsoft. To do what? Too many options to say! But it\u2019ll make using Python better for sure (and not just on Windows :-). There\u2019s lots of open source here. Watch this space.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "@gvanrossum",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 39,
+            "length": 57
+        },
+        {
+            "_": "MessageEntityMention",
+            "offset": 119,
+            "length": 11
+        }
+    ],
+    "views": 106,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-11-13 15:02:50+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

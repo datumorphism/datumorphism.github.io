@@ -1,0 +1,52 @@
+{
+    "_": "Message",
+    "id": 128,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-03 00:17:46+00:00",
+    "message": "#showerthoughts\nAs human beings, we read or hear about facts of something. These are our priors. Our belief is then updated based on observation of data, aka, likelihood. Some people abide by the priors, they are the prior-people, while others are more like likelihood-people and easily change their belief based on observations. \nThere is a third type. They combine priors and likelihood. Change belief based on likelihood is prone to biases in data. By combining priors and likelihood, they have a better chance of getting to the right conclusion.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 15
+        }
+    ],
+    "views": 178,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "showerthoughts"
+    ]
+}

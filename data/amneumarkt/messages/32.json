@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 32,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-24 14:55:54+00:00",
+    "message": "JupyterCon 2020 - Conference Schedule\nhttps://cfp.jupytercon.com/2020/schedule/tutorial-sessions/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "Add a comment",
+                        "url": "https://comments.app/view/3MqoIC1w",
+                        "button_id": 127362255,
+                        "fwd_text": "Show comments"
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 38,
+            "length": 59
+        }
+    ],
+    "views": 45,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-24 14:55:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

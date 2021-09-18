@@ -1,0 +1,387 @@
+{
+    "_": "Message",
+    "id": 33,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-30 07:30:00+00:00",
+    "message": "Disney will lay off 28,000 theme park workers as the pandemic continues to ravage its business (DIS)\nhttps://www.businessinsider.com/disney-layoffs-theme-parks-disneyland-disneyworld-2020-9",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6060062401255646724,
+            "url": "https://www.businessinsider.com/disney-layoffs-theme-parks-disneyland-disneyworld-2020-9",
+            "display_url": "businessinsider.com/disney-layoffs-theme-parks-disneyland-disneyworld-2020-9",
+            "hash": -1414335745,
+            "type": "photo",
+            "site_name": "Business Insider",
+            "title": "Disney will lay off 28,000 workers as the pandemic continues to ravage its theme park business",
+            "description": "Disney will lay off 28,000 theme park workers as Disneyland in California remains closed, and other parks open with limited capacity during the pandemic.",
+            "photo": {
+                "_": "Photo",
+                "id": 6027343313075546956,
+                "access_hash": -236718775330025778,
+                "file_reference": "b'\\x00aFH\\xf1\\xfc1\\x14}2a\\x13\\xe8i`\\xc5_]\\xc9\\x11W'",
+                "date": "2020-09-29 22:07:18+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xb3\\x13\\x10\\xa0\\x1c\\xe4\\x9e\\x05$\\x8c<\\xc0OQ\\xda\\x99)\\x97?!\\x1d8\\xaa`M\\xe6\\xe1\\x8e\\x08\\xe4\\x9fZ\\xdc\\xe7\\xbd\\xdd\\xcbB\\x15K\\x8d\\xc8>R8\\xa8\\xa4\\x8a\\xe0\\xc8\\xc5H\\xdb\\x92zt\\x150.77\\xde\\x03\\xa0\\xaa\\xfb\\xee\\x1a]\\xad\\x1e\\x10\\x93\\x9fo\\xc6\\xb2z3h\\xea\\x88\\xc4-\\x18I\\t\\x0c\\xc7\\x9c\\x0eh\\xa9\\xb7\\xe4m\\x08?\\x1a*t\\x1d\\x9b\\xd8\\x96\\xe2F\\x8cI\\xb7\\xf8p\\x05Vy\\x18\\xa2\\xbf\\x1b\\xb3E\\x15\\xbfC\\x9e\\xc5\\x8d=\\xd9\\xa4\\xc9=sU\\x08\\xc5\\xfc\\xc7\\xd38\\xa2\\x8a\\xc6[\\x9d1\\xd8\\xb7\\xe4\\xa1\\xdcy\\x19\\xf44QEIL'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 20168
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 88818
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "size": 135663
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "David Slotnick",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.businessinsider.com/disney-layoffs-theme-parks-disneyland-disneyworld-2020-9",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Disney will lay off 28,000 workers as the pandemic continues to ravage its theme park business"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "David Slotnick"
+                            },
+                            "url": "https://www.businessinsider.com/author/david-slotnick",
+                            "webpage_id": 0
+                        },
+                        "published_date": "2020-09-29 21:51:55+00:00"
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Disney"
+                                            },
+                                            "url": "https://www.businessinsider.com/category/disney",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " will lay off 28,000 workers from its parks, experiences, and products business, the company said on Tuesday."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "The layoffs come as "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Disney's California parks"
+                                            },
+                                            "url": "https://www.businessinsider.com/category/disneyland",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " remain closed. Other locations, including in Orlando, Florida, have reopened with limited capacity."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Disney's parks contributed more than one-third of the company's revenue in 2019."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Visit Business Insider's homepage for more stories"
+                                            },
+                                            "url": "https://www.businessinsider.com/?hprecirc-bullet",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Disney will lay off 28,000 workers across its US business, the company said on Tuesday."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The layoffs come as the company's Anaheim, California parks \u2014 California Adventure and Disneyland \u2014 remain shuttered. Disney's other resorts in Florida, Paris, Shanghai, Hong Kong, and Tokyo have reopened with limited capacity."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\"As heartbreaking as it is to take this action, this is the only feasible option we have in light of the prolonged impact of COVID-19 on our business,\" Disney's head of parks, Josh D'Amaro wrote in a letter to employees reported by the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Washington Post"
+                                    },
+                                    "url": "https://www.washingtonpost.com/business/2020/09/29/disney-lays-off-28000-coronavirus-slams-its-theme-park-business/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "About two-thirds of the laid off workers were part-time employees, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "CNBC reported"
+                                    },
+                                    "url": "https://www.cnbc.com/2020/09/29/disney-to-layoff-28000-employees-as-coronavirus-slams-theme-park-business.html",
+                                    "webpage_id": 7787100274171564631
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", and most had already been furloughed.\u00a0"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Disney's parks, experiences, and consumer products segment \u2014 which incorporates its sprawling theme park business \u2014 accounted for 37% of Disney's $69.6 billion in revenue in 2019, more than any other business unit."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Disney reported a $4.72 billion loss for the second quarter, its first quarterly loss in almost 20 years, according to the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Wall Street Journal"
+                                    },
+                                    "url": "https://www.wsj.com/articles/disney-loses-nearly-5-billion-as-pandemic-slams-theme-parks-11596573570",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "LoadingSomething is loading."
+                        }
+                    },
+                    {
+                        "_": "PageBlockRelatedArticles",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "articles": [
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://www.businessinsider.com/united-airlines-pilots-avoid-furlough-flight-attendants-workers-jobs-2020-9",
+                                "webpage_id": 6060062401370282739,
+                                "title": "United Airlines avoids furloughing 3,900 pilots, but 12,000 others will lose their jobs unless Congress extends the CARES Act",
+                                "description": "A new deal will have pilots accept reduced duty hours \u2014 and, in effect, monthly pay \u2014 in order to spread the remaining work around.",
+                                "photo_id": 6022550584839744382,
+                                "author": "David Slotnick",
+                                "published_date": "2020-09-28 18:49:22+00:00"
+                            }
+                        ]
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 6022550584839744382,
+                        "access_hash": 8083138674132124950,
+                        "file_reference": "b'\\x00aFH\\xf1\\x1a\\xd3[(rd%\\x07%\\x10\\x0eE:\\xcc\\x9c\\xe3'",
+                        "date": "2020-09-28 18:54:37+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x14(\\x9c]\\xb3ZFcQ\\x9c\\x95l\\x9e\\x9cUU\\xd4\\x08\\x95\\x1aB@\\x1fyW\\xa1\\xf4\\xa9<\\xb5\\x8e\\xc1\\xbc\\xbf\\x99\\x81\\xc9>\\xa6\\xb2\\xc0\\xcb\\xe3\\xbd\\x00m\\xdd\\\\\\xc7\\xf6F`wg\\x18\\xc5T\\xd3\\xe4\\x0e[\\x96\\x04\\x0c\\xf5\\xa6\\xdc\\xdb<v\\xc4\\xb1\\xe1y\\xc6x\\x15\\x15\\x83l\\x9f9\\xc1<\\ni\\x85\\x8d\\x95}\\xc5\\xb20qE2\\x17-\\x92@\\xc6\\t\\xa2\\x81\\x08\\x91\\xa2\\xdb\\xb0\\n\\x00\\xcek2\\xe9DR\\xb1A\\x82S?\\x8eh\\xa2\\x90\\xc9\\xe2c&\\x95.\\xeeq\\x9cU+o\\xf8\\xf9\\x8b\\xfd\\xe1E\\x14\\x01\\xbb\\xb7k\\x9c\\x13\\xd2\\x8a(\\xa6\\x80'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 160,
+                                "size": 15252
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 400,
+                                "size": 56606
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 600,
+                                "size": 77785
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "Add a comment",
+                        "url": "https://comments.app/view/IWwEINVN",
+                        "button_id": 642200225,
+                        "fwd_text": "Show comments"
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 101,
+            "length": 88
+        }
+    ],
+    "views": 34,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-30 07:30:01+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

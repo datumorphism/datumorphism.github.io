@@ -1,0 +1,873 @@
+{
+    "_": "Message",
+    "id": 93,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-20 07:43:36+00:00",
+    "message": "Legendary Arecibo telescope will close forever \u2014 scientists are reeling\nhttps://www.nature.com/articles/d41586-020-03270-9",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126153013404,
+            "url": "https://www.nature.com/articles/d41586-020-03270-9",
+            "display_url": "nature.com/articles/d41586-020-03270-9",
+            "hash": 941370652,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "Legendary Arecibo telescope will close forever \u2014 scientists are reeling",
+            "description": "New satellite image reveals the damage that shut down the facility, ending an era in astronomical observation.",
+            "photo": {
+                "_": "Photo",
+                "id": 5889967946594364289,
+                "access_hash": -2224155065259367862,
+                "file_reference": "b'\\x00aFH\\xf0b\\xec\\x03\\x18\\x94\\x0f\\x17?{\\xc5\\x1emx\\x06\\xc9j'",
+                "date": "2020-11-19 16:36:29+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xb3\\xfd\\xa1\\x1e8S\\x9ao\\xf6\\x92\\x7fr\\xb3\\t\\xdb\\xc09\\xe3\\xb7Jr[\\xc9 \\xca\\x80\\x07\\xbd;\\x8a\\xc6\\x9f\\xdb\\xd7\\x19\\xf2\\xd8\\x0fZ\\x0e\\xa1\\x18\\xe4\\x86\\x19\\xaaB\\xd6\\xe3f\\x0b\\xa8\\x1e\\xe6\\xa1\\x91Hb\\x8cz\\x7f\\x85\\x17\\x19\\xa4u\\x18\\xbf\\xda\\xfc\\xa8\\xac\\xacg\\xabb\\x8aW@1\\x98\\x11\\xc1\\xc0\\xf4\\xc5M\\x14\\xaf\\x19\\xc6N\\x0f\\xf0\\xe6\\x8a)\\x00\\x93\\\\\\xb4\\xcd\\x8c\\x90;\\n\"rd\\xe3\\x93\\x8a(\\xa0\\x05\\x94\\r\\xe0\\xb0?0\\x19\\x1d\\xe8\\xa2\\x8aW\\x19'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 22652
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 117256
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 576,
+                        "size": 191490
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Alexandra Witze",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.nature.com/articles/d41586-020-03270-9",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Legendary Arecibo telescope will close forever \u2014 scientists are reeling"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "New satellite image reveals the damage that shut down the facility, ending an era in astronomical observation."
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Alexandra Witze"
+                        },
+                        "published_date": "2020-11-19 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5890030648821918644,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Damage to the Arecibo telescope from a 6 November cable break is too extensive to repair, the US National Science Foundation says. Credit: University of Central Florida/Arecibo Observatory"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "One of astronomy\u2019s most renowned telescopes \u2014 the 305-metre-wide radio telescope at Arecibo, Puerto Rico \u2014 is closing permanently. Engineers cannot find a safe way to repair it after two cables supporting the structure broke suddenly and catastrophically, one in August and one in early November."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It is the end of one of the most iconic and scientifically productive telescopes in the history of astronomy \u2014 and scientists are mourning its loss."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cI don\u2019t know what to say,\u201d says Robert Kerr, a former director of the observatory. \u201cIt\u2019s just unbelievable.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cI am totally devastated,\u201d says Abel M\u00e9ndez, an astrobiologist at the University of Puerto Rico at Arecibo who uses the observatory."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The Arecibo telescope, which was built in 1963, was the world\u2019s largest radio telescope for decades and has historical and modern importance in astronomy. It was the site from which astronomers sent an interstellar radio message in 1974, in the hope that any extraterrestrials might hear it, and where the first confirmed extrasolar planet was discovered, in 1992."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It has also done pioneering work in exploring many phenomena, including near-Earth asteroids and the puzzling celestial blasts known as fast radio bursts. All those lines of investigation have now been shut down for good, although limited science will continue at some smaller facilities on the Arecibo site."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Assessing the damage"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The cables that broke helped to support a 900-tonne platform of scientific instruments, which hangs above the main telescope dish. The first cable slipped out of its socket and smashed panels at the edge of the dish, but the second broke in half and tore huge gashes in a central portion of the dish."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "A high-resolution satellite image, produced at "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u2019s request by Planet, an Earth-observation company based in San Francisco, California, shows the extent of the damage wrought by the second cable: the green of the vegetation below shows through large holes in the dish. A second photograph, released this week by observatory officials, also reveals the destruction. These are some of the only public glimpses of the damage so far."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5889989425725811564,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "A high-resolution satellite image of the Arecibo dish shows gashes in the main dish through which green vegetation below is visible.\nCredit: Planet Labs, Inc."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "If any more cables fail \u2014 which could happen at any time \u2014 the entire platform could crash into the dish below. The US National Science Foundation (NSF), which owns the Arecibo Observatory, is working on plans to lower the platform in a safe, controlled fashion."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But those plans will take weeks to develop, and there\u2019s no telling whether the platform might crash down uncontrollably in the meantime. \u201cEven attempts at stabilization or at testing the cables could result in accelerating the catastrophic failure,\u201d said Ralph Gaume, director of the NSF\u2019s astronomy division, at a 19 November media briefing."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "So the NSF decided to close the Arecibo dish permanently. \u201cThis decision is not an easy one to make, but safety is the number-one priority,\u201d said Sean Jones, head of the NSF\u2019s mathematical and physical sciences directorate."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The closure comes as a shock to the wider astronomical community. A social-media campaign with the hashtag #WhatAreciboMeansToMe sprung up almost immediately, with astronomers, engineers and other scientists \u2014 many from Puerto Rico \u2014 sharing stories of how the observatory had shaped their careers. \u201cLosing the Arecibo Observatory would be a big loss for science, for planetary defence and for Puerto Rico,\u201d said Desire\u00e9 Cotto-Figueroa, an astronomer at the University of Puerto Rico Humacao, in an e-mail before the closure was announced."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "NSF officials insist that the cable failures came as a surprise. After the first, engineering teams spotted a handful of broken wires on the second cable, which was more crucial to holding up the platform, but they did not see it as a major problem because the weight it was carrying was well within its design capacity. \u201cIt was not seen as an immediate threat,\u201d says Ashley Zauderer, programme director for Arecibo at the NSF."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5890004638499974056,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "The main cable that failed experienced wire breaks (shown) before its sudden and unexpected collapse.\nCredit: University of Central Florida/Arecibo Observatory"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But that main cable, which was installed in the early 1960s, had apparently degraded over time. Over the years, external review committees have highlighted the ongoing need to maintain the ageing cables. Zauderer said that maintenance in recent years had been completed according to schedule."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Before this year, the last major cable problems at the observatory were in January 2014, when a magnitude-6.4 earthquake caused damage to another of the main cables, which engineers repaired. The ageing structure has suffered other shocks in recent years, including damage to an antenna and the dish caused by Hurricane Maria in 2017."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "There is no estimate yet for the cost of decommissioning the telescope."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "A legendary site"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The science that has ground to a halt includes Arecibo\u2019s world-leading asteroid studies. The telescope pinged radio waves at near-Earth asteroids to reveal the shape and spin of these threatening space rocks. Not having it \u201cwill be a big loss\u201d, says Alan Harris, an asteroid scientist in La Canada, California. (China\u2019s 500-meter Aperture Spherical Telescope (FAST), which opened in 2016, does not currently have the ability to do such radar studies.)"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Some of the observatory\u2019s scientific projects could be transferred to other facilities, Gaume said \u2014 and he expects scientists to propose where to move their research. Much of the work conducted at Arecibo, however, could be done only with its unique array of astronomical instrumentation. \u201cThe Arecibo Telescope is irreplaceable,\u201d said a statement from two major US radio-astronomy organizations, the National Radio Astronomy Observatory in Charlottesville, Virginia, and the Green Bank Observatory in West Virginia."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Small amounts of science will continue at other portions of the Arecibo observatory, which encompasses more than the 305-metre dish. For instance, two lidar facilities shoot lasers into the atmosphere to study atmospheric phenomena."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The Arecibo telescope had been upgraded regularly, with several new instruments slated for installation in the coming years. \u201cThe telescope is in no way obsolete,\u201d says Christopher Salter, an astronomer at the Green Bank Observatory, who worked at Arecibo for years."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Planned upgrades are now presumably on hold, including a US$5.8-million antenna that was being developed for the telescope\u2019s platform and would have massively increased its sensitivity. Brian Jeffs, an engineer at Brigham Young University in Provo, Utah, who heads the project, says his team expects to discuss options for its future with the NSF eventually. \u201cOur greatest concerns are for the wonderful scientific, technical, management and support staff\u201d of the observatory, he says."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The observatory is a major centre for science education in Puerto Rico, where it has fostered the careers of many astronomers and engineers. And it has become a part of the pop-culture lexicon, featuring in major movies such as "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Contact"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (1997), which was based on a novel by astronomer Carl Sagan, and the 1995 James Bond film "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "GoldenEye"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The most recent major radio-telescope disaster happened in 1988, when a 300-foot-wide antenna at the Green Bank Observatory collapsed one night, owing to structural failure."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Nature "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "587"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 529-530 (2020)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "doi: "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1038/d41586-020-03270-9"
+                                    },
+                                    "url": "https://doi.org/10.1038/d41586-020-03270-9",
+                                    "webpage_id": 753763746081583812
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Updates & Corrections"
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Update 19 November 2020"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": This story was updated to include more reactions from the scientific community and to add details about ongoing research and upgrades at the observatory."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Correction 20 November 2020"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": This story was updated to correct the spelling of astronomer Abel M\u00e9ndez\u2019s name, the full name of the National Radio Astronomy Observatory, and Christopher Salter\u2019s affiliation."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockRelatedArticles",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "articles": [
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-03451-6",
+                                "webpage_id": 7937820127106166826,
+                                "title": "Asteroid dust recovered from Japan\u2019s daring Hayabusa2 mission",
+                                "description": "Scientists hope the dark grains from asteroid Ryugu will improve their understanding of the Solar System\u2019s formation.",
+                                "photo_id": 5964030852272860090,
+                                "author": "Smriti Mallapaty",
+                                "published_date": "2020-12-15 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-03514-8",
+                                "webpage_id": 7937820126490611378,
+                                "title": "Viruses, microscopy and fast radio bursts: 10 remarkable discoveries from 2020",
+                                "description": "Highlights from News & Views published this year.",
+                                "photo_id": 5962143703772539864,
+                                "author": null,
+                                "published_date": "2020-12-14 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-03421-y",
+                                "webpage_id": 7937820126365562649,
+                                "title": "Gut-wrenching footage documents Arecibo telescope\u2019s collapse",
+                                "description": "Instrument platform crashed into the telescope\u2019s dish, irrevocably ending the facility\u2019s role in astronomy.",
+                                "photo_id": 5928070748960828292,
+                                "author": "Alexandra Witze",
+                                "published_date": "2020-12-02 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-03288-z",
+                                "webpage_id": 7937820126640266240,
+                                "title": "Explain ESA\u2019s last-minute ditching of new space telescope",
+                                "description": "Discover the world\u2019s best science and medicine | Nature.com",
+                                "photo_id": null,
+                                "author": "David L. Clements, Stephen Serjeant & Shoko Jin",
+                                "published_date": "2020-11-24 00:00:00+00:00"
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Jobs from Nature Careers"
+                            },
+                            "url": "https://www.nature.com/naturecareers/",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "All jobs"
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Postdoctoral Fellow The University of Texas MD Anderson Cancer Center Houston, United States JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/postdoctoral-fellow-the-university-of-texas-md-anderson-cancer-center-733722",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " Superconducting Quantum Materials and Systems (SQMS) Positions Fermi National Accelerator Laboratory (Fermilab) Batavia, IL, United States JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/superconducting-quantum-materials-and-systems-sqms-positions-fermi-national-accelerator-laboratory-fermilab-733721",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " Assistant or Associate Professor Brigham and Women's Hospital (BWH) Boston, MA, United States JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/assistant-or-associate-professor-brigham-and-womens-hospital-bwh-733719",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " Tenure-track faculty position in Biosensing The Pennsylvania State University (Penn State) University Park, PA, United States JOB POST"
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/tenuretrack-faculty-position-in-biosensing-the-pennsylvania-state-university-penn-state-733718",
+                                            "webpage_id": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5964030852272860090,
+                        "access_hash": -4889901822152856220,
+                        "file_reference": "b'\\x00aFH\\xf0\\xaa\\xbed+]\\xec\\xc2\\x10C\\x1b\\xdc7\\xf9U\\xbc\\x9b'",
+                        "date": "2020-12-15 01:45:50+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xa6Qbf\\xdb\\xfe\\xb23\\x9cz\\x8f\\xff\\x00U[k\\x98\\xfc\\xb0\\xc0\\xf5\\xe9M\\x96\\x1f5\\xc1Pr:\\x9foJU\\xb7\\x06\"Xq\\xec?\\x95J\\xd4\\xa7\\xa1\\x1c\\n\\x92\\xdd+N\\xeaW\\xfc\\xf1Z\\x13<M\\xba3\\x18*@\\x19\\x15\\x9c\\xb1*\\xca\\xc4\\x1f\\x95y\\xfa\\xd5\\x89#i\\xa1\\x0c\\xb8g\\x1f\\x9dh\\x95\\xc8lrZ\\xc0d\\x1bK\\x01\\xf5\\xc6(\\xaa\\xb1\\xc9.p\\x0b{\\x8a*\\xb9X\\xae\\x87D\\xb8R\\xee\\xcd\\xb8\\x8c\\xf1\\xda\\x9d\\x06\\xa2\\xaa\\xa1%S\\xb4t#\\xa8\\xa2\\x8a\\x84\\xbd\\xd2\\xdb\\xd4\\x8e\\xf2e\\x91\\xc2E\\x90\\xbe\\xfd\\xcd\\\\\\xb5\\x03\\xe5\\xe3\\x95\\x1f\\x9d\\x14U\\xad\"C\\xdc\\x8a1\\xb6\\xe9\\xe3\\xc0\\xdaz\\xd1E\\x15\\x1c\\xccm#'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 24343
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 105011
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 162227
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5962143703772539864,
+                        "access_hash": 948105006276092732,
+                        "file_reference": "b'\\x00aFH\\xf0\\x86\\xb1K%\\x08Y>@o$\\xbc\\x0e2\\xc8Xk'",
+                        "date": "2020-12-14 14:33:52+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\x80\\xb4m\\x1f#,z\\xd4b$\\x079\\xfc* qO\\rR2\\xc0\\x93\\x8a\\x8d\\xdb9\\x078\\xeb\\xc1\\xc534\\xd6\\xc0\\x07?\\xfe\\xba@4\\xf2\\xa6B\\xdf6x\\x14Re\\xe6\\x90\\x81\\xc9j)\\x80\\xa1\\x869'\\xf2\\xa5\\xca\\xfb\\xfeTQT!\\xe9$i\\xcb)oAM\\xdd\\xbd\\xb2\\xa0\\x0f\\xc2\\x8a*l>\\x84fL7\\xcc\\x0fJ(\\xa2\\x9d\\x84\\x7f\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 28984
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 152067
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 237115
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5948546352709479334,
+                        "access_hash": -4329297483671086978,
+                        "file_reference": "b'\\x00aFH\\xf0\\xcb\\xe5T\\xc5\\x04.\\x8e\\xe1\\x8d\\x9e\\x9bZ\\xe3\\x10\\xa1X'",
+                        "date": "2020-12-09 16:50:44+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x14(\\x92\\xf7T\\xf2\\xdd\\xa2\\x83\\x19\\x1c\\x16?\\xd2\\xa8\\xbd\\xc4\\xf2\\xf2\\xf2\\xb1\\xcfl\\xf1Q\\xdc[5\\xbc\\xec\\x92g\\xaf\\x07\\xd4R\\x86\\x04*\\xf4\\xc7\\xa5&R-y8\\xf9\\x14\\x02\\xe3\\xadG\\xe7\\\\[\\xb9\\xd9#.;g\"\\xa6\\x8aH\\x84`\\x1d\\xdb\\xbb\\x9c\\xd5Fo\\x9c\\x9cdg\\xbfz\\xce7\\x1d\\xdfTiYjFF\\x11\\xcd\\x8c\\x9e\\x03\\x8f\\xebEf\\xdb\\xdb\\xc9<\\xe1S\\xa1\\xea}\\x05\\x15\\xaa%\\x9d\\x0c\\xb0\\xc7:\\xec\\x95\\x03\\x0fz\\xcf\\xba\\xd3\\xa0\\x8e3\"n_l\\xf1E\\x14\\x023\\xbb\\xe2\\xb4l\\xec!\\x960\\xef\\xb8\\xfbg\\x8a(\\xa9E\\xc8\\xd1\\x8e$\\x89v\\xc6\\xa1G\\xb5\\x14QTf\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 160,
+                                "size": 16331
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 685,
+                                "h": 342,
+                                "size": 70435
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5928070748960828292,
+                        "access_hash": -6779630701603318907,
+                        "file_reference": "b'\\x00aFH\\xf0\\xddX\\xc1\\xd2\\x04v\\xf4\\xec`\\x96\\xb3U\\xd1Vf\\x0c'",
+                        "date": "2020-12-02 22:56:00+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\xa6\\x0cN\\x83\\x93\\xbb\\xe9Q\\xb0*\\xf8\\xc7J\\x99\\x10H\\xea\\xa4\\xe0g\\xad]\\xdb\\x1a\\xae1\\xf9\\xd4\\xa6\\x162\\x8eW\\xa9\\xc8\\xf7\\xa4\\xdc\\xa0U\\xe9BtQ\\xbb>\\xd5JH\\n\\r\\xdf\\xa5P\\x01_z)\\x98\\xe79\\xcf\\xa6(\\xa2\\xe0O\\x1b\\xab\\xfa\\x8a\\xb0'#\\x87!\\x88\\xecE\\x14Tl\\xc6C%\\xc1r6\\xa8S\\x8a\\x83-\\x9c19\\xa2\\x8a\\xa1\\x0fO\\x9b\\x14QEK\\x19\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 26239
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 143583
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 232384
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5890030648821918644,
+                        "access_hash": -4227670363125788391,
+                        "file_reference": "b\"\\x00aFH\\xf0\\x03!\\xb6\\x83Ti \\x89\\xd8\\x0e\\x9c'~t\\x85\\xe1\"",
+                        "date": "2020-11-19 17:17:49+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\xb1\\xfd\\xa2\\x9f\\xdc4\\xdf\\xed$\\xfe\\xe5f\\x93\\xb7\\x80A\\xe3\\xb7Jz[\\xc9 \\xca\\x80\\x07\\xbd;\\x8a\\xc6\\x97\\xdb\\xd7\\x19\\xf2\\xd8\\x0fZC\\xa8F9!\\x86j\\x98\\xb5\\xb8\\xdb\\x82\\xea\\x07\\xb9\\xa8]H%I\\xe9E\\xc6i\\x1dF/F\\xfc\\xa8\\xac\\xacg\\xabb\\x8aW@1\\x9b=8\\xf4\\xa9b\\x99\\xe28'\\xe5=\\xb3E\\x14\\x80&\\xb9i\\x98\\x8c\\x9cv\\x14D\\xccd\\xe3\\x92E\\x14P\\x02\\xca\\x06\\xf0X\\x1f\\x98\\x02Gz(\\xa2\\x95\\xc6\\x7f\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 21199
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 700,
+                                "h": 393,
+                                "size": 96934
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5889989425725811564,
+                        "access_hash": -4309343176596498227,
+                        "file_reference": "b'\\x00aFH\\xf0\\xf8\\x9f\\xab\\x80\\x84\\xce\\x86\\x16\\x9f\\xc9/\\xa25\\x9c_\\xf9'",
+                        "date": "2020-11-19 16:36:29+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xa3\\x93\\x9cv\\xa7\\x06\\xf9\\xb0\\r7#\\xa5>\\x12\\xa1\\xc3\\xb0\\xe0\\x1aD\\x966:G\\xe6\\x04#\\x04\\x11\\x91\\xc1\\xaaS\\xe4\\xcb\\x96\\xeaz\\xd6\\x8b\\xde\\x82\\xb8\\xc0\\xc1\\xcdQ\\x95IA\\xf2\\x90z\\x9a6\\x18\\xc0x\\xc0\\xa2\\x81\\xf2\\x1ep}\\xa8\\xa6\\x03\\x94\\x8e\\xa3\\x8f\\xc2\\x9cf\\x18\\ny\\xc7lQE !$3\\x12\\xa3\\x15~\\xcdw\\xa3\\t\\x07\\x07\\xa5\\x14S\\x00\\x90B\\x9f\\xbb#\\xdf=\\xe8\\xa2\\x8aC?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 21200
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 116517
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5890004638499974056,
+                        "access_hash": -219935308439592828,
+                        "file_reference": "b'\\x00aFH\\xf04\\xff8Z\\xc9l}\\xed%{\\x89\\xd7\\xf6u\\xf2_'",
+                        "date": "2020-11-19 16:36:29+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x1b(\\x95%\\x8c\\x10\\x11%\\xfc\\xb8\\xa2I\\x83\\x83\\x84u\\x18\\xee1T\\xe3\\x12\\x1d\\xbb\\x8epjF\\xc0\\x00\\xc8\\xc0`Qp-\\x0b\\xa8\\xa3Q\\x98\\xdb\\x03\\xbe)\\x7f\\xb4a\\xff\\x00k\\xf2\\xaa\\x12\\\\l\\xdd\\xe5\\x8c7\\xa9\\xaa\\xa1\\x8e\\xec\\xd1p6\\x86\\xa1\\x0f\\xa9\\xfc\\xa8\\xac\\x82r2(\\xa2\\xe2$y\\xa4<\\x06\\x01}\\xaa'\\x05\\x86?Z\\xb5 \\x03\\xa7\\x14\\xd3\\xd2\\x81\\x90\\xb8o1\\x8f\\x1dr*6\\x05O\\xb5O!\\xf9\\xb3Ma\\xfdh\\x02\\x10\\xd4S\\x98\\r\\xb9\\xefE ?\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 213,
+                                "size": 25381
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 533,
+                                "size": 153824
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 72,
+            "length": 50
+        }
+    ],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

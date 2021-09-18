@@ -1,0 +1,93 @@
+{
+    "_": "Message",
+    "id": 127,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-29 17:24:03+00:00",
+    "message": "#datascience\n\nI ran into this hilarious comment on pie chart in a book called The Grammar of Graphics.\n\n\u201cTo prevent bias, give\nthe child the knife and someone else the first choice of slices.\u201d \ud83d\ude31\ud83d\ude31\ud83d\ude31",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5429349579024871739,
+            "access_hash": -4100241887356351691,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x7faFH\\xf0\\tPT\\x90}\\x8ai\\xfc\\xba\\xdd(8\\xd5\\x84\\x1c\\xee'",
+            "date": "2020-12-29 17:24:03+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\n(\\xd1\\xc8\\xf5?\\x95.x\\xea\\x7f*nN:\\xd3\\xd7\\xef\\x8aZ\\x80\\xdc\\xfb\\x9f\\xca\\x97>\\x99\\xfc\\xaa|QF\\xa0@\\x0f?\\xfdj*z(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 80,
+                    "size": 15278
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 199,
+                    "size": 64195
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 319,
+                    "size": 90948
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 12
+        }
+    ],
+    "views": 236,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "datascience"
+    ]
+}

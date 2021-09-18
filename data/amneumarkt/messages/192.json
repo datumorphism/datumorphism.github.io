@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 192,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-22 16:39:54+00:00",
+    "message": "#neuroscience\n\nDefinitely weird. The authors used DNN to capture the firing behaviors of cortical neurons. \n- A single hidden layer DNN (can you even call it Deep NN in this case?) can capture the neuronal activity without NMDA but with AMPA.\n- With NMDA, the neuron requires more than 1 layer.\nThis paper *stops* here.\n\nWTH this is? \nLet's go back to the foundations of statistical learning. What the author is looking for is a separation of \"stimulation\" space. The \"stimulation\" space is basically a very simple time series (Poissonic) space. We just need to map inputs back to the same space but with different feature values. Since the feature space is so small, we will absolutely fit everything if we increase the expressing power of the DNN.\nThe thing is, we already know that NMDA-based synapses require more expressing power and we have very interpretable and good mathematical models for this... This research provides neither better predictability nor interpretability. Well done...\n\nMaybe you have different opinions, prove me wrong.\n\nhttps://www.biorxiv.org/content/10.1101/613141v2",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 531746896401645887,
+            "url": "https://www.biorxiv.org/content/10.1101/613141v2",
+            "display_url": "biorxiv.org/content/10.1101/613141v2",
+            "hash": 0,
+            "type": "article",
+            "site_name": "bioRxiv",
+            "title": "Single Cortical Neurons as Deep Artificial Neural Networks",
+            "description": "We introduce a novel approach to study neurons as sophisticated I/O information processing units by utilizing recent advances in the field of machine learning. We trained deep neural networks (DNNs) to mimic the I/O behavior of a detailed nonlinear model of a layer 5 cortical pyramidal cell, receiving rich spatio-temporal patterns of input synapse activations. A Temporally Convolutional DNN (TCN) with seven layers was required to accurately, and very efficiently, capture the I/O of this neuron at the millisecond resolution. This complexity primarily arises from local NMDA-based nonlinear dendritic conductances. The weight matrices of the DNN provide new insights into the I/O function of cortical pyramidal neurons, and the approach presented can provide a systematic characterization of the functional complexity of different neuron types. Our results demonstrate that cortical neurons can be conceptualized as multi-layered \u201cdeep\u201d processing units, implying that the cortical networks they form have a non-classical\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5878803995152197861,
+                "access_hash": 3798302923772216800,
+                "file_reference": "b'\\x00aFH\\xef\\xd6]5P\\xd8\\r\\x03\\xce\\x95b]\\xd7D\\xd8\\xdc\\x9f'",
+                "date": "2019-04-13 20:35:42+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xa2\\x9a\\x1dK\\xb2\\x83\\xf3.3B\\xb0q\\x91\\xd3\\xa7J\\x00u\\x15\\x1f\\x9a\\x9ef\\xcc\\x9d\\xd9\\xc7C\\xe9\\x9as0Q\\x93\\xea\\x05\\x00:\\x8a(\\xa0\\n\\x8fn\\xcdr_\\x0b\\x82T\\x86\\xcf+\\x8e\\xbf\\x9d1\\xac\\xdd\\x87;\\x1b\\x86\\x00\\x12~RI9\\x1e\\xf5q\\x907\\'?\\x81\"\\x93\\xca_\\xf6\\xbf\\xef\\xa3@\\x10\\x88\\x18I\\xbc\\x9c\\xf3\\x9c\\x1e\\xfcc\\xf3\\xa6$LT\\xa1\\x04\\x15u+\\x9e\\x9br\\x0e*\\xcf\\x96\\xa7?{\\x9f\\xf6\\x8d.\\xc5\\xcf~\\x7f\\xda4\\r\\xbb\\x91G\\x06\\xc9K\\x1cl\\\\\\xf9`v\\xcfZ*P\\x80r3\\xf9\\x9a(\\x10\\xea(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 252,
+                        "h": 252,
+                        "size": 10788
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 13
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1048,
+            "length": 48
+        }
+    ],
+    "views": 106,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-22 16:45:47+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "neuroscience"
+    ]
+}

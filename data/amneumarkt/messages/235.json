@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 235,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-06-13 10:28:54+00:00",
+    "message": "#ML\n\nThe Bayesian hierarchical model provides a process to use Bayesian inference hierarchically to update the posteriors. \nWhat is a Bayesian model? In a Bayesian linear regression problem, we can take the posterior from the previous data points and use it as our new prior for inferring based on new data. In other words, as more data coming in, our belief is being updated.\nHowever, this is a problem if some clusters in the dataset have small sample sizes, aka small support. As we take these samples and fit them onto the model, we may get a huge credible interval. \nOne simple idea to mitigate this problem is to introduce some constraints on how the priors can change. For example, we can introduce a hyperprior that is parametrized by new parameters. Then the model becomes hierarchical since we will also have to model the new parameters.\n\nThe referenced post, \"Bayesian Hierarchical Modeling at Scale\", provides some examples of coding such models using numpyro with performance in mind. \n\nhttps://florianwilhelm.info/2020/10/bayesian_hierarchical_modelling_at_scale/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2707924546898290065,
+            "url": "https://florianwilhelm.info/2020/10/bayesian_hierarchical_modelling_at_scale/",
+            "display_url": "florianwilhelm.info/2020/10/bayesian_hierarchical_modelling_at_scale",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Florian Wilhelm",
+            "title": "Finally! Bayesian Hierarchical Modelling at\u00a0Scale",
+            "description": "For a long time, Bayesian Hierarchical Modelling has been a very powerful tool that sadly could not be applied often due to its high computations costs. With NumPyro and the latest advances in high-performance computations in Python, Bayesian Hierarchical Modelling is now ready for prime\u00a0time.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Florian Wilhelm",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1000,
+            "length": 77
+        }
+    ],
+    "views": 145,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-06-13 10:29:17+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

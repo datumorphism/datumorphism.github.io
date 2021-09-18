@@ -1,0 +1,96 @@
+{
+    "_": "Message",
+    "id": 54,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-12 17:18:15+00:00",
+    "message": "Phys. Rev. Lett. 125, 161802 (2020) - Neutrino Self-Interactions and XENON1T Electron Recoil Excess\nhttps://link.aps.org/doi/10.1103/PhysRevLett.125.161802",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4756567512306628817,
+            "url": "http://link.aps.org/doi/10.1103/PhysRevLett.125.161802",
+            "display_url": "journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.161802",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Physical Review Letters",
+            "title": "Neutrino Self-Interactions and XENON1T Electron Recoil Excess",
+            "description": "A tantalizing signal reported by the XENON1T dark matter experiment has sparked theorists to investigate explanations involving new physics.",
+            "photo": {
+                "_": "Photo",
+                "id": 5777104813169945458,
+                "access_hash": -8193461970761390839,
+                "file_reference": "b'\\x00aFH\\xf1\\x9cTM\\xd2\\xae\\xbec\\xec?\\xcb\\xa9\\x83\\x8aQ\\xd5\\x90'",
+                "date": "2020-10-12 15:05:27+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01((\\xd9\\xa2\\xb9\\xc1\\xa9\\xdf`\\x1f4\\xe0\\xff\\x00\\xb0?\\xc2\\x97\\xfbN\\xf3\\xfe{\\x7f\\xe3\\xa3\\xfc)\\xa8\\xb6\\x07EEs\\xdf\\xdaW\\x9b\\x01\\xf3\\xb9\\xcf\\xf7\\x07\\xf8R\\x1dN\\xf3\\xfe{\\x7f\\xe3\\xa3\\xfc)\\xf2\\xb0:*+\\x9b:\\xa5\\xef\\xfc\\xf6\\xff\\x00\\xc7\\x07\\xf8QS`*\\xab\\x1c\\x01\\xd4\\x0e\\xd4\\xf4\\x00\\x90\\rN4\\xbb\\xdf\\xf9\\xe3\\xff\\x00\\x8f\\x8f\\xf1\\xa7\\xae\\x9bx\\x0eD_\\xf8\\xf0\\xff\\x00\\x1a\\xd14&7\\xcb\\xca\\xf6\\xaa\\xec\\xb8'\\x18\\xfc\\xea\\xf7\\xd8o1\\x8f'\\xff\\x00\\x1e\\x1f\\xe3Q\\x1d6\\xf0\\xff\\x00\\xcb\\x1f\\xfcx\\x7f\\x8d;\\xa1$\\xcal\\x8d\\x8c\\xe0\\xe3\\xd6\\x8a\\xb4t\\xbb\\xc3\\xff\\x00,\\x7f\\xf1\\xf1\\xfe4T6Q\\xd2QE\\x15 \\x14QE\\x00\\x14QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 200,
+                        "h": 200,
+                        "size": 5240
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 100,
+            "length": 55
+        }
+    ],
+    "views": 43,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

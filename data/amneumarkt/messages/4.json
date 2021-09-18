@@ -1,0 +1,133 @@
+{
+    "_": "Message",
+    "id": 4,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-10 06:07:52+00:00",
+    "message": "Media\n\nPaletro\nEnable command palette (\u21e7\u2318P) in any application on macOS.\nProduct topic: Mac, Productivity\nView on Product Hunt",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-09-08 11:21:04+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 347,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5470683472910778789,
+            "url": "https://www.producthunt.com/posts/paletro",
+            "display_url": "producthunt.com/posts/paletro",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Product Hunt",
+            "title": "Paletro - Enable command palette (\u21e7\u2318P) in any application on macOS | Product Hunt",
+            "description": "Like efficiency of \"Command Palette\" (usually with shortcut \u21e7\u2318P) in VS Code or Sublime? Now you can use this feature in any other app as well by Paletro. With Paletro launched or configured, pressing \u21e7\u2318P, you will see the command palette panel in any app.",
+            "photo": {
+                "_": "Photo",
+                "id": 5779469553443646204,
+                "access_hash": 6998480635276754612,
+                "file_reference": "b'\\x00aFH\\xf1\\xad\\x84\\xdf\\xe6\\x88\\xb1\\xdej\\x0e\\x08Dg7`\\xef\\x14'",
+                "date": "2020-07-08 16:39:54+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xab\\x0cmqr!\\x0f\\xb7q5p\\xe9.\\xbdg\\x03\\xf0\\xa84\\xff\\x00\\xf9\\t\\xa7\\xd4\\xff\\x00#[\\x92t\\xa0\\x0cs\\xa5\\xb0\\x04\\x8b\\x85'\\xd3\\xd6\\xab\\x88\\xde\\x196\\xca9\\xc7L\\xe6\\xb7I@2@\\x00u\\xe2\\xb2/d\\x8eK\\xa2\\xd1\\x10Wh\\xe9@\\x11\\x12\\x9f\\xdc\\xe7\\xd74RQ@\\x11y\\x8d\\x0c\\xc5\\xe38`N\\x0f\\xe7S\\x7fh]\\x7f\\xcfc\\xf9\\n(\\xa0\\x047\\xd7,\\n\\x99\\x89\\x07 \\xf0*8z\\x9a(\\xa0\\t(\\xa2\\x8a\\x00\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 8395
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 37339
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 512,
+                        "size": 50713
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Abner Lee",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 0,
+            "length": 5,
+            "url": "https://www.producthunt.com/posts/paletro?utm_campaign=producthunt-api&utm_medium=api&utm_source=Application%3A+IFTTT+%28ID%3A+2742%29"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 7,
+            "length": 7,
+            "url": "https://www.producthunt.com/r/3fdc70ebba9dc6/203584?app_id=2742"
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 15,
+            "length": 56
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 106,
+            "length": 20,
+            "url": "https://www.producthunt.com/posts/paletro?utm_campaign=producthunt-api&utm_medium=api&utm_source=Application%3A+IFTTT+%28ID%3A+2742%29"
+        }
+    ],
+    "views": 21,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

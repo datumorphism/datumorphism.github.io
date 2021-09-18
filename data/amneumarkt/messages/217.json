@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 217,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-26 12:23:07+00:00",
+    "message": "#TIL \n\nHow the pandemic changed the way people collaborate. \n\n1. Siloing: From April 2019 to April 2020, modularity, a measure of workgroup siloing, rose around the world.\n\nhttps://www.microsoft.com/en-us/research/blog/advancing-organizational-science-using-network-machine-learning-to-measure-innovation-in-the-workplace/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 46156072640123918,
+            "url": "https://www.microsoft.com/en-us/research/blog/advancing-organizational-science-using-network-machine-learning-to-measure-innovation-in-the-workplace/?utm_source=pocket_mylist",
+            "display_url": "microsoft.com/en-us/research/blog/advancing-organizational-science-using-network-machine-learning-to-measure-innovation-in-the-workplace",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Microsoft Research",
+            "title": "Advancing organizational science using network machine learning to measure innovation in the workplace - Microsoft Research",
+            "description": "Is innovation another loss due to the global COVID-19 pandemic? Indicators reveal challenges to overcome\u2014as well as opportunities to build on our collective experience gained in the last year. Measuring collaboration using network machine learning provides a powerful diagnostic tool to address issues as they arise. One challenge lies in how we build relationships in [\u2026]",
+            "photo": {
+                "_": "Photo",
+                "id": 5971080817750944804,
+                "access_hash": 7684892801876450370,
+                "file_reference": "b'\\x00aFH\\xefb\\xb1;r\\x95Dh\\xaeU\\xb0\\t{{\\xf8\\x88 '",
+                "date": "2021-03-24 17:08:17+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xa2\\x0f\\xb0\\xa9\\x14{\\n\\x8cU\\x88\\x80#\\xd0z\\xd6\\x83\\x1b\\xb4\\xfa\\ncq\\xd8U\\xc5\\x8c4D\\xf7\\x15V^\\xb4\\x80\\x88\\x9faE\\x14S\\x00\\xa7#b\\x8a(\\x02Q9T*:\\x1a\\x84\\x9c\\xd1E\\x006\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 12430
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 57552
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 131324
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1441,
+                        "sizes": [
+                            31593,
+                            77407,
+                            155046,
+                            214365,
+                            349422
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 173,
+            "length": 149
+        }
+    ],
+    "views": 182,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "TIL"
+    ]
+}

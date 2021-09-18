@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 256,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-08 21:04:17+00:00",
+    "message": "#DS \n\nJetbrains released a new IDE for data scientist.\n\n\nhttps://www.jetbrains.com/dataspell/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4967719257651255489,
+            "url": "https://www.jetbrains.com/dataspell/",
+            "display_url": "jetbrains.com/dataspell",
+            "hash": 0,
+            "type": "article",
+            "site_name": "JetBrains",
+            "title": "JetBrains DataSpell: The IDE for Data Scientists",
+            "description": "JetBrains DataSpell is an IDE for data science with intelligent Jupyter notebooks, interactive Python scripts, and lots of other built-in tools.",
+            "photo": {
+                "_": "Photo",
+                "id": 6013817133915548733,
+                "access_hash": -4382691245281747321,
+                "file_reference": "b\"\\x00aFH\\xef'\\xac\\xa5\\xe8)\\x0f\\xdcX`\\xcc\\x97k}\\x82>\\xb7\"",
+                "date": "2021-04-07 13:51:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x19(\\xceTg8PI\\xf4\\x14\\xff\\x00\\xb3\\xcd\\xff\\x00<\\xdb\\xd2\\x98\\xac\\xc9\\xf7X\\xaf\\xd0\\xd3\\x84\\xd2\\x8e\\x92?\\xfd\\xf4kS1|\\x89s\\x8d\\x8d\\x9fJ>\\xcf7\\xfc\\xf3o\\xca\\x83;\\xff\\x00y\\xbf\\xef\\xa3G\\x9f7\\xfc\\xf5\\x7f\\xfb\\xe8\\xd0\\x02<O\\x1e7\\xa9\\\\\\xf4\\xcd\\x14\\x8c\\xee\\xf8\\xde\\xc5\\xb1\\xeasE\\x006\\x8a(\\xa0\\x03\\x8c\\x0e\\xb9\\xfd(\\xa2\\x8a\\x10\\x05\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 200,
+                        "size": 10700
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 500,
+                        "size": 65375
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 800,
+                        "sizes": [
+                            8766,
+                            22848,
+                            41490,
+                            66479,
+                            115210
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 57,
+            "length": 36
+        }
+    ],
+    "views": 911,
+    "forwards": 13,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-08 21:04:01+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

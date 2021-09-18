@@ -1,0 +1,73 @@
+{
+    "_": "Message",
+    "id": 184,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-10 09:45:43+00:00",
+    "message": "https://lwn.net/Articles/845480/\nInteresting. This is accepted.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6573246035888975313,
+            "url": "https://lwn.net/Articles/845480/",
+            "display_url": "lwn.net/Articles/845480",
+            "hash": 0,
+            "type": "article",
+            "site_name": "lwn.net",
+            "title": "Pattern matching accepted for Python",
+            "description": "The Python steering council has, after some discussion, accepted the\ncontroversial proposal to add a\npattern-matching primitive to the language.\n\"We acknowledge that\nPattern Matching is an extensive change to Python and that reaching\nconsensus across the entire community is close to impossible.  Different\npeople have reservations or concerns around different aspects of the\nsemantics and the syntax (as does the Steering Council). In spite of this,\nafter much deliberation, reviewing all conversations around these PEPs, as\nwell as competing proposals and existing poll results, and after several\nin-person discussions with the PEP authors, we are confident that Pattern\nMatching as specified in PEP 634, et al, will be a great addition to the\nPython language.\"",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 32
+        }
+    ],
+    "views": 99,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

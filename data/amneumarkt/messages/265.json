@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 265,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-18 12:43:56+00:00",
+    "message": "#visualization \n\n\nThe Doomsday Datavisualizations - Bulletin of the Atomic Scientists\n\nhttps://thebulletin.org/doomsday-clock/datavisualizations/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8001463397610663233,
+            "url": "https://thebulletin.org/doomsday-clock/datavisualizations/",
+            "display_url": "thebulletin.org/doomsday-clock/datavisualizations",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Bulletin of the Atomic Scientists",
+            "title": "The Doomsday Datavisualizations - Bulletin of the Atomic Scientists",
+            "description": "Overview Current Time FAQ Timeline Dashboard Datavisualizations Virtual Tour In setting the Doomsday Clock, the Bulletin\u2019s Science and Security Board consults widely with colleagues across a range of disciplines and considers qualitative and quantitative information from a wide array of sources. These three visualizations display some of the kinds of public data that are available \u2026 Continued",
+            "photo": {
+                "_": "Photo",
+                "id": 5819872748883782692,
+                "access_hash": 4450885674021993633,
+                "file_reference": "b'\\x00aFH\\xef\\xc9\\x81\\x06t\\xa6\\xaa\\xdb\\x93\\xb0\\xfa\\xae\\x89\\xaa\\x14\\x9f\\xc6'",
+                "date": "2021-02-01 23:26:56+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x19(\\xbf\\xbeM\\xe4nP=\\xc7\\xff\\x00^\\xa6\\\\\\xed\\xe4\\x83\\xf4\\x18\\xa6\\x04\\xc99\\xe2\\x94\\x8c\\xa9Q\\x91\\xefH\\x06I:\\xa9#\\xb8\\x14\\x91N$<u\\xf4\\xaa\\xdeC\\xb4\\xd8s\\xf2\\x9a\\x98B\\xb0\\xb0+\\x9c\\x83\\x8f\\xad\\x03\\xb1g#8\\xefE\\x03\\xd6\\x8a\\x04-7ko'<S\\xbb\\xd0;\\xd0\\x03\\x1d\\t\\xda})Jg\\x06\\xa4\\xa2\\x80#\\xe47=(\\xa77\\xdeZ(\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 200,
+                        "size": 21631
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 500,
+                        "size": 112105
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 800,
+                        "size": 290840
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 1920,
+                        "h": 1200,
+                        "size": 541035
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 87,
+            "length": 58
+        }
+    ],
+    "views": 40,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-18 12:42:59+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

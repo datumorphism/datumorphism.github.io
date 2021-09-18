@@ -1,0 +1,89 @@
+{
+    "_": "Message",
+    "id": 83,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-08 17:21:56+00:00",
+    "message": "https://www.frontiersin.org/articles/10.3389/fncom.2012.00094/full\n\nAn emerging consensus for open evaluation: 18 visions for the future of scientific publishing",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5278390690819082604,
+            "access_hash": -6835494143966891729,
+            "file_reference": "b\"\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00SaFH\\xf0A\\x82\\xec\\\\\\r\\xd3\\x8a\\xcb\\xc7\\x12\\x93\\x9a\\x13\\xcc\\xf3'\"",
+            "date": "2020-11-08 17:21:56+00:00",
+            "mime_type": "image/png",
+            "size": 472796,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeImageSize",
+                    "w": 1075,
+                    "h": 922
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "Screenshot 2020-11-08 at 18.20.54.png"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\"(\\xd6\\xde\\x01\\xc1\\x03\\xf3\\xa3x#\\xd2\\x90\\xc6\\t\\xceM\\n9\\xe9\\xf8\\xd0\\x04\\x13]\\x08\\x9fi\\x04\\x9cv\\xa6\\x0b\\xe4,\\x17\\x07q8\\xc7\\x14\\xdb\\x8d\\xc2\\xe1\\xb6\\xed\\xc6\\xd1\\x9d\\xc35]ae\\x91G\\x07\\xa1\\xf7\\xe6\\x91\\xbca\\x1bj^\\x17 \\xc8\\xab\\x8e\\x18\\x8c7j)\\x9b\\x1a9\\x10)V\\x880\\x00c\\x91E\\x06rKK\\x13\\xb1\\xf9\\x8f\\xcb\\xfa\\xd2\\xab`t\\x02\\x9d\\x9ez\\x0f\\xca\\x8d\\xc4\\xd3 \\xa1r\\xd2-\\xc6\\xd8\\x9b\\x1b\\xbef\\x1f\\xa50\\xbe\\xd7\\x08\\x87\\x80x\\xddZ\\x0658$s\\xf5\\xa5\\xda\\xbf\\xdd\\x1565U\\x15\\x92\\xb1I\\x8b\\xfd\\xb1r\\xbf\\xbb,\\x0fQ\\x91E^\\x00g\\xee\\x8c\\xfa\\xd1T\\xaeD\\xa4\\x98\\xb8\\x19\\xe9F\\x07\\xa5\\x14PHQE\\x14\\x00\\xa2\\x8a(\\xa0\\x0f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 274,
+                    "size": 29564
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 66
+        }
+    ],
+    "views": 262,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,112 @@
+{
+    "_": "Message",
+    "id": 145,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-11 13:23:52+00:00",
+    "message": "#productivity\n\nI have been using Obsidian as my primary note-taking app for a while. It was a rough start. Linking notes was simply not in my workflow. In some sense, I am not familiar with my notes after a while. So I started to work on notes reviews every two weeks. On each notes review, I go through my notes inbox and spend some time connecting them with the the existing ones. \n\nThis is how my notes look like now. They are mostly well connected. (The cluster is because I have archived them as they are the notes for my previous position.)\n\nI also borrowed the domain concept from dendron. I created folders with dot delimited domains. For example, I have this folder named inbox.ml which I use as my inbox for machine learning related notes. These notes will be distributed to a corresponding folder during my notes review.\n\nThose notes worth publishing will then be distributed to my websites. For example, https://datumorphism.leima.is/ is for data science related notes.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5469918504368058817,
+            "access_hash": -6854867574691844006,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x91aFH\\xf0!\\xc2C\\xac\\x18\\xea\\xc9\\xf1UD\\x83\\xf1\\x05$\\xee`'",
+            "date": "2021-01-11 13:23:52+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01&(\\xd9\\xa4\\xc9?J\\r7\\xbf\\xb5\\x00;\\xf3\\xa0f\\x90\\xb6\\xd4'\\x15\\x1cr\\x96`\\x08\\xc6h\\x02j(\\xefE\\x00'zku\\xa7\\x1aF\\xa0\\x06\\x80\\x08\\xc1\\xa1c\\ns\\xc9\\xa7v\\xe2\\x8a\\x00Q\\x9c\\xd1@\\xa2\\x80\\x16\\x8cQE\\x00&1@\\x14Q@\\x0bE\\x14P\\x07\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 307,
+                    "size": 24052
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 768,
+                    "size": 111237
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 1229,
+                    "size": 192784
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 13
+        },
+        {
+            "_": "MessageEntityCode",
+            "offset": 681,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 916,
+            "length": 30
+        }
+    ],
+    "views": 143,
+    "forwards": 4,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 203,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-11 14:12:02+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "productivity"
+    ]
+}

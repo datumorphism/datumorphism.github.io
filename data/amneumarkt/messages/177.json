@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 177,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-03 06:19:45+00:00",
+    "message": "#ML\nhttps://www.nature.com/articles/s41593-019-0520-2?fbclid=IwAR1-L-MZRAuHO1YTFhAu5_zETTjgkHpEg5-HgGywEGpITbYQpU2Yld5IzrU\n\nBy computational neuroscientist",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820127200230173,
+            "url": "https://www.nature.com/articles/s41593-019-0520-2?fbclid=IwAR1-L-MZRAuHO1YTFhAu5_zETTjgkHpEg5-HgGywEGpITbYQpU2Yld5IzrU",
+            "display_url": "nature.com/articles/s41593-019-0520-2?fbclid=IwAR1-L-MZRAuHO1YTFhAu5_zETTjgkHpEg5-HgGywEGpITbYQpU2Yld5IzrU",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Nature Neuroscience",
+            "title": "A deep learning framework for neuroscience",
+            "description": "Nature Neuroscience - A deep network is best understood in terms of components used to design it&#8212;objective functions, architecture and learning rules&#8212;rather than unit-by-unit...",
+            "photo": {
+                "_": "Photo",
+                "id": 5889970021063567895,
+                "access_hash": 3956230031994709996,
+                "file_reference": "b'\\x00aFH\\xef\\xfdy>\\x95\\xc03\\xab\\x11\\xf8md~y\\xa0nO'",
+                "date": "2019-10-28 17:45:25+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1b(\\xd7\\xda\\xbf\\xdd\\x1f\\x95C%\\xd2!*\\xa0\\x93\\xedS\\xe3\\x83\\x93\\x9a\\x82H\\xa3\\x1e\\xd4\\x9d\\xfa\\x15\\x1bu$\\x8ae\\x93\\xa7\\x07\\xd0\\xd4\\x95R6H\\x809\\xe6\\xac\\xee\\x1e^\\xe1\\xc8\\xc6i\\xeb\\xd4N\\xd7\\xd0b\\x86\\x12v\\xc5\\x14\\xd0\\xe9\\xc3\\x85\\xe5\\xa8\\xa0D\\xa4pv\\xe35^\\xe5$}\\x8a\\xa0n$\\xfd*\\xce*\\x02\\xed\\x9e\\xbd\\xa9\\xa0\\x18,\\xd5@\\xdf\\xb9\\xcf\\xb5O\\x1c~\\\\a\\x06H\\x1d3Dd\\x92rjJ\\x1b`D\\xacKm)\\xc0\\xfd(\\xa9p=(\\xa4\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 216,
+                        "size": 21722
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 539,
+                        "size": 78126
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1012,
+                        "h": 682,
+                        "size": 107710
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 4,
+            "length": 118
+        }
+    ],
+    "views": 104,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-03 06:20:25+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

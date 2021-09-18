@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 35,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-01 06:28:02+00:00",
+    "message": "Gitter is joining Element\nhttps://element.io/blog/gitter-is-joining-element/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5764141834187399966,
+            "url": "https://element.io/blog/gitter-is-joining-element/",
+            "display_url": "element.io/blog/gitter-is-joining-element",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Element Blog",
+            "title": "Gitter is joining Element",
+            "description": "When GitLab proposed that Gitter could be stronger as part of the Matrix network, we knew we couldn\u2019t miss the chance!",
+            "photo": {
+                "_": "Photo",
+                "id": 6027440121638398832,
+                "access_hash": -4609619301031062557,
+                "file_reference": "b'\\x00aFH\\xf1\\x07\\x94y\\x12Eas\\x96:\\xadKQ\\x99D\\xb49'",
+                "date": "2020-09-30 13:25:22+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1b((\\xa2\\x82y\\x03 g\\xb9\\xa0\\xdd\\xbb\\xbb!h\\xa4C\\x95\\x04\\xf1N#\\x07\\x14\\x1c\\xb5%g`\\xa2\\x8a)\\x9c\\xceCih\\xa2\\x91\\xd96\\x14\\xb4QL\\xe5\\x9b\\n(\\xa2\\x833'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 213,
+                        "size": 3164
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 533,
+                        "size": 11536
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 853,
+                        "size": 23376
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 2000,
+                        "h": 1333,
+                        "size": 43005
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 26,
+            "length": 50
+        }
+    ],
+    "views": 35,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,94 @@
+{
+    "_": "Message",
+    "id": 97,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-28 08:00:17+00:00",
+    "message": "Stadt K\u00f6ln advertises some interesting ideas sometimes.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5336937125653884647,
+            "access_hash": 7709155442489062421,
+            "file_reference": "b\"\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00aaFH\\xf0\\xbc>'\\xbfZ\\xe3\\xca\\x8aF\\x9buL\\xa4\\xd9a\\xe7\"",
+            "date": "2020-11-28 08:00:17+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x17\\x92I\\x164.\\xdd\\x07\\xeaj\\xbc\\x13\\x99\\t\\xdf\\xdc\\xf1\\xfe\\x14\\xa1\\x92x\\xc2\\xb1\\x04g\\x83\\xe9P\\xcb\\x1bFrx\\xc7NzRC.\\x10x\\xc0\\xcd\\x14D\\xc5\\xe3V#\\xaf\\xebE 3\\x14\\x949SWa\\x91e\\x1b\\x1c\\x1a\\xab\\x18L\\x02\\xd9>\\xc2\\xad@T\\xcd\\x1e\\xd4\\xda:u\\xcd6\\x08\\xb7\\x80\\xca\\x02\\xf4\\x1d(\\xa5 \\xec!x4T^\\xe5Z\\xc6*\\xe4%Z\\xb5?\\xbc\\x8c\\xff\\x00\\xb5E\\x15l\\x94i\\n(\\xa2\\xb2,'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 180,
+                    "h": 320,
+                    "size": 14164
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 450,
+                    "h": 800,
+                    "size": 51312
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 720,
+                    "h": 1280,
+                    "size": 76431
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 107,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 5,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 133,
+        "read_max_id": null
+    },
+    "edit_date": "2020-11-28 08:00:34+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,133 @@
+{
+    "_": "Message",
+    "id": 6,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-10 06:09:00+00:00",
+    "message": "Media\n\nStat of the day\nFascinating and important stats from the rest of world.\nProduct topic: News, User Experience\nView on Product Hunt",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-08-29 08:21:09+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 341,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5470683473824721676,
+            "url": "https://www.producthunt.com/posts/stat-of-the-day",
+            "display_url": "producthunt.com/posts/stat-of-the-day",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Product Hunt",
+            "title": "Stat of the day - Fascinating and important stats from the rest of world | Product Hunt",
+            "description": "Like numbers? We got you. Try out our new infinity stats stack \u2014 a collection of the most fascinating, weird, and important numbers from around the (rest of) world.",
+            "photo": {
+                "_": "Photo",
+                "id": 5930127140647447269,
+                "access_hash": -7701817521106533272,
+                "file_reference": "b'\\x00aFH\\xf16\\xd1\\x13L\\xb0#\\xc4\\xbd\\xff\\x7f%&T8,\\x0f'",
+                "date": "2020-08-28 07:01:49+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd5}\\xfcl\\xc7\\xe3C\\xe7h\\xecx\\xa7\\xd2\\x11\\x9cf\\x81\\x8c@v\\xfc\\xe7?\\x8d?\\x8e\\xd4\\x00\\xbf\\xe4\\xd0:\\x9a\\x04\\x85\\xa2\\x8a(\\x18S\\x1dw/\\xde+\\xf4\\xa2\\x8a\\x10\\r\\xf2?\\xe9\\xb4\\x9f\\x98\\xff\\x00\\nz&\\xd5\\xc6\\xe6osE\\x14\\xdb\\x12\\x1dE\\x14R\\x19'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9272
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 35458
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 512,
+                        "size": 56646
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Michael",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 0,
+            "length": 5,
+            "url": "https://www.producthunt.com/posts/stat-of-the-day?utm_campaign=producthunt-api&utm_medium=api&utm_source=Application%3A+IFTTT+%28ID%3A+2742%29"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 7,
+            "length": 15,
+            "url": "https://www.producthunt.com/r/cdc2f481ca908f/245431?app_id=2742"
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 23,
+            "length": 54
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 116,
+            "length": 20,
+            "url": "https://www.producthunt.com/posts/stat-of-the-day?utm_campaign=producthunt-api&utm_medium=api&utm_source=Application%3A+IFTTT+%28ID%3A+2742%29"
+        }
+    ],
+    "views": 27,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

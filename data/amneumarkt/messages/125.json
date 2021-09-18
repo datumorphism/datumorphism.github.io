@@ -1,0 +1,72 @@
+{
+    "_": "Message",
+    "id": 125,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-28 09:14:06+00:00",
+    "message": "#tools #writing\nhttps://www.losethevery.com/\n> \"Very good english\" is not very good english. Lose the very.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 7,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 16,
+            "length": 28
+        }
+    ],
+    "views": 249,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 973338403
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 175,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-28 09:14:52+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "tools",
+        "writing"
+    ]
+}

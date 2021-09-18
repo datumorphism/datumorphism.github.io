@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 42,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-02 07:56:32+00:00",
+    "message": "https://github.com/carolineec/EverybodyDanceNow",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193029967372283,
+            "url": "https://github.com/carolineec/EverybodyDanceNow",
+            "display_url": "github.com/carolineec/EverybodyDanceNow",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - carolineec/EverybodyDanceNow: Motion Retargeting Video Subjects",
+            "description": "Motion Retargeting Video Subjects. Contribute to carolineec/EverybodyDanceNow development by creating an account on GitHub.",
+            "photo": {
+                "_": "Photo",
+                "id": 5901386031251434649,
+                "access_hash": -461169766415882288,
+                "file_reference": "b'\\x00aFH\\xf1\\xc4\\xf9|9\\xa8r\\x17\\x80]\\x17cA\\x9ci\\x98\\xa7'",
+                "date": "2021-09-10 20:53:17+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd5w*\\xd8\\xe7\\x1e\\xb84\\t}A\\xfc\\x14\\xff\\x00\\x85?\\x00\\x9f\\xfe\\xbd\\x18\\x1f\\xe4\\xd0\\x03|\\xc5\\xce0\\xdf\\xf7\\xc9\\xa2f1\\xc4\\xce1\\x903\\xcd8`w\\xfdhe\\x0c\\x08# \\xd0\\x05;K\\xef>M\\x85v\\x9e\\xd9\\xefEO\\x1d\\xb41>\\xf4\\x8dU\\xbdE\\x14\\x92\\xb0\\xd9O\\xfbB_\\xee\\xa7\\xe4\\x7f\\xc6\\x8f\\xed\\t\\x7f\\xba\\x9f\\x91\\xff\\x00\\x1a(\\xad,\\x8c\\xee\\x1f\\xda\\x12\\xf3\\xf2\\xa7\\xe4\\x7f\\xc6\\x97\\xed\\xf2\\xff\\x00u?#E\\x14Y\\x05\\xc3\\xed\\xd2\\xf1\\xf2\\xa7\\xe4h\\xa2\\x8a,\\x82\\xe7'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 8605
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 29909
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4837,
+                            11141,
+                            21958,
+                            30012,
+                            46198
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 47
+        }
+    ],
+    "views": 34,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

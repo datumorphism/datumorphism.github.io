@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 153,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-16 06:37:57+00:00",
+    "message": "#ML\n\nDescription of tables\n\nhttp://feedproxy.google.com/~r/blogspot/gJZg/~3/jeMkmAfQxOk/totto-controlled-table-to-text.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 692597833346245757,
+            "url": "http://feedproxy.google.com/~r/blogspot/gJZg/~3/jeMkmAfQxOk/totto-controlled-table-to-text.html",
+            "display_url": "ai.googleblog.com/2021/01/totto-controlled-table-to-text.html?hl=en",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Google AI Blog",
+            "title": "ToTTo: A Controlled Table-to-Text Generation Dataset",
+            "description": "Posted by Ankur Parikh and Xuezhi Wang, Research Scientists, Google Research    In the last few years, research in natural language generati...",
+            "photo": {
+                "_": "Photo",
+                "id": 5770773305526168539,
+                "access_hash": 6825636244892366243,
+                "file_reference": "b'\\x00aFH\\xf0\\xcf\\xd1\\x9a^\\xca\\x94\\xe1\\xc5\\xdd\\t[\\xc1\\xb2u+\\x15'",
+                "date": "2021-01-15 18:26:37+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 72,
+                        "h": 72,
+                        "size": 1386
+                    },
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd7S\\x802r~\\x94\\xb9\\x1e\\xff\\x00\\x95B\\xfex \\xa8_\\xbb\\xc8\\xf7\\xa5O;x\\xde\\x14/|P\\x04\\xa0\\x8aZN\\xe2\\x96\\x80\\n(\\xa2\\x80\\x1a\\x06\\x14\\x0c\\x93\\x8e\\xe6\\x96\\x99\\xe6\\x03\\xd1[\\xf2\\xa7\\x03\\x91\\x9a\\x00^\\xe2\\x99#0#iL\\x7f\\xb4qO\\xee*9\\xa2y\\x08+&\\xdcP\\x01\\xbeNq\\xb3\\x1fSEG\\xf6y?\\xe7\\xb9\\xfc\\xa8\\xa0v]\\xc9\\xf2=E\\x19\\x1e\\xa2\\x8a(\\x10ddsN\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 28,
+            "length": 95
+        }
+    ],
+    "views": 137,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-16 06:38:24+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

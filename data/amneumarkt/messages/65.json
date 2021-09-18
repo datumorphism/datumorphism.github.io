@@ -1,0 +1,73 @@
+{
+    "_": "Message",
+    "id": 65,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-23 12:56:53+00:00",
+    "message": "https://www.frontiersin.org/articles/10.3389/fncom.2012.00094/full",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3963697280835634009,
+            "url": "https://www.frontiersin.org/articles/10.3389/fncom.2012.00094/full",
+            "display_url": "frontiersin.org/articles/10.3389/fncom.2012.00094/full",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Frontiers",
+            "title": "An emerging consensus for open evaluation: 18 visions for the future of scientific publishing",
+            "description": "A scientific publication system needs to provide two basic services: access and evaluation. The traditional publication system restricts the access to papers by requiring payment, and it restricts the evaluation of papers by relying on just 2-4 pre-publication peer reviews and by keeping the reviews secret. As a result, the current system suffers from a lack of quality and transparency of the peer review process, and the only immediately available indication of a new paper\u2019s quality is the prestige of the journal it appeared in.Open access (OA) is now widely accepted as desirable and is beginning to become a reality. However, the second essential element, evaluation, has received less attention. Open evaluation (OE), an ongoing post-publication process of transparent peer review and rating of papers, promises to address the problems of the current system and bring scientific publishing into the 21st century.Evaluation steers the attention of the scientific community, and thus the very course of science. For better\u2026",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 66
+        }
+    ],
+    "views": 91,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

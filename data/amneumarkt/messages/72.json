@@ -1,0 +1,73 @@
+{
+    "_": "Message",
+    "id": 72,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-30 16:54:35+00:00",
+    "message": "The story of wubi",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5251282639658158453,
+            "access_hash": -7601281933026010504,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00HaFH\\xf0M\\xbd\\xad\\xdf8\\x95\\x82\\x02U&\\x0c\\xfd\\x92k~\\x94'",
+            "date": "2020-10-30 16:54:35+00:00",
+            "mime_type": "audio/mpeg",
+            "size": 52998703,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeAudio",
+                    "duration": 3318,
+                    "voice": false,
+                    "title": "The W\u01d4b\u01d0 Effect",
+                    "performer": "Radiolab",
+                    "waveform": null
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "radiolab_podcast20thewubieffect.mp3"
+                }
+            ],
+            "thumbs": [],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 117,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-30 17:21:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

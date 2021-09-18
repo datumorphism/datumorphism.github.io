@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 193,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-22 18:23:10+00:00",
+    "message": "#ML \n\nThe new AI spring: a deflationary view \n\nIt's actually fun to watch philosophers fighting each other. \nThe author is trying to deflate the inflated expectations on AI by looking into why inflated expectations are harming our society. It's not exactly based on evidence but still quite interesting to read.\n\n\n| SpringerLink\nhttps://link.springer.com/article/10.1007/s00146-019-00912-z",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5583230002413561657,
+            "url": "https://link.springer.com/article/10.1007/s00146-019-00912-z",
+            "display_url": "link.springer.com/article/10.1007/s00146-019-00912-z",
+            "hash": 0,
+            "type": "article",
+            "site_name": "AI & SOCIETY",
+            "title": "The new AI spring: a deflationary view",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5993714518011784085,
+                "access_hash": 2014878710120860048,
+                "file_reference": "b'\\x00aFH\\xef \\xd0\\xa3\\n\\xef\\x8f\\xa4\\xcc#\\xa9\\x13b\\xf9\\x13}\\x08'",
+                "date": "2020-12-24 19:17:32+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01(\\x1e\\xd1\\xf3c\\xfe\\xf0\\xa5\\xf3c\\xfe\\xf0\\xaa\\xdfgs\\xd5\\x7fZ>\\xce\\xdf\\xdc?\\x9de\\xcf.\\xc6\\xbc\\xb1\\xeeX2\\xa7g\\x14y\\xa9\\x8eX\\x1a\\xaf\\xf6c\\xfd\\xcf\\xd6\\x8f!\\xc7E\\xc0\\xfa\\xd1\\xcf.\\xc1\\xcb\\x1e\\xe5\\xbc\\x03F1M$\\xe7\\xa8\\xa7\\x03\\xf4\\xadL\\x85\\xa2\\x8a(\\x012s\\xd0\\xd2\\xd1E\\x00\\x14QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 200,
+                        "h": 266,
+                        "size": 7474
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 329,
+            "length": 60
+        }
+    ],
+    "views": 124,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-22 18:26:24+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

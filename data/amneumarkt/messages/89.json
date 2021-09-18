@@ -1,0 +1,55 @@
+{
+    "_": "Message",
+    "id": 89,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-18 12:03:17+00:00",
+    "message": "Does Apple really log every app you run? A technical look\n\nhttps://blog.jacopo.io/en/post/apple-ocsp/\n\n> TL;DR\n> - No, macOS does not send Apple a hash of your apps each time you run them.\n> You should be aware that macOS might transmit some opaque information about the developer certificate of the apps you run. This information is sent out in clear text on your network.\n> - You shouldn\u2019t probably block ocsp.apple.com with Little Snitch or in your hosts file.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 59,
+            "length": 42
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 407,
+            "length": 14
+        }
+    ],
+    "views": 100,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-11-18 12:03:42+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

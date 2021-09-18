@@ -1,0 +1,87 @@
+{
+    "_": "Message",
+    "id": 126,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-28 09:15:20+00:00",
+    "message": "https://bair.berkeley.edu/blog/2020/12/20/lmmem/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-12-28 05:52:57+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1381813778
+        },
+        "from_name": null,
+        "channel_post": 591,
+        "post_author": "Linghao",
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4654675257423374949,
+            "url": "https://bair.berkeley.edu/blog/2020/12/20/lmmem/",
+            "display_url": "bair.berkeley.edu/blog/2020/12/20/lmmem",
+            "hash": 0,
+            "type": "article",
+            "site_name": "The Berkeley Artificial Intelligence Research Blog",
+            "title": "Does GPT-2 Know Your Phone Number?",
+            "description": "The BAIR Blog",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Daniel Seita",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 48
+        }
+    ],
+    "views": 223,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

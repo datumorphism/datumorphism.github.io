@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 208,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-10 15:53:21+00:00",
+    "message": "#ML \nSimple algorithm, powerful results\n\nhttps://avinayak.github.io/algorithms/programming/2021/02/19/finding-mona-lisa-in-the-game-of-life.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1940299911456372373,
+            "url": "https://avinayak.github.io/algorithms/programming/2021/02/19/finding-mona-lisa-in-the-game-of-life.html",
+            "display_url": "avinayak.github.io/algorithms/programming/2021/02/19/finding-mona-lisa-in-the-game-of-life.html",
+            "hash": 0,
+            "type": "article",
+            "site_name": "\u00ac",
+            "title": "Finding Mona Lisa in the Game of Life",
+            "description": "Atul's Programming Journals. A blog where I explore programming & Design",
+            "photo": {
+                "_": "Photo",
+                "id": 5919009733765868426,
+                "access_hash": 3260988765057529225,
+                "file_reference": "b\"\\x00aFH\\xef7';\\xde\\x1dK\\x12\\xdd-\\x8c1\\xb3?C\\xb43\"",
+                "date": "2021-03-06 07:24:27+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xc5\\xa2\\x8a\\x96(%\\x9b>Tl\\xf8\\xeb\\xb4g\\x14\\x01\\x15\\x15\\xa2\\xda\\\\\\x8b\\x0cR\\x1d\\xc3q\\xf9\\xc6\\xdf\\xb8=MW\\xb9\\xb60\\xb1d&Hs\\x85\\x90\\x0e\\r\\x00V\\xa2\\x8a(\\x00\\xab\\xfajJ\\xe5\\xc4W+\\t$p\\x7f\\x8a\\xa8U\\xabYa\\x85dgV3\\x0eba\\xfc&\\x804#\\xb9\\x9e\\xda\\xe1\\xe1\\xbc-$o\\xf2\\x06#\\x02\\xa1\\xd4\\xd1R<Cq\\x19\\x83p\\xdb\\x12\\x9c\\xed\\xe3\\xaf\\xf3\\xfc\\xe9\\xe7Q\\xb5\\xb8\\x825\\xbc\\x8eI\\x1dz\\x91\\xc7?\\x81\\xaa\\xb7rX\\xb4@Z\\xc2\\xe8\\xf9\\xe4\\xb1\\xed\\xf9\\xd0\\x05*(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 96,
+                        "h": 96,
+                        "size": 1203
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 41,
+            "length": 103
+        }
+    ],
+    "views": 142,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

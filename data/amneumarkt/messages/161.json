@@ -1,0 +1,99 @@
+{
+    "_": "Message",
+    "id": 161,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-22 08:42:34+00:00",
+    "message": "",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2021-01-22 04:44:28+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1432548830
+        },
+        "from_name": null,
+        "channel_post": 385,
+        "post_author": "Linghao",
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 6078149692400708311,
+            "access_hash": 8397611645003442070,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xa1aFH\\xf0\\xff@\\xa6KQr\\xa5\\x8a\\x81D\\x95\\x84\\xd7\\xa6}3'",
+            "date": "2021-01-22 04:44:27+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x1f(\\xae\\xb3\\xb3\\x03\\x86<\\nT\\x90\\xc8\\x18\\x1c\\x9c\\n\\x860@l\\xfaT\\x90\\x0f\\xbf\\xf4\\xa0B\\xa1\\x8d\\xce\\x02s\\xf4\\xa4\\xf3\\xfb\\x7f\\x8d$\\x03\\x12f\\x82\\x87\\xaf\\xad\\x01q\\xed.\\x15O<\\xfdh\\xa6\\xb8;\\x16\\x8a,\\x17\\x15NA\\xe2\\x9d\\xd0\\x1e\\xdcR\\x04\\x1e\\xb4\\xe2\\xa1\\x863E\\xc4F|\\xbc\\xbe\\xc7$\\x9e\\xd5\\x1cO\\xb9\\xf1\\xd2\\x9e-\\xc6\\xe3\\x82s\\xf5\\xff\\x00\\xebR\\x18v\\xf7\\xe7\\xeb\\xff\\x00\\xd6\\xa2\\xe3\\x1f\\xdc\\xf2qEC\\xb0\\xff\\x00z\\x8a.+\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 247,
+                    "size": 18634
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 617,
+                    "size": 74388
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1200,
+                    "h": 925,
+                    "size": 83927
+                }
+            ],
+            "dc_id": 5,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 115,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

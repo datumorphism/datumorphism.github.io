@@ -1,0 +1,550 @@
+{
+    "_": "Message",
+    "id": 234,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-06-01 10:30:17+00:00",
+    "message": "#academia\nhttps://www.nature.com/articles/d41586-021-01468-z",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126380234413,
+            "url": "https://www.nature.com/articles/d41586-021-01468-z",
+            "display_url": "nature.com/articles/d41586-021-01468-z",
+            "hash": 1610679960,
+            "type": "article",
+            "site_name": "Nature",
+            "title": "Academic bullying: mediatiors hear both sides",
+            "description": "Letter to the Editor",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.nature.com/articles/d41586-021-01468-z",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Academic bullying: mediatiors hear both sides"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextEmpty"
+                        },
+                        "published_date": "2021-06-01 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "CORRESPONDENCE"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "01 June 2021"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Alastair Hay"
+                                            },
+                                            "url": "https://www.nature.com/articles/d41586-021-01468-z#author-0",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " ["
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "0"
+                                                },
+                                                "url": "https://www.nature.com/articles/d41586-021-01468-z#Aff0",
+                                                "webpage_id": 0
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "]"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockOrderedList",
+                        "items": [
+                            {
+                                "_": "PageListOrderedItemText",
+                                "num": "",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Alastair Hay"
+                                            },
+                                            "url": "https://www.nature.com/articles/d41586-021-01468-z/email/correspondent/c1/new",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " University of Leeds, Leeds, UK. "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "View author publications"
+                                            },
+                                            "url": "https://www.nature.com/search?author=%22Alastair%20Hay%22",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " You can also search for this author in "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "PubMed"
+                                            },
+                                            "url": "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&term=%22Alastair%2BHay%22",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " \u00a0"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Google Scholar"
+                                            },
+                                            "url": "https://scholar.google.co.uk/scholar?as_q=&btnG=Search+Scholar&as_sauthors=%22Alastair%2BHay%22",
+                                            "webpage_id": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?Share on TwitterShare on Twitter"
+                                    },
+                                    "url": "https://twitter.com/intent/tweet?text=Academic+bullying%3A+mediatiors+hear+both+sides&url=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-021-01468-z",
+                                    "webpage_id": 0
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?Share on FacebookShare on Facebook"
+                                    },
+                                    "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-021-01468-z",
+                                    "webpage_id": 0
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?Share via E-MailShare via E-Mail"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "You have full access to this article via your institution."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Download PDF"
+                            },
+                            "url": "https://www.nature.com/articles/d41586-021-01468-z.pdf",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Download PDF"
+                            },
+                            "url": "https://media.nature.com/original/magazine-assets/d41586-021-01468-z/d41586-021-01468-z.pdf",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "I have come across many examples of bullying in my academic career and have had to complain about colleagues\u2019 treatment of students on occasions (see "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextPlain",
+                                                "text": "V. Gewin "
+                                            },
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "Nature "
+                                                }
+                                            },
+                                            {
+                                                "_": "TextBold",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "593"
+                                                }
+                                            },
+                                            {
+                                                "_": "TextPlain",
+                                                "text": ", 299\u2013301; 2021"
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://www.nature.com/articles/d41586-021-01252-z",
+                                    "webpage_id": 7937820125512226651
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "). At my institution, we have set up a mediation process for such cases that is designed to help both parties."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Mediators must be impartial. We do not know the individuals or anything about the situation until we start the process. The individuals involved take the lead and talk frankly about how the other\u2019s actions have affected them. This is often a surprise to the other party. Airing the issues is helpful, although it can be painful for the accused. We aim for an agreement between them, which they draw up themselves, on how they should interact in future."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "However challenging an environment, there is no excuse for bullying. Those who feel bullied should be encouraged to seek mediation before their health is affected or they decide they have no choice but to leave their institution."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Nature "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "594"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 26 (2021)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "doi: "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1038/d41586-021-01468-z"
+                                    },
+                                    "url": "https://doi.org/10.1038/d41586-021-01468-z",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Competing Interests"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The author declares no competing interests."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Jobs from Nature Careers"
+                            },
+                            "url": "https://www.nature.com/naturecareers/",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "All jobs"
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Post-doctoral Researcher - Photovoltaic Performance and Reliability Dubai Electricity & Water Authority DEWA Dubai, United Arab Emirates JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/postdoctoral-researcher-photovoltaic-performance-and-reliability-dubai-electricity-water-authority-dewa-741648",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " Post-doctoral Researcher - Utility Intelligent Grid Dubai Electricity & Water Authority DEWA Dubai, United Arab Emirates JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/postdoctoral-researcher-utility-intelligent-grid-dubai-electricity-water-authority-dewa-741649",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " Bioinformatician A/B University of Pennsylvania (PENN) Philadelphia, PA, United States JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/bioinformatician-ab-university-of-pennsylvania-penn-741647",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " Faculty Position Wayne State University (WSU) Detroit, MI, United States JOB POST"
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/faculty-position-wayne-state-university-wsu-741646",
+                                            "webpage_id": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockPullquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "You have full access to this article via your institution. "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Download PDF "
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-01468-z.pdf",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextEmpty"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": " Download PDF "
+                                        },
+                                        "url": "https://media.nature.com/original/magazine-assets/d41586-021-01468-z/d41586-021-01468-z.pdf",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Related Articles "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "See more letters to the editor"
+                                        },
+                                        "url": "https://www.nature.com/nature/articles?type=correspondence",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    }
+                ],
+                "photos": [],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 9
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 10,
+            "length": 50
+        }
+    ],
+    "views": 172,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-06-01 21:53:11+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "academia"
+    ]
+}

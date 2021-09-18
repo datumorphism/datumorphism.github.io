@@ -1,0 +1,91 @@
+{
+    "_": "Message",
+    "id": 49,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-07 09:30:47+00:00",
+    "message": "https://ec.europa.eu/eurostat/documents/2995521/10663690/2-07102020-AP-EN.pdf/0e0f91c5-e82e-7275-cc3b-0d3953710f40",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5472318686711885850,
+            "access_hash": 2292038757448643071,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x001aFH\\xf1N\\x04\\xec\\xeb`\\x7f\\xf2!\\x96\\x1c\\xfe\\xa4%\\xd2\\xe1Q'",
+            "date": "2020-10-07 09:30:47+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01\\r(\\xd7\\xcf\\xb6\\x7f\\n^:\\x8cb\\x8c{\\xd2m\\xf7\\xa0\\x06\\xe3'#w\\xf4\\xa7`\\xfb~T\\xb8>\\xa6\\x8d\\xa7\\xd6\\x80\\x10\\x03\\x9e\\xdf\\x95\\x14`\\xe7\\xad\\x14\\x01\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 107,
+                    "size": 10171
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 267,
+                    "size": 46367
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1156,
+                    "h": 386,
+                    "size": 75960
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 114
+        }
+    ],
+    "views": 39,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

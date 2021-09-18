@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 250,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-08-14 08:51:08+00:00",
+    "message": "#ML\n\nhttps://thegradient.pub/systems-for-machine-learning/\n\nchallenges in data collection, verification, and serving tasks",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2047476603417220021,
+            "url": "https://thegradient.pub/systems-for-machine-learning/",
+            "display_url": "thegradient.pub/systems-for-machine-learning",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The Gradient",
+            "title": "Machine Learning Systems",
+            "description": "On the field of Machine Learning Systems and how it addresses the new challenges of ML with a lens shaped by traditional systems research",
+            "photo": {
+                "_": "Photo",
+                "id": 5820024885215341700,
+                "access_hash": -2425647880242350867,
+                "file_reference": "b'\\x00aFH\\xef 7T\\xe8\\xcc:\\x05Urn\\xa3\\n\\xc0+\\xb1\\x03'",
+                "date": "2021-08-14 08:42:36+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x10(\\xd7\\xdd\\xcd'9\\xa5\\xef\\xd2\\x90\\xf5\\xce\\r\\x00\\x00\\xe5\\xb0\\x08\\xe3\\xde\\x8es\\xedH\\x10),\\x01\\xc9\\xa5\\x19\\xcf\\xff\\x00Z\\x80\\x17p\\xce(\\xa4\\xc7?w\\xf1\\xa2\\x80?\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 132,
+                        "size": 5859
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 331,
+                        "size": 23267
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 530,
+                        "size": 45438
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1318,
+                        "h": 546,
+                        "sizes": [
+                            5174,
+                            11131,
+                            19817,
+                            27935,
+                            43378
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 53
+        }
+    ],
+    "views": 147,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-08-14 08:52:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

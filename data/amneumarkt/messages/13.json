@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 13,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-10 07:20:53+00:00",
+    "message": "https://fastpages.fast.ai/fastcore/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-09-05 19:47:20+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1381813778
+        },
+        "from_name": null,
+        "channel_post": 527,
+        "post_author": "Linghao",
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4198319941852557036,
+            "url": "https://fastpages.fast.ai/fastcore/",
+            "display_url": "fastpages.fast.ai/fastcore",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "fastpages",
+            "title": "fastcore: An Underrated Python Library",
+            "description": "A unique python library that extends the python programming language and provides utilities that enhance productivity.",
+            "photo": {
+                "_": "Photo",
+                "id": 5948285686849317769,
+                "access_hash": 7641832400416945893,
+                "file_reference": "b'\\x00aFH\\xf1\\xe7R{\\xa8IJ\\xc1\\xf1`\\x91}\\xd5\\xe5\\xa4\\x88\\xf5'",
+                "date": "2020-09-03 18:04:52+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\x82\\xe2Y\\x04\\xce\\x03\\x1c\\x7f\\xbd\\x8fJ\\x83\\xce\\x9b\\xfez\\x1f\\xfb\\xea\\x9fq\\x8f=\\xb2\\xc4r?\\x95G\\xc6>\\xf9\\xfc\\xe9\\x80y\\xf2\\xff\\x00\\xcfF\\xfc\\xe9|\\xf9\\xbf\\xe7\\xa3~t\\xcc\\x9e>o\\xd6\\x8es\\xf7\\xbfZ\\x00\\xb1m4\\x86\\xe1C;\\x11\\xcf\\x04\\xfbQQ\\xdb\\x13\\xf6\\x95\\xc9\\xcf\\xff\\x00\\xaa\\x8a\\x00\\x9ah\\xe431U\\x04\\x13\\xedQ\\x98\\xa4\\xc66\\x0f\\xccQE\\x007\\xc8\\x7f\\xee~\\xb4y\\x0f\\xfd\\xdf\\xd6\\x8a(\\x02Kh\\x1cN\\xa4\\x8e\\x07\\xbd\\x14Q@\\x8f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 181,
+                        "size": 11660
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 700,
+                        "h": 397,
+                        "size": 40019
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "<a href='https://twitter.com/HamelHusain'>Hamel Husain</a>",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "Show comments",
+                        "url": "https://comments.app/view/wbeRp7vs",
+                        "button_id": 1384551806,
+                        "fwd_text": null
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 35
+        }
+    ],
+    "views": 48,
+    "forwards": 1,
+    "replies": null,
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

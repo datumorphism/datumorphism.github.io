@@ -1,0 +1,76 @@
+{
+    "_": "Message",
+    "id": 120,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-19 08:58:43+00:00",
+    "message": "",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5400249045290692637,
+            "access_hash": 6154928620318939638,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00xaFH\\xf0\\x17\\x91J\\x9a\\x11\\x04\\xba\\xea\\xff\\xf3K\\xc8\\x81T\\xa5\\xd9'",
+            "date": "2020-12-19 08:58:43+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x17\\x8a0\\xff\\x00Z\\x94`\\x92=*H\\xc6G\\xd2\\xa2\\x8f\\xfe>%Z\\xa1\\x0b\\x8a)\\xe4QLD\\xd2\\xe2\\x18\\xd9\\xfd\\x05e\\xc73\\xac\\xbea\\xea\\x7fZ\\xb5\\xaa\\xccU\\xfc\\xa1\\x8d\\xa3\\x9c\\xfa\\xd6~\\xfc\\xf5$\\xd4\\x94l\\xed\\x04\\x03\\xd8\\xd1Y\\xd6\\xb79;&r\\x14\\x0e\\x0eh\\xa7qXt\\xb6\\x9b\\x98\\x19\\x1c)(X\\x8fJ\\xab\\xb0d\\xf2(\\xa2\\xa4cJ\\xf1\\xd8\\x9a(\\xa2\\x80?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 180,
+                    "h": 320,
+                    "size": 18869
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 450,
+                    "h": 800,
+                    "size": 104984
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 720,
+                    "h": 1280,
+                    "size": 182046
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 216,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": 12866946588844138,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

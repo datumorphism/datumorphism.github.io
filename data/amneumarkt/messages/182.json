@@ -1,0 +1,1431 @@
+{
+    "_": "Message",
+    "id": 182,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-06 20:15:45+00:00",
+    "message": "#research\n\nhmmm\n\nhttps://www.nature.com/articles/d41586-021-00341-3",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126952944410,
+            "url": "https://www.nature.com/articles/d41586-021-00341-3",
+            "display_url": "nature.com/articles/d41586-021-00341-3",
+            "hash": -876940541,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "The future of grant proposals is video",
+            "description": "Written grant proposals are inefficient to prepare and review, and scoring is notoriously unreliable. It\u2019s time to consider audio-visual alternatives.",
+            "photo": {
+                "_": "Photo",
+                "id": 5831510405153926166,
+                "access_hash": -3381833522428040227,
+                "file_reference": "b'\\x00aFH\\xef\\x8f\\xaa/\\xda?\\x98|\\xe4\\xad\\x15r\\x92\\xad\\x95e\\xab'",
+                "date": "2021-02-05 16:57:03+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xbf\\x81\\x8fzBU~\\xf1\\x03\\xebKY\\xfa\\x8cr\\tRUr\\x07NOC\\\\1\\\\\\xce\\xc6\\xcd\\xd8\\xb6\\xee\\xbbO\\x98v\\xa6=pO\\xf8S\\xa1\\x91%BP\\xe4\\x03\\x8a\\xca\\x91\\xdeV\\xdc\\xe7w\\xf2\\x15=\\x84\\x9b&\\xd9\\xd9\\xebiS\\xb4t!KSJ\\x8aZ+\\x98\\xb2=\\xf8\\xa8\\xa6\"X\\x99;\\xf6\\xa2\\x8a\\xb5\\xba\\x1b+%\\xabK\\x82\\xc7`\\xfc\\xcdZ\\x8a\\x08\\xe1\\xfb\\xab\\xcf\\xa9\\xebE\\x14\\xe76\\xf4\\x12I\\x13f\\x8a(\\xa8\\x19'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 12073
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 41787
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 576,
+                        "size": 59677
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Michael Doran, William Lott, Adrian Barnett, Joan Leach & John Ioannidis",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.nature.com/articles/d41586-021-00341-3",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The future of grant proposals is video"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Written grant proposals are inefficient to prepare and review, and scoring is notoriously unreliable. It\u2019s time to consider audio-visual alternatives."
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Michael Doran, William Lott, Adrian Barnett, Joan Leach & John Ioannidis"
+                        },
+                        "published_date": "2021-02-05 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5833315060217392155,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Credit: Adapted from Getty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In 2020, as researchers adapted to COVID-19 lockdowns, video communication became mainstream as virtual meetings and conferences took hold. Because of this, now is a good time to reconsider the merits of video-based funding applications, an idea that we first proposed in 2014 ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "1"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR1",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": ","
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "2"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR2",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Grant writers invest, on average, 34 days ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "3"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR3",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] in preparing major biomedical grant proposals. A "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "2019 survey"
+                                    },
+                                    "url": "https://publons.com/static/Grant-Review-in-Focus-web.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " found that reviewers spend an average of ten days per year reviewing applications. Despite this enormous time investment, they struggle to rank grants reliably while following the current processes. One study found \u201cno agreement among reviewers in evaluating the same application\u201d ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "4"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR4",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. Another found that 12 reviewers were required to yield a moderate \u2018reliability\u2019 of 0.5 for overall impact, which carries the greatest weight in National Institutes of Health R01 funding decisions ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "5"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR5",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. (A reliability of more than 0.5 means that the quality of the proposal has more of an influence on how it is ranked than do the unwanted effects associated with noise and differences between reviewers.) Yet many funding processes engage only three to four reviewers per application, which is likely to hinder their ability to rank applications reliably. The community\u2019s capacity to engage more reviewers per application is dependent on improving the efficiency of the grant-review process. And using video as a time-efficient medium to help reviewers to navigate proposals will hopefully entice more researchers to offer their grant-reviewing expertise."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "A multimedia solution"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We suggest that all technical aspects of a project proposal should be communicated in a 20-minute video; the budget and applicant biographies should remain text-based. Just as in text-based proposals, applicants would follow a standardized set of formatting guidelines, but they would have the liberty to integrate animations, film clips and other audio-visual tools. Such videos could be produced simply by recording PowerPoint presentations (see \u2018How to create a video presentation in PowerPoint\u2019), using the tools available on almost every laptop computer."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Replacing the process of writing dense technical text with creating a video could significantly reduce proposal preparation time. And it could well improve proposal quality. In the education setting, video already has a proven capacity to facilitate learning outcomes, especially those involving abstract or hard-to-visualize phenomena ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "6"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR6",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. Space limitations in text-based proposals often force applicants to reduce the size of images, or to exclude information altogether. But by using video, applicants can overlay audio commentary with visual elements, providing ample space to display control or replicate data, or to detail dynamic processes or results that are challenging to communicate in text."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "For reviewers, video applications promise to replace lengthy text-based explanations with guided tours of researchers\u2019 ideas. Applicants can walk reviewers through complex data sets, highlighting key observations and controls, emphasizing data supporting the hypothesis and pre-emptively explaining how potential obstacles can be overcome. Reviewers can pause or rewatch portions of a video for clarity, and software now allows them to annotate videos with timestamped hyperlinks. This efficiency could allow reviewers to evaluate more applications than is currently feasible, thereby contributing to more-reliable rankings. Video communication might also reduce reviewer score variability, and \u2014 because the videos can be played during review-panel discussions \u2014 could serve to refresh panel members\u2019 memories of an application\u2019s key elements before funding decisions are finalized."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Today\u2019s funding decisions influence tomorrow\u2019s discoveries, and video could modify funding outcomes. One class of proposals that could particularly benefit from video are those involving complex new methodologies or multiple disciplines. Researchers commonly complain that funding agencies tend to favour \u2018low risk\u2019 or incremental science ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "7"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR7",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. A study of more than 18,000 Australian Research Council grant applications found an increase in interdisciplinary content predicted a lower probability of funding ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "8"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR8",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": ","
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "9"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-021-00341-3#ref-CR9",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. Interdisciplinary teams can struggle to describe complex or multiple new perspectives in text, and individual reviewers can struggle to evaluate all aspects of diverse proposals effectively. Although grant rules often prohibit applicants from providing links to multimedia that might give an unfair advantage, video-based proposals would invite all applicants to communicate in the most effective and efficient manner possible."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Challenges"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Some might fear that a video format will favour those with access to high-quality computer animation or preparation support, or amplify bias by revealing the gender, race and other distinguishing characteristics of applicants. However, we reason that the goal must be to maximize communication quality and efficiency, while assuming our peers are not easily bamboozled, nor blinded by bias. A high-quality presentation is not reliant on sophisticated animation, and even modest videos are likely to be more effective communication tools than static text and images. Research offices will adapt to teach skills that maximize the utility of video, and to support video production. Similar to written applications, this is likely to include script editing, and perhaps narration assistance for non-English speakers."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Counter-intuitively, it is possible that the influence of bias will be reduced as a result of improved video communication. When reviewer understanding is compromised, which is a common complaint of applicants, reviewers might fall back on tangible measures such as track record and institutional affiliation, or succumb to bias. Similar to diluting the influence of individual reviewer bias against the science in a specific proposal, increasing the number of reviewers per application will dilute the influence of reviewers who might hold biases or opinions that aren\u2019t related to science against specific applicants."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Next steps"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Multimedia strategies have the potential to relieve many of the shortcomings of the current grant-application process, and we propose pilot studies to test their efficacy. Trials could be designed to estimate the time required to prepare and review video applications, compare the ranking consistency between videos and text-based applications, compare reviewer comprehension of material presented in videos or text, compare ranking of videos with narrators of different genders and determine whether the video format identifies exceptional applications or enables more effective communication of multidisciplinary proposals."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Video has become mainstream in scientists\u2019 working lives. Isn\u2019t it time to see what it can do for scientific funding?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "How to create a video presentation in PowerPoint"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "1. Open the presentation in PowerPoint."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "2. Under the SlideShow tab, select \u2018Record Slide Show\u2019."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "3. Press the \u2018control\u2019 key and left click to access the laser pointer, pen or highlighter."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "4. Talk the reviewers through the data and proposal, highlighting crucial details."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "5. Save the PowerPoint, and export as an MP4 video file. Each slide can be edited and recorded independently of other slides. Notes or a script can be placed in the window adjacent to the recorded screen."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "doi: "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1038/d41586-021-00341-3"
+                                    },
+                                    "url": "https://doi.org/10.1038/d41586-021-00341-3",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "This is an article from the Nature Careers Community, a place for Nature readers to share their professional experiences and advice. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Guest posts are encouraged."
+                                    },
+                                    "url": "https://www.nature.com/articles/d41586-019-03369-8",
+                                    "webpage_id": 7937820126720906493
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "References"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "1. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR1"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Doran, M. R., Lott, W. B. & Doran, S. E. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Trends Biochem. Sci."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "39"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 151\u2013153 (2014)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "2. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR2"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Doran, M. R., Lott, W. B. & Doran, S. E."
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": " Nature"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "505"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 291 (2014)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "3. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR3"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Herbert, D. L., Barnett, A. G., Clarke, P. & Graves, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "N. BMJ Open"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "3"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", e002800 (2013)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "4. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR4"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Pier, E. L. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Proc. Natl Acad. Sci. USA"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "115"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 2952\u20132957 (2018)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "5. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR5"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Forscher, P. S., Brauer, M., Cox, W. T. L. & Devine, P. G. Preprint at psyRxiv "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.31234/osf.io/483zj"
+                                    },
+                                    "url": "https://doi.org/10.31234/osf.io/483zj",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (2019)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "6. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR6"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Brame, C. J. & Perez, K. E. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "CBE Life Sci. Educ."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "15"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", es6 (2016)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "7. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR7"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Graves, N., Barnett, A. G. & Clarke, P. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Br. Med. J."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "343"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", d4797 (2011)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "8. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR8"
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "528"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 8 (2015)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "9. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR9"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Bromham, L., Dinnage, R. & Hua, X. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "534"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 684\u2013687 (2016)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockRelatedArticles",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "articles": [
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-021-00566-2",
+                                "webpage_id": 7937820127057987743,
+                                "title": "Fieldwork at your fingertips: creative methods for social research under lockdown",
+                                "description": "With face-to-face interviews on hold, social scientists are turning to digital diaries and deep dives into YouTube audience interactions instead.",
+                                "photo_id": 5908012676162890769,
+                                "author": "Ash Watson, Marianne Clark, Clare Southerton & Deborah Lupton",
+                                "published_date": "2021-03-03 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-021-00553-7",
+                                "webpage_id": 7937820126568785836,
+                                "title": "\u2018Elite\u2019 researchers dominate citation space",
+                                "description": "Just 1% of scientists capture more than one-fifth of all citations globally \u2014 and the inequality is growing.",
+                                "photo_id": 5903569266207206410,
+                                "author": "Sara Reardon",
+                                "published_date": "2021-03-01 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-021-00532-y",
+                                "webpage_id": 7937820125795710578,
+                                "title": "We\u2019ll meet again: scientists\u2019 post-pandemic wish list",
+                                "description": "Trapped in a holding pattern, and nostalgic for lab lunches and field trips, researchers share their hopes for a lockdown-free future.",
+                                "photo_id": 5903516618498091992,
+                                "author": "Chris Woolston",
+                                "published_date": "2021-03-01 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-021-00542-w",
+                                "webpage_id": 7937820126978598415,
+                                "title": "Pandemic: public feeling more positive about science",
+                                "description": "Letter to the Editor",
+                                "photo_id": null,
+                                "author": "Eric Allen Jensen, Eric B. Kennedy & Ethan Greenwood",
+                                "published_date": "2021-03-02 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-021-00513-1",
+                                "webpage_id": 7937820126861944390,
+                                "title": "Scientists want virtual meetings to stay after the COVID pandemic",
+                                "description": "A Nature poll shows that a year of online research conferences has brought big benefits, but blending them with in-person meetings in future will be a challenge.",
+                                "photo_id": 5907607768121060301,
+                                "author": "Ariana Remmel",
+                                "published_date": "2021-03-02 00:00:00+00:00"
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Jobs from Nature Careers"
+                            },
+                            "url": "https://www.nature.com/naturecareers/",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "All jobs"
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Senior Laboratory Research Scientist - Gandhi Laboratory Francis Crick Institute London, United Kingdom JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/senior-laboratory-research-scientist-gandhi-laboratory-francis-crick-institute-737203",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " PhD student for dosimetry and beam diagnostics at PITZ German Electron Synchrotron (DESY) Zeuthen, Berlin, Germany JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/phd-student-for-dosimetry-and-beam-diagnostics-at-pitz-german-electron-synchrotron-desy-737162",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " 55213: Computer Scientist or similar - Processing of 3D surface geometries German Aerospace Center (DLR) Bremerhaven, Germany JOB POST "
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/55213-computer-scientist-or-similar-processing-of-3d-surface-geometries-german-aerospace-center-dlr-737163",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextEmpty"
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": " Postdoc \u2013 Novel polymers and membranes for PEM fuel cells J\u00fclich Research Centre (FZJ) Erlangen-N\u00fcrnberg, Germany JOB POST"
+                                            },
+                                            "url": "https://www.nature.com/naturecareers/job/postdoc-novel-polymers-and-membranes-for-pem-fuel-cells-julich-research-centre-fzj-737167",
+                                            "webpage_id": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5908012676162890769,
+                        "access_hash": -4397473988787332457,
+                        "file_reference": "b'\\x00aFH\\xef\\xafS\\xd1\\xc5\\xfaW<Y\\xe5\\x95C(>\\xbb\\xd8f'",
+                        "date": "2021-03-03 12:02:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xb9s\\xbc\"\\xf9|\\x9c\\xf3\\xce)-\\xa4/\\x0e$\\xfb\\xeb\\xd4\\x0f\\xaf\\x14\\xdb\\x81#>\\x07\\xfa\\xbc\\x0e?\\x1aB\\xa2\\x18\\x8b\\xf0\\x0f\\x1dN3\\xd7\\xfci\\x0cI.\\x82\\xcc#;\\xf9\\xfe!\\x8a\\x89\\xdd\\xdc1K\\x89\\x01\\\\p@\\x03\\xa8\\x06\\xab\\xfd\\xa9\\xdeM\\xc9\\x02\\xb3\\x0e\\xfc\\x9a\\x9d$\\x96H\\x1d$\\xb7\\x03\\x8eON\\xfe\\x94X\\x0b*\\xb8\\xdc<\\xc2\\xfd\\x0f\\'8\\xa2\\x9d\\x16\\x04xP\\x02\\xe3\\x80(\\xa4\\xc4:\\xe2C\\x14%\\x97\\x93Q\\xc3\\'\\x9f\\x13\\x16_\\xce\\x8a*\\xba\\x00\\xfd\\x98\\x1d\\xc0\\xf4\\xcdG\\xb1U\\x9d\\x86FW\\xd6\\x8a(@$$y\\x8d\\x86$\\x91\\xd2\\x8a(\\xa9`\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 21360
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 83177
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "sizes": [
+                                    9851,
+                                    28253,
+                                    48719,
+                                    71244,
+                                    119556
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5903569266207206410,
+                        "access_hash": 2379056351878780552,
+                        "file_reference": "b'\\x00aFH\\xefA\\x00\\xcc\\xf2\\xdcy\\xeew\\xa62H$\\xaf~\\x0c\\xdd'",
+                        "date": "2021-03-01 18:36:11+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xbd\\x94\\\\\\x929\\xc8\\xce*\\xc05Y\\x10\\xe0\\x12y\\xc0\\xce}j\\xc2\\x9c\\xd0\\x02\\x19\\xa3\\x07\\x05\\xc04\\x9etx\\xfb\\xe3\\xf3\\xa8\\xe4\\x8dA\\xe7\\x18\\xf7\\xa8[f\\xfe\\xa0\\x01\\xdb\\x14\\xd2\\xbb\\x02\\xc8\\x967\\xc6\\x1c\\x1c\\xd1LHP\\x85|\\x00A\\xcf\\x02\\x8aZ\\x8f@\\x03\\x03\\x93\\x9am\\xba\\xbe\\xc1#\\x11\\xf3v\\xc5\\x14RhD\\x92\\x03\\xb0\\x9c\\x02j\\x06\\x88<\\xea\\x1b#\\xe5\\xc9\\xc5\\x14Rm\\xa64X\\xc0\\x8dB\\xf6\\x03\\x8a(\\xa2\\xa8G'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 10755
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 36547
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "sizes": [
+                                    8424,
+                                    18046,
+                                    22101,
+                                    30216,
+                                    54191
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5903516618498091992,
+                        "access_hash": -2252173900006076799,
+                        "file_reference": "b'\\x00aFH\\xef\\xa1%\\xe96h@\\x8a4\\xbb\\x08\\x06\\xa0\\xaa\\xbb\\xbf\\xbb'",
+                        "date": "2021-03-01 14:27:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\x96\\x15\\x05G8##\\xebV\\x11\\x80]\\xa1\\xf6\\x9c\\xd6dR\\xb4r\\xcap\\x18n\\xe3-\\x8a\\xb66\\xb3\\x07\\xc6\\x0f^\\x0fJi\\x89\\xa2\\xdc\\x80\\xb0lI\\x8c{t\\xac\\xff\\x00\\x9b$\\x13\\x92Oz\\x9b\\xed\\x07l\\xa0\\x83\\xf2\\x9c\\x0c\\xf3\\xda\\xa0Y#ff\\xc9\\x05H\\xc0=\\xe9=F\\xb4\\x19$\\x06#\\xe6? \\x9e\\x00\"\\x8a/d\\xdd\\xe5\\x81\\xd0\\x0c\\xd1KA\\x90\\xda\\x8c\\xa1\\x19\\x19\\xcfq\\x9a\\xba\\xb0\\x06\\x01\\xb7\\xb0\\xcf\\xa1\\xa2\\x8a\"\\x13\\xdc\\x8e\\xe6\\x05D\\xce\\xf7\\'\\xfd\\xefz\\xaa\\xaa\\x0c\\xa23\\xef\\xc9\\xa2\\x8alHVW\\xdcT\\x80q\\xd0\\xd1E\\x14X\\x19'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 16068
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 57492
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "sizes": [
+                                    9825,
+                                    25176,
+                                    34082,
+                                    48572,
+                                    84337
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5907607768121060301,
+                        "access_hash": -8703109708302722627,
+                        "file_reference": "b'\\x00aFH\\xef{L\\x1bd\\xd2_)\\xfb\\xe8\\xcf\\x10\\xfe\\xda\\xe3SM'",
+                        "date": "2021-03-02 19:01:40+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\x85 \\x85\\xe3\\xca9-\\xefQ$q\\x89\\x82\\x12X\\x13\\xce\\x05InY\\xae\\x17\\x19\\xc1\\\\u\\xf6\\xa9 \\x1e]\\xd4A\\x93\\x199\\x1f\\x95'\\xb0$8:s\\x94!\\x87A\\x8a\\x8ap\\xa4\\xab\\x90G\\xae\\x05^\\x91\\x80p\\x009\\x199\\xaa\\xd7\\xd2\\x00\\x81\\x07V\\xa4\\x86\\xc8\\x14F\\x13\\x83\\xfaQQ\\xa3\\xe1G\\xefpFx\\xdb\\xd3\\xad\\x15D\\x96#\\xb7R\\xe8\\x03\\xb0\\xf93\\x91\\xd6\\xa1F\\x92F\\x0f\\xbc\\xfc\\xa7\\x03\\x8e\\x82\\x8a)2\\x8d&\\x00\\xa8`z\\xd5\\x1b\\xc8\\xc2\\xca\\x18\\x1e\\xbdh\\xa2\\x94A\\x95\\xc7\\x18\\xfb\\xfc\\xfa\\x1f\\xad\\x14QT#\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 19269
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 75318
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "sizes": [
+                                    10437,
+                                    30165,
+                                    43988,
+                                    64382,
+                                    113189
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5889967070421035971,
+                        "access_hash": -2906419960198654460,
+                        "file_reference": "b'\\x00aFH\\xef\\xfc\\xea\\x92\\xd2\\xf3h\\xfa\\xab;,hweH=\\xf6'",
+                        "date": "2021-02-24 13:01:17+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\x865]\\x83\\xae\\xea\\x9e0;\\x83\\xd3\\xb5T\\x8eq\\xc7\\x15?\\x9f\\xb5r\\xb9\\xcdls\\x96~^\\x82\\xa1\\x93\\r\\x91QI;\\xecc\\x9ei\\x90\\xcb\\xbdr\\xdd{\\xd0\\x96\\xa2{\\\\I\\x13\\xad\\x14\\xe7\\xe4QUa&RV\\xda\\x00\\xc9\\x07\\xe9R$\\xc3\\x07\\xaes\\xd6\\x8a+\\x04\\xce\\x86\\x87\\x07\\xc9\\xe1\\xbf1M\\x04\\xc6NO\\xbd\\x14U\\\\\\x8bk`i\\xcf>\\x94QE\\x1c\\xcc\\xaeT\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 16678
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 79636
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "sizes": [
+                                    9276,
+                                    26640,
+                                    40770,
+                                    64879,
+                                    125910
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5896571922668432321,
+                        "access_hash": -8590454510127403489,
+                        "file_reference": "b'\\x00aFH\\xef\\x06\\x85\\xcd6\\xd9\\x94\\x8aP|[]\\xdc\\xbc\\x12\\x04\\x89'",
+                        "date": "2021-02-26 18:05:30+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\x94I\\x18\\x94\\x91(\\x0b\\xd8\\xd4\\x85\\xe3q\\xf7\\xc1\\xf7\\xc1\\xac\\xfc\\x8f\\xee\\x93R\\xf9\\x9f/\\xdd4s\\xb1r\\xa2\\xd0\\x9e4\\x18\\xdci\\xe2\\xe2,s\\x9f\\xca\\xa9\\x8cm\\xe5\\xd0\\x1fL\\xd2\\x82\\x9d7\\n\\\\\\xd2\\x0b\"\\xe7\\xda#\\x1e\\xbf\\x95\\x15P0\\xc5\\x14\\xb9\\xd8\\xf9J\\xb9\\x1e\\xb4\\xa5\\xb8\\xa2\\x8a\\xb1\\x00cR\\x07\\xe2\\x8a(\\xb0\\n\\x1a\\x8a(\\xa5`?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 20515
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 122566
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "sizes": [
+                                    8843,
+                                    29424,
+                                    65227,
+                                    110712,
+                                    194130
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5889681927542254522,
+                        "access_hash": -2603599133270657400,
+                        "file_reference": "b'\\x00aFH\\xef?\\x93\\xa2O \\x05\\x04;\\x15\\x86\\xbf-\\xf1\\xbe\\xb9\\xf1'",
+                        "date": "2021-02-25 11:41:56+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\xb7\\x14(-\\xd5\\xf7c\\x1dM2,\\x10\\xf2\\x93\\xf7W'\\x1d*\\x9d\\xe6|\\x98\\xfe|\\xaezb\\xa3Y\\\\B\\xa8\\x9b\\x8b6U\\x80\\xe7#\\x03\\x14\\x94P\\xeeO\\x04E\\xad\\xd6C\\x8f\\x95\\xceC{\\xd3\\xa1\\x92)\\xa4\\xfb:\\xe4m\\xce\\xdfCPH\\x93GhP\\xfc\\x87y<\\x91\\xcdE\\xa7\\x90\\xb7@\\xe7\\x18\\x07\\x1f\\x959$\\xdb\\x04\\xeck\\xc5\\xfb\\xa8\\xf0\\x06\\xe2z\\x0fZ)<\\xc2\\x91\\x8c9\\x1e\\xfcQS`3\\xee\\xdd[jr\\x00\\xe6\\xaa\\x80\\x01b\\xacA\\\\\\x1a(\\xaa[\\x08{\\xb9x\\x18\\xb9,r0OjKC\\xb6\\xe63\\x8f\\xf3\\x8a(\\xa75f\\xc0\\xd7\\x8d\\x86\\x0f\\x14QEfQ\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 17984
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 65584
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "sizes": [
+                                    10549,
+                                    26767,
+                                    39306,
+                                    56150,
+                                    96208
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5833315060217392155,
+                        "access_hash": -300259120775733792,
+                        "file_reference": "b'\\x00aFH\\xefD\\x96\\xf3\\xc9\\x1d\\x05\\xc5\\x99\\xac \\xdd\\x11\\x17s\\x13\\x96'",
+                        "date": "2021-02-05 16:57:03+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x1c(\\xbdKEg\\xde\\xcd<w+\\x8c\\xec\\xc6T\\x0e\\xff\\x00Z\\xe1\\x8cy\\x9d\\x8d\\x9b\\xb1p\\xb6A\\xdap1\\xcb\\xfa{\\x8e\\xd4\\xf49\\x18\\xdd\\xb8\\xaf\\x04\\xfb\\xd6\\\\\\xd7\\x0f)\\xc7\\xdd\\x1c\\xfc\\xa3\\xfc\\xfbT\\xba|\\x85e(z?\\xbfz\\xd6T\\xad\\x12y\\xb54h\\xa5\\xa2\\xb9\\xca\\x19\\xba\\xa0\\xbbA$9\\xc6J\\xf3\\xfe56\\x057b\\xfaU'gq\\xb4g,\\x0f&<\\xb0H\\xf5\\xedVa\\xb2\\x08\\xca\\xee\\xe4\\x91\\xce\\x07\\x02\\xac\\xed\\x03\\xa5-[\\xaa\\xde\\x88J(vh\\xa4\\xa2\\xb3\\x1d\\x8f\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 226,
+                                "size": 12659
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 566,
+                                "size": 46990
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 9
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 17,
+            "length": 50
+        }
+    ],
+    "views": 109,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "research"
+    ]
+}

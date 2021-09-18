@@ -1,0 +1,106 @@
+{
+    "_": "Message",
+    "id": 37,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-01 08:21:00+00:00",
+    "message": "https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine/36368012#36368012\n\n\"Docker for Mac uses https://github.com/moby/hyperkit to emulate the hypervisor capabilities and Hyperkit uses hypervisor.framework in its core. Hypervisor.framework is Mac's native hypervisor solution. Hyperkit also uses VPNKit and DataKit to namespace network and filesystem respectively.\"\n\nhmmm I guess this is why docker on mac uses a lot of resources compared to its linux version",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3401196619147348900,
+            "url": "https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine/36368012",
+            "display_url": "stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Stack Overflow",
+            "title": "How is Docker different from a virtual machine?",
+            "description": "I keep rereading the Docker documentation to try to understand the difference between Docker and a full VM. How does it manage to provide a full filesystem, isolated networking environment, etc. wi...",
+            "photo": {
+                "_": "Photo",
+                "id": 6049617447264300049,
+                "access_hash": 6571950557816127588,
+                "file_reference": "b'\\x00aFH\\xf1%\\xb03\\xfa\\xfcW\\xb4\\xaa\\x913\\x99B\\x12\\xd7\\x96\\xaa'",
+                "date": "2021-01-13 09:33:10+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xa2\\x8a(\\x00\\xa2\\xa0\\x99\\xb2J7\\xca\\x0f\\xddozt.Xmo\\xbe:\\x8a\\x9eml;irZ(\\xa2\\xa8AL\\x90\\x8d\\x87 \\xb0\\xe8@\\xa7\\xd5}\\xc3i\\x1b\\xf6\\x9d\\xde\\x94\\x98\"&e\\x03\\n\\xe4\\x8f\\xee\\xbf\\xf8\\xd5\\x88\\x91UG\\x1f6?*\\x8c\\xe0\\xf5\\x98\\x9f\\xaa\\xd4\\x91\\x90\\xd29\\x1d8\\xa9\\x8cu\\xd4\\xa9=4%\\xa2\\x8a*\\xc9\\n(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 316,
+                        "h": 316,
+                        "size": 6931
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 109
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 132,
+            "length": 32
+        }
+    ],
+    "views": 37,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 11,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

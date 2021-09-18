@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 148,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-13 13:07:01+00:00",
+    "message": "https://www.chicagobooth.edu/why-booth/stories/in-memoriam-phd-student-yiran-fan\n\n> A 30-year-old Ph.D. student in a joint program of Chicago Booth and the Kenneth C. Griffin Department of Economics, Fan was shot and killed on Jan. 9.\n\nRelated news article: https://www.globaltimes.cn/page/202101/1212449.shtml\n> Fan was shot and killed in his car in the parking garage at an apartment building at about 1:50 pm Saturday. After shooting and killing Fan, the suspect, identified as 32-year-old Jason Nightengal by police, went on to shoot others across the city, reports said.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8869816879957924700,
+            "url": "https://www.chicagobooth.edu/why-booth/stories/in-memoriam-phd-student-yiran-fan",
+            "display_url": "chicagobooth.edu/why-booth/stories/in-memoriam-phd-student-yiran-fan",
+            "hash": 0,
+            "type": "article",
+            "site_name": "The University of Chicago Booth School of Business",
+            "title": "In Memoriam: Yiran Fan, 1990\u20132021",
+            "description": "A fourth-year PhD student, Fan is remembered as an exceptional researcher and classmate, \u201cbeloved by all who knew him.\u201d",
+            "photo": {
+                "_": "Photo",
+                "id": 5898934317889989706,
+                "access_hash": 8107747033667413970,
+                "file_reference": "b'\\x00aFH\\xf0~\\xd5\\xee\\n\\xbe\\xc4K\\xec\\xd6&\\xd0N\\xcau\\x99\\x98'",
+                "date": "2021-06-05 11:07:53+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\x8f\\x14\\x8eJ\\xa3\\x1cg\\x02\\xa7\\xd9G\\x97\\x9e1@\\x14\\x8cw[w\\x9cc\\x19\\xa9#;\\x906:\\x8a\\xb3\\xb4\\x11\\xb7n}\\xa9\\xaa\\x15\\xbe\\xe9\\x07\\x1cqI1\\xb4G\\x8a*m\\x94S\\x11ch\\xaaW\\xf3\\xbc%\\x16>7w\\xa2\\x8a\\x00b\\xdc\\xc9\\x1d\\xaa0 \\x96V\\x19=z\\xff\\x00\\xf5\\xea\\x8a\\xbb#nF*}\\xa8\\xa2\\x81\\x9a\\xf6r\\x19\\xad\\xc3\\xbf\\xde\\xcfZ(\\xa2\\x81\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 6918
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 28815
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "size": 23787
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 80
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 258,
+            "length": 52
+        }
+    ],
+    "views": 121,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 7,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 220,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-13 13:10:46+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,98 @@
+{
+    "_": "Message",
+    "id": 115,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-11 08:23:28+00:00",
+    "message": "#ML\n\nhttps://arxiv.org/abs/2012.04863\n\nSkillearn: Machine Learning Inspired by Humans' Learning Skills\n\nInteresting idea. I didn't know interleaving is already being used in ML.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5375451540506128363,
+            "access_hash": -2764347611752612071,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00saFH\\xf0\\xfd\\xa4\\x05\\x89\\xf3WES\\xf8\\xda\\x83\\x0c$\\xad\\xb84'",
+            "date": "2020-12-11 08:23:28+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01($\\xd5\\x91\\x8a\\x95\\x00\\xa8\\xc9\\xe7&\\x9d\\x90\\t\\xe4~t\\xd6\\x00\\xb0\\xc8\\xc9\\x1d>\\\\\\xe2\\x9d\\x8cg\\x9f\\xd2\\x80\\x11\\x98\\x00r@\\xc7\\xbd.\\xef\\x9b\\x1cg\\xad!\\x19\\xcey\\x1e\\xe2\\x97\\x1c\\x93\\xc6\\xecc8\\xa0\\x07QH3\\x81\\x9e\\xb4P\\x04sFdh\\xc8\\x00\\x85l\\x9c\\xd4\\x9c\\xf3\\xe9H\\xfc/J\\x8b'\\xd2\\x80%u\\xca\\x91\\xeb\\xefHW=\\x8e3\\xc74\\xcc\\x9fJ2}(\\x02j)\\xb1\\xfd\\xda(\\x00|\\x95\\xe2\\x99\\xb5\\xbd(\\xa2\\x80\\r\\xad\\xe9F\\xd6\\xf4\\xa2\\x8a\\x00z\\x02\\x17\\x91E\\x14P\\x07\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 286,
+                    "h": 320,
+                    "size": 29155
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 714,
+                    "h": 800,
+                    "size": 146644
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1143,
+                    "h": 1280,
+                    "size": 251486
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 32
+        }
+    ],
+    "views": 148,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-13 12:38:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

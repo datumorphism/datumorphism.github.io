@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 263,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-17 08:01:17+00:00",
+    "message": "#ML \n\nA Gentle Introduction to Graph Neural Networks\nhttps://distill.pub/2021/gnn-intro",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6293705992385944977,
+            "url": "https://distill.pub/2021/gnn-intro/",
+            "display_url": "distill.pub/2021/gnn-intro",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Distill",
+            "title": "A Gentle Introduction to Graph Neural Networks",
+            "description": "What components are needed for building learning algorithms that leverage the structure and properties of graphs?",
+            "photo": {
+                "_": "Photo",
+                "id": 5874133231102700717,
+                "access_hash": 203583657700378165,
+                "file_reference": "b'\\x00aFH\\xef\\xd5\\xe8EF\\xda< *W\\xc8\\xe0\\xb51\\x0e\\x98\\x9f'",
+                "date": "2021-09-01 20:16:14+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x11(\\xd8\\xef\\x9a3\\x81\\x92h\\xc7\"\\x91\\x8e\\xd1\\x9e\\x9e\\xb4\\x80PA\\xe9I\\x8c\\x90rx\\xa4F\\xcd;\\xb8\\xe7\\xf4\\xa1;\\x80\\x0e3\\xcd\\x14\\x002H\\xefE0\\x14\\xd0(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 134,
+                        "size": 10506
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 335,
+                        "size": 33731
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 917,
+                        "h": 384,
+                        "sizes": [
+                            3956,
+                            9007,
+                            18048,
+                            24536,
+                            37436
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Alex Wiltschko",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 53,
+            "length": 34
+        }
+    ],
+    "views": 57,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-17 08:01:29+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

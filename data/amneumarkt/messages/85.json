@@ -1,0 +1,108 @@
+{
+    "_": "Message",
+    "id": 85,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-12 08:43:50+00:00",
+    "message": "I just finished the book Grokking Algorithms last night.\nhttps://www.manning.com/books/grokking-algorithms\n\nI think it is a well-written book for people who is not from a CS background. The book has a lot of examples showing how the algorithms work step by step. To me, the most interesting chapter is dynamic programming.\nI had a lot of fun reading this. Highly recommended if you are interested in algorithms!",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8046548261914103326,
+            "url": "https://www.manning.com/books/grokking-algorithms",
+            "display_url": "manning.com/books/grokking-algorithms",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Manning Publications",
+            "title": "Grokking Algorithms",
+            "description": "Grokking Algorithms</i> is a fully illustrated, friendly guide that teaches you how to apply common algorithms to the practical problems you face every day as a programmer. You'll start with sorting and searching and, as you build up your skills in thinking algorithmically, you'll tackle more complex concerns such as data compression and artificial intelligence. Each carefully presented example includes helpful diagrams and fully annotated code samples in Python.</p> \n \nLearning about algorithms doesn't have to be boring! Get a sneak peek at the fun, illustrated, and friendly examples you'll find in Grokking Algorithms on  <a href=\"http://freecontent.manning.com/video-animations-from-grokking-algorithms/\">YouTube</a>.</p> \n \nIf you want to get more from the classic algorithms inside this book then be sure to check out <a href=\"https://www.manning.com/livevideo/algorithms-in-motion\">Algorithms in Motion</i></a>. Together this book and video course make the perfect duo.</p>",
+            "photo": {
+                "_": "Photo",
+                "id": 5959909350116010671,
+                "access_hash": -411166564371356671,
+                "file_reference": "b'\\x00aFH\\xf0\\x94\\xc3\\x8d3\\xed\\x008uY\\xb62\\x14{\\xc49,'",
+                "date": "2020-02-25 14:18:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01( \\xd7,\\x01\\xc1\\xa0\\xb0\\x03\\x92\\x07\\xd6\\x9a\\xf0D\\xe4\\x96PI\\xefY\\xfeU\\xd2\\xe4-\\xb2c\\xf0\\xff\\x00\\x1a\\x00\\xd4\\xa2\\xb2\\xb6\\xdd\\xc5\\xf3\\x88cB;\\x9c}=jB\\xfa\\x9e?\\xd5\\xa7\\xe9\\xfe4\\x01h\\xcc\\x82@\\x9f}\\x98\\xe0c\\xb6:\\xd3\\x84\\xc9\\xbfb\\x90H\\xc9\\xe3\\xb5b\\x99\\x11n\\x1c\\x81\\x85\\xea\\xbe\\xd9\\xa9\\xa2h\\x02\\xca\\xc4\\x03\\xb8\\xe0\\x0fJ\\x00\\xb1~\\xe6TE\\x87,_?t\\xfaU\\x98\\xe7\\tk\\x1b\\xcc\\xd88\\x00\\x93\\xebYVrF\\xb7\\x1b\\xe6n\\x17\\x81R\\xab\\x83\\x7f\\x86e\\xf2\\x94\\x93\\xcfC\\x9a\\x00\\xab l\\x82z\\x9a`\\xceN:\\xd1E\\x00\\x1d85\"\\xac~Y&B%\\xcf\\x0b\\x8e\\xb4Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 255,
+                        "h": 320,
+                        "size": 27999
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 360,
+                        "h": 452,
+                        "size": 52369
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 57,
+            "length": 49
+        }
+    ],
+    "views": 104,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 107,
+        "read_max_id": null
+    },
+    "edit_date": "2020-11-12 09:50:13+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

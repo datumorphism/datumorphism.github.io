@@ -1,0 +1,50 @@
+{
+    "_": "Message",
+    "id": 112,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-10 20:04:00+00:00",
+    "message": "https://events.ccc.de/2020/09/04/rc3-remote-chaos-experience/\n\nCCC is hosting the event for 2020 fully online. Everyone can join with a pay-as-you-wish ticket. Join if you like programming, hacking, social events, learning something crazy and new. \ud83d\udc4d\ud83d\udc4d\ud83d\udc4d",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 61
+        }
+    ],
+    "views": 123,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

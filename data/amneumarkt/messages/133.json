@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 133,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-07 07:48:20+00:00",
+    "message": "#data\n\nCould you prevent a pandemic? A very 2020 video game\nhttps://play.acast.com/s/nature/2020festivespectacular",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8985167203283217895,
+            "url": "https://play.acast.com/s/nature/2020festivespectacular",
+            "display_url": "play.acast.com/s/nature/2020festivespectacular",
+            "hash": 0,
+            "type": "video",
+            "site_name": "acast",
+            "title": "Could you prevent a pandemic? A very 2020 video game | Nature Podcast on Acast",
+            "description": "A video game provides players with insights into pandemic responses, and our annual festive fun. In this episode: 01:02 Balancing responses in a video game pandemic In the strategy video-game Plague Inc: The Cure, players assume the role of an omnipotent global health agency trying to tackle outbreaks of increasingly nasty pathogens. We find out how the game was developed, and how it might help change public perception of pandemic responses. Plague Inc: The Cure from Ndemic Creations 10:02 \u201cWe three Spacecraft travel to Mars\u201d The first of our festive songs, we head back to July this year, and the launch of three separate space missions to the red planet. Scroll to the transcript section at the bottom of the page for the lyrics. 12:54 Research Highlights Giant pandas roll in piles of poo to keep warm, and how different bread-baking styles have led to distinct lineages of baker\u2019s yeast. Research Highlight: Why pandas like to roll in piles of poo Research Highlight: Sourdough starters give rise to a new line of\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 6033897227010812868,
+                "access_hash": 4298906073805867827,
+                "file_reference": "b'\\x00aFH\\xf0\\xcc\\x9ee7\\xfe\\xf1\\xf5\"I\\xf4\\xa9\\x98\\x1c\\x01\\x1b\\x89'",
+                "date": "2021-01-07 07:48:18+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x15(\\xc6\\xa9#Q\\xb4\\xbbt\\xe8\\x07\\xa9\\xa8\\xeax\\x99B\\xa9bF\\xd2~\\xef^qC\\x023\\xb8\\xff\\x00\\xcb>>\\x94\\x8c\\xb8\\xe4~#\\xd2\\xae}\\xad\\x02\\xe0I '\\xa9\\xc0\\xaa\\xf32\\xb1b\\xa5\\x88b1\\xbb\\xad\\x01r\\n(\\xa2\\x80\\x16\\x94\\x1cQE\\x03B\\xe4\\x7fw\\xf5\\xa4'4Q@\\x98\\xda(\\xa2\\x80?\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 7455
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 600,
+                        "h": 315,
+                        "size": 18894
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 60,
+            "length": 54
+        }
+    ],
+    "views": 137,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-07 20:29:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

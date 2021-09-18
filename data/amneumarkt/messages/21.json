@@ -1,0 +1,69 @@
+{
+    "_": "Message",
+    "id": 21,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-16 07:04:37+00:00",
+    "message": "In summary, the Panel concluded that the United States had not provided an explanation demonstrating how the imposition of additional duties on the selected imported products in List 1 and List 2 was apt to contribute to the public morals objective invoked, and, following on from that, how they were necessary to protect public morals. The Panel found, accordingly, that the United States had not met its burden of demonstrating that the measures are provisionally justified under Article XX(a).",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": "  \ud83d\ude18",
+                        "data": "b'like 21 1'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude09",
+                        "data": "b'like 21 2'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude31 1",
+                        "data": "b'like 21 3'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "\ud83d\udcac",
+                        "url": "https://comments.bot/thread/ZUflCYhIZ",
+                        "button_id": 1870819909,
+                        "fwd_text": null
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [],
+    "views": 33,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-16 07:07:15+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

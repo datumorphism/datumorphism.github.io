@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 118,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-17 10:46:24+00:00",
+    "message": "#tools\nSpace: The Integrated Team Environment\nhttps://www.jetbrains.com/space/\n\nWow, I love jetbrains.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4967719256904425858,
+            "url": "https://www.jetbrains.com/space/",
+            "display_url": "jetbrains.com/space",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "JetBrains",
+            "title": "An all-in-one solution for software projects and teams",
+            "description": "An all-in-one collaboration solution for software development, instant communication, and team and project\nmanagement. Get started free, in the cloud.",
+            "photo": {
+                "_": "Photo",
+                "id": 5948197876242951108,
+                "access_hash": -4620112001420881853,
+                "file_reference": "b'\\x00aFH\\xf0\\x10\\x98\\x05MR\\xcbO\\xd1}\\x19\\x12Y\\x8a\\xea\\xca\\x92'",
+                "date": "2020-12-09 16:07:21+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x19(\\xac`a\\x10\\x93\\x8c\\x1aw\\xd9\\xa4\\xec\\xb9\\xcf\\xa1\\xa7\\xed\\xca\\x80O\\x03\\xb58\\x97\\xc7\\x127\\xafZ\\xec\\xbb9\\xf9\\x88\\x927\\x89\\xd2B\\xbc\\x06\\xfdj\\xdd\\xcc\\xe8\\xf00Pr\\xde\\xbd\\xaa\\x15F\\x90\\xe0\\xbf\\xe0M4\\x82x\\xac\\xa7N3\\x92\\x93\\xe8W3KN\\xa5w\\xc4x\\xdd\\x91\\x9e\\x9cQO\\x9aQ\\x80\\x8f\\xf3c\\xb5\\x15N\\xa5\\x9e\\xe5+2_\\x9b\\xcd\\xdb\\xb4\\xed\\xf5\\xc5?m>\\x8aJ\\xe7+c1R\\xa1Yc\\xc6\\x00o\\\\Si!\\xff\\x00X~\\xb4\\xf76\\xa0\\xeftR\\xba\\x89\\x92BOCE[\\xbf\\xff\\x00V\\x7f\\n+\\t-M\\xa2\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 200,
+                        "size": 12835
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 500,
+                        "size": 45589
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 800,
+                        "size": 90174
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 46,
+            "length": 32
+        }
+    ],
+    "views": 223,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-27 11:07:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "tools"
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 56,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-14 07:30:12+00:00",
+    "message": "https://www.nobelprize.org/prizes/physics/1972/cooper/biographical/\n\nI just learned today that the Cooper in BCS for superconductivity and the Cooper in BCM in neuroscience are the same Cooper. This guy is amazing.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8231468179201802788,
+            "url": "https://www.nobelprize.org/prizes/physics/1972/cooper/biographical/",
+            "display_url": "nobelprize.org/prizes/physics/1972/cooper/biographical",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "NobelPrize.org",
+            "title": "The Nobel Prize in Physics 1972",
+            "description": "The Nobel Prize in Physics 1972 was awarded jointly to John Bardeen, Leon Neil Cooper and John Robert Schrieffer \"for their jointly developed theory of superconductivity, usually called the BCS-theory\".",
+            "photo": {
+                "_": "Photo",
+                "id": 5968738836508945273,
+                "access_hash": -7151909185623438609,
+                "file_reference": "b'\\x00aFH\\xf1\\xab\\x99\\xae\\x04\\xe6\\xb9\\xa4 4\\x0f\\xc5\\xcaw\\xcd\\xd3D'",
+                "date": "2020-09-10 07:12:50+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x1b(m\\xfa'\\x98X\\x83\\xb8\\xe2\\xa7\\x8eXT\\x05\\xcf\\xe5P\\xde\\xc0\\xca7\\xf5\\xf5\\xa5\\x8e4x\\x91\\x89\\xc7\\x14\\x01b[\\x83\\x01\\\\&s\\xd0\\x93\\xc5Kq\\xba[U\\x90\\xae\\x19Nid\\xf2\\xda\\x05r3\\xb7\\xd3\\xadL\\xa5d\\x87\\x1fx\\x11@\\x18\\xf7EP\\xa9c\\x83\\xefE&\\xa2\\x15\\xa6\\xc2\\x9d\\xdbF3E\\x00h\\xcf\\xd2\\xa9\\xca\\xbb\\x00\\xdb\\xd0\\xd5\\xd9\\xaa\\xa4\\xdf\\xc2=\\xe8\\x02K\\\\\\xe5\\x94\\x1cg\\xb8\\x15n\\xd9<\\xb8\\xf6u\\xc1=k6'e\\x98\\x00\\xc4u\\xadt\\xa0\\x0c\\x19Q\\x91\\xdd\\x1b\\xa84U\\xab\\xf0\\x0c\\xf2\\xf1\\xdc\\x7f!E\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 212,
+                        "size": 15446
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 496,
+                        "h": 328,
+                        "size": 30502
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 67
+        }
+    ],
+    "views": 44,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

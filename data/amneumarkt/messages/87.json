@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 87,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-14 12:34:45+00:00",
+    "message": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/\n\n>  (Anderson, 2009) argues that research paper merit is Zipf-distributed: many papers are clear rejects, while a few are clear accepts. In between those two extremes, decisions are very difficult, and any differences between the best rejected and the worst accepted paper are tiny, even given the best possible set of reviewers. \n\n(And the following is quite discriminating towards non english speaking researchers.)\n> Work not-on-English: English is the \"default\" language to study (Bender, 2019), and work on other languages is easily accused of being \"niche\" and non-generalizable - even though English only workis equally non-generalizable.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2047476603280489854,
+            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/",
+            "display_url": "thegradient.pub/how-can-we-improve-peer-review-in-nlp",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The Gradient",
+            "title": "How Can We Improve Peer Review in NLP?",
+            "description": "With so much AI research, and so many poor reviews for this research, how can the community work to improve things?",
+            "photo": {
+                "_": "Photo",
+                "id": 5873878191649696617,
+                "access_hash": -3366608730298905980,
+                "file_reference": "b'\\x00aFH\\xf07\\xdc\\xa2\\xe8=v\\xbb\\xf6\\x80\\x89\\xba\\xb1\\xa4-\\xde&'",
+                "date": "2020-11-14 09:55:35+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xbbsq,n\\xc1\\x02mP\\x0f\\xcd\\xd4\\xd5\\xb3\\xc0\\xcd1\\xf6\\xe7,\\x80\\xe3\\xbe)\\xe7\\x91J\\xe9\\xe8\\x85f\\x86\\xef\\xf6\\xa5s\\xb5\\x19\\x87P3M\\xa7\\xe7\\x0b\\x93Ld0\\xcd\\xe667\\x03\\xc6x\\x18\\xa2\\x9d\\x14\\x88\\xc7\\n\\xa4q\\x9e\\x94R\\xb3At\\xf5C\\xcca\\x8eM:\\x8a(I-@n\\xc1\\xde\\x9d\\x8c\\x8cQE0\\x18\\xb1\\x85=I\\xed\\xc9\\xa2\\x8a(\\x0b\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 7345
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 24095
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 62
+        }
+    ],
+    "views": 118,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

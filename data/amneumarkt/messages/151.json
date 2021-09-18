@@ -1,0 +1,121 @@
+{
+    "_": "Message",
+    "id": 151,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-14 11:22:26+00:00",
+    "message": "#career #business\n\n[D] We Need More Data Engineers, Not Data Scientists\nhttps://www.reddit.com/r/MachineLearning/comments/kx0j1v/d_we_need_more_data_engineers_not_data_scientists/\n\n\nThe report: https://www.mihaileric.com/posts/we-need-data-engineers-not-data-scientists/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547164115958632,
+            "url": "https://www.reddit.com/r/MachineLearning/comments/kx0j1v/d_we_need_more_data_engineers_not_data_scientists/",
+            "display_url": "reddit.com/r/MachineLearning/comments/kx0j1v/d_we_need_more_data_engineers_not_data_scientists",
+            "hash": 0,
+            "type": "article",
+            "site_name": "reddit",
+            "title": "[D] We Need More Data Engineers, Not Data Scientists",
+            "description": "Hey all, I've recently been doing research on the state of the data science/ML hiring market, trying to answer the question of how in-demand...",
+            "photo": {
+                "_": "Photo",
+                "id": 5765765244810013616,
+                "access_hash": 4090082660256310200,
+                "file_reference": "b\"\\x00aFH\\xf0\\x98\\xccq\\xd5\\x95w\\x7f'\\xf29a\\x8a\\x1c\\xeb\\xdb\\xf6\"",
+                "date": "2021-01-14 07:33:30+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\x88[\\xc8\\xe0\\x11\\t\\xc7\\xf3\\xa7\\x98\\x9c\\x10\\x0c*1\\xeaEh\\xb3\\x04R\\xccp\\x07z\\x81\\x9fp,?\\x8b\\x04})7`I\\xf4 1\\x8c\\xa9\\x11' \\xe7=\\x05G$|mX\\x90\\xf5\\xe4v\\xab[SfK\\x1d\\xc7\\xdf\\x81M;@\\xe5\\xb9\\xfaPi\\xca\\x9a\\xb9C\\xc9r\\x01\\xc1>\\xa7\\x14V\\x91c\\xe5\\x91\\xbf\\x8c\\x1e1E\\x06)\\x85\\xe7\\x16\\xcf\\x81\\xd4\\x8f\\xe9J\\xe0,`\\x01\\xe9E\\x15\\x12\\xe8i\\x1d\\x99\\x1f\\x96\\xb2}\\xfc\\x9c{\\xd2\\xecU\\x00\\x01\\xc0\\xff\\x00\\x1a(\\xa6l\\x96\\x83\\x9d\\x00\\xc8\\xf6\\xa2\\x8a)\\xb3\\x96\\xc7\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 16595
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 600,
+                        "h": 300,
+                        "size": 37464
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 8,
+            "length": 9
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 72,
+            "length": 107
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 194,
+            "length": 76
+        }
+    ],
+    "views": 156,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-14 12:30:07+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "career",
+        "business"
+    ]
+}

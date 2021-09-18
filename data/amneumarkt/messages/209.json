@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 209,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-12 06:07:22+00:00",
+    "message": "#fun\n\nIndia is growing so fast\n\nOh Germany...\n\nGlobal AI Vibrancy Tool\nWho\u2019s leading the global AI race?\nhttps://aiindex.stanford.edu/vibrancy/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5357433542814052866,
+            "access_hash": -954047265438223384,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xd1aFH\\xef\\xfb\\x96,F[\\x81\\xd4\\xb4\\xc4\\x95\\x9b\\x87#\\xf8H\\xde'",
+            "date": "2021-03-12 06:07:22+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13{ix8\\xf3\\x8fOJT\\xd2\\xfb\\x8b\\x86\\x07\\xd8V\\x99\\xdb\\xcej14X;\\\\\\x13N\\xecZ\\x14\\xbf\\xb23\\xff\\x00-\\xcf\\xfd\\xf3\\xff\\x00\\xd7\\xa2\\xb4\\x87# \\xf1E\\x17aa\\x92\\xfd\\xc3\\xf4\\xa8l\\x90y;\\xbb\\x93\\xd6\\xa6\\x97\\x1b\\t\\xf6\\xa4\\xb6\\x1b`A\\xed\\x9a:\\x07R\\\\QE\\x14\\x86G(\\xca\\x13\\xde\\x9c\\x83\\x08\\xa3\\xd0QE\\x00:\\x8a(\\xa0\\x0f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 12431
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 49961
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        8858,
+                        21092,
+                        45176,
+                        63596,
+                        86656
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 105,
+            "length": 38
+        }
+    ],
+    "views": 146,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-03-12 06:09:53+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

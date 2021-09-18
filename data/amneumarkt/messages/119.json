@@ -1,0 +1,102 @@
+{
+    "_": "Message",
+    "id": 119,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-19 08:58:43+00:00",
+    "message": "#fun\nhaha no crowd \ud83d\udc4d",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5400249045290692636,
+            "access_hash": 1113529845434731573,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00waFH\\xf0\\xc4p0\\xf7\\xca\\x15\\xd3\\xc8p-\\xe49\\x1e>\\xcf\\xe7'",
+            "date": "2020-12-19 08:58:43+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x17(\\xba)\\xc0U6\\xb8;>V\\x00\\xfd)\\xf1\\xdd1<\\x80i\\xdd\\n\\xc5\\xad\\xb5\\x1c\\xd9H\\x9d\\xc0\\xe4\\x02j&\\xbc\\xda\\xdd\\x06=3U\\xee\\xafL\\x912\\x00\\x06}\\r\\x17\\x0b\\x15&ur1\\xf5\\xfa\\xd1L\\x03<\\x93EID\\xbb\\xa9C\\x11E\\x14\\xc4\\x04\\x83\\xde\\x98\\xc5q\\x8cQE1\\x11\\x95\\xf4\\xe2\\x8a(\\xa43'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 180,
+                    "size": 13390
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 450,
+                    "size": 69774
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 720,
+                    "size": 117379
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        }
+    ],
+    "views": 217,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 165,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-27 11:07:44+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": 12866946588844138,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

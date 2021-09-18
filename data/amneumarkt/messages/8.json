@@ -1,0 +1,396 @@
+{
+    "_": "Message",
+    "id": 8,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-10 06:09:26+00:00",
+    "message": "https://www.nature.com/articles/d41586-020-02469-0",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-08-27 07:45:58+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 339,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820127481107520,
+            "url": "https://www.nature.com/articles/d41586-020-02469-0",
+            "display_url": "nature.com/articles/d41586-020-02469-0",
+            "hash": 1806556383,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "Brain Bridging",
+            "description": "A more perfect union.",
+            "photo": {
+                "_": "Photo",
+                "id": 5923669816231701334,
+                "access_hash": 2730492358617144679,
+                "file_reference": "b'\\x00aFH\\xf1~\\x10\\x15\\xf8\\xd4_\\xd9W\\xff\\x97\\x8f\\xb6\\x1f\\x85y\\x02'",
+                "date": "2020-08-26 12:25:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xce\\x82\\x13+\\xe3\\xb0\\xeaj\\xf2\\xc6\\x888\\x8dq\\xee3U\\xed\\x84\\xb1Fg\\xd9\\x98z1\\xc8\\xa9\\x84\\xf1\\xc8p\\x1b\\x07\\xb6Ek\\x0bu1\\x975\\xc1\\xa0\\x87;\\xbc\\xb0G\\xa0&\\xa3x\\xa1e '\\x96\\xdd\\x8eI\\xa7\\xb4\\x9bNI\\xa6\\x87S\\xe9Y6\\xd3\\xd8\\xec\\xa6\\xa0\\xe2Su(\\xc5OQE>v\\r'\\x03\\xa0\\xc5\\x14\\xcew\\xb8\\xd1+\\xacf0\\xc4!<\\x8afqE\\x14\\x00\\xff\\x001\\x87|\\xfdh.\\xc3\\x14QL\\x10\\xd2s\\xc9\\xeaM\\x14QH\\x0f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 16598
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 95066
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 512,
+                        "size": 163940
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Christof Koch & Patrick House",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.nature.com/articles/d41586-020-02469-0",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Brain Bridging"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "A more perfect union."
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Christof Koch & Patrick House"
+                        },
+                        "published_date": "2020-08-26 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5925782029608266539,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Illustration by Jacey"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The popularity of both legal and illegal bicortical fusion, colloquially known as Brain Bridging, has increased greatly since the technique\u2019s introduction almost a decade ago."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In the mid-twentieth century, it was shown in Nobel-prizewinning experiments that a human brain could be split in half by cutting the 200 million wires connecting its two hemispheres, thus preventing the spread of seizure from one side to the other. Remarkably, the two halves then showed signs of independent consciousness, with each hemisphere having distinct abilities (in many cases, for example, only the left hemisphere could speak), preferences and memories."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In the early twenty-first century, consciousness scholars speculated about the reverse of these procedures. If two normal brains were connected with adequate bandwidth, would they form a single, conscious mind or remain as two?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Bridging directly connects billions of neurons in one brain with those in a second, mimicking the brain\u2019s natural bridge between its two halves. Remarkably, two people, once Bridged, seem to be able to share all of their sensations, daydreams, memories and thoughts. The Bridged will respond to questions about their experience as if they are a single, unified self. But are they? How can we know?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The effects of Bridging challenge many legal and ethical norms. In January, a Pentagon official was sentenced to one year in prison after Bridging with a foreign diplomat who could have gained access to the classified information in his memories. Last year, two men, both eye witnesses to a terrorist attack, each with only partial first-person information, were forced by the FBI to Bridge in order to provide a complete account of events. Four years ago, a woman was denied life-insurance benefits after arguing that she had died while Bridging with her therapist, only to be reborn when it was over. And just last month, the infamous duo known as #BonnieClyde \u2014 who gained folk-hero status after robbing a bank while Bridged \u2014 were acquitted after the government decided to try them as co-conspirators but failed, or so a jury member claimed in a post-trial interview, to show intent."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In every one of these cases, it should be noted that the Bridge was temporary and the connection eventually reversed. The individuals were able to return to their previous, idiosyncratic selves. However, the recent case of a married couple in Maine who, after Bridging, became permanently stuck together after the device broke, raises many fascinating questions core to the nature of identity, relationships and consciousness. Are they forced to share their everyday experiences, fears and desires, for the rest of time, in one amalgamated mind? Have they not achieved a union beyond what two separate minds can ever know, like Tristan and Isolde, the ill-fated couple in Richard Wagner\u2019s eponymous 1859 opera: \u201cUn-named, free from parting, new perception, new enkindling; ever endless self-knowing; warmly glowing heart, love\u2019s utmost joy!\u201d? (What if, gasp, they want a divorce?)"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Earlier this week, the Supreme Court agreed to hear arguments on a much more practical aspect of the Bridged couple\u2019s unprecedented situation: when they go to the polls this November, for the 2048 presidential election, should they be able to cast one vote or two?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Anyone who has interacted with a Bridged knows that the evidence for \u2018two\u2019 is immediately compelling. Each of the two bodies, while Bridged, can voice different or sometimes contradictory opinions. Each of the two bodies can move their eyes, hands and bodies in a seemingly independent fashion; they can eat at different times. They seem to desire different things. And even though every Bridged, when asked whether both people are still \u201cin there somewhere\u201d, responds that they are not, that they are \u201cof one mind\u201d, is it not nonetheless possible that the voice which answers is simply the dominant? The normal brain, after all, has a dominant eye, ear and hand. Should we necessarily trust the self-report?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We grant that these arguments for \u2018two\u2019 match casual intuition on Bridging. But such feelings cannot always be trusted \u2014 the Sun, after all, intuitively seems to revolve around Earth. We believe, by contrast, on the basis of both the theory and the neuroscientific evidence available, that the data clearly show the answer is \u2018one\u2019."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It is notable, for example, that both bodies of Bridged always sleep at the same time and that their sleep is synchronized across all brain tissue, as it is in a normal brain. As well, we all know from our own bodies that the left and right hands often behave independently even though they are controlled by a single mind. (Imagine the difficulty of eating with a knife and fork if your hands couldn\u2019t operate independently of each other.) Thus, what seems to be the contradictory or the independent behaviour of each Bridged body should be seen as no different than the two hands that move separately. You can reach for a pencil with one hand and scratch an itch with the other; you can be conflicted about the moral thing to do with the voice of both the good and bad angel on the proverbial shoulder. In addition, initial work in primates and mice shows clear evidence that, once Bridged, the two brains learn as one mind. If a Bridged learns to play piano, and then is separated, neither of the separate individuals can play as well as the Bridged did. Where has the skill gone, if it does not remain in either person?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Last, consider what we know from split-brain work. We are born \u2018bridged\u2019, with natural wires connecting the two hemispheres. Would we consider every person to have within them two distinct election voters, one vote per hemisphere? Of course not. (One worries, if so, about a devious senator gerrymandering district lines through our brains.) A Bridged is as indistinguishable from a single, unified consciousness as any human brain with its two connected halves. It should be treated as such \u2014 as a single consciousness with legal personhood."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It is a source of hope that before Bridging, one member of the Maine couple was a Republican and the other a Democrat. How their marriage survived is as worthy of study as how their brains did, and we should pause to consider that there has never been, and may never again be, a more literal case of bipartisanship in our country\u2019s history."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The story behind the story"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Christof Koch and Patrick House reveal the inspiration behind"
+                                    }
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": " Brain Bridging"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Brain Bridging"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " is a straightforward application of the axioms and principles underlying "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "integrated information theory"
+                                    },
+                                    "url": "http://integratedinformationtheory.org/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (IIT), an axiomatic, quantitative and empirically testable theory of consciousness, developed by the neuroscientist and psychiatrist Giulio Tononi and collaborators. The theory precisely defines any one conscious experience as a maximum of intrinsic irreducible cause\u2013effect power, quantified by its irreducibility, a non-zero number, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "\u03a6"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "IIT elegantly explains how the surgical disconnection of the two cortical hemispheres during a split-brain procedure (to prevent epileptic seizures from spreading from one hemisphere to another) creates two distinct minds: one that can speak and a second that is linguistically incompetent. Neither mind has any direct acquaintance with the other, believing itself to be the sole occupant of the skull."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Brain bridging is the inverse of this procedure. Two brains are connected via brain bridging, a futuristic technology that permits neurons to directly and reciprocally influence each other, acting as an artificial corpus callosum. If its bandwidth exceeds a threshold, IIT predicts, the two minds associated with each brain will cease to exist. Instead, a single consciousness comes into being, with its substrate extending across the two brains, experiencing the world through four eyes, four ears and so on."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "For more details, see chapter 10, \u2018The \u00dcber-Mind and Pure Consciousness\u2019 in "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The Feeling of Life Itself: Why Consciousness is Widespread but Can\u2019t be Computed"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " by Christof Koch (MIT Press, 2019)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "doi: 10.1038/d41586-020-02469-0"
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5925782029608266539,
+                        "access_hash": -7040836860817971481,
+                        "file_reference": "b'\\x00aFH\\xf1\\xbfF\\x97\\x16L\\xfds\\xbe\\xfb\\xb0T\\xb8E\\xdc+j'",
+                        "date": "2020-08-26 12:25:13+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x19(\\xcc\\x8d\\x0c\\x8d\\xb5j\\xdaZ\\xc4>\\xf6\\xe6\\xf7\\xa8\\xac\\xe5Dr\\x1f\\x80\\xdd\\xfd*\\xde\\xe0\\xd9\\xdaA\\xc7\\xa1\\xad`\\x93\\xdc\\xc6R\\x92v {8\\xc1\\xe1\\xd9W\\xd4\\x8c\\xd4oj\\x02\\xe697\\x1fB1\\x9a\\xb2d\\x19\\xc1\\xa6\\x10\\xa4\\xd6M\\xd9\\xd9\\x9dp\\x84\\\\J$\\x10pF\\x08\\xa2\\xa5\\xb9\\xc1\\x93\\x8eN9\\xa2\\x99\\x8b\\xd1\\xd8\\x86\\x9c\\xacU\\x81\\x1di\\xb4P\"S1o\\xbc(\\x12\\xe3\\xa6j*)\\xde\\xfb\\x82\\xd3aX\\xee$\\xd1IE ?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 200,
+                                "size": 15603
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 700,
+                                "h": 437,
+                                "size": 83995
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 50
+        }
+    ],
+    "views": 32,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

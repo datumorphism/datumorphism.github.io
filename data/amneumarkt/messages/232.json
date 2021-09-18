@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 232,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-05-25 07:33:00+00:00",
+    "message": "#DS \n\nThis paper serves as a good introduction to the declarative data analytics tools. \n\nDeclarative analytics performs data analysis using a declarative syntax instead of functions for specific algorithms. Using declarative syntax, one can \u201cdescribe what you want the program to achieve rather than how to achieve it\u201d.\nTo be declarative, the declarative language has to be specific on the tasks. With this, we can only turn the knobs of some predefined model. To me, this is a deal-breaker.\n\nAnyways, this paper is still a good read.\n\nMakrynioti N, Vassalos V. Declarative Data Analytics: A Survey. IEEE Trans Knowl Data Eng. 2021;33: 2392\u20132411. doi:10.1109/TKDE.2019.2958084\nhttp://dx.doi.org/10.1109/TKDE.2019.2958084",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1712411716334016666,
+            "url": "http://dx.doi.org/10.1109/TKDE.2019.2958084",
+            "display_url": "ieeexplore.ieee.org/document/8931243",
+            "hash": 0,
+            "type": "article",
+            "site_name": "ieeexplore.ieee.org",
+            "title": "Declarative Data Analytics: A Survey",
+            "description": "The area of declarative data analytics explores the application of the declarative paradigm on data science and machine learning. It proposes declarative languages for expressing data analysis tasks and develops systems which optimize programs written in those languages. The execution engine can be either centralized or distributed, as the declarative paradigm advocates independence from particular physical implementations. The survey explores a wide range of declarative data analysis frameworks by examining both the programming model and the optimization techniques used, in order to provide conclusions on the current state of the art in the area and identify open challenges.",
+            "photo": {
+                "_": "Photo",
+                "id": 5804352115760540612,
+                "access_hash": 2685814658875266240,
+                "file_reference": "b'\\x00aFH\\xef\\x8b\\x8f*\\xd3\\xc9\\xb4\\xc3\\x9c\\xb0\\x96u\\x9dn\\xa5\\xfaY'",
+                "date": "2021-01-26 18:23:52+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x02\\x93\\xc79\\x91\\x88\\xdd\\x8d\\xad\\x8c7|\\x9cw\\xa5\\x8a9\\x84\\xb1\\x96\\x0f\\xb4/<\\xf7\\xfc\\xea\\xe5\\x14\\xeeO)U\\xfc\\xdd\\xc4.C\\x1c\\x95\\xe8p1\\xfe8\\xa5\\xc4\\xfc\\xf6$\\xf6\\xc61\\xeb\\xfc\\xaa\\xcd\\x14\\\\v!E\\x93y\\xde\\xc7\\x03\\xa7\\x03\\x9a*j)\\x00QE\\x14\\x0c(\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 200,
+                        "h": 200,
+                        "size": 4228
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 678,
+            "length": 43
+        }
+    ],
+    "views": 201,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

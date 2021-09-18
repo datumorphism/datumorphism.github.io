@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 58,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-15 17:43:56+00:00",
+    "message": "AI Knowledge Map: how to classify AI technologies | by Francesco Corea | Medium\nhttps://medium.com/@Francesco_AI/ai-knowledge-map-how-to-classify-ai-technologies-6c073b969020",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3441607289404070776,
+            "url": "https://medium.com/@Francesco_AI/ai-knowledge-map-how-to-classify-ai-technologies-6c073b969020",
+            "display_url": "francesco-ai.medium.com/ai-knowledge-map-how-to-classify-ai-technologies-6c073b969020",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Medium",
+            "title": "AI Knowledge Map: how to classify AI technologies",
+            "description": "A sketch of a new AI technology landscape",
+            "photo": {
+                "_": "Photo",
+                "id": 5979913233311574566,
+                "access_hash": -8321165925862174595,
+                "file_reference": "b'\\x00aFH\\xf1f\\x13\\xa3\\x05\\xb1m\\x00\\x96DM\\xed\\x02<\\xeaZ\\xb0'",
+                "date": "2019-08-23 08:09:35+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1b([[\\x06s\\xbaU\\xda=\\r6]2`\\x0f\\x96\\xb1\\xb6O\\\\\\xd6\\xc0E\\xed\\xc7\\xd0\\xd2\\x81\\x81\\x81O\\x99\\xf5\\x1b1mt\\xd9\\x92ui@\\t\\xcev\\x9fj\\xb7\\xa9\\x08\\x96\\xd5U\\x9fi\\x1ftz\\xd5\\xfe\\xf5\\x8b\\xae\\x1f\\xf4\\x88\\xc7\\xa2g\\xf5\\xa4\"?6Hb2)\\xda\\xcb\\x8c\\x1fZ)\\xb3\\xb1{+h\\x90\\x16c\\x92@\\xf6\\xe2\\x8avHwl\\xd8[\\x94\\xc8\\xc9\\x00\\x1e\\xe6\\x91\\xae6\\x9eNA\\xe3\\x81P\\xdb\\x0f\\x97=\\xea\\xca\\x80\\xcb\\xf3\\x0c\\xe0\\xf7\\xa0,9\\x01\\xe0\\x87$u\\xfa\\xd6^\\xba\\xbf</\\xea\\x08\\xadF\\x00\\xa61\\xc5f\\xea\\xdc\\xda\\x02z\\x86\\x18\\xfc\\xa9\\x032\\x92g\\x8d\\xd5\\x90\\xe0\\xa0\\xc0\\xff\\x00?\\x8d\\x15\\x1d\\x14\\xc4\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 213,
+                        "size": 12459
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 533,
+                        "size": 44100
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 800,
+                        "size": 82588
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "https://francesco-ai.medium.com",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 80,
+            "length": 94
+        }
+    ],
+    "views": 48,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

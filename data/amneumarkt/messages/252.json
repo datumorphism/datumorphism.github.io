@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 252,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-08-24 09:48:17+00:00",
+    "message": "#ML \n\nhttps://www.microsoft.com/en-us/research/blog/make-every-feature-binary-a-135b-parameter-sparse-neural-network-for-massively-improved-search-relevance/\n\nThough not the core of the model, I noticed that this model (MEB) uses the user search behavior on Bing to build the language model. If a search result on Bing is clicked by the user, it is considered to be a positive sample for the query, otherwise a negative sample. \n\nIn self-supervised learning, it has been shown that negative sampling is extremely important. This Bing search dataset is naturally labeling the positive and negative samples. Kuhl idea.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 46156074136955594,
+            "url": "https://www.microsoft.com/en-us/research/blog/make-every-feature-binary-a-135b-parameter-sparse-neural-network-for-massively-improved-search-relevance/",
+            "display_url": "microsoft.com/en-us/research/blog/make-every-feature-binary-a-135b-parameter-sparse-neural-network-for-massively-improved-search-relevance",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Microsoft Research",
+            "title": "Make Every feature Binary: A 135B parameter sparse neural network for massively improved search relevance - Microsoft Research",
+            "description": "Recently, Transformer-based deep learning models like GPT-3 have been getting a lot of attention in the machine learning world. These models excel at understanding semantic relationships, and they have contributed to large improvements in Microsoft Bing\u2019s search experience and surpassing human performance on the SuperGLUE academic benchmark. However, these models can fail to capture more [\u2026]",
+            "photo": {
+                "_": "Photo",
+                "id": 5788319806003457229,
+                "access_hash": -2944685215254282451,
+                "file_reference": "b\"\\x00aFH\\xef|\\xa1w\\xcdO.\\xf8\\x15s+|\\x82'\\xfe\\xcaO\"",
+                "date": "2021-08-04 17:37:36+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xadE(\\x1cf\\x80(\\x15\\xc5\\xed\\xd0f\\x9bN\\x1d);\\xd3\\x01(\\xa5\"\\x8aAp\\x07\\x8a:q\\x91E\\x14\\xc4\\x1cz\\x8a8\\x1d\\xe8\\xa2\\x80\\x03\\xd3\\xad\\x14Q@\\xcf'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 15151
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 61279
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 114610
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1441,
+                        "sizes": [
+                            27834,
+                            77882,
+                            126108,
+                            155049,
+                            241523
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 151
+        }
+    ],
+    "views": 117,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-08-24 09:48:52+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

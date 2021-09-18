@@ -1,0 +1,85 @@
+{
+    "_": "Message",
+    "id": 238,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-06-29 10:58:21+00:00",
+    "message": "#ML \n\nA Turing lecture article by the three famous DL guys. \nIt's an overview of the history, development, and future of AI. There are two very interesting points in the outlook section:\n- \"From homogeneous layers to groups of  neurons  that  represent  entities.\" In biological brains, there are memory engrams and motifs that almost do this. \n- \"Multiple   time   scales   of   adaption.\" This is another key idea that has been discussed numerous times. One of the craziest things about our brain is the diversity of time scales of plasticity, i.e., different mechanisms change the brain on different time scales. \n\nReference:\nBengio Y, Lecun Y, Hinton G. Deep learning for AI. Commun ACM. 2021;64: 58\u201365. doi:10.1145/3448250 \nhttps://dl.acm.org/doi/10.1145/3448250",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8011132598692668086,
+            "url": "https://dl.acm.org/doi/10.1145/3448250",
+            "display_url": "dl.acm.org/doi/10.1145/3448250",
+            "hash": 0,
+            "type": "article",
+            "site_name": "dl.acm.org",
+            "title": "Deep learning for AI | Communications of the ACM",
+            "description": "How can neural networks learn the rich internal representations required for difficult tasks such as recognizing objects or understanding language?",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityPhone",
+            "offset": 715,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 729,
+            "length": 38
+        }
+    ],
+    "views": 116,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-06-29 14:39:31+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

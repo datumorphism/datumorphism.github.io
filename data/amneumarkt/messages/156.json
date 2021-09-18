@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 156,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-19 11:59:10+00:00",
+    "message": "#shameless\n\nhttps://tools.kausalflow.com/\n\nIn the past years, I have been building a showcase of digital tools for academic researchers. \nIt started with some friends asking for recommendations of tools for reference management, visualization, note-taking, and so on ad infinitum.  \nSo I built a GitHub repo to share what I have learned about these tools. This was way before the \"awesome repo\" concept. Later came the \"GitHub awesome repo\" shitstorm. Everyone is building an \"awesome repo\". I created a website for a better user experience to flee from the shitstorm.\n\nTools for Academic Research is a website for digital tool listings. At the moment, there are 154 tools listed. You can browse by tags or categories to find whatever you need. Or add an item (books, tools, reviews, etc) you love.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 9022505728693929102,
+            "url": "https://tools.kausalflow.com/",
+            "display_url": "tools.kausalflow.com",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Kausalflow",
+            "title": "Tools for Academic Research",
+            "description": "A Curated List of Research Tool",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "KausalFlow",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 10
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 12,
+            "length": 29
+        }
+    ],
+    "views": 123,
+    "forwards": 5,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "shameless"
+    ]
+}

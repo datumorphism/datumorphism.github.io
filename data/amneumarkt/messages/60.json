@@ -1,0 +1,65 @@
+{
+    "_": "Message",
+    "id": 60,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-20 12:13:33+00:00",
+    "message": "Better decisions through science: Math-based aids for making decisions in medicine and industry could improve many diagnoses \u2014 offen saving lives in the process",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5222381817608276166,
+            "access_hash": -7506583329143242014,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00<aFH\\xf1x\\xf3g\\xe6\\x12\\xcd\\x87{\\n\\\\\\x08\\xab\\xb5\\xdd\\x8d\\xaf'",
+            "date": "2020-10-20 12:13:33+00:00",
+            "mime_type": "application/pdf",
+            "size": 1059516,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "Swets,_Dawes,_Monahan_2000_Unknown_Better_Decisions_through_Science.pdf"
+                }
+            ],
+            "thumbs": [],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 106,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-20 12:14:07+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,112 @@
+{
+    "_": "Message",
+    "id": 171,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-27 18:43:15+00:00",
+    "message": "#science\nhttps://distill.pub/2017/research-debt/\n\n> Research debt is the accumulation of missing interpretive labor. It\u2019s extremely natural for young ideas to go through a stage of debt, like early prototypes in engineering.\n\nThat is because our value system doesn\u2019t respect interpretors\u2026",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6293705992523857810,
+            "url": "https://distill.pub/2017/research-debt/",
+            "display_url": "distill.pub/2017/research-debt",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Distill",
+            "title": "Research Debt",
+            "description": "Science is a human activity. When we fail to distill and explain research, we accumulate a kind of debt...",
+            "photo": {
+                "_": "Photo",
+                "id": 5783837320435312870,
+                "access_hash": 7497944118891901231,
+                "file_reference": "b'\\x00aFH\\xef\\xf4\\xb0\\xe6FU\\x11\\xc6X\\x1a_>\\xba\\x8d\\x9b\\xbf\\\\'",
+                "date": "2018-12-05 21:09:50+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 48,
+                        "size": 766
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 169,
+                        "size": 9616
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 560,
+                        "h": 295,
+                        "size": 25216
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Shan Carter",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 9,
+            "length": 39
+        }
+    ],
+    "views": 105,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "science"
+    ]
+}

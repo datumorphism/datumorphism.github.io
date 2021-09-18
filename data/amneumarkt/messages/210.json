@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 210,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-18 07:54:59+00:00",
+    "message": "#ML \n\nHow do we interpret the capacities of the neural nets? Naively, we would represent the capacity using the number of parameters. Even for Hopfield network, Hopfield introduced the concept of capacity using entropy which in turn is related to the number of parameters.\n\nBut adding layers to neural nets also introduces regularizations. It might be related to capacities of the neural nets but we do not have a clear clue.\n\nThis paper introduced a new perspective using sparse approximation theory. Sparse approximation theory represents the data by encouraging parsimony. The more parameters, the more accurate the model is representing the training data. But it causes generalization issues as similar data points in the test data may have been pushed apart [^Murdock2021].\n\nBy mapping the neural nets to shallow \"overcomplete frames\", the capacity of the neural nets is easier to interpret.\n\n[Murdock2021]: Murdock C, Lucey S. Reframing Neural Networks: Deep Structure in Overcomplete Representations. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2103.05804",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1040,
+            "length": 31
+        }
+    ],
+    "views": 136,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

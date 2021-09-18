@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 174,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-29 08:08:13+00:00",
+    "message": "#data\n\nhttps://ec.europa.eu/eurostat/cache/recovery-dashboard/\n\nEurostat built a dashboard to show the socioeconomic indicators of EU during the corona virus period. \nIt is seen that most indicators are recovering.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2286024922897541443,
+            "url": "https://ec.europa.eu/eurostat/cache/recovery-dashboard/",
+            "display_url": "ec.europa.eu/eurostat/cache/recovery-dashboard",
+            "hash": 0,
+            "type": "article",
+            "site_name": "EUROPEAN STATISTICAL RECOVERY DASHBOARD",
+            "title": null,
+            "description": "Statistics serving Europe: https://ec.europa.eu/eurostat/recovery-dashboard/",
+            "photo": {
+                "_": "Photo",
+                "id": 5970957844247325690,
+                "access_hash": -2506217644072358682,
+                "file_reference": "b'\\x00aFH\\xef\\xca\\x0c\\x8be\\x1f\\xb416$I-nT\\x82\\xect'",
+                "date": "2020-12-17 11:18:09+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x12(\\x81S \\x1f1G\\xd4\\x1f\\xf0\\xa8\\x9f\\xa9\\x04\\xe7\\x1d\\xf1]\\x0bv\\xc0\\xa4\\xe7\\xde\\xae\\xe29\\xda+\\xa2\\xef\\x8c\\x1e\\xb4s\\xe8h\\xb8\\x8exc\\x14WD\\xbdNh\\xa2\\xe3\\x06\\xeb\\xf8R\\x1a(\\xa4&\\x1d\\xff\\x00\\x1a\\x0fO\\xc2\\x8a(\\x01R\\x8a(\\xa4\\xc6\\x8f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 146,
+                        "size": 11937
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 366,
+                        "size": 47270
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 549,
+                        "size": 83006
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "EUROSTAT",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 7,
+            "length": 55
+        }
+    ],
+    "views": 117,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

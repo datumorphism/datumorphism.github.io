@@ -1,0 +1,89 @@
+{
+    "_": "Message",
+    "id": 199,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-26 08:06:42+00:00",
+    "message": "#DataScience\n\nAh I have always been thinking about writing a book like this. \nJust bought the book to educate myself on communications.\n\nhttps://andrewnc.github.io/blog/everyday_data_science.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8973969085693087135,
+            "url": "https://andrewnc.github.io/blog/everyday_data_science.html",
+            "display_url": "andrewnc.github.io/blog/everyday_data_science.html",
+            "hash": 0,
+            "type": "article",
+            "site_name": "andrewnc.github.io",
+            "title": "Everyday Data Science",
+            "description": "Everyday Data Science. A book about using data science to solve day-to-day problems. It is a collection of stories, jokes, pictures, math, and code all designed to inspire future data professionals. We make decisions everyday, but often times we don't use much data to justify our choices. This book can help change that.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 137,
+            "length": 58
+        }
+    ],
+    "views": 147,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1557471333
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 282,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-26 08:58:15+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DataScience"
+    ]
+}

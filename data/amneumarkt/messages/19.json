@@ -1,0 +1,121 @@
+{
+    "_": "Message",
+    "id": 19,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-15 19:10:34+00:00",
+    "message": "Imitation Learning in the Low-Data Regime\nhttp://feedproxy.google.com/~r/blogspot/gJZg/~3/7fOVi1z29d0/imitation-learning-in-low-data-regime.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 692597833598268698,
+            "url": "http://feedproxy.google.com/~r/blogspot/gJZg/~3/7fOVi1z29d0/imitation-learning-in-low-data-regime.html",
+            "display_url": "ai.googleblog.com/2020/09/imitation-learning-in-low-data-regime.html?hl=en",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Google AI Blog",
+            "title": "Imitation Learning in the Low-Data Regime",
+            "description": "Posted by Robert Dadashi, Research Software Engineer and L\u00e9onard Hussenot, Student Researcher, Google Research    Reinforcement Learning (RL...",
+            "photo": {
+                "_": "Photo",
+                "id": 5982277780311747414,
+                "access_hash": 341392914271446577,
+                "file_reference": "b'\\x00aFH\\xf1\\x89\\x1c\\xf3V\\x10\\xbf\\n\\xc4!\\xd9\\x0ene\\x1a\\x1c)'",
+                "date": "2020-09-15 17:18:44+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 72,
+                        "h": 72,
+                        "size": 2268
+                    },
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xae\\xb1\\xbb\\x8c\\xa8\\xcd#)C\\x86\\x184\\xcc\\xd1\\x9a\\xa2Gv\\xa5\\x1c\\x9cS3\\xc5(r=?*\\x00{#(\\xc9\\xe9\\xebE7\\xcc?\\xec\\xff\\x00\\xdf\"\\x8a\\x00\\x8f4\\xb53\\x81\\x81\\xf5\\x14\\xec\\x0f\\xf3\\xde\\xa6\\xe5\\x15\\xfbRU\\x90\\xa3\\x14m\\x1e\\x94\\\\E|\\xfdh\\xa9\\xd1x\\xe9\\xdc\\xd1B\\x1b\\x11\\x898Q\\xf7\\xc1\\xfb\\x87\\xef~\\x14\\xe2v\\x8c\\xc8v1\\xec\\xdc1\\xa2\\x8aB\\x0f\\xbb\\x82\\xff\\x00\\xba=\\xb7\\xf1\\xf5\\xe9A\\x1bs\\xb8l\\x07\\xab\\x11\\x85o\\xc7\\xbf\\xe5E\\x14\\x00\\xd8\\xc1(7/\\xca2C\\x1cl\\x1f\\x8f\\xff\\x00Z\\x8a(\\xa0g'"
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": "  \ud83d\ude18 1",
+                        "data": "b'like 19 1'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude09",
+                        "data": "b'like 19 2'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude31",
+                        "data": "b'like 19 3'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "\ud83d\udcac",
+                        "url": "https://comments.bot/thread/kGdsdiY3K",
+                        "button_id": 322397896,
+                        "fwd_text": null
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 42,
+            "length": 102
+        }
+    ],
+    "views": 30,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-15 20:28:14+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

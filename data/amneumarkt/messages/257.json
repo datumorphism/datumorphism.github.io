@@ -1,0 +1,120 @@
+{
+    "_": "Message",
+    "id": 257,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-12 07:40:11+00:00",
+    "message": "#DS\n\nCute comics on interactive data visualization\n\nhttps://hdsr.mitpress.mit.edu/pub/49opxv6v/release/1",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8257954465482359631,
+            "url": "https://hdsr.mitpress.mit.edu/pub/49opxv6v/release/1",
+            "display_url": "hdsr.mitpress.mit.edu/pub/49opxv6v/release/1",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Harvard Data Science Review",
+            "title": "Why Do We Plot Data? \u00b7 Harvard Data Science Review",
+            "description": "Accompanying text for the \u201cDesigning for interactive exploratory data analysis requires theory of graphical inference\u201d Explainer Zine",
+            "photo": {
+                "_": "Photo",
+                "id": 5869399300969179467,
+                "access_hash": -2798110960309811493,
+                "file_reference": "b'\\x00aFH\\xef\\xba9\\xc7t?7H\\xf9\\xd3\\x14\\xa1\\xc4\\xdd\\xfd\\xc8`'",
+                "date": "2019-07-16 09:50:41+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x0c(\\x91f\\xff\\x00\\x89\\x7f\\x96RN\\xbf{\\x1f/\\xde\\xf5\\xa9\\xd2%\\x9a\\xe2}\\xfb\\xb8\\xdb\\x83\\x9fn\\xd4\\x80cJ\\xc0\\xf5\\xff\\x00\\xd9\\xaa)\\x99\\x92g(\\xec\\xa5\\xb1\\x92?*\\x0b\\x90\\xb8\\x91\\xed\\xa4\\x889\\xca>\\xd1\\xd7\\x90)Q\\xa3\\xfd\\xee\\x04\\xb1\\xb9\\x07*\\xc7\\x8c\\xd4\\x92\\'\\x97l\\xc1\\x19\\x81\\x07;\\xb3\\xc99\\xa6A\\x1f\\x9b\\xbeY\\x1d\\x99\\x94\\x103\\x8fO\\xfe\\xbd\\x04\"5\\xd8R?*9\\x16v\\xc6\\x1b\\x9c\\x1fZ*\\xc3(\\x16Q\\x1e\\xe8A\\x06\\x8a\\r/s'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 91,
+                        "size": 12394
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 364,
+                        "h": 103,
+                        "size": 14859
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUnderline",
+            "offset": 10,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 10,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 52,
+            "length": 52
+        }
+    ],
+    "views": 79,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-12 17:56:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

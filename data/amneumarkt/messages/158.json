@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 158,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-20 08:22:36+00:00",
+    "message": "#cn\nhttp://www.cddata.gov.cn/oportal/index\n\u6210\u90fd\u7adf\u7136\u6709\u5f00\u653e\u6570\u636e\u5e73\u53f0\uff0c\u800c\u4e14\u505a\u7684\u8fd8\u4e0d\u9519\u3002\n\n\u66f4\u65b0\uff1a\n\u6211\u53d1\u73b0\u6709\u522b\u7684\u7701\u5e02\u4e5f\u6709\uff0c\u96be\u9053\u662f\u6240\u6709\u57ce\u5e02\u548c\u7701\u4efd\u5df2\u7ecf\u7edf\u4e00\u4e86\uff1f\u90fd\u6709\u8fd9\u4e2a\u5f00\u653e\u6570\u636e\u5e73\u53f0\uff1f",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2170804784895576734,
+            "url": "http://www.cddata.gov.cn/oportal/index",
+            "display_url": "cddata.gov.cn/oportal/index",
+            "hash": 0,
+            "type": "article",
+            "site_name": "www.cddata.gov.cn",
+            "title": "\u6210\u90fd\u5e02\u516c\u5171\u6570\u636e\u5f00\u653e\u5e73\u53f0",
+            "description": null,
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "dsp",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 4,
+            "length": 38
+        }
+    ],
+    "views": 118,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-20 10:07:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "cn"
+    ]
+}

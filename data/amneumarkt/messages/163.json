@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 163,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-23 21:17:36+00:00",
+    "message": "https://www.youtube.com/watch?v=KXRtNwUju5g\n\nThis is one of the hidden problems of our world. In some sense, the US is destroying the world. If you look at Germany, plastic recycling is much easier with all these machines in the stores. (or, is it?)",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1503448450458446801,
+            "url": "https://www.youtube.com/watch?v=KXRtNwUju5g",
+            "display_url": "youtube.com/watch?v=KXRtNwUju5g",
+            "hash": 0,
+            "type": "video",
+            "site_name": "YouTube",
+            "title": "How China Broke the World's Recycling",
+            "description": "Buy your custom domain or email for 10% off at http://Hover.com/wendover\n\nListen to Extremities at http://ExtremitiesPodcast.com\n\nBuy a Wendover Productions t-shirt: https://standard.tv/collections/wendover-productions/products/wendover-productions-shirt\n\nSubscribe to Half as Interesting (The other channel from Wendover Productions): https://www.youtube.com/halfasinteresting\n\nYoutube: http://www.YouTube.com/WendoverProductions\nInstagram: http://Instagram.com/sam.from.wendover\nTwitter: http://www.Twitter.com/WendoverPro\nSponsorship Enquiries: wendover@standard.tv\nOther emails: sam@wendover.productions\nReddit: http://Reddit.com/r/WendoverProductions\n\nWriting by Sam Denby\nResearch by Sam Denby and Tristan Purdy\nEditing by Alexander Williard\nAnimation by Josh Sherrington\nSound by Graham Haerther \nThumbnail by Simon Buckmaster\n\nSelect footage courtesy the AP Archive\n\nReferences:\n[1] https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/G/TBTN17/CHN1211.pdf&Open=True\n[2] https://docs.wto.org/dol2fe/Pages\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5968691759372413881,
+                "access_hash": 3826939622424723011,
+                "file_reference": "b'\\x00aFH\\xefd\\\\\\xe6|\\xb1\"\\xcbqr\\x04\\x9c\\xf0\\xdf\\x86\\x9ab'",
+                "date": "2020-12-16 16:35:04+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(!\\x80<;\\xf77\\xe7\\xc0\\xa6m\\x1e\\xa7\\xf3\\xa5\\x85CC\\x9c\\xe3\\xaf\\xd3\\x8fZq\\x81\\x81\\xc6\\xe5\\xac\\x9a9\\xdaa\\xe5.y\\x93\\xf24\\x9eP\\xf2\\xf3\\xbd\\xb3\\x8c\\xe34\\x08\\xc9PC\\x0e}huuC\\xf3\\xfc\\xa3\\xb6h\\x0b\\x11:`}\\xe2x\\xf5\\xa2\\x98I<\\n)\\x02\\x1d\\x14\\xa1#\\xc3 aN\\x13'\\xfc\\xf3\\x1e\\x82\\x8a)\\x8e\\xe3\\xbc\\xf4\\xe31\\x8e\\x98\\xedP\\xb1\\xdc\\xe4\\xa8\\xc0'\\x81E\\x140\\x1e\\xdf\\xbaO\\xf6\\x88\\xe2\\x8a(\\xa63\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 16030
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 61817
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 103354
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": "https://www.youtube.com/embed/KXRtNwUju5g",
+            "embed_type": "iframe",
+            "embed_width": 1280,
+            "embed_height": 720,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 43
+        }
+    ],
+    "views": 119,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-23 21:22:14+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,52 @@
+{
+    "_": "Message",
+    "id": 251,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-08-20 11:08:26+00:00",
+    "message": "#science\n\nNielsen M. Reinventing discovery: The New Era of networked science. Princeton, NJ: Princeton University Press; 2011.\n\nI found this book this morning and skimmed through it. It looks concise yet unique. \nThe author discusses how the internet is changing the way human beings think as one collective intelligence. I like the chapters about how the data web is enabling more scientific discoveries.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 8
+        }
+    ],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-08-24 10:36:35+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "science"
+    ]
+}

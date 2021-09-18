@@ -1,0 +1,142 @@
+{
+    "_": "Message",
+    "id": 222,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-04-06 11:51:24+00:00",
+    "message": "",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPoll",
+        "poll": {
+            "_": "Poll",
+            "id": 5434012512892747854,
+            "question": "I would like to say thank you for following this channel.\nI use this channel as a notebook. Sometimes, I wonder if we could have more interactions. Maybe we could start with this question:\n Which of the following do you read the most? (Multiple choice)",
+            "answers": [
+                {
+                    "_": "PollAnswer",
+                    "text": "Data science (career related)",
+                    "option": "b'0'"
+                },
+                {
+                    "_": "PollAnswer",
+                    "text": "Data science (technical)",
+                    "option": "b'1'"
+                },
+                {
+                    "_": "PollAnswer",
+                    "text": "Machine learning (theoritical)",
+                    "option": "b'2'"
+                },
+                {
+                    "_": "PollAnswer",
+                    "text": "Machine learning (applications, libraries)",
+                    "option": "b'3'"
+                },
+                {
+                    "_": "PollAnswer",
+                    "text": "Something else (I would appreciate it if you leave a comment)",
+                    "option": "b'4'"
+                }
+            ],
+            "closed": false,
+            "public_voters": false,
+            "multiple_choice": true,
+            "quiz": false,
+            "close_period": null,
+            "close_date": null
+        },
+        "results": {
+            "_": "PollResults",
+            "min": false,
+            "results": [
+                {
+                    "_": "PollAnswerVoters",
+                    "option": "b'0'",
+                    "voters": 9,
+                    "chosen": false,
+                    "correct": false
+                },
+                {
+                    "_": "PollAnswerVoters",
+                    "option": "b'1'",
+                    "voters": 12,
+                    "chosen": false,
+                    "correct": false
+                },
+                {
+                    "_": "PollAnswerVoters",
+                    "option": "b'2'",
+                    "voters": 9,
+                    "chosen": true,
+                    "correct": false
+                },
+                {
+                    "_": "PollAnswerVoters",
+                    "option": "b'3'",
+                    "voters": 7,
+                    "chosen": true,
+                    "correct": false
+                },
+                {
+                    "_": "PollAnswerVoters",
+                    "option": "b'4'",
+                    "voters": 4,
+                    "chosen": false,
+                    "correct": false
+                }
+            ],
+            "total_voters": 19,
+            "recent_voters": [],
+            "solution": null,
+            "solution_entities": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 215,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 9,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 662921349
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 324776104
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 335,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

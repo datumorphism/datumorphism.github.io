@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 255,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-08 11:45:22+00:00",
+    "message": "#ML \n\n\ud83d\ude02\nJ\u00fcrgen Schmidhuber invented transformers in the 90s.\n\nhttps://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3057319053458191438,
+            "url": "https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html",
+            "display_url": "people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "people.idsia.ch",
+            "title": "2021: 30th anniversary of linear Transformer principle",
+            "description": "1991: Nets learn to program nets with outer product fast weights",
+            "photo": {
+                "_": "Photo",
+                "id": 5977959667436989420,
+                "access_hash": -871040862937674503,
+                "file_reference": "b'\\x00aFH\\xef_\\xa6G0\\xf7\\x19\\x8a&7O/\\xa6\\xd0\\x89\\xee\\x8b'",
+                "date": "2021-03-26 08:56:54+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd2`\\xdc\\x9d\\xd4\\xd5s\\xb8\\x0eN:\\xd4\\xa0\\x1ex\\xa8\\xe3\\x88\\xa3\\xee\\xe7\\x9a\\x00\\x93\\xbf?\\x855\\xce\\x10c9\\xe0f\\x97a\\xdc\\x0f\\xa7J\\x1dw'|\\xd0\\x007w\\xc5\\x14*\\xb8'-\\xf4\\xe3\\xde\\x8a\\x07rM\\xa39\\xa4\\xd8=\\xff\\x00:(\\xa0@PR\\xec\\x1e\\xff\\x00\\x9d\\x14P\\x02\\x04\\x00\\xe7\\x9f\\xce\\x8a(\\xa0\\x0f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 18876
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 754,
+                        "h": 377,
+                        "sizes": [
+                            3898,
+                            12280,
+                            32730,
+                            46373,
+                            66777
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 63,
+            "length": 77
+        }
+    ],
+    "views": 124,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-08 13:33:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

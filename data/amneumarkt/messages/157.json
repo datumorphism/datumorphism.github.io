@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 157,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-19 15:35:12+00:00",
+    "message": "#TIL\n\nhttps://stackoverflow.com/a/28142831/1477359\n\nI had the same idea that git fast forward merge is more or less the same as rebase. Until I read this stackoverflow answer.\n\nI guess we should always rebase whenever possible to maintain a clean history.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3401196620635867464,
+            "url": "https://stackoverflow.com/a/28142831/1477359",
+            "display_url": "stackoverflow.com/questions/28140434/is-there-a-difference-between-git-rebase-and-git-merge-ff-only",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Stack Overflow",
+            "title": "Is there a difference between git rebase and git merge --ff-only",
+            "description": "From what I read, both of them help us get a linear history. \n\nFrom what I experimented, rebase works all the time. But merge --ff-only works only in scenarios where it can be fast forwarded.\n\nI also",
+            "photo": {
+                "_": "Photo",
+                "id": 5795014139599498181,
+                "access_hash": 36447158194184827,
+                "file_reference": "b'\\x00aFH\\xf0\\x0f$\\t\\xf1*\\xa4\\r\\xd7\\xc4\\x1dfC=\\x10\\xcf\\x86'",
+                "date": "2021-04-30 16:21:51+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xa2\\x8a(\\x00\\xa2\\xa0\\x99\\xb2J7\\xca\\x0f\\xddozt.Xmo\\xbe:\\x8a\\x9eml;irZ(\\xa2\\xa8AL\\x90\\x8d\\x87 \\xb0\\xe8@\\xa7\\xd5}\\xc3i\\x1b\\xf6\\x9d\\xde\\x94\\x98\"&e\\x03\\n\\xe4\\x8f\\xee\\xbf\\xf8\\xd5\\x88\\x91UG\\x1f6?*\\x8c\\xe0\\xf5\\x98\\x9f\\xaa\\xd4\\x91\\x90\\xd29\\x1d8\\xa9\\x8cu\\xd4\\xa9=4%\\xa2\\x8a*\\xc9\\n(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 316,
+                        "h": 316,
+                        "size": 6931
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 44
+        }
+    ],
+    "views": 122,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-19 15:36:12+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "TIL"
+    ]
+}

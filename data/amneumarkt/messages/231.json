@@ -1,0 +1,133 @@
+{
+    "_": "Message",
+    "id": 231,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-05-21 05:13:39+00:00",
+    "message": "#DS \n\nhttps://octo.github.com/projects/flat-data\n\nHmmm, so they gave it a name. \nI've built so many projects using this approach. I started building such data repos using CI/CD services way before github actions was born. Of course github actions made it much easier.\nOne of them is the EU covid data tracking project ( https://github.com/covid19-eu-zh/covid19-eu-data ). It's been running for more than a year with very little maintenance. Some covid projects even copied our EU covid data tracking setup.\n\nI actually built a system (https://dataherb.github.io) to pull such github actions based data scraping repos together.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2309964998414939802,
+            "url": "https://octo.github.com/projects/flat-data",
+            "display_url": "next.github.com/projects/flat-data",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub Next",
+            "title": "GitHub Next | Flat Data",
+            "description": "GitHub Next Project: Flat explores how to make it easy to work with data in git and GitHub. It builds on the \u201c[git scraping\u201d approach pioneered by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/) to offer a simple pattern for bringing working datasets into your repositories and versioning them, because developing against local datasets is faster and easier than working with data over the wire.",
+            "photo": {
+                "_": "Photo",
+                "id": 5840095357583863019,
+                "access_hash": -2489341219125097864,
+                "file_reference": "b'\\x00aFH\\xef|\\xdc\\xfbt\\x86+\\xf4S\\x97\\xe4C\\xfbX\\xceH\\xae'",
+                "date": "2021-08-21 11:06:26+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x15(\\xd6w\\x08\\xa5\\x89\\x00{\\xd0$]\\xbb\\xb7\\x0cg\\xd7\\xf0\\xa4\\x91\\x16D!\\xf9\\x19\\xfe\\xb5\\t\\xb5\\x88\\xbe\\xec\\xb6A\\xcflu\\xcd0'\\x12!b\\xa1\\x86GQJ\\xac\\x1b\\xa1\\x07\\xe9PIo\\x1c\\x99\\xdc[\\x9c\\x8e\\xdcg\\xad*[\\xa2J\\x1cn\\xc8\\xce=9\\xcf\\xf8\\xd2\\xd0\\x0b\\x14Rg4P\\x02\\x9aL\\x0fAE\\x14\\x00`z\\nZ(\\xa0\\x02\\x8a(\\xa0\\x0f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 10145
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 419,
+                        "size": 35417
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 628,
+                        "sizes": [
+                            6472,
+                            13653,
+                            26291,
+                            35741,
+                            54595
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 42
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 320,
+            "length": 48
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 535,
+            "length": 26
+        }
+    ],
+    "views": 162,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-05-21 05:21:44+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

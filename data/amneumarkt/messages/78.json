@@ -1,0 +1,89 @@
+{
+    "_": "Message",
+    "id": 78,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-04 15:55:54+00:00",
+    "message": "https://www.nytimes.com/interactive/2020/11/03/us/elections/forecast-president.html\n\nComment Am Neumarkt:\nThe best information designers are summoned on each election day. It is a good time to learn about the best practices of data visualization.\nThis \u201cpaths to victory\u201d visualization is one of the best I have ever seen. If the put some probabilities on each branch, it becomes a transitional decision tree to estimate risks used by investors.\nDoes it tell us anything useful directly? Not really. Not all branches are created equal. Without probabilities, It is as useless as a piece of blank paper. But it helps people do some little experiments to feel the competitiveness. In some sense, the probabilities are encoded in the reader\u2019s head. Each reader provides a different reality of probabilities.\n\nAlso they started to report uncertainties. I remember last time they were using jittering pointers to educate people of the uncertainties. Now they have range of estimates. Showing ranges is an important step forward.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5267208644679699044,
+            "access_hash": 8507836670228056711,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00NaFH\\xf0\\xab\\xe4\\xb1f\"\\x08]\\x8e:\\x95\\xda$\\x84\\x95\\xf1`'",
+            "date": "2020-11-04 15:55:54+00:00",
+            "mime_type": "image/png",
+            "size": 346842,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeImageSize",
+                    "w": 2048,
+                    "h": 1764
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "Screen Shot 2020-11-04 at 16.49.27.png"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\"(\\xd9#\"\\x93\\x18\\x18\\xc1\\xfc\\xe9h4\\x00\\x9d\\xe8\\xfc)qI\\xd2\\x80\\x16\\x8a(\\xa0\\x049\\xec\\x07Z\\x01\\xc8\\xe2\\x96\\x90\\xf5\\xcf\\xa5\\x00\\x19\\x00\\xe2\\x82q\\xd6\\x8cq\\xff\\x00\\xd7\\xa0z\\xd0\\x02\\x12s\\xc6\\x0f<\\xf3E8t\\xa2\\x80\\x0c\\x0fAF\\x07\\xa0\\xa2\\x8a\\x000=\\x05\\x14Q@\\x05\\x14Q@\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 276,
+                    "size": 11076
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 83
+        }
+    ],
+    "views": 168,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-11-04 16:00:04+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

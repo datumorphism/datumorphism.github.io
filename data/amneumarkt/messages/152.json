@@ -1,0 +1,91 @@
+{
+    "_": "Message",
+    "id": 152,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-15 10:25:39+00:00",
+    "message": "#fun\n\nHave some sunshine! \u94f6\u88c5\u7d20\u88f9",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5192725051249527463,
+            "access_hash": 6705663307528303474,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x98aFH\\xf0-\\xe7\\xfdo\\xb8\\x13\\x0eu\\xbf\\xf4?!{_r\\xe6'",
+            "date": "2021-01-15 10:25:39+00:00",
+            "mime_type": "image/jpeg",
+            "size": 664515,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeImageSize",
+                    "w": 2250,
+                    "h": 4000
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "P_20210115_111920.jpg"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x16\\xd2\\xdbF\\xdaZ^j\\xc9\\x1b\\xd2\\x8au\\x14\\x864\\x1fqI\\xbdA\\xea*\\xa0.Fq\\x91\\x8e\\xd5\\x13\\xbbn\\xc8\\'\\x1e\\x9d)\\\\,[\\x96\\xed\"\\xc6y\\xcf\\xa5\\x15\\x9d>X\\x0c\\r\\xdf\\x8d\\x14\\\\,*\\xee\\xdf\\xc9?\\x99\\xa1\\xb6\\x97\\xda\\xdc\\x028$\\xd1EJ)\\x90\\xc9&\\xc3\\x8d\\xc7#\\x8c\\x8e\\xf4QE1\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 180,
+                    "h": 320,
+                    "size": 15075
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        }
+    ],
+    "views": 194,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-15 10:25:46+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

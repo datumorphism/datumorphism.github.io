@@ -1,0 +1,108 @@
+{
+    "_": "Message",
+    "id": 15,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-11 11:54:44+00:00",
+    "message": "https://distill.pub/2020/communicating-with-interactive-articles/\n\ndetails-on demand is so popular and crucial to perception.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6293705991936466276,
+            "url": "https://distill.pub/2020/communicating-with-interactive-articles/",
+            "display_url": "distill.pub/2020/communicating-with-interactive-articles",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Distill",
+            "title": "Communicating with Interactive Articles",
+            "description": "Examining the design of interactive articles by synthesizing theory from disciplines such as education, journalism, and visualization.",
+            "photo": {
+                "_": "Photo",
+                "id": 5970715977459018666,
+                "access_hash": -5060260260485262582,
+                "file_reference": "b'\\x00aFH\\xf1s\\xcd\\xd4\\xf5u=\\x91E\\xe9{h\\xbc\\x18P\\xd8\\x03'",
+                "date": "2020-09-11 08:22:54+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd0\\x8a \\xc9\\x922sOh\\xd4\\x01\\xeei#\\x05\\xa2 \\x1e\\xf4\\xf3\\x9c\\x00{0\\xa2\\xc4\\xc5!<\\xa5\\xcfC\\xf9\\xd2\\x08\\x94\\xe7\\x8e\\xfe\\xb5&>l\\xd2/\\x7f\\xa9\\xa2\\xc5\\xdc\\x82h\\x95P\\x11\\xd74T\\x93\\xfd\\xcf\\xc6\\x8a\\xceZ2\\xe2\\xdd\\x88U\\xd8p\\x0e9\\xa7\\xefc\\xd4\\xf7\\xa2\\x8a\\xdeG<C\\xcc\\x7f\\xef\\x1a\\x03\\xb0\\xcf=\\xe8\\xa2\\xb1\\x91\\xaa\\x18\\xce\\xcd\\xc1=\\xe8\\xa2\\x8a\\xc1\\xb2\\x8f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 7604
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 21809
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 640,
+                        "size": 39575
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 2000,
+                        "h": 1000,
+                        "size": 70276
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Duen Horng (Polo) Chau",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 65
+        }
+    ],
+    "views": 47,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

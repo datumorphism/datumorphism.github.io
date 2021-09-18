@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 242,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-07-05 11:15:45+00:00",
+    "message": "#TIL \n\nIn PyTorch, conversion from Torch tensors to numpy arrays is very fast on CPUs, though torch tensors and numpy arrays are very different things. This is because of the Python buffer protocol. The protocol makes it possible to use binary data directly from C without copying the object. \n\nhttps://docs.python.org/3/c-api/buffer.htm\n\nReference:\nEli Stevens Luca Antiga. Deep Learning with PyTorch: Build, Train, and Tune Neural Networks Using Python Tools. Simon and Schuster, 2020;",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 295,
+            "length": 42
+        }
+    ],
+    "views": 194,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-07-05 11:26:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "TIL"
+    ]
+}

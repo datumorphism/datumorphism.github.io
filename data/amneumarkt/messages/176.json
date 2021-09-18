@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 176,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-31 12:56:28+00:00",
+    "message": "#market\n\n\nRoad freight between Britain and EU is down by a third, data shows\nhttps://www.theguardian.com/politics/2021/jan/31/road-freight-britain-eu-down-third-data-shows-brexit\n\n\nYeah, thanks to brexit",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1491978795608836725,
+            "url": "https://www.theguardian.com/politics/2021/jan/31/road-freight-britain-eu-down-third-data-shows-brexit",
+            "display_url": "theguardian.com/politics/2021/jan/31/road-freight-britain-eu-down-third-data-shows-brexit",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "the Guardian",
+            "title": "Road freight between Britain and EU is down by a third, data shows",
+            "description": "Hauliers increasingly refusing to take loads across channel because of Brexit controls",
+            "photo": {
+                "_": "Photo",
+                "id": 5815676540065786844,
+                "access_hash": 4390523722615025560,
+                "file_reference": "b'\\x00aFH\\xef\\x1fj\\x9e\\xe7\\x0b\\xc6\\x1a+\\xf1\\t\\x0b\\xde\\n\\xe4\\x87\\xbd'",
+                "date": "2021-01-31 12:12:27+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(h\\x86 \\xb8\\xf38\\x07<S\\xb0\\x81\\t\\xdf\\xcf\\xa5.\\xf5Tfn\\x00\\xf6\\xa1&\\x8d\\xd5\\x889\\xc7lS\\xbd\\xc5k\\x11m\\x89F@\\xe7\\xf9\\xd3\\xd8\\xc6\\xd8e\\x8f\\x91\\xd7\\xd0\\xd4\\xbb\\x97h#\\x92\\x7fJ\\x8d\\xae#\\x0e@9\\xfd(\\xbb\\x0b\"8\\xf6\\x8c\\x9d\\x9c`\\x7f\\x0f\\xd6\\x8a\\x97\\xce\\x8fy\\x05\\xc0\\x1e\\xb4Q\\xa8\\x14^we\\xdb\\x9e)\\x81\\xdb\\xa6Oj(\\xa0\\x07\\x89\\xdd\\x06\\x06?\\x1aX\\xae<\\xa2p\\x80\\x9e\\xe4\\x9e\\xb4QM\\t\\x89$\\xa8\\xe0\\xe2 \\xac{\\x83E\\x14U\\x92\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 21723
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 100235
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "size": 150553
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "https://www.theguardian.com/profile/lisaocarroll,https://www.theguardian.com/profile/seanclarke",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 77,
+            "length": 101
+        }
+    ],
+    "views": 110,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-31 12:56:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "market"
+    ]
+}

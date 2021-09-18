@@ -1,0 +1,101 @@
+{
+    "_": "Message",
+    "id": 16,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-12 18:40:22+00:00",
+    "message": "Transformers are Graph Neural Networks\nhttps://thegradient.pub/transformers-are-graph-neural-networks/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2047476602461386797,
+            "url": "https://thegradient.pub/transformers-are-graph-neural-networks/",
+            "display_url": "thegradient.pub/transformers-are-graph-neural-networks",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The Gradient",
+            "title": "Transformers are Graph Neural Networks",
+            "description": "My engineering friends often ask me: deep learning on graphs sounds great, but are there any real applications?  While Graph Neural Networks are used in recommendation systems at Pinterest, Alibaba and Twitter, a more subtle success story is the Transformer architecture, which has taken the NLP world by storm. Through",
+            "photo": {
+                "_": "Photo",
+                "id": 5975513382914206653,
+                "access_hash": 6013831091614861578,
+                "file_reference": "b'\\x00aFH\\xf1O\\x11\\xea\\xec\\x82\\xe2\\x0c\\x95\\xd1\\xf5\\x1c5\\xa3\\x90A\\xf5'",
+                "date": "2020-09-12 15:17:36+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xd1\\xa5\\x15Z\\xea\\xe3\\xc8\\x08\\x17\\x96c\\xd3\\xdb\\xbdW\\xb8\\xbex\\xeeJ\\xa3\\x02\\xa3\\xb6=\\xa8\\x03F\\xab]\\xdc\\x18\\x131\\x80\\xcd\\x9e}\\xaa\\x88\\xbco4\\xc8\\x06\\x19\\xb8\\xcdBe\\x93\\xc99-\\x82s\\xf3\\x1c\\xfeT\\x01\\xb3\\x16LJX\\xe4\\x91\\x9c\\xd1D9\\xf2#\\xc8\\xc1\\xda8\\xfc(\\xa0Ff\\xa7\\xbb\\xed+\\x83\\xfc#\\xf9\\x9a\\xb3\\tD\\xd3\\x8c\\xa5\\x03d\\x12\\xd8\\xef\\xcd\\x14P34L\\xa3nS\\xa7\\xbdh@\\xe7\\xce\\\\\\x81\\xd7\\xfaQE\\x01r\\xc5\\xc5\\xc0\\x85\\xe3R\\t\\xdeq\\xf4\\xa2\\x8a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 14769
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 449,
+                        "size": 66907
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1250,
+                        "h": 702,
+                        "size": 114703
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 39,
+            "length": 63
+        }
+    ],
+    "views": 42,
+    "forwards": 1,
+    "replies": null,
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

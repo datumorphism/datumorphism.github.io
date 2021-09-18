@@ -1,0 +1,126 @@
+{
+    "_": "Message",
+    "id": 196,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-23 09:14:49+00:00",
+    "message": "#fun\n\nInteresting talk on the softwares used by Apollo.\n\nhttps://media.ccc.de/v/34c3-9064-the_ultimate_apollo_guidance_computer_talk#t=3305",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8923657053059143274,
+            "url": "https://media.ccc.de/v/34c3-9064-the_ultimate_apollo_guidance_computer_talk",
+            "display_url": "media.ccc.de/v/34c3-9064-the_ultimate_apollo_guidance_computer_talk",
+            "hash": 0,
+            "type": "video",
+            "site_name": "media.ccc.de",
+            "title": "The Ultimate Apollo Guidance Computer Talk",
+            "description": "The Apollo Guidance Computer (\"AGC\") was used onboard the Apollo spacecraft to support the Apollo moon landings between 1969 and 1972. Th...",
+            "photo": {
+                "_": "Photo",
+                "id": 532578530731209848,
+                "access_hash": -3410600249663142278,
+                "file_reference": "b'\\x00aFH\\xef\\xf3#\\xdd,\\xd2\\xd5\\x8c\\xf9\\x1b\\x1e\\x0f\\xc0\\xc1\\xb2L\\x95'",
+                "date": "2017-12-28 13:04:14+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 51,
+                        "size": 1067
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 11175
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 44104
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 86506
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 1920,
+                        "h": 1080,
+                        "size": 126859
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Christian Hessmann",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 57,
+            "length": 82
+        }
+    ],
+    "views": 128,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-23 09:18:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

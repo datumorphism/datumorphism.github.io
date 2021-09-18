@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 46,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-04 01:56:36+00:00",
+    "message": "Signatures of a liquid\u2013liquid transition in an ab initio deep neural network model for water | PNAS\nhttps://www.pnas.org/content/early/2020/10/01/2015440117",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4407690444973946685,
+            "url": "https://www.pnas.org/content/early/2020/10/01/2015440117",
+            "display_url": "pnas.org/content/117/42/26040",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "PNAS",
+            "title": "Signatures of a liquid\u2013liquid transition in an ab initio deep neural network model for water",
+            "description": "Water is central across much of the physical and biological sciences and exhibits physical properties that are qualitatively distinct from those of most other liquids. Understanding the microscopic basis of water\u2019s peculiar properties remains an active area of research. One intriguing hypothesis is that liquid water can separate into metastable high- and low-density liquid phases at low temperatures and high pressures, and the existence of this liquid\u2013liquid transition could explain many of water\u2019s anomalous properties. We used state-of-the-art approaches in computational quantum chemistry, statistical mechanics, and machine learning and obtained evidence consistent with a liquid\u2013liquid transition, supporting the argument for the existence of this phenomenon in real water.\n\nAll data related to this work, including software installation instructions, DP-GEN, LAMMPS, and PLUMED input files, trained DNN model, raw simulation trajectory data, and analysis scripts are publicly available for download at <https://d\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5793308745525210029,
+                "access_hash": 7984246037263512501,
+                "file_reference": "b'\\x00aFH\\xf1\\xfd!\\xfd\\xe1=<\\xe7D\\xcdA\\xa0\\x96]\\xe1/\\xee'",
+                "date": "2021-01-23 13:54:43+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01(\\x1c\\xd6\\x00d`\\n\\x8d\\xb8\\xee\\x7f:\\x93\\x80\\xe0d\\x7fZ\\x89rz\\x8a\\x00C!Q\\xc1\\xfc\\xeaU\\xe5A=i6\\x029o\\xca\\x9d\\x90\\x00\\x19\\xa0\\x05=\\xb22h\\xc6A\\xe0s\\xcfZ;\\x8e\\x7f\\n\\x8cH\\x10\\xe1\\x8f\\x1e\\xbe\\x94\\x01&\\x0f9\\xc1\\xcd\\x19+\\xc0\\x03\\xf3\\xa5V\\x0c8 \\xfd)\\x1b\\xad\\x00\\x07\\xa8\\xc0\\xcdE\\xe4\\x8c\\x1c\\xa6q\\xefE\\x14\\x00\\xd3n\\x8d\\xc8S\\xc7\\xa3T\\xc8\\xa4(\\x18\\xe9\\xeah\\xa2\\x80\\xb9'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 226,
+                        "h": 320,
+                        "size": 24936
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 565,
+                        "h": 800,
+                        "size": 108282
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 904,
+                        "h": 1280,
+                        "size": 186846
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 100,
+            "length": 56
+        }
+    ],
+    "views": 43,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

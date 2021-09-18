@@ -1,0 +1,415 @@
+{
+    "_": "Message",
+    "id": 111,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-10 09:00:00+00:00",
+    "message": "https://www.forbes.com/sites/amyfeldman/2020/05/28/biotech-rd-software-startup-benchling-started-by-mit-undergrads-scores-850-million-valuation-amid-coronavirus-pandemic/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6028587531028258510,
+            "url": "https://www.forbes.com/sites/amyfeldman/2020/05/28/biotech-rd-software-startup-benchling-started-by-mit-undergrads-scores-850-million-valuation-amid-coronavirus-pandemic/",
+            "display_url": "forbes.com/sites/amyfeldman/2020/05/28/biotech-rd-software-startup-benchling-started-by-mit-undergrads-scores-850-million-valuation-amid-coronavirus-pandemic",
+            "hash": 112451903,
+            "type": "photo",
+            "site_name": "Forbes",
+            "title": "Biotech R&D Software Startup Benchling, Started By MIT Undergrads, Scores $850 Million Valuation Amid Coronavirus Pandemic",
+            "description": "Forbes Under 30 alum Sajith Wickramasekara scores an $850 million valuation for his biotech R&D startup Benchling. Amid the coronavirus pandemic, the company is helping big biotech companies work on potential therapeutics and vaccines for Covid-19.",
+            "photo": {
+                "_": "Photo",
+                "id": 5946202975603108653,
+                "access_hash": -1364673908182718986,
+                "file_reference": "b'\\x00aFH\\xf0\\xfd:\\xea\\xa7\\x0f\\x85\\x8f>-\\xfa\\x911)\\x0c7\\x1c'",
+                "date": "2020-05-28 10:38:38+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x16(rMn\\xcd\\x81\\x12\\xe7\\xe9I7\\x96HUP\\x87<\\xe0sU\\xd2t\\x89\\x8e\\xd1\\xc9\\xe2\\xac\\xc6\\x11\\xc0\\xdc>f\\xe7&\\x90\\xc8\\x94\\xc4\\xc4\\x07\\x18\\xdb\\xdf\\x1did1m;0O\\xd2\\xa4\\xb8\\x08\\xf9\\xc2\\xe0\\x8ex\\xefT\\xd5\\x81\\xe3\\x07\\xf3\\xa0\\x0bq\\xfd\\x9b\\xcb\\x1eb)j*\\x12T\\x00\\x08?\\x9d\\x14\\x93\\x1b!\\x8dD\\xb9`1\\xb6\\xa4[\\x8f&L\\xb2\\xee QER$ds<\\x92\\xe0\\x9f\\xbd\\xd75&\\xdc\\xafZ(\\xa4\\xc6\\x88\\xee>D\\xdc\\t\\xceh\\xa2\\x8ak`g'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 177,
+                        "size": 19118
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 443,
+                        "size": 79544
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 665,
+                        "size": 110833
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Amy Feldman",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.forbes.com/sites/amyfeldman/2020/05/28/biotech-rd-software-startup-benchling-started-by-mit-undergrads-scores-850-million-valuation-amid-coronavirus-pandemic/",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Biotech R&D Software Startup Benchling, Started By MIT Undergrads, Scores $850 Million Valuation Amid Coronavirus Pandemic"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Amy Feldman"
+                        },
+                        "published_date": "2020-05-28 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5944089027059755894,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Sajith Wickramasekara started biotech R&D software company Benchling in his MIT dorm room. Now it's ... [+] worth $850 million."
+                            },
+                            "credit": {
+                                "_": "TextPlain",
+                                "text": "Courtesy of Benchling"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Sajith Wickramasekara started working on an idea for a cloud-based Crispr design tool for scientists during college at MIT eight years ago. Today, researchers at Regeneron, Gilead and other biotech giants rely on Benchling\u2019s R&D software to help them track, measure and forecast their scientific work. With biotech in the spotlight as researchers search for vaccines and cures for Covid-19, Wickramasekara told "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Forbes "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "that he scored a new investment of $50 million from investors led by Alkeon Capital this spring that brings Benchling\u2019s total funding to $114 million at a valuation of $850 million."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cI don\u2019t think the world has ever been so focused on biotech R&D before,\u201d says Wickramasekara, a Forbes Under 30 alumnus who is now 29. \u201cWe have a very ambitious roadmap to help accelerate the next generation of breakthroughs.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Back when he was an undergrad building the company in his dorm room, he simply wanted to address the difficulties he\u2019d seen scientists and researchers face in the lab. He\u2019d studied computer science and spent time in a biology lab, and was frustrated with how the reliance on paper, email and spreadsheets was holding back research. \u201cYou spend so much time [dealing with] missing data and doing the same thing that\u2019s been done before,\u201d he says. He and his cofounder, Ashu Singhal, also a student at MIT, started out by giving their software away for free to academic researchers. Singhal, who graduated with a bachelor\u2019s degree in computer science in 2011, now works on the product side for Benchling."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In those early days, it wasn't clear what the company\u2019s value might be, and there was a lot of skepticism about software focused on just one vertical. John Cumbers, who runs synthetic biology hub SynBioBeta, recalls rejecting Wickramasekara (who is on leave of absence from MIT) from an incubator back then. \u201cI just thought there\u2019s no market for it, that nobody was going to pay for software for biology,\u201d he says. Today, the San Francisco-based company is one of 25 that made the cut for this year\u2019s "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Forbes"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u2019 Next Billion-Dollar Startups list."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "MORE FOR YOU\n"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Synthetic Biology Partners With AI To Delete Food Allergies\n"
+                                    },
+                                    "url": "https://www.forbes.com/sites/johncumbers/2021/01/27/synthetic-biology-partners-with-ai-to-delete-food-allergies/",
+                                    "webpage_id": 6028587531120992974
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "California\u2019s Privacy Rights Act: What Does It Mean For Your Organization?\n"
+                                    },
+                                    "url": "https://www.forbes.com/sites/stephanzoder/2021/01/28/californias-privacy-rights-act-what-does-it-mean-for-your-organization/",
+                                    "webpage_id": 6028587531220264301
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "New Images Released Of Engine Damage Caused By Experimental Low Sulfur Ship Fuel VLSFO"
+                                    },
+                                    "url": "https://www.forbes.com/sites/nishandegnarain/2021/01/24/new-images-released-of-engine-damage-caused-by-experimental-low-sulfur-ship-fuel-vlsfo/",
+                                    "webpage_id": 6028587531661264403
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Benchling uses a freemium model that relies on academic researchers to bring their desire for its software with them as they start companies or finish their Ph.D.s and get hired at existing biotechs. Today, nearly 350 companies pay for Benchling at a cost that can range from $15,000 a year for a small biotech startup to millions for a large corporation. Its revenue reached an estimated $21 million in 2019. And as the company has grown, it\u2019s added new products, including a new data and analytics dashboard that helps its customers gain both scientific and operational insights."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The increasing complexity of biotech research has also helped spur Benchling\u2019s growth. \u201cAs you shift to manipulating living cells, the data you work with is more complex,\u201d Wickramasekara says.\u201dDefaulting to paper and spreadsheets wasn\u2019t an option for them anymore.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Brandon Reeves, a principal at Lux Capital, who led the firm\u2019s recent investment in Benchling, says he kept hearing about Benchling from executives at the healthcare and life sciences company in its portfolio. \u201cWe invest in so much biotech that spends money on Benchling,\u201d he says. \u201cIt\u2019s become a line item for them, like how Salesforce is a line item for enterprise IT.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5945888145910377238,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Since Covid-19, Wickramasekara figures that its software is being used on research for more than a dozen potential treatments or vaccines. In addition, in an effort to help ramp up testing for Covid-19, he has offered Benchling for free to any lab that wants to test patients for the disease. More than a dozen have signed on."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Corteva Agrisciences, the agricultural company spun out of DowDuPont last year, is among those that rolled out a testing effort in April. \u201cWe had to go from not having a laboratory at all to having a lab,\u201d says Doane Chilcoat, who leads the Covid-19 testing project for Corteva. Corteva started using Benchling on April 10, 2020, and began testing patient samples from its healthcare partners at MercyOne on April 27, 2020. So far, he says, Corteva is doing a few hundred tests a day, but given the Covid-19 testing demands, it could crank that number up to thousands, helped by Benchling\u2019s software. \u201cWe are not a clinical company, but we do more nucleic-acid testing than almost anybody else on earth,\u201d he says."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "While Wickramasekara says that Benchling didn\u2019t need the funds as it hadn\u2019t yet spent the $35 million it raised last summer, he wanted to be sure the company would have financial stability and not have to worry about any future economic uncertainty. \u201cLife sciences R&D is really hard. Many drugs fail,\u201d he says. \u201cOur customers need us to be stable. Having a balance sheet like this is reassuring to them.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "With the new funding, Wickramasekara figures on expanding the company\u2019s product portfolio, to add more tools for researchers working with chemistry as well as biology (with a first product release expected this year). He also plans to increase its international operations, especially in Europe, where it had plans for a Zurich office before he pandemic. \u201cIn the long run,\u201d he says, \u201cthe investment in biotech is going to go up. This will increase the need for collaborative software.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In addition to Alkeon and Lux Capital, investors in the new funding include Benchmark, Iconiq, Menlo Ventures, Spark Capital and Thrive Capital."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextUrl",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Full coverage and live updates on the Coronavirus"
+                                },
+                                "url": "https://www.forbes.com/coronavirus/",
+                                "webpage_id": 0
+                            }
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5944089027059755894,
+                        "access_hash": 9024229595578870419,
+                        "file_reference": "b'\\x00aFH\\xf0\\x8c\\x8ct\\x00\\xf8\\x02\\xfe\\x82\\x88\\xb7\\xc6\\xb8\\x80oB\\xfa'",
+                        "date": "2020-05-28 10:38:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x16(r\\xcdn\\xcd\\x81\\x12\\xe7\\xe9I7\\x96HUP\\x87<\\xe0sU\\xd2t\\x89\\x8e\\xd1\\xc9\\xe2\\xac\\xc6\\x11\\xc0\\xde>f\\xe7&\\x90\\xc8\\x94\\xc4\\xc4\\x07\\x18\\xc7|u\\xa5\\x90\\xc5\\xb4\\xec\\xc1?J\\x92\\xe0#\\xe7\\x0b\\x829\\xe3\\xbdSV\\x07\\x8c\\x1f\\xce\\x80-\\xc7\\xf6o,y\\x88\\xa5\\xa8\\xa8I@\\x00 \\xfetRLl\\x860%\\xcb\\x01\\x8d\\xb5\"\\xdcy2e\\x97q\\x02\\x8a*\\x91##\\x99\\xe4\\x97\\x04\\xfd\\xee\\xb9\\xa9v\\xe5O4QI\\x8d\\x11O\\xf2&\\xe0NA\\xa2\\x8a)\\xad\\x81\\x9f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 177,
+                                "size": 19231
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 443,
+                                "size": 75534
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 960,
+                                "h": 532,
+                                "size": 98255
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5945888145910377238,
+                        "access_hash": 5849018458962909419,
+                        "file_reference": "b'\\x00aFH\\xf0\\x15\\x00]\\x92\\xc1\\xe6o\\xea\\xb8n\\x90yd1{\\xa0'",
+                        "date": "2020-05-28 10:38:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x08(\\xd6;\\xb9\\xc6)>oj(\\xa6+\\x8b\\xce:\\xad2M\\xff\\x00.\\xd2;\\xe7\\x14QHd\\x01n\\xbc\\xf4%\\xbeL\\xf28\\xf4\\xa2\\x8a(c\\xe8\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 65,
+                                "size": 7884
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 163,
+                                "size": 30857
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 960,
+                                "h": 196,
+                                "size": 37366
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 170
+        }
+    ],
+    "views": 122,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

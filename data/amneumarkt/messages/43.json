@@ -1,0 +1,82 @@
+{
+    "_": "Message",
+    "id": 43,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-02 08:22:27+00:00",
+    "message": "https://greenelab.github.io/scihub-manuscript/v/8fcd0cd665f6fb5f39bed7e26b940aa27d4770ba/\n\nI am a lit bit scared whenever I think about how it accesses the papers. It is a black box and we have no idea if scihub is doing this in a way that is accepted by every researcher. \nOn the other hand, it is not easy to live without scihub. There are legal alternatives like unpaywall and kopernio but they are way behind the game.\nWhat shall we do? Require the author of scihub to open source the code?  Continue using a black box that may hurt other people? I don't know.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8264873554033516395,
+            "url": "https://greenelab.github.io/scihub-manuscript/v/8fcd0cd665f6fb5f39bed7e26b940aa27d4770ba/",
+            "display_url": "greenelab.github.io/scihub-manuscript/v/8fcd0cd665f6fb5f39bed7e26b940aa27d4770ba",
+            "hash": 0,
+            "type": "article",
+            "site_name": "greenelab.github.io",
+            "title": "Sci-Hub provides access to nearly all scholarly literature",
+            "description": null,
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Casey S. Greene",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 89
+        }
+    ],
+    "views": 40,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 10,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 50,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-02 08:25:00+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

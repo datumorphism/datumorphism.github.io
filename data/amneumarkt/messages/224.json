@@ -1,0 +1,85 @@
+{
+    "_": "Message",
+    "id": 224,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-05-05 14:42:23+00:00",
+    "message": "#statistics \n\nThis is the original paper of Fraser information. \n\nFisher information measures the second moment of the model sensitivity; Shannon information measures compressed information or variation of the information; Kullback (aka KL divergence) distinguishes two distributions.\nInstead of defining a measure of information for different conditions, Fraser tweaked the Shannon information slightly and made it more generic. The Fraser information can be reduced to Fisher information, Shannon information, and Kullback information under certain conditions.\n\nIt is such a simple yet powerful idea.\n\nFraser DAS. On Information in Statistics. aoms. 1965;36: 890\u2013896. doi:10.1214/aoms/1177700061\nhttps://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-36/issue-3/On-Information-in-Statistics/10.1214/aoms/1177700061.full",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8742502947108274045,
+            "url": "https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-36/issue-3/On-Information-in-Statistics/10.1214/aoms/1177700061.full",
+            "display_url": "projecteuclid.org/journals/annals-of-mathematical-statistics/volume-36/issue-3/On-Information-in-Statistics/10.1214/aoms/1177700061.full",
+            "hash": 0,
+            "type": "article",
+            "site_name": "EUCLID",
+            "title": "On Information in Statistics",
+            "description": "The three familiar definitions of statistical information, Fisher (1925), Shannon (1948), and Kullback (1959), are closely tied to asymptotic properties, hypothesis testing, and a general principle that information should be additive. A definition of information is proposed here in the framework of an important kind of statistical model. It has an interpretation for small samples, has several optimum properties, and in most cases is not additive with independent observations. The Fisher, Shannon and Kullback informations are aspects of this information. A variety of definitions of information may be found in the statistical literature. Perhaps the oldest and most familiar is that due to Fisher (1925). For a real parameter and a density function satisfying Cramer-Rao regularity conditions it has the form \\begin{align*}I_F(\\theta) &= \\int \\lbrack(\\partial/\\partial\\theta) \\ln f(x \\mid \\theta)\\rbrack^2f(x \\mid \\theta) dx \\\\ &= \\int - (\\partial^2/\\partial\\theta^2) \\ln f(x \\mid \\theta)f(x \\mid \\theta) dx;\\\\ \\end{align*}\u2026",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 11
+        },
+        {
+            "_": "MessageEntityPhone",
+            "offset": 687,
+            "length": 10
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 698,
+            "length": 144
+        }
+    ],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-05-05 14:45:36+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "statistics"
+    ]
+}

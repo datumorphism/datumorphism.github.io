@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 169,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-26 18:55:57+00:00",
+    "message": "#TIL\n\nhttps://www.reddit.com/r/todayilearned/comments/l4y427/til_larry_hillblom_the_h_of_dhl_regularly_took/\n\n> TIL Larry Hillblom, the H of DHL, regularly took \"sex safari\" trips to Asia to prey on underage girls. When he died in a plane crash, 4 of the illegitimate children he fathered were able to claim $50 million each from his estate.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547165002679621,
+            "url": "https://www.reddit.com/r/todayilearned/comments/l4y427/til_larry_hillblom_the_h_of_dhl_regularly_took/",
+            "display_url": "reddit.com/r/todayilearned/comments/l4y427/til_larry_hillblom_the_h_of_dhl_regularly_took",
+            "hash": 0,
+            "type": "article",
+            "site_name": "reddit",
+            "title": "TIL Larry Hillblom, the H of DHL, regularly took \"sex safari\"...",
+            "description": "Posted in r/todayilearned by u/GenocideSolution \u2022 94,217 points and 2,798 comments",
+            "photo": {
+                "_": "Photo",
+                "id": 5799869110501354482,
+                "access_hash": -1050112143868185700,
+                "file_reference": "b'\\x00aFH\\xef\\x07\\xc2\\xfc\\xa5L\\x9e\\x11\\xc7\\x1f\\x1b\\x0f\\t\\x03~\\xee\\x90'",
+                "date": "2021-01-25 22:04:46+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd2a\\xbd\\n\\xe4\\x8c\\x8e\\xa2\\xb2\\xa2\\xb5\\x8d\\xe0\\x0cW-\\xce\\x7f:\\xd4\\x0e\\xbe\\xb5VTd\\xde\" d\\xe4Rc\\x8e\\xe5S\\x12\\'A\\x81Q\\xa2yW\\xb1\\xba\\x9e\\t\\xcdH\\xd1\\xbeAbH\\xefS\\xec\\x1eW\\xa15(\\xd1\\xa3C>\\x94T\\r1P\\x16$\\xf31\\xc6C\\n*\\xccF/\\x15)P\\xc9\\xc8\\xa2\\x8alQ3&\\x93\\x122\\x81\\xf7zsI<\\xae\\xb1\\x01\\x9f\\xc6\\x8a+.\\xa6\\xec\\xb5d\\x02F\\xb8\\x19-\\xc94QEj`\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 220,
+                        "h": 115,
+                        "size": 10972
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 102
+        }
+    ],
+    "views": 105,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "TIL"
+    ]
+}

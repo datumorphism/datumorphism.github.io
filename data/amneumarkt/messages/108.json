@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 108,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-09 08:08:41+00:00",
+    "message": "A new search engine by a former chief scientist who helped developing the AI platform Einstein for Salesforce.\n\nThe new search engine is called \"you\".\n\nhttps://you.com/?refCode=5ac0f0ea",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2885830712634676282,
+            "url": "https://you.com/?refCode=5ac0f0ea",
+            "display_url": "you.com/?refCode=5ac0f0ea",
+            "hash": 0,
+            "type": "article",
+            "site_name": "You",
+            "title": "You.com | Trusted Search",
+            "description": "The search engine that summarizes the web for you, with privacy and no ads.",
+            "photo": {
+                "_": "Photo",
+                "id": 5984227639629556664,
+                "access_hash": -8239596931363265398,
+                "file_reference": "b'\\x00aFH\\xf0-\\xcc1\\x88x\\xca\\xb9\\x06x\\x8c\\xadI2\\xa2\\x8fC'",
+                "date": "2020-12-21 15:52:18+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xbdu\\x11\\xf2\\xdc\\x8cc\\x1d*\\xa2\\x05L\\x15S\\xd3\\xf35\\xa5*\\x97\\x89\\x94w\\x1cVd\\xeav\\xf9+\\xfe\\xb0\\x1c\\xd2I\\xddEm\\xd4\\xb4\\xd7#\\xb8\\xb9v\\xe4\\xa9\\x07\\xd2\\x9e\\x00q\\xcfQMW\\x9a5\\x04\\xa2\\x97\\xf7<\\x1a}\\xb4Lbi\\x1d@\\xcb\\x13\\xc1\\xa5R:7mI\\x87\\x93\\xd1\\x11eY\\x8e\\x18dv\\xa2\\xac\\xdbZ\\x05\\x95\\xa5p2z\\n+X5\\x05e\\xa9\\x15T\\xa7+\\xa6\\\\\\xc1\\xcf_\\xd2\\xa9\\\\[m\\x99\\xeew\\xf6\\x1f.?\\n(\\xa9\\xbbI\\xd8\\xa5\\xa8\\xebq\\xe71\\xcf\\x01q\\xc5\\\\\\xc0\\xc7J(\\xa9[\\x03\\x8a\\x8bv\\x16\\x8a(\\xa6\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 9442
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 419,
+                        "size": 27032
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 628,
+                        "size": 34767
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 152,
+            "length": 33
+        }
+    ],
+    "views": 110,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-09 08:08:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

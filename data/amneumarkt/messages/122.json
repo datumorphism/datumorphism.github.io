@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 122,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-20 17:39:56+00:00",
+    "message": "#fun\nhttps://youtu.be/-QiM9NUow3c.\nHave some fun",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5127856301728076941,
+            "url": "https://youtu.be/-QiM9NUow3c",
+            "display_url": "youtube.com/watch?v=-QiM9NUow3c",
+            "hash": 0,
+            "type": "video",
+            "site_name": "YouTube",
+            "title": "\"The Internet is For Porn\" - Andrew Metzger as Trekkie Monster",
+            "description": "Andrew Metzger as Trekkie Monster in AVENUE Q performing \"The Internet is for Porn\" \n- with Natalie Hightower as Kate Monster.",
+            "photo": {
+                "_": "Photo",
+                "id": 532576125549361579,
+                "access_hash": 7806214178714096072,
+                "file_reference": "b'\\x00aFH\\xf0W\\xbc\\x02\\xb92\\x9c\\xac\\xb4\\x0fn[\\xc0E\\xdez\\xb9'",
+                "date": "2017-08-31 17:33:50+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 67,
+                        "size": 1722
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 240,
+                        "size": 22422
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 480,
+                        "h": 360,
+                        "size": 33526
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": "https://www.youtube.com/embed/-QiM9NUow3c",
+            "embed_type": "iframe",
+            "embed_width": 480,
+            "embed_height": 360,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 28
+        },
+        {
+            "_": "MessageEntityStrike",
+            "offset": 40,
+            "length": 4
+        }
+    ],
+    "views": 296,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-27 11:07:17+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

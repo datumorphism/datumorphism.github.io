@@ -1,0 +1,73 @@
+{
+    "_": "Message",
+    "id": 68,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-28 07:23:22+00:00",
+    "message": "The effect of influenza vaccination on trained immunity: impact on COVID-19 | medRxiv\nhttps://www.medrxiv.org/content/10.1101/2020.10.14.20212498v1\n\n> Hospital workers who got vaccinated were significantly less likely to develop COVID than those who did not\n\nI believe that is just a simple sampling problem. People had flu shot this year because they're really careful about infectious diseases. They maybe also sanitize more.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5153369687398347100,
+            "url": "https://www.medrxiv.org/content/10.1101/2020.10.14.20212498v1",
+            "display_url": "medrxiv.org/content/10.1101/2020.10.14.20212498v1",
+            "hash": 0,
+            "type": "article",
+            "site_name": "medRxiv",
+            "title": "The effect of influenza vaccination on trained immunity: impact on COVID-19",
+            "description": "Every year, influenza causes 290.000 to 650.000 deaths worldwide and vaccination is encouraged to prevent infection in high-risk individuals. Interestingly, cross-protective effects of vaccination against heterologous infections have been reported, and long-term boosting of innate immunity (also termed trained immunity ) has been proposed as the underlying mechanism. Several epidemiological studies also suggested cross-protection between influenza vaccination and COVID-19 during the current pandemic. However, the mechanism behind such an effect is unknown. Using an established in-vitro model of trained immunity, we demonstrate that the quadrivalent inactivated influenza vaccine used in the Netherlands in the 2019-2020 influenza season can induce a trained immunity response, including an improvement of cytokine responses after stimulation of human immune cells with SARS-CoV-2. In addition, we found that SARS-CoV-2 infection was less common among Dutch hospital employees who had received influenza vaccination during\u2026",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 86,
+            "length": 61
+        }
+    ],
+    "views": 95,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-28 07:38:35+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

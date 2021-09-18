@@ -1,0 +1,131 @@
+{
+    "_": "Message",
+    "id": 160,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-21 08:49:07+00:00",
+    "message": "#ML\n\nAn interesting idea on time series predictions. Instead of predicting the exact time series, the author proposed a method to predict the future using ordinal patterns.\n\nThe figure shows how to disintegrate the time series into 8 overlapping short-term series (each with three numbers). To transform the short-term series into patterns, we write down the permutation pattern (for size of the series D=3, we have only 6 possible permutations). Then we will use the permutation patterns in the past to predict the patterns in the future.\nBTW, this paper used the price of bitcoins as an example to test this method.\nThis method will not be super amazing. The point of this paper is to propose a simple method to predict the future using very limited resource.\n\nThis is the paper:\nhttps://royalsocietypublishing.org/doi/10.1098/rsos.201011\nShort-term prediction through ordinal patterns",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5208812263573555834,
+            "access_hash": 5839974225579412027,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xa0aFH\\xf0,C\\xd1\\xe6\\xfd\\xf7\\x8c0(\\xa7\\x0b\\xc4$P\\xd1\\xe4'",
+            "date": "2021-01-21 08:49:07+00:00",
+            "mime_type": "image/png",
+            "size": 48511,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeImageSize",
+                    "w": 919,
+                    "h": 520
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "image_2021-01-21_09-48-57.png"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01\\x17(\\xd11\\x91\\xd0\\xe7\\x9aD\\x90\\xae=\\xcf\\xadN;\\xfdi\\x8f\\x18$c\\x8eM\\x00\\x1b\\xc1V\\xc3t>\\xb4\\xfe\\xe7\\xe9U\\x8e\\xe5S\\xd4sR\\xa4\\x9c\\xe0\\xfau\\xcd\\x00K\\xeb\\xf5\\xa2\\x93\\xaf\\xe7E\\x00\\x03\\xbf\\xd6\\x8e\\xe3\\xebE\\x14\\x00\\xd6\\x00\\xa9\\xc8'\\x9fAL\\x910X\\xf6\\xa2\\x8a\\x00Er\\xb9\\xcf4QE\\x00\\x7f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 181,
+                    "size": 17498
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 130,
+            "length": 41
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 331,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 359,
+            "length": 19
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 460,
+            "length": 64
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 635,
+            "length": 20
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 697,
+            "length": 13
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 733,
+            "length": 27
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 782,
+            "length": 58
+        }
+    ],
+    "views": 169,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-21 08:51:21+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

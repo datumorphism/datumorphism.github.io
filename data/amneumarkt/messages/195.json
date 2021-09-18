@@ -1,0 +1,112 @@
+{
+    "_": "Message",
+    "id": 195,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-23 06:54:05+00:00",
+    "message": "Neural Networks\u2764\ufe0f",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2021-02-18 14:24:19+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1333054174
+        },
+        "from_name": null,
+        "channel_post": 234,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5868429450109106376,
+            "access_hash": 2680380649348509193,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xc3aFH\\xef\\x12\\xe7\\xa2\\xc2d\\xfc\\x90\\xe4\\x99GXe\\xb2\\xa8\\xd7]'",
+            "date": "2021-02-18 14:24:19+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x18\\xd7\\x079\\xa4\\xc8\\xeb\\xdb\\xd74\\xa3\\x8c\\xf3Q\\x85\\xf9B\\xed\\x1bI\\xf9\\x86i\\x00\\xf2\\xc7\\xe5\\xc69\\xf5\\xa2\\x9a\\x06@\\xdc\\x06A\\xe3\\x9e\\xd4P\\x02\\x1d\\xa39\\xcf&\\x9c\\xd8\\xdcG<\\xd2r\\x1b\\xef.3HI\\x03\\x923\\xda\\x90\\x0b\\xf2\\xe7\\xbesE)\\xdd\\xb9FG\\xb8\\xa2\\x9e\\x80\\x1f6\\xe3\\xf2\\x02(+\\x96\\x00\\x82>\\x9d\\xa8\\xa2\\x8d\\x809\\xdc\\x0e\\xde\\xfd{\\xd1E\\x14\\x01'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 188,
+                    "h": 320,
+                    "size": 28182
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 471,
+                    "h": 800,
+                    "size": 125168
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 753,
+                    "h": 1280,
+                    "sizes": [
+                        10901,
+                        15788,
+                        80958,
+                        122395,
+                        216967
+                    ]
+                }
+            ],
+            "dc_id": 4,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 0,
+            "length": 15,
+            "url": "https://www.asimovinstitute.org/"
+        }
+    ],
+    "views": 112,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

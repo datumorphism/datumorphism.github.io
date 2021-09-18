@@ -1,0 +1,81 @@
+{
+    "_": "Message",
+    "id": 18,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-14 19:22:43+00:00",
+    "message": "Of All Things: The man who invented the stop sign\nhttps://www.montgomerynews.com/news/of-all-things-the-man-who-invented-the-stop-sign/article_7f2336ba-f59e-11ea-bf84-6be2d31646d2.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPageEmpty",
+            "id": 3433590874482625695
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": "  \ud83d\ude18",
+                        "data": "b'like 18 1'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude09 1",
+                        "data": "b'like 18 2'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude31",
+                        "data": "b'like 18 3'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "\ud83d\udcac",
+                        "url": "https://comments.bot/thread/TqZKR-Lmd",
+                        "button_id": 369909014,
+                        "fwd_text": null
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 50,
+            "length": 134
+        }
+    ],
+    "views": 35,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-16 06:46:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

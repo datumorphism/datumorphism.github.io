@@ -1,0 +1,108 @@
+{
+    "_": "Message",
+    "id": 17,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-13 08:42:55+00:00",
+    "message": "https://aip.scitation.org/doi/10.1063/5.0022968",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-09-13 07:23:45+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 349,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 680824554615138911,
+            "url": "https://aip.scitation.org/doi/10.1063/5.0022968",
+            "display_url": "aip.scitation.org/doi/10.1063/5.0022968",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "AIP Publishing",
+            "title": "Visualizing droplet dispersal for face shields and masks with exhalation valves",
+            "description": "Several places across the world are experiencing a steep surge in COVID-19 infections. Face masks have become increasingly accepted as one of the most effective means for combating the spread of th...",
+            "photo": {
+                "_": "Photo",
+                "id": 5941649292362099621,
+                "access_hash": -1134394410587308004,
+                "file_reference": "b'\\x00aFH\\xf1i\\xee\\\\\\x0b\\xbb\\xc5i\\x93?1*\\xf6\\xa4\\x9b\\x99\\xfc'",
+                "date": "2020-09-01 16:08:07+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xca\\x122>T\\xf45\\xab\\x14\\xe5\\x82\\x92\\x00\\xc8\\xcek%cwp\\xa0rO\\x15\\xac\\xf1\\x88\\xe2\\t\\xe81R\\xca\\x88\\xa4\\x06'\\xb95^\\xe0\\x9e\\x17\\x18\\xdb\\xfa\\xd2\\xb3\\x94PA\\xe4\\xd4\\x0e\\xec\\xf2|\\xdd\\x86(H\\x1b+?\\xdf4R7'4U\\x12j\\xe9\\xea\\xa9\\x18\\x90\\xa8,{\\xfaT\\xf3\\x90\\xc0\\xd1Ef\\xcd\\x11B\\xe0\\x10\\xdc\\x1e\\xc3\\xf9UGf\\xcf&\\x8a*\\x91\\x0ce\\x14QT#\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 8192
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 448,
+                        "h": 252,
+                        "size": 16215
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "John  Frankenfield",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 47
+        }
+    ],
+    "views": 44,
+    "forwards": 1,
+    "replies": null,
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

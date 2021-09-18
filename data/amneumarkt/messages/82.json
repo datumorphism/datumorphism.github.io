@@ -1,0 +1,797 @@
+{
+    "_": "Message",
+    "id": 82,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-07 18:46:29+00:00",
+    "message": "REVEALED: How much Uber pays its employees, from software engineers to data analysts (UBER)\nhttps://www.businessinsider.com/uber-employees-make-pay-salary-software-engineer-data-analyst-2020-11",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6060062400284421994,
+            "url": "https://www.businessinsider.com/uber-employees-make-pay-salary-software-engineer-data-analyst-2020-11",
+            "display_url": "businessinsider.com/uber-employees-make-pay-salary-software-engineer-data-analyst-2020-11",
+            "hash": -1708961540,
+            "type": "photo",
+            "site_name": "Business Insider",
+            "title": "Uber salaries revealed: From $85,000 to $330,000, here's how much the ride-hailing giant pays some of its employees",
+            "description": "Business Insider analyzed salary data for 27 positions, which Uber shared with the US government. Employees in one job earned an average of $330,000.",
+            "photo": {
+                "_": "Photo",
+                "id": 5854090547172584324,
+                "access_hash": 1904235404432365771,
+                "file_reference": "b'\\x00aFH\\xf0\\xeb_\\x8c}L\\x0b\\xe0\\x9f\\x00\\x84=\\x11`:B\\xd1'",
+                "date": "2020-11-07 14:00:25+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\x89\\xc5F\\x15K\\x8d\\xdd*G\\x0cT\\xec\\x04\\xb7lT\\x16\\xa7m\\xea\\t\\x0e\\xe0N\\xd3\\x9e\\x9e\\x94\\x8a\\x0b\\xad\\xa5\\xc1P:v\\xabQHc\\xb3\\x8f\\xe58\\xe9\\x9e\\xddj\\xb5\\xfa\\xf9w\\x92 \\xe81\\xfc\\x85-\\xbb\\xbc\\xcc\\x90\\x96\\xda\\x9d:~_\\xad\\x01\\xbb&\\x9aM\\xf6\\xef\\xf2\\xfbf\\x8a\\x86\\xe5\\xde\\x19^\\x12\\xd9P;\\x01\\xe9E4K\\xb5\\xc8\\xed%to\\x94\\xf4?\\xe3P\\x869-\\x9ez\\xfe\\xb4QHe\\xbdT\\xff\\x00\\xa6\\xb1\\xf5\\x03\\xf9S,$+!\\x03\\x1c\\x8a(\\xa6\\xc2;\\x8b\\xa8\\xff\\x00\\xc7\\xc7\\xe1E\\x14R\\x06\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 12290
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 48604
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "size": 66219
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Mark Matousek and Alex Nicoll",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.businessinsider.com/uber-employees-make-pay-salary-software-engineer-data-analyst-2020-11",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Uber salaries revealed: From $85,000 to $330,000, here's how much the ride-hailing giant pays some of its employees"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Mark Matousek and Alex Nicoll"
+                        },
+                        "published_date": "2020-11-20 14:24:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Business Insider analyzed salary data Uber shared with the US government."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Companies have to tell the US Office of Foreign Labor Certification how much they pay employees from outside the US to make sure they're not offering below the market average."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "The positions included in this report have salaries ranging from $85,301 to $330,000."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Are you a current or former Uber employee? Do you have an opinion about what it's like to work there? Contact this reporter at\u00a0"
+                                        },
+                                        {
+                                            "_": "TextEmail",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "mmatousek@businessinsider.com"
+                                            },
+                                            "email": "mmatousek@businessinsider.com"
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", on Signal at 646-768-4712, or via his encrypted email address\u00a0"
+                                        },
+                                        {
+                                            "_": "TextEmail",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "mmatousek@protonmail.com"
+                                            },
+                                            "email": "mmatousek@protonmail.com"
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Visit Business Insider's homepage for more stories"
+                                            },
+                                            "url": "https://www.businessinsider.com/?hprecirc-bullet",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Though "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Uber"
+                                    },
+                                    "url": "https://www.businessinsider.com/category/uber",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " has gone through "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "multiple rounds"
+                                    },
+                                    "url": "https://www.businessinsider.com/uber-layoffs-eats-self-driving-third-round-this-year-2019-10",
+                                    "webpage_id": 6060062400672213549
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " of "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "layoffs"
+                                    },
+                                    "url": "https://www.businessinsider.com/uber-confirms-layoffs-3000-more-job-cuts-offices-close-2020-5",
+                                    "webpage_id": 6060062400513423639
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " in the past two years, its pay for some positions is competitive with many of the biggest "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Silicon Valley tech firms"
+                                    },
+                                    "url": "https://www.businessinsider.com/how-much-big-tech-faang-companies-pay-salaries-google-amazon-2020-6",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", according to data the ride-hailing firm has shared with the US government."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The US Office of Foreign Labor Certification\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "requires companies to disclose"
+                                    },
+                                    "url": "https://www.dol.gov/agencies/eta/foreign-labor/programs",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " compensation for permanent and temporary employees from outside the US to ensure the firms aren't paying them less than what their peers make, on average. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Uber"
+                                    },
+                                    "url": "https://markets.businessinsider.com/stocks/uber-stock",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "'s filings give a sense of how much the company pays for some positions."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The salary data Business Insider analyzed is from 2020 and represents either an average or range among employees included in Uber's disclosures."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Uber did not respond to a request for comment."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Here's what some Uber employees make each year:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Business analyst: $94,500-$116,000"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Chief scientist: $330,000"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Data analyst: $101,411-$117,000"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Data-science manager: $192,705-$242,000"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Data scientist: $138,585-$149,163"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Engineering manager: $200,030-$221,880"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Network engineer: $134,721"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Operations manager: $85,301-$102,874"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Product analyst: $106,638-$130,125"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Product designer: $123,520"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Product manager: $134,675-$157,300"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Program manager: $100,433-$119,330"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Risk-strategy analyst: $129,214"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Security engineer: $150,750-$158,000"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior data analyst: $145,400"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior data scientist: $169,537"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior engineering manager: $228,771"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior information-security analyst: $182,000"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior operations manager: $137,822"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior product manager: $190,367-$207,650"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior program manager: $138,671-$143,910"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior security engineer: $219,636-$246,200"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior software engineer: $175,848-$241,310"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Senior systems engineer: $167,010-$190,000"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Software engineer: $136,941-$160,366"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Systems engineer: $128,343-$147,300"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Technical program manager: $163,700"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Are you a current or former Uber employee? Do you have an opinion about what it's like to work there? Contact this reporter at\u00a0"
+                                    },
+                                    {
+                                        "_": "TextEmail",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "mmatousek@businessinsider.com"
+                                        },
+                                        "email": "mmatousek@businessinsider.com"
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", on Signal at 646-768-4712, or via his encrypted email address\u00a0"
+                                    },
+                                    {
+                                        "_": "TextEmail",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "mmatousek@protonmail.com"
+                                        },
+                                        "email": "mmatousek@protonmail.com"
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "."
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockRelatedArticles",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "articles": [
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://www.businessinsider.com/uber-earnings-q3-2020-revenue-eps-slow-pandemic-recovery-2020-11",
+                                "webpage_id": 6060062400281374911,
+                                "title": "Uber delivers a miss in third-quarter earnings as it slowly recovers from the pandemic",
+                                "description": "Shares of the ride-hailing giant sank as much as 5% in late trading Thursday following the earnings miss.",
+                                "photo_id": 5891995630719576868,
+                                "author": "Graham Rapier",
+                                "published_date": "2020-11-05 21:27:09+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://markets.businessinsider.com/news/stocks/uber-lyft-stock-prices-california-votes-for-prop-22-2020-11-1029764137",
+                                "webpage_id": 3364799146887235368,
+                                "title": "Uber and Lyft gain $13 billion in combined market value after Californians approve Prop 22",
+                                "description": "Lyft executives celebrate the company's IPO in 2019. Mario Tama/Getty Images Uber shares rose as much as 18% and Lyft shares jumped as much...",
+                                "photo_id": 5842736543427570604,
+                                "author": "Theron Mohamed",
+                                "published_date": "2020-11-04 11:03:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://www.businessinsider.com/uber-engineer-quits-over-prop-22-employee-advocacy-pressure-2020-11",
+                                "webpage_id": 6060062400071024564,
+                                "title": "An Uber engineer says he quit after the company pressured employees to advocate for Prop 22, which would exempt ride-hailing companies from California's gig worker law",
+                                "description": "Uber has spent a record sum urging people to vote yes, often through dubious tactics and misleading claims about who has endorsed the measure.",
+                                "photo_id": 5842296674351950857,
+                                "author": "Tyler Sonnemaker",
+                                "published_date": "2020-11-03 23:10:23+00:00"
+                            }
+                        ]
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5840417608980081583,
+                        "access_hash": 6274500236018253684,
+                        "file_reference": "b'\\x00aFH\\xf0\\xcfnf[\\xbf\\xb4I\\x18vY9\\x8d(\\xeb\\xc0P'",
+                        "date": "2020-11-03 16:19:39+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x14(\\xb3\\xbd}h\\xe0\\x8a\\x88\\x03\\xfd\\xfal\\x92,J\\x0b\\xc9\\xc1\\xf4\\xefZ\\x01#\\x91\\xb4\\xe3\\xaf\\xd2\\xaa\\xb4\\x81\\x97\\x9e\\xb4\\x8dv\\x87;x\\xfa\\xd5s>r\\x08\\xe39\\xcdBz\\x94\\xeda\\x92\\x8eM\\x141\\x04qEhf[g%\\xd4g\\x8a\\xad6ZP\\x84\\x9c\\n(\\xa7-\\x8a-\\xcdo\\x19\\xb6?/*8=\\xeb0\\x9a(\\xacP\\xd8\\xf0~\\\\QE\\x15\\xaa\\xd8\\x86\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 160,
+                                "size": 9407
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 400,
+                                "size": 38683
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 600,
+                                "size": 55539
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5891995630719576868,
+                        "access_hash": -44871404149928822,
+                        "file_reference": "b'\\x00aFH\\xf0\\x91\\x1fO\\x14\\x11:\\xfe\\xc7\\xab=\\xf1\"\\xa4\\x0bWR'",
+                        "date": "2020-08-15 11:54:52+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x14(h\\x95\\xb1\\xc8\\x14\\x8d\\xf3\\x1c\\xe0\\nN\\x00\\xc9\\xe0S\\xcd\\xc4;6\\x903\\x8cd\\n\\xea\\x95\\x929cy1\\xc2E+\\xe5\\xe1H\\x1d\\x854\\xf9'\\xf8H\\xfci\\x823\\n\\x13.\\xde\\x06x9'\\xd2\\x9a\\xb2#0\\x19\\xac\\xa9u\\xb9\\xb5^\\x96C\\x18\\x0c\\x9ct\\xa2\\xa7a\\t\\xe9\\xb8QZ\\x99\\x05\\xe0Qj\\xc4 \\x07\\x8a\\xcf\\x07\\x8f\\xa5\\x14V3\\xdc\\xde*\\xc6\\xa4\\n\\x1a\\x18$a\\x96\\xc1S\\x9e\\xe38\\xac\\xe9T$\\x92\\x05\\xc8\\xdaN(\\xa2\\xa0\\xa2h\\x98\\xbc@\\x9e\\xb4QEu\\xc7c\\x91\\xee\\xcf\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 160,
+                                "size": 12186
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 400,
+                                "size": 47602
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 600,
+                                "size": 68604
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5858330311253928227,
+                        "access_hash": 4990079259895372586,
+                        "file_reference": "b'\\x00aFH\\xf0=\\xb6\\xf1%w\\xf38zh \\xac+\\xaf\\xd4\\x13T'",
+                        "date": "2019-07-12 21:40:39+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01(\\x1a\\xa8\\xfa\\xa5\\xe8v\\x02n3\\xfd\\xd1\\xfe\\x14\\xc6\\xbe\\xbaa\\x93p\\xf9\\xf4\\x07\\x15\\x11U,\\xd9\\xc7S\\xd4\\xd1\\xb5O\\xf7??\\xfe\\xbd\\x005\\xa7\\x95\\xfe\\xfc\\xae\\xdfV&\\xba+o\\xf8\\xf6\\x8b\\xfd\\xc1\\xfc\\xab\\x9cp\\x07L\\x1f\\xc7\\xff\\x00\\xaf]\\x1d\\xb7\\xfc{E\\xfe\\xe0\\xfeT\\x01\\xcf\\xb8\\x93{\\x00\\x0e2j3\\x1b\\xe7\\xee\\x9a\\xbd!\\xd97N\\x01\\xce}i\\xd9\\x00,\\x9c\\xe7\\x91\\x8a\\x07c;c\\x7ft\\xfeU\\xd2\\xdb\\x03\\xf6h\\xbf\\xdc\\x1f\\xca\\xb2U\\xf0\\xe4\\x8c\\x9c\\xf1\\xc9\\xad\\x84\\x04\"\\xfc\\xbd\\xbf\\xbd@\\x8c\\xd7\\xd2\\xeeAv\\\\n\\xce@\\x04sR\\xbd\\x94\\x9fe\\xc9\\x8c\\xf9\\xa3\\xb0\\xe6\\x8a(\\x02\\x87\\x93t\\x84\\x16G\\\\s\\xc2\\x9a\\xda\\x8b>J\\x7f\\xba(\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 206,
+                                "h": 320,
+                                "size": 17437
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 515,
+                                "h": 800,
+                                "size": 62291
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 640,
+                                "h": 995,
+                                "size": 85016
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5842736543427570604,
+                        "access_hash": -3257475221385546410,
+                        "file_reference": "b'\\x00aFH\\xf0\\xc5\\xa5[\\xb2?\\x17k\\xce\\x84\\xb6\\x97\\xdc%\\xe5\\xe0\\xb6'",
+                        "date": "2020-11-04 10:10:30+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x14(\\xa1(\\xda\\xc7\\x04\\x91\\xd8\\x91\\xcdiAe\\x1d\\xce\\x9f\\x0fEb\\xc7,\\x07\\'\\xadA8r@\\xf3\\tC\\x9c\\x13\\xde\\xa5\\xb2\\xbc\\xd8\\x89\\x0b(U\\x04\\x90\\xfe\\xdc\\xf5\\xa9E\\xb2[=>4d\\x91\\x8e\\xf2A8#\\xbd%\\xf4*\\xd6\\x9es\\xa2\\xa4\\xa0\\xe3\\xe5\\xe8y\\xa9.oV0\\xa6\"\\x18r\\xac\\xc3\\xa0\\xac\\xf1q;Z4<2\\x13\\x8c\\x9e\\xa3\\x9c\\xd3\\x16\\xa5F\\x04sE9\\xb7}\\xd3E!\\x93\\xc8\\xcd\\xe5H2~G\\xe3\\xf4\\xa8\\x16F?&~Z(\\xa6\\x84\\xc5\\x95\\x88,\\x83\\x85\\r\\xd2\\x9eI[h\\xb1\\xdc\\xf3E\\x14\\x0c\\x94D\\xac7\\x1fC\\xc7n\\xb4QE!\\x9f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 160,
+                                "size": 21045
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 790,
+                                "h": 395,
+                                "size": 80250
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5842296674351950857,
+                        "access_hash": -5936126306168435918,
+                        "file_reference": "b'\\x00aFH\\xf0X\\x9d\\xd4\\x1d\\xc5]\\xac\\xc5\\xa3\\x1c8eCk\\xdd\\xf0'",
+                        "date": "2020-11-03 23:16:24+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x14(\\xa6\\x15M\\xeck \\xca\\x91\\x8f\\xce\\x9amvC!pw\\x07\\xd8\\xbf\\xd6\\xad'\\x94gC.[j\\x0c.=\\xb3Rj\\x048\\x85\\x81\\xee{T\\xb7\\xa9ihS\\x8a\\xd42\\xe4\\x9a\\xaf4{\\x0f\\x07#8\\xab\\xf1X\\xc8\\xe8\\x1c\\x1c\\xa9\\xea3\\xd6\\xaa\\xdd\\xc0`*\\x18\\x92M4&U\\xa2\\x8a)\\x92^\\x9f)\\xe5\\xc8\\xa4\\x86*\\xbf\\xc8U\\xa4\\x01\\xa1}\\xdc\\xe3\\xa6h\\xa2\\xa5\\xee\\x8d#\\xb3-\\xd9F\\x1a2\\xb9 +\\x10\\x07\\xf9\\xfa\\xd6v\\xac\\xaa\\xae\\x00\\x18\\xc1?\\xd2\\x8a*\\xcc\\x8c\\xda(\\xa2\\x91G\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 160,
+                                "size": 13859
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 400,
+                                "size": 62341
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 600,
+                                "size": 96498
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 92,
+            "length": 101
+        }
+    ],
+    "views": 177,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

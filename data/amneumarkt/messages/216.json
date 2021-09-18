@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 216,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-24 10:33:32+00:00",
+    "message": "#DataScience\n\n(Please refer to this post https://t.me/amneumarkt/199 for more background.)\n\nI read the book \"everyday data science\". I think it is not as good as I expected. \n\nThe book doesn't explain things clearly at all. Besides, I was expecting something starting from everyday life and being extrapolate to something more scientific.  \n\nI also mentioned previously that I would like to write a similar book. Attached is something I created recently that is quite close to the idea of my ideal book for everyday data science.\n\nCross Referencing Post:\nhttps://t.me/amneumarkt/199",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5393196537191969157,
+            "access_hash": -6464801274043606338,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xd8aFH\\xef\\xe4Z\\x19\\xc9H(\\x1b\\xc3\\xf7B\\\\!\\xbf\\x8b\\xdd\\x9d'",
+            "date": "2021-03-24 10:33:31+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01( \\xbd\\x17\\xda<\\xd7\\xf3O\\xee\\xf9\\xc7J\\x9f\\x14qE\\x00\\x14QE \\n(\\xa2\\x80\\nZJ^(\\x01(\\xa2\\x8a\\x00)x\\xa2\\x8a\\x00'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 253,
+                    "h": 320,
+                    "size": 14517
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 632,
+                    "h": 800,
+                    "size": 61908
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 781,
+                    "h": 988,
+                    "sizes": [
+                        5332,
+                        7537,
+                        62434,
+                        67441,
+                        70834
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 41,
+            "length": 27
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 555,
+            "length": 27
+        }
+    ],
+    "views": 167,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-03-24 17:04:27+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DataScience"
+    ]
+}

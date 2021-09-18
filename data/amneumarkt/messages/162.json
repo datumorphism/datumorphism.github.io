@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 162,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-23 10:26:54+00:00",
+    "message": "https://youtu.be/H2tuKiiznsY",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5127856301076067621,
+            "url": "https://youtu.be/H2tuKiiznsY",
+            "display_url": "youtube.com/watch?v=H2tuKiiznsY",
+            "hash": 0,
+            "type": "video",
+            "site_name": "YouTube",
+            "title": "The real reason Boeing's new plane crashed twice",
+            "description": "This isn\u2019t just a computer bug. It\u2019s a scandal.\n\nJoin the Video Lab! http://bit.ly/video-lab\n\nTwo Boeing airplanes have fallen out of the air and crashed in the past six months. On the surface, this is a technical failure. But the real story is about a company's desire to beat their rival.\n\nRead about Boeing's efforts to get the 737 Max reinstated for flight here: https://www.vox.com/2019/4/5/18296646/boeing-737-max-mcas-software-update\n\nVox.com is a news website that helps you cut through the noise and understand what's really driving the events in the headlines. Check out http://www.vox.com.\n\nWatch our full video catalog: http://goo.gl/IZONyE\nFollow Vox on Facebook: http://goo.gl/U2g06o\nOr Twitter: http://goo.gl/XFrZ5H",
+            "photo": {
+                "_": "Photo",
+                "id": 5883217421941188842,
+                "access_hash": -4526174253971701608,
+                "file_reference": "b'\\x00aFH\\xf0\\xc3\\x10\\xccx\\xbd\\xf1!\\xe6\\xdd\\xbc\\x8ee%G\\x18\\x00'",
+                "date": "2019-04-15 12:01:17+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xce@\\x84\\x1d\\xe4\\x83\\xdb\\x152\\xda3\\x0c\\xaaJ\\x7f\\xe0\\x06\\xae\\xe9\\xbfc\\\\\\x1c\\xe2o\\xf6\\xbf\\xa5i\\x19\\xa2\\x07\\x99T\\x7f\\xc0\\xa8\\x03\\x08Y\\xbeNa\\x9b\\xa7\\x18S\\xd7\\xf2\\xa6=\\x9c\\xe1\\xbeXe#\\xfd\\xc3]\\x0f\\x9d\\x17\\xfc\\xf5O\\xfb\\xe8Ry\\xa0\\xfd\\xdeG\\xa852\\x92\\x8a\\xbb\\x03\\x9d\\xfb\\x1d\\xcf\\xfc\\xf0\\x93\\xfe\\xf94WC\\xe6\\xa8\\xe0\\xb6\\x0f\\xa6h\\xa6\\x9f2\\xbaac\\x05V\\x16E\\xcb\\xed=\\xf8>\\xb5\\x1b\\x9c\\xb9\\xe7'\\xd6\\x8a)\\x80\\xc3NY\\x1dF\\x15\\xd8\\x0fcE\\x14\\x00\\t\\x1d_xc\\xbb\\xd6\\x8a(\\xa0\\x0f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 13056
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 57081
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 98813
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": "https://www.youtube.com/embed/H2tuKiiznsY",
+            "embed_type": "iframe",
+            "embed_width": 1280,
+            "embed_height": 720,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 28
+        }
+    ],
+    "views": 113,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

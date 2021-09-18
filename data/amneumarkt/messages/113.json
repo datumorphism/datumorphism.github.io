@@ -1,0 +1,85 @@
+{
+    "_": "Message",
+    "id": 113,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-11 07:42:18+00:00",
+    "message": "Interesting idea. The milk box as an ad platform \ud83d\ude31",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5375451540506128345,
+            "access_hash": -3399013481082416715,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00qaFH\\xf0\\xcb\\xc7n:\\xb8\\xb9\\xce\\xb15O\\x90\\xe1d\\xcdu\\xf0'",
+            "date": "2020-12-11 07:42:17+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x17\\xad\\xb4\\x99\\xf6 \\xce\\x0e7g\\x035a\\xdb\\xca;T\\x87?\\x95B\\x1c$\\x8c\\x87\\x00\\x99\\x0bs\\xe8E\\x0c\\x1d\\xc6v\\xc7\\x8f\\\\\\xe6\\x85\\x15\\xd4\\x1b}\\t\\xa4\\xcc\\x81\\x060O8\\xa2\\x9b\\x0e\\xe69b\\x01\\x03\\x19\\xce(\\xac\\xd9B8\\x1c>pGzj\\x19\\x9ce_#\\xe8)\\xf2\\xff\\x00\\xab5\\x1c\\x05\\xe1\\xc9\\xcf\\xcb\\xd4\\xf2)\\xc4\\xb5bP\\xa5\\xd7\\xcb?xr=\\xe8\\xa4\\x0f\\xbf\\x91\\xc1\\xa2\\xa1\\xc4W\\x1cy\\x04\\x1a\\x87\\xcb \\xf0\\x7fJ(\\xaaM\\xa2Z\\xb8\\xe4B\\xb4QE0?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 180,
+                    "h": 320,
+                    "size": 17334
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 450,
+                    "h": 800,
+                    "size": 69712
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 720,
+                    "h": 1280,
+                    "size": 110695
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 131,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-11 07:43:48+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": 12861380307328042,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

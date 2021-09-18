@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 241,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-07-04 08:37:02+00:00",
+    "message": "#Academia\n\nThe distill team's thought on interactive publishing and self-publishing in academia.\n\nhttps://distill.pub/2021/distill-hiatus/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6293705993539225903,
+            "url": "https://distill.pub/2021/distill-hiatus/",
+            "display_url": "distill.pub/2021/distill-hiatus",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Distill",
+            "title": "Distill Hiatus",
+            "description": "After five years, Distill will be taking a break.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Editorial Team",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 9
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 98,
+            "length": 40
+        }
+    ],
+    "views": 144,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-07-04 08:37:11+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "Academia"
+    ]
+}

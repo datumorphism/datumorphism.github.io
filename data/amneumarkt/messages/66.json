@@ -1,0 +1,94 @@
+{
+    "_": "Message",
+    "id": 66,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-24 06:48:13+00:00",
+    "message": "Hmmmm github disabled the YouTube download project",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5233433460406857491,
+            "access_hash": -762663236309329716,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00BaFH\\xf0\\xce\\x03\\xb8\\xcd\\xde\\xe1\\xd2\\x05\\xc8.!\\x80\\xe2\\xe6to'",
+            "date": "2020-10-24 06:48:13+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x13\\x80\\xd9\\xdd\\x7f\\xcf\\x1e\\x9e\\xf4\\xef\\xb2]\\x82\\x08\\x8d\\x8f\\x1e\\xb5\\xb6\\xcc\\xc1\\xbbc\\xe9@c\\xdd\\x87\\xe5@\\x18\\x7fb\\xba<\\x98\\x9b\\xf3\\xa2\\xb7\\xe8\\xa0\\x0663@>\\xc2\\x95\\x97'4\\x9b(\\x01\\xf4QE\\x00\\x1f\\x85&O\\xa5\\x14P\\x02\\xd1E\\x14\\x01\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 12956
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 59311
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "size": 88543
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 120,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 9,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 115,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-24 06:49:00+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

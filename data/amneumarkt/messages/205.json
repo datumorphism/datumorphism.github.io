@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 205,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-08 07:29:32+00:00",
+    "message": "#fun\nBy Sumit Dalmiya\nSource: https://www.linkedin.com/posts/sumit-dalmiya_fridayfun-datasciencecareers-activity-6773667345366880256-KXtn",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5346312429375697164,
+            "access_hash": -794778126884050480,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xcdaFH\\xefif\\x01\\xe5\\xcb\\xf0-wu#\\xbf\\x8c\\xc0aL4'",
+            "date": "2021-03-08 07:29:32+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\"(\\xd6-\\xcf\\r\\x8c{R\\r\\xdf\\xdf?\\x95\\x0c@a\\xc0\\xf7\\xa5+\\xd7\\xd3\\xd2\\x80\\x13\\'nw\\xe3\\xf0\\xa5\\xcf\\x1f\\x7f\\xf4\\xa4\\xc7\\x189\\xa4\\x00l\\xdcG\\xd3\\x9a\\x00r\\x13\\x9eX\\x9f\\xc2\\x8aj0\\xf4\\xc7\\xe3E\\x02\\x06RO?\\x85\\x1b\\x9b8\\x07$R\\x90O99\\xe7\\x14 ;\\x89=h\\x18\\x8cX\\x01\\x9e\\xb4)%pzt\\xa7I\\x9cq\\xd7\\x14\\x12G\\x05s@\\x0cP3\\xb4\\x13\\xebE?$\\xb0\\xe0\\x8a(\\x10\\xfa(\\xa2\\x81\\x85\\x14Q@\\x05\\x14Q@\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 273,
+                    "size": 29049
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 682,
+                    "size": 102529
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 923,
+                    "h": 787,
+                    "sizes": [
+                        10376,
+                        30474,
+                        55602,
+                        72211,
+                        90161
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 30,
+            "length": 107
+        }
+    ],
+    "views": 130,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 289,
+        "read_max_id": null
+    },
+    "edit_date": "2021-03-08 07:30:04+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

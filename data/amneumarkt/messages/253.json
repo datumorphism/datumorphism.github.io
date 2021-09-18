@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 253,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-08-26 10:05:17+00:00",
+    "message": "#DS \n\nHullman J, Gelman A. Designing for interactive exploratory data analysis requires theories of graphical inference. Harvard Data Science Review. 2021. doi:10.1162/99608f92.3ab8a587\nhttps://hdsr.mitpress.mit.edu/pub/w075glo6/release/2\n\n\nCreating visualizations seems to be a creative task. At least for entry-level visualization tasks, we follow our hearts and build whatever is needed.  However, visualizations are made for different purposes. Some visualizations are simply explorations and for us to get some feelings on the data. Some others are built for the validation of hypotheses. These are very different things.\n\nConfirmation of an idea using charts is usually hard. In most cases, we need statistical tests to (dis)prove a hypothesis instead of just looking at the charts. Thus, visualizations become a tool to help us formulate a good question. \n\nHowever, not everyone is using charts as hints only. Instead, many use charts to conclude. As a result, even experienced analysts draw spurious conclusions. These so-called insights are not going to be too solid.\n\nThe visual analysis seems to be an adversarial game between humans and the visualizations. There are many different models for this process. A crude and probably stupid model can be illustrated through an example of analysis by the histogram of a variable.\nThe histogram looks like a bell. It is symmetric. It is centered at 10 with an FWHM of 2.6. I guess this is a Gaussian distribution with a mean 10 and sigma 1. This is the posterior p(model | chart).\nImagine a curve like what was just guessed on top of the original curve. Would my guess and the actual curve overlap with each other? \nIf not, what do we have to adjust? Do we need to introduce another parameter?\nGuess the parameter of the new distribution model and compare it with the actual curve again.\nThe above process is very similar to a repetitive Bayesian inference. Though, the actual analysis may be much more complicated as the analysts would carrier a lot of prior knowledge about the generating process of the data.\n\nThrough this example, we see that integrating explorations with preliminary model building as Confirmatory Data Analysis may bring in more confidence in drawing insights from charts.  \n\nOn the other hand, including complicated statistical models leads to misinterpretations since not everyone is familiar with statistical hypothesis testing. So the complexity has to be balanced.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8257954465171239536,
+            "url": "https://hdsr.mitpress.mit.edu/pub/w075glo6/release/2",
+            "display_url": "hdsr.mitpress.mit.edu/pub/w075glo6/release/2",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Harvard Data Science Review",
+            "title": "Designing for Interactive Exploratory Data Analysis Requires Theories of Graphical Inference \u00b7 Issue 3.3, Summer 2021",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5775219365476674584,
+                "access_hash": 3840877902131591406,
+                "file_reference": "b'\\x00aFH\\xef\\xe8\\xc1\\x93\\xce\\xc5\\x85\\xf8&\\x19\\x86;l\\xf9{\\xc3\\xc3'",
+                "date": "2021-07-31 01:40:37+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd8\\xa8\\xf7I\\xe6}\\xcf\\x90g\\x9c\\xf5\\xa9;S#\\x18\\xdc6\\x91\\xc9\\xeaz\\xd0\\x03\\xe9h\\xaa\\xf2K\\xfb\\xe5E\\xfchHD\\xe4\\x03E/j(\\x18\\x99\\xc0\\xa8\\xf9\\xcb\\x1d\\xc7\\xe9E\\x14\\x00\\xf5bi\\x04h\\x1bpQ\\xbb\\xd6\\x8a(\\x01\\xf4QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 157,
+                        "size": 9785
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 392,
+                        "size": 39113
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 628,
+                        "size": 77826
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1256,
+                        "sizes": [
+                            22545,
+                            54158,
+                            94616,
+                            125273,
+                            188046
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 186,
+            "length": 52
+        }
+    ],
+    "views": 154,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-08-26 10:05:37+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

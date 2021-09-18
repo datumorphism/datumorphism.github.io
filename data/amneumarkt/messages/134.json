@@ -1,0 +1,98 @@
+{
+    "_": "Message",
+    "id": 134,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-07 07:56:51+00:00",
+    "message": "#neuroscience\n\nSource:\nhttps://science.sciencemag.org/content/370/6523/1410.full\nA gatekeeper for learning\n\n> Upon learning a hippocampus-dependent associative task, perirhinal inputs might act as a gate to modulate the excitability of apical dendrites and the impact of the feedback stream on layer 5 pyramidal neurons of the primary somatosensory cortex.\n\n\ud83d\ude32 In some sense, perirhinal inputs are like config files for learning.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5454295298835853436,
+            "access_hash": 2369442586750146946,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x86aFH\\xf0\\xde\\xf6V1\\xfc\\x11M\\xef%\\xa2\\xd1\\x02M%\\xd9\\xe1'",
+            "date": "2021-01-07 07:56:51+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01\\x1b(\\xd1\\xf2?\\xd9\\x1f\\x90\\xa5\\x10\\x03\\xd8~B\\xa5\\xef\\x86#\\x07\\xa57\\xa0\\x03\\x07\\xf0\\xa0\\x04\\x10\\x81\\xfc*~\\xa2\\x97\\xca_\\xeeG\\xf9S\\xc6qI\\x82G\\xcd\\xeb@\\r\\xf2\\x97\\xfey\\xa7\\xe5E?oN\\xb4P\\x02\\x16\\x04p\\xc3?Zi\\xdcW\\x82\\xa0\\xfa\\x9a\\x8b'\\x14\\xee\\xf4\\x012\\x9f\\x94d\\x82q\\xce)\\x19\\xbaa\\x851?\\x8b\\xe9L\\xa0\\t~c\\xd0\\x8e\\xb4R\\xaa\\x80x\\x14P\\x07\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 214,
+                    "size": 20238
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 534,
+                    "size": 90111
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 855,
+                    "size": 160976
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 13
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 23,
+            "length": 57
+        }
+    ],
+    "views": 144,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "neuroscience"
+    ]
+}

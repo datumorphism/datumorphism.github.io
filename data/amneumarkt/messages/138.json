@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 138,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-07 21:43:51+00:00",
+    "message": "#intelligence\n\nhttps://www.economicprinciples.org/\n\nHow the economic machine works make easy",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3920827193776309390,
+            "url": "https://economicprinciples.org/",
+            "display_url": "economicprinciples.org",
+            "hash": 0,
+            "type": "article",
+            "site_name": "economicprinciples.org",
+            "title": "How the Economic Machine Works [Animation] by Ray Dalio",
+            "description": "In this animation, Ray Dalio explains How The Economic Machine Works. He covers important points such as credit, interest rates, leveraging and deleveraging.",
+            "photo": {
+                "_": "Photo",
+                "id": 5855937207016204594,
+                "access_hash": 5285264140610084629,
+                "file_reference": "b'\\x00aFH\\xf0\\x8dr\\x9c\\x9dPs\\xfdk\\xd1\\xcf\\x0fd\\x0b\\x90\\xb7\\xb9'",
+                "date": "2019-04-06 00:20:43+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xc8\\xa2\\x9c\\xa8\\xcc2\\x14\\x9e\\xd4\\x08\\xdc\\x9cm=3T!\\xb4T\\x81\\x0ev\\x14m\\xc2\\x93\\xca\\x93\\x19\\xd8q\\xf4\\xa0\\x06QNh\\xdd~\\xf2\\x91\\xf5\\xa2\\x80%\\xb7b\\xdf\\xb9\\x18\\x19$\\xe4\\xfd*\\xc0W\\x92s&B\\x9c\\x0c\\x0cq\\x81\\x83T\\x01 \\xe4\\x1c\\x1ax\\x9a@0\\x1d\\xbf:\\x00\\xb5 !\\xd5\\xce\\t\\x99@\\xc7\\xe5O\\t S\\t\\x007q\\xe8z\\x7fZ\\xa3\\xe6?\\xcb\\xf3\\x1f\\x97\\x91\\xedJe\\x90\\x9c\\x979\\xfa\\xd0\\x04\\x97\\x13y\\xacwrp9\\xa2\\xa1$\\x93\\x92rh\\xa0\\x04\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 16569
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 600,
+                        "h": 600,
+                        "size": 56137
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 13
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 15,
+            "length": 35
+        }
+    ],
+    "views": 139,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-13 12:39:43+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "intelligence"
+    ]
+}

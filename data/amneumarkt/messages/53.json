@@ -1,0 +1,478 @@
+{
+    "_": "Message",
+    "id": 53,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-12 16:17:56+00:00",
+    "message": "Grounded airline planes turned into pop-up restaurants sell out in 30 minutes\nhttps://www.theverge.com/2020/10/12/21512515/singapore-airlines-airbus-a380-pop-up-restaurant-changi-airport-coronavirus-pandemic",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1337119303966914847,
+            "url": "https://www.theverge.com/2020/10/12/21512515/singapore-airlines-airbus-a380-pop-up-restaurant-changi-airport-coronavirus-pandemic",
+            "display_url": "theverge.com/2020/10/12/21512515/singapore-airlines-airbus-a380-pop-up-restaurant-changi-airport-coronavirus-pandemic",
+            "hash": 1253329023,
+            "type": "photo",
+            "site_name": "The Verge",
+            "title": "Grounded airline planes turned into pop-up restaurants sell out in 30 minutes",
+            "description": "As revenues plunge during the pandemic.",
+            "photo": {
+                "_": "Photo",
+                "id": 5774767693830925140,
+                "access_hash": -7437714650452162324,
+                "file_reference": "b'\\x00aFH\\xf1\\xf2\\xbb\\xb1\\x83\\x06_\\xd0\\x1c\\xb8\\xf12\\xb4\\xdd9r\\xbb'",
+                "date": "2020-10-12 10:04:51+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(q\\xf9d\\xdd\\xed\\x8ad\\xb3$\\x8a\\xd0\\x1e\\xfdI\\xedI3\\xe1G\\x1e\\xd5L\\x02\\xcc\\\\\\x1e\\xfc\\xfbT\\x96j\\xd9\\xf9b\\x13\\x14_yI\\xe3=}\\xea9\\xa5Um\\xb2+3\\x8e\\xa38\\x14\\xcbRR3\"`\\x82N\\xdfc\\xde\\xa0\\x92rgi\\x0e\\t\\xee\\x08\\xa6\"\\xdc7Q\\xc8\\xb8\\x8c\\xec#\\xa8#4Vdn<\\xc3\\xb7\\xbfoZ)\\x01n\\x7f\\xf5&\\xa0\\xb2\\xe6\\xf9\\x07bh\\xa2\\x98\\x1a\\x81\\xb6\\x9d\\xaa\\x14/\\xa0\\x15\\x97\\xa8\\x80\\x97\\x0c\\x88\\x02\\xaf\\x07\\x81E\\x14\\x96\\xe0Al3:\\x03\\xdc\\xd1E\\x14\\xd8\\x8f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 18627
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 86225
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 900,
+                        "h": 450,
+                        "size": 79101
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Jon Porter",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.theverge.com/2020/10/12/21512515/singapore-airlines-airbus-a380-pop-up-restaurant-changi-airport-coronavirus-pandemic",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 5774978722754046748,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "All the joy of plane food, without having to leave the ground."
+                                    }
+                                },
+                                "credit": {
+                                    "_": "TextPlain",
+                                    "text": "Image: Singapore Airlines"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Grounded airline planes turned into pop-up restaurants sell out in 30 minutes"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Singapore Airlines will serve food on planes at Changi Airport"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Jon Porter"
+                            },
+                            "url": "https://www.theverge.com/authors/jon-porter",
+                            "webpage_id": 0
+                        },
+                        "published_date": "2020-10-12 10:04:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Amidst plunging revenues due to the pandemic, Singapore Airlines is turning two of its Airbus A380 planes parked at Changi Airport into impromptu restaurants on October 24th and 25th, and it\u2019s proved surprisingly popular. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "Bloomberg"
+                                                }
+                                            },
+                                            {
+                                                "_": "TextPlain",
+                                                "text": " reports"
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://www.bloomberg.com/amp/news/articles/2020-10-12/singapore-air-s-a380-restaurant-tickets-sell-out-in-30-minutes",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " that all seats at the restaurants sold out within 30 minutes of bookings opening, as people rushed to recapture the excitement of balancing a tiny meal on an even tinier fold-down airline table."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "I admit I normally quite like airplane food, but that\u2019s probably because it\u2019s something to focus my attention on beyond an endless series of films I was never interested enough in to see in the cinema. Singapore Airlines is selling four different tiers of meals according to "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bloomberg"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", ranging from a meal in a suite for around $474, right down to an economy experience for the equivalent of $39. Around half the planes\u2019 seats will be available for dining to allow for social distancing."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPullquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Plans for scenic flights were abandoned over environmental concerns"
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Singapore Airlines is launching the dining experiences as earnings have plunged thanks to the pandemic. In July the company reported a net loss of "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "over S$1 billion"
+                                    },
+                                    "url": "https://go.redirectingat.com/?id=66960X1514734&xs=1&url=https%3A%2F%2Fwww.singaporeair.com%2Fsaar5%2Fpdf%2FInvestor-Relations%2FFinancial-Results%2FSGXNET%2Fbu-q1fy2021.pdf&referrer=theverge.com&sref=https%3A%2F%2Fwww.theverge.com%2F2020%2F10%2F12%2F21512515%2Fsingapore-airlines-airbus-a380-pop-up-restaurant-changi-airport-coronavirus-pandemic",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (around $825 million) in the quarter ending June 30th, and at the end of September it said it was exploring other ways of making money. As well as turning planes into restaurants, it said it would offer food deliveries to peoples\u2019 homes, complete with cooking instructions and a \u201cspecially curated playlist to recreate the SIA onboard experience,\u201d "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "Reuters"
+                                                }
+                                            },
+                                            {
+                                                "_": "TextPlain",
+                                                "text": " reports"
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://www.reuters.com/article/uk-health-coronavirus-singapore-air/pandemic-hit-singapore-airlines-launches-plane-dining-and-takeaway-cabin-food-idUKKBN26K1K8",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Only 32 of the airline\u2019s 220 planes were operating as of the end of September, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextPlain",
+                                                "text": "according to "
+                                            },
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "ABCNews"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://abcnews.go.com/Politics/eat-airline-food-home-singapore-airlines-offers-air/story?id=73320106",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "With hundreds of flights grounded around the world due to the pandemic, there\u2019s been a lot of airplane food in need of a new home. Multiple airline food suppliers have been offering their meals and snacks for purchase by customers directly, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextPlain",
+                                                "text": "according to the "
+                                            },
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "Lonely Planet"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://go.redirectingat.com/?id=66960X1514734&xs=1&url=https%3A%2F%2Fwww.lonelyplanet.com%2Farticles%2Fairplane-food-home&referrer=theverge.com&sref=https%3A%2F%2Fwww.theverge.com%2F2020%2F10%2F12%2F21512515%2Fsingapore-airlines-airbus-a380-pop-up-restaurant-changi-airport-coronavirus-pandemic",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "."
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Airlines\u2019 search for alternative revenue during the pandemic has led to at least one, Qantas, offering circular "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "scenic flights"
+                                    },
+                                    "url": "https://simpleflying.com/qantas-787-takes-off/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " in planes that take off and land from the same airport. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "Reuters"
+                                                }
+                                            },
+                                            {
+                                                "_": "TextPlain",
+                                                "text": " notes"
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://www.reuters.com/article/uk-health-coronavirus-singapore-air/pandemic-hit-singapore-airlines-launches-plane-dining-and-takeaway-cabin-food-idUKKBN26K1K8",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " that Singapore Airlines considered offering similar flights, but dropped the plans over environmental concerns."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Although seats on the A380 have now sold out, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bloomberg"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " notes that Singapore Airlines plans to open a wait list and will investigate how it can accommodate the extra demand."
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5774978722754046748,
+                        "access_hash": 736676057307718107,
+                        "file_reference": "b'\\x00aFH\\xf1$=7\\xd8\\xa6\\xe0\\x96\\xa7#\\xad\\x7f\\xd9\\xb9-\\xa8u'",
+                        "date": "2020-10-12 10:04:51+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1b(t#\\xc9\\x97\\x83\\xf2\\x91R\\xdcL\\xff\\x00f\\x7f-\\xf0\\xfcc\\x9fz\\x86G\\xc0\\xcdS\\xf3\\xdb\\xcf,9\\xf4\\xa9(\\xd6\\xb4y\\x8d\\xb03\\x1f\\x9a\\x95\\xe7~6\\x00W\\xfb\\xccp\\x05W\\xb2\\x90\\xfe\\xf0H@\\\\\\xe5\\x87\\xa5C1G\\xbae\\xdd\\x84\\x1d3\\xf4\\xa6\\x05\\xf0\\xec\\x06_\\xff\\x00\\x1d\\xc9\\xa2\\xb2m\\xa6x\\\\\\xae\\xe3\\x83\\xd2\\x8a@Iq\\xccy\\xf49\\xaa\\xf0\\x0f2Q\\t\\xe4\\x93\\xc1\\x15e\\xb9\\x8c\\xd5KbE\\xc2\\x91\\xd7\\x14\\xc0\\xd4\\x8a\\x10\\x90\\x88\\xdd\\xf2Fr@\\xebY\\xf7;\\xa0\\x91\\x94\\xb6Oo\\xa5m\\x84Wr\\xac2\\x0fQU<\\x88\\xee\\x08\\xf3T6\\xd6 v\\xc0\\xa5p2!%\\xa5\\x03\\xd7\\xf5\\xa2\\xb6\\xe2\\xb6\\x85\\x18\\x05\\x8dG4S\\x03'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 213,
+                                "size": 22493
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 533,
+                                "size": 98634
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 853,
+                                "size": 209511
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "w",
+                                "w": 2420,
+                                "h": 1613,
+                                "size": 416906
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 78,
+            "length": 129
+        }
+    ],
+    "views": 39,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

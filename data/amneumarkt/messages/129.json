@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 129,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-03 10:33:19+00:00",
+    "message": "#data #covid19\n\nUK gov has an official covid 19 API. https://coronavirus.data.gov.uk/details/developers-guide#structure-metrics\n\nI found this funny typo in the documentation. \ud83d\ude02 The first one should be cumCasesByPublishDateRate.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5445333686363992312,
+            "access_hash": -5053981133250406620,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x81aFH\\xf0\\x8a\\x02}\\xbcv\\xd6b\\x13\\xdd\\xc7\\xc8\\x92XtK\\xc1'",
+            "date": "2021-01-03 10:33:19+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x1b(\\xd7\\xdas\\xc6)6\\x9fjx\\xa34\\x00\\xc1\\x91\\xf4\\xa7\\xd3\\x08\\x1c\\xff\\x00\\x85*\\xfbb\\x80\\x1dE\\x14P\\x02v5\\x0b1\\xcf\\xde\\xa9O\\xdc?\\x8dW\\xde\\xd9\\xed\\xf9R\\x1aW\\x1f\\xbc\\xe3\\x83@f\\xf5\\xa6\\xb3\\xb6:\\xd2+\\xb7<\\xd0U\\x89C6G\"\\x8aac\\x8f\\xfe\\xb5\\x14\\\\V?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 215,
+                    "size": 16975
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 537,
+                    "size": 70432
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 860,
+                    "size": 105702
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 6,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 53,
+            "length": 74
+        }
+    ],
+    "views": 175,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 179,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-03 10:34:42+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data",
+        "covid19"
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "_": "Message",
+    "id": 30,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-22 16:36:21+00:00",
+    "message": "OpenAI Licenses GPT-3 Technology to Microsoft\nhttps://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4631693974060275957,
+            "url": "https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/",
+            "display_url": "openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "OpenAI",
+            "title": "OpenAI Licenses GPT-3 Technology to Microsoft",
+            "description": "OpenAI released its first commercial product back in June: an API for developers to access advanced technologies for building new applications and services. The API features a powerful general purpose language model, GPT-3, and has received tens of thousands of applications to date.  In addition to offering GPT-3 and future",
+            "photo": {
+                "_": "Photo",
+                "id": 6004579324981783368,
+                "access_hash": 6772794275217335778,
+                "file_reference": "b'\\x00aFH\\xf1\\x9a?\\xba\\xadj\\x84|;\\x7fDk\\x86Q\\xd8`\\xde'",
+                "date": "2020-09-22 15:38:10+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xca\\xc5N-\\xb3\\x1a\\xb0o\\x98\\xe3\\xe9\\xcdC\\xcdH\\xd1\\xce\\x10\\x03\\x9d\\xbe\\x99\\xad\\x1b\\x01\\xc6\\xd2`F\\x00 \\x8c\\x83\\x9cSM\\xbb\\x84,q\\xc0\\xcf\\x1c\\xd3\\x08a\\x8c\\x9e\\xdcf\\x80\\x18\\xf44\\x00\\x9c\\xd1G>\\xb4P1*\\xc3]1\\x8fhP\\xa79\\xdc:\\xd1E\\r'au\\x1ane'$\\x8f\\xca\\x8f\\xb5Jx\\xc8\\xeb\\x9e\\x94Q@\\x10\\xd1E\\x14\\x14\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 18820
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 79636
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1067,
+                        "h": 600,
+                        "size": 93793
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 46,
+            "length": 70
+        }
+    ],
+    "views": 42,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

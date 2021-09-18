@@ -1,0 +1,87 @@
+{
+    "_": "Message",
+    "id": 230,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-05-17 19:52:02+00:00",
+    "message": "#ML \n\nAn interesting talk:\n\n-------------------\n\nDear all,\n\nWe are pleased to have Anna Golubeva speak on \"Are wider nets better given the same number of parameters?\" on Wednesday May 19th at 12:00 ET.\n\n\nYou can find further details\u00a0here\u00a0and listen to the talk\u00a0here.\n\nWe hope you can join!\n\nBest,\n\nSven",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5526200966789796221,
+            "url": "http://www.physicsmeetsml.org/posts/sem_2021_05_20/",
+            "display_url": "physicsmeetsml.org/posts/sem_2021_05_20",
+            "hash": 0,
+            "type": "article",
+            "site_name": "www.physicsmeetsml.org",
+            "title": "Are wider nets better given the same number of parameters?",
+            "description": "Anna Golubeva, Perimeter Institute, 12:00 ET",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 233,
+            "length": 4,
+            "url": "http://www.physicsmeetsml.org/posts/sem_2021_05_20"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 261,
+            "length": 4,
+            "url": "https://lmu-munich.zoom.us/j/97982665312?pwd=ZG5rODl2bUhBelRscjRoMGJaQUh0dz09"
+        }
+    ],
+    "views": 134,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-05-17 19:54:09+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

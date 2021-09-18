@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 180,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-05 08:05:46+00:00",
+    "message": "#ML \n\n\u201cEveryone wants to do the model work, not the data work\u201d: Data Cascades in High-Stakes AI\n\nTL;DR:\n- Data quality is crucial in any AI especially for those with high-stakes.\n- Many data work are overlooked easily: politics (some data entries are not recorded or misrecorded), human in the loop of data quality interventions for cleaning and wrangling but upstream data creation shall be controlled well too, etc\n- Data Cascades: how the issues are cascading from upstream to downstream should be clear.\n\n> Data Cascades: compounding events causing negative, downstream effects from data issues, resulting in technical debt over time.\n\nhttps://research.google/pubs/pub49953/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6233452128338927667,
+            "url": "https://research.google/pubs/pub49953/",
+            "display_url": "research.google/pubs/pub49953",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Google Research",
+            "title": "\"Everyone wants to do the model work, not the data work\": Data Cascades in High-Stakes AI \u2013 Google Research",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 6018132828723718839,
+                "access_hash": 6693176266268375771,
+                "file_reference": "b'\\x00aFH\\xef\\x9f5u\\x98\\xb4\\xb8\\x8aD\\xea[Lrw\\xa3\\xe5\\xce'",
+                "date": "2019-12-10 23:41:05+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\t(\\xd5;\\xc18\\x04\\x8f\\xc2\\x86g\\xc8\\x01z\\xd4\\x94P\\x04d\\xcb\\xd7h\\xe9\\xd34n\\x93\\xfb\\x83\\xf3\\xa9(\\xa0\\x06\\x02\\xf9\\x19\\x00\\x0e\\xf4S\\xe8\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 76,
+                        "size": 5698
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 191,
+                        "size": 17547
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 305,
+                        "size": 30541
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 2100,
+                        "h": 500,
+                        "size": 52482
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 640,
+            "length": 38
+        }
+    ],
+    "views": 103,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-05 08:05:55+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

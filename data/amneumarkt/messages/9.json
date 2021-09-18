@@ -1,0 +1,115 @@
+{
+    "_": "Message",
+    "id": 9,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-10 06:09:44+00:00",
+    "message": "https://github.com/vinayak-mehta/present",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-08-26 12:17:57+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 336,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030765402888,
+            "url": "https://github.com/vinayak-mehta/present",
+            "display_url": "github.com/vinayak-mehta/present",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - vinayak-mehta/present: A terminal-based presentation tool with colors and effects.",
+            "description": "A terminal-based presentation tool with colors and effects. - GitHub - vinayak-mehta/present: A terminal-based presentation tool with colors and effects.",
+            "photo": {
+                "_": "Photo",
+                "id": 5962163331773082488,
+                "access_hash": -6701645900706825877,
+                "file_reference": "b\"\\x00aFH\\xf1g\\x10\\xf77\\xa82\\xe2'P\\xb6@W\\x05G\\xb1\\x87\"",
+                "date": "2020-09-08 12:38:40+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01($\\x9e\\xf7U\\xfb%\\xc1\\x8b\\xc9\\xdf\\x80\\x0ewb\\xa0\\xfe\\xde\\xff\\x00\\xa7\\x7f\\xfc\\x7f\\xff\\x00\\xadU\\xf5V\\t\\xa9\\x96#8\\x03\\x8f\\xc2\\xa99V\\xcb\\x82\\x14\\x93\\xf7\\x00\\xe0P\\x06\\xa0\\xd7\\x88\\x1c\\xdb\\x83\\xff\\x00\\x02\\xff\\x00\\xebR\\xff\\x00o\\x7f\\xd3\\xbf\\xfe?\\xff\\x00\\xd6\\xacZ(\\x03\\xb2\\x07*\\t\\xee(\\xa1~\\xe8\\xfaQ@\\x1c\\xee\\xb2\\t\\xd4\\x1b\\x03\\xf8EQ\\xda}\\ruok\\x04\\x8e]\\xe2Vc\\xd4\\x91I\\xf6+_\\xf9\\xe0\\x9f\\x95\\x00r\\xbbO\\xa1\\xa3i\\xf45\\xd3\\xc7gj\\xcb\\x9f%\\x0f'\\xb7\\xbd?\\xecV\\xbf\\xf3\\xc1?*\\x00\\x95\\x08(\\xa4r1E\\n\\x81T*\\x8c\\x000\\x00\\xa2\\x80\\x15\\x89\\x03 d\\xfaS<\\xb6pw\\xb7\\xfc\\x04t\\xff\\x00\\xeb\\xd1E\\x005 \\x08>B\\x13\\xaf\\xdd\\x1cu\\xa7\\xa9|\\xe1\\x97\\xfe\\x04:QE\\x00>\\x8a(\\xa0\\x0f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 287,
+                        "h": 320,
+                        "size": 6740
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 718,
+                        "h": 800,
+                        "size": 21901
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 880,
+                        "h": 980,
+                        "size": 29481
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 40
+        }
+    ],
+    "views": 34,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 75,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-03 14:35:43+00:00",
+    "message": "Presidential Election 2020: Live Results and Analysis | The New Yorker\nhttps://www.newyorker.com/news/election-2020/live-2020-presidential-election-results",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5946210011688836037,
+            "url": "https://www.newyorker.com/news/election-2020/live-2020-presidential-election-results",
+            "display_url": "newyorker.com/news/election-2020/live-2020-presidential-election-results",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The New Yorker",
+            "title": "Presidential Election 2020 Live Updates: Joe Biden Wins",
+            "description": "The latest news and updates from the 2020 Presidential, Senate, House, and gubernatorial races.",
+            "photo": {
+                "_": "Photo",
+                "id": 5840408258836278208,
+                "access_hash": -5208086450763397658,
+                "file_reference": "b'\\x00aFH\\xf0\\xbfN\\xb0\\xcav\\xaak\\xfb\\n\\x08\\xb7\\x16\\x80\\x17.<'",
+                "date": "2020-11-03 07:40:31+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xd6\\xa4'\\xdf\\x14\\xb4\\xda\\x00^\\x7f\\xbdJ8\\x1c\\x9am(\\xeb@\\x0bE\\x14P\\x01E\\x14P\\x02b\\x96\\x8a(\\x00\\xa2\\x8a(\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 4527
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 17212
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 35162
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Cond\u00e9 Nast",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 71,
+            "length": 84
+        }
+    ],
+    "views": 65,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

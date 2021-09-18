@@ -1,0 +1,112 @@
+{
+    "_": "Message",
+    "id": 190,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-16 07:57:21+00:00",
+    "message": "#TIL \nMy cheerful price for the work I am currently doing is very high...\n\nhttps://www.lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7361702096239410765,
+            "url": "https://www.lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price",
+            "display_url": "lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Lesswrong",
+            "title": "Your Cheerful Price - LessWrong",
+            "description": "There's a concept I draw on often in social interactions. I've been calling it\nthe \"happy price\", but that is originally terminology by Michael Ellsberg with\nsubtly different implications. So I now fork off the term \"cheerful price\", and\nspecialize it anew.Earlier Facebook discussion here.\n\nTl;dr:\n\n * When I ask you for your Cheerful Price for doing something, I'm asking you\n   for the price that: * Gives you a cheerful feeling about the transaction;\n    * Makes you feel energized about doing the thing;\n    * Doesn't generate an ouch feeling to be associated with\n      me;\n    * Means I'm not expending social capital or friendship\n      capital to make the thing happen;\n    * Doesn't require the executive part of you, that knows\n      you need money in the long-term, to shout down and override other parts of\n      you.\n   \n   \n * The Cheerful Price is not: * A \"fair\" price;\n    * The price you would pay somebody else to do similar work;\n    * The lowest price such that you'd feel sad about\n      learning the\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 532583255195174784,
+                "access_hash": -4743205828943081197,
+                "file_reference": "b'\\x00aFH\\xef\\x87c\\x82\\xd85\\xd0\\t\\xc4g\\x9c\\xb9&\\x90w\\xd8M'",
+                "date": "2017-11-16 10:41:45+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 35,
+                        "size": 944
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 126,
+                        "size": 18234
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 696,
+                        "h": 274,
+                        "size": 64375
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 75,
+            "length": 69
+        }
+    ],
+    "views": 117,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "TIL"
+    ]
+}

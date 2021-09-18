@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 240,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-07-02 14:02:38+00:00",
+    "message": "#ML \n\nGreat. Tensorflow implemented built-in decision forest models.\n\nhttps://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html?m=1",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4079435406028503971,
+            "url": "https://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html?m=1",
+            "display_url": "blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html?m=1",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "blog.tensorflow.org",
+            "title": "Introducing TensorFlow Decision Forests",
+            "description": "TensorFlow Decision Forests is a collection of Decision Forest algorithms for classification, regression and ranking tasks, with the flexibility and c",
+            "photo": {
+                "_": "Photo",
+                "id": 6018125634653497911,
+                "access_hash": -5942401069960836916,
+                "file_reference": "b'\\x00aFH\\xefx0\\xaf:\\xfc\\xa7d\\xc1.\\xc0\\xe5K\\x10\\xa0\\x7f\\x85'",
+                "date": "2019-12-10 17:27:34+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1e(\\xabE\\x14\\xe0\\x84\\x8e\\x06j\\x846\\x8av\\xc6\\xfe\\xe9\\xa4*GQ@\\x84\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 240,
+                        "size": 2732
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 600,
+                        "size": 9843
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 960,
+                        "size": 20238
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 1600,
+                        "h": 1200,
+                        "size": 27152
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 70,
+            "length": 84
+        }
+    ],
+    "views": 139,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

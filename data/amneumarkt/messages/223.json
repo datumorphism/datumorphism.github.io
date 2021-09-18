@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 223,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-04-20 18:21:49+00:00",
+    "message": "#DS\nWing JM. Ten research challenge areas in data science. Harvard Data Science Review. 2020;114: 1574\u20131596. doi:10.1162/99608f92.c6577b1f\nhttps://hdsr.mitpress.mit.edu/pub/d9j96ne4/release/2",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8257954465204446573,
+            "url": "https://hdsr.mitpress.mit.edu/pub/d9j96ne4/release/2",
+            "display_url": "hdsr.mitpress.mit.edu/pub/d9j96ne4/release/2",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Harvard Data Science Review",
+            "title": "Ten Research Challenge Areas in Data Science  \u00b7 Issue 2.3, Summer 2020",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5768436345100938129,
+                "access_hash": -8824095098694538722,
+                "file_reference": "b'\\x00aFH\\xef\\xc9\\xcb!H\\x08\\x1fj\\xb9)\\xdeg\\xf4\\xba\\xd6\\r\\xc7'",
+                "date": "2020-10-10 10:14:42+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\n(\\x85-\\xe2`\\x0e\\xe3\\xcdHmaM\\xaa\\xd9$\\x9e\\xa2\\xa3\\x83\\xeeR\\x82D\\x83\\x07\\x14\\xf9\\x9b\\x15\\x87yp4-\\xe5\\x82q\\xce{\\xd4\\n\"\\xee\\xe0\\x1a\\x99~^G\\x07\\xda\\xa1p77\\x02\\xa9I\\xa0\\xb0\\xed\\xd0\\xf27\\x8e(\\xa8\\\\\\x0c\\x1e(\\xa7\\xce\\xc5\\xca\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 83,
+                        "size": 10097
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 208,
+                        "size": 52717
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 333,
+                        "size": 134851
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 667,
+                        "size": 538585
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 139,
+            "length": 52
+        }
+    ],
+    "views": 149,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-04-26 20:20:45+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

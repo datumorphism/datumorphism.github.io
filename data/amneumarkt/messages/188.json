@@ -1,0 +1,78 @@
+{
+    "_": "Message",
+    "id": 188,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-13 00:00:32+00:00",
+    "message": "Passing the Data Baton : \nA Retrospective Analysis on Data Science Work and Workers\n\nA paper on the different components of data related work. They also proposed a framework and a team structure for data workers.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5276214735832877890,
+            "access_hash": 1977795834241889202,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xbcaFH\\xefnS\\x01\\x9e;0k\\x80\\xe6\\xcfQK\\x10\\xf4u\\x83'",
+            "date": "2021-02-13 00:00:32+00:00",
+            "mime_type": "application/pdf",
+            "size": 824475,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "Crisan_DataScience.pdf"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x1f\\xd8$\\x8e\\x98\\xa4\\xcbv\\x02\\x95\\xbaR\\x1c\\x0f\\xff\\x00U\\x00\\x00\\xbfp)\\xc3=\\xe9\\x80g\\xa8\\xc5<\\x0c\\n\\x00d\\x84\\x8cSri\\xce~n\\x80\\xfdi2\\x0f\\xf0\\x8a\\x00L\\xb5=2A\\xcd7v;\\nr\\xb6M\\x00)\\x04\\x9a@\\xb8\\xf4\\xa2\\x8a\\x00M\\x9e\\xdf\\xad*\\x8c\\x1e\\x94Q@\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 247,
+                    "h": 320,
+                    "size": 19634
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 172,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-13 06:48:21+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

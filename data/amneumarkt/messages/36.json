@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 36,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-01 07:11:26+00:00",
+    "message": "TuSimple Hires Former FMCSA Official Jim Mullen\nhttps://www.ttnews.com/articles/tusimple-hires-former-fmcsa-official-jim-mullen",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4434252170613906342,
+            "url": "https://www.ttnews.com/articles/tusimple-hires-former-fmcsa-official-jim-mullen",
+            "display_url": "ttnews.com/articles/tusimple-hires-former-fmcsa-official-jim-mullen",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Transport Topics",
+            "title": "TuSimple Hires Former FMCSA Official Jim Mullen",
+            "description": "Jim Mullen, former acting administrator of the Federal Motor Carrier Safety Administration, has taken a position at TuSimple, a company that specializes in autonomous driving technology for trucks.",
+            "photo": {
+                "_": "Photo",
+                "id": 6031657242652158808,
+                "access_hash": -820003031251246701,
+                "file_reference": "b'\\x00aFH\\xf1\\xf7\\xe4\\xce\\xfcTV\\x90>\\xb1\\x83OC\\xb5\\xe5\\xcb$'",
+                "date": "2020-10-01 07:11:03+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xac\\xb1\\x16\\x94\\x02\\x18\\x16\\xe4\\x9c~|\\x9f\\xadI5\\xb8\\x8dw\\x02O\\xd6\\xa47Q\\x99YQO\\x9b#\\x01\\x9e\\xc0Soe\\x08\\x11\\x14\\xeen\\xa7\\xda\\x8d\\xd8\\xdd\\x96\\x83m\\xc7\\x0eOA\\x8a\\x989G\\xf3\\x14\\x02\\x8b\\xc1\\xaa\\xf0\\xc8\\xa67]\\xa4\\x96 `U\\xeb8\\xf0\\x81J\\xed\\xf5\\x14\\xe4\\xf4%\\x0f\\x9ab\\x91|\\x9dI\\xea=(\\xa7L\\xbf\\xe8\\xee}\\xa8\\xac\\xd4\\x8a\\xb9@E\\x18p\\xe1~a\\xcfZW\\x89$b\\xcc2O\\xbd\\x14V\\x1c\\xf2\\xeev8G\\xb0\\xb1\\xc6\\x91\\xb6\\xe4\\x18?Z\\x9d$\\xc7<\\xe4\\xfb\\xd1EU\\xd8\\x9c#\\xd8V\\x94\\xb2\\x10s\\x82=h\\xa2\\x8aW`\\xa1\\x1e\\xc7'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 15043
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 600,
+                        "h": 314,
+                        "size": 21103
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 48,
+            "length": 79
+        }
+    ],
+    "views": 36,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 29,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-21 07:08:47+00:00",
+    "message": "Gangster capitalism and the American theft of Chinese innovation \u2013 TechCrunch\nhttps://techcrunch.com/2020/09/20/gangster-capitalism-and-the-american-theft-of-chinese-innovation/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "Add a comment",
+                        "url": "https://comments.app/view/2fty5W8G",
+                        "button_id": 435848259,
+                        "fwd_text": "Show comments"
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 78,
+            "length": 99
+        }
+    ],
+    "views": 45,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-21 07:08:48+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

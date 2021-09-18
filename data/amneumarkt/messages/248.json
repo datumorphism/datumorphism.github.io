@@ -1,0 +1,78 @@
+{
+    "_": "Message",
+    "id": 248,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-07-29 21:39:16+00:00",
+    "message": "I have downloaded the file so you don't need to.\n\nAnaconda-2021-SODS-Report-Final.pdf",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5195367834821070376,
+            "access_hash": -1724843414201746839,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xf8aFH\\xef,\\t\\xf3\\xb6\\xb7\\xf3\\xa6\\xff\\xf8ecq\\xe8\\xf8\\xfa\\xc0'",
+            "date": "2021-07-29 21:39:16+00:00",
+            "mime_type": "application/pdf",
+            "size": 1581842,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "Anaconda-2021-SODS-Report-Final.pdf"
+                }
+            ],
+            "thumbs": [],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 175,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 3,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1090037466
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 841245537
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 372,
+        "read_max_id": null
+    },
+    "edit_date": "2021-07-29 21:55:25+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

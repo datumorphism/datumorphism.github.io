@@ -1,0 +1,52 @@
+{
+    "_": "Message",
+    "id": 189,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-15 17:01:16+00:00",
+    "message": "#productivity\n\nI find vscode remote-ssh very helpful. For some projects with frequent maintenance fixes, I prepared all the required environment on a remote server. I only need to click on the remote-ssh connection to connect to this remote server and immediately start my work. \nThis low overhead setup makes me less reluctant to fix stuff.\nIt is also possible to connect to Docker containers. By setting up different containers we can work in completely different environments with a few clicks.\nThis is crazy.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 13
+        }
+    ],
+    "views": 116,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "productivity"
+    ]
+}

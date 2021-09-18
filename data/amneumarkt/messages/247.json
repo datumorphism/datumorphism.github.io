@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 247,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-07-29 21:38:14+00:00",
+    "message": "#DS \n\nThis is an interesting report by anaconda. We can kind of confirm from this that Python is still the king of languages for data science. SQL is right following Python.\n\nQuote from the report:\n> Between March 2020 to February 2021, the pandemic economic period, we saw 4.6 billion package downloads, a 48% increase from the previous year.\nWe have no data for other languages so no predictions can be made but it is interesting to see Python growing so fast.\n\nThe roadblocks different data professionals facing are quite different. If the professional is a cloud engineer or mlops, then they do not mention that skills gap in the organization that many times. But for data scientists/analysts, skills gaps (e.g., data engineering, docker, k8s) is mentioned a lot.  This might be related to the cases when the organization doesn't even have cloud engineers/ops or mlops.\n\n\nSee the next message for the PDF file.\n\nhttps://www.anaconda.com/state-of-data-science-2021",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2267617638523657603,
+            "url": "https://www.anaconda.com/state-of-data-science-2021",
+            "display_url": "anaconda.com/state-of-data-science-2021",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Anaconda",
+            "title": "Anaconda | State of Data Science 2021",
+            "description": "Anaconda is the birthplace of Python data science. We are a movement of data scientists, data-driven enterprises, and open source communities.",
+            "photo": {
+                "_": "Photo",
+                "id": 5856330900898425949,
+                "access_hash": -7864572627798037180,
+                "file_reference": "b'\\x00aFH\\xef\\xed\\x0c\\x86\\x06\\xfc\\xaf\\xf8\\xefI\\x83&m\\x14!\\xc3\\xc0'",
+                "date": "2021-08-26 20:04:53+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xcf\\x00\\x9e\\x94\\xa1NG\\xf8\\xd4\\xf6\\xcc\\x02\\x1c\\x95\\xea8#?\\xd6\\x9c\\xc1\\x19\\x172\\xa0=z\\x1e;c\\xadks+\\x0c\\x04\\x11\\xd7\\x9a\\x8aE\\xc1\\xc8\\xe9O\\x90*\\x15ep\\xd9\\xceG\\xa7?Zw\\x0c\\xbe\\xc6\\xa9j\\x88~\\xeb+\\xd1J\\xc3i\\xc5\\x14\\x8a\\x00\\xc4t$R\\x12OZ(\\xa0aR\\xc2r\\xdb{QE\\x04\\xbd\\x87\\xcc\\xa3fh\\xa2\\x8a\\x18\\xa3\\xb1'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 10436
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 800,
+                        "h": 418,
+                        "sizes": [
+                            3210,
+                            8185,
+                            15719,
+                            20041,
+                            30517
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 916,
+            "length": 51
+        }
+    ],
+    "views": 162,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-07-30 09:13:38+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

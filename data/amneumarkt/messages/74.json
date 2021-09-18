@@ -1,0 +1,73 @@
+{
+    "_": "Message",
+    "id": 74,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-02 20:42:33+00:00",
+    "message": "Endnote Click | Tools for Academic Research | KausalFlow\nhttps://tools.kausalflow.com/tools/endnote-click/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 9022505728727633202,
+            "url": "https://tools.kausalflow.com/tools/endnote-click/",
+            "display_url": "tools.kausalflow.com/tools/endnote-click",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Kausalflow",
+            "title": "Endnote Click",
+            "description": "A browser extension to read and download papers for free and legally.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "LM",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 57,
+            "length": 49
+        }
+    ],
+    "views": 62,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,114 @@
+{
+    "_": "Message",
+    "id": 259,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-12 18:04:13+00:00",
+    "message": "#\u4e2d\u6587 #visualization\n\n\u770b\u5230 TMS channel \u63a8\u8350\u7684 data stiches\uff0c\nhttps://datastitches.substack.com/\n\u5173\u6ce8\u4e86\u51e0\u671f\uff0c\u611f\u89c9\u8d28\u91cf\u975e\u5e38\u597d\uff0c\u7ecf\u5e38\u80fd\u770b\u5230\u5f88\u68d2\u7684\u4f5c\u54c1\u3002\n\n\u540c\u65f6\u63a8\u8350\u4e00\u4e0b TMS channel \nhttps://t.me/tms_ur_way/1031\n\u5173\u4e8e\u65f6\u95f4\u7ba1\u7406\uff0c\u6548\u7387\uff0c\u548c\u4eba\u751f\u3002",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7798702171188003982,
+            "url": "https://datastitches.substack.com/",
+            "display_url": "datastitches.substack.com",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Substack",
+            "title": "Data Stitches",
+            "description": "data visualization and digital methods",
+            "photo": {
+                "_": "Photo",
+                "id": 6036434169703279648,
+                "access_hash": 2917903470531270406,
+                "file_reference": "b'\\x00aFH\\xef\\xba\\xb4\\xc0\\x8eb\\xc3\\xc8g\\xd2\\xc9\\xbf@x%z\\xd0'",
+                "date": "2021-04-15 08:57:40+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01((\\xd8f\\x08\\xa5\\x98\\xe0\\n\\x88\\xb3\\xb3q\\xf2/\\xd3\\x9avwJ\\x7f\\xba\\x9d\\xbdM8py\\xe0\\x0e\\x94\\x00\\x8b\\x92\\xa4n9\\x07\\x19\\xc54\\x17S\\xc9\\xde\\xbfNiI\\x02Q\\xcfQ\\x8f\\xf3\\xfa\\xd2\\xe0g\\xda\\x80\\x1c\\xac\\x19AS\\x90h\\xa8\\xc6\\x12]\\xa3\\xee\\xb7\\xe8h\\xa0\\x07\\xa9]\\xcc\\x01\\x19\\xcf4\\xe3\\xd0\\xe6\\xa1e\\x02]\\xc4\\x1c7q\\xd8\\xd2d\\xb3\\xe3w\\xc8FGl\\xff\\x00\\xf5\\xa8\\x01\\xdf3ci\\xe9\\xd4\\xe2\\x97\\xe6$+t=\\xc7\\x7f\\xf0\\xa9\\x00\\xc0\\xc0\\xe0R0\\xc8\\xc1\\xa0\\x04\\xc0\\x18\\x00\\x01\\xcf\\x14S\\x06\\xe7\\x90n\\x1c'\\x7fS\\xff\\x00\\xea\\xa2\\x80$t\\x0e\\xa5Xd\\x1e\\xd5\\x0b#+\\x12\\x17~O\\xaf4Q@\\x12\\xe4\\xe3\\xa1\\xa6\\xfc\\xed\\xdbb\\xfe\\xb4Q@\\x0eU\\x08\\xa0\\x01\\x81E\\x14P\\x07\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 256,
+                        "h": 256,
+                        "size": 13065
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "jsongal",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 53,
+            "length": 34
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 135,
+            "length": 28
+        }
+    ],
+    "views": 82,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-12 18:08:24+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "\u4e2d\u6587",
+        "visualization"
+    ]
+}

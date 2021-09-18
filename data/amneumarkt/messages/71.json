@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 71,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-30 16:47:55+00:00",
+    "message": "Urban Dictionary Embeddings for Slang NLP Applications - ACL Anthology\nhttps://www.aclweb.org/anthology/2020.lrec-1.586\n\nHaha very cool\nWater <-> butt-splash\nSoda <-> sodagasm",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4744273643461999160,
+            "url": "https://www.aclweb.org/anthology/2020.lrec-1.586/",
+            "display_url": "aclweb.org/anthology/2020.lrec-1.586",
+            "hash": 0,
+            "type": "article",
+            "site_name": "ACL Anthology",
+            "title": "Urban Dictionary Embeddings for Slang NLP Applications",
+            "description": "Steven Wilson, Walid Magdy, Barbara McGillivray, Kiran Garimella, Gareth Tyson. Proceedings of the 12th Language Resources and Evaluation Conference. 2020.",
+            "photo": {
+                "_": "Photo",
+                "id": 5824596792002587579,
+                "access_hash": -7122494406354439604,
+                "file_reference": "b'\\x00aFH\\xf0\\x988\\xf0\\x15\\xbeH5\\xf6\\xf5\\xcd\\xd3\\x94\\x1e\\xe8\\x00B'",
+                "date": "2020-10-29 08:42:01+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01((\\xd9\\xce)7R1\\x1d\\xcd7\\xe5=\\xcd\\x00;#\\xd3\\xf9Q\\x91\\xe9\\xfc\\xa9\\x9f.{\\xe2\\x94l\\xf54\\x00\\xf0\\x06x\\xa2\\x91\\x08\\xedE\\x00#.H\\xff\\x00\\x1an\\xd1\\x9aY:\\x8am\\x00;`\\x1dM\\x18OSI\\xfc?\\x8d'C@\\x12 ^v\\xd1I\\x1fz(\\x01$\\xebM\\xefE\\x14\\x00\\xbf\\xc3\\xf8\\xd2QE\\x00>>\\xf4QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 35219
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 600,
+                        "h": 600,
+                        "size": 114830
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 71,
+            "length": 48
+        }
+    ],
+    "views": 103,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-30 16:49:18+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

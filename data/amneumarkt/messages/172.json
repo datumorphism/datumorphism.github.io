@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 172,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-27 22:46:10+00:00",
+    "message": "#ML\nhttp://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html\n\n- instabilities\n- \u201clast-mile\u201d effort in optimization is too high",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2514326430714500029,
+            "url": "http://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html",
+            "display_url": "akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html",
+            "hash": 0,
+            "type": "article",
+            "site_name": "akosiorek.github.io",
+            "title": "What is wrong with VAEs?",
+            "description": "Latent Variable ModelsSuppose you would like to model the world in terms of the probability distribution over its possible states \\(p(\\mathbf{x})\\) with \\(\\m...",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 4,
+            "length": 69
+        }
+    ],
+    "views": 105,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-27 22:46:29+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

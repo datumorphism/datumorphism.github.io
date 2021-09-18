@@ -1,0 +1,90 @@
+{
+    "_": "Message",
+    "id": 79,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-05 14:53:57+00:00",
+    "message": "This reminds me of an old man I met on a train. I reminded this old man, nicely, to put his mask on. He put it on but gave me a strange angry look. In a few seconds, he then stormed to the other side of the train, took his mask off, and started to act like he was suffocating. It was so weird. It would be so easy to communicate instead of acting like a child and trying to put some blame on other irrelevant people.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5269466414954164139,
+            "access_hash": -8501234850005884330,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00OaFH\\xf0\\x8e\\xe5\\xfd\\xfa{V\\xf4\\xbcf!\\xb4\\xd3\"V\\x0e\\x02'",
+            "date": "2020-11-05 14:53:57+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x07(\\xd4\\x11\\x90\\xccK\\x92\\x0fA\\xd3\\x14\\xe0\\x879\\xc9\\xfc\\xe8\\xa2\\x80\\x1d\\x8e\\xfc\\xfet\\n(\\xa0\\x05\\xa2\\x8a(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 52,
+                    "size": 4164
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 129,
+                    "size": 14518
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1202,
+                    "h": 194,
+                    "size": 20495
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 111,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 99,
+        "read_max_id": null
+    },
+    "edit_date": "2020-11-05 14:56:34+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

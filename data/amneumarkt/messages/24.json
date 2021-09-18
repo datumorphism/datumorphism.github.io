@@ -1,0 +1,63 @@
+{
+    "_": "Message",
+    "id": 24,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-17 16:53:15+00:00",
+    "message": "Scikit-network: Graph Analysis in Python\nhttp://jmlr.org/papers/v21/20-412.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPageEmpty",
+            "id": 5711747541577802332
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "Add a comment",
+                        "url": "https://comments.app/view/SpPKb15z",
+                        "button_id": 1521613484,
+                        "fwd_text": "Show comments"
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 41,
+            "length": 38
+        }
+    ],
+    "views": 32,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-17 16:53:16+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,101 @@
+{
+    "_": "Message",
+    "id": 55,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-13 15:31:36+00:00",
+    "message": "https://podcasts.google.com/?feed=aHR0cHM6Ly9sZXhmcmlkbWFuLmNvbS9mZWVkL3BvZGNhc3Qv&ep=14&episode=aHR0cHM6Ly9sZXhmcmlkbWFuLmNvbS8_cD00NDEy&pe=1&pep=4800195",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2389870381086547714,
+            "url": "https://podcasts.google.com/?feed=aHR0cHM6Ly9sZXhmcmlkbWFuLmNvbS9mZWVkL3BvZGNhc3Qv&ep=14&episode=aHR0cHM6Ly9sZXhmcmlkbWFuLmNvbS8_cD00NDEy&pe=1&pep=4800195",
+            "display_url": "podcasts.google.com/feed/aHR0cHM6Ly9sZXhmcmlkbWFuLmNvbS9mZWVkL3BvZGNhc3Qv/episode/aHR0cHM6Ly9sZXhmcmlkbWFuLmNvbS8_cD00NDEy?hl=en",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Google Podcasts",
+            "title": "Lex Fridman Podcast - #130 \u2013 Scott Aaronson: Computational Complexity and Consciousness",
+            "description": "Scott Aaronson is a quantum computer scientist. Please support this podcast by checking out our sponsors: \u2013 SimpliSafe: https://simplisafe.com/lex and use code LEX to get a free security camera \u2013 Eight Sleep: https://www.eightsleep.com/lex and use code LEX to get $200 off \u2013 ExpressVPN: https://expressvpn.com/lexpod and use code LexPod to get 3 months free \u2013 BetterHelp: https://betterhelp.com/lex and use code LEX to get 10% off EPISODE LINKS: Scott\u2019s Blog: https://www.scottaaronson.com/blog/ Our previous episode: https://www.youtube.com/watch?v=uX5t8EivCaM PODCAST INFO: Podcast website: https://lexfridman.com/podcast Apple Podcasts: https://apple.co/2lwqZIr Spotify: https://spoti.fi/2nEwCF8 RSS: https://lexfridman.com/feed/podcast/ YouTube Full Episodes: https://youtube.com/lexfridman YouTube Clips: https://youtube.com/lexclips SUPPORT & CONNECT: \u2013 Check out the sponsors",
+            "photo": {
+                "_": "Photo",
+                "id": 5912182028550384487,
+                "access_hash": -3406007691487571401,
+                "file_reference": "b'\\x00aFH\\xf1\\xfb:\\x89\\xb6\\x17\\x9a\\xa9\\x81\\xdfjmh\\x07F\\xe8\\xd1'",
+                "date": "2020-08-22 12:42:21+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xcbU\\x8c\\x81\\xb9\\xf6\\xfc\\xbc\\xf1\\x9es\\xfe\\x15\\x1b`1\\x00\\xe4v5 f\\xda\\xbc\\x02\\x00\\xe0~4\\xa5\\xc9?\\xea\\xd3\\xa5\\x02#E.\\xe1Gs\\x8a\\xd0m\"@\\x06\\x1d\\x0f\\xd7\\x8a\\xadj\\xcb\\xf6\\xb8\\xf7\\x00;qZ\\xee\\xbb0\\x82G\\xc3\\x1eNzpi6ZW0\\xa6\\x8d\\xa1\\x90\\xa3u\\x1e\\x94T\\xb7\\xa0\\x0b\\x96\\x01\\x8bc\\xbd\\x14\\xd1,\\xaf\\x93K\\xb8\\xfa\\x9am(\\xa0\\tm\\x97\\xcc\\xba\\x89I\\xc6\\\\\\x0c\\xd6\\xdd\\xc4r(\\xc2\\xc6\\x1d\\xbb\\x1c\\xd6E\\x80\\xcd\\xf4?\\xef\\x8a\\xd8\\xba\\x9bn\\xa1o\\x18\\x95\\x97?xq\\x8cv\\xfc\\xe95pN\\xc6\\x15\\xc22N\\xca\\xff\\x00{\\xbd\\x15gV\\x18\\xd4\\x1f\\x1e\\x83\\xf9QL\\nT\\xb4Q@\\x13\\xd9\\x1c^\\xc0\\x7f\\xdb\\x15kPljd\\xe7\\xa3/\\xf4\\xa2\\x8a\\x04E\\xab\\x1f\\xf8\\x98H=1\\xfc\\xa8\\xa2\\x8a\\x06\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 225,
+                        "h": 225,
+                        "size": 5672
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Lex Fridman Podcast",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 154
+        }
+    ],
+    "views": 45,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 60,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

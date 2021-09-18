@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 226,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-05-05 20:31:18+00:00",
+    "message": "#DS \n\n(This is an automated post by IFTTT.)\n\nIt is always good for a data scientist to understand more about data engineering. With some basic data engineering knowledge in mind, we can navigate through the blueprint of a fully productionized data project at any time. In this blog post, I listed some of the key concepts and tools that I learned in the past.\n\nThis is my blog post on Datumorphism https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/checklist/",
+    "out": false,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1332579906715681785,
+            "url": "https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/checklist/",
+            "display_url": "datumorphism.leima.is/wiki/data-engeering-for-data-scientist/checklist",
+            "hash": 0,
+            "type": "article",
+            "site_name": "datumorphism.leima.is",
+            "title": "Data Engineering for Data Scientists: Checklist",
+            "description": "A checklist to get a shallow understanding of the basics and the ecosystem",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Lei Ma",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 398,
+            "length": 79
+        }
+    ],
+    "views": 145,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-05-05 20:35:13+00:00",
+    "post_author": "IFTTT",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}

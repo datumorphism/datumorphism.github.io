@@ -1,0 +1,358 @@
+{
+    "_": "Message",
+    "id": 141,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-09 11:42:35+00:00",
+    "message": "Twitter suspends Sci-Hub account amid Indian court case - The Verge\nhttps://www.theverge.com/2021/1/8/22220738/twitter-sci-hub-suspended-indian-court-case",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1337119303575046358,
+            "url": "https://www.theverge.com/2021/1/8/22220738/twitter-sci-hub-suspended-indian-court-case",
+            "display_url": "theverge.com/2021/1/8/22220738/twitter-sci-hub-suspended-indian-court-case",
+            "hash": -1754732594,
+            "type": "photo",
+            "site_name": "The Verge",
+            "title": "Twitter suspends Sci-Hub account amid Indian court case",
+            "description": "Sci-Hub\u2019s account was gathering statements of support",
+            "photo": {
+                "_": "Photo",
+                "id": 6036137288678878153,
+                "access_hash": -6690012094313325681,
+                "file_reference": "b'\\x00aFH\\xf0[\\x00d\\x00\\xfb\\xe7\\xa8\\x18v\\x84\\x96\\xe9\\xcf<\\xbb\\x87'",
+                "date": "2021-01-08 17:37:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd0\\x96h\\xe1)\\xb9\\xb6\\xee8\\x03\\xaej`r\\x01\\x15\\x99\\xab\\xc4\\xee\\x12h\\xc9\\xfd\\xdf\\\\v\\xabA\\x9ax#\\x93\\x19%GF\\xe3\\xf9R\\x1a-\\x7f\\x9e\\xb4\\x878\\xe0\\xf3UJJq\\xf2\\x8e?\\xdb\\xff\\x00\\xebS\\xe3\\x12!\\xc6\\xc0\\x019'q8\\xfd(\\x1d\\x86\\xc6\\x97~`2H\\x9b3\\xc8\\x1f\\xfe\\xaa*I.bN\\x1d\\xb0~\\x86\\x8a\\x05fJ\\x10\\x1e\\xd4$h\\x8a\\x15F\\x00\\xe8\\x07j(\\xa6!\\xbd\\x18\\x8f\\xebN\\x034Q@\\x10\\xbd\\xb42\\xb1gL\\x93\\xc7SE\\x14R)I\\xd8\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 18654
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 83881
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1165,
+                        "h": 583,
+                        "size": 161952
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Kait Sanchez",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.theverge.com/2021/1/8/22220738/twitter-sci-hub-suspended-indian-court-case",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 6035979839472774106,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Sci-Hub\u2019s homepage."
+                                },
+                                "credit": {
+                                    "_": "TextPlain",
+                                    "text": "Sci-Hub"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Twitter suspends Sci-Hub account amid Indian court case"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The account was gathering support from scientists"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Kait Sanchez"
+                            },
+                            "url": "https://www.theverge.com/authors/kait-sanchez",
+                            "webpage_id": 0
+                        },
+                        "published_date": "2021-01-09 05:36:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Twitter has suspended the account of Sci-Hub, a website that provides free access to paywalled academic papers. The account was being used by Sci-Hub\u2019s founder to collect statements of support from the scientific community during an ongoing court case in India."
+                        }
+                    },
+                    {
+                        "_": "PageBlockEmbed",
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "full_width": false,
+                        "allow_scrolling": false,
+                        "url": null,
+                        "html": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" /><meta name=\"MobileOptimized\" content=\"320\" /><meta name=\"twitter:widgets:csp\" content=\"on\"><script src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script><style>body{margin:0;padding:0;}#tweet{overflow:hidden}.twitter-tweet{margin:0!important}</style></head><body><div id=\"tweet\"></div><script>twttr&&twttr.widgets&&twttr.widgets.createTweet(\"1347551800338112513\",document.getElementById(\"tweet\"));var lastHeight = null, isIframe = false;\ntry { isIframe = (window.parent != null && window != window.parent); }catch(e){}\nfunction postEvent(eventType, eventData) {\n  try {\n    if (typeof window.TelegramWebviewProxy !== 'undefined') {\n      TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));\n    } else if (window.external && 'notify' in window.external) {\n      window.external.notify(JSON.stringify({eventType: eventType, eventData: eventData}));\n    } else if (isIframe) {\n      window.parent.postMessage(JSON.stringify({eventType: eventType, eventData: eventData}), '*');\n    }\n  } catch(e) {}\n}\nfunction checkFrameSize() {\n  var height, style;\n  if (window.getComputedStyle) {\n    style = window.getComputedStyle(document.body);\n    height = style.height;\n    if (height.substr(-2) == 'px') {\n      height = height.slice(0, -2);\n    }\n  } else {\n    height = document.body.offsetHeight;\n  }\n  height = Math.ceil(height);\n  if (height != lastHeight) {\n    lastHeight = height;\n    postEvent('resize_frame', {height: height});\n  }\n  requestAnimationFrame(checkFrameSize);\n}\nwindow.addEventListener('resize', checkFrameSize, false);\ncheckFrameSize();</script></body></html>",
+                        "poster_photo_id": null,
+                        "w": null,
+                        "h": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Journal articles are often costly to access, and many researchers and writers use services like Sci-Hub to bypass those costs. Publishers are unhappy about their content being distributed for free and argue that the site infringes on their copyright."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In December, academic publishers Elsevier, Wiley, and the American Chemical Society filed a suit with the Delhi High Court, asking Indian internet service providers to block Sci-Hub and similar site Libgen. The court rejected the publishers\u2019 requests that the sites be blocked immediately, instead declaring it "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "an \u201cissue of public importance\u201d"
+                                    },
+                                    "url": "https://www.hindustantimes.com/india-news/sci-hub-libgen-case-delhi-hc-to-hear-students-researchers/story-PxBftjgAPFPfuXGok4qG7N.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and allowing time for the scientific community to weigh in."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Sci-Hub founder Alexandra Elbakyan had been using Twitter to gather and archive "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "responses from Indian researchers"
+                                    },
+                                    "url": "https://torrentfreak.com/images/twitter.tweets.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", who argue that Sci-Hub is critical to their work. It\u2019s unclear if the suspension is directly related to the court case, but \u201cit happened right after Indian scientists revolted against Elsevier and other academic publishers after Sci-Hub posted on Twitter about the danger of being blocked,\u201d Elbakyan "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextPlain",
+                                                "text": "told "
+                                            },
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "TorrentFreak"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://torrentfreak.com/sci-hub-founder-criticises-sudden-twitter-ban-over-over-counterfeit-content-210108",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Twitter did not immediately respond to "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The Verge"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u2019s request for comment."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Publishers have tried to pursue legal action against Elbakyan several times before, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "but Sci-Hub has prevailed"
+                                    },
+                                    "url": "https://www.theverge.com/2018/2/8/16985666/alexandra-elbakyan-sci-hub-open-access-science-papers-lawsuit",
+                                    "webpage_id": 1337119303753102710
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". As the \u201cPirate Bay of Science,\u201d the site frequently switches domains to combat takedowns."
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 6035979839472774106,
+                        "access_hash": -6911182169222876611,
+                        "file_reference": "b'\\x00aFH\\xf0\\xaeX-o\\xb6\\xff\\xa7\\xe1\\xac\\x90\\x07\\x8b@\\xc8\\xa0}'",
+                        "date": "2021-01-08 17:37:02+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1b(\\xd2v\\x11&\\xf6|\\x01\\xd4\\x93\\xc5J\\x08=9\\xac\\xbdk\\x7f\\xd9\\xd0\\x0f\\xb9\\xbb\\xe6\\xfe\\x95=\\x9c\\xbb\\xf4\\xf8\\xca\\x04G\\xe9\\x8c{\\xd2\\x19s\\x9e\\xfd~\\xb4t\\xff\\x00\\xf5\\xd5c>\\x0b\\x03\"\\x023\\xf9\\xf6\\xa6\\x9b\\x83\\xdaT\\xcf\\x1d\\xbd\\xe8\\xb8\\xf9\\x19bs \\x89\\x8cC-\\xdb\\x9a(\\x8ed|a\\x81#\\xae\\x05\\x14\\x08I#\\xf3\\x10\\xa3\\x8c\\x83\\xd4Tv\\x96\\xcdm\\x1bG\\xbb*X\\x91\\xf4\\xa9T\\x9c\\xd3\\xfbS\\x10\\xdc\\x14^3\\x8a\\\\\\x1f\\x7f\\xce\\x9cy8\\xedB\\x80W\\x91@\\r\\xdaH\\xef\\xf9\\xd1N\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 213,
+                                "size": 22582
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 533,
+                                "size": 100959
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 853,
+                                "size": 199849
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "w",
+                                "w": 2420,
+                                "h": 1613,
+                                "size": 493418
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": true,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 68,
+            "length": 86
+        }
+    ],
+    "views": 148,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

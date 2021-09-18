@@ -1,0 +1,62 @@
+{
+    "_": "Message",
+    "id": 170,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-27 14:08:27+00:00",
+    "message": "#git\nhttps://mergebase.com/doing-git-wrong/2018/03/07/fun-with-git-pull-rebase/\n\n> Some people claim \u201cgit fetch; git rebase origin/master\u201d is equivalent to \u201cgit pull -r\u201d, but it isn\u2019t.\n\ngit pull -r also deals with squashes.\n\n#TIL\n> Rebase hell happens when several commits on your branch edit the same area, and upstream also touched the same area.  The problem occurs because each conflict resolution will itself conflict with the subsequent commit in the series.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 74
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 225,
+            "length": 4
+        }
+    ],
+    "views": 104,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-27 14:10:17+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "git"
+    ]
+}

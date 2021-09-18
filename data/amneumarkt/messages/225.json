@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 225,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-05-05 18:26:28+00:00",
+    "message": "#DS #ML \n\nThe \u201cAI Expert Roadmap\u201d. This can be used as a checklist of prelims for data people.\n\nhttps://i.am.ai/roadmap/#note",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6086673038848493837,
+            "url": "https://i.am.ai/roadmap/",
+            "display_url": "i.am.ai/roadmap",
+            "hash": 0,
+            "type": "article",
+            "site_name": "AI Roadmap",
+            "title": null,
+            "description": "Follow these roadmaps to become an Artificial Intelligence expert.",
+            "photo": {
+                "_": "Photo",
+                "id": 5828929112629160838,
+                "access_hash": 1813044009101596335,
+                "file_reference": "b'\\x00aFH\\xefd\\x91\\xfd\\xf6\\x96\\x92\\xc7V\\xbf\\xb8\"\\xaf#Jj\\x96'",
+                "date": "2020-10-29 22:57:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xc9\\x1c\\xd1\\xb4\\xf2E\\x1c\\nr\\xbf\\x05}}h\\x01\\x98\\xcd\\x04\\x11\\x8c\\x83W#\\xb8\\x8d\\xd3\\x133d6@P1Q\\xdd<r\\x15(X\\xfa\\xe4P\\x05SE)\\xa2\\x80\\x134\\xe1\\xebE\\x14\\x00\\x1a3E\\x14\\x00\\x84\\xd1E\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 12345
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 418,
+                        "size": 74569
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 627,
+                        "size": 144194
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 96,
+            "length": 29
+        }
+    ],
+    "views": 121,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-05-05 18:26:42+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS",
+        "ML"
+    ]
+}

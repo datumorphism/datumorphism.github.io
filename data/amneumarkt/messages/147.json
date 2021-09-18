@@ -1,0 +1,141 @@
+{
+    "_": "Message",
+    "id": 147,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-13 12:38:14+00:00",
+    "message": "#ML #paper\n\nhttps://www.nature.com/articles/s42256-020-00265-z\n\nIntrinsic interpretability.\narXiv: https://arxiv.org/abs/2002.01650",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820127042207848,
+            "url": "https://www.nature.com/articles/s42256-020-00265-z",
+            "display_url": "nature.com/articles/s42256-020-00265-z",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Nature Machine Intelligence",
+            "title": "Concept whitening for interpretable image recognition",
+            "description": "Nature Machine Intelligence - There is much interest in &#8216;explainable&#8217; AI, but most efforts concern post hoc methods. Instead, a neural network can be made inherently...",
+            "photo": {
+                "_": "Photo",
+                "id": 5858469618518174795,
+                "access_hash": 6018362349487868706,
+                "file_reference": "b'\\x00aFH\\xf0\\xbb\\xc8\\x12j\\x87\\xe5\\x1b\\x91|\\x86\\xc8\\xda\\xfc\\xe029'",
+                "date": "2021-08-27 15:32:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\r(\\xd8'\\x8e3@\\xcf|\\x8aZ\\r\\x004\\x9ep)h\\x03\\x14\\xb4\\x00\\xd5>\\xb4P\\xa3\\x03\\xf1\\xa2\\x80?\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 106,
+                        "size": 6040
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 264,
+                        "size": 23018
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 422,
+                        "size": 44387
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1500,
+                        "h": 494,
+                        "sizes": [
+                            5102,
+                            12960,
+                            24828,
+                            32405,
+                            50600
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 12,
+            "length": 50
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 99,
+            "length": 32
+        }
+    ],
+    "views": 119,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-13 12:43:27+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML",
+        "paper"
+    ]
+}

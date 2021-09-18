@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 20,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-16 07:03:46+00:00",
+    "message": "WTO | dispute settlement - the disputes - DS543\nhttps://www.wto.org/english/tratop_e/dispu_e/cases_e/ds543_e.htm#bkmk543r",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8719537229226171010,
+            "url": "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds543_e.htm",
+            "display_url": "wto.org/english/tratop_e/dispu_e/cases_e/ds543_e.htm",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "www.wto.org",
+            "title": "WTO | dispute settlement - DS543: United States",
+            "description": "On 4 April 2018, China requested consultations with the United States concerning certain tariff measures on Chinese goods which would allegedly be implemented through Section 301-310 of the US Trade Act of 1974.",
+            "photo": {
+                "_": "Photo",
+                "id": 5828799391731918853,
+                "access_hash": -3986226006757102189,
+                "file_reference": "b'\\x00aFH\\xf1+\\x1e\\xa7\\xfa5C\\xf91\\x9f\\x87\\xe5\\xf6\\xc42\\xd8\\xc6'",
+                "date": "2018-09-14 19:40:03+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 51,
+                        "size": 966
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 9357
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 707,
+                        "h": 398,
+                        "size": 34186
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": "  \ud83d\ude18",
+                        "data": "b'like 20 1'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude09",
+                        "data": "b'like 20 2'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude31 1",
+                        "data": "b'like 20 3'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "\ud83d\udcac",
+                        "url": "https://comments.bot/thread/wWLsn_KhF",
+                        "button_id": 128623036,
+                        "fwd_text": null
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 48,
+            "length": 73
+        }
+    ],
+    "views": 31,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-16 07:07:17+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

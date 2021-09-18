@@ -1,0 +1,111 @@
+{
+    "_": "Message",
+    "id": 142,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-09 11:51:23+00:00",
+    "message": "\u8865\u5145\u4e00\u90e8\u8ba8\u8bba\u4e92\u8054\u7f51\u5ba1\u67e5\u7684\u5de5\u4f5c\u751f\u4ea7\u3001\u5168\u7403\u5f71\u54cd\u3001\u793e\u4ea4\u5a92\u4f53\u52a0\u5267\u51b2\u7a81\u7b49\u8bae\u9898\u7684\u5fb7\u56fd\u7eaa\u5f55\u7247 The Cleaners\uff08\u539f\u540d Im Schatten der Netzwelt\uff0c\u7f51\u7edc\u9634\u5f71\u4e4b\u4e0b\uff09\u3002Hans Block \u548c Moritz Riesewieck \u6267\u5bfc\uff0c\u4ed6\u4eec\u4e5f\u5728 TED \u4e0a \u8bb2\u8ff0\u4e86 \u5173\u4e8e\u300c\u6570\u5b57\u6e05\u6d01\u300d\uff08digital cleaning\uff09\u7684\u95ee\u9898\u3002\u4e0d\u8fc7\u6211\u7b2c\u4e00\u6b21\u770b\u8fd9\u90e8\u7eaa\u5f55\u7247\uff0c\u662f\u5728 DW \u7684 YouTube \u9891\u9053\uff0c\u5206\u4e3a \u4e0a \u3001\u4e0b \u4e24\u96c6\u64ad\u51fa\uff0c\u76ee\u524d\u5747\u5df2\u5931\u6548\uff0c\u539f\u56e0\u4e0d\u660e\u3002\u4e00\u90e8\u8bb2\u8ff0\u5185\u5bb9\u88ab\u5220\u9664\u7684\u5f71\u7247\uff0c\u81ea\u8eab\u5374\uff08\u6216\u88ab\uff09\u5220\u9664\uff0c\u4e0d\u8bba\u662f\u56e0\u8457\u4f5c\u6743\u8fd8\u662f\u5176\u4ed6\u539f\u56e0\u90fd\u8868\u73b0\u51fa\u8db3\u591f\u7684\u8bbd\u523a\u3002Internet Archive \u4e0a\u4ecd\u53ef\u627e\u5230 \u64ad\u51fa\u65e5 \u7684 \u5b58\u6863 \u56de\u770b\uff0c\u4e5f\u53ef \u5728\u6b64 \u4e0b\u8f7d\u89c2\u770b\u3002",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2021-01-09 11:50:54+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1204491827
+        },
+        "from_name": null,
+        "channel_post": 408,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 40,
+            "length": 12,
+            "url": "https://www.imdb.com/title/tt7689936/"
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 40,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 56,
+            "length": 24
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 134,
+            "length": 3,
+            "url": "https://www.ted.com/talks/hans_block_and_moritz_riesewieck_the_price_of_a_clean_internet"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 203,
+            "length": 1,
+            "url": "https://www.youtube.com/watch?v=OS8v3QBUalg"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 206,
+            "length": 1,
+            "url": "https://www.youtube.com/watch?v=IKrreyG89P4"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 294,
+            "length": 3,
+            "url": "https://archive.org/details/DW_20200613_121500_The_Cleaners_-_Social_medias/"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 300,
+            "length": 2,
+            "url": "https://archive.org/search.php?query=The%20Cleaners%20DW"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 309,
+            "length": 2,
+            "url": "https://t.me/thesoclib/132"
+        }
+    ],
+    "views": 143,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

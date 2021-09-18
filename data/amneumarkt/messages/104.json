@@ -1,0 +1,73 @@
+{
+    "_": "Message",
+    "id": 104,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-05 07:52:17+00:00",
+    "message": "https://www.linkedin.com/posts/supriya-rao-patwardhan-68b429_dhlexpress-dhlitservices-weareone-activity-6740676755436183552-TUyB\n\nWill there be more women on the list in 10 years?",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 770761624718025813,
+            "url": "https://www.linkedin.com/posts/supriya-rao-patwardhan-68b429_dhlexpress-dhlitservices-weareone-activity-6740676755436183552-TUyB",
+            "display_url": "linkedin.com/posts/supriya-rao-patwardhan-68b429_dhlexpress-dhlitservices-weareone-activity-6740676755436183552-TUyB",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Linkedin",
+            "title": "Supriya Rao Patwardhan on LinkedIn: #dhlexpress #dhlitservices #weareone | 67 comments",
+            "description": "In good company among the TOP 50 CIOs recognised by IDG, CIO magazine and Adobe! \nThis award is an external recognition of the fantastic teams I have worked... 67 comments on LinkedIn",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 128
+        }
+    ],
+    "views": 111,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-05 07:52:43+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,91 @@
+{
+    "_": "Message",
+    "id": 81,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-07 15:50:48+00:00",
+    "message": "Via https://www.linkedin.com/posts/piyushsaxena92_followpiyush-talentacquistion-jobseeker-activity-6727494236213678080-sujR\n\nThis is hilarious.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5276274449219433236,
+            "access_hash": 165408506526743723,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00QaFH\\xf0\\xaa\\x86q\\x8c\\x10h\\x06\\xb2\\xb92\\x97m*(*\\xc0'",
+            "date": "2020-11-07 15:50:47+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x15\\xd7\\xdd\\xce6\\x9c\\xfe\\x14\\x12O\\xf0\\x9f\\xd2\\xa2\\xda\\xf99\\x98\\xf5\\xfe\\xed:0A\\xe6Fob(\\x11 \\xe9\\xcf\\x14R\\xd1@\\xc8\\xce\\xfc\\x9cQ\\x89=\\xa9\\x08\\x19?)\\xeb\\xe9G\\x1f\\xddo\\xca\\x80$P@\\xe7\\xad\\x14(\\xc2\\xe3\\xa5\\x14\\x01\\x11RX\\xe1\\x98s\\xefN\\xf2\\xdb\\xfb\\xe7\\xf3\\xa2\\x8a\\x00x\\x18\\x18\\xc9?Z(\\xa2\\x80?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 168,
+                    "h": 320,
+                    "size": 17828
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 419,
+                    "h": 800,
+                    "size": 65224
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 670,
+                    "h": 1280,
+                    "size": 95962
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 4,
+            "length": 119
+        }
+    ],
+    "views": 135,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

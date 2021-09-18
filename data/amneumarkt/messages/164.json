@@ -1,0 +1,98 @@
+{
+    "_": "Message",
+    "id": 164,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-24 23:45:39+00:00",
+    "message": "#fun\n\nSource: https://www.reddit.com/r/NotMyJob/comments/l3zv3o/of_course_i_proofread_the_paper_before_publication/?utm_medium=android_app&utm_source=share",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5220209354886723943,
+            "access_hash": 309196646532469512,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xa4aFH\\xef\\x07\\xe2*\\x05F\\xb8\\x04\\r{\\x0e\\xfc\\xcf\\r]\\xbeL'",
+            "date": "2021-01-24 23:45:39+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x1e\\xbe\\x9eh\\x9aM\\xf2&\\xcc\\xfc\\xb8<\\xd4\\xb9\\xff\\x00\\xa6\\x9f\\xa8\\xff\\x00\\n\\x0e\\xec\\xff\\x00\\xfa\\xff\\x00\\xc2\\x93\\xe6\\xf4\\xfdO\\xf8P\\x03\\xd0\\x8e\\x9ef\\xef\\xca\\x9fQ.\\xe0\\x7f\\xcf\\xf8T\\xb4\\x00\\xc2pzSr:\\x15\\xfdi\\x18\\x02\\xc7\\xa5 \\xdb\\x9f\\xe1\\xfc\\xa8\\x01\\xe0\\xe3\\x90\\xbf\\xad9[=\\xb1P\\xedO\\xee\\xc7\\xf9S\\xe2U\\x04\\x95\\n>\\x82\\x80*\\rN\\x02\\x7f\\x8f\\xfc\\xfe4\\xbf\\xdaPt\\xf9\\xbfO\\xf1\\xa2\\x8a\\x00o\\xf6\\xa5\\xb8=\\x1f\\xf2\\xff\\x00\\xeb\\xd3\\xbf\\xb5-\\xd7\\xb3\\xfe\\x87\\xfa\\xd1E\\x00\\x7f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 243,
+                    "h": 320,
+                    "size": 31362
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 607,
+                    "h": 800,
+                    "size": 121818
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 971,
+                    "h": 1280,
+                    "size": 210495
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 14,
+            "length": 141
+        }
+    ],
+    "views": 103,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

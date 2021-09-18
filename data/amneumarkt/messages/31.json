@@ -1,0 +1,1352 @@
+{
+    "_": "Message",
+    "id": 31,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-24 06:04:41+00:00",
+    "message": "Maternal microbes support fetal brain wiring\nhttps://www.nature.com/articles/d41586-020-02657-y",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126868004777,
+            "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews",
+            "display_url": "nature.com/articles/d41586-020-02657-y",
+            "hash": -710972838,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "Maternal microbes support fetal brain wiring",
+            "description": "Metabolites made by bacteria signal to the developing mouse brain.",
+            "photo": {
+                "_": "Photo",
+                "id": 6007225840879905603,
+                "access_hash": 3339737673644819667,
+                "file_reference": "b'\\x00aFH\\xf1\\xade\\xcf\\xec\\xd1\\xc2\\xd4t\\x1b\\xc1\\xd2^\\xe1\\xf1c\\xfc'",
+                "date": "2020-09-23 15:39:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xd7=)\\xa1\\x8f\\xa58\\xf4\\xa6\\x9c0\\xebH\\x07\\x13\\x8e\\r \\xcei@\\xc57?7z\\x00\\x0e\\xff\\x000\\x7fv\\x8au\\x14\\x00Sv\\xff\\x00t\\n(\\xa0\\x07`\\xf7\\xa4\\xc1\\xcep1E\\x14\\x00\\xb4QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 8901
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 36247
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 576,
+                        "size": 53584
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Katherine R. Meckel & Drew D. Kiraly",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Maternal microbes support fetal brain wiring"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Resident bacteria in the maternal gut are important for normal fetal brain development in mice. It emerges that this effect is driven by bacterially produced metabolite molecules that signal to the fetal brain."
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Katherine R. Meckel & Drew D. Kiraly"
+                        },
+                        "published_date": "2020-09-23 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The population of resident gut microorganisms, which are often referred to as the gut microbiota, are crucial for health throughout life. Many studies in animals indicate that the microbiota has a key role in ensuring proper fetal development in the face of environmental stressors. However, what contributions maternal microbes might make to embryo development in the absence of such stressors remain poorly understood. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextPlain",
+                                                "text": "Writing in "
+                                            },
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "Nature"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://www.nature.com/articles/s41586-020-2745-3",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", Vuong "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "1"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews#ref-CR1",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] report that, in pregnant mice, specific maternal gut bacteria produce molecules as metabolic by-products that influence the neural development of certain sensory pathways in the fetus, leading to lasting behavioural changes in offspring."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Over the past decade, animal studies have demonstrated that the gut microbiota can have marked effects on the development of the central nervous system and on an individual\u2019s subsequent behaviour. In mice, the maternal gut microbiota is necessary for maintaining normal fetal development after maternal inflammation ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "2"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews#ref-CR2",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "], and changes in the maternal microbiota due to a high-fat diet lead to neurobehavioural abnormalities in offspring ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "3"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews#ref-CR3",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. However, it is not clear whether these effects of the maternal microbiota are restricted to events during gestation, or whether they occur mainly postnatally, as a result of maternal transmission of microbes to offspring ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "4"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews#ref-CR4",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Vuong and colleagues provide insight into the role of the maternal microbiota in prenatal development under non-stressed conditions. The authors report that brain structure in the embryos of pregnant mice that were germ-free (animals living in sterile conditions and lacking a microbiota), or whose microbiota had been depleted by antibiotic treatment, was different from that of embryos whose mothers had a normal microbiota. These changes in brain structure were relatively specific to circuits involved in sensory processing. Thus, in mid-gestation-stage embryos of microbiota-deficient mothers, the neuronal projections (axons) connecting a region called the thalamus to another region, the cortex, were smaller and shorter, and the axon bundles in an axonal grouping called the internal capsule were thinner, than were those of embryos from mothers with a normal microbiota (Fig. 1). The authors also observed marked differences in gene expression, including for genes linked to axon formation, in brain cells from the two types of embryo."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6009196479249492862,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Figure 1 | Molecules from maternal gut microbes affect mouse embryonic brain development."
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " While developing "
+                                    },
+                                    {
+                                        "_": "TextItalic",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "in utero"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", mouse embryos receive metabolites from maternal gut microorganisms. Vuong "
+                                    },
+                                    {
+                                        "_": "TextItalic",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "et"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " "
+                                    },
+                                    {
+                                        "_": "TextItalic",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "al"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ". ["
+                                    },
+                                    {
+                                        "_": "TextSuperscript",
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "1"
+                                            },
+                                            "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews#ref-CR1",
+                                            "webpage_id": 0
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "] report that these metabolites aid normal wiring by neuronal projections called axons that connect brain regions called the thalamus and the cortex. Such connections are needed for sensory processing. "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "a"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", During normal development, these axons form a thick bundle at a structure called the internal capsule. When these mice became young adults, they responded normally to behavioural tests, \u2018startling\u2019 and moving in response to a sudden increase in sound loudness, and quickly touching and then removing adhesive tape attached to their paws. "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "b"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", If pregnant mice lacked their usual gut microbes and their fetus did not receive maternal microbial metabolites, then neurons forming thalamocortical projections had axonal defects, including thinner-than-normal axons. These animals displayed behavioural abnormalities when tested."
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The thalamus is a major \u2018relay station\u2019 in the brain, directing sensory and motor information received from the environment to the appropriate cortical targets to mediate a suitable behavioural response. These thalamocortical projections, which are established by migration processes that occur during embryonic development, create lasting connections to cortical regions involved in auditory, visual, somatosensory (relating to the perception of sensations such as pain or pressure) and motor responses. To determine whether the effects observed were due to the deficient maternal microbiota, Vuong "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". used a co-culture system of neurons taken from embryos and grown "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "in vitro"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". This revealed that the impaired growth of embryonic axons from microbiota-deficient mothers could not be corrected by adding growth factors produced by embryos of mothers with an intact microbiota."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Realizing that the microbiota was necessary for the development of these thalamocortical projections, Vuong and colleagues investigated whether the disrupted thalamocortical neuroanatomy had lasting consequences in offspring. The authors examined the offspring of germ-free and antibiotic-treated mothers in adulthood, using a range of behavioural tests to look for any sensorimotor deficits. They found that mice born to mothers with a deficient microbiota had impaired responses to heat, sound and pressure compared with animals whose mothers had a normal microbiota (Fig. 1). The authors observed no problems in visual or motor-coordination tests."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "To determine which bacteria in the maternal microbiota were responsible for the positive effects on offspring neurodevelopment and behaviour, Vuong and colleagues performed a series of experiments in which previously germ-free mice were inoculated with specific bacterial groups. When spore-forming "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Clostridium"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " species of bacteria were used, the abnormalities in offspring brain development and behaviour did not occur, suggesting that these bacteria normally aid neurodevelopment."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Although there is strong evidence for a connection between gut microbes and the brain, uncovering the underlying mechanism can be difficult. One possible means of transmission between these distant sites is by metabolite molecules that are produced by gut microbes and absorbed into the bloodstream ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "5"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews#ref-CR5",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": ","
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] ["
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "6"
+                                        },
+                                        "url": "https://www.nature.com/articles/d41586-020-02657-y?utm_source=twt_nv&utm_medium=social&utm_campaign=newsandviews#ref-CR6",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. During pregnancy, these metabolites, along with other nutrients from the maternal circulation, are transported by way of the placenta to the fetus. Vuong and colleagues hypothesized that the maternal microbiota might be the source of these metabolites for the fetus. Using an approach called discovery metabolomics, the authors found that the maternal microbiota affected the levels of many metabolites in maternal blood and fetal brain tissue."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Testing microbiota-derived metabolites, Vuong "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". found that maternal supplementation of certain metabolites could rescue the effects of a deficient microbiota on axon growth "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "in vitro"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Excitingly, such supplementation in microbiota-deficient pregnant mice also prevented the behavioural deficits that would otherwise have occurred in their offspring."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "This work not only contributes to the growing field of research on how the gut microbiota affects the developing brain, but also sets the stage for future work. At present, the details of how these microbiota-derived metabolites affect developing neurons are unclear. Nor do we fully understand why the effects are at least somewhat specific to neurons in the thalamocortical sensory-relay pathways, particularly in neurons mediating heat, sound and pressure detection. Further research should help to clarify the molecular mechanisms underlying this phenomenon."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Finally, although these findings are from mice, this work might be relevant to human health in medical settings in the future. Understanding the composition of the maternal microbiota and the metabolites that reach the fetus presents a clear potential pathway for the development of clinical interventions. One such possibility is characterization of the levels of maternally provided molecules that could be used as \u2018biomarkers\u2019 to monitor development for signs of abnormalities. If it turns out that the level of specific metabolites can be supplemented to help fetal brain development, in the way that folic acid supplements are given during pregnancy to prevent neural-tube defects, the implications for reducing neurodevelopmental disorders and promoting healthy brain development could be enormous. Much work would still need to be done before any clinical trials assessing such an approach could begin. Nevertheless, Vuong and colleagues\u2019 work provides a necessary foundation for understanding how the maternal microbiota affects normal brain development."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Nature "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "586"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 203-205 (2020)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "doi: "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1038/d41586-020-02657-y"
+                                    },
+                                    "url": "https://doi.org/10.1038/d41586-020-02657-y",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "References"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "1. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR1"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Vuong, H. E. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "586"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 281\u2013286 (2020)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "2. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR2"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Kim, S. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "549"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 528\u2013532 (2017)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "3. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR3"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Buffington, S. A. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Cell"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "165"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 1762\u20131775 (2016)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "4. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR4"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Ja\u0161arevi\u0107, E. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature Neurosci."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "21"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 1061\u20131071 (2018)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "5. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR5"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Visconti, A. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature Commun."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "10"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 4505 (2019)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "6. "
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "ref-CR6"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Vojinovic, D. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "et al."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Nature Commun."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "10"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 5813 (2019)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockRelatedArticles",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "articles": [
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-02914-0",
+                                "webpage_id": 7937820126097342872,
+                                "title": "Universal assembly instructions for the placenta",
+                                "description": "Conserved pathways of mammalian trophectoderm development.",
+                                "photo_id": 5788639841196551013,
+                                "author": "Jennifer L. Watts & Amy Ralston",
+                                "published_date": "2020-10-16 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-02856-7",
+                                "webpage_id": 7937820126675157108,
+                                "title": "How anti-ageing drugs could boost COVID vaccines in older people",
+                                "description": "COVID-19 poses the greatest threat to older people, but vaccines often don\u2019t work well in this group. Scientists hope drugs that rejuvenate the immune system will help.",
+                                "photo_id": 5781589536416050044,
+                                "author": "Cassandra Willyard",
+                                "published_date": "2020-10-14 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-00502-w",
+                                "webpage_id": 7937820127037564431,
+                                "title": "COVID research updates: COVID vaccines might lose potency against new viral variants",
+                                "description": "A selection of the latest research on the new coronavirus.",
+                                "photo_id": 5790622140402346919,
+                                "author": null,
+                                "published_date": "2021-01-21 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-02903-3",
+                                "webpage_id": 7937820127213073516,
+                                "title": "Don\u2019t let COVID stop your fieldwork: three tips for successful collaborations",
+                                "description": "Christie Sampson and Steven Vamosi were struck by the kindness of co-workers when coronavirus lockdowns began.",
+                                "photo_id": 5783920969218370414,
+                                "author": "Christie Sampson & Steven M. Vamosi",
+                                "published_date": "2020-10-15 00:00:00+00:00"
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "http://www.nature.com/articles/d41586-020-02815-2",
+                                "webpage_id": 7937820125482345677,
+                                "title": "What it\u2019s really like to do science amid COVID-19",
+                                "description": "From Germany to India, researchers are grappling with how to run labs and lessons under extraordinary restrictions.",
+                                "photo_id": 5783816489843927870,
+                                "author": "Quirin Schiermeier, Holly Else, Emiliano Rodr\u00edguez Mega, T.V. Padma & Nisha Gaind",
+                                "published_date": "2020-10-15 00:00:00+00:00"
+                            }
+                        ]
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5788639841196551013,
+                        "access_hash": -6150484804893882088,
+                        "file_reference": "b'\\x00aFH\\xf1\\x17\\xae\\xd2\\x8f\\x1e\\xa2S\\xf7\\x96/\\xb8\\xbc\\xb7h\\x9a\\xf7'",
+                        "date": "2020-10-16 14:18:22+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd69\\xc7\\x04\\n@\\xdd\\xf2\\x0f\\xd0R\\xb1\\x00s\\xc57\\xe5Ps\\xd3\\xbf4\\x80vI\\x1cq\\xf5\\xa0\\x1e\\xd9\\xe6\\x80GAI\\x80\\tj\\x00\\x0e\\xff\\x000\\x7fv\\x8aP\\xc0\\x9c\\n(\\x00`\\x18a\\x80#\\xd0\\xd1\\xb4d\\x9c\\x0ez\\xf1\\xd6\\x8a(\\x00\\x03\\x1d\\xe8\\xda\\x088\\x03\\x9ezQE\\x00\\x01psE\\x14P\\x07'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 8631
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 30946
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 42306
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5781952658721057643,
+                        "access_hash": -8307400511009485146,
+                        "file_reference": "b'\\x00aFH\\xf1?p\\xd6b\\xd4\\xdd8\\xacG\\xa9n\\xf8\\x05\\x14c\\xbc'",
+                        "date": "2020-10-14 15:25:28+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01!(\\xd8\\x1d)i\\x06\\x00\\xa6\\x87\\x04\\xd0\\x03\\xe9\\t\\xe4Q\\x91\\x9aB\\xc3 g\\xad\\x00)\\xebE&9\\xc9j(\\x01\\x0e\\xcc\\x8d\\xc0\\x12}\\xa8\\xc4dd*\\x9f\\xc2\\x82\\x80\\xe3#4*mL\\x0e9\\xa0\\x08\\x92X\\xd8\\x12T.\\xd7\\xd8=\\xcdK\\xb18\\xf9W\\xf2\\xaa\\x86\\xda}\\xc4\\x02\\x9b<\\xcd\\xfd\\xf3V\\xd7y\\x1f0\\x00\\xf6\\xc1\\xcd\\x03it\\x17b\\x8ev\\x8e(\\xa3\\x07<\\xe4\\xd1@\\x87QE\\x14\\x00\\x87\\xa8\\xa5\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 263,
+                                "size": 17434
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 685,
+                                "h": 564,
+                                "size": 52059
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5781589536416050044,
+                        "access_hash": -8902651249638730581,
+                        "file_reference": "b\"\\x00aFH\\xf19=\\xf9\\xbeM\\xcf\\xa37\\xc7\\xac'J\\x1d\\xac\\xe2\\xab\"",
+                        "date": "2020-10-14 13:01:31+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xb8\\xc4\\xafq\\x8a\\x8c\\xa7\\x99 \\'\\xa0\\xe9L\\x9aC\\xc0\"\\xa1[\\xad\\xc8y\\xc6\\r!\\x96%p#a\\xd6\\xa6R\\x9eP\\xc1\\xe7\\x03\\x19\\xac\\xc4w\\x92r\\x9b\\xbe\\xf1\\xab2C\\xe5\\xc7\\xbf<\\x8f\\xff\\x00U\\x16\\x0b\\x93$\\xa4\\xba\\xec`P\\xd1U\\x01\\x928\\xd7\\xe5\\xc7^\\x07j(wA\\xb93:I\\xf3+|\\xc0d\\x0cU\\x10\\xeb\\xe7\\xb1\\x03\\xe5l\\x8c\\x11E\\x14\\xc0o\\xfa\\xb7\\x0c8\\xc7\\xf8U\\x9f\\xb4\\x99a\\x03\\'\\x83\\xd7\\xf1\\xa2\\x8a\\xa4\\x84\\xc8\\x04\\xcd\\xbd\\xb7t\\xf4\\xa2\\x8a)\\x05\\x8f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 22683
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 111486
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 186083
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5783920969218370414,
+                        "access_hash": 3630974039854434756,
+                        "file_reference": "b'\\x00aFH\\xf1x\\xf8H<]\\xf7\\x8ePGp2`J\\xa9A\\xae'",
+                        "date": "2020-10-15 14:00:18+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\xb6\\xed\\t\\x00\\x109\\xaa\\xf3*\\xa2\\x17R\\x08\\x1d\\xaa\\xbbD\\xaa2\\x18\\xf1QH\\x17nL\\x84\\xfbf\\x9a\\xa8.Rs*\\t\\n\\x1f^\\xb5*\\x80A\\xe0}j\\x97\\x96\\xb9\\xce\\xf2s\\xde\\x9d\\xc8\\x03\\x0e\\xd8\\xfa\\xd3\\xf6\\x81\\xc8_EM\\xbdy\\xf6\\xa2\\xa8\\xb3\\x92\\x80\\x19\\x1b\\x8fz(s\\x05\\x11U\\x9f'\\x9e=\\xc52S\\xbb\\xef\\x11\\xf9QEM\\xb4+\\xa8\\x8a\\xc3\\x1d)\\xe5\\xc0\\x1d(\\xa2\\xa4b\\x06V\\xea\\xb4QE!\\x9f\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 24550
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 136772
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 222591
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5783816489843927870,
+                        "access_hash": -235912756058713916,
+                        "file_reference": "b'\\x00aFH\\xf1\\xd1\\xe1\\xf0N4\\x8c\\xcbI\\\\\\xda\\xf0\\x88Q\\x06=\\xdd'",
+                        "date": "2020-10-15 15:57:42+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xa4\\x1c\\x95#9\\xcdL\\xf0\\xa8\\x88H%\\xdc3\\xc9\\x02\\x83\\x00\\xdb\\x92\\xc4\\xfe>\\xd5\\x15\\xbe\\xf6\\xd8\\xac\\xc4\\xc6\\x018\\xcfC\\xcd\\x0b\\xccL\\x91S\\xe5\\xca\\xbf\\x07\\xd8S\\x04J\\xd2l\\x0eO\\xadO\\xe4\\xa7\\xaf\\xf9\\xc55\\xb6D\\x85\\x81\\xdcGj\\xaeh\\x82\\xb9\\x1b\\xdb\\x85\\x1f\\xbb\\xcb63\\xd7\\xa5\\x15\"H\\x81\\x0b\\x01\\x86a\\xcd\\x15\\r\\xa1\\xbb!\\xefm*\\xa8,\\xc0g\\x8f\\xa50[4o\\xb4\\x11\\x86\\x19\\xcd\\x14Q`\\x1f\\xf6f\\xfe\\xfa\\xfe\\xb4\\xc9-\\xdfg\\xde\\x0c=\\xa8\\xa2\\x8b\\x00\\xc5\\x84\\xed\\xc6\\xee\\x9cQE\\x14X\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 28805
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 146748
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 229303
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5781642141175491430,
+                        "access_hash": 8916585598172994511,
+                        "file_reference": "b\"\\x00aFH\\xf1'\\xe4\\xbfA\\x1d\\t\\x85\\x96\\xc6gQ\\x95u\\x92\\xc1\\xd7\"",
+                        "date": "2020-10-14 13:19:49+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\xab\\xcf\\xa7\\xe2)\\xa4\\xe6\\x97\\xafE\\x14\\xd6o^\\xb5I7\\xb1\\xd8\\xdd\\xb7\\x14u\\xc5\\x1d\\r'\\xca?\\x9d(\\x19\\x14\\xdbB\\x8aw\\xdcx\\xd9\\xe5\\x9e\\xbb\\xfbQJ\\x01\\xc5\\x15\\x06\\xaa\\x02\\x10\\xaa\\xb9$\\x93\\xe9P\\xb1\\xe7\\xebE\\x15\\xd3KH\\xdc\\xe5\\xab\\xbd\\x84S\\x8c\\xe7\\xb8\\xa9\\xa3;\\x90\\x1a(\\xac\\xa6iE\\xeba\\xf8\\xa2\\x8a+3\\xa8\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 18829
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 89350
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 143188
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5781559609083931530,
+                        "access_hash": -828385148046639480,
+                        "file_reference": "b'\\x00aFH\\xf1\\x94\\xa1\\xf45\\xec\\xe6\\xf5\\xb7g<\\x0f\\xf8BV|\\xb4'",
+                        "date": "2020-10-14 15:25:42+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd3U`\\xfe\\xd4\\xe1\\xbbq\\xe3\\xf1\\xa7s\\xec(\\xc7\\xb8\\xa0\\n\\xf6\\xcb(f\\xf3\\t\\xc0\\xfb\\xa0\\xd4\\xbe_\\xcf\\xbc\\xbb{\\x0c\\xf1O\\x1dz\\x83Pb7\\x97\"V\\xcezg\\x8c\\xd3\\x10\\xa3r>\\xdeNO\\xcah\\xa9\\x81\\xe7\\x9cf\\x8aC\\x17\\x14\\x87\\xa7O\\xd6\\x8a(\\x01qU\\xa2\\xb7e\\x97q#\\x1b\\xcb~\\x98\\xa2\\x8a\\x02\\xc4\\xe1\\x88r\\xa7>\\xd4QE\\x00\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 181,
+                                "size": 20536
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 685,
+                                "h": 387,
+                                "size": 77637
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5781984699177085756,
+                        "access_hash": -4855613329908224739,
+                        "file_reference": "b'\\x00aFH\\xf1\\xa8\\xa0Q\\x1cR!8\\xf21m\\x84\\xc5\\xebom\\xab'",
+                        "date": "2020-10-14 13:19:49+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x17(\\xb2\\xc4\\x94 u\\xa0\\x9f\\xdd\\x93\\xe9\\x93Me\\x93\\xe6\\xc1\\xda>\\x9d)\\xe07\\x96\\xac\\xae0\\xc7\\x9fz\\x1b\\xb2\\xb8-]\\x8a\\xaf\\xb9\\xd9_?(\\xe7\\x14\\xacS\\xc8\\xf3\\x1fpRq\\xc0\\xe6\\xa7\\x920O\\xca@\\xc7$T\\x03w\\x962\\xa0\\xe3\\xb7\\x14\\xe2\\xee\\xae\\x89\\x92\\xb3\\xd4b\\x1d\\xfbv\\xe4%\\x154q\\xe7\\xf8\\x96?\\xf6x\\xe4\\xd1N\\xe4\\xfa\\nI\\xde['\\x04t\\xcd\\r2\\xe24\\x03\\xa1=\\xe8\\xa2\\x85\\x15a\\xb9;\\x80\\xfd\\xe4\\xe4\\xaf\\x03\\x00\\x9ej6uW\\xc2r\\x00\\xceh\\xa2\\xa6?\\x15\\x86\\xd6\\x97&\\xdb\\xb9\\xf7\\xb7R(\\xa2\\x8a\\xa0\\xb1\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 21206
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 84242
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 129905
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6009196479249492862,
+                        "access_hash": -2821521137709015879,
+                        "file_reference": "b'\\x00aFH\\xf1:\\x1f\\xd0u\\x8fN_\\xa1\\xc0\\xd0\\xe7\\xb2\\xbd\\xf0\\xaeh'",
+                        "date": "2020-09-23 15:39:13+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01!(\\xd5\\xcb\\x03\\xd3\\x8a2s\\x8e=\\xa9J\\x83L\\xdd\\x86\\xea1\\xf4\\xa4\\x04\\x99\\xc0\\xe6\\x90\\x9fJL\\x87\\xf4\\xa5\\xe1G\\xb5\\x00\"\\xe7<\\xb6\\x7f\\n(W\\x04\\xe0\\x1c\\xd1@\\x06\\xfc\\x1c\\x1a\\\\\\xf3\\x8a\\n\\x8c\\xf4\\x14\\xdd\\xc4vo\\xca\\x80\\x1fH\\xc7\\x1d:\\x9a\\x15\\xb7v\\xc7\\xe1A\\xe0f\\x80\\x10n\\xcfU\\xa2\\x85m\\xc7\\xa5\\x14\\x00\\x0f\\xf5\\x94\\xea(\\xa0\\x02\\x8a(\\xa0\\x02\\x8a(\\xa0\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 268,
+                                "size": 18534
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 600,
+                                "h": 503,
+                                "size": 45799
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5790622140402346919,
+                        "access_hash": 6457962942768576395,
+                        "file_reference": "b'\\x00aFH\\xf1\\t\\x8a;*\\\\\\xc6\\n\\xe8\\xaf\\x9a\\xf8\\x11_\\x87aF'",
+                        "date": "2021-01-22 16:35:36+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(H\\xdf|!\\\\\\x90\\xb9\\xc7\\xbdQ\\x9d\\x12+\\x86E9Q\\xd2\\x88\\xeev\\xc7\\xce3\\x8cT\\xb61}\\xa6\\xef{\\x0c\\xaa\\x8d\\xc4\\x7f*\"6F\\x17$/L\\xfa\\xd5\\xd4\\x08\\x89\\xb0\\xf1\\x9e\\xbc\\xd5\\x99P6\\x01\\x001\\xe4\\x9a\\xab\\xe5nn\\x07S\\x8e\\x95\\xb5\\xeeC+\\xc9\\x88f\\xc8\\x1d\\xa8\\xab\\rbfbD\\xab\\x9f\\xa6\\x7fZ(\\xe6\\xb0X\\xc9\\xf9OR\\x7f*\\xbd\\xa5\\xce#\\x99\\x93\\xb3\\xd1Ed\\xb7(\\xd4\\xba\\x1f\\xbb\\x0c:\\x83Y\\xd7,\\xf0\\xcb\\xb9\\x0f\\xdf\\x1e\\xbd(\\xa2\\x9a~\\xf0t$\\xf2\\xee\\x9e3*HJ(\\xe7\\xe6\\xc5\\x14QM\\xb6#'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 14468
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 52801
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 576,
+                                "size": 82762
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "Add a comment",
+                        "url": "https://comments.app/view/KsEYeeWl",
+                        "button_id": 534949722,
+                        "fwd_text": "Show comments"
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 45,
+            "length": 50
+        }
+    ],
+    "views": 42,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-24 06:04:41+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

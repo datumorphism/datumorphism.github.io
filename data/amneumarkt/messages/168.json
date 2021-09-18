@@ -1,0 +1,96 @@
+{
+    "_": "Message",
+    "id": 168,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-26 08:20:08+00:00",
+    "message": "#fun\n\nThe authors have got too many questions regarding Chinese translations....\n\nRef: https://www.deeplearningbook.org/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5222203219983207161,
+            "access_hash": 5833354571549580900,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xa8aFH\\xef\\x0cN]T\\xf3\\xac\\x8b\\xcd\\xa1\\x88\\xc6\\x1cH\\xc56\\x14'",
+            "date": "2021-01-26 08:20:08+00:00",
+            "mime_type": "image/png",
+            "size": 110942,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeImageSize",
+                    "w": 938,
+                    "h": 750
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "image_2021-01-26_09-20-07.png"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01 (\\xd6e\\xe3\\xe5\\xc0>\\xf4+\\x0ca\\x99ww\\xc5>\\x98ws\\xf7\\xff\\x00J\\x00]\\xc9\\xfd\\xe5\\xfc\\xe9F\\x08\\xc8\\xc1\\x14\\xc3\\xbb\\xfd\\xbf\\xd2\\x97\\xe6\\xff\\x00o\\xf4\\xa0\\x07\\xe0QL\\xf9\\xb3\\xd5\\xff\\x00J(\\x01\\xf5\\x11NI\\xc3u\\xf6\\xa9j\\xb0\\xdaFK\\x8c\\x9e\\xbf%\\x00I\\xb3\\xd9\\xbfJO/\\xfd\\x96\\xfd)\\xbf/\\xf7\\xc7\\xfd\\xf1G\\xc9\\x9e\\\\\\x7f\\xdf\\x14\\x0e\\xc4\\xaa\\xa3\\xa6\\xcc}qE0l'\\x00\\xe4\\xff\\x00\\xbbE\\x02?\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 256,
+                    "size": 18327
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 87,
+            "length": 33
+        }
+    ],
+    "views": 154,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

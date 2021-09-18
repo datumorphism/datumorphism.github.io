@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 183,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-07 18:30:53+00:00",
+    "message": "#ML\n\n[D] Convolution Neural Network Visualization - Made with Unity 3D and lots of Code / source - stefsietz (IG)\nhttps://www.reddit.com/r/MachineLearning/comments/leq2kf/d_convolution_neural_network_visualization_made/?utm_medium=android_app&utm_source=share",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547165537426962,
+            "url": "https://www.reddit.com/r/MachineLearning/comments/leq2kf/d_convolution_neural_network_visualization_made/",
+            "display_url": "reddit.com/r/MachineLearning/comments/leq2kf/d_convolution_neural_network_visualization_made",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "reddit",
+            "title": "[D] Convolution Neural Network Visualization - Made with Unity 3D...",
+            "description": "Posted in r/MachineLearning by u/TheInsaneApp \u2022 2,996 points and 77 comments",
+            "photo": {
+                "_": "Photo",
+                "id": 5838244492967259186,
+                "access_hash": -2500225188881644479,
+                "file_reference": "b'\\x00aFH\\xef\\x81\\xb1IQ\\xd0\\xea\\x9a\\x9b\\xa4L\\xba\\xe9\\xaf\\xeb\\x00\\xd5'",
+                "date": "2021-02-07 17:17:12+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(dG\\xe7\\x14\\xe9\\xcf\\xee\\x89\\xa8\\xa3?6OAN\\x99\\xc1\\x85\\x86y\\xa0\\x06\\xb9\\xfd\\xcf\\xe0*$<?\\xd2\\x91\\xe4\\xfd\\xd8R:\\x81\\x8ab\\xb6#\\x7f\\xc2\\x80\\x1aM\\x14\\xe8\\xa0y\\xbe\\xe8\\xe3\\xd4\\xd1@\\x17\\xad\\x1b\\x96\\xf9GJ\\x96dF\\x0c\\n\\x0f\\xad\\x14R\\x19Y\\xed\\xd0\\xc6\\xad\\x96\\xc8\\x14\\xd8-\\xd1\\xf7\\x02[\\x1cQE1\\x13\\xcd\\xfe\\x8fo\\x88\\xc0\\x18\\xe9E\\x14P\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 15454
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 600,
+                        "h": 300,
+                        "size": 45508
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 114,
+            "length": 145
+        }
+    ],
+    "views": 114,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-07 18:31:06+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

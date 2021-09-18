@@ -1,0 +1,85 @@
+{
+    "_": "Message",
+    "id": 132,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-05 09:45:39+00:00",
+    "message": "what the f\nECDC has been like this for at least 2h.\nAm I time travelling back to 2000? AND this is about disease prevention and controll not  useless blogs...",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5449827106918871369,
+            "access_hash": -4913510864471258202,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x84aFH\\xf0\\xd8K\\xa8\\xf3%\\xe1\\x81\\xf6\\xf8#\\x10\\xff\\xbbjF\\x11'",
+            "date": "2021-01-05 09:45:39+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x0b(\\xd6#\\xe6?6=\\xa8\\xc0\\xfe\\xf9\\xfc\\xe9\\xf4P\\x030?\\xbe\\x7f:0?\\xbe\\x7f:}\\x14\\x00\\xd5\\xe3\\xb9?\\x8d\\x14\\xea(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 84,
+                    "size": 6436
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 210,
+                    "size": 20957
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 336,
+                    "size": 26903
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 147,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-05 09:45:59+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

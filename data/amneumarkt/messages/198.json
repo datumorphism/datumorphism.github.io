@@ -1,0 +1,126 @@
+{
+    "_": "Message",
+    "id": 198,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-25 08:01:58+00:00",
+    "message": "#ML \n\nnote2self:\n\nFrom ref 1\n\n> we can take any expected utility maximization problem, and decompose it into an entropy minimization term plus a \u201cmake-the-world-look-like-this-specific-model\u201d term.\n\nThis view should be combined with ref 2. If the utility is related to the curvature of the discrete state space, we are making a connection between entropy + KL divergence and curvature on graph. (This idea has to be polished in depth.)\n\nRefs:\n1. Trivial proof but interesting perspective: https://www.lesswrong.com/posts/voLHQgNncnjjgAPH7/utility-maximization-description-length-minimization\n2. Samal Areejit, Pharasi Hirdesh K., Ramaia Sarath Jyotsna, Kannan Harish, Saucan Emil, Jost J\u00fcrgen and Chakraborti Anirban 2021Network geometry and market instabilityR. Soc. open sci.8201734. http://doi.org/10.1098/rsos.201734",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7361702094888099911,
+            "url": "https://www.lesswrong.com/posts/voLHQgNncnjjgAPH7/utility-maximization-description-length-minimization",
+            "display_url": "lesswrong.com/posts/voLHQgNncnjjgAPH7/utility-maximization-description-length-minimization",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Lesswrong",
+            "title": "Utility Maximization = Description Length Minimization - LessWrong",
+            "description": "There\u2019s a useful intuitive notion of \u201coptimization\u201d as pushing the world into a\nsmall set of states, starting from any of a large number of states. Visually:\n\nYudkowsky and Flint both have notable formalizations of this \u201coptimization as\ncompression\u201d idea.\n\nThis post presents a formalization of optimization-as-compression grounded in\ninformation theory. Specifically: to \u201coptimize\u201d a system is to reduce the number\nof bits required to represent the system state using a particular encoding. In\nother words, \u201coptimizing\u201d a system means making it compressible (in the\ninformation-theoretic sense) by a particular model.\n\nThis formalization turns out to be equivalent to expected utility maximization,\nand allows us to interpret any expected utility maximizer as \u201ctrying to make the\nworld look like a particular model\u201d.\n\nCONCEPTUAL EXAMPLE: BUILDING A HOUSE\nBefore diving into the formalism, we\u2019ll walk through a conceptual example, taken\ndirectly from Flint\u2019s Ground of Optimization: building a house. Here\u2019s Flint\u2019s\ndiagram:\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5871574594530421757,
+                "access_hash": -1679107565565367398,
+                "file_reference": "b'\\x00aFH\\xef~5B\\xea\\xdd\\xd2\\x1b1\\xacJ\\x9e]\\xc5N\\x16\\x83'",
+                "date": "2021-02-18 18:08:11+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1e(\\xd9\\xa4\\xfch\\x04b\\x9b\\xb2?\\xee\\xaf\\xe5@\\x0e\"\\x81\\x82:Q\\x91\\xedHH^\\x7f\\xa5\\x008QI\\xdb\\xde\\x8a\\x00\\x07AK\\x8a(\\xeb@\\x06)\\xa4\\x06?w4\\xecRn\\x03\\x8ct\\xa0\\x04\\xc7\\xa0\\xe3\\xa5\\x14\\xa0\\xe6\\x8a\\x00'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 241,
+                        "size": 10474
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 449,
+                        "h": 338,
+                        "sizes": [
+                            1384,
+                            3132,
+                            8125,
+                            11183,
+                            15548
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 6,
+            "length": 9
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 489,
+            "length": 102
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 786,
+            "length": 34
+        }
+    ],
+    "views": 147,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-25 08:29:57+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

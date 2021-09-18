@@ -1,0 +1,141 @@
+{
+    "_": "Message",
+    "id": 227,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-05-10 08:54:55+00:00",
+    "message": "#DS #EDA #Visualization\n\nIf you are keen on data visualization, the new Observable Plot is something exciting for you.\nObservable Plot is based on d3 but it is easier to use in Observable Notebook. It also follows the guidelines of the layered grammar of graphics (e.g., marks, scales, transforms, facets.).\n\n\nhttps://observablehq.com/@observablehq/plot",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7984904920415627610,
+            "url": "https://observablehq.com/@observablehq/plot",
+            "display_url": "observablehq.com/@observablehq/plot",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Observablehq",
+            "title": "Observable Plot",
+            "description": "Observable Plot is a free, open-source JavaScript library to help you quickly visualize tabular data. It has a concise and (hopefully) memorable API to foster fluency \u2014\u00a0and plenty of examples to learn from and copy-paste. In the spirit of show don\u2019t tell, below is a scatterplot of the height and weight of Olympic athletes (sourced from Matt Riggott), constructed using a dot mark. We assign columns of data (such as weight) to visual properties (such as the dot\u2019s x), and Plot infers the rest. You can configur",
+            "photo": {
+                "_": "Photo",
+                "id": 5804170829485943916,
+                "access_hash": -5757920469795755325,
+                "file_reference": "b'\\x00aFH\\xef\\xda\\xa25Z\\x0c\\xbf\\x02\\x90\\xf6nf\\xfc\\xb4\\xf7\\x9b\\xb6'",
+                "date": "2021-05-04 11:42:07+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x19(\\xd7g\\x02\\x82\\xe3\\x00\\xfa\\xd4r#3|\\xa6\\x94\\xa9UPz\\xd0\\xf6\\x1b\\xd1\\x0fg\\n9\\xa5\\xdc1QH\\x0f\\x07\\xb5,`\\x9eM;+\\\\\\x8b\\xbb\\x8f\\x0e\\t\\xc5\\x14\\xd4\\xfb\\xc6\\x8aL\\xa2J(\\xa2\\x80\\x1a\\xc0\\x9ca\\x8a\\xe0\\xe4\\xfb\\xd3B?\\xfc\\xf5o\\xc8T\\x94P\\x04j\\x8e\\x1b&BG\\xa6\\x05\\x15%\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 200,
+                        "size": 5598
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 640,
+                        "h": 400,
+                        "sizes": [
+                            2093,
+                            4110,
+                            6631,
+                            8587,
+                            13613
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 9,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 310,
+            "length": 43
+        }
+    ],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 4,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 741673389
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 345,
+        "read_max_id": null
+    },
+    "edit_date": "2021-05-10 09:20:26+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS",
+        "EDA",
+        "Visualization"
+    ]
+}

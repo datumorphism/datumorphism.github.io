@@ -1,0 +1,140 @@
+{
+    "_": "Message",
+    "id": 262,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-17 06:09:25+00:00",
+    "message": "#ML \n\nThe authors investigate the geometry formed by the responses of neurons for certain stimulations (tunning curve). Using stimulation as the hidden variable, we can construct a geometry of neuron responses. The authors clarified the relations between this geometry and other measurements such as mutual information.\n\nThe story itself in this paper may not be interesting to machine learning practitioners. But the method of using the geometry of neuron responses to probe the brain is intriguing. We may borrow this method to help us with the internal mechanism of neural networks. \n\nKriegeskorte, Nikolaus, and Xue-Xin Wei. 2021. \u201cNeural Tuning and Representational Geometry.\u201d Nature Reviews. Neuroscience, September. https://doi.org/10.1038/s41583-021-00502-3.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 753763747527334776,
+            "url": "https://doi.org/10.1038/s41583-021-00502-3",
+            "display_url": "nature.com/articles/s41583-021-00502-3",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Nature Reviews Neuroscience",
+            "title": "Neural tuning and representational geometry",
+            "description": "Nature Reviews Neuroscience - Developing a better understanding of neural codes should enable the links between stimuli, brain activity and behaviour to become clearer. In this Perspective,...",
+            "photo": {
+                "_": "Photo",
+                "id": 5912646726831942935,
+                "access_hash": 6023963110333564661,
+                "file_reference": "b'\\x00aFH\\xefw\\xe9\\x1a D\\x99u\\xcaM\\xcb\\xf8K?dB\\xe9'",
+                "date": "2021-09-14 20:02:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x11(\\xd6\\x04\\xf3\\xc8?\\x86)\\x84\\xb0x\\xc0\\xd9\\x82y\\xcf\\xf4\\xa7\\xe7\\x83\\xf7\\xbf\\x11M?y1\\xbb\\xafa@\\x0fr\\x02d\\x90(\\xeb\\x90pi\\xb2\\x13\\xb3\\x8c\\xfe\\x02\\x9d\\x9eO\\xf8P\\x01\\x81\\x8e\\x82\\x8a_\\xad\\x14\\x00\\xa7\\xa5 \\xe8(\\xa2\\x80\\x0e\\xc6\\x86\\xfb\\xa7\\xe9E\\x14\\x00\\x83\\xee\\xad\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 140,
+                        "size": 13616
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 349,
+                        "size": 52990
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 559,
+                        "size": 108674
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2126,
+                        "h": 928,
+                        "sizes": [
+                            15828,
+                            44016,
+                            100692,
+                            140751,
+                            206655
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 34,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 260,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 723,
+            "length": 42
+        }
+    ],
+    "views": 60,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-17 06:12:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

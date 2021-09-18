@@ -1,0 +1,53 @@
+{
+    "_": "Message",
+    "id": 105,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-05 09:18:29+00:00",
+    "message": "If you live in Germany, here is a tip that might be useful: The VAT is getting back to 19% in the next year.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 4,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1090037466
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 144,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-05 09:21:49+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

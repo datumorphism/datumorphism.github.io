@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 139,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-08 07:36:28+00:00",
+    "message": "#machinelearning\n\nA nice colloquium paper:\nThe unreasonable effectiveness of deep learning in artificial intelligence | PNAS\nhttps://www.pnas.org/content/117/48/30033",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4407690444583796913,
+            "url": "https://www.pnas.org/content/117/48/30033",
+            "display_url": "pnas.org/content/117/48/30033",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "PNAS",
+            "title": "The unreasonable effectiveness of deep learning in artificial intelligence",
+            "description": "Deep learning networks have been trained to recognize speech, caption photographs, and translate text between languages at high levels of performance. Although applications of deep learning networks to real-world problems have become ubiquitous, our understanding of why they are so effective is lacking. These empirical results should not be possible according to sample complexity in statistics and nonconvex optimization theory. However, paradoxes in the training and effectiveness of deep learning networks are being investigated and insights are being found in the geometry of high-dimensional spaces. A mathematical theory of deep learning would illuminate how they function, allow us to assess the strengths and weaknesses of different network architectures, and lead to major improvements. Deep learning has provided natural ways for humans to communicate with digital devices and is foundational for building artificial general intelligence. Deep learning was inspired by the architecture of the cerebral cortex and\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5925848429802662780,
+                "access_hash": 8876978352955935636,
+                "file_reference": "b'\\x00aFH\\xf0\\x81\\xf6\\x13W^c\\x9d\\xae~\\xc6\\x90\\x1f\\x98\\xe1\\xdfO'",
+                "date": "2020-12-02 05:32:12+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01($\\xd6iUI\\x05\\xb9\\x1d}\\xa9\\xbej\\x94\\xc9l\\x82qN(\\t\\xc884\\x8d\\xb9FA\\xc7\\xd6\\x80\\x10:\\x1e\\x15\\xf1\\xee(\\xf3\\x00S\\x92N:\\x9cRo\\x0c\\xbf0\\xe7\\xd0\\x1ap\\x08\\x00`\\x08\\xc0\\xa0\\x07#\\x06\\x19\\x14R\\x8e\\x9f\\xe3E\\x00\\x0b\\x8eq\\xfc\\xa9\\xae8'\\x92}2i\\xc0\\x01Lfb\\xc5W\\xb7S@\\r\\n7}\\xdc{\\xe4\\xd3\\xc0\\xc7\\x00\\x1cw5\\x1b\\x1f/\\x18?{\\xb1\\xefS)\\xca\\x83\\xd34\\x00\\x83ol\\xfe\\xb4R\\xe0Q@\\x0bQ:\\xe3\\x04w\\xe0\\xd1E\\x00!Vl)\\x18\\xf6\\xa9Tay\\xebE\\x14\\x00\\xb4QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 287,
+                        "h": 320,
+                        "size": 25695
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 718,
+                        "h": 800,
+                        "size": 82559
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1149,
+                        "h": 1280,
+                        "size": 139833
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 1616,
+                        "h": 1800,
+                        "size": 174818
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 16
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 125,
+            "length": 41
+        }
+    ],
+    "views": 150,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-08 07:39:09+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "machinelearning"
+    ]
+}

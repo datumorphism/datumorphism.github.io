@@ -1,0 +1,98 @@
+{
+    "_": "Message",
+    "id": 150,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-14 09:29:04+00:00",
+    "message": "#business\nIn 2015, there was a company called SixFold. They were one of the first heroes to disrupt an industry that has not changed much for a century, the freight market. They investigated the situation, established their hypothesis, created MVP. They did not succeed. The image is a summary of their post mortem. \n\nThere are at least two learning from this story.\n- Think in terms of the utility function. Do not just point out blocks of reasons. Write down the utility function for the situation and make assumptions on the parameters.\n- Swarm intelligence sometimes works better than one might expect. Improvements in swarm intelligence take a lot of effort if one does not have a smart plan.\n\n\nHere is the article by their CEO: https://medium.com/@MartKelder/end-of-road-for-trucking-startup-palleter-523a4a906fe9",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5188221452078395507,
+            "access_hash": 2241715582062120295,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x96aFH\\xf0`L\\x0e\\xcf\\xb4\\xd0,\\x1e\\xac%\\xf7v\\x8fZ\\x9a]'",
+            "date": "2021-01-14 09:29:04+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x1b(\\xd9\\xa2\\x83Gj\\x00(\\xcd \\x04Py8\\xa0\\x05\\xa2\\x81E\\x00\\x14RQ@\\x0bHz\\xd1Fh\\x01E\\x14\\x99\\xa2\\x80?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 217,
+                    "size": 7754
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 542,
+                    "size": 34836
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 867,
+                    "size": 59858
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 9
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 734,
+            "length": 85
+        }
+    ],
+    "views": 138,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-14 09:41:41+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "business"
+    ]
+}

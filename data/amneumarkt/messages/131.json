@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 131,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-04 05:21:07+00:00",
+    "message": "https://www.nature.com/articles/s41557-020-0544-y\n\n> Here we propose PauliNet, a deep-learning wavefunction ansatz that achieves nearly exact solutions of the electronic Schr\u00f6dinger equation for molecules with up to 30 electrons",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126324880287,
+            "url": "https://www.nature.com/articles/s41557-020-0544-y",
+            "display_url": "nature.com/articles/s41557-020-0544-y",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Nature Chemistry",
+            "title": "Deep-neural-network solution of the electronic Schr\u00f6dinger equation",
+            "description": "Nature Chemistry - High-accuracy quantum chemistry methods struggle with a combinatorial explosion of Slater determinants in larger molecular systems, but now a method has been developed that...",
+            "photo": {
+                "_": "Photo",
+                "id": 5802105946648980682,
+                "access_hash": 6414852380191529187,
+                "file_reference": "b'\\x00aFH\\xf0\\xf6\\xc5\\xe7e\\xf9:hf3\\xeb6\\\\\\xe4\\x80\\x91\\x1c'",
+                "date": "2021-08-08 19:52:45+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd5f9\\x00\\x0c\\x83\\xd4\\xe7\\xa5.H\\x14\\xc7G2\\xa3+\\x80\\x839\\\\u\\xa5\\xc1 \\xf4\\xfc\\xa8\\x01\\xd9\\xefA\\xe5A\\x19>\\xd9\\xa4\\xed\\x8aB\\x81\\xb6\\x96\\xfe\\x1c\\xd3\\x10\\xe5$dm8\\xfa\\xd1J\\xb8\\x03\\xa6(\\xa40+\\xeei\\x07Z(\\xa4\\x02\\x8e\\xa6\\x81\\xf7\\x88\\xa2\\x8a\\x00a\\xe6]\\x87\\xa0\\xa2\\x8a)\\x81'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 157,
+                        "size": 17011
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 393,
+                        "size": 74235
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1035,
+                        "h": 508,
+                        "sizes": [
+                            9991,
+                            24525,
+                            49304,
+                            65602,
+                            100788
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 49
+        }
+    ],
+    "views": 170,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

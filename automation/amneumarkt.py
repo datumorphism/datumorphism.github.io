@@ -90,6 +90,8 @@ tg_config = {
 class Messages:
     """Deal with telegram messages"""
     def __init__(self, target, tg_config):
+        if isinstance(target, str):
+            target = Path(target)
         self.target = target
         self.tg_config = tg_config
 
@@ -113,7 +115,7 @@ class Messages:
     def _existing_messages(self):
         """Load messages from json file"""
 
-        if not Path(self.target).is_file():
+        if not self.target.is_file():
             logger.warning(f"{self.target} does't exist. Existing message is empty.")
             return []
 
@@ -122,17 +124,25 @@ class Messages:
 
         return existing_messages
 
-    def save_messages(self, exclude=None):
+    def save_messages(self, exclude=None, multifile=True):
         """Save all messages as json file"""
 
         if exclude is None:
             exclude = ["MessageService"]
 
         if self.new_messages:
-            with open(self.target, "w") as fp:
-                json.dump(
-                    [i for i in  self.messages if i.get("_") not in exclude ], fp, cls=DatetimeEncoder, indent=4
-                )
+            if multifile is True:
+                for i in self.messages:
+                    if i.get("_") not in exclude:
+                        with open(
+                            self.target / f"{i['id']}.json", "w"
+                        ) as fp:
+                            json.dump(i, fp, cls=DatetimeEncoder, indent=4)
+            else:
+                with open(self.target, "w") as fp:
+                    json.dump(
+                        [i for i in  self.messages if i.get("_") not in exclude ], fp, cls=DatetimeEncoder, indent=4
+                    )
 
     def download_messages(self):
         """Return all messages"""
@@ -175,6 +185,7 @@ class Messages:
 
 
 
-m = Messages(target="data/amneumarkt/messages.json", tg_config=tg_config)
+# m = Messages(target="data/amneumarkt/all_messages.json", tg_config=tg_config)
+m = Messages(target="data/amneumarkt/messages", tg_config=tg_config)
 
 m.run()

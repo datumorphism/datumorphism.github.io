@@ -1,0 +1,93 @@
+{
+    "_": "Message",
+    "id": 121,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-20 12:47:13+00:00",
+    "message": "#machinelearning",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5404673535915438130,
+            "access_hash": -7556132731263658699,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00yaFH\\xf0\\xa8\\x02\\xbc\\x9d/_W\\x8a\\xfa\\xa3Z.\\x07w\\xb4\\x94'",
+            "date": "2020-12-20 12:47:13+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xcf\\xfe\\x0e\\x7f\\x0c\\xd3C\\xb0<\\x12?\\x1a\\x90t\\x1c\\x0e\\x9e\\x94\\xd2\\x0exQ\\xf9S\\x10\\xdc\\x93\\xde\\x8aC\\x9c\\xf6\\xfd(\\xa0\\x07\\x068\\xebHX\\xe3\\xad<\\x86E\\x05\\x90s\\xc8\\xe9M$zP\\x03y\\xa2\\x8e?\\xc9\\xa2\\x80\\x17\\x8cu\\xfd)(\\xa2\\x80\\x1e\\xde^\\xe3\\xb46(\\xa2\\x8ad\\xd8'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 14510
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 62819
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "size": 96224
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 16
+        }
+    ],
+    "views": 235,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-27 11:07:32+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "machinelearning"
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "_": "Message",
+    "id": 185,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-10 14:52:23+00:00",
+    "message": "What? This is my most used non communication app....",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5269363486062916061,
+            "access_hash": 8817980680716592648,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xb9aFH\\xef\\xaa\\xab\\xcf}&\\x10O\\xa4M\\xba\\xe3\\x04\\xaf\\x9e9\\xc5'",
+            "date": "2021-02-10 14:52:23+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x13\\xa0v\\xf4\\xda\\r\\x01\\x80\\xc6\\x061JC\\x1an\\xd3\\xe9ORn\\x80\\x95';E\\x14\\x84`\\xe0\\x8a(\\x19a9\\x8c)\\xe9AQ\\xdb5\\x1f\\x98T`c\\x14\\x86f\\xaa\\xb9\\x9b\\x8b\\x1a\\xdfx\\xd1HNNh\\xa5r\\xac+\\x7fJJ(\\xa4XQE\\x14\\x01\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 10164
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 40465
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "size": 72843
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 106,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 841245537
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 262,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

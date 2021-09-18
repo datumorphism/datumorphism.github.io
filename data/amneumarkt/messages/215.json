@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 215,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-23 10:46:32+00:00",
+    "message": "#fun\n\nhttps://press.princeton.edu/books/hardcover/9780691176901/music-by-the-numbers",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4550685802204247588,
+            "url": "https://press.princeton.edu/books/hardcover/9780691176901/music-by-the-numbers",
+            "display_url": "press.princeton.edu/books/hardcover/9780691176901/music-by-the-numbers",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "press.princeton.edu",
+            "title": "Music by the Numbers",
+            "description": "How music has influenced mathematics, physics, and astronomy from ancient Greece to the twentieth century",
+            "photo": {
+                "_": "Photo",
+                "id": 5968832037299268632,
+                "access_hash": 4130645624231954625,
+                "file_reference": "b'\\x00aFH\\xef\\xa2\\xcc&l\\xfc\\x88\\x9f:\\xf8\\xb0`\\xc3\\x82\\xe0\\r]'",
+                "date": "2021-03-23 10:46:20+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd9\\xaa:\\xae>\\xcf\\x1eFG\\x99\\xd3\\xf05z\\xa8\\xea\\xdf\\xf1\\xef\\x1f\\xfdt\\xfe\\x86\\x802J\\xa9\\xc8)\\x8f\\xa1\\xad] m\\xb6p?\\xe7\\xa7\\xf4\\x15\\x97\\xde\\xb5t\\xaf\\xf8\\xf7\\x7f\\xf7\\xff\\x00\\xa0\\xa0\\x0b\\xd4QE\\x00\\x15CX8\\xb5B?\\xe7\\xa0\\xfeF\\x8a(\\x03\\x1b\\xcd9\\xef[:A\\xcd\\xb3\\x9f\\xfah\\x7f\\x90\\xa2\\x8a\\x00\\xbfE\\x14P\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 172,
+                        "size": 9461
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 429,
+                        "size": 47073
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1120,
+                        "h": 600,
+                        "sizes": [
+                            8457,
+                            17390,
+                            37392,
+                            50442,
+                            69073
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 78
+        }
+    ],
+    "views": 149,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1557471333
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 318,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

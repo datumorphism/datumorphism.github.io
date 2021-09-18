@@ -1,0 +1,85 @@
+{
+    "_": "Message",
+    "id": 44,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-02 10:38:40+00:00",
+    "message": "What a boring Friday. I started to experiment on a plastic ring to find out the probabilities of it standing on the edges when dropped from heights. The diameter of this ring is much larger than its width (diameter/width ~ 2).  In the beginning, the result was trivial. Then the results started to look weird to me. The probability of it standing on its edges is higher than falling flat down. \nIs this an angular momentum problem?\n(Why didn't I continue with the experiment? I stepped on it and it shattered.......)",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5456643000974290699,
+            "access_hash": 4327171146037487656,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00,aFH\\xf1\\xfa\\xc9\\xda\\xce\\xe4M9\\xbfd\\x0b\\xb6~\\xa5\\xe8\\r\\xcd'",
+            "date": "2020-10-02 10:38:40+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\"(\\xd8\\xc7\\x14q\\x9cP:R\\x8a\\x001\\xedI\\x8eih\\xa0\\x04\\xc7\\xb5\\x15R;\\x99\\x1a\\xec\\xc6q\\xb7$t\\xa2\\x9bM\\n\\xe5\\xb1\\xd2\\xaa\\xdd\\xa4\\xceW\\xca\\xcf\\x19\\xce\\x0e*\\xd0\\xe9KBvw\\x06\\xae2 DH\\x1b;\\xb03O\\xcd\\x14R\\x19F8$[\\xcf0\\xaf\\xcb\\xb8\\x9c\\xd1Wh\\xa6\\xe5q$\\x03\\xa5-\\x14R\\x18QE\\x14\\x00QE\\x14\\x01'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 273,
+                    "size": 12921
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 682,
+                    "size": 47589
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 897,
+                    "h": 765,
+                    "size": 54647
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 46,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-02 10:40:02+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

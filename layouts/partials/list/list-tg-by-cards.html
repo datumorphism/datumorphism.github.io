@@ -3,7 +3,7 @@
 {{ partial "list/column" . }}
 {{ end }}
 
-{{ range $.Site.Data.amneumarkt.messages }}
+{{ range sort $.Site.Data.amneumarkt.messages "id" "desc" }}
 {{ partial "list/tg-message-card" . }}
 {{ end }}
 

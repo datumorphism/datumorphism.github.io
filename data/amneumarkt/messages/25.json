@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 25,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-17 19:02:25+00:00",
+    "message": "Why scientist Gretchen Goldman\u2019s tweet about a CNN interview went viral - Deseret News\nhttps://www.deseret.com/indepth/2020/9/16/21439982/cnn-gretchen-goldman-science-moms-work-from-home-tweet-viral-as-she-advocates-for-struggling-parents",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7464031010283207184,
+            "url": "https://www.deseret.com/indepth/2020/9/16/21439982/cnn-gretchen-goldman-science-moms-work-from-home-tweet-viral-as-she-advocates-for-struggling-parents",
+            "display_url": "deseret.com/indepth/2020/9/16/21439982/cnn-gretchen-goldman-science-moms-work-from-home-tweet-viral-as-she-advocates-for-struggling-parents",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Deseret News",
+            "title": "Science mom\u2019s work-from-home tweet goes viral as she advocates for struggling parents",
+            "description": "\"I wanted to be honest about the situation that we are all struggling with now,\" Gretchen Goldman said of her reason for sharing contrasting photos of her work-from-home mom life.",
+            "photo": {
+                "_": "Photo",
+                "id": 5989074986964462498,
+                "access_hash": 1211576991465980503,
+                "file_reference": "b'\\x00aFH\\xf1=\\xb6\\xc5\\xbd\\xb8\\xfe\\x96\\xcf\\x9b\\xf3\\xa7\\xf1&\\x12\\xdfp'",
+                "date": "2020-09-17 09:51:21+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(t\\xc7\\xf7\\xf2\\x7f\\xbc\\x7f\\xad;\\x01\\x99\\x87\\xb6z\\xe2\\xab\\xdc\\xc9\"\\xdc8\\x8d\\t\\xf9\\xcf8\\xf7\\xa9\\x8a\\r\\xe1\\xfc\\xcc\\x906\\x91\\xd8\\xd1p\\xb1^Y7F\\xc9\\x9c0?\\xfdz\\xb4x\\xb8V\\x03!\\x80\\xfe\\xb5Bu\\xd8\\xeas\\x9c\\x9a\\x98\\\\(\\x8a,\\x82\\xd8\\x18\\xfc\\xa9\\\\e\\xf1 2&\\xcc`\\xb6?Z+>)X\\xdc\\xc4\\x0b\\x11\\x97\\x1fN\\xb4P\\x04\\xf2\\xce\\xc2W\\x1bW\\xef\\x1f\\xe7M[\\x86\\xc6v\\xad\\x14U\\x01Z\\xf5\\xcb\\x88\\xf2\\x00\\xc1=?\\nb\\xb1P\\x14\\x01\\x82(\\xa2\\xa5\\x81,`\\x0b\\xb8\\x87`\\xe3\\x8f\\xc6\\x8a(\\xa0g'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 18357
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 75728
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1182,
+                        "h": 591,
+                        "size": 145308
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Jeff Parrott",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "Add a comment",
+                        "url": "https://comments.app/view/aa8izFMq",
+                        "button_id": 842446379,
+                        "fwd_text": "Show comments"
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 87,
+            "length": 151
+        }
+    ],
+    "views": 40,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-17 19:02:26+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

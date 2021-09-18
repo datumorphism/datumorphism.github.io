@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 88,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-18 07:05:52+00:00",
+    "message": "Going from Bad to Worse: From Internet Voting to Blockchain Voting\n \n\n> This article examines the suggestions that \u201cvoting over the Internet\u201d or \u201cvoting on the blockchain\u201dwould increase election security, and finds such claims to be wanting and misleading. While currentelection systems are far from perfect, Internet- and blockchain-based voting would greatly increase therisk of undetectable, nation-scale election failures\n\nhttps://people.csail.mit.edu/rivest/pubs/PSNR20.pdf",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1066832154664219198,
+            "url": "http://people.csail.mit.edu/rivest/pubs/PSNR20.pdf",
+            "display_url": "people.csail.mit.edu/rivest/pubs/PSNR20.pdf",
+            "hash": 0,
+            "type": "document",
+            "site_name": null,
+            "title": null,
+            "description": null,
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": {
+                "_": "Document",
+                "id": 5899021625528943310,
+                "access_hash": 3658535192296983448,
+                "file_reference": "b'\\x00aFH\\xf0\\xb8\\xf72\\xa1\\x97\\xddiK\\xd8j\\x08\\xcc\\xbd\\xff\\x02\\xee'",
+                "date": "2021-09-10 11:22:29+00:00",
+                "mime_type": "application/pdf",
+                "size": 508816,
+                "dc_id": 4,
+                "attributes": [
+                    {
+                        "_": "DocumentAttributeFilename",
+                        "file_name": "PSNR20.pdf"
+                    }
+                ],
+                "thumbs": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01(\\x1f\\xd9\\xce)3A8\\xa4\\xdd\\xed@\\x0b\\x9aPi\\xbb\\x858\\x1c\\xd0\\x03_\\x9an\\x0f\\xa7\\xe9Nn\\xb4\\x99>\\xf4\\x00`\\xd3\\x96\\x93-\\xefJ3\\xdf4\\x00\\x15\\xc9\\xa4\\xdbE\\x14\\x00\\xb8\\xa5\\x03\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 247,
+                        "h": 320,
+                        "size": 16706
+                    }
+                ],
+                "video_thumbs": []
+            },
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 427,
+            "length": 51
+        }
+    ],
+    "views": 98,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,98 @@
+{
+    "_": "Message",
+    "id": 143,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-10 20:20:51+00:00",
+    "message": "#fun\nSource: https://www.linkedin.com/posts/muhammed-kara_i-received-a-t-shirt-from-national-cyber-activity-6752966271626743808-yO6y/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5465522128599232822,
+            "access_hash": 8542934704287523927,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x8faFH\\xf0\\xaey\\x8a\\x0c\\xdd\\xaa\\x00\\xcc\\xba\\xcba\\xff\\xbf\\xf9Z*'",
+            "date": "2021-01-10 20:20:51+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x1e\\x8eK\\xc4^\\x10n>\\xbd\\xa9\\x8b|\\xdb[r\\xae{U0?:~\\xc3\\xdc\\x81\\xf54\\xb9P\\xf9\\x99j;\\xfc\\x9cH\\x98\\x1e\\xa2\\xad\\xe4\\x10\\x08<\\x1e\\xf5\\x92W\\x1d\\xc1\\xfaT\\xd0\\xc8\\xeaY`\\x05\\x97\\xae\\x08\\xe9CCR\\xeeF\\xe0\\x19\\xc8\\xc7\\x1b\\xabc\\xfb:\\xdb\\x8f\\x90\\xfef\\xb2X\\x7f\\xa5\\x91\\xfe\\xdf\\xf5\\xae\\x80\\xd3$\\xc4\\xd4a\\x8e\\t\\xd5c]\\xa0\\xa6q\\x9fsSY\\xf3\\x07\\xca\\x06s\\xcd&\\xb1\\xff\\x00\\x1f\\t\\xfe\\xe7\\xf5\\xa2\\xc4\\xe2\\x03\\xfe\\xf5)lTw*NJ\\\\\\xb1\\x1dCf\\xa6\\xfe\\xd2\\xb9\\xcfU\\xfc\\xa8\\xa2\\x9a\\xd8\\x97\\xb9\\x0c\\xd3\\xc9r\\xe0\\xbf$q\\xc0\\xab6\\xbf,\\x1c\\x8cs\\xde\\x8a*dTO'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 240,
+                    "h": 320,
+                    "size": 14820
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 600,
+                    "h": 800,
+                    "size": 68707
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 960,
+                    "h": 1280,
+                    "size": 107007
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 13,
+            "length": 120
+        }
+    ],
+    "views": 151,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

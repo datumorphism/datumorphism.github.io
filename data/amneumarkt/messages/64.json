@@ -1,0 +1,142 @@
+{
+    "_": "Message",
+    "id": 64,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-22 22:08:48+00:00",
+    "message": "Media\n\nStellarX\nCreate collaborative spaces & rich simulations without code.\nProduct topic: Virtual Reality, Design Tools, Education, Artificial Intelligence, Augmented Reality, Tech\nView on Product Hunt",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-10-18 22:21:41+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 406,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5470683473225859645,
+            "url": "https://www.producthunt.com/posts/stellarx-2",
+            "display_url": "producthunt.com/posts/stellarx-2",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Product Hunt",
+            "title": "StellarX - Create collaborative spaces & rich simulations without code | Product Hunt",
+            "description": "StellarX is a collaborative XR sandbox that empowers anyone to create their own immersive environments and simulations. Simply drag-and-drop, grab and go, point and click, or set it and forget it. You name it, consider it done \u2014 without code.",
+            "photo": {
+                "_": "Photo",
+                "id": 5790758316635433890,
+                "access_hash": 5937185999278291247,
+                "file_reference": "b'\\x00aFH\\xf0+\\xf9\\xf0\\xcf\\xd4\\xc5\\n\\xbfN\\x173\\xb9\\x82\\x19I0'",
+                "date": "2020-10-17 07:01:45+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\x98\\xce}j).\\x1f#\\x06\\xab\\xc8\\xfbGZ\\x8f\\xcd|\\x8f\\x9b\\xf4\\xa5`E\\xb3rGS\\xe9\\xc5(\\xba\\xcb\\x102p9\\xaa\\xcb2\\x93\\xf3\\x0c\\x1fQSF\\xf1\\x9eA\\xe7\\xbd\\x03\\xd0\\x94\\\\\\x0c\\xe0\\xe4~\\x14Tl\\x14\\xb8P8\\xa2\\x8d\\x01\"\\xac\\xa7\\x00}i\\x1c`dQE2C\\x1b\\xc6OoJ`\\xceG\\'\\xd2\\x8a)\\x14\\xc59\\x0e@f\\xc0\\xf7\\xa2\\x8a)\\x81'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 12710
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 57599
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 512,
+                        "size": 81167
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "F\u00e9lix LeBlanc",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 0,
+            "length": 5,
+            "url": "https://www.producthunt.com/posts/stellarx-2?utm_campaign=producthunt-api&utm_medium=api&utm_source=Application%3A+IFTTT+%28ID%3A+2742%29"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 7,
+            "length": 8,
+            "url": "https://www.producthunt.com/r/14a2ec16510859/271093?app_id=2742"
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 16,
+            "length": 59
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 183,
+            "length": 20,
+            "url": "https://www.producthunt.com/posts/stellarx-2?utm_campaign=producthunt-api&utm_medium=api&utm_source=Application%3A+IFTTT+%28ID%3A+2742%29"
+        }
+    ],
+    "views": 42,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

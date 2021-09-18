@@ -1,0 +1,797 @@
+{
+    "_": "Message",
+    "id": 76,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-04 09:16:33+00:00",
+    "message": "https://www.scientificamerican.com/article/the-international-space-station-is-doomed-to-die-by-fire/\n\nWhat is next? Space stations by private companies like bigelow?",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 532798825449129018,
+            "url": "https://www.scientificamerican.com/article/the-international-space-station-is-doomed-to-die-by-fire/",
+            "display_url": "scientificamerican.com/article/the-international-space-station-is-doomed-to-die-by-fire",
+            "hash": 1401067658,
+            "type": "photo",
+            "site_name": "Scientific American",
+            "title": "The International Space Station Is Doomed to Die by Fire",
+            "description": "Twenty years after the famed orbital outpost went up, scientists and engineers are deciding how and when it will come back down",
+            "photo": {
+                "_": "Photo",
+                "id": 5840343181491809242,
+                "access_hash": 1130425440732158386,
+                "file_reference": "b'\\x00aFH\\xf0r\\xdf\\xb2BEY;H\\x05\\x15\\x15\\xf5\\xfb\\x1bH\\r'",
+                "date": "2020-11-03 13:03:55+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x19(\\xc6\\xa5\\xc1\\xf4\\xad\\x85\\xb3\\xb7O\\xba\\x0e{\\x1c\\xd2$h\\xc4\\r\\x80\\xafR\\x0f\\xf9\\xf7\\x14\\xec\\x06=.2\\t\\xad\\xb3\\x04\\n\\xd81\\xa6=v\\xd3Z\\x18\\x019T\\xc6;\\x0f\\xca\\x90\\x18\\xc4`\\xe2\\x8a\\xd96\\xb6\\xe4s\\x18'\\xd74S\\xb0\\xaeKK\\x8c\\xf4\\xe3\\xebN\\x8f\\xee\\xfe\\x14\\xd1\\xf7\\xa9\\x88P\\xa1\\xc8\\xe3\\x00S\\x1c!\\xe8\\xbdjc\\xde\\xa1=\\x07\\xd4\\xd01\\xc1N2G\\x1fZ)\\xbe\\x94P\\x07\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 201,
+                        "size": 16437
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 790,
+                        "h": 496,
+                        "size": 72665
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Meghan Bartels, SPACE.com",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.scientificamerican.com/article/the-international-space-station-is-doomed-to-die-by-fire/",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 5840544572508318691,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "The International Space Station, as seen on October 4, 2018. Credit: "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "NASA/Roscosmos"
+                                            },
+                                            "url": "https://www.nasa.gov/image-feature/the-international-space-station-as-of-oct-4-2018-2",
+                                            "webpage_id": 0
+                                        }
+                                    ]
+                                },
+                                "credit": {
+                                    "_": "TextEmpty"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The International Space Station Is Doomed to Die by Fire"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Twenty years after the famed orbital outpost went up, scientists and engineers are deciding how and when it will come back down"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Meghan Bartels, SPACE.com"
+                        },
+                        "published_date": "2020-11-03 13:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "What goes up must come down\u2014including, sadly enough, the\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "International Space Station"
+                                    },
+                                    "url": "https://www.space.com/16748-international-space-station.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "For precisely 20 years now, the massive orbiting laboratory has constantly been home to humans, the lucky handful of Earthlings who at any given time venture into the topsy-turvy world of\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "microgravity"
+                                    },
+                                    "url": "https://www.space.com/23017-weightlessness.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". But like the rest of us, the International Space Station is aging. And it can\u2019t stay in orbit on its own indefinitely\u2014it needs a regular boost or fuel injection from visiting spacecraft. If those boosts stop or something else goes wrong, sooner or later, the lab will fall."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u201cBasically, any\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "cargo ship"
+                                    },
+                                    "url": "https://www.space.com/41172-cygnus-leaves-space-station-orbital-boost.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0that comes to the space station, or indeed any ferry ship, usually has surplus propellant to a certain degree,\u201d Jonathan McDowell, an astronomer at Harvard who specializes in tracking objects in and falling out of orbit, told Space.com. \u201cThey have to have propellant to do the rendezvous, and then they can sometimes have extra to do a reboost.\u201d"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "For now, those flights\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "will continue"
+                                    },
+                                    "url": "https://www.space.com/international-space-station-commercial-opportunities.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0through at least 2024. And because of the station\u2019s international nature\u2014it\u2019s a partnership among the United States, Russia, Canada, Japan and the participating nations of the European Space Agency\u2014the decision to retire it will always be based on both engineering and politics."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u201cWhile ISS is currently approved to operate through at least December 2024 by the international partner governments, from a technical standpoint, we have cleared ISS to fly until the\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "end of 2028"
+                                    },
+                                    "url": "https://www.space.com/36356-russia-could-stay-with-space-station-to-2028.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ",\u201d NASA officials wrote in a statement to Space.com. \u201cAdditionally, our analysis has not identified any issues that would preclude us from extending beyond 2028 if needed.\u201d"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But some day, the station\u2019s time will come. The facility is aging and at constant risk of impacts from space debris and micrometeorites. If humans don\u2019t retire it, eventually the hazards of space will."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The eventual fate of the space station has always been a specter for NASA and\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Roscosmos"
+                                    },
+                                    "url": "https://www.space.com/22724-roscosmos.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", Russia\u2019s federal space agency, but as time has passed, it has loomed larger on the minds of space experts."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201c\u2018Oh, we\u2019ll bring it down eventually,\u2019 the idea has always been; \u2018We commit to deorbiting it.\u2019 But my sense is that they didn\u2019t actually think through the details until about five years ago,\u201d McDowell said. \u201cUntil then it was like, \u2018La la la, it\u2019s in orbit, we\u2019re still building it, we\u2019re not going to worry about how to get rid of it.\u2019 Which maybe isn\u2019t quite the way you should do things.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "One major voice in changing that has been NASA\u2019s Aerospace Safety Advisory Panel, a group that evaluates the safety measures NASA is taking in spaceflight. The panel has been raising concerns\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "for at least a decade"
+                                    },
+                                    "url": "https://oiir.hq.nasa.gov/asap/documents/2010_ASAP_Annual_Report.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0about how the space station will end, spurred by the then-upcoming retirement of NASA\u2019s space shuttle vehicles, which could have been used to deorbit the International Space Station."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The group is still citing the issue regularly in its analyses of NASA policies."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cThe panel continues to track the open work status on the planned deorbit strategy for ISS and the fine-tuning of some wording in the related space station program document,\u201d David West, a member of the panel, said during the group\u2019s quarterly meeting, which was held virtually on Oct. 1. \u201cWe will continue to monitor the progress of getting agreement on the strategy by all parties.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Scenarios for both a scheduled\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "space station deorbit"
+                                    },
+                                    "url": "https://www.space.com/13071-international-space-station-reentry-plans.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0and a response if something goes very wrong are in the works, NASA confirmed, but are not yet public. \u201cNASA is actively working with the entire International Space Station partnership on plans to safely deorbit the space station at the end of its lifetime,\u201d NASA officials wrote in a statement to Space.com."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Decades in the making"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Planning the space station began in the 1980s, and while today the concept of a massive orbiting laboratory is unremarkable, at the time it was unprecedented."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cNo one had any idea how to build something like this when we started out on the ISS,\u201d Christian Maender, director of in-space manufacturing and research for Houston-based company Axiom, which is planning on building its own space station by jumping off the International Space Station, told Space.com. \u201cWe built the largest peacetime engineering project ever, and by building pieces of an overall spacecraft that never actually saw each other or touched each other until they got to orbit.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "All told, space station construction required 42 separate launches. The facility would weigh over 900,000 lbs. (420,000 kilograms) on Earth, is nearly the length of a football field and boasts as much livable volume as a six-bedroom house,\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "according to NASA"
+                                    },
+                                    "url": "https://www.nasa.gov/feature/facts-and-figures",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It\u2019s big."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The station\u2019s demise didn\u2019t go completely unconsidered as the facility was being designed. Just a few years earlier, in 1979, NASA\u2019s\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Skylab"
+                                    },
+                                    "url": "https://www.space.com/19607-skylab.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0station fell out of orbit. The agency had planned to guide the facility down to a controlled destruction in Earth\u2019s atmosphere using an early flight of the space shuttle. But that vehicle was delayed, leaving the 80-ton Skylab stranded even as solar activity picked up, warmed and expanded Earth\u2019s atmosphere, and thereby accelerated the facility\u2019s doom."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "As a result, the spacecraft fell on its own, out of control, leaving no way for NASA to target the pieces over remote areas or slow the spacecraft\u2019s descent enough to reduce the size of those pieces. Instead, chunks of the station\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "scattered across Australia"
+                                    },
+                                    "url": "https://www.space.com/21122-skylab-space-station-remains-museum.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", the largest of them a massive oxygen tank. The incident was a turning point in how people think about how large objects leave orbit."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cIn the early days of the space age, no one worried about it. Big thing falling out of the sky, no big whoop,\u201d McDowell said. \u201cPeople have gotten more and more risk-averse over the years.\u201d And the longer spaceflight continues, the more experts worry about abandoned orbital debris, particularly the largest of it."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The risk if the space station does fall to Earth on its own is significant, McDowell argued. At about 400 tons, the space station is by far the heaviest human-made object ever to circle Earth. The larger an object is, the less likely the atmosphere is to be able to fully burn it up. And because of \u00a0the space station\u2019s outstretched\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "solar arrays"
+                                    },
+                                    "url": "https://www.space.com/37250-roll-out-solar-arrays-on-space-station.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", it\u2019s vulnerable to spinning out of control, at which point rescue options would be limited, McDowell said."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "No matter what led to an uncontrolled entry, the results would not be pretty, he said, although not nuclear-catastrophe-level grim. It would be more like a plane crash, although with debris spread over a much broader area. \u201cWorst, worst case, I guess it\u2019s a 9/11, right?,\u201d McDowell said. \u201cBecause it\u2019s at worst case a plane crashing, part of which is in a populated area. And that\u2019s bad. But it\u2019s not\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "asteroid-hit bad"
+                                    },
+                                    "url": "https://www.space.com/40943-nasa-asteroid-defense-plan.html",
+                                    "webpage_id": 8463635853531686740
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ".\u201d"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "How to destroy a space station (safely!)"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "So how to control the space station\u2019s reentry?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "A group of engineers from NASA and Roscosmos presented a paper evaluating some disposal options at the 2017 International Astronautical Congress. Their work is based on deorbit procedures conducted on the\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Russian space station Mir"
+                                    },
+                                    "url": "https://www.space.com/19650-mir-space-station.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0in 2001; the International Space Station is about three times heavier."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "But the gist of the plan mirrors how the space station retains its altitude during normal operations. Most commonly, a Russian\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Progress cargo vehicle"
+                                    },
+                                    "url": "https://www.space.com/12720-russia-progress-spaceship-explainer.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0will either conduct a burn while docked to the station or transfer fuel into the main service module\u2019s thrusters to fuel the station\u2019s own burn; either way, the station climbs."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In a controlled deorbit, Progress vehicles would do the same thing but in the reverse direction, lowering the station\u2019s lowest altitude. Depending on the precise array of spacecraft at hand, the service-module thrusters could also be used."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "These carefully timed burns would maneuver the station lower at only one point in its orbit, making the re-entry more predictable and allowing managers to target the debris to the vast,\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "sparsely populated southern Pacific Ocean"
+                                    },
+                                    "url": "https://www.space.com/40213-point-nemo-tinagong-1-crash-landing.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". The rest is up to the destructive power of Earth\u2019s atmosphere. The strategy, unsurprisingly, has its risks. If something knocks a burn off schedule, well, there goes the predictability."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The 2017 paper lays out options both for a scheduled deorbit and in response to a potential catastrophe on the space station. If something suddenly goes unfixably wrong on the orbiting laboratory, the organizations behind the facility will have just two weeks to decide how to proceed, the group wrote."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "A different path forward"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The International Space Station\u2019s successor may face a much smoother retirement\u2014although still a fiery one."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Texas-based Axiom Space is planning to launch\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "new station modules"
+                                    },
+                                    "url": "https://www.space.com/35454-international-space-station-retire-private-axiom-orbit-commercialization.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0beginning next year and, as commercial interest in accessing orbit grows and the ISS ages, eventually split off from the International Space Station to form its own freeflying orbital facility."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "But Axiom has learned from the space station\u2019s complicated fate and has already wrestled with how its facility will end. The company is planning its modules to be more truly modular than those on the space station, with the capability to easily remove and replace segments anyway,\u00a0"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "giving the company"
+                                    },
+                                    "url": "https://www.space.com/astronaut-lopez-alegria-axiom-private-mission",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u00a0flexibility in its future."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The arrangement also means that each module can control its own fate. \u201cEach module is going to be designed with its own guidance, navigation and control, its own thruster capabilities,\u201d Maender said. \u201cSo they can fly essentially on their own, and then when they need to, they can separate and return through Earth\u2019s atmosphere on their own.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Copyright 2020\u00a0"
+                                    }
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextItalic",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Space.com"
+                                        }
+                                    },
+                                    "url": "https://www.space.com/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": ", a Future company. All rights reserved. This material may not be published, broadcast, rewritten or redistributed."
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5840544572508318691,
+                        "access_hash": -4555013089840792125,
+                        "file_reference": "b'\\x00aFH\\xf0\\x9a\\xea\\x0e\\xb9m\\x08C}T\\xaf\\xaa\\x98\\xba>5\\xec'",
+                        "date": "2020-11-03 13:03:55+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1b(\\xc6\\xa2\\xb5WN\\x89Nw\\x92}\\xf1\\x8a\\x05\\xbcnv\\xe0\\x90y8\\xff\\x00?J\\x00\\xca\\xa5\\xc7\\x15\\xael-\\xc3m \\xe7\\xfd\\xeaCc\\x08\\xc8\\xc1\\x03\\xeb@\\x19$`\\xe2\\x8a\\xd5:|\\x07\\xf8\\x9f?QE;\\n\\xe5\\x9c\\xd1\\x8fJy\\x00\\x1e\\x07jN\\xf4\\xc0M\\xbb\\xc8\\x03\\xf1\\xefLtNpI\\xce\\x05L:\\x1f\\xa5DG\\xcb\\xf8\\x9a\\x00P\\x0f\\xa1\\xfc\\x05\\x14\\x12v\\xa8\\xcf\\x14P\\x07'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 213,
+                                "size": 17231
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 590,
+                                "h": 393,
+                                "size": 44527
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 100
+        }
+    ],
+    "views": 74,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

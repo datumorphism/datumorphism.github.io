@@ -1,0 +1,112 @@
+{
+    "_": "Message",
+    "id": 90,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-18 21:50:09+00:00",
+    "message": "I did some investigation on the salary of tech employees working for Cologne city. It seems that the salary for IT employees are quite low. This may not be a fair representation of the whole Germany. But Cologne is one of the most digitized cities in Germany. So I would guess it should be a fair example.\n\nFor example, a data manager is among the salary group 11 (net from 2144EUR to 2993EUR)\n\nThis is the job description:\nhttps://www.stadt-koeln.de/politik-und-verwaltung/ausbildung-karriere-bei-der-stadt/stellenangebote/datenmanagerin-beziehungsweise-datenmanager-mwd-im-amt-fuer-informationsverarbeitung\n\nThis is the salary calculation:\nhttps://oeffentlicher-dienst.info/c/t/rechner/tvoed/vka?id=tvoed-vka-2020&g=E_11&s=1&f=&z=&zv=&r=&awz=&zulage=&kk=&kkz=&zkf=&stkl=",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 463518734292224301,
+            "url": "https://www.stadt-koeln.de/politik-und-verwaltung/ausbildung-karriere-bei-der-stadt/stellenangebote/datenmanagerin-beziehungsweise-datenmanager-mwd-im-amt-fuer-informationsverarbeitung",
+            "display_url": "stadt-koeln.de/politik-und-verwaltung/jobs/stellenangebote-aktuell/70502/index.html",
+            "hash": 0,
+            "type": "article",
+            "site_name": "www.stadt-koeln.de",
+            "title": "Datenmanagerin beziehungsweise Datenmanager (m/w/d) im Amt f\u00fcr Informationsverarbeitung",
+            "description": "Stellenangebot der Stadt K\u00f6ln",
+            "photo": {
+                "_": "Photo",
+                "id": 5786170192051677270,
+                "access_hash": -7771393610790637655,
+                "file_reference": "b'\\x00aFH\\xf0O\\xeb\\xc3\\x8d$\\x92\\x9f<\\xeb\\xcc\\xe8\\xf7\\xe8B\\xddt'",
+                "date": "2018-12-06 07:04:51+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 90,
+                        "size": 1450
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 200,
+                        "h": 200,
+                        "size": 5984
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 424,
+            "length": 184
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 642,
+            "length": 130
+        }
+    ],
+    "views": 95,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 120,
+        "read_max_id": null
+    },
+    "edit_date": "2020-11-18 21:51:06+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

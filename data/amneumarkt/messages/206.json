@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 206,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-09 20:28:21+00:00",
+    "message": "#ML \n\nI just found an elegant decision tree visualization package for sklearn.\n\nI have been trying to explain decision tree results to many business people. It is very hard. This package makes it much easier to explain the results to a non-techinical person.\n\nhttps://github.com/parrt/dtreeviz",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030869703405,
+            "url": "https://github.com/parrt/dtreeviz",
+            "display_url": "github.com/parrt/dtreeviz",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - parrt/dtreeviz: A python library for decision tree visualization and model interpretation.",
+            "description": "A python library for decision tree visualization and model interpretation. - GitHub - parrt/dtreeviz: A python library for decision tree visualization and model interpretation.",
+            "photo": {
+                "_": "Photo",
+                "id": 5908002548630006874,
+                "access_hash": 8750804907773932540,
+                "file_reference": "b\"\\x00aFH\\xeff8C\\x99\\xc1\\nDAU\\xe6>X\\x04o'I\"",
+                "date": "2021-09-12 22:50:17+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd7,\\xc1\\xb0\\x14c\\xd74\\xc2\\xf2d\\xe1\\x14\\x8f\\xf7\\xaaB\\x01?\\xfdz\\x06\\x05\\x005\\x19\\xc9;\\xd4/\\xa79\\xa4\\x9eC\\x1c.\\xe3\\x19\\x02\\xa4\\xe2\\x91\\x95]H \\x154\\x01R\\xda\\xe2I%\\x08\\xfbH#<\\n*\\xc2C\\x14m\\xb9P\\x03\\xedE\\x00\\xca\\x9fl\\x93\\xd1\\x7f#G\\xdb$\\xe3\\x85\\xfdh\\xa2\\xb2\\xbb6\\xe5B}\\xb6N~T\\xfc\\xa9~\\xdb/\\xa2~TQE\\xd8r\\xa1>\\xdb'\\xa2\\xfeTQE4\\xd8\\x9aG\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9101
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 31002
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4856,
+                            11175,
+                            21879,
+                            30240,
+                            46739
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 260,
+            "length": 33
+        }
+    ],
+    "views": 132,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

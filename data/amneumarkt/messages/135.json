@@ -1,0 +1,126 @@
+{
+    "_": "Message",
+    "id": 135,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-07 09:30:00+00:00",
+    "message": "https://github.com/volotat/DiffMorph\n#machinelearning #opensource\n\nDifferentiable Morphing\n\n> Image morphing without reference points by applying warp maps and optimizing over them.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030877620802,
+            "url": "https://github.com/volotat/DiffMorph",
+            "display_url": "github.com/volotat/DiffMorph",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - volotat/DiffMorph: Image morphing without reference points by applying warp maps and optimizing over them.",
+            "description": "Image morphing without reference points by applying warp maps and optimizing over them. - GitHub - volotat/DiffMorph: Image morphing without reference points by applying warp maps and optimizing ov...",
+            "photo": {
+                "_": "Photo",
+                "id": 5908127819941129432,
+                "access_hash": -6880802077688486971,
+                "file_reference": "b'\\x00aFH\\xf0\\x93\\xdbXt\\x1f{\\x1doo\\x8e\\x93\\xa2Vn$\\xe6'",
+                "date": "2021-09-13 08:18:50+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd7f \\xf0\\x01\\xfci\\x85\\xa4\\xc7\\n\\xb9\\xf75&\\x01\\xff\\x00\\xf5\\xd1\\x81\\xfeM\\x00D\\x1e`9\\x8dI\\xf6jK\\x99^+7\\x90\\x00\\x1dW>\\xa2\\xa6\\xc0\\xff\\x00&\\x91\\x91]\\n0\\xca\\x9e\\x084\\x01F\\xde\\xf5\\xe5\\xbaH\\xf7)VL\\x9cQV\\xa3\\xb6\\x82'\\xdd\\x1cj\\xad\\x8cf\\x8a\\x00\\xa7\\xfd\\xa1/\\xf7S\\xf2?\\xe3G\\xf6\\x84\\xbf\\xddO\\xc8\\xff\\x00\\x8d\\x14U\\xd9\\x11q~\\xdd/\\xf7S\\xf24}\\xbe_\\xee\\xa7\\xe4h\\xa2\\x8b \\xb8}\\xba^>T\\xfc\\x8d\\x14QE\\x90\\\\\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9315
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 31017
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4920,
+                            11117,
+                            22253,
+                            30662,
+                            46791
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 36
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 37,
+            "length": 16
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 54,
+            "length": 11
+        }
+    ],
+    "views": 136,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-07 20:29:23+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

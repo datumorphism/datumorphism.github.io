@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 264,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-17 08:44:29+00:00",
+    "message": "#data\n\nhttps://github.com/hosseinmoein/DataFrame",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030521074297,
+            "url": "https://github.com/hosseinmoein/DataFrame",
+            "display_url": "github.com/hosseinmoein/DataFrame",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - hosseinmoein/DataFrame: C++ DataFrame for statistical, Financial, and ML analysis -- in modern C++ using native types, continuous memory storage, and no pointers are involved",
+            "description": "C++ DataFrame for statistical, Financial, and ML analysis -- in modern C++ using native types, continuous memory storage, and no pointers are involved - GitHub - hosseinmoein/DataFrame: C++ DataFra...",
+            "photo": {
+                "_": "Photo",
+                "id": 5907783221830069433,
+                "access_hash": -481523383273356355,
+                "file_reference": "b'\\x00aFH\\xefBg\\x05-\\xdaF\\x889\\xdeb<\\xec\\x17j2&'",
+                "date": "2021-09-13 12:23:35+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd4yv6\\x0e\\xdf\\xc4\\xe2\\x93\\xcf\\x1f\\xec\\x7f\\xdft\\xf6\\x00\\xb7*\\x0f\\xe1I\\xb4\\x7fu\\x7f*\\x00Tb\\xc3$\\x0c\\x1e\\x84\\x1c\\xd1)\"&*pq\\xc1\\xa5\\x19\\x03\\x8cb\\x95\\x94:\\x15a\\x90z\\xd0\\x05+K\\x89$\\x97l\\x92\\x06\\xe3\\xee\\xed\\xc5\\x15f;hb}\\xc8\\x807\\xad\\x14\\x01[\\xedrz/\\xe5I\\xf6\\xb9=\\x17\\xf2\\xa2\\x8a\\x0e\\x9eH\\xf6\\x0f\\xb5\\xc9\\xe8\\xbf\\x95/\\xdb$\\xf4_\\xca\\x8a(\\x0eH\\xf6\\x11\\xaf$\\x198O\\xca\\x8a(\\xa4\\xc8\\xe5G'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 11592
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 40915
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            5635,
+                            14018,
+                            29648,
+                            40984,
+                            62025
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 7,
+            "length": 41
+        }
+    ],
+    "views": 57,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-17 08:44:06+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

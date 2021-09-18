@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 203,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-05 12:38:53+00:00",
+    "message": "#ML  #Phyiscs\n\nThe easiest method to apply constraints to a dynamical system is through Lagrange multiplier, aka, penalties in statistical learning. Penalties don't guarantee any conservation laws as they are simply penalties, unless you find the multiplers carrying some physical meaning like what we have in Boltzmann statistics.\nThis paper explains a simple method to hardcode conservation laws in a Neural Network architecture.\n\nPaper:\nhttps://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.098302\n\nTLDR:\nSee the attached figure. Basically, the hardcoded conservation is realized using additional layers after the normal neural network predictions. \n\nA quick bite of the paper: https://physics.aps.org/articles/v14/s25\n\n\nSome thoughts:\nI like this paper. When physicists work on problems, they like dimensionlessness. This paper follows this convention. This is extremely important when you are working on a numerical problem. One should always make it dimensionless before implementing the equations in code.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5337038104173743088,
+            "access_hash": -6607425881620126925,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xcbaFH\\xef\\xf0\\x0e\\xdduQd\\xc0Y\\xb2\\x89\\x1b\\xd0\\x10\\xfb\\xbbC'",
+            "date": "2021-03-05 12:38:53+00:00",
+            "mime_type": "image/png",
+            "size": 48868,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeImageSize",
+                    "w": 551,
+                    "h": 287
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "CleanShot 2021-03-05 at 13.37.20.png"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x15(\\xd8\\xdc2G\\xa54\\xb6z\\x13\\xf4\\x14\\xa4\\x1eqM\\xc3f\\x80\\x17\\'\\xd4\\xfe\\x94\\xbb\\xb0=M&\\x0f\\x1cR\\x85=\\xcd\\x00(l\\xf6\\xa2\\x97\\x14P\\x04\\'\\x82}\\xc9\\xcf\\x14\\xde\\xff\\x00OaE\\x14\\x01\"\\xc609\\xfd\\x05/\\x94\\xbf\\xe4\\n(\\xa0\\x03\\xcb\\x00\\x83\\x9e~\\x82\\x8a(\\xa0\\x0f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 167,
+                    "size": 14914
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 5,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 440,
+            "length": 68
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 689,
+            "length": 40
+        }
+    ],
+    "views": 167,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 17,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 307,
+        "read_max_id": null
+    },
+    "edit_date": "2021-03-07 07:03:09+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML",
+        "Phyiscs"
+    ]
+}

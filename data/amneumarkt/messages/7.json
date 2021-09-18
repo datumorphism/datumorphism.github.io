@@ -1,0 +1,346 @@
+{
+    "_": "Message",
+    "id": 7,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-10 06:09:13+00:00",
+    "message": "https://science.sciencemag.org/content/369/6507/1052?rss=1",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-08-28 08:04:46+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 340,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5444295159009012248,
+            "url": "https://science.sciencemag.org/content/369/6507/1052?rss=1",
+            "display_url": "science.sciencemag.org/content/369/6507/1052.full",
+            "hash": 767118051,
+            "type": "photo",
+            "site_name": "Science",
+            "title": "Restoring neuron connections",
+            "description": "The structural and functional integrity of synapses is crucial for neuronal circuit function and for the ability of animals to respond and adapt to their environment. However, synapses become dysfunctional or are lost in developmental and neurodegenerative disorders, and after brain and spinal cord injury (SCI). Deficiency in synapse integrity contributes to cognitive impairment and motor disability. To restore damaged neuronal circuits after SCI, antibody therapy against molecules such as Nogo, which inhibits axon growth, are in clinical trials ([ 1 ][1]). For other conditions such as Alzheimer's disease (AD), blockade of the pathogenic molecule amyloid-\u03b2 or its downstream effects are being tested as potential therapies ([ 2 ][2]). To develop effective approaches for restoring impaired synapses, careful consideration should be given to the diversity of synaptogenic factors. To overcome this, on page 1074 of this issue, Suzuki et al. ([ 3 ][3]) report a structurally guided synthetic peptide to restore synaptic\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5928279815083895574,
+                "access_hash": 1188527255121825279,
+                "file_reference": "b'\\x00aFH\\xf1\\xa2\\xcf\\xd2\\xa9\\xa71\\x08\\xe5\\x82\\x12c\\x14\\x9d\\xf5\\xb0\\x13'",
+                "date": "2020-08-27 18:22:42+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xd2+\\x1f\\x98\\xbf\"c\\xe9CD\\x9b\\xbe\\xe2\\xd3\\xb0\\xc3\\xf8\\x10\\x0f\\xad*\\x12\\xe8\\x1b\\x03$ds@\\x11yI\\xfd\\xc1\\xfa\\xd3\\x82 \\xe3\\xcb_\\xca\\x9f\\x86\\xfe\\xea\\xff\\x00\\xdfF\\x94\\x86\\xc7\\xdd\\x19\\xef\\xcd\\x000*\\xe4~\\xed?\\xef\\x9a(W%\\x88\\n\\xb9\\x1f\\xed}\\x7f\\xc2\\x8a\\x00\\x1f\\'!\\xb1\\xf5\\xa7\\xaeB|\\xab\\xf4\\xe6\\x8a(\\xea\\x03B\\x1d\\xc1\\xca\\xfc\\xe0c\\xad<\\xe7\\x03\\xe5\\xe7\\xebE\\x14\\x00\\xc5\\x88Fr\\x8b\\xc9\\xeb\\xf3QE\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 184,
+                        "size": 20353
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 459,
+                        "size": 90258
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 734,
+                        "size": 173615
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Patricia C. Salinas",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://science.sciencemag.org/content/369/6507/1052.full",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Restoring neuron connections"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Patricia C. Salinas"
+                        },
+                        "published_date": "2020-08-28 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Log in to view full text"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "via AAAS login"
+                            },
+                            "url": "https://science.sciencemag.org/content/369/6507/javascript:loginAAAS();",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "AAAS login provides access to "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Science"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for AAAS members, and access to other journals in the "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Science"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " family to users who have purchased individual subscriptions."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Become an AAAS Member"
+                                    },
+                                    "url": "http://www.aaas.org/join",
+                                    "webpage_id": 0
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Activate your Account"
+                                    },
+                                    "url": "https://account.aaas.org/Identity/Lookup",
+                                    "webpage_id": 0
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Purchase Access to Other Journals in the Science Family"
+                                    },
+                                    "url": "http://sciencemag.org/journals/purchase",
+                                    "webpage_id": 0
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Account Help"
+                                    },
+                                    "url": "http://www.sciencemag.org/subscriptions",
+                                    "webpage_id": 5350737517479824233
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Log in through your institution"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Log in via OpenAthens."
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Log in through your institution"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Log in with your institution via Shibboleth."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "More options"
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Purchase digital access to this article"
+                                    },
+                                    "url": "https://science.sciencemag.org/lookup/secure_ppv?type=ppv&jcode=sci&resource_id=sci%3B369/6507/1052&ppv_type=article&url=https%3A//science.sciencemag.org/content/369/6507/1052.full",
+                                    "webpage_id": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Download and print this article for your personal scholarly, research, and educational use."
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Purchase this issue in print"
+                                    },
+                                    "url": "https://backissues.sciencemag.org/",
+                                    "webpage_id": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Buy a single issue of "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Science"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for just $15 USD."
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 58
+        }
+    ],
+    "views": 31,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

@@ -1,0 +1,92 @@
+{
+    "_": "Message",
+    "id": 212,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-03-19 07:54:25+00:00",
+    "message": "\ud83e\udd23\nhttps://twitter.com/BaselessPursuit/status/1372205941450493955?s=20",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2021-03-18 23:37:31+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1432548830
+        },
+        "from_name": null,
+        "channel_post": 430,
+        "post_author": "Linghao",
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8720606895253390442,
+            "url": "https://twitter.com/BaselessPursuit/status/1372205941450493955?s=20",
+            "display_url": "twitter.com/baselesspursuit/status/1372205941450493955",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Twitter",
+            "title": "Adam Charles",
+            "description": "I was surprised when my daughter said she learned R at school yesterday, and then I remembered that she's 4 and she meant the letter. My priors are all too skewed",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "@BaselessPursuit",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 3,
+            "length": 67
+        }
+    ],
+    "views": 137,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 314,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

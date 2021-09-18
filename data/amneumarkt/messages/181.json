@@ -1,0 +1,93 @@
+{
+    "_": "Message",
+    "id": 181,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-05 16:31:41+00:00",
+    "message": "#research\n\nConnectedPapers is now integrated into arXiv.\n\nThis new perspective of references is often overlooked. It is not a gimmick at all.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5256101082319402201,
+            "access_hash": 5571427891964621721,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xb5aFH\\xef\\xb2\\xc1\\x9eV\\x9d\\xa2\\xc8F\\x81!\\xdc\\x04\\xaa\\x1eos'",
+            "date": "2021-02-05 16:31:41+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x1e\\xd5$\\xfa\\x9ct\\xe9M\\x1c\\xf4'\\xf2\\xa7\\x90\\xc6\\x8d\\xa7\\xfb\\xab@\\x08\\x03\\x1e\\xe7\\xf2\\xa5\\xc3z\\x9f\\xc8S\\xfaQ@\\x0c'\\x93\\xd7\\xf5\\xa39\\xed\\xfc\\xea2\\xdb\\xa4+\\x82q\\xdf\\x8a\\x90m\\xc0\\xe9@\\x0b\\xc6;\\xfet\\xb9\\x14\\xb8\\xa3\\x14\\x00\\xdd\\x83\\x9e:\\xf5\\xa7~\\x14Q@\\x07>\\x94QE\\x00\\x7f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 241,
+                    "h": 320,
+                    "size": 18431
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 603,
+                    "h": 800,
+                    "size": 75888
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 965,
+                    "h": 1280,
+                    "size": 108928
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 9
+        }
+    ],
+    "views": 108,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-05 16:31:57+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "research"
+    ]
+}

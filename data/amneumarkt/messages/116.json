@@ -1,0 +1,124 @@
+{
+    "_": "Message",
+    "id": 116,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-11 18:43:17+00:00",
+    "message": "#science\nThe ergodicity problem in economics | Nature Physics\nhttps://www.nature.com/articles/s41567-019-0732-0\n\nI read another paper about hot hand/gamblers' fallacy a while ago and the author of that paper took a similar view. Here is the article:\nSurprised by the Hot Hand Fallacy ? A Truth in the Law of Small Numbers by Miller",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126367139419,
+            "url": "https://www.nature.com/articles/s41567-019-0732-0",
+            "display_url": "nature.com/articles/s41567-019-0732-0",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Nature Physics",
+            "title": "The ergodicity problem in economics",
+            "description": "Nature Physics - This Perspective argues that ergodicity &#8212; a foundational concept in equilibrium statistical physics &#8212; is wrongly assumed in much of the quantitative economics...",
+            "photo": {
+                "_": "Photo",
+                "id": 5993427777405168276,
+                "access_hash": 1789072997660430278,
+                "file_reference": "b'\\x00aFH\\xf0F\\x91X[Q\\xb87\\xe1\\x90\\x89\\x1c9j\\x15\\x03%'",
+                "date": "2019-12-02 17:06:37+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\n(\\xd5v\\xc1\\xc0\\xeb\\xd8b\\xa4\\xefE\\x1d\\xc5\\x00\\x14\\x1aN\\xd4\\xa7\\xbd\\x00'j)GJ(\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 77,
+                        "size": 4081
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 192,
+                        "size": 19031
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 307,
+                        "size": 34295
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 1962,
+                        "h": 470,
+                        "size": 58698
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 8
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 62,
+            "length": 49
+        }
+    ],
+    "views": 170,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-27 11:08:13+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "science"
+    ]
+}

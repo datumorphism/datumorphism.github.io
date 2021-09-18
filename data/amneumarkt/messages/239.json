@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 239,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-06-29 22:50:00+00:00",
+    "message": "#fun \n\nGitHub Copilot \u00b7 Your AI pair programmer\nhttps://copilot.github.com/\n\nThis is crazy.\n\nWhat is GitHub Copilot?\u00a0GitHub Copilot is an AI pair programmer that helps you write code faster and with less work.\u00a0GitHub Copilot draws context from comments and code, and suggests individual lines and whole functions instantly.\u00a0GitHub Copilot is powered by OpenAI Codex, a new AI system created by OpenAI.\u00a0The GitHub Copilot technical preview is available as a Visual Studio Code extension.\n\nHow good is GitHub Copilot?\u00a0We recently benchmarked against a set of Python functions that have good test coverage in open source repos. We blanked out the function bodies and asked GitHub Copilot to fill them in. The model got this right 43% of the time on the first try, and 57% of the time when allowed 10 attempts. And it\u2019s getting smarter all the time.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4780667624822047886,
+            "url": "https://copilot.github.com/",
+            "display_url": "copilot.github.com",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub Copilot",
+            "title": "GitHub Copilot \u00b7 Your AI pair programmer",
+            "description": "GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you.",
+            "photo": {
+                "_": "Photo",
+                "id": 5815305416236706938,
+                "access_hash": 2768164808523114790,
+                "file_reference": "b'\\x00aFH\\xef?6\\xba_\\xa1\\xe9\\xc6\\xbb\\x06\\x96\\xda\\xf7\\x1b\\xa9\\xb3\\x91'",
+                "date": "2021-08-13 08:01:11+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xcd\\x05@\\xe5s\\xf8\\xd0J\\xe3\\x85\\xc1\\xfa\\xd3\\xd2\\x1d\\xe9\\xb84\\x7fB\\xd84\\xbeA#!\\xe3\\xfao\\xe9L\\x08\\xc58\\x0fjVC\\x19\\x00\\x95=\\xf89\\xa0P!0}(\\xa0\\xf5\\xe7\\x14P\\x03\\x92wE\\n6\\xe0z\\x8c\\xe6\\x97\\xedR\\x1e~Q\\xff\\x00\\x01\\xa2\\x8a\\x06#L\\xee\\xbb[\\x18\\xcfa\\x8anq\\xf2\\xe0QE\\x02\\x13\\x14QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 11562
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 43717
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 672,
+                        "size": 80975
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2400,
+                        "h": 1260,
+                        "sizes": [
+                            22447,
+                            47245,
+                            81760,
+                            108941,
+                            172597
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 48,
+            "length": 27
+        }
+    ],
+    "views": 133,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-06-29 22:51:36+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

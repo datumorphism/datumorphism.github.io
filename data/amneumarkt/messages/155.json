@@ -1,0 +1,93 @@
+{
+    "_": "Message",
+    "id": 155,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-18 08:16:57+00:00",
+    "message": "#fun\n\nhmmm it must have been an endless reviewing process. \ud83d\ude31",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5201763277804253228,
+            "access_hash": -1991434298619769621,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\x9baFH\\xf0l\\xcc3\\x92=zS\\xe8\\xd2b\\xed\\xc5\\x1a\\xc0\\x02\\xbe'",
+            "date": "2021-01-18 08:16:57+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x08(\\xd3\\xc7\\xbe?\\x13N\\xc1\\xf5?\\xad\\x14P\\x00J\\x81\\x93\\x9f\\xcc\\xd2\\xe0{\\xfef\\x8a(\\x00\\xc0\\xf7\\xfc\\xcd\\x14Q@\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 68,
+                    "size": 6393
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 171,
+                    "size": 24727
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 274,
+                    "size": 34354
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        }
+    ],
+    "views": 127,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-18 08:17:29+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

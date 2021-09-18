@@ -1,0 +1,188 @@
+{
+    "_": "Message",
+    "id": 175,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-29 12:12:21+00:00",
+    "message": "#market\nhttps://www.marketwatch.com/story/biden-administration-monitoring-the-situation-with-gamestops-stock-white-house-says-2021-01-27?utm_source=Iterable&utm_medium=email&utm_campaign=newsletter-20210128\n\nhmm why is the gov/feds interested in this Gamestop thing?  \ud83d\ude40\n(I have very limited knowledge about stocks.)",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8975941549133942327,
+            "url": "https://www.marketwatch.com/story/biden-administration-monitoring-the-situation-with-gamestops-stock-white-house-says-2021-01-27",
+            "display_url": "marketwatch.com/story/biden-administration-monitoring-the-situation-with-gamestops-stock-white-house-says-2021-01-27",
+            "hash": 1692126443,
+            "type": "photo",
+            "site_name": "MarketWatch",
+            "title": "Biden administration 'monitoring the situation' with GameStop's stock, White House says",
+            "description": "White House press secretary Jen Psaki on Wednesday said Treasury Secretary Janet Yellen and others in the Biden administration are keeping an eye on the huge...",
+            "photo": {
+                "_": "Photo",
+                "id": 5982063384134265609,
+                "access_hash": 1727250685041445115,
+                "file_reference": "b'\\x00aFH\\xef\\xb0\\xb2l\\xdcZ\\x89\\xc3|\\x01\\x82\\xb0\\x02m\\x0b\\xba\\xbb'",
+                "date": "2020-03-05 05:15:04+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xc9\\x0b\\x9e\\x95<i\\x81\\xcdF\\xbc\\x1a\\x99\\t<\\x0e\\xa6\\xad\\x10\\xc1\\x90\\x1e\\xa2\\xab\\xc8\\x80\\x1e*\\xe8\\x8c\\x9fo_\\xa5B\\xfeY\\xc6r\\x0ey\\xc7J\\x1b@\\x8a\\x98\\xa2\\xa7T\\x04\\xe4\\x90\\x07J*\\x0b\\x00*uM\\x91y\\xa5\\xb9\\xe8\\x05\\x14Ut$\\x8b{\\x02Nz\\xd4Lh\\xa2\\x86\\x08g4QEIG'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 14107
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 63405
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 132510
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 1320,
+                        "h": 742,
+                        "size": 146992
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Victor Reklaitis",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.marketwatch.com/story/biden-administration-monitoring-the-situation-with-gamestops-stock-white-house-says-2021-01-27",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Biden administration 'monitoring the situation' with GameStop's stock, White House says"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Victor Reklaitis"
+                        },
+                        "published_date": "2021-01-27 18:56:21+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "White House press secretary Jen Psaki on Wednesday said Treasury Secretary Janet Yellen and others in the Biden administration are keeping an eye on the huge moves being made by GameStop "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "GME, +67.87%"
+                                    },
+                                    "url": "https://www.marketwatch.com/investing/stock/GME?mod=MW_story_quote",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "some other stocks"
+                                    },
+                                    "url": "https://www.marketwatch.com/story/here-are-some-of-the-other-stocks-seeing-gamestop-like-short-squeezes-11611687693?mod=article_inline",
+                                    "webpage_id": 8975941547922057919
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". \"Our economic team, including Secretary Yellen and others, are monitoring the situation. It's a good reminder, though, that the stock market isn't the only measure of the health of our economy,\" Psaki said."
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 8,
+            "length": 198
+        }
+    ],
+    "views": 116,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "market"
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 146,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-01-13 10:07:35+00:00",
+    "message": "#fun\n\nhttps://observablehq.com/@mbostock/hertzsprung-russell-diagram\n\nMike Bostock made a Hertzsprung\u2013Russell Diagram using d3.js. It looks so cool.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7984904921307590632,
+            "url": "https://observablehq.com/@mbostock/hertzsprung-russell-diagram",
+            "display_url": "observablehq.com/@mbostock/hertzsprung-russell-diagram",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Observablehq",
+            "title": "Hertzsprung\u2013Russell Diagram",
+            "description": "An HR diagram plots the relationship between stars\u2019 absolute magnitudes (brighter going up) and temperatures (warmer going left). For the large set of stars below, it effectively shows how stars age over time. Data: Hipparcos, Gliese See this helper notebook for the source data.",
+            "photo": {
+                "_": "Photo",
+                "id": 5858093529706900395,
+                "access_hash": -8619204118608677340,
+                "file_reference": "b'\\x00aFH\\xf0o\\xa5*8\\x9a\\x96\\xcc\\x17l@W\\xe5c\\xfdY\\x8d'",
+                "date": "2020-11-09 03:37:29+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x19(\\xc7\\x07\\xe6\\xe7\\xa5?\\xca,\\x0b' Tg\\xb5>9\\x1a&\\xdc\\xa7\\xff\\x00\\xaf@\\x08\\xa0`\\xee\\xc8\\xa4'\\xd2\\x9e\\xe49\\xc8\\xe0\\x9e\\xd5\\x1fJ\\x00J)\\xc3\\xa1\\xfaQ@\\tIE-\\x00%;\\xa8\\xfaSiE\\x00\\x14QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 200,
+                        "size": 8273
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 640,
+                        "h": 400,
+                        "size": 27809
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 62
+        }
+    ],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-01-13 12:37:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

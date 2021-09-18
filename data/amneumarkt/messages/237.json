@@ -1,0 +1,132 @@
+{
+    "_": "Message",
+    "id": 237,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-06-21 08:25:59+00:00",
+    "message": "#ML\n\nGeometric Deep Learning is an attempt to unify deep learning using geometry. Instead of building deep neural networks ignoring the symmetries in the data and leaving it to be discovered by the network, we apply the symmetries in the problem to the network. For example, instead of flattening the matrix of a cat image and have some predetermined order of the pixels, we apply a translational transformation on the 2D image and the cat should also be a cat without any doubt. This transformation can be enforced in the network. \n\nBTW, If you come from a physics background, it is most likely that you have heard about the symmetries in physical theories like Noether's theorem. In the history of physics, there was an era of many theories yet most of them are connected or even unified under the umbrella of geometry. Geometric deep learning is another \"benevolent propaganda\" based on a similar idea.\n\n\nReferences:\n\n1.   Bronstein, Michael. \u201cICLR 2021 Keynote - \u2018Geometric Deep Learning: The Erlangen Programme of ML\u2019 - M Bronstein.\u201d Video. YouTube, June 8, 2021. https://www.youtube.com/watch?v=w6Pw4MOzMuo.\n2. Bronstein MM, Bruna J, LeCun Y, Szlam A, Vandergheynst P. Geometric deep learning: going beyond Euclidean data. arXiv [cs.CV]. 2016. Available: http://arxiv.org/abs/1611.08097\n3. Bronstein MM, Bruna J, Cohen T, Veli\u010dkovi\u0107 P. Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2104.13478",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1503448449149528590,
+            "url": "https://www.youtube.com/watch?v=w6Pw4MOzMuo",
+            "display_url": "youtube.com/watch?v=w6Pw4MOzMuo",
+            "hash": 0,
+            "type": "video",
+            "site_name": "YouTube",
+            "title": "ICLR 2021 Keynote - \"Geometric Deep Learning: The Erlangen Programme of ML\" - M Bronstein",
+            "description": "Geometric Deep Learning: The Erlangen Programme of ML - ICLR 2021 Keynote by Michael Bronstein (Imperial College London / IDSIA / Twitter)\n\n\u201cSymmetry, as wide or as narrow as you may define its meaning, is one idea by which man through the ages has tried to comprehend and create order, beauty, and perfection.\u201d This poetic definition comes from the great mathematician Hermann Weyl, credited with laying the foundation of our modern theory of the universe. Another great physicist, Philip Anderson, said that \"it is only slightly overstating the case to say that physics is the study of symmetry.\"\n\nIn mathematics, symmetry was crucial in the foundation of geometry as we know it in the 19th century. Now it could have a similar impact on another emerging field. Deep Learning success in recent decades is significant \u2013 from revolutionising data science to landmark achievements in computer vision, board games, and protein folding. At the same time, a lack of unifying principles makes it is difficult to understand the relations\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5932661746877705273,
+                "access_hash": 4978200508558368512,
+                "file_reference": "b'\\x00aFH\\xef\\xf0y\\xc1\\x9d\\xb2\\x94\\x06\\x93F\\xbda\\xf2\\x9d\\x9d1`'",
+                "date": "2021-06-16 19:54:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\x8d$\\xb8\\xb9\\xdc\\x14\\xaa(\\xfdh\\x88\\xce\\x13\\x11m\\x1d\\xc9$f\\xa5\\x84\\xec\\xb5;N\\x1b\\xa1\\x15%\\xb01\\xa1\\xcb\\x0c7 f\\xa4\\xd3K2\\x902o\\xc8?1\\xeaz\\xe2\\xa6\\xfb*<\\xc8\\xa8IV\\x19$\\x8az\\xc7\\x0b\\x82L\\x8c\\xa4\\xf7#\\x15$r\\xc7\\x01\\x1b\\x98\\xb1\\xc6\\xdc\\x8cb\\x8b\\r\\xcf[\\xa1\\x93[l\\x87b\\x0c\\xe3\\xd6\\x8a\\x9aK\\x88\\xd9>S\\x92h\\xa0\\x8b\\xb1\\xab\\x04]\\xc1\\xfc\\xe9\\xc6\\x18\\x8f\\x07<w\\xa2\\x8ab\\x01o\\x12\\x9c\\x82\\xd4\\xd3\\x0ck\\x8d\\xb9\\x189\\xa2\\x8a\\x00\\x85\\x91T\\xf1\\x9a(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 22669
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 108988
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 201637
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": "https://www.youtube.com/embed/w6Pw4MOzMuo",
+            "embed_type": "iframe",
+            "embed_width": 1280,
+            "embed_height": 720,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1069,
+            "length": 43
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1236,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1261,
+            "length": 31
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1445,
+            "length": 31
+        }
+    ],
+    "views": 143,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-06-21 08:29:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

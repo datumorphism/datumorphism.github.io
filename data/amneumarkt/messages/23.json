@@ -1,0 +1,142 @@
+{
+    "_": "Message",
+    "id": 23,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-17 08:16:49+00:00",
+    "message": "https://www.nature.com/articles/s41586-020-2649-2",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126309515856,
+            "url": "https://www.nature.com/articles/s41586-020-2649-2",
+            "display_url": "nature.com/articles/s41586-020-2649-2",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Nature",
+            "title": "Array programming with NumPy",
+            "description": "Nature - NumPy is the primary array programming library for Python; here its fundamental concepts are reviewed and its evolution into a flexible interoperability layer between increasingly...",
+            "photo": {
+                "_": "Photo",
+                "id": 5989051669587012424,
+                "access_hash": -7446608148123921536,
+                "file_reference": "b'\\x00aFH\\xf1Kb\\xca\\xec\\xc8yy#\\xab4\\x05\\xfe2\\xc3\\xc1\\xc4'",
+                "date": "2020-09-16 16:54:42+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x12(\\xd5\\xdarpq\\xed\\xd2\\x94\\xa9\\xf5\\xfdip\\t\\xe4P@\\xef\\x93@\\x08A\\x00d\\xd3\\xbe\\xbc\\xd0z\\x0e(\\xed@\\x00\\xa2\\x81E\\x00 \\xe9Hz\\xd1E\\x00+t\\x14\\xa9\\xf7h\\xa2\\x80\\x0e\\xe2\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 146,
+                        "size": 13668
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 366,
+                        "size": 58704
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 586,
+                        "size": 113723
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 2118,
+                        "h": 969,
+                        "size": 219827
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": {
+        "_": "ReplyInlineMarkup",
+        "rows": [
+            {
+                "_": "KeyboardButtonRow",
+                "buttons": [
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": "  \ud83d\ude18",
+                        "data": "b'like 23 1'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude09",
+                        "data": "b'like 23 2'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonCallback",
+                        "text": " \ud83d\ude31",
+                        "data": "b'like 23 3'",
+                        "requires_password": false
+                    },
+                    {
+                        "_": "KeyboardButtonUrlAuth",
+                        "text": "\ud83d\udcac",
+                        "url": "https://comments.bot/thread/Ynz1Cylur",
+                        "button_id": 520945677,
+                        "fwd_text": null
+                    }
+                ]
+            }
+        ]
+    },
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 49
+        }
+    ],
+    "views": 32,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2020-09-17 08:16:50+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

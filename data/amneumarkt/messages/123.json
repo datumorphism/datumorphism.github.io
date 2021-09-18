@@ -1,0 +1,97 @@
+{
+    "_": "Message",
+    "id": 123,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-12-24 17:47:46+00:00",
+    "message": "#datascience #audliolization\nThis is the audiolization of the daily new cases for FR, IT, ES, DE, PL between 2020-08-01 and 2020-12-14. I made an audiolization video two years ago. As I am currently under quarantine and the days are becoming so boring, I started to think about the mapping of data points to different representations. We usually talk about visualization because there are so many elements to be used to represent complicated data. Audiolization, on the other hand, leaves us with very few elements to encode. But it's a lot of fun working with audio. So I wrote a python package to map a pandas dataframe/numpy ndarray to midi representation. Here is the package https://github.com/emptymalei/audiorepr",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5415916501414710312,
+            "access_hash": 2525145877485014884,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00{aFH\\xf0@5\\x1e\\x06\\x07D\\x815\\xb4\\x1at\\xaa\\x0f\\x8bB\\x04'",
+            "date": "2020-12-24 17:47:46+00:00",
+            "mime_type": "video/mp4",
+            "size": 30292989,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "covid19-top5-countries-combined.mp4"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x16(\\xa4bO\\xee\\x8a\\x95 \\x8d\\x94\\x12\\x89\\xf9\\xe2\\x9ajh\\xc8\\xd89_\\xc4T\\xc8\\x89\\xbb!\\xbff\\x8f\\xfey\\xa7\\xfd\\xf5\\xff\\x00\\xd7\\xa3\\xec\\xd1\\xff\\x00\\xcf4\\xff\\x00\\xbe\\xbf\\xfa\\xf5&G\\xaa~Tdz\\xa7\\xe5Qve\\xcc\\xc8\\xfe\\xcd\\x1f\\xfc\\xf3O\\xfb\\xeb\\xff\\x00\\xafEI\\xf8\\xaf\\xe5E;\\xb1\\xf32\\xa7\\xda\\xe3\\xfe\\xe1\\xa5\\x17\\xaa\\x06\\x02\\x9f\\xc8QE[W6i4/\\xdb\\x97\\xfb\\xa7\\xf2\\x14}\\xb9\\x7f\\xbb\\xfa\\n(\\xa5\\xca\\x89\\xe4A\\xf6\\xe5\\xfe\\xe7\\xe8(\\xa2\\x8a9Pr#'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 180,
+                    "size": 6406
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 13,
+            "length": 15
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 680,
+            "length": 39
+        }
+    ],
+    "views": 398,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-12-27 11:07:07+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "datascience",
+        "audliolization"
+    ]
+}

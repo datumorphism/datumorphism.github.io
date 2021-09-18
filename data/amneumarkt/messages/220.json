@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 220,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-04-04 21:10:25+00:00",
+    "message": "#ML \n\nSilla CN, Freitas AA. A survey of hierarchical classification across different application domains. Data Min Knowl Discov. 2011;22: 31\u201372. doi:10.1007/s10618-010-0175-9\n\nA survey paper on hierarchical classification problems. It is a bit old as it didn\u2019t consider the classifier chains, but this paper summarizes most of the ideas in hierarchical classification.\n\nThe authors also proposed a framework for the categorization of such problems using two different dimensions (ranks).",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 468,
+            "length": 10
+        }
+    ],
+    "views": 146,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-04-04 21:17:12+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

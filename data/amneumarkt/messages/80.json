@@ -1,0 +1,85 @@
+{
+    "_": "Message",
+    "id": 80,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-05 20:06:51+00:00",
+    "message": "SQL in 200 years?",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5269466414954164257,
+            "access_hash": -4013844785572440734,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00PaFH\\xf0\\xfc\\xb9\\x1b\\x11\\x1a\\xdd\\x0e\\x18\\xf2 \\xbf\\xce\\x9c\\x00L\\x9e'",
+            "date": "2020-11-05 20:06:51+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01\\x16(\\xce\\xf2\\xe1n\\x17p'\\xbes\\xfd(h\\x00\\xf9\\x97,\\xb8\\xceO\\x14\\xbb\\xc2\\xaf\\x1dh\\xfbA\\xd9\\xb7h\\xa0d[\\x079\\xe3\\x154V\\xe8]\\x0c\\x99\\xf2\\xd8\\xe34\\xc6\\xfb\\x82\\x80@\\xea3\\xc52I\\xae\\xec\\xd6\\t\\n\\x8c\\x90@ \\xd1V/fG\\xb4\\x87-\\xfb\\xc2\\xbc\\x8cQHfh9\\xfc)\\xcb P>@q\\xea(\\xa2\\x80\\x14\\xcf\\xc1\\x1b\\x16\\x836q\\xf2(\\xc7\\xa5\\x14S\\x10\\x8c\\xc4\\xa8\\xcfn(\\xa2\\x8a@\\x7f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 178,
+                    "size": 14588
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 444,
+                    "size": 51962
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 710,
+                    "size": 76372
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

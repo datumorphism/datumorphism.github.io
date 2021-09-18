@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 5,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-09-10 06:08:17+00:00",
+    "message": "Quickprop: an almost forgotten neural training algorithm \u2013 Giuseppe Bonaccorso\nhttps://www.bonaccorso.eu/2017/09/15/quickprop-an-almost-forgotten-neural-training-algorithm/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2020-08-29 14:38:20+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1295827562
+        },
+        "from_name": null,
+        "channel_post": 343,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2677190422188593153,
+            "url": "https://www.bonaccorso.eu/2017/09/15/quickprop-an-almost-forgotten-neural-training-algorithm/",
+            "display_url": "bonaccorso.eu/2017/09/15/quickprop-an-almost-forgotten-neural-training-algorithm",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Giuseppe Bonaccorso",
+            "title": "Quickprop: an almost forgotten neural training algorithm - Giuseppe Bonaccorso",
+            "description": "Analysis of Quickprop as completely local neural learning algorithm with a simple example based on a Logistic Regression.",
+            "photo": {
+                "_": "Photo",
+                "id": 532578200018585793,
+                "access_hash": 1411675163132624206,
+                "file_reference": "b'\\x00aFH\\xf1\\xea3X\\x87\\x0c\\xa2\\xdf\\xf1e\\xcb\\xc1j0 DS'",
+                "date": "2017-09-15 14:42:42+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 32,
+                        "size": 978
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 115,
+                        "size": 8766
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 440,
+                        "h": 158,
+                        "size": 13453
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "https://www.facebook.com/giuseppe.bonaccorso",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 79,
+            "length": 93
+        }
+    ],
+    "views": 23,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": null,
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

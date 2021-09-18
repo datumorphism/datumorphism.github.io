@@ -1,0 +1,50 @@
+{
+    "_": "Message",
+    "id": 57,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-14 07:46:43+00:00",
+    "message": "Jackson, D. E., & Ratnieks, F. L. W. (2006). Communication in ants. Current Biology, 16(15), R570\u2013R574. https://doi.org/10.1016/j.cub.2006.07.015\n\nI just realized that what we have been calling swarm intelligence is not very different from our single agent intelligence. They are all dealing with information diffusion. Using the diffusion, swarm intelligence shares the global information with dumb agents. Our brain, on the other hand, is using information diffusion (using Ca as an agent) as a way to regulate neuron firing rate. This is also a way to share the global firing status with each neuron.\nIt is even more interesting if we think of it as a hierarchical model. \u201cSingle agent\u201d is using smaller agents for their own intelligence. A \u201csingle agent\u201d is also a part of a larger agent.\nIn the end, we are just part of Gaia.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 104,
+            "length": 41
+        }
+    ],
+    "views": 48,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2020-10-14 08:01:09+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

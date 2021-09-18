@@ -1,0 +1,99 @@
+{
+    "_": "Message",
+    "id": 197,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-24 21:17:32+00:00",
+    "message": "#dev\n\nYou can even use Chinese in GitHub Codespaces. \ud83d\ude31\nWell this is trivial if you have Chinese input methods on your computer. What if you are using a company computer and you would like to add some Chinese comments just for fun....",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5312492503972295100,
+            "access_hash": 5441568683300872589,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00\\xc5aFH\\xef\\x039\\xd3\\xd0\\xb9\\xf5\\x84\\x8f\\xc7\\x19\\x00O;\\xac\\xcar'",
+            "date": "2021-02-24 21:17:32+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x17(\\xd5\\xda\\t\\xe0\\nP\\x83\\xb8\\x1f\\x95\\x03\\xefu\\xfd)\\xf4\\x00\\xdd\\x8b\\xe8(\\xd8\\xbe\\x82\\x9dE\\x007b\\xfa\\n)h\\xa0\\x06\\x83\\x93\\xc0\\xa7}h\\xa2\\x80\\x16\\x8a(\\xa0\\x04\\xa2\\x8a(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 184,
+                    "size": 7193
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 461,
+                    "size": 28563
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1260,
+                    "h": 726,
+                    "sizes": [
+                        5055,
+                        11184,
+                        19654,
+                        25917,
+                        42100
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        }
+    ],
+    "views": 118,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-02-24 21:20:16+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "dev"
+    ]
+}

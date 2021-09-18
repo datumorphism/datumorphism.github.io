@@ -1,0 +1,52 @@
+{
+    "_": "Message",
+    "id": 191,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-02-16 13:27:05+00:00",
+    "message": "#fun\n\nWe have been testing a new connected online work space using discord. Whoever is bored by home office can connect to a shared channel and chat.\n\nDiscord allows team voice chat and multiple screensharing. By adding bots to the channel, the team can share music playlists. Discord allows detailed adjustment of the voices so anyone could adjust volumes of any other users or even deafen himself/herself. So it is possible to be connected for the whole day.\n\nIt seems that jump in and chat at anytime and share working screen make it fun for WFH.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        }
+    ],
+    "views": 117,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

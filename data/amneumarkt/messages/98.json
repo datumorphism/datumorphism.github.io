@@ -1,0 +1,91 @@
+{
+    "_": "Message",
+    "id": 98,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-11-29 14:28:07+00:00",
+    "message": "Guess what, 115.de, a website being used for government related services in Cologne, requires Adobe Flash to run some contents on the webpage. \ud83d\ude27",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5341520581608190546,
+            "access_hash": 5844359500917972212,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x00baFH\\xf0\\x04\\x8a5\\ts\\xc1\\x11|\\xbd\\xe2z\\xf9\\x86/\\xafE'",
+            "date": "2020-11-29 14:28:07+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xb1\\xfd\\x94\\x9d<\\xd3\\xf9P4\\xc5\\xed3~U|\\xe4\\x83\\x8e\\xb4\\xd8\\xd0\\x8c\\x92M\\x00Q\\xfe\\xc9S\\xcf\\x9c\\xdf\\x95\\x15\\xa3E\\x004\\xe0\\xb1\\xf9\\xbfZ0?\\xbd\\xfa\\xd3Y2\\xfd\\xe9\\xf4\\x00\\xa3\\x18\\xebE\\x14P\\x03I\\xea\\x08\\xe3\\xebN\\x03\\x1e\\xbf\\x9d\\x14P\\x02\\xd1E\\x14\\x01'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 9847
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 38513
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "size": 57161
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 12,
+            "length": 6
+        }
+    ],
+    "views": 120,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

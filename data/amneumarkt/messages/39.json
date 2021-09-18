@@ -1,0 +1,105 @@
+{
+    "_": "Message",
+    "id": 39,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2020-10-01 08:30:28+00:00",
+    "message": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.141801",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": true,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2693430500821987121,
+            "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.141801",
+            "display_url": "journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.141801",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Physical Review Letters",
+            "title": "eV-Scale Sterile Neutrino Search Using Eight Years of Atmospheric Muon Neutrino Data from the IceCube Neutrino Observatory",
+            "description": "An analysis of more than 300,000 muon neutrino detections provides no evidence of sterile neutrinos---a finding at odds with other experiments.",
+            "photo": {
+                "_": "Photo",
+                "id": 6029718898141670221,
+                "access_hash": 832756320562747368,
+                "file_reference": "b'\\x00aFH\\xf1r\\xc9\\x95\\xa31\\xb1\\x15\\xadW\\xea\\x9c\\xe5W\\xfc\\xf0k'",
+                "date": "2020-09-30 16:05:23+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01((\\xd9\\xa2\\xa8\\xf9\\xf3\\x7f\\x7f\\xf4\\x14y\\xf3\\x7f\\x7f\\xf4\\x14\\xec+\\x97\\xa8\\xaa^|\\xbf\\xdf\\xfd\\x05'\\x9f/\\xf7\\xff\\x00AE\\x82\\xe5\\xea*\\x87\\xda%\\xfe\\xff\\x00\\xe8(\\xa2\\xc0B\\xee\\xdbN\\xce\\xbd\\xa9\\xb1\\xb4\\xd9;\\xf9\\x18\\xa9\\x85\\xac\\xb8\\xe59\\xfa\\x8a\\x05\\xb4\\xd8\\xfb\\x9f\\xa8\\xa6\\x03K54\\x96\\xf6\\xa9>\\xcd?\\xf7?QK\\xf6yy\\xf9\\x0f\\xe6(\\x02\\x03\\xbf\\xdb\\xf3\\xa2\\xa7\\xfb<\\xf8\\xe9\\xfa\\x8a(\\rM\\n(\\xa2\\xa4aE\\x14P\\x01E\\x14P\\x07\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 200,
+                        "h": 200,
+                        "size": 4512
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 68
+        }
+    ],
+    "views": 36,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 7,
+        "replies_pts": 1013,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 22,
+        "read_max_id": null
+    },
+    "edit_date": null,
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}
