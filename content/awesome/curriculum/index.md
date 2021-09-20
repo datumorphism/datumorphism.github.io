@@ -19,6 +19,7 @@ supplementary:
 exclude: true
 links:
   - "wiki/data-engeering-for-data-scientist/checklist/"
+weight: 1
 ---
 
 

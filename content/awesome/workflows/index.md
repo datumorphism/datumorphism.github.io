@@ -9,6 +9,7 @@ tags:
 references:
   - name: "EDA Checklist by Matthew R. Versaggi"
     link: https://rstudio-pubs-static.s3.amazonaws.com/182250_19977d0c5c06403fbad1e653850fc7c6.html
+weight: 2
 ---
 
 {{< message class="warning" >}}
