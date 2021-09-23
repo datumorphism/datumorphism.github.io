@@ -9,6 +9,10 @@ tags:
   - 'Artificial Neural Networks'
   - 'Basics'
 references:
+  - name: "Hassoun MH, Assistant Professor of Computer Engineering Mohamad H Hassoun. Fundamentals of Artificial Neural Networks. MIT Press; 1995. Available: https://mitpress.mit.edu/books/fundamentals-artificial-neural-networks"
+    link: "https://mitpress.mit.edu/books/fundamentals-artificial-neural-networks"
+  - name: "Shenouda EAMA. A Quantitative Comparison of Different MLP Activation Functions in Classification. Advances in Neural Networks - ISNN 2006. Springer Berlin Heidelberg; 2006. pp. 849–857. doi:10.1007/11759966_125"
+    link: "https://link.springer.com/chapter/10.1007%2F11759966_125"
   - link: "https://doi.org/10.1016/0893-6080(89)90020-8"
     name: "Hornik, K., Stinchcombe, M., & White, H. (1989). Multilayer feedforward networks are universal approximators. Neural Networks, 2(5), 359–366."
   - link: "https://doi.org/10.1007/BF02551274"
@@ -79,37 +83,14 @@ It means the function is continuous.
 ## Activation Functions
 
 
-1. Uni-Polar Sigmoid Function
+There are many activation functions.
 
-   $$
-   \frac{1}{1+e^{-x}}
-   $$
-
-
-   {{< figure src="../assets/artificial-neural-networks/sigmoidFunction.png" title="Sigmoid function">}}
-
-2. Bipolar Sigmoid Function
-
-   $$
-   \frac{1-e^{-x}}{1+e^{-x}}
-   $$
-
-   {{< figure src="../assets/artificial-neural-networks/bipolarSigmoid.png" title="Bipolar Sigmoid">}}
-
-3. Hyperbolic Tangent
-
-   $$
-   \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^{x} - e^{-x}}{e^x + e^{-x}}
-   $$
-
-   {{< figure src="../assets/artificial-neural-networks/tanh.png" title="Hyperbolic tangent">}}
-
-4. Radial Basis Function
-
-   {{< figure src="../assets/artificial-neural-networks/unnormalized_radial_basis_functions.svg.png" title="Hyperbolic tangent" caption="Two unnormalized Gaussian radial basis functions in one input dimension. The basis function centers are located at x1=0.75 and x2=3.25. Source [Unnormalized Radial Basis Functions](https://en.wikipedia.org/wiki/Radial_basis_function#/media/File:Unnormalized_radial_basis_functions.svg)">}}
-
-5. Conic Section Function
-
+- {{< c "cards/machine-learning/neural-networks/activation-uni-polar-sigmoid.md" "Uni-Polar Sigmoid Function" >}}
+- {{< c "cards/machine-learning/neural-networks/activation-bi-polar-sigmoid.md" "Bipolar Sigmoid Function">}}
+- {{< c "cards/machine-learning/neural-networks/activation-hyperbolic-tangent.md" "Hyperbolic Tangent" >}}
+- {{< c "cards/machine-learning/neural-networks/activation-radial-basis-function.md" "Radial Basis Function">}}
+- {{< c "cards/machine-learning/neural-networks/activation-conic-section-function.md" "Conic Section Function">}}
+- {{< c "cards/machine-learning/neural-networks/activation-relu.md" "ReLu">}}
 
 
 ## Solving Differential Equations
@@ -134,8 +115,6 @@ y(t_i) & = y(t_0) + t_i v_k f(t_i w_k+u_k) \\
 
 where $y(t_0)$ is the initial condition and $k$ is summed over.
 
-{{< message title="Artifacial Neural Network">}}
-{{< /message >}}
 
 
 Presumably this should be the gate controlling trigering of the neuron or not. Therefore the following expit function serves this purpose well,
@@ -161,7 +140,7 @@ $$
 I=\sum_i\left( \frac{dy}{dt}(t_i)+y(t_i) \right)^2,
 $$
 
-which should be minimized to 0 if our struture of networks is optimized for this problem.
+which should be minimized to 0 if our structure of networks is optimized for this problem.
 
 Now the task becomes clear:
 

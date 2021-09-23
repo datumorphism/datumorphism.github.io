@@ -215,6 +215,9 @@
 
 
 {{ define "footer"}}
+{{ if .Params.charts }}
+{{ partial "extensions/plotly.html" . }}
+{{ end }}
 {{ partial "footer.html" .}}
 
 

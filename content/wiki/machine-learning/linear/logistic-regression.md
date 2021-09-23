@@ -24,7 +24,7 @@ weight: 3
 links:
   - "cards/statistics/likelihood.md"
   - "cards/information/cross-entropy.md"
-  - "cards/machine-learning/neural-networks/uni-polar-sigmoid.md"
+  - "cards/machine-learning/neural-networks/activation-uni-polar-sigmoid.md"
 published: true
 ---
 
@@ -90,7 +90,7 @@ p(C=c_1\mid X=x) &= \frac{\exp\left(\beta_0 + \beta_1 \cdot x\right)}{1 +  \exp\
 
 {{< figure src="../assets/logistic-regression/logistic_regression_two_class_probs.png" title="The two conditional probabilities" caption="For simplicity, we are using $x'=\beta_0 + \beta_1 \cdot x$ in this figure." >}}
 
-This is the {{< c "cards/machine-learning/neural-networks/uni-polar-sigmoid.md" "sigmoid function" >}}
+This is the {{< c "cards/machine-learning/neural-networks/activation-uni-polar-sigmoid.md" "sigmoid function" >}}
 
 {{< message title="Limiting behavior" class="info" >}}
 
