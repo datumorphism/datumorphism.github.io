@@ -26,7 +26,6 @@ references:
     link: "http://www.sciencedirect.com/science/article/pii/0893608089900208"
   - name: "Performance Analysis of Various Activation Functions in Generalized MLP Architectures of Neural Networks"
     link: "http://www.cscjournals.org/manuscript/Journals/IJAE/volume1/Issue4/IJAE-26.pdf"
-
 weight: 1
 ---
 
@@ -91,7 +90,9 @@ There are many activation functions.
 - {{< c "cards/machine-learning/neural-networks/activation-radial-basis-function.md" "Radial Basis Function">}}
 - {{< c "cards/machine-learning/neural-networks/activation-conic-section-function.md" "Conic Section Function">}}
 - {{< c "cards/machine-learning/neural-networks/activation-relu.md" "ReLu">}}
-
+- {{< c "cards/machine-learning/neural-networks/activation-leaky-relu.md" "Leaky ReLu">}}
+- {{< c "cards/machine-learning/neural-networks/activation-elu.md" "ELU">}}
+- {{< c "cards/machine-learning/neural-networks/activation-swish.md" "Swish">}}
 
 ## Solving Differential Equations
 

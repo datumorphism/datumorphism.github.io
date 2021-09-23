@@ -54,7 +54,7 @@ Derivative of ReLu
 ## Code
 
 ```python
-def relu(self, x):
+def relu(x):
     return x * (x > 0)
 ```
 
