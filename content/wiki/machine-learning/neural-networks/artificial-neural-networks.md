@@ -26,6 +26,9 @@ references:
     link: "http://www.sciencedirect.com/science/article/pii/0893608089900208"
   - name: "Performance Analysis of Various Activation Functions in Generalized MLP Architectures of Neural Networks"
     link: "http://www.cscjournals.org/manuscript/Journals/IJAE/volume1/Issue4/IJAE-26.pdf"
+  - name: "Lippe P. Tutorial 3: Activation Functions — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 23 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io"
+    link: "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html"
+    key: "Lippe"
 weight: 1
 ---
 
@@ -93,6 +96,11 @@ There are many activation functions.
 - {{< c "cards/machine-learning/neural-networks/activation-leaky-relu.md" "Leaky ReLu">}}
 - {{< c "cards/machine-learning/neural-networks/activation-elu.md" "ELU">}}
 - {{< c "cards/machine-learning/neural-networks/activation-swish.md" "Swish">}}
+
+
+
+{{< figure src="../assets/artificial-neural-networks/tutorial_notebooks_tutorial3_Activation_Functions_19_0.svg" caption="[Lippe P. Tutorial 3: Activation Functions — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html)." >}}
+
 
 ## Solving Differential Equations
 

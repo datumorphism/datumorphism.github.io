@@ -50,6 +50,16 @@ Derivative of ReLu
 </div>
 {{< /rawhtml >}}
 
+## Characteristics
+
+In trained models, ReLu doesn't preserve the qualitative distributions of values after the activation.
+
+{{< figure src="../assets/activation-relu/tutorial_notebooks_tutorial3_Activation_Functions_42_2.svg" caption="[Lippe P. Tutorial 3: Activation Functions — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html)." >}}
+
+Because of the zero values in ReLu, many neurons actually don't participate in any of the tasks as they are just nullified to zeros and provide no gradient. Such neurons are dead neurons.
+
+
+
 
 ## Code
 
