@@ -437,8 +437,8 @@ Code def leaky_relu(x, alpha): return torch.where(x &amp;gt; 0, x, alpha * x) Fu
 $$ \begin{cases} x, &amp; \text{if }x=0 \\ 0, &amp; \text{else.} \end{cases} $$
 Visualizations ReLu
 Derivative of ReLu
-Code def relu(x): return x * (x &amp;gt; 0) Full code to generate the data used in this article Full code to generate the data used in this article
-from torch import nn import matplotlib.</description></item><item><title>Swish</title><link>https://datumorphism.leima.is/cards/machine-learning/neural-networks/activation-swish/</link><pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/machine-learning/neural-networks/activation-swish/</guid><description>Swish is infinitely differentiable, i.e., class $C^\infty$.
+Characteristics In trained models, ReLu doesn&amp;rsquo;t preserve the qualitative distributions of values after the activation.
+Lippe P. Tutorial 3: Activation Functions — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet].</description></item><item><title>Swish</title><link>https://datumorphism.leima.is/cards/machine-learning/neural-networks/activation-swish/</link><pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/machine-learning/neural-networks/activation-swish/</guid><description>Swish is infinitely differentiable, i.e., class $C^\infty$.
 $$ x \sigma(x), $$
 where $\sigma$ is the uni-polar sigmoid Uni-Polar Sigmoid Uni-polar sigmoid function and its properties .
 Visualizations ELU
