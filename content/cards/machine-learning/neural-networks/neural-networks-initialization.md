@@ -19,6 +19,9 @@ references:
   - name: "Glorot X, Bengio Y. Understanding the difficulty of training deep feedforward neural networks. Teh YW, Titterington M, editors. 2010;9: 249–256. Available: http://proceedings.mlr.press/v9/glorot10a.html"
     link: "http://proceedings.mlr.press/v9/glorot10a.html"
     key: "Glorot2010"
+  - name: 'Katanforoosh & Kunin, "Initializing neural networks", deeplearning.ai, 2019.'
+    link: "https://www.deeplearning.ai/ai-notes/initialization/"
+    key: "Katanforoosh2019"
 links:
   - "wiki/machine-learning/neural-networks/artificial-neural-networks.md"
 ---
@@ -109,7 +112,9 @@ In Glorot2010, the authors also proposed a uniform distribution alternative to n
 
 This proposal is essentially the same idea as the Xavier initialization.
 
+## What are the differences
 
+[deeplearning.ai has an interactive session](https://www.deeplearning.ai/ai-notes/initialization/) on the effects of initializations for classification tasks on MNIST.
 
 
 [^Lippe2020]: {{< cite key="Lippe2020" >}}
