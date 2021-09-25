@@ -88,7 +88,7 @@ What we would expect is that larger popularity and small similarity (more simila
 
 To combine the two factors, we use the metric $\mathrm{Popularity}\times \mathrm{Similarity}$. Even though there is a competition between popularity and similarity, small values of $\mathrm{Popularity}\times \mathrm{Similarity}$ are more preferable connections, which takes similarity more seriously.
 
-A simple model to demonstrate this is to build a space of disc. The radius is time $t$, while angles are the measure of similarity. A smaller angler distance indicates a smaller similarity. Using this mapping, we are able to show the dynamics of networks, since we can tell the history of the nodes.
+A simple model to demonstrate this is to build a space of disc. The radius is time $t$, while angles are the measure of similarity. A smaller angular distance indicates a smaller similarity. Using this mapping, we are able to show the dynamics of networks, since we can tell the history of the nodes.
 
 Mathematically speaking, the similarity is measured as
 
