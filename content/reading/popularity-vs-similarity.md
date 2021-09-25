@@ -6,14 +6,17 @@ subtitle: ""
 speaker: "OctoMiao"
 author: Lei Ma
 categories:
-- theory
+  - theory
 tags:
-- 'complex network'
+  - "complex network"
+  - "graph"
 summary: Introduce geometry into the manifold of complex networks
 status: Done
 references:
   - name: "Popularity versus similarity in growing networks"
     link: http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html
+links:
+  - "wiki/graph/basics/what-is-graph.md"
 ---
 
 ## Background
