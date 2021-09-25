@@ -15,7 +15,7 @@ weight: 2
 links:
   - "wiki/graph/basics/what-is-graph.md"
   - "cards/graph/node-degree.md"
-  - "cards/graph/graph-eigen-vector-centrality.md"
+  - "cards/graph/graph-eigenvector-centrality.md"
 ---
 
 
@@ -26,7 +26,7 @@ links:
 
 ## Node Centrality
 
-- {{< c "cards/graph/graph-eigen-vector-centrality.md" >}}
+- {{< c "cards/graph/graph-eigenvector-centrality.md" >}}
 
 
 [^Hamilton2020]: {{< cite key="Hamilton2020" >}}
