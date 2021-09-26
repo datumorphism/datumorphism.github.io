@@ -27,6 +27,7 @@ links:
 ## Node Centrality
 
 - {{< c "cards/graph/graph-eigenvector-centrality.md" >}}
+- {{< c "cards/graph/graph-betweenness-centrality.md" >}}
 
 
 [^Hamilton2020]: {{< cite key="Hamilton2020" >}}
