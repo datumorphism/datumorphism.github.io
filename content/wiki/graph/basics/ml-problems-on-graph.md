@@ -16,7 +16,7 @@ references:
   - name: "McPherson M, Smith-Lovin L, Cook JM. Birds of a Feather: Homophily in Social Networks. Annu Rev Sociol. 2001;27: 415–444. doi:10.1146/annurev.soc.27.1.415"
     link: "https://www.annualreviews.org/doi/10.1146/annurev.soc.27.1.415"
     key: "McPherson2001"
-weight: 3
+weight: 4
 links:
   - "wiki/graph/basics/what-is-graph.md"
   - "reading/popularity-vs-similarity.md"
