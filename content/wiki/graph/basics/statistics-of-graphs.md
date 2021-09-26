@@ -16,6 +16,8 @@ links:
   - "wiki/graph/basics/what-is-graph.md"
   - "cards/graph/node-degree.md"
   - "cards/graph/graph-eigenvector-centrality.md"
+  - "cards/graph/graph-betweenness-centrality.md"
+  - "cards/graph/graph-local-variant-clustering-coefficient.md"
 ---
 
 
@@ -26,8 +28,23 @@ links:
 
 ## Node Centrality
 
+Importance of a node on a graph:
+
 - {{< c "cards/graph/graph-eigenvector-centrality.md" >}}
 - {{< c "cards/graph/graph-betweenness-centrality.md" >}}
+- Closeness centrality
+
+
+## Clustering Coefficients
+
+
+Proportion of motifs, e.g., closed triangles, in a node's neighborhood.
+
+- {{< c "cards/graph/graph-local-variant-clustering-coefficient.md" >}}
+
+
+
+
 
 
 [^Hamilton2020]: {{< cite key="Hamilton2020" >}}
