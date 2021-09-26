@@ -20,13 +20,14 @@ links:
   - "cards/graph/graph-local-variant-clustering-coefficient.md"
 ---
 
+## Local Statistics
 
-## Node Degree
+### Node Degree
 
 {{< c "cards/graph/node-degree.md" >}}
 
 
-## Node Centrality
+### Node Centrality
 
 Importance of a node on a graph:
 
@@ -35,7 +36,7 @@ Importance of a node on a graph:
 - Closeness centrality
 
 
-## Clustering Coefficients
+### Clustering Coefficients
 
 
 Proportion of motifs, e.g., closed triangles, in a node's neighborhood.
@@ -44,6 +45,16 @@ Proportion of motifs, e.g., closed triangles, in a node's neighborhood.
 
 
 
+
+## Graph Level Statistics
+
+### Bag of Nodes
+
+Using the statistics of the local statistics, e.g., distribution of node degrees, as graph level statistics.
+
+### Weisfeiler-Lehmen Kernel
+
+- {{< c "cards/graph/graph-weisfeiler-lehman-kernel.md" >}}
 
 
 
