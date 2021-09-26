@@ -18,21 +18,28 @@ links:
   - "cards/graph/graph-eigenvector-centrality.md"
   - "cards/graph/graph-betweenness-centrality.md"
   - "cards/graph/graph-local-variant-clustering-coefficient.md"
+  - "cards/graph/graph-local-overlap-sorensen-index.md"
+  - "cards/graph/graph-local-overlap-salton-index.md"
+  - "cards/math/jaccard-similarity.md"
+  - "cards/graph/graph-local-overlap-resource-allocation-index.md"
+  - "cards/graph/graph-local-overlap-adamic-adar-index.md"
+  - "cards/graph/graph-global-overlap-katz-index.md"
+  - "cards/graph/graph-global-overlap-leicht-holme-newman-similarity.md"
 ---
 
 ## Local Statistics
 
 ### Node Degree
 
-{{< c "cards/graph/node-degree.md" >}}
+{{< e ref="cards/graph/node-degree.md" >}}
 
 
 ### Node Centrality
 
 Importance of a node on a graph:
 
-- {{< c "cards/graph/graph-eigenvector-centrality.md" >}}
-- {{< c "cards/graph/graph-betweenness-centrality.md" >}}
+- {{< e "cards/graph/graph-eigenvector-centrality.md" >}}
+- {{< e "cards/graph/graph-betweenness-centrality.md" >}}
 - Closeness centrality
 
 
@@ -41,7 +48,7 @@ Importance of a node on a graph:
 
 Proportion of motifs, e.g., closed triangles, in a node's neighborhood.
 
-- {{< c "cards/graph/graph-local-variant-clustering-coefficient.md" >}}
+{{< e "cards/graph/graph-local-variant-clustering-coefficient.md" >}}
 
 
 
@@ -54,7 +61,26 @@ Using the statistics of the local statistics, e.g., distribution of node degrees
 
 ### Weisfeiler-Lehmen Kernel
 
-- {{< c "cards/graph/graph-weisfeiler-lehman-kernel.md" >}}
+{{< e ref="cards/graph/graph-weisfeiler-lehman-kernel.md" >}}
+
+
+
+## Neighborhood Overlap
+
+We can define many different similarity measures $\mathbf S$.
+
+- Number of shared neighbor nodes: $\mathbf S[u, v] = \lvert \mathcal N(u) \cap \mathcal N(v) \rvert$. The likelihood of an edge between $u$ and $v$, $P(A[u,v]=1) \propto \mathcal S[u,v]$.
+
+- Local Overlap Measures
+  - {{< e "cards/graph/graph-local-overlap-sorensen-index.md" >}}
+  - {{< e "cards/graph/graph-local-overlap-salton-index.md" >}}
+  - {{< e "cards/math/jaccard-similarity.md" >}}
+  - {{< e "cards/graph/graph-local-overlap-resource-allocation-index.md" >}}
+  - {{< e "cards/graph/graph-local-overlap-adamic-adar-index.md" >}}
+- Global Overlap Measures
+  - {{< e "cards/graph/graph-global-overlap-katz-index.md" >}}
+  - {{< e "cards/graph/graph-global-overlap-leicht-holme-newman-similarity.md" >}}
+
 
 
 
