@@ -35,6 +35,8 @@ Ratio Cut normalizes the cut values by the size of the patches,
 \operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert}{ \lvert \mathcal A_k \rvert}.
 {{< /m >}}
 
+{{< figure src="../assets/graph-cuts/graph-cuts.jpg" caption="Graph cuts" >}}
+
 
 This definition punishes smaller patches using $\frac{1}{ \lvert \mathcal A_k \rvert}$.
 
