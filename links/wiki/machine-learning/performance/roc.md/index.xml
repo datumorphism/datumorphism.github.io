@@ -3,4 +3,6 @@
 $n$ observations, desired confidence level $1-\alpha$, construct confidence sets $C(x)$ using conform methods so that the sets capture the underlying the distribution a new pair $(X_{n+1}, Y_{n+1})$ from the same distribution, $P(Y_{n+1}\in C(X_{n+1})) \le 1-\alpha$</description></item><item><title>Classifier Chains for Multilabel Classification</title><link>https://datumorphism.leima.is/wiki/machine-learning/classification/classifier-chains/</link><pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/classification/classifier-chains/</guid><description>Multi-label problem In some classification problems, we have multilabel labels to be predicted. Many different approaches are proposed to solve such problems.
 Algorithm Level Develop algorithms for multilabel problems, such as
 Decision trees, AdaBoost. Problem Transformation On problem or data level, we can transform the multi-label problem to one or more single label problems.
-Binary Relevance Method Binary relevance method, aka BM, transforms the problem into a single label problem by training a binary classifier for each label.</description></item></channel></rss>
+Binary Relevance Method Binary relevance method, aka BM, transforms the problem into a single label problem by training a binary classifier for each label.
+By doing so, the correlations between the target labels are lost.
+Label Combination Method Label combination method (label power-set method), aka CM, combines the labels into single labels.</description></item></channel></rss>

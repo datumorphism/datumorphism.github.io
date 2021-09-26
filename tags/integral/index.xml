@@ -2,4 +2,4 @@
 $$ \begin{eqnarray} Z_0 &amp;=&amp; \int d^n z \exp\left(-\frac{1}{2} z^\mathrm{T} D z\right) \\ &amp;=&amp; \prod_i \int d z_i \exp\left(-\frac{1}{2} \lambda_i z_i^2\right) \\ &amp;=&amp; \prod_i \sqrt{\frac{2\pi}{\lambda_i}} \\ &amp;=&amp; \sqrt{\frac{(2\pi)^n}{\det A}}. \end{eqnarray} $$
 For an arbitrary matrix $A$,
 $$ Z_J = \int d^n x \exp\left(-\frac{1}{2} x^\mathrm{T} A x + J^\mathrm{T} x\right). $$
-$$ \begin{eqnarray} Z_J &amp;=&amp; \int d^n y \exp\left(-\frac{1}{2} {y}^\mathrm{T} A y + \frac{1}{2} J^\mathrm{T}A^{-1}J\right) \\ &amp;=&amp; \sqrt{\frac{(2\pi)^n}{\det A}} \exp\left(\frac{1}{2} J^\mathrm{T}A^{-1}J\right).</description></item></channel></rss>
+$$ \begin{eqnarray} Z_J &amp;=&amp; \int d^n y \exp\left(-\frac{1}{2} {y}^\mathrm{T} A y + \frac{1}{2} J^\mathrm{T}A^{-1}J\right) \\ &amp;=&amp; \sqrt{\frac{(2\pi)^n}{\det A}} \exp\left(\frac{1}{2} J^\mathrm{T}A^{-1}J\right). \end{eqnarray} $$</description></item></channel></rss>

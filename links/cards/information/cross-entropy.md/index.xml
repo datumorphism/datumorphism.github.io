@@ -4,4 +4,8 @@ Likelihood
 The likelihood of the data is
 $$ p(X=x\mid C=c_i). $$
 Logistic Regression for Two Classes For two classes, the simplest model for the posterior is a linear model,
-$$ \log \frac{p(C=c_1\mid X=x) }{p(C=c_2\mid X=x)} = \beta_0 + \beta_1 \cdot x, $$</description></item></channel></rss>
+$$ \log \frac{p(C=c_1\mid X=x) }{p(C=c_2\mid X=x)} = \beta_0 + \beta_1 \cdot x, $$
+which is equivalent to
+$$ p(C=c_1\mid X=x) = \exp\left(\beta_0 + \beta_1 \cdot x\right) p(C=c_2\mid X=x) . $$
+Why
+The reason that we proposing a linear model for the quantity</description></item></channel></rss>

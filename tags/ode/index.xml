@@ -4,4 +4,7 @@ $$ \frac{dy}{dx} = f(x, y), $$
 we can discretize the equation using a step size $\delta x \cdot$ so that the differential equation becomes
 $$ \frac{y_{n+1} - y_n }{ \delta x } = f(x_n, y_n), $$
 which is also written as
-$$ y_{n+1} = y_n + \delta x \cdot f(x_n, y_n).</description></item></channel></rss>
+$$ y_{n+1} = y_n + \delta x \cdot f(x_n, y_n). \label{euler-method-discretized-form-y-n-plus-1} $$
+This is also called forward Euler differencing. It is first order accurate in $\Delta t$.
+Generally speaking, a simple iteraction will do the work.
+Adams&amp;rsquo; Method Taylor Expansion of Functions</description></item></channel></rss>

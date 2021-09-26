@@ -4,4 +4,6 @@ where $\lambda$ is the eigenvalue.
 We rewrite it in the components form,
 $$ \begin{equation} A_{ij} x_j = \lambda x_i. \label{eqn-eigen-decomp-def} \end{equation} $$
 Mathematically speaking, it is straightforward to find the eigenvectors and eigenvalues.
-Eigenvectors are Special Directions Judging from the definition in Eq.($\ref{eqn-eigen-decomp-def}$), the eigenvectors do not change direction under the operation of the matrix $\mathbf A$.</description></item></channel></rss>
+Eigenvectors are Special Directions Judging from the definition in Eq.($\ref{eqn-eigen-decomp-def}$), the eigenvectors do not change direction under the operation of the matrix $\mathbf A$.
+Reconstruct $\mathbf A$ We can reconstruct $\mathbf A$ using the eigenvalues and eigenvectors.
+First of all, we will construct a matrix of eigenvectors,</description></item></channel></rss>

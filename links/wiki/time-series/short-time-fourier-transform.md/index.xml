@@ -3,4 +3,6 @@ $$ F(\tilde x) = \int f(x) \psi(x;\tilde x) dx. $$
 The choice of $\psi(x;\tilde x)$ gives us different properties.
 Fourier Transform Fourier transform is good for stationary analysis since time is not involved in $F(\omega)$.
 $$ F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt $$
-Short-time Fourier Transform STFT is a Fourier transform with a moving time window $\tau$,</description></item></channel></rss>
+Short-time Fourier Transform STFT is a Fourier transform with a moving time window $\tau$,
+$$ F(\tau,\omega) = \int_{-\infty}^{\infty} f(t) w(t - \tau) e^{-i\omega t} dt. $$
+Moving $\tau$ gives us the ability to investigate Fourier components at different time segments (assuming the window function $w(t-\tau)$ is a step function).</description></item></channel></rss>

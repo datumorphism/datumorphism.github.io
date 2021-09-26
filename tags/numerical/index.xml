@@ -2,4 +2,7 @@
 $$ p \ln \hat p + (1-p) \ln (1-\hat p), $$
 where $p$ is the probability of the label A and $\hat p$ is the predicted probability of label A. Since we have binary classes, $p$ is either 1 or 0. However, the predicted probabilities can be any value between $[0,1]$.
 Probability
-For a very simple case, $\hat p$ might be a sigmoid like expression with exponential in it,</description></item></channel></rss>
+For a very simple case, $\hat p$ might be a sigmoid like expression with exponential in it,
+$$ p \sim \frac{1}{1 + \exp(-x)}, $$
+where $x$ is some kind of input or intermediate input.
+The problem is, exponentials may blow up if $p\to 0$.</description></item></channel></rss>
