@@ -46,7 +46,7 @@ However, a iterative method shows us an approximation and we can approximate the
 S_{\text{LHN}} = 2\alpha m \lambda_1 \mathbf D^{-1} \left( \mathbf I - \frac{\beta}{\lambda_1} \mathbf A \right)^{-1} \mathbf D^{-1},
 {{< /m >}}
 
-where $\mathbf D$ is the matrix $\mathrm{diag} ({d_1, d_2, \cdots})$.
+where $\mathbf D$ is the matrix $\mathrm{diag} ({d_1, d_2, \cdots})$, and $\lambda_1$ is the largest eigenvalue of the adjacency matrix $\mathbf A$.
 
 
 ## Indications of LHN Index
