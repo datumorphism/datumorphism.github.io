@@ -25,6 +25,7 @@ links:
   - "cards/graph/graph-local-overlap-adamic-adar-index.md"
   - "cards/graph/graph-global-overlap-katz-index.md"
   - "cards/graph/graph-global-overlap-leicht-holme-newman-similarity.md"
+  - "cards/graph/graph-global-overlap-random-walk-similarity.md"
 ---
 
 ## Local Statistics
@@ -80,6 +81,7 @@ We can define many different similarity measures $\mathbf S$.
 - Global Overlap Measures
   - {{< e "cards/graph/graph-global-overlap-katz-index.md" >}}
   - {{< e "cards/graph/graph-global-overlap-leicht-holme-newman-similarity.md" >}}
+  - {{< e "cards/graph/graph-global-overlap-random-walk-similarity.md" >}}
 
 
 
