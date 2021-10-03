@@ -20,7 +20,7 @@ For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\b
 \operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert.
 {{< /m >}}
 
-For smaller cut value, the proposed patches $\mathcal A_1, \cdots, $\mathcal A_k$ are more disconnected from the overall graph.
+For smaller cut value, the proposed patches $\mathcal A_1, \cdots, \mathcal A_k$ are more disconnected from the overall graph.
 
 This definition is biased towards smaller graphlets, i.e., smaller subset of nodes will get smaller cut values.
 
