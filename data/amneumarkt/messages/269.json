@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 269,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-27 21:33:35+00:00",
+    "message": "#career\n\nComment: Same for many competitive careers\n\nBeware survivorship bias in advice on science careers\nhttps://www.nature.com/articles/d41586-021-02634-z",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126684508679,
+            "url": "https://www.nature.com/articles/d41586-021-02634-z",
+            "display_url": "nature.com/articles/d41586-021-02634-z",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "Beware survivorship bias in advice on science careers",
+            "description": "Nature - For objective careers advice, talk to those who left science as well as those who stayed.",
+            "photo": {
+                "_": "Photo",
+                "id": 5950409921839344945,
+                "access_hash": 3236233399700054087,
+                "file_reference": "b'\\x00al-=]*\\xffw-!\\x95M\\xff\\x13=\\xb1t\\xf5a\\x1b'",
+                "date": "2021-09-27 10:42:01+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xcf]\\x861\\x8f\\xbd\\x9a~>\\\\\\x8eMW\\x88\\xe1\\xb9\\xe9WbhDM\\xbc\\x12s\\xc1\\xfci\\x88\\x8a6$\\xf2\\x9c`\\xff\\x00*WS\\xb1\\x1b=\\xa9\\x84\\x95w>\\xb9\\xa7\\xcaI\\x81@\\xech\\x022\\xd8\\x1e\\xff\\x00J)\\xa5\\x80A\\x93\\xcd\\x14\\xee+\\x11\\xa9\\x0b\\x83\\x9a\\xb3\\x1c\\xa8\\x90\\xb0+\\x92{\\xd1EID.\\xf9\\x04\\xf7\\xa0\\xccp3\\xdcf\\x8a(\\x022sE\\x14R\\x19'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 15090
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 59841
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 576,
+                        "sizes": [
+                            9263,
+                            23329,
+                            34407,
+                            50795,
+                            91280
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 107,
+            "length": 50
+        }
+    ],
+    "views": 121,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-27 21:34:51+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "career"
+    ]
+}

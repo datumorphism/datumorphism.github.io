@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 271,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-10-02 14:50:24+00:00",
+    "message": "#visualization \n\nI like this. I was testing visualization using antv's G6. It is not for data analysis as it is quite tedious to generate visualizations.\n\nObservable's plot is a much easier fluent package for data analysis.\n\nhttps://github.com/observablehq/plot",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030731842279,
+            "url": "https://github.com/observablehq/plot",
+            "display_url": "github.com/observablehq/plot",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - observablehq/plot: A concise API for exploratory data visualization",
+            "description": "A concise API for exploratory data visualization. Contribute to observablehq/plot development by creating an account on GitHub.",
+            "photo": {
+                "_": "Photo",
+                "id": 5963989221154860223,
+                "access_hash": -4298250030095394007,
+                "file_reference": "b'\\x00al-=B\\xbd\\xc2[\\xcdI\\x8bVK\\x8f\\xa1\\xf2\\x84\\xe2\\xb4.'",
+                "date": "2021-10-02 14:44:59+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd6f`xPG\\xd6\\x90\\xbb\\xf6Q\\xff\\x00}T\\x94q@\\x11\\x97\\x93\\x1c \\xff\\x00\\xbe\\xa9\\xb2\\xca\\xd1[<\\xa5rT\\x13\\x80jn)8\\xc7lP\\x05K{\\x89L\\xe9\\x1c\\x846\\xf4\\xde\\x08\\x18\\xc7\\xff\\x00[\\x9a*\\xc4PE\\x0e|\\xb8\\xd5s\\xd7\\x02\\x8a\\x00\\x0b\\x9fj7\\x9e:QEcvU\\x86\\xf9\\x87=\\xa9\\xdb\\xcf=(\\xa2\\x8b\\xb0\\xb1\\x14\\xb32&@\\x19\\x1e\\xb4QERl\\xa4\\x95\\x8f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9140
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 28332
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4452,
+                            9747,
+                            20300,
+                            27740,
+                            41705
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityStrike",
+            "offset": 183,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 225,
+            "length": 36
+        }
+    ],
+    "views": 115,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-10-02 14:50:49+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

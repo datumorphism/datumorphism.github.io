@@ -1,0 +1,97 @@
+{
+    "_": "Message",
+    "id": 278,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-10-16 14:19:11+00:00",
+    "message": "\"Fail\"\nWhen visualizing data, the units being used have to be specified for any values shown. \n\nBut the style of the charts is attractive. :)\n\nBy chungischef\nAvailable at:\nhttps://www.reddit.com/r/dataisbeautiful/comments/q958if/recreation_of_a_classic_population_density_map/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5429126133351298171,
+            "access_hash": -281400786538148273,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x16al-=\\x8483%\\x87I\\x05+m\\xef\\xa2\\x1b_\\x908\\xc9'",
+            "date": "2021-10-16 14:19:11+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01((\\xb9urap\\x80g#=j\\x1f\\xb6\\x9f\\xee\\xff\\x00\\xe3\\xd5-\\xd2F\\xd2\\r\\xeaI\\xc7cQ\\x08\\xa1\\xdb\\xf7[\\xf3\\xa9\\x18\\xe1rI\\x1cu\\xf74}\\xa4\\xff\\x00w\\xf54\\x828\\xb8;[\\xb7z\\x7f\\x95\\x17\\x1f!\\xfc\\xe8\\x01\\xf0Ndm\\xb8\\xed\\x9a)a\\x8d\\x11\\xf2\\x01\\xce(\\xa41f@\\xcf\\xces\\x8ag\\x941\\xc6jg\\x19n=)\\xa1O\\xa5\\x00F#]\\xa0\\xf3\\x8a~\\xcaP?v\\x068\\xc7Zq\\xcf\\xa5\\x00\"\\x02\\x18f\\x8ap\\xceFF(\\xa0\\x05 \\xe7<R\\x00\\xc0t\\x1f\\x9d\\x14R\\x00\\x01\\x84ax\\xe9\\x8e\\xb4\\xa7\\'\\xb0\\xfc\\xe8\\xa2\\x80\\x0er(\\xa2\\x8ab?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 320,
+                    "size": 41126
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 800,
+                    "size": 222484
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 1280,
+                    "sizes": [
+                        21109,
+                        80161,
+                        244485,
+                        352572,
+                        463415
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 172,
+            "length": 104
+        }
+    ],
+    "views": 51,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-10-16 14:20:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

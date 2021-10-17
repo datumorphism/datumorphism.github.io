@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5916713910537399321,
                 "access_hash": 7665426360193813538,
-                "file_reference": "b'\\x00aFH\\xf1\\xacCj\\xd5\\xb7}\\xe8?\\xb9\\r\\xb7_\\x9f\\xfc\\\\e'",
+                "file_reference": "b'\\x00al-A\\xfd\\xe10X{M\\x036P\\xc5\\nGn\\x06\\xcd\\x1d'",
                 "date": "2021-06-10 19:12:50+00:00",
                 "sizes": [
                     {
@@ -2084,38 +2084,67 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "In the ant colony system algorithm, the original ant system was modified in three aspects: (i) the edge selection is biased towards exploitation (i.e. favoring the probability of selecting the shortest edges with a large amount of pheromone); (ii) while building a solution, ants change the pheromone level of the edges they are selecting by applying a local pheromone updating rule; (iii) at the end of each iteration, only the best ant is allowed to update the trails by applying a modified global pheromone updating rule."
-                                        },
-                                        {
-                                            "_": "TextSuperscript",
-                                            "text": {
-                                                "_": "TextConcat",
-                                                "texts": [
-                                                    {
-                                                        "_": "TextAnchor",
-                                                        "text": {
-                                                            "_": "TextEmpty"
-                                                        },
-                                                        "name": "back_cite_ref-M._Dorigo_et_L.M._Gambardella_26-0"
-                                                    },
-                                                    {
-                                                        "_": "TextUrl",
-                                                        "text": {
-                                                            "_": "TextPlain",
-                                                            "text": "[26]"
-                                                        },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-M._Dorigo_et_L.M._Gambardella-26",
-                                                        "webpage_id": 0
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
+                                    "_": "TextPlain",
+                                    "text": "In the ant colony system algorithm, the original ant system was modified in three aspects:"
                                 }
+                            },
+                            {
+                                "_": "PageBlockOrderedList",
+                                "items": [
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "The edge selection is biased towards exploitation (i.e. favoring the probability of selecting the shortest edges with a large amount of pheromone);"
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "While building a solution, ants change the pheromone level of the edges they are selecting by applying a local pheromone updating rule;"
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": "At the end of each iteration, only the best ant is allowed to update the trails by applying a modified global pheromone updating rule."
+                                                },
+                                                {
+                                                    "_": "TextSuperscript",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextAnchor",
+                                                                "text": {
+                                                                    "_": "TextEmpty"
+                                                                },
+                                                                "name": "back_cite_ref-M._Dorigo_et_L.M._Gambardella_26-0"
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "[26]"
+                                                                },
+                                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-M._Dorigo_et_L.M._Gambardella-26",
+                                                                "webpage_id": 0
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
                             },
                             {
                                 "_": "PageBlockSubheader",
@@ -2599,7 +2628,7 @@
                         "_": "Photo",
                         "id": 6029532234568018011,
                         "access_hash": 8348392293663363462,
-                        "file_reference": "b'\\x00aFH\\xf1\\xeb\\x97\\x9f\\x8e\\x89\\x9e\\xce\\xb8+\\xae(\\xcc\\xa0\\xb5\\x1aA'",
+                        "file_reference": "b'\\x00al-A\\xb9\\xcc\\x92Bn\\x1b3\\x8c\\x1b\\x03\\xe50\\x88\\xc8.-'",
                         "date": "2018-11-21 05:29:56+00:00",
                         "sizes": [
                             {
@@ -2639,7 +2668,7 @@
                         "_": "Photo",
                         "id": 5795321143861815441,
                         "access_hash": -125778851639702778,
-                        "file_reference": "b'\\x00aFH\\xf13,\\xa9\\x0f\\xa7\\x1c\\xc5\\xd4!t9\\x92\\xd8YtS'",
+                        "file_reference": "b'\\x00al-A\\xd2\\xad/n\\x9e\\xec\\xff\\xe80+<^f\\x8b\\x12('",
                         "date": "2018-12-09 14:51:29+00:00",
                         "sizes": [
                             {
@@ -2681,7 +2710,7 @@
                         "_": "Document",
                         "id": 5892089874730713799,
                         "access_hash": 3518189535180123590,
-                        "file_reference": "b'\\x00aFH\\xf1\\xde\\x05V\\x8d\\x87w\\xd2\\xf3\\xbb\\xd3\\x80fuqS\\xdd'",
+                        "file_reference": "b'\\x00al-A\\x03\\xa8 \\x7f\\xdb\\xc2\\x9an\\x0bs\\xab5\\xa7\\t\\x17A'",
                         "date": "2021-06-02 21:06:14+00:00",
                         "mime_type": "image/png",
                         "size": 350,
@@ -2717,7 +2746,7 @@
                         "_": "Document",
                         "id": 5892302355352781466,
                         "access_hash": 4401266620872188667,
-                        "file_reference": "b'\\x00aFH\\xf1U&8?(\\xb2$\\xd2?L\\xcc\\xfb\\x98\\xf2\\x8c\\x1c'",
+                        "file_reference": "b\"\\x00al-A\\xcc\\x13\\xcbIn\\xba\\x04\\xddw\\xf4\\xe5\\x9f\\xe1\\xbfa'\"",
                         "date": "2021-06-02 21:06:14+00:00",
                         "mime_type": "image/png",
                         "size": 394,
@@ -2753,7 +2782,7 @@
                         "_": "Document",
                         "id": 5892135822290846443,
                         "access_hash": -807097538076905803,
-                        "file_reference": "b'\\x00aFH\\xf1\\xb2Zh\\t\\xd4X\\xa2E\\x97K\\xb3\\xdfU\\xe4\\x13f'",
+                        "file_reference": "b'\\x00al-AE\\x97\\x98M\\x03M\\x92\\xd6\\xc0`N^*\\xb4\\xf0\\xc8'",
                         "date": "2021-06-02 21:06:05+00:00",
                         "mime_type": "image/png",
                         "size": 423,
@@ -2789,7 +2818,7 @@
                         "_": "Document",
                         "id": 6016042854231572575,
                         "access_hash": 4390122978315802329,
-                        "file_reference": "b'\\x00aFH\\xf19\\xad\\x0e4\\xf0b\\x9b\\xde\\x9d>Asl\\x1d<-'",
+                        "file_reference": "b'\\x00al-A\\x0f\\x90%T~[\\xcd\\x08;\\x88\\x13\\xcb\\x95\\x13)\\xbf'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 1269,
@@ -2820,7 +2849,7 @@
                         "_": "Document",
                         "id": 6015767100151300181,
                         "access_hash": 5060417737205835843,
-                        "file_reference": "b'\\x00aFH\\xf1\\x84\\xdfY/\\xfc\\xf1\\xe8m\\xf37F{\\x94\\xec\\xfe\\x9d'",
+                        "file_reference": "b'\\x00al-A&\\xc0\\xdd4\\x9f\\x9a\\x89+&\\xb2 \\xd2\\xcd\\x9d\\xa0w'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 969,
@@ -2851,7 +2880,7 @@
                         "_": "Document",
                         "id": 6016103185637179480,
                         "access_hash": -4911532174612303821,
-                        "file_reference": "b'\\x00aFH\\xf1D7\\xa7\\xfa\\x93\\xbe\\x16q\\x9d\\x0f\\xa3:\\xa0d]\\xcd'",
+                        "file_reference": "b'\\x00al-A\\xaa(E\\x7f\\xde35\\xde\\xb7\\x01]\\xa2\\x84%\\xce\\x9d'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 730,
@@ -2882,7 +2911,7 @@
                         "_": "Document",
                         "id": 6016215370182950999,
                         "access_hash": -9066743641411304357,
-                        "file_reference": "b'\\x00aFH\\xf1\\xa7\\x98\\xb4\\xf6=\\xdc\\x1fL\\x81p\\xb5\\xd4L\\xf9\\xd0\\x93'",
+                        "file_reference": "b'\\x00al-A\\xc0fs|\\xd2f\\x1az\\xcd\\xe3\\x1fn\\x82\\xc1\\x9c\\x02'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 625,
@@ -2913,7 +2942,7 @@
                         "_": "Document",
                         "id": 6016179155018711114,
                         "access_hash": -6262577932427997634,
-                        "file_reference": "b'\\x00aFH\\xf1\\xe4Nm\\xafK\\xee\\x1b\\xc7\\x95E\\xdf\\x16\\xd4\\x1b\\xe3\\xb8'",
+                        "file_reference": "b'\\x00al-A\\x05\\xfaL<\\r1H\\xb91\\xa3\\xa7+\\x06\\xbe\\xab\\x1e'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 7395,
@@ -2944,7 +2973,7 @@
                         "_": "Document",
                         "id": 5784194463689605292,
                         "access_hash": 2549461989269537425,
-                        "file_reference": "b'\\x00aFH\\xf1\\xc7E\\xb1\\x1d\\xe0\\x8e5\\xd3D@\\x8a\\xa9\\x963\\x8b\\x9d'",
+                        "file_reference": "b'\\x00al-A\\x88\\x9bFA\\x04.y\\xb8Cr\\xb2\\xc3~&\\x8fJ'",
                         "date": "2018-12-05 20:26:30+00:00",
                         "mime_type": "image/png",
                         "size": 385,
@@ -2975,7 +3004,7 @@
                         "_": "Document",
                         "id": 5786412810003021922,
                         "access_hash": -3904168149537096276,
-                        "file_reference": "b'\\x00aFH\\xf1\\x8e\\t\\xce;\\xb6_\\x02\\xc6\\xad\\xf6\\xe8\\x02\\x02G\\x85Y'",
+                        "file_reference": "b\"\\x00al-A\\xb4\\xc8\\x07'\\x80S\\xb1\\x96\\xb0\\x7f\\xd7o_^\\xd3\\xcf\"",
                         "date": "2018-12-06 08:25:45+00:00",
                         "mime_type": "image/png",
                         "size": 629,
@@ -3006,7 +3035,7 @@
                         "_": "Document",
                         "id": 6015922187125391428,
                         "access_hash": -5792859775550193076,
-                        "file_reference": "b'\\x00aFH\\xf1)N\\x05\\x8f~\\xb7\\x00\\x02\\xaa\\x1ax\\xc7\\x10\\xdd\\xc9p'",
+                        "file_reference": "b'\\x00al-A\\x1f\\xf7\\xfdC\\xd8\\x01\\xcd\\xea\\xfe\\xa5\\x1d\\xa7\\x12\\xd9\\xf7Q'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 1124,
@@ -3037,7 +3066,7 @@
                         "_": "Document",
                         "id": 5840137903073656971,
                         "access_hash": -5585981323449387691,
-                        "file_reference": "b\"\\x00aFH\\xf1\\x93\\x87\\xbe\\xae\\x81\\xa1G\\x8bjK\\xa1M\\x15\\xa3'%\"",
+                        "file_reference": "b'\\x00al-A\\xf7\\x9e\\x0e.\\x11q\\x98\\xddZ?\\x8a\\x03\\xb1\\t\\xdc<'",
                         "date": "2018-12-24 12:49:25+00:00",
                         "mime_type": "image/png",
                         "size": 423,
@@ -3068,7 +3097,7 @@
                         "_": "Document",
                         "id": 5908094237135602309,
                         "access_hash": 3365447550121156264,
-                        "file_reference": "b'\\x00aFH\\xf1\\xae\\xe1\\xb1E\\xbd\\xe5\\xdf\\xbaCf\\t&z\\x16D\\xf3'",
+                        "file_reference": "b'\\x00al-Awn5\\x0e\\xb8\\xc6j3\\x01s\\xa2\\xd2\\x81\\x12!\\xdb'",
                         "date": "2020-11-26 11:34:11+00:00",
                         "mime_type": "image/png",
                         "size": 443,
@@ -3104,7 +3133,7 @@
                         "_": "Document",
                         "id": 6018253499668627516,
                         "access_hash": -6410939116674540772,
-                        "file_reference": "b'\\x00aFH\\xf1\\x18\\x001\\xcb*4\\xc5\\x06~\\x16\\x87\\xfa\\xf8\\x91<\\x02'",
+                        "file_reference": "b'\\x00al-A\\x02a\\xcft*\\x00C\\xcb\\x1f1\\xc2&\\xb6D\\xb7\\xdd'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 533,
@@ -3135,7 +3164,7 @@
                         "_": "Document",
                         "id": 6015754558846795844,
                         "access_hash": -4680837493119328879,
-                        "file_reference": "b'\\x00aFH\\xf1d7\\x9a]D|}/\\xb6\\xc8\\x8d\\xb0\\xe7\\xabq\\x93'",
+                        "file_reference": "b'\\x00al-AW7\\x9b\\xf2\"\\xbe[\\x11\\xacH\\x96\\x0c\\xf9B\"|'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 653,
@@ -3166,7 +3195,7 @@
                         "_": "Document",
                         "id": 6040498896231203421,
                         "access_hash": 6483218345616551804,
-                        "file_reference": "b'\\x00aFH\\xf1\\xb7\\x9d\\xa7\\xd1\\x8b\\xcb<UH\\x11ZL\\xd2]\\xca\\xdf'",
+                        "file_reference": "b'\\x00al-Aeq\\x19v\\xe8\\xec\\x04\\xdaCel\\xf7\\xdc\\xe52\\t'",
                         "date": "2021-01-10 00:00:17+00:00",
                         "mime_type": "image/png",
                         "size": 4392,
@@ -3202,7 +3231,7 @@
                         "_": "Document",
                         "id": 5853736469612462415,
                         "access_hash": 6644662219406320651,
-                        "file_reference": "b'\\x00aFH\\xf1U\\xea\\xa4\\x99x\\x9a\\x11\\xf3V\\xc6\\x17\\x85\\x87\\xd8\\xe7^'",
+                        "file_reference": "b'\\x00al-A\\xfd\\x0c~\\x1b\\xcf\\xf1\\xde\\x86\\xe0\\x8eO\\x01\\x88\\x8b=\\xc2'",
                         "date": "2019-10-15 21:20:28+00:00",
                         "mime_type": "image/png",
                         "size": 368,
@@ -3238,7 +3267,7 @@
                         "_": "Document",
                         "id": 5892326089342059181,
                         "access_hash": 3823574118576540217,
-                        "file_reference": "b'\\x00aFH\\xf1\\xab3I\\xf3v/\\xfc\\xaf\\xa7\\xbep\\x9c\\xd0\\x08\\xe5~'",
+                        "file_reference": "b'\\x00al-A\\xa3r=\\x92i$d,j\\x85\\xfa,\\x9c\\xbcc\\x1b'",
                         "date": "2021-06-02 21:06:05+00:00",
                         "mime_type": "image/png",
                         "size": 488,
@@ -3274,7 +3303,7 @@
                         "_": "Document",
                         "id": 6018206452596867151,
                         "access_hash": -7323465724427891001,
-                        "file_reference": "b'\\x00aFH\\xf1k`\\x01\\x0b\\xf2\\xdeS\\xe7\\x06\\xd1s\\x04\\x92\\t\\xdc\\xd0'",
+                        "file_reference": "b'\\x00al-An\\x86\\x16\\x05\\xbaR`:HLE>-)\\x8b\\xf7'",
                         "date": "2018-11-16 22:50:14+00:00",
                         "mime_type": "image/png",
                         "size": 1105,
@@ -3305,7 +3334,7 @@
                         "_": "Document",
                         "id": 6016146723720659055,
                         "access_hash": -7104062069170931473,
-                        "file_reference": "b'\\x00aFH\\xf1/\\x84\\x84y\\x01G@\\xa9:\\xb2Mq\\xfe!\\x8f@'",
+                        "file_reference": "b\"\\x00al-A\\x0e/\\xba\\xa4\\xd2'\\xae\\x83TP\\x14a#\\xcc\\x81K\"",
                         "date": "2018-11-16 22:50:14+00:00",
                         "mime_type": "image/png",
                         "size": 9882,
@@ -3336,7 +3365,7 @@
                         "_": "Document",
                         "id": 5786085335926571091,
                         "access_hash": -2467487389902944513,
-                        "file_reference": "b'\\x00aFH\\xf1x\\xff:\\xbe\\xf3i\\xb6\\x96\\xe5\\xae\\x11\\x1buh\\xbcF'",
+                        "file_reference": "b'\\x00al-A\\xb5|\\xd6\"\\x03f\\x87{oD\\x05j\\xf7\\x153\\xa8'",
                         "date": "2018-12-06 10:02:48+00:00",
                         "mime_type": "image/png",
                         "size": 588,
@@ -3367,7 +3396,7 @@
                         "_": "Document",
                         "id": 5783819891001786518,
                         "access_hash": 6840401018834118721,
-                        "file_reference": "b'\\x00aFH\\xf19\\x14\\xf28\\x0c\\x17]u\\xf4&\\xd8\\xcd\\x1e\\x8d\\x05\\xa4'",
+                        "file_reference": "b'\\x00al-A\\x9f\\xbf\\x01\\x07\\xa0\\xd9&\\xb5\\xec\\xfdy\\xcf\\xda\\xfbS\\x8b'",
                         "date": "2018-12-05 20:01:03+00:00",
                         "mime_type": "image/png",
                         "size": 583,
@@ -3416,7 +3445,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1013,
+        "replies_pts": 1065,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

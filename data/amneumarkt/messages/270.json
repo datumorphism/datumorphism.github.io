@@ -1,0 +1,91 @@
+{
+    "_": "Message",
+    "id": 270,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-28 11:10:08+00:00",
+    "message": "#visualization\n\nNeural Networks visualized in 3D\n\nSource:\nhttps://youtu.be/3JQ3hYko51Y",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5375281137222422944,
+            "access_hash": 6764751924485560862,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x0eal-=Q\\x8d\\x87\\x17\\xd8\\x0f\\xd4\\xba\\x85\\xd2\\x85\\x96\\xb1\\x13\\x08\\x9b'",
+            "date": "2021-09-28 11:10:08+00:00",
+            "mime_type": "video/mp4",
+            "size": 43253100,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "yt5s.com-Neural Network 3D Simulation(720p).mp4"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x16(\\xc6\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 180,
+                    "size": 1350
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 58,
+            "length": 28
+        }
+    ],
+    "views": 124,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-28 11:10:08+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

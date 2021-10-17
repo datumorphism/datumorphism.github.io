@@ -1,0 +1,92 @@
+{
+    "_": "Message",
+    "id": 277,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-10-16 14:19:07+00:00",
+    "message": "",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5429126132895059708,
+            "access_hash": -5302826677530854799,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x15al-=MW\\xbd\\x07Z\\x92\\x89\\x92\\\\G\\xe2\\xdb\\x00\\xc3\\x82H'",
+            "date": "2021-10-16 14:19:07+00:00",
+            "mime_type": "image/webp",
+            "size": 37142,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeImageSize",
+                    "w": 458,
+                    "h": 426
+                },
+                {
+                    "_": "DocumentAttributeSticker",
+                    "alt": "",
+                    "stickerset": {
+                        "_": "InputStickerSetEmpty"
+                    },
+                    "mask": false,
+                    "mask_coords": null
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "b671cdubuqt71.webp"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01%(\\xb9q+\\xa3\\x00\\xa7\\x1czT\"y\\x0f~\\xde\\x95<\\xc0\\x16\\x19\\x1d\\xa9\\x81F:T\\x94(\\x95\\xf1\\x9c\\xf6\\xf4\\xa5\\xf3[\\xd6\\x80\\x06\\xd1\\xd2\\x9f\\xb5r8\\xa0\\x05\\x89\\x8b\\x12\\t\\xedE9\\x00\\r\\xc7\\xa5\\x14\\x80k\\xa8-\\xc8\\xedH#^x\\xa7\\x1d\\xa5\\xb9\\xf4\\xa4\\x01rzP\\x02l]\\xbd;R\\x94^8\\xa3\\x0b\\xb7<t\\xa5!8\\xe9@\\n\\xaa\\x15\\xb8\\x1d\\xa8\\xa1B\\x86\\xe3\\x1d;Q@\\x03(n\\xbf\\xca\\x9b\\xe5\\x8fo\\xc8QE\\x00/\\x96=\\xbf*<\\xb1\\xe8?*(\\xa0\\x07*\\x85\\xe8\\x07\\xe5E\\x14P\\x07'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 298,
+                    "size": 30965
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 52,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-10-16 14:18:34+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

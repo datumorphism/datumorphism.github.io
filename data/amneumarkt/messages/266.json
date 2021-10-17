@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 266,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-19 18:51:53+00:00",
+    "message": "#ML \n\nPhys. Rev. X 11, 031059 (2021) - Statistical Mechanics of Deep Linear Neural Networks: The Backpropagating Kernel Renormalization\nhttps://journals.aps.org/prx/abstract/10.1103/PhysRevX.11.031059",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2693430501947194356,
+            "url": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.11.031059",
+            "display_url": "journals.aps.org/prx/abstract/10.1103/PhysRevX.11.031059",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Physical Review X",
+            "title": "Statistical Mechanics of Deep Linear Neural Networks: The Backpropagating Kernel Renormalization",
+            "description": "A new theory of linear deep neural networks allows for the first statistical study of their ``weight space,'' providing insight into the features that allow such networks to generalize so well.",
+            "photo": {
+                "_": "Photo",
+                "id": 5916939739917823164,
+                "access_hash": -1455433425204244773,
+                "file_reference": "b'\\x00al-=\\x92%\\xadb\\xdeh\\xc6\\xe4\\xbe\\xab\\x92\\xcf\\xb4\\x1a+]'",
+                "date": "2021-09-16 15:12:52+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01((\\xd5.G\\xa5!\\x94\\xe7\\x1cf\\xa1\\x9eM\\xb1\\x16\\x1d\\xb8\\xe9U\\xfc\\xcevq\\x8c\\xe7\\xadQ7.\\x99O\\xa0\\xa43\\x91\\xd8SMFz\\x9avB\\xbb$7,;\\n*\\x06\\xe2\\x8avB\\xbb\\x0b\\xaem\\xdb\\x1f\\xde\\xfe\\xb5\\x11\\xcf\\xda\\x97\\x93\\xd3\\xfb\\xb5zD\\x0e\\xa4\\x1a\\xaf\\xe4\\x90C`\\xe4\\x1f^zT\\x94;s\\xe5\\xb3\\xd3<|\\xb4\\x9f\\xe7\\xa5\\r\\x00'9\\xfd(\\x0b\\xb4b\\x98\\x98\\xc9\\x06@\\x00w\\xa2\\x9ch\\xaa$\\xbb\\xb0Q\\xe5\\x8fz(\\xac\\xaeka<\\xa5\\xf7\\xa4\\xf2W\\xde\\x8a(\\xbb\\x0b!>\\xce\\x9e\\xf4QE\\x17ad\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 200,
+                        "h": 200,
+                        "size": 11198
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 136,
+            "length": 64
+        }
+    ],
+    "views": 134,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-19 18:53:39+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

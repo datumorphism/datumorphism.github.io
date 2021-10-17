@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 273,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-10-05 18:36:06+00:00",
+    "message": "#data \n\nFinally.\n\nAnnouncing Streamlit 1.0! \ud83c\udf88\n\nhttps://blog.streamlit.io/announcing-streamlit-1-0/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4336433389007174186,
+            "url": "https://blog.streamlit.io/announcing-streamlit-1-0/",
+            "display_url": "blog.streamlit.io/announcing-streamlit-1-0",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Streamlit",
+            "title": "Announcing Streamlit 1.0! \ud83c\udf88",
+            "description": "Streamlit used to be the simplest way to write data apps. Now it's the most powerful.",
+            "photo": {
+                "_": "Photo",
+                "id": 5977602132884434136,
+                "access_hash": 4766831957846607772,
+                "file_reference": "b'\\x00al-=\\x1eq\\xe5\\xc4\\x1bM\\xe5P\\xbf\\xcc\\x88Pu\\xfb\\xd6\\xef'",
+                "date": "2021-10-06 16:06:22+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x18(\\xd9\\xa2\\x8aN{\\x01@\\x0bE&[\\xd0~t\\x83q\\xfb\\xc0\\x01\\xech\\x01\\xd4QE\\x00\\x14QE\\x00\\x14QE\\x00\\x14QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 188,
+                        "size": 2246
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 471,
+                        "size": 12098
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 753,
+                        "size": 19382
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2356,
+                        "h": 1386,
+                        "sizes": [
+                            18998,
+                            22529,
+                            26098,
+                            28708,
+                            44455
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 48,
+            "length": 51
+        }
+    ],
+    "views": 138,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-10-05 18:36:27+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

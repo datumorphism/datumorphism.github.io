@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 275,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-10-12 20:08:51+00:00",
+    "message": "#ML\n\nDuan T, Avati A, Ding DY, Thai KK, Basu S, Ng AY, et al. NGBoost: Natural Gradient Boosting for probabilistic prediction. arXiv [cs.LG]. 2019. Available:\u00a0http://arxiv.org/abs/1910.03225\n\n(I had it on my reading list for a long time. However, I didn't read it until today because the title and abstract are not attractive at all.)\nBut this is a good paper. It goes deep to dig out the fundamental reasons why some methods work and others don't. \n\nWhen inferring probability distributions, it is straightforward to come up with methods with parametrized distributions (statistical manifolds). Then, by tuning the parameters, we adjust the distribution to fit our dataset the best.\nThe problem is the choice of the objective function and optimization methods. This paper mentioned a most generic objective function and a framework to optimize the model along the natural gradient instead of just the gradient w.r.t. the parameters.\nDifferent parametrizations of the objective is like coordinate transformations and chain rule only works if the transformations are in a \"flat\" space but such \"flat\" space is not necessarily a good choice for a high dimensional problem. For a space that is approximately flat in a small region, we can define distance like what we do in differential geometry[^1]. Meanwhile, just like \"covariant derivatives\" in differential geometry, some kind of covariant derivative can be found on statistical manifolds and they are called \"natural derivatives\".\nDescending in the direction of natural derivatives is navigating the landscape more efficiently.\n\n\n\n[^1]: This a Riemannian space",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 159,
+            "length": 31
+        }
+    ],
+    "views": 90,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-10-13 12:37:49+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

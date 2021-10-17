@@ -1,0 +1,58 @@
+{
+    "_": "Message",
+    "id": 267,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-09-20 20:46:09+00:00",
+    "message": "#ML #fun\n\nI read about the story of using tensorflow in google translate [^Pointer2019].\n\n> \u2026 Google Translate. Originally, the code that handled translation was a weighty 500,000 lines of code. The new, TensorFlow-based system has approximately 500, and it performs better than the old method.\n\nThis is crazy. Think about the maintenance of the code. A single person easily maintains 500 lines of code. 500,000 lines? No way.\n\nReference:  \n[^Pointer2019]: Pointer I. Programming PyTorch for Deep Learning: Creating and Deploying Deep Learning Applications. O\u2019Reilly Media; 2019.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 4
+        }
+    ],
+    "views": 163,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-09-20 20:45:15+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML",
+        "fun"
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "_": "Message",
+    "id": 274,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-10-09 05:55:04+00:00",
+    "message": "#visualization #art #fun\n\nMore like a blog post\u2026\nBut the visualisation is cool. I posted it as a comment.\n\n[2109.15079] Asimov's Foundation -- turning a data story into an NFT artwork\nhttps://arxiv.org/abs/2109.15079",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 15,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 20,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 184,
+            "length": 32
+        }
+    ],
+    "views": 102,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1065,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 401,
+        "read_max_id": 401
+    },
+    "edit_date": "2021-10-09 06:06:13+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization",
+        "art",
+        "fun"
+    ]
+}
