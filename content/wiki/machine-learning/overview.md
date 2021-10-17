@@ -17,6 +17,12 @@ references:
   - name: "Domingos, P. (2012). A few useful things to know about machine learning. Communications of the ACM, 55 (10), 78–87."
     link: "https://doi.org/10.1145/2347736.2347755"
     key: "Domingos2012"
+  - name: "Abu-Mostafa, Yaser S and Magdon-Ismail, Malik and Lin, Hsuan-Tien. Learning from Data. 2012. Available: https://www.semanticscholar.org/paper/Learning-From-Data-Abu-Mostafa-Magdon-Ismail/1c0ed9ed3201ef381cc392fc3ca91cae6ecfc698"
+    link: "https://www.semanticscholar.org/paper/Learning-From-Data-Abu-Mostafa-Magdon-Ismail/1c0ed9ed3201ef381cc392fc3ca91cae6ecfc698"
+    key: "Abu-Mostafa2012"
+  - name: "Deckert D-A. Advanced Topics in Machine Learning. In: Advanced Topics in Machine Learning [Internet]. Apr 2017 [cited 17 Oct 2021]. Available: https://www.mathematik.uni-muenchen.de/~deckert/teaching/SS17/ATML/"
+    link: "https://www.mathematik.uni-muenchen.de/~deckert/teaching/SS17/ATML/"
+    key: "Deckert2017"
 links:
   - cards/machine-learning/learning-theories/learning-problem.md
 ---
@@ -32,6 +38,11 @@ In the core of machine learning models, we have three components[^Domingos2012]:
 
 
 {{< figure src="../assets/overview/three-components-of-learning-algorithms.png" caption="Table from Domingos2012">}}
+
+
+Abu-Mostafa, Magdon-Ismail, and Lin also summarized machine learning using the following chart [^Abu-Mostafa2012] [^Deckert2017]. Utilimately, we need to find an approximation $g$ of the true map $f$ from features $\mathcal X$ to targets $\mathcal Y$ on a specific probability distribution of features $P$. This process is done by using an algorithm to select some hypothesis that works.
+
+{{< figure src="../assets/overview/abu-mostafa-magdon-lin-ml-framework.png" caption="From the book *Learning From Data* by Abu-Mostafa, Magdon-Ismail, and Lin. I am using a version by Deckert." >}}
 
 
 
@@ -59,3 +70,5 @@ There are many objectives in machine learning. Two of the most applied objective
 
 
 [^Domingos2012]: {{< cite key="Domingos2012" >}}
+[^Abu-Mostafa2012]: {{< cite key="Abu-Mostafa2012">}}
+[^Deckert2017]: {{< cite key="Deckert2017" >}}
