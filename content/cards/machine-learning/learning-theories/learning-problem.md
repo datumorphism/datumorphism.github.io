@@ -12,6 +12,7 @@ references:
 links:
   - cards/machine-learning/learning-theories/empirical-risk-minimization.md
   - cards/machine-learning/learning-theories/structural-risk-minimization.md
+  - wiki/learning-theory/vc-dimension.md
 published: true
 ---
 

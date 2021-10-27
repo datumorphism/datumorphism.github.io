@@ -25,6 +25,7 @@ references:
     key: "Deckert2017"
 links:
   - cards/machine-learning/learning-theories/learning-problem.md
+  - wiki/learning-theory/vc-dimension.md
 ---
 
 
