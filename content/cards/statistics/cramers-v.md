@@ -9,8 +9,10 @@ tags:
 references:
 - name: Cramér's V
   link: https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V
-published: false
+links:
+  - wiki/statistics/correlation-analysis-chi-square.md
+published: true
 ---
 
-## Definition
+
 
