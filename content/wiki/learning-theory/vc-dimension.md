@@ -13,6 +13,9 @@ references:
   - name: "Deckert D-A. Advanced Topics in Machine Learning. In: Advanced Topics in Machine Learning [Internet]. Apr 2017 [cited 17 Oct 2021]. Available: https://www.mathematik.uni-muenchen.de/~deckert/teaching/SS17/ATML/"
     link: "https://www.mathematik.uni-muenchen.de/~deckert/teaching/SS17/ATML/"
     key: "Deckert2017"
+  - name: "Zhang C, Bengio S, Hardt M, Recht B, Vinyals O. Understanding deep learning requires rethinking generalization. arXiv [cs.LG]. 2016. Available: http://arxiv.org/abs/1611.03530"
+    link: "http://arxiv.org/abs/1611.03530"
+    key: "Zhang2016"
 weight: 3
 links:
   - cards/machine-learning/learning-theories/set-shatter.md
@@ -77,9 +80,37 @@ d_{\text{VC}}(\mathcal H) = m_t.
 
 For some $\mathcal H$, we have $\Pi_{\mathcal H}(m) = 2^m$ for all $m$. These hypothesis sets have $d_{\text{VC}}(\mathcal H) = \infty$.
 
+## Why Do We Care about the VC Dimension
+
+Why is learning from data feasible? A learning process is the selection of good hypotheses from $\mathcal H$ using a data sample $\mathcal S$.
+
+Given a training data sample $\mathcal S$, we train the model and calculate the in-sample error of the model, $E_{s}$. However, the in-sample error is not necessarily the same as the actual error, or the generalization error/out of sample error, $E_{g}$.
+
+Using the Hoeffding's inequality, one could derive the so called learning bound[^Deckert2017],
+
+{{< m >}}
+P\left( E_g(h) - E_s(h) \leq \sqrt{ \frac{\log\lvert H\rvert + \log(2/\delta)}{2m} } \right) \geq 1 - \delta, \forall h\in \mathcal H,
+{{< /m >}}
+
+where $\mathcal H$ is a finite hypothesis set.
+
+We immediately realize that if $\lvert\mathcal H\rvert \to \infty$, the bound becomes infinity too. The above theorem becomes useless.
+
+Since the VC dimension describes the number of useful hypotheses, we might want to replace the actual hypothesis set size $\lvert \mathcal H\rvert$. This is not exactly correct but we indeed have a similar form
+
+{{< m >}}
+P\left( E_g(h) - E_s(h) \leq \sqrt{ \frac{8d\log(m/d) + 8\log(4/\delta)}{m} } \right) \geq 1 - \delta,
+{{< /m >}}
+
+for a binary classification problem.
+
+
+
 
 
 
 
 
 [^Deckert2017]: {{< cite key="Deckert2017" >}}
+
+[^Zhang2016]: {{< cite key="Zhang2016" >}}
