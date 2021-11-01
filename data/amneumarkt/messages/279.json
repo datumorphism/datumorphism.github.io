@@ -1,0 +1,95 @@
+{
+    "_": "Message",
+    "id": 279,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-10-26 19:30:13+00:00",
+    "message": "#ML \n\n(I am experimenting with a new platform. This post is also available at: https://community.kausalflow.com/c/ml-journal-club/how-do-neural-network-generalize )\n\nThere are somethings that are quite hard to understand in deep neural networks. One of them is how the network generalizes.\n\n[Zhang2016] shows some experiments about the amazing ability of neural networks to learn even completely random datasets. But they can not generalize as the data is random. How to understand generalization? The authors mentioned some theories like VC dimension, Rademacher complexity, and uniform stability. But none of them is good enough.\n\nRecently, I found the work of Simon et al [Simon2021]. The authors also wrote a blog about this paper [Simon2021Blog].\n\nThe idea is to simplify the problem of generalization by looking at how a neural network approximates a function f. This is approximate vectors in Hilbert space. Thus we are looking at the similarity of the vectors f, and its neural network approximation f'. The similarity of these two vectors is related to the eigenvalues of the so-called \u201cneural tangent kernel\u201d (NTK).\nUsing NTK, they derived an amazingly simple quantity, learnability, which can measure how Hilbert space vectors align with each other, that is, how good the approximation using the neural network is.\n\n\n\n[Zhang2016]: Zhang C, Bengio S, Hardt M, Recht B, Vinyals O. Understanding deep learning requires rethinking generalization. arXiv [cs.LG]. 2016. Available: http://arxiv.org/abs/1611.03530\n\n[Simon2021Blog]: Simon J. A First-Principles Theory of NeuralNetwork Generalization. In: The Berkeley Artificial Intelligence Research Blog [Internet]. [cited 26 Oct 2021]. Available: https://bair.berkeley.edu/blog/2021/10/25/eigenlearning/\n\n[Simon2021]: Simon JB, Dickens M, DeWeese MR. Neural Tangent Kernel Eigenvalues Accurately Predict Generalization. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2110.03922",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4570297631687763037,
+            "url": "https://community.kausalflow.com/c/ml-journal-club/how-do-neural-network-generalize",
+            "display_url": "community.kausalflow.com/c/ml-journal-club/how-do-neural-network-generalize",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Kausalflow",
+            "title": "How do neural networks generalize? | kausalflow",
+            "description": "There are somethings that are quite hard to understand in deep neural networks. One of them is how the network generalizes.\n\n[Zhang2016] shows some experiments about the amazing ability to learn even completely random datasets but can not generalize as...",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 79,
+            "length": 83
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1486,
+            "length": 31
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1703,
+            "length": 56
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1908,
+            "length": 31
+        }
+    ],
+    "views": 77,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1078,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-10-26 19:51:11+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5916713910537399321,
                 "access_hash": 7665426360193813538,
-                "file_reference": "b'\\x00al-A\\xfd\\xe10X{M\\x036P\\xc5\\nGn\\x06\\xcd\\x1d'",
+                "file_reference": "b\"\\x00a\\x80YP\\xf8\\x9b*\\x1b\\xe6\\xf2l\\xb9\\xdam\\xdbE'\\xebGY\"",
                 "date": "2021-06-10 19:12:50+00:00",
                 "sizes": [
                     {
@@ -428,7 +428,35 @@
                                 },
                                 {
                                     "_": "TextPlain",
-                                    "text": ". Artificial 'ants' (e.g. simulation agents) locate optimal solutions by moving through a "
+                                    "text": "."
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextAnchor",
+                                                "text": {
+                                                    "_": "TextEmpty"
+                                                },
+                                                "name": "back_cite_ref-Birattari_Pellegrini_Dorigo_2007_pp._732\u2013742_4-0"
+                                            },
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "[4]"
+                                                },
+                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-Birattari_Pellegrini_Dorigo_2007_pp._732%E2%80%93742-4",
+                                                "webpage_id": 0
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " Artificial 'ants' (e.g. simulation agents) locate optimal solutions by moving through a "
                                 },
                                 {
                                     "_": "TextUrl",
@@ -466,15 +494,15 @@
                                                 "text": {
                                                     "_": "TextEmpty"
                                                 },
-                                                "name": "back_cite_ref-4"
+                                                "name": "back_cite_ref-5"
                                             },
                                             {
                                                 "_": "TextUrl",
                                                 "text": {
                                                     "_": "TextPlain",
-                                                    "text": "[4]"
+                                                    "text": "[5]"
                                                 },
-                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-4",
+                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-5",
                                                 "webpage_id": 0
                                             }
                                         ]
@@ -571,15 +599,15 @@
                                                 "text": {
                                                     "_": "TextEmpty"
                                                 },
-                                                "name": "back_cite_ref-5"
+                                                "name": "back_cite_ref-6"
                                             },
                                             {
                                                 "_": "TextUrl",
                                                 "text": {
                                                     "_": "TextPlain",
-                                                    "text": "[5]"
+                                                    "text": "[6]"
                                                 },
-                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-5",
+                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-6",
                                                 "webpage_id": 0
                                             }
                                         ]
@@ -595,15 +623,15 @@
                                                 "text": {
                                                     "_": "TextEmpty"
                                                 },
-                                                "name": "back_cite_ref-M._Dorigo,_Optimization,_Learning_and_Natural_Algorithms_6-0"
+                                                "name": "back_cite_ref-M._Dorigo,_Optimization,_Learning_and_Natural_Algorithms_7-0"
                                             },
                                             {
                                                 "_": "TextUrl",
                                                 "text": {
                                                     "_": "TextPlain",
-                                                    "text": "[6]"
+                                                    "text": "[7]"
                                                 },
-                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-M._Dorigo,_Optimization,_Learning_and_Natural_Algorithms-6",
+                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-M._Dorigo,_Optimization,_Learning_and_Natural_Algorithms-7",
                                                 "webpage_id": 0
                                             }
                                         ]
@@ -649,15 +677,15 @@
                                                 "text": {
                                                     "_": "TextEmpty"
                                                 },
-                                                "name": "back_cite_ref-7"
+                                                "name": "back_cite_ref-8"
                                             },
                                             {
                                                 "_": "TextUrl",
                                                 "text": {
                                                     "_": "TextPlain",
-                                                    "text": "[7]"
+                                                    "text": "[8]"
                                                 },
-                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-7",
+                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-8",
                                                 "webpage_id": 0
                                             }
                                         ]
@@ -744,15 +772,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-8"
+                                                        "name": "back_cite_ref-9"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[8]"
+                                                            "text": "[9]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-8",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-9",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -780,15 +808,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-9"
+                                                        "name": "back_cite_ref-10"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[9]"
+                                                            "text": "[10]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-9",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-10",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -873,15 +901,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-Waldner_2008_214_10-0"
+                                                        "name": "back_cite_ref-Waldner_2008_214_11-0"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[10]"
+                                                            "text": "[11]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-Waldner_2008_214-10",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-Waldner_2008_214-11",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -922,15 +950,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-11"
+                                                        "name": "back_cite_ref-12"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[11]"
+                                                            "text": "[12]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-11",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-12",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -950,15 +978,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-12"
+                                                        "name": "back_cite_ref-13"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[12]"
+                                                            "text": "[13]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-12",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-13",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -994,30 +1022,6 @@
                                         {
                                             "_": "TextPlain",
                                             "text": "Pheromone-based communication is one of the most effective ways of communication which is widely observed in nature. Pheromone is used by social insects such as bees, ants and termites; both for inter-agent and agent-swarm communications. Due to its feasibility, artificial pheromones have been adopted in multi-robot and swarm robotic systems. Pheromone-based communication was implemented by different means such as chemical "
-                                        },
-                                        {
-                                            "_": "TextSuperscript",
-                                            "text": {
-                                                "_": "TextConcat",
-                                                "texts": [
-                                                    {
-                                                        "_": "TextAnchor",
-                                                        "text": {
-                                                            "_": "TextEmpty"
-                                                        },
-                                                        "name": "back_cite_ref-13"
-                                                    },
-                                                    {
-                                                        "_": "TextUrl",
-                                                        "text": {
-                                                            "_": "TextPlain",
-                                                            "text": "[13]"
-                                                        },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-13",
-                                                        "webpage_id": 0
-                                                    }
-                                                ]
-                                            }
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -1068,10 +1072,6 @@
                                             }
                                         },
                                         {
-                                            "_": "TextPlain",
-                                            "text": " or physical (RFID tags,"
-                                        },
-                                        {
                                             "_": "TextSuperscript",
                                             "text": {
                                                 "_": "TextConcat",
@@ -1097,7 +1097,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " light,"
+                                            "text": " or physical (RFID tags,"
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -1122,6 +1122,10 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " light,"
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -1196,10 +1200,6 @@
                                             }
                                         },
                                         {
-                                            "_": "TextPlain",
-                                            "text": " sound"
-                                        },
-                                        {
                                             "_": "TextSuperscript",
                                             "text": {
                                                 "_": "TextConcat",
@@ -1218,6 +1218,34 @@
                                                             "text": "[21]"
                                                         },
                                                         "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-21",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " sound"
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-22"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[22]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-22",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -1249,34 +1277,6 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-22"
-                                                    },
-                                                    {
-                                                        "_": "TextUrl",
-                                                        "text": {
-                                                            "_": "TextPlain",
-                                                            "text": "[22]"
-                                                        },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-22",
-                                                        "webpage_id": 0
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": " Another study presented a system in which pheromones were implemented via a horizontal LCD screen on which the robots moved, with the robots having downward facing light sensors to register the patterns beneath them."
-                                        },
-                                        {
-                                            "_": "TextSuperscript",
-                                            "text": {
-                                                "_": "TextConcat",
-                                                "texts": [
-                                                    {
-                                                        "_": "TextAnchor",
-                                                        "text": {
-                                                            "_": "TextEmpty"
-                                                        },
                                                         "name": "back_cite_ref-23"
                                                     },
                                                     {
@@ -1290,6 +1290,10 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " Another study presented a system in which pheromones were implemented via a horizontal LCD screen on which the robots moved, with the robots having downward facing light sensors to register the patterns beneath them."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -1310,6 +1314,30 @@
                                                             "text": "[24]"
                                                         },
                                                         "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-24",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-25"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[25]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-25",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -1643,13 +1671,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " with probability \n"
-                                        },
-                                        {
-                                            "_": "TextImage",
-                                            "document_id": 6016179155018711114,
-                                            "w": 243,
-                                            "h": 70
+                                            "text": " with probability"
                                         }
                                     ]
                                 }
@@ -1657,8 +1679,10 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextPlain",
-                                    "text": "where"
+                                    "_": "TextImage",
+                                    "document_id": 6016179155018711114,
+                                    "w": 243,
+                                    "h": 70
                                 }
                             },
                             {
@@ -1666,6 +1690,10 @@
                                 "text": {
                                     "_": "TextConcat",
                                     "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "where "
+                                        },
                                         {
                                             "_": "TextImage",
                                             "document_id": 6016215370182950999,
@@ -1839,17 +1867,20 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
+                                    "_": "TextImage",
+                                    "document_id": 6040498896231203421,
+                                    "w": 247,
+                                    "h": 60
+                                }
+                            },
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
                                     "_": "TextConcat",
                                     "texts": [
                                         {
-                                            "_": "TextImage",
-                                            "document_id": 6040498896231203421,
-                                            "w": 247,
-                                            "h": 60
-                                        },
-                                        {
                                             "_": "TextPlain",
-                                            "text": "\nwhere "
+                                            "text": "where "
                                         },
                                         {
                                             "_": "TextImage",
@@ -1933,17 +1964,28 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " problem (with moves corresponding to arcs of the graph) by \n"
-                                        },
-                                        {
-                                            "_": "TextImage",
-                                            "document_id": 6016146723720659055,
-                                            "w": 438,
-                                            "h": 54
-                                        },
+                                            "text": " problem (with moves corresponding to arcs of the graph) by"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextImage",
+                                    "document_id": 6016146723720659055,
+                                    "w": 438,
+                                    "h": 54
+                                }
+                            },
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "\nwhere "
+                                            "text": "where "
                                         },
                                         {
                                             "_": "TextImage",
@@ -2045,15 +2087,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-Ant_system_25-0"
+                                                        "name": "back_cite_ref-Ant_system_26-0"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[25]"
+                                                            "text": "[26]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-Ant_system-25",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-Ant_system-26",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -2127,15 +2169,15 @@
                                                                 "text": {
                                                                     "_": "TextEmpty"
                                                                 },
-                                                                "name": "back_cite_ref-M._Dorigo_et_L.M._Gambardella_26-0"
+                                                                "name": "back_cite_ref-M._Dorigo_et_L.M._Gambardella_27-0"
                                                             },
                                                             {
                                                                 "_": "TextUrl",
                                                                 "text": {
                                                                     "_": "TextPlain",
-                                                                    "text": "[26]"
+                                                                    "text": "[27]"
                                                                 },
-                                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-M._Dorigo_et_L.M._Gambardella-26",
+                                                                "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-M._Dorigo_et_L.M._Gambardella-27",
                                                                 "webpage_id": 0
                                                             }
                                                         ]
@@ -2254,15 +2296,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-T._St\u00fctzle_et_H.H._Hoos_27-0"
+                                                        "name": "back_cite_ref-T._St\u00fctzle_et_H.H._Hoos_28-0"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[27]"
+                                                            "text": "[28]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-T._St%C3%BCtzle_et_H.H._Hoos-27",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-T._St%C3%BCtzle_et_H.H._Hoos-28",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -2335,15 +2377,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-28"
+                                                        "name": "back_cite_ref-29"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[28]"
+                                                            "text": "[29]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-28",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-29",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -2390,15 +2432,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-29"
+                                                        "name": "back_cite_ref-30"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[29]"
+                                                            "text": "[30]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-29",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-30",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -2418,15 +2460,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-30"
+                                                        "name": "back_cite_ref-31"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[30]"
+                                                            "text": "[31]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-30",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-31",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -2489,15 +2531,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-31"
+                                                        "name": "back_cite_ref-32"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[31]"
+                                                            "text": "[32]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-31",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-32",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -2517,15 +2559,15 @@
                                                         "text": {
                                                             "_": "TextEmpty"
                                                         },
-                                                        "name": "back_cite_ref-Zlochin_model-based_search_32-0"
+                                                        "name": "back_cite_ref-Zlochin_model-based_search_33-0"
                                                     },
                                                     {
                                                         "_": "TextUrl",
                                                         "text": {
                                                             "_": "TextPlain",
-                                                            "text": "[32]"
+                                                            "text": "[33]"
                                                         },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-Zlochin_model-based_search-32",
+                                                        "url": "https://en.m.wikipedia.org/wiki/Ant_colony_optimization_algorithms#cite_note-Zlochin_model-based_search-33",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -2628,7 +2670,7 @@
                         "_": "Photo",
                         "id": 6029532234568018011,
                         "access_hash": 8348392293663363462,
-                        "file_reference": "b'\\x00al-A\\xb9\\xcc\\x92Bn\\x1b3\\x8c\\x1b\\x03\\xe50\\x88\\xc8.-'",
+                        "file_reference": "b'\\x00a\\x80YPu{h\\t\\xb7\\xd8+\\xee\\xb63\\x8e:\\xa5\\x1f\\xa2\\xe5'",
                         "date": "2018-11-21 05:29:56+00:00",
                         "sizes": [
                             {
@@ -2668,7 +2710,7 @@
                         "_": "Photo",
                         "id": 5795321143861815441,
                         "access_hash": -125778851639702778,
-                        "file_reference": "b'\\x00al-A\\xd2\\xad/n\\x9e\\xec\\xff\\xe80+<^f\\x8b\\x12('",
+                        "file_reference": "b'\\x00a\\x80YP\\xa3\\xfc\\x9f\\xd7P{\\xc6JNc\\xa4\\xd5\\xfe\\x87\\xf3\\xab'",
                         "date": "2018-12-09 14:51:29+00:00",
                         "sizes": [
                             {
@@ -2710,7 +2752,7 @@
                         "_": "Document",
                         "id": 5892089874730713799,
                         "access_hash": 3518189535180123590,
-                        "file_reference": "b'\\x00al-A\\x03\\xa8 \\x7f\\xdb\\xc2\\x9an\\x0bs\\xab5\\xa7\\t\\x17A'",
+                        "file_reference": "b'\\x00a\\x80YPa\\x05ob_\\\\R\\x91w\\x87Ra\\xc6F\\xa53'",
                         "date": "2021-06-02 21:06:14+00:00",
                         "mime_type": "image/png",
                         "size": 350,
@@ -2746,7 +2788,7 @@
                         "_": "Document",
                         "id": 5892302355352781466,
                         "access_hash": 4401266620872188667,
-                        "file_reference": "b\"\\x00al-A\\xcc\\x13\\xcbIn\\xba\\x04\\xddw\\xf4\\xe5\\x9f\\xe1\\xbfa'\"",
+                        "file_reference": "b'\\x00a\\x80YP\\xaer%\\t\\x02h\\xa2\\x07\\x83\\xd6f\\xd8\\xd1\\xc0\\xa4Y'",
                         "date": "2021-06-02 21:06:14+00:00",
                         "mime_type": "image/png",
                         "size": 394,
@@ -2782,7 +2824,7 @@
                         "_": "Document",
                         "id": 5892135822290846443,
                         "access_hash": -807097538076905803,
-                        "file_reference": "b'\\x00al-AE\\x97\\x98M\\x03M\\x92\\xd6\\xc0`N^*\\xb4\\xf0\\xc8'",
+                        "file_reference": "b\"\\x00a\\x80YP\\xc6gO\\xd4\\x9cz\\xde\\x90'\\x92 \\xd7\\xa1\\xd0\\xad\\xb6\"",
                         "date": "2021-06-02 21:06:05+00:00",
                         "mime_type": "image/png",
                         "size": 423,
@@ -2818,7 +2860,7 @@
                         "_": "Document",
                         "id": 6016042854231572575,
                         "access_hash": 4390122978315802329,
-                        "file_reference": "b'\\x00al-A\\x0f\\x90%T~[\\xcd\\x08;\\x88\\x13\\xcb\\x95\\x13)\\xbf'",
+                        "file_reference": "b'\\x00a\\x80YP%<\\xafv\\xa7\\x80\\x98*,\\x97\\x17\\x0e\\xc4\\x87`\\xc7'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 1269,
@@ -2849,7 +2891,7 @@
                         "_": "Document",
                         "id": 6015767100151300181,
                         "access_hash": 5060417737205835843,
-                        "file_reference": "b'\\x00al-A&\\xc0\\xdd4\\x9f\\x9a\\x89+&\\xb2 \\xd2\\xcd\\x9d\\xa0w'",
+                        "file_reference": "b'\\x00a\\x80YPq\\x83\\x86C\\x9c[A\\xd0\\x07\\x15?c\\xe2\\xfc\\xf8\\xa9'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 969,
@@ -2880,7 +2922,7 @@
                         "_": "Document",
                         "id": 6016103185637179480,
                         "access_hash": -4911532174612303821,
-                        "file_reference": "b'\\x00al-A\\xaa(E\\x7f\\xde35\\xde\\xb7\\x01]\\xa2\\x84%\\xce\\x9d'",
+                        "file_reference": "b'\\x00a\\x80YP\\x1e\\xa5U\\xe2\\xa3\\x1a\\x02R`R\\x04\\xdb\\x8b\\xf6B\\x88'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 730,
@@ -2911,7 +2953,7 @@
                         "_": "Document",
                         "id": 6016215370182950999,
                         "access_hash": -9066743641411304357,
-                        "file_reference": "b'\\x00al-A\\xc0fs|\\xd2f\\x1az\\xcd\\xe3\\x1fn\\x82\\xc1\\x9c\\x02'",
+                        "file_reference": "b'\\x00a\\x80YP\\xb8\\xc4p`\\x01\\xf3g\\xe6\\xa0gTl\\xaf1+\\x83'",
                         "date": "2018-11-16 22:50:20+00:00",
                         "mime_type": "image/png",
                         "size": 625,
@@ -2942,7 +2984,7 @@
                         "_": "Document",
                         "id": 6016179155018711114,
                         "access_hash": -6262577932427997634,
-                        "file_reference": "b'\\x00al-A\\x05\\xfaL<\\r1H\\xb91\\xa3\\xa7+\\x06\\xbe\\xab\\x1e'",
+                        "file_reference": "b'\\x00a\\x80YP\\x1c\\x9aJ\\xb3\\xe3\\x1a\\x9eb\\x115\\x98\\xa2\\xd1f\\xfd\\x1b'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 7395,
@@ -2973,7 +3015,7 @@
                         "_": "Document",
                         "id": 5784194463689605292,
                         "access_hash": 2549461989269537425,
-                        "file_reference": "b'\\x00al-A\\x88\\x9bFA\\x04.y\\xb8Cr\\xb2\\xc3~&\\x8fJ'",
+                        "file_reference": "b\"\\x00a\\x80YP\\x162\\xe5\\x1a\\x93\\xc2\\xe0\\xcf\\r\\xabg\\xce'W\\xb1\\xae\"",
                         "date": "2018-12-05 20:26:30+00:00",
                         "mime_type": "image/png",
                         "size": 385,
@@ -3004,7 +3046,7 @@
                         "_": "Document",
                         "id": 5786412810003021922,
                         "access_hash": -3904168149537096276,
-                        "file_reference": "b\"\\x00al-A\\xb4\\xc8\\x07'\\x80S\\xb1\\x96\\xb0\\x7f\\xd7o_^\\xd3\\xcf\"",
+                        "file_reference": "b'\\x00a\\x80YP:2\\xf6\\x9a\\xdc\\xc5\\x8aU\\x81\\xa61=\\x13\\x18\\xd45'",
                         "date": "2018-12-06 08:25:45+00:00",
                         "mime_type": "image/png",
                         "size": 629,
@@ -3035,7 +3077,7 @@
                         "_": "Document",
                         "id": 6015922187125391428,
                         "access_hash": -5792859775550193076,
-                        "file_reference": "b'\\x00al-A\\x1f\\xf7\\xfdC\\xd8\\x01\\xcd\\xea\\xfe\\xa5\\x1d\\xa7\\x12\\xd9\\xf7Q'",
+                        "file_reference": "b'\\x00a\\x80YP\\xb3\\xdb\\xaff\\xf5\\x90K\\xbd$\\xc4t\\x9b\\xde\\xfd\\xc6\\xa1'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 1124,
@@ -3066,7 +3108,7 @@
                         "_": "Document",
                         "id": 5840137903073656971,
                         "access_hash": -5585981323449387691,
-                        "file_reference": "b'\\x00al-A\\xf7\\x9e\\x0e.\\x11q\\x98\\xddZ?\\x8a\\x03\\xb1\\t\\xdc<'",
+                        "file_reference": "b'\\x00a\\x80YP9-\\x13\\xd3\\xe6\\xfcg\\xe1\\x92\\xedh\\xc8\\x17xG\\x83'",
                         "date": "2018-12-24 12:49:25+00:00",
                         "mime_type": "image/png",
                         "size": 423,
@@ -3097,7 +3139,7 @@
                         "_": "Document",
                         "id": 5908094237135602309,
                         "access_hash": 3365447550121156264,
-                        "file_reference": "b'\\x00al-Awn5\\x0e\\xb8\\xc6j3\\x01s\\xa2\\xd2\\x81\\x12!\\xdb'",
+                        "file_reference": "b'\\x00a\\x80YP\\xbb0W1\\x88^\\xaa\\xa8)`\\xcb\\xbd\\xf9\\x9f>\\x00'",
                         "date": "2020-11-26 11:34:11+00:00",
                         "mime_type": "image/png",
                         "size": 443,
@@ -3133,7 +3175,7 @@
                         "_": "Document",
                         "id": 6018253499668627516,
                         "access_hash": -6410939116674540772,
-                        "file_reference": "b'\\x00al-A\\x02a\\xcft*\\x00C\\xcb\\x1f1\\xc2&\\xb6D\\xb7\\xdd'",
+                        "file_reference": "b'\\x00a\\x80YP\\xc5\\xb0\\x0f9\\x87\\x9a\\x89\\x05YS-\\xe2_\\x12o\\xf0'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 533,
@@ -3164,7 +3206,7 @@
                         "_": "Document",
                         "id": 6015754558846795844,
                         "access_hash": -4680837493119328879,
-                        "file_reference": "b'\\x00al-AW7\\x9b\\xf2\"\\xbe[\\x11\\xacH\\x96\\x0c\\xf9B\"|'",
+                        "file_reference": "b'\\x00a\\x80YP|\\xff6_\\x12\\xe5+\\xd5\\xaf\\xb4s\\xf7\\x8c\\xcb,\\xf4'",
                         "date": "2018-11-16 22:50:22+00:00",
                         "mime_type": "image/png",
                         "size": 653,
@@ -3195,7 +3237,7 @@
                         "_": "Document",
                         "id": 6040498896231203421,
                         "access_hash": 6483218345616551804,
-                        "file_reference": "b'\\x00al-Aeq\\x19v\\xe8\\xec\\x04\\xdaCel\\xf7\\xdc\\xe52\\t'",
+                        "file_reference": "b'\\x00a\\x80YPTX\"_U\\xfd:\\xd0\\x14\\xb1f\\x84\\n\\xc2\\xd2%'",
                         "date": "2021-01-10 00:00:17+00:00",
                         "mime_type": "image/png",
                         "size": 4392,
@@ -3231,7 +3273,7 @@
                         "_": "Document",
                         "id": 5853736469612462415,
                         "access_hash": 6644662219406320651,
-                        "file_reference": "b'\\x00al-A\\xfd\\x0c~\\x1b\\xcf\\xf1\\xde\\x86\\xe0\\x8eO\\x01\\x88\\x8b=\\xc2'",
+                        "file_reference": "b'\\x00a\\x80YP\\xae\\x18=\\x1a\\xf2\\xf5\\xcePt\\xcc\\xcb\\xe6G\\x9d\\xdb\\x16'",
                         "date": "2019-10-15 21:20:28+00:00",
                         "mime_type": "image/png",
                         "size": 368,
@@ -3267,7 +3309,7 @@
                         "_": "Document",
                         "id": 5892326089342059181,
                         "access_hash": 3823574118576540217,
-                        "file_reference": "b'\\x00al-A\\xa3r=\\x92i$d,j\\x85\\xfa,\\x9c\\xbcc\\x1b'",
+                        "file_reference": "b'\\x00a\\x80YP\\x80\\xfc7\\x7f\\x1c\\x92\\xe4\\x14\\x93\\xc2\\xd8\\xe4\\xc8.)R'",
                         "date": "2021-06-02 21:06:05+00:00",
                         "mime_type": "image/png",
                         "size": 488,
@@ -3303,7 +3345,7 @@
                         "_": "Document",
                         "id": 6018206452596867151,
                         "access_hash": -7323465724427891001,
-                        "file_reference": "b'\\x00al-An\\x86\\x16\\x05\\xbaR`:HLE>-)\\x8b\\xf7'",
+                        "file_reference": "b'\\x00a\\x80YP\\xc2\\x81\\xd0\\xf6U\"6\\x1ff\\xa8\\x87WY|\\x03D'",
                         "date": "2018-11-16 22:50:14+00:00",
                         "mime_type": "image/png",
                         "size": 1105,
@@ -3334,7 +3376,7 @@
                         "_": "Document",
                         "id": 6016146723720659055,
                         "access_hash": -7104062069170931473,
-                        "file_reference": "b\"\\x00al-A\\x0e/\\xba\\xa4\\xd2'\\xae\\x83TP\\x14a#\\xcc\\x81K\"",
+                        "file_reference": "b'\\x00a\\x80YP\\xc91!\\xef\\x13\\xa6\\xfbD\\xca\\xed\\xa1\\xfc8\\x90w\\xeb'",
                         "date": "2018-11-16 22:50:14+00:00",
                         "mime_type": "image/png",
                         "size": 9882,
@@ -3365,7 +3407,7 @@
                         "_": "Document",
                         "id": 5786085335926571091,
                         "access_hash": -2467487389902944513,
-                        "file_reference": "b'\\x00al-A\\xb5|\\xd6\"\\x03f\\x87{oD\\x05j\\xf7\\x153\\xa8'",
+                        "file_reference": "b'\\x00a\\x80YP\\xf0\\x82(\\xa4B\\xc51/\\x01\\x07 \\xf6\\xabI\\x8a|'",
                         "date": "2018-12-06 10:02:48+00:00",
                         "mime_type": "image/png",
                         "size": 588,
@@ -3396,7 +3438,7 @@
                         "_": "Document",
                         "id": 5783819891001786518,
                         "access_hash": 6840401018834118721,
-                        "file_reference": "b'\\x00al-A\\x9f\\xbf\\x01\\x07\\xa0\\xd9&\\xb5\\xec\\xfdy\\xcf\\xda\\xfbS\\x8b'",
+                        "file_reference": "b'\\x00a\\x80YP\\x08*\\xda\\xb7\\xd0K\\xc8L\\xde\\x03F\\xcf\\xf1\\xd5\\xa5@'",
                         "date": "2018-12-05 20:01:03+00:00",
                         "mime_type": "image/png",
                         "size": 583,
@@ -3445,7 +3487,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1065,
+        "replies_pts": 1078,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,
