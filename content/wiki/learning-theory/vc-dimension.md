@@ -16,6 +16,9 @@ references:
   - name: "Zhang C, Bengio S, Hardt M, Recht B, Vinyals O. Understanding deep learning requires rethinking generalization. arXiv [cs.LG]. 2016. Available: http://arxiv.org/abs/1611.03530"
     link: "http://arxiv.org/abs/1611.03530"
     key: "Zhang2016"
+  - name: "Bernstein J. Machine learning is just statistics + quantifier reversal. In: jeremybernste [Internet]. [cited 1 Nov 2021]. Available: https://jeremybernste.in/writing/ml-is-just-statistics"
+    link: "https://jeremybernste.in/writing/ml-is-just-statistics"
+    key: "Bernstein2021"
 weight: 3
 links:
   - cards/machine-learning/learning-theories/set-shatter.md
