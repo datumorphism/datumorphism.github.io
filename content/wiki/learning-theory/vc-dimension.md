@@ -19,6 +19,12 @@ references:
   - name: "Bernstein J. Machine learning is just statistics + quantifier reversal. In: jeremybernste [Internet]. [cited 1 Nov 2021]. Available: https://jeremybernste.in/writing/ml-is-just-statistics"
     link: "https://jeremybernste.in/writing/ml-is-just-statistics"
     key: "Bernstein2021"
+  - name: "Guedj B. A Primer on PAC-Bayesian Learning. arXiv [stat.ML]. 2019. Available: http://arxiv.org/abs/1901.05353"
+    link: "http://arxiv.org/abs/1901.05353"
+    key: "Guedj2019"
+  - name: "Abu-Mostafa, Yaser S and Magdon-Ismail, Malik and Lin, Hsuan-Tien. Learning from Data. AMLBook; 2012. Available: https://www.semanticscholar.org/paper/Learning-From-Data-Abu-Mostafa-Magdon-Ismail/1c0ed9ed3201ef381cc392fc3ca91cae6ecfc698"
+    link: "https://www.semanticscholar.org/paper/Learning-From-Data-Abu-Mostafa-Magdon-Ismail/1c0ed9ed3201ef381cc392fc3ca91cae6ecfc698"
+    key: "Abu-Mostafa2012"
 weight: 3
 links:
   - cards/machine-learning/learning-theories/set-shatter.md
