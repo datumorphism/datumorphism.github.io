@@ -98,7 +98,7 @@ to make sure the back-prop is also stable, i.e., have similar gradient variance 
 
 ## Xavier Initialization
 
-The Xavier initialization is something in between the above two idea,
+The Xavier initialization is something in between the above two ideas,
 
 {{< m >}}
 \sigma_w^2 = \frac{2}{D + \hat D}.
