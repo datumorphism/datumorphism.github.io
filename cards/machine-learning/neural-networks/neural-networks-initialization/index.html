@@ -29,7 +29,7 @@ $$</p><p>For linear activation function, $\alpha=1$, thus</p><p>$$
 \sigma_w^2 = \frac{1}{D}.
 $$</p><p>For more features we have in the input, we should choose smaller initial variance for the weights.</p><h2 id=weight-variance-is-also-related-to-the-output-size-of-the-layer>Weight Variance is also related to the output size of the layer</h2><p>Assuming $\hat D$ is the output dimension of the layer, it is also proved that we need</p><p>$$
 \sigma_w^2 = \frac{1}{\hat D},
-$$</p><p>to make sure the back-prop is also stable, i.e., have similar gradient variance across layers.</p><h2 id=xavier-initialization>Xavier Initialization</h2><p>The Xavier initialization is something in between the above two idea,</p><p>$$
+$$</p><p>to make sure the back-prop is also stable, i.e., have similar gradient variance across layers.</p><h2 id=xavier-initialization>Xavier Initialization</h2><p>The Xavier initialization is something in between the above two ideas,</p><p>$$
 \sigma_w^2 = \frac{2}{D + \hat D}.
 $$</p><p>In Glorot2010, the authors also proposed a uniform distribution alternative to normal distribution, which they call the <strong>normalized initialization</strong><sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. In this proposal, we uniformly sample from the range</p><p>$$
 \left[ -\frac{\sqrt{6}}{D + \hat D}, \frac{\sqrt{6}}{D + \hat D} \right].
