@@ -26,13 +26,13 @@ v_c = v - v.mean()
 This operation is easy and obvious. However, the formalism is not elegant. In some cases, we would like to formulate the process of centering the elements as operators,
 
 $$
-v_c = \operatorname{\hat C}v.
+v_c = \operatorname{\hat H}v.
 $$
 
-In this case, the operator $\operatorname{\hat C}$ is simply a matrix
+In this case, the operator $\operatorname{\hat H}$ is simply a matrix
 
 $$
-\operatorname{\hat C} \to I_n - \frac{1}{n} J_n,
+\operatorname{\hat H} \to I_n - \frac{1}{n} J_n,
 $$
 
 where $n$ is the dimension of the vector $v$, $I_n$ is a identity matrix, $J_n$ is a matrix of all $1$s.
