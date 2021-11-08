@@ -19,6 +19,7 @@ links:
   - cards/math/eigendecomposition.md
   - wiki/machine-learning/unsupervised/pca.md
   - wiki/machine-learning/unsupervised/svm.md
+  - cards/math/frobenius-distance.md
 weight: 2
 ---
 
@@ -194,7 +195,7 @@ while requiring the elements of the decomposition to be nonnegative. **But there
 
 How do we measure the approximations?
 
-We use the Frobenius distance between the matrix $X_{n}^{\phantom{n}k}$ and $H_n^{\phantom{n}r} W_r^{\phantom{r}k}$,
+We use the {{< c "cards/math/frobenius-distance.md" "Frobenius distance" >}} between the matrix $X_{n}^{\phantom{n}k}$ and $H_n^{\phantom{n}r} W_r^{\phantom{r}k}$,
 
 $$
 \lVert X_{n}^{\phantom{n}k} - H_n^{\phantom{n}r} W_r^{\phantom{r}k} \rVert^2 \equiv \sum_{n,k} (X_{n}^{\phantom{n}k} - H_n^{\phantom{n}r} W_r^{\phantom{r}k})^2.
