@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 280,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-02 13:47:31+00:00",
+    "message": "#ML\n\nhttps://www.microsoft.com/en-us/research/blog/turing-bletchley-a-universal-image-language-representation-model-by-microsoft/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 46156072942282209,
+            "url": "https://www.microsoft.com/en-us/research/blog/turing-bletchley-a-universal-image-language-representation-model-by-microsoft/",
+            "display_url": "microsoft.com/en-us/research/blog/turing-bletchley-a-universal-image-language-representation-model-by-microsoft",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Microsoft Research",
+            "title": "Turing Bletchley: A Universal Image Language Representation model by Microsoft - Microsoft Research",
+            "description": "Today, the Microsoft Turing team is thrilled to introduce Turing\u00a0Bletchley,\u00a0a\u00a02.5-billion parameter Universal Image Language Representation model (T-UILR) that\u00a0can perform image-language tasks in 94 languages. T-Bletchley has an image encoder and a universal language encoder that vectorize input image and text respectively so that semantically similar images and texts align with each other. This model shows [\u2026]",
+            "photo": {
+                "_": "Photo",
+                "id": 5766173885178424646,
+                "access_hash": -6274088801505516028,
+                "file_reference": "b'\\x00a\\x87\\xbd\\x0ef\\xd45\\x8e>=\\xd4Zm\\xf0\\xb0\\xbe\\x00\\x18\\xc0\\xe0'",
+                "date": "2021-11-01 18:16:59+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xd9\\xcd&E5\\x97'\\xbd; P\\x02\\x16\\xc1\\x03\\xd6\\x9dMb;\\xf6\\xa7u\\xa0\\x02\\x8ah\\x18c\\xcf\\x1e\\x94P\\x03\\xa8\\xa2\\x8a\\x00M\\xbc\\xd2\\xd1E\\x00\\x14QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 9118
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 37774
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 71949
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1441,
+                        "sizes": [
+                            23273,
+                            47153,
+                            78109,
+                            96468,
+                            149741
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 124
+        }
+    ],
+    "views": 75,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1092,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-02 13:47:06+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

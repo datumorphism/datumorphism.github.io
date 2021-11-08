@@ -1,0 +1,95 @@
+{
+    "_": "Message",
+    "id": 281,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-02 17:04:25+00:00",
+    "message": "#ML \n\n( I am experimenting with a new platform. This post is also available at: https://community.kausalflow.com/c/ml-journal-club/probably-approximately-correct-pac-learning-and-bayesian-view )\n\nThe first time I read about PAC was in the book The Nature of Statistical Learning Theory by Vapnik [^Vapnik2000].\n\nPAC is a systematic theory on why learning from data is even feasible [^Valiant1984]. The idea is to quantify the errors when learning from data and we find that is is possible to have infinitesimal error under some certain codnitions, e.g., large datasets. Quote from Guedj [^Guedj2019]:\n\n> A PAC inequality states that with an arbitrarily high probability (hence \"probably\"), the performance (as provided by a loss function) of a learning algorithm is upper-bounded by a term decaying to an optimal value as more data is collected (hence \"approximately correct\").\n\nBayesian learning is an very important topic in machine learning. We implement Bayesian rule in the components of learning, e.g., postierior in loss function. There also exists a PAC theory for Bayesian learning that explains why Bayesian algorithms works. Guedj wrote a primer on this topic[^Guedj2019].\n\ufeff\n\ufeff\n[^Vapnik2000]: Vladimir N. Vapnik. The Nature of Statistical Learning Theory. 2000. doi:10.1007/978-1-4757-3264-1\n[^Valiant1984]: Valiant LG. A theory of the learnable. Commun ACM. 1984;27: 1134\u20131142. doi:10.1145/1968.1972\n[^Guedj2019]: Guedj B. A Primer on PAC-Bayesian Learning. arXiv [stat.ML]. 2019. Available: http://arxiv.org/abs/1901.05353\n[^Bernstein2021]: Bernstein J. Machine learning is just statistics + quantifier reversal. In: jeremybernste [Internet]. [cited 1 Nov 2021]. Available: https://jeremybernste.in/writing/ml-is-just-statistics",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4570297632340575009,
+            "url": "https://community.kausalflow.com/c/ml-journal-club/probably-approximately-correct-pac-learning-and-bayesian-view",
+            "display_url": "community.kausalflow.com/c/ml-journal-club/probably-approximately-correct-pac-learning-and-bayesian-view",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Kausalflow",
+            "title": "Probably Approximately Correct (PAC) learning and bayesian view | kausalflow",
+            "description": "The first time I read about PAC was in the book The Nature of Statistical Learning Theory by Vapnik [^Vapnik2000].\n\nPAC is a systematic theory on why learning from data is even feasible [^Valiant1984]. The idea is to quantify the errors when learning f...",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 80,
+            "length": 112
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1476,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1503,
+            "length": 31
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1686,
+            "length": 54
+        }
+    ],
+    "views": 86,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1092,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-02 17:39:00+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

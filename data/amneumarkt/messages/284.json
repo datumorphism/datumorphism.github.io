@@ -1,0 +1,145 @@
+{
+    "_": "Message",
+    "id": 284,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-03 07:26:03+00:00",
+    "message": "#DS #fun \n\nLooks familiar.\n\nhttps://xkcd.com/2533/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3935343139890734790,
+            "url": "https://xkcd.com/2533/",
+            "display_url": "xkcd.com/2533",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "xkcd",
+            "title": "Slope Hypothesis Testing",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 6036253635047959725,
+                "access_hash": 2176920731281596250,
+                "file_reference": "b'\\x00a\\x87\\xbd\\x0e\\xcfc6\\x9cx\\x0c\\xda\\xa6\\xa9\\x1a\\x7f\\x83J\\xe1V\\xa5'",
+                "date": "2021-10-26 02:35:50+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\r(\\xd2U@\\xa3\\x81\\x91\\xda\\x83\\xc9\\x1bp3\\xda\\x91\\x9c\\x8cc\\x8a\\x91T8\\xcfq\\x9f\\xd6\\x80\\x1a\\x13\\x0b\\xf3\\xe0\\x8aO\\x95x\\x00\\x10{\\xd3\\xd8\\x04\\xe8:\\xf3Q+\\x16c\\x90\\x0e;\\xd0\\x03\\x82\\x9ep\\xab\\x8a)\\x0e\\xdd\\xb8\\xdb\\xc0\\xe7\\xad\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 105,
+                        "size": 15765
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 262,
+                        "size": 62575
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 419,
+                        "size": 117963
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1480,
+                        "h": 484,
+                        "sizes": [
+                            8372,
+                            27486,
+                            71550,
+                            99561,
+                            137998
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 28,
+            "length": 22
+        }
+    ],
+    "views": 82,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1092,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1090037466
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 415,
+        "read_max_id": 415
+    },
+    "edit_date": "2021-11-03 07:25:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS",
+        "fun"
+    ]
+}

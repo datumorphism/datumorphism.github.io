@@ -1,0 +1,115 @@
+{
+    "_": "Message",
+    "id": 282,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-03 06:56:58+00:00",
+    "message": "#DS #ML\n\nMicrosoft created two depositories for Machine Learning and Data Science beginners. They created many sketches. I love this style. \n\nhttps://github.com/microsoft/Data-Science-For-Beginners\n\nhttps://github.com/microsoft/ML-For-Beginners",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5195220255906051461,
+            "access_hash": -6291015603653638179,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x1aa\\x87\\xbd\\x0eP\\x07\\x19z\\xb2)Y\\xf3g\\x02\\xb1?\\xde\\x8ctE'",
+            "date": "2021-11-03 06:56:58+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x17(\\xb7\"\\xdcy\\xe4\\xad\\xc6\\xd4\\xdd\\xf7v\\xd4\\x81\\xa4\\xf3H\\xea7\\x7fx\\xff\\x00\\x85F\\xea>\\xd0\\xc7\\xcb\\x8f9\\xeb\\xfeE\\x05\\x7f|O\\x97\\x1f\\xde<\\x83\\xcf\\xf2\\xa4\\x04\\x81\\xe5\\xf3@$cw\\xad\\t$\\x86@\\x08\\xe3<\\x9d\\xdf\\xfdj\\x89\\x17\\xf7\\xe0\\x98\\xe3\\x07={\\xf5\\xfaQ\\n\\x81 \\xfd\\xd4C\\x9e\\xa3\\xaf\\xf2\\xa0\\tby\\x0b(\\'\\x8c\\xff\\x00x\\x9f\\xe9EEn\\x80J\\x08H\\xc6;\\xa9\\xe7\\xf9QL\\t^\\x17g\\xce\\xd4\\xeb\\xd7\\xbf\\xf2\\xa7y-\\xe6\\x16\\n\\x9ds\\x9e\\xff\\x00\\xca\\x8a)\\x00\\x82\\x07\\x12n\\xdb\\x18\\x19\\xcf\\xbf\\xf2\\xa4[fWS\\x84\\x00\\x1c\\xf1\\xff\\x00\\xea\\xa2\\x8a\\x00i\\x88\\xc5(r\\x17\\x00\\x81\\xc5\\x14Q@\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 181,
+                    "size": 32239
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 453,
+                    "size": 174170
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 725,
+                    "sizes": [
+                        16963,
+                        58810,
+                        172866,
+                        258563,
+                        352472
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 142,
+            "length": 55
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 199,
+            "length": 45
+        }
+    ],
+    "views": 90,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1092,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-03 06:57:00+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS",
+        "ML"
+    ]
+}
