@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matrix on Datumorphism</title><link>https://datumorphism.leima.is/tags/matrix/</link><description>Recent content in Matrix on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://datumorphism.leima.is/tags/matrix/index.xml" rel="self" type="application/rss+xml"/><item><title>Centering Matrix</title><link>https://datumorphism.leima.is/cards/math/statistics-centering-matrix/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/math/statistics-centering-matrix/</guid><description>Given a vector $v$, with mean value of its elements $m$, we can center the vector by subtracting the mean $m$ from each element,
 import numpy as np n = 10 v = np.random.randn(n) v_c = v - v.mean() This operation is easy and obvious. However, the formalism is not elegant. In some cases, we would like to formulate the process of centering the elements as operators,
-$$ v_c = \operatorname{\hat C}v. $$
-In this case, the operator $\operatorname{\hat C}$ is simply a matrix
-$$ \operatorname{\hat C} \to I_n - \frac{1}{n} J_n, $$
+$$ v_c = \operatorname{\hat H}v. $$
+In this case, the operator $\operatorname{\hat H}$ is simply a matrix
+$$ \operatorname{\hat H} \to I_n - \frac{1}{n} J_n, $$
 where $n$ is the dimension of the vector $v$, $I_n$ is a identity matrix, $J_n$ is a matrix of all $1$s.</description></item><item><title>SVD: Singular Value Decomposition</title><link>https://datumorphism.leima.is/cards/math/svd/</link><pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/math/svd/</guid><description>Given a matrix $\mathbf X \to X_{m}^{\phantom{m}n}$, we can decompose it into three matrices
 $$ X_{m}^{\phantom{m}n} = U_{m}^{\phantom{m}k} D_{k}^{\phantom{k}l} (V_{n}^{\phantom{n}l} )^{\mathrm T}, $$
 where $D_{k}^{\phantom{k}l}$ is diagonal.
