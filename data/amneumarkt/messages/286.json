@@ -1,0 +1,129 @@
+{
+    "_": "Message",
+    "id": 286,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-08 16:06:43+00:00",
+    "message": "#DS #news\n\nThis is a post about Zillow's Zetimate Model.\n\nZillow (https://zillow.com/ ) is an online real-estate marketplace and it is a big player. But last week, Zillow withdrew from the house flipping market and planned to layoff a handful of employees.\n\nThere are rumors indicating that this action is related to their machine learning based price estimation tool, Zestimate ( https://www.zillow.com/z/zestimate/ ).\n\nAt a first glance, Zestimate seems fine. Though the metrics shown on the website may not be that convincing, I am sure they've benchmarked more metrics than those shown on the website.\nThere are some discussions on reddit.\n\nAnyways, this is not the best story for data scientists.\n\n1. News: https://www.reddit.com/r/MachineLearning/comments/qlilnf/n_zillows_nnbased_zestimate_leads_to_massive/\n2. This is Zestimate: https://www.zillow.com/z/zestimate/\n3. https://www.wired.com/story/zillow-ibuyer-real-estate/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8718062770122818702,
+            "url": "https://www.zillow.com/?utm_source=email&utm_medium=email&utm_campaign=emo-headerzillowlogo-regconfirm",
+            "display_url": "zillow.com",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Zillow",
+            "title": "Zillow: Real Estate, Apartments, Mortgages & Home Values",
+            "description": "The leading real estate marketplace. Search millions of for-sale and rental listings, compare Zestimate\u00ae home values and connect with local professionals.",
+            "photo": {
+                "_": "Photo",
+                "id": 5950642713361754346,
+                "access_hash": -9176495955502919015,
+                "file_reference": "b'\\x00a\\x8e{\\tXV\\x95\\xf7\\x8f#V\\x84\\xe4\\xf9\\\\\\xc5%toY'",
+                "date": "2019-05-07 22:36:14+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\x82\\x8aJ\\xb9ide\\xc3\\xc9\\xc2zz\\xd7|\\xa4\\xa2\\xae\\xceD\\x9b\\xd8\\xac\\x11\\xf6\\x17\\nv\\x8e\\t\\xa6V\\xcb\\xcdo\\x02\\xf9d\\xa8\\x03\\x8d\\xa0f\\xa9\\xcdj\\xaf\\x1f\\x9dm\\xca\\x9f\\xe1\\xf4\\xac\\xe3V\\xfb\\xab\\x16\\xe1m\\x8atQElf\\x1d*\\xf2-\\xc4\\x90\\r\\xf2\\x08\\xe1\\x03\\xaf\\xa8\\xaa5\\xa7\\x88\\xe5\\xb1H\\xcc\\xaa\\xa7h\\xefX\\xd5v\\xb1\\xa4\\x16\\xe5%\\x10\\x19\\xb9$D?6\\xab?m\\xf9|\\xbbxN\\x00\\xe2\\x9f\\x1d\\xb5\\xaa\\x0f\\x99\\xd5\\xcf\\xa9j\\xb0\\x1e\\x14L+ \\x18\\xe8\\x08\\xac\\xe5$\\xfa\\\\\\xb5\\x16\\x8cZ(\\xa2\\xba\\x8c\\x02\\x8a(\\xa0\\x02\\x8a(\\xa0\\x02\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 180,
+                        "h": 180,
+                        "size": 4548
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 66,
+            "length": 19
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 381,
+            "length": 35
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 712,
+            "length": 102
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 837,
+            "length": 35
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 876,
+            "length": 54
+        }
+    ],
+    "views": 81,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1147,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-11 17:06:02+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS",
+        "news"
+    ]
+}

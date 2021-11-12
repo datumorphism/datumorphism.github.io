@@ -1,0 +1,138 @@
+{
+    "_": "Message",
+    "id": 289,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-11 12:20:38+00:00",
+    "message": "#ML #fun \n\nanimegan v2! (I stole this animation from reddit. https://www.reddit.com/r/MachineLearning/comments/qo4kp8/r_p_animeganv2_face_portrait_v2/ )\n\nTry it out: \n\n1. Telegram bot (works pretty well): https://t.me/face2stickerbot\n2. Dashboard (sometimes it doesn't work): https://huggingface.co/spaces/akhaliq/AnimeGANv2\n\nCode: https://github.com/bryandlee/animegan2-pytorch\n\nRedditors made some funny photos too.\nhttps://www.reddit.com/r/MachineLearning/comments/qo4kp8/r_p_animeganv2_face_portrait_v2/\n\n\n\u2014\nThis post is also available here: https://community.kausalflow.com/c/ml-applications/animeganv2",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5217508567325610056,
+            "access_hash": 8130511444187723503,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01!a\\x8e{\\t\\xd6\\x11\\x11l\\xfd}\\xad\\xea\\x9cRNp@\\xbc\\x822'",
+            "date": "2021-11-11 12:20:38+00:00",
+            "mime_type": "video/mp4",
+            "size": 352890,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeVideo",
+                    "duration": 6,
+                    "w": 800,
+                    "h": 370,
+                    "round_message": false,
+                    "supports_streaming": true
+                },
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "CleanShot 2021-11-11 at 13.17.52.mp4"
+                },
+                {
+                    "_": "DocumentAttributeAnimated"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x12(}\\xcc\\x84\\x05\\x89x\\'\\xbd@^KIA\\xdeJ\\x9f^j\\xd3*\\x19\\x030\\x04c\\x14\\xae#\\x91\\x0eT\\x12:f\\x91d\\x89!\\xda\\xec\\xc3\\x85\\x19\\xaa;d\\x943\\xab\\x10\\x078\\x15q0\\xe8\\xeb\\xea1I\\x1a\\xc7\\x12\\x8cpz\\x1a\\x04%\\x9c\\xcd\"2\\xb1\\xc9S\\xd6\\x8ar*DY\\x94\\x01\\x9e8\\xa2\\x98\\x8c\\xf2\\xc7i\\xe4\\xf5\\xa8.\\xa4p\\x13\\x0e\\xc3\\x8fZ(\\xa42h\\x1d\\x8c@\\xee?\\x9d;sa\\xbec\\xf9\\xd1E0!\\xb7\\x91\\xcc\\xb8.\\xc4}h\\xa2\\x8a\\x04\\x7f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 148,
+                    "size": 10023
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 61,
+            "length": 89
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 205,
+            "length": 28
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 276,
+            "length": 48
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 332,
+            "length": 46
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 418,
+            "length": 89
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 546,
+            "length": 61
+        }
+    ],
+    "views": 60,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1147,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 423,
+        "read_max_id": 423
+    },
+    "edit_date": "2021-11-11 12:25:05+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML",
+        "fun"
+    ]
+}

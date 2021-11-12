@@ -1,0 +1,97 @@
+{
+    "_": "Message",
+    "id": 287,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-09 05:44:54+00:00",
+    "message": "#fun \n\nLol, thank you Mr Lossfunction. But, which sanitizer are you using?\n\nhttps://www.reddit.com/r/learnmachinelearning/comments/qpolnw/data_cleaning_is_so_must/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5210989872578409940,
+            "access_hash": -7482119048837668277,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x1fa\\x8e{\\tT5\\x16t\\xf2\\xc7\\xf5\\xcbT\\xa6\\x16\\xa0\\xfe\\xc9\\xd4\\\\'",
+            "date": "2021-11-09 05:44:53+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x1f(\\xd12J%\\xc0N3\\xfaT\\x87\\xcc\\xec{\\xff\\x00w\\xff\\x00\\xafH\\xc4\\xe4\\xf0z\\xf5\\xddM\\xc1\\xe9\\xf3\\xf3\\xdfp\\xa0\\tWv>c\\xfab\\x9dP\\x0c\\xf4\\xf9\\xf8\\xff\\x00hsJ\\xbb\\x87?7^\\x85\\x87J\\x00\\x9a\\x8a2\\x0fz(\\x023\\x1eI8O\\xc5iB\\x1c\\xfc\\xdby\\xf4Z\\x197\\x1c\\xe5\\x87\\xd1\\xb1H\\x13\\x19\\xe5\\xb9\\xff\\x00j\\x80\\x1d\\xb1O\\xf0\\x8f\\xca\\x8d\\x89\\xfd\\xd1\\xf9S|\\xb3\\x8e\\xad\\xff\\x00}S\\x91q\\x9e\\xbf\\x89\\xcd\\x00\\x01\\x14\\x11\\x85\\x03\\x1e\\x94S\\xa8\\xa0\\x0f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 245,
+                    "size": 18611
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "x",
+                    "w": 640,
+                    "h": 491,
+                    "sizes": [
+                        4014,
+                        9941,
+                        19985,
+                        28296,
+                        38554
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 76,
+            "length": 87
+        }
+    ],
+    "views": 75,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1147,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-09 05:46:03+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

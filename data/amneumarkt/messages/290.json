@@ -1,0 +1,152 @@
+{
+    "_": "Message",
+    "id": 290,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-12 14:14:12+00:00",
+    "message": "#DS #Visualization\n\nOkay, I'll tell you the reason I wrote this post. It is because xkcd made [this](https://xkcd.com/2537/).\n\n---\n\nChoosing proper colormaps for our visualizations is important. It's almost like shooting a photo using your phone. Some phones capture details in every corner, while some phones give us overexposed photos and we get no details in the bright regions.\n\nA proper colormap should make sure we see the details we need to see. To address the importance of colormaps, we use the two examples shown on the website of colorcet[^colorcet]. The two colormaps, hot, and fire, can be found in matplotlib and colorcet, respectively. \n\nI can not post multiple images in one message, please see the full post for the comparisons of the two colormaps. Really, it is amazing. Find the link below: \nhttps://github.com/kausalflow/community/discussions/20\n\n\nIt is clear that \"hot\" brings in some overexposure. The other colormap, \"fire\", is a so-called perceptually uniform colormap. More experiments are performed in colorcet. Glasbey et al showed some examples of inspecting different properties using different colormaps[^Glasbey2007].\n\n\nOne of the methods to make sure the colormap shows enough details is to use perceptually uniform colrmaps[^Kovesi2015]. Kovesi provides a method to validate if a color map has uniform perceptual contrast[^Kovesi2015]. \n\n---\nReferences and links mentioned in this post:\n\n[^colorcet]: Anaconda. colorcet 1.0.0 documentation. [cited 12 Nov 2021]. Available: https://colorcet.holoviz.org/\n[^colorcet-github]: holoviz. colorcet/index.ipynb at master \u00b7 holoviz/colorcet. In: GitHub [Internet]. [cited 12 Nov 2021]. Available: https://github.com/holoviz/colorcet/blob/master/examples/index.ipynb\n[^Kovesi2015]: Kovesi P. Good Colour Maps: How to Design Them. arXiv [cs.GR]. 2015. Available: http://arxiv.org/abs/1509.03700\n[^Glasbey2007]: Glasbey C, van der Heijden G, Toh VFK, Gray A. Colour displays for categorical images. Color Research & Application. 2007. pp. 304\u2013309. doi:10.1002/col.20327\n[^matplotlib-colormaps]: Choosing Colormaps in Matplotlib \u2014 Matplotlib 3.4.3 documentation. [cited 12 Nov 2021]. Available: https://matplotlib.org/stable/tutorials/colors/colormaps.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3935343139899693994,
+            "url": "https://xkcd.com/2537/",
+            "display_url": "xkcd.com/2537",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "xkcd",
+            "title": "Painbow Award",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5772700650625412464,
+                "access_hash": -5160973357898150896,
+                "file_reference": "b'\\x00a\\x8e{\\t\\x82\\xea\\xf7\\xb6\\xc2\\x99\\xd41>phD\\x8d\\x98B\\xe6'",
+                "date": "2021-11-03 19:30:10+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\"(\\xd3H\\x81\\xe7\\'\\x8e\\xd5.\\xd5\\xfe\\xe8\\xfc\\xa9\\xb1\\xfd\\xdf\\xf3\\xe9T\\xee\\xaf\\xf61Hp\\xcc:\\xb1\\xe8(\\r\\xcb2I\\x0c\\\\;\"\\x9fCDrC.|\\xb6F\\xc7\\\\Vd\\x0b\\x1c\\x8c\\xd2N\\xf9\\'\\xaf\\xbd,!Z\\xf9V\\x06*:\\x92=*\\x14\\xee\\xec\\x83\\xc8\\xd1p|\\xc2\\x06\\xdd\\xb8\\xe9\\x8a)\\x84\\xff\\x00\\xa6:\\xf1\\xf7;\\xff\\x00J*\\xae\\x02\\xdc<\\xa9l\\xc6\\x15\\xdc\\xfc\\x0e*\\xa5\\xbe\\x9a\\xcc\\x80\\xcc\\xc5s\\xfc#\\xaf\\xe3WC\\xe3\\x8c8\\xc7\\\\\\n<\\xd1\\x81\\xfe\\xb3\\xf2\\xa6\\x17\\xb1W\\xfb(g\\xfdsc\\xe9\\xcdZ\\xb6\\xb4\\x8e\\xd8\\x1d\\x99$\\xf5c\\xd4\\xd2\\t02\\xdb\\x88\\xfa\\x1aw\\x9a1\\xd1\\xff\\x00#@\\\\\\x8b\\x9f\\xb6\\xcb\\xc1\\xc6\\xc1\\xce84T\\x9e`#\\x85l\\x9e9\\x14P\\x1a\\x8ftR[*\\x0eq\\xd4Ryi\\xe5\\x8f\\x91\\x7f*(\\xa0\\x00\\xc6\\x9c\\xfc\\x8b\\xd7\\xd2\\x86U\\xcf\\xdd\\x1d=(\\xa2\\x80\\x04EYxP>\\x82\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 272,
+                        "size": 20924
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 761,
+                        "h": 648,
+                        "sizes": [
+                            6341,
+                            17658,
+                            33790,
+                            45466,
+                            64196
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 101,
+            "length": 22
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 812,
+            "length": 54
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1507,
+            "length": 29
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1672,
+            "length": 68
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1811,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1836,
+            "length": 31
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 2166,
+            "length": 61
+        }
+    ],
+    "views": 11,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1147,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-12 14:20:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS",
+        "Visualization"
+    ]
+}

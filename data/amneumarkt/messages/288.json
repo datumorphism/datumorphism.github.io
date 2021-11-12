@@ -1,0 +1,125 @@
+{
+    "_": "Message",
+    "id": 288,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-10 20:08:17+00:00",
+    "message": "#ML #news\n\n1. https://ai.googleblog.com/2021/11/model-ensembles-are-faster-than-you.html\n2. Wang X, Kondratyuk D, Christiansen E, Kitani KM, Alon Y, Eban E. Wisdom of Committees: An Overlooked Approach To Faster and More Accurate Models. arXiv [cs.CV]. 2020. Available: http://arxiv.org/abs/2012.01988\n\nMost companies probably have several models to solve the same problem. There are model A, model B, even model C. The final result is some kind of aggregation of the three models. Or the models are cascaded like what's shown in the figure. But it takes a lot of computing resources to run the features through the three models.\n\nWang et al shows that ensembles are not more resource demanding than big models with similar performance in CV tasks.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5215256767968163400,
+            "access_hash": 7419997044674493812,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01 a\\x8e{\\tMv\\\\i\\x8a6\\x0e\\xbe\\x01\\xb5(\\xadX\\xd7N\\xc7'",
+            "date": "2021-11-10 20:08:17+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01\\x15(\\xd2\\xbay\\x12\\x06)\\xc3v\\xc74\\xcb'\\x95\\xd1\\xfc\\xd2I\\x07\\x19\\xc6)\\xf7K#@\\xc12[\\xb684\\xcb\\x14\\x95\\x11\\xc4\\x9b\\xba\\xf0[\\xad\\x00X\\\\v&\\x8c\\xbe\\xee\\x83\\x14`\\xe0\\xf2)\\xa8\\x1b'/R\\xdd\\xba\\x01%\\x14\\xd1\\x9c\\x9eA\\xa2\\xa8\\x07QE\\x14\\x00\\x1e\\x94\\xc5\\x8fi'#\\xf2\\xa2\\x8a\\x00\\x156\\xb6s\\xfaQE\\x14\\x01\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 169,
+                    "size": 10859
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 422,
+                    "size": 42219
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 676,
+                    "sizes": [
+                        5934,
+                        14691,
+                        28523,
+                        40042,
+                        61203
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 14,
+            "length": 74
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 245,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 270,
+            "length": 31
+        },
+        {
+            "_": "MessageEntityStrike",
+            "offset": 303,
+            "length": 326
+        }
+    ],
+    "views": 67,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1147,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-10 20:25:13+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML",
+        "news"
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "_": "Message",
+    "id": 285,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-08 16:05:21+00:00",
+    "message": "#ML \n\n(See also https://bit.ly/3F1Kv2F )\n\nCentered Kernel Alignment (CKA) is a similarity metric designed to measure the similarity of between representations of features in neural networks[^Kornblith2019]. \n\nCKA is based on the Hilbert-Schmidt Independence Criterion (HSIC). HSIC is defined using the centered kernels of the features to compare[^Gretton2005]. But HSIC is not invariant to isotropic scaling which is required for a similarity metric of representations[^Kornblith2019]. CKA is a normalization of HSIC.\n\nThe attached figure shows why CKA makes sense.\n\nCKA has problems too. Seita et al argues that CKA is a metric based on intuitive tests, i.e., calculate cases that we believe that should be similar and check if the CKA values is consistent with this intuition. Seita et al built a quantitive benchmark[^Seita].\n\n[^Kornblith2019]: http://arxiv.org/abs/1905.00414\n\n[^Gretton2005]: https://link.springer.com/chapter/10.1007%2F11564089_7\n\n[^Seita]: https://bair.berkeley.edu/blog/2021/11/05/similarity/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5208738072764725367,
+            "access_hash": -6932568285092786254,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x1da\\x8e{\\t\\xd1\\xed\\xf8^\\xa5[\\xefi\\xfd\\x7f%[1\\xf7\\x01\\xab'",
+            "date": "2021-11-08 16:05:21+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x10(\\xb1s#\\xc3,\\x924\\xac\\x07\\xf0&z\\xf1D\\xf28x\\xe5i\\x19#\\xf2\\xc1\\xc0=M]\\xdc\\x07z7\\x8c\\xf5\\xa0\\xab\\xf9\\x14\\xd6f\\x9a\\x18di\\x0cjwd\\x83\\x8e\\xfcP\\xed,\\x96\\x8c!\\x94\\x82\\x1f\\x01\\xf3\\xdb\\x15p\\xb0\\xf5\\xa3p8\\x03\\xad\\x02\\xb9V\\xd2\\xecNHP\\xc3i\\x00\\xee\\xef\\xc1\\xff\\x00\\n*\\xe08\\xec\\x7f*(\\x13?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 133,
+                    "size": 17399
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 333,
+                    "size": 73273
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 533,
+                    "sizes": [
+                        8572,
+                        24765,
+                        50395,
+                        70636,
+                        105299
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 16,
+            "length": 22
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 848,
+            "length": 31
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 897,
+            "length": 54
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 963,
+            "length": 53
+        }
+    ],
+    "views": 81,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1147,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-08 16:16:36+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}
