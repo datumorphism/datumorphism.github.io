@@ -30,7 +30,7 @@
     {{ if .message }}
     <div style="margin-left:2em;">
         <span style="display:block;font-size:90%;">
-            <i class="far fa-star"></i> {{ .message | markdownify | truncate 500 }}</span>
+            <i class="far fa-star"></i> Content: {{ .message | markdownify | truncate 2000 }}</span>
     </div>
     {{ end }}
 
