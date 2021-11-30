@@ -1,0 +1,160 @@
+{
+    "_": "Message",
+    "id": 294,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-19 11:59:44+00:00",
+    "message": "#ML \n\nSHAP (SHapley Additive exPlanations) is a system of methods to interpret machine learning models. \nThe author of SHAP built an easy-to-use package to help us understand how the features are contributing to the machine learning model predictions. The package comes with a comprehensive tutorial for different machine learning frameworks.\n\n- Python Package:  [slundberg/shap](https://shap.readthedocs.io/)\n- A tutorial on how to use it: https://www.aidancooper.co.uk/a-non-technical-guide-to-interpreting-shap-analyses/\n\n---\n\nThe package is so popular and you might be using it already. So what is SHAP exactly? It is a series of methods based on Shapley values.\n\n> SHAP (SHapley Additive exPlanations) is a game-theoretic approach to explain the output of any machine learning model.\n> \n> --  [slundberg/shap](https://github.com/slundberg/shap)\n\nRegarding Shapley value: There are two key ideas in calculating a Shapley value.\n- A method to measure the contribution to the final prediction of some certain combination of features.\n- A method to combine these \"contributions\" into a score.\n\nSHAP provides some methods to estimate Shapley values and also for different models. \n\nThe following two pages explain Shapley value and SHAP thoroughly.\n\n- https://christophm.github.io/interpretable-ml-book/shap.html\n- https://christophm.github.io/interpretable-ml-book/shapley.html\n\nReferences:\n- Lundberg SM, Lee SI. A unified approach to interpreting model predictions. of the 31st international conference on neural \u2026. 2017. Available: http://papers.nips.cc/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf\n- Lundberg SM, Nair B, Vavilala MS, Horibe M, Eisses MJ, Adams T, et al. Explainable machine-learning predictions for the prevention of hypoxaemia during surgery. Nature Biomedical Engineering. 2018;2: 749\u2013760. doi:10.1038/s41551-018-0304-0\n\n---\nI posted [a similar article years ago in our Chinese data weekly newsletter](https://github.com/data-com/weekly/discussions/27) but for a different story.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3792120158258540469,
+            "url": "https://www.aidancooper.co.uk/a-non-technical-guide-to-interpreting-shap-analyses/",
+            "display_url": "aidancooper.co.uk/a-non-technical-guide-to-interpreting-shap-analyses",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Aidan Cooper",
+            "title": "Explaining Machine Learning Models: A Non-Technical Guide to Interpreting SHAP Analyses",
+            "description": "With interpretability becoming an increasingly important requirement for machine learning projects, there's a growing need for the complex outputs of techniques such as SHAP to be communicated to non-technical stakeholders.",
+            "photo": {
+                "_": "Photo",
+                "id": 5765917024659287329,
+                "access_hash": 3546777322493173534,
+                "file_reference": "b'\\x00a\\xa6\\x10\\x82\\xb3\\xa4\\x07L\\xcc\\x10\\xe4\\xe6\\x90\\xfbK\\x97\\xd8k\\x86\\\\'",
+                "date": "2021-11-01 13:11:54+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x1b(\\xd7'\\x14\\xb8$\\x0eH\\xfaR\\x1f\\xa8\\xa7\\x0e\\x82\\x80 \\xdeD\\x85K\\xe0\\xf6\\x19\\xff\\x00\\xebT\\xdc\\xe3\\xaej<~\\xfc\\x1fj\\x96\\x9b\\x01\\xa7\\xef\\x8f\\xa1\\xfe\\x94R7\\xde\\x18\\xf4?\\xd2\\x8a@)\\xebN\\x1d(\\xa4`0h\\x011\\xf3\\x83\\xedN\\xa8\\xe8\\xee(\\x01\\xc7\\xef\\x8f\\xa1\\xfe\\x94S\\xb0=(\\xa0\\x0f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 214,
+                        "size": 14600
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 536,
+                        "size": 55803
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 857,
+                        "size": 109484
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2460,
+                        "h": 1647,
+                        "sizes": [
+                            25138,
+                            60189,
+                            114534,
+                            153958,
+                            231840
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 380,
+            "length": 28
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 441,
+            "length": 82
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 815,
+            "length": 33
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1252,
+            "length": 60
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1315,
+            "length": 63
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1536,
+            "length": 80
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1940,
+            "length": 49
+        }
+    ],
+    "views": 137,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1175,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-21 09:26:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

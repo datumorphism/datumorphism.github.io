@@ -1,0 +1,132 @@
+{
+    "_": "Message",
+    "id": 295,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-29 15:08:42+00:00",
+    "message": "#tool\n\nhttps://www.jetbrains.com/fleet/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4967719258094419474,
+            "url": "https://www.jetbrains.com/fleet/",
+            "display_url": "jetbrains.com/fleet",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "JetBrains",
+            "title": "JetBrains Fleet: The Next-Generation IDE by JetBrains",
+            "description": "Built from scratch, based on 20 years of experience developing IDEs. Fleet uses the IntelliJ code-processing engine, with a distributed IDE architecture and a reimagined UI.",
+            "photo": {
+                "_": "Photo",
+                "id": 5817784424115318051,
+                "access_hash": -8255063663549340564,
+                "file_reference": "b'\\x00a\\xa6\\x10\\x82U-\\xb0\\xb3M\\x1f;\\x00\\x97\\xc9\\xdc\\xdb\\x0e\\x84\\xd2G'",
+                "date": "2021-11-18 18:20:32+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x19(\\xa0\\xd1\\xba6\\xd6B\\x0f\\xa1\\x153Y\\xba\\x1c3\\xc6\\x0f\\xa6O\\xae+]\\x82\\xb8\\xecGj\\xab-\\xa2\\xb7Gq\\xed\\x9c\\x8a\\xc25\\xd3\\xdc\\xbeG\\xd0\\xae\\xbal\\xa5O\\xce\\xbdp1Q\\x0b\\x19\\xb1\\x92\\x14s\\x83\\x93\\xd3\\x9f\\xfe\\xbdY\\x91\\x99\\x0e\\t'\\xd8\\x1c\\x9a\\x8e}\\xec\\x9b\\x91\\x9b#\\xd0\\xd6\\xaaH\\xb7KM\\n\\x92Fcr\\x8d\\xd4zQM$\\x93\\x92rM\\x15w1\\x1c\\x92<g(\\xc5~\\x86\\xa7[\\xe9\\x87R\\x1b\\xea*\\xb5\\x15\\rE\\xee\\x816\\x8bks\\x1bJ$p\\xc1\\xbd\\x8eEO\\xe7D\\xfd\\x1cVm\\x14\\xa5Iw4\\x8dF\\x89nQR_\\x97\\xbf8\\xf4\\xa2\\xa2\\xa2\\xaa7\\xb1\\x12\\xb3g\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 200,
+                        "size": 11484
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 500,
+                        "size": 34706
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 800,
+                        "sizes": [
+                            8080,
+                            16727,
+                            28059,
+                            35159,
+                            56934
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 7,
+            "length": 32
+        }
+    ],
+    "views": 52,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1175,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 438,
+        "read_max_id": 438
+    },
+    "edit_date": "2021-11-29 15:08:46+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "tool"
+    ]
+}

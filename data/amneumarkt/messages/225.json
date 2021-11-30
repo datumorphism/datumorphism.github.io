@@ -25,7 +25,7 @@
         "webpage": {
             "_": "WebPage",
             "id": 6086673038848493837,
-            "url": "https://i.am.ai/roadmap",
+            "url": "https://i.am.ai/roadmap/",
             "display_url": "i.am.ai/roadmap",
             "hash": 0,
             "type": "article",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5828929112629160838,
                 "access_hash": 1813044009101596335,
-                "file_reference": "b\"\\x00a\\x8e{\\t\\xe3}o\\xdc6,\\xe2`{\\xa7[L\\xa9'Ul\"",
+                "file_reference": "b'\\x00a\\xa6\\x10\\x827\\xff(E\\x8a\\x9e\\x95\\xab\\xa0\\xd4\\xc1L\\xddj\\x8f\\xc6'",
                 "date": "2020-10-29 22:57:13+00:00",
                 "sizes": [
                     {
@@ -99,12 +99,12 @@
             "length": 29
         }
     ],
-    "views": 144,
+    "views": 147,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1147,
+        "replies_pts": 1175,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

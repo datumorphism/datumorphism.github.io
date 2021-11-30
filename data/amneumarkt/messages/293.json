@@ -1,0 +1,191 @@
+{
+    "_": "Message",
+    "id": 293,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-16 10:34:23+00:00",
+    "message": "MLU-Explain - \u6765\u81ea\u4e9a\u9a6c\u900a\u5de5\u7a0b\u5e08 Jared Wilber\u7684\u4ea4\u4e92\u53ef\u89c6\u5316\u6838\u5fc3\u673a\u5668\u5b66\u4e60\u6982\u5ff5\u7684\u89c6\u89c9\u8bba\u6587 #visualessay",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2021-11-14 12:15:03+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1471912912
+        },
+        "from_name": null,
+        "channel_post": 173,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8720606893744708300,
+            "url": "https://twitter.com/jdwlbr/status/1455560269678088193",
+            "display_url": "twitter.com/jdwlbr/status/1455560269678088193",
+            "hash": 0,
+            "type": "gif",
+            "site_name": "Twitter",
+            "title": "Jared Wilber",
+            "description": "\ud83d\udce2\ud83d\udce2 BIG ANNOUNCEMENT! Making some of my Amazon work external! Introducing MLU-Explain: Visual essays explaining core machine learning concepts. mlu-explain.github.io #dataviz #datascience #javascript #js #d3 #Datavisualization #machinelearning #ml",
+            "photo": {
+                "_": "Photo",
+                "id": 5770382648185826512,
+                "access_hash": 4483956167790043175,
+                "file_reference": "b'\\x00a\\xa6\\x10\\x82\\xd0.\\xaa=\\x9d%D\\xd9;\\xf1I\\xac\\xd0\\x992\\x1f'",
+                "date": "2021-11-02 15:39:39+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x19(\\xd9\\xa6I\\xe6c\\xe4+\\xd3\\xb8\\xcd>\\x98S\\'\\xef7\\xe7@\\x15Y\\xae\\xf26\\xed\\xcf|\\xa1\\xa9\\xe1\\x13\\x8c\\xf9\\xec\\x87\\xd3h\\xa7\\xf9\\x7f\\xed5\\x00\\xa8\\xfe\"~\\xa6\\x80\\x1fE `z\\x1a(\\x01i)h\\xa0\\x02\\x9b\\xb3\\xdc\\xd3\\xa8\\xa0\\x04\\x0b\\x8a)h\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 204,
+                        "size": 10221
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 600,
+                        "h": 382,
+                        "sizes": [
+                            1842,
+                            4768,
+                            10383,
+                            15338,
+                            24490
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "@jdwlbr",
+            "document": {
+                "_": "Document",
+                "id": 5770376325537727184,
+                "access_hash": 2676165199836737676,
+                "file_reference": "b'\\x00a\\xa6\\x10\\x82aOkRG.\\xe2!\\x17\\xd6\\xc6(\\xa7\\xb5\\x1c&'",
+                "date": "2021-11-02 15:39:39+00:00",
+                "mime_type": "video/mp4",
+                "size": 495919,
+                "dc_id": 4,
+                "attributes": [
+                    {
+                        "_": "DocumentAttributeVideo",
+                        "duration": 23,
+                        "w": 600,
+                        "h": 382,
+                        "round_message": false,
+                        "supports_streaming": true
+                    },
+                    {
+                        "_": "DocumentAttributeFilename",
+                        "file_name": "FDMwSOKVIAQYC1O.mp4"
+                    },
+                    {
+                        "_": "DocumentAttributeAnimated"
+                    }
+                ],
+                "thumbs": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x19(\\xd9\\xa6>\\xfce\\n\\xf4\\xee3O\\xa6\\xed\\xcf\\xf17\\xe7@\\x15Y\\xeer6\\xe3>\\xe8\\x7f\\xc6\\xa7\\x88L3\\xe72\\x1fM\\xa3\\x14\\xed\\x9e\\xe6\\x80T\\x7f\\x114\\x00\\xfa)\\x03\\x03\\xd0\\xd1@\\x06(\\xa5\\xa2\\x80\\x12\\x93g\\xb9\\xa7Q@\\x08\\x06(\\xa5\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 204,
+                        "size": 9271
+                    }
+                ],
+                "video_thumbs": []
+            },
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 0,
+            "length": 11,
+            "url": "https://twitter.com/jdwlbr/status/1455560269678088193"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 23,
+            "length": 12,
+            "url": "https://twitter.com/jdwlbr"
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 41,
+            "length": 13,
+            "url": "https://mlu-explain.github.io/"
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 55,
+            "length": 12
+        }
+    ],
+    "views": 111,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1175,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1990634124
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 434,
+        "read_max_id": 434
+    },
+    "edit_date": "2021-11-16 10:34:25+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

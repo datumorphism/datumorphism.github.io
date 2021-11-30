@@ -1,0 +1,113 @@
+{
+    "_": "Message",
+    "id": 291,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-16 08:24:05+00:00",
+    "message": "#visualization \n\nNicolas P. Rougier released his book on scientific visualization. He made some aesthetically pleasing figures. And the book is free.  \n\nhttps://github.com/rougier/scientific-visualization-book",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5233350412919224008,
+            "access_hash": 1549499843927017028,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01#a\\xa6\\x10\\x822\\xcaP\\xce\\x1e\\xb5\\xc0\\x96\\xbbns\\xf4\\\\\\x99\\xe9A'",
+            "date": "2021-11-16 08:24:05+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01$(\\x8e?\\xdeH\\xcb\\x9cc\\x9aW\\xca\\x02s\\x9e*f\\xb3#q\\xf3\\x10c\\xafZrY9$oBG\\xd6\\xab\\xae\\xe6j\\xeaI\\xa0\\xb0&Bry\\x15<\\xfcI\\x8a \\xb5hOQ\\xcdI$L\\xcd\\xbb#\\xf5\\xac\\xedihj\\xe4\\xd9\\x00\\xea(\\xa9\\x85\\xbb\\xfa\\x8a*\\x849\\x8ae\\xb3\\xdb\\xad9J\\xefl\\x0e{\\xd3\\xccQ\\x9d\\xd9Q\\xcfZ\\x00@\\xccT\\r\\xdd\\xe9Xz\\x0b\\x9eq\\x8aim\\xa3\\xa1\\xa7c\\x9c\\xf7\\xc7\\xad5\\xdd\\x1179\\xc51\\x0cX\\xd8\\xca$\\xdc@\\xc7+\\x9e(\\xa2\\x1b\\x98\\xe4\\xc6\\x0e\\x0f`h\\xa2\\xe1a\\x9f\\xc2W<|\\xd4\\xe8\\x07\\xef\\t\\xc9\\xc9QE\\x14\\xba\\x8d\\x13\\xe3\\xf9S$\\x85%\\x18q\\x9cw\\xa2\\x8ab\\x19\\r\\xbcq\\xb1`\\t9\\xefE\\x14P\\x07'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 292,
+                    "size": 33568
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 731,
+                    "size": 160448
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 1169,
+                    "sizes": [
+                        18662,
+                        56745,
+                        114203,
+                        165800,
+                        259655
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 153,
+            "length": 56
+        }
+    ],
+    "views": 117,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 3,
+        "replies_pts": 1175,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1090037466
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 430,
+        "read_max_id": 430
+    },
+    "edit_date": "2021-11-16 08:24:08+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}
