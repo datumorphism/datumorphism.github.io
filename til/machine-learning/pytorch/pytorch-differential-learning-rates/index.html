@@ -4,18 +4,17 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title> Learning Rate | Datumorphism | L Ma </title>
-<meta name=description content="Find a good learning rate">
+<title> Differential Learning Rates in PyTorch | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
-<meta property="og:title" content="Learning Rate">
-<meta property="og:description" content="Find a good learning rate">
+<meta property="og:title" content="Differential Learning Rates in PyTorch">
+<meta property="og:description" content="Using different learning rates in different layers of our artificial neural network.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://datumorphism.leima.is/cards/machine-learning/practice/learning-rate/"><meta property="article:section" content="cards">
+<meta property="og:url" content="https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-differential-learning-rates/"><meta property="article:section" content="til">
 <meta property="article:published_time" content="2021-11-01T00:00:00+00:00">
 <meta property="article:modified_time" content="2021-11-01T00:00:00+00:00">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-<link rel=canonical href=https://datumorphism.leima.is/cards/machine-learning/practice/learning-rate/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=canonical href=https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-differential-learning-rates/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
 <link rel=stylesheet href=/css/bulma.css>
 <link rel=stylesheet href=/css/bulma-divider.min.css>
 <link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
@@ -119,11 +118,11 @@ AmNeumarkt
 </header>
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
-<meta itemprop=name content="Learning Rate">
-<meta itemprop=description content="Find a good learning rate"><meta itemprop=datePublished content="2021-11-01T00:00:00+00:00">
+<meta itemprop=name content="Differential Learning Rates in PyTorch">
+<meta itemprop=description content="Using different learning rates in different layers of our artificial neural network."><meta itemprop=datePublished content="2021-11-01T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-11-01T00:00:00+00:00">
-<meta itemprop=wordCount content="236">
-<meta itemprop=keywords content="Machine Learning,Deep Learning,Basics,Learning Rate,">
+<meta itemprop=wordCount content="90">
+<meta itemprop=keywords content="Python,PyTorch,Learning Rate,">
 <section class=section>
 <div class=container>
 <article class=post>
@@ -134,94 +133,57 @@ AmNeumarkt
 <a href=https://datumorphism.leima.is/>Datumorphism</a>
 </li>
 <li>
-<a href=https://datumorphism.leima.is/cards/>Cards</a>
-</li>
-<li>
-<a href=https://datumorphism.leima.is/cards/machine-learning/>Machine Learning</a>
-</li>
-<li>
-<a href=https://datumorphism.leima.is/cards/machine-learning/practice/>Practices in Machine Learning</a>
+<a href=https://datumorphism.leima.is/til/>TIL</a>
 </li>
 <li class=active>
-<a href=https://datumorphism.leima.is/cards/machine-learning/practice/learning-rate/>Learning Rate</a>
+<a href=https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-differential-learning-rates/>Differential Learning Rates in PyTorch</a>
 </li>
 </ul>
 </nav>
 <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
-Learning Rate
+Differential Learning Rates in PyTorch
 </h1>
 <h2 class="title is-6 has-text-centered">
 <i class="fas fa-tags" style=margin-right:.5em></i>
-<a href=/tags/machine-learning><span class="tag is-warning is-small is-light">#Machine Learning</span></a>
-<a href=/tags/deep-learning><span class="tag is-warning is-small is-light">#Deep Learning</span></a>
-<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
+<a href=/tags/python><span class="tag is-warning is-small is-light">#Python</span></a>
+<a href=/tags/pytorch><span class="tag is-warning is-small is-light">#PyTorch</span></a>
 <a href=/tags/learning-rate><span class="tag is-warning is-small is-light">#Learning Rate</span></a>
 </h2>
 </header>
 <div class=columns>
 <div class="column is-8">
+<div class=is-divider data-content=SUMMARY></div>
+<div class="notification is-light">
+<p>
+Using different learning rates in different layers of our artificial neural network.
+</p>
+</div>
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<p>Finding a suitable learning rate for our model training is crucial.</p>
-<p>A safe but time wasting option is to use search on a grid of parameters. However, there are smarter moves.</p>
+<p>PyTorch offers optimizer configuration for different learning rates in different layers.</p>
 <article class="message is-info is-light">
 <div class=message-header>
-<p>Karpathy’s Constant</p>
+<p>Why Do We Do This</p>
 </div>
 <div class=message-body>
-An empirical learning rate $3^{-4}$ for Adms, aka, Karpathy's constant, was started as a tweet by Andrei Karpathy.
-<blockquote class=twitter-tweet><p lang=en dir=ltr>3e-4 is the best learning rate for Adam, hands down.</p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/801621764144971776?ref_src=twsrc%5Etfw">November 24, 2016</a></blockquote>
-<script async src=https://platform.twitter.com/widgets.js></script>
-<blockquote class=twitter-tweet><p lang=en dir=ltr>(i just wanted to make sure that people understand that this is a joke...)</p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/801694597009113088?ref_src=twsrc%5Etfw">November 24, 2016</a></blockquote>
-<script async src=https://platform.twitter.com/widgets.js></script>
+In some models, we need to treat the layers differently. For example, in transfer learning, we could fine tuning the pretrained layers using a tiny learning rate.
 </div>
 </article>
-<h2 id=smarter-method>Smarter Method</h2>
-<p>A smarter method is to start with small learning rate and increase it on each mini-batch, then observe the loss vs learning rate (mini-batch in this case). The learning rate that leads to the greatest gradient decline is a suitable learning rate <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> <sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>.</p>
-<figure><img src=../assets/learning-rate/learning_rate_fastai.png alt="Figure taken from fastai docs"><figcaption>
-<p>Figure taken from <a href=https://docs.fast.ai>fastai docs</a></p>
-</figcaption>
-</figure>
-<p>The code for this method can be found on the <a href=https://github.com/fastai/fastai/blob/351f4b9314e2ea23684fb2e19235ee5c5ef8cbfd/fastai/callback/schedule.py#L284>GitHub repo of fastai</a>.</p>
-<h2 id=see-also>See Also</h2>
-<a class="box is-light is-light" href=https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-differential-learning-rates/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
-<div class=media-content>
-<div class=content>
-<h6>
-Differential Learning Rates in PyTorch
-</h6>
-<div style=font-size:80%>
-Using different learning rates in different layers of our artificial neural network.
-</div>
-</div>
-</div>
-</a>
-<section class=footnotes role=doc-endnotes>
+<p>In the documentation of pytorch, we find that we can set optimizer parameters on a per-layer basis <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. The example from the documentation is</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>optim<span style=color:#f92672>.</span>SGD([
+    {<span style=color:#e6db74>&#39;params&#39;</span>: model<span style=color:#f92672>.</span>base<span style=color:#f92672>.</span>parameters()},
+    {<span style=color:#e6db74>&#39;params&#39;</span>: model<span style=color:#f92672>.</span>classifier<span style=color:#f92672>.</span>parameters(), <span style=color:#e6db74>&#39;lr&#39;</span>: <span style=color:#ae81ff>1e-3</span>}
+], lr<span style=color:#f92672>=</span><span style=color:#ae81ff>1e-2</span>, momentum<span style=color:#f92672>=</span><span style=color:#ae81ff>0.9</span>)
+</code></pre></div><section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
 <p>
-<a name=Pointer2019 href=#Pointer2019 style=text-decoration:none>
-<span class="tag is-link is-light">Pointer2019</span>
+<a name=PyTorchDocs href=#PyTorchDocs style=text-decoration:none>
+<span class="tag is-link is-light">PyTorchDocs</span>
 </a>
-<a href=https://www.oreilly.com/library/view/programming-pytorch-for/9781492045342/ style=text-decoration:none>Pointer I. Programming PyTorch for deep learning: Creating and deploying deep learning applications. Sebastopol, CA: O’Reilly Media; 2019.</a>
+<a href=https://pytorch.org/docs/stable/optim.html style=text-decoration:none>torch.optim — PyTorch 1.10.0 documentation. [cited 30 Nov 2021]. Available: https://pytorch.org/docs/stable/optim.html</a>
 &#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-<li id=fn:2 role=doc-endnote>
-<p>
-<a name=Howard&Gugger2020 href=#Howard%26Gugger2020 style=text-decoration:none>
-<span class="tag is-link is-light">Howard&Gugger2020</span>
-</a>
-<a href=https://www.oreilly.com/library/view/deep-learning-for/9781492045519/ style=text-decoration:none>Howard J, Gugger S. Deep Learning for Coders with Fastai and PyTorch: AI Applications Without a PhD. O’Reilly Media, Incorporated; 2020. Available: https://www.oreilly.com/library/view/deep-learning-for/9781492045519/</a>
-&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-<li id=fn:3 role=doc-endnote>
-<p>
-<a name=fastaidocs href=#fastaidocs style=text-decoration:none>
-<span class="tag is-link is-light">fastaidocs</span>
-</a>
-<a href=https://docs.fast.ai/callback.schedule.html#Learner.lr_find style=text-decoration:none>Howard J, Thomas R. Hyperparam schedule. In: fastai [Internet]. [cited 30 Nov 2021]. Available: https://docs.fast.ai/callback.schedule.html#Learner.lr_find</a>
-&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -235,6 +197,7 @@ by <span itemprop=author>L Ma</span>;
 </div></p>
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a class=pagination-next href="https://datumorphism.leima.is/til/misc/vscode/vscode-terminal-python-not-conda-mac/?ref=footer">VSCode Terminal Python Can Not Activate Conda on... »</a>
 </nav>
 </div>
 <div class="column is-4">
@@ -244,35 +207,13 @@ by <span itemprop=author>L Ma</span>;
 <div class=media-content>
 <div class=content>
 <p>
-L Ma (2021). 'Learning Rate', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/cards/machine-learning/practice/learning-rate/.
+L Ma (2021). 'Differential Learning Rates in PyTorch', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-differential-learning-rates/.
 </p>
 </div>
 </div>
 </article>
 </div>
 <style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
-<div class=is-divider data-content=ToC></div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<details>
-<summary>Table of Contents</summary>
-<div>
-<div>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#smarter-method>Smarter Method</a></li>
-<li><a href=#see-also>See Also</a></li>
-</ul>
-</nav>
-</div>
-</div>
-</details>
-</div>
-</div>
-</article>
-</div>
 <script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
 <div class=is-divider data-content=REFERENCES></div>
 <div class="box is-size-7">
@@ -288,15 +229,10 @@ L Ma (2021). 'Learning Rate', Datumorphism, 11 April. Available at: https://datu
 </a>
 <a href=https://www.oreilly.com/library/view/programming-pytorch-for/9781492045342/ style=text-decoration:none>Pointer I. Programming PyTorch for deep learning: Creating and deploying deep learning applications. Sebastopol, CA: O’Reilly Media; 2019.</a></li>
 <li class=has-text-weight-bold>
-<a name=fastaidocs href=#fastaidocs style=text-decoration:none>
-<span class="tag is-link is-light">fastaidocs</span>
+<a name=PyTorchDocs href=#PyTorchDocs style=text-decoration:none>
+<span class="tag is-link is-light">PyTorchDocs</span>
 </a>
-<a href=https://docs.fast.ai/callback.schedule.html#Learner.lr_find style=text-decoration:none>Howard J, Thomas R. Hyperparam schedule. In: fastai [Internet]. [cited 30 Nov 2021]. Available: https://docs.fast.ai/callback.schedule.html#Learner.lr_find</a></li>
-<li class=has-text-weight-bold>
-<a name=Howard&Gugger2020 href=#Howard%26Gugger2020 style=text-decoration:none>
-<span class="tag is-link is-light">Howard&Gugger2020</span>
-</a>
-<a href=https://www.oreilly.com/library/view/deep-learning-for/9781492045519/ style=text-decoration:none>Howard J, Gugger S. Deep Learning for Coders with Fastai and PyTorch: AI Applications Without a PhD. O’Reilly Media, Incorporated; 2020. Available: https://www.oreilly.com/library/view/deep-learning-for/9781492045519/</a></li>
+<a href=https://pytorch.org/docs/stable/optim.html style=text-decoration:none>torch.optim — PyTorch 1.10.0 documentation. [cited 30 Nov 2021]. Available: https://pytorch.org/docs/stable/optim.html</a></li>
 </ol>
 </p>
 </div>
@@ -311,7 +247,7 @@ L Ma (2021). 'Learning Rate', Datumorphism, 11 April. Available at: https://datu
 <p>
 <strong>Current Ref: </strong><br>
 <ul><li style=list-style:none>
-<div>cards/machine-learning/practice/learning-rate.md</div></li>
+<div>til/machine-learning/pytorch/pytorch-differential-learning-rates.md</div></li>
 </ul>
 </p>
 </div>
@@ -320,55 +256,22 @@ L Ma (2021). 'Learning Rate', Datumorphism, 11 April. Available at: https://datu
 </div>
 <div class="box is-size-7">
 <article class=media>
-<div class=media-content style=width:100%>
+<div class=media-content>
 <div class=content>
 <p>
 <strong>Links to: </strong>
-<div>
-<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/neural-networks/artificial-neural-networks/>
+<ul>
+<a class=box href=https://datumorphism.leima.is/cards/machine-learning/practice/learning-rate/>
 <div class=media-content>
 <div class=content>
-<h6>Artificial Neural Networks</h6>
+<h6>Learning Rate</h6>
 <p>
-Solving PDEs
+Find a good learning rate
 </p>
 </div>
 </div>
 </a>
-<a class=box href=https://datumorphism.leima.is/cards/machine-learning/neural-networks/neural-networks-initialization/>
-<div class=media-content>
-<div class=content>
-<h6>Initialize Artificial Neural Networks</h6>
-<p>
-Initialize a neural network is important for the training and performance. Some initializations …
-</p>
-</div>
-</div>
-</a>
-</div>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<p>
-<strong>Links from: </strong>
-<div>
-<a class=box href=https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-differential-learning-rates/>
-<div class=media-content>
-<div class=content>
-<h6>Differential Learning Rates in PyTorch</h6>
-<p>
-Using different learning rates in different layers of our artificial neural network.
-</p>
-</div>
-</div>
-</a>
-</div>
+</ul>
 </p>
 </div>
 </div>
@@ -384,7 +287,7 @@ Using different learning rates in different layers of our artificial neural netw
 </section>
 </div>
 <div class=navtools>
-<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/cards/machine-learning/practice/learning-rate.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/til/machine-learning/pytorch/pytorch-differential-learning-rates.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
 <i class="fas fa-pencil-alt"></i>
 </a>
 <a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
