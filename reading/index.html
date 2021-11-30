@@ -1,45 +1,534 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Reading Notes | Datumorphism | L Ma</title><meta name=description content="Reading notes"><meta name=robots content="noindex"><meta name=author content="L Ma"><meta property="og:title" content="Reading Notes"><meta property="og:description" content="Reading notes"><meta property="og:type" content="website"><meta property="og:url" content="https://datumorphism.leima.is/reading/"><meta property="og:updated_time" content="2021-08-13T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link href=https://datumorphism.leima.is/reading/index.xml rel=alternate type=application/rss+xml title=Datumorphism><link rel=canonical href=https://datumorphism.leima.is/reading/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><section><div class="hero is-warning is-medium"><div class=hero-body><div class="container has-text-left"><h1 class="title is-1">Reading Notes</h1><h2 class="subtitle is-3">Reading notes</h2><h3 class="title is-5" style=margin-top:2em><a href=https://datumorphism.leima.is/projects/reading/ class=has-text-light><i class="fas fa-link"></i>Introduction: My Reading Notes</a></h3></div></div></div></section><div class="columns is-fullheight"><div class=column><section class="hero is-default is-bold"><div class=hero-body><div class=container><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li class=active><a href=https://datumorphism.leima.is/reading/>Reading Notes</a></li></ul></nav><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/ itemprop=headline><i class="far fa-comment-alt"></i>Self-supervised Learning: Generative or Constrastive</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Review of self-supervised learning.</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=http://arxiv.org/abs/2006.08218>Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { paper }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
-<a href=/tags/self-supervised-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#self-supervised learning</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/normalizing-flow-introduction-1908.09257/ itemprop=headline><i class="far fa-comment-alt"></i>Normalizing Flows: An Introduction and Review of Current Methods</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: To generate complicated distributions step by step from a simple and interpretable distribution.</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://doi.org/10.1109/TPAMI.2020.2992934>Kobyzev, I., Prince, S., & Brubaker, M. (2020). Normalizing Flows: An Introduction and Review of Current Methods. IEEE Transactions on Pattern Analysis and Machine Intelligence, 1–1.</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { paper }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
-<a href=/tags/normalizing-flow style=margin-right:.5em><span class="tag is-warning is-small is-light">#normalizing flow</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/grammar-of-graphics/ itemprop=headline><i class="far fa-comment-alt"></i>The Grammar of Graphics</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Reading notes for the book The Grammar of Graphics</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://doi.org/10.1007/0-387-28695-0>Wilkinson, L. (2005). The Grammar of Graphics. Springer-Verlag.</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { book }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-visualization style=margin-right:.5em><span class="tag is-warning is-small is-light">#data visualization</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-10%</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/word2vec-in-out-embedding/ itemprop=headline><i class="far fa-comment-alt"></i>Improving Document Ranking with Dual Word Embeddings</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Word2vec produces two embedding spaces, the in-embedding and out-embedding.</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://doi.org/10.1145/2872518.2889361>Nalisnick, Eric, Bhaskar Mitra, Nick Craswell, and Rich Caruana. 2016. Improving Document Ranking with Dual Word Embeddings.</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { paper }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/art-of-data-science/ itemprop=headline><i class="far fa-comment-alt"></i>The Art of Data Science</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: A nice and elegant book on data science</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- The Art of Data Science</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://doi.org/10.1126/science.aaa6146>Leek, J. T., & Peng, R. D. (2015). What is the question? Science, 347(6228), 1314–1315.</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { book }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-science style=margin-right:.5em><span class="tag is-warning is-small is-light">#data science</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/graphical-perception/ itemprop=headline><i class="far fa-comment-alt"></i>Human Graphical Perception of Quantitative Information in Data Visualization</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Data visualization caveats</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=http://www.sciencemag.org/cgi/doi/10.1126/science.229.4716.828>Graphical Perception and Graphical Methods for Analyzing Scientific Data</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { paper }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-visualization style=margin-right:.5em><span class="tag is-warning is-small is-light">#data visualization</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/statistical-physics-and-information-theory/ itemprop=headline><i class="far fa-comment-alt"></i>Information Theory and Statistical Mechanics</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Max entropy principle as a method to infer distributions of statistical systems</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://doi.org/10.1103/PhysRev.106.620>Jaynes, E. T. (1957). Information Theory and Statistical Mechanics. Physical Review, 106(4), 620–630.</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { paper }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/intelligence style=margin-right:.5em><span class="tag is-warning is-small is-light">#intelligence</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/elements-of-statistics/ itemprop=headline><i class="far fa-comment-alt"></i>Schaum's Outline of Theories and Problems of Elements of Statistics I and II</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: The basics and all of modern statistics</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- Schaum's Outline of Theories and Problems of Elements of Statistics I and II, by Ruth Bernstein and Stephen Bernstein</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { book }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/statistics style=margin-right:.5em><span class="tag is-warning is-small is-light">#statistics</span></a>
-<a href=/tags/basics style=margin-right:.5em><span class="tag is-warning is-small is-light">#basics</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-80%</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/data-mining/ itemprop=headline><i class="far fa-comment-alt"></i>Data Mining: Concepts and Techniques</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: How data mining was done in the past</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://www.amazon.com/Data-Mining-Concepts-Techniques-Management/dp/0123814790>Data Mining: Concepts and Techniques</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i>Types: { book }</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-mining style=margin-right:.5em><span class="tag is-warning is-small is-light">#data mining</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-70%</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/overcoming-catastrophic-forgetting-in-neural-networks/ itemprop=headline><i class="far fa-comment-alt"></i>Overcoming catastrophic forgetting in neural networks</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Using a newly defined loss function the authors could implement an idea that achieves the multi-task within one network.</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=http://www.pnas.org/content/114/13/3521>Overcoming catastrophic forgetting in neural networks</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/neural-network style=margin-right:.5em><span class="tag is-warning is-small is-light">#neural network</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/working-memory-and-brain-waves/ itemprop=headline><i class="far fa-comment-alt"></i>Working Memory and Brain Waves</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Working memory might be related to the background brain waves from theoretical point of view</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=http://www.pnas.org/content/110/31/12828.short>Flexible frequency control of cortical oscillations enables computations required for working memory</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/neuroscience style=margin-right:.5em><span class="tag is-warning is-small is-light">#neuroscience</span></a>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Reading Notes | Datumorphism | L Ma </title>
+<meta name=description content="Reading notes">
+<meta name=robots content="noindex">
+<meta name=author content="L Ma">
+<meta property="og:title" content="Reading Notes">
+<meta property="og:description" content="Reading notes">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://datumorphism.leima.is/reading/">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link href=https://datumorphism.leima.is/reading/index.xml rel=alternate type=application/rss+xml title=Datumorphism>
+<link rel=canonical href=https://datumorphism.leima.is/reading/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script> </header>
+<main>
+<section>
+<div class="hero is-warning is-medium">
+<div class=hero-body>
+<div class="container has-text-left">
+<h1 class="title is-1">
+Reading Notes
+</h1>
+<h2 class="subtitle is-3">
+Reading notes
+</h2>
+<h3 class="title is-5" style=margin-top:2em>
+<a href=https://datumorphism.leima.is/projects/reading/ class=has-text-light><i class="fas fa-link"></i> Introduction: My Reading Notes </a>
+</h3>
+</div>
+</div>
+</div>
+</section>
+<div class="columns is-fullheight">
+<div class=column>
+<section class="hero is-default is-bold">
+<div class=hero-body>
+<div class=container>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/reading/>Reading Notes</a>
+</li>
+</ul>
+</nav>
+<div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/ itemprop=headline><i class="far fa-comment-alt"></i> Self-supervised Learning: Generative or Constrastive</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Review of self-supervised learning.</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/2006.08218>Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { paper }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
+<a href=/tags/self-supervised-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#self-supervised learning</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/normalizing-flow-introduction-1908.09257/ itemprop=headline><i class="far fa-comment-alt"></i> Normalizing Flows: An Introduction and Review of Current Methods</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: To generate complicated distributions step by step from a simple and interpretable distribution.</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://doi.org/10.1109/TPAMI.2020.2992934>Kobyzev, I., Prince, S., & Brubaker, M. (2020). Normalizing Flows: An Introduction and Review of Current Methods. IEEE Transactions on Pattern Analysis and Machine Intelligence, 1–1.</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { paper }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
+<a href=/tags/normalizing-flow style=margin-right:.5em><span class="tag is-warning is-small is-light">#normalizing flow</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/grammar-of-graphics/ itemprop=headline><i class="far fa-comment-alt"></i> The Grammar of Graphics</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Reading notes for the book The Grammar of Graphics</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://doi.org/10.1007/0-387-28695-0>Wilkinson, L. (2005). The Grammar of Graphics. Springer-Verlag.</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { book }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-visualization style=margin-right:.5em><span class="tag is-warning is-small is-light">#data visualization</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+10%
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/word2vec-in-out-embedding/ itemprop=headline><i class="far fa-comment-alt"></i> Improving Document Ranking with Dual Word Embeddings</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Word2vec produces two embedding spaces, the in-embedding and out-embedding.</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://doi.org/10.1145/2872518.2889361>Nalisnick, Eric, Bhaskar Mitra, Nick Craswell, and Rich Caruana. 2016. Improving Document Ranking with Dual Word Embeddings.</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { paper }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/art-of-data-science/ itemprop=headline><i class="far fa-comment-alt"></i> The Art of Data Science</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: A nice and elegant book on data science</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - The Art of Data Science</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://doi.org/10.1126/science.aaa6146>Leek, J. T., & Peng, R. D. (2015). What is the question? Science, 347(6228), 1314–1315.</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { book }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-science style=margin-right:.5em><span class="tag is-warning is-small is-light">#data science</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/graphical-perception/ itemprop=headline><i class="far fa-comment-alt"></i> Human Graphical Perception of Quantitative Information in Data Visualization</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Data visualization caveats</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://www.sciencemag.org/cgi/doi/10.1126/science.229.4716.828>Graphical Perception and Graphical Methods for Analyzing Scientific Data</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { paper }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-visualization style=margin-right:.5em><span class="tag is-warning is-small is-light">#data visualization</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/statistical-physics-and-information-theory/ itemprop=headline><i class="far fa-comment-alt"></i> Information Theory and Statistical Mechanics</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Max entropy principle as a method to infer distributions of statistical systems</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://doi.org/10.1103/PhysRev.106.620>Jaynes, E. T. (1957). Information Theory and Statistical Mechanics. Physical Review, 106(4), 620–630.</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { paper }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/intelligence style=margin-right:.5em><span class="tag is-warning is-small is-light">#intelligence</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/elements-of-statistics/ itemprop=headline><i class="far fa-comment-alt"></i> Schaum's Outline of Theories and Problems of Elements of Statistics I and II</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: The basics and all of modern statistics</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - Schaum's Outline of Theories and Problems of Elements of Statistics I and II, by Ruth Bernstein and Stephen Bernstein</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { book }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/statistics style=margin-right:.5em><span class="tag is-warning is-small is-light">#statistics</span></a>
+<a href=/tags/basics style=margin-right:.5em><span class="tag is-warning is-small is-light">#basics</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+80%
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/data-mining/ itemprop=headline><i class="far fa-comment-alt"></i> Data Mining: Concepts and Techniques</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: How data mining was done in the past</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://www.amazon.com/Data-Mining-Concepts-Techniques-Management/dp/0123814790>Data Mining: Concepts and Techniques</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Types: { book }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-mining style=margin-right:.5em><span class="tag is-warning is-small is-light">#data mining</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+70%
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/overcoming-catastrophic-forgetting-in-neural-networks/ itemprop=headline><i class="far fa-comment-alt"></i> Overcoming catastrophic forgetting in neural networks</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Using a newly defined loss function the authors could implement an idea that achieves the multi-task within one network.</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://www.pnas.org/content/114/13/3521>Overcoming catastrophic forgetting in neural networks</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/neural-network style=margin-right:.5em><span class="tag is-warning is-small is-light">#neural network</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/working-memory-and-brain-waves/ itemprop=headline><i class="far fa-comment-alt"></i> Working Memory and Brain Waves</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Working memory might be related to the background brain waves from theoretical point of view</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://www.pnas.org/content/110/31/12828.short>Flexible frequency control of cortical oscillations enables computations required for working memory</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/neuroscience style=margin-right:.5em><span class="tag is-warning is-small is-light">#neuroscience</span></a>
 <a href=/tags/recurrent-network style=margin-right:.5em><span class="tag is-warning is-small is-light">#recurrent network</span></a>
-<a href=/tags/population-model style=margin-right:.5em><span class="tag is-warning is-small is-light">#population model</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/reading/popularity-vs-similarity/ itemprop=headline><i class="far fa-comment-alt"></i>Popularity versus similarity in growing networks</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Introduce geometry into the manifold of complex networks</span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html>Popularity versus similarity in growing networks</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/complex-network style=margin-right:.5em><span class="tag is-warning is-small is-light">#complex network</span></a>
-<a href=/tags/graph style=margin-right:.5em><span class="tag is-warning is-small is-light">#graph</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i>Status:
-<i class="fas fa-check has-text-success"></i></span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div></div><br><div class=container></div></div></section></div></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+<a href=/tags/population-model style=margin-right:.5em><span class="tag is-warning is-small is-light">#population model</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div> <div class="column is-full-desktop" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/reading/popularity-vs-similarity/ itemprop=headline><i class="far fa-comment-alt"></i> Popularity versus similarity in growing networks</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Introduce geometry into the manifold of complex networks</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html>Popularity versus similarity in growing networks</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/complex-network style=margin-right:.5em><span class="tag is-warning is-small is-light">#complex network</span></a>
+<a href=/tags/graph style=margin-right:.5em><span class="tag is-warning is-small is-light">#graph</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fas fa-tasks" aria-hidden=true></i> Status:
+<i class="fas fa-check has-text-success"></i>
+</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+</div>
+<br>
+<div class=container>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

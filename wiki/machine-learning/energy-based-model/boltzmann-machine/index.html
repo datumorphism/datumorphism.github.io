@@ -1,46 +1,476 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Boltzmann Machine | Datumorphism | L Ma</title><meta name=description content="Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications."><meta name=author content="L Ma"><meta property="og:title" content="Boltzmann Machine"><meta property="og:description" content="Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications."><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/"><meta property="article:published_time" content="2017-08-27T00:00:00+00:00"><meta property="article:modified_time" content="2017-08-27T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Boltzmann Machine"><meta itemprop=description content="Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications."><meta itemprop=datePublished content="2017-08-27T00:00:00+00:00"><meta itemprop=dateModified content="2017-08-27T00:00:00+00:00"><meta itemprop=wordCount content="1102"><meta itemprop=keywords content="Machine Learning,Artificial Neural Networks,Basics,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/>Energy-based Model</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/>Boltzmann Machine</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Boltzmann Machine</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/machine-learning><span class="tag is-warning is-small is-light">#Machine Learning</span></a>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Boltzmann Machine | Datumorphism | L Ma </title>
+<meta name=description content="Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications.">
+<meta name=author content="L Ma">
+<meta property="og:title" content="Boltzmann Machine">
+<meta property="og:description" content="Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2017-08-27T00:00:00+00:00">
+<meta property="article:modified_time" content="2017-08-27T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Boltzmann Machine">
+<meta itemprop=description content="Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neual nets but with complications and theoretical implications."><meta itemprop=datePublished content="2017-08-27T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-08-27T00:00:00+00:00">
+<meta itemprop=wordCount content="1102">
+<meta itemprop=keywords content="Machine Learning,Artificial Neural Networks,Basics,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/>Energy-based Model</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/>Boltzmann Machine</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Boltzmann Machine
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/machine-learning><span class="tag is-warning is-small is-light">#Machine Learning</span></a>
 <a href=/tags/artificial-neural-networks><span class="tag is-warning is-small is-light">#Artificial Neural Networks</span></a>
-<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neural nets but with complications and theoretical implications.</p><p>Boltzmann machine is usually used as a generative model.</p><h2 id=boltzmann-machine-and-physics>Boltzmann Machine and Physics</h2><p>To obtain a good understanding of Boltzmann machine for a physicist, we begin with Ising model. We construct a system of neurons ${ s_i}$ which can take values of 1 or -1, where each pair of them $s_i$ and $s_j$ is connected by weight $J_{ij}$.</p><p>This is described as a Boltzmann machine, or spin glass in physics. Spin glass is a type of material that is a composite of many spins pointing in different directions. In principle, spin glass is hard to calculate.</p><p>Nevertheless we can make simplifications to this model. We require each spin to be connected to its nearest neighbours only. Such a model is called Ising model.</p><p>Intuitively, those spins can be viewed as tiny magnets that can point up or down only. Each spin interacts with its neighbours. These interactions are calculated in terms of energy,</p><p>$$
+<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a machine that has nodes that can take values, and the nodes are connected through some weight. It is just like any other neural nets but with complications and theoretical implications.</p>
+<p>Boltzmann machine is usually used as a generative model.</p>
+<h2 id=boltzmann-machine-and-physics>Boltzmann Machine and Physics</h2>
+<p>To obtain a good understanding of Boltzmann machine for a physicist, we begin with Ising model. We construct a system of neurons ${ s_i}$ which can take values of 1 or -1, where each pair of them $s_i$ and $s_j$ is connected by weight $J_{ij}$.</p>
+<p>This is described as a Boltzmann machine, or spin glass in physics. Spin glass is a type of material that is a composite of many spins pointing in different directions. In principle, spin glass is hard to calculate.</p>
+<p>Nevertheless we can make simplifications to this model. We require each spin to be connected to its nearest neighbours only. Such a model is called Ising model.</p>
+<p>Intuitively, those spins can be viewed as tiny magnets that can point up or down only. Each spin interacts with its neighbours. These interactions are calculated in terms of energy,</p>
+<p>$$
 \begin{equation}
 E = -\sum_{i,j} J_{ij} s_i s_j.
 \end{equation}
-$$</p><p>Why do we care about energy? For a physics system, low energy means stable while high energy means unstable since it might automatically change its configuration into the low energy state. That being said, a system of spins is stable if the energy of all the interactions is low.</p><p>To find out a low energy state, one of the numerical methods is the Monte Carlo method.</p><article class="message is-info is-light"><div class=message-header><p>States</p></div><div class=message-body><p>We have been talking about the word state without being specifying the definition of it. In fact we can think of two different pictures of states. For the purpose of this discussion, we consider a system of $N$ particles and each of the particle has $m$ degrees of freedom.</p><p>The first strategy is to set up a $N\times m$ dimension space and describe the state of the whole system with on point in such a space. The distribution of the points can be determined by the corresponding categories of distribution functions. This is dubbed as $\Gamma$ space.</p><p>The second strategy is to use a space of $m$ dimensions where each particle of the system is a point in such a space. Such a space is called $\mu$ space. In $\mu$ space, the distribution of each particle state is calculated using BBGKY chain.</p><p>Once the macroscopic properties of the system is assigned, all possible states that lead to this macroscopic state show up with equal probability, aka, the principle of <strong>equal a priori probabilities</strong>.</p></div></article><article class="message is-info is-light"><div class=message-header><p>Partition Function</p></div><div class=message-body><p>Partition function $Z$ is useful as we calculate the statistical properties of the network,</p><p>\begin{equation}
+$$</p>
+<p>Why do we care about energy? For a physics system, low energy means stable while high energy means unstable since it might automatically change its configuration into the low energy state. That being said, a system of spins is stable if the energy of all the interactions is low.</p>
+<p>To find out a low energy state, one of the numerical methods is the Monte Carlo method.</p>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>States</p>
+</div>
+<div class=message-body>
+<p>We have been talking about the word state without being specifying the definition of it. In fact we can think of two different pictures of states. For the purpose of this discussion, we consider a system of $N$ particles and each of the particle has $m$ degrees of freedom.</p>
+<p>The first strategy is to set up a $N\times m$ dimension space and describe the state of the whole system with on point in such a space. The distribution of the points can be determined by the corresponding categories of distribution functions. This is dubbed as $\Gamma$ space.</p>
+<p>The second strategy is to use a space of $m$ dimensions where each particle of the system is a point in such a space. Such a space is called $\mu$ space. In $\mu$ space, the distribution of each particle state is calculated using BBGKY chain.</p>
+<p>Once the macroscopic properties of the system is assigned, all possible states that lead to this macroscopic state show up with equal probability, aka, the principle of <strong>equal a priori probabilities</strong>.</p>
+</div>
+</article>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>Partition Function</p>
+</div>
+<div class=message-body>
+<p>Partition function $Z$ is useful as we calculate the statistical properties of the network,</p>
+<p>\begin{equation}
 Z = \sum e^{-E}.
-\end{equation}</p><p>With partition function defined, the distribution of states is</p><p>\begin{equation}
+\end{equation}</p>
+<p>With partition function defined, the distribution of states is</p>
+<p>\begin{equation}
 P = \frac{1}{Z} e^{-E}
-\end{equation}</p></div></article><h2 id=application-of-boltzmann-in-learning>Application of Boltzmann in Learning</h2><p>In many cases, we would like the machine to learn about the pattern of input. Probabilistically speaking, we are working out the probability distribution of the input data using a Boltzmann machine,</p><p>\begin{equation}
+\end{equation}</p>
+</div>
+</article>
+<h2 id=application-of-boltzmann-in-learning>Application of Boltzmann in Learning</h2>
+<p>In many cases, we would like the machine to learn about the pattern of input. Probabilistically speaking, we are working out the probability distribution of the input data using a Boltzmann machine,</p>
+<p>\begin{equation}
 \Delta p = p_{\mathrm{Model}} - p_{\mathrm{Data}}.
-\end{equation}</p><p>Or for reasons of log-likelihood, we use the ration of them</p><p>\begin{equation}
+\end{equation}</p>
+<p>Or for reasons of log-likelihood, we use the ration of them</p>
+<p>\begin{equation}
 \Delta \log p = \log p_{\mathrm{Model}} - \log p_{\mathrm{Data}}.
-\end{equation}</p><p>In terms of Boltzmann machine weights, which are to be determined, the log probability is proportional to the energy</p><p>\begin{equation}
+\end{equation}</p>
+<p>In terms of Boltzmann machine weights, which are to be determined, the log probability is proportional to the energy</p>
+<p>\begin{equation}
 \Delta \log p \sim \sum_{ij} w_{ij} s_i s_j \vert_{\mathrm{Model}} - \sum_{ij} w_{ij} s_i s_j \vert_{\mathrm{Data}}.
-\end{equation}</p><p>Since we are looking for the weights, the updating rule should be equivalent to the gradient</p><p>\begin{equation}
+\end{equation}</p>
+<p>Since we are looking for the weights, the updating rule should be equivalent to the gradient</p>
+<p>\begin{equation}
 \frac{ \partial \Delta \log p }{ \partial w_{ij} } \sim \langle s_i s_j\rangle_{\mathrm{data}} - \langle s_i s_j \rangle_{\mathrm{model}},
-\end{equation}</p><p>We could update our weights using a rule compatible with the gradient of the probability.</p><p>\begin{equation}
+\end{equation}</p>
+<p>We could update our weights using a rule compatible with the gradient of the probability.</p>
+<p>\begin{equation}
 \Delta w_{ij} \sim \langle s_i s_j\rangle_{\mathrm{data}} - \langle s_i s_j \rangle_{\mathrm{model}}.
 \label{eq-weight-update-rule-boltzmann-machine}
-\end{equation}</p><p>It&rsquo;s easily noticed that the first term is basically Hebbian learning rule, where similar activities enhance the weight. The second term is the some unlearning rule where we have to reduce some weights to relax to the actual working network. Simply put, we kill some connections that have negative effects on our learning network.</p><h3 id=without-hidden-units>Without Hidden Units</h3><p>In principle, a learning process can be as simple as a one on one map from the data to all the neurons in Boltzmann machine.</p><p>Suppose we have a data set of an image with 10 pixels and each pixel can take values of 0 and 1. We simply construct a network of 10 neurons. To remember the most prominent features of the image with this network, we update the weights and bias of the network to miminize the energy. Once done with minimization, the network we have could be used to generate similar images with similar features.</p><h3 id=with-hidden-units>With Hidden Units</h3><p>The complexity of the previous model seems to be low. To introduce more degrees of freedom, we introduce the hidden units.</p><p>Hinton and Sejnowski worked out an algorithm for Boltzmann machine in 1983. The energy-based learning rule for Boltzmann machine has two phases, the clamped phase (Phase+) and free phase (Phase-).</p><ol><li>Clamped phase: we attach the data to the visible units and initialize the hidden units to be some random states.
+\end{equation}</p>
+<p>It&rsquo;s easily noticed that the first term is basically Hebbian learning rule, where similar activities enhance the weight. The second term is the some unlearning rule where we have to reduce some weights to relax to the actual working network. Simply put, we kill some connections that have negative effects on our learning network.</p>
+<h3 id=without-hidden-units>Without Hidden Units</h3>
+<p>In principle, a learning process can be as simple as a one on one map from the data to all the neurons in Boltzmann machine.</p>
+<p>Suppose we have a data set of an image with 10 pixels and each pixel can take values of 0 and 1. We simply construct a network of 10 neurons. To remember the most prominent features of the image with this network, we update the weights and bias of the network to miminize the energy. Once done with minimization, the network we have could be used to generate similar images with similar features.</p>
+<h3 id=with-hidden-units>With Hidden Units</h3>
+<p>The complexity of the previous model seems to be low. To introduce more degrees of freedom, we introduce the hidden units.</p>
+<p>Hinton and Sejnowski worked out an algorithm for Boltzmann machine in 1983. The energy-based learning rule for Boltzmann machine has two phases, the clamped phase (Phase+) and free phase (Phase-).</p>
+<ol>
+<li>Clamped phase: we attach the data to the visible units and initialize the hidden units to be some random states.
 a. Then we update the hidden units so that the energy is minimized with clamping.
 b. We calculate the average $s_i s_j$ over all pairs of units, i.e., $\langle s_i s_j\rangle_{\mathrm{data}}$.
-c. Repeat for all data sets of training.</li><li>Free phase: no clamping and all units are the same and mutatable.
+c. Repeat for all data sets of training.</li>
+<li>Free phase: no clamping and all units are the same and mutatable.
 a. Relax the state of the units to low energy state.
 b. Find out $\langle s_i s_j\rangle_{\mathrm{model}}$.
-c. Repeat N times.</li></ol><p>With $\langle s_i s_j\rangle_{\mathrm{data}}$ and $\langle s_i s_j\rangle_{\mathrm{model}}$ found, we use the update rule \ref{eq-weight-update-rule-boltzmann-machine}.</p><p>For some reference, Hinton has a set of lectures on <a href=https://www.coursera.org/learn/neural-networks/lecture/iitiK/boltzmann-machine-learning-12-min>Coursera</a>. He also has a lecture for more effective algorithms: <a href=https://www.coursera.org/learn/neural-networks/lecture/wlELo/optional-video-more-efficient-ways-to-get-the-statistics-15-mins>More efficient ways to get the statistics</a>.</p><h2 id=minimizing-energy-of-ising-model-is-hebbian-learning>Minimizing Energy of Ising Model is Hebbian Learning</h2><article class="message is-info is-light"><div class=message-header><p>Hebbian Learning Rule</p></div><div class=message-body>Simply put, neurons act similarly at the same time would be more likely to be connected.</div></article><p>A energy minimization procedure would be the same as Hebbian learning rule. Suppose we pick out two spins, $s_3 = 1$ and $s_8= 1$, the connected weight would be positive in order to have lower energy $-J_{38}s_3 s_8 = - J_{38}$. For spins with different signs, negative weight would be the choice to make sure the energy is lower. This is similar to Hebbian learning rule.</p><h3 id=programming>Programming</h3><p>To code a Boltzmann machine, we need an algorithm.</p></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2017-08-27T00:00:00+00:00>2017-08-27</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/?ref=footer" class=pagination-previous>« MaxEnt Model</a>
-<a class=pagination-next href="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/?ref=footer">Restricted Boltzmann Machine »</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2017). 'Boltzmann Machine', Datumorphism, 08 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#boltzmann-machine-and-physics>Boltzmann Machine and Physics</a></li><li><a href=#application-of-boltzmann-in-learning>Application of Boltzmann in Learning</a><ul><li><a href=#without-hidden-units>Without Hidden Units</a></li><li><a href=#with-hidden-units>With Hidden Units</a></li></ul></li><li><a href=#minimizing-energy-of-ising-model-is-hebbian-learning>Minimizing Energy of Ising Model is Hebbian Learning</a><ul><li><a href=#programming>Programming</a></li></ul></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href=https://arxiv.org/abs/1803.08823 style=text-decoration:none>Mehta P, Bukov M, Wang C-HH, Day AGRR, Richardson C, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2018;810: 122. doi:10.1016/j.physrep.2019.03.001</a></li><li class=has-text-weight-bold><a href=https://www.cs.toronto.edu/~hinton/csc321/readings/boltz321.pdf style=text-decoration:none>Hinton GE. Boltzmann Machines. 2007.</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/machine-learning/energy-based-model/boltzmann-machine.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links to:</strong><div><a class=box href=https://datumorphism.leima.is/cards/statistics/likelihood/><div class=media-content><div class=content><h6>Likelihood</h6><p>Likelihood is not necessarily a pdf</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/><div class=media-content><div class=content><h6>Restricted Boltzmann Machine</h6><p>Introducing latent variables to Boltzmann machine and restrict the connections within groups.</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/><div class=media-content><div class=content><h6>MaxEnt Model</h6><p>Maximum Entropy models makes least assumption about the data</p></div></div></a></div></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/><div class=media-content><div class=content><h6>MaxEnt Model</h6><p>Maximum Entropy models makes least assumption about the data</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/><div class=media-content><div class=content><h6>Gibbs Sampling</h6><p>Gibbs sampling is a sampling method for Bayesian inference and MCMC</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/><div class=media-content><div class=content><h6>Restricted Boltzmann Machine</h6><p>Introducing latent variables to Boltzmann machine and restrict the connections within groups.</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/energy-based-model/boltzmann-machine.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+c. Repeat N times.</li>
+</ol>
+<p>With $\langle s_i s_j\rangle_{\mathrm{data}}$ and $\langle s_i s_j\rangle_{\mathrm{model}}$ found, we use the update rule \ref{eq-weight-update-rule-boltzmann-machine}.</p>
+<p>For some reference, Hinton has a set of lectures on <a href=https://www.coursera.org/learn/neural-networks/lecture/iitiK/boltzmann-machine-learning-12-min>Coursera</a>. He also has a lecture for more effective algorithms: <a href=https://www.coursera.org/learn/neural-networks/lecture/wlELo/optional-video-more-efficient-ways-to-get-the-statistics-15-mins>More efficient ways to get the statistics</a>.</p>
+<h2 id=minimizing-energy-of-ising-model-is-hebbian-learning>Minimizing Energy of Ising Model is Hebbian Learning</h2>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>Hebbian Learning Rule</p>
+</div>
+<div class=message-body>
+Simply put, neurons act similarly at the same time would be more likely to be connected.
+</div>
+</article>
+<p>A energy minimization procedure would be the same as Hebbian learning rule. Suppose we pick out two spins, $s_3 = 1$ and $s_8= 1$, the connected weight would be positive in order to have lower energy $-J_{38}s_3 s_8 = - J_{38}$. For spins with different signs, negative weight would be the choice to make sure the energy is lower. This is similar to Hebbian learning rule.</p>
+<h3 id=programming>Programming</h3>
+<p>To code a Boltzmann machine, we need an algorithm.</p>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2017-08-27T00:00:00+00:00>2017-08-27</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/?ref=footer" class=pagination-previous>« MaxEnt Model</a>
+<a class=pagination-next href="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/?ref=footer">Restricted Boltzmann Machine »</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2017). 'Boltzmann Machine', Datumorphism, 08 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#boltzmann-machine-and-physics>Boltzmann Machine and Physics</a></li>
+<li><a href=#application-of-boltzmann-in-learning>Application of Boltzmann in Learning</a>
+<ul>
+<li><a href=#without-hidden-units>Without Hidden Units</a></li>
+<li><a href=#with-hidden-units>With Hidden Units</a></li>
+</ul>
+</li>
+<li><a href=#minimizing-energy-of-ising-model-is-hebbian-learning>Minimizing Energy of Ising Model is Hebbian Learning</a>
+<ul>
+<li><a href=#programming>Programming</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://arxiv.org/abs/1803.08823 style=text-decoration:none>Mehta P, Bukov M, Wang C-HH, Day AGRR, Richardson C, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2018;810: 122. doi:10.1016/j.physrep.2019.03.001</a></li>
+<li class=has-text-weight-bold><a href=https://www.cs.toronto.edu/~hinton/csc321/readings/boltz321.pdf style=text-decoration:none>Hinton GE. Boltzmann Machines. 2007.</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/machine-learning/energy-based-model/boltzmann-machine.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/cards/statistics/likelihood/>
+<div class=media-content>
+<div class=content>
+<h6>Likelihood</h6>
+<p>
+Likelihood is not necessarily a pdf
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/>
+<div class=media-content>
+<div class=content>
+<h6>Restricted Boltzmann Machine</h6>
+<p>
+Introducing latent variables to Boltzmann machine and restrict the connections within groups.
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
+<div class=media-content>
+<div class=content>
+<h6>MaxEnt Model</h6>
+<p>
+Maximum Entropy models makes least assumption about the data
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
+<div class=media-content>
+<div class=content>
+<h6>MaxEnt Model</h6>
+<p>
+Maximum Entropy models makes least assumption about the data
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>
+<div class=media-content>
+<div class=content>
+<h6>Gibbs Sampling</h6>
+<p>
+Gibbs sampling is a sampling method for Bayesian inference and MCMC
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/>
+<div class=media-content>
+<div class=content>
+<h6>Restricted Boltzmann Machine</h6>
+<p>
+Introducing latent variables to Boltzmann machine and restrict the connections within groups.
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/energy-based-model/boltzmann-machine.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

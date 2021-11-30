@@ -1,32 +1,499 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Gini Impurity | Datumorphism | L Ma</title><meta name=description content="The Gini impurity is a measurement of the impurity of a set."><meta name=author content="L Ma"><meta property="og:title" content="Gini Impurity"><meta property="og:description" content="The Gini impurity is a measurement of the impurity of a set."><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/"><meta property="article:published_time" content="2020-01-16T00:00:00+00:00"><meta property="article:modified_time" content="2020-01-16T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Gini Impurity"><meta itemprop=description content="The Gini impurity is a measurement of the impurity of a set."><meta itemprop=datePublished content="2020-01-16T00:00:00+00:00"><meta itemprop=dateModified content="2020-01-16T00:00:00+00:00"><meta itemprop=wordCount content="269"><meta itemprop=keywords content="Data,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/cards/>Cards</a></li><li><a href=https://datumorphism.leima.is/cards/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/cards/machine-learning/measurement/>Measurement</a></li><li class=active><a href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/>Gini Impurity</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Gini Impurity</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/data><span class="tag is-warning is-small is-light">#Data</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><article class="message is-info is-light"><div class=message-body>The code used in this article can be found in <a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb>this repo</a>.</div></article><p>Suppose we have a dataset $\{0,1\}^{10}$, which has 10 records and 2 possible classes of objects $\{0,1\}$ in each record.</p><p>The first example we investigate is a pure 0 dataset.</p><table><thead><tr><th align=center>object</th></tr></thead><tbody><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr></tbody></table><p>For such an all-0 dataset, we would like to define its impurity as 0. Same with an all-1 dataset. For a dataset with 50% of 1 and 50% of 0, we would define its impurity as max due to the symmetries between 0 and 1.</p><h2 id=definition>Definition</h2><p>Given a dataset $\{0,1,&mldr;,d\}^n$, the Gini impurity is calculated as</p><p>$$
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Gini Impurity | Datumorphism | L Ma </title>
+<meta name=description content="The Gini impurity is a measurement of the impurity of a set.">
+<meta name=author content="L Ma">
+<meta property="og:title" content="Gini Impurity">
+<meta property="og:description" content="The Gini impurity is a measurement of the impurity of a set.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/"><meta property="article:section" content="cards">
+<meta property="article:published_time" content="2020-01-16T00:00:00+00:00">
+<meta property="article:modified_time" content="2020-01-16T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Gini Impurity">
+<meta itemprop=description content="The Gini impurity is a measurement of the impurity of a set."><meta itemprop=datePublished content="2020-01-16T00:00:00+00:00">
+<meta itemprop=dateModified content="2020-01-16T00:00:00+00:00">
+<meta itemprop=wordCount content="269">
+<meta itemprop=keywords content="Data,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/cards/>Cards</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/cards/machine-learning/>Machine Learning</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/cards/machine-learning/measurement/>Measurement</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/>Gini Impurity</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Gini Impurity
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/data><span class="tag is-warning is-small is-light">#Data</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<article class="message is-info is-light">
+<div class=message-body>
+The code used in this article can be found in <a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb>this repo</a>.
+</div>
+</article>
+<p>Suppose we have a dataset $\{0,1\}^{10}$, which has 10 records and 2 possible classes of objects $\{0,1\}$ in each record.</p>
+<p>The first example we investigate is a pure 0 dataset.</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center>object</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+</tbody>
+</table>
+<p>For such an all-0 dataset, we would like to define its impurity as 0. Same with an all-1 dataset. For a dataset with 50% of 1 and 50% of 0, we would define its impurity as max due to the symmetries between 0 and 1.</p>
+<h2 id=definition>Definition</h2>
+<p>Given a dataset $\{0,1,&mldr;,d\}^n$, the Gini impurity is calculated as</p>
+<p>$$
 G = \sum_{i \in \{0,1,...,d\} } p(i)(1-p(i)),
-$$</p><p>where $p(i)$ is the probability of a random picked record being class $i$.</p><p>In the above example, we have two classes, $\{0,1\}$. The probabilities are</p><p>$$
+$$</p>
+<p>where $p(i)$ is the probability of a random picked record being class $i$.</p>
+<p>In the above example, we have two classes, $\{0,1\}$. The probabilities are</p>
+<p>$$
 \begin{align}
 p(0) =& 1\\
 p(1) =& 0
 \end{align}.
-$$</p><p>The Gini impurity is</p><p>$$
+$$</p>
+<p>The Gini impurity is</p>
+<p>$$
 G = p(0)(1-p(0)) + p(1)(1-p(1)) = 0+0 = 0.
-$$</p><h2 id=examples>Examples</h2><p>Suppose we have another dataset with 50% of the values being 50%.</p><table><thead><tr><th align=center>object</th></tr></thead><tbody><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>1</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>1</td></tr><tr><td align=center>1</td></tr><tr><td align=center>1</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>0</td></tr><tr><td align=center>1</td></tr></tbody></table><p>The Gini impurity is</p><p>$$
+$$</p>
+<h2 id=examples>Examples</h2>
+<p>Suppose we have another dataset with 50% of the values being 50%.</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center>object</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>1</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>1</td>
+</tr>
+<tr>
+<td style=text-align:center>1</td>
+</tr>
+<tr>
+<td style=text-align:center>1</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:center>1</td>
+</tr>
+</tbody>
+</table>
+<p>The Gini impurity is</p>
+<p>$$
 G = p(0)(1-p(0)) + p(1)(1-p(1)) = 0.5 * 0.5+ 0.5*0.5 = 0.5.
-$$</p><p>For data with two possible values $\{0,1\}$, the maximum Gini impurity is 0.25. The following chart shows all the possible values of the Gini impurity for two-value dataset.</p><p>For data with three possible values, the Gini impurity is also visualized using the same chart given the condition that $p_3 = 1 - p_1 - p_2$.</p></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2020-01-16T00:00:00+00:00>2020-01-16</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/cards/machine-learning/measurement/population-loss/?ref=footer" class=pagination-previous>« Population Loss</a>
-<a class=pagination-next href="https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/?ref=footer">Information Gain »</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2020). 'Gini Impurity', Datumorphism, 01 April. Available at: https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#definition>Definition</a></li><li><a href=#examples>Examples</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href=https://victorzhou.com/blog/gini-impurity/#gini-impurity style=text-decoration:none>A Simple Explanation of Gini Impurity by Victor Zhou</a></li><li class=has-text-weight-bold><a href=https://doi.org/10.1017/CBO9781107298019 style=text-decoration:none>Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms.</a></li></ol></p></div></div></article></div><div class=is-divider data-content=SUPPLEMENTARY></div><div class="box is-size-7"><article class="media is-link"><div class=media-content><div class=content><p><strong>Supplementary:</strong><br><ol><li class=has-text-weight-bold><a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb style=text-decoration:none>Code</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>cards/machine-learning/measurement/gini-impurity.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Links to:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/><div class=media-content><div class=content><h6>Decision Tree</h6><p>In this article, we will explain how decision trees work and build a tree by hand.
-The code used in …</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/><div class=media-content><div class=content><h6>Information Gain</h6><p>The information is a measurement of the entropy of the dataset.</p></div></div></a></div></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/><div class=media-content><div class=content><h6>Decision Tree</h6><p>In this article, we will explain how decision trees work and build a tree by hand.
-The code used in …</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/><div class=media-content><div class=content><h6>Random Forest</h6><p>random forest in machine learning</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/><div class=media-content><div class=content><h6>Information Gain</h6><p>The information is a measurement of the entropy of the dataset.</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/cards/machine-learning/measurement/gini-impurity.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+$$</p>
+<p>For data with two possible values $\{0,1\}$, the maximum Gini impurity is 0.25. The following chart shows all the possible values of the Gini impurity for two-value dataset.</p>
+<p>For data with three possible values, the Gini impurity is also visualized using the same chart given the condition that $p_3 = 1 - p_1 - p_2$.</p>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2020-01-16T00:00:00+00:00>2020-01-16</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/cards/machine-learning/measurement/population-loss/?ref=footer" class=pagination-previous>« Population Loss</a>
+<a class=pagination-next href="https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/?ref=footer">Information Gain »</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2020). 'Gini Impurity', Datumorphism, 01 April. Available at: https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#definition>Definition</a></li>
+<li><a href=#examples>Examples</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://victorzhou.com/blog/gini-impurity/#gini-impurity style=text-decoration:none>A Simple Explanation of Gini Impurity by Victor Zhou</a></li>
+<li class=has-text-weight-bold><a href=https://doi.org/10.1017/CBO9781107298019 style=text-decoration:none>Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms.</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=SUPPLEMENTARY></div>
+<div class="box is-size-7">
+<article class="media is-link">
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Supplementary: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb style=text-decoration:none>Code</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>cards/machine-learning/measurement/gini-impurity.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/>
+<div class=media-content>
+<div class=content>
+<h6>Decision Tree</h6>
+<p>
+In this article, we will explain how decision trees work and build a tree by hand.
+The code used in …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/>
+<div class=media-content>
+<div class=content>
+<h6>Information Gain</h6>
+<p>
+The information is a measurement of the entropy of the dataset.
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/>
+<div class=media-content>
+<div class=content>
+<h6>Decision Tree</h6>
+<p>
+In this article, we will explain how decision trees work and build a tree by hand.
+The code used in …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/>
+<div class=media-content>
+<div class=content>
+<h6>Random Forest</h6>
+<p>
+random forest in machine learning
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/>
+<div class=media-content>
+<div class=content>
+<h6>Information Gain</h6>
+<p>
+The information is a measurement of the entropy of the dataset.
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/cards/machine-learning/measurement/gini-impurity.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

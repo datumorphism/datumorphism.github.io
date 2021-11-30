@@ -1,38 +1,588 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Chi-square Correlation Test for Nominal Data | Datumorphism | L Ma</title><meta name=description content="Detecting correlations using Pearson's chi square correlation test"><meta name=author content="L Ma"><meta property="og:title" content="Chi-square Correlation Test for Nominal Data"><meta property="og:description" content="Detecting correlations using Pearson's chi square correlation test"><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/"><meta property="article:published_time" content="2018-11-18T00:00:00+00:00"><meta property="article:modified_time" content="2018-11-18T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Chi-square Correlation Test for Nominal Data"><meta itemprop=description content="Detecting correlations using Pearson's chi square correlation test"><meta itemprop=datePublished content="2018-11-18T00:00:00+00:00"><meta itemprop=dateModified content="2018-11-18T00:00:00+00:00"><meta itemprop=wordCount content="827"><meta itemprop=keywords content="Statistics,Basics,Correlation,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/statistics/>Statistics</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/>Chi-square Correlation Test for Nominal Data</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Chi-square Correlation Test for Nominal Data</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/statistics><span class="tag is-warning is-small is-light">#Statistics</span></a>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Chi-square Correlation Test for Nominal Data | Datumorphism | L Ma </title>
+<meta name=description content="Detecting correlations using Pearson's chi square correlation test">
+<meta name=author content="L Ma">
+<meta property="og:title" content="Chi-square Correlation Test for Nominal Data">
+<meta property="og:description" content="Detecting correlations using Pearson's chi square correlation test">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2018-11-18T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-11-18T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Chi-square Correlation Test for Nominal Data">
+<meta itemprop=description content="Detecting correlations using Pearson's chi square correlation test"><meta itemprop=datePublished content="2018-11-18T00:00:00+00:00">
+<meta itemprop=dateModified content="2018-11-18T00:00:00+00:00">
+<meta itemprop=wordCount content="827">
+<meta itemprop=keywords content="Statistics,Basics,Correlation,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/statistics/>Statistics</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/>Chi-square Correlation Test for Nominal Data</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Chi-square Correlation Test for Nominal Data
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/statistics><span class="tag is-warning is-small is-light">#Statistics</span></a>
 <a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
-<a href=/tags/correlation><span class="tag is-warning is-small is-light">#Correlation</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>In this article, we will discuss the chi-square correlation test for detecting correlations between two series.</p><h2 id=steps>Steps</h2><ol><li>Find out all the possible values of the two nominal series A and B;</li><li>Count the co-occurrences of the combinations (A, B);</li><li>Calculate the expected co-occurrences of the combinations (A, B);</li><li>Calculate chi-square;</li><li>Determine whether the hypothesis can be rejected.</li></ol><h2 id=define-the-series>Define the Series</h2><p>Suppose we are analyzing two series A and B. Series A can take values $a_1$ and $a_2$, while series B can take values $b_1$ , $b_2$ and $b_3$.</p><p>$$
+<a href=/tags/correlation><span class="tag is-warning is-small is-light">#Correlation</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>In this article, we will discuss the chi-square correlation test for detecting correlations between two series.</p>
+<h2 id=steps>Steps</h2>
+<ol>
+<li>Find out all the possible values of the two nominal series A and B;</li>
+<li>Count the co-occurrences of the combinations (A, B);</li>
+<li>Calculate the expected co-occurrences of the combinations (A, B);</li>
+<li>Calculate chi-square;</li>
+<li>Determine whether the hypothesis can be rejected.</li>
+</ol>
+<h2 id=define-the-series>Define the Series</h2>
+<p>Suppose we are analyzing two series A and B. Series A can take values $a_1$ and $a_2$, while series B can take values $b_1$ , $b_2$ and $b_3$.</p>
+<p>$$
 \begin{align}
 A &:= \{a1, a2\} \\
 B &:= \{b1,b2,b3\}
 \end{align}
-$$</p><p>As an example, we will use the following A and B series for our calculations in this article.</p><table><thead><tr><th>index</th><th>A</th><th>B</th></tr></thead><tbody><tr><td>1</td><td>a1</td><td>b2</td></tr><tr><td>2</td><td>a1</td><td>b2</td></tr><tr><td>3</td><td>a1</td><td>b1</td></tr><tr><td>4</td><td>a2</td><td>b1</td></tr><tr><td>5</td><td>a2</td><td>b3</td></tr><tr><td>6</td><td>a2</td><td>b2</td></tr><tr><td>7</td><td>a1</td><td>b2</td></tr><tr><td>8</td><td>a2</td><td>b2</td></tr></tbody></table><h2 id=count-co-ocurrences>Count Co-ocurrences</h2><p>To analyze correlations between the two series, we need to look at whether the values of series A and those of series B would occur together. For example, we would like to know the possibility of values for B if we have $a_1$ occurred.</p><article class="message is-info is-light"><div class=message-body><p>One of the extreme examples is that A and B are exactly the same. In this case, we would know that the value for B is always the same as A for each row. Then we would know that all the possible combinations of (A, B) are</p><ol><li>(a1, a1)</li><li>(a2, a2)</li></ol><p>We could construct the occurrence table.</p><table><thead><tr><th></th><th>a1</th><th>a2</th></tr></thead><tbody><tr><td>a1</td><td>number of occurrences</td><td>0</td></tr><tr><td>a2</td><td>0</td><td>number of occurrences</td></tr></tbody></table></div></article><p>Now we construct a contigency table to denote the ocurrences of the values, (A, B).</p><table><thead><tr><th></th><th>a1</th><th>a2</th></tr></thead><tbody><tr><td>b1</td><td>1</td><td>1</td></tr><tr><td>b2</td><td>3</td><td>2</td></tr><tr><td>b3</td><td>0</td><td>1</td></tr></tbody></table><p>where the cells are filled with the number of occurrences of the corresponding combinations. For example, the combination (a1, b1) occurred once, thus 1 in the first row first column.</p><p>This table records the <strong>observed frequencies</strong>, which we denote as table O and each cell is denoted as $o_{ij}$.</p><article class="message is-info is-light"><div class=message-body>This table tells us about the possible correlations already. Imagine we have two columns that are exactly the same, we would have a table that have large number of occurrences on the diagonal elements.</div></article><article class="message is-warning is-light"><div class=message-body>However, those numbers in the table depend on the number of rows that we have in our original table. To find the actual correlation, we need to normalize it. We could simply divide everything by the total number of rows in the original table. But Pearson had a better idea.</div></article><p>Pearson&rsquo;s chi-square correlation is a smart idea.</p><p>First of all, we define an expectation table E. Each element of E is calculated as</p><p>$$
+$$</p>
+<p>As an example, we will use the following A and B series for our calculations in this article.</p>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>a1</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>a1</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>a2</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>a2</td>
+<td>b3</td>
+</tr>
+<tr>
+<td>6</td>
+<td>a2</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>a1</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>a2</td>
+<td>b2</td>
+</tr>
+</tbody>
+</table>
+<h2 id=count-co-ocurrences>Count Co-ocurrences</h2>
+<p>To analyze correlations between the two series, we need to look at whether the values of series A and those of series B would occur together. For example, we would like to know the possibility of values for B if we have $a_1$ occurred.</p>
+<article class="message is-info is-light">
+<div class=message-body>
+<p>One of the extreme examples is that A and B are exactly the same. In this case, we would know that the value for B is always the same as A for each row. Then we would know that all the possible combinations of (A, B) are</p>
+<ol>
+<li>(a1, a1)</li>
+<li>(a2, a2)</li>
+</ol>
+<p>We could construct the occurrence table.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>a1</th>
+<th>a2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a1</td>
+<td>number of occurrences</td>
+<td>0</td>
+</tr>
+<tr>
+<td>a2</td>
+<td>0</td>
+<td>number of occurrences</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+<p>Now we construct a contigency table to denote the ocurrences of the values, (A, B).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>a1</th>
+<th>a2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>b1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>b2</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>b3</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>where the cells are filled with the number of occurrences of the corresponding combinations. For example, the combination (a1, b1) occurred once, thus 1 in the first row first column.</p>
+<p>This table records the <strong>observed frequencies</strong>, which we denote as table O and each cell is denoted as $o_{ij}$.</p>
+<article class="message is-info is-light">
+<div class=message-body>
+This table tells us about the possible correlations already. Imagine we have two columns that are exactly the same, we would have a table that have large number of occurrences on the diagonal elements.
+</div>
+</article>
+<article class="message is-warning is-light">
+<div class=message-body>
+However, those numbers in the table depend on the number of rows that we have in our original table. To find the actual correlation, we need to normalize it. We could simply divide everything by the total number of rows in the original table. But Pearson had a better idea.
+</div>
+</article>
+<p>Pearson&rsquo;s chi-square correlation is a smart idea.</p>
+<p>First of all, we define an expectation table E. Each element of E is calculated as</p>
+<p>$$
 e_{ij} = \frac{ \text{number of } a_i * \text{ number of } b_j }{ \text{ total number of rows in original table } }
-$$</p><article class="message is-info is-light"><div class=message-body><p>This $e_{ij}$ serves as the average occurrence of each combinations of $a_i$ and $b_j$. If we have $a_i$ in each row but only one $b_j$ occurrences, the average is 1. This mean that given $b_j$ we would definitely only see one $a_i$.</p><p>When we have multiple $a_i$ and $b_j$, this average still works. Suppose we have $a_1$ occurred 4 times in total and we have a total of 8 rows. Assuming that this $a_1$ will appear randomly in the rows, what is the average probability to see this $a_1$ if we choose a random row? It is $4/8=0.5$. Then we will expect $1\times 0.5=0.5$ occurrences $a_1$ for one occurance of $b_2$. If we have 3 occurances of $b_2$, we would expect to see $3\times 0.5==1.5$ occurrences of $a_1$.</p><p>This is why it is treated as expected frequencies of each combinations.</p><p>As a side note, suppose we have A and B exactly the same, and they all have the same values, a1.</p><table><thead><tr><th>index</th><th>A</th><th>B</th></tr></thead><tbody><tr><td>1</td><td>a1</td><td>b1</td></tr><tr><td>2</td><td>a1</td><td>b1</td></tr><tr><td>3</td><td>a1</td><td>b1</td></tr><tr><td>4</td><td>a1</td><td>b1</td></tr><tr><td>5</td><td>a1</td><td>b1</td></tr><tr><td>6</td><td>a1</td><td>b1</td></tr><tr><td>7</td><td>a1</td><td>b1</td></tr><tr><td>8</td><td>a1</td><td>b1</td></tr></tbody></table><p>Then we expect $e_{11} = n$, where $n=8$ is the number of rows.</p></div></article><p>Now if we compare the original table with this one,</p><p>$$
+$$</p>
+<article class="message is-info is-light">
+<div class=message-body>
+<p>This $e_{ij}$ serves as the average occurrence of each combinations of $a_i$ and $b_j$. If we have $a_i$ in each row but only one $b_j$ occurrences, the average is 1. This mean that given $b_j$ we would definitely only see one $a_i$.</p>
+<p>When we have multiple $a_i$ and $b_j$, this average still works. Suppose we have $a_1$ occurred 4 times in total and we have a total of 8 rows. Assuming that this $a_1$ will appear randomly in the rows, what is the average probability to see this $a_1$ if we choose a random row? It is $4/8=0.5$. Then we will expect $1\times 0.5=0.5$ occurrences $a_1$ for one occurance of $b_2$. If we have 3 occurances of $b_2$, we would expect to see $3\times 0.5==1.5$ occurrences of $a_1$.</p>
+<p>This is why it is treated as expected frequencies of each combinations.</p>
+<p>As a side note, suppose we have A and B exactly the same, and they all have the same values, a1.</p>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>a1</td>
+<td>b1</td>
+</tr>
+</tbody>
+</table>
+<p>Then we expect $e_{11} = n$, where $n=8$ is the number of rows.</p>
+</div>
+</article>
+<p>Now if we compare the original table with this one,</p>
+<p>$$
 o_{ij} - e_{ij}
-$$</p><p>we get the deviation from the expected table. With a few little twitches, we would define</p><p>$$
+$$</p>
+<p>we get the deviation from the expected table. With a few little twitches, we would define</p>
+<p>$$
 \chi^2 = \sum_{i,j} \frac{ (o_{ij} - e_{ij})^2 } { e_{ij} }
-$$</p><article class="message is-info is-light"><div class=message-body><p>If A and B are the same and each possible values occurred m times, then we would have</p><p>$$
+$$</p>
+<article class="message is-info is-light">
+<div class=message-body>
+<p>If A and B are the same and each possible values occurred m times, then we would have</p>
+<p>$$
 o_{ij} = e_{ij} = \delta_{ij} * m.
-$$</p><p>Then we get
+$$</p>
+<p>Then we get
 $$
 \chi^2 = 0
-$$</p><p>Then we say this chi-square analysis doesn&rsquo;t reject our hypothesis that these two columns are correlated.</p></div></article><h2 id=how-to-use-the-number-chi-square>How to Use the Number Chi-square</h2><p>The final question is how to use the result. We usually have a threshold $\chi_0^2$. Whenever our calculated value is larger than this one, we decide that our analysis rejects the hypothesis that the two columns are correlated.
-This value $\chi_0^2$ can be found in the textbooks.</p><h2 id=other-methods>Other Methods</h2><ol><li><a href=https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient>Kendall rank correlation coefficient</a></li><li><a href=https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient>Spearman&rsquo;s rank correlation coefficient</a></li></ol></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2018-11-18T00:00:00+00:00>2018-11-18</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/statistics/jargons/?ref=footer" class=pagination-previous>« Jargons</a>
-<a class=pagination-next href="https://datumorphism.leima.is/wiki/statistics/correlation-coefficient/?ref=footer">Correlation Coefficient and Covariance for Numeric... »</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2018). 'Chi-square Correlation Test for Nominal Data', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#steps>Steps</a></li><li><a href=#define-the-series>Define the Series</a></li><li><a href=#count-co-ocurrences>Count Co-ocurrences</a></li><li><a href=#how-to-use-the-number-chi-square>How to Use the Number Chi-square</a></li><li><a href=#other-methods>Other Methods</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href style=text-decoration:none>Data Mining by Jiawei Han, Micheline Kamber, Jian Pei</a></li><li class=has-text-weight-bold><a href=https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient style=text-decoration:none>Kendall rank correlation coefficient</a></li><li class=has-text-weight-bold><a href=https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient style=text-decoration:none>Spearman's rank correlation coefficient</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/statistics/correlation-analysis-chi-square.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links to:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/statistics/correlation-coefficient/><div class=media-content><div class=content><h6>Correlation Coefficient and Covariance for Numeric Data</h6><p>Detecting correlations using correlations for numeric data</p></div></div></a></div></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/pattern-mining/association-rules/><div class=media-content><div class=content><h6>Association Rules</h6><p>Frequent patterns using association rules</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/statistics/correlation-coefficient/><div class=media-content><div class=content><h6>Correlation Coefficient and Covariance for Numeric Data</h6><p>Detecting correlations using correlations for numeric data</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/statistics/cramers-v/><div class=media-content><div class=content><h6>Cramér's V</h6><p></p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/statistics/correlation-analysis-chi-square.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+$$</p>
+<p>Then we say this chi-square analysis doesn&rsquo;t reject our hypothesis that these two columns are correlated.</p>
+</div>
+</article>
+<h2 id=how-to-use-the-number-chi-square>How to Use the Number Chi-square</h2>
+<p>The final question is how to use the result. We usually have a threshold $\chi_0^2$. Whenever our calculated value is larger than this one, we decide that our analysis rejects the hypothesis that the two columns are correlated.
+This value $\chi_0^2$ can be found in the textbooks.</p>
+<h2 id=other-methods>Other Methods</h2>
+<ol>
+<li><a href=https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient>Kendall rank correlation coefficient</a></li>
+<li><a href=https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient>Spearman&rsquo;s rank correlation coefficient</a></li>
+</ol>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2018-11-18T00:00:00+00:00>2018-11-18</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/statistics/jargons/?ref=footer" class=pagination-previous>« Jargons</a>
+<a class=pagination-next href="https://datumorphism.leima.is/wiki/statistics/correlation-coefficient/?ref=footer">Correlation Coefficient and Covariance for Numeric... »</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2018). 'Chi-square Correlation Test for Nominal Data', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/wiki/statistics/correlation-analysis-chi-square/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#steps>Steps</a></li>
+<li><a href=#define-the-series>Define the Series</a></li>
+<li><a href=#count-co-ocurrences>Count Co-ocurrences</a></li>
+<li><a href=#how-to-use-the-number-chi-square>How to Use the Number Chi-square</a></li>
+<li><a href=#other-methods>Other Methods</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href style=text-decoration:none>Data Mining by Jiawei Han, Micheline Kamber, Jian Pei</a></li>
+<li class=has-text-weight-bold><a href=https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient style=text-decoration:none>Kendall rank correlation coefficient</a></li>
+<li class=has-text-weight-bold><a href=https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient style=text-decoration:none>Spearman's rank correlation coefficient</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/statistics/correlation-analysis-chi-square.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/statistics/correlation-coefficient/>
+<div class=media-content>
+<div class=content>
+<h6>Correlation Coefficient and Covariance for Numeric Data</h6>
+<p>
+Detecting correlations using correlations for numeric data
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/pattern-mining/association-rules/>
+<div class=media-content>
+<div class=content>
+<h6>Association Rules</h6>
+<p>
+Frequent patterns using association rules
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/statistics/correlation-coefficient/>
+<div class=media-content>
+<div class=content>
+<h6>Correlation Coefficient and Covariance for Numeric Data</h6>
+<p>
+Detecting correlations using correlations for numeric data
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/statistics/cramers-v/>
+<div class=media-content>
+<div class=content>
+<h6>Cramér's V</h6>
+<p>
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/statistics/correlation-analysis-chi-square.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

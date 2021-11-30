@@ -1,25 +1,1056 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Decision Tree | Datumorphism | L Ma</title><meta name=author content="L Ma"><meta property="og:title" content="Decision Tree"><meta property="og:description" content="In this article, we will explain how decision trees work and build a tree by hand.
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Decision Tree | Datumorphism | L Ma </title>
+<meta name=author content="L Ma">
+<meta property="og:title" content="Decision Tree">
+<meta property="og:description" content="In this article, we will explain how decision trees work and build a tree by hand.
 The code used in this article can be found in this repo.   Definition of the problem We will decide whether one should go to work today. In this demo project, we consider the following features.
-   feature possible values     health 0: feeling bad, 1: feeling good   weather 0: bad weather, 1: good weather   holiday 1: holiday, 0: not holiday    For more compact notations, we use the abstract notation $\{0,1\}^3$ to describe a set of three features each with 0 and 1 as possible values."><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/"><meta property="article:published_time" content="2019-12-25T00:00:00+00:00"><meta property="article:modified_time" content="2019-12-25T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Decision Tree"><meta itemprop=description content="In this article, we will explain how decision trees work and build a tree by hand.
+   feature possible values     health 0: feeling bad, 1: feeling good   weather 0: bad weather, 1: good weather   holiday 1: holiday, 0: not holiday    For more compact notations, we use the abstract notation $\{0,1\}^3$ to describe a set of three features each with 0 and 1 as possible values.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2019-12-25T00:00:00+00:00">
+<meta property="article:modified_time" content="2019-12-25T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Decision Tree">
+<meta itemprop=description content="In this article, we will explain how decision trees work and build a tree by hand.
 The code used in this article can be found in this repo.   Definition of the problem We will decide whether one should go to work today. In this demo project, we consider the following features.
-   feature possible values     health 0: feeling bad, 1: feeling good   weather 0: bad weather, 1: good weather   holiday 1: holiday, 0: not holiday    For more compact notations, we use the abstract notation $\{0,1\}^3$ to describe a set of three features each with 0 and 1 as possible values."><meta itemprop=datePublished content="2019-12-25T00:00:00+00:00"><meta itemprop=dateModified content="2019-12-25T00:00:00+00:00"><meta itemprop=wordCount content="1332"><meta itemprop=keywords content="Decision Tree,Supervised Learning,Statistical Learning,Basics,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/>Tree-based Methods</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/>Decision Tree</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Decision Tree</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/decision-tree><span class="tag is-warning is-small is-light">#Decision Tree</span></a>
+   feature possible values     health 0: feeling bad, 1: feeling good   weather 0: bad weather, 1: good weather   holiday 1: holiday, 0: not holiday    For more compact notations, we use the abstract notation $\{0,1\}^3$ to describe a set of three features each with 0 and 1 as possible values."><meta itemprop=datePublished content="2019-12-25T00:00:00+00:00">
+<meta itemprop=dateModified content="2019-12-25T00:00:00+00:00">
+<meta itemprop=wordCount content="1332">
+<meta itemprop=keywords content="Decision Tree,Supervised Learning,Statistical Learning,Basics,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/>Tree-based Methods</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/>Decision Tree</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Decision Tree
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/decision-tree><span class="tag is-warning is-small is-light">#Decision Tree</span></a>
 <a href=/tags/supervised-learning><span class="tag is-warning is-small is-light">#Supervised Learning</span></a>
 <a href=/tags/statistical-learning><span class="tag is-warning is-small is-light">#Statistical Learning</span></a>
-<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>In this article, we will explain how decision trees work and build a tree by hand.</p><article class="message is-info is-light"><div class=message-body>The code used in this article can be found in <a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb>this repo</a>.</div></article><h2 id=definition-of-the-problem>Definition of the problem</h2><p>We will decide whether one should go to work today. In this demo project, we consider the following features.</p><table><thead><tr><th align=center>feature</th><th align=center>possible values</th></tr></thead><tbody><tr><td align=center>health</td><td align=center>0: feeling bad, 1: feeling good</td></tr><tr><td align=center>weather</td><td align=center>0: bad weather, 1: good weather</td></tr><tr><td align=center>holiday</td><td align=center>1: holiday, 0: not holiday</td></tr></tbody></table><article class="message is-info is-light"><div class=message-body>For more compact notations, we use the abstract notation $\{0,1\}^3$ to describe a set of three features each with 0 and 1 as possible values. In general, the notation $\{0,1\}^d$ indicates $d$ binary features.</div></article><p>Our prediction will be a binary result, 0 or 1, with 0 indicates staying at home and 1 indicates going to work.</p><article class="message is-info is-light"><div class=message-body>To be compact, this prediction can be denoted as $\{0,1\}^1$.</div></article><h2 id=how-to-describe-a-decision-tree>How to Describe a Decision Tree</h2><p>In theory, we would expect a decision tree of the following.</p><div class=mermaid align=center>graph TD
+<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>In this article, we will explain how decision trees work and build a tree by hand.</p>
+<article class="message is-info is-light">
+<div class=message-body>
+The code used in this article can be found in <a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb>this repo</a>.
+</div>
+</article>
+<h2 id=definition-of-the-problem>Definition of the problem</h2>
+<p>We will decide whether one should go to work today. In this demo project, we consider the following features.</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center>feature</th>
+<th style=text-align:center>possible values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>health</td>
+<td style=text-align:center>0: feeling bad, 1: feeling good</td>
+</tr>
+<tr>
+<td style=text-align:center>weather</td>
+<td style=text-align:center>0: bad weather, 1: good weather</td>
+</tr>
+<tr>
+<td style=text-align:center>holiday</td>
+<td style=text-align:center>1: holiday, 0: not holiday</td>
+</tr>
+</tbody>
+</table>
+<article class="message is-info is-light">
+<div class=message-body>
+For more compact notations, we use the abstract notation $\{0,1\}^3$ to describe a set of three features each with 0 and 1 as possible values. In general, the notation $\{0,1\}^d$ indicates $d$ binary features.
+</div>
+</article>
+<p>Our prediction will be a binary result, 0 or 1, with 0 indicates staying at home and 1 indicates going to work.</p>
+<article class="message is-info is-light">
+<div class=message-body>
+To be compact, this prediction can be denoted as $\{0,1\}^1$.
+</div>
+</article>
+<h2 id=how-to-describe-a-decision-tree>How to Describe a Decision Tree</h2>
+<p>In theory, we would expect a decision tree of the following.</p>
+<div class=mermaid align=center>
+graph TD
 A[health] --> |feeling bad| E[stay home]
 A[health] --> |feeling good| B[weather]
 B --> |bad weather| E
 B --> |good weather| C[holiday]
 C --> |holiday| E
-C --> |not holiday| G[go to the office]</div><article class="message is-info is-light"><div class=message-body>It is straight forward to prove that the max required depths and max required leaves of a model that maps $\{0,1\}^d$ to $\{0,1\}^1$ are $d+1$ and $2^d$. In our simple example, some of the branches are truncated based on our understanding of the problem. In principle, the branch &ldquo;feeling bad&rdquo; could also go on to the next level.</div></article><h2 id=data>Data</h2><p><strong>However, we do not forge trees using experience. We build the tree using data.</strong></p><p>The following is a sample of the full dataset.</p><table><thead><tr><th align=right></th><th align=right>health</th><th align=right>weather</th><th align=right>holiday</th><th align=right>go_to_office</th></tr></thead><tbody><tr><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>2</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>3</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>4</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr></tbody></table><div class=card><details><summary class="card-header-title card-toggle card-header">Full Data</summary><div class=card-content><div class=content><table><thead><tr><th align=right></th><th align=right>health</th><th align=right>weather</th><th align=right>holiday</th><th align=right>go_to_office</th></tr></thead><tbody><tr><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>2</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>3</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>4</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>5</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>6</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>7</td><td align=right>1</td><td align=right>1</td><td align=right>0</td><td align=right>1</td></tr><tr><td align=right>8</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>9</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>10</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>11</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>12</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>13</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>14</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>15</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>16</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>17</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>18</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>19</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>20</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>21</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>22</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>23</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>24</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>25</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>26</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>27</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>28</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>29</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>30</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>31</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>32</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>33</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>34</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>35</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>36</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>37</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>38</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>39</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>40</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>41</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>42</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>43</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>44</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>45</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>46</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>47</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>48</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>49</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>50</td><td align=right>1</td><td align=right>1</td><td align=right>0</td><td align=right>1</td></tr><tr><td align=right>51</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>52</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>53</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>54</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>55</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>56</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>57</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>58</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>59</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>60</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>61</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>62</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>63</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>64</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>65</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>66</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>67</td><td align=right>1</td><td align=right>1</td><td align=right>0</td><td align=right>1</td></tr><tr><td align=right>68</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>69</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>70</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>71</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>72</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>73</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>74</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>75</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>76</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>77</td><td align=right>1</td><td align=right>1</td><td align=right>0</td><td align=right>1</td></tr><tr><td align=right>78</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>79</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>80</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>81</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>82</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>83</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>84</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>85</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>86</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>87</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>88</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>89</td><td align=right>1</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>90</td><td align=right>1</td><td align=right>1</td><td align=right>0</td><td align=right>1</td></tr><tr><td align=right>91</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>92</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>93</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>94</td><td align=right>1</td><td align=right>1</td><td align=right>0</td><td align=right>1</td></tr><tr><td align=right>95</td><td align=right>1</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>96</td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>97</td><td align=right>0</td><td align=right>1</td><td align=right>1</td><td align=right>0</td></tr><tr><td align=right>98</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr><tr><td align=right>99</td><td align=right>1</td><td align=right>1</td><td align=right>0</td><td align=right>1</td></tr></tbody></table></div></div></details></div><h2 id=build-a-tree>Build a Tree</h2><figure><img src=../assets/decision-tree/decision_tree_100_pure.png alt="A decision tree trained with the dataset."><figcaption><p>A decision tree trained with the dataset.</p></figcaption></figure><div class=card><details><summary class="card-header-title card-toggle card-header">Reading the Decision Tree Chart</summary><div class=card-content><div class=content><h3 id=reading-the-decision-tree-chart>Reading the Decision Tree Chart</h3><p>On each node of the tree, we read loads of information.</p><p>We will look into the root node as an example. The feature name and value range are denoted on the first row, i.e., <strong>weather&lt;= 0.5</strong>, which means that we are making decisions based on whether the value of the weather feature less or equal to 0.5. If the value is less or equal to 0.5, we go the left branch, otherwise, we go to the right branch. The following rows in the node are assuming the condition is satisfied.</p><p>On the second row, we read the <strong>gini</strong> impurity value. Gini impurity is a measure of the impurity of the data under the condition.</p><p>On the third row, samples of the given condition (weather &lt;= 0.5) is also given.</p><p>Finally, we read the values of the samples. In this example, value = [93, 7], i.e., 93 of the samples have target value 0, 7 of the samples have target value 1.</p></div></div></details></div><p>This is a very good result. It is the same as our theoretical expectations.</p><div class=card><details><summary class="card-header-title card-toggle card-header">Surely it will. We forged the dataset based on the theoretical expectations.</summary><div class=card-content><div class=content><p>Surely it will. We forged the dataset based on the theoretical expectations.</p><p>Here is an example of using data that doesn&rsquo;t always fit into our theoretical model.</p><p><img src=../assets/decision-tree/decision_tree_100_impure.png alt></p><blockquote><p>A decision tree trained with a fake &ldquo;impure dataset&rdquo; that doesn&rsquo;t always fit into our theoretical model.&rdquo;</p></blockquote></div></div></details></div><h2 id=overfitting>Overfitting</h2><p>Fully grown trees will most likely to overfit the data since they always try to grow pure leaves. Besides, fully grown trees grow exponentially as the number of features grow which requires a lot of computation resources.</p><article class="message is-warning is-light"><div class=message-body>Applying Occam&rsquo;s razor, we prefer smaller trees as long as the trees can explain the data well.</div></article><p>To achieve this, we will either have to limit how the trees grow during training, or pruning the trees after the trees are built.</p><p>Pruning of a tree is achieved by replacing subtrees at a node with a leaf if some certain conditions based on cost estimations.</p><h2 id=remarks>Remarks</h2><p>The Iterative Dichotomizer 3 algorithm, aka ID3 algorithm, is one of the most famous implementations of the decision tree. The following is the &ldquo;flowchart&rdquo; of the algorithm.</p><div class=mermaid align=center>graph TD
+C --> |not holiday| G[go to the office]
+</div>
+<article class="message is-info is-light">
+<div class=message-body>
+It is straight forward to prove that the max required depths and max required leaves of a model that maps $\{0,1\}^d$ to $\{0,1\}^1$ are $d+1$ and $2^d$. In our simple example, some of the branches are truncated based on our understanding of the problem. In principle, the branch &ldquo;feeling bad&rdquo; could also go on to the next level.
+</div>
+</article>
+<h2 id=data>Data</h2>
+<p><strong>However, we do not forge trees using experience. We build the tree using data.</strong></p>
+<p>The following is a sample of the full dataset.</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:right></th>
+<th style=text-align:right>health</th>
+<th style=text-align:right>weather</th>
+<th style=text-align:right>holiday</th>
+<th style=text-align:right>go_to_office</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>2</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>3</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>4</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+</tbody>
+</table>
+<div class=card>
+<details>
+<summary class="card-header-title card-toggle card-header">
+Full Data
+</summary>
+<div class=card-content>
+<div class=content>
+<table>
+<thead>
+<tr>
+<th style=text-align:right></th>
+<th style=text-align:right>health</th>
+<th style=text-align:right>weather</th>
+<th style=text-align:right>holiday</th>
+<th style=text-align:right>go_to_office</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>2</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>3</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>4</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>5</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>6</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>7</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td style=text-align:right>8</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>9</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>10</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>11</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>12</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>13</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>14</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>15</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>16</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>17</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>18</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>19</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>20</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>21</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>22</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>23</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>24</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>25</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>26</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>27</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>28</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>29</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>30</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>31</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>32</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>33</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>34</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>35</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>36</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>37</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>38</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>39</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>40</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>41</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>42</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>43</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>44</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>45</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>46</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>47</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>48</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>49</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>50</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td style=text-align:right>51</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>52</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>53</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>54</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>55</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>56</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>57</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>58</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>59</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>60</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>61</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>62</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>63</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>64</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>65</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>66</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>67</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td style=text-align:right>68</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>69</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>70</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>71</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>72</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>73</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>74</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>75</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>76</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>77</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td style=text-align:right>78</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>79</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>80</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>81</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>82</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>83</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>84</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>85</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>86</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>87</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>88</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>89</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>90</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td style=text-align:right>91</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>92</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>93</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>94</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td style=text-align:right>95</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>96</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>97</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>98</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>0</td>
+</tr>
+<tr>
+<td style=text-align:right>99</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>1</td>
+<td style=text-align:right>0</td>
+<td style=text-align:right>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</div>
+<h2 id=build-a-tree>Build a Tree</h2>
+<figure><img src=../assets/decision-tree/decision_tree_100_pure.png alt="A decision tree trained with the dataset."><figcaption>
+<p>A decision tree trained with the dataset.</p>
+</figcaption>
+</figure>
+<div class=card>
+<details>
+<summary class="card-header-title card-toggle card-header">
+Reading the Decision Tree Chart
+</summary>
+<div class=card-content>
+<div class=content>
+<h3 id=reading-the-decision-tree-chart>Reading the Decision Tree Chart</h3>
+<p>On each node of the tree, we read loads of information.</p>
+<p>We will look into the root node as an example. The feature name and value range are denoted on the first row, i.e., <strong>weather&lt;= 0.5</strong>, which means that we are making decisions based on whether the value of the weather feature less or equal to 0.5. If the value is less or equal to 0.5, we go the left branch, otherwise, we go to the right branch. The following rows in the node are assuming the condition is satisfied.</p>
+<p>On the second row, we read the <strong>gini</strong> impurity value. Gini impurity is a measure of the impurity of the data under the condition.</p>
+<p>On the third row, samples of the given condition (weather &lt;= 0.5) is also given.</p>
+<p>Finally, we read the values of the samples. In this example, value = [93, 7], i.e., 93 of the samples have target value 0, 7 of the samples have target value 1.</p>
+</div>
+</div>
+</details>
+</div>
+<p>This is a very good result. It is the same as our theoretical expectations.</p>
+<div class=card>
+<details>
+<summary class="card-header-title card-toggle card-header">
+Surely it will. We forged the dataset based on the theoretical expectations.
+</summary>
+<div class=card-content>
+<div class=content>
+<p>Surely it will. We forged the dataset based on the theoretical expectations.</p>
+<p>Here is an example of using data that doesn&rsquo;t always fit into our theoretical model.</p>
+<p><img src=../assets/decision-tree/decision_tree_100_impure.png alt></p>
+<blockquote>
+<p>A decision tree trained with a fake &ldquo;impure dataset&rdquo; that doesn&rsquo;t always fit into our theoretical model."</p>
+</blockquote>
+</div>
+</div>
+</details>
+</div>
+<h2 id=overfitting>Overfitting</h2>
+<p>Fully grown trees will most likely to overfit the data since they always try to grow pure leaves. Besides, fully grown trees grow exponentially as the number of features grow which requires a lot of computation resources.</p>
+<article class="message is-warning is-light">
+<div class=message-body>
+Applying Occam&rsquo;s razor, we prefer smaller trees as long as the trees can explain the data well.
+</div>
+</article>
+<p>To achieve this, we will either have to limit how the trees grow during training, or pruning the trees after the trees are built.</p>
+<p>Pruning of a tree is achieved by replacing subtrees at a node with a leaf if some certain conditions based on cost estimations.</p>
+<h2 id=remarks>Remarks</h2>
+<p>The Iterative Dichotomizer 3 algorithm, aka ID3 algorithm, is one of the most famous implementations of the decision tree. The following is the &ldquo;flowchart&rdquo; of the algorithm.</p>
+<div class=mermaid align=center>
+graph TD
 Leaf("Prepare samples in node")
 MajorityVote["Calculate majority vote"]
 Assign[Assign label to node]
@@ -47,14 +1078,233 @@ MajorityVoteR["Calculate majority vote"]
 Right --> MajorityVoteR
 AssignR(Assign label to right node)
 MajorityVoteR --> AssignR
-end</div><p>To &ldquo;calculate the gain of the split&rdquo;, we use information gain or Gini impurity.</p></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2019-12-25T00:00:00+00:00>2019-12-25</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/machine-learning/tree-based/overview/?ref=footer" class=pagination-previous>« Tree-based Learning</a>
-<a class=pagination-next href="https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/?ref=footer">Random Forest »</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2019). 'Decision Tree', Datumorphism, 12 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#definition-of-the-problem>Definition of the problem</a></li><li><a href=#how-to-describe-a-decision-tree>How to Describe a Decision Tree</a></li><li><a href=#data>Data</a></li><li><a href=#build-a-tree>Build a Tree</a></li><li><a href=#overfitting>Overfitting</a></li><li><a href=#remarks>Remarks</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href=https://doi.org/10.1017/CBO9781107298019 style=text-decoration:none>Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms.</a></li></ol></p></div></div></article></div><div class=is-divider data-content=SUPPLEMENTARY></div><div class="box is-size-7"><article class="media is-link"><div class=media-content><div class=content><p><strong>Supplementary:</strong><br><ol><li class=has-text-weight-bold><a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb style=text-decoration:none>Python code used in this article</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/machine-learning/tree-based/decision-tree.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links to:</strong><div><a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/><div class=media-content><div class=content><h6>Gini Impurity</h6><p>The Gini impurity is a measurement of the impurity of a set.</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/><div class=media-content><div class=content><h6>Information Gain</h6><p>The information is a measurement of the entropy of the dataset.</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/><div class=media-content><div class=content><h6>Random Forest</h6><p>random forest in machine learning</p></div></div></a></div></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/><div class=media-content><div class=content><h6>Random Forest</h6><p>random forest in machine learning</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/><div class=media-content><div class=content><h6>Gini Impurity</h6><p>The Gini impurity is a measurement of the impurity of a set.</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/><div class=media-content><div class=content><h6>Information Gain</h6><p>The information is a measurement of the entropy of the dataset.</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/tree-based/decision-tree.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+end
+</div>
+<p>To &ldquo;calculate the gain of the split&rdquo;, we use information gain or Gini impurity.</p>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2019-12-25T00:00:00+00:00>2019-12-25</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/machine-learning/tree-based/overview/?ref=footer" class=pagination-previous>« Tree-based Learning</a>
+<a class=pagination-next href="https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/?ref=footer">Random Forest »</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2019). 'Decision Tree', Datumorphism, 12 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/tree-based/decision-tree/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#definition-of-the-problem>Definition of the problem</a></li>
+<li><a href=#how-to-describe-a-decision-tree>How to Describe a Decision Tree</a></li>
+<li><a href=#data>Data</a></li>
+<li><a href=#build-a-tree>Build a Tree</a></li>
+<li><a href=#overfitting>Overfitting</a></li>
+<li><a href=#remarks>Remarks</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://doi.org/10.1017/CBO9781107298019 style=text-decoration:none>Shalev-Shwartz, S., & Ben-David, S. (2013). Understanding machine learning: From theory to algorithms. Understanding Machine Learning: From Theory to Algorithms.</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=SUPPLEMENTARY></div>
+<div class="box is-size-7">
+<article class="media is-link">
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Supplementary: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://github.com/datumorphism/mini-code/blob/master/decision_tree/decision_tree_example.ipynb style=text-decoration:none>Python code used in this article</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/machine-learning/tree-based/decision-tree.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/>
+<div class=media-content>
+<div class=content>
+<h6>Gini Impurity</h6>
+<p>
+The Gini impurity is a measurement of the impurity of a set.
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/>
+<div class=media-content>
+<div class=content>
+<h6>Information Gain</h6>
+<p>
+The information is a measurement of the entropy of the dataset.
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/>
+<div class=media-content>
+<div class=content>
+<h6>Random Forest</h6>
+<p>
+random forest in machine learning
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/tree-based/random-forest/>
+<div class=media-content>
+<div class=content>
+<h6>Random Forest</h6>
+<p>
+random forest in machine learning
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/gini-impurity/>
+<div class=media-content>
+<div class=content>
+<h6>Gini Impurity</h6>
+<p>
+The Gini impurity is a measurement of the impurity of a set.
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/information-gain/>
+<div class=media-content>
+<div class=content>
+<h6>Information Gain</h6>
+<p>
+The information is a measurement of the entropy of the dataset.
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/tree-based/decision-tree.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

@@ -1,63 +1,500 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>KL Divergence | Datumorphism | L Ma</title><meta name=description content="Kullback–Leibler divergence indicates the differences between two distributions"><meta name=author content="L Ma"><meta property="og:title" content="KL Divergence"><meta property="og:description" content="Kullback–Leibler divergence indicates the differences between two distributions"><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/"><meta property="article:published_time" content="2021-04-05T00:00:00+00:00"><meta property="article:modified_time" content="2021-04-05T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="KL Divergence"><meta itemprop=description content="Kullback–Leibler divergence indicates the differences between two distributions"><meta itemprop=datePublished content="2021-04-05T00:00:00+00:00"><meta itemprop=dateModified content="2021-04-05T00:00:00+00:00"><meta itemprop=wordCount content="645"><meta itemprop=keywords content="probability,distance,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/basics/>Machine Learning Basics</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>KL Divergence</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">KL Divergence</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/probability><span class="tag is-warning is-small is-light">#probability</span></a>
-<a href=/tags/distance><span class="tag is-warning is-small is-light">#distance</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>Given two distributions $p(x)$ and $q(x)$, the Kullback-Leibler divergence is defined as</p><p>$$
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> KL Divergence | Datumorphism | L Ma </title>
+<meta name=description content="Kullback–Leibler divergence indicates the differences between two distributions">
+<meta name=author content="L Ma">
+<meta property="og:title" content="KL Divergence">
+<meta property="og:description" content="Kullback–Leibler divergence indicates the differences between two distributions">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2021-04-05T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-04-05T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="KL Divergence">
+<meta itemprop=description content="Kullback–Leibler divergence indicates the differences between two distributions"><meta itemprop=datePublished content="2021-04-05T00:00:00+00:00">
+<meta itemprop=dateModified content="2021-04-05T00:00:00+00:00">
+<meta itemprop=wordCount content="645">
+<meta itemprop=keywords content="probability,distance,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/basics/>Machine Learning Basics</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>KL Divergence</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+KL Divergence
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/probability><span class="tag is-warning is-small is-light">#probability</span></a>
+<a href=/tags/distance><span class="tag is-warning is-small is-light">#distance</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>Given two distributions $p(x)$ and $q(x)$, the Kullback-Leibler divergence is defined as</p>
+<p>$$
 D_\text{KL}(p(x) \parallel q(x) ) = \int_{-\infty}^\infty p(x) \log\left(\frac{p(x)}{q(x)}\right)\, dx = \mathbb E_{p(x)} \left[\log\left(\frac{p(x)}{q(x)}\right) \right].
-$$</p><article class="message is-info is-light"><div class=message-header><p>Connection to Entropy</p></div><div class=message-body><p>Notice that this expression is quite similar to entropy,</p><p>$$
+$$</p>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>Connection to Entropy</p>
+</div>
+<div class=message-body>
+<p>Notice that this expression is quite similar to entropy,</p>
+<p>$$
 H(p(x)) = \int_{-\infty}^{\infty} p(x) \log p(x) , dx.
-$$</p><p>The entropy describes the lower bound of the number of bits (if we use $\log_2$) of how the information can be compressed. By looking at the expression of the KL divergence, we intuitively interpret it as the information loss if we use distribution $q(x)$ to approximate distribution $p(x)$, <a href=https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained>Kurt2017</a></p><p>$$
+$$</p>
+<p>The entropy describes the lower bound of the number of bits (if we use $\log_2$) of how the information can be compressed. By looking at the expression of the KL divergence, we intuitively interpret it as the information loss if we use distribution $q(x)$ to approximate distribution $p(x)$, <a href=https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained>Kurt2017</a></p>
+<p>$$
 D_\text{KL}(p(x) \parallel q(x) ) = \mathbb E_{p(x)} \left[\log p(x)- \log q(x)\right] .
-$$</p></div></article><p>Kullback-Leibler divergence is also called relative entropy. In fact, KL divergence can be decomposed into cross entropy $H(p) = -\int_{-\infty}^\infty p(x) \log q(x), dx$ and entropy $H(p) = -\int_{-\infty}^\infty p(x) \log p(x), dx$</p><p>$$
+$$</p>
+</div>
+</article>
+<p>Kullback-Leibler divergence is also called relative entropy. In fact, KL divergence can be decomposed into cross entropy $H(p) = -\int_{-\infty}^\infty p(x) \log q(x), dx$ and entropy $H(p) = -\int_{-\infty}^\infty p(x) \log p(x), dx$</p>
+<p>$$
 D_\text{KL}(p \parallel q) = \int_{-\infty}^\infty p(x) \log p(x)\, dx - \int_{-\infty}^\infty p(x) \log q(x) \, dx = - H(p) + H(p, q),
-$$</p><p>which is</p><p>$$
+$$</p>
+<p>which is</p>
+<p>$$
 D_\text{KL}(p \parallel q) + H(p) = H(p, q).
-$$</p><h2 id=what-does-it-mean>What does it mean?</h2><p>We assume two uniform distributions,</p><p>$$
+$$</p>
+<h2 id=what-does-it-mean>What does it mean?</h2>
+<p>We assume two uniform distributions,</p>
+<p>$$
 p(x) = \begin{cases}
 1/\Delta_p & \text{for } x\in [0, \Delta_p] \\
 0 & \text{else}
 \end{cases}
-$$</p><p>and</p><p>$$
+$$</p>
+<p>and</p>
+<p>$$
 p(x) = \begin{cases}
 1/\Delta_q & \text{for } x\in [0, \Delta_q] \\
 0 & \text{else}.
 \end{cases}
-$$</p><figure><img src=../assets/kl-divergence/kl-divergence-two-uniform.png></figure><p>We will assume $\Delta_q > \Delta_p$ for simplicity. The KL divergence is</p><p>$$
+$$</p>
+<figure><img src=../assets/kl-divergence/kl-divergence-two-uniform.png>
+</figure>
+<p>We will assume $\Delta_q > \Delta_p$ for simplicity. The KL divergence is</p>
+<p>$$
 D_\text{KL}(p\parallel q) = \int_0^{\Delta_p} \frac{1}{\Delta_p}\log\left( \frac{1/\Delta_p}{1/\Delta_q} \right) dx +\int_{\Delta_p}^{\Delta_q} \lim_{\epsilon\to 0} \epsilon \log\left( \frac{\epsilon}{1/\Delta_q} \right) dx,
-$$</p><p>where the second term is 0. We have the KL divergence</p><p>$$
+$$</p>
+<p>where the second term is 0. We have the KL divergence</p>
+<p>$$
 D_\text{KL}(p\parallel q) = \log\left( \frac{\Delta_q}{\Delta_p} \right).
-$$</p><p>The KL divergence is 0 if $\Delta_p = \Delta_q$, i.e., if the two distributions are the same.</p><h2 id=kl-divergence-of-two-gaussians>KL Divergence of Two Gaussians</h2><p>Assuming the two distributions are two Gaussians $p(x)=\frac{1}{\sigma_p\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_p)^2 }{2\sigma_p^2} \right)$ and $q(x)=\frac{1}{\sigma_q\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_q)^2 }{2\sigma_q^2} \right)$, the KL divergence is</p><p>$$
+$$</p>
+<p>The KL divergence is 0 if $\Delta_p = \Delta_q$, i.e., if the two distributions are the same.</p>
+<h2 id=kl-divergence-of-two-gaussians>KL Divergence of Two Gaussians</h2>
+<p>Assuming the two distributions are two Gaussians $p(x)=\frac{1}{\sigma_p\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_p)^2 }{2\sigma_p^2} \right)$ and $q(x)=\frac{1}{\sigma_q\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_q)^2 }{2\sigma_q^2} \right)$, the KL divergence is</p>
+<p>$$
 D_{\text{KL}}(p\parallel q) = \mathbb{E}_p \left[ \log \left(\frac{p}{q}\right) \right].
-$$</p><p>Notice that<p>$$
+$$</p>
+<p>Notice that
+<p>$$
 \log \left( \frac{p}{q} \right) = \log \left( \exp\left( - \frac{ (x - \mu_p)^2 }{2\sigma_p^2} + \frac{ (x - \mu_q)^2 }{2\sigma_q^2} \right) \right).
-$$</p></p><p>As a simpler version of the problem, we assume that $\sigma_p = \sigma_q = \sigma$, so that</p><p>$$
+$$</p>
+</p>
+<p>As a simpler version of the problem, we assume that $\sigma_p = \sigma_q = \sigma$, so that</p>
+<p>$$
 \log \left( \frac{p}{q} \right) = \frac{ -(x - \mu_p)^2 + (x - \mu_q)^2 }{2\sigma^2} = \frac{ \mu_q^2 - \mu_p^2}{2\sigma^2} + \frac{ (\mu_p - \mu_q) x }{\sigma^2}.
-$$</p><p>The KL divergence becomes</p><p>$$
+$$</p>
+<p>The KL divergence becomes</p>
+<p>$$
 D_{\text{KL}} = \mathbb E_p \left[ \frac{ \mu_q^2 - \mu_p^2}{2\sigma^2} + \frac{ (\mu_p - \mu_q) x }{\sigma^2} \right] = \frac{ \mu_q^2 - \mu_p^2}{2\sigma^2} + \frac{ (\mu_p - \mu_q) }{\sigma^2} \mathbb E_p \left[ x \right] = \frac{ (\mu_q - \mu_p)^2}{2\sigma^2}.
-$$</p><p>One could easily see that $\mathbb E_p \left[ x \right]=\mu$ using symmetries. The KL divergence for two Gaussians is symmetric for the distributions.</p><p>As an example, we calculate the KL divergence for the example shown in the figure.</p><figure><img src=../assets/kl-divergence/two-gaussians.png></figure><p>To get some intutions, we calculate the integrant $p(x)\log\left(p(x)/q(x)\right)$. The area under curve will be the KL divergence.</p><figure><img src=../assets/kl-divergence/integrants.png></figure><h2 id=kl-divergence-is-not-necessarily-symmetric>KL Divergence is not necessarily symmetric</h2><p>Using the uniform distribution example, we realize that</p><p>$$
+$$</p>
+<p>One could easily see that $\mathbb E_p \left[ x \right]=\mu$ using symmetries. The KL divergence for two Gaussians is symmetric for the distributions.</p>
+<p>As an example, we calculate the KL divergence for the example shown in the figure.</p>
+<figure><img src=../assets/kl-divergence/two-gaussians.png>
+</figure>
+<p>To get some intutions, we calculate the integrant $p(x)\log\left(p(x)/q(x)\right)$. The area under curve will be the KL divergence.</p>
+<figure><img src=../assets/kl-divergence/integrants.png>
+</figure>
+<h2 id=kl-divergence-is-not-necessarily-symmetric>KL Divergence is not necessarily symmetric</h2>
+<p>Using the uniform distribution example, we realize that</p>
+<p>$$
 D_\text{KL}(q\parallel p) \to \infty,
-$$</p><p>which is very different from $D_\text{KL}(p\parallel q)$.</p><p>To illustrate the asymmetries using continuous , we will calculate the KL divergence of a Gaussian $p(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{p})^2 }{2\sigma^2} \right)$ and a Guassian mixture $q(x)=\frac{1}{2\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{q1})^2 }{2\sigma^2} \right) + \frac{1}{2\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{q2})^2 }{2\sigma^2} \right)$. The KL divergence $D_{\text{KL}}(p \parallel q)$ is</p><p>$$
+$$</p>
+<p>which is very different from $D_\text{KL}(p\parallel q)$.</p>
+<p>To illustrate the asymmetries using continuous , we will calculate the KL divergence of a Gaussian $p(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{p})^2 }{2\sigma^2} \right)$ and a Guassian mixture $q(x)=\frac{1}{2\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{q1})^2 }{2\sigma^2} \right) + \frac{1}{2\sigma\sqrt{2\pi}} \exp\left( - \frac{ (x - \mu_{q2})^2 }{2\sigma^2} \right)$. The KL divergence $D_{\text{KL}}(p \parallel q)$ is</p>
+<p>$$
 D_{\text{KL}}(p \parallel q) = \mathbb{E}_p \left[ \log\left( \frac{p}{q} \right) \right].
-$$</p><figure><img src=../assets/kl-divergence/guassian-mixture.png></figure><p>We will calculate the integrants and area under curve will be the KL divergence $D_\text{KL}(p\parallel q)$.</p><figure><img src=../assets/kl-divergence/guassian-mixture-integrants.png></figure><p>The reverse KL divergence $D_\text{KL}(q\parallel p)$ is different.</p><figure><img src=../assets/kl-divergence/guassian-mixture-integrants-d-q-p.png></figure><p>The fact that KL divergence is not symmetric indicates that it can not be a distance measure.</p></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2021-04-05T00:00:00+00:00>2021-04-05</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/machine-learning/basics/bias-variance/?ref=footer" class=pagination-previous>« Bias-Variance</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>LM (2021). 'KL Divergence', Datumorphism, 04 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#what-does-it-mean>What does it mean?</a></li><li><a href=#kl-divergence-of-two-gaussians>KL Divergence of Two Gaussians</a></li><li><a href=#kl-divergence-is-not-necessarily-symmetric>KL Divergence is not necessarily symmetric</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href=https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence style=text-decoration:none>Kullback–Leibler divergence @ Wikipedia</a></li><li class=has-text-weight-bold><a name=Kurt2017 href=#Kurt2017 style=text-decoration:none><span class="tag is-link is-light">Kurt2017</span></a>
-<a href=https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained style=text-decoration:none>Kullback-Leibler Divergence Explained @ COUNT BAYESIE by Will Kurt</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/machine-learning/basics/kl-divergence.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links to:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/latent-variable-models/><div class=media-content><div class=content><h6>Latent Variable Models</h6><p>Latent variable models brings us new insights on identifying the patterns of some sample data.</p></div></div></a></div></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/cards/information/cross-entropy/><div class=media-content><div class=content><h6>Cross Entropy</h6><p>Cross entropy is1
+$$</p>
+<figure><img src=../assets/kl-divergence/guassian-mixture.png>
+</figure>
+<p>We will calculate the integrants and area under curve will be the KL divergence $D_\text{KL}(p\parallel q)$.</p>
+<figure><img src=../assets/kl-divergence/guassian-mixture-integrants.png>
+</figure>
+<p>The reverse KL divergence $D_\text{KL}(q\parallel p)$ is different.</p>
+<figure><img src=../assets/kl-divergence/guassian-mixture-integrants-d-q-p.png>
+</figure>
+<p>The fact that KL divergence is not symmetric indicates that it can not be a distance measure.</p>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2021-04-05T00:00:00+00:00>2021-04-05</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/machine-learning/basics/bias-variance/?ref=footer" class=pagination-previous>« Bias-Variance</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+LM (2021). 'KL Divergence', Datumorphism, 04 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#what-does-it-mean>What does it mean?</a></li>
+<li><a href=#kl-divergence-of-two-gaussians>KL Divergence of Two Gaussians</a></li>
+<li><a href=#kl-divergence-is-not-necessarily-symmetric>KL Divergence is not necessarily symmetric</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence style=text-decoration:none>Kullback–Leibler divergence @ Wikipedia</a></li>
+<li class=has-text-weight-bold>
+<a name=Kurt2017 href=#Kurt2017 style=text-decoration:none>
+<span class="tag is-link is-light">Kurt2017</span>
+</a>
+<a href=https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained style=text-decoration:none>Kullback-Leibler Divergence Explained @ COUNT BAYESIE by Will Kurt</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/machine-learning/basics/kl-divergence.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/latent-variable-models/>
+<div class=media-content>
+<div class=content>
+<h6>Latent Variable Models</h6>
+<p>
+Latent variable models brings us new insights on identifying the patterns of some sample data.
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/cards/information/cross-entropy/>
+<div class=media-content>
+<div class=content>
+<h6>Cross Entropy</h6>
+<p>
+Cross entropy is1
 $$ H(p, q) = \mathbb E_{p} \left[ -\log q \right]. $$
-Cross entropy $H(p, q)$ can …</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/information/f-divergence/><div class=media-content><div class=content><h6>f-Divergence</h6><p>The f-divergence is defined as1
-$$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm …</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/information/jensen-shannon-divergence/><div class=media-content><div class=content><h6>Jensen-Shannon Divergence</h6><p>The Jensen-Shannon divergence is a symmetric divergence of distributions $P$ and $Q$,
-$$ …</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/information/mutual-information/><div class=media-content><div class=content><h6>Mutual Information</h6><p>Mutual information is defined as
+Cross entropy $H(p, q)$ can …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/information/f-divergence/>
+<div class=media-content>
+<div class=content>
+<h6>f-Divergence</h6>
+<p>
+The f-divergence is defined as1
+$$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/information/jensen-shannon-divergence/>
+<div class=media-content>
+<div class=content>
+<h6>Jensen-Shannon Divergence</h6>
+<p>
+The Jensen-Shannon divergence is a symmetric divergence of distributions $P$ and $Q$,
+$$ …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/information/mutual-information/>
+<div class=media-content>
+<div class=content>
+<h6>Mutual Information</h6>
+<p>
+Mutual information is defined as
 $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$
-In …</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/information/fraser-information/><div class=media-content><div class=content><h6>Fraser Information</h6><p>The Fraser information is
+In …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/information/fraser-information/>
+<div class=media-content>
+<div class=content>
+<h6>Fraser Information</h6>
+<p>
+The Fraser information is
 $$ I_F(\theta) = \int g(X) \ln f(X;\theta) , \mathrm d X. $$
-When …</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/elbo/><div class=media-content><div class=content><h6>Evidence Lower Bound: ELBO</h6><p>ELBO is an very important concept in variational methods</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/latent-variable-models/><div class=media-content><div class=content><h6>Latent Variable Models</h6><p>Latent variable models brings us new insights on identifying the patterns of some sample data.</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/basics/kl-divergence.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+When …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/elbo/>
+<div class=media-content>
+<div class=content>
+<h6>Evidence Lower Bound: ELBO</h6>
+<p>
+ELBO is an very important concept in variational methods
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/latent-variable-models/>
+<div class=media-content>
+<div class=content>
+<h6>Latent Variable Models</h6>
+<p>
+Latent variable models brings us new insights on identifying the patterns of some sample data.
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/basics/kl-divergence.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

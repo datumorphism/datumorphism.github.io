@@ -1,19 +1,237 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Basics of SQL | Datumorphism | L Ma</title><meta name=description content="Essential knowledge of programming"><meta name=author content="L Ma"><meta property="og:title" content="Basics of SQL"><meta property="og:description" content="Essential knowledge of programming"><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/computation/basics-of-sql/"><meta property="article:published_time" content="2018-11-19T00:00:00+00:00"><meta property="article:modified_time" content="2018-11-19T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/computation/basics-of-sql/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Basics of SQL"><meta itemprop=description content="Essential knowledge of programming"><meta itemprop=datePublished content="2018-11-19T00:00:00+00:00"><meta itemprop=dateModified content="2018-11-19T00:00:00+00:00"><meta itemprop=wordCount content="836"><meta itemprop=keywords content="Programming,Basics,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/computation/>Computation</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/computation/basics-of-sql/>Basics of SQL</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Basics of SQL</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/programming><span class="tag is-warning is-small is-light">#Programming</span></a>
-<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><article class="message is-light is-light"><div class=message-body><p>Adding a new field to data:</p><ol><li>Relational: requires a new column</li><li>Non-Relational: just add the field to one single document, thus can be easily decentralized.</li></ol></div></article><h2 id=basics-and-background>Basics and Background</h2><ol><li><p>SQL: Structured Query Language</p></li><li><p>Relational Database:</p><ol><li>usually in tables</li><li>rows are called records</li><li>columns are certain types of data. Data types of rows are specified:<ol><li>INTEGER</li><li>TEXT</li><li>DATE</li><li>REAL, real numbers</li><li>NULL</li><li>&mldr;</li></ol></li></ol></li><li><p>RDBMS: Relational Database Management System, most RDBMS use SQL as the query language. SQLite is one of the RDBMS.</p><ol><li>SQLite: open source and minimal</li><li>MySQL: powerful and popular, also open source, controlled by Oracle, not really scalable.</li><li>PostgreSQL: open source, even slower than MySQL.</li><li>OracleDB: not open source</li><li>SQL Server: from Microsoft, not open source, and only on windows.</li></ol></li></ol><h2 id=sql>SQL</h2><article class="message is-info is-light"><div class=message-body>Semicolon in SQL is a statement terminator. Just use it.</div></article><article class="message is-info is-light"><div class=message-header><p>Capitalization Strategy</p></div><div class=message-body><p><strong>Capitalization Strategy</strong></p><p>For readablilty</p><ol><li>Capitalize clauses</li><li>Capitalize table names etc</li></ol><p>On stackoverflow: <a href=https://stackoverflow.com/questions/608196/why-should-i-capitalize-my-sql-keywords>stackoverflow</a></p></div></article><h2 id=statements-for-manipulation>Statements for Manipulation</h2><ol><li><p>Create table</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Basics of SQL | Datumorphism | L Ma </title>
+<meta name=description content="Essential knowledge of programming">
+<meta name=author content="L Ma">
+<meta property="og:title" content="Basics of SQL">
+<meta property="og:description" content="Essential knowledge of programming">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/computation/basics-of-sql/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2018-11-19T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-11-19T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/computation/basics-of-sql/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Basics of SQL">
+<meta itemprop=description content="Essential knowledge of programming"><meta itemprop=datePublished content="2018-11-19T00:00:00+00:00">
+<meta itemprop=dateModified content="2018-11-19T00:00:00+00:00">
+<meta itemprop=wordCount content="836">
+<meta itemprop=keywords content="Programming,Basics,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/computation/>Computation</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/computation/basics-of-sql/>Basics of SQL</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Basics of SQL
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/programming><span class="tag is-warning is-small is-light">#Programming</span></a>
+<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<article class="message is-light is-light">
+<div class=message-body>
+<p>Adding a new field to data:</p>
+<ol>
+<li>Relational: requires a new column</li>
+<li>Non-Relational: just add the field to one single document, thus can be easily decentralized.</li>
+</ol>
+</div>
+</article>
+<h2 id=basics-and-background>Basics and Background</h2>
+<ol>
+<li>
+<p>SQL: Structured Query Language</p>
+</li>
+<li>
+<p>Relational Database:</p>
+<ol>
+<li>usually in tables</li>
+<li>rows are called records</li>
+<li>columns are certain types of data. Data types of rows are specified:
+<ol>
+<li>INTEGER</li>
+<li>TEXT</li>
+<li>DATE</li>
+<li>REAL, real numbers</li>
+<li>NULL</li>
+<li>&mldr;</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>RDBMS: Relational Database Management System, most RDBMS use SQL as the query language. SQLite is one of the RDBMS.</p>
+<ol>
+<li>SQLite: open source and minimal</li>
+<li>MySQL: powerful and popular, also open source, controlled by Oracle, not really scalable.</li>
+<li>PostgreSQL: open source, even slower than MySQL.</li>
+<li>OracleDB: not open source</li>
+<li>SQL Server: from Microsoft, not open source, and only on windows.</li>
+</ol>
+</li>
+</ol>
+<h2 id=sql>SQL</h2>
+<article class="message is-info is-light">
+<div class=message-body>
+Semicolon in SQL is a statement terminator. Just use it.
+</div>
+</article>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>Capitalization Strategy</p>
+</div>
+<div class=message-body>
+<p><strong>Capitalization Strategy</strong></p>
+<p>For readablilty</p>
+<ol>
+<li>Capitalize clauses</li>
+<li>Capitalize table names etc</li>
+</ol>
+<p>On stackoverflow: <a href=https://stackoverflow.com/questions/608196/why-should-i-capitalize-my-sql-keywords>stackoverflow</a></p>
+</div>
+</article>
+<h2 id=statements-for-manipulation>Statements for Manipulation</h2>
+<ol>
+<li>
+<p>Create table</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>
    <span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#66d9ef>table_name</span> (
        column_1 data_type,
        column_2 data_type,
        column_3 data_type
      );
-</code></pre></div><p>Constraints can be included when creating tables. I am using the example from <a href=https://www.codecademy.com/courses/learn-sql-manipulation/lessons/manipulation/exercises/delete>CodeAcademy</a>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>
+</code></pre></div><p>Constraints can be included when creating tables. I am using the example from <a href=https://www.codecademy.com/courses/learn-sql-manipulation/lessons/manipulation/exercises/delete>CodeAcademy</a>.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>
    <span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> awards (
    <span style=color:#75715e>--id should be integer, and is the primary key
 </span><span style=color:#75715e></span>      id INTEGER <span style=color:#66d9ef>PRIMARY</span> <span style=color:#66d9ef>KEY</span>,
@@ -22,54 +240,103 @@
    <span style=color:#75715e>--default values for a column
 </span><span style=color:#75715e></span>      award_name TEXT <span style=color:#66d9ef>DEFAULT</span> <span style=color:#e6db74>&#34;Grammy&#34;</span>
    );
-</code></pre></div><p>As mentioned in the basics section, primary keys should be unique to identify the specific row.</p></li><li><p>Insert new row</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> <span style=color:#66d9ef>table_name</span> (column_1, column_2, column_3)
+</code></pre></div><p>As mentioned in the basics section, primary keys should be unique to identify the specific row.</p>
+</li>
+<li>
+<p>Insert new row</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> <span style=color:#66d9ef>table_name</span> (column_1, column_2, column_3)
    <span style=color:#66d9ef>VALUES</span> (some_value_1, some_value_2, some_value_3);
-</code></pre></div></li><li><p>Update some values</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>-- Specify the table
+</code></pre></div></li>
+<li>
+<p>Update some values</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>-- Specify the table
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>UPDATE</span> <span style=color:#66d9ef>table_name</span>
    <span style=color:#75715e>-- choose column to be updated
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>SET</span> column_1 <span style=color:#f92672>=</span> some_other_value_1
    <span style=color:#75715e>-- specify row location
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>WHERE</span> column_2 <span style=color:#f92672>=</span> some_specific_value_to_locate_the_row;
-</code></pre></div></li><li><p>Add new columns</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>-- speficy table
+</code></pre></div></li>
+<li>
+<p>Add new columns</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>-- speficy table
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>ALTER</span> <span style=color:#66d9ef>table_name</span>
    <span style=color:#75715e>-- add column and specify data type, here I use TEXT
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>ADD</span> <span style=color:#66d9ef>COLUMN</span> column_4 TEXT
-</code></pre></div></li><li><p>Delete rows</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>DELETE</span> <span style=color:#66d9ef>FROM</span> celebs
+</code></pre></div></li>
+<li>
+<p>Delete rows</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>DELETE</span> <span style=color:#66d9ef>FROM</span> celebs
    <span style=color:#75715e>-- I use column_4 as an example
 </span><span style=color:#75715e></span>   <span style=color:#75715e>-- Delete every row if column_4 has NULL values
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>WHERE</span> column_4 <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NULL</span>;
-</code></pre></div></li></ol><h2 id=statements-for-queries>Statements for Queries</h2><ol><li><p>Select from table; select returns <em>result set</em> which is a new table.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>-- Select out everything from table
+</code></pre></div></li>
+</ol>
+<h2 id=statements-for-queries>Statements for Queries</h2>
+<ol>
+<li>
+<p>Select from table; select returns <em>result set</em> which is a new table.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>-- Select out everything from table
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
    <span style=color:#75715e>-- Select out the values of a specific column
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>SELECT</span> column_1 <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
-</code></pre></div></li><li><p>Select specific columns</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> column_1, column_2
+</code></pre></div></li>
+<li>
+<p>Select specific columns</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> column_1, column_2
    <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
-</code></pre></div></li><li><p><code>AS</code> keyword: allows you to select the column and return it as the specified new name of the column; the database is NOT modified.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> column_1 <span style=color:#66d9ef>AS</span> <span style=color:#e6db74>&#39;A NEW NAME&#39;</span>
+</code></pre></div></li>
+<li>
+<p><code>AS</code> keyword: allows you to select the column and return it as the specified new name of the column; the database is NOT modified.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> column_1 <span style=color:#66d9ef>AS</span> <span style=color:#e6db74>&#39;A NEW NAME&#39;</span>
    <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
-</code></pre></div></li><li><p>Select and show only the distinct values of the column</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>DISTINCT</span> column_1
+</code></pre></div></li>
+<li>
+<p>Select and show only the distinct values of the column</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>DISTINCT</span> column_1
    <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
-</code></pre></div></li><li><p><code>WHERE</code> key: using operators such as <code>=, !=, >, &lt;, >=, &lt;=</code> to filter results</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>
+</code></pre></div></li>
+<li>
+<p><code>WHERE</code> key: using operators such as <code>=, !=, >, &lt;, >=, &lt;=</code> to filter results</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>
    <span style=color:#66d9ef>WHERE</span> column_1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
-</code></pre></div></li><li><p><code>LIKE</code> key: patern specified like <code>AA_B</code> where <code>_</code> is for a single character.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>
+</code></pre></div></li>
+<li>
+<p><code>LIKE</code> key: patern specified like <code>AA_B</code> where <code>_</code> is for a single character.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>
    <span style=color:#66d9ef>WHERE</span> column_1 <span style=color:#66d9ef>LIKE</span> <span style=color:#f92672>`</span>AA_B<span style=color:#f92672>`</span>
-</code></pre></div><p>Wildcards: <code>_</code>, <code>%</code> for 0 or more characters.</p></li><li><p><code>BETWEEN</code>, <code>AND</code>, <code>OR</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
+</code></pre></div><p>Wildcards: <code>_</code>, <code>%</code> for 0 or more characters.</p>
+</li>
+<li>
+<p><code>BETWEEN</code>, <code>AND</code>, <code>OR</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
    <span style=color:#66d9ef>FROM</span> movies
    <span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>BETWEEN</span> <span style=color:#e6db74>&#39;D%&#39;</span> <span style=color:#66d9ef>AND</span> <span style=color:#e6db74>&#39;G%&#39;</span>;
-</code></pre></div></li><li><p><code>SORT BY</code>: Can be either <code>DESC</code> or <code>ASC</code> and goes after where</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> movies
+</code></pre></div></li>
+<li>
+<p><code>SORT BY</code>: Can be either <code>DESC</code> or <code>ASC</code> and goes after where</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> movies
    <span style=color:#66d9ef>WHERE</span> <span style=color:#66d9ef>year</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>2014</span>
    <span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> name <span style=color:#66d9ef>DESC</span>;
-</code></pre></div></li><li><p><code>LIMIT</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
+</code></pre></div></li>
+<li>
+<p><code>LIMIT</code></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
    <span style=color:#66d9ef>FROM</span> movies
    <span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> imdb_rating <span style=color:#66d9ef>DESC</span>
    <span style=color:#66d9ef>LIMIT</span> <span style=color:#ae81ff>3</span>;
-</code></pre></div></li><li><p><code>CASE</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> name,
+</code></pre></div></li>
+<li>
+<p><code>CASE</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> name,
     <span style=color:#66d9ef>CASE</span>
       <span style=color:#66d9ef>WHEN</span> genre <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;romance&#39;</span> <span style=color:#66d9ef>THEN</span> <span style=color:#e6db74>&#39;fun&#39;</span>
       <span style=color:#66d9ef>WHEN</span> genre <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;comedy&#39;</span> <span style=color:#66d9ef>THEN</span> <span style=color:#e6db74>&#39;fun&#39;</span>
       <span style=color:#66d9ef>ELSE</span> <span style=color:#e6db74>&#39;serious&#39;</span>
     <span style=color:#66d9ef>END</span>
    <span style=color:#66d9ef>FROM</span> movies;
-</code></pre></div></li></ol><pre><code>
+</code></pre></div></li>
+</ol>
+<pre tabindex=0><code>
 
 
 ## Aggregate
@@ -81,13 +348,25 @@
 ```SQL
    SELECT COUNT(*)
    FROM tabe_name;
-</code></pre><ol start=2><li><p><code>SUM</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>SUM</span>(column_1)
+</code></pre><ol start=2>
+<li>
+<p><code>SUM</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>SUM</span>(column_1)
    <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
-</code></pre></div></li><li><p><code>MAX</code> and <code>MIN</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(column_1)
+</code></pre></div></li>
+<li>
+<p><code>MAX</code> and <code>MIN</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(column_1)
    <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
-</code></pre></div></li><li><p><code>AVG</code>: average</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(column_1)
+</code></pre></div></li>
+<li>
+<p><code>AVG</code>: average</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(column_1)
    <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>table_name</span>;
-</code></pre></div></li><li><p><code>ROUND</code>: round to specified decimals</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>--round the price to integers
+</code></pre></div></li>
+<li>
+<p><code>ROUND</code>: round to specified decimals</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#75715e>--round the price to integers
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>SELECT</span> name, ROUND(price,<span style=color:#ae81ff>0</span>)
    <span style=color:#66d9ef>FROM</span> fake_apps;
 
@@ -95,27 +374,45 @@
 </span><span style=color:#75715e></span>   <span style=color:#75715e>--even with other keys as arguments
 </span><span style=color:#75715e></span>   <span style=color:#66d9ef>SELECT</span> name, ROUND(<span style=color:#66d9ef>AVG</span>(price),<span style=color:#ae81ff>0</span>)
    <span style=color:#66d9ef>FROM</span> fake_apps;
-</code></pre></div></li><li><p><code>GROUP BY</code>: group by column values</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> price, <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>)
+</code></pre></div></li>
+<li>
+<p><code>GROUP BY</code>: group by column values</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> price, <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>)
    <span style=color:#66d9ef>FROM</span> fake_apps
    <span style=color:#66d9ef>WHERE</span> downloads <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>20000</span>
    <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> price;
-</code></pre></div><p>or</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> category, <span style=color:#66d9ef>SUM</span>(downloads)
+</code></pre></div><p>or</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> category, <span style=color:#66d9ef>SUM</span>(downloads)
    <span style=color:#66d9ef>FROM</span> fake_apps
    <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> category;
-</code></pre></div><p>References can be used in <code>GROUP BY</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> category, <span style=color:#66d9ef>SUM</span>(downloads)
+</code></pre></div><p>References can be used in <code>GROUP BY</code></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> category, <span style=color:#66d9ef>SUM</span>(downloads)
    <span style=color:#66d9ef>FROM</span> fake_apps
    <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> <span style=color:#ae81ff>1</span>;
    <span style=color:#75715e>--1 here is identical to category
-</span></code></pre></div></li><li><p><code>HAVING</code>: The problem with <code>WHERE</code> is that it goes before <code>GROUP BY</code>. What if we need to filter the groups?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> price, ROUND(<span style=color:#66d9ef>AVG</span>(downloads))
+</span></code></pre></div></li>
+<li>
+<p><code>HAVING</code>: The problem with <code>WHERE</code> is that it goes before <code>GROUP BY</code>. What if we need to filter the groups?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> price, ROUND(<span style=color:#66d9ef>AVG</span>(downloads))
    <span style=color:#66d9ef>FROM</span> fake_apps
    <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> price
    <span style=color:#66d9ef>HAVING</span> <span style=color:#66d9ef>COUNT</span>(price) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>9</span>;
-</code></pre></div></li></ol><h2 id=multiple-tables>Multiple Tables</h2><p>The <strong>normalization</strong> is explained in <a href=../basics-of-database/#normalization>DB Normalization</a>.</p><ol><li><p><code>JOIN</code>: Join tables with specified column</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
+</code></pre></div></li>
+</ol>
+<h2 id=multiple-tables>Multiple Tables</h2>
+<p>The <strong>normalization</strong> is explained in <a href=../basics-of-database/#normalization>DB Normalization</a>.</p>
+<ol>
+<li>
+<p><code>JOIN</code>: Join tables with specified column</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
    <span style=color:#66d9ef>FROM</span> orders
    <span style=color:#66d9ef>JOIN</span> subscriptions
    <span style=color:#66d9ef>ON</span> orders.subscription_id <span style=color:#f92672>=</span> subscriptions.subscription_id
    <span style=color:#66d9ef>WHERE</span> description <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Fashion Magazine&#39;</span>;
-</code></pre></div></li><li><p>Inner Join: only join the rows that have common values on the specified join columns.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>)
+</code></pre></div></li>
+<li>
+<p>Inner Join: only join the rows that have common values on the specified join columns.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>)
    <span style=color:#66d9ef>FROM</span> newspaper;
    <span style=color:#75715e>--Output 60
 </span><span style=color:#75715e></span>
@@ -128,30 +425,182 @@
    <span style=color:#66d9ef>JOIN</span> online
    <span style=color:#66d9ef>ON</span> online.id <span style=color:#f92672>=</span> newspaper.id;
    <span style=color:#75715e>--Output 50 &lt;= 60 or 65
-</span></code></pre></div></li><li><p>Left Join: simply plug all the right table onto left tables, where the values of the specified column match. The number of rows will be the number of rows for the left table.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
+</span></code></pre></div></li>
+<li>
+<p>Left Join: simply plug all the right table onto left tables, where the values of the specified column match. The number of rows will be the number of rows for the left table.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
    <span style=color:#66d9ef>FROM</span> newspaper
    <span style=color:#66d9ef>LEFT</span> <span style=color:#66d9ef>JOIN</span> online
    <span style=color:#66d9ef>ON</span> newspaper.id<span style=color:#f92672>=</span>online.id
    <span style=color:#66d9ef>WHERE</span> online.id <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NULL</span>;
-</code></pre></div></li><li><p>Cross join: combine all the information</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>month</span>,
+</code></pre></div></li>
+<li>
+<p>Cross join: combine all the information</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>month</span>,
    <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>as</span> subscribers
    <span style=color:#66d9ef>FROM</span> months
    <span style=color:#66d9ef>CROSS</span> <span style=color:#66d9ef>JOIN</span> newspaper
    <span style=color:#66d9ef>WHERE</span> months.<span style=color:#66d9ef>month</span> <span style=color:#f92672>&gt;</span> newspaper.start_month <span style=color:#66d9ef>AND</span> months.<span style=color:#66d9ef>month</span> <span style=color:#f92672>&lt;</span> newspaper.end_month
    <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> months.<span style=color:#66d9ef>month</span>;
-</code></pre></div></li><li><p><code>UNION</code>: stack tables</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
+</code></pre></div></li>
+<li>
+<p><code>UNION</code>: stack tables</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL>   <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
    <span style=color:#66d9ef>FROM</span> newspaper
    <span style=color:#66d9ef>UNION</span>
    <span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
    <span style=color:#66d9ef>FROM</span> online;
-</code></pre></div></li><li><p><code>WITH</code>: create a result with alias</p></li></ol></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2018-11-19T00:00:00+00:00>2018-11-19</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/computation/basics-of-database/?ref=footer" class=pagination-previous>« Basics of Database</a>
-<a class=pagination-next href="https://datumorphism.leima.is/wiki/computation/basics-of-mongodb/?ref=footer">Basics of MongoDB »</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2018). 'Basics of SQL', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/wiki/computation/basics-of-sql/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#basics-and-background>Basics and Background</a></li><li><a href=#sql>SQL</a></li><li><a href=#statements-for-manipulation>Statements for Manipulation</a></li><li><a href=#statements-for-queries>Statements for Queries</a></li><li><a href=#multiple-tables>Multiple Tables</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href=https://www.codecademy.com/articles/what-is-rdbms-sql style=text-decoration:none>What is a Relational Database Management System (RDBMS)?</a></li><li class=has-text-weight-bold><a href=https://www.codecademy.com/articles/sql-commands style=text-decoration:none>List of SQL commands</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/computation/basics-of-sql.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/computation/basics-of-database/><div class=media-content><div class=content><h6>Basics of Database</h6><p>Essential knowledge of database</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/computation/basics-of-sql.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+</code></pre></div></li>
+<li>
+<p><code>WITH</code>: create a result with alias</p>
+</li>
+</ol>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2018-11-19T00:00:00+00:00>2018-11-19</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/computation/basics-of-database/?ref=footer" class=pagination-previous>« Basics of Database</a>
+<a class=pagination-next href="https://datumorphism.leima.is/wiki/computation/basics-of-mongodb/?ref=footer">Basics of MongoDB »</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2018). 'Basics of SQL', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/wiki/computation/basics-of-sql/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#basics-and-background>Basics and Background</a></li>
+<li><a href=#sql>SQL</a></li>
+<li><a href=#statements-for-manipulation>Statements for Manipulation</a></li>
+<li><a href=#statements-for-queries>Statements for Queries</a></li>
+<li><a href=#multiple-tables>Multiple Tables</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://www.codecademy.com/articles/what-is-rdbms-sql style=text-decoration:none>What is a Relational Database Management System (RDBMS)?</a></li>
+<li class=has-text-weight-bold><a href=https://www.codecademy.com/articles/sql-commands style=text-decoration:none>List of SQL commands</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/computation/basics-of-sql.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/computation/basics-of-database/>
+<div class=media-content>
+<div class=content>
+<h6>Basics of Database</h6>
+<p>
+Essential knowledge of database
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/computation/basics-of-sql.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

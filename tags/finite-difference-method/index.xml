@@ -7,7 +7,7 @@ which is also written as
 $$ y_{n+1} = y_n + \delta x \cdot f(x_n, y_n). \label{euler-method-discretized-form-y-n-plus-1} $$
 This is also called forward Euler differencing. It is first order accurate in $\Delta t$.
 Generally speaking, a simple iteraction will do the work.
-Adams&amp;rsquo; Method Taylor Expansion of Functions</description></item><item><title>Partial Differential Equations</title><link>https://datumorphism.leima.is/wiki/dynamical-system/partial-difference-method/</link><pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/dynamical-system/partial-difference-method/</guid><description>Forward Time Centered Space For $\frac{d f}{d t} = - v \frac{ d f }{ dx }$, we write down the finite difference form 1
+Adams' Method Taylor Expansion of Functions</description></item><item><title>Partial Differential Equations</title><link>https://datumorphism.leima.is/wiki/dynamical-system/partial-difference-method/</link><pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/dynamical-system/partial-difference-method/</guid><description>Forward Time Centered Space For $\frac{d f}{d t} = - v \frac{ d f }{ dx }$, we write down the finite difference form 1
 $$ \frac{f(t_{n+1}, x_i ) - f(t_n, x_i)}{ \Delta t } = - v \frac{ f(t_n, x_{i+1}) - f(t_n, x_{i-1}) }{ 2\Delta x }. $$
 FTCS is an explicit method and is not stable.
 Lax Method Change the term $f(t_n, x_i)$ in FTCS to $( f(t_n, x_{i+1}) + f(t_n, x_{i-1}) )/2$ 1.

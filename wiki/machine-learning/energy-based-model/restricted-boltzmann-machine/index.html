@@ -1,118 +1,622 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Restricted Boltzmann Machine | Datumorphism | L Ma</title><meta name=description content="Introducing latent variables to Boltzmann machine and restrict the connections within groups."><meta name=author content="L Ma"><meta property="og:title" content="Restricted Boltzmann Machine"><meta property="og:description" content="Introducing latent variables to Boltzmann machine and restrict the connections within groups."><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/"><meta property="article:published_time" content="2021-06-11T00:00:00+00:00"><meta property="article:modified_time" content="2021-06-11T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Restricted Boltzmann Machine"><meta itemprop=description content="Introducing latent variables to Boltzmann machine and restrict the connections within groups."><meta itemprop=datePublished content="2021-06-11T00:00:00+00:00"><meta itemprop=dateModified content="2021-06-11T00:00:00+00:00"><meta itemprop=wordCount content="1092"><meta itemprop=keywords content="Neural Network,Energy-based Model,Entropy,Restricted Boltzmann Machine,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a></li><li><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/>Energy-based Model</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/>Restricted Boltzmann Machine</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Restricted Boltzmann Machine</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/neural-network><span class="tag is-warning is-small is-light">#Neural Network</span></a>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Restricted Boltzmann Machine | Datumorphism | L Ma </title>
+<meta name=description content="Introducing latent variables to Boltzmann machine and restrict the connections within groups.">
+<meta name=author content="L Ma">
+<meta property="og:title" content="Restricted Boltzmann Machine">
+<meta property="og:description" content="Introducing latent variables to Boltzmann machine and restrict the connections within groups.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2021-06-11T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-06-11T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Restricted Boltzmann Machine">
+<meta itemprop=description content="Introducing latent variables to Boltzmann machine and restrict the connections within groups."><meta itemprop=datePublished content="2021-06-11T00:00:00+00:00">
+<meta itemprop=dateModified content="2021-06-11T00:00:00+00:00">
+<meta itemprop=wordCount content="1092">
+<meta itemprop=keywords content="Neural Network,Energy-based Model,Entropy,Restricted Boltzmann Machine,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/>Energy-based Model</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/>Restricted Boltzmann Machine</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Restricted Boltzmann Machine
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/neural-network><span class="tag is-warning is-small is-light">#Neural Network</span></a>
 <a href=/tags/energy-based-model><span class="tag is-warning is-small is-light">#Energy-based Model</span></a>
 <a href=/tags/entropy><span class="tag is-warning is-small is-light">#Entropy</span></a>
-<a href=/tags/restricted-boltzmann-machine><span class="tag is-warning is-small is-light">#Restricted Boltzmann Machine</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=NOTIFICATION></div><div class="notification is-warning is-light"><p>This article uses Mehta2018 extensively.</p></div><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>Latent variables introduce extra correlations between the nodes in a network. Introducing hidden units can also help us remove the direct connection between some nodes in a Boltzmann machine and create a restricted Boltzmann machine. A restricted Boltzmann machine requires less computation while having some expressing power.</p><figure><img src=../assets/restricted-boltzmann-machine/illustration-hidden-unit.jpg alt="Given Ising like interactions between the nodes, flipping node V1 is likely to also flip node V2 as they are connected through hidden unit H1. They are correlated. Removing the hidden unit leaves us two uncorrelated units."><figcaption><p>Given Ising like interactions between the nodes, flipping node V1 is likely to also flip node V2 as they are connected through hidden unit H1. They are correlated. Removing the hidden unit leaves us two uncorrelated units.</p></figcaption></figure><h2 id=the-ising-model>The Ising Model</h2><p>Given a Ising-like energy function (c.f.
-<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>MaxEnt Model</a>
-<span class=tooltiptext><span class=tooltip_title>MaxEnt Model</span>
-<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span></span></span>
-)</p><p>$$
+<a href=/tags/restricted-boltzmann-machine><span class="tag is-warning is-small is-light">#Restricted Boltzmann Machine</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=NOTIFICATION></div>
+<div class="notification is-warning is-light">
+<p>
+This article uses Mehta2018 extensively.
+</p>
+</div>
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>Latent variables introduce extra correlations between the nodes in a network. Introducing hidden units can also help us remove the direct connection between some nodes in a Boltzmann machine and create a restricted Boltzmann machine. A restricted Boltzmann machine requires less computation while having some expressing power.</p>
+<figure><img src=../assets/restricted-boltzmann-machine/illustration-hidden-unit.jpg alt="Given Ising like interactions between the nodes, flipping node V1 is likely to also flip node V2 as they are connected through hidden unit H1. They are correlated. Removing the hidden unit leaves us two uncorrelated units."><figcaption>
+<p>Given Ising like interactions between the nodes, flipping node V1 is likely to also flip node V2 as they are connected through hidden unit H1. They are correlated. Removing the hidden unit leaves us two uncorrelated units.</p>
+</figcaption>
+</figure>
+<h2 id=the-ising-model>The Ising Model</h2>
+<p>Given a Ising-like energy function (c.f.
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
+MaxEnt Model
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>MaxEnt Model</span>
+<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span>
+</span>
+</span>
+)</p>
+<p>$$
 E(x) = - \sum_i h_i x_i - \frac{1}{2} \sum_{ij} J_{ij} x_i x_j,
-$$</p><p>The term $\sum_{ij} J_{ij} x_i x_j$ can be decomposed using the
-<span class=tooltip><a href=https://datumorphism.leima.is/cards/math/cholesky-decomposition/>Cholesky Decomposition</a>
-<span class=tooltiptext><span class=tooltip_title>Cholesky Decomposition</span>
-<span class=tooltip_content>Decomposing a matrix into two</span></span></span>
-Cholesky decomposition,</p><p>$$
+$$</p>
+<p>The term $\sum_{ij} J_{ij} x_i x_j$ can be decomposed using the
+<span class=tooltip><a href=https://datumorphism.leima.is/cards/math/cholesky-decomposition/>
+Cholesky Decomposition
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Cholesky Decomposition</span>
+<span class=tooltip_content>Decomposing a matrix into two</span>
+</span>
+</span>
+Cholesky decomposition,</p>
+<p>$$
 \sum_{ij} J_{ij} x_i x_j = \sum_{ijk} W_{ik} W_{kj}^T x_i x_j = \sum_{ijk} W_{ik} W_{jk} x_i x_j.
-$$</p><p>The energy function can be rewritten as</p><p>$$
+$$</p>
+<p>The energy function can be rewritten as</p>
+<p>$$
 E(x) = - \sum_i h_i x_i - \frac{1}{2} \sum_{ijk} W_{ik} W_{jk} x_i x_j.
-$$</p><p>The distribution (derived using
-<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>the Max Entropy principle</a>
-<span class=tooltiptext><span class=tooltip_title>MaxEnt Model</span>
-<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span></span></span>
-) is</p><p>$$
+$$</p>
+<p>The distribution (derived using
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
+the Max Entropy principle
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>MaxEnt Model</span>
+<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span>
+</span>
+</span>
+) is</p>
+<p>$$
 \begin{equation}
 p(x) \propto \exp{ \left( \sum_i h_i x_i + \frac{1}{2} \sum_{ijk} W_{ik} W_{jk} x_i x_j \right)}
 \label{eqn-boltzmann-dist-hopfield}
 \end{equation}
-$$</p><h2 id=latent-variables-from-energy-function-to-distribution>Latent Variables: From Energy Function to Distribution</h2><p>Using the
-<span class=tooltip><a href=https://datumorphism.leima.is/cards/math/hubbard-stratonovich-identity/>the Hubbard-Stratonovich Identity</a>
-<span class=tooltiptext><span class=tooltip_title>The Hubbard-Stratonovich Identity</span>
-<span class=tooltip_content>Very useful in calculating the partition function</span></span></span>
-, we transform equation $\eqref{eqn-boltzmann-dist-hopfield}$ into<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p><p>$$
+$$</p>
+<h2 id=latent-variables-from-energy-function-to-distribution>Latent Variables: From Energy Function to Distribution</h2>
+<p>Using the
+<span class=tooltip><a href=https://datumorphism.leima.is/cards/math/hubbard-stratonovich-identity/>
+the Hubbard-Stratonovich Identity
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>The Hubbard-Stratonovich Identity</span>
+<span class=tooltip_content>Very useful in calculating the partition function</span>
+</span>
+</span>
+, we transform equation $\eqref{eqn-boltzmann-dist-hopfield}$ into<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p>$$
 \begin{align}
 p(x) \propto &  \exp{\left( \sum_i h_i x_i \right)} \exp{ \left(\frac{1}{2} \sum_{ijk} W_{ik} W_{jk} x_i x_j \right)} \\
 \propto &  \exp{\left( \sum_i h_i x_i \right)} \frac{1}{\sqrt{2\pi}} \int \mathrm dh_k\, \exp{ \sum_k \left( -\frac{1}{2} h_k^2 + \sum_i x_i W_{ik} h_k \right)} \\
 \propto & \frac{1}{\sqrt{2\pi}} \int \mathrm dh_k\, \exp{ \left[ \sum_i h_i x_i + \sum_k \left( -\frac{1}{2} h_k^2 + \sum_i x_i W_{ik} h_k \right) \right]}.
 \end{align}
-$$</p><p>Define a new energy function</p><p>$$
+$$</p>
+<p>Define a new energy function</p>
+<p>$$
 \tilde E(x,h) = - \sum_i h_i x_i - \sum_k \left( -\frac{1}{2} h_k^2 + \sum_i x_i W_{ik} h_k \right) .
-$$</p><p>The distribution becomes the marginalization of the hidden variable</p><p>$$
+$$</p>
+<p>The distribution becomes the marginalization of the hidden variable</p>
+<p>$$
 \begin{equation}
 p(x) \propto \int \mathrm dh\, \exp{ \left( -\tilde E(x,h) \right) }.
 \label{eqn-marginalization-new-energy-function}
 \end{equation}
-$$</p><p>Use the result $\eqref{eqn-marginalization-new-energy-function}$, we can define a model with two groups of nodes $x$ and $h$. The group $x$ has no internal connections, i.e., no high order correlations like $x^2$. The group of nodes $x$ is called visible layer while the hidden nodes $h$ are called hidden layer. In general, we require a form of energy</p><p>$$
+$$</p>
+<p>Use the result $\eqref{eqn-marginalization-new-energy-function}$, we can define a model with two groups of nodes $x$ and $h$. The group $x$ has no internal connections, i.e., no high order correlations like $x^2$. The group of nodes $x$ is called visible layer while the hidden nodes $h$ are called hidden layer. In general, we require a form of energy</p>
+<p>$$
 \tilde E(x, h) = -\sum_i a_i(x_i) - \sum_k b_k(h_k) - \sum_{ik} x_i W_{ik} h_k.
-$$</p><p>Usually, we use the form</p><p>$$
+$$</p>
+<p>Usually, we use the form</p>
+<p>$$
 \begin{equation}
 \tilde E(x, h) = -\sum_i a_i x_i - \sum_k b_k h_k - \sum_{ik} x_i W_{ik} h_k,
 \label{eqn-energy-function-with-latent-variables}
 \end{equation}
-$$</p><p>with the nodes can only be 0 or 1. The visible layer and hidden layer are called Bernoulli as they have binary states.</p><h2 id=latent-variables-from-distribution-to-energy-function>Latent Variables: From Distribution to Energy Function</h2><p>We can also derive the energy function for distributions of the form $\eqref{eqn-energy-function-with-latent-variables}$. For easier understanding, we define a new joint distribution $p(x, h)$ from</p><p>$$
+$$</p>
+<p>with the nodes can only be 0 or 1. The visible layer and hidden layer are called Bernoulli as they have binary states.</p>
+<h2 id=latent-variables-from-distribution-to-energy-function>Latent Variables: From Distribution to Energy Function</h2>
+<p>We can also derive the energy function for distributions of the form $\eqref{eqn-energy-function-with-latent-variables}$. For easier understanding, we define a new joint distribution $p(x, h)$ from</p>
+<p>$$
 p(x, h) = \frac{\exp{\left( -\tilde E(x, h) \right)}}{Z},
-$$</p><p>so that</p><p>$$
+$$</p>
+<p>so that</p>
+<p>$$
 p(x) = \int \mathrm d h\, p(x, h) = \frac{ \exp{\left( -E(x) \right)} }{Z}.
-$$</p><p>Using the above two definitions, we have</p><p>$$
+$$</p>
+<p>Using the above two definitions, we have</p>
+<p>$$
 \exp{\left(-E(x)\right)} = \int \mathrm d h \, \exp{\left( -\tilde E(x, h) \right)},
-$$</p><p>from which we derive a formalism for the marginalized energy function</p><p>$$
+$$</p>
+<p>from which we derive a formalism for the marginalized energy function</p>
+<p>$$
 \begin{align}
 E(x) =& - \ln \int \mathrm d h \, \exp{\left( -\tilde E(x, h) \right)} \\
 =& \sum_i a_i(x_i) - \sum_k \ln \int \mathrm d h_k \, \exp{\left( b_k(h_k) \right)} \exp{\left( \sum_j x_j W_{jk}h_k \right)}.
 \label{eqn-e-x}
 \end{align}
-$$</p><p>This energy function can be expanded using the cumulant<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, we can decompose the energy function $E(x)$, equation $\eqref{eqn-e-x}$,</p><p>$$
+$$</p>
+<p>This energy function can be expanded using the cumulant<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, we can decompose the energy function $E(x)$, equation $\eqref{eqn-e-x}$,</p>
+<p>$$
 E(x) = -\sum_i a_i(x_i) - \sum_i \sum_k \kappa^{(1)}_k W_{ik} x_i - \frac{1}{2}\sum_{ij} \left( \sum_{k} \kappa^{(2)}_k W_{ik} W_{jk} \right) x_i x_j + \cdots
-$$</p><p>where $\kappa^{(\cdot)}$ are coefficients related to the cummulant<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>. We can find any order of correlations even without in-group connections between the visible nodes.</p><article class="message is-info is-light"><div class=message-header><p>Expansion of the Energy Function</p></div><div class=message-body><p>The integral in our energy function,</p><p>$$
+$$</p>
+<p>where $\kappa^{(\cdot)}$ are coefficients related to the cummulant<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>. We can find any order of correlations even without in-group connections between the visible nodes.</p>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>Expansion of the Energy Function</p>
+</div>
+<div class=message-body>
+<p>The integral in our energy function,</p>
+<p>$$
 \sum_k \ln \int \mathrm d h_k , \exp{\left( b_k(h_k) \right)} \exp{\left( \sum_j x_j W_{jk}h_k \right)}
-$$</p><p>is similar to the cumulant generating function</p><p>$$
+$$</p>
+<p>is similar to the cumulant generating function</p>
+<p>$$
 \ln \int \mathrm d h q(h) e^{ht} = K(t) = \sum_{n=1}^\infty \kappa^{(n)} \frac{t^n}{n!},
-$$</p><p>with $\kappa^{(n)}=\partial^n_t K(t=0)$. This is a Taylor expansion around $t=0$.</p><p>To perform the expansion, we define a new quantity $q_k(h_k) = e^{b_k(h_k)}/Z$ so that</p><p>$$
+$$</p>
+<p>with $\kappa^{(n)}=\partial^n_t K(t=0)$. This is a Taylor expansion around $t=0$.</p>
+<p>To perform the expansion, we define a new quantity $q_k(h_k) = e^{b_k(h_k)}/Z$ so that</p>
+<p>$$
 \sum_k \ln \int \mathrm d h_k \exp{\left( b_k(h_k) \right)} \exp{\left( \sum_j x_j W_{jk}h_k \right)} = \sum_k \ln \int \mathrm d h_k Z q_k(h_k) e^{t h_k },
-$$</p><p>with $t=\sum_j x_j W_{jk}$.</p></div></article><h2 id=gradient-of-log-likelihood>Gradient of Log-likelihood</h2><p>In this section, we will focus on Bernoulli layers, i.e., $a_i(x_i) = a^0_i x_i$ and $b_k(h_k) = b^0_k h_k$</p><p>Using the results from
-<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>MaxEnt model</a>
-<span class=tooltiptext><span class=tooltip_title>MaxEnt Model</span>
-<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span></span></span>
-, we can find the gradient of the log-likelihood $\mathcal L(W_{ik}, a_i, b_k)$,</p><p>$$
+$$</p>
+<p>with $t=\sum_j x_j W_{jk}$.</p>
+</div>
+</article>
+<h2 id=gradient-of-log-likelihood>Gradient of Log-likelihood</h2>
+<p>In this section, we will focus on Bernoulli layers, i.e., $a_i(x_i) = a^0_i x_i$ and $b_k(h_k) = b^0_k h_k$</p>
+<p>Using the results from
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
+MaxEnt model
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>MaxEnt Model</span>
+<span class=tooltip_content>Maximum Entropy models makes least assumption about the data</span>
+</span>
+</span>
+, we can find the gradient of the log-likelihood $\mathcal L(W_{ik}, a_i, b_k)$,</p>
+<p>$$
 \begin{align}
 \partial_{W_{ik}} \mathcal L =& \langle x_i h_k \rangle_{\text{model}} - \langle x_i h_k \rangle_{\text{data}} \\
 \partial_{a^0_i} \mathcal L =& \langle x_i \rangle_{\text{model}} - \langle x_i \rangle_{\text{data}} \\
 \partial_{b^0_k} \mathcal L =& \langle  h_k \rangle_{\text{model}} - \langle h_k \rangle_{\text{data}}.
 \end{align}
-$$</p><p>The calculation of $\langle \cdot \rangle_{\text{model}}$ is easier in RBM.</p><p>For first order Markov chains, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.</p><p>In this simple situation, the distributions can be sampled using
-<span class=tooltip><a href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>Gibbs sampling</a>
-<span class=tooltiptext><span class=tooltip_title>Gibbs Sampling</span>
-<span class=tooltip_content>Gibbs sampling is a sampling method for Bayesian inference and MCMC</span></span></span>
-. To calculate $p(h\mid x)$, we will clamp our visible units to the data values then infer $h$ which will be used to infer $x$ based on $p(x\mid h)$. Iterate this process we will be able to sample the model, i.e.,</p><p>$$
+$$</p>
+<p>The calculation of $\langle \cdot \rangle_{\text{model}}$ is easier in RBM.</p>
+<p>For first order Markov chains, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.</p>
+<p>In this simple situation, the distributions can be sampled using
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>
+Gibbs sampling
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Gibbs Sampling</span>
+<span class=tooltip_content>Gibbs sampling is a sampling method for Bayesian inference and MCMC</span>
+</span>
+</span>
+. To calculate $p(h\mid x)$, we will clamp our visible units to the data values then infer $h$ which will be used to infer $x$ based on $p(x\mid h)$. Iterate this process we will be able to sample the model, i.e.,</p>
+<p>$$
 \begin{align*}
 & p(h\mid x_0) \to h_0 \\
 \Rightarrow & p(x\mid h_0) \to x_1 \\
 \Rightarrow & p(h\mid x_1) \to h_1 \\
 \Rightarrow & \cdots
 \end{align*}
-$$</p><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p><a name=Hubbard1959 href=#Hubbard1959 style=text-decoration:none><span class="tag is-link is-light">Hubbard1959</span></a>
+$$</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=Hubbard1959 href=#Hubbard1959 style=text-decoration:none>
+<span class="tag is-link is-light">Hubbard1959</span>
+</a>
 <a href=http://dx.doi.org/10.1103/physrevlett.3.77 style=text-decoration:none>Hubbard J. Calculation of Partition Functions. Physical Review Letters. 1959. pp. 77–78. doi:10.1103/physrevlett.3.77</a>
-<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2 role=doc-endnote><p><a name=Cumulant href=#Cumulant style=text-decoration:none><span class="tag is-link is-light">Cumulant</span></a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>
+<a name=Cumulant href=#Cumulant style=text-decoration:none>
+<span class="tag is-link is-light">Cumulant</span>
+</a>
 <a href=https://en.wikipedia.org/wiki/Cumulant style=text-decoration:none>Contributors to Wikimedia projects. Cumulant. In: Wikipedia [Internet]. 7 May 2021 [cited 18 Jun 2021]. Available: https://en.wikipedia.org/wiki/Cumulant</a>
-<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3 role=doc-endnote><p><a name=Mehta2018 href=#Mehta2018 style=text-decoration:none><span class="tag is-link is-light">Mehta2018</span></a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p>
+<a name=Mehta2018 href=#Mehta2018 style=text-decoration:none>
+<span class="tag is-link is-light">Mehta2018</span>
+</a>
 <a href=https://arxiv.org/abs/1803.08823 style=text-decoration:none>Mehta P, Bukov M, Wang C-HH, Day AGRR, Richardson C, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2018;810: 122. doi:10.1016/j.physrep.2019.03.001</a>
-<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2021-06-11T00:00:00+00:00>2021-06-11</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/?ref=footer" class=pagination-previous>« Boltzmann Machine</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2021). 'Restricted Boltzmann Machine', Datumorphism, 06 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#the-ising-model>The Ising Model</a></li><li><a href=#latent-variables-from-energy-function-to-distribution>Latent Variables: From Energy Function to Distribution</a></li><li><a href=#latent-variables-from-distribution-to-energy-function>Latent Variables: From Distribution to Energy Function</a></li><li><a href=#gradient-of-log-likelihood>Gradient of Log-likelihood</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a name=Mehta2018 href=#Mehta2018 style=text-decoration:none><span class="tag is-link is-light">Mehta2018</span></a>
-<a href=https://arxiv.org/abs/1803.08823 style=text-decoration:none>Mehta P, Bukov M, Wang C-HH, Day AGRR, Richardson C, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2018;810: 122. doi:10.1016/j.physrep.2019.03.001</a></li><li class=has-text-weight-bold><a name=Hubbard1959 href=#Hubbard1959 style=text-decoration:none><span class="tag is-link is-light">Hubbard1959</span></a>
-<a href=http://dx.doi.org/10.1103/physrevlett.3.77 style=text-decoration:none>Hubbard J. Calculation of Partition Functions. Physical Review Letters. 1959. pp. 77–78. doi:10.1103/physrevlett.3.77</a></li><li class=has-text-weight-bold><a name=Cumulant href=#Cumulant style=text-decoration:none><span class="tag is-link is-light">Cumulant</span></a>
-<a href=https://en.wikipedia.org/wiki/Cumulant style=text-decoration:none>Contributors to Wikimedia projects. Cumulant. In: Wikipedia [Internet]. 7 May 2021 [cited 18 Jun 2021]. Available: https://en.wikipedia.org/wiki/Cumulant</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/machine-learning/energy-based-model/restricted-boltzmann-machine.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links to:</strong><div><a class=box href=https://datumorphism.leima.is/cards/information/coding-theory-concepts/><div class=media-content><div class=content><h6>Coding Theory Concepts</h6><p>The code function produces code words. The expected length of the code word is limited by the …</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/statistics/likelihood/><div class=media-content><div class=content><h6>Likelihood</h6><p>Likelihood is not necessarily a pdf</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/><div class=media-content><div class=content><h6>Boltzmann Machine</h6><p>Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a …</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/><div class=media-content><div class=content><h6>MaxEnt Model</h6><p>Maximum Entropy models makes least assumption about the data</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/math/cholesky-decomposition/><div class=media-content><div class=content><h6>Cholesky Decomposition</h6><p>Decomposing a matrix into two</p></div></div></a><a class=box href=https://datumorphism.leima.is/cards/math/hubbard-stratonovich-identity/><div class=media-content><div class=content><h6>The Hubbard-Stratonovich Identity</h6><p>Very useful in calculating the partition function</p></div></div></a><a class=box href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/><div class=media-content><div class=content><h6>Gibbs Sampling</h6><p>Gibbs sampling is a sampling method for Bayesian inference and MCMC</p></div></div></a></div></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/><div class=media-content><div class=content><h6>Boltzmann Machine</h6><p>Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a …</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2021-06-11T00:00:00+00:00>2021-06-11</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/?ref=footer" class=pagination-previous>« Boltzmann Machine</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2021). 'Restricted Boltzmann Machine', Datumorphism, 06 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#the-ising-model>The Ising Model</a></li>
+<li><a href=#latent-variables-from-energy-function-to-distribution>Latent Variables: From Energy Function to Distribution</a></li>
+<li><a href=#latent-variables-from-distribution-to-energy-function>Latent Variables: From Distribution to Energy Function</a></li>
+<li><a href=#gradient-of-log-likelihood>Gradient of Log-likelihood</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold>
+<a name=Mehta2018 href=#Mehta2018 style=text-decoration:none>
+<span class="tag is-link is-light">Mehta2018</span>
+</a>
+<a href=https://arxiv.org/abs/1803.08823 style=text-decoration:none>Mehta P, Bukov M, Wang C-HH, Day AGRR, Richardson C, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2018;810: 122. doi:10.1016/j.physrep.2019.03.001</a></li>
+<li class=has-text-weight-bold>
+<a name=Hubbard1959 href=#Hubbard1959 style=text-decoration:none>
+<span class="tag is-link is-light">Hubbard1959</span>
+</a>
+<a href=http://dx.doi.org/10.1103/physrevlett.3.77 style=text-decoration:none>Hubbard J. Calculation of Partition Functions. Physical Review Letters. 1959. pp. 77–78. doi:10.1103/physrevlett.3.77</a></li>
+<li class=has-text-weight-bold>
+<a name=Cumulant href=#Cumulant style=text-decoration:none>
+<span class="tag is-link is-light">Cumulant</span>
+</a>
+<a href=https://en.wikipedia.org/wiki/Cumulant style=text-decoration:none>Contributors to Wikimedia projects. Cumulant. In: Wikipedia [Internet]. 7 May 2021 [cited 18 Jun 2021]. Available: https://en.wikipedia.org/wiki/Cumulant</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/machine-learning/energy-based-model/restricted-boltzmann-machine.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/cards/information/coding-theory-concepts/>
+<div class=media-content>
+<div class=content>
+<h6>Coding Theory Concepts</h6>
+<p>
+The code function produces code words. The expected length of the code word is limited by the …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/statistics/likelihood/>
+<div class=media-content>
+<div class=content>
+<h6>Likelihood</h6>
+<p>
+Likelihood is not necessarily a pdf
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/>
+<div class=media-content>
+<div class=content>
+<h6>Boltzmann Machine</h6>
+<p>
+Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
+<div class=media-content>
+<div class=content>
+<h6>MaxEnt Model</h6>
+<p>
+Maximum Entropy models makes least assumption about the data
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/math/cholesky-decomposition/>
+<div class=media-content>
+<div class=content>
+<h6>Cholesky Decomposition</h6>
+<p>
+Decomposing a matrix into two
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/math/hubbard-stratonovich-identity/>
+<div class=media-content>
+<div class=content>
+<h6>The Hubbard-Stratonovich Identity</h6>
+<p>
+Very useful in calculating the partition function
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>
+<div class=media-content>
+<div class=content>
+<h6>Gibbs Sampling</h6>
+<p>
+Gibbs sampling is a sampling method for Bayesian inference and MCMC
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/>
+<div class=media-content>
+<div class=content>
+<h6>Boltzmann Machine</h6>
+<p>
+Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a …
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/energy-based-model/restricted-boltzmann-machine.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

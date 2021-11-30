@@ -1,47 +1,700 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>TIL | Datumorphism | L Ma</title><meta name=description content="Today I Learned"><meta name=robots content="noindex"><meta name=author content="L Ma"><meta property="og:title" content="TIL"><meta property="og:description" content="Today I Learned"><meta property="og:type" content="website"><meta property="og:url" content="https://datumorphism.leima.is/til/"><meta property="og:updated_time" content="2021-08-31T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link href=https://datumorphism.leima.is/til/index.xml rel=alternate type=application/rss+xml title=Datumorphism><link rel=canonical href=https://datumorphism.leima.is/til/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><section><div class="hero is-dark is-medium"><div class=hero-body><div class="container has-text-left"><h1 class="title is-1">TIL</h1><h2 class="subtitle is-3">Today I Learned</h2><h3 class="title is-5" style=margin-top:2em><a href=https://datumorphism.leima.is/projects/til/ class=has-text-light><i class="fas fa-link"></i>Introduction: TIL</a></h3></div></div></div></section><div class="columns is-fullheight"><div class=column><section class="hero is-default is-bold"><div class=hero-body><div class=container><div class="columns is-desktop is-multiline"><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/misc/vscode/vscode-terminal-python-not-conda-mac/ itemprop=headline>VSCode Terminal Python Can Not Activate Conda on Mac</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2021-08-31T00:00:00+00:00>2021-08-31</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/vscode style=margin-right:.5em><span class="tag is-warning is-small is-light">#VSCode</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Enable your key repeat in vscode on mac</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/data/postgres.timezone-conversion/ itemprop=headline>Postgres Timezone Conversions</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2021-08-27T00:00:00+00:00>2021-08-27</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/postgres style=margin-right:.5em><span class="tag is-warning is-small is-light">#Postgres</span></a>
-<a href=/tags/warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Warehouse</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://stackoverflow.com/questions/27938857/postgres-at-time-zone-function-shows-wrong-time>kadkaz. Postgres AT TIME ZONE function shows wrong time? In: Stack Overflow [Internet]. [cited 27 Aug 2021]. Available: https://stackoverflow.com/questions/27938857/postgres-at-time-zone-function-shows-wrong-time</a></span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://www.postgresql.org/docs/current/datatype-datetime.html>8.5. Date/Time Types. In: PostgreSQL Documentation [Internet]. 12 Aug 2021 [cited 27 Aug 2021]. Available: https://www.postgresql.org/docs/current/datatype-datetime.html</a></span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://www.postgresql.org/docs/7.2/timezones.html>Time Zones. (2012, January 1). PostgreSQL Documentation. https://www.postgresql.org/docs/7.2/timezones.html</a></span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://www.enterprisedb.com/postgres-tutorials/postgres-time-zone-explained>Momjian B. Postgres AT TIME ZONE Explained. In: EDB [Internet]. 7 Nov 2019 [cited 27 Aug 2021]. Available: https://www.enterprisedb.com/postgres-tutorials/postgres-time-zone-explained</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Pitfals of timezone conversion in Postgres</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-managing-paths-using-pathlib-is-easier/ itemprop=headline>Managing path using pathlib in Python</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2021-07-15T00:00:00+00:00>2021-07-15</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
-<a href=/tags/os style=margin-right:.5em><span class="tag is-warning is-small is-light">#os</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://docs.python.org/3/library/pathlib.html>pathlib — Object-oriented filesystem paths</a></span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://treyhunner.com/2018/12/why-you-should-be-using-pathlib># Why you should be using pathlib</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: It is a convinient package to manage path and files</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/data/deal-with-rare-categories-using-pandas/ itemprop=headline>Deal with Rare Categories Using Pandas</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2021-03-10T00:00:00+00:00>2021-03-10</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/feature style=margin-right:.5em><span class="tag is-warning is-small is-light">#feature</span></a>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>TIL | Datumorphism | L Ma </title>
+<meta name=description content="Today I Learned">
+<meta name=robots content="noindex">
+<meta name=author content="L Ma">
+<meta property="og:title" content="TIL">
+<meta property="og:description" content="Today I Learned">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://datumorphism.leima.is/til/">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link href=https://datumorphism.leima.is/til/index.xml rel=alternate type=application/rss+xml title=Datumorphism>
+<link rel=canonical href=https://datumorphism.leima.is/til/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script> </header>
+<main>
+<section>
+<div class="hero is-dark is-medium">
+<div class=hero-body>
+<div class="container has-text-left">
+<h1 class="title is-1">
+TIL
+</h1>
+<h2 class="subtitle is-3">
+Today I Learned
+</h2>
+<h3 class="title is-5" style=margin-top:2em>
+<a href=https://datumorphism.leima.is/projects/til/ class=has-text-light><i class="fas fa-link"></i> Introduction: TIL </a>
+</h3>
+</div>
+</div>
+</div>
+</section>
+<div class="columns is-fullheight">
+<div class=column>
+<section class="hero is-default is-bold">
+<div class=hero-body>
+<div class=container>
+<div class="columns is-desktop is-multiline">
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/misc/vscode/vscode-terminal-python-not-conda-mac/ itemprop=headline> VSCode Terminal Python Can Not Activate Conda on Mac</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2021-08-31T00:00:00+00:00>2021-08-31</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/vscode style=margin-right:.5em><span class="tag is-warning is-small is-light">#VSCode</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Enable your key repeat in vscode on mac</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/data/postgres.timezone-conversion/ itemprop=headline> Postgres Timezone Conversions</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2021-08-27T00:00:00+00:00>2021-08-27</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/postgres style=margin-right:.5em><span class="tag is-warning is-small is-light">#Postgres</span></a>
+<a href=/tags/warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Warehouse</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://stackoverflow.com/questions/27938857/postgres-at-time-zone-function-shows-wrong-time>kadkaz. Postgres AT TIME ZONE function shows wrong time? In: Stack Overflow [Internet]. [cited 27 Aug 2021]. Available: https://stackoverflow.com/questions/27938857/postgres-at-time-zone-function-shows-wrong-time</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://www.postgresql.org/docs/current/datatype-datetime.html>8.5. Date/Time Types. In: PostgreSQL Documentation [Internet]. 12 Aug 2021 [cited 27 Aug 2021]. Available: https://www.postgresql.org/docs/current/datatype-datetime.html</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://www.postgresql.org/docs/7.2/timezones.html>Time Zones. (2012, January 1). PostgreSQL Documentation. https://www.postgresql.org/docs/7.2/timezones.html</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://www.enterprisedb.com/postgres-tutorials/postgres-time-zone-explained>Momjian B. Postgres AT TIME ZONE Explained. In: EDB [Internet]. 7 Nov 2019 [cited 27 Aug 2021]. Available: https://www.enterprisedb.com/postgres-tutorials/postgres-time-zone-explained</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Pitfals of timezone conversion in Postgres</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-managing-paths-using-pathlib-is-easier/ itemprop=headline> Managing path using pathlib in Python</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2021-07-15T00:00:00+00:00>2021-07-15</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+<a href=/tags/os style=margin-right:.5em><span class="tag is-warning is-small is-light">#os</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://docs.python.org/3/library/pathlib.html>pathlib — Object-oriented filesystem paths</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://treyhunner.com/2018/12/why-you-should-be-using-pathlib># Why you should be using pathlib</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: It is a convinient package to manage path and files</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/data/deal-with-rare-categories-using-pandas/ itemprop=headline> Deal with Rare Categories Using Pandas</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2021-03-10T00:00:00+00:00>2021-03-10</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/feature style=margin-right:.5em><span class="tag is-warning is-small is-light">#feature</span></a>
 <a href=/tags/feature-engineering style=margin-right:.5em><span class="tag is-warning is-small is-light">#feature engineering</span></a>
-<a href=/tags/pandas style=margin-right:.5em><span class="tag is-warning is-small is-light">#pandas</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mask.html>pandas.DataFrame.mask</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Deal with rare categories using pandas</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/pandas/pandas-binning-values/ itemprop=headline>Binning Data Values using Pandas</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2021-03-10T00:00:00+00:00>2021-03-10</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
-<a href=/tags/pandas style=margin-right:.5em><span class="tag is-warning is-small is-light">#Pandas</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.cut.html>pandas.cut</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Convert continuous values into bins in pandas</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-initial-params/ itemprop=headline>PyTorch: Initialize Parameters</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2021-01-01T00:00:00+00:00>2021-01-01</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
-<a href=/tags/pytorch style=margin-right:.5em><span class="tag is-warning is-small is-light">#PyTorch</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html>Lippe P. Tutorial 3: Activation Functions — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 23 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: We can set the parameters in a for loop. We take some of the initialization methods from Lippe1.
+<a href=/tags/pandas style=margin-right:.5em><span class="tag is-warning is-small is-light">#pandas</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mask.html>pandas.DataFrame.mask</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Deal with rare categories using pandas</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/pandas/pandas-binning-values/ itemprop=headline> Binning Data Values using Pandas</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2021-03-10T00:00:00+00:00>2021-03-10</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+<a href=/tags/pandas style=margin-right:.5em><span class="tag is-warning is-small is-light">#Pandas</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.cut.html>pandas.cut</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Convert continuous values into bins in pandas</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/machine-learning/pytorch/pytorch-initial-params/ itemprop=headline> PyTorch: Initialize Parameters</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2021-01-01T00:00:00+00:00>2021-01-01</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+<a href=/tags/pytorch style=margin-right:.5em><span class="tag is-warning is-small is-light">#PyTorch</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html>Lippe P. Tutorial 3: Activation Functions — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 23 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: We can set the parameters in a for loop. We take some of the initialization methods from Lippe1.
 To set based on the input dimension of the layer ( Initialize Artificial Neural Networks Initialize Artificial Neural Networks Initialize a neural network is important for the training and performance. Some initializations simply don't work, some will degrade the performance of the model. We should choose wisely. ) (normalized initialization),
 for name, param in model.named_parameters(): if name.endswith(".bias"): param.data.fill_(0) else: bound = math.sqrt(6)/math.sqrt(param.shape[0]+param.shape[1]) param.data.uniform_(-bound, bound) or set the parameters based on the input size of each layer
-for name, param in model.</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-three-dots/ itemprop=headline>Three dots in Python</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2020-12-03T00:00:00+00:00>2020-12-03</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Use three dots as placeholder for python empty function</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-class-inheritance-sequential/ itemprop=headline>Python Class Sequential Inheritance</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2020-12-03T00:00:00+00:00>2020-12-03</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
-<a href=/tags/oop style=margin-right:.5em><span class="tag is-warning is-small is-light">#OOP</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Sequentially inherit python classes</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-class-methods-ordered/ itemprop=headline>Ordered Member Functions of a Class in Python</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2020-12-02T00:00:00+00:00>2020-12-02</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
-<a href=/tags/oop style=margin-right:.5em><span class="tag is-warning is-small is-light">#OOP</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://stackoverflow.com/a/48146924/1477359>Can I add attributes to class methods in Python?</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Build an ordered list of methods in a python class by adding attributes to member functions</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/data/postgres.join-begin-with-smallest-cardinality/ itemprop=headline>Postgres Optimization in JOIN</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2020-11-28T11:39:21+01:00>2020-11-28</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/postgres style=margin-right:.5em><span class="tag is-warning is-small is-light">#Postgres</span></a>
-<a href=/tags/warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Warehouse</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://explain.dalibo.com/>Postgres Explain Visualizer 2</a></span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://www.postgresql.org/docs/9.4/using-explain.html>Using EXPLAIN @ Postgres documentation</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Join tables together starting with the smallest table (table with less cardinality) speeds things up.</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/data/postgres.deal-with-null/ itemprop=headline>Deal with NULL in Postgres</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2020-11-26T00:00:00+00:00>2020-11-26</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
+for name, param in model.</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-three-dots/ itemprop=headline> Three dots in Python</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2020-12-03T00:00:00+00:00>2020-12-03</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Use three dots as placeholder for python empty function</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-class-inheritance-sequential/ itemprop=headline> Python Class Sequential Inheritance</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2020-12-03T00:00:00+00:00>2020-12-03</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+<a href=/tags/oop style=margin-right:.5em><span class="tag is-warning is-small is-light">#OOP</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Sequentially inherit python classes</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-class-methods-ordered/ itemprop=headline> Ordered Member Functions of a Class in Python</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2020-12-02T00:00:00+00:00>2020-12-02</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+<a href=/tags/oop style=margin-right:.5em><span class="tag is-warning is-small is-light">#OOP</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://stackoverflow.com/a/48146924/1477359>Can I add attributes to class methods in Python?</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Build an ordered list of methods in a python class by adding attributes to member functions</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/data/postgres.join-begin-with-smallest-cardinality/ itemprop=headline> Postgres Optimization in JOIN</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2020-11-28T11:39:21+01:00>2020-11-28</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
 <a href=/tags/postgres style=margin-right:.5em><span class="tag is-warning is-small is-light">#Postgres</span></a>
-<a href=/tags/pgsql style=margin-right:.5em><span class="tag is-warning is-small is-light">#PGSQL</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Please deal with null carefully.</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/machine-learning/pandas-groupby-caveats/ itemprop=headline>Pandas Groupby Does Not Guarantee Unique Content in Groupby Columns</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2020-04-20T00:00:00+00:00>2020-04-20</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
-<a href=/tags/pandas style=margin-right:.5em><span class="tag is-warning is-small is-light">#Pandas</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Pandas Groupby Does Not Guarantee Unique Content in Groupby Columns, it also considers the datatypes. Dealing with mixed types requires additional attention.</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-none/ itemprop=headline>== and is in Python</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2020-04-01T00:00:00+00:00>2020-04-01</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: == and is are different</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-switch-statement/ itemprop=headline>Switch statement in Python</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2019-08-20T00:00:00+00:00>2019-08-20</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://medium.com/better-programming/dispatch-tables-in-python-d37bcc443b0b>Dispatch Tables in Python</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Love switch statement? We can design a switch statement it in python.</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-tilde-operator/ itemprop=headline>Python Tilde Operator</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2019-08-15T00:00:00+00:00>2019-08-15</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-paperclip" aria-hidden=true></i>References:</span>
-<span style=display:block;font-size:90%;padding-left:1em>- <a href=https://stackoverflow.com/questions/8305199/the-tilde-operator-in-python/8305291>The tilde operator in Python @StackOverflow</a></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: tilde operator may not work as you expected</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/database/mongodb-array-and-dict/ itemprop=headline>Arrays and Dicts in MongoDB</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2019-08-14T00:00:00+00:00>2019-08-14</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/mongodb style=margin-right:.5em><span class="tag is-warning is-small is-light">#MongoDB</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Array of dictionaries becomes hard to update in MongoDB.</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/programming/python/python-eval/ itemprop=headline>eval in Python is Dangerous</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2019-08-13T00:00:00+00:00>2019-08-13</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: eval is powerful but really dangerous</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/data/bigquery-materialize-query-results-for-performance/ itemprop=headline>Materialize the Query Result for Performance</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2019-05-12T00:00:00+00:00>2019-05-12</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
-<a href=/tags/big-query style=margin-right:.5em><span class="tag is-warning is-small is-light">#Big Query</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Materialize the query result for multistage queries to make your query faster and lower the costs.</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/data/bigquery-get-current-user/ itemprop=headline>Get Current User in BigQuery</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2019-05-12T00:00:00+00:00>2019-05-12</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
-<a href=/tags/big-query style=margin-right:.5em><span class="tag is-warning is-small is-light">#Big Query</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: BigQuery Current User</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div><div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork><h1 class=blog-timestamp></h1><h1 class=title><a href=https://datumorphism.leima.is/til/data/bigquery-generate-continuous-dates-as-a-column/ itemprop=headline>Generate a Column of Continuous Dates in BigQuery</a></h1><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>Published: <time datetime=2019-05-12T00:00:00+00:00>2019-05-12</time></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i>Tags:<div class="tags is-small" style=display:inline><a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
-<a href=/tags/big-query style=margin-right:.5em><span class="tag is-warning is-small is-light">#Big Query</span></a></div></span></div><div style=margin-left:2em><span style=display:block;font-size:90%><i class="far fa-star"></i>Summary: Generate a table with a column of continuous dates</span></div></div><div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div></div></div><br><div class=container><nav class="pagination has-text-centered" role=navigation aria-label=pagination><a class="button is-outlined is-primary">Page 1 of 5</a>
-<a class="button is-primary" href=/til/page/2/><span class="icon is-small"><i class="fa fa-angle-double-right"></i></span><span>Next</span></a></nav></div></div></section></div></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+<a href=/tags/warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Warehouse</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://explain.dalibo.com/>Postgres Explain Visualizer 2</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://www.postgresql.org/docs/9.4/using-explain.html>Using EXPLAIN @ Postgres documentation</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Join tables together starting with the smallest table (table with less cardinality) speeds things up.</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/data/postgres.deal-with-null/ itemprop=headline> Deal with NULL in Postgres</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2020-11-26T00:00:00+00:00>2020-11-26</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
+<a href=/tags/postgres style=margin-right:.5em><span class="tag is-warning is-small is-light">#Postgres</span></a>
+<a href=/tags/pgsql style=margin-right:.5em><span class="tag is-warning is-small is-light">#PGSQL</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Please deal with null carefully.</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/machine-learning/pandas-groupby-caveats/ itemprop=headline> Pandas Groupby Does Not Guarantee Unique Content in Groupby Columns</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2020-04-20T00:00:00+00:00>2020-04-20</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+<a href=/tags/pandas style=margin-right:.5em><span class="tag is-warning is-small is-light">#Pandas</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Pandas Groupby Does Not Guarantee Unique Content in Groupby Columns, it also considers the datatypes. Dealing with mixed types requires additional attention.</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-none/ itemprop=headline> == and is in Python</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2020-04-01T00:00:00+00:00>2020-04-01</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: == and is are different</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-switch-statement/ itemprop=headline> Switch statement in Python</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2019-08-20T00:00:00+00:00>2019-08-20</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://medium.com/better-programming/dispatch-tables-in-python-d37bcc443b0b>Dispatch Tables in Python</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Love switch statement? We can design a switch statement it in python.</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-tilde-operator/ itemprop=headline> Python Tilde Operator</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2019-08-15T00:00:00+00:00>2019-08-15</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://stackoverflow.com/questions/8305199/the-tilde-operator-in-python/8305291>The tilde operator in Python @StackOverflow</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: tilde operator may not work as you expected</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/database/mongodb-array-and-dict/ itemprop=headline> Arrays and Dicts in MongoDB</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2019-08-14T00:00:00+00:00>2019-08-14</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/mongodb style=margin-right:.5em><span class="tag is-warning is-small is-light">#MongoDB</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Array of dictionaries becomes hard to update in MongoDB.</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/programming/python/python-eval/ itemprop=headline> eval in Python is Dangerous</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2019-08-13T00:00:00+00:00>2019-08-13</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/python style=margin-right:.5em><span class="tag is-warning is-small is-light">#Python</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: eval is powerful but really dangerous</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/data/bigquery-materialize-query-results-for-performance/ itemprop=headline> Materialize the Query Result for Performance</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2019-05-12T00:00:00+00:00>2019-05-12</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
+<a href=/tags/big-query style=margin-right:.5em><span class="tag is-warning is-small is-light">#Big Query</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Materialize the query result for multistage queries to make your query faster and lower the costs.</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/data/bigquery-get-current-user/ itemprop=headline> Get Current User in BigQuery</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2019-05-12T00:00:00+00:00>2019-05-12</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
+<a href=/tags/big-query style=margin-right:.5em><span class="tag is-warning is-small is-light">#Big Query</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: BigQuery Current User</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
+<a href=https://datumorphism.leima.is/til/data/bigquery-generate-continuous-dates-as-a-column/ itemprop=headline> Generate a Column of Continuous Dates in BigQuery</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2019-05-12T00:00:00+00:00>2019-05-12</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/data-warehouse style=margin-right:.5em><span class="tag is-warning is-small is-light">#Data Warehouse</span></a>
+<a href=/tags/big-query style=margin-right:.5em><span class="tag is-warning is-small is-light">#Big Query</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: Generate a table with a column of continuous dates</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+</div>
+</div>
+<br>
+<div class=container>
+<nav class="pagination has-text-centered" role=navigation aria-label=pagination>
+<a class="button is-outlined is-primary">
+Page 1 of 5
+</a>
+<a class="button is-primary" href=/til/page/2/>
+<span class="icon is-small">
+<i class="fa fa-angle-double-right"></i>
+</span>
+<span>Next</span>
+</a>
+</nav>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

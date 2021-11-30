@@ -1,153 +1,484 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>The Python Language: Packaging | Datumorphism | L Ma</title><meta name=description content="Build a python package"><meta name=author content="L Ma"><meta property="og:title" content="The Python Language: Packaging"><meta property="og:description" content="Build a python package"><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/programming-languages/python/packaging/"><meta property="article:published_time" content="2021-08-27T00:00:00+00:00"><meta property="article:modified_time" content="2021-08-27T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/programming-languages/python/packaging/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="The Python Language: Packaging"><meta itemprop=description content="Build a python package"><meta itemprop=datePublished content="2021-08-27T00:00:00+00:00"><meta itemprop=dateModified content="2021-08-27T00:00:00+00:00"><meta itemprop=wordCount content="563"><meta itemprop=keywords content="Python,Programming Language,Basics,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/programming-languages/>Programming Languages</a></li><li><a href=https://datumorphism.leima.is/wiki/programming-languages/python/>The Python Language</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/programming-languages/python/packaging/>The Python Language: Packaging</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">The Python Language: Packaging</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/python><span class="tag is-warning is-small is-light">#Python</span></a>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> The Python Language: Packaging | Datumorphism | L Ma </title>
+<meta name=description content="Build a python package">
+<meta name=author content="L Ma">
+<meta property="og:title" content="The Python Language: Packaging">
+<meta property="og:description" content="Build a python package">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/programming-languages/python/packaging/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2021-08-27T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-08-27T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/programming-languages/python/packaging/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="The Python Language: Packaging">
+<meta itemprop=description content="Build a python package"><meta itemprop=datePublished content="2021-08-27T00:00:00+00:00">
+<meta itemprop=dateModified content="2021-08-27T00:00:00+00:00">
+<meta itemprop=wordCount content="560">
+<meta itemprop=keywords content="Python,Programming Language,Basics,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/programming-languages/>Programming Languages</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/programming-languages/python/>The Python Language</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/programming-languages/python/packaging/>The Python Language: Packaging</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+The Python Language: Packaging
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/python><span class="tag is-warning is-small is-light">#Python</span></a>
 <a href=/tags/programming-language><span class="tag is-warning is-small is-light">#Programming Language</span></a>
-<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>The official documentation has pages about building python packages<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. Torborg also compiled a series of pages and examples about building a package<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. In this note, I only provide some tips.</p><h2 id=private-python-packages>Private Python Packages</h2><p>We can easily setup a private pypi service (e.g., <a href=https://pypicloud.readthedocs.io>pypicloud</a>).</p><h3 id=install-packages-from-private-pypi>Install Packages from Private Pypi</h3><p>To install packages inline, use</p><pre><code>pip install -i https://$PYPI_USER:$PYPI_PWD@your.pypi.url/simple/ durst==0.0.5
-</code></pre><p>To install packages from <code>requirements.txt</code> use,</p><pre><code>pip install -r requirements.txt --trusted-host https://$PYPI_USER:$PYPI_PWD@your.pypi.url/simple --extra-index-url https://$PYPI_USER:$PYPI_PWD@your.pypi.url/simple
-</code></pre><h2 id=publishing-packages-using-github-actions>Publishing Packages Using GitHub Actions</h2><p>We can easily publish python packages using GitHub Actions. Here is an example.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>name</span>: Publish Package to Private Pypi
+<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>The official documentation has pages about building python packages<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. Torborg also compiled a series of pages and examples about building a package<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. In this note, I only provide some tips.</p>
+<h2 id=private-python-packages>Private Python Packages</h2>
+<p>We can easily setup a private pypi service (e.g., <a href=https://pypicloud.readthedocs.io>pypicloud</a>).</p>
+<h3 id=install-packages-from-private-pypi>Install Packages from Private Pypi</h3>
+<p>To install packages inline, use</p>
+<pre tabindex=0><code>pip install -i https://$PYPI_USER:$PYPI_PWD@your.pypi.url/simple/ durst==0.0.5
+</code></pre><p>To install packages from <code>requirements.txt</code> use,</p>
+<pre tabindex=0><code>pip install -r requirements.txt --trusted-host https://$PYPI_USER:$PYPI_PWD@your.pypi.url/simple --extra-index-url https://$PYPI_USER:$PYPI_PWD@your.pypi.url/simple
+</code></pre><h2 id=publishing-packages-using-github-actions>Publishing Packages Using GitHub Actions</h2>
+<p>We can easily publish python packages using GitHub Actions. Here is an example.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Publish Package to Private Pypi</span>
 
-<span style=color:#66d9ef>on</span>: [push]
+<span style=color:#f92672>on</span>: [<span style=color:#ae81ff>push]</span>
 
-<span style=color:#66d9ef>jobs</span>:
-  <span style=color:#66d9ef>build-n-publish</span>:
-    <span style=color:#66d9ef>runs-on</span>: ubuntu-latest
-    <span style=color:#66d9ef>steps</span>:
-      - <span style=color:#66d9ef>name</span>: Checkout
-        <span style=color:#66d9ef>uses</span>: actions/checkout@v2
-      - <span style=color:#66d9ef>name</span>: Set up Python
-        <span style=color:#66d9ef>uses</span>: actions/setup-python@v2
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>python-version</span>: <span style=color:#ae81ff>3.7</span>
-      - <span style=color:#66d9ef>name</span>: Install dependencies
-        <span style=color:#66d9ef>run</span>: <span style=color:#e6db74>|
-</span><span style=color:#e6db74>          python -m pip install --upgrade pip</span>
-          pip install -r requirements.txt
-          pip install -r requirements-dev.txt
-      - <span style=color:#66d9ef>name</span>: Generate dist
-        <span style=color:#66d9ef>run</span>: python setup.py sdist
-      - <span style=color:#66d9ef>name</span>: Publish package
-        <span style=color:#66d9ef>if</span>: github.event_name == <span style=color:#e6db74>&#39;push&#39;</span> <span style=color:#75715e>&amp;&amp;</span> startsWith(github.ref, <span style=color:#e6db74>&#39;refs/tags&#39;</span>)
-        <span style=color:#66d9ef>uses</span>: pypa/gh-action-pypi-publish@master
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>user</span>: ${{ secrets.private_pypi_username }}
-          <span style=color:#66d9ef>password</span>: ${{ secrets.private_pypi_password }}
-          <span style=color:#66d9ef>repository_url</span>: ${{ secrets.private_pypi_url }}
-</code></pre></div><h2 id=test-python-packages-using-github-actions>Test Python Packages Using GitHub Actions</h2><p>Continuous testing packages before publishing is crucial for the stability of the packages.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>name</span>: Test Code with Pip
+<span style=color:#f92672>jobs</span>:
+  <span style=color:#f92672>build-n-publish</span>:
+    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-latest</span>
+    <span style=color:#f92672>steps</span>:
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Checkout</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Set up Python</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-python@v2</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>python-version</span>: <span style=color:#ae81ff>3.7</span>
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install dependencies</span>
+        <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
+</span><span style=color:#e6db74>          python -m pip install --upgrade pip
+</span><span style=color:#e6db74>          pip install -r requirements.txt
+</span><span style=color:#e6db74>          pip install -r requirements-dev.txt</span>          
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Generate dist</span>
+        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>python setup.py sdist</span>
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Publish package</span>
+        <span style=color:#f92672>if</span>: <span style=color:#ae81ff>github.event_name == &#39;push&#39; &amp;&amp; startsWith(github.ref, &#39;refs/tags&#39;)</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>pypa/gh-action-pypi-publish@master</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>user</span>: <span style=color:#ae81ff>${{ secrets.private_pypi_username }}</span>
+          <span style=color:#f92672>password</span>: <span style=color:#ae81ff>${{ secrets.private_pypi_password }}</span>
+          <span style=color:#f92672>repository_url</span>: <span style=color:#ae81ff>${{ secrets.private_pypi_url }}</span>
+</code></pre></div><h2 id=test-python-packages-using-github-actions>Test Python Packages Using GitHub Actions</h2>
+<p>Continuous testing packages before publishing is crucial for the stability of the packages.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Test Code with Pip</span>
 
-<span style=color:#66d9ef>on</span>: [push]
+<span style=color:#f92672>on</span>: [<span style=color:#ae81ff>push]</span>
 
-<span style=color:#66d9ef>jobs</span>:
-  <span style=color:#66d9ef>build</span>:
-    <span style=color:#66d9ef>strategy</span>:
-      <span style=color:#66d9ef>matrix</span>:
-        <span style=color:#66d9ef>python-version</span>: [<span style=color:#ae81ff>3.6</span>, <span style=color:#ae81ff>3.7</span>, <span style=color:#ae81ff>3.8</span>]
-        <span style=color:#66d9ef>os</span>: [ubuntu-latest, macos-latest]
-    <span style=color:#66d9ef>runs-on</span>: ${{ matrix.os }}
-    <span style=color:#66d9ef>steps</span>:
-      - <span style=color:#66d9ef>name</span>: Checkout
-        <span style=color:#66d9ef>uses</span>: actions/checkout@v2
-      - <span style=color:#66d9ef>name</span>: Set up Python ${{ matrix.python-version }}
-        <span style=color:#66d9ef>uses</span>: actions/setup-python@v2
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>python-version</span>: ${{ matrix.python-version }}
-      - <span style=color:#66d9ef>name</span>: Install dependencies
-        <span style=color:#66d9ef>run</span>: <span style=color:#e6db74>|
-</span><span style=color:#e6db74>          python -m pip install --upgrade pip</span>
-          pip install -r requirements.txt
-          pip install -r requirements-dev.txt
-          <span style=color:#75715e># install black if available (Python 3.6 and above), and autopep8 for testing the pipe mode</span>
-          pip install black || <span style=color:#66d9ef>true</span>
-          pip install autopep8 || <span style=color:#66d9ef>true</span>
-      - <span style=color:#66d9ef>name</span>: Lint with flake8
-        <span style=color:#66d9ef>run</span>: <span style=color:#e6db74>|
-</span><span style=color:#e6db74>          # stop the build if there are Python syntax errors or undefined names</span>
-          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-          <span style=color:#75715e># all Python files should follow PEP8</span>
-          <span style=color:#75715e># echo &#34;flake8 all python&#34;</span>
-          <span style=color:#75715e># flake8 durst tests</span>
-          <span style=color:#75715e># exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide</span>
-          echo <span style=color:#e6db74>&#34;flake8 BLK&#34;</span>
-          flake8 durst --count --exit-zero --max-complexity=<span style=color:#ae81ff>18</span> --statistics --select BLK
-      - <span style=color:#66d9ef>name</span>: Install from source (required for the pre-commit tests)
-        <span style=color:#66d9ef>run</span>: pip install .
-      - <span style=color:#66d9ef>name</span>: Test with pytest
-        <span style=color:#66d9ef>run</span>: pytest --cov=durst -W ignore::DeprecationWarning
-</code></pre></div><h2 id=build-documentation-using-github-actions>Build Documentation Using GitHub Actions</h2><p>The following configuration builds the documentation using sphinx and deploys the content to S3.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>name</span>: Test Build Docs
+<span style=color:#f92672>jobs</span>:
+  <span style=color:#f92672>build</span>:
+    <span style=color:#f92672>strategy</span>:
+      <span style=color:#f92672>matrix</span>:
+        <span style=color:#f92672>python-version</span>: [<span style=color:#ae81ff>3.6</span>, <span style=color:#ae81ff>3.7</span>, <span style=color:#ae81ff>3.8</span>]
+        <span style=color:#f92672>os</span>: [<span style=color:#ae81ff>ubuntu-latest, macos-latest]</span>
+    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>${{ matrix.os }}</span>
+    <span style=color:#f92672>steps</span>:
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Checkout</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Set up Python ${{ matrix.python-version }}</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-python@v2</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>python-version</span>: <span style=color:#ae81ff>${{ matrix.python-version }}</span>
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install dependencies</span>
+        <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
+</span><span style=color:#e6db74>          python -m pip install --upgrade pip
+</span><span style=color:#e6db74>          pip install -r requirements.txt
+</span><span style=color:#e6db74>          pip install -r requirements-dev.txt
+</span><span style=color:#e6db74>          # install black if available (Python 3.6 and above), and autopep8 for testing the pipe mode
+</span><span style=color:#e6db74>          pip install black || true
+</span><span style=color:#e6db74>          pip install autopep8 || true</span>          
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Lint with flake8</span>
+        <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
+</span><span style=color:#e6db74>          # stop the build if there are Python syntax errors or undefined names
+</span><span style=color:#e6db74>          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+</span><span style=color:#e6db74>          # all Python files should follow PEP8
+</span><span style=color:#e6db74>          # echo &#34;flake8 all python&#34;
+</span><span style=color:#e6db74>          # flake8 durst tests
+</span><span style=color:#e6db74>          # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+</span><span style=color:#e6db74>          echo &#34;flake8 BLK&#34;
+</span><span style=color:#e6db74>          flake8 durst --count --exit-zero --max-complexity=18 --statistics --select BLK</span>          
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install from source (required for the pre-commit tests)</span>
+        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pip install .</span>
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Test with pytest</span>
+        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pytest --cov=durst -W ignore::DeprecationWarning</span>
+</code></pre></div><h2 id=build-documentation-using-github-actions>Build Documentation Using GitHub Actions</h2>
+<p>The following configuration builds the documentation using sphinx and deploys the content to S3.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Test Build Docs</span>
 
-<span style=color:#66d9ef>on</span>:
-  <span style=color:#66d9ef>push</span>:
-    <span style=color:#66d9ef>branches</span>:
+<span style=color:#f92672>on</span>:
+  <span style=color:#f92672>push</span>:
+    <span style=color:#f92672>branches</span>:
       - <span style=color:#e6db74>&#34;**&#34;</span>
       - <span style=color:#e6db74>&#34;!gh-pages&#34;</span>
 
-<span style=color:#66d9ef>jobs</span>:
-  <span style=color:#66d9ef>deploy</span>:
-    <span style=color:#66d9ef>runs-on</span>: ubuntu-latest
-    <span style=color:#66d9ef>steps</span>:
-      - <span style=color:#66d9ef>uses</span>: actions/checkout@v2
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>submodules</span>: <span style=color:#66d9ef>true</span>  <span style=color:#75715e># Fetch Hugo themes</span>
-          <span style=color:#66d9ef>fetch-depth</span>: <span style=color:#ae81ff>0</span>    <span style=color:#75715e># Fetch all history for .GitInfo and .Lastmod</span>
+<span style=color:#f92672>jobs</span>:
+  <span style=color:#f92672>deploy</span>:
+    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-latest</span>
+    <span style=color:#f92672>steps</span>:
+      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>submodules</span>: <span style=color:#66d9ef>true</span>  <span style=color:#75715e># Fetch Hugo themes</span>
+          <span style=color:#f92672>fetch-depth</span>: <span style=color:#ae81ff>0</span>    <span style=color:#75715e># Fetch all history for .GitInfo and .Lastmod</span>
 
-      - <span style=color:#66d9ef>uses</span>: ammaraskar/sphinx-action@master
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>docs-folder</span>: <span style=color:#e6db74>&#34;docs/&#34;</span>
+      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>ammaraskar/sphinx-action@master</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>docs-folder</span>: <span style=color:#e6db74>&#34;docs/&#34;</span>
 
-      - <span style=color:#66d9ef>uses</span>: actions/upload-artifact@v1
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>name</span>: DocumentationHTML
-          <span style=color:#66d9ef>path</span>: docs/build/html/
+      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/upload-artifact@v1</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>name</span>: <span style=color:#ae81ff>DocumentationHTML</span>
+          <span style=color:#f92672>path</span>: <span style=color:#ae81ff>docs/build/html/</span>
 
-      - <span style=color:#66d9ef>name</span>: Deploy to S3
-        <span style=color:#66d9ef>uses</span>: jakejarvis/s3-sync-action@master
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>args</span>: --delete
-        <span style=color:#66d9ef>env</span>:
-          <span style=color:#66d9ef>AWS_S3_BUCKET</span>: ${{ secrets.AWS_S3_BUCKET }}
-          <span style=color:#66d9ef>AWS_ACCESS_KEY_ID</span>: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          <span style=color:#66d9ef>AWS_SECRET_ACCESS_KEY</span>: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          <span style=color:#66d9ef>AWS_REGION</span>: ${{ secrets.AWS_REGION }}
-          <span style=color:#66d9ef>SOURCE_DIR</span>: <span style=color:#e6db74>&#39;public&#39;</span>
-</code></pre></div><p>Building docs using mkdocs is similar. Here is a minimal example.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>name</span>: Publish Docs
-<span style=color:#66d9ef>on</span>:
-  <span style=color:#66d9ef>push</span>:
-    <span style=color:#66d9ef>branches</span>:
-      - main
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy to S3</span>
+        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>jakejarvis/s3-sync-action@master</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>args</span>: --<span style=color:#ae81ff>delete</span>
+        <span style=color:#f92672>env</span>:
+          <span style=color:#f92672>AWS_S3_BUCKET</span>: <span style=color:#ae81ff>${{ secrets.AWS_S3_BUCKET }}</span>
+          <span style=color:#f92672>AWS_ACCESS_KEY_ID</span>: <span style=color:#ae81ff>${{ secrets.AWS_ACCESS_KEY_ID }}</span>
+          <span style=color:#f92672>AWS_SECRET_ACCESS_KEY</span>: <span style=color:#ae81ff>${{ secrets.AWS_SECRET_ACCESS_KEY }}</span>
+          <span style=color:#f92672>AWS_REGION</span>: <span style=color:#ae81ff>${{ secrets.AWS_REGION }}</span>
+          <span style=color:#f92672>SOURCE_DIR</span>: <span style=color:#e6db74>&#39;public&#39;</span>
+</code></pre></div><p>Building docs using mkdocs is similar. Here is a minimal example.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Publish Docs</span>
+<span style=color:#f92672>on</span>:
+  <span style=color:#f92672>push</span>:
+    <span style=color:#f92672>branches</span>:
+      - <span style=color:#ae81ff>main</span>
 
-<span style=color:#66d9ef>jobs</span>:
-  <span style=color:#66d9ef>deploy</span>:
-    <span style=color:#66d9ef>runs-on</span>: ubuntu-latest
-    <span style=color:#66d9ef>steps</span>:
-      - <span style=color:#66d9ef>uses</span>: actions/checkout@v2
-      - <span style=color:#66d9ef>uses</span>: actions/setup-python@v2
-        <span style=color:#66d9ef>with</span>:
-          <span style=color:#66d9ef>python-version</span>: <span style=color:#ae81ff>3.</span>x
-      - <span style=color:#66d9ef>run</span>: pip install mkdocs
-      - <span style=color:#66d9ef>run</span>: pip install mkdocs-material
-      - <span style=color:#66d9ef>run</span>: pip install mkdocs-material-extensions
-      - <span style=color:#66d9ef>run</span>: pip install mkdocs-autorefs
-      - <span style=color:#66d9ef>run</span>: pip install mkdocstrings
-      - <span style=color:#66d9ef>run</span>: pip install -e <span style=color:#e6db74>&#34;.[all]&#34;</span>
-      - <span style=color:#66d9ef>run</span>: mkdocs gh-deploy --force
-</code></pre></div><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p><a name=documentation href=#documentation style=text-decoration:none><span class="tag is-link is-light">documentation</span></a>
+<span style=color:#f92672>jobs</span>:
+  <span style=color:#f92672>deploy</span>:
+    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-latest</span>
+    <span style=color:#f92672>steps</span>:
+      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-python@v2</span>
+        <span style=color:#f92672>with</span>:
+          <span style=color:#f92672>python-version</span>: <span style=color:#ae81ff>3.</span><span style=color:#ae81ff>x</span>
+      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pip install mkdocs</span>
+      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pip install mkdocs-material</span>
+      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pip install mkdocs-material-extensions</span>
+      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pip install mkdocs-autorefs</span>
+      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pip install mkdocstrings</span>
+      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>pip install -e &#34;.[all]&#34;</span>
+      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>mkdocs gh-deploy --force</span>
+</code></pre></div><section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=documentation href=#documentation style=text-decoration:none>
+<span class="tag is-link is-light">documentation</span>
+</a>
 <a href=https://packaging.python.org/ style=text-decoration:none>Python Packaging User Guide — Python Packaging User Guide.</a>
-<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2 role=doc-endnote><p><a name=Torborg2016 href=#Torborg2016 style=text-decoration:none><span class="tag is-link is-light">Torborg2016</span></a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>
+<a name=Torborg2016 href=#Torborg2016 style=text-decoration:none>
+<span class="tag is-link is-light">Torborg2016</span>
+</a>
 <a href=https://python-packaging.readthedocs.io/en/latest/index.html style=text-decoration:none>Torborg S. How To Package Your Python Code — Python Packaging Tutorial.</a>
-<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2021-08-27T00:00:00+00:00>2021-08-27</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/programming-languages/python/performance/?ref=footer" class=pagination-previous>« The Python Language: Performance</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2021). 'The Python Language: Packaging', Datumorphism, 08 April. Available at: https://datumorphism.leima.is/wiki/programming-languages/python/packaging/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#private-python-packages>Private Python Packages</a><ul><li><a href=#install-packages-from-private-pypi>Install Packages from Private Pypi</a></li></ul></li><li><a href=#publishing-packages-using-github-actions>Publishing Packages Using GitHub Actions</a></li><li><a href=#test-python-packages-using-github-actions>Test Python Packages Using GitHub Actions</a></li><li><a href=#build-documentation-using-github-actions>Build Documentation Using GitHub Actions</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a name=Torborg2016 href=#Torborg2016 style=text-decoration:none><span class="tag is-link is-light">Torborg2016</span></a>
-<a href=https://python-packaging.readthedocs.io/en/latest/index.html style=text-decoration:none>Torborg S. How To Package Your Python Code — Python Packaging Tutorial.</a></li><li class=has-text-weight-bold><a name=documentation href=#documentation style=text-decoration:none><span class="tag is-link is-light">documentation</span></a>
-<a href=https://packaging.python.org/ style=text-decoration:none>Python Packaging User Guide — Python Packaging User Guide.</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/programming-languages/python/packaging.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links to:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/programming-languages/python/><div class=media-content><div class=content><h6>The Python Language</h6><p>Python as a programming language</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/programming-languages/python/packaging.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2021-08-27T00:00:00+00:00>2021-08-27</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/programming-languages/python/performance/?ref=footer" class=pagination-previous>« The Python Language: Performance</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2021). 'The Python Language: Packaging', Datumorphism, 08 April. Available at: https://datumorphism.leima.is/wiki/programming-languages/python/packaging/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#private-python-packages>Private Python Packages</a>
+<ul>
+<li><a href=#install-packages-from-private-pypi>Install Packages from Private Pypi</a></li>
+</ul>
+</li>
+<li><a href=#publishing-packages-using-github-actions>Publishing Packages Using GitHub Actions</a></li>
+<li><a href=#test-python-packages-using-github-actions>Test Python Packages Using GitHub Actions</a></li>
+<li><a href=#build-documentation-using-github-actions>Build Documentation Using GitHub Actions</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold>
+<a name=Torborg2016 href=#Torborg2016 style=text-decoration:none>
+<span class="tag is-link is-light">Torborg2016</span>
+</a>
+<a href=https://python-packaging.readthedocs.io/en/latest/index.html style=text-decoration:none>Torborg S. How To Package Your Python Code — Python Packaging Tutorial.</a></li>
+<li class=has-text-weight-bold>
+<a name=documentation href=#documentation style=text-decoration:none>
+<span class="tag is-link is-light">documentation</span>
+</a>
+<a href=https://packaging.python.org/ style=text-decoration:none>Python Packaging User Guide — Python Packaging User Guide.</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/programming-languages/python/packaging.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/programming-languages/python/>
+<div class=media-content>
+<div class=content>
+<h6>The Python Language</h6>
+<p>
+Python as a programming language
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/programming-languages/python/packaging.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

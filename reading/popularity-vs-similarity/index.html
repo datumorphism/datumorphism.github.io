@@ -1,36 +1,494 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Popularity versus similarity in growing networks | Datumorphism | L Ma</title><meta name=author content="Lei Ma"><meta property="og:title" content="Popularity versus similarity in growing networks"><meta property="og:description" content="Introduce geometry into the manifold of complex networks"><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/reading/popularity-vs-similarity/"><meta property="article:published_time" content="2016-11-06T00:00:00+00:00"><meta property="article:modified_time" content="2016-11-06T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/reading/popularity-vs-similarity/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Popularity versus similarity in growing networks"><meta itemprop=description content="Introduce geometry into the manifold of complex networks"><meta itemprop=datePublished content="2016-11-06T00:00:00+00:00"><meta itemprop=dateModified content="2016-11-06T00:00:00+00:00"><meta itemprop=wordCount content="1588"><meta itemprop=keywords content="complex network,graph,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/reading/>Reading Notes</a></li><li class=active><a href=https://datumorphism.leima.is/reading/popularity-vs-similarity/>Popularity versus similarity in growing networks</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline"><i class="far fa-comment-alt"></i>Popularity versus similarity in growing networks</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/complex-network><span class="tag is-warning is-small is-light">#complex network</span></a>
-<a href=/tags/graph><span class="tag is-warning is-small is-light">#graph</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=SUMMARY></div><div class="notification is-light"><p>Introduce geometry into the manifold of complex networks</p></div><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><h2 id=background>Background</h2><p>Why are we interested in networks? Because a enormous categories of phenomena can be modeled using networks. Internet, society, physics, biology, ecology, economy, even the evolution of the universe are essentially networks.</p><h3 id=concepts>Concepts</h3><ul><li>Degrees</li></ul><figure><img src=../assets/popularity-similarity-in-networks/directed-degrees.svg.png alt="Degrees. Source wikipedia."><figcaption><p>Degrees. Source <a href=https://en.wikipedia.org/wiki/File:DirectedDegrees.svg>wikipedia</a>.</p></figcaption></figure><h3 id=scaling-in-networks>Scaling in Networks</h3><p>People have found a lot of scaling phenomena in networks.</p><ul><li>Internet links (directed links):</li></ul><p><a href=https://arxiv.org/abs/cond-mat/0008465>arXiv:cond-mat/0008465</a> for the scaling in internet links. What they find is that the distribution of degrees is power-law, i.e., $P\propto k^{-\gamma}$ with $\gamma\sim 2$. <a href=https://arxiv.org/abs/cond-mat/0009090v1>arXiv:cond-mat/0009090</a> provides a better explanation. The explanation is simply popular is more attractive.</p><ul><li>Barabasi et al found that in random networks, scaling appears also <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</li></ul><figure><img src=../assets/popularity-similarity-in-networks/barabasi-scaling-random-networks.png alt="Scaling of connectivities. Barabasi (1999)."><figcaption><p>Scaling of connectivities. Barabasi (1999).</p></figcaption></figure><ul><li>And some theories like <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, etc.</li></ul><h3 id=popularity>Popularity</h3><p>In the example of internet links, popular is attractive can be modeled by a dynamic generation of network following some rules.</p><ol><li><p>At each step we have $m$ links distributed.</p></li><li><p>The probability of attaching to some node with degree $k_i$ is</p><p>$$P_i \sim k_i + A$$</p><p>where $A$ serves as a initial attractiveness since it tells us the probability of attachment when the degree $k_i=0$.</p></li></ol><p>Dorogovtsev et al proved that this model gives us the final distribution of degrees</p><p>$$
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Popularity versus similarity in growing networks | Datumorphism | L Ma </title>
+<meta name=author content="Lei Ma">
+<meta property="og:title" content="Popularity versus similarity in growing networks">
+<meta property="og:description" content="Introduce geometry into the manifold of complex networks">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/reading/popularity-vs-similarity/"><meta property="article:section" content="reading">
+<meta property="article:published_time" content="2016-11-06T00:00:00+00:00">
+<meta property="article:modified_time" content="2016-11-06T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/reading/popularity-vs-similarity/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Popularity versus similarity in growing networks">
+<meta itemprop=description content="Introduce geometry into the manifold of complex networks"><meta itemprop=datePublished content="2016-11-06T00:00:00+00:00">
+<meta itemprop=dateModified content="2016-11-06T00:00:00+00:00">
+<meta itemprop=wordCount content="1582">
+<meta itemprop=keywords content="complex network,graph,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/reading/>Reading Notes</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/reading/popularity-vs-similarity/>Popularity versus similarity in growing networks</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+<i class="far fa-comment-alt"></i> Popularity versus similarity in growing networks
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/complex-network><span class="tag is-warning is-small is-light">#complex network</span></a>
+<a href=/tags/graph><span class="tag is-warning is-small is-light">#graph</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=SUMMARY></div>
+<div class="notification is-light">
+<p>
+Introduce geometry into the manifold of complex networks
+</p>
+</div>
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<h2 id=background>Background</h2>
+<p>Why are we interested in networks? Because a enormous categories of phenomena can be modeled using networks. Internet, society, physics, biology, ecology, economy, even the evolution of the universe are essentially networks.</p>
+<h3 id=concepts>Concepts</h3>
+<ul>
+<li>Degrees</li>
+</ul>
+<figure><img src=../assets/popularity-similarity-in-networks/directed-degrees.svg.png alt="Degrees. Source wikipedia."><figcaption>
+<p>Degrees. Source <a href=https://en.wikipedia.org/wiki/File:DirectedDegrees.svg>wikipedia</a>.</p>
+</figcaption>
+</figure>
+<h3 id=scaling-in-networks>Scaling in Networks</h3>
+<p>People have found a lot of scaling phenomena in networks.</p>
+<ul>
+<li>Internet links (directed links):</li>
+</ul>
+<p><a href=https://arxiv.org/abs/cond-mat/0008465>arXiv:cond-mat/0008465</a> for the scaling in internet links. What they find is that the distribution of degrees is power-law, i.e., $P\propto k^{-\gamma}$ with $\gamma\sim 2$. <a href=https://arxiv.org/abs/cond-mat/0009090v1>arXiv:cond-mat/0009090</a> provides a better explanation. The explanation is simply popular is more attractive.</p>
+<ul>
+<li>Barabasi et al found that in random networks, scaling appears also <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</li>
+</ul>
+<figure><img src=../assets/popularity-similarity-in-networks/barabasi-scaling-random-networks.png alt="Scaling of connectivities. Barabasi (1999)."><figcaption>
+<p>Scaling of connectivities. Barabasi (1999).</p>
+</figcaption>
+</figure>
+<ul>
+<li>And some theories like <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, etc.</li>
+</ul>
+<h3 id=popularity>Popularity</h3>
+<p>In the example of internet links, popular is attractive can be modeled by a dynamic generation of network following some rules.</p>
+<ol>
+<li>
+<p>At each step we have $m$ links distributed.</p>
+</li>
+<li>
+<p>The probability of attaching to some node with degree $k_i$ is</p>
+<p>$$P_i \sim k_i + A$$</p>
+<p>where $A$ serves as a initial attractiveness since it tells us the probability of attachment when the degree $k_i=0$.</p>
+</li>
+</ol>
+<p>Dorogovtsev et al proved that this model gives us the final distribution of degrees</p>
+<p>$$
 P \propto k^{-\gamma},
-$$</p><p>where $\gamma=2 + A/m$ <sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>.</p><h3 id=similarity>Similarity</h3><p>The problem about popularity is that we are all aware that popularity is not the only factor.</p><p>Consider the following examples.</p><ol><li>You write a blog about neuroscience. In the past people usually put links on the blog, which is called blogroll or something. In the links, what you would include is something like facebook, google, maybe nature/science, and most likely some blogs or resources about neuroscience even though these websites may not be very popular. However, these links have similar content as yours.</li><li>We could also check the link you used in your articles and they are very likely to point to some websites that are also neuroscience.</li></ol><p>In some cases, similar is also important.</p><h2 id=popularity-and-similarity-together>Popularity and Similarity Together</h2><p>What we would expect is that larger popularity and small similarity (more similar) are the preferable connections. Thus competition between the two determines the overall connection probability.</p><p>To combine the two factors, we use the metric $\mathrm{Popularity}\times \mathrm{Similarity}$. Even though there is a competition between popularity and similarity, small values of $\mathrm{Popularity}\times \mathrm{Similarity}$ are more preferable connections, which takes similarity more seriously.</p><p>A simple model to demonstrate this is to build a space of disc. The radius is time $t$, while angles are the measure of similarity. A smaller angular distance indicates a smaller similarity. Using this mapping, we are able to show the dynamics of networks, since we can tell the history of the nodes.</p><p>Mathematically speaking, the similarity is measured as</p><p>$$
+$$</p>
+<p>where $\gamma=2 + A/m$ <sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>.</p>
+<h3 id=similarity>Similarity</h3>
+<p>The problem about popularity is that we are all aware that popularity is not the only factor.</p>
+<p>Consider the following examples.</p>
+<ol>
+<li>You write a blog about neuroscience. In the past people usually put links on the blog, which is called blogroll or something. In the links, what you would include is something like facebook, google, maybe nature/science, and most likely some blogs or resources about neuroscience even though these websites may not be very popular. However, these links have similar content as yours.</li>
+<li>We could also check the link you used in your articles and they are very likely to point to some websites that are also neuroscience.</li>
+</ol>
+<p>In some cases, similar is also important.</p>
+<h2 id=popularity-and-similarity-together>Popularity and Similarity Together</h2>
+<p>What we would expect is that larger popularity and small similarity (more similar) are the preferable connections. Thus competition between the two determines the overall connection probability.</p>
+<p>To combine the two factors, we use the metric $\mathrm{Popularity}\times \mathrm{Similarity}$. Even though there is a competition between popularity and similarity, small values of $\mathrm{Popularity}\times \mathrm{Similarity}$ are more preferable connections, which takes similarity more seriously.</p>
+<p>A simple model to demonstrate this is to build a space of disc. The radius is time $t$, while angles are the measure of similarity. A smaller angular distance indicates a smaller similarity. Using this mapping, we are able to show the dynamics of networks, since we can tell the history of the nodes.</p>
+<p>Mathematically speaking, the similarity is measured as</p>
+<p>$$
 \begin{equation}
 \theta_{ij} = \lvert \theta_i - \theta_j \rvert.
 \end{equation}
-$$</p><p>while time is the radius with $t=0$ at the center of the disc.</p><figure><img src=../assets/popularity-similarity-in-networks/disc-of-similarity.png alt="Disc of similarity. This figures shows the measure of similarity. 2 &amp;amp; 3 are more similar, given the fact that their angular distance $\lvert\theta_2-\theta_3\rvert$ is smaller that either $\theta_2-\theta_1$ or $\lvert\theta_3-\theta_1\rvert$. Papadopoulos et al (2012)."><figcaption><p>Disc of similarity. This figures shows the measure of similarity. 2 & 3 are more similar, given the fact that their angular distance $\lvert\theta_2-\theta_3\rvert$ is smaller that either $\theta_2-\theta_1$ or $\lvert\theta_3-\theta_1\rvert$. Papadopoulos et al (2012).</p></figcaption></figure><p>Now we are going to dynamically generate a network. The updating rules are listed bellow.</p><ol><li>We create a node at each time step and label them with numbers. For example, node 3 means it was created at time step 3. We denote the time of the $i$th node as $t_i$ and its angle on the disc as $\theta_i$.</li><li>As the node $i$ is created at time $t_i$, it is connected to $m$ previous nodes.</li><li>The node $i$ is connected to node $j$'s if $t_j\theta_{ij}$ are the smallest. In this measure $t_j$ is the popularity of node $j$ and $\theta_{ij}$ is the similarity of the two nodes.</li></ol><figure><img src=../assets/popularity-similarity-in-networks/disc-popularity-similarity.png alt="Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity."><figcaption><p>Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity.</p></figcaption></figure><p><strong>The key transformation of this problem</strong> is to define a new radial coordinate system $r =\ln t$, so that the distance becomes log scale. Then we define the disc to be on a hyperbolic space so that the distance between any two points is calculated as <sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup></p><p>$$
+$$</p>
+<p>while time is the radius with $t=0$ at the center of the disc.</p>
+<figure><img src=../assets/popularity-similarity-in-networks/disc-of-similarity.png alt="Disc of similarity. This figures shows the measure of similarity. 2 &amp;amp; 3 are more similar, given the fact that their angular distance $\lvert\theta_2-\theta_3\rvert$ is smaller that either $\theta_2-\theta_1$ or $\lvert\theta_3-\theta_1\rvert$. Papadopoulos et al (2012)."><figcaption>
+<p>Disc of similarity. This figures shows the measure of similarity. 2 & 3 are more similar, given the fact that their angular distance $\lvert\theta_2-\theta_3\rvert$ is smaller that either $\theta_2-\theta_1$ or $\lvert\theta_3-\theta_1\rvert$. Papadopoulos et al (2012).</p>
+</figcaption>
+</figure>
+<p>Now we are going to dynamically generate a network. The updating rules are listed bellow.</p>
+<ol>
+<li>We create a node at each time step and label them with numbers. For example, node 3 means it was created at time step 3. We denote the time of the $i$th node as $t_i$ and its angle on the disc as $\theta_i$.</li>
+<li>As the node $i$ is created at time $t_i$, it is connected to $m$ previous nodes.</li>
+<li>The node $i$ is connected to node $j$&rsquo;s if $t_j\theta_{ij}$ are the smallest. In this measure $t_j$ is the popularity of node $j$ and $\theta_{ij}$ is the similarity of the two nodes.</li>
+</ol>
+<figure><img src=../assets/popularity-similarity-in-networks/disc-popularity-similarity.png alt="Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity."><figcaption>
+<p>Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity.</p>
+</figcaption>
+</figure>
+<p><strong>The key transformation of this problem</strong> is to define a new radial coordinate system $r =\ln t$, so that the distance becomes log scale. Then we define the disc to be on a hyperbolic space so that the distance between any two points is calculated as <sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup></p>
+<p>$$
 x_{ij} = r_i + r_j + \ln (\theta_{ij}/2) = \ln(t_i t_j \theta_{ij}/2).
-$$</p><p>Minimizing $x_{ij}$ becomes equivalent to minimizing $t_j \theta_{ij}/2$ when dealing with the connectivity from a new born node $i$. **The competition between popularity and similarity is simply the minimization of distance between two nodes on a hyperbolic plane.**</p><figure><img src=../assets/popularity-similarity-in-networks/disc-similarity-popularity-hyperbolic.png alt="Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line. Papadopoulos et al (2012)."><figcaption><p>Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line. Papadopoulos et al (2012).</p></figcaption></figure><p>Why is this definition of distance far superior than the previous measure of $\mathrm{Popularity}\times \mathrm{Similarity}$? Or why do I care? Because the universe/nature itself measures distance on hyperbolic space, i.e., Minkowski space. It also shows us the hint that by choosing a proper metric we might be able to define distance between any nodes in any systems. The only question becomes which geometry.</p><p>This result is astonishing also because a discrete system is most likely generated dynamically according to some laws. The method of mapping nodes to a hyperbolic space provides a convenient metric or distance for us to find out the closest nodes. In other words, a node always connect to it&rsquo;s nearest neighbors if the metric/distance is well defined.</p><h2 id=variations-and-emergent-models>Variations and Emergent Models</h2><ul><li>Popularity Fading</li></ul><p>In many real networks, early nodes are more popular. However, popularity decreasing with time can also be modeled. The idea is simple. We allow the nodes to drift away from the center along its own radial direction according to the restraint</p><p>$$
+$$</p>
+<p>Minimizing $x_{ij}$ becomes equivalent to minimizing $t_j \theta_{ij}/2$ when dealing with the connectivity from a new born node $i$. <strong>The competition between popularity and similarity is simply the minimization of distance between two nodes on a hyperbolic plane.</strong></p>
+<figure><img src=../assets/popularity-similarity-in-networks/disc-similarity-popularity-hyperbolic.png alt="Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line. Papadopoulos et al (2012)."><figcaption>
+<p>Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line. Papadopoulos et al (2012).</p>
+</figcaption>
+</figure>
+<p>Why is this definition of distance far superior than the previous measure of $\mathrm{Popularity}\times \mathrm{Similarity}$? Or why do I care? Because the universe/nature itself measures distance on hyperbolic space, i.e., Minkowski space. It also shows us the hint that by choosing a proper metric we might be able to define distance between any nodes in any systems. The only question becomes which geometry.</p>
+<p>This result is astonishing also because a discrete system is most likely generated dynamically according to some laws. The method of mapping nodes to a hyperbolic space provides a convenient metric or distance for us to find out the closest nodes. In other words, a node always connect to it&rsquo;s nearest neighbors if the metric/distance is well defined.</p>
+<h2 id=variations-and-emergent-models>Variations and Emergent Models</h2>
+<ul>
+<li>Popularity Fading</li>
+</ul>
+<p>In many real networks, early nodes are more popular. However, popularity decreasing with time can also be modeled. The idea is simple. We allow the nodes to drift away from the center along its own radial direction according to the restraint</p>
+<p>$$
 \begin{equation}
 r_{j}(t) = \beta r_j + (1-\beta) r_{i},
 \end{equation}
-$$</p><p>where $r_j$ is an old node and it drifts, $r_i$ is the node at current time. Why would we do this? As $\beta$ approaches 1, we fall back to the situation that the nodes are stationary and no drifting is allowed. On the other hand, $\beta$ approaches 0 means we have all the nodes drifting to the circle of current time.</p><figure><img src=../assets/popularity-similarity-in-networks/disc-node-drift-beta-1.png alt="Drift of nodes for $\beta=1$. All nodes are moving to a circle of current time."><figcaption><p>Drift of nodes for $\beta=1$. All nodes are moving to a circle of current time.</p></figcaption></figure><p>The drifting effectively decrease the connectivity of the old nodes since they are drifting away from the center. Another view of this fading is that the connection probability power law index $\gamma$ is larger, i.e.,</p><p>$$
+$$</p>
+<p>where $r_j$ is an old node and it drifts, $r_i$ is the node at current time. Why would we do this? As $\beta$ approaches 1, we fall back to the situation that the nodes are stationary and no drifting is allowed. On the other hand, $\beta$ approaches 0 means we have all the nodes drifting to the circle of current time.</p>
+<figure><img src=../assets/popularity-similarity-in-networks/disc-node-drift-beta-1.png alt="Drift of nodes for $\beta=1$. All nodes are moving to a circle of current time."><figcaption>
+<p>Drift of nodes for $\beta=1$. All nodes are moving to a circle of current time.</p>
+</figcaption>
+</figure>
+<p>The drifting effectively decrease the connectivity of the old nodes since they are drifting away from the center. Another view of this fading is that the connection probability power law index $\gamma$ is larger, i.e.,</p>
+<p>$$
 \begin{equation}
 \gamma = 1 + 1/\beta.
 \end{equation}
-$$</p><ul><li>Growth of Internet Autonomous System</li></ul><figure><img src=../assets/popularity-similarity-in-networks/internet-routers.png alt="Internet AS on a hyperbolic disc. The radial coordinate is log of time, $r=\ln t$. Boguna et al (2010)."><figcaption><p>Internet AS on a hyperbolic disc. The radial coordinate is log of time, $r=\ln t$. Boguna et al (2010).</p></figcaption></figure><p>Boguna et al modeled the growth of internet AS using the popularity similarity method and it shows exactly the same statistical result as the actual internet AS data <sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p><ul><li>Application to Cosmology</li></ul><p>Krioukov et al came up with the idea that the whole universe can be mapped onto hyperbolic space and events are connected only to nearest neighbors. This in fact is already true in cosmology. Theories predicted that the matter density after inflation is power law, which can be explained by a dynamics generating of particle on a hyperbolic space. The authors created a map from the physical de Sitter space to hyperbolic space. Then the dynamic generation of the particles in the universe simple follows power law since the nodes generated this way has a power law distribution of degrees, i.e., a place that is dense initially is more likely to be dense after the inflation <sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup>.</p><figure><img src=../assets/popularity-similarity-in-networks/network-cosmology.png alt="Map de Sitter space to hyperbolic space. Krioukov et al (2012)."><figcaption><p>Map de Sitter space to hyperbolic space. Krioukov et al (2012).</p></figcaption></figure><h2 id=what-else>What else?</h2><ol><li>Such a network is very probabily optimized for information storage in the real world, because it stores information both in the global network and the local connections. An analysis of the snapshot of a network at a certain time shows a hierarchical structure which contains information about the past. The key feature of dynamics is explicitly stored in the network structure and easily extracted so that information storage is robust. Small world network is efficient for information storage and processing. It doesn&rsquo;t explore all possible connection of the network while allowing information to be propagated through the whole network efficiently. The power law feature is a logarithmic compression of information about the the real world, which keeps the large scale information (low degree nodes) of an object but neglects details (large degree nodes).</li><li>Does the brain follow the same law of dynamic generation of network? We know that the biological neural network is close to a small world network. Meanwhile, the popularityXsimilarity method models small world very well. As long as we find the proper metric/distance, we can confidently say that neural network always connect to the nearest neighbors.</li><li>Artificial neural networks? We have to think about Boltzmann machine rather than the layerized artificial neural network. The question is, will a Boltzmann machine with network modeled by the method be very common if it actually solves a realistic problem?</li></ol><h2 id=references-and-notes>References and Notes</h2><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p>Barabási, A.-L., & Albert, R. (1999). <a href=http://doi.org/10.1126/science.286.5439.509>Emergence of Scaling in Random Networks. Science, 286(5439), 509–512.</a> <a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2 role=doc-endnote><p>Krapivsky, P. L., Redner, S., & Leyvraz, F. (2000). <a href=http://doi.org/10.1103/PhysRevLett.85.4629>Connectivity of growing random networks. Physical Review Letters, 85(21), 4629–4632.</a> <a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3 role=doc-endnote><p><a href=https://arxiv.org/abs/cond-mat/0009090v1>arXiv:cond-mat/0009090</a>. <a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4 role=doc-endnote><p>This express is specific for curvature $K=-4$. However, the final result of scaling doesn&rsquo;t dependent on the curvature itself. <a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:5 role=doc-endnote><p>Boguñá, M., Papadopoulos, F., & Krioukov, D. (2010). <a href=http://doi.org/10.1038/ncomms1063>Sustaining the Internet with hyperbolic mapping. Nature Communications, 1(6), 1–8.</a> <a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:6 role=doc-endnote><p>Krioukov, D., Kitsak, M., Sinkovits, R. S., Rideout, D., Meyer, D., & Boguñá, M. (2012). <a href=http://doi.org/10.1038/srep00793>Network Cosmology. Scientific Reports, 2, 793.</a> <a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2016-11-06T00:00:00+00:00>2016-11-06</time>
-by <span itemprop=author>Lei Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/reading/working-memory-and-brain-waves/?ref=footer" class=pagination-previous>« Working Memory and Brain Waves</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2016). 'Popularity versus similarity in growing networks', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/reading/popularity-vs-similarity/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#background>Background</a><ul><li><a href=#concepts>Concepts</a></li><li><a href=#scaling-in-networks>Scaling in Networks</a></li><li><a href=#popularity>Popularity</a></li><li><a href=#similarity>Similarity</a></li></ul></li><li><a href=#popularity-and-similarity-together>Popularity and Similarity Together</a></li><li><a href=#variations-and-emergent-models>Variations and Emergent Models</a></li><li><a href=#what-else>What else?</a></li><li><a href=#references-and-notes>References and Notes</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href=http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html style=text-decoration:none>Popularity versus similarity in growing networks</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>reading/popularity-vs-similarity.md</div></li></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links to:</strong><ul><a class=box href=https://datumorphism.leima.is/wiki/graph/basics/what-is-graph/><div class=media-content><div class=content><h6>What is Graph</h6><p>Graph A graph $\mathcal G$ has nodes $\mathcal V$ and edges $\mathcal E$,
-$$ \mathcal G = ( \mathcal …</p></div></div></a></ul></p></div></div></article></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>Links from:</strong><div><a class=box href=https://datumorphism.leima.is/wiki/graph/basics/ml-problems-on-graph/><div class=media-content><div class=content><h6>Solving Problems on Graph</h6><p>Node Classification Given graph that has incomplete attribute labeling of the nodes, predict the …</p></div></div></a></div></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/reading/popularity-vs-similarity.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+$$</p>
+<ul>
+<li>Growth of Internet Autonomous System</li>
+</ul>
+<figure><img src=../assets/popularity-similarity-in-networks/internet-routers.png alt="Internet AS on a hyperbolic disc. The radial coordinate is log of time, $r=\ln t$. Boguna et al (2010)."><figcaption>
+<p>Internet AS on a hyperbolic disc. The radial coordinate is log of time, $r=\ln t$. Boguna et al (2010).</p>
+</figcaption>
+</figure>
+<p>Boguna et al modeled the growth of internet AS using the popularity similarity method and it shows exactly the same statistical result as the actual internet AS data <sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p>
+<ul>
+<li>Application to Cosmology</li>
+</ul>
+<p>Krioukov et al came up with the idea that the whole universe can be mapped onto hyperbolic space and events are connected only to nearest neighbors. This in fact is already true in cosmology. Theories predicted that the matter density after inflation is power law, which can be explained by a dynamics generating of particle on a hyperbolic space. The authors created a map from the physical de Sitter space to hyperbolic space. Then the dynamic generation of the particles in the universe simple follows power law since the nodes generated this way has a power law distribution of degrees, i.e., a place that is dense initially is more likely to be dense after the inflation <sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup>.</p>
+<figure><img src=../assets/popularity-similarity-in-networks/network-cosmology.png alt="Map de Sitter space to hyperbolic space. Krioukov et al (2012)."><figcaption>
+<p>Map de Sitter space to hyperbolic space. Krioukov et al (2012).</p>
+</figcaption>
+</figure>
+<h2 id=what-else>What else?</h2>
+<ol>
+<li>Such a network is very probabily optimized for information storage in the real world, because it stores information both in the global network and the local connections. An analysis of the snapshot of a network at a certain time shows a hierarchical structure which contains information about the past. The key feature of dynamics is explicitly stored in the network structure and easily extracted so that information storage is robust. Small world network is efficient for information storage and processing. It doesn&rsquo;t explore all possible connection of the network while allowing information to be propagated through the whole network efficiently. The power law feature is a logarithmic compression of information about the the real world, which keeps the large scale information (low degree nodes) of an object but neglects details (large degree nodes).</li>
+<li>Does the brain follow the same law of dynamic generation of network? We know that the biological neural network is close to a small world network. Meanwhile, the popularityXsimilarity method models small world very well. As long as we find the proper metric/distance, we can confidently say that neural network always connect to the nearest neighbors.</li>
+<li>Artificial neural networks? We have to think about Boltzmann machine rather than the layerized artificial neural network. The question is, will a Boltzmann machine with network modeled by the method be very common if it actually solves a realistic problem?</li>
+</ol>
+<h2 id=references-and-notes>References and Notes</h2>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Barabási, A.-L., & Albert, R. (1999). <a href=http://doi.org/10.1126/science.286.5439.509>Emergence of Scaling in Random Networks. Science, 286(5439), 509–512.</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>Krapivsky, P. L., Redner, S., & Leyvraz, F. (2000). <a href=http://doi.org/10.1103/PhysRevLett.85.4629>Connectivity of growing random networks. Physical Review Letters, 85(21), 4629–4632.</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p><a href=https://arxiv.org/abs/cond-mat/0009090v1>arXiv:cond-mat/0009090</a>.&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:4 role=doc-endnote>
+<p>This express is specific for curvature $K=-4$. However, the final result of scaling doesn&rsquo;t dependent on the curvature itself.&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:5 role=doc-endnote>
+<p>Boguñá, M., Papadopoulos, F., & Krioukov, D. (2010). <a href=http://doi.org/10.1038/ncomms1063>Sustaining the Internet with hyperbolic mapping. Nature Communications, 1(6), 1–8.</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:6 role=doc-endnote>
+<p>Krioukov, D., Kitsak, M., Sinkovits, R. S., Rideout, D., Meyer, D., & Boguñá, M. (2012). <a href=http://doi.org/10.1038/srep00793>Network Cosmology. Scientific Reports, 2, 793.</a>&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2016-11-06T00:00:00+00:00>2016-11-06</time>
+by <span itemprop=author>Lei Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/reading/working-memory-and-brain-waves/?ref=footer" class=pagination-previous>« Working Memory and Brain Waves</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2016). 'Popularity versus similarity in growing networks', Datumorphism, 11 April. Available at: https://datumorphism.leima.is/reading/popularity-vs-similarity/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#background>Background</a>
+<ul>
+<li><a href=#concepts>Concepts</a></li>
+<li><a href=#scaling-in-networks>Scaling in Networks</a></li>
+<li><a href=#popularity>Popularity</a></li>
+<li><a href=#similarity>Similarity</a></li>
+</ul>
+</li>
+<li><a href=#popularity-and-similarity-together>Popularity and Similarity Together</a></li>
+<li><a href=#variations-and-emergent-models>Variations and Emergent Models</a></li>
+<li><a href=#what-else>What else?</a></li>
+<li><a href=#references-and-notes>References and Notes</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html style=text-decoration:none>Popularity versus similarity in growing networks</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>reading/popularity-vs-similarity.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<ul>
+<a class=box href=https://datumorphism.leima.is/wiki/graph/basics/what-is-graph/>
+<div class=media-content>
+<div class=content>
+<h6>What is Graph</h6>
+<p>
+Graph A graph $\mathcal G$ has nodes $\mathcal V$ and edges $\mathcal E$,
+$$ \mathcal G = ( \mathcal …
+</p>
+</div>
+</div>
+</a>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/graph/basics/ml-problems-on-graph/>
+<div class=media-content>
+<div class=content>
+<h6>Solving Problems on Graph</h6>
+<p>
+Node Classification Given graph that has incomplete attribute labeling of the nodes, predict the …
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/reading/popularity-vs-similarity.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

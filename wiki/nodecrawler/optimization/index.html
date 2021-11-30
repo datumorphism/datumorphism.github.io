@@ -1,25 +1,186 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Optimization | Datumorphism | L Ma</title><meta name=author content="L Ma"><meta property="og:title" content="Optimization"><meta property="og:description" content="In this article, we will be optimizing the crawler to get better performance.
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Optimization | Datumorphism | L Ma </title>
+<meta name=author content="L Ma">
+<meta property="og:title" content="Optimization">
+<meta property="og:description" content="In this article, we will be optimizing the crawler to get better performance.
 Batch Jobs In the article about using MongoDB as data storage, we write the data to database whenever we get it. In practice, this is not efficient at all. Here comes the batch jobs. It would be much better if one write to database with batch jobs.
 If you recall, the code we used to write to database is
 // ...other code localdb.test.save(data, (err, res)=>{ // do something }) The function save takes in not only one entry of document but an array of documents:
-const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from website 	const data = fetchData(i) array."><meta property="og:type" content="article"><meta property="og:url" content="https://datumorphism.leima.is/wiki/nodecrawler/optimization/"><meta property="article:published_time" content="2018-07-19T00:00:00+00:00"><meta property="article:modified_time" content="2018-07-19T00:00:00+00:00"><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-140452515-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=canonical href=https://datumorphism.leima.is/wiki/nodecrawler/optimization/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://datumorphism.leima.is/awesome/ class=navbar-item>Awesome</a>
-<a href=https://datumorphism.leima.is/blog/ class=navbar-item>Blog</a>
-<a href=https://datumorphism.leima.is/cards/ class=navbar-item>Cards</a>
-<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>Hologram</a>
-<a href=https://datumorphism.leima.is/reading/ class=navbar-item>Reading Notes</a>
-<a href=https://datumorphism.leima.is/til/ class=navbar-item>TIL</a>
-<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>Wiki</a></div></div><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>Probability Estimation</a></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/blog/>Blog</a>
-<a class=navbar-item href=/amneumarkt/>AmNeumarkt</a>
-<a class=navbar-item href=/><i class="fas fa-search"></i></a><a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item href=https://t.me/amneumarkt><i class="fab fa-telegram"></i></a><a class=navbar-item target=blank href=https://github.com/datumorphism><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);el.classList.toggle('is-active');$target.classList.toggle('is-active');});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Optimization"><meta itemprop=description content="In this article, we will be optimizing the crawler to get better performance.
+const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from website 	const data = fetchData(i) array.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/nodecrawler/optimization/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2018-07-19T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-07-19T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/nodecrawler/optimization/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Optimization">
+<meta itemprop=description content="In this article, we will be optimizing the crawler to get better performance.
 Batch Jobs In the article about using MongoDB as data storage, we write the data to database whenever we get it. In practice, this is not efficient at all. Here comes the batch jobs. It would be much better if one write to database with batch jobs.
 If you recall, the code we used to write to database is
 // ...other code localdb.test.save(data, (err, res)=>{ // do something }) The function save takes in not only one entry of document but an array of documents:
-const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from website 	const data = fetchData(i) array."><meta itemprop=datePublished content="2018-07-19T00:00:00+00:00"><meta itemprop=dateModified content="2018-07-19T00:00:00+00:00"><meta itemprop=wordCount content="837"><meta itemprop=keywords content="Node,Crawler,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://datumorphism.leima.is/>Datumorphism</a></li><li><a href=https://datumorphism.leima.is/wiki/>Wiki</a></li><li><a href=https://datumorphism.leima.is/wiki/nodecrawler/>Node Crawler</a></li><li class=active><a href=https://datumorphism.leima.is/wiki/nodecrawler/optimization/>Optimization</a></li></ul></nav><h1 class="post-title has-text-centered is-size-1" itemprop="name headline">Optimization</h1><h2 class="title is-6 has-text-centered"><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/node><span class="tag is-warning is-small is-light">#Node</span></a>
-<a href=/tags/crawler><span class="tag is-warning is-small is-light">#Crawler</span></a></h2></header><div class=columns><div class="column is-8"><div class=is-divider data-content=NOTIFICATION></div><div class="notification is-warning is-light"><p>The original Chinese article is written by <a href=https://github.com/nintha>ninthakeey</a>. It has been translated and remixed by Datumorphism</p></div><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>In this article, we will be optimizing the crawler to get better performance.</p><h2 id=batch-jobs>Batch Jobs</h2><p>In the article about using MongoDB as data storage, we write the data to database whenever we get it. In practice, this is not efficient at all. Here comes the batch jobs. It would be much better if one write to database with batch jobs.</p><p>If you recall, the code we used to write to database is</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#75715e>// ...other code
+const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from website 	const data = fetchData(i) array."><meta itemprop=datePublished content="2018-07-19T00:00:00+00:00">
+<meta itemprop=dateModified content="2018-07-19T00:00:00+00:00">
+<meta itemprop=wordCount content="837">
+<meta itemprop=keywords content="Node,Crawler,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/nodecrawler/>Node Crawler</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/nodecrawler/optimization/>Optimization</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Optimization
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/node><span class="tag is-warning is-small is-light">#Node</span></a>
+<a href=/tags/crawler><span class="tag is-warning is-small is-light">#Crawler</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=NOTIFICATION></div>
+<div class="notification is-warning is-light">
+<p>
+The original Chinese article is written by <a href=https://github.com/nintha>ninthakeey</a>. It has been translated and remixed by Datumorphism
+</p>
+</div>
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>In this article, we will be optimizing the crawler to get better performance.</p>
+<h2 id=batch-jobs>Batch Jobs</h2>
+<p>In the article about using MongoDB as data storage, we write the data to database whenever we get it. In practice, this is not efficient at all. Here comes the batch jobs. It would be much better if one write to database with batch jobs.</p>
+<p>If you recall, the code we used to write to database is</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#75715e>// ...other code
 </span><span style=color:#75715e></span><span style=color:#a6e22e>localdb</span>.<span style=color:#a6e22e>test</span>.<span style=color:#a6e22e>save</span>(<span style=color:#a6e22e>data</span>, (<span style=color:#a6e22e>err</span>, <span style=color:#a6e22e>res</span>)=&gt;{
 	<span style=color:#75715e>// do something
 </span><span style=color:#75715e></span>})
-</code></pre></div><p>The function <code>save</code> takes in not only one entry of document but an array of documents:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>array</span> <span style=color:#f92672>=</span> []
+</code></pre></div><p>The function <code>save</code> takes in not only one entry of document but an array of documents:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>array</span> <span style=color:#f92672>=</span> []
 <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>INI_ID</span> ; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>MAX_ID</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>){
 	<span style=color:#75715e>// fetch data from website
 </span><span style=color:#75715e></span>	<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>data</span> <span style=color:#f92672>=</span>  <span style=color:#a6e22e>fetchData</span>(<span style=color:#a6e22e>i</span>)
@@ -28,36 +189,47 @@ const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from websi
 <span style=color:#a6e22e>localdb</span>.<span style=color:#a6e22e>test</span>.<span style=color:#a6e22e>save</span>(<span style=color:#a6e22e>array</span>, (<span style=color:#a6e22e>err</span>, <span style=color:#a6e22e>res</span>)=&gt;{
 	<span style=color:#75715e>// do something
 </span><span style=color:#75715e></span>})
-</code></pre></div><p>It&rsquo;s essentially the same code but it helps with the efficiency.</p><h2 id=asynchronous-and-synchronous>Asynchronous and Synchronous</h2><p>Data scraping can be either asynchronous or synchronous.</p><p>Synchronous code is easier to read and debug. However, blocking of one function slows down the whole program.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>main</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>async</span> (<span style=color:#a6e22e>MAX_ID</span>) =&gt; {
+</code></pre></div><p>It&rsquo;s essentially the same code but it helps with the efficiency.</p>
+<h2 id=asynchronous-and-synchronous>Asynchronous and Synchronous</h2>
+<p>Data scraping can be either asynchronous or synchronous.</p>
+<p>Synchronous code is easier to read and debug. However, blocking of one function slows down the whole program.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>main</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> (<span style=color:#a6e22e>MAX_ID</span>) =&gt; {
     <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>array</span> <span style=color:#f92672>=</span> []
     <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span> ; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>MAX_ID</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>){
         <span style=color:#75715e>// fetch data from website
-</span><span style=color:#75715e></span>        <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>data</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>await</span> <span style=color:#a6e22e>fetchData</span>(<span style=color:#a6e22e>i</span>) <span style=color:#75715e>//this return a Promise
+</span><span style=color:#75715e></span>        <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>data</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>fetchData</span>(<span style=color:#a6e22e>i</span>) <span style=color:#75715e>//this return a Promise
 </span><span style=color:#75715e></span>        <span style=color:#a6e22e>array</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>data</span>)
     }
     <span style=color:#a6e22e>saveToMongoDB</span>(<span style=color:#a6e22e>array</span>);
 }
 <span style=color:#a6e22e>main</span>(<span style=color:#ae81ff>1000</span>);
-</code></pre></div><p>Asynchronous code solves the blocking problem but introduces complexities. Since it doesn&rsquo;t stop the code from executing the following functions, each function requires a timeout limit.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>main</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>async</span> (<span style=color:#a6e22e>MAX_ID</span>) =&gt; {
+</code></pre></div><p>Asynchronous code solves the blocking problem but introduces complexities. Since it doesn&rsquo;t stop the code from executing the following functions, each function requires a timeout limit.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>main</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> (<span style=color:#a6e22e>MAX_ID</span>) =&gt; {
     <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>array</span> <span style=color:#f92672>=</span> []
     <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span> ; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>MAX_ID</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>){
         <span style=color:#75715e>// fetch data from website
 </span><span style=color:#75715e></span>        <span style=color:#a6e22e>fetchData</span>(<span style=color:#a6e22e>i</span>) <span style=color:#75715e>// it return a Promise
 </span><span style=color:#75715e></span>        	.<span style=color:#a6e22e>then</span>(<span style=color:#a6e22e>data</span> =&gt; <span style=color:#a6e22e>array</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>data</span>))
-        <span style=color:#a6e22e>await</span> <span style=color:#a6e22e>sleep</span>(<span style=color:#ae81ff>100</span>) <span style=color:#75715e>// block thread 100 ms
+        <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>sleep</span>(<span style=color:#ae81ff>100</span>) <span style=color:#75715e>// block thread 100 ms
 </span><span style=color:#75715e></span>    }
     <span style=color:#75715e>// wait for async threads
 </span><span style=color:#75715e></span>    <span style=color:#66d9ef>while</span>(<span style=color:#a6e22e>array</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>MAX_ID</span>){
-        <span style=color:#a6e22e>await</span> <span style=color:#a6e22e>sleep</span>(<span style=color:#ae81ff>100</span>)
+        <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>sleep</span>(<span style=color:#ae81ff>100</span>)
     }
     <span style=color:#a6e22e>saveToMongoDB</span>(<span style=color:#a6e22e>array</span>);
 }
 <span style=color:#a6e22e>main</span>(<span style=color:#ae81ff>1000</span>);
-</code></pre></div><h2 id=resume-jobs>Resume Jobs</h2><p>For large sites, the data scraping time is incredibly long. Failure in power, windows update, or even a tiny unidentified bug in the code could interrupt the program. It is crucial to be able to resume the crawler from the last termination. Especially when the code is asynchronous, termination of the program may lead to broken data.</p><p>One of the solutions is to write some synchronous code and record the most recent data id which should be already in the database and resume from this if interruptions should occur. The problem is that we have not utilized the full power of Node.js if we insist on the synchronous code.</p><p>Basically, information about the latest run has to be recorded in order to resume the process. We will write all the data of a batch job to the database and secure it.</p><p>One of the solutions is to create a database collection in MongoDB, say <code>package</code>. In this collection, we store two fields, <code>pid</code> and <code>status</code>, where <code>pid</code> is the batch job id and <code>status</code> is the status of this batch job. For example, we define <code>0</code>, <code>1</code>, and <code>-1</code> of status to be &lsquo;waiting&rsquo;, &lsquo;finished&rsquo;, and &lsquo;running&rsquo;, respectively.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>0: waiting
+</code></pre></div><h2 id=resume-jobs>Resume Jobs</h2>
+<p>For large sites, the data scraping time is incredibly long. Failure in power, windows update, or even a tiny unidentified bug in the code could interrupt the program. It is crucial to be able to resume the crawler from the last termination. Especially when the code is asynchronous, termination of the program may lead to broken data.</p>
+<p>One of the solutions is to write some synchronous code and record the most recent data id which should be already in the database and resume from this if interruptions should occur. The problem is that we have not utilized the full power of Node.js if we insist on the synchronous code.</p>
+<p>Basically, information about the latest run has to be recorded in order to resume the process. We will write all the data of a batch job to the database and secure it.</p>
+<p>One of the solutions is to create a database collection in MongoDB, say <code>package</code>. In this collection, we store two fields, <code>pid</code> and <code>status</code>, where <code>pid</code> is the batch job id and <code>status</code> is the status of this batch job. For example, we define <code>0</code>, <code>1</code>, and <code>-1</code> of status to be &lsquo;waiting&rsquo;, &lsquo;finished&rsquo;, and &lsquo;running&rsquo;, respectively.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>0: waiting
 1: finished
 -1: running
-</code></pre></div><p>Here is some useful functions.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#75715e>// obtain most batch job id of status waiting
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>findOneWaitingPackage</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>async</span> () =&gt; {
+</code></pre></div><p>Here is some useful functions.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=color:#75715e>// obtain most batch job id of status waiting
+</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>findOneWaitingPackage</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> () =&gt; {
     <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> Promise((<span style=color:#a6e22e>resolve</span>, <span style=color:#a6e22e>reject</span>) =&gt;
         <span style=color:#a6e22e>localdb</span>.<span style=color:#66d9ef>package</span>
             .<span style=color:#a6e22e>find</span>({ <span style=color:#a6e22e>status</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>$lte</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0</span> } })
@@ -76,7 +248,7 @@ const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from websi
 }
 <span style=color:#75715e>// reset package collection in database
 </span><span style=color:#75715e>// create two fields: status and pid
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>resetPackage</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>async</span> () =&gt; {
+</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>resetPackage</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> () =&gt; {
     <span style=color:#a6e22e>indexMember</span>().<span style=color:#66d9ef>catch</span>(<span style=color:#a6e22e>err</span> =&gt; <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>error</span>(<span style=color:#a6e22e>err</span>))
     <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> Promise((<span style=color:#a6e22e>resolve</span>, <span style=color:#a6e22e>reject</span>) =&gt;
         <span style=color:#a6e22e>localdb</span>.<span style=color:#66d9ef>package</span>.<span style=color:#a6e22e>drop</span>(() =&gt; {
@@ -93,7 +265,7 @@ const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from websi
 
 <span style=color:#75715e>// create documents of batch jobs
 </span><span style=color:#75715e>// package status: 0-waiting, 1-finished，-1-running
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>insertPackage</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>async</span> (<span style=color:#a6e22e>start</span>, <span style=color:#a6e22e>end</span>) =&gt; {
+</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>insertPackage</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> (<span style=color:#a6e22e>start</span>, <span style=color:#a6e22e>end</span>) =&gt; {
     <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>packs</span> <span style=color:#f92672>=</span> Array(<span style=color:#a6e22e>end</span> <span style=color:#f92672>-</span> <span style=color:#a6e22e>start</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>)
         .<span style=color:#a6e22e>fill</span>(<span style=color:#ae81ff>0</span>)
         .<span style=color:#a6e22e>map</span>((<span style=color:#a6e22e>v</span>, <span style=color:#a6e22e>i</span>) =&gt; {
@@ -110,7 +282,7 @@ const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from websi
     )
 }
 <span style=color:#75715e>// update batch job status to running
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>updatePackageToRunning</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>async</span> <span style=color:#a6e22e>pid</span> =&gt; {
+</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>updatePackageToRunning</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> <span style=color:#a6e22e>pid</span> =&gt; {
     <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>pid</span>) <span style=color:#66d9ef>return</span>
     <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> Promise((<span style=color:#a6e22e>resolve</span>, <span style=color:#a6e22e>reject</span>) =&gt;
         <span style=color:#a6e22e>localdb</span>.<span style=color:#66d9ef>package</span>.<span style=color:#a6e22e>update</span>(
@@ -122,7 +294,7 @@ const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from websi
     )
 }
 <span style=color:#75715e>// update batch job id to finished
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>updatePackageToFinished</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>async</span> <span style=color:#a6e22e>pid</span> =&gt; {
+</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>updatePackageToFinished</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> <span style=color:#a6e22e>pid</span> =&gt; {
     <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> Promise((<span style=color:#a6e22e>resolve</span>, <span style=color:#a6e22e>reject</span>) =&gt;
         <span style=color:#a6e22e>localdb</span>.<span style=color:#66d9ef>package</span>.<span style=color:#a6e22e>update</span>(
             { <span style=color:#a6e22e>pid</span> },
@@ -132,13 +304,127 @@ const array = [] for(let i = INI_ID ; i < MAX_ID; i++){ // fetch data from websi
         )
     )
 }
-</code></pre></div><p>The functions <code>resetPackage</code> and <code>insertPackage</code> will be executed on the first run. They will create a collection with all the batch job ids.</p><p>The function <code>findOneWaitingPackage</code> will obtain one of the batch jobs. <code>updatePackageToRunning</code> will change the status to finished whenever the batch job is done. <code>findOneWaitingPackage</code> will return the value <code>null</code> when it can not find any document with status <code>0</code>, which can be used to end the program.</p></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Published: <time datetime=2018-07-19T00:00:00+00:00>2018-07-19</time>
-by <span itemprop=author>L Ma</span>;</div></p><div class=is-divider></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://datumorphism.leima.is/wiki/nodecrawler/restrictions/?ref=footer" class=pagination-previous>« Restrictions of Websites</a></nav></div><div class="column is-4"><div class=is-divider data-content="Cite Me"></div><div class="box is-size-7 has-text-white has-background-black"><article class=media><div class=media-content><div class=content><p>L Ma
-(2018). 'Optimization', Datumorphism, 07 April. Available at: https://datumorphism.leima.is/wiki/nodecrawler/optimization/.</p></div></div></article></div><style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style><div class=is-divider data-content=ToC></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><details><summary>Table of Contents</summary><div><div><nav id=TableOfContents><ul><li><a href=#batch-jobs>Batch Jobs</a></li><li><a href=#asynchronous-and-synchronous>Asynchronous and Synchronous</a></li><li><a href=#resume-jobs>Resume Jobs</a></li></ul></nav></div></div></details></div></div></article></div><script>const el=document.querySelector('details summary')
-el.onclick=()=>{(function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');el.onclick=null}
-document.querySelectorAll('#TableOfContents a').forEach(link=>{link.addEventListener('click',()=>{document.querySelector(link.href.slice(link.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script><div class=is-divider data-content=REFERENCES></div><div class="box is-size-7"><article class=media><div class=media-content><div class=content><p><strong>References:</strong><br><ol><li class=has-text-weight-bold><a href=https://nintha.github.io/2018/07/10/node_spider_compass/05-lite_optimization/ style=text-decoration:none>05-微小的优化@ninthakeey</a></li></ol></p></div></div></article></div><div class=is-divider data-content=CONNECTUME></div><div class="box is-size-7"><article class=media><div class=media-content style=width:100%><div class=content><p><strong>Current Ref:</strong><br><ul><li style=list-style:none><div>wiki/nodecrawler/optimization.md</div></li></ul></p></div></div></article></div><div id=comments class=is-divider data-content=COMMENTS></div><script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script></div></div></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/nodecrawler/optimization.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://leima.is>L Ma</a>.
+</code></pre></div><p>The functions <code>resetPackage</code> and <code>insertPackage</code> will be executed on the first run. They will create a collection with all the batch job ids.</p>
+<p>The function <code>findOneWaitingPackage</code> will obtain one of the batch jobs. <code>updatePackageToRunning</code> will change the status to finished whenever the batch job is done. <code>findOneWaitingPackage</code> will return the value <code>null</code> when it can not find any document with status <code>0</code>, which can be used to end the program.</p>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2018-07-19T00:00:00+00:00>2018-07-19</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/nodecrawler/restrictions/?ref=footer" class=pagination-previous>« Restrictions of Websites</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2018). 'Optimization', Datumorphism, 07 April. Available at: https://datumorphism.leima.is/wiki/nodecrawler/optimization/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#batch-jobs>Batch Jobs</a></li>
+<li><a href=#asynchronous-and-synchronous>Asynchronous and Synchronous</a></li>
+<li><a href=#resume-jobs>Resume Jobs</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href=https://nintha.github.io/2018/07/10/node_spider_compass/05-lite_optimization/ style=text-decoration:none>05-微小的优化@ninthakeey</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/nodecrawler/optimization.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/nodecrawler/optimization.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/about>About</a>
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
 <a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer><script src=https://unpkg.com/applause-button/dist/applause-button.js></script></footer><script async type=text/javascript src=/js/bulma.js></script></body></html>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>
