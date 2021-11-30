@@ -50,6 +50,11 @@ A smarter method is to start with small learning rate and increase it on each mi
 
 The code for this method can be found on the [GitHub repo of fastai](https://github.com/fastai/fastai/blob/351f4b9314e2ea23684fb2e19235ee5c5ef8cbfd/fastai/callback/schedule.py#L284).
 
+
+## See Also
+
+{{< e "til/machine-learning/pytorch/pytorch-differential-learning-rates.md" >}}
+
 [^Pointer2019]: {{< cite key="Pointer2019" >}}
 [^Howard&Gugger2020]: {{< cite key="Howard&Gugger2020" >}}
 [^fastaidocs]: {{< cite key="fastaidocs" >}}
