@@ -253,6 +253,21 @@ Data imputation
 {{< figure src="assets/choosing-a-good-chart-09.png" caption="Know your charts. Source: [Chart Suggestions — A Thought-Starter](https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf)" >}}
 
 
+Other useful references:
+
+- Chart choosing. In: Chart.Guide [Internet]. 20 Feb 2019 [cited 30 Nov 2021]. Available: https://chart.guide/charts/chart-choosing/
+- Visual Vocabulary. [cited 30 Nov 2021]. Available: http://ft-interactive.github.io/visual-vocabulary/
+- Financial-Times. chart-doctor/Visual-vocabulary.pdf at main · Financial-Times/chart-doctor. In: GitHub [Internet]. [cited 30 Nov 2021]. Available: https://github.com/Financial-Times/chart-doctor
+- Holtz Y, Healy C. From data to Viz. In: Find the graphic you need [Internet]. [cited 30 Nov 2021]. Available: https://www.data-to-viz.com/
+
+
+
+
+
+
+
+
+
 
 ### Grammar of Graphics
 
