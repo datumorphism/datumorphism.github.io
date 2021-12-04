@@ -135,7 +135,7 @@ But here ${}^{i}$ means to the $i$th power.
   The index is proved to be the following
 $$ \mathbf S_{\text{Katz}} = (\mathbf I - \beta \mathbf A)^{-1} - \mathbf I."><meta itemprop=datePublished content="2021-09-26T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-26T00:00:00+00:00">
-<meta itemprop=wordCount content="287">
+<meta itemprop=wordCount content="405">
 <meta itemprop=keywords content="Graph,Basics,Clustering,">
 <section class=section>
 <div class=container>
@@ -198,7 +198,30 @@ $$</p>
 Graph Adjacency Matrix
 </h6>
 <div style=font-size:80%>
-<p>A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$.</p>
+<p>A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>, for example,</p>
+<p>$$
+\begin{pmatrix}
+2 & 1 & 0 & 0 & 1 & 0\\
+1 & 0 & 1 & 0 & 1 & 0\\
+0 & 1 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 1\\
+1 & 1 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0
+\end{pmatrix}
+$$</p>
+<p>for the graph</p>
+<figure><img src=https://upload.wikimedia.org/wikipedia/commons/2/28/6n-graph2.svg alt="Public Domain, Link"><figcaption>
+<p>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=1041193">Link</a></p>
+</figcaption>
+</figure>
+<article class="message is-warning is-light">
+<div class=message-header>
+<p>Diagonal Elements</p>
+</div>
+<div class=message-body>
+The diagonal elements are 0 for graphs without loops.
+</div>
+</article>
 <h2 id=multiplication-of-adjacency-matrices>Multiplication of Adjacency Matrices</h2>
 <p><strong>Multiplication of adjacency matrices tells us about the path between nodes.</strong></p>
 <p>$A[u,v]$ is the length-1 path between node $u$ and $v$. If $A[u,v]=0$, there is no path. If $A[u,v]=1$, we have a length-1 path.</p>
@@ -209,6 +232,19 @@ $$</p>
 <p>This is the length-2 path. If node $u$ or node $v$ has no neighbors, $A^2_{uv}=0$. If there is an edge $(u, \tilde u)$ and $(\tilde u, v)$, we get one path, and $A_{u\tilde u}A_{\tilde uv}=1$.</p>
 <p>When we sum over all the possible values of index $k$, i.e., $\sum_k A_{uk}A_{kv}$, we get the total number of length-2 path between $u$ and $v$.</p>
 <p>This idea is extrapolated to the $i$th power of the adjacency matrix.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=wiki_adjacency_matrix href=#wiki_adjacency_matrix style=text-decoration:none>
+<span class="tag is-link is-light">wiki_adjacency_matrix</span>
+</a>
+<a href=https://en.wikipedia.org/wiki/Adjacency_matrix#Undirected_graphs style=text-decoration:none>Contributors to Wikimedia projects. Adjacency matrix. In: Wikipedia [Internet]. 4 Oct 2021 [cited 4 Dec 2021]. Available: https://en.wikipedia.org/wiki/Adjacency_matrix#Undirected_graphs</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 </div>
 </div>
@@ -223,6 +259,7 @@ by <span itemprop=author>L Ma</span>;
 </div></p>
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/cards/graph/graph-convolution-operator/?ref=footer" class=pagination-previous>« Graph Convolution Operator</a>
 <a class=pagination-next href="https://datumorphism.leima.is/cards/graph/graph-global-overlap-leicht-holme-newman-similarity/?ref=footer">Graph Global Overlap Measure: Leicht-Holme-Newman... »</a>
 </nav>
 </div>
@@ -314,8 +351,7 @@ L Ma
 <div class=content>
 <h6>Graph Adjacency Matrix</h6>
 <p>
-A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$.
-Multiplication of …
+A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice …
 </p>
 </div>
 </div>

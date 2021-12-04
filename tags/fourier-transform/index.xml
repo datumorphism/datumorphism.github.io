@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fourier Transform on Datumorphism</title><link>https://datumorphism.leima.is/tags/fourier-transform/</link><description>Recent content in Fourier Transform on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://datumorphism.leima.is/tags/fourier-transform/index.xml" rel="self" type="application/rss+xml"/><item><title>Convolutions Using Fourier Transform</title><link>https://datumorphism.leima.is/cards/math/convolution-and-fourier-transform/</link><pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/math/convolution-and-fourier-transform/</guid><description>Convolution
+$$ (f*h)(x) = \int \mathrm d f(y) h(x-y), $$
+is equivalent to
+$$ \mathcal F^{-1}\left[ \mathcal F[ f(x) ] \circ \mathcal F[h(x)] \right], $$
+with $\mathcal F$ being the Fourier transform, i.e.,
+$$ \mathcal F[f(x)] = \int \mathrm d x f(x) e^{-2\pi i x s}. $$
+Proof
+One could prove it using the Fourier integral theorem,
+$$ f(x) = \iint dy d\xi f(y)e^{2\pi i (x-y)\xi}. $$</description></item></channel></rss>

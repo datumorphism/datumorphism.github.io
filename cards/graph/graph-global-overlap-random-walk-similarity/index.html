@@ -9,7 +9,7 @@
 <meta property="og:title" content="Graph Global Overlap Measure: Random Walk Similarity">
 <meta property="og:description" content="Random Walk Construct a stochastic transfer matrix $P$ by normalizing the adjacency matrix $\mathbf A$ using the node degrees of the target nodes,
 $$ \mathbf P = \mathbf A \mathbf D^{-1}, $$
-where $\mathbf A$ is the adjacency matrix  Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. Multiplication of Adjacency Matrices Multiplication of adjacency matrices tells us about the path between nodes. $A[u,v]$ is the length-1 path between node $u$ and $v$. If $A[u,v]=0$, there is no path. If $A[u,v]=1$, we have a length-1 path. For $A^2[u,v]$, we have $$ A^2_{uv} = \sum_k A_{uk}A_{kv}.">
+where $\mathbf A$ is the adjacency matrix  Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link   and $\mathbf D$ is a diagonalized matrix with the diagonal elements being the degrees.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/cards/graph/graph-global-overlap-random-walk-similarity/"><meta property="article:section" content="cards">
 <meta property="article:published_time" content="2021-09-26T00:00:00+00:00">
@@ -123,9 +123,9 @@ AmNeumarkt
 <meta itemprop=name content="Graph Global Overlap Measure: Random Walk Similarity">
 <meta itemprop=description content="Random Walk Construct a stochastic transfer matrix $P$ by normalizing the adjacency matrix $\mathbf A$ using the node degrees of the target nodes,
 $$ \mathbf P = \mathbf A \mathbf D^{-1}, $$
-where $\mathbf A$ is the adjacency matrix  Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. Multiplication of Adjacency Matrices Multiplication of adjacency matrices tells us about the path between nodes. $A[u,v]$ is the length-1 path between node $u$ and $v$. If $A[u,v]=0$, there is no path. If $A[u,v]=1$, we have a length-1 path. For $A^2[u,v]$, we have $$ A^2_{uv} = \sum_k A_{uk}A_{kv}."><meta itemprop=datePublished content="2021-09-26T00:00:00+00:00">
+where $\mathbf A$ is the adjacency matrix  Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link   and $\mathbf D$ is a diagonalized matrix with the diagonal elements being the degrees."><meta itemprop=datePublished content="2021-09-26T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-26T00:00:00+00:00">
-<meta itemprop=wordCount content="375">
+<meta itemprop=wordCount content="390">
 <meta itemprop=keywords content="Graph,Basics,Clustering,">
 <section class=section>
 <div class=container>
@@ -172,12 +172,10 @@ adjacency matrix
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Graph Adjacency Matrix</span>
-<span class=tooltip_content>A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$.
-Multiplication of Adjacency Matrices Multiplication of adjacency matrices tells us about the path between nodes.
-$A[u,v]$ is the length-1 path between node $u$ and $v$. If $A[u,v]=0$, there is no path. If $A[u,v]=1$, we have a length-1 path.
-For $A^2[u,v]$, we have
-$$ A^2_{uv} = \sum_k A_{uk}A_{kv}. $$
-This is the length-2 path. If node $u$ or node $v$ has no neighbors, $A^2_{uv}=0$. If there is an edge $(u, \tilde u)$ …</span>
+<span class=tooltip_content>A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example,
+$$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$
+for the graph
+Public Domain, Link</span>
 </span>
 </span>
 and $\mathbf D$ is a diagonalized matrix with the diagonal elements being the degrees.</p>
@@ -325,8 +323,7 @@ L Ma
 <div class=content>
 <h6>Graph Adjacency Matrix</h6>
 <p>
-A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$.
-Multiplication of …
+A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice …
 </p>
 </div>
 </div>
