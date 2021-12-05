@@ -10,6 +10,7 @@ links:
   - "wiki/graph/basics/what-is-graph.md"
   - "cards/graph/graph-adjacency-matrix.md"
   - "cards/math/convolution-and-fourier-transform.md"
+  - "cards/graph/graph-laplacians.md"
 ---
 
 For a given graph $\mathcal G$, we have an attribute on each node, denoted as $f_v$. All the node attributes put together can be written as a list $\mathbf f\to (f_{v_1}, f_{v_2}, \cdots, f_{v_N})$.
@@ -52,5 +53,14 @@ However, we can make both commutation relations 0 using symmetric normalized adj
 
 {{< /message >}}
 
+## Laplacian, Fourier Transform, and Graph Convolution
 
-{{< e "cards/math/convolution-and-fourier-transform.md" >}}
+Using [the relation between convolution and Fourier transform](/cards/math/convolution-and-fourier-transform), as well as [the relation between graph Laplacian and Fourier transform](/cards/graph/graph-laplacians), we can establish the following relation.
+
+{{< m >}}
+\mathbf f * \mathbf h = \mathbf U ( \mathbf U^{\mathrm T} \mathbf f \circ \mathbf U^{\mathrm T} \mathbf h ).
+{{< /m >}}
+
+
+
+

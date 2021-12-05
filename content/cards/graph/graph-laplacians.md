@@ -13,6 +13,8 @@ references:
 links:
   - "cards/graph/graph-adjacency-matrix.md"
   - "cards/graph/graph-cuts.md"
+  - "cards/math/convolution-and-fourier-transform.md"
+  - "cards/graph/graph-convolution-operator.md"
 ---
 
 
@@ -37,3 +39,37 @@ The random walk Laplacian is
 {{< m >}}
 \mathbf L_{\text{RW}} = \mathbf D^{-1} \mathbf A.
 {{< /m >}}
+
+## Diagonalizing Graph Laplacian
+
+The eigenvectors of Graph Laplacian can be used to diagonalize the graph Laplacian $\mathbf L$,
+
+{{< m >}}
+\begin{equation}
+\mathbf U \mathbf L_D \mathbf U^{\mathrm T} = \mathbf L.\label{eq-laplacian-diag}
+\end{equation}
+{{< /m >}}
+
+
+## Laplacians and Fourier Transform
+
+{{< message title="Laplacian and Fourier Transform" >}}
+
+The eigen-equation of Laplacian $\nabla^2$ shows that the eigenvectors of the Laplacian (in Hilbert space) have the form $e^{2\pi i \xi x}$. On the other hand, $e^{2\pi i \xi x}$ is also the Fourier basis.
+
+{{< /message >}}
+
+The eigenvectors of the graph Laplacian (Eq. $\eqref{eq-laplacian-diag}$) can be used to perform Fourier transforms on graph[^Hamilton2020]. We apply the matrix $\mathbf U^{\mathrm T}$ in $\eqref{eq-laplacian-diag}$ onto a vector of node attributes,
+
+{{< m >}}
+\mathbf U^{\mathrm T} \mathbf f.
+{{< /m >}}
+
+The above is the Fourier transform of the node attributes on the graph.
+
+{{< e "cards/graph/graph-convolution-operator.md" >}}
+
+{{< e "cards/math/convolution-and-fourier-transform.md" >}}
+
+
+[^Hamilton2020]: {{< cite key="Hamilton2020" >}}
