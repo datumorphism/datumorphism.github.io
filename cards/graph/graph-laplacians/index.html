@@ -125,7 +125,7 @@ AmNeumarkt
 $$ \mathbf L = \mathbf D - \mathbf A, $$
 where $\mathbf A$ is the adjacency matrix  Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link   and $\mathbf D$ is the degree matrix, i."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="181">
+<meta itemprop=wordCount content="499">
 <meta itemprop=keywords content="Graph,Heterophily,">
 <section class=section>
 <div class=container>
@@ -186,6 +186,65 @@ $$</p>
 <p>$$
 \mathbf L_{\text{RW}} = \mathbf D^{-1} \mathbf A.
 $$</p>
+<h2 id=diagonalizing-graph-laplacian>Diagonalizing Graph Laplacian</h2>
+<p>The eigenvectors of Graph Laplacian can be used to diagonalize the graph Laplacian $\mathbf L$,</p>
+<p>$$
+\begin{equation}
+\mathbf U \mathbf L_D \mathbf U^{\mathrm T} = \mathbf L.\label{eq-laplacian-diag}
+\end{equation}
+$$</p>
+<h2 id=laplacians-and-fourier-transform>Laplacians and Fourier Transform</h2>
+<article class="message is-light is-light">
+<div class=message-header>
+<p>Laplacian and Fourier Transform</p>
+</div>
+<div class=message-body>
+The eigen-equation of Laplacian $\nabla^2$ shows that the eigenvectors of the Laplacian (in Hilbert space) have the form $e^{2\pi i \xi x}$. On the other hand, $e^{2\pi i \xi x}$ is also the Fourier basis.
+</div>
+</article>
+<p>The eigenvectors of the graph Laplacian (Eq. $\eqref{eq-laplacian-diag}$) can be used to perform Fourier transforms on graph<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. We apply the matrix $\mathbf U^{\mathrm T}$ in $\eqref{eq-laplacian-diag}$ onto a vector of node attributes,</p>
+<p>$$
+\mathbf U^{\mathrm T} \mathbf f.
+$$</p>
+<p>The above is the Fourier transform of the node attributes on the graph.</p>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/graph/graph-convolution-operator/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<div class=media-content>
+<div class=content>
+<h6>
+Graph Convolution Operator
+</h6>
+<div style=font-size:80%>
+For a given graph $\mathcal G$, we have an attribute on each node, denoted as $f_v$. All the node attributes put together can be written as a list $\mathbf f\to (f_{v_1}, f_{v_2}, \cdots, f_{v_N})$.
+Convolution on graph is combining attributes on nodes with their neighbors'. The adjacency matrix Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link $\mathbf A$ applied on all node attributes $\mathbf f$ is such an operation, i.
+</div>
+</div>
+</div>
+</a>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/math/convolution-and-fourier-transform/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<div class=media-content>
+<div class=content>
+<h6>
+Convolutions Using Fourier Transform
+</h6>
+<div style=font-size:80%>
+Convolution and Fourier transform
+</div>
+</div>
+</div>
+</a>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=Hamilton2020 href=#Hamilton2020 style=text-decoration:none>
+<span class="tag is-link is-light">Hamilton2020</span>
+</a>
+<a href=https://www.morganclaypool.com/doi/10.2200/S01045ED1V01Y202009AIM046 style=text-decoration:none>Hamilton WL. Graph Representation Learning. Morgan & Claypool Publishers; 2020. pp. 1–159. doi:10.2200/S01045ED1V01Y202009AIM046</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -227,6 +286,8 @@ L Ma
 <nav id=TableOfContents>
 <ul>
 <li><a href=#normalized-laplacian>Normalized Laplacian</a></li>
+<li><a href=#diagonalizing-graph-laplacian>Diagonalizing Graph Laplacian</a></li>
+<li><a href=#laplacians-and-fourier-transform>Laplacians and Fourier Transform</a></li>
 </ul>
 </nav>
 </div>
@@ -298,6 +359,26 @@ Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes
 </div>
 </div>
 </a>
+<a class=box href=https://datumorphism.leima.is/cards/math/convolution-and-fourier-transform/>
+<div class=media-content>
+<div class=content>
+<h6>Convolutions Using Fourier Transform</h6>
+<p>
+Convolution and Fourier transform
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/graph/graph-convolution-operator/>
+<div class=media-content>
+<div class=content>
+<h6>Graph Convolution Operator</h6>
+<p>
+For a given graph $\mathcal G$, we have an attribute on each node, denoted as $f_v$. All the node …
+</p>
+</div>
+</div>
+</a>
 </div>
 </p>
 </div>
@@ -317,6 +398,16 @@ Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes
 <h6>Graphs Spectral Methods</h6>
 <p>
 The Ratio Cut Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/graph/graph-convolution-operator/>
+<div class=media-content>
+<div class=content>
+<h6>Graph Convolution Operator</h6>
+<p>
+For a given graph $\mathcal G$, we have an attribute on each node, denoted as $f_v$. All the node …
 </p>
 </div>
 </div>

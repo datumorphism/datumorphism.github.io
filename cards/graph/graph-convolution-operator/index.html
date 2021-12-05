@@ -123,7 +123,7 @@ AmNeumarkt
 <meta itemprop=description content="For a given graph $\mathcal G$, we have an attribute on each node, denoted as $f_v$. All the node attributes put together can be written as a list $\mathbf f\to (f_{v_1}, f_{v_2}, \cdots, f_{v_N})$.
 Convolution on graph is combining attributes on nodes with their neighbors'. The adjacency matrix  Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link   $\mathbf A$ applied on all node attributes $\mathbf f$ is such an operation, i."><meta itemprop=datePublished content="2021-11-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-11-25T00:00:00+00:00">
-<meta itemprop=wordCount content="421">
+<meta itemprop=wordCount content="467">
 <meta itemprop=keywords content="Graph,Convolution,">
 <section class=section>
 <div class=container>
@@ -214,18 +214,11 @@ $$</p>
 <p>However, we can make both commutation relations 0 using symmetric normalized adjacency matrix $\mathbf A_{s} = \mathbf D^{-1/2}\mathbf A \mathbf D^{-1/2}$ and symmetric normalized Laplacian $\mathbf L_{s}=\mathbf D^{-1/2}\mathbf L \mathbf D^{-1/2}=\mathbf I - \mathbf A_{s}$.</p>
 </div>
 </article>
-<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/math/convolution-and-fourier-transform/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
-<div class=media-content>
-<div class=content>
-<h6>
-Convolutions Using Fourier Transform
-</h6>
-<div style=font-size:80%>
-Convolution and Fourier transform
-</div>
-</div>
-</div>
-</a>
+<h2 id=laplacian-fourier-transform-and-graph-convolution>Laplacian, Fourier Transform, and Graph Convolution</h2>
+<p>Using <a href=/cards/math/convolution-and-fourier-transform>the relation between convolution and Fourier transform</a>, as well as <a href=/cards/graph/graph-laplacians>the relation between graph Laplacian and Fourier transform</a>, we can establish the following relation.</p>
+<p>$$
+\mathbf f * \mathbf h = \mathbf U ( \mathbf U^{\mathrm T} \mathbf f \circ \mathbf U^{\mathrm T} \mathbf h ).
+$$</p>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -254,6 +247,27 @@ L Ma
 </article>
 </div>
 <style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#laplacian-fourier-transform-and-graph-convolution>Laplacian, Fourier Transform, and Graph Convolution</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
 <script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
 <div class=is-divider data-content=CONNECTUME></div>
 <div class="box is-size-7">
@@ -304,6 +318,41 @@ A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. Th
 <h6>Convolutions Using Fourier Transform</h6>
 <p>
 Convolution and Fourier transform
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/graph/graph-laplacians/>
+<div class=media-content>
+<div class=content>
+<h6>Graph Laplacians</h6>
+<p>
+Laplacian is a useful representation of graphs. The unnormalized Laplacian is
+$$ \mathbf L = \mathbf …
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links from: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/cards/graph/graph-laplacians/>
+<div class=media-content>
+<div class=content>
+<h6>Graph Laplacians</h6>
+<p>
+Laplacian is a useful representation of graphs. The unnormalized Laplacian is
+$$ \mathbf L = \mathbf …
 </p>
 </div>
 </div>
