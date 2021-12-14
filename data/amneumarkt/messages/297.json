@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 297,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-11-30 21:36:22+00:00",
+    "message": "#visualization\n\nAn interactive Visual Vocabulary:\n\nhttps://ft-interactive.github.io/visual-vocabulary/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5274117641197435680,
+            "access_hash": -4316157629765425710,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01)a\\xb9\\x01pZ\\xa8y\\xa0\\xa2\\r\\x89+\\xc2&u\\xde\\xa5\\xfb\\xf6n'",
+            "date": "2021-11-30 21:36:22+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x1e\\xd5=y'\\xf3\\xff\\x00\\xeb\\xd2\\x82\\x07s\\x9f\\xadF\\xd2\\xa8'\\xfc(\\x13(\\xee\\x7f*WC\\xe5d\\xbb\\xc5(`zT>x\\xf5\\xfd)\\xcb0c\\x8e\\x7f*.\\x83\\x95\\x9026\\xe3\\x81\\xd4\\xd30wc\\x1c\\xd3\\xd9\\x88s\\x8fZn\\xees\\xde\\xb2v6W\\x10\\xa9\\x1djXT\\xab\\xf2:\\x8a\\x88\\xb6jXX\\xb3\\xf3\\xd8P\\xadp\\x95\\xec5\\x81\\xdcx=i\\x85[?t\\xfeTQM\\xa1)\\x06\\xd6\\xfe\\xe9\\xfc\\xaaH\\x03\\x07<\\x1e\\x94QBZ\\x83\\x96\\x87\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 241,
+                    "h": 320,
+                    "size": 17592
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 602,
+                    "h": 800,
+                    "size": 86457
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 963,
+                    "h": 1280,
+                    "sizes": [
+                        10802,
+                        29229,
+                        55596,
+                        81913,
+                        133815
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 51,
+            "length": 51
+        }
+    ],
+    "views": 128,
+    "forwards": 4,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1214,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-11-30 21:36:25+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

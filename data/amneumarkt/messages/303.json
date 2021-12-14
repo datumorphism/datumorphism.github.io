@@ -1,0 +1,129 @@
+{
+    "_": "Message",
+    "id": 303,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-12-13 07:40:44+00:00",
+    "message": "#DS #visualization \n\nhttps://percival.ink/\n\nA new lightweight language for data analysis and visualization. It looks promising.\n\nI hate jupyter notebooks and I don't use them on most of my projects. One of the reasons is low reproducibility due to its non-reative nature. You changed some old cells and forgot to run a cell  below, you may read wrong results.\nThis new language is reactive. If old cells are changed, related results are also updated.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4685794064996140174,
+            "url": "https://percival.ink/",
+            "display_url": "percival.ink",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "percival.ink",
+            "title": "Percival \u2022 Web-based, reactive Datalog notebooks",
+            "description": "Percival is a declarative data query and visualization language for exploring complex datasets, producing interactive graphics, and sharing results.",
+            "photo": {
+                "_": "Photo",
+                "id": 5894488799105363325,
+                "access_hash": -8779463258783420470,
+                "file_reference": "b'\\x00a\\xb9\\x01pW_\\x89j\\x800\\xef\\\\w2\\xb5j3w\\xd2\\xf3'",
+                "date": "2021-12-14 19:10:25+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x15(\\xd9\\xa6\\xefM\\xdbw\\x0c\\xfaf\\x86b1\\x85'\\xe9Qm\\xfd\\xe6\\xfd\\xaf\\x9fN1I\\xdf\\xa0\\x13\\x06\\x04d\\x10G\\xad\\x19\\x19\\xc6z\\xd5a\\x04i\\x8cB\\xe7\\xb7_\\xfe\\xbf\\xb5:8\\xd5\\x1fz\\xc5 =9?\\xfdz`X\\xa2\\x9a\\t?\\xc2G\\xd6\\x8a\\x00u\\x14Q@\\x05\\x14Q@\\x05\\x14Q@\\x1f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 10101
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 39222
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "sizes": [
+                            7433,
+                            14967,
+                            24274,
+                            36325,
+                            59865
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 21,
+            "length": 21
+        }
+    ],
+    "views": 73,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1214,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-12-13 16:10:53+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS",
+        "visualization"
+    ]
+}

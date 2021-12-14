@@ -1,0 +1,113 @@
+{
+    "_": "Message",
+    "id": 301,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-12-05 09:52:55+00:00",
+    "message": "#visualization\n\nHmmm my plate is way off the planetary heath diet recommendation.\n\nSource:\nhttps://www.nature.com/articles/d41586-021-03612-1",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5289564705825863649,
+            "access_hash": -8835202214385116154,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01-a\\xb9\\x01p_\\xdb\\x16\\xeb]\\xf4\\x9a\\xa3\\xd7uw\\xa0\\xcd\\x9c\\xbcG'",
+            "date": "2021-12-05 09:52:55+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x0c\\xd1X\\xc2\\x12\\xc1y\\xfa\\xd3\\xe2\\xdd\\xe5\\x8d\\xddi2\\xf9o\\x93\\x18\\x1c{\\xd3\\x90\\x92\\xa3p\\xc1\\xfa\\xd0\\x03q'\\xcd\\xc8\\xef\\x8ar\\x02\\x14\\x06\\xc14\\x8a\\x0e\\xe6`\\xdc\\x9e)S\\xee\\x0f\\x98\\xb7\\x1dh\\x01\\x0f\\x19\\xeb\\xcf\\xa59T*\\xe0\\x1c\\n(\\xa0\\x0f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 98,
+                    "h": 320,
+                    "size": 11521
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 246,
+                    "h": 800,
+                    "size": 48998
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 393,
+                    "h": 1280,
+                    "sizes": [
+                        7655,
+                        20677,
+                        43929,
+                        69491,
+                        93553
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 91,
+            "length": 50
+        }
+    ],
+    "views": 137,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1214,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 2089028133
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 449,
+        "read_max_id": 449
+    },
+    "edit_date": "2021-12-05 09:53:48+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "_": "Message",
+    "id": 304,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-12-14 20:40:26+00:00",
+    "message": "#ML #Transformers\n\n  \nAlammar J. The Illustrated Transformer. [cited 14 Dec 2021]. Available: http://jalammar.github.io/illustrated-transformer/\n\nSo good.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1614697642429562048,
+            "url": "https://jalammar.github.io/illustrated-transformer/",
+            "display_url": "jalammar.github.io/illustrated-transformer",
+            "hash": 0,
+            "type": "article",
+            "site_name": "jalammar.github.io",
+            "title": "The Illustrated Transformer",
+            "description": "Discussions:\nHacker News (65 points, 4 comments), Reddit r/MachineLearning (29 points, 3 comments)\n\n\nTranslations: Chinese (Simplified), French, Japanese, Korean, Russian, Spanish, Vietnamese\n\nWatch: MIT\u2019s Deep Learning State of the Art lecture referencing this post\n\nIn the previous post, we looked at Attention \u2013 a ubiquitous method in modern deep learning models. Attention is a concept that helped improve the performance of neural machine translation applications. In this post, we will look at The Transformer \u2013 a model that uses attention to boost the speed with which these models can be trained. The Transformers outperforms the Google Neural Machine Translation model in specific tasks. The biggest benefit, however, comes from how The Transformer lends itself to parallelization. It is in fact Google Cloud\u2019s recommendation to use The Transformer as a reference model to use their Cloud TPU offering. So let\u2019s try to break the model apart and look at how it functions.\n\nThe Transformer was proposed in the paper Attention\u2026",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Jay Alammar",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 13
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 94,
+            "length": 50
+        }
+    ],
+    "views": 2,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1214,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-12-14 20:40:29+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML",
+        "Transformers"
+    ]
+}

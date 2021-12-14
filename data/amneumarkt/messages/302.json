@@ -1,0 +1,129 @@
+{
+    "_": "Message",
+    "id": 302,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-12-11 10:19:22+00:00",
+    "message": "#ml #rl\n\nHow to Train your Decision-Making AIs\nhttps://thegradient.pub/how-to-train-your-decision-making-ais/\n\nThe author reviewed \u00a0\"five types of human guidance to train AIs: evaluation, preference, goals, attention, and demonstrations without action labels\".\n\nThe last one reminds me of the movie Finch. In the movie, Finch was teaching the robot to walk by demonstrating walking but without \"labels\".",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2047476603143217818,
+            "url": "https://thegradient.pub/how-to-train-your-decision-making-ais/",
+            "display_url": "thegradient.pub/how-to-train-your-decision-making-ais",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The Gradient",
+            "title": "How to Train your Decision-Making AIs",
+            "description": "How do humans transfer their knowledge and skills to artificial decision-making agents more efficiently? What kind of knowledge and skills should humans provide and in what format?",
+            "photo": {
+                "_": "Photo",
+                "id": 5883046220249804009,
+                "access_hash": 5715723567544594276,
+                "file_reference": "b'\\x00a\\xb9\\x01p\\xfb\\x08\\x8ex\\xa1^KLv\\x88\\xa2\\x93\\xb8m\\xa6\\xa4'",
+                "date": "2021-12-11 04:49:33+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(n*V\\x81\\x93\\x1b\\x88\\x04\\xd4\\xf1\\xc2\\xb6\\xf9\\x92R\\t\\x038\\x14\\xd72\\x07\\xf2\\xe3\\xfb\\x80\\xf4\\x1d\\xabg+\\xbd\\x0eeN\\xca\\xf2*\\x91\\x83\\x83K\\xb1\\xb6\\xee\\xdav\\xfa\\xd4\\x8c\\x11f\\xff\\x00g\\xd3\\xd2\\xac\\xa1,F\\x182\\xfdh\\x94\\xb9U\\xc5\\n|\\xcd\\xab\\x94h\\xab3[\\x92\\xfb\\xa3\\x03\\x07\\xb5\\x14\\xd4\\xd3%\\xd3\\x92{\\x15\\xd9\\xd9\\xdb,I4no\\xef\\x1f\\xce\\x8a*\\x88\\xbb\\x12\\x81\\x91\\xc88\\xa2\\x8a\\x00\\x90M <;\\x1a(\\xa2\\xa6\\xcb\\xb1|\\xd2\\xee\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 186,
+                        "size": 10433
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 465,
+                        "size": 34924
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 595,
+                        "sizes": [
+                            5219,
+                            12534,
+                            20450,
+                            28111,
+                            46880
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 47,
+            "length": 62
+        }
+    ],
+    "views": 97,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1214,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-12-11 10:19:25+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml",
+        "rl"
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 300,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-12-02 10:36:41+00:00",
+    "message": "#DS \n\nJust in case you are also struggling with Python packages on Apple M1 Macs\n\n\nI am using the third option: anaconda + miniforge.\n\nhttps://www.anaconda.com/blog/apple-silicon-transition",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2267617637680070984,
+            "url": "https://www.anaconda.com/blog/apple-silicon-transition",
+            "display_url": "anaconda.com/blog/apple-silicon-transition",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Anaconda",
+            "title": "Anaconda | A Python Data Scientist\u2019s Guide to the Apple Silicon\u2026",
+            "description": "Even if you are not a Mac user, you have likely heard Apple is switching from Intel CPUs to their own custom CPUs, which they refer to collectively as \"Apple Silicon.\" The last time Apple changed its computer architecture this dramatically was 15 years ago when they switched from PowerPC to Intel\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5856225201753271599,
+                "access_hash": -2211287705762100993,
+                "file_reference": "b'\\x00a\\xb9\\x01p\\xc0\\x11j\\xf7JMtA\\xe2\\xcc\\x8a2Lr\\xd2\\xc3'",
+                "date": "2021-12-02 10:35:21+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x15(\\xc9S\\x81\\xf2\\xf0}\\xaa\\xdc\\x08\\xed\\x8c<`\\x91\\x9eO5U6\\xe4v>\\xfc\\xd5\\xe5\\x9f\\xce\\xb5e\\x9b\\xe5\\xf4!M1\\x00\\xda\\xaeRb\\xa7\\x1e\\xfc\\x1a\\x93\\xc9\\x8c\\xf3\\x19\\xc7\\xfb\\xa6\\xa0\\x03<1\\x05{\\x8a\\xb2-a\\xf2\\xf7\\xc7)V\\xee\\x10\\xff\\x00Jb\\xb8\\x92F\\xd0\\xc3\\xe64\\x9dq\\x85+\\xce=h\\xa7\\xb9\\x92%F\\nd'\\xa9'\\xad\\x14\\xae\\xc6b\\xe6\\xacB\\xee\\xa8J61\\xdb\\xad\\x14P\\x80\\x9e)\\xbc\\xe1\\xb9\\x91r;\\xd4\\xc4\\xf9H\\xa7\\xefr8=(\\xa2\\x98\\x87I;<\\x80\\x90>n\\x80v\\xa2\\x8a(\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 20207
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 418,
+                        "size": 49805
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 135,
+            "length": 54
+        }
+    ],
+    "views": 154,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1214,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-12-02 12:53:59+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "DS"
+    ]
+}
