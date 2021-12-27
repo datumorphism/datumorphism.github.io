@@ -1,12 +1,12 @@
 {
     "_": "Message",
-    "id": 240,
+    "id": 306,
     "peer_id": {
         "_": "PeerChannel",
         "channel_id": 1320526773
     },
-    "date": "2021-07-02 14:02:38+00:00",
-    "message": "#ML \n\nGreat. Tensorflow implemented built-in decision forest models.\n\nhttps://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html?m=1",
+    "date": "2021-12-18 08:47:32+00:00",
+    "message": "#ml #science\n\nI remember several years ago when I was still doing my PhD, there's this contest about predicting protein structure and none of them was working well. At that time, I would never have thought we could have anything like AlphaFold in a few years.\n.\n\nhttps://www.science.org/content/article/breakthrough-2021",
     "out": true,
     "mentioned": false,
     "media_unread": false,
@@ -24,53 +24,52 @@
         "_": "MessageMediaWebPage",
         "webpage": {
             "_": "WebPage",
-            "id": 4079435406028503971,
-            "url": "https://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html?m=1",
-            "display_url": "blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html?m=1",
+            "id": 7934493505782375874,
+            "url": "https://www.science.org/content/article/breakthrough-2021",
+            "display_url": "science.org/content/article/breakthrough-2021",
             "hash": 0,
             "type": "photo",
-            "site_name": "blog.tensorflow.org",
-            "title": "Introducing TensorFlow Decision Forests",
-            "description": "TensorFlow Decision Forests is a collection of Decision Forest algorithms for classification, regression and ranking tasks, with the flexibility and c",
+            "site_name": "www.science.org",
+            "title": "Science\u2019s 2021 Breakthrough of the Year: AI brings protein structures to all",
+            "description": "Bounty of new structures will forever change biology and medicine",
             "photo": {
                 "_": "Photo",
-                "id": 6018125634653497911,
-                "access_hash": -5942401069960836916,
-                "file_reference": "b'\\x00a\\xc9\\xb7\\xd8\\xbf\\xfb\\xaf\\xbbd&\\x89y\\xd9\\xd1d`\\x979 \\x97'",
-                "date": "2019-12-10 17:27:34+00:00",
+                "id": 5898641109062626691,
+                "access_hash": 4872845020370354232,
+                "file_reference": "b'\\x00a\\xc9\\xb7\\xd8L\\xc7\\x96)a\\x9a\\x995b\\x1b\\x14\\xe5\"q\\xac\\xab'",
+                "date": "2021-12-16 19:23:32+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
                         "type": "i",
-                        "bytes": "b'\\x01\\x1e(\\xabE\\x14\\xe0\\x84\\x8e\\x06j\\x846\\x8av\\xc6\\xfe\\xe9\\xa4*GQ@\\x84\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x03'"
+                        "bytes": "b'\\x01\\x17(\\xa2-\\xce@$R\\xb4\\x1c\\x83\\x90q\\xd4U\\xe3\\x06;\\xf5\\xa64X\\xe6\\xa3\\x99\\x8c\\xa8\\xb0q\\xd4~\\x14\\xa2\\xdcdd\\x923\\xe9V6\\xff\\x00\\x9cP\\x10\\x91\\xc1\\xc5\\x17`W[u\\xc9\\xdcO\\xb5\\x15lB8$\\x9c\\xd1E\\xd8\\x16[\\xeeg\\xd6\\x99\\xd3=1E\\x14\\x862E\\xc7=\\xcdBA\\x07\\x83\\xc5\\x14P!C\\x9a(\\xa2\\x98\\x1f'"
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
-                        "h": 240,
-                        "size": 2732
+                        "h": 180,
+                        "size": 25878
                     },
                     {
                         "_": "PhotoSize",
                         "type": "x",
                         "w": 800,
-                        "h": 600,
-                        "size": 9843
+                        "h": 450,
+                        "size": 139029
                     },
                     {
-                        "_": "PhotoSize",
+                        "_": "PhotoSizeProgressive",
                         "type": "y",
                         "w": 1280,
-                        "h": 960,
-                        "size": 20238
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "w",
-                        "w": 1600,
-                        "h": 1200,
-                        "size": 27152
+                        "h": 720,
+                        "sizes": [
+                            15891,
+                            51636,
+                            124549,
+                            190919,
+                            293772
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -96,13 +95,18 @@
             "length": 3
         },
         {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 8
+        },
+        {
             "_": "MessageEntityUrl",
-            "offset": 70,
-            "length": 84
+            "offset": 263,
+            "length": 57
         }
     ],
-    "views": 189,
-    "forwards": 0,
+    "views": 141,
+    "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
@@ -113,12 +117,13 @@
         "max_id": null,
         "read_max_id": null
     },
-    "edit_date": null,
+    "edit_date": "2021-12-18 08:52:30+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],
     "ttl_period": null,
     "tags": [
-        "ML"
+        "ml",
+        "science"
     ]
 }

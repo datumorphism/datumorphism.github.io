@@ -1,0 +1,114 @@
+{
+    "_": "Message",
+    "id": 307,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-12-24 09:26:33+00:00",
+    "message": "#visualization \n\nPu X, Kay M. A probabilistic grammar of graphics. Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems. New York, NY, USA: ACM; 2020. doi:10.1145/3313831.3376466 \nAvailable at: https://dl.acm.org/doi/10.1145/3313831.3376466\n\nA very good read if you are visualizing probability densities a lot.\nThe paper began with a common mistake people make when visualizing densities. Then they proposed a systematic grammar of graphics for probabilities. They also provide a package (quite preliminary, see here https://github.com/MUCollective/pgog ).",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5345816824509478413,
+            "access_hash": -1807203570085097645,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x013a\\xc9\\xb7\\xd8\\xa2\\x1aj\\xad\\xa8\\na\\x92K\\xe1\\xc51;\\xf4\\xae\\xf6'",
+            "date": "2021-12-24 09:26:33+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x13(\\xcc\\x91\\xd9\\\\`\\xf1\\x8e\\x94\\xdd\\xe7\\xaf\\xf4\\xa2n$\\x1fJN\\xdd9\\xfa\\xd0\\x01\\xb8\\xe7\\x93\\xc7\\xd2\\x8d\\xed\\xd8\\x8aV9\\x1d9\\xcf\\xad2\\x80%\\x89\\x98\\xb9\\x05\\x89\\x18\\xe9E$?\\xeb\\x0f\\xd2\\x8a\\x00%\\xff\\x00X>\\x95\\x1e\\xf3\\xed\\xff\\x00|\\x8a(\\xa0\\x03q\\xf6\\xfc\\x85\\x1b\\xcf\\xb7\\xe4(\\xa2\\x80$\\x8b\\xfda\\xfaQE\\x14\\x01'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 148,
+                    "size": 13087
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 369,
+                    "size": 53512
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 591,
+                    "sizes": [
+                        7926,
+                        20417,
+                        45099,
+                        65671,
+                        90550
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityPhone",
+            "offset": 182,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 218,
+            "length": 46
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 541,
+            "length": 36
+        }
+    ],
+    "views": 62,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1231,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-12-24 09:32:00+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}
