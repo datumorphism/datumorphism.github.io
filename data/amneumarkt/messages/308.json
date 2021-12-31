@@ -1,0 +1,91 @@
+{
+    "_": "Message",
+    "id": 308,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2021-12-30 21:26:31+00:00",
+    "message": "#data #ds\n\nDisclaimer: I'm no expert in state diagram nor statecharts.\n\nIt might be something trivial but I find this useful: Combined with some techniques in statecharts (something frontend people like a lot), state diagram is a great way to document what our data is going through in data (pre)processing.\n\nFor complicated data transformations, we can make the corresponding state diagram and follow your code to make sure it is working as expected. The only thing is that we are focusing on the state of data not any other system.\n\nWe can use some techniques from statecharts, such as hierarchies and parallels.\n\nState diagram is better than flowchart in this scenario because we are more interested in the different states of the data. State diagrams automatically highlights the states and we can easily spot the relevant part in the diagram and we don\u2019t have to start from the beginning.\n\nI documented some data transformations using state diagrams already. I haven't tired but it might also help us document our ML models. \n\n\nReferences:\n1. https://statecharts.dev\n2. https://en.wikipedia.org/wiki/State_diagram",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2876714566739985550,
+            "url": "https://statecharts.dev/",
+            "display_url": "statecharts.dev",
+            "hash": 0,
+            "type": "article",
+            "site_name": "statecharts.dev",
+            "title": "Welcome to the world of Statecharts",
+            "description": "The world of statecharts describes what statecharts are, their benefits and drawbacks, how they differ from state machines, and practical examples on how to use them.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 6,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1048,
+            "length": 23
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1075,
+            "length": 43
+        }
+    ],
+    "views": 47,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1249,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2021-12-30 21:41:16+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data",
+        "ds"
+    ]
+}
