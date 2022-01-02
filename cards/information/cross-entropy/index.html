@@ -129,7 +129,7 @@ Cross entropy $H(p, q)$ can also be decomposed,
 $$ H(p, q) = H(p) + \operatorname{D}_{\mathrm{KL}} \left( p \parallel q \right), $$
 where $H(p)$ is the entropy of $P$  Shannon Entropy Shannon entropy $S$ is the expectation of information content $I(X)=-\log \left(p\right)$1, \begin{equation} H(p) = \mathbb E_{p}\left[ -\log \left(p\right) \right]. \end{equation} shannon_entropy_wiki Contributors to Wikimedia projects. Entropy (information theory). In: Wikipedia [Internet]. 29 Aug 2021 [cited 4 Sep 2021]. Available: https://en.wikipedia.org/wiki/Entropy_(information_theory) &#160;&#8617;&#xfe0e;    and $\operatorname{D}_{\mathrm{KL}}$ is the KL Divergence  KL Divergence Kullback–Leibler divergence indicates the differences between two distributions   ."><meta itemprop=datePublished content="2021-09-04T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-04T00:00:00+00:00">
-<meta itemprop=wordCount content="174">
+<meta itemprop=wordCount content="328">
 <meta itemprop=keywords content="Information Theory,Entropy,">
 <section class=section>
 <div class=container>
@@ -204,6 +204,26 @@ logistic regression
 </span>
 </span>
 <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p>
+<h2 id=binary-cross-entropy>Binary Cross Entropy</h2>
+<p>For dataset with 2 classes ($0$ and $1$) in the target, we denote the true label probability is $p$, and the predicted probability is $q$. For example, $q_{y=1}$ denotes the probability of predicted label being $1$.</p>
+<p>$$
+\begin{align*}
+H(p, q) =& - p_{y=0}  \log (q_{\hat y=0}) - p_{y=1} \log (q_{\hat y=1}) \\
+=& - p_{y=0}  \log (q_{\hat y=0}) - (1 - p_{y=0}) \log ( 1 - q_{\hat y=0} )
+\end{align*}
+$$</p>
+<p>For $y\in \{0,1\}$, we have</p>
+<p>$$
+H(p, q) = \begin{cases}
+- \log (q_{\hat y=0}) , & \text{for } y=0 \\
+- \log ( 1 - q_{\hat y=0} ) , & \text{for } y=1.
+\end{cases}
+$$</p>
+<p>Combining the two expressions, we can simply use the following formula,</p>
+<p>$$
+H(p, q) = - y \log (q_{\hat y=0}) - y \log ( 1 - q_{\hat y=0} ).
+$$</p>
+<p>The two probabilities of $q_{\hat y=0}$ and $q_{\hat y=1}$ can be predicted by a model.</p>
 <section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
@@ -252,6 +272,27 @@ Lei Ma (2021). 'Cross Entropy', Datumorphism, 09 April. Available at: https://da
 </article>
 </div>
 <style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#binary-cross-entropy>Binary Cross Entropy</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
 <script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
 <div class=is-divider data-content=REFERENCES></div>
 <div class="box is-size-7">
