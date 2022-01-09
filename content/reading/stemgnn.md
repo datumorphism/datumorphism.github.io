@@ -25,11 +25,11 @@ stateDiagram-v2
     with_spectral_matrix_representation: Spectural Matrix Representation
     with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain
 
-    [*] --> StemGNNBlock
+    [*] --> with_latent_correlation: Latent Correlation Layer
 
-    StemGNNBlock --> StemGNNBlock
+    with_latent_correlation --> with_latent_correlation
 
-    state StemGNNBlock {
+    state with_latent_correlation {
         [*] --> with_spectral_matrix_representation: Graph Fourier Transform
 
         with_spectral_matrix_representation --> with_temporal_patterns_in_freq_domain: Spe-Seq Cell
@@ -42,6 +42,7 @@ stateDiagram-v2
         with_timeseries_restored --> Backcast
 
     }
+    note left of with_latent_correlation: This is done in StemGNN Block
 
 
 
@@ -56,5 +57,6 @@ stateDiagram-v2
     }
 
 
-    StemGNNBlock --> [*]
+    with_latent_correlation --> [*]
+
 {{< /mermaid >}}
