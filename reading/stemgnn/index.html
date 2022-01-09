@@ -7,7 +7,7 @@
 <title> StemGNN | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="StemGNN">
-<meta property="og:description" content="stateDiagram-v2 with_spectral_matrix_representation: Spectural Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain [*] -- StemGNNBlock StemGNNBlock -- StemGNNBlock state StemGNNBlock { [*] -- with_spectral_matrix_representation: Graph Fourier Transform with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain: Spe-Seq Cell with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } StemGNNBlock -- [*]  ">
+<meta property="og:description" content="stateDiagram-v2 with_spectral_matrix_representation: Spectural Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain [*] -- with_latent_correlation: Latent Correlation Layer with_latent_correlation -- with_latent_correlation state with_latent_correlation { [*] -- with_spectral_matrix_representation: Graph Fourier Transform with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain: Spe-Seq Cell with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } note left of with_latent_correlation: This is done in StemGNN Block state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } with_latent_correlation -- [*]  ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/reading/stemgnn/"><meta property="article:section" content="reading">
 <meta property="article:published_time" content="2022-01-01T00:00:00+00:00">
@@ -120,9 +120,9 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="StemGNN">
-<meta itemprop=description content="stateDiagram-v2 with_spectral_matrix_representation: Spectural Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain [*] -- StemGNNBlock StemGNNBlock -- StemGNNBlock state StemGNNBlock { [*] -- with_spectral_matrix_representation: Graph Fourier Transform with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain: Spe-Seq Cell with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } StemGNNBlock -- [*]  "><meta itemprop=datePublished content="2022-01-01T00:00:00+00:00">
+<meta itemprop=description content="stateDiagram-v2 with_spectral_matrix_representation: Spectural Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain [*] -- with_latent_correlation: Latent Correlation Layer with_latent_correlation -- with_latent_correlation state with_latent_correlation { [*] -- with_spectral_matrix_representation: Graph Fourier Transform with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain: Spe-Seq Cell with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } note left of with_latent_correlation: This is done in StemGNN Block state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } with_latent_correlation -- [*]  "><meta itemprop=datePublished content="2022-01-01T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-01-01T00:00:00+00:00">
-<meta itemprop=wordCount content="74">
+<meta itemprop=wordCount content="87">
 <meta itemprop=keywords content="graph neural network,graph,forecasting,time series,">
 <section class=section>
 <div class=container>
@@ -160,9 +160,9 @@ AmNeumarkt
 stateDiagram-v2
 with_spectral_matrix_representation: Spectural Matrix Representation
 with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain
-[*] --> StemGNNBlock
-StemGNNBlock --> StemGNNBlock
-state StemGNNBlock {
+[*] --> with_latent_correlation: Latent Correlation Layer
+with_latent_correlation --> with_latent_correlation
+state with_latent_correlation {
 [*] --> with_spectral_matrix_representation: Graph Fourier Transform
 with_spectral_matrix_representation --> with_temporal_patterns_in_freq_domain: Spe-Seq Cell
 with_temporal_patterns_in_freq_domain --> with_conv_temporal_patterns: Graph Convolution
@@ -170,13 +170,14 @@ with_conv_temporal_patterns --> with_timeseries_restored: IGFT
 with_timeseries_restored --> Forecast
 with_timeseries_restored --> Backcast
 }
+note left of with_latent_correlation: This is done in StemGNN Block
 state with_spectral_matrix_representation {
 [*] --> dft_repr: Discrete Fourier Transform
 dft_repr --> conv_dft_repr: 1DConv
 conv_dft_repr --> gated_conv_dft_repr: Gated Linear Unit
 gated_conv_dft_repr --> inverse_dft_gated_conv_dft_repr: IDFT
 }
-StemGNNBlock --> [*]
+with_latent_correlation --> [*]
 </div>
 </div>
 <p><div class="has-text-right is-size-7">
