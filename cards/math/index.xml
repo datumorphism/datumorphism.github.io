@@ -6,7 +6,10 @@ with $\mathcal F$ being the Fourier transform, i.e.,
 $$ \mathcal F[f(x)] = \int \mathrm d x f(x) e^{-2\pi i x s}. $$
 Proof
 One could prove it using the Fourier integral theorem,
-$$ f(x) = \iint dy d\xi f(y)e^{2\pi i (x-y)\xi}. $$</description></item><item><title>Centering Matrix</title><link>https://datumorphism.leima.is/cards/math/statistics-centering-matrix/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/math/statistics-centering-matrix/</guid><description>Given a vector $v$, with mean value of its elements $m$, we can center the vector by subtracting the mean $m$ from each element,
+$$ f(x) = \iint dy d\xi f(y)e^{2\pi i (x-y)\xi}. $$
+Derivation Given
+$$ \begin{align} \mathcal F_s \left(f(y)\right) &amp;= \int dy f(y) e^{-2\pi i y s}, \\ \mathcal F_s \left(h(y)\right) &amp;= \int dz h(z) e^{-2\pi i z s}, \end{align} $$
+we have</description></item><item><title>Centering Matrix</title><link>https://datumorphism.leima.is/cards/math/statistics-centering-matrix/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/math/statistics-centering-matrix/</guid><description>Given a vector $v$, with mean value of its elements $m$, we can center the vector by subtracting the mean $m$ from each element,
 import numpy as np n = 10 v = np.random.randn(n) v_c = v - v.mean() This operation is easy and obvious. However, the formalism is not elegant. In some cases, we would like to formulate the process of centering the elements as operators,
 $$ v_c = \operatorname{\hat H}v. $$
 In this case, the operator $\operatorname{\hat H}$ is simply a matrix

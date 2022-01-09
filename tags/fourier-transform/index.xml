@@ -6,4 +6,7 @@ with $\mathcal F$ being the Fourier transform, i.e.,
 $$ \mathcal F[f(x)] = \int \mathrm d x f(x) e^{-2\pi i x s}. $$
 Proof
 One could prove it using the Fourier integral theorem,
-$$ f(x) = \iint dy d\xi f(y)e^{2\pi i (x-y)\xi}. $$</description></item></channel></rss>
+$$ f(x) = \iint dy d\xi f(y)e^{2\pi i (x-y)\xi}. $$
+Derivation Given
+$$ \begin{align} \mathcal F_s \left(f(y)\right) &amp;= \int dy f(y) e^{-2\pi i y s}, \\ \mathcal F_s \left(h(y)\right) &amp;= \int dz h(z) e^{-2\pi i z s}, \end{align} $$
+we have</description></item></channel></rss>
