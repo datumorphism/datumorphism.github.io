@@ -58,9 +58,17 @@ However, we can make both commutation relations 0 using symmetric normalized adj
 Using [the relation between convolution and Fourier transform](/cards/math/convolution-and-fourier-transform), as well as [the relation between graph Laplacian and Fourier transform](/cards/graph/graph-laplacians), we can establish the following relation.
 
 {{< m >}}
-\mathbf f * \mathbf h = \mathbf U ( \mathbf U^{\mathrm T} \mathbf f \circ \mathbf U^{\mathrm T} \mathbf h ).
+\mathbf f * \mathbf h = \mathbf U ( \mathbf U^{\mathrm T} \mathbf f \circ \mathbf U^{\mathrm T} \mathbf h ),
 {{< /m >}}
 
+where $\mathbf U$ are the eigenvectors,
 
+{{< m >}}
+\mathbf L = \mathbf U \mathbf \lambda \mathbf U^{\mathrm T}.
+{{< /m >}}
 
+{{< message title="Graph Fourier Transform" >}}
 
+$\mathbf U^{\mathrm T} \mathbf f$ is the graph Fourier transform.
+
+{{< /message >}}
