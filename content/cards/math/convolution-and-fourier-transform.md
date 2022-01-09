@@ -41,3 +41,43 @@ f(x) = \iint dy d\xi f(y)e^{2\pi i (x-y)\xi}.
 $$
 
 {{< /message >}}
+
+
+## Derivation
+
+Given
+
+{{< m >}}
+\begin{align}
+\mathcal F_s \left(f(y)\right) &= \int dy f(y) e^{-2\pi i y s}, \\
+\mathcal F_s \left(h(y)\right) &= \int dz h(z) e^{-2\pi i z s},
+\end{align}
+{{< /m >}}
+
+
+we have
+
+{{< m >}}
+\mathcal F_s(f(y)) \mathcal F_s(h(z)) = \int dz dy f(y)h(z) e^{-2\pi i (y+z) s}.
+{{< /m >}}
+
+Inverse transform of the above shows
+
+{{< m >}}
+\mathcal F_x^{-1}\left( \mathcal F_s(f(y)) \mathcal F_s(h(z)) \right) = \int ds \int dz dy f(y)h(z) e^{-2\pi i (y+z) s + 2\pi i x s}.
+{{< /m >}}
+
+Using Fourier integral theorem, we can simplify the formula by defining a new variable ${\color{red}\bar x} = {\color{red}y + z}$
+
+{{< m >}}
+\begin{align}
+\mathcal F_x^{-1}\left( \mathcal F_s(f(y)) \mathcal F_s(h(z)) \right) &= \int dy \int dz ds f(y) h(z) e^{2\pi i ( x - ({\color{red}y+z}) ) s} \\
+&= \int dy \int d \bar x ds f(y) h(\bar x - y) e^{2\pi i ( x - {\color{red}\bar x} ) s} \\
+&= \int dy f(y) h(\bar x - y) \\
+&= (f * h) (\bar x)
+\end{align}
+{{< /m >}}
+
+
+
+
