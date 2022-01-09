@@ -4,17 +4,17 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title> Self-supervised Learning: Generative or Constrastive | Datumorphism | L Ma </title>
-<meta name=author content="Lei Ma">
-<meta property="og:title" content="Self-supervised Learning: Generative or Constrastive">
-<meta property="og:description" content="Review of self-supervised learning.">
+<title> StemGNN | Datumorphism | L Ma </title>
+<meta name=author content="L Ma">
+<meta property="og:title" content="StemGNN">
+<meta property="og:description" content="stateDiagram-v2 with_spectral_matrix_representation: Spectural Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain [*] -- StemGNNBlock StemGNNBlock -- StemGNNBlock state StemGNNBlock { [*] -- with_spectral_matrix_representation: Graph Fourier Transform with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain: Spe-Seq Cell with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } StemGNNBlock -- [*]  ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/"><meta property="article:section" content="reading">
-<meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-08-13T00:00:00+00:00">
+<meta property="og:url" content="https://datumorphism.leima.is/reading/stemgnn/"><meta property="article:section" content="reading">
+<meta property="article:published_time" content="2022-01-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-01-01T00:00:00+00:00">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-<link rel=canonical href=https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=canonical href=https://datumorphism.leima.is/reading/stemgnn/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
 <link rel=stylesheet href=/css/bulma.css>
 <link rel=stylesheet href=/css/bulma-divider.min.css>
 <link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
@@ -119,11 +119,11 @@ AmNeumarkt
 </header>
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
-<meta itemprop=name content="Self-supervised Learning: Generative or Constrastive">
-<meta itemprop=description content="Review of self-supervised learning."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
-<meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
-<meta itemprop=wordCount content="7">
-<meta itemprop=keywords content="machine learning,self-supervised learning,">
+<meta itemprop=name content="StemGNN">
+<meta itemprop=description content="stateDiagram-v2 with_spectral_matrix_representation: Spectural Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain [*] -- StemGNNBlock StemGNNBlock -- StemGNNBlock state StemGNNBlock { [*] -- with_spectral_matrix_representation: Graph Fourier Transform with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain: Spe-Seq Cell with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } StemGNNBlock -- [*]  "><meta itemprop=datePublished content="2022-01-01T00:00:00+00:00">
+<meta itemprop=dateModified content="2022-01-01T00:00:00+00:00">
+<meta itemprop=wordCount content="74">
+<meta itemprop=keywords content="graph neural network,graph,forecasting,time series,">
 <section class=section>
 <div class=container>
 <article class=post>
@@ -137,44 +137,58 @@ AmNeumarkt
 <a href=https://datumorphism.leima.is/reading/>Reading Notes</a>
 </li>
 <li class=active>
-<a href=https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/>Self-supervised Learning: Generative or Constrastive</a>
+<a href=https://datumorphism.leima.is/reading/stemgnn/>StemGNN</a>
 </li>
 </ul>
 </nav>
 <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
-<i class="far fa-comment-alt"></i> Self-supervised Learning: Generative or Constrastive
+<i class="far fa-comment-alt"></i> StemGNN
 </h1>
 <h2 class="title is-6 has-text-centered">
 <i class="fas fa-tags" style=margin-right:.5em></i>
-<a href=/tags/machine-learning><span class="tag is-warning is-small is-light">#machine learning</span></a>
-<a href=/tags/self-supervised-learning><span class="tag is-warning is-small is-light">#self-supervised learning</span></a>
+<a href=/tags/graph-neural-network><span class="tag is-warning is-small is-light">#graph neural network</span></a>
+<a href=/tags/graph><span class="tag is-warning is-small is-light">#graph</span></a>
+<a href=/tags/forecasting><span class="tag is-warning is-small is-light">#forecasting</span></a>
+<a href=/tags/time-series><span class="tag is-warning is-small is-light">#time series</span></a>
 </h2>
 </header>
 <div class=columns>
 <div class="column is-8">
-<div class=is-divider data-content=SUMMARY></div>
-<div class="notification is-light">
-<p>
-Review of self-supervised learning.
-</p>
-</div>
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<ul>
-<li><a href=../assets/self-supervised-learning-generative-or-contrastive-2006.08218/self-supervised-learning-models-summary.pdf>Summary of Models mentioned in the paper</a></li>
-</ul>
+<div class=mermaid align=center>
+stateDiagram-v2
+with_spectral_matrix_representation: Spectural Matrix Representation
+with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain
+[*] --> StemGNNBlock
+StemGNNBlock --> StemGNNBlock
+state StemGNNBlock {
+[*] --> with_spectral_matrix_representation: Graph Fourier Transform
+with_spectral_matrix_representation --> with_temporal_patterns_in_freq_domain: Spe-Seq Cell
+with_temporal_patterns_in_freq_domain --> with_conv_temporal_patterns: Graph Convolution
+with_conv_temporal_patterns --> with_timeseries_restored: IGFT
+with_timeseries_restored --> Forecast
+with_timeseries_restored --> Backcast
+}
+state with_spectral_matrix_representation {
+[*] --> dft_repr: Discrete Fourier Transform
+dft_repr --> conv_dft_repr: 1DConv
+conv_dft_repr --> gated_conv_dft_repr: Gated Linear Unit
+gated_conv_dft_repr --> inverse_dft_gated_conv_dft_repr: IDFT
+}
+StemGNNBlock --> [*]
+</div>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
 <i class="fas fa-pencil-alt"></i>
 </span>
-Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
-by <span itemprop=author>Lei Ma</span>;
+Published: <time datetime=2022-01-01T00:00:00+00:00>2022-01-01</time>
+by <span itemprop=author>L Ma</span>;
 </div></p>
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
-<a href="https://datumorphism.leima.is/reading/stemgnn/?ref=footer" class=pagination-previous>« StemGNN</a>
-<a class=pagination-next href="https://datumorphism.leima.is/reading/normalizing-flow-introduction-1908.09257/?ref=footer">Normalizing Flows: An Introduction and Review of... »</a>
+<a class=pagination-next href="https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/?ref=footer">Self-supervised Learning: Generative or... »</a>
 </nav>
 </div>
 <div class="column is-4">
@@ -184,8 +198,7 @@ by <span itemprop=author>Lei Ma</span>;
 <div class=media-content>
 <div class=content>
 <p>
-L Ma
-(2021). 'Self-supervised Learning: Generative or Constrastive', Datumorphism, 08 April. Available at: https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/.
+Lei Ma (2022). 'StemGNN', Datumorphism, 01 April. Available at: https://datumorphism.leima.is/reading/stemgnn/.
 </p>
 </div>
 </div>
@@ -201,7 +214,7 @@ L Ma
 <p>
 <strong>References: </strong><br>
 <ol>
-<li class=has-text-weight-bold><a href=http://arxiv.org/abs/2006.08218 style=text-decoration:none>Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218</a></li>
+<li class=has-text-weight-bold><a href=http://arxiv.org/abs/2103.07719 style=text-decoration:none>Cao D, Wang Y, Duan J, Zhang C, Zhu X, Huang C, et al. Spectral Temporal Graph Neural Network for multivariate time-series forecasting. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2103.07719</a></li>
 </ol>
 </p>
 </div>
@@ -216,50 +229,7 @@ L Ma
 <p>
 <strong>Current Ref: </strong><br>
 <ul><li style=list-style:none>
-<div>reading/self-supervised-learning-generative-or-contrastive-2006.08218.md</div></li>
-</ul>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<p>
-<strong>Links to: </strong>
-<ul>
-<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/>
-<div class=media-content>
-<div class=content>
-<h6>Generative Models</h6>
-<p>
-Generative self-supervised learning models can utilize more data
-</p>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/>
-<div class=media-content>
-<div class=content>
-<h6>Contrastive Models</h6>
-<p>
-Contrastive self-supervised learning models can utilize more data
-</p>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/adversarial-models/>
-<div class=media-content>
-<div class=content>
-<h6>Adversarial Models</h6>
-<p>
-Adversarial models use a generator and discriminator
-</p>
-</div>
-</div>
-</a>
+<div>reading/stemgnn.md</div></li>
 </ul>
 </p>
 </div>
@@ -276,7 +246,7 @@ Adversarial models use a generator and discriminator
 </section>
 </div>
 <div class=navtools>
-<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/reading/self-supervised-learning-generative-or-contrastive-2006.08218.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/reading/stemgnn.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
 <i class="fas fa-pencil-alt"></i>
 </a>
 <a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
