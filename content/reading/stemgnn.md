@@ -20,6 +20,58 @@ references:
     link: http://arxiv.org/abs/2103.07719
 ---
 
+- What problem is StemGNN solving:
+	- intra-series temporal pattern: DFT
+		- Each series
+	- inter-series correlations
+		- At each step, the interactions between nodes
+		- reversible operator
+	- Example problem
+		- Covid cases: DE, AT, NL, ...
+		- Predicting each country without considering the interactions between them
+		- Or introduce the people flow between them
+- GFT:
+	- Completes DFT as it takes care of the inter-series correlations
+	- one extra slide for this topic
+- Convolutions on Graphs
+	- one extra slide for this topic
+
+
+
+## How to build the graph
+
+- "self-attention":
+	- outer product of key, query, as the adjacency matrix
+		- key, query are of length # of ndoes
+
+
+## Weights and Biases
+
+- LC
+- 1DConv
+- GLU
+- FC
+
+## Experiments
+
+
+- Traffic adjacency matrix
+	- neighbouring sensors have higher correlations
+- Covid
+	- Neighbouring countries have higher correlation
+	- Spetral analysis:
+		- Some eigenvectors have clear meanings
+
+
+## Week spots
+
+- Paper and code are not consistent
+	- https://github.com/microsoft/StemGNN/issues/12
+- Static graph
+
+
+## Architecture
+
 {{< mermaid >}}
 stateDiagram-v2
     with_spectral_matrix_representation: Spectral Matrix Representation
