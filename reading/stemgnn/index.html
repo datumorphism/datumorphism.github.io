@@ -7,7 +7,7 @@
 <title> StemGNN | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="StemGNN">
-<meta property="og:description" content="stateDiagram-v2 with_spectral_matrix_representation: Spectral Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain with_latent_correlation: Latent Correlation Representation dft_repr: Discrete Fourier Transformed Representation conv_dft_repr: Convolved DFT Representation [*] -- with_latent_correlation: Latent Correlation Layer with_latent_correlation -- with_latent_correlation state with_latent_correlation { state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } [*] -- with_spectral_matrix_representation: Graph Fourier Transform note right of with_spectral_matrix_representation: This happens in Spe-Seq Cell with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } note right of with_latent_correlation: This is done in StemGNN Block with_latent_correlation -- [*]  ">
+<meta property="og:description" content="What problem is StemGNN solving:  intra-series temporal pattern: DFT  Each series   inter-series correlations  At each step, the interactions between nodes reversible operator   Example problem  Covid cases: DE, AT, NL, &mldr; Predicting each country without considering the interactions between them Or introduce the people flow between them     GFT:  Completes DFT as it takes care of the inter-series correlations one extra slide for this topic   Convolutions on Graphs  one extra slide for this topic    How to build the graph  &ldquo;self-attention&rdquo;:  outer product of key, query, as the adjacency matrix  key, query are of length # of ndoes      Weights and Biases  LC 1DConv GLU FC  Experiments  Traffic adjacency matrix  neighbouring sensors have higher correlations   Covid  Neighbouring countries have higher correlation Spetral analysis:  Some eigenvectors have clear meanings      Week spots  Paper and code are not consistent  https://github.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/reading/stemgnn/"><meta property="article:section" content="reading">
 <meta property="article:published_time" content="2022-01-01T00:00:00+00:00">
@@ -120,9 +120,9 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="StemGNN">
-<meta itemprop=description content="stateDiagram-v2 with_spectral_matrix_representation: Spectral Matrix Representation with_temporal_patterns_in_freq_domain: Temporal Patterns in Frequency Domain with_latent_correlation: Latent Correlation Representation dft_repr: Discrete Fourier Transformed Representation conv_dft_repr: Convolved DFT Representation [*] -- with_latent_correlation: Latent Correlation Layer with_latent_correlation -- with_latent_correlation state with_latent_correlation { state with_spectral_matrix_representation { [*] -- dft_repr: Discrete Fourier Transform dft_repr -- conv_dft_repr: 1DConv conv_dft_repr -- gated_conv_dft_repr: Gated Linear Unit gated_conv_dft_repr -- inverse_dft_gated_conv_dft_repr: IDFT } [*] -- with_spectral_matrix_representation: Graph Fourier Transform note right of with_spectral_matrix_representation: This happens in Spe-Seq Cell with_spectral_matrix_representation -- with_temporal_patterns_in_freq_domain with_temporal_patterns_in_freq_domain -- with_conv_temporal_patterns: Graph Convolution with_conv_temporal_patterns -- with_timeseries_restored: IGFT with_timeseries_restored -- Forecast with_timeseries_restored -- Backcast } note right of with_latent_correlation: This is done in StemGNN Block with_latent_correlation -- [*]  "><meta itemprop=datePublished content="2022-01-01T00:00:00+00:00">
+<meta itemprop=description content="What problem is StemGNN solving:  intra-series temporal pattern: DFT  Each series   inter-series correlations  At each step, the interactions between nodes reversible operator   Example problem  Covid cases: DE, AT, NL, &mldr; Predicting each country without considering the interactions between them Or introduce the people flow between them     GFT:  Completes DFT as it takes care of the inter-series correlations one extra slide for this topic   Convolutions on Graphs  one extra slide for this topic    How to build the graph  &ldquo;self-attention&rdquo;:  outer product of key, query, as the adjacency matrix  key, query are of length # of ndoes      Weights and Biases  LC 1DConv GLU FC  Experiments  Traffic adjacency matrix  neighbouring sensors have higher correlations   Covid  Neighbouring countries have higher correlation Spetral analysis:  Some eigenvectors have clear meanings      Week spots  Paper and code are not consistent  https://github."><meta itemprop=datePublished content="2022-01-01T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-01-01T00:00:00+00:00">
-<meta itemprop=wordCount content="107">
+<meta itemprop=wordCount content="243">
 <meta itemprop=keywords content="graph neural network,graph,forecasting,time series,">
 <section class=section>
 <div class=container>
@@ -156,6 +156,88 @@ AmNeumarkt
 <div class="column is-8">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
+<ul>
+<li>What problem is StemGNN solving:
+<ul>
+<li>intra-series temporal pattern: DFT
+<ul>
+<li>Each series</li>
+</ul>
+</li>
+<li>inter-series correlations
+<ul>
+<li>At each step, the interactions between nodes</li>
+<li>reversible operator</li>
+</ul>
+</li>
+<li>Example problem
+<ul>
+<li>Covid cases: DE, AT, NL, &mldr;</li>
+<li>Predicting each country without considering the interactions between them</li>
+<li>Or introduce the people flow between them</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>GFT:
+<ul>
+<li>Completes DFT as it takes care of the inter-series correlations</li>
+<li>one extra slide for this topic</li>
+</ul>
+</li>
+<li>Convolutions on Graphs
+<ul>
+<li>one extra slide for this topic</li>
+</ul>
+</li>
+</ul>
+<h2 id=how-to-build-the-graph>How to build the graph</h2>
+<ul>
+<li>&ldquo;self-attention&rdquo;:
+<ul>
+<li>outer product of key, query, as the adjacency matrix
+<ul>
+<li>key, query are of length # of ndoes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=weights-and-biases>Weights and Biases</h2>
+<ul>
+<li>LC</li>
+<li>1DConv</li>
+<li>GLU</li>
+<li>FC</li>
+</ul>
+<h2 id=experiments>Experiments</h2>
+<ul>
+<li>Traffic adjacency matrix
+<ul>
+<li>neighbouring sensors have higher correlations</li>
+</ul>
+</li>
+<li>Covid
+<ul>
+<li>Neighbouring countries have higher correlation</li>
+<li>Spetral analysis:
+<ul>
+<li>Some eigenvectors have clear meanings</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=week-spots>Week spots</h2>
+<ul>
+<li>Paper and code are not consistent
+<ul>
+<li><a href=https://github.com/microsoft/StemGNN/issues/12>https://github.com/microsoft/StemGNN/issues/12</a></li>
+</ul>
+</li>
+<li>Static graph</li>
+</ul>
+<h2 id=architecture>Architecture</h2>
 <div class=mermaid align=center>
 stateDiagram-v2
 with_spectral_matrix_representation: Spectral Matrix Representation
@@ -210,6 +292,31 @@ Lei Ma (2022). 'StemGNN', Datumorphism, 01 April. Available at: https://datumorp
 </article>
 </div>
 <style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#how-to-build-the-graph>How to build the graph</a></li>
+<li><a href=#weights-and-biases>Weights and Biases</a></li>
+<li><a href=#experiments>Experiments</a></li>
+<li><a href=#week-spots>Week spots</a></li>
+<li><a href=#architecture>Architecture</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
 <script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
 <div class=is-divider data-content=REFERENCES></div>
 <div class="box is-size-7">
