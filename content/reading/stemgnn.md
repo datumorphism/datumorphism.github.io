@@ -37,6 +37,10 @@ references:
 	- one extra slide for this topic
 
 
+## Graph Basics
+
+{{< figure src="../assets/stemgnn/stemgnn_basics.jpeg" >}}
+
 
 ## How to build the graph
 
