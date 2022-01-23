@@ -7,7 +7,7 @@
 <title> StemGNN | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="StemGNN">
-<meta property="og:description" content="What problem is StemGNN solving:  intra-series temporal pattern: DFT  Each series   inter-series correlations  At each step, the interactions between nodes reversible operator   Example problem  Covid cases: DE, AT, NL, &mldr; Predicting each country without considering the interactions between them Or introduce the people flow between them     GFT:  Completes DFT as it takes care of the inter-series correlations one extra slide for this topic   Convolutions on Graphs  one extra slide for this topic    How to build the graph  &ldquo;self-attention&rdquo;:  outer product of key, query, as the adjacency matrix  key, query are of length # of ndoes      Weights and Biases  LC 1DConv GLU FC  Experiments  Traffic adjacency matrix  neighbouring sensors have higher correlations   Covid  Neighbouring countries have higher correlation Spetral analysis:  Some eigenvectors have clear meanings      Week spots  Paper and code are not consistent  https://github.">
+<meta property="og:description" content="What problem is StemGNN solving:  intra-series temporal pattern: DFT  Each series   inter-series correlations  At each step, the interactions between nodes reversible operator   Example problem  Covid cases: DE, AT, NL, &mldr; Predicting each country without considering the interactions between them Or introduce the people flow between them     GFT:  Completes DFT as it takes care of the inter-series correlations one extra slide for this topic   Convolutions on Graphs  one extra slide for this topic    Graph Basics  How to build the graph  &ldquo;self-attention&rdquo;:  outer product of key, query, as the adjacency matrix  key, query are of length # of ndoes      Weights and Biases  LC 1DConv GLU FC  Experiments  Traffic adjacency matrix  neighbouring sensors have higher correlations   Covid  Neighbouring countries have higher correlation Spetral analysis:  Some eigenvectors have clear meanings      Week spots  Paper and code are not consistent  https://github.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/reading/stemgnn/"><meta property="article:section" content="reading">
 <meta property="article:published_time" content="2022-01-01T00:00:00+00:00">
@@ -120,9 +120,9 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="StemGNN">
-<meta itemprop=description content="What problem is StemGNN solving:  intra-series temporal pattern: DFT  Each series   inter-series correlations  At each step, the interactions between nodes reversible operator   Example problem  Covid cases: DE, AT, NL, &mldr; Predicting each country without considering the interactions between them Or introduce the people flow between them     GFT:  Completes DFT as it takes care of the inter-series correlations one extra slide for this topic   Convolutions on Graphs  one extra slide for this topic    How to build the graph  &ldquo;self-attention&rdquo;:  outer product of key, query, as the adjacency matrix  key, query are of length # of ndoes      Weights and Biases  LC 1DConv GLU FC  Experiments  Traffic adjacency matrix  neighbouring sensors have higher correlations   Covid  Neighbouring countries have higher correlation Spetral analysis:  Some eigenvectors have clear meanings      Week spots  Paper and code are not consistent  https://github."><meta itemprop=datePublished content="2022-01-01T00:00:00+00:00">
+<meta itemprop=description content="What problem is StemGNN solving:  intra-series temporal pattern: DFT  Each series   inter-series correlations  At each step, the interactions between nodes reversible operator   Example problem  Covid cases: DE, AT, NL, &mldr; Predicting each country without considering the interactions between them Or introduce the people flow between them     GFT:  Completes DFT as it takes care of the inter-series correlations one extra slide for this topic   Convolutions on Graphs  one extra slide for this topic    Graph Basics  How to build the graph  &ldquo;self-attention&rdquo;:  outer product of key, query, as the adjacency matrix  key, query are of length # of ndoes      Weights and Biases  LC 1DConv GLU FC  Experiments  Traffic adjacency matrix  neighbouring sensors have higher correlations   Covid  Neighbouring countries have higher correlation Spetral analysis:  Some eigenvectors have clear meanings      Week spots  Paper and code are not consistent  https://github."><meta itemprop=datePublished content="2022-01-01T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-01-01T00:00:00+00:00">
-<meta itemprop=wordCount content="243">
+<meta itemprop=wordCount content="245">
 <meta itemprop=keywords content="graph neural network,graph,forecasting,time series,">
 <section class=section>
 <div class=container>
@@ -191,6 +191,9 @@ AmNeumarkt
 </ul>
 </li>
 </ul>
+<h2 id=graph-basics>Graph Basics</h2>
+<figure><img src=../assets/stemgnn/stemgnn_basics.jpeg>
+</figure>
 <h2 id=how-to-build-the-graph>How to build the graph</h2>
 <ul>
 <li>&ldquo;self-attention&rdquo;:
@@ -303,6 +306,7 @@ Lei Ma (2022). 'StemGNN', Datumorphism, 01 April. Available at: https://datumorp
 <div>
 <nav id=TableOfContents>
 <ul>
+<li><a href=#graph-basics>Graph Basics</a></li>
 <li><a href=#how-to-build-the-graph>How to build the graph</a></li>
 <li><a href=#weights-and-biases>Weights and Biases</a></li>
 <li><a href=#experiments>Experiments</a></li>
