@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 312,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-01-20 07:01:30+00:00",
+    "message": "#visualization\n\nBeautiful, elegant, and informative. It reminds me of the Netflix movie chromatic storytelling visualization.\n\nFull image:\nhttps://zenodo.org/record/5828349\n\nOther discussions:\nhttps://www.reddit.com/r/dataisbeautiful/comments/s6vh8k/dutch_astronomer_cees_bassa_took_a_photo_of_the/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5425089057366588542,
+            "access_hash": -1717708349716188381,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x018a\\xed\\xb7^\\x01\\x03\\nA\\xfaJ\\x83\\r\\xa1\\x96%\\xb8\\x9a\\x1d\\xca\\xff'",
+            "date": "2022-01-20 07:01:29+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xcb\\xd9\\x909\\x1d)\\xa6<\\x0e\\xb9\\xfaT\\xe2\\x07\\x01r\\xa0d\\x03\\xcb\\n_\\xb3H\\xdfu\\x14\\x9fg_\\xf1\\xa0\\n\\x84`\\x91EK$2\\x07!\\x97\\x07\\xfd\\xe1E\\x00^\\x97>R\\x10q\\x84^\\xfe\\xc2\\xa4\\x80\\x1d\\xa3\\'\\x96\\xf7\\xa8\\xe5\\'\\xca@:\\x94_\\xe4*H\\x1b(\\xb9\\xea8\\xa6\"\\xad\\xcf\\x17\\x0fE\\x17G7\\x0eh\\xa0c\\x85\\xd4\\x05Wr>B\\x81\\xc1\\xf4\\x14\\xa9{\\x02g\\t\\'>\\xe2\\x8a)u\\x02\\xbc\\xd3\\xa4\\x92\\xb3\\x05`\\x0f\\xa9\\xa2\\x8a(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 152,
+                    "h": 320,
+                    "size": 18286
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 379,
+                    "h": 800,
+                    "size": 85322
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 606,
+                    "h": 1280,
+                    "sizes": [
+                        11690,
+                        35659,
+                        77095,
+                        122395,
+                        162468
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 139,
+            "length": 33
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 193,
+            "length": 105
+        }
+    ],
+    "views": 76,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1388,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-01-20 12:05:18+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

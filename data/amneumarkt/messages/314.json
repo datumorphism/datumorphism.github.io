@@ -1,0 +1,68 @@
+{
+    "_": "Message",
+    "id": 314,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-01-21 07:13:11+00:00",
+    "message": "#visualization \n\nSeaborn is getting a new interface.\n\nWould be great if the author defines a dunder method _ _ add _ _ () instead of using .add() method. Using dunder add, we can simply use + on layers.  \n\nNevertheless, we can all move away from plotnine when the migration is done.\n\nhttps://seaborn.pydata.org/nextgen/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 110,
+            "length": 10
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 246,
+            "length": 8,
+            "url": "https://plotnine.readthedocs.io/en/stable/"
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 284,
+            "length": 35
+        }
+    ],
+    "views": 77,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1388,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-01-23 07:58:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

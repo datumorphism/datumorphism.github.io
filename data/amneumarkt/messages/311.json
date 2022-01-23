@@ -1,0 +1,119 @@
+{
+    "_": "Message",
+    "id": 311,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-01-17 21:15:18+00:00",
+    "message": "#python\n\nI thought it was a trivial talk in the beginning. \nBut I quickly realized that I may know every each piece of the code mentioned in the video but the philosophy is what makes it exciting. \n\nHe talked about some fundamental ideas of Python, e.g., protocols.\n\nAfter watching this video, an idea came to me. Pytorch lightning has implanted a lot of hooks in a very pythonic way. This is what makes pytorch lightning easy to use. (So if you do a lot of machine learning experiments, pytorch lightning is worth a try.)\n\nhttps://youtu.be/cKPlPJyQrt4",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5127856301755285629,
+            "url": "https://youtu.be/cKPlPJyQrt4",
+            "display_url": "youtube.com/watch?v=cKPlPJyQrt4",
+            "hash": 0,
+            "type": "video",
+            "site_name": "YouTube",
+            "title": "James Powell: So you want to be a Python expert? | PyData Seattle 2017",
+            "description": "www.pydata.org\n\nPyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States. PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization. PyData communities approach data science using many languages, including (but not limited to) Python, Julia, and R. \n\nPyData conferences aim to be accessible and community-driven, with novice to advanced level presentations. PyData tutorials and talks bring attendees the latest project features along with cutting-edge use cases. 00:00 Welcome!\n00:10 Help us add time stamps or captions to this video! See the description for details.\n\nWant to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",
+            "photo": {
+                "_": "Photo",
+                "id": 532580596610318941,
+                "access_hash": -5472116337659432110,
+                "file_reference": "b'\\x00a\\xed\\xb7^x&\\xa2!\\xa4\\xe7zV\\xaf\\xc2\\xfbBi\\xca\\xbao'",
+                "date": "2017-09-02 08:07:29+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 51,
+                        "size": 754
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 8243
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 32403
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 65912
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": "https://www.youtube.com/embed/cKPlPJyQrt4",
+            "embed_type": "iframe",
+            "embed_width": 1280,
+            "embed_height": 720,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 524,
+            "length": 28
+        }
+    ],
+    "views": 99,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1388,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-01-18 07:05:17+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "python"
+    ]
+}

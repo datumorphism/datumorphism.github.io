@@ -23,61 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 7820633291977384515,
-            "url": "https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_0_0.html",
-            "display_url": "scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_0_0.html",
-            "hash": 0,
-            "type": "article",
-            "site_name": "scikit-learn",
-            "title": "Release Highlights for scikit-learn 1.0",
-            "description": "We are very pleased to announce the release of scikit-learn 1.0! The library has been stable for quite some time, releasing version 1.0 is recognizing that and signalling it to our users. This rele...",
-            "photo": {
-                "_": "Photo",
-                "id": 5941424957630295263,
-                "access_hash": 2451369855708132604,
-                "file_reference": "b'\\x00a\\xcf2\\xc8\\xacr\\xd0w\\xf8}\\xd6\\xb2J\\r\\xabK\\x18\\x91\\xdf\\xbd'",
-                "date": "2021-09-24 16:47:25+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b'\\x01\\x1e(\\xd8&\\x97\\x9aCM\\xda\\xdf\\xdf?\\x95\\x00?\\x9aho\\x9b\\x1f\\x86qI\\x96\\xc6?\\x8b\\xa6q\\xc5\\x05p\\x9cv\\xe6\\x90\\x0f\\xa2\\x90QL\\x00\\xf5\\xa5\\xa3\\x19\\xa3\\x1e\\xf4\\x00\\xcd\\xc7v)\\xf4\\xdd\\x83\\xd4\\xfet\\xb8\\xf7\\xa0\\x00\\x0cb\\x8aP(\\xa0\\x0f'"
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 240,
-                        "size": 11913
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "x",
-                        "w": 640,
-                        "h": 480,
-                        "sizes": [
-                            2760,
-                            7056,
-                            16074,
-                            20991,
-                            30278
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": null,
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 7820633291977384515
         }
     },
     "reply_markup": null,
@@ -93,12 +40,12 @@
             "length": 98
         }
     ],
-    "views": 175,
+    "views": 181,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1249,
+        "replies_pts": 1388,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

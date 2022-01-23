@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 313,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-01-20 07:39:20+00:00",
+    "message": "#ds\n\nDeepnote supports Great Expectations (GE) now. \n\nI ran their template notebook:\n\nhttps://deepnote.com/project/Reduce-Pipeline-Debt-With-Great-Expectations-mLT9DFCQSpW4kUBAzzdhBw/%2Fnotebook.ipynb/#00000-e170fae0-7e06-4a7a-85f3-343584ec4b94",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5425089057366588556,
+            "access_hash": -8191019164714630884,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x019a\\xed\\xb7^\\xe2\\xe2H\\xa0\\x82o2\\xa3\\x8a\\xd0\\xf0\\xcf\\x94\\x84\\xa0g'",
+            "date": "2022-01-20 07:39:20+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\t\\xb9\\xfd\\x9dm\\x9f\\xf5c\\xf34\\xbf\\xd9\\x96\\xbf\\xf3\\xcc\\xff\\x00\\xdfF\\xadc\\x93N\\xc5\\x007\\x1c\\xf5\\xa7S{\\x9au\\x003\\xf8\\x8d:\\x8a(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 74,
+                    "h": 320,
+                    "size": 7810
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 184,
+                    "h": 800,
+                    "size": 39893
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 295,
+                    "h": 1280,
+                    "sizes": [
+                        4928,
+                        14028,
+                        32423,
+                        55356,
+                        80544
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 86,
+            "length": 158
+        }
+    ],
+    "views": 90,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1388,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-01-23 07:59:11+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ds"
+    ]
+}

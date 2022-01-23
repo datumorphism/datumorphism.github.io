@@ -32,7 +32,50 @@
             "site_name": "GitHub",
             "title": "GitHub - volotat/DiffMorph: Image morphing without reference points by applying warp maps and optimizing over them.",
             "description": "Image morphing without reference points by applying warp maps and optimizing over them. - GitHub - volotat/DiffMorph: Image morphing without reference points by applying warp maps and optimizing ov...",
-            "photo": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5986607584087485690,
+                "access_hash": 5111835813754852141,
+                "file_reference": "b'\\x00a\\xed\\xb7_?\\x9f\\x8a3Iq\\xc1s\\x1d~\\x0eU\\xea\\xa0I\\x8f'",
+                "date": "2022-01-15 14:19:51+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd7f \\xf0\\x01\\xfci\\x85\\xa4\\xc7\\n\\xb9\\xf75&\\x01\\xff\\x00\\xf5\\xd1\\x81\\xfeM\\x00D\\x1e`9\\x8dI\\xf6jK\\x99^+7\\x90\\x00\\x1dW>\\xa2\\xa6\\xc0\\xff\\x00&\\x91\\x91]\\n0\\xca\\x9e\\x084\\x01F\\xde\\xf5\\xe5\\xbaH\\xf7)VL\\x9cQV\\xa3\\xb6\\x82'\\xdd\\x1cj\\xad\\x8cf\\x8a\\x00\\xa7\\xfd\\xa1/\\xf7S\\xf2?\\xe3G\\xf6\\x84\\xbf\\xddO\\xc8\\xff\\x00\\x8d\\x14U\\xd9\\x11p\\xfe\\xd0\\x97\\x9f\\x95?#\\xfe4\\xbfo\\x97\\xfb\\xa9\\xf9\\x1a(\\xa2\\xc8.\\x1fn\\x97\\x8f\\x95?#E\\x14Qd\\x17?\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9308
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 31019
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4921,
+                            11123,
+                            22228,
+                            30624,
+                            46736
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -62,12 +105,12 @@
             "length": 11
         }
     ],
-    "views": 138,
+    "views": 139,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1249,
+        "replies_pts": 1388,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

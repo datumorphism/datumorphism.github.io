@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 310,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-01-03 23:49:12+00:00",
+    "message": "#ds\n\nhttps://2022.pycon.de/blog/pyconde-pydata-berlin-tickets/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8061061751077987527,
+            "url": "https://2022.pycon.de/blog/pyconde-pydata-berlin-tickets/",
+            "display_url": "2022.pycon.de/blog/pyconde-pydata-berlin-tickets",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "2022.pycon.de",
+            "title": "PyConDE & PyData Berlin 2022 Tickets",
+            "description": "Tickets for PyConDE & PyData Berlin 2022",
+            "photo": {
+                "_": "Photo",
+                "id": 5955099497845599559,
+                "access_hash": -6797791448715536702,
+                "file_reference": "b'\\x00a\\xed\\xb7^\\xd7\\xf0o\\xaf\\x8a\\xa4\\x0e2z\\xd0\\x93\\xd4\\xfbS_\\xdb'",
+                "date": "2022-01-03 22:26:53+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd9\\xa6\\x19>b\\x00\\xce:\\xd3\\xe9\\x8e\\xa0\\xe4\\x85\\x04\\xe3\\x14\\x00\\x19P8B~b2\\x06)\\xf9\\x15\\ti3\\x9f(\\x13\\xeb\\x9a\\x91K\\x11\\x96\\x00\\x1fJ\\x00u\\x14Q@\\x05!Ec\\x929\\xa2\\x8a\\x00O-?\\xba)B\\xa8\\xe4\\x0eh\\xa2\\x80\\x16\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 7527
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 23822
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 640,
+                        "size": 46310
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2108,
+                        "h": 1054,
+                        "sizes": [
+                            11213,
+                            22608,
+                            40995,
+                            53744,
+                            81447
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 57
+        }
+    ],
+    "views": 184,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1388,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-01-03 23:50:32+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ds"
+    ]
+}

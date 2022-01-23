@@ -34,10 +34,10 @@
             "description": "The latest news and updates from the 2020 Presidential, Senate, House, and gubernatorial races.",
             "photo": {
                 "_": "Photo",
-                "id": 5840408258836278208,
-                "access_hash": -5208086450763397658,
-                "file_reference": "b'\\x00a\\xcf2\\xca\\xe8V\\xf2\\x88\\xbaW\\x8f\\xa7\\xbe%\\x14\\x8dA\\xe5\\x92\\xc4'",
-                "date": "2020-11-03 07:40:31+00:00",
+                "id": 6000026122777111833,
+                "access_hash": 1446804817332431246,
+                "file_reference": "b'\\x00a\\xed\\xb7`|\\xc3\\xd7$\\xfbe\\xca\\xb6\\xc7\\x0e\\x14\\xcf$\\x81m\\xbc'",
+                "date": "2022-01-19 17:19:17+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
@@ -59,11 +59,17 @@
                         "size": 17212
                     },
                     {
-                        "_": "PhotoSize",
+                        "_": "PhotoSizeProgressive",
                         "type": "y",
                         "w": 1280,
                         "h": 720,
-                        "size": 35162
+                        "sizes": [
+                            4645,
+                            9071,
+                            13579,
+                            19779,
+                            33791
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -89,12 +95,12 @@
             "length": 84
         }
     ],
-    "views": 65,
+    "views": 66,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1249,
+        "replies_pts": 1388,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,
