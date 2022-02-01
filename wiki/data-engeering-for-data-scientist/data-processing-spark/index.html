@@ -123,7 +123,7 @@ AmNeumarkt
 <meta itemprop=name content="Data Processing - (Py)Spark">
 <meta itemprop=description content="Processing Data using (Py)Spark"><meta itemprop=datePublished content="2022-01-31T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-01-31T00:00:00+00:00">
-<meta itemprop=wordCount content="273">
+<meta itemprop=wordCount content="291">
 <meta itemprop=keywords content="Data Engineering,Spark,PySpark,">
 <section class=section>
 <div class=container>
@@ -209,7 +209,14 @@ pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>Sp
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>selectExpr(<span style=color:#e6db74>&#34;col_1 * 3.14 as col_1_mul_pi&#34;</span>)
 </code></pre></div><p><code>.selectExpr</code> works similar to <code>.select</code>, we can select other columns just like what we do in the SQL select clause</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>selectExpr(<span style=color:#e6db74>&#34;col_1&#34;</span>, <span style=color:#e6db74>&#34;col_2&#34;</span>, <span style=color:#e6db74>&#34;col_1 * 3.14 as col_1_mul_pi&#34;</span>)
-</code></pre></div>
+</code></pre></div><h3 id=grouping>Grouping</h3>
+<p>Use <code>.groupBy</code>.</p>
+<ul>
+<li><code>pyspark.sql.GroupedData</code> has some useful methods, e.g., <code>.avg</code>, <code>count</code>.</li>
+<li>Use <code>.agg(pyspark.sql.functions.x_y_z_function)</code> to aggregate.</li>
+</ul>
+<h3 id=joining-tables>Joining Tables</h3>
+<p><code>.join</code></p>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -254,6 +261,8 @@ L Ma
 <ul>
 <li><a href=#useful-commands>Useful Commands</a></li>
 <li><a href=#updating-dataframe>Updating Dataframe</a></li>
+<li><a href=#grouping>Grouping</a></li>
+<li><a href=#joining-tables>Joining Tables</a></li>
 </ul>
 </li>
 </ul>
