@@ -1,20 +1,20 @@
 {
     "_": "Message",
-    "id": 180,
+    "id": 315,
     "peer_id": {
         "_": "PeerChannel",
         "channel_id": 1320526773
     },
-    "date": "2021-02-05 08:05:46+00:00",
-    "message": "#ML \n\n\u201cEveryone wants to do the model work, not the data work\u201d: Data Cascades in High-Stakes AI\n\nTL;DR:\n- Data quality is crucial in any AI especially for those with high-stakes.\n- Many data work are overlooked easily: politics (some data entries are not recorded or misrecorded), human in the loop of data quality interventions for cleaning and wrangling but upstream data creation shall be controlled well too, etc\n- Data Cascades: how the issues are cascading from upstream to downstream should be clear.\n\n> Data Cascades: compounding events causing negative, downstream effects from data issues, resulting in technical debt over time.\n\nhttps://research.google/pubs/pub49953/",
+    "date": "2022-01-25 07:39:40+00:00",
+    "message": "#ml\n\nhttps://ruder.io/ml-highlights-2021/",
     "out": true,
     "mentioned": false,
     "media_unread": false,
     "silent": false,
     "post": true,
     "from_scheduled": false,
-    "legacy": false,
-    "edit_hide": false,
+    "legacy": true,
+    "edit_hide": true,
     "pinned": false,
     "from_id": null,
     "fwd_from": null,
@@ -24,53 +24,59 @@
         "_": "MessageMediaWebPage",
         "webpage": {
             "_": "WebPage",
-            "id": 6233452128338927667,
-            "url": "https://research.google/pubs/pub49953/",
-            "display_url": "research.google/pubs/pub49953",
+            "id": 4179402924998214059,
+            "url": "https://ruder.io/ml-highlights-2021/",
+            "display_url": "ruder.io/ml-highlights-2021",
             "hash": 0,
-            "type": "article",
-            "site_name": "Google Research",
-            "title": "\"Everyone wants to do the model work, not the data work\": Data Cascades in High-Stakes AI \u2013 Google Research",
-            "description": null,
+            "type": "photo",
+            "site_name": "Sebastian Ruder",
+            "title": "ML and NLP Research Highlights of 2021",
+            "description": "This post summarizes progress across multiple impactful areas in ML and NLP in 2021.",
             "photo": {
                 "_": "Photo",
-                "id": 6018132828723718839,
-                "access_hash": 6693176266268375771,
-                "file_reference": "b'\\x00a\\xf9l\\xba\\x03\\x1a\\x1f\\x16\\x91a\\x91\\x9e?\\x15p\\x1c\\xca\\xca\\xf3\\xf0'",
-                "date": "2019-12-10 23:41:05+00:00",
+                "id": 6016054987970424027,
+                "access_hash": 4556520578987877222,
+                "file_reference": "b'\\x00a\\xf9l\\xb9U\\xeb\\x1b>S\\x11k\\x03\\xf5B\\xfaIn\\t&\\\\'",
+                "date": "2022-01-24 20:22:04+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
                         "type": "i",
-                        "bytes": "b'\\x01\\t(\\xd5;\\xc18\\x04\\x8f\\xc2\\x86g\\xc8\\x01z\\xd4\\x94P\\x04d\\xcb\\xd7h\\xe9\\xd34n\\x93\\xfb\\x83\\xf3\\xa9(\\xa0\\x06\\x02\\xf9\\x19\\x00\\x0e\\xf4S\\xe8\\xa0\\x0f'"
+                        "bytes": "b'\\x01\\x17(\\xd8$\\x01\\x92p)7\\x02\\xbb\\xb21\\xebQ]\\x82a\\xc6223\\xcfjH\\x0f\\xc8\\x00\\x1cd\\xf0)\\x0f\\xa1#\\x92P\\xfc\\xbc\\x7fJHNcR[\\xa0\\xe9O\\xdc\\x7f\\xbai\\xa4\\x10\\xbc(\\x18\\xf4\\xa6!\\xe0\\xe7\\xd6\\x8alGr\\x03E\\x00\\x12\\xae\\xf8\\xca\\x8e\\xf4\\x91\\xa6\\xd8\\xf6\\x9e=(\\xa2\\x97P\\x12egB3\\x8e9\\x14\\xdbt+\\x10\\\\\\xf0;\\xfa\\xd1E\\x1d@\\x98\\x00\\x06\\x00\\xc0\\xa2\\x8a)\\x81'"
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
-                        "h": 76,
-                        "size": 5698
+                        "h": 181,
+                        "size": 14627
                     },
                     {
                         "_": "PhotoSize",
                         "type": "x",
                         "w": 800,
-                        "h": 191,
-                        "size": 17547
+                        "h": 452,
+                        "size": 55582
                     },
                     {
                         "_": "PhotoSize",
                         "type": "y",
                         "w": 1280,
-                        "h": 305,
-                        "size": 30541
+                        "h": 724,
+                        "size": 106690
                     },
                     {
-                        "_": "PhotoSize",
+                        "_": "PhotoSizeProgressive",
                         "type": "w",
-                        "w": 2100,
-                        "h": 500,
-                        "size": 52482
+                        "w": 1746,
+                        "h": 988,
+                        "sizes": [
+                            14381,
+                            36716,
+                            72026,
+                            97805,
+                            150622
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -97,11 +103,11 @@
         },
         {
             "_": "MessageEntityUrl",
-            "offset": 640,
-            "length": 38
+            "offset": 5,
+            "length": 36
         }
     ],
-    "views": 105,
+    "views": 139,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
@@ -113,12 +119,12 @@
         "max_id": null,
         "read_max_id": null
     },
-    "edit_date": "2021-02-05 08:05:55+00:00",
+    "edit_date": "2022-01-25 07:39:48+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],
     "ttl_period": null,
     "tags": [
-        "ML"
+        "ml"
     ]
 }

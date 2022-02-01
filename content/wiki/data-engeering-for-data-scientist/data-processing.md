@@ -10,9 +10,14 @@ references:
   - name: "The Data Engineering Cookbook"
     link: "https://github.com/andkret/Cookbook"
     key: "Kretz2019"
+  - name: "Damji JJD. A Tale of Three Apache Spark APIs: RDDs vs DataFrames and Datasets. In: Databricks [Internet]. 14 Jul 2016 [cited 1 Feb 2022]. Available: https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html"
+    link: "https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html"
+    key: "databricksblog2016"
 supplementary:
   - name: "The Data Engineering Cookbook"
     link: "https://github.com/andkret/Cookbook"
+links:
+  - wiki/data-engeering-for-data-scientist/data-processing-spark.md
 weight: 20
 ---
 
@@ -49,7 +54,9 @@ never dropped
 
 ### Spark
 
-Spark is in-memory storage.
+{{< e "wiki/data-engeering-for-data-scientist/data-processing-spark.md" >}}
+
+{{< c "wiki/data-engeering-for-data-scientist/data-processing-spark.md" "Spark">}} is in-memory storage.
 
 - e.g., Load from HDFS to memory of workers,
 - input data and intermediate results are in memory, no disk writes,
@@ -65,16 +72,20 @@ Spark is in-memory storage.
 
 #### RDD
 
-Resilient Distributed Datasets (RDD) is the core of Spark.
+Resilient Distributed Datasets (RDD) is the core of Spark. It is a good tool to work on low level optimizations[^databricksblog2016].
 
 - Similar to Map-Reduce
 - Lower level
 - Old stuff
 - Now dataframes/datasets
 
-#### DataFrames
+#### DataFrames and Datasets
 
-DataFrames is the successor to RDD.
+DataFrames and Datasets share the same API since Apache Spark 2.0[^databricksblog2016]. They are easier to use than RDD.
+
+Datasets are typed. In this way we can catch more errors in compile time.
+
+
 
 
 
@@ -144,3 +155,4 @@ Use the local Hadoop data in Spark
 
 
 [^Kretz2019]: {{< cite key="Kretz2019" >}}
+[^databricksblog2016]: {{< cite key="databricksblog2016" >}}

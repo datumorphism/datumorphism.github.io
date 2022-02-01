@@ -1,0 +1,64 @@
+{
+    "_": "Message",
+    "id": 316,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-01-28 08:52:27+00:00",
+    "message": "\u786e\u5b9e\u6709\u5f88\u591a\uff0c\u6bd4\u5982\u6211\u7528 ack \u66ff\u4ee3\u4e86 grep\uff0c\u901f\u5ea6\u5feb\u4e86\u4e0d\u5c11\u3002\n\nhttps://www.ruanyifeng.com/blog/2022/01/cli-alternative-tools.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2022-01-28 01:32:19+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1433280526
+        },
+        "from_name": null,
+        "channel_post": 1262,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 33,
+            "length": 66
+        }
+    ],
+    "views": 71,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1411,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-01-28 11:05:33+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

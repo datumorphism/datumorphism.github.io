@@ -31,12 +31,12 @@
             "type": "video",
             "site_name": "YouTube",
             "title": "James Powell: So you want to be a Python expert? | PyData Seattle 2017",
-            "description": "www.pydata.org\n\nPyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States. PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization. PyData communities approach data science using many languages, including (but not limited to) Python, Julia, and R. \n\nPyData conferences aim to be accessible and community-driven, with novice to advanced level presentations. PyData tutorials and talks bring attendees the latest project features along with cutting-edge use cases. 00:00 Welcome!\n00:10 Help us add time stamps or captions to this video! See the description for details.\n\nWant to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",
+            "description": "www.pydata.org\n\nPyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States. PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization. PyData communities approach data science using many languages, including (but not limited to) Python, Julia, and R. \n\nPyData conferences aim to be accessible and community-driven, with novice to advanced level presentations. PyData tutorials and talks bring attendees the latest project features along with cutting-edge use cases. \n\n0:00 About PyData and being proficient in Python\n4:09 Important features of Python and audience survey\n7:40 Data model methods\n10:14 __init__ method\n11:15 __repr__ method\n12:17 __add__ method\n15:51 __len__ method\n18:42 __call__ method\n20:50 Metaclasses and the problem of writing safe library code\n27:00 Contraints on the library code using assert\n32:33 Compile-time vs run time executable code\n34:42 Disassembling class code and using __build_class__\n40:26 Constraining library code with the metaclass pattern\n47:22 Introducing decorators\n49:07 Code inspection\n57:36 Writing a timer function\n59:42 Decorator syntactic sugar\n1:03:00 Writing a ntimes decorator\n1:06:32 Wrapping functions into class\n1:10:51 Eager execution\n1:14:02 __iter__ and __next__ methods\n1:17:40 yield and the Generator syntax\n1:20:35 Coroutines and interleaving\n1:24:35 Context Managers\n1:25:30 Setup and teardown of resources\n1:28:38 Applying to SQL transactions\n1:30:10 __enter__ and __exit__ methods\n1:32:30 Links between generators and context managers\n1:36:02 Refactoring the SQL query code\n1:37:52 Wrapping up\n1:40:04 Opinions on writing clear code in Python\n1:48:18 Q&A\n\nS/o to https://github.com/mycaule for the video timestamps!\n\nWant to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",
             "photo": {
                 "_": "Photo",
                 "id": 532580596610318941,
                 "access_hash": -5472116337659432110,
-                "file_reference": "b'\\x00a\\xed\\xb7^x&\\xa2!\\xa4\\xe7zV\\xaf\\xc2\\xfbBi\\xca\\xbao'",
+                "file_reference": "b'\\x00a\\xf9l\\xb9b\\xef\\xb8OQ\\x8bL}\\xd9\\xeeg<\\xe9\\x15l\\x85'",
                 "date": "2017-09-02 08:07:29+00:00",
                 "sizes": [
                     {
@@ -96,12 +96,12 @@
             "length": 28
         }
     ],
-    "views": 99,
+    "views": 129,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1388,
+        "replies_pts": 1411,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,
