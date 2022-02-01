@@ -132,3 +132,15 @@ or Python
 ```python
 .selectExpr("col_1", "col_2", "col_1 * 3.14 as col_1_mul_pi")
 ```
+
+
+### Grouping
+
+Use `.groupBy`.
+
+- `pyspark.sql.GroupedData` has some useful methods, e.g., `.avg`, `count`.
+- Use `.agg(pyspark.sql.functions.x_y_z_function)` to aggregate.
+
+### Joining Tables
+
+`.join`
