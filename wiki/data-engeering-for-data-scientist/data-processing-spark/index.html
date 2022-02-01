@@ -4,18 +4,18 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title> Scale Up | Datumorphism | L Ma </title>
-<meta name=description content="scale up your services">
+<title> Data Processing - (Py)Spark | Datumorphism | L Ma </title>
+<meta name=description content="Processing Data using (Py)Spark">
 <meta name=author content="L Ma">
-<meta property="og:title" content="Scale Up">
-<meta property="og:description" content="scale up your services">
+<meta property="og:title" content="Data Processing - (Py)Spark">
+<meta property="og:description" content="Processing Data using (Py)Spark">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/scale-up/"><meta property="article:section" content="wiki">
-<meta property="article:published_time" content="2021-05-05T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-05-05T00:00:00+00:00">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2022-01-31T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-01-31T00:00:00+00:00">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-<link rel=canonical href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/scale-up/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
 <link rel=stylesheet href=/css/bulma.css>
 <link rel=stylesheet href=/css/bulma-divider.min.css>
 <link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
@@ -120,11 +120,11 @@ AmNeumarkt
 </header>
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
-<meta itemprop=name content="Scale Up">
-<meta itemprop=description content="scale up your services"><meta itemprop=datePublished content="2021-05-05T00:00:00+00:00">
-<meta itemprop=dateModified content="2021-05-05T00:00:00+00:00">
-<meta itemprop=wordCount content="127">
-<meta itemprop=keywords content="Data Engineering,Data Storage,">
+<meta itemprop=name content="Data Processing - (Py)Spark">
+<meta itemprop=description content="Processing Data using (Py)Spark"><meta itemprop=datePublished content="2022-01-31T00:00:00+00:00">
+<meta itemprop=dateModified content="2022-01-31T00:00:00+00:00">
+<meta itemprop=wordCount content="273">
+<meta itemprop=keywords content="Data Engineering,Spark,PySpark,">
 <section class=section>
 <div class=container>
 <article class=post>
@@ -141,99 +141,87 @@ AmNeumarkt
 <a href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/>Data Engineering for Data Scientists</a>
 </li>
 <li class=active>
-<a href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/scale-up/>Scale Up</a>
+<a href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/>Data Processing - (Py)Spark</a>
 </li>
 </ul>
 </nav>
 <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
-Scale Up
+Data Processing - (Py)Spark
 </h1>
 <h2 class="title is-6 has-text-centered">
 <i class="fas fa-tags" style=margin-right:.5em></i>
 <a href=/tags/data-engineering><span class="tag is-warning is-small is-light">#Data Engineering</span></a>
-<a href=/tags/data-storage><span class="tag is-warning is-small is-light">#Data Storage</span></a>
+<a href=/tags/spark><span class="tag is-warning is-small is-light">#Spark</span></a>
+<a href=/tags/pyspark><span class="tag is-warning is-small is-light">#PySpark</span></a>
 </h2>
 </header>
 <div class=columns>
 <div class="column is-8">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<article class="message is-warning is-light">
-<div class=message-body>
-Many of the example are from the book by Adreas Kretz. Find the link to the book in the references section.
-</div>
-</article>
-<h2 id=scaling-up-storage>Scaling Up Storage</h2>
-<h3 id=scaling-up-sql-db>Scaling Up SQL DB</h3>
-<h4 id=san-storage-area-network>SAN: Storage Area Network</h4>
-<p>Use multiple servers on the DB storage to make the query faster.</p>
+<p>Spark uses Resilient Distributed Dataset (RDD).</p>
+<h2 id=pyspark>PySpark</h2>
+<p>PySpark provides</p>
 <ul>
-<li>Good for Read-only DB</li>
-<li>Not convinient to update DB</li>
-</ul>
-<h3 id=hadoop>Hadoop</h3>
-<p>Hadoop:</p>
+<li><code>SparkContext</code>
 <ul>
-<li>Distributed storage</li>
-<li>Analysis</li>
-</ul>
-<p>4 core modules:</p>
-<ul>
-<li>Hadoop common
-<ul>
-<li>background functionalities</li>
-</ul>
-</li>
-<li>HDFS
-<ul>
-<li>Divide into blocks</li>
-<li>Distribute</li>
-</ul>
-</li>
-<li>MapReduce
-<ul>
-<li>Old tech</li>
-</ul>
-</li>
-<li>YARN
-<ul>
-<li>Resource management</li>
+<li><code>SparkSession</code></li>
 </ul>
 </li>
 </ul>
-<p>The Hadoop Ecosystem:</p>
+<p>A spark dataframe is immutable. This makes it tricky to update a dataframe.</p>
+<h3 id=useful-commands>Useful Commands</h3>
+<h4 id=get-session>Get Session</h4>
+<p>In pyspark, we can also get or create the session using the following method.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>SparkSession<span style=color:#f92672>.</span>builder<span style=color:#f92672>.</span>getOrCreate()
+</code></pre></div><h4 id=list-all-tables>List all Tables</h4>
+<p>A <a href=https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.SparkSession.catalog.html#pyspark.sql.SparkSession.catalog><code>pyspark.sql.SparkSession</code> has property <code>catalog</code></a> and can be used to list the tables.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>SparkSession<span style=color:#f92672>.</span>catalog<span style=color:#f92672>.</span>listTables()
+</code></pre></div><h4 id=run-sql-query>Run SQL Query</h4>
+<p>Given a SQL query <code>query</code>, we can query the table using <code>.sql()</code> method of the session.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>query <span style=color:#f92672>=</span> <span style=color:#f92672>...</span>
+pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>SparkSession<span style=color:#f92672>.</span>sql(query)
+</code></pre></div><h4 id=convert-dataframe-to-pandas-dataframe>Convert Dataframe to Pandas Dataframe</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>toPandas()
+</code></pre></div><h4 id=convert-pandas-dataframe-to-spark-dataframe>Convert Pandas Dataframe to Spark Dataframe</h4>
+<p>To create a spark dataframe from a pandas dataframe,</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>createDataFrame(a_pandas_dataframe)
+</code></pre></div><p>Note that the dataframe is not yet in the catalog of the session.</p>
 <ul>
-<li>Many tools that can be connected to Hadoop or are based on Hadoop</li>
-<li>Not only about the 4 core modules anymore if we consider the ecosystem:
-<ul>
-<li>Spark is also using YARN</li>
+<li>It is only stored locally.</li>
+<li>SQL query doesn&rsquo;t work.</li>
 </ul>
-</li>
-<li>No need to use everything in Hadoop
-<ul>
-<li>Data->(Kafka->Spark)->DB
-<ul>
-<li>The (*) can be using Hadoop</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure><img src=../assets/scale-up/hadoop-ecosystem.png alt="Adapted from https://github.com/andkret/Cookbook"><figcaption>
-<p>Adapted from <a href=https://github.com/andkret/Cookbook>https://github.com/andkret/Cookbook</a></p>
-</figcaption>
-</figure>
+<h4 id=use-query-on-local-dataframe>Use Query on local dataframe</h4>
+<p>To be able to query the dataframe, it has to be in the catalog. A dataframe has the method <code>.createOrReplaceTempView("a_table_name")</code>. This will create a table that can be used as long as the session is alive.</p>
+<p>Once a table is in the catalog, we can create a dataframe using</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>SparkSession<span style=color:#f92672>.</span>table(<span style=color:#e6db74>&#34;a_table_name&#34;</span>)
+</code></pre></div><h3 id=updating-dataframe>Updating Dataframe</h3>
+<h4 id=create-and-add>Create and Add</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>spark_df <span style=color:#f92672>=</span> spark_df<span style=color:#f92672>.</span>withColumn(<span style=color:#e6db74>&#34;a_new_col&#34;</span>, df<span style=color:#f92672>.</span>existing_col <span style=color:#f92672>*</span> <span style=color:#ae81ff>3.14</span>)
+</code></pre></div><p>Contrary to our intuition, this will create a new dataframe with all the original columns and this new column <code>"a_new_col"</code>.</p>
+<p>A comparison would be the <code>.select()</code> method of a dataframe.</p>
+<h4 id=filter><code>filter</code></h4>
+<p>SQL Where clause</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>filter(<span style=color:#e6db74>&#34;sql query where clause&#34;</span>)
+</code></pre></div><p>or Python</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>filter(df<span style=color:#f92672>.</span>col_1 <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>)
+</code></pre></div><h4 id=select-a-newly-created-column>Select a Newly Created Column</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>selectExpr(<span style=color:#e6db74>&#34;col_1 * 3.14 as col_1_mul_pi&#34;</span>)
+</code></pre></div><p><code>.selectExpr</code> works similar to <code>.select</code>, we can select other columns just like what we do in the SQL select clause</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>selectExpr(<span style=color:#e6db74>&#34;col_1&#34;</span>, <span style=color:#e6db74>&#34;col_2&#34;</span>, <span style=color:#e6db74>&#34;col_1 * 3.14 as col_1_mul_pi&#34;</span>)
+</code></pre></div>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
 <i class="fas fa-pencil-alt"></i>
 </span>
-Published: <time datetime=2021-05-05T00:00:00+00:00>2021-05-05</time>
+Published: <time datetime=2022-01-31T00:00:00+00:00>2022-01-31</time>
 by <span itemprop=author>L Ma</span>;
 </div></p>
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
-<a href="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/?ref=footer" class=pagination-previous>« Data Processing - (Py)Spark</a>
+<a href="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing/?ref=footer" class=pagination-previous>« Data Processing</a>
+<a class=pagination-next href="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/scale-up/?ref=footer">Scale Up »</a>
 </nav>
 </div>
 <div class="column is-4">
@@ -244,7 +232,7 @@ by <span itemprop=author>L Ma</span>;
 <div class=content>
 <p>
 L Ma
-(2021). 'Scale Up', Datumorphism, 05 April. Available at: https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/scale-up/.
+(2022). 'Data Processing - (Py)Spark', Datumorphism, 01 April. Available at: https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/.
 </p>
 </div>
 </div>
@@ -262,10 +250,10 @@ L Ma
 <div>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#scaling-up-storage>Scaling Up Storage</a>
+<li><a href=#pyspark>PySpark</a>
 <ul>
-<li><a href=#scaling-up-sql-db>Scaling Up SQL DB</a></li>
-<li><a href=#hadoop>Hadoop</a></li>
+<li><a href=#useful-commands>Useful Commands</a></li>
+<li><a href=#updating-dataframe>Updating Dataframe</a></li>
 </ul>
 </li>
 </ul>
@@ -287,10 +275,10 @@ L Ma
 <strong>References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
-<a name=Kretz2019 href=#Kretz2019 style=text-decoration:none>
-<span class="tag is-link is-light">Kretz2019</span>
+<a name=DataCampPySparkIntro href=#DataCampPySparkIntro style=text-decoration:none>
+<span class="tag is-link is-light">DataCampPySparkIntro</span>
 </a>
-<a href=https://github.com/andkret/Cookbook style=text-decoration:none>The Data Engineering Cookbook</a></li>
+<a href=https://www.datacamp.com/courses/introduction-to-pyspark style=text-decoration:none>Introduction to PySpark on DataCamp</a></li>
 </ol>
 </p>
 </div>
@@ -305,7 +293,7 @@ L Ma
 <p>
 <strong>Supplementary: </strong><br>
 <ol>
-<li class=has-text-weight-bold><a href=https://github.com/andkret/Cookbook style=text-decoration:none>The Data Engineering Cookbook</a></li>
+<li class=has-text-weight-bold><a href=https://www.datacamp.com/courses/introduction-to-pyspark style=text-decoration:none>Introduction to PySpark on DataCamp</a></li>
 </ol>
 </p>
 </div>
@@ -320,7 +308,7 @@ L Ma
 <p>
 <strong>Current Ref: </strong><br>
 <ul><li style=list-style:none>
-<div>wiki/data-engeering-for-data-scientist/scale-up.md</div></li>
+<div>wiki/data-engeering-for-data-scientist/data-processing-spark.md</div></li>
 </ul>
 </p>
 </div>
@@ -334,12 +322,12 @@ L Ma
 <p>
 <strong>Links from: </strong>
 <div>
-<a class=box href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/checklist/>
+<a class=box href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing/>
 <div class=media-content>
 <div class=content>
-<h6>Data Engineering for Data Scientists: Checklist</h6>
+<h6>Data Processing</h6>
 <p>
-A checklist to get a shallow understanding of the basics and the ecosystem
+Processing Data is essential.
 </p>
 </div>
 </div>
@@ -360,7 +348,7 @@ A checklist to get a shallow understanding of the basics and the ecosystem
 </section>
 </div>
 <div class=navtools>
-<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/data-engeering-for-data-scientist/scale-up.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/data-engeering-for-data-scientist/data-processing-spark.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
 <i class="fas fa-pencil-alt"></i>
 </a>
 <a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>

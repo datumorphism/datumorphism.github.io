@@ -123,7 +123,7 @@ AmNeumarkt
 <meta itemprop=name content="Data Processing">
 <meta itemprop=description content="Processing Data is essential."><meta itemprop=datePublished content="2021-05-05T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-05-05T00:00:00+00:00">
-<meta itemprop=wordCount content="364">
+<meta itemprop=wordCount content="447">
 <meta itemprop=keywords content="Data Engineering,">
 <section class=section>
 <div class=container>
@@ -190,7 +190,28 @@ never dropped</li>
 </ul>
 <h2 id=tools>Tools</h2>
 <h3 id=spark>Spark</h3>
-<p>Spark is in-memory storage.</p>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<div class=media-content>
+<div class=content>
+<h6>
+Data Processing - (Py)Spark
+</h6>
+<div style=font-size:80%>
+Processing Data using (Py)Spark
+</div>
+</div>
+</div>
+</a>
+<p>
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/>
+Spark
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Data Processing - (Py)Spark</span>
+<span class=tooltip_content>Processing Data using (Py)Spark</span>
+</span>
+</span>
+is in-memory storage.</p>
 <ul>
 <li>e.g., Load from HDFS to memory of workers,</li>
 <li>input data and intermediate results are in memory, no disk writes,</li>
@@ -204,15 +225,16 @@ never dropped</li>
 </figcaption>
 </figure>
 <h4 id=rdd>RDD</h4>
-<p>Resilient Distributed Datasets (RDD) is the core of Spark.</p>
+<p>Resilient Distributed Datasets (RDD) is the core of Spark. It is a good tool to work on low level optimizations<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p>
 <ul>
 <li>Similar to Map-Reduce</li>
 <li>Lower level</li>
 <li>Old stuff</li>
 <li>Now dataframes/datasets</li>
 </ul>
-<h4 id=dataframes>DataFrames</h4>
-<p>DataFrames is the successor to RDD.</p>
+<h4 id=dataframes-and-datasets>DataFrames and Datasets</h4>
+<p>DataFrames and Datasets share the same API since Apache Spark 2.0<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. They are easier to use than RDD.</p>
+<p>Datasets are typed. In this way we can catch more errors in compile time.</p>
 <h4 id=sparksql>SparkSQL</h4>
 <p>SparkSQL is used to access dataframes.</p>
 <h4 id=run-complex-models-in-spark>Run Complex Models in Spark</h4>
@@ -254,6 +276,14 @@ never dropped</li>
 <a href=https://github.com/andkret/Cookbook style=text-decoration:none>The Data Engineering Cookbook</a>
 &#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
+<li id=fn:2 role=doc-endnote>
+<p>
+<a name=databricksblog2016 href=#databricksblog2016 style=text-decoration:none>
+<span class="tag is-link is-light">databricksblog2016</span>
+</a>
+<a href=https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html style=text-decoration:none>Damji JJD. A Tale of Three Apache Spark APIs: RDDs vs DataFrames and Datasets. In: Databricks [Internet]. 14 Jul 2016 [cited 1 Feb 2022]. Available: https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html</a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
 </ol>
 </section>
 </div>
@@ -267,7 +297,7 @@ by <span itemprop=author>L Ma</span>;
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
 <a href="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-storage/?ref=footer" class=pagination-previous>« Data Storage</a>
-<a class=pagination-next href="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/scale-up/?ref=footer">Scale Up »</a>
+<a class=pagination-next href="https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/?ref=footer">Data Processing - (Py)Spark »</a>
 </nav>
 </div>
 <div class="column is-4">
@@ -327,6 +357,11 @@ L Ma
 <span class="tag is-link is-light">Kretz2019</span>
 </a>
 <a href=https://github.com/andkret/Cookbook style=text-decoration:none>The Data Engineering Cookbook</a></li>
+<li class=has-text-weight-bold>
+<a name=databricksblog2016 href=#databricksblog2016 style=text-decoration:none>
+<span class="tag is-link is-light">databricksblog2016</span>
+</a>
+<a href=https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html style=text-decoration:none>Damji JJD. A Tale of Three Apache Spark APIs: RDDs vs DataFrames and Datasets. In: Databricks [Internet]. 14 Jul 2016 [cited 1 Feb 2022]. Available: https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html</a></li>
 </ol>
 </p>
 </div>
@@ -358,6 +393,29 @@ L Ma
 <ul><li style=list-style:none>
 <div>wiki/data-engeering-for-data-scientist/data-processing.md</div></li>
 </ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/data-processing-spark/>
+<div class=media-content>
+<div class=content>
+<h6>Data Processing - (Py)Spark</h6>
+<p>
+Processing Data using (Py)Spark
+</p>
+</div>
+</div>
+</a>
+</div>
 </p>
 </div>
 </div>
