@@ -105,6 +105,13 @@ Contrary to our intuition, this will create a new dataframe with all the origina
 
 A comparison would be the `.select()` method of a dataframe.
 
+#### Update the Type of a Column
+
+```python
+df.col_1.cast("integer")
+```
+
+PySpark can convert string representation of integers to integers. In the above example, it works even if `df.col_1` contains string representation of some integers.
 
 #### `filter`
 
@@ -127,7 +134,7 @@ or Python
 .selectExpr("col_1 * 3.14 as col_1_mul_pi")
 ```
 
-`.selectExpr` works similar to `.select`, we can select other columns just like what we do in the SQL select clause
+[`.selectExpr`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.selectExpr.html?highlight=selectexpr#pyspark.sql.DataFrame.selectExpr) works similar to [`.select`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.select.html?highlight=select#pyspark.sql.DataFrame.select), we can select other columns just like what we do in the SQL select clause
 
 ```python
 .selectExpr("col_1", "col_2", "col_1 * 3.14 as col_1_mul_pi")
@@ -136,11 +143,30 @@ or Python
 
 ### Grouping
 
-Use `.groupBy`.
+Use [`.groupBy`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.groupBy.html?highlight=groupby#pyspark.sql.DataFrame.groupBy).
 
 - `pyspark.sql.GroupedData` has some useful methods, e.g., `.avg`, `count`.
 - Use `.agg(pyspark.sql.functions.x_y_z_function)` to aggregate.
 
 ### Joining Tables
 
-`.join`
+[`.join`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.join.html)
+
+
+### ML on Spark
+
+- `pyspark.ml`
+  - `pyspark.ml.Transformer`
+    - `pyspark.ml.Transformer.transform()`: input DataFrame, output DataFrame
+  - `pyspark.ml.Estimator`
+    - `pyspark.ml.Estimator.fit()`: input DataFrame, output model object.
+  - `pyspark.ml.features`
+  - `pyspark.ml.Pipeline`
+    - `Pipeline(stages=[...])`
+    - Once a pipeline is formed, we can `a_pipeline.fit(my_spark_df).transform(my_spark_df)`
+  - `pyspark.ml.evaluation`
+    - `pyspark.ml.evaluation.BinaryClassificationEvaluator()`
+  - `pyspark.ml.tuning`
+    - `pyspark.ml.tuning.ParamGridBuilder`
+    - `pyspark.ml.tuning.CrossValidator`
+- pyspark dataframe has the method `.randomSplit()`
