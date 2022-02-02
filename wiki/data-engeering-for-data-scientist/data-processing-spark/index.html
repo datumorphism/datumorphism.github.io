@@ -123,7 +123,7 @@ AmNeumarkt
 <meta itemprop=name content="Data Processing - (Py)Spark">
 <meta itemprop=description content="Processing Data using (Py)Spark"><meta itemprop=datePublished content="2022-01-31T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-01-31T00:00:00+00:00">
-<meta itemprop=wordCount content="291">
+<meta itemprop=wordCount content="361">
 <meta itemprop=keywords content="Data Engineering,Spark,PySpark,">
 <section class=section>
 <div class=container>
@@ -200,6 +200,9 @@ pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>Sp
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>spark_df <span style=color:#f92672>=</span> spark_df<span style=color:#f92672>.</span>withColumn(<span style=color:#e6db74>&#34;a_new_col&#34;</span>, df<span style=color:#f92672>.</span>existing_col <span style=color:#f92672>*</span> <span style=color:#ae81ff>3.14</span>)
 </code></pre></div><p>Contrary to our intuition, this will create a new dataframe with all the original columns and this new column <code>"a_new_col"</code>.</p>
 <p>A comparison would be the <code>.select()</code> method of a dataframe.</p>
+<h4 id=update-the-type-of-a-column>Update the Type of a Column</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>df<span style=color:#f92672>.</span>col_1<span style=color:#f92672>.</span>cast(<span style=color:#e6db74>&#34;integer&#34;</span>)
+</code></pre></div><p>PySpark can convert string representation of integers to integers. In the above example, it works even if <code>df.col_1</code> contains string representation of some integers.</p>
 <h4 id=filter><code>filter</code></h4>
 <p>SQL Where clause</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>filter(<span style=color:#e6db74>&#34;sql query where clause&#34;</span>)
@@ -207,16 +210,52 @@ pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>Sp
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>filter(df<span style=color:#f92672>.</span>col_1 <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>)
 </code></pre></div><h4 id=select-a-newly-created-column>Select a Newly Created Column</h4>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>selectExpr(<span style=color:#e6db74>&#34;col_1 * 3.14 as col_1_mul_pi&#34;</span>)
-</code></pre></div><p><code>.selectExpr</code> works similar to <code>.select</code>, we can select other columns just like what we do in the SQL select clause</p>
+</code></pre></div><p><a href="https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.selectExpr.html?highlight=selectexpr#pyspark.sql.DataFrame.selectExpr"><code>.selectExpr</code></a> works similar to <a href="https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.select.html?highlight=select#pyspark.sql.DataFrame.select"><code>.select</code></a>, we can select other columns just like what we do in the SQL select clause</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>selectExpr(<span style=color:#e6db74>&#34;col_1&#34;</span>, <span style=color:#e6db74>&#34;col_2&#34;</span>, <span style=color:#e6db74>&#34;col_1 * 3.14 as col_1_mul_pi&#34;</span>)
 </code></pre></div><h3 id=grouping>Grouping</h3>
-<p>Use <code>.groupBy</code>.</p>
+<p>Use <a href="https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.groupBy.html?highlight=groupby#pyspark.sql.DataFrame.groupBy"><code>.groupBy</code></a>.</p>
 <ul>
 <li><code>pyspark.sql.GroupedData</code> has some useful methods, e.g., <code>.avg</code>, <code>count</code>.</li>
 <li>Use <code>.agg(pyspark.sql.functions.x_y_z_function)</code> to aggregate.</li>
 </ul>
 <h3 id=joining-tables>Joining Tables</h3>
-<p><code>.join</code></p>
+<p><a href=https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.join.html><code>.join</code></a></p>
+<h3 id=ml-on-spark>ML on Spark</h3>
+<ul>
+<li><code>pyspark.ml</code>
+<ul>
+<li><code>pyspark.ml.Transformer</code>
+<ul>
+<li><code>pyspark.ml.Transformer.transform()</code>: input DataFrame, output DataFrame</li>
+</ul>
+</li>
+<li><code>pyspark.ml.Estimator</code>
+<ul>
+<li><code>pyspark.ml.Estimator.fit()</code>: input DataFrame, output model object.</li>
+</ul>
+</li>
+<li><code>pyspark.ml.features</code></li>
+<li><code>pyspark.ml.Pipeline</code>
+<ul>
+<li><code>Pipeline(stages=[...])</code></li>
+<li>Once a pipeline is formed, we can <code>a_pipeline.fit(my_spark_df).transform(my_spark_df)</code></li>
+</ul>
+</li>
+<li><code>pyspark.ml.evaluation</code>
+<ul>
+<li><code>pyspark.ml.evaluation.BinaryClassificationEvaluator()</code></li>
+</ul>
+</li>
+<li><code>pyspark.ml.tuning</code>
+<ul>
+<li><code>pyspark.ml.tuning.ParamGridBuilder</code></li>
+<li><code>pyspark.ml.tuning.CrossValidator</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>pyspark dataframe has the method <code>.randomSplit()</code></li>
+</ul>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -263,6 +302,7 @@ L Ma
 <li><a href=#updating-dataframe>Updating Dataframe</a></li>
 <li><a href=#grouping>Grouping</a></li>
 <li><a href=#joining-tables>Joining Tables</a></li>
+<li><a href=#ml-on-spark>ML on Spark</a></li>
 </ul>
 </li>
 </ul>
