@@ -1,0 +1,126 @@
+{
+    "_": "Message",
+    "id": 317,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-02-03 06:47:46+00:00",
+    "message": "#ml\n\nLol, DeepMind and OpenAI:\n\nhttps://deepmind.com/blog/article/Competitive-programming-with-AlphaCode\n\nvs\n\nhttps://openai.com/blog/formal-math/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 881321956878169719,
+            "url": "https://deepmind.com/blog/article/Competitive-programming-with-AlphaCode",
+            "display_url": "deepmind.com/blog/article/Competitive-programming-with-AlphaCode",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Deepmind",
+            "title": "Competitive programming with AlphaCode",
+            "description": "As part of DeepMind\u2019s mission to solve intelligence, we created a system called AlphaCode that writes computer programs at a competitive level.",
+            "photo": {
+                "_": "Photo",
+                "id": 6045477889064938827,
+                "access_hash": 8984377931722231949,
+                "file_reference": "b\"\\x00a\\xfcGff\\xe6\\xdd\\rT\\xcf\\xe7\\xe2\\x88b\\xac')!\\x83\\x02\"",
+                "date": "2022-02-03 08:14:55+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xccW\\xec\\xc2\\x9e\\xa8:\\x83\\x9aFA\\xda\\x9c\\x13\\x1d2+\\xaa\\xce:\\xb3T\\x9bb\\xf5\\xeb\\xc51\\x94t4\\xacH\\xedM\\xdc\\x0f\\x06\\xaf\\x9fKn\\r!\\x8c\\x84{\\x8a)\\xf9\\xdbEO,_[\\x19\\xb4I\\x9e\\xdf\\xad\\x07\\x8e\\xbc\\xd1EV\\xd3\\xb26\\xdd\\\\\\\\p=*6@I\\xc5\\x14R\\x9aI\\x8d\\xab\\xadH\\x8ezQE\\x15\\x99\\x81'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 19154
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 512,
+                        "h": 288,
+                        "sizes": [
+                            2802,
+                            9236,
+                            15658,
+                            21508,
+                            37822
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 32,
+            "length": 72
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 110,
+            "length": 36
+        }
+    ],
+    "views": 45,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1419,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 531,
+        "read_max_id": 531
+    },
+    "edit_date": "2022-02-03 06:53:27+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

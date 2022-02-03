@@ -3,8 +3,9 @@ title: "Data Processing - (Py)Spark"
 description: "Processing Data using (Py)Spark"
 date: "2022-01-31"
 categories:
-  - "Data Engineering"
+  - "Tools"
 tags:
+  - "Tools"
   - "Data Engineering"
   - "Spark"
   - "PySpark"

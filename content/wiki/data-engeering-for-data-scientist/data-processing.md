@@ -17,7 +17,7 @@ supplementary:
   - name: "The Data Engineering Cookbook"
     link: "https://github.com/andkret/Cookbook"
 links:
-  - wiki/data-engeering-for-data-scientist/data-processing-spark.md
+  - wiki/tools/data-processing-spark.md
 weight: 20
 ---
 
@@ -54,9 +54,9 @@ never dropped
 
 ### Spark
 
-{{< e "wiki/data-engeering-for-data-scientist/data-processing-spark.md" >}}
+{{< e "wiki/tools/data-processing-spark.md" >}}
 
-{{< c "wiki/data-engeering-for-data-scientist/data-processing-spark.md" "Spark">}} is in-memory storage.
+{{< c "wiki/tools/data-processing-spark.md" "Spark">}} is in-memory storage.
 
 - e.g., Load from HDFS to memory of workers,
 - input data and intermediate results are in memory, no disk writes,
