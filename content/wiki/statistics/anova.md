@@ -10,6 +10,9 @@ tags:
   - "statistics"
   - "variacne"
   - "ANOVA"
+  - "numpy"
+  - "matplotlib"
+  - "scipy"
 references:
   - name: "Fox, J. Applied Regression Analysis and Generalized Linear Models. (SAGE Publications, 2015)."
     link: ""

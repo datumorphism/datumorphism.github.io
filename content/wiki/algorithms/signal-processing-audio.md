@@ -8,6 +8,7 @@ tags:
 - 'Audio'
 - 'Signal Processing'
 - 'Basics'
+- 'scipy'
 links:
   - wiki/algorithms/singal-processing.md
 references:

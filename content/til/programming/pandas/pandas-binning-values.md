@@ -11,6 +11,7 @@ categories:
 tags:
   - Python
   - Pandas
+  - numpy
 references:
   - name: "pandas.cut"
     link: "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.cut.html"

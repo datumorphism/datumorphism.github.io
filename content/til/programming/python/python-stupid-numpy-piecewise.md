@@ -8,6 +8,7 @@ categories:
 - basics
 tags:
 - Python
+- numpy
 summary: Python Stupid numpy.piecewise
 ---
 

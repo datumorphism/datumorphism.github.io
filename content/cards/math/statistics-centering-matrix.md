@@ -7,6 +7,7 @@ categories:
 tags:
   - 'Matrix'
   - 'Statistics'
+  - 'numpy'
 references:
 - name: "Contributors to Wikimedia projects. Centering matrix. In: Wikipedia [Internet]. 9 Jun 2021 [cited 8 Nov 2021]. Available: https://en.wikipedia.org/wiki/Centering_matrix"
   link: "https://en.wikipedia.org/wiki/Centering_matrix"

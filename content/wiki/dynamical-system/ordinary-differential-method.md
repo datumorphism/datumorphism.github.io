@@ -8,6 +8,7 @@ tags:
 - 'Dynamical System'
 - 'ODE'
 - 'Finite Difference Method'
+- 'scipy'
 references:
 - name: "Adams Methods @ MIT Web Course"
   link: "http://web.mit.edu/10.001/Web/Course_Notes/Differential_Equations_Notes/node6.html"

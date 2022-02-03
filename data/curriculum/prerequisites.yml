@@ -29,6 +29,7 @@
       - name: scipy
       - name: pandas
       - name: dask
+      - name: spark
       - name: matplotlib
       - name: seaborn
       - name: plotly

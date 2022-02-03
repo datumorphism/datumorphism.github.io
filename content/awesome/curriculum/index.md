@@ -47,11 +47,16 @@ Some essential libraries:
 
 - Data
   - numpy
+    - {{< c "tags/numpy/" "Articles with numpy tag" >}}
   - scipy
+    - {{< c "tags/scipy/" "Articles with scipy tag" >}}
   - pandas
+    - {{< c "tags/pandas/" "Articles with pandas tag" >}}
   - dask
+  - {{< c "wiki/tools/data-processing-spark.md" "PySpark">}}
 - Visualization
   - matplotlib
+    - {{< c "tags/matplotlib/" "Articles with matplotlib tag" >}}
   - seaborn
   - plotly
 - and your machine learning libraries

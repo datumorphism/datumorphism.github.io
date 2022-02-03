@@ -1,5 +1,15 @@
 name: "Dashboard"
 list:
+  - name: streamlit
+    keywords:
+      - Python
+    link: https://streamlit.io
+    description: Build dashboards, fast, in python
+  - name: plotly dash
+    keywords:
+      - Python
+    link: https://plotly.com/dash/
+    description: Build complex dashboards in python
   - name: ReDash
     keywords:
       - Python
