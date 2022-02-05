@@ -52,7 +52,7 @@ The normalized cut uses the node degrees as punishment, $\operatorname{vol}(\mat
 
 
 {{< m >}}
-\operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert}{ \lvert\operatorname{vol}(A_k) \rvert}.
+\operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert}{ \lvert\operatorname{vol}(A_k) \rvert}.
 {{< /m >}}
 
 
