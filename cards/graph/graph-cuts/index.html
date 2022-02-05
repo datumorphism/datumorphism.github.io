@@ -7,10 +7,8 @@
 <title> Graph Cuts | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Graph Cuts">
-<meta property="og:description" content="Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. For $k$ such subsets of nodes, $\mathcal A_1, \cdots, $\mathcal A_k$, the cut is the total number of edges between $\mathcal A$ and $\bar{\mathcal A}$ 1,
-$$ \operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert. $$
-For smaller cut value, the proposed patches $\mathcal A_1, \cdots, \mathcal A_k$ are more disconnected from the overall graph.
-This definition is biased towards smaller graphlets, i.">
+<meta property="og:description" content="Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them,
+$$ \operatorname{Cut} \left( \mathcal A, \bar{\mathcal A} \right) = \frac{1}{2} \left( \lvert (u, v)\in \mathcal E: u\in \mathcal A, v\in \bar{\mathcal A} \rvert + \lvert (u, v)\in \mathcal E: u\in \bar{\mathcal A}, v\in {\mathcal A} \rvert \right).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/cards/graph/graph-cuts/"><meta property="article:section" content="cards">
 <meta property="article:published_time" content="2021-09-25T00:00:00+00:00">
@@ -122,12 +120,10 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Graph Cuts">
-<meta itemprop=description content="Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. For $k$ such subsets of nodes, $\mathcal A_1, \cdots, $\mathcal A_k$, the cut is the total number of edges between $\mathcal A$ and $\bar{\mathcal A}$ 1,
-$$ \operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert. $$
-For smaller cut value, the proposed patches $\mathcal A_1, \cdots, \mathcal A_k$ are more disconnected from the overall graph.
-This definition is biased towards smaller graphlets, i."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
+<meta itemprop=description content="Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them,
+$$ \operatorname{Cut} \left( \mathcal A, \bar{\mathcal A} \right) = \frac{1}{2} \left( \lvert (u, v)\in \mathcal E: u\in \mathcal A, v\in \bar{\mathcal A} \rvert + \lvert (u, v)\in \mathcal E: u\in \bar{\mathcal A}, v\in {\mathcal A} \rvert \right)."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="226">
+<meta itemprop=wordCount content="328">
 <meta itemprop=keywords content="Graph,Heterophily,">
 <section class=section>
 <div class=container>
@@ -163,16 +159,20 @@ Graph Cuts
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
 <h2 id=cut>Cut</h2>
-<p>For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. For $k$ such subsets of nodes, $\mathcal A_1, \cdots, $\mathcal A_k$, the <strong>cut</strong> is the total number of edges between $\mathcal A$ and $\bar{\mathcal A}$ <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>,</p>
+<p>For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them,</p>
 <p>$$
-\operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert.
+\operatorname{Cut} \left( \mathcal A, \bar{\mathcal A} \right) = \frac{1}{2} \left( \lvert (u, v)\in \mathcal E: u\in \mathcal A, v\in \bar{\mathcal A} \rvert + \lvert (u, v)\in \mathcal E: u\in \bar{\mathcal A}, v\in {\mathcal A} \rvert \right).
+$$</p>
+<p>To generalize this notion, suppose we partition the nodes into $k$ subsets of nodes, $\mathcal A_1, \cdots, \mathcal A_k$, the <strong>cut</strong> is the total number of edges between $\mathcal A_k$ and $\bar{\mathcal A_k}$ <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>,</p>
+<p>$$
+\operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert.
 $$</p>
 <p>For smaller cut value, the proposed patches $\mathcal A_1, \cdots, \mathcal A_k$ are more disconnected from the overall graph.</p>
 <p>This definition is biased towards smaller graphlets, i.e., smaller subset of nodes will get smaller cut values.</p>
 <h2 id=ratio-cut>Ratio Cut</h2>
 <p>Ratio Cut normalizes the cut values by the size of the patches,</p>
 <p>$$
-\operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert}{ \lvert \mathcal A_k \rvert}.
+\operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert}{ \lvert \mathcal A_k \rvert}.
 $$</p>
 <figure><img src=../assets/graph-cuts/graph-cuts.jpg alt="Graph cuts"><figcaption>
 <p>Graph cuts</p>
@@ -296,7 +296,7 @@ L Ma
 <div class=content>
 <h6>Graphs Spectral Methods</h6>
 <p>
-The Ratio Cut Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of …
+The Ratio Cut Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of …
 </p>
 </div>
 </div>

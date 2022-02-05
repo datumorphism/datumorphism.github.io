@@ -7,7 +7,7 @@
 <title> Graphs Spectral Methods | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Graphs Spectral Methods">
-<meta property="og:description" content="The Ratio Cut  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. For $k$ such subsets of nodes, $\mathcal A_1, \cdots, $\mathcal A_k$, the cut is the total number of edges between $\mathcal A$ and $\bar{\mathcal A}$ 1, $$ \operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert. $$ For smaller cut value, the …   is closely related to the Graph Laplacians  Graph Laplacians Laplacian is a useful representation of graphs.">
+<meta property="og:description" content="The Ratio Cut  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them, $$ \operatorname{Cut} \left( \mathcal A, …   is closely related to the Graph Laplacians  Graph Laplacians Laplacian is a useful representation of graphs.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/graph/basics/graph-spectral-methods/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-09-25T00:00:00+00:00">
@@ -120,9 +120,9 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Graphs Spectral Methods">
-<meta itemprop=description content="The Ratio Cut  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. For $k$ such subsets of nodes, $\mathcal A_1, \cdots, $\mathcal A_k$, the cut is the total number of edges between $\mathcal A$ and $\bar{\mathcal A}$ 1, $$ \operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert. $$ For smaller cut value, the …   is closely related to the Graph Laplacians  Graph Laplacians Laplacian is a useful representation of graphs."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
+<meta itemprop=description content="The Ratio Cut  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them, $$ \operatorname{Cut} \left( \mathcal A, …   is closely related to the Graph Laplacians  Graph Laplacians Laplacian is a useful representation of graphs."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="380">
+<meta itemprop=wordCount content="385">
 <meta itemprop=keywords content="Graph,Basics,Statistics,">
 <section class=section>
 <div class=container>
@@ -167,9 +167,8 @@ Ratio Cut
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Graph Cuts</span>
-<span class=tooltip_content>Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. For $k$ such subsets of nodes, $\mathcal A_1, \cdots, $\mathcal A_k$, the cut is the total number of edges between $\mathcal A$ and $\bar{\mathcal A}$ 1,
-$$ \operatorname{Cut} \left( \mathcal A_1, \cdots, $\mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert. $$
-For smaller cut value, the …</span>
+<span class=tooltip_content>Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them,
+$$ \operatorname{Cut} \left( \mathcal A, …</span>
 </span>
 </span>
 is closely related to the
@@ -335,7 +334,7 @@ $$ \mathbf L = \mathbf …
 <div class=content>
 <h6>Graph Cuts</h6>
 <p>
-Cut For a subset of nodes $\mathcal A\subset \mathcal V$, with the rest of nodes $\bar {\mathcal A} …
+Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar …
 </p>
 </div>
 </div>
