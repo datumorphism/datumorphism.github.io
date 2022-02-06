@@ -25,36 +25,66 @@ links:
   - "cards/graph/structural-equivalence.md"
 ---
 
+Graphs can be used in many problem and there are many possible problems on graphs. We will mention a few popular problems on graphs[^Hamilton2020][^Sanchez-Lengeling2021].
 
 ## Node Classification
+
+{{< figure src="../assets/ml-problems-on-graph/ml-on-graph-node-classification.jpg" title="Is the user in black a bot or a normal user?" caption="Created based on the text in Hamilton2020" >}}
 
 Given graph that has incomplete attribute labeling of the nodes, predict the attributes on the nodes.
 
 
 The following concepts can be used to classify nodes.
 
-- {{< c "cards/graph/homophily.md" "Homophily">}},
+- {{< c "cards/graph/homophily.md" "Homophily">}}[^McPherson2001],
+  {{< e "cards/graph/homophily.md" "Homophily">}}
 - {{< c "cards/graph/structural-equivalence.md" "Structural equivalence">}},
-- {{< c "cards/graph/heterophily.md" "Heterophily" >}}.
+  {{< e "cards/graph/structural-equivalence.md" "Structural equivalence">}}
+- {{< c "cards/graph/heterophily.md" "Heterophily" >}}
+  {{< e "cards/graph/heterophily.md" "Heterophily" >}}
+  {{< figure src="../assets/ml-problems-on-graph/structural-equivalence.jpg" >}}
 
 
+
+{{< message title="Statement of the node classification problem" class="primary" >}}
+Given $\mathcal V_{\mathrm{train}}\subset \mathcal V$ on a graph, infer labels $y_u$ of node $u$, with $u\in \mathcal V\setminus \mathcal V_{\mathrm{train}}$.
+{{< /message >}}
 
 ## Relation Prediction
 
-Given $\mathcal V$, $\mathcal E_{\text{train}}\subset \mathcal E$, predict other edges $\mathcal E \setminus \mathcal E_{\text{train}}$.
+Also named as link prediction, graph completion.
+
+{{< figure src="../assets/ml-problems-on-graph/netflix-users-and-movies.jpg" title="Users and Movies as a Bipartite Graph" >}}
+
+{{< figure src="../assets/ml-problems-on-graph/connections-on-social-networks.jpg" title="Connections of Users on Social Network" >}}
+
+
+
+{{< message title="Statement of the relation prediction problem" class="primary" >}}
+
+Given the nodes $\mathcal V$ on a graph $\mathcal G$, and $\mathcal E_{\text{train}}\subset \mathcal E$, predict other edges $\mathcal E \setminus \mathcal E_{\text{train}}$.
+
+
+{{< /message >}}
+
 
 
 
 ## Clustering and Community Detection
 
+{{< figure src="../assets/ml-problems-on-graph/communities-on-graph.jpg" title="Communities of collaboration network" caption="Each node is an author, the edges indicate collaborations between the authors." >}}
+
 Assign nodes to groups. See {{< c "reading/popularity-vs-similarity.md" >}} for examples.
 
-## Graph Classification, Regression, and Clustering
 
-Given some graphs, perform classification, regression, and clustering on the set of graphs.
+## Classification, Regression, and Clustering on Graph Level
+
+Given some graphs, perform classification, regression, and clustering on the set of graphs, e.g., predict the toxicity of molecules.
 
 
 
 [^Hamilton2020]: {{< cite key="Hamilton2020" >}}
 
 [^Sanchez-Lengeling2021]: {{< cite key="Sanchez-Lengeling2021" >}}
+
+[^McPherson2001]: {{< cite key="McPherson2001" >}}
