@@ -124,7 +124,7 @@ AmNeumarkt
 <meta itemprop=description content="Local Statistics Node Degree  Node Degree  Node degree of a node $u$ $$ d_u = \sum_{v\in \mathcal V} A[u,v], $$ where $A$ is the adjacency matrix.     Node Centrality Importance of a node on a graph:
    Eigenvector Centrality of a Graph  Given a graph with adjacency matrix $\mathbf A$, the eigenvector centrality is $$ \mathbf e_u = \frac{1}{\lambda} \sum_{v\in\mathcal V} \mathbf A[u,v] \mathbf e_v, \qquad \forall u \in \mathcal V. $$ Why is it called Eigenvector Centrality The definition is equivalent to $$ \lambda \mathbf e = \mathbf A\mathbf e. $$ Power Iteration The solution to $\mathbf e$ is the eigenvector that corresponds to the largest eigenvalue $\lambda_1$."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="1232">
+<meta itemprop=wordCount content="1161">
 <meta itemprop=keywords content="Graph,Basics,Statistics,">
 <section class=section>
 <div class=container>
@@ -226,21 +226,6 @@ It is almost like cheating using the work &ldquo;outreach&rdquo; and &ldquo;core
 </ul>
 <h3 id=clustering-coefficients>Clustering Coefficients</h3>
 <p>Proportion of motifs, e.g., closed triangles, in a node&rsquo;s neighborhood.</p>
-<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/graph/graph-local-variant-clustering-coefficient/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
-<div class=media-content>
-<div class=content>
-<h6>
-Local Variant of Clustering Coefficient
-</h6>
-<div style=font-size:80%>
-$$ c_u = \frac{ \lvert (v_1,v_2)\in \mathcal E: v_1, v_2 \in \mathcal N(u) \rvert}{ \color{red}{d_n \choose 2} }, $$
-where $\color{red}{d_n \choose 2}$ means all the possible combinations of neighbor nodes, and $\mathcal N(u)$ is the set of nodes that are neighbor to $u$.
-Ego Graph
-If $c_u=1$, the ego graph of $u$ is fully connected; If $c_u=0$, the ego graph of $u$ is a star.
-</div>
-</div>
-</div>
-</a>
 <h2 id=graph-level-statistics>Graph Level Statistics</h2>
 <h3 id=bag-of-nodes>Bag of Nodes</h3>
 <p>Using the statistics of the local statistics, e.g., distribution of node degrees, as graph level statistics.</p>
@@ -560,16 +545,6 @@ $$ \mathbf e_u = …
 <h6>Betweenness Centrality of a Graph</h6>
 <p>
 Betweenness centrality of a node $v$ is measurement of how likely the shortest path between two …
-</p>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-local-variant-clustering-coefficient/>
-<div class=media-content>
-<div class=content>
-<h6>Local Variant of Clustering Coefficient</h6>
-<p>
-$$ c_u = \frac{ \lvert (v_1,v_2)\in \mathcal E: v_1, v_2 \in \mathcal N(u) \rvert}{ \color{red}{d_n …
 </p>
 </div>
 </div>
