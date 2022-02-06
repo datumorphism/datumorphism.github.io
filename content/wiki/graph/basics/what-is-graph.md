@@ -93,6 +93,9 @@ Two popular examples:
   - multipartite
 - multiplex
 
+
+{{< figure src="../assets/what-is-graph/multirelational-graph.jpg" >}}
+
 ### Heterogeneous
 
 Nodes are subsets without intersections, $\mathcal V = \mathcal V_1\cup \mathcal V_2 \cdots \mathcal V_k$ and $\mathcal V_i \cap \mathcal V_j =  \emptyset$ for $\forall i\neq j$.
@@ -110,7 +113,7 @@ For a website that hosts a movie database and a user database, the relation abou
 
 ### Mutiplex
 
-The edges represent different
+The nodes can be viewed to exist in different layers and the edges in each layer are different.
 
 {{< figure src="../assets/what-is-graph/multiplex-example.jpg" caption="Multiplex graph example." >}}
 
