@@ -10,7 +10,7 @@
 <meta property="og:description" content="Graph A graph $\mathcal G$ has nodes $\mathcal V$ and edges $\mathcal E$,
 $$ \mathcal G = ( \mathcal V, \mathcal E). $$
 Edges
- Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.   Representations of Graph There are different representations of a graph.
+ Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.    Representations of Graph There are different representations of a graph.
 Adjacency Matrix A adjacency matrix of a graph represents the nodes using row and column indices and edges using elements of the matrix.
 For simple graph, the adjacency matrix is rank two and dimension $\lvert \mathcal V \rvert \times \lvert \mathcal V \rvert$.">
 <meta property="og:type" content="article">
@@ -128,11 +128,11 @@ AmNeumarkt
 <meta itemprop=description content="Graph A graph $\mathcal G$ has nodes $\mathcal V$ and edges $\mathcal E$,
 $$ \mathcal G = ( \mathcal V, \mathcal E). $$
 Edges
- Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.   Representations of Graph There are different representations of a graph.
+ Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.    Representations of Graph There are different representations of a graph.
 Adjacency Matrix A adjacency matrix of a graph represents the nodes using row and column indices and edges using elements of the matrix.
 For simple graph, the adjacency matrix is rank two and dimension $\lvert \mathcal V \rvert \times \lvert \mathcal V \rvert$."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="351">
+<meta itemprop=wordCount content="595">
 <meta itemprop=keywords content="Graph,Basics,">
 <section class=section>
 <div class=container>
@@ -183,6 +183,8 @@ $$</p>
 Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.
 </div>
 </article>
+<figure><img src=../assets/what-is-graph/graph-definition.jpg>
+</figure>
 <h2 id=representations-of-graph>Representations of Graph</h2>
 <p>There are different representations of a graph.</p>
 <h3 id=adjacency-matrix>Adjacency Matrix</h3>
@@ -191,8 +193,37 @@ Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, 
 <blockquote>
 <p>See <a href=https://distill.pub/2021/gnn-intro/>Sanchez-Lengeling, 2021</a> for an interactive example<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p>
 </blockquote>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<div class=media-content>
+<div class=content>
+<h6>
+Graph Adjacency Matrix
+</h6>
+<div style=font-size:80%>
+A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example,
+$$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$
+for the graph
+Public Domain, Link
+</div>
+</div>
+</div>
+</a>
 <h3 id=laplacians>Laplacians</h3>
 <p>Laplacians are transformations of the adjacency matrix but provides a lot more convenience for analysis.</p>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/graph/graph-laplacians/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<div class=media-content>
+<div class=content>
+<h6>
+Graph Laplacians
+</h6>
+<div style=font-size:80%>
+Laplacian is a useful representation of graphs. The unnormalized Laplacian is
+$$ \mathbf L = \mathbf D - \mathbf A, $$
+where $\mathbf A$ is the adjacency matrix Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link and $\mathbf D$ is the degree matrix, i.
+</div>
+</div>
+</div>
+</a>
 <h2 id=multi-relational-graph>Multi-Relational Graph</h2>
 <p>A graph may have different types of edges, $\tau\in \mathcal R$, where $R$ is a set of types of relations. A multi-relational graph is then</p>
 <p>$$
@@ -372,6 +403,30 @@ L Ma
 <ul><li style=list-style:none>
 <div>wiki/graph/basics/what-is-graph.md</div></li>
 </ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/cards/graph/graph-laplacians/>
+<div class=media-content>
+<div class=content>
+<h6>Graph Laplacians</h6>
+<p>
+Laplacian is a useful representation of graphs. The unnormalized Laplacian is
+$$ \mathbf L = \mathbf …
+</p>
+</div>
+</div>
+</a>
+</div>
 </p>
 </div>
 </div>
