@@ -4,20 +4,21 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title> Graph Adjacency Matrix | Datumorphism | L Ma </title>
+<title> Graph Clustering Coefficient | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
-<meta property="og:title" content="Graph Adjacency Matrix">
-<meta property="og:description" content="A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example,
-$$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$
-for the graph
- Public Domain, Link">
+<meta property="og:title" content="Graph Clustering Coefficient">
+<meta property="og:description" content="Local Clustering Coefficient $$ c_u = \frac{ \lvert (v_1,v_2)\in \mathcal E: v_1, v_2 \in \mathcal N(u) \rvert}{ \color{red}{d_n \choose 2} }, $$
+where $\color{red}{d_n \choose 2}$ means all the possible combinations of neighbor nodes, and $\mathcal N(u)$ is the set of nodes that are neighbor to $u$.
+Closed Triangles Ego Graph
+   Counting the closed triangles of the ego graph of a node and normalize it by the total possible number of triangles is also a measure of clustering coefficients.
+ If the ego graph of $u$ is fully connected, we have $c_u=1$; If the ego graph of $u$ is a star, we have $c_u=0$.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/"><meta property="article:section" content="cards">
+<meta property="og:url" content="https://datumorphism.leima.is/cards/graph/graph-local-clustering-coefficient/"><meta property="article:section" content="cards">
 <meta property="article:published_time" content="2021-09-25T00:00:00+00:00">
 <meta property="article:modified_time" content="2021-09-25T00:00:00+00:00">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-<link rel=canonical href=https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=canonical href=https://datumorphism.leima.is/cards/graph/graph-local-clustering-coefficient/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
 <link rel=stylesheet href=/css/bulma.css>
 <link rel=stylesheet href=/css/bulma-divider.min.css>
 <link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
@@ -121,14 +122,15 @@ AmNeumarkt
 </header>
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
-<meta itemprop=name content="Graph Adjacency Matrix">
-<meta itemprop=description content="A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example,
-$$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$
-for the graph
- Public Domain, Link"><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
+<meta itemprop=name content="Graph Clustering Coefficient">
+<meta itemprop=description content="Local Clustering Coefficient $$ c_u = \frac{ \lvert (v_1,v_2)\in \mathcal E: v_1, v_2 \in \mathcal N(u) \rvert}{ \color{red}{d_n \choose 2} }, $$
+where $\color{red}{d_n \choose 2}$ means all the possible combinations of neighbor nodes, and $\mathcal N(u)$ is the set of nodes that are neighbor to $u$.
+Closed Triangles Ego Graph
+   Counting the closed triangles of the ego graph of a node and normalize it by the total possible number of triangles is also a measure of clustering coefficients.
+ If the ego graph of $u$ is fully connected, we have $c_u=1$; If the ego graph of $u$ is a star, we have $c_u=0$."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="252">
-<meta itemprop=keywords content="Graph,">
+<meta itemprop=wordCount content="115">
+<meta itemprop=keywords content="Graph,Statistics,">
 <section class=section>
 <div class=container>
 <article class=post>
@@ -145,69 +147,43 @@ for the graph
 <a href=https://datumorphism.leima.is/cards/graph/>Graph</a>
 </li>
 <li class=active>
-<a href=https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/>Graph Adjacency Matrix</a>
+<a href=https://datumorphism.leima.is/cards/graph/graph-local-clustering-coefficient/>Graph Clustering Coefficient</a>
 </li>
 </ul>
 </nav>
 <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
-Graph Adjacency Matrix
+Graph Clustering Coefficient
 </h1>
 <h2 class="title is-6 has-text-centered">
 <i class="fas fa-tags" style=margin-right:.5em></i>
 <a href=/tags/graph><span class="tag is-warning is-small is-light">#Graph</span></a>
+<a href=/tags/statistics><span class="tag is-warning is-small is-light">#Statistics</span></a>
 </h2>
 </header>
 <div class=columns>
 <div class="column is-8">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<p>A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>, for example,</p>
+<h2 id=local-clustering-coefficient>Local Clustering Coefficient</h2>
 <p>$$
-\begin{pmatrix}
-2 & 1 & 0 & 0 & 1 & 0\\
-1 & 0 & 1 & 0 & 1 & 0\\
-0 & 1 & 0 & 1 & 0 & 0\\
-0 & 0 & 1 & 0 & 1 & 1\\
-1 & 1 & 0 & 1 & 0 & 0\\
-0 & 0 & 0 & 1 & 0 & 0
-\end{pmatrix}
+c_u = \frac{ \lvert (v_1,v_2)\in \mathcal E: v_1, v_2 \in \mathcal N(u) \rvert}{ \color{red}{d_n \choose 2} },
 $$</p>
-<p>for the graph</p>
-<figure><img src=https://upload.wikimedia.org/wikipedia/commons/2/28/6n-graph2.svg alt="Public Domain, Link"><figcaption>
-<p>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=1041193">Link</a></p>
-</figcaption>
-</figure>
-<article class="message is-warning is-light">
+<p>where $\color{red}{d_n \choose 2}$ means all the possible combinations of neighbor nodes, and $\mathcal N(u)$ is the set of nodes that are neighbor to $u$.</p>
+<h2 id=closed-triangles>Closed Triangles</h2>
+<article class="message is-light is-light">
 <div class=message-header>
-<p>Diagonal Elements</p>
+<p>Ego Graph</p>
 </div>
 <div class=message-body>
-The diagonal elements are 0 for graphs without loops.
+<img src=../assets/graph-local-clustering-coefficient/ego-graph.jpg alt>
 </div>
 </article>
-<h2 id=multiplication-of-adjacency-matrices>Multiplication of Adjacency Matrices</h2>
-<p><strong>Multiplication of adjacency matrices tells us about the path between nodes.</strong></p>
-<p>$A[u,v]$ is the length-1 path between node $u$ and $v$. If $A[u,v]=0$, there is no path. If $A[u,v]=1$, we have a length-1 path.</p>
-<p>For $A^2[u,v]$, we have</p>
-<p>$$
-A^2_{uv} = \sum_k A_{uk}A_{kv}.
-$$</p>
-<p>This is the length-2 path. If node $u$ or node $v$ has no neighbors, $A^2_{uv}=0$. If there is an edge $(u, \tilde u)$ and $(\tilde u, v)$, we get one path, and $A_{u\tilde u}A_{\tilde uv}=1$.</p>
-<p>When we sum over all the possible values of index $k$, i.e., $\sum_k A_{uk}A_{kv}$, we get the total number of length-2 path between $u$ and $v$.</p>
-<p>This idea is extrapolated to the $i$th power of the adjacency matrix.</p>
-<section class=footnotes role=doc-endnotes>
-<hr>
-<ol>
-<li id=fn:1 role=doc-endnote>
-<p>
-<a name=wiki_adjacency_matrix href=#wiki_adjacency_matrix style=text-decoration:none>
-<span class="tag is-link is-light">wiki_adjacency_matrix</span>
-</a>
-<a href=https://en.wikipedia.org/wiki/Adjacency_matrix#Undirected_graphs style=text-decoration:none>Contributors to Wikimedia projects. Adjacency matrix. In: Wikipedia [Internet]. 4 Oct 2021 [cited 4 Dec 2021]. Available: https://en.wikipedia.org/wiki/Adjacency_matrix#Undirected_graphs</a>
-&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
+<p>Counting the closed triangles of the ego graph of a node and normalize it by the total possible number of triangles is also a measure of clustering coefficients.</p>
+<ul>
+<li>If the ego graph of $u$ is fully connected, we have $c_u=1$;</li>
+<li>If the ego graph of $u$ is a star, we have $c_u=0$.</li>
+</ul>
+<p>This concept can be generalized from triangles to any type of motifs.</p>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -218,8 +194,8 @@ by <span itemprop=author>L Ma</span>;
 </div></p>
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
-<a href="https://datumorphism.leima.is/cards/graph/graph-eigenvector-centrality/?ref=footer" class=pagination-previous>« Eigenvector Centrality of a Graph</a>
-<a class=pagination-next href="https://datumorphism.leima.is/cards/graph/graph-local-clustering-coefficient/?ref=footer">Graph Clustering Coefficient »</a>
+<a href="https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/?ref=footer" class=pagination-previous>« Graph Adjacency Matrix</a>
+<a class=pagination-next href="https://datumorphism.leima.is/cards/graph/graph-cuts/?ref=footer">Graph Cuts »</a>
 </nav>
 </div>
 <div class="column is-4">
@@ -229,7 +205,8 @@ by <span itemprop=author>L Ma</span>;
 <div class=media-content>
 <div class=content>
 <p>
-Lei Ma (2021). 'Graph Adjacency Matrix', Datumorphism, 09 April. Available at: https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/.
+L Ma
+(2021). 'Graph Clustering Coefficient', Datumorphism, 09 April. Available at: https://datumorphism.leima.is/cards/graph/graph-local-clustering-coefficient/.
 </p>
 </div>
 </div>
@@ -247,7 +224,8 @@ Lei Ma (2021). 'Graph Adjacency Matrix', Datumorphism, 09 April. Available at: h
 <div>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#multiplication-of-adjacency-matrices>Multiplication of Adjacency Matrices</a></li>
+<li><a href=#local-clustering-coefficient>Local Clustering Coefficient</a></li>
+<li><a href=#closed-triangles>Closed Triangles</a></li>
 </ul>
 </nav>
 </div>
@@ -267,10 +245,10 @@ Lei Ma (2021). 'Graph Adjacency Matrix', Datumorphism, 09 April. Available at: h
 <strong>References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
-<a name=wiki_adjacency_matrix href=#wiki_adjacency_matrix style=text-decoration:none>
-<span class="tag is-link is-light">wiki_adjacency_matrix</span>
+<a name=Hamilton2020 href=#Hamilton2020 style=text-decoration:none>
+<span class="tag is-link is-light">Hamilton2020</span>
 </a>
-<a href=https://en.wikipedia.org/wiki/Adjacency_matrix#Undirected_graphs style=text-decoration:none>Contributors to Wikimedia projects. Adjacency matrix. In: Wikipedia [Internet]. 4 Oct 2021 [cited 4 Dec 2021]. Available: https://en.wikipedia.org/wiki/Adjacency_matrix#Undirected_graphs</a></li>
+<a href=https://www.morganclaypool.com/doi/10.2200/S01045ED1V01Y202009AIM046 style=text-decoration:none>Hamilton WL. Graph Representation Learning. Morgan & Claypool Publishers; 2020. pp. 1–159. doi:10.2200/S01045ED1V01Y202009AIM046</a></li>
 </ol>
 </p>
 </div>
@@ -285,7 +263,7 @@ Lei Ma (2021). 'Graph Adjacency Matrix', Datumorphism, 09 April. Available at: h
 <p>
 <strong>Current Ref: </strong><br>
 <ul><li style=list-style:none>
-<div>cards/graph/graph-adjacency-matrix.md</div></li>
+<div>cards/graph/graph-local-clustering-coefficient.md</div></li>
 </ul>
 </p>
 </div>
@@ -323,54 +301,12 @@ $$ \mathcal G = ( \mathcal …
 <p>
 <strong>Links from: </strong>
 <div>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-convolution-operator/>
+<a class=box href=https://datumorphism.leima.is/wiki/graph/basics/statistics-of-graphs/>
 <div class=media-content>
 <div class=content>
-<h6>Graph Convolution Operator</h6>
+<h6>Statistics of Graphs</h6>
 <p>
-For a given graph $\mathcal G$, we have an attribute on each node, denoted as $f_v$. All the node …
-</p>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-global-overlap-katz-index/>
-<div class=media-content>
-<div class=content>
-<h6>Graph Global Overlap Measure: Katz Index</h6>
-<p>
-The Katz index is
-$$ \mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v], $$ …
-</p>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-global-overlap-leicht-holme-newman-similarity/>
-<div class=media-content>
-<div class=content>
-<h6>Graph Global Overlap Measure: Leicht-Holme-Newman Index</h6>
-<p>
-From Katz Index to LHN Index Katz Index Graph Global Overlap Measure: Katz Index The Katz index is …
-</p>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-global-overlap-random-walk-similarity/>
-<div class=media-content>
-<div class=content>
-<h6>Graph Global Overlap Measure: Random Walk Similarity</h6>
-<p>
-Random Walk Construct a stochastic transfer matrix $P$ by normalizing the adjacency matrix $\mathbf …
-</p>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-laplacians/>
-<div class=media-content>
-<div class=content>
-<h6>Graph Laplacians</h6>
-<p>
-Laplacian is a useful representation of graphs. The unnormalized Laplacian is
-$$ \mathbf L = \mathbf …
+Local Statistics Node Degree Node Degree Node degree of a node $u$ $$ d_u = \sum_{v\in \mathcal V} …
 </p>
 </div>
 </div>
@@ -391,7 +327,7 @@ $$ \mathbf L = \mathbf …
 </section>
 </div>
 <div class=navtools>
-<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/cards/graph/graph-adjacency-matrix.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/cards/graph/graph-local-clustering-coefficient.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
 <i class="fas fa-pencil-alt"></i>
 </a>
 <a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
