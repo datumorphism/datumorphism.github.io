@@ -14,6 +14,8 @@ references:
     link: "https://distill.pub/2021/gnn-intro/"
     key: "Sanchez-Lengeling2021"
 weight: 1
+links:
+  - "cards/graph/graph-laplacians.md"
 ---
 
 
@@ -31,7 +33,7 @@ Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, 
 
 {{< /message >}}
 
-
+{{< figure src="../assets/what-is-graph/graph-definition.jpg" >}}
 
 ## Representations of Graph
 
@@ -46,10 +48,14 @@ For simple graph, the adjacency matrix is rank two and dimension $\lvert \mathca
 
 > See [Sanchez-Lengeling, 2021](https://distill.pub/2021/gnn-intro/) for an interactive example[^Sanchez-Lengeling2021].
 
+{{< e "cards/graph/graph-adjacency-matrix.md" >}}
+
 
 ### Laplacians
 
 Laplacians are transformations of the adjacency matrix but provides a lot more convenience for analysis.
+
+{{< e "cards/graph/graph-laplacians.md" >}}
 
 
 ## Multi-Relational Graph
