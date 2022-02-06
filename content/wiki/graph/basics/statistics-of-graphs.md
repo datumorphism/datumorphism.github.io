@@ -17,7 +17,7 @@ links:
   - "cards/graph/node-degree.md"
   - "cards/graph/graph-eigenvector-centrality.md"
   - "cards/graph/graph-betweenness-centrality.md"
-  - "cards/graph/graph-local-variant-clustering-coefficient.md"
+  - "cards/graph/graph-local-clustering-coefficient.md"
   - "cards/graph/graph-local-overlap-sorensen-index.md"
   - "cards/graph/graph-local-overlap-salton-index.md"
   - "cards/math/jaccard-similarity.md"
@@ -49,7 +49,7 @@ Importance of a node on a graph:
 
 Proportion of motifs, e.g., closed triangles, in a node's neighborhood.
 
-{{< e "cards/graph/graph-local-variant-clustering-coefficient.md" >}}
+{{< e "cards/graph/graph-local-clustering-coefficient.md" >}}
 
 
 
