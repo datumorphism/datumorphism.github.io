@@ -13,7 +13,7 @@
     "silent": false,
     "post": true,
     "from_scheduled": false,
-    "legacy": false,
+    "legacy": true,
     "edit_hide": false,
     "pinned": false,
     "from_id": null,
@@ -26,7 +26,7 @@
             "_": "Photo",
             "id": 5289564705825863649,
             "access_hash": -8835202214385116154,
-            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01-a\\xfcGf4(\\x8d\\x82\\x19 \\x13`I7\\xebq\\x17p.\\x92'",
+            "file_reference": "b\"\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01-b\\x02\\xf4\\xa1\\xcew\\x98\\xf9;\\xc5\\x12&5''\\xd6\\xa2\\x0fz<\"",
             "date": "2021-12-05 09:52:55+00:00",
             "sizes": [
                 {
@@ -81,7 +81,7 @@
             "length": 50
         }
     ],
-    "views": 221,
+    "views": 226,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
@@ -100,9 +100,9 @@
         ],
         "channel_id": 1159907975,
         "max_id": 449,
-        "read_max_id": null
+        "read_max_id": 449
     },
-    "edit_date": "2021-12-05 09:53:48+00:00",
+    "edit_date": "2022-02-07 07:04:12+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],
