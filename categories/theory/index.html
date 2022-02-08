@@ -1,0 +1,395 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>theory | Datumorphism | L Ma </title>
+<meta name=author content="L Ma">
+<meta property="og:title" content="theory">
+<meta property="og:description" content="The study of the data as a means to model the world">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://datumorphism.leima.is/categories/theory/">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link href=https://datumorphism.leima.is/categories/theory/index.xml rel=alternate type=application/rss+xml title=Datumorphism>
+<link rel=canonical href=https://datumorphism.leima.is/categories/theory/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header>
+<nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+<div class=hero style=margin-bottom:2em>
+<div class=hero-body>
+<div class=container>
+<div class="container has-text-centered">
+<a href=https://datumorphism.leima.is/categories/><i class="fas fa-tags" style=margin-right:.5em></i></a>
+<h1 class="title is-2 has-text-centered">theory</h1>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<div class=is-divider data-content=ARTICLES style="border-top:.1rem dashed #dbdbdb57!important;margin:1rem 0!important">
+</div>
+<main class=container aria-label=Content>
+<div class="columns is-multiline">
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/self-supervised-learning-generative-or-contrastive-2006.08218/ itemprop=headline>
+<h2 class="title is-4">Self-supervised Learning: Generative or Constrastive</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
+<a href=/tags/self-supervised-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#self-supervised learning</span></a>
+</div>
+<p itemprop=about>
+Review of self-supervised learning.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/normalizing-flow-introduction-1908.09257/ itemprop=headline>
+<h2 class="title is-4">Normalizing Flows: An Introduction and Review of Current Methods</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
+<a href=/tags/normalizing-flow style=margin-right:.5em><span class="tag is-warning is-small is-light">#normalizing flow</span></a>
+</div>
+<p itemprop=about>
+To generate complicated distributions step by step from a simple and interpretable distribution.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/grammar-of-graphics/graph-creation/ itemprop=headline>
+<h2 class="title is-4">Graph Creation</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/data-visualization style=margin-right:.5em><span class="tag is-warning is-small is-light">#data visualization</span></a>
+</div>
+<p itemprop=about>
+Stages Three stages of making a graph:
+Specification Assembly Display Specification Statistical …
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/grammar-of-graphics/ itemprop=headline>
+<h2 class="title is-4">The Grammar of Graphics</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/data-visualization style=margin-right:.5em><span class="tag is-warning is-small is-light">#data visualization</span></a>
+</div>
+<p itemprop=about>Reading notes for the book The Grammar of Graphics</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/word2vec-in-out-embedding/ itemprop=headline>
+<h2 class="title is-4">Improving Document Ranking with Dual Word Embeddings</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/machine-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#machine learning</span></a>
+</div>
+<p itemprop=about>
+Word2vec produces two embedding spaces, the in-embedding and out-embedding.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/graphical-perception/ itemprop=headline>
+<h2 class="title is-4">Human Graphical Perception of Quantitative Information in Data Visualization</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/data-visualization style=margin-right:.5em><span class="tag is-warning is-small is-light">#data visualization</span></a>
+</div>
+<p itemprop=about>
+Data visualization caveats
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/statistical-physics-and-information-theory/ itemprop=headline>
+<h2 class="title is-4">Information Theory and Statistical Mechanics</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/intelligence style=margin-right:.5em><span class="tag is-warning is-small is-light">#intelligence</span></a>
+</div>
+<p itemprop=about>
+Max entropy principle as a method to infer distributions of statistical systems
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/elements-of-statistics/ itemprop=headline>
+<h2 class="title is-4">Schaum's Outline of Theories and Problems of Elements of Statistics I and II</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/statistics style=margin-right:.5em><span class="tag is-warning is-small is-light">#statistics</span></a>
+<a href=/tags/basics style=margin-right:.5em><span class="tag is-warning is-small is-light">#basics</span></a>
+</div>
+<p itemprop=about>
+The basics and all of modern statistics
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/data-mining/ itemprop=headline>
+<h2 class="title is-4">Data Mining: Concepts and Techniques</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/data-mining style=margin-right:.5em><span class="tag is-warning is-small is-light">#data mining</span></a>
+</div>
+<p itemprop=about>
+How data mining was done in the past
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/overcoming-catastrophic-forgetting-in-neural-networks/ itemprop=headline>
+<h2 class="title is-4">Overcoming catastrophic forgetting in neural networks</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/neural-network style=margin-right:.5em><span class="tag is-warning is-small is-light">#neural network</span></a>
+</div>
+<p itemprop=about>
+Using a newly defined loss function the authors could implement an idea that achieves the multi-task …
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class=card style=min-height:15em>
+<div class=card-content>
+<div class=media>
+<div class=media-content>
+<a href=https://datumorphism.leima.is/reading/popularity-vs-similarity/ itemprop=headline>
+<h2 class="title is-4">Popularity versus similarity in growing networks</h2>
+</a>
+</div>
+</div>
+<div class=content>
+<div class="tags is-small">
+<a href=/tags/complex-network style=margin-right:.5em><span class="tag is-warning is-small is-light">#complex network</span></a>
+<a href=/tags/graph style=margin-right:.5em><span class="tag is-warning is-small is-light">#graph</span></a>
+</div>
+<p itemprop=about>
+Introduce geometry into the manifold of complex networks
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=is-divider style="border-top:.1rem dashed #dbdbdb57!important;margin:1rem 0!important"></div>
+<div class=container>
+<div class=columns>
+<div class=column style=margin-bottom:2em;padding-bottom:1em>
+</div>
+</div>
+</div>
+</main>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
+Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
+<a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
+<a class=tag href=/index.xml>Feed</a>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

@@ -136,12 +136,8 @@ The visualization of the graph for connected articles. The unconnected articles 
 <div>
 <div id=network-graph style="margin-left:calc(50% - 45vw);width:90vw;height:90vh"></div>
 </div>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js></script>
-<link href=/assets/network/netjsongraph.css rel=stylesheet>
-<link href=/assets/network/netjsongraph-theme.css rel=stylesheet>
-<script src=/assets/network/netjsongraph.js></script>
-<script>d3.netJsonGraph("/network.json",{el:"#network-graph",metadata:!1,linkDistance:100,linkStrength:1,charge:-1e3,circleRadius:12,defaultStyle:!1,linkClassProperty:"type",nodeClassProperty:"style",labelDy:"-1.8em",onInit:function(a){d3.select(".njg-overlay").style("visibility","hidden")},onLoad:function(a){d3.select(".njg-overlay").style("visibility","hidden")},onClickNode:function(a){var d,e,b,c;if(d3.select(".njg-overlay").style("visibility","visible"),d=d3.select(".njg-overlay"),e=d3.select(".njg-overlay > .njg-inner"),b="<p><b>id</b>: "+a.id+"</p>",a.label&&(b+="<p><b>label</b>: "+a.label+"</p>"),a.properties)for(c in a.properties){if(!a.properties.hasOwnProperty(c))continue;if(k="link"){b+='<p><b>URL</b>: <a href="'+a.properties.link+'">'+a.properties.link+"</a></p>";continue}b+="<p><b>"+c.replace(/_/g," ")+"</b>: "+a.properties[c]+"</p>"}a.linkCount&&(b+="<p><b>Connected Notes</b>: "+a.linkCount+"</p>"),a.local_addresses&&(b+="<p><b>local addresses</b>:<br>"+a.local_addresses.join("<br>")+"</p>"),e.html(b),d.classed("njg-hidden",!1),d.style("display","block"),removeOpenClass(),d3.select(this).classed("njg-open",!0)}})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
+<script src=https://gw.alipayobjects.com/os/lib/antv/g6/4.3.11/dist/g6.min.js></script>
+<script src=/assets/network/networkg6.js></script>
 <div class="columns is-multiline is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd is-desktop">
 </div>
 </div>

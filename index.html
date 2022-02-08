@@ -669,12 +669,10 @@ Tags</h2>
 </div>
 <div class=columns>
 <div class="column is-6">
-<div class="content is-medium">
-<div class=section>
+<div class="content is-medium" style=padding:4em>
 <a href=/graph>
-<div id=network-graph style="width:100%;height:50vh;top:0;left:0;position:absolute;z-index:-100;border:2px solid #e95420"></div>
+<img src=/assets/images/undraw_connected_world_wuay.svg padding=80% alt>
 </a>
-</div>
 </div>
 </div>
 <div class="column is-6">
@@ -758,12 +756,6 @@ Tags</h2>
 </div>
 </div>
 </div>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js></script>
-<link href=/assets/network/netjsongraph.css rel=stylesheet>
-<link href=/assets/network/netjsongraph-theme.css rel=stylesheet>
-<script src=/assets/network/netjsongraph.js></script>
-<script>d3.netJsonGraph("/network.json",{el:"#network-graph",metadata:!1,linkDistance:100,linkStrength:3,charge:-500,circleRadius:12,defaultStyle:!1,linkClassProperty:"type",nodeClassProperty:"style",labelDy:"-1.8em",scaleExtent:[.1,.2],onInit:function(a){d3.select(".njg-overlay").style("visibility","hidden")},onLoad:function(a){d3.select(".njg-overlay").style("visibility","hidden")},onClickNode:function(a){var d,e,b,c;if(d3.select(".njg-overlay").style("visibility","visible"),d=d3.select(".njg-overlay"),e=d3.select(".njg-overlay > .njg-inner"),b="<p><b>id</b>: "+a.id+"</p>",a.label&&(b+="<p><b>label</b>: "+a.label+"</p>"),a.properties)for(c in a.properties){if(!a.properties.hasOwnProperty(c))continue;if(k="link"){b+='<p><b>URL</b>: <a href="'+a.properties.link+'">'+a.properties.link+"</a></p>";continue}b+="<p><b>"+c.replace(/_/g," ")+"</b>: "+a.properties[c]+"</p>"}a.linkCount&&(b+="<p><b>Connected Notes</b>: "+a.linkCount+"</p>"),a.local_addresses&&(b+="<p><b>local addresses</b>:<br>"+a.local_addresses.join("<br>")+"</p>"),e.html(b),d.classed("njg-hidden",!1),d.style("display","block"),removeOpenClass(),d3.select(this).classed("njg-open",!0)}})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
 </main>
 <footer>
 <footer class=footer>
