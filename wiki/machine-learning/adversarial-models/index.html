@@ -154,6 +154,46 @@ Adversarial models use a generator and discriminator
 <h1 class=blog-timestamp>
 </h1>
 <h1 class=title>
+<sup>3</sup> <a href=https://datumorphism.leima.is/wiki/machine-learning/adversarial-models/infogan/ itemprop=headline> infoGAN</a>
+</h1>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-calendar-alt"></i>
+Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="far fa-folder" aria-hidden=true></i> Category: { Machine Learning }
+</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%><i class="fa fa-hashtag" aria-hidden=true></i> Tags: <div class="tags is-small" style=display:inline>
+<a href=/tags/self-supervised-learning style=margin-right:.5em><span class="tag is-warning is-small is-light">#Self-supervised Learning</span></a>
+<a href=/tags/adversarial-model style=margin-right:.5em><span class="tag is-warning is-small is-light">#Adversarial Model</span></a>
+<a href=/tags/gan style=margin-right:.5em><span class="tag is-warning is-small is-light">#GAN</span></a>
+<a href=/tags/basics style=margin-right:.5em><span class="tag is-warning is-small is-light">#Basics</span></a>
+</div>
+</span>
+</div>
+<div style=margin-left:2em><span style=display:block;font-size:90%>
+<i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/1606.03657>Chen X, Duan Y, Houthooft R, Schulman J, Sutskever I, Abbeel P. InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets. arXiv [cs.LG]. 2016. Available: http://arxiv.org/abs/1606.03657</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href="https://books.google.com/books?hl=en&lr=&id=0F-9C7K8fQ8C&oi=fnd&pg=PA201&dq=Algorithm+variational+approach+Information+Maximization+Barber+Agakov&ots=TJGrkVS610&sig=yTKM2ZdcZQBTY4e5Vqk42ayUDxo">Agakov DBF. The im algorithm: a variational approach to information maximization. Adv Neural Inf Process Syst. 2004. Available: https://books.google.com/books?hl=en&lr=&id=0F-9C7K8fQ8C&oi=fnd&pg=PA201&dq=Algorithm+variational+approach+Information+Maximization+Barber+Agakov&ots=TJGrkVS610&sig=yTKM2ZdcZQBTY4e5Vqk42ayUDxo</a></span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-star"></i> Summary: In GAN, the latent space input is usually random noise, e.g., Gaussian noise. The objective of GAN is a very generic one. It doesn&rsquo;t say anything about how exactly the latent space will be used. This is not desirable in many problems. We would like to have more interpretability in the latent space. InfoGAN introduced constraints to the objective to enforce interpretability of the latent space1.
+Constraint The constraint InfoGAN proposed is Mutual Information Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$.</span>
+</div>
+<div style=margin-left:2em>
+<span style=display:block;font-size:90%>
+<i class="far fa-list-alt"></i> Pages: 3</span>
+</div>
+</div>
+<div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
+<div class="column is-half is-multiline" itemscope itemtype=http://schema.org/CreativeWork>
+<h1 class=blog-timestamp>
+</h1>
+<h1 class=title>
 <sup>2</sup> <a href=https://datumorphism.leima.is/wiki/machine-learning/adversarial-models/f-gan/ itemprop=headline> f-GAN</a>
 </h1>
 <div style=margin-left:2em>
@@ -187,7 +227,7 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-list-alt"></i> Pages: 2</span>
+<i class="far fa-list-alt"></i> Pages: 3</span>
 </div>
 </div>
 <div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
@@ -230,7 +270,7 @@ Vanilla GAN Minmax Game Suppose we have two players $G$ and $D$, and a utility $
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-list-alt"></i> Pages: 2</span>
+<i class="far fa-list-alt"></i> Pages: 3</span>
 </div>
 </div>
 <div class=is-divider style="border-top:.05rem dashed #dbdbdb!important;margin:1em 0!important"></div>
