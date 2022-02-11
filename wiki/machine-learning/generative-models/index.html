@@ -270,7 +270,7 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 $$ \begin{align} p(x) &= \tilde p (f(x)) \lvert \operatorname{det} \operatorname{D} g(f(x)) \rvert^{-1} \\ &= \tilde p(f(x)) \lvert \operatorname{det}\operatorname{D} f(x) \rvert \end{align} $$
 where the Jacobian is
 $$ \operatorname{D} g(z) \to \frac{\partial }{\partial z} g. $$
-The operation $g_{}\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g_{}$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
+The operation $g _ { * }\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g _ { * }$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
 The generative direction: sample $z$ from distribution $\tilde p(z)$, apply transformation $g(z)$; The normalizing direction: &ldquo;simplify&rdquo; $p(x)$ to some simple distribution $\tilde p(z)$.</span>
 </div>
 <div style=margin-left:2em>
@@ -305,14 +305,25 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 </div>
 <div style=margin-left:2em><span style=display:block;font-size:90%>
 <i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/1605.02226>Uria B, Côté M-A, Gregor K, Murray I, Larochelle H. Neural Autoregressive Distribution Estimation. arXiv [cs.LG]. 2016. Available: http://arxiv.org/abs/1605.02226</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/1911.12436>Triebe O, Laptev N, Rajagopal R. AR-Net: A simple Auto-Regressive Neural Network for time-series. arXiv [cs.LG]. 2019. Available: http://arxiv.org/abs/1911.12436</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://www.eigenfoo.xyz/deep-autoregressive-models>Ho G. George Ho. In: Eigenfoo [Internet]. 9 Mar 2019 [cited 19 Sep 2021]. Available: https://www.eigenfoo.xyz/deep-autoregressive-models/</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/1705.07057>Papamakarios G, Pavlakou T, Murray I. Masked Autoregressive Flow for Density Estimation. arXiv [stat.ML]. 2017. Available: http://arxiv.org/abs/1705.07057</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/1502.03509>Germain M, Gregor K, Murray I, Larochelle H. MADE: Masked autoencoder for distribution estimation. 32nd International Conference on Machine Learning, ICML 2015. 2015;2: 881–889. Available: http://arxiv.org/abs/1502.03509</a></span>
 <span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/2006.08218>Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling.html>Lippe P. Tutorial 12: Autoregressive Image Modeling — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 20 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling.html</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://github.com/rogen-george/Deep-Autoregressive-Model>rogen-george. rogen-george/Deep-Autoregressive-Model. In: GitHub [Internet]. [cited 20 Sep 2021]. Available: https://github.com/rogen-george/Deep-Autoregressive-Model</a></span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-star"></i> Summary: The likelihood is modeled as
+<i class="far fa-star"></i> Summary: An autoregressive (AR) model is autoregressive,
+$$ \begin{equation} \log p_\theta (x) = \sum_{t=1}^T \log p_\theta ( x_{t} \mid {x_{&lt;t}} ). \end{equation} $$
+In the above example, the likelihood is modeled as
 $$ \begin{align} p_\theta (x) &= \Pi_{t=1}^T p_\theta (x_t \mid x_{1:t-1}) \\ &= p_\theta(x_2 \mid x_{1:1}) p_\theta(x_3 \mid x_{1:2}) \cdots p_\theta(x_T \mid x_{1:T-1}) \end{align} $$
 Taking the log of it
-$$ \ln p_\theta (x) = \sum_{t=1}^T \ln p_\theta (x_t \mid x_{1:t-1}) $$</span>
+$$ \ln p_\theta (x) = \sum_{t=1}^T \ln p_\theta (x_t \mid x_{1:t-1}) $$
+Notations and Conventions
+In AR models, we have to mention the preceding nodes (${x_{&lt;t}}$) of a specific node ($x_{t}$). For $t=5$, the relations between ${x_{&lt;5}}$ and $x_5$ is shown in the following illustration.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>

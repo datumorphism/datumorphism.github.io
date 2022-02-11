@@ -11,7 +11,7 @@
 $$ \begin{align} p(x) &= \tilde p (f(x)) \lvert \operatorname{det} \operatorname{D} g(f(x)) \rvert^{-1} \\ &= \tilde p(f(x)) \lvert \operatorname{det}\operatorname{D} f(x) \rvert \end{align} $$
 where the Jacobian is
 $$ \operatorname{D} g(z) \to \frac{\partial }{\partial z} g. $$
-The operation $g_{}\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g_{}$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
+The operation $g _ { * }\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g _ { * }$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
  The generative direction: sample $z$ from distribution $\tilde p(z)$, apply transformation $g(z)$; The normalizing direction: &ldquo;simplify&rdquo; $p(x)$ to some simple distribution $\tilde p(z)$.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/generative-models/flow/"><meta property="article:section" content="wiki">
@@ -129,10 +129,10 @@ AmNeumarkt
 $$ \begin{align} p(x) &= \tilde p (f(x)) \lvert \operatorname{det} \operatorname{D} g(f(x)) \rvert^{-1} \\ &= \tilde p(f(x)) \lvert \operatorname{det}\operatorname{D} f(x) \rvert \end{align} $$
 where the Jacobian is
 $$ \operatorname{D} g(z) \to \frac{\partial }{\partial z} g. $$
-The operation $g_{}\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g_{}$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
+The operation $g _ { * }\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g _ { * }$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
  The generative direction: sample $z$ from distribution $\tilde p(z)$, apply transformation $g(z)$; The normalizing direction: &ldquo;simplify&rdquo; $p(x)$ to some simple distribution $\tilde p(z)$."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
-<meta itemprop=wordCount content="151">
+<meta itemprop=wordCount content="159">
 <meta itemprop=keywords content="Self-supervised Learning,Generative Model,Flow,Basics,">
 <section class=section>
 <div class=container>
@@ -185,7 +185,7 @@ $$</p>
 <p>$$
 \operatorname{D} g(z) \to \frac{\partial }{\partial z} g.
 $$</p>
-<p>The operation $g_{<em>}\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g_{</em>}$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.</p>
+<p>The operation $g _ { * }\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g _ { * }$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.</p>
 <ul>
 <li>The generative direction: sample $z$ from distribution $\tilde p(z)$, apply transformation $g(z)$;</li>
 <li>The normalizing direction: &ldquo;simplify&rdquo; $p(x)$ to some simple distribution $\tilde p(z)$.</li>
