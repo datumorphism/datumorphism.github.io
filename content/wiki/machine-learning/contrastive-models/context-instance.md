@@ -27,7 +27,7 @@ We can also adjust the model to discriminate the similarities and differences. F
 
 ## Deep InfoMax
 
-However, mutual information is hard to calculate. Models such as Deep InfoMax use {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}} instead[^Liu2020]. For Deep InfoMax, the loss function is
+However, mutual information is hard to calculate. Models such as {{< c "wiki/machine-learning/contrastive-models/deep-infomax.md" "Deep InfoMax" >}} use {{< c "cards/machine-learning/learning-theories/noise-contrastive-estimation.md" "NCE" >}} instead[^Liu2020]. For Deep InfoMax, the loss function is
 
 {{< m >}}
 \mathcal L = \mathbb E_{v, x} \left[ -\ln \frac{e^{v^T\cdot s}}{e^{v^T\cdot s} + e^{v^T\cdot s^-}}  \right].

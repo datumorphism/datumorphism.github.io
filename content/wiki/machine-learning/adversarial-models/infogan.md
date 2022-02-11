@@ -23,7 +23,7 @@ links:
 ---
 
 
-In GAN, the latent space input is usually random noise, e.g., Gaussian noise. The objective of [GAN](gan.md) is a very generic one. It doesn't say anything about how exactly the latent space will be used. This is not desirable in many problems. We would like to have more interpretability in the latent space. InfoGAN introduced constraints to the objective to enforce interpretability of the latent space[^Chen2016].
+In GAN, the latent space input is usually random noise, e.g., Gaussian noise. The objective of {{< c "wiki/machine-learning/adversarial-models/gan.md" >}} is a very generic one. It doesn't say anything about how exactly the latent space will be used. This is not desirable in many problems. We would like to have more interpretability in the latent space. InfoGAN introduced constraints to the objective to enforce interpretability of the latent space[^Chen2016].
 
 
 ## Constraint
@@ -49,7 +49,7 @@ Using the lambda multiplier, we punish the model if the generator loses informat
 
 ![](assets/infogan/infogan-structure-1.jpeg)
 
-The training steps are almost the same as [GAN](gan.md) but with one extra loss to be calculated in each mini-batch.
+The training steps are almost the same as {{< c "wiki/machine-learning/adversarial-models/gan.md" >}} but with one extra loss to be calculated in each mini-batch.
 
 1. Train $\color{red}G$ using loss: $\operatorname{MSE}(v', v)$;
 2. Train $\color{green}D$ using loss: $\operatorname{MSE}(v', v)$;
