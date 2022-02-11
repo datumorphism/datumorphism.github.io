@@ -183,10 +183,7 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-star"></i> Summary: Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder Generative Model: Auto-Encoder The simplest auto-encoder is rather simple. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,
-$$ \begin{align} \ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\ &= \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z) \right) p(z) \, \mathrm d z \end{align} $$
-In the above derivation,
-${}_\theta$ is the model for inference, and ${}_\phi$ is the model for variational approximation.</span>
+<i class="far fa-star"></i> Summary: Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= … . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
@@ -220,12 +217,18 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 </div>
 <div style=margin-left:2em><span style=display:block;font-size:90%>
 <i class="fa fa-paperclip" aria-hidden=true></i> References:</span>
-<span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/2006.08218>Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href=https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html>Lippe P. Tutorial 9: Deep Autoencoders — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 20 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html</a></span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-star"></i> Summary: The simplest auto-encoder is rather simple.
-The loss can be chosen based on the demand, e.g., cross entropy for binary labels.</span>
+<i class="far fa-star"></i> Summary: Autoencoders (AE) are machines that encodes inputs into a compact latent space.
+The simplest auto-encoder is rather easy to understand.
+The loss can be chosen based on the demand, e.g., cross entropy for binary labels.
+Notation: dot ($\cdot$)
+We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g.,
+$$ \begin{align} {\color{green}h} &= {\color{blue}g}{\color{blue}(}{\color{blue}b} + {\color{blue}w} x{\color{blue})} \ \hat x &= {\color{red}\sigma}{\color{red}(c} + {\color{red}v} {\color{green}h}{\color{red})}, \end{align} $$
+where in this simple example,
+${\color{blue}g(b + w \cdot )}$ is the encoder, and ${\color{red}\sigma(c + v \cdot )}$ is the decoder.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>

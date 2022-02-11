@@ -7,8 +7,14 @@
 <title> Generative Model: Auto-Encoder | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Generative Model: Auto-Encoder">
-<meta property="og:description" content="The simplest auto-encoder is rather simple.
- The loss can be chosen based on the demand, e.g., cross entropy for binary labels.">
+<meta property="og:description" content="Autoencoders (AE) are machines that encodes inputs into a compact latent space.
+ The simplest auto-encoder is rather easy to understand.
+ The loss can be chosen based on the demand, e.g., cross entropy for binary labels.
+Notation: dot ($\cdot$)
+ We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments.   A simple autoencoder can be achieved using two neural nets, e.g.,
+$$ \begin{align} {\color{green}h} &= {\color{blue}g}{\color{blue}(}{\color{blue}b} + {\color{blue}w} x{\color{blue})} \ \hat x &= {\color{red}\sigma}{\color{red}(c} + {\color{red}v} {\color{green}h}{\color{red})}, \end{align} $$
+where in this simple example,
+ ${\color{blue}g(b + w \cdot )}$ is the encoder, and ${\color{red}\sigma(c + v \cdot )}$ is the decoder.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/generative-models/autoencoder/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
@@ -121,10 +127,16 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Generative Model: Auto-Encoder">
-<meta itemprop=description content="The simplest auto-encoder is rather simple.
- The loss can be chosen based on the demand, e.g., cross entropy for binary labels."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
+<meta itemprop=description content="Autoencoders (AE) are machines that encodes inputs into a compact latent space.
+ The simplest auto-encoder is rather easy to understand.
+ The loss can be chosen based on the demand, e.g., cross entropy for binary labels.
+Notation: dot ($\cdot$)
+ We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments.   A simple autoencoder can be achieved using two neural nets, e.g.,
+$$ \begin{align} {\color{green}h} &= {\color{blue}g}{\color{blue}(}{\color{blue}b} + {\color{blue}w} x{\color{blue})} \ \hat x &= {\color{red}\sigma}{\color{red}(c} + {\color{red}v} {\color{green}h}{\color{red})}, \end{align} $$
+where in this simple example,
+ ${\color{blue}g(b + w \cdot )}$ is the encoder, and ${\color{red}\sigma(c + v \cdot )}$ is the decoder."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
-<meta itemprop=wordCount content="21">
+<meta itemprop=wordCount content="151">
 <meta itemprop=keywords content="Self-supervised Learning,Generative Model,Auto-Encoder,Basics,">
 <section class=section>
 <div class=container>
@@ -164,10 +176,49 @@ Generative Model: Auto-Encoder
 <div class="column is-8">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<p>The simplest auto-encoder is rather simple.</p>
+<p>Autoencoders (AE) are machines that encodes inputs into a compact latent space.</p>
+<figure><img src=../assets/generative-autoencoder/autoencoder-basic-1.jpg>
+</figure>
+<p>The simplest auto-encoder is rather easy to understand.</p>
 <figure><img src=../assets/generative-autoencoder/simple-ae-summary.png>
 </figure>
 <p>The loss can be chosen based on the demand, e.g., cross entropy for binary labels.</p>
+<article class="message is-light is-light">
+<div class=message-header>
+<p>Notation: dot ($\cdot$)</p>
+</div>
+<div class=message-body>
+We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments.
+</div>
+</article>
+<p>A simple autoencoder can be achieved using two neural nets, e.g.,</p>
+<p>$$
+\begin{align}
+{\color{green}h} &= {\color{blue}g}{\color{blue}(}{\color{blue}b} + {\color{blue}w} x{\color{blue})} \
+\hat x &= {\color{red}\sigma}{\color{red}(c} + {\color{red}v} {\color{green}h}{\color{red})},
+\end{align}
+$$</p>
+<p>where in this simple example,</p>
+<ul>
+<li>${\color{blue}g(b + w \cdot )}$ is the encoder, and</li>
+<li>${\color{red}\sigma(c + v \cdot )}$ is the decoder.</li>
+</ul>
+<p>For binary labels, we can use a simple cross entropy as the loss.</p>
+<h2 id=code>Code</h2>
+<p>See Lippe<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=Lippe href=#Lippe style=text-decoration:none>
+<span class="tag is-link is-light">Lippe</span>
+</a>
+<a href=https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html style=text-decoration:none>Lippe P. Tutorial 9: Deep Autoencoders — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 20 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -197,6 +248,27 @@ L Ma
 </article>
 </div>
 <style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#code>Code</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
 <script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
 <div class=is-divider data-content=REFERENCES></div>
 <div class="box is-size-7">
@@ -206,7 +278,11 @@ L Ma
 <p>
 <strong>References: </strong><br>
 <ol>
-<li class=has-text-weight-bold><a href=http://arxiv.org/abs/2006.08218 style=text-decoration:none>Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218</a></li>
+<li class=has-text-weight-bold>
+<a name=Lippe href=#Lippe style=text-decoration:none>
+<span class="tag is-link is-light">Lippe</span>
+</a>
+<a href=https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html style=text-decoration:none>Lippe P. Tutorial 9: Deep Autoencoders — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 20 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html</a></li>
 </ol>
 </p>
 </div>

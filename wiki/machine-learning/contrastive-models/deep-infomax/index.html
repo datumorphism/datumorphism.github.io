@@ -1,0 +1,414 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Deep Infomax | Datumorphism | L Ma </title>
+<meta name=author content="L Ma">
+<meta property="og:title" content="Deep Infomax">
+<meta property="og:description" content="Max Global Mutual Information
+ Why not just use the global mutual information of the input and encoder output as the objective?
+ &mldr; maximizing MI between the complete input and the encoder output (i.e.,globalMI) is ofteninsufficient for learning useful representations.
+&ndash; Devon et al[^Devon2018]
+    Mutual information  Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$. This makes sense as there would be no &ldquo;mutual&rdquo; information if the two variables are independent of each other.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/deep-infomax/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2021-09-08T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-09-08T00:00:00+00:00">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/deep-infomax/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/site/intelligence.png alt=Datumorphism height=28 style=margin-right:.5em> Datumorphism
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://datumorphism.leima.is/awesome/ class=navbar-item>
+Awesome
+</a>
+<a href=https://datumorphism.leima.is/blog/ class=navbar-item>
+Blog
+</a>
+<a href=https://datumorphism.leima.is/cards/ class=navbar-item>
+Cards
+</a>
+<a href=https://datumorphism.leima.is/hologram/ class=navbar-item>
+Hologram
+</a>
+<a href=https://datumorphism.leima.is/reading/ class=navbar-item>
+Reading Notes
+</a>
+<a href=https://datumorphism.leima.is/til/ class=navbar-item>
+TIL
+</a>
+<a href=https://datumorphism.leima.is/wiki/ class=navbar-item>
+Wiki
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class=navbar-item href=https://neuronstar.kausalflow.com/cpe-docs/>
+Probability Estimation
+</a>
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/blog/>
+Blog
+</a>
+<a class=navbar-item href=/amneumarkt/>
+AmNeumarkt
+</a>
+<a class=navbar-item href=/>
+<i class="fas fa-search"></i>
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item href=https://t.me/amneumarkt>
+<i class="fab fa-telegram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/datumorphism>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);a.classList.toggle('is-active'),c.classList.toggle('is-active')})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Deep Infomax">
+<meta itemprop=description content="Max Global Mutual Information
+ Why not just use the global mutual information of the input and encoder output as the objective?
+ &mldr; maximizing MI between the complete input and the encoder output (i.e.,globalMI) is ofteninsufficient for learning useful representations.
+&ndash; Devon et al[^Devon2018]
+    Mutual information  Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$. This makes sense as there would be no &ldquo;mutual&rdquo; information if the two variables are independent of each other."><meta itemprop=datePublished content="2021-09-08T00:00:00+00:00">
+<meta itemprop=dateModified content="2021-09-08T00:00:00+00:00">
+<meta itemprop=wordCount content="432">
+<meta itemprop=keywords content="Self-supervised Learning,Contrastive Model,Mutual Information,Deep Infomax,Basics,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://datumorphism.leima.is/>Datumorphism</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/>Wiki</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/>Machine Learning</a>
+</li>
+<li>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/>Contrastive Models</a>
+</li>
+<li class=active>
+<a href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/deep-infomax/>Deep Infomax</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
+Deep Infomax
+</h1>
+<h2 class="title is-6 has-text-centered">
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/self-supervised-learning><span class="tag is-warning is-small is-light">#Self-supervised Learning</span></a>
+<a href=/tags/contrastive-model><span class="tag is-warning is-small is-light">#Contrastive Model</span></a>
+<a href=/tags/mutual-information><span class="tag is-warning is-small is-light">#Mutual Information</span></a>
+<a href=/tags/deep-infomax><span class="tag is-warning is-small is-light">#Deep Infomax</span></a>
+<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
+</h2>
+</header>
+<div class=columns>
+<div class="column is-8">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>Max Global Mutual Information</p>
+</div>
+<div class=message-body>
+<p>Why not just use the global mutual information of the input and encoder output as the objective?</p>
+<blockquote>
+<p>&mldr; maximizing MI between the complete input and the encoder output (i.e.,globalMI) is ofteninsufficient for learning useful representations.</p>
+<p>&ndash; Devon et al[^Devon2018]</p>
+</blockquote>
+</div>
+</article>
+<p>
+<span class=tooltip><a href=https://datumorphism.leima.is/cards/information/mutual-information/>
+Mutual information
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Mutual Information</span>
+<span class=tooltip_content>Mutual information is defined as
+$$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$
+In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$. This makes sense as there would be no &ldquo;mutual&rdquo; information if the two variables are independent of each other.
+Entropy and Cross Entropy Mutual information is closely related to entropy. A simple decomposition shows that
+$$ I(X;Y) = H(X) - H(X\mid Y), $$
+which is the reduction of …</span>
+</span>
+</span>
+maximization is performed on the input of the encoder $X$ and the encoded feature $\hat X=E_\theta (X)$,</p>
+<p>$$
+\operatorname{arg~max}_\theta I(X;E_\theta (X)).
+$$</p>
+<p>Being a quantity that is notoriously hard to compute, mutual information $I(X;E_\theta (X))$ is usually estimated using its lower bound, which depends on a choice of a functional $T_\omega$. Thus the objective will be maximizing a parametrized mutual information estimation,</p>
+<p>$$
+\operatorname{arg~max}_{\theta, \omega} \hat I_\omega(X;E_\theta (X))
+$$</p>
+<article class="message is-info is-light">
+<div class=message-header>
+<p>Local or Global</p>
+</div>
+<div class=message-body>
+<p>Two approaches to apply mutual information on encoders:</p>
+<ul>
+<li>Global mutual information of full input and full encoding. This is useful for reconstruction of the input.</li>
+<li>Local mutual information of local patches of input full encoding. This is useful for classification.</li>
+</ul>
+</div>
+</article>
+<h2 id=local-mutual-information>Local Mutual Information</h2>
+<p>To compare local features to the encoder output, we need to extract values from inside the encoder, i.e.,</p>
+<p>$$
+E_{\theta_f, \theta_C} = f_{\theta_f} \circ C_{\theta_C}.
+$$</p>
+<p>The first step, $C_{\theta_C}$ is to map the input into feature maps, the second step, $f_{\theta_f}$ maps the feature maps into the encoding. The feature map $C_{\theta_C}$ is split into patches,</p>
+<p>$$
+C_{\theta_C}= \left \{ C_\theta^{(i)} \right\}.
+$$</p>
+<p>The objective is</p>
+<p>$$
+\operatorname{arg~max}_{\theta_f, \theta_C, \omega}\mathbb E_{i} \left[ \hat I_\omega( C_{\theta_C}^{(i)} ;E_\theta (X)) \right].
+$$</p>
+<figure><img src=../assets/deep-infomax/deep-infomax-local-mi-architecture.jpg>
+</figure>
+<article class="message is-light is-light">
+<div class=message-header>
+<p>Why does local mutual information help</p>
+</div>
+<div class=message-body>
+<p>Devon et al explained the idea behind choosing local mutual information[^Devon2018].</p>
+<p>Global mutual information doesn&rsquo;t specify what is the meaningful information. Some very local noise can also be treated as meaningful information too.</p>
+<p>Local mutual information splits the input into patches, and calculate the mutual information between each patch and the encoding. If the model only uses some information from a few local patches, the mutual information objective will be small after averaging all the patches. Thus local mutual information forces the model to use information that is global in the input.</p>
+</div>
+</article>
+<h2 id=code>Code</h2>
+<ul>
+<li><a href=https://github.com/rdevon/DIM>rdevon/DIM</a>: by the authors</li>
+<li><a href=https://github.com/DuaneNielsen/DeepInfomaxPytorch>DuaneNielsen/DeepInfomaxPytorch</a>: a clean implementation</li>
+</ul>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Published: <time datetime=2021-09-08T00:00:00+00:00>2021-09-08</time>
+by <span itemprop=author>L Ma</span>;
+</div></p>
+<div class=is-divider></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/contrastive-predictive-codeing/?ref=footer" class=pagination-previous>« Contrastive Predictive Coding</a>
+</nav>
+</div>
+<div class="column is-4">
+<div class=is-divider data-content="Cite Me"></div>
+<div class="box is-size-7 has-text-white has-background-black">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2021). 'Deep Infomax', Datumorphism, 09 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/deep-infomax/.
+</p>
+</div>
+</div>
+</article>
+</div>
+<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary>Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#local-mutual-information>Local Mutual Information</a></li>
+<li><a href=#code>Code</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%;word-break:break-word>
+<div class=content>
+<p>
+<strong>References: </strong><br>
+<ol>
+<li class=has-text-weight-bold>
+<a name=Devon2018 href=#Devon2018 style=text-decoration:none>
+<span class="tag is-link is-light">Devon2018</span>
+</a>
+<a href=http://arxiv.org/abs/1808.06670 style=text-decoration:none>Devon Hjelm R, Fedorov A, Lavoie-Marchildon S, Grewal K, Bachman P, Trischler A, et al. Learning deep representations by mutual information estimation and maximization. arXiv [stat.ML]. 2018. Available: http://arxiv.org/abs/1808.06670</a></li>
+<li class=has-text-weight-bold>
+<a name=Newell2020 href=#Newell2020 style=text-decoration:none>
+<span class="tag is-link is-light">Newell2020</span>
+</a>
+<a href=http://arxiv.org/abs/2003.14323 style=text-decoration:none>Newell A, Deng J. How Useful is Self-Supervised Pretraining for Visual Tasks? arXiv [cs.CV]. 2020. Available: http://arxiv.org/abs/2003.14323</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=CONNECTUME></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong>Current Ref: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/machine-learning/contrastive-models/deep-infomax.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong>Links to: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/context-instance/>
+<div class=media-content>
+<div class=content>
+<h6>Contrastive Model: Context-Instance</h6>
+<p>
+In contrastive methods, we can manipulate the data to create data entries and infer the changes …
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/cards/information/mutual-information/>
+<div class=media-content>
+<div class=content>
+<h6>Mutual Information</h6>
+<p>
+Mutual information is defined as
+$$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$
+In …
+</p>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div id=comments class=is-divider data-content=COMMENTS>
+</div>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/machine-learning/contrastive-models/deep-infomax.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://leima.is>L Ma</a>.
+Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
+<a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
+<strong>love</strong>.
+<br>
+<a class=tag href=/about>About</a>
+<a class=tag href=/index.xml>Feed</a>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+</body>
+</html>

@@ -181,8 +181,7 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-star"></i> Summary: In GAN, the latent space input is usually random noise, e.g., Gaussian noise. The objective of GAN is a very generic one. It doesn&rsquo;t say anything about how exactly the latent space will be used. This is not desirable in many problems. We would like to have more interpretability in the latent space. InfoGAN introduced constraints to the objective to enforce interpretability of the latent space1.
-Constraint The constraint InfoGAN proposed is Mutual Information Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$.</span>
+<i class="far fa-star"></i> Summary: In GAN, the latent space input is usually random noise, e.g., Gaussian noise. The objective of GAN GAN The task of GAN is to generate features $X$ from some noise $\xi$ and class labels $Y$, $$\xi, Y \to X.$$ Many different GANs are proposed. Vanilla GAN has a simple structure with a single discriminator and a single generator. It uses the minmax game setup. However, it is not stable to use minmax game to train a GAN model. WassersteinGAN was proposed to solve the stability problem during training1. More advanced GANs like BiGAN and ALI have more complex structures. Vanilla GAN Minmax Game … is a very generic one.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>

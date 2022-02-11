@@ -7,10 +7,7 @@
 <title> Variational Auto-Encoder | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Variational Auto-Encoder">
-<meta property="og:description" content="Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder  Generative Model: Auto-Encoder The simplest auto-encoder is rather simple. The loss can be chosen based on the demand, e.g., cross entropy for binary labels.   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,
-$$ \begin{align} \ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\ &= \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z) \right) p(z) \, \mathrm d z \end{align} $$
-In the above derivation,
- ${}_\theta$ is the model for inference, and ${}_\phi$ is the model for variational approximation.">
+<meta property="og:description" content="Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder  Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= …   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/generative-models/variational-autoencoder/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
@@ -123,12 +120,9 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Variational Auto-Encoder">
-<meta itemprop=description content="Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder  Generative Model: Auto-Encoder The simplest auto-encoder is rather simple. The loss can be chosen based on the demand, e.g., cross entropy for binary labels.   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,
-$$ \begin{align} \ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\ &= \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z) \right) p(z) \, \mathrm d z \end{align} $$
-In the above derivation,
- ${}_\theta$ is the model for inference, and ${}_\phi$ is the model for variational approximation."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
+<meta itemprop=description content="Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder  Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= …   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,"><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
-<meta itemprop=wordCount content="959">
+<meta itemprop=wordCount content="1012">
 <meta itemprop=keywords content="Self-supervised Learning,Generative Model,VAE,Basics,">
 <section class=section>
 <div class=container>
@@ -174,8 +168,12 @@ Generative Model: Auto-Encoder
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Generative Model: Auto-Encoder</span>
-<span class=tooltip_content>The simplest auto-encoder is rather simple.
-The loss can be chosen based on the demand, e.g., cross entropy for binary labels.</span>
+<span class=tooltip_content>Autoencoders (AE) are machines that encodes inputs into a compact latent space.
+The simplest auto-encoder is rather easy to understand.
+The loss can be chosen based on the demand, e.g., cross entropy for binary labels.
+Notation: dot ($\cdot$)
+We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g.,
+$$ \begin{align} {\color{green}h} &= …</span>
 </span>
 </span>
 . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,</p>
@@ -435,8 +433,8 @@ The conditional probability of class label on data (posterior) $p(C_k\mid x)$ �
 <div class=content>
 <h6>Generative Model: Auto-Encoder</h6>
 <p>
-The simplest auto-encoder is rather simple.
-The loss can be chosen based on the demand, e.g., cross …
+Autoencoders (AE) are machines that encodes inputs into a compact latent space.
+The simplest …
 </p>
 </div>
 </div>
