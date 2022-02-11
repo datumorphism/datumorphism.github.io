@@ -34,7 +34,7 @@ where the Jacobian is
 {{< /m >}}
 
 
-The operation $g_{*}\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g_{*}$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
+The operation $g _ { * }\circ \tilde p(z)$ is the push forward of $\tilde p(z)$. The operation $g _ { * }$ will pushforward simple distribution $\tilde p(z)$ to a more complex distribution $p(x)$.
 
 - The generative direction: sample $z$ from distribution $\tilde p(z)$, apply transformation $g(z)$;
 - The normalizing direction: "simplify" $p(x)$ to some simple distribution $\tilde p(z)$.
