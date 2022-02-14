@@ -13,6 +13,9 @@ references:
   - name: "Introduction to PySpark on DataCamp"
     link: "https://www.datacamp.com/courses/introduction-to-pyspark"
     key: "DataCampPySparkIntro"
+  - name: "Cluster configurations - Cleaning Data with PySpark"
+    link: "https://campus.datacamp.com/courses/cleaning-data-with-pyspark/improving-performance?ex=7"
+    key: "dc-clean-spark-perform"
 supplementary:
   - name: "Introduction to PySpark on DataCamp"
     link: "https://www.datacamp.com/courses/introduction-to-pyspark"
@@ -20,6 +23,12 @@ weight: 21
 ---
 
 Spark uses Resilient Distributed Dataset (RDD).
+
+## Spark
+
+### Clusters
+
+In one cluster, we have a driver is responsible for managing the tasks, result consolidation, and also shared data access[^dc-clean-spark-perform].
 
 ## PySpark
 
@@ -91,6 +100,24 @@ Once a table is in the catalog, we can create a dataframe using
 pyspark.sql.SparkSession.table("a_table_name")
 ```
 
+#### `explain`
+
+[`sdf.explain`](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.DataFrame.explain.html) can be used to show the plan of the execution.
+
+
+#### Improve performance by copying data to workers
+
+
+`spark.sql.functions.broadcast` can speed up some tasks such as join and count.
+
+```python
+import pyspark.sql.functions as F
+
+F.broadcast(sdf).count()
+
+sdf_1.join(F.broadcast(sdf_2), sdf_1.col_1 = sdf_2.col_1)
+```
+
 
 ### Updating Dataframe
 
@@ -128,6 +155,13 @@ or Python
 .filter(df.col_1 < 0)
 ```
 
+In chained methods, it is important to make sure each step has the columns required for the method to run. For example, if a dataframe has columns `"Name"`, `"Age"`, `"Skills"`, the following won't work as `"Age"` is not among the selected columns,
+
+```python
+sdf.select("Name", "Skills").filter("Age > 30")
+```
+
+
 #### Select a Newly Created Column
 
 
@@ -154,6 +188,12 @@ Use [`.groupBy`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/py
 [`.join`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.join.html)
 
 
+### Pipelines
+
+
+[`pyspark.ml.Pipeline`](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.Pipeline.html)
+
+
 ### ML on Spark
 
 - `pyspark.ml`
@@ -171,3 +211,9 @@ Use [`.groupBy`](https://spark.apache.org/docs/3.1.1/api/python/reference/api/py
     - `pyspark.ml.tuning.ParamGridBuilder`
     - `pyspark.ml.tuning.CrossValidator`
 - pyspark dataframe has the method `.randomSplit()`
+
+
+
+
+
+[^dc-clean-spark-perform]: {{< cite key="dc-clean-spark-perform" >}}

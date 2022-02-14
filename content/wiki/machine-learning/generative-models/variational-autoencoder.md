@@ -26,6 +26,7 @@ links:
   - "wiki/machine-learning/bayesian/elbo.md"
   - "wiki/machine-learning/bayesian/latent-variable-models.md"
   - "cards/statistics/reparametrization-expectation-sampling.md"
+  - "wiki/machine-learning/basics/kl-divergence.md"
 ---
 
 Variational Auto-Encoder (VAE) is very different from {{< c "wiki/machine-learning/generative-models/autoencoder.md" >}}. In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,
@@ -33,7 +34,7 @@ Variational Auto-Encoder (VAE) is very different from {{< c "wiki/machine-learni
 {{< m >}}
 \begin{align}
 \ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\
-&=  \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z) \right) p(z) \, \mathrm d z
+&=  \int \left(\ln\left(\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z)\right) \right) p(z) \, \mathrm d z
 \end{align}
 {{< /m >}}
 
@@ -54,13 +55,14 @@ In the above derivation,
 
 {{< figure src="../assets/generative-variational-autoencoder/1606.05908-fig2-gaussian-latent.png" caption="From simple distribution in latent space to a more complex distribution. [Doersch2016]" >}}
 
-The demo looks great. However, sampling from latent space becomes more difficult as the dimension of the latent space increase. We need a more efficient way to sample from the latent space. We use the variational method which uses a model that samples $z$ based on $x$ to sample $z$, i.e., introduce a function $q(z\mid x)$ to help us with sampling.
+The demo looks great. However, sampling from latent space becomes more difficult as the dimension of the latent space increases. We need a more efficient way to sample from the latent space. One solution is to apply the variational method. To to sample $z$, the method uses a model that samples $z$ based on $x$, i.e., introduce a function $q(z\mid x)$ to help us with sampling in latent space.
 
 
 {{< m >}}
 \begin{align}
 \ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\
 &=  \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z) \right) p(z) \, \mathrm d z \\
+&=  \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} \frac{p_\theta (x, z)}{p (z)} \right) p(z) \, \mathrm d z \\
 &= \int dz q(z\mid x) \ln \frac{p(x,z)}{q(z\mid x)} + \int dz q(z\mid x) \ln \frac{q(z\mid x)}{p(z\mid x)} \label{eqn-vae-lnp-sep-q} \\
 &= - \left[ D_{\mathrm{KL}} ( q_{\phi}(z\mid x) \mathrel{\Vert} p(z)  )  -  \mathbb E_q ( \ln p_\theta (x\mid z) ) \right] + D_{\mathrm{KL}}( q(z\mid x)\parallel p(z\mid x) ) \label{eqn-vae-lnp-decompositions} \\
 & \geq - \left[ D_{\mathrm{KL}} ( q_{\phi}(z\mid x) \mathrel{\Vert} p(z)  )  -  \mathbb E_q ( \ln p_\theta (x\mid z) ) \right] \label{eqn-vae-lnp-geq-elbo} \\
@@ -78,7 +80,7 @@ The term $F(x)$ is the free energy, while the negative of it, $-F(x)=\mathcal L$
 {{< /m >}}
 
 
-From row ($\ref{eqn-vae-lnp-decompositions}$) to  ($\ref{eqn-vae-lnp-geq-elbo}$), we dropped the term $D_{\mathrm{KL}}( q(z\mid x)\parallel p(z\mid x) )$ which is always nonnegative. The reason is that we can not maximize this KL divergence as we do not know $p(z\mid x)$. But the KL divergence is always non-negative. So if we find a $q$ that can maximize $\mathcal L$, then we are also miminizing the KL divergence (with a function $q(z\mid x)$ that is close to $p(z\mid x)$) and maximizing the loglikelihood loss. Now we only need to find a way to maximize $\mathcal L$.
+From row ($\ref{eqn-vae-lnp-decompositions}$) to  ($\ref{eqn-vae-lnp-geq-elbo}$), we dropped the term $D_{\mathrm{KL}}( q(z\mid x)\parallel p(z\mid x) )$ which is always nonnegative. The reason is that we can not maximize this {{< c "wiki/machine-learning/basics/kl-divergence.md" "KL divergence" >}} as we do not know $p(z\mid x)$. But the KL divergence is always non-negative. So if we find a $q$ that can maximize $\mathcal L$, then we are also miminizing the KL divergence (with a function $q(z\mid x)$ that is close to $p(z\mid x)$) and maximizing the loglikelihood loss. Now we only need to find a way to maximize $\mathcal L$.
 
 
 {{< message title="More about this ELBO" >}}
