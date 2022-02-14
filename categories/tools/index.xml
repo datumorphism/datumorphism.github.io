@@ -18,9 +18,9 @@ If some specific (internal) packages are needed for almost every package, fork c
 sphinx docs, and squidfunk/mkdocs-material. Sphinx docs Sphinx docs is a mature and stable. I love reStructuredText as the syntax as it is very versatile. It supports math, figures with captions, admonitions, cross reference, auto doc from docstrings, cross project cross referencing, pdf generation, etc.
 reStructuredText is not the only choice
 We can also use markdown by choosing the markdown parser. squidfunk/mkdocs-material squidfunk&amp;rsquo;s mkdocs-material is a rather light-weight but is also growing to be versatile now. The engine is mkdocs. mkdocs-material is a theme but provides a lot of useful and easy to use elements.</description></item><item><title>Data Processing - (Py)Spark</title><link>https://datumorphism.leima.is/wiki/tools/data-processing-spark/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/tools/data-processing-spark/</guid><description>Spark uses Resilient Distributed Dataset (RDD).
+Spark Clusters In one cluster, we have a driver is responsible for managing the tasks, result consolidation, and also shared data access1.
 PySpark PySpark provides
 SparkContext SparkSession A spark dataframe is immutable. This makes it tricky to update a dataframe.
 Useful Commands Get Session In pyspark, we can also get or create the session using the following method.
 pyspark.sql.SparkSession.builder.getOrCreate() List all Tables A pyspark.sql.SparkSession has property catalog and can be used to list the tables.
-pyspark.sql.SparkSession.catalog.listTables() Run SQL Query Given a SQL query query, we can query the table using .sql() method of the session.
-query = ... pyspark.sql.SparkSession.sql(query) Convert Dataframe to Pandas Dataframe .toPandas() Convert Pandas Dataframe to Spark Dataframe To create a spark dataframe from a pandas dataframe,</description></item></channel></rss>
+pyspark.sql.SparkSession.catalog.listTables() Run SQL Query Given a SQL query query, we can query the table using .</description></item></channel></rss>

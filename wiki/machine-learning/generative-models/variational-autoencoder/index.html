@@ -122,7 +122,7 @@ AmNeumarkt
 <meta itemprop=name content="Variational Auto-Encoder">
 <meta itemprop=description content="Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder  Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= …   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,"><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
-<meta itemprop=wordCount content="1012">
+<meta itemprop=wordCount content="1046">
 <meta itemprop=keywords content="Self-supervised Learning,Generative Model,VAE,Basics,">
 <section class=section>
 <div class=container>
@@ -180,7 +180,7 @@ $$ \begin{align} {\color{green}h} &= …</span>
 <p>$$
 \begin{align}
 \ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\
-&=  \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z) \right) p(z) \, \mathrm d z
+&=  \int \left(\ln\left(\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z)\right) \right) p(z) \, \mathrm d z
 \end{align}
 $$</p>
 <p>In the above derivation,</p>
@@ -205,11 +205,12 @@ $$</p>
 <p>From simple distribution in latent space to a more complex distribution. [Doersch2016]</p>
 </figcaption>
 </figure>
-<p>The demo looks great. However, sampling from latent space becomes more difficult as the dimension of the latent space increase. We need a more efficient way to sample from the latent space. We use the variational method which uses a model that samples $z$ based on $x$ to sample $z$, i.e., introduce a function $q(z\mid x)$ to help us with sampling.</p>
+<p>The demo looks great. However, sampling from latent space becomes more difficult as the dimension of the latent space increases. We need a more efficient way to sample from the latent space. One solution is to apply the variational method. To to sample $z$, the method uses a model that samples $z$ based on $x$, i.e., introduce a function $q(z\mid x)$ to help us with sampling in latent space.</p>
 <p>$$
 \begin{align}
 \ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\
 &=  \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z) \right) p(z) \, \mathrm d z \\
+&=  \int \left(\ln\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} \frac{p_\theta (x, z)}{p (z)} \right) p(z) \, \mathrm d z \\
 &= \int dz q(z\mid x) \ln \frac{p(x,z)}{q(z\mid x)} + \int dz q(z\mid x) \ln \frac{q(z\mid x)}{p(z\mid x)} \label{eqn-vae-lnp-sep-q} \\
 &= - \left[ D_{\mathrm{KL}} ( q_{\phi}(z\mid x) \mathrel{\Vert} p(z) ) - \mathbb E_q ( \ln p_\theta (x\mid z) ) \right] + D_{\mathrm{KL}}( q(z\mid x)\parallel p(z\mid x) ) \label{eqn-vae-lnp-decompositions} \\
 & \geq - \left[ D_{\mathrm{KL}} ( q_{\phi}(z\mid x) \mathrel{\Vert} p(z) ) - \mathbb E_q ( \ln p_\theta (x\mid z) ) \right] \label{eqn-vae-lnp-geq-elbo} \\
@@ -231,7 +232,16 @@ Evidence Lower Bound (ELBO)
 <p>$$
 \mathcal L = - D_{\mathrm{KL}} ( q_{\phi}(z\mid x) \mathrel{\Vert} p(z) ) + \mathbb E_q ( \ln p_\theta (x\mid z) ).
 $$</p>
-<p>From row ($\ref{eqn-vae-lnp-decompositions}$) to ($\ref{eqn-vae-lnp-geq-elbo}$), we dropped the term $D_{\mathrm{KL}}( q(z\mid x)\parallel p(z\mid x) )$ which is always nonnegative. The reason is that we can not maximize this KL divergence as we do not know $p(z\mid x)$. But the KL divergence is always non-negative. So if we find a $q$ that can maximize $\mathcal L$, then we are also miminizing the KL divergence (with a function $q(z\mid x)$ that is close to $p(z\mid x)$) and maximizing the loglikelihood loss. Now we only need to find a way to maximize $\mathcal L$.</p>
+<p>From row ($\ref{eqn-vae-lnp-decompositions}$) to ($\ref{eqn-vae-lnp-geq-elbo}$), we dropped the term $D_{\mathrm{KL}}( q(z\mid x)\parallel p(z\mid x) )$ which is always nonnegative. The reason is that we can not maximize this
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
+KL divergence
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>KL Divergence</span>
+<span class=tooltip_content>Kullback–Leibler divergence indicates the differences between two distributions</span>
+</span>
+</span>
+as we do not know $p(z\mid x)$. But the KL divergence is always non-negative. So if we find a $q$ that can maximize $\mathcal L$, then we are also miminizing the KL divergence (with a function $q(z\mid x)$ that is close to $p(z\mid x)$) and maximizing the loglikelihood loss. Now we only need to find a way to maximize $\mathcal L$.</p>
 <article class="message is-light is-light">
 <div class=message-header>
 <p>More about this ELBO</p>
@@ -465,6 +475,16 @@ Latent variable models brings us new insights on identifying the patterns of som
 <h6>Reparametrization in Expectation Sampling</h6>
 <p>
 Reparametrize the sampling distribution to simplify the sampling
+</p>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
+<div class=media-content>
+<div class=content>
+<h6>KL Divergence</h6>
+<p>
+Kullback–Leibler divergence indicates the differences between two distributions
 </p>
 </div>
 </div>

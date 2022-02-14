@@ -123,7 +123,7 @@ AmNeumarkt
 <meta itemprop=name content="Data Processing - (Py)Spark">
 <meta itemprop=description content="Processing Data using (Py)Spark"><meta itemprop=datePublished content="2022-01-31T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-01-31T00:00:00+00:00">
-<meta itemprop=wordCount content="361">
+<meta itemprop=wordCount content="479">
 <meta itemprop=keywords content="Tools,Data Engineering,Spark,PySpark,">
 <section class=section>
 <div class=container>
@@ -161,6 +161,9 @@ Data Processing - (Py)Spark
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
 <p>Spark uses Resilient Distributed Dataset (RDD).</p>
+<h2 id=spark>Spark</h2>
+<h3 id=clusters>Clusters</h3>
+<p>In one cluster, we have a driver is responsible for managing the tasks, result consolidation, and also shared data access<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p>
 <h2 id=pyspark>PySpark</h2>
 <p>PySpark provides</p>
 <ul>
@@ -196,6 +199,15 @@ pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>Sp
 <p>To be able to query the dataframe, it has to be in the catalog. A dataframe has the method <code>.createOrReplaceTempView("a_table_name")</code>. This will create a table that can be used as long as the session is alive.</p>
 <p>Once a table is in the catalog, we can create a dataframe using</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>SparkSession<span style=color:#f92672>.</span>table(<span style=color:#e6db74>&#34;a_table_name&#34;</span>)
+</code></pre></div><h4 id=explain><code>explain</code></h4>
+<p><a href=https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.DataFrame.explain.html><code>sdf.explain</code></a> can be used to show the plan of the execution.</p>
+<h4 id=improve-performance-by-copying-data-to-workers>Improve performance by copying data to workers</h4>
+<p><code>spark.sql.functions.broadcast</code> can speed up some tasks such as join and count.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> pyspark.sql.functions <span style=color:#66d9ef>as</span> F
+
+F<span style=color:#f92672>.</span>broadcast(sdf)<span style=color:#f92672>.</span>count()
+
+sdf_1<span style=color:#f92672>.</span>join(F<span style=color:#f92672>.</span>broadcast(sdf_2), sdf_1<span style=color:#f92672>.</span>col_1 <span style=color:#f92672>=</span> sdf_2<span style=color:#f92672>.</span>col_1)
 </code></pre></div><h3 id=updating-dataframe>Updating Dataframe</h3>
 <h4 id=create-and-add>Create and Add</h4>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>spark_df <span style=color:#f92672>=</span> spark_df<span style=color:#f92672>.</span>withColumn(<span style=color:#e6db74>&#34;a_new_col&#34;</span>, df<span style=color:#f92672>.</span>existing_col <span style=color:#f92672>*</span> <span style=color:#ae81ff>3.14</span>)
@@ -209,6 +221,8 @@ pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>Sp
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>filter(<span style=color:#e6db74>&#34;sql query where clause&#34;</span>)
 </code></pre></div><p>or Python</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>filter(df<span style=color:#f92672>.</span>col_1 <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>)
+</code></pre></div><p>In chained methods, it is important to make sure each step has the columns required for the method to run. For example, if a dataframe has columns <code>"Name"</code>, <code>"Age"</code>, <code>"Skills"</code>, the following won&rsquo;t work as <code>"Age"</code> is not among the selected columns,</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>sdf<span style=color:#f92672>.</span>select(<span style=color:#e6db74>&#34;Name&#34;</span>, <span style=color:#e6db74>&#34;Skills&#34;</span>)<span style=color:#f92672>.</span>filter(<span style=color:#e6db74>&#34;Age &gt; 30&#34;</span>)
 </code></pre></div><h4 id=select-a-newly-created-column>Select a Newly Created Column</h4>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>.</span>selectExpr(<span style=color:#e6db74>&#34;col_1 * 3.14 as col_1_mul_pi&#34;</span>)
 </code></pre></div><p><a href="https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.selectExpr.html?highlight=selectexpr#pyspark.sql.DataFrame.selectExpr"><code>.selectExpr</code></a> works similar to <a href="https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.select.html?highlight=select#pyspark.sql.DataFrame.select"><code>.select</code></a>, we can select other columns just like what we do in the SQL select clause</p>
@@ -221,6 +235,8 @@ pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>Sp
 </ul>
 <h3 id=joining-tables>Joining Tables</h3>
 <p><a href=https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.join.html><code>.join</code></a></p>
+<h3 id=pipelines>Pipelines</h3>
+<p><a href=https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.Pipeline.html><code>pyspark.ml.Pipeline</code></a></p>
 <h3 id=ml-on-spark>ML on Spark</h3>
 <ul>
 <li><code>pyspark.ml</code>
@@ -257,6 +273,19 @@ pyspark<span style=color:#f92672>.</span>sql<span style=color:#f92672>.</span>Sp
 </li>
 <li>pyspark dataframe has the method <code>.randomSplit()</code></li>
 </ul>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=dc-clean-spark-perform href=#dc-clean-spark-perform style=text-decoration:none>
+<span class="tag is-link is-light">dc-clean-spark-perform</span>
+</a>
+<a href="https://campus.datacamp.com/courses/cleaning-data-with-pyspark/improving-performance?ex=7" style=text-decoration:none>Cluster configurations - Cleaning Data with PySpark</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -296,12 +325,18 @@ L Ma
 <div>
 <nav id=TableOfContents>
 <ul>
+<li><a href=#spark>Spark</a>
+<ul>
+<li><a href=#clusters>Clusters</a></li>
+</ul>
+</li>
 <li><a href=#pyspark>PySpark</a>
 <ul>
 <li><a href=#useful-commands>Useful Commands</a></li>
 <li><a href=#updating-dataframe>Updating Dataframe</a></li>
 <li><a href=#grouping>Grouping</a></li>
 <li><a href=#joining-tables>Joining Tables</a></li>
+<li><a href=#pipelines>Pipelines</a></li>
 <li><a href=#ml-on-spark>ML on Spark</a></li>
 </ul>
 </li>
@@ -328,6 +363,11 @@ L Ma
 <span class="tag is-link is-light">DataCampPySparkIntro</span>
 </a>
 <a href=https://www.datacamp.com/courses/introduction-to-pyspark style=text-decoration:none>Introduction to PySpark on DataCamp</a></li>
+<li class=has-text-weight-bold>
+<a name=dc-clean-spark-perform href=#dc-clean-spark-perform style=text-decoration:none>
+<span class="tag is-link is-light">dc-clean-spark-perform</span>
+</a>
+<a href="https://campus.datacamp.com/courses/cleaning-data-with-pyspark/improving-performance?ex=7" style=text-decoration:none>Cluster configurations - Cleaning Data with PySpark</a></li>
 </ol>
 </p>
 </div>
