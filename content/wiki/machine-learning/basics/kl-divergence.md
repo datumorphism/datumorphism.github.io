@@ -22,7 +22,6 @@ links:
 ---
 
 
-
 Given two distributions $p(x)$ and $q(x)$, the Kullback-Leibler divergence is defined as
 
 {{< m >}}
