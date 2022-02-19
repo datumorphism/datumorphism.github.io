@@ -12,7 +12,7 @@ tags:
   - Data Science
   - Statistical Learning
 summary: "A collection of my wiki articles related to data."
-coordinators:
+contributors:
   - name: LM
     link: https://leima.is
     description: LM
