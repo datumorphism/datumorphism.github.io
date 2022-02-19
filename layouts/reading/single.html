@@ -103,6 +103,7 @@
 
                         <div class="is-divider" data-content="CONNECTUME"></div>
                         {{ partial "network/currentref" . }}
+                        {{ $fileReference := lower (replace $.File "\\" "/") }}
 
                         {{ partial "network/cards-links-to" . }}
 
