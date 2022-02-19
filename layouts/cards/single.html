@@ -192,6 +192,8 @@
                         {{ end }}
                         {{ end }}
 
+                        {{ partial "network/local-graph-g6" . }}
+
 
 
                         {{ if eq $.Site.Params.comments.use "giscus" }}
