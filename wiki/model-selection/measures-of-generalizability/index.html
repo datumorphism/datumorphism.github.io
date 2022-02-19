@@ -10,7 +10,7 @@
 <meta property="og:description" content="To measure the generalization, we define a generalization error,
 $$ \begin{align} \mathcal G = \mathcal L_{P}(\hat f) - \mathcal L_E(\hat f), \end{align} $$
 where $\mathcal L_{P}$ is the population loss, $\mathcal L_E$ is the empirical loss, and $\hat f$ is our model by minimizing the empirical loss.
-However, we do not know the actual joint probability $p(x, y)$ of our dataset $\{x_i, y_i\}$. Thus the population loss is not known. In machine learning, we usually use cross validation  Cross Validation Cross validation is a method to estimate the risk The Learning Problem The learning problem posed by Vapnik:1 Given a sample: $\{z_i\}$ in the probability space $Z$; Assuming a probability measure on the probability space $Z$; Assuming a set of functions $Q(z, \alpha)$ (e.">
+However, we do not know the actual joint probability $p(x, y)$ of our dataset $\{x_i, y_i\}$. Thus the population loss is not known. In machine learning, we usually use [[cross validation]]  Cross Validation Cross validation is a method to estimate the [[risk]] The Learning Problem The learning problem posed by Vapnik:1 Given a sample: $\{z_i\}$ in the probability space $Z$; Assuming a probability measure on the probability space $Z$; Assuming a set of functions $Q(z, \alpha)$ (e.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/model-selection/measures-of-generalizability/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2020-11-08T00:00:00+00:00">
@@ -27,14 +27,13 @@ However, we do not know the actual joint probability $p(x, y)$ of our dataset $\
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -126,9 +125,9 @@ AmNeumarkt
 <meta itemprop=description content="To measure the generalization, we define a generalization error,
 $$ \begin{align} \mathcal G = \mathcal L_{P}(\hat f) - \mathcal L_E(\hat f), \end{align} $$
 where $\mathcal L_{P}$ is the population loss, $\mathcal L_E$ is the empirical loss, and $\hat f$ is our model by minimizing the empirical loss.
-However, we do not know the actual joint probability $p(x, y)$ of our dataset $\{x_i, y_i\}$. Thus the population loss is not known. In machine learning, we usually use cross validation  Cross Validation Cross validation is a method to estimate the risk The Learning Problem The learning problem posed by Vapnik:1 Given a sample: $\{z_i\}$ in the probability space $Z$; Assuming a probability measure on the probability space $Z$; Assuming a set of functions $Q(z, \alpha)$ (e."><meta itemprop=datePublished content="2020-11-08T00:00:00+00:00">
+However, we do not know the actual joint probability $p(x, y)$ of our dataset $\{x_i, y_i\}$. Thus the population loss is not known. In machine learning, we usually use [[cross validation]]  Cross Validation Cross validation is a method to estimate the [[risk]] The Learning Problem The learning problem posed by Vapnik:1 Given a sample: $\{z_i\}$ in the probability space $Z$; Assuming a probability measure on the probability space $Z$; Assuming a set of functions $Q(z, \alpha)$ (e."><meta itemprop=datePublished content="2020-11-08T00:00:00+00:00">
 <meta itemprop=dateModified content="2020-11-08T00:00:00+00:00">
-<meta itemprop=wordCount content="178">
+<meta itemprop=wordCount content="177">
 <meta itemprop=keywords content="Model Selection,Generalizability,">
 <section class=section>
 <div class=container>
@@ -172,11 +171,11 @@ $$</p>
 <p>where $\mathcal L_{P}$ is the population loss, $\mathcal L_E$ is the empirical loss, and $\hat f$ is our model by minimizing the empirical loss.</p>
 <p>However, we do not know the actual joint probability $p(x, y)$ of our dataset $\{x_i, y_i\}$. Thus the population loss is not known. In machine learning, we usually use
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/machine-learning/learning-theories/cross-validation/>
-cross validation
+[[cross validation]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Cross Validation</span>
-<span class=tooltip_content>Cross validation is a method to estimate the risk The Learning Problem The learning problem posed by Vapnik:1 Given a sample: $\{z_i\}$ in the probability space $Z$; Assuming a probability measure on the probability space $Z$; Assuming a set of functions $Q(z, \alpha)$ (e.g. loss functions), where $\alpha$ is a set of parameters; A risk functional to be minimized by tunning &ldquo;the handles&rdquo; $\alpha$, $R(\alpha)$. The risk functional is $$ R(\alpha) = \int Q(z, \alpha) \,\mathrm d F(z). …</span>
+<span class=tooltip_content>Cross validation is a method to estimate the [[risk]] The Learning Problem The learning problem posed by Vapnik:1 Given a sample: $\{z_i\}$ in the probability space $Z$; Assuming a probability measure on the probability space $Z$; Assuming a set of functions $Q(z, \alpha)$ (e.g. loss functions), where $\alpha$ is a set of parameters; A risk functional to be minimized by tunning &ldquo;the handles&rdquo; $\alpha$, $R(\alpha)$. The risk functional is $$ R(\alpha) = \int Q(z, \alpha) \,\mathrm d …</span>
 </span>
 </span>
 where we split our dataset into train and test dataset. We approximate the population loss using the test dataset.</p>
@@ -216,7 +215,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold><a href=https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199957996.001.0001/oxfordhb-9780199957996-e-14 style=text-decoration:none>Vandekerckhove, J., & Matzke, D. (2015). Model comparison and the principle of parsimony. Oxford Library of Psychology.</a></li>
 <li class=has-text-weight-bold><a href=https://escholarship.org/uc/item/6j01x9mz style=text-decoration:none>Roelofs, R. (2019). Measuring Generalization and Overfitting in Machine Learning. Doctoral Dissertation, UC Berkeley, 1–171.</a></li>
@@ -232,7 +231,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/model-selection/measures-of-generalizability.md</div></li>
 </ul>
@@ -246,35 +245,41 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/empirical-loss/>
 <div class=media-content>
 <div class=content>
-<h6>Empirical Loss</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Empirical Loss
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 The loss calculated on all the data points
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/population-loss/>
 <div class=media-content>
 <div class=content>
-<h6>Population Loss</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Population Loss
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 The loss calculated on all the whole population
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/learning-theories/cross-validation/>
 <div class=media-content>
 <div class=content>
-<h6>Cross Validation</h6>
-<p>
-Cross validation is a method to estimate the risk The Learning Problem The learning problem posed …
-</p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Cross Validation
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Cross validation is a method to estimate the [[risk]] The Learning Problem The learning problem …
+</div>
 </div>
 </div>
 </a>
@@ -289,66 +294,78 @@ Cross validation is a method to estimate the risk The Learning Problem The learn
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/model-selection/model-selection/>
 <div class=media-content>
 <div class=content>
-<h6>Model Selection</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Model Selection
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Suppose we have a generating process that generates some numbers based on a distribution. Based on a …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/model-selection/goodness-of-fit/>
 <div class=media-content>
 <div class=content>
-<h6>Goodness-of-fit</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Goodness-of-fit
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Does the data agree with the model?
 Calculate the distance between data and model predictions. …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/model-selection/parsimony-of-models/>
 <div class=media-content>
 <div class=content>
-<h6>Parsimony of Models</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Parsimony of Models
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 For models with a lot of parameters, the goodness-of-fit is very likely to be very high. However, it …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/model-selection/mdl-and-neural-networks/>
 <div class=media-content>
 <div class=content>
-<h6>MDL and Neural Networks</h6>
-<p>
-Minimum Description Length ( MDL Minimum Description Length MDL is a measure of how well a model …
-</p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">MDL and Neural Networks
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Minimum Description Length ( [[MDL]] Minimum Description Length MDL is a measure of how well a …
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/empirical-loss/>
 <div class=media-content>
 <div class=content>
-<h6>Empirical Loss</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Empirical Loss
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 The loss calculated on all the data points
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/population-loss/>
 <div class=media-content>
 <div class=content>
-<h6>Population Loss</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Population Loss
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 The loss calculated on all the whole population
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -393,7 +410,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

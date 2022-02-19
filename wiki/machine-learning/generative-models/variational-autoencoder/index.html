@@ -7,7 +7,7 @@
 <title> Variational Auto-Encoder | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Variational Auto-Encoder">
-<meta property="og:description" content="Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder  Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= …   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,">
+<meta property="og:description" content="Variational Auto-Encoder (VAE) is very different from [[Generative Model: Auto-Encoder]]  Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= …   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/generative-models/variational-autoencoder/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
@@ -24,14 +24,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -120,7 +119,7 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Variational Auto-Encoder">
-<meta itemprop=description content="Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder  Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= …   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,"><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
+<meta itemprop=description content="Variational Auto-Encoder (VAE) is very different from [[Generative Model: Auto-Encoder]]  Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= …   . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,"><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
 <meta itemprop=wordCount content="1046">
 <meta itemprop=keywords content="Self-supervised Learning,Generative Model,VAE,Basics,">
@@ -164,7 +163,7 @@ Variational Auto-Encoder
 <div class="content blog-post section" itemprop=articleBody>
 <p>Variational Auto-Encoder (VAE) is very different from
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/autoencoder/>
-Generative Model: Auto-Encoder
+[[Generative Model: Auto-Encoder]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Generative Model: Auto-Encoder</span>
@@ -221,7 +220,7 @@ $$</p>
 <p>In the derivation, the row ($\ref{eqn-vae-lnp-sep-q}$) is validate because $\int dz q(z\mid x) = 1$.</p>
 <p>The term $F(x)$ is the free energy, while the negative of it, $-F(x)=\mathcal L$, is the so-called
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/elbo/>
-Evidence Lower Bound (ELBO)
+[[Evidence Lower Bound (ELBO)]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Evidence Lower Bound: ELBO</span>
@@ -234,7 +233,7 @@ Evidence Lower Bound (ELBO)
 $$</p>
 <p>From row ($\ref{eqn-vae-lnp-decompositions}$) to ($\ref{eqn-vae-lnp-geq-elbo}$), we dropped the term $D_{\mathrm{KL}}( q(z\mid x)\parallel p(z\mid x) )$ which is always nonnegative. The reason is that we can not maximize this
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
-KL divergence
+[[KL divergence]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>KL Divergence</span>
@@ -294,7 +293,7 @@ If we are sort of minimizing the KL divergence $\operatorname{KL} \left( {\color
 <p>Doersch wrote a very nice tutorial on VAE<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. We can find the detailed structures of VAE.</p>
 <p>Another key component of VAE is the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/statistics/reparametrization-expectation-sampling/>
-reparametrization trick
+[[reparametrization trick]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Reparametrization in Expectation Sampling</span>
@@ -303,7 +302,7 @@ reparametrization trick
 </span>
 . The variational approximation $q_\phi$ is usually a Gaussian distribution. Once we get the parameters for the Gaussian distribution, we will have to sample from the Gaussian distribution based on the parameters. However, this sampling process prohibits us from propagating errors. The
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/statistics/reparametrization-expectation-sampling/>
-reparametrization trick
+[[reparametrization trick]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Reparametrization in Expectation Sampling</span>
@@ -361,7 +360,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -385,7 +384,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold><a href=http://arxiv.org/abs/2006.08218 style=text-decoration:none>Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218</a></li>
 <li class=has-text-weight-bold>
@@ -411,7 +410,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/generative-models/variational-autoencoder.md</div></li>
 </ul>
@@ -425,67 +424,79 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/generative/>
 <div class=media-content>
 <div class=content>
-<h6>An Introduction to Generative Models</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">An Introduction to Generative Models
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Discriminative model:
 The conditional probability of class label on data (posterior) $p(C_k\mid x)$ …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/autoencoder/>
 <div class=media-content>
 <div class=content>
-<h6>Generative Model: Auto-Encoder</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Generative Model: Auto-Encoder
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Autoencoders (AE) are machines that encodes inputs into a compact latent space.
 The simplest …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/elbo/>
 <div class=media-content>
 <div class=content>
-<h6>Evidence Lower Bound: ELBO</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Evidence Lower Bound: ELBO
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 ELBO is an very important concept in variational methods
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/latent-variable-models/>
 <div class=media-content>
 <div class=content>
-<h6>Latent Variable Models</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Latent Variable Models
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Latent variable models brings us new insights on identifying the patterns of some sample data.
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/statistics/reparametrization-expectation-sampling/>
 <div class=media-content>
 <div class=content>
-<h6>Reparametrization in Expectation Sampling</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Reparametrization in Expectation Sampling
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Reparametrize the sampling distribution to simplify the sampling
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
 <div class=media-content>
 <div class=content>
-<h6>KL Divergence</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">KL Divergence
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Kullback–Leibler divergence indicates the differences between two distributions
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -530,7 +541,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

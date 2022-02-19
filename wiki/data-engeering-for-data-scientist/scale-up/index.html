@@ -25,14 +25,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -257,7 +256,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -284,7 +283,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
 <a name=Kretz2019 href=#Kretz2019 style=text-decoration:none>
@@ -303,7 +302,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Supplementary: </strong><br>
+<strong><i class="fa-solid fa-paperclip"></i> Supplementary: </strong><br>
 <ol>
 <li class=has-text-weight-bold><a href=https://github.com/andkret/Cookbook style=text-decoration:none>The Data Engineering Cookbook</a></li>
 </ol>
@@ -318,7 +317,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/data-engeering-for-data-scientist/scale-up.md</div></li>
 </ul>
@@ -332,15 +331,17 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/data-engeering-for-data-scientist/checklist/>
 <div class=media-content>
 <div class=content>
-<h6>Data Engineering for Data Scientists: Checklist</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Data Engineering for Data Scientists: Checklist
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 A checklist to get a shallow understanding of the basics and the ecosystem
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -385,7 +386,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

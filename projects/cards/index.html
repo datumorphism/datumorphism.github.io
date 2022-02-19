@@ -24,14 +24,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -138,17 +137,20 @@ AmNeumarkt
 <article class=media>
 <div class=media-content>
 <div class=content>
-<p>
-<h1 class="title is-3">My Knowledge Cards</h1>
-<div><i class="fas fa-quote-left" style=margin-right:.5em></i>A collection of my snippets of knowledge</div>
-<h2 class="title is-6"><i class="fas fa-tags" style=margin-right:.5em></i>
+<div>
+<h1 class="title is-3" style=margin-top:.5em>My Knowledge Cards</h1>
+<div class="title is-6"><i class="fas fa-quote-left" style=margin-right:.5em></i>A collection of my snippets of knowledge</div>
+<div class="title is-6"><i class="far fa-folder-open" style=margin-right:.5em></i>
+<a href=/categories/data-science><span class="tag is-link is-light">Data Science</span></a>
+</div>
+<div class="title is-6"><i class="fas fa-tags" style=margin-right:.5em></i>
 <a href=/tags/introduction><span class="tag is-warning is-light">#Introduction</span></a>
 <a href=/tags/machine-learning><span class="tag is-warning is-light">#Machine Learning</span></a>
 <a href=/tags/data-science><span class="tag is-warning is-light">#Data Science</span></a>
 <a href=/tags/statistical-learning><span class="tag is-warning is-light">#Statistical Learning</span></a>
-</h2>
-<p class="title is-6"><i class="far fa-bell" style=margin-right:.5em></i> <span class="tag is-warning is-light">Active</span> </p>
-</p>
+</div>
+<div class="title is-6"><i class="far fa-bell" style=margin-right:.5em></i> <span class="tag is-warning is-light">Active</span> </div>
+</div>
 </div>
 </div>
 <div class=media-right>
@@ -177,9 +179,9 @@ AmNeumarkt
 <p>Concise and atomic knowledge snippets that can be used as references.</p>
 </div>
 <div class=is-divider data-content=PAGES></div>
-<div class="content blog-post section" itemprop=articleBody>
-<h3>Cards (124 pages)</h3>
-<ul>
+<div class="menu section">
+<h3 class="menu-label is-size-6">Cards (124 pages)</h3>
+<ul class=menu-list>
 <li>
 <a href=https://datumorphism.leima.is/cards/ itemprop=headline>Cards</a>
 <ul>
@@ -589,14 +591,11 @@ AmNeumarkt
 <div class=is-divider data-content=NOTES></div>
 <div class="box is-size-7">
 <article class=media>
-<div class="media-left is-vcentered" style=vertical-align:middle>
-<i class="fas fa-feather fa-2x has-text-primary" style=margin-right:.5em></i>
-</div>
 <div class=media-content>
 <div class=content>
-<p>
-<a href=https://datumorphism.leima.is/cards/ class="button is-primary is-outlined is-bold has-text-weight-bold is-small"> Cards </a>
-</p>
+<div class=buttons>
+<a href=https://datumorphism.leima.is/cards/ class="button is-primary">All Cards Pages</a>
+</div>
 </div>
 </div>
 </article>
@@ -604,27 +603,11 @@ AmNeumarkt
 <div class=is-divider data-content=AUTHORS></div>
 <div class="box is-size-7">
 <article class=media>
-<div class="media-left is-vcentered" style=vertical-align:middle>
-<i class="fas fa-at fa-2x has-text-primary" style=margin-right:.5em></i>
-</div>
 <div class=media-content>
 <div class=content>
 <p>
-<a href class="button is-primary is-outlined is-bold has-text-weight-bold is-small"> LM </a>
+<a href class="button is-info is-bold has-text-weight-bold is-small">Author: LM </a>
 </p>
-</div>
-</div>
-</article>
-</div>
-<div class=is-divider data-content=MEMBERS></div>
-<div class="box is-size-7">
-<article class=media>
-<div class="media-left is-vcentered" style=vertical-align:middle>
-<i class="fas fa-user-secret fa-2x has-text-primary" style=margin-right:.5em></i>
-</div>
-<div class=media-content>
-<div class=content>
-<p> <a href=https://leima.is class="button is-info is-outlined is-bold has-text-weight-bold is-small">LM</a> </p>
 </div>
 </div>
 </article>
@@ -663,7 +646,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

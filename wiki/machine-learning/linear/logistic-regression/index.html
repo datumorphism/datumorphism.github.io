@@ -25,14 +25,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -219,7 +218,7 @@ $$</p>
 </figure>
 <p>This is the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/machine-learning/neural-networks/activation-uni-polar-sigmoid/>
-sigmoid function
+[[sigmoid function]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Uni-Polar Sigmoid</span>
@@ -251,7 +250,7 @@ $$</p>
 $$</p>
 <p>This is the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/information/cross-entropy/>
-cross entropy
+[[cross entropy]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Cross Entropy</span>
@@ -259,7 +258,7 @@ cross entropy
 $$ H(p, q) = \mathbb E_{p} \left[ -\log q \right]. $$
 Cross entropy $H(p, q)$ can also be decomposed,
 $$ H(p, q) = H(p) + \operatorname{D}_{\mathrm{KL}} \left( p \parallel q \right), $$
-where $H(p)$ is the entropy of $P$ Shannon Entropy Shannon entropy $S$ is the expectation of information content $I(X)=-\log \left(p\right)$1, \begin{equation} H(p) = \mathbb E_{p}\left[ -\log \left(p\right) \right]. \end{equation} shannon_entropy_wiki Contributors to Wikimedia projects. …</span>
+where $H(p)$ is the [[entropy of $P$]] Shannon Entropy Shannon entropy $S$ is the expectation of information content $I(X)=-\log \left(p\right)$1, \begin{equation} H(p) = \mathbb E_{p}\left[ -\log \left(p\right) \right]. \end{equation} shannon_entropy_wiki Contributors to Wikimedia projects. …</span>
 </span>
 </span>
 </p>
@@ -336,7 +335,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -361,7 +360,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold><a href="https://play.google.com/store/books/details?id=yPfZBwAAQBAJ" style=text-decoration:none>Hastie T, Tibshirani R, Friedman J. The Elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Science & Business Media; 2013. pp. 567–567. Available: https://play.google.com/store/books/details?id=yPfZBwAAQBAJ</a></li>
 <li class=has-text-weight-bold>
@@ -386,7 +385,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/linear/logistic-regression.md</div></li>
 </ul>
@@ -400,37 +399,43 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/cards/statistics/likelihood/>
 <div class=media-content>
 <div class=content>
-<h6>Likelihood</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Likelihood
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Likelihood is not necessarily a pdf
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/information/cross-entropy/>
 <div class=media-content>
 <div class=content>
-<h6>Cross Entropy</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Cross Entropy
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Cross entropy is1
 $$ H(p, q) = \mathbb E_{p} \left[ -\log q \right]. $$
 Cross entropy $H(p, q)$ can …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/neural-networks/activation-uni-polar-sigmoid/>
 <div class=media-content>
 <div class=content>
-<h6>Uni-Polar Sigmoid</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Uni-Polar Sigmoid
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Uni-polar sigmoid function and its properties
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -445,27 +450,31 @@ Uni-polar sigmoid function and its properties
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/performance/roc/>
 <div class=media-content>
 <div class=content>
-<h6>Receiver Operating Characteristics: ROC</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Receiver Operating Characteristics: ROC
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 ROC is used to judging the performance of classifiers
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/information/cross-entropy/>
 <div class=media-content>
 <div class=content>
-<h6>Cross Entropy</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Cross Entropy
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Cross entropy is1
 $$ H(p, q) = \mathbb E_{p} \left[ -\log q \right]. $$
 Cross entropy $H(p, q)$ can …
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -510,7 +519,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

@@ -7,7 +7,7 @@
 <title> Graphs Spectral Methods | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Graphs Spectral Methods">
-<meta property="og:description" content="The Ratio Cut  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them, $$ \operatorname{Cut} \left( \mathcal A, …   is closely related to the Graph Laplacians  Graph Laplacians Laplacian is a useful representation of graphs.">
+<meta property="og:description" content="The [[Ratio Cut]]  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them, $$ \operatorname{Cut} \left( \mathcal A, …   is closely related to the [[Graph Laplacians]]  Graph Laplacians Laplacian is a useful representation of graphs.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/graph/basics/graph-spectral-methods/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-09-25T00:00:00+00:00">
@@ -24,14 +24,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -120,7 +119,7 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Graphs Spectral Methods">
-<meta itemprop=description content="The Ratio Cut  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them, $$ \operatorname{Cut} \left( \mathcal A, …   is closely related to the Graph Laplacians  Graph Laplacians Laplacian is a useful representation of graphs."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
+<meta itemprop=description content="The [[Ratio Cut]]  Graph Cuts Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them, $$ \operatorname{Cut} \left( \mathcal A, …   is closely related to the [[Graph Laplacians]]  Graph Laplacians Laplacian is a useful representation of graphs."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
 <meta itemprop=wordCount content="385">
 <meta itemprop=keywords content="Graph,Basics,Statistics,">
@@ -163,7 +162,7 @@ Graphs Spectral Methods
 <div class="content blog-post section" itemprop=articleBody>
 <p>The
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/graph/graph-cuts/>
-Ratio Cut
+[[Ratio Cut]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Graph Cuts</span>
@@ -173,13 +172,13 @@ $$ \operatorname{Cut} \left( \mathcal A, …</span>
 </span>
 is closely related to the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/graph/graph-laplacians/>
-Graph Laplacians
+[[Graph Laplacians]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Graph Laplacians</span>
 <span class=tooltip_content>Laplacian is a useful representation of graphs. The unnormalized Laplacian is
 $$ \mathbf L = \mathbf D - \mathbf A, $$
-where $\mathbf A$ is the adjacency matrix Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 …</span>
+where $\mathbf A$ is the [[adjacency matrix]] Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 …</span>
 </span>
 </span>
 .</p>
@@ -260,7 +259,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -283,7 +282,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
 <a name=Hamilton2020 href=#Hamilton2020 style=text-decoration:none>
@@ -302,7 +301,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/graph/basics/graph-spectral-methods.md</div></li>
 </ul>
@@ -316,26 +315,30 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/cards/graph/graph-laplacians/>
 <div class=media-content>
 <div class=content>
-<h6>Graph Laplacians</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Graph Laplacians
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Laplacian is a useful representation of graphs. The unnormalized Laplacian is
 $$ \mathbf L = \mathbf …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/graph/graph-cuts/>
 <div class=media-content>
 <div class=content>
-<h6>Graph Cuts</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Graph Cuts
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar …
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -380,7 +383,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

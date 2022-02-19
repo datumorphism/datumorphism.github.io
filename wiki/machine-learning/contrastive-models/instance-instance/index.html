@@ -7,7 +7,7 @@
 <title> Contrastive Model: Instance-Instance | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Contrastive Model: Instance-Instance">
-<meta property="og:description" content="It was discovered that the success of mutual information based contrastive learning  Contrastive Model: Context-Instance In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that &ldquo;predict relative position&rdquo;1. Common tricks are shuffling image sections like jigsaw, and rotate the image. We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use Mutual Information Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln …   is more related to the encoder architecture and the negative sampling strategy1.">
+<meta property="og:description" content="It was discovered that the success of [[mutual information based contrastive learning]]  Contrastive Model: Context-Instance In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that &ldquo;predict relative position&rdquo;1. Common tricks are shuffling image sections like jigsaw, and rotate the image. We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use [[Mutual Information]] Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} …   is more related to the encoder architecture and the negative sampling strategy1.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/instance-instance/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
@@ -24,14 +24,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -120,9 +119,9 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Contrastive Model: Instance-Instance">
-<meta itemprop=description content="It was discovered that the success of mutual information based contrastive learning  Contrastive Model: Context-Instance In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that &ldquo;predict relative position&rdquo;1. Common tricks are shuffling image sections like jigsaw, and rotate the image. We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use Mutual Information Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln …   is more related to the encoder architecture and the negative sampling strategy1."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
+<meta itemprop=description content="It was discovered that the success of [[mutual information based contrastive learning]]  Contrastive Model: Context-Instance In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that &ldquo;predict relative position&rdquo;1. Common tricks are shuffling image sections like jigsaw, and rotate the image. We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use [[Mutual Information]] Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} …   is more related to the encoder architecture and the negative sampling strategy1."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
-<meta itemprop=wordCount content="187">
+<meta itemprop=wordCount content="186">
 <meta itemprop=keywords content="Self-supervised Learning,Contrastive Model,Basics,">
 <section class=section>
 <div class=container>
@@ -163,12 +162,12 @@ Contrastive Model: Instance-Instance
 <div class="content blog-post section" itemprop=articleBody>
 <p>It was discovered that the success of
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/context-instance/>
-mutual information based contrastive learning
+[[mutual information based contrastive learning]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Contrastive Model: Context-Instance</span>
 <span class=tooltip_content>In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that &ldquo;predict relative position&rdquo;1. Common tricks are
-shuffling image sections like jigsaw, and rotate the image. We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use Mutual Information Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln …</span>
+shuffling image sections like jigsaw, and rotate the image. We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use [[Mutual Information]] Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} …</span>
 </span>
 </span>
 is more related to the encoder architecture and the negative sampling strategy<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. Instance-instance method is more direct in solving the contrastive problem. It take the instance itself directly and make comparisons for discrimination.</p>
@@ -239,7 +238,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -262,7 +261,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
 <a name=Liu2020 href=#Liu2020 style=text-decoration:none>
@@ -281,7 +280,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/contrastive-models/instance-instance.md</div></li>
 </ul>
@@ -325,7 +324,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

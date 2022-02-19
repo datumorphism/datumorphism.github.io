@@ -25,14 +25,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -177,7 +176,7 @@ This article uses Mehta2018 extensively.
 <h2 id=the-ising-model>The Ising Model</h2>
 <p>Given a Ising-like energy function (c.f.
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
-MaxEnt Model
+[[MaxEnt Model]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>MaxEnt Model</span>
@@ -190,7 +189,7 @@ E(x) = - \sum_i h_i x_i - \frac{1}{2} \sum_{ij} J_{ij} x_i x_j,
 $$</p>
 <p>The term $\sum_{ij} J_{ij} x_i x_j$ can be decomposed using the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/math/cholesky-decomposition/>
-Cholesky Decomposition
+[[Cholesky Decomposition]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Cholesky Decomposition</span>
@@ -207,7 +206,7 @@ E(x) = - \sum_i h_i x_i - \frac{1}{2} \sum_{ijk} W_{ik} W_{jk} x_i x_j.
 $$</p>
 <p>The distribution (derived using
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
-the Max Entropy principle
+[[the Max Entropy principle]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>MaxEnt Model</span>
@@ -224,7 +223,7 @@ $$</p>
 <h2 id=latent-variables-from-energy-function-to-distribution>Latent Variables: From Energy Function to Distribution</h2>
 <p>Using the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/math/hubbard-stratonovich-identity/>
-the Hubbard-Stratonovich Identity
+[[the Hubbard-Stratonovich Identity]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>The Hubbard-Stratonovich Identity</span>
@@ -313,7 +312,7 @@ $$</p>
 <p>In this section, we will focus on Bernoulli layers, i.e., $a_i(x_i) = a^0_i x_i$ and $b_k(h_k) = b^0_k h_k$</p>
 <p>Using the results from
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
-MaxEnt model
+[[MaxEnt model]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>MaxEnt Model</span>
@@ -332,7 +331,7 @@ $$</p>
 <p>For first order Markov chains, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.</p>
 <p>In this simple situation, the distributions can be sampled using
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>
-Gibbs sampling
+[[Gibbs sampling]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Gibbs Sampling</span>
@@ -411,7 +410,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -436,7 +435,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
 <a name=Mehta2018 href=#Mehta2018 style=text-decoration:none>
@@ -465,7 +464,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/energy-based-model/restricted-boltzmann-machine.md</div></li>
 </ul>
@@ -479,75 +478,89 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/cards/information/coding-theory-concepts/>
 <div class=media-content>
 <div class=content>
-<h6>Coding Theory Concepts</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Coding Theory Concepts
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 The code function produces code words. The expected length of the code word is limited by the …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/statistics/likelihood/>
 <div class=media-content>
 <div class=content>
-<h6>Likelihood</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Likelihood
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Likelihood is not necessarily a pdf
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/>
 <div class=media-content>
 <div class=content>
-<h6>Boltzmann Machine</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Boltzmann Machine
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/maxent-energy-based-model/>
 <div class=media-content>
 <div class=content>
-<h6>MaxEnt Model</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">MaxEnt Model
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Maximum Entropy models makes least assumption about the data
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/math/cholesky-decomposition/>
 <div class=media-content>
 <div class=content>
-<h6>Cholesky Decomposition</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Cholesky Decomposition
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Decomposing a matrix into two
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/math/hubbard-stratonovich-identity/>
 <div class=media-content>
 <div class=content>
-<h6>The Hubbard-Stratonovich Identity</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">The Hubbard-Stratonovich Identity
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Very useful in calculating the partition function
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>
 <div class=media-content>
 <div class=content>
-<h6>Gibbs Sampling</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Gibbs Sampling
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Gibbs sampling is a sampling method for Bayesian inference and MCMC
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -562,15 +575,17 @@ Gibbs sampling is a sampling method for Bayesian inference and MCMC
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/boltzmann-machine/>
 <div class=media-content>
 <div class=content>
-<h6>Boltzmann Machine</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Boltzmann Machine
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Boltzmann machine is much like a spin glass model in physics. In short words, Boltzmann machine is a …
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -615,7 +630,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

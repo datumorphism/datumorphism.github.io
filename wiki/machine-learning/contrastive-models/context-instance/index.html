@@ -8,7 +8,7 @@
 <meta name=author content="L Ma">
 <meta property="og:title" content="Contrastive Model: Context-Instance">
 <meta property="og:description" content="In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that &ldquo;predict relative position&rdquo;1. Common tricks are
- shuffling image sections like jigsaw, and rotate the image.  We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use Mutual Information  Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$.">
+ shuffling image sections like jigsaw, and rotate the image.  We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use [[Mutual Information]]  Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/context-instance/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
@@ -25,14 +25,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -122,7 +121,7 @@ AmNeumarkt
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Contrastive Model: Context-Instance">
 <meta itemprop=description content="In contrastive methods, we can manipulate the data to create data entries and infer the changes using a model. These methods are models that &ldquo;predict relative position&rdquo;1. Common tricks are
- shuffling image sections like jigsaw, and rotate the image.  We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use Mutual Information  Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
+ shuffling image sections like jigsaw, and rotate the image.  We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use [[Mutual Information]]  Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent variables, we have $P_{XY} = P_X P_Y$, thus $I(X;Y) = 0$."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
 <meta itemprop=wordCount content="411">
 <meta itemprop=keywords content="Self-supervised Learning,Contrastive Model,Mutual Information,Basics,">
@@ -171,7 +170,7 @@ Contrastive Model: Context-Instance
 </ul>
 <p>We can also adjust the model to discriminate the similarities and differences. For example, to generate contrast, we can also use
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/information/mutual-information/>
-Mutual Information
+[[Mutual Information]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Mutual Information</span>
@@ -187,7 +186,7 @@ as the objective. Take two encoded space from the encoder, $g_1$ and $g_2$, we s
 <h2 id=deep-infomax>Deep InfoMax</h2>
 <p>However, mutual information is hard to calculate. Models such as
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/deep-infomax/>
-Deep InfoMax
+[[Deep InfoMax]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Deep Infomax</span>
@@ -195,12 +194,12 @@ Deep InfoMax
 Why not just use the global mutual information of the input and encoder output as the objective?
 &mldr; maximizing MI between the complete input and the encoder output (i.e.,globalMI) is ofteninsufficient for learning useful representations.
 &ndash; Devon et al[^Devon2018]
-Mutual information Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent …</span>
+[[Mutual information]] Mutual Information Mutual information is defined as $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$ In the case that $X$ and $Y$ are independent …</span>
 </span>
 </span>
 use
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/machine-learning/learning-theories/noise-contrastive-estimation/>
-NCE
+[[NCE]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Noise Contrastive Estimation: NCE</span>
@@ -269,7 +268,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -291,7 +290,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
 <a name=Liu2020 href=#Liu2020 style=text-decoration:none>
@@ -310,7 +309,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/contrastive-models/context-instance.md</div></li>
 </ul>
@@ -324,28 +323,32 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/cards/information/mutual-information/>
 <div class=media-content>
 <div class=content>
-<h6>Mutual Information</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Mutual Information
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Mutual information is defined as
 $$ I(X;Y) = \mathbb E_{p_{XY}} \ln \frac{P_{XY}}{P_X P_Y}. $$
 In …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/learning-theories/noise-contrastive-estimation/>
 <div class=media-content>
 <div class=content>
-<h6>Noise Contrastive Estimation: NCE</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Noise Contrastive Estimation: NCE
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Noise contrastive estimation (NCE) objective function is1
 $$ \mathcal L = \mathbb E_{x, x^{+}, …
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -360,26 +363,30 @@ $$ \mathcal L = \mathbb E_{x, x^{+}, …
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/contrastive-predictive-codeing/>
 <div class=media-content>
 <div class=content>
-<h6>Contrastive Predictive Coding</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Contrastive Predictive Coding
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Contrastive Predictive Coding, aka CPC, is an autoregressive model combined with InfoNCE loss1. …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/contrastive-models/deep-infomax/>
 <div class=media-content>
 <div class=content>
-<h6>Deep Infomax</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Deep Infomax
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Max Global Mutual Information
 Why not just use the global mutual information of the input and …
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -424,7 +431,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

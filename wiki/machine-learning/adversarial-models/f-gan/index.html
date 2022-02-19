@@ -7,7 +7,7 @@
 <title> f-GAN | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="f-GAN">
-<meta property="og:description" content="The essence of GAN  GAN The task of GAN is to generate features $X$ from some noise $\xi$ and class labels $Y$, $$\xi, Y \to X.$$ Many different GANs are proposed. Vanilla GAN has a simple structure with a single discriminator and a single generator. It uses the minmax game setup. However, it is not stable to use minmax game to train a GAN model. WassersteinGAN was proposed to solve the stability problem during training1. More advanced GANs like BiGAN and ALI have more complex structures. Vanilla GAN Minmax Game …   is comparing the generated distribution $p_G$ and the data distribution $p_\text{data}$.">
+<meta property="og:description" content="The essence of [[GAN]]  GAN The task of GAN is to generate features $X$ from some noise $\xi$ and class labels $Y$, $$\xi, Y \to X.$$ Many different GANs are proposed. Vanilla GAN has a simple structure with a single discriminator and a single generator. It uses the minmax game setup. However, it is not stable to use minmax game to train a GAN model. WassersteinGAN was proposed to solve the stability problem during training1. More advanced GANs like BiGAN and ALI have more complex structures. Vanilla GAN Minmax Game …   is comparing the generated distribution $p_G$ and the data distribution $p_\text{data}$.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/adversarial-models/f-gan/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
@@ -24,14 +24,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -120,7 +119,7 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="f-GAN">
-<meta itemprop=description content="The essence of GAN  GAN The task of GAN is to generate features $X$ from some noise $\xi$ and class labels $Y$, $$\xi, Y \to X.$$ Many different GANs are proposed. Vanilla GAN has a simple structure with a single discriminator and a single generator. It uses the minmax game setup. However, it is not stable to use minmax game to train a GAN model. WassersteinGAN was proposed to solve the stability problem during training1. More advanced GANs like BiGAN and ALI have more complex structures. Vanilla GAN Minmax Game …   is comparing the generated distribution $p_G$ and the data distribution $p_\text{data}$."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
+<meta itemprop=description content="The essence of [[GAN]]  GAN The task of GAN is to generate features $X$ from some noise $\xi$ and class labels $Y$, $$\xi, Y \to X.$$ Many different GANs are proposed. Vanilla GAN has a simple structure with a single discriminator and a single generator. It uses the minmax game setup. However, it is not stable to use minmax game to train a GAN model. WassersteinGAN was proposed to solve the stability problem during training1. More advanced GANs like BiGAN and ALI have more complex structures. Vanilla GAN Minmax Game …   is comparing the generated distribution $p_G$ and the data distribution $p_\text{data}$."><meta itemprop=datePublished content="2021-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-13T00:00:00+00:00">
 <meta itemprop=wordCount content="643">
 <meta itemprop=keywords content="Self-supervised Learning,Adversarial Model,GAN,Basics,">
@@ -164,7 +163,7 @@ f-GAN
 <div class="content blog-post section" itemprop=articleBody>
 <p>The essence of
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/adversarial-models/gan/>
-GAN
+[[GAN]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>GAN</span>
@@ -185,7 +184,7 @@ If the JS divergence is an objective, why do we need the discriminator? Even in 
 </article>
 <p>There exists a more generic form of JS divergence, which is called
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/information/f-divergence/>
-f-divergence
+[[f-divergence]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>f-Divergence</span>
@@ -235,7 +234,7 @@ $T$, $g_f$, $V$
 <h2 id=reduce-to-gan>Reduce to GAN</h2>
 <p>The VDM loss can be reduced to the
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/adversarial-models/gan/>
-loss of GAN
+[[loss of GAN]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>GAN</span>
@@ -312,7 +311,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -335,7 +334,7 @@ L Ma
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold>
 <a name=Liu2020 href=#Liu2020 style=text-decoration:none>
@@ -369,7 +368,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/adversarial-models/f-gan.md</div></li>
 </ul>
@@ -383,27 +382,31 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/adversarial-models/gan/>
 <div class=media-content>
 <div class=content>
-<h6>GAN</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">GAN
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 The task of GAN is to generate features $X$ from some noise $\xi$ and class labels $Y$,
 $$\xi, Y \to …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/information/f-divergence/>
 <div class=media-content>
 <div class=content>
-<h6>f-Divergence</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">f-Divergence
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 The f-divergence is defined as1
 $$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm …
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -448,7 +451,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

@@ -27,8 +27,8 @@
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -369,7 +369,7 @@ Published: <time datetime=2021-09-25T00:00:00+00:00>2021-09-25</time>
 <span style=display:block;font-size:90%>
 <i class="far fa-star"></i> Summary: Laplacian is a useful representation of graphs. The unnormalized Laplacian is
 $$ \mathbf L = \mathbf D - \mathbf A, $$
-where $\mathbf A$ is the adjacency matrix Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link and $\mathbf D$ is the degree matrix, i.</span>
+where $\mathbf A$ is the [[adjacency matrix]] Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link and $\mathbf D$ is the degree matrix, i.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
@@ -766,7 +766,7 @@ Published: <time datetime=2021-09-26T00:00:00+00:00>2021-09-26</time>
 <span style=display:block;font-size:90%>
 <i class="far fa-star"></i> Summary: For two graphs, $\mathcal G$ and $\mathcal H$, the two graphs are isomorphism on the following condition
 $$ u, v \text{ adjacent in } G \iff u, v \text{ adjacent in } H. $$
-An algorithm to find approximate isomorphism is the Weisfeiler Lehman Method Weisfeiler-Lehman Kernel The Weisfeiler-Lehman kernel is an iterative integration of neighborhood information. We initialize the labels for each node using its own node degree. At each step, we take the neighboring node degrees to form a multiset. At step $K$, we have the multisets for each node. Those multisets at each node can be processed to form an representation of the graph which is in turn used to calculate statistics of the graph.</span>
+An algorithm to find approximate isomorphism is the [[Weisfeiler Lehman Method]] Weisfeiler-Lehman Kernel The Weisfeiler-Lehman kernel is an iterative integration of neighborhood information. We initialize the labels for each node using its own node degree. At each step, we take the neighboring node degrees to form a multiset. At step $K$, we have the multisets for each node. Those multisets at each node can be processed to form an representation of the graph which is in turn used to calculate statistics of the graph.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
@@ -805,7 +805,7 @@ Published: <time datetime=2021-09-26T00:00:00+00:00>2021-09-26</time>
 <span style=display:block;font-size:90%>
 <i class="far fa-star"></i> Summary: Random Walk Construct a stochastic transfer matrix $P$ by normalizing the adjacency matrix $\mathbf A$ using the node degrees of the target nodes,
 $$ \mathbf P = \mathbf A \mathbf D^{-1}, $$
-where $\mathbf A$ is the adjacency matrix Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link and $\mathbf D$ is a diagonalized matrix with the diagonal elements being the degrees.</span>
+where $\mathbf A$ is the [[adjacency matrix]] Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link and $\mathbf D$ is a diagonalized matrix with the diagonal elements being the degrees.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
@@ -843,7 +843,7 @@ Published: <time datetime=2021-09-26T00:00:00+00:00>2021-09-26</time>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-star"></i> Summary: From Katz Index to LHN Index Katz Index Graph Global Overlap Measure: Katz Index The Katz index is $$ \mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v], $$ where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$. Do not confuse power with contravariant indices For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation. But here ${}^{i}$ means to the $i$th … has a knob to tune the punishment towards longer paths.</span>
+<i class="far fa-star"></i> Summary: From Katz Index to LHN Index [[Katz Index]] Graph Global Overlap Measure: Katz Index The Katz index is $$ \mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v], $$ where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$. Do not confuse power with contravariant indices For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation. But here ${}^{i}$ means to the $i$th … has a knob to tune the punishment towards longer paths.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
@@ -921,7 +921,7 @@ Published: <time datetime=2021-11-25T00:00:00+00:00>2021-11-25</time>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
 <i class="far fa-star"></i> Summary: For a given graph $\mathcal G$, we have an attribute on each node, denoted as $f_v$. All the node attributes put together can be written as a list $\mathbf f\to (f_{v_1}, f_{v_2}, \cdots, f_{v_N})$.
-Convolution on graph is combining attributes on nodes with their neighbors'. The adjacency matrix Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link $\mathbf A$ applied on all node attributes $\mathbf f$ is such an operation, i.</span>
+Convolution on graph is combining attributes on nodes with their neighbors'. The [[adjacency matrix]] Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link $\mathbf A$ applied on all node attributes $\mathbf f$ is such an operation, i.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>

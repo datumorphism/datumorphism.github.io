@@ -25,14 +25,13 @@
 <link rel=stylesheet href=/css/blog-post.css>
 <link rel=stylesheet href=/css/code-highlighting/dark.css>
 <link rel=stylesheet href=/css/custom.css>
-<link rel=stylesheet href=https://unpkg.com/applause-button/dist/applause-button.css>
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -278,7 +277,7 @@ LM (2021). 'Latent Variable Models', Datumorphism, 01 April. Available at: https
 <div class=media-content style=width:100%;word-break:break-word>
 <div class=content>
 <p>
-<strong>References: </strong><br>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
 <li class=has-text-weight-bold><a href style=text-decoration:none>Trevor Hastie, Robert Tibshirani, J. F. (2004). The Elements of Statistical Learning. Springer Science & Business Media.</a></li>
 <li class=has-text-weight-bold><a href style=text-decoration:none>Christpher M. Bishop. (2006). Pattern Recognition and Machine Learning. Springer-Verlag New York.</a></li>
@@ -295,7 +294,7 @@ LM (2021). 'Latent Variable Models', Datumorphism, 01 April. Available at: https
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/bayesian/latent-variable-models.md</div></li>
 </ul>
@@ -309,37 +308,43 @@ LM (2021). 'Latent Variable Models', Datumorphism, 01 April. Available at: https
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links to: </strong>
+<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/cards/statistics/bayes-theorem/>
 <div class=media-content>
 <div class=content>
-<h6>Bayes' Theorem</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Bayes' Theorem
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Bayes' Theorem is stated as
 $$ P(A\mid B) = \frac{P(B \mid A) P(A)}{P(B)} $$
 $P(A\mid B)$: …
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
 <div class=media-content>
 <div class=content>
-<h6>KL Divergence</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">KL Divergence
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Kullback–Leibler divergence indicates the differences between two distributions
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/statistics/likelihood/>
 <div class=media-content>
 <div class=content>
-<h6>Likelihood</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Likelihood
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Likelihood is not necessarily a pdf
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -354,55 +359,65 @@ Likelihood is not necessarily a pdf
 <div class=media-content>
 <div class=content>
 <p>
-<strong>Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/variational-autoencoder/>
 <div class=media-content>
 <div class=content>
-<h6>Variational Auto-Encoder</h6>
-<p>
-Variational Auto-Encoder (VAE) is very different from Generative Model: Auto-Encoder Generative …
-</p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Variational Auto-Encoder
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Variational Auto-Encoder (VAE) is very different from [[Generative Model: Auto-Encoder]] Generative …
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/elbo/>
 <div class=media-content>
 <div class=content>
-<h6>Evidence Lower Bound: ELBO</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Evidence Lower Bound: ELBO
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 ELBO is an very important concept in variational methods
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
 <div class=media-content>
 <div class=content>
-<h6>KL Divergence</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">KL Divergence
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Kullback–Leibler divergence indicates the differences between two distributions
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/statistics/reparametrization-expectation-sampling/>
 <div class=media-content>
 <div class=content>
-<h6>Reparametrization in Expectation Sampling</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Reparametrization in Expectation Sampling
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Reparametrize the sampling distribution to simplify the sampling
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/reading/normalizing-flow-introduction-1908.09257/>
 <div class=media-content>
 <div class=content>
-<h6>Normalizing Flows: An Introduction and Review of Current Methods</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Normalizing Flows: An Introduction and Review of Current Methods
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 To generate complicated distributions step by step from a simple and interpretable distribution.
-</p>
+</div>
 </div>
 </div>
 </a>
@@ -447,7 +462,6 @@ Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 </div>
 </div>
 </footer>
-<script src=https://unpkg.com/applause-button/dist/applause-button.js></script>
 </footer>
 <script async type=text/javascript src=/js/bulma.js></script>
 </body>

@@ -30,8 +30,8 @@
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 </head>
 <body>
 <header> <nav class="navbar is-transparent">
@@ -165,28 +165,29 @@ Centered Kernel Alignment (CKA)
 <h2 id=definition-of-cka>Definition of CKA</h2>
 <p>CKA is based on the
 <span class=tooltip><a href=https://datumorphism.leima.is/cards/machine-learning/measurement/hilbert-schmidt-independence-criterion/>
-Hilbert-Schmidt Independence Criterion (HSIC)
+[[Hilbert-Schmidt Independence Criterion (HSIC)]]
 </a>
 <span class=tooltiptext>
 <span class=tooltip_title>Hilbert-Schmidt Independence Criterion (HSIC)</span>
 <span class=tooltip_content>Given two kernels of the feature representations $K=k(x,x)$ and $L=l(y,y)$, HSIC is defined as12
 $$ \operatorname{HSIC}(K, L) = \frac{1}{(n-1)^2} \operatorname{tr}( K H L H ), $$
 where
-$x$, $y$ are the representations of features, $n$ is the dimension of the representation of the features, $H$ is the so-called centering matrix Centering Matrix Useful when centering a vector around its mean . We can choose different kernel functions $k$ and $l$. For example, if $k$ and $l$ are linear …</span>
+$x$, $y$ are the representations of features, $n$ is the dimension of the representation of the features, $H$ is the so-called [[centering matrix]] Centering Matrix Useful when centering a vector around its mean . We can choose different kernel functions $k$ and $l$. For example, if $k$ and $l$ are linear …</span>
 </span>
 </span>
 .</p>
 <a class="box is-light is-light" href=https://datumorphism.leima.is/cards/machine-learning/measurement/hilbert-schmidt-independence-criterion/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
 <div class=media-content>
 <div class=content>
-<h6>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">
 Hilbert-Schmidt Independence Criterion (HSIC)
-</h6>
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
 <div style=font-size:80%>
 Given two kernels of the feature representations $K=k(x,x)$ and $L=l(y,y)$, HSIC is defined as12
 $$ \operatorname{HSIC}(K, L) = \frac{1}{(n-1)^2} \operatorname{tr}( K H L H ), $$
 where
-$x$, $y$ are the representations of features, $n$ is the dimension of the representation of the features, $H$ is the so-called centering matrix Centering Matrix Useful when centering a vector around its mean . We can choose different kernel functions $k$ and $l$. For example, if $k$ and $l$ are linear kernels, we have $k(x, y) = l(x, y) = x \cdot y$. In this linear case, HSIC is simply $\parallel\operatorname{cov}(x^T,y^T) \parallel^2_{\text{Frobenius}}$.
+$x$, $y$ are the representations of features, $n$ is the dimension of the representation of the features, $H$ is the so-called [[centering matrix]] Centering Matrix Useful when centering a vector around its mean . We can choose different kernel functions $k$ and $l$. For example, if $k$ and $l$ are linear kernels, we have $k(x, y) = l(x, y) = x \cdot y$. In this linear case, HSIC is simply $\parallel\operatorname{cov}(x^T,y^T) \parallel^2_{\text{Frobenius}}$.
 </div>
 </div>
 </div>
@@ -247,7 +248,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <details>
-<summary>Table of Contents</summary>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
 <div>
 <div>
 <nav id=TableOfContents>
@@ -271,7 +272,7 @@ L Ma
 <div class=media-content style=width:100%>
 <div class=content>
 <p>
-<strong>Current Ref: </strong><br>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
 <div>cards/machine-learning/measurement/centered-kernel-alignment.md</div></li>
 </ul>
@@ -290,21 +291,25 @@ L Ma
 <a class=box href=https://datumorphism.leima.is/cards/math/statistics-centering-matrix/>
 <div class=media-content>
 <div class=content>
-<h6>Centering Matrix</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Centering Matrix
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Useful when centering a vector around its mean
-</p>
+</div>
 </div>
 </div>
 </a>
 <a class=box href=https://datumorphism.leima.is/cards/machine-learning/measurement/hilbert-schmidt-independence-criterion/>
 <div class=media-content>
 <div class=content>
-<h6>Hilbert-Schmidt Independence Criterion (HSIC)</h6>
-<p>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Hilbert-Schmidt Independence Criterion (HSIC)
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
 Given two kernels of the feature representations $K=k(x,x)$ and $L=l(y,y)$, HSIC is defined as12
 $$ …
-</p>
+</div>
 </div>
 </div>
 </a>
