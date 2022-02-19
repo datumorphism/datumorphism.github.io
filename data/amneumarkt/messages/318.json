@@ -1,0 +1,96 @@
+{
+    "_": "Message",
+    "id": 318,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-02-09 07:20:55+00:00",
+    "message": "#ML\n\nI made some slides to bootstrap a community in my company to share papers on graph related methods (spectral, graph neural networks, etc). \nThese slides are mostly based on the first two chapters of the book by William Hamilton. I added some intuitive interpretations on some key ideas. Some of these are frequently used in graph neural networks even transformers. Building intuitions helps us unboxing these neural networks. But the slides are only skeleton notes so I probably have to expand them at some point.\n\nI am thinking about drawing more about the book and on this topic. Maybe even making some short videos using these slides. Let's see how far I can go. I am way too busy now. (<-no excuse)",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaDocument",
+        "document": {
+            "_": "Document",
+            "id": 5197226937184949378,
+            "access_hash": 4707844941430043191,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01>b\\x11\\x83\\x1e\\xaa\\xdb\\x18\\xeb\\xe1\\xc7\\x86\\x04\\x8a\\xb8H\\nL\\x9e\\x96\\xe3'",
+            "date": "2022-02-09 07:20:55+00:00",
+            "mime_type": "application/pdf",
+            "size": 3501883,
+            "dc_id": 2,
+            "attributes": [
+                {
+                    "_": "DocumentAttributeFilename",
+                    "file_name": "graph-basics.pdf"
+                }
+            ],
+            "thumbs": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x1f\\x8e\\xdeW\\x86P\\xcf\\x9c7\\xa8\\xa9\\xee\\xddQD0\\xae7v\\x15$\\xe8\\x97\\x11\\x14\\x8c|\\xd1\\xf0?\\xc2\\xa0\\xb3\\x8fs\\x19\\xe4\\x1c'J\\x9d\\x1f\\xbcM\\xba\\x0e\\xb3|\\xee\\x82a\\x91\\xd7\\x06\\xa3\\xbav\\x96]\\x91\\x83\\xb5=\\x05>\\xf17\\x01q\\x18\\xeb\\xc1\\xa9-\\x82\\xdbB$\\x93!\\x9f\\xdb\\xa0\\xa3E\\xef\\x0b\\xcb\\xa1Z\\x16\\x92\\xdeEv\\x04\\x07\\xa9\\xef$\\x04,0\\x81\\xf3vZ\\x92P\\x97Q\\xb4h0\\xc9\\xf7zT\\x16i\\x80\\xd3\\xc9\\x8f\\x97\\xa5\\x1a?x-\\xd1l-\\xa3\\xf9l\\xd0\\xcc8\\xeb\\x86\\xa6\\\\\\x17\\xb9\\x98\\xacjHN\\xc2\\x9fv\\x82D\\x17\\x11\\xf5\\x1c\\x1a\\x92\\xdfm\\xac!\\x9c|\\xef\\xe9\\xd6\\x8d\\x17\\xbc\\x1f\\x91Z?2\\xd5\\xd2F\\x18\\x0e3\\xd7\\xadMy/\\x9a\\xcb\\x0cX\\xf9\\xb8\\xe3\\xbd\\x14U5\\xaab\\xf2\\x12\\xd6Co+C.\\x00\\xf4=\\xa9\\x93\\x07\\xbb\\x9d\\x961\\x90\\xbd\\x004QE\\xb5\\xb8\\xfa\\xd8\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 248,
+                    "h": 320,
+                    "size": 21112
+                }
+            ],
+            "video_thumbs": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityStrike",
+            "offset": 671,
+            "length": 36
+        }
+    ],
+    "views": 128,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1445,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 534,
+        "read_max_id": 534
+    },
+    "edit_date": "2022-02-17 09:32:44+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ML"
+    ]
+}

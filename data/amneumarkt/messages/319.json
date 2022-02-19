@@ -1,0 +1,1201 @@
+{
+    "_": "Message",
+    "id": 319,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-02-17 06:43:57+00:00",
+    "message": "https://uxdesign.cc/why-do-we-round-corners-5145a90da6ed",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4115395461753363773,
+            "url": "https://uxdesign.cc/why-do-we-round-corners-5145a90da6ed",
+            "display_url": "uxdesign.cc/why-do-we-round-corners-5145a90da6ed?gi=2e524eb73f96",
+            "hash": 549953052,
+            "type": "photo",
+            "site_name": "Medium",
+            "title": "Why do we round corners?",
+            "description": "A deep dive into the human attraction for roundness",
+            "photo": {
+                "_": "Photo",
+                "id": 5768427806705954193,
+                "access_hash": 8752216924791238519,
+                "file_reference": "b'\\x00b\\x11\\x83\\x1eKp/\\xdbM\\nU\\xf2\\xcf\\xe5[c\\xa4\\x14]\\xfc'",
+                "date": "2022-02-07 11:40:14+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(x\\x198\\x1c\\x9aw\\x96\\xff\\x00\\xdco\\xca\\x92?\\xf5\\x89\\xf5\\x14\\x87\\xaduks\\x83K\\tN\\n\\xcd\\xd1I\\xfa\\nJs\\x93\\xc2\\xe7\\x80\\x07\\x1f\\x85\\x0cHi\\x04\\x1c\\x10A\\xf7\\xa2\\x92\\x8ab\\n(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 2591
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 7560
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 675,
+                        "sizes": [
+                            3436,
+                            5294,
+                            6962,
+                            7840,
+                            12597
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Gon\u00e7alo Dias",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://uxdesign.cc/why-do-we-round-corners-5145a90da6ed?gi=2e524eb73f96",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Why do we round corners?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Gon\u00e7alo Dias"
+                        },
+                        "published_date": "2022-02-07 08:03:36+00:00"
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5768427806705954193,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Rounded corners \u2014 they\u2019re "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "everywhere"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". From software user interfaces to hardware product design, there is something intrinsically satisfying about the look and feel of a rounded corner. In fact, designers have been using them so much that they became an industry standard rather than a design trend. "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "But why are rounded corners so popular?"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The following examples are taken from "
+                                    }
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextItalic",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "this great UX Movement article"
+                                        }
+                                    },
+                                    "url": "https://uxmovement.com/thinking/why-rounded-corners-are-easier-on-the-eyes/",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Rounded corners appear less bright"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We can all appreciate the aesthetic beauty of rounded corners. But can we explain where exactly that beauty comes from? The answer to that is literally in our eyes."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Studies have shown that "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "rectangles with rounded corners are easier on the eyes than rectangles with sharp edges"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " because they take less cognitive effort to visually process. The "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "fovea"
+                                    },
+                                    "url": "https://en.wikipedia.org/wiki/Fovea_centralis",
+                                    "webpage_id": 3384953263382340216
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " is fastest at processing circles. Processing edges involve more \u201cneuronal image tools\u201d in the brain. Thus, rectangles with rounded corners are easier to process because they look closer to a circle than a regular rectangle."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Scientific research done on corners by the Barrow Neurological Institute"
+                                    },
+                                    "url": "http://macknik.neuralcorrelate.com/pdf/articles/troncoso_et_al_Art_and_Perception_chapter.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " found that the \u201cperceived salience of a corner varies linearly with the angle of the corner. Sharp angles generated stronger illusory salience than shallow angles\u201d. In other words, the sharper the corner, the brighter it appears. And the brighter a corner appears, the harder it is to look at."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5768123293524667777,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Which shape is easier to look at?"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We\u2019re conditioned for rounded corners"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "From a young age, we are taught that sharp corners are harmful. For this reason, in the physical world, we tend to avoid them and instead look for rounded, organic, safe objects."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "When a child plays with a ball, most parents aren\u2019t alarmed. But if the child was to play with a fork, the parents would take the fork away for the fear of the child hurting himself. This causes what neuroscience calls an "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "\u201cavoidance response\u201d"
+                                    },
+                                    "url": "https://en.wikipedia.org/wiki/Avoidance_response",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " with sharp edges, that gets ingrained into our brains as we grow up."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5768193391685905771,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextItalic",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Which object would you allow your child to play with?"
+                                }
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Rounded corners are easier to process"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Rounded corners are more effective for maps and diagrams because they allow our eyes to easily follow lines. Sharp corners throw our eyes off the path of the line, so we end up experiencing abrupt pauses when the line changes direction. But with rounded corners, "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "the line leads our eyes around each corner"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to continue along the path smoothly."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5768214278111866195,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextItalic",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Which diagram is easier for your eyes to follow?"
+                                }
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Rounded corners also make effective content containers. This is because the rounded corners point inward towards the center of the rectangle. "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "This puts the focus on the contents inside the rectangle"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". It also makes it easy to see which side belongs to which rectangle when two rectangles are next to each other."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Sharp corners point outward, putting less focus on the contents inside the rectangle. They also make it hard to tell which of the two sides belong to which rectangle when two rectangles are next to each other. This is because each rectangle side is exactly a straight line. The sides of a rounded rectangle are unique because the lines curve towards the rectangle it belongs to."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5767985558218452280,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Which rectangle pairing is more recognizable?"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Rounding issues"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "So, after this initial reasoning about rounded corners, it\u2019s easy to think: let\u2019s apply rounded corners on "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "everything"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "everywhere"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "every time"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "This is obviously not a good approach: there\u2019s a time and place for rounded corners, and they\u2019re not always the best solution. When designing a product, we have to "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "think about its purpose and objective in order to get the right user perception"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Rounding a single corner might be insignificant on its own: but when done at scale (e.g., on the whole interface), it can drastically change the look and feel of the product."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "To understand these effects, let\u2019s take things down to a basic level. All design elements can be reduced to basic shapes and lines, subliminally conveying different personalities to the audience."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Let\u2019s take a look at some logos:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5768389718935973281,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Both brandmarks and wordmarks are made of basic shapes. "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "From Taime Koe"
+                                        },
+                                        "url": "https://uxplanet.org/rounded-or-sharp-corner-buttons-def3977ed7c4",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "And now at some typefaces:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5768165985499589985,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Examples of three different fonts with distinctive basic shapes and lines. From "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Taime Koe"
+                                        },
+                                        "url": "https://uxplanet.org/rounded-or-sharp-corner-buttons-def3977ed7c4",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "It\u2019s very clear how these logos and typefaces elicit different responses from each other. And it all comes down to "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "shape psychology"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ":"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Boxy shapes"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " are commonly seen as reliable, uniform, traditional, and professional."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Round shapes"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " are commonly seen as charismatic, endearing, harmless, and friendly."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Triangular shapes"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " are commonly seen as dynamic, energetic and powerful."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Therefore, it\u2019s crucial to think about our brand or product goals when we\u2019re designing, because the shapes we choose for our basic design elements can have a big impact on user perception. Rounding corners might be valid if we want to achieve a friendly, innocent look and feel, but this isn\u2019t always the case."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Another important thing to keep in mind is the "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "similarity of design elements. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "When designing user interfaces, sometimes we want to give emphasis to a specific button, link or tag, to guide the user to an important action. This can\u2019t be achieved if we "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "exclusively "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "use rounded shapes."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The Material Design System has some incredible guidelines"
+                                    },
+                                    "url": "https://material.io/design/shape/about-shape.html#components-and-shape",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to differentiate shapes on an interface. The key takeaway is that "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "\u201cshapes direct attention, identify components, communicate state, and express brand.\u201d"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5768158623925644702,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "About shape. Guidelines from the "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Material Design System"
+                                        },
+                                        "url": "https://material.io/design/shape/about-shape.html#shaping-material",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Rounding up"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "There is definitely proof and reasoning for why we like rounded corners, both in physical and digital products. The attraction for roundness is deep-rooted in our development process from a young age, and grounded in the fact that everything in the natural world around us is rounded."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "However, as we\u2019ve seen, this does not mean we should blindly apply rounded corners in our design work. Different shapes elicit different responses from our users, and rounding corners might make our design create unintended perceptions and affect the overall user experience. We should also diversify the shapes when designing user interfaces, in order to guide the user to the right actions and communicate hierarchy and expression."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Rounding corners might seem a trivial design decision: but in the end, it has a big impact. Next time, let\u2019s think twice and be mindful of our natural obsession with roundness!"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "If you like this article, kindly share a clap \ud83d\udc4f or some thoughts \ud83d\udcac with me! I write stories about Design, Development, and everything in between. Thanks for reading!"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "I was inspired by:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Why Rounded Corners Are Easier on the Eyes\nDesigners use rounded corners so much today that they're more of an industry standard than a design trend. Not only are\u2026\nuxmovement.com\n"
+                                    },
+                                    "url": "https://uxmovement.com/thinking/why-rounded-corners-are-easier-on-the-eyes/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Rounded or Sharp-Corner Buttons? Trivial Design Decisions That Actually Matter\nThe Bouba/Kiki Effect & character design techniques can give you insights into how basic visual shapes subconsciously\u2026\nuxplanet.org\n"
+                                    },
+                                    "url": "https://uxplanet.org/rounded-or-sharp-corner-buttons-def3977ed7c4",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The Rounded User Experience\nEver wondered what the fuss is with the rounded corners on buttons, cards, and other UI components? Read on to find\u2026\nuxplanet.org\n"
+                                    },
+                                    "url": "https://uxplanet.org/the-rounded-user-experience-ff7a1898ab33",
+                                    "webpage_id": 445372158266867968
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Material Design\nBuild beautiful, usable products faster. Material Design is an adaptable system-backed by open-source code-that helps\u2026\nmaterial.io\n"
+                                    },
+                                    "url": "https://material.io/design/shape/about-shape.html#shaping-material",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Make sense of rounded corners on buttons\nShould we swap sharp-cornered buttons with rounded buttons? Do rounded buttons perform a better usability? How do we\u2026\nuxdesign.cc"
+                                    },
+                                    "url": "https://uxdesign.cc/make-sense-of-rounded-corners-on-buttons-dfc8e13ea7f7",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5768123293524667777,
+                        "access_hash": 8288831112831130752,
+                        "file_reference": "b'\\x00b\\x11\\x83\\x1eB\\xc6\\xe8\\x87zX\\x82\\xa1\\x91\\xf37\\xb2\\xd1\\xa7\\xdf\\x1b'",
+                        "date": "2022-02-07 11:40:14+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(u.\\xd3\\x8c\\xe0\\xe2\\x81\\xd4f\\xaf;\\xc7\\xe4v\\xe9]2\\x95\\x8e\\x18C\\x9a\\xfa\\x94)pH\\xce\\x0e=h\\xab\\xf0\\xba\\x08\\x14\\xe4\\x00\\x074\\xa5+\\x0e\\x10\\xe6{\\x99\\xf4R\\xb67\\x1ct\\xcf\\x14U\\x99\\xb1(\\xa2\\x8a\\x00(\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 5161
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 17683
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 675,
+                                "sizes": [
+                                    4169,
+                                    8405,
+                                    12585,
+                                    15221,
+                                    25088
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5768193391685905771,
+                        "access_hash": -27874743757837045,
+                        "file_reference": "b'\\x00b\\x11\\x83\\x1eN\\x0f\\x90\\xea\\xd5\\xc7\\xa2\\xa3z\\xc4\\xca\\x83\\xc8V/T'",
+                        "date": "2022-02-07 11:40:14+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(u\\x14T\\xbei\\x8dW\\x08\\x8c\\x18a\\x87z\\xe9m\\xad\\x8e\\x08\\xc5=\\xc8\\xa9i)CpF;\\xf5\\xa6$\\x84\\xa2\\x8a)\\x88(\\xa2\\x8a\\x00(\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 4495
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 15256
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 675,
+                                "sizes": [
+                                    3788,
+                                    7127,
+                                    11441,
+                                    13838,
+                                    21976
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5768214278111866195,
+                        "access_hash": 6846828122880204589,
+                        "file_reference": "b'\\x00b\\x11\\x83\\x1e\\xab\\xd4\\xac\\x1dl\\xf7\"\\xed\\xb3R\\x03\\xba\\\\\\x14\\xa2\\xe6'",
+                        "date": "2022-02-07 11:40:14+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(}\\x1bN\\xdc\\xe0\\xe3\\xd6\\x8070\\x03\\xbdK\\xb1\\xcby9\\xe9\\xcdt\\xb7c\\x81+\\x90\\xd3\\xb6\\xb6\\xdc\\xe0\\xe3\\xd6\\x9bSl\\x907\\x93\\x91\\xcf47`J\\xe44R\\x91\\x82A\\xedEQ\"R\\xe6\\x8a(\\x01)sE\\x14\\x00\\x94QE\\x00\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 3592
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 10931
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 675,
+                                "sizes": [
+                                    3793,
+                                    6509,
+                                    9108,
+                                    10508,
+                                    16782
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5767985558218452280,
+                        "access_hash": 7980723574713511114,
+                        "file_reference": "b'\\x00b\\x11\\x83\\x1e\\xd6s\\xd9\\xc8\\xfbNr\\x87G\\xe0\\xfc\\xcdV\\xb9\\xaa_'",
+                        "date": "2022-02-07 11:40:29+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(uJ\\xb6\\xf22\\x86\\x0b\\xc1\\xf7\\xa8\\xabF\\r\\xdeJ\\xf2:zWD\\xe4\\xd2\\xd0\\xe2\\xa7\\x15\\'\\xa9Cco\\xd9\\x8f\\x9b\\xa6)\\xedo\"\\xa9b\\xbc\\x0fz\\x7f?l\\xf7\\xcdY\\x9fw\\x92\\xdc\\x8e\\x9e\\x95.m4T`\\x9a~Fu\\x14QZ\\x98\\x85<H\\xe0`9\\x1f\\x8d\\x14R\\xb5\\xc16\\x86\\xeem\\xd9\\xc9\\xcf\\xad8\\xc8\\xe4`\\xb9?\\x8d\\x14S\\xb2\\x1f3\\x19E\\x14P#'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 3182
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 8412
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 675,
+                                "sizes": [
+                                    3625,
+                                    5698,
+                                    7493,
+                                    8571,
+                                    14212
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5768389718935973281,
+                        "access_hash": -4155042657172308580,
+                        "file_reference": "b'\\x00b\\x11\\x83\\x1e\\x00f\\x12\\xeaj\\\\\\x82\\xb3\\x94f\\t\\x9f\\xdbI\\xc1\\x0c'",
+                        "date": "2022-02-07 11:40:29+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1e(\\xb1\\xaa_Kfb\\xf2\\x82\\x1d\\xd9\\xce\\xe1\\xf4\\xab\\x96\\xd2\\x19\\xad\\xa3\\x91\\xb0\\x0b(\\'\\x14J\\xca\\x83\\xe6]\\xdf\\x86i\\xf1\\xb0d\\x04\\x0c\\x03\\xda\\x8b\\n\\xfd\\x0c\\xff\\x00\\xed\\t\\x7f\\xb5~\\xcb\\xe5\\x8d\\x99\\xc7Nzu\\xad\\x06eD,\\xc7\\n\\x06I\\xa8\\xbc\\xe4\\xf3\\xb1\\xb3\\x9e\\x9b\\xb1S\\x10\\x18`\\x8c\\x8a\\x06W\\xb2\\xbb[\\xb8\\x8b\\x8e\\x08b\\x08\\xf4\\xf4\\xfd(\\xa9b\\xd8Wtj\\x00$\\x8e\\x06:Q@\\x0c\\x96(\\xe59f#o\\x1c\\x1a\\x95\\x14\"\\x05\\x04\\x9cPcS\\x9c\\x8e\\xbd\\x7f,R\\xe3\\x07\\xebE\\xc5b\\x05HZM\\xea\\xdc\\xf5\\xc6jIp\\xd1\\x90\\\\\\xa0?\\xc4\\x0e(0D\\xc0\\xe65\\xe7\\xda\\x9cQX`\\xa8 t\\xc8\\xa0{\\x11D\\xa8\\x8cv\\xc8Nq\\xc1l\\xd1R$H\\x98\\xda\\xa0`c\\xa5\\x14\\x03w?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 240,
+                                "size": 11174
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 600,
+                                "size": 37530
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 875,
+                                "h": 656,
+                                "sizes": [
+                                    4327,
+                                    10296,
+                                    19946,
+                                    26774,
+                                    40674
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5768165985499589985,
+                        "access_hash": -402285900822699984,
+                        "file_reference": "b'\\x00b\\x11\\x83\\x1eG\\x80\\xad\\xcchP\\xc2I\\x1e\\xe0\\x9e\\\\+\\x14\\xd9b'",
+                        "date": "2022-02-07 11:40:29+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1e(\\xd9\\xcd1\\xa4U8c\\x8f\\xc2\\x9f\\x9eqM2\"\\x9c\\x16P}\\xcd\\x007\\xce\\x8f\\xfb\\xdf\\xa5/\\x9a\\x99\\xea\\x7f#K\\xe6G\\xfd\\xf5\\xfc\\xe9<\\xd8\\xff\\x00\\xbe\\xbf\\x9d\\x00*H\\xaf\\xf7N\\x7f\\n(WF8V\\x04\\xfb\\x1a(\\x01\\xd4\\xd2\\xca\\xa7\\x92\\x05;\\xbd&\\xd0Np3@\\t\\xbd\\x7f\\xbc)\\x04\\x88FC\\nv\\xd1\\xe8(\\xda1\\x8c\\x0cP\\x02\\x83\\x9e\\x94QE\\x00\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 240,
+                                "size": 9852
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 600,
+                                "size": 36812
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 875,
+                                "h": 656,
+                                "sizes": [
+                                    3429,
+                                    7713,
+                                    17424,
+                                    24011,
+                                    35598
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5768158623925644702,
+                        "access_hash": 7798416880939450648,
+                        "file_reference": "b'\\x00b\\x11\\x83\\x1e\\x90\\xc1\\xbc\\xfd\\xa0\\x11\\xed\\x869B|r\\xea.\\xef\\x1e'",
+                        "date": "2022-02-07 11:40:29+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1d(\\xbe\\xb6p\\x0c0\\x8c\\x02=\\xcdCp\\x07\\x9cj\\xd4\\xaf\\xe5\\xa1b3\\xedM\\x8fl\\xc8\\x1c\\xa7&\\xa17{\\x8f\\x97K\\x99\\xb2ua\\xdb\\x03\\x81\\xf5\\xab6\\x8aD\\xeeH\\x03\\xd2\\xa6\\x97\\xcb\\x89\\xd7\\xf7`\\x96\\xe3 T\\xc1\\x14r\\x17\\x15-\\xb6\\xafb\\xb6Eu\\xf2v\\xca\\x01l1\\xc3\\x1a)\\xd2[\\xabq\\xe6\\x05\\xe74U(\\xbe\\x84\\xb7}\\xca\\x89\\xa8\\xc8\\xd2*\\x94L\\x13\\x8a\\xb15\\xc9\\x8aB\\x98\\xe0{\\x7f\\xf5\\xe9\\x06\\x99\\x18em\\xed\\x90sM\\xba\\xbcxgdUR\\x00\\x1dkY\\xc22\\x92T\\xd11m/x\\x8b\\xed\\xf3g\\x01\\x17\\xf255\\xb5\\xdc\\x92\\xca\\x15\\x94\\x01\\xedP\\x7fh\\xc9\\x8c\\xecO\\xd6\\xa6\\xb5\\xbcy\\xa6T*\\xa0\\x10z\\n\\x89R\\x95\\x9b\\xb1\\xaf\\xb5\\x83\\xd1\"\\xe9\\xd8NM\\x15\\xce\\xca\\x99\\x99\\xf9\\xfe#\\xfc\\xe8\\xa4\\x93\\xeegt\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 236,
+                                "size": 18448
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 589,
+                                "size": 70346
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1064,
+                                "h": 784,
+                                "sizes": [
+                                    9184,
+                                    25588,
+                                    47435,
+                                    63492,
+                                    100652
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 56
+        }
+    ],
+    "views": 67,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1445,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-02-17 06:47:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

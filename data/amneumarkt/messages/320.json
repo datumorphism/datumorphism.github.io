@@ -1,12 +1,12 @@
 {
     "_": "Message",
-    "id": 280,
+    "id": 320,
     "peer_id": {
         "_": "PeerChannel",
         "channel_id": 1320526773
     },
-    "date": "2021-11-02 13:47:31+00:00",
-    "message": "#ML\n\nhttps://www.microsoft.com/en-us/research/blog/turing-bletchley-a-universal-image-language-representation-model-by-microsoft/",
+    "date": "2022-02-17 09:32:03+00:00",
+    "message": "#ML #RL #DeepMind\n\n\n\nMagnetic control of tokamak plasmas through deep reinforcement learning | Nature\nhttps://www.nature.com/articles/s41586-021-04301-9",
     "out": true,
     "mentioned": false,
     "media_unread": false,
@@ -14,7 +14,7 @@
     "post": true,
     "from_scheduled": false,
     "legacy": false,
-    "edit_hide": true,
+    "edit_hide": false,
     "pinned": false,
     "from_id": null,
     "fwd_from": null,
@@ -24,58 +24,58 @@
         "_": "MessageMediaWebPage",
         "webpage": {
             "_": "WebPage",
-            "id": 46156072942282209,
-            "url": "https://www.microsoft.com/en-us/research/blog/turing-bletchley-a-universal-image-language-representation-model-by-microsoft/",
-            "display_url": "microsoft.com/en-us/research/blog/turing-bletchley-a-universal-image-language-representation-model-by-microsoft",
+            "id": 7937820126052308966,
+            "url": "https://www.nature.com/articles/s41586-021-04301-9",
+            "display_url": "nature.com/articles/s41586-021-04301-9",
             "hash": 0,
             "type": "article",
-            "site_name": "Microsoft Research",
-            "title": "Turing Bletchley: A Universal Image Language Representation model by Microsoft - Microsoft Research",
-            "description": "Today, the Microsoft Turing team is thrilled to introduce Turing\u00a0Bletchley,\u00a0a\u00a02.5-billion parameter Universal Image Language Representation model (T-UILR) that\u00a0can perform image-language tasks in 94 languages. T-Bletchley has an image encoder and a universal language encoder that vectorize input image and text respectively so that semantically similar images and texts align with each other. This model shows [\u2026]",
+            "site_name": "Nature",
+            "title": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+            "description": "Nature - A newly designed control architecture uses deep reinforcement learning to learn to command the coils of a tokamak, and successfully stabilizes a wide variety of fusion plasma configurations.",
             "photo": {
                 "_": "Photo",
-                "id": 5766173885178424646,
-                "access_hash": -6274088801505516028,
-                "file_reference": "b\"\\x00b\\x11\\x83\\x1e\\xb1\\xcaxC\\nd\\xcf\\x15n\\xd0'\\xb9:A\\xc0\\x8c\"",
-                "date": "2021-11-01 18:16:59+00:00",
+                "id": 5795132706466671989,
+                "access_hash": -7229572507480897461,
+                "file_reference": "b'\\x00b\\x11\\x83\\x1e\\xb7>\\xac\\x10c\\xb7\\xf9-\\xc1\\x97\\xe9}>\\x84\\xb0\\xa5'",
+                "date": "2022-02-16 16:16:39+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
                         "type": "i",
-                        "bytes": "b\"\\x01\\x17(\\xd9\\xcd&E5\\x97'\\xbd; P\\x02\\x16\\xc1\\x03\\xd6\\x9dMb;\\xf6\\xa7u\\xa0\\x02\\x8ah\\x18c\\xcf\\x1e\\x94P\\x03\\xa8\\xa2\\x8a\\x00M\\xbc\\xd2\\xd1E\\x00\\x14QE\\x00\\x7f\""
+                        "bytes": "b'\\x01\\x17(\\xd7^\\xa7\\x1c~\\x14\\xd3\\xf7\\xb1\\x9aRJ\\x83\\xdb\\xeahW\\xca\\xe4\\x8a.\\x03\\x1b\\xf1\\xa5^\\xa2\\xab\\\\\\xde4LB\\xaf\\x03\\xbd:\\xd2\\xe9\\xa68q\\xfc;\\x81\\x14\\x82\\xc4\\x88O\\x99\\xd7\\xbd\\x14\\xf4|\\x91\\xcex\\xcf\\xd2\\x8ac\\x15\\xb2\\t\\xc98\\xedI\\x1f<\\x1fJ(\\xa9\\xea\\x05y\\xadL\\x8e\\xc3p\\xc30<\\x8e\\xd4\\xfb{o%\\x89\\x0f\\x91\\x8d\\xa3\\x8e\\x94QT\\x03\\xe1\\\\?\\xd0QE\\x14\\x08'"
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
                         "h": 180,
-                        "size": 9118
+                        "size": 21919
                     },
                     {
                         "_": "PhotoSize",
                         "type": "x",
                         "w": 800,
-                        "h": 450,
-                        "size": 37774
+                        "h": 451,
+                        "size": 89857
                     },
                     {
                         "_": "PhotoSize",
                         "type": "y",
                         "w": 1280,
-                        "h": 720,
-                        "size": 71949
+                        "h": 722,
+                        "size": 181998
                     },
                     {
                         "_": "PhotoSizeProgressive",
                         "type": "w",
-                        "w": 2560,
-                        "h": 1441,
+                        "w": 2143,
+                        "h": 1208,
                         "sizes": [
-                            23273,
-                            47153,
-                            78109,
-                            96468,
-                            149741
+                            28972,
+                            82402,
+                            180114,
+                            242294,
+                            351962
                         ]
                     }
                 ],
@@ -102,12 +102,22 @@
             "length": 3
         },
         {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 8,
+            "length": 9
+        },
+        {
             "_": "MessageEntityUrl",
-            "offset": 5,
-            "length": 124
+            "offset": 102,
+            "length": 50
         }
     ],
-    "views": 162,
+    "views": 64,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
@@ -119,12 +129,14 @@
         "max_id": null,
         "read_max_id": null
     },
-    "edit_date": "2021-11-02 13:47:06+00:00",
+    "edit_date": "2022-02-17 09:33:15+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],
     "ttl_period": null,
     "tags": [
-        "ML"
+        "ML",
+        "RL",
+        "DeepMind"
     ]
 }
