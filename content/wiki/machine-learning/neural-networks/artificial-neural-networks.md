@@ -42,7 +42,7 @@ However, the convergence slows down if we have a lot of hidden units. There is a
 
 Here is a quick review of the history of this topic.
 
-{{< message title="Kolmogorov's Theorem" class="info">}}
+{{< message title="Kolmogorov's Theorem" class="info" >}}
 
 Kolmogorov's theorem shows that one can use a finite number of carefully chosen continuous functions to mix up by sums and multiplication with weights to a continuous multivariable function on a compact set.
 
@@ -69,12 +69,12 @@ Kolmogorov's theorem shows that one can use a finite number of carefully chosen 
 
 
 
-{{< message title="Dense" class="info">}}
+{{< message title="Dense" class="info" >}}
 
 Set A is dense in set X means that we can use A to arbitarily approximate X. Mathematically for any given element in X, the neighbour of x always has nonzero intersection.
 {{< /message >}}
 
-{{< message title="Measurable Function" class="info">}}
+{{< message title="Measurable Function" class="info" >}}
 
 It means the function is continuous.
 
@@ -88,14 +88,14 @@ It means the function is continuous.
 There are many activation functions.
 
 - {{< c "cards/machine-learning/neural-networks/activation-uni-polar-sigmoid.md" "Uni-Polar Sigmoid Function" >}}
-- {{< c "cards/machine-learning/neural-networks/activation-bi-polar-sigmoid.md" "Bipolar Sigmoid Function">}}
+- {{< c "cards/machine-learning/neural-networks/activation-bi-polar-sigmoid.md" "Bipolar Sigmoid Function" >}}
 - {{< c "cards/machine-learning/neural-networks/activation-hyperbolic-tangent.md" "Hyperbolic Tangent" >}}
-- {{< c "cards/machine-learning/neural-networks/activation-radial-basis-function.md" "Radial Basis Function">}}
-- {{< c "cards/machine-learning/neural-networks/activation-conic-section-function.md" "Conic Section Function">}}
-- {{< c "cards/machine-learning/neural-networks/activation-relu.md" "ReLu">}}
-- {{< c "cards/machine-learning/neural-networks/activation-leaky-relu.md" "Leaky ReLu">}}
-- {{< c "cards/machine-learning/neural-networks/activation-elu.md" "ELU">}}
-- {{< c "cards/machine-learning/neural-networks/activation-swish.md" "Swish">}}
+- {{< c "cards/machine-learning/neural-networks/activation-radial-basis-function.md" "Radial Basis Function" >}}
+- {{< c "cards/machine-learning/neural-networks/activation-conic-section-function.md" "Conic Section Function" >}}
+- {{< c "cards/machine-learning/neural-networks/activation-relu.md" "ReLu" >}}
+- {{< c "cards/machine-learning/neural-networks/activation-leaky-relu.md" "Leaky ReLu" >}}
+- {{< c "cards/machine-learning/neural-networks/activation-elu.md" "ELU" >}}
+- {{< c "cards/machine-learning/neural-networks/activation-swish.md" "Swish" >}}
 
 
 
@@ -135,7 +135,7 @@ $$
 One important reason for choosing this is that a lot of expressions can be calculated analytically and easily.
 
 
-{{< message title="Fermi-Dirac Distribution">}}
+{{< message title="Fermi-Dirac Distribution" >}}
 
 Aha, the Fermi-Dirac distribution.
 {{< /message >}}

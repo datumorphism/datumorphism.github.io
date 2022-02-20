@@ -71,7 +71,7 @@ v &\in \mathcal V \\
 \end{align}
 {{< /m >}}
 
-{{< message class="info" title="Adjacency Matrix for Multi-relation Graph">}}
+{{< message class="info" title="Adjacency Matrix for Multi-relation Graph" >}}
 
 For multi-relational graph, it can have more ranks and the dimension can be $\lvert \mathcal V \rvert \times \lvert \mathcal V \rvert \times \lvert \mathcal R\rvert$, where $\mathcal R$ represents the types of relations.
 

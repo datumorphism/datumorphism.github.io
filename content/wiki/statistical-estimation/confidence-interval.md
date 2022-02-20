@@ -45,7 +45,7 @@ Here $z_{\alpha/2}$ is the [$z$ value](/wiki/statistics/jargons/#z-transformatio
 4. It depends on the sample size. The larger the sample size, the smaller it will be.
 
 
-{{< message class="info">}}
+{{< message class="info" >}}
 The derivation of this formula is easy. It can be found in many textbooks such as the one we are using as a reference (chapter 14).
 
 Does it make sense?
@@ -67,7 +67,7 @@ We must have $z_{\alpha/2} \sigma_{\bar x} \to 0$ as sample size $n\to \infty$. 
 In fact, $\sigma_{\bar x} = \sigma_p / \sqrt{n}$ if our population is infinite. This is part of the central limit theorem.
 {{< /message >}}
 
-{{< figure src="../assets/gaussian-alpha.png" caption="The definition of $\alpha$ for a [normal distribution](/wiki/distributions/normal-distribution). In a probability distribution, the area under the curve should be 1. Or the integral of the curve from $-\infty$ to $\infty$ should be 1. $\alpha$ is the sum of the two red areas. In this example, we actually have $\alpha=0.05$.">}}
+{{< figure src="../assets/gaussian-alpha.png" caption="The definition of $\alpha$ for a [normal distribution](/wiki/distributions/normal-distribution). In a probability distribution, the area under the curve should be 1. Or the integral of the curve from $-\infty$ to $\infty$ should be 1. $\alpha$ is the sum of the two red areas. In this example, we actually have $\alpha=0.05$." >}}
 
 
 The confidence level is a **weird measurement of our statistical confidence**.
@@ -102,7 +102,7 @@ $$
 2 E = 2 z_{\alpha/2} \sigma_{\bar x}.
 $$
 
-{{< figure src="../assets/gaussian-alpha-compare-different-sigma.png" caption="The larger the margin of error $E$, the harder to pin down the true mean. In the two panels, we have larger $E$ for the lower panel whose sample size is approximately 1/4 of the upper panel's. This is trivial since smaller samples leads to larger $\sigma_{\bar x}$ thus wider distribution. In this example, we have $\alpha=0.05$.">}}
+{{< figure src="../assets/gaussian-alpha-compare-different-sigma.png" caption="The larger the margin of error $E$, the harder to pin down the true mean. In the two panels, we have larger $E$ for the lower panel whose sample size is approximately 1/4 of the upper panel's. This is trivial since smaller samples leads to larger $\sigma_{\bar x}$ thus wider distribution. In this example, we have $\alpha=0.05$." >}}
 
 
 ## What If We Don't Know the Population Standard Deviation?
@@ -115,7 +115,7 @@ $$
 
 As we mentioned, this is NOT what you calculate using the sample data only.
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 Suppose we have have a sample with a sample size $n$. We could calculate a standard deviation $S$ event a standard error of the mean $S_{\bar x}=S/\sqrt{n}$ using this sample data. However, $S_{\bar x}$ is an **estimation** of the standard error of the mean $\sigma_{\bar x}$ since we do not know the actual distribution of the sample.
 {{</message>}}
 

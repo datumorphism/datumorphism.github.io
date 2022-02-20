@@ -12,7 +12,7 @@ references:
   link: https://en.wikipedia.org/wiki/Covariance_matrix
 ---
 
-{{< message class="info">}}
+{{< message class="info" >}}
 We use Einstein's summation convention.
 {{</message>}}
 
@@ -66,7 +66,7 @@ For a complete picture of the data, we build a matrix for all the possible combi
 
 For real series, $\mathrm{Cov} (A_2, A_1) = \mathrm{Cov} (A_1, A_2)$.
 
-{{< message class="info">}}
+{{< message class="info" >}}
 
 The covariance matrix of complex numbers and quaternions is not necessariy symmetric. A more general concept of symmetries is Hermitian.
 

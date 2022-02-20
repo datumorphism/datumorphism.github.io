@@ -46,7 +46,7 @@ Why do we care about energy? For a physics system, low energy means stable while
 To find out a low energy state, one of the numerical methods is the Monte Carlo method.
 
 
-{{< message title="States" class="info">}}
+{{< message title="States" class="info" >}}
 
 We have been talking about the word state without being specifying the definition of it. In fact we can think of two different pictures of states. For the purpose of this discussion, we consider a system of $N$ particles and each of the particle has $m$ degrees of freedom.
 
@@ -60,7 +60,7 @@ Once the macroscopic properties of the system is assigned, all possible states t
 {{< /message >}}
 
 
-{{< message title="Partition Function" class="info">}}
+{{< message title="Partition Function" class="info" >}}
 
 
    Partition function $Z$ is useful as we calculate the statistical properties of the network,
@@ -151,7 +151,7 @@ For some reference, Hinton has a set of lectures on [Coursera](https://www.cours
 ## Minimizing Energy of Ising Model is Hebbian Learning
 
 
-{{< message title="Hebbian Learning Rule" class="info">}}
+{{< message title="Hebbian Learning Rule" class="info" >}}
 Simply put, neurons act similarly at the same time would be more likely to be connected.
 {{</message>}}
 

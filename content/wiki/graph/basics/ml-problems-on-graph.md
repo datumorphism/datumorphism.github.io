@@ -36,10 +36,10 @@ Given graph that has incomplete attribute labeling of the nodes, predict the att
 
 The following concepts can be used to classify nodes.
 
-- {{< c "cards/graph/homophily.md" "Homophily">}}[^McPherson2001],
-  {{< e "cards/graph/homophily.md" "Homophily">}}
-- {{< c "cards/graph/structural-equivalence.md" "Structural equivalence">}},
-  {{< e "cards/graph/structural-equivalence.md" "Structural equivalence">}}
+- {{< c "cards/graph/homophily.md" "Homophily" >}}[^McPherson2001],
+  {{< e "cards/graph/homophily.md" "Homophily" >}}
+- {{< c "cards/graph/structural-equivalence.md" "Structural equivalence" >}},
+  {{< e "cards/graph/structural-equivalence.md" "Structural equivalence" >}}
 - {{< c "cards/graph/heterophily.md" "Heterophily" >}}
   {{< e "cards/graph/heterophily.md" "Heterophily" >}}
   {{< figure src="../assets/ml-problems-on-graph/structural-equivalence.jpg" >}}

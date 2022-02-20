@@ -35,7 +35,7 @@ In a classification problem, given a list of features values $x$ and their corre
 p(C=c_i\mid X=x).
 {{< /m >}}
 
-{{< message title="Likelihood" class="info">}}
+{{< message title="Likelihood" class="info" >}}
 
 The likelihood of the data is
 
@@ -59,7 +59,7 @@ which is equivalent to
 p(C=c_1\mid X=x)  = \exp\left(\beta_0 + \beta_1 \cdot x\right) p(C=c_2\mid X=x) .
 {{< /m >}}
 
-{{< message title="Why" class="info">}}
+{{< message title="Why" class="info" >}}
 
 The reason that we proposing a linear model for the quantity
 

@@ -52,7 +52,7 @@ Presumably, a good model should be
 - extent to which model predictions can be falsified through experiments.
 
 
-{{< message class="info" title="Parsimony">}}
+{{< message class="info" title="Parsimony" >}}
 The parsimony concept is a natural consequence of Occam's razor: We choose the simple model for more explanatory power.
 
 For example, [the instance theory](http://intelligence.leima.is/bio-intelligence/cognition/instance-theory/) by Logan is a good model to explain the [lexical decision task](http://intelligence.leima.is/bio-intelligence/cognition/lexical-descion-task). It is not a perfect model, but it bears parsimony.

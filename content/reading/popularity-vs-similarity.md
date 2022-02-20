@@ -29,7 +29,7 @@ Why are we interested in networks? Because a enormous categories of phenomena ca
 
 * Degrees
 
-{{< figure src="../assets/popularity-similarity-in-networks/directed-degrees.svg.png" caption="Degrees. Source [wikipedia](https://en.wikipedia.org/wiki/File:DirectedDegrees.svg).">}}
+{{< figure src="../assets/popularity-similarity-in-networks/directed-degrees.svg.png" caption="Degrees. Source [wikipedia](https://en.wikipedia.org/wiki/File:DirectedDegrees.svg)." >}}
 
 ### Scaling in Networks
 

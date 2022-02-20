@@ -24,7 +24,7 @@ A uni-Polar sigmoid function is
 
 ## Visualization
 
-{{< figure src="../assets/uni-polar-sigmoid/uni-polar-sigmoid.png" title="Uni-polar Sigmoid function">}}
+{{< figure src="../assets/uni-polar-sigmoid/uni-polar-sigmoid.png" title="Uni-polar Sigmoid function" >}}
 
 
 ## Tricks

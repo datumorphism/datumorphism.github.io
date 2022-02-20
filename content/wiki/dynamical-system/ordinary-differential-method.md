@@ -53,7 +53,7 @@ Generally speaking, a simple iteraction will do the work.
 
 
 
-{{< message title="Taylor Expansion of Functions" class="info">}}
+{{< message title="Taylor Expansion of Functions" class="info" >}}
 **Taylor Expansion of Functions**
 
 Suppose we have a function $f(x)$, Taylor expansion arround a point $x_0$ is
@@ -137,7 +137,7 @@ In fact the AB and AM methods to the first order are
 - Adams-Moulton Method First Order = Backward Euler Method.
 
 
-{{< message title="scipy.odeint" class="info">}}
+{{< message title="scipy.odeint" class="info" >}}
 **scipy.odeint**
 
 `scipy.odeint` uses `adams` for nonstiff equations, where even higher order are used. The return infodictionary entry `nqu` shows the orders for each successful step.

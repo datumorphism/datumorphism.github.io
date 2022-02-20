@@ -15,7 +15,7 @@ weight: 6
 published: true
 ---
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 In this article, we will use the Einstein summation convention. For example,
 $$
 X_{ij}\beta_ j
@@ -26,7 +26,7 @@ $$
 $$
 {{</message>}}
 
-{{< message class="info">}}
+{{< message class="info" >}}
 In statistics, we have at least three categories of quantities:
 
 1. data and labels

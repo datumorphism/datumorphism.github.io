@@ -56,7 +56,7 @@ never dropped
 
 {{< e "wiki/tools/data-processing-spark.md" >}}
 
-{{< c "wiki/tools/data-processing-spark.md" "Spark">}} is in-memory storage.
+{{< c "wiki/tools/data-processing-spark.md" "Spark" >}} is in-memory storage.
 
 - e.g., Load from HDFS to memory of workers,
 - input data and intermediate results are in memory, no disk writes,

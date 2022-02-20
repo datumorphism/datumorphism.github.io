@@ -24,5 +24,5 @@ Here we have $\mathbf U$ being constructed by the eigenvectors of $\mathbf X \ma
 
 I find this slide from Christoph Freudenthaler very useful. The original slide has been added as a reference to this article.
 
-{{< figure src="../assets/svd/svd-visualized.jpg" caption="SVD visualized by Christoph Freudenthaler">}}
+{{< figure src="../assets/svd/svd-visualized.jpg" caption="SVD visualized by Christoph Freudenthaler" >}}
 

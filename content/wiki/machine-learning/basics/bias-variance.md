@@ -36,7 +36,7 @@ $$
 
 On the other hand, we build another model using a specific method such as k-nearest neighbors, which is denoted as $k(X)$.
 
-{{< message title="Why the two models?" class="info">}}
+{{< message title="Why the two models?" class="info" >}}
 
 Why are we talking about the perfect model and a model using a specific method?
 
@@ -52,7 +52,7 @@ $$
 
 Zero bias means we are matching the perfect model.
 
-{{< message title="$E[g(X)]$" class="info">}}
+{{< message title="$E[g(X)]$" class="info" >}}
 $E[g(X)]$ is the expectation of the function.
 {{< /message >}}
 
@@ -104,7 +104,7 @@ In this derivation, we've used several relations.
 
 The more parameters we introduce in the model, it is more likely to reduce the bias. However, at some point, the more complexity we have in the model, the more wiggles the model will have. Thus the variance will be larger.
 
-{{< message title="Free Parameters" class="light">}}
+{{< message title="Free Parameters" class="light" >}}
 Fermi once said,
 
 > I remember my friend Johnny von Neumann used to say, with four parameters I can fit an elephant, and with five I can make him wiggle his trunk.

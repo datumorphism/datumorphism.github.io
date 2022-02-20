@@ -13,7 +13,7 @@ links:
 
 Given a matrix $\mathbf A$, it is diagonalized using its [eigenvectors](../eigendecomposition).
 
-{{< message title="Why are the eigenvectors needed?" class="info">}}
+{{< message title="Why are the eigenvectors needed?" class="info" >}}
 
 
 Eigenvectors of a matrix $\mathbf A$ are the preferred directions. From the definition of eigenvectors,

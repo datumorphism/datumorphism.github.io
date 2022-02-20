@@ -26,7 +26,7 @@ The Katz index is
 
 where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$.
 
-{{< message title="Do not confuse power with contravariant indices" class="warning">}}
+{{< message title="Do not confuse power with contravariant indices" class="warning" >}}
 
 For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation.
 

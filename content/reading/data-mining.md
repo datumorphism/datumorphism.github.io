@@ -22,7 +22,7 @@ references:
 
 We host this regularly on Sunday. Discussions are performed through Skype.
 
-{{< message class="danger">}}
+{{< message class="danger" >}}
 This book is relatively old. So it is quite important to identify those contents that do not apply to modern data mining tasks. During our discussion, we usually talk about the applications in the real-world problem so we are thinking about whether the techniques are still useful.
 {{</message>}}
 

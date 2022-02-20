@@ -32,7 +32,7 @@ $$
 $$
 
 
-The Fraser information is closed related to {{< c "cards/information/fisher-information.md" "Fisher information" >}}, Shannon information, and {{< c "wiki/machine-learning/basics/kl-divergence.md" "Kullback information">}} [^Fraser1965].
+The Fraser information is closed related to {{< c "cards/information/fisher-information.md" "Fisher information" >}}, Shannon information, and {{< c "wiki/machine-learning/basics/kl-divergence.md" "Kullback information" >}} [^Fraser1965].
 
 [^Fraser1965]: Fraser DAS. On Information in Statistics. aoms. 1965;36: 890–896. doi:10.1214/aoms/1177700061
 

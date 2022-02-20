@@ -23,7 +23,7 @@ weight: 3
 
 SVM is calculating a hyperplane to separate the data points into groups according to the label.
 
-{{< card title="Hyperplane">}}
+{{< card title="Hyperplane" >}}
 
 A hyperplane is defined to be of the following form
 
@@ -59,13 +59,13 @@ The plane has to make sure that most data points of class A and B are on the two
 2. Lines that are going though the edge points of class A. It could be defined later. so we are thinking about lines shown as dotted lines.
 
 
-{{< figure src="../assets/svm/svm-testing-hyperplanes-not-working.png" title="Can we use these hyperplanes?">}}
+{{< figure src="../assets/svm/svm-testing-hyperplanes-not-working.png" title="Can we use these hyperplanes?" >}}
 
 Those are absurd limiting choices. However those places us at a position that we might need a plane that has a fare distance between the two classes. **Our intuition tells that the hyperplane might not work for those data points close to the hyperplane. That being said, we are more confident if the hyperplane is far away from all data points.**
 
 Maybe we could require the hyperplane to be equally far away from the two classes. Here we define the distance between a hyperplane and a group data points to be the smallest distance between the hyperplane and data points. This distance is called the margin.
 
-{{< figure src="../assets/svm/svm-testing-hyperplanes-maybe-working.png" caption="Maybe this one? We calculate the distance between the data points of class A and the hyperplane, and we find the smallest distance two be $d_{A,min}$. Meanwhile we calculate the distance between the hyperplane the the data points of class B, and denote it as $d_{B,min}$. We should find $d_{A, min} = d_{B, min}$. This is the max margin stragety.">}}
+{{< figure src="../assets/svm/svm-testing-hyperplanes-maybe-working.png" caption="Maybe this one? We calculate the distance between the data points of class A and the hyperplane, and we find the smallest distance two be $d_{A,min}$. Meanwhile we calculate the distance between the hyperplane the the data points of class B, and denote it as $d_{B,min}$. We should find $d_{A, min} = d_{B, min}$. This is the max margin stragety." >}}
 
 
 We would like to take the extreme limits, again, to understand which hyperplane works the best for the classification problem.
@@ -78,7 +78,7 @@ We would like to take the extreme limits, again, to understand which hyperplane 
 
 The hyperplane could be represented with a normal vector $\hat{\mathbf n}$ and a shift $\beta_0$.
 
-{{< card title="Why?">}}
+{{< card title="Why?" >}}
 
 ![](../assets/svm/define-a-hyperplane.png)
 

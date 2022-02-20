@@ -32,5 +32,5 @@ int main() {
 
 This program runs on Mac without warning or error. However, it gives segmentation fault (core dump) error on ubuntu and cent os.
 
-{{< repl url="https://repl.it/Lfne/7?lite=true">}}
+{{< repl url="https://repl.it/Lfne/7?lite=true" >}}
 

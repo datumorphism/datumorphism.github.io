@@ -60,7 +60,7 @@ As an example, we will use the following A and B series for our calculations in 
 
 To analyze correlations between the two series, we need to look at whether the values of series A and those of series B would occur together. For example, we would like to know the possibility of values for B if we have $a_1$ occurred.
 
-{{< message class="info">}}
+{{< message class="info" >}}
 One of the extreme examples is that A and B are exactly the same. In this case, we would know that the value for B is always the same as A for each row. Then we would know that all the possible combinations of (A, B) are
 1. (a1, a1)
 2. (a2, a2)
@@ -86,11 +86,11 @@ where the cells are filled with the number of occurrences of the corresponding c
 
 This table records the **observed frequencies**, which we denote as table O and each cell is denoted as $o_{ij}$.
 
-{{< message class="info">}}
+{{< message class="info" >}}
 This table tells us about the possible correlations already. Imagine we have two columns that are exactly the same, we would have a table that have large number of occurrences on the diagonal elements.
 {{</message>}}
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 However, those numbers in the table depend on the number of rows that we have in our original table. To find the actual correlation, we need to normalize it. We could simply divide everything by the total number of rows in the original table. But Pearson had a better idea.
 {{</message>}}
 
@@ -102,7 +102,7 @@ $$
 e_{ij} = \frac{ \text{number of } a_i * \text{ number of } b_j }{ \text{ total number of rows in original table } }
 $$
 
-{{< message class="info">}}
+{{< message class="info" >}}
 This $e_{ij}$ serves as the average occurrence of each combinations of $a_i$ and $b_j$. If we have $a_i$ in each row but only one $b_j$ occurrences, the average is 1. This mean that given $b_j$ we would definitely only see one $a_i$.
 
 When we have multiple $a_i$ and $b_j$, this average still works. Suppose we have $a_1$ occurred 4 times in total and we have a total of 8 rows. Assuming that this $a_1$ will appear randomly in the rows, what is the average probability to see this $a_1$ if we choose a random row? It is $4/8=0.5$. Then we will expect $1\times 0.5=0.5$ occurrences $a_1$ for one occurance of $b_2$. If we have 3 occurances of $b_2$, we would expect to see $3\times 0.5==1.5$ occurrences of $a_1$.
@@ -137,7 +137,7 @@ $$
 \chi^2 = \sum_{i,j} \frac{ (o_{ij} - e_{ij})^2 } { e_{ij} }
 $$
 
-{{< message class="info">}}
+{{< message class="info" >}}
 If A and B are the same and each possible values occurred m times, then we would have
 
 $$

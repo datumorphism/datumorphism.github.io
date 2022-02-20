@@ -67,7 +67,7 @@ const sleep = (ms) => new Promise((suc,fail) => setTimeout(suc, ms));
 ```
 This piece of code will print out the date and time every 2000ms.
 
-{{< card title="async/await">}}
+{{< card title="async/await" >}}
 
 Node.js is single-threaded. As we have mentioned when explaining the function `fs.writeFile()`, Node.js has non-blocking I/O. In fact, concurrency is probably at the heart of Node.js, which means we execute one process out of the multiple running processes. Concurrency can make your code more efficient.
 

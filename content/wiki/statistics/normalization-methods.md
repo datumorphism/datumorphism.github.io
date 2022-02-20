@@ -43,7 +43,7 @@ $$
 a'_i = \frac{ (a_i - \bar A) }{ \sigma_A }
 $$
 
-{{< message class="info">}}
+{{< message class="info" >}}
 For a series with only one value, $a'_i = 0$. For series of the form $ (a, -a, a, -a) $ where $a> 0$,
 
 $$

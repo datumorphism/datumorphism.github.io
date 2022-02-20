@@ -14,7 +14,7 @@ references:
     link: https://www.manning.com/books/grokking-algorithms
 ---
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 This set of notes on algorithms is not meant to be comprehensive or complete. These notes are being used as a skeleton framework.
 {{< /message >}}
 

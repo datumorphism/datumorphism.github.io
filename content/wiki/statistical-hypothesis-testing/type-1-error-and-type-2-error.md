@@ -59,6 +59,6 @@ We will denote the threshold of the hypothesis testing as $p_t$. If the $p < p_t
 
 In hypothesis testing, it is crucial that we place the actual null hypothesis $H_0$ we would like to test so that type I error is the type of error we care about.
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 However, I believe that the theory doesn't prevent us from using a non-null hypothesis if we insist. But null hypothesis is the most important one when we are dealing with new findings. If you have different opinions, I would appreciate it if you leave a comment.
 {{</message>}}

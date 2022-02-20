@@ -106,7 +106,7 @@ OLAP Explained: [OLAP Cubes](https://apandre.wordpress.com/data/datacube/) expla
 
 ### Relational Calculus
 
-{{< message title="Operators">}}
+{{< message title="Operators" >}}
 Operators:
    1. ∀ = forall : https://en.wikipedia.org/wiki/Turned_A
    2. | = such that : https://en.wikipedia.org/wiki/Set-builder_notation
@@ -123,7 +123,7 @@ Operators:
 
 ### Normalization
 
-{{< message title="Dependency">}}
+{{< message title="Dependency" >}}
 Dependency
 
    Dependency means a column that determines others.

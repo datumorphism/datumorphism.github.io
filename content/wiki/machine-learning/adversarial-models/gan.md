@@ -32,7 +32,7 @@ Many different GANs are proposed. Vanilla GAN has a simple structure with a sing
 
 ## Vanilla GAN
 
-{{< card title="Minmax Game">}}
+{{< card title="Minmax Game" >}}
 
 Suppose we have two players $G$ and $D$, and a utility $v(D, G)$, a minmax game is maximizing the utility $v(D, G)$ for the worst case of $G=\hat G$ that minimizes $v$ then we have to find $D=\hat D$ that maximizes $v$, i.e.,
 

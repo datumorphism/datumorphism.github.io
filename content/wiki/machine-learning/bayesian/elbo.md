@@ -19,7 +19,7 @@ links:
   - "wiki/machine-learning/basics/kl-divergence.md"
 ---
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 
 This article reuses a lot of materials from the references. Please see the references for more details on ELBO.
 

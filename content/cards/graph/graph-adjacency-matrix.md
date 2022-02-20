@@ -33,7 +33,7 @@ for the graph
 {{< figure src="https://upload.wikimedia.org/wikipedia/commons/2/28/6n-graph2.svg" caption="Public Domain, [Link](https://commons.wikimedia.org/w/index.php?curid=1041193)" >}}
 
 
-{{< message title="Diagonal Elements" class="warning">}}
+{{< message title="Diagonal Elements" class="warning" >}}
 
 The diagonal elements are 0 for graphs without loops.
 

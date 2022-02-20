@@ -82,7 +82,7 @@ P_1, P_2, \cdots, P_k
 
 *which is insanely trivial since the representation of basis in this case is an identity matrix.*
 
-{{< message title="Spherical Harmonics" class="info">}}
+{{< message title="Spherical Harmonics" class="info" >}}
 
 Now we ask this question:
 
@@ -155,7 +155,7 @@ $$
 
 Compare this with the decomposition of a point in the cartesian coordinate system, this is a decomposition of each point on a basis spanned by $\mathbf W^i$.
 
-{{< message title="Another View?" class="info">}}
+{{< message title="Another View?" class="info" >}}
 
 {{<m>}}
 \begin{pmatrix}
@@ -208,7 +208,7 @@ So NMF will require this Frobenius distance to be minimal.
 Well, it doesn't always work. **We might have many different NMFs for one single matrix.**
 
 
-{{< message title="Compare with SVD" class="warning">}}
+{{< message title="Compare with SVD" class="warning" >}}
 
 For a $n\times p$ matrix $\mathbf X$, we use SVD to get the singular value,
 

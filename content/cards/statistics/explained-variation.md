@@ -20,7 +20,7 @@ links:
 
 
 
-Using {{< c "cards/information/fraser-information.md" "Fraser information">}}, we can define a relative information gain by a model
+Using {{< c "cards/information/fraser-information.md" "Fraser information" >}}, we can define a relative information gain by a model
 
 $$
 \rho_C ^2 = 1 - \frac{  \exp( - 2 F(\theta_1) ) }{  \exp( - 2 F(\theta_0) ) },

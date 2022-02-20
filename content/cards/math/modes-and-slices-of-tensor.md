@@ -12,7 +12,7 @@ references:
 ---
 
 
-{{< figure src="../assets/modes-and-slices-of-tensor/fibers-of-3rd-order-tensor.jpg" title="Modes of a tensor">}}
+{{< figure src="../assets/modes-and-slices-of-tensor/fibers-of-3rd-order-tensor.jpg" title="Modes of a tensor" >}}
 
 
 

@@ -17,7 +17,7 @@ links:
   - "cards/graph/graph-cuts.md"
 ---
 
-The {{< c "cards/graph/graph-cuts.md" "Ratio Cut">}} is closely related to the {{< c "cards/graph/graph-laplacians.md" >}}.
+The {{< c "cards/graph/graph-cuts.md" "Ratio Cut" >}} is closely related to the {{< c "cards/graph/graph-laplacians.md" >}}.
 
 ## Two Clusters
 

@@ -22,7 +22,7 @@ weight: 4
 
 ## Covariances
 
-{{< message class="info">}}
+{{< message class="info" >}}
 Correlation coefficient is also known as the Pearson's product moment coefficient.
 {{</message>}}
 
@@ -76,7 +76,7 @@ $$
 \mathrm{Cov}({A,B}) = E( A,B ) - \bar A \bar B.
 $$
 
-{{< message class="info">}}
+{{< message class="info" >}}
 
 At first glance, the square in the definition seems to be only for notation purpose at this point.
 
@@ -119,7 +119,7 @@ Covariance measures the correlation of these two series. To see this, we assume 
 
 we have $\sigma_{A,B} = -1 $. The negative sign tells us that our series are anti-correlated.
 
-{{< message class="info">}}
+{{< message class="info" >}}
 Covariance is also related to [dispersion matrix](../multidimensional-data).
 {{</message>}}
 

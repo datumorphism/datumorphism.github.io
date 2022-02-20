@@ -55,4 +55,4 @@ Pi
 And multidimensional arrays by default are contiguous in memory.
 
 <script src="//repl.it/embed/LHJd/46.js"></script>
-{{< repl url="https://repl.it/@emptymalei/multidimensional-arrays?lite=true">}}
+{{< repl url="https://repl.it/@emptymalei/multidimensional-arrays?lite=true" >}}

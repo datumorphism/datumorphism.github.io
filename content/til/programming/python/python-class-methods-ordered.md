@@ -83,6 +83,6 @@ print(agc.first_good_member.order)
 print(agc.second_good_member.order)
 ````
 
-{{< repl url="https://repl.it/@emptymalei/manipulatememberfunctionattributes?lite=true">}}
+{{< repl url="https://repl.it/@emptymalei/manipulatememberfunctionattributes?lite=true" >}}
 
 

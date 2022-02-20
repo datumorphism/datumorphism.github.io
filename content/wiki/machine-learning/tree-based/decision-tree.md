@@ -80,7 +80,7 @@ The following is a sample of the full dataset.
 |  3 |        0 |         0 |         0 |              0 |
 |  4 |        1 |         0 |         1 |              0 |
 
-{{< card title="Full Data">}}
+{{< card title="Full Data" >}}
 
 |    |   health |   weather |   holiday |   go_to_office |
 |---:|---------:|----------:|----------:|---------------:|
@@ -189,10 +189,10 @@ The following is a sample of the full dataset.
 
 ## Build a Tree
 
-{{< figure src="../assets/decision-tree/decision_tree_100_pure.png" caption="A decision tree trained with the dataset.">}}
+{{< figure src="../assets/decision-tree/decision_tree_100_pure.png" caption="A decision tree trained with the dataset." >}}
 
 
-{{< card title="Reading the Decision Tree Chart">}}
+{{< card title="Reading the Decision Tree Chart" >}}
 ### Reading the Decision Tree Chart
 
 On each node of the tree, we read loads of information.
@@ -208,7 +208,7 @@ Finally, we read the values of the samples. In this example, value = [93, 7], i.
 
 This is a very good result. It is the same as our theoretical expectations.
 
-{{< card title="Surely it will. We forged the dataset based on the theoretical expectations.">}}
+{{< card title="Surely it will. We forged the dataset based on the theoretical expectations." >}}
 
 Surely it will. We forged the dataset based on the theoretical expectations.
 

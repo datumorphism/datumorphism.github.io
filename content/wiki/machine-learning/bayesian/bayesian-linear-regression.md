@@ -75,7 +75,7 @@ $$
 P( [X_m^{\phantom{m}n}, \beta^m] \mid \hat y^n  ) \propto P(\hat y^n \mid [X_m^{\phantom{m}n}, \beta^m] ) P([X_m^{\phantom{m}n}, \beta^m]).
 $$
 
-{{< message title="Fall back to Maximum Likelihood" class="info">}}
+{{< message title="Fall back to Maximum Likelihood" class="info" >}}
 If $$P([X_m^{\phantom{m}n}, \beta^m]) = 1.$$
 {{</message>}}
 

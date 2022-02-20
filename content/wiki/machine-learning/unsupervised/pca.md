@@ -17,13 +17,13 @@ links:
 weight: 2
 ---
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 We use the Einstein summation notation in this article.
 {{</message>}}
 
 Principal Component Analysis (PCA) is a commonly used trick for dimensionality reduction so that the new features represents most of the variances of the data.
 
-{{< card title="Representations of Dataset">}}
+{{< card title="Representations of Dataset" >}}
 
 In theory, a dataset can be represented by a matrix if we specify the basis. However, the initial given basis is not always the most convinient one. Suppose we find a new set of basis for the dataset, the matrix representation may be simpler and easier to use.
 
@@ -53,7 +53,7 @@ $$
 
 where $i\in [1, m]$, $k\in [1,p]$, and $j\in [1, n]$. This projection will select out $p$ features.
 
-{{< card title="Vector Notation Formalism">}}
+{{< card title="Vector Notation Formalism" >}}
 Given features $\{\mathbf X_i\}$, the new features $\{\mathbf Z_i\}$ are related through the $\mathbf U$ matrix,
 
 \begin{equation}
@@ -101,7 +101,7 @@ The component $\mathbf Z_i$ that has the largest variance is the first principal
 which is maximized.
 
 
-{{<card title="Relation between PCA and Linear Regression">}}
+{{<card title="Relation between PCA and Linear Regression" >}}
 The ESL has a very nice explanation of this geometrically.
 {{</card>}}
 
@@ -110,7 +110,7 @@ The ESL has a very nice explanation of this geometrically.
 The idea behind PCA is to find the mixings of the features so that the new axes give us the largest variance. We could invent an algorithm to explore the whole parameter space (shifts, scales, and rotations of the axes) and find the best parameters. However, this would be rather inefficient. The proof Eq. ($\ref{eqn-pca-cov-mat-diag}$) provides theoretical support.
 
 
-{{< card title="Why the covariance matrix?">}}
+{{< card title="Why the covariance matrix?" >}}
 We need would like to find a way to mix the features so that the new features are mostly decoupled. In other words, we will require the covariance matrix to be almost diagonalized.
 {{</card>}}
 

@@ -130,7 +130,7 @@ We have
 {{< /m >}}
 
 
-{{< card title="Why don't we simply draw  $q$  from  $p(z)$?">}}
+{{< card title="Why don't we simply draw  $q$  from  $p(z)$?" >}}
 If we are sort of minimizing the KL divergence $\operatorname{KL} \left( {\color{blue}q(z\mid x) }\parallel p(z) \right)$ too, why don't we simply draw $q$ from $p(z)$? First of all, we also have to take care of the first term. Secondly, we need a latent space that connects to the actual data for reconstruction.
 
 {{< /card >}}

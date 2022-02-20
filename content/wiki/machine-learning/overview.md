@@ -43,7 +43,7 @@ In the core of machine learning models, we have three components[^Domingos2012]:
 - Optimization: an algorithm to optimize the model so it learns what we want it to do.
 
 
-{{< figure src="../assets/overview/three-components-of-learning-algorithms.png" caption="Table from Domingos2012">}}
+{{< figure src="../assets/overview/three-components-of-learning-algorithms.png" caption="Table from Domingos2012" >}}
 
 
 
@@ -54,7 +54,7 @@ In the core of machine learning models, we have three components[^Domingos2012]:
 
 There are many objectives in machine learning. Two of the most applied objectives are classifications and regressions. In classifications and regression, the following four factors are relevant.
 
-{{< figure src="../assets/overview/machine-learning-framework.png" caption="A simple framework of machine learning. The dataset $\tilde{\mathscr D}$ is first encoded by $\mathscr T$, $\mathscr D(\mathbf X, \mathbf Y) = \mathscr T(\tilde{\mathscr D})$. The dataset is feeded into the model, $\bar{\mathbf Y} = f(\mathbf X;\mathbf \theta)$. The model is then tested with the test method, $L_{f, \mathscr D}(h)$. By requiring the test method to satisfy some specific conditions, we solve the model parameters $\mathbf\theta$.">}}
+{{< figure src="../assets/overview/machine-learning-framework.png" caption="A simple framework of machine learning. The dataset $\tilde{\mathscr D}$ is first encoded by $\mathscr T$, $\mathscr D(\mathbf X, \mathbf Y) = \mathscr T(\tilde{\mathscr D})$. The dataset is feeded into the model, $\bar{\mathbf Y} = f(\mathbf X;\mathbf \theta)$. The model is then tested with the test method, $L_{f, \mathscr D}(h)$. By requiring the test method to satisfy some specific conditions, we solve the model parameters $\mathbf\theta$." >}}
 
 
 1. Input:
@@ -74,5 +74,5 @@ There are many objectives in machine learning. Two of the most applied objective
 
 
 [^Domingos2012]: {{< cite key="Domingos2012" >}}
-[^Abu-Mostafa2012]: {{< cite key="Abu-Mostafa2012">}}
+[^Abu-Mostafa2012]: {{< cite key="Abu-Mostafa2012" >}}
 [^Deckert2017]: {{< cite key="Deckert2017" >}}

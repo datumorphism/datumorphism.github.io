@@ -10,6 +10,8 @@ tags:
   - 'Python'
 ---
 
+To compare two dataframe schemas in {{< c "wiki/tools/data-processing-spark.md" "PySpark" >}}, we can utilize the set operations in python.
+
 ```python
 def schema_diff(schema1, schema2):
 

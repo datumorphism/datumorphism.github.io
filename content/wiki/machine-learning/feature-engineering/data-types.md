@@ -34,5 +34,5 @@ Other methods are proposed for other fields of research. For example, N. R. Chri
 
 For machine learning, many statistical data types have been proposed. Some examples of data types and their relations with the level of measurement are shown in the following chart.
 
-{{< figure src="../assets/data-types/data_types_and_level_of_measuremen.png" caption="Data types and level of measurement. [on plectica](https://www.plectica.com/maps/QC3TSXXVQ)">}}
+{{< figure src="../assets/data-types/data_types_and_level_of_measuremen.png" caption="Data types and level of measurement. [on plectica](https://www.plectica.com/maps/QC3TSXXVQ)" >}}
 

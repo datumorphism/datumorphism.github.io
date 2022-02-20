@@ -21,7 +21,7 @@ links:
   - "wiki/machine-learning/neural-networks/artificial-neural-networks.md"
 ---
 
-{{< message class="warning" title="TODO">}}
+{{< message class="warning" title="TODO" >}}
 
 Expand this article.
 

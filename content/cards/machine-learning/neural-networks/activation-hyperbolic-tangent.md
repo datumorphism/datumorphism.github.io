@@ -20,4 +20,4 @@ $$
 \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^{x} - e^{-x}}{e^x + e^{-x}}
 $$
 
-{{< figure src="../assets/activation-hyperbolic-tangent/tanh.png" title="Hyperbolic tangent">}}
+{{< figure src="../assets/activation-hyperbolic-tangent/tanh.png" title="Hyperbolic tangent" >}}

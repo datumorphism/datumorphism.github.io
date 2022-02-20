@@ -44,7 +44,7 @@ A lot of different ways could be used to extend this network.
 * Increase the number of neurons on one layer.
 * One can extend the number of layers.
 
-{{< figure src="../assets/physicists-crash-course-neural-network/multilayer.png" title="Multilayer">}}
+{{< figure src="../assets/physicists-crash-course-neural-network/multilayer.png" title="Multilayer" >}}
 
 * We could also include interactions between the neurons.
 * Even memory can be simulated.
@@ -64,11 +64,11 @@ The first task can be done using one neuron. If a set of parameters are properly
 We have a input temperature and a output that tells us which is high temperature which is low temperature. In the following example, $T_1$ is low temperature, $T_2$, $T_3$ are high temperatures.
 
 
-{{< figure src="../assets/physicists-crash-course-neural-network/one-neuron-classification.png" title="one neuron classification">}}
+{{< figure src="../assets/physicists-crash-course-neural-network/one-neuron-classification.png" title="one neuron classification" >}}
 
 Suppose we have only two neurons in the network.
 
-{{< figure src="../assets/physicists-crash-course-neural-network/two-neuron-network.png" title="two neuron classification">}}
+{{< figure src="../assets/physicists-crash-course-neural-network/two-neuron-network.png" title="two neuron classification" >}}
 
 
 Seen from this example, we can expect neural network to be good at classification.
@@ -76,7 +76,7 @@ Seen from this example, we can expect neural network to be good at classificatio
 And how is this going to help us with the identification of habitable places? Suppose we have three room with temperature $T_1$, $T_2$, $T_3$ respectively. Only $T_2$ falls into the region of high output value which corresponds to the habitable temperature in our net.
 
 
-{{< figure src="../assets/physicists-crash-course-neural-network/two-neuron-classification-result.png" title="two neuron classification">}}
+{{< figure src="../assets/physicists-crash-course-neural-network/two-neuron-classification-result.png" title="two neuron classification" >}}
 
 That reminds me of Fourier Analysis. And there is a connection. The activation functions here, which is for a general purpose, are chosen to be universal approximators. These activations can be used to approximate all smooth functions well using a finite number of neurons. Fourier analysis, on the other hand requires infinite to be exact. However in some cases we don't need infinite Fourier terms as we only need a good approximation.
 
@@ -92,7 +92,7 @@ The Network NEEDS TRAINING. Just like human learning, the neural network have to
 
 This set of data, to have some insight, a human would put them on a plot.
 
-{{< figure src="../assets/physicists-crash-course-neural-network/data-points.png" caption="">}}
+{{< figure src="../assets/physicists-crash-course-neural-network/data-points.png" caption="" >}}
 
 > Data
 > ```
@@ -289,4 +289,4 @@ plt.legend()
 plt.show()
 ```
 
-{{< figure src="../assets/physicists-crash-course-neural-network/fit.png">}}
+{{< figure src="../assets/physicists-crash-course-neural-network/fit.png" >}}

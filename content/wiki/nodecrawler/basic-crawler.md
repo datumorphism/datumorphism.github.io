@@ -174,7 +174,7 @@ superagent
 
 We run the code in the terminal. The code will generate a data file `data.json` in the same folder.
 
-{{< message class="primary">}}
+{{< message class="primary" >}}
 `fs.writeFile` will generate the file with each run. A file with the same name will be overwritten. To append data to a file, simply replace `fs.writeFile` with `fs.appendFile`.
 {{</message>}}
 

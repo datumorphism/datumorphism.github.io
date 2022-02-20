@@ -53,7 +53,7 @@ Some essential libraries:
   - pandas
     - {{< c "tags/pandas/" "Articles with pandas tag" >}}
   - dask
-  - {{< c "wiki/tools/data-processing-spark.md" "PySpark">}}
+  - {{< c "wiki/tools/data-processing-spark.md" "PySpark" >}}
 - Visualization
   - matplotlib
     - {{< c "tags/matplotlib/" "Articles with matplotlib tag" >}}
@@ -90,10 +90,10 @@ Use notebooks
 > Some basic understanding of these is absolutely required. Higher levels of these topics will also be listed in details.
 
 - Statistics
-  - {{< c "cards/statistics/" "Statistics Concepts">}}
-  - {{< c "wiki/statistics/" "Statistical Methods">}}
+  - {{< c "cards/statistics/" "Statistics Concepts" >}}
+  - {{< c "wiki/statistics/" "Statistical Methods" >}}
 - Linear Algebra
-  - {{< c "tags/linear-algebra/">}}
+  - {{< c "tags/linear-algebra/" >}}
 - Calculus
 - Differential Equations
   - {{< c "tags/differential-equation/" >}}
@@ -115,15 +115,15 @@ I use the book by Adreas Kretz as a checklist [^Kretz2019].
   - {{< c "cards/machine-learning/datatypes/data-file-formats.md" >}}
 - Query Language
   - SQL
-    - {{< c "wiki/computation/basics-of-sql.md">}}
-    - {{< c "tags/sql" "SQL tag">}}
+    - {{< c "wiki/computation/basics-of-sql.md" >}}
+    - {{< c "tags/sql" "SQL tag" >}}
   - PGSQL
-    - {{< c "tags/pgsql" "PGSQL tag">}}
+    - {{< c "tags/pgsql" "PGSQL tag" >}}
 - Regular Expression
   - {{< c "wiki/sugar/regular-experssions.md" >}}
 - Scraping
   - {{< c "wiki/nodecrawler" >}}
-  - {{< c "tags/web-scraping/" "Articles tagged Web Scraping">}}
+  - {{< c "tags/web-scraping/" "Articles tagged Web Scraping" >}}
 
 
 ## Statistics
@@ -138,9 +138,9 @@ I use the book by Adreas Kretz as a checklist [^Kretz2019].
   - probability distribution
     - pdf
     - pmf
-    - {{< c "tags/distributions/" "articles tagged with distributions">}}
+    - {{< c "tags/distributions/" "articles tagged with distributions" >}}
   - Bayes
-    - {{< c "tags/bayesian/" "Articles with tagged with Bayesian">}}
+    - {{< c "tags/bayesian/" "Articles with tagged with Bayesian" >}}
 - Summary statistics
   - location
   - variation
@@ -170,7 +170,7 @@ I use the book by Adreas Kretz as a checklist [^Kretz2019].
 - Inference
   - Bayesian inference
     - Confidence interval
-    - {{< c "tags/bayesian/" "Articles with tagged with Bayesian">}}
+    - {{< c "tags/bayesian/" "Articles with tagged with Bayesian" >}}
   - Frequentist inference
 
 ## EDA
@@ -205,7 +205,7 @@ Numerosity reduction:
 Normalization is very important in many models.
 
 Normalization of raw data:
-- {{< c "wiki/statistics/normalization-methods.md">}}
+- {{< c "wiki/statistics/normalization-methods.md" >}}
 
 Normalization in neural networks:
 - Batch normalization

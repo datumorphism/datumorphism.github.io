@@ -28,7 +28,7 @@ To use cosine similarity, we have to vectorize the words first. There are many d
 
 Term frequency is the occurrence of the words. We do not deal with duplications so duplicate words will have some effect on the similarity.
 
-{{< message class="warning">}}
+{{< message class="warning" >}}
 In principle, we could also use word set for a sentence to remove the effect of duplicate words. In most cases, if a word is repeating, it would indeed make the sentences different. If duplicating words are becoming a problem, we will consider using [tf-idf](http://www.tfidf.com/).
 {{</message>}}
 

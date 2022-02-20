@@ -21,7 +21,7 @@ $$
 
 Such a model is usually called an AR(p) model due to the fact that we are using data back in $p$ steps.
 
-{{< card title="Differential Equation">}}
+{{< card title="Differential Equation" >}}
 
 For simplicity we will look at a AR(1) model. Assume the time series has a step size of $dt$, our model can be rewritten as
 

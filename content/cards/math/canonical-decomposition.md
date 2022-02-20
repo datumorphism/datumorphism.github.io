@@ -17,5 +17,5 @@ references:
 
 I find this slide from Christoph Freudenthaler very useful.
 
-{{< figure src="../assets/canonical-decomposition/canonical-decomposition-visualized.jpg" caption="Canonical decomposition visualized by Christoph Freudenthaler">}}
+{{< figure src="../assets/canonical-decomposition/canonical-decomposition-visualized.jpg" caption="Canonical decomposition visualized by Christoph Freudenthaler" >}}
 

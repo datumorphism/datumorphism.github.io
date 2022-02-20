@@ -30,11 +30,11 @@ There are several things to get into:
       - {{< c "wiki/nodecrawler/" >}}
     - API
   - Other Data Services
-- {{< c "wiki/data-engeering-for-data-scientist/data-storage.md" "Data Storage">}}
+- {{< c "wiki/data-engeering-for-data-scientist/data-storage.md" "Data Storage" >}}
   - Data Lake
   - {{< c "wiki/data-warehouse/" >}}
   - Message Queues
-- {{< c "wiki/data-engeering-for-data-scientist/data-processing.md" "Data Processing">}}
+- {{< c "wiki/data-engeering-for-data-scientist/data-processing.md" "Data Processing" >}}
   - Streaming
   - Batch Processing
 - Data Buffer

@@ -24,6 +24,6 @@ A BiPolar sigmoid function is
 
 ## Visualization
 
-{{< figure src="../assets/bipolar-sigmoid/bipolarSigmoid.png" title="Bipolar Sigmoid">}}
+{{< figure src="../assets/bipolar-sigmoid/bipolarSigmoid.png" title="Bipolar Sigmoid" >}}
 
 

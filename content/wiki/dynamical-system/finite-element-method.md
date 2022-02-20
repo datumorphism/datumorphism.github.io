@@ -95,7 +95,7 @@ where $\phi_i(x)$ are the basis functions.
 
 Triangulation is basically setting up the basis function in a discretized space $x$. One of the choicesis the hat function.
 
-{{< figure src="../assets/finite-element-method/plot-using-linear-combinations.png" caption="Triangulation from [comsol multiphysics](https://www.comsol.com/multiphysics/finite-element-method).">}}
+{{< figure src="../assets/finite-element-method/plot-using-linear-combinations.png" caption="Triangulation from [comsol multiphysics](https://www.comsol.com/multiphysics/finite-element-method)." >}}
 
 
 At each point $x$, there is a hat function responsible for the approximation within $[x-\Delta x, x+\Delta x]$.
