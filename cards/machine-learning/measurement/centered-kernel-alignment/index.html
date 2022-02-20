@@ -122,7 +122,7 @@ AmNeumarkt
 <meta itemprop=name content="Centered Kernel Alignment (CKA)">
 <meta itemprop=description content="Centered Kernel Alignment (CKA) is a similarity metric designed to measure the similarity of between representations of features in neural networks."><meta itemprop=datePublished content="2021-11-08T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-11-08T00:00:00+00:00">
-<meta itemprop=wordCount content="339">
+<meta itemprop=wordCount content="370">
 <meta itemprop=keywords content="Data,Representation,Similarity,">
 <section class=section>
 <div class=container>
@@ -184,10 +184,28 @@ Hilbert-Schmidt Independence Criterion (HSIC)
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-Given two kernels of the feature representations $K=k(x,x)$ and $L=l(y,y)$, HSIC is defined as12
-$$ \operatorname{HSIC}(K, L) = \frac{1}{(n-1)^2} \operatorname{tr}( K H L H ), $$
-where
-$x$, $y$ are the representations of features, $n$ is the dimension of the representation of the features, $H$ is the so-called [[centering matrix]] Centering Matrix Useful when centering a vector around its mean . We can choose different kernel functions $k$ and $l$. For example, if $k$ and $l$ are linear kernels, we have $k(x, y) = l(x, y) = x \cdot y$. In this linear case, HSIC is simply $\parallel\operatorname{cov}(x^T,y^T) \parallel^2_{\text{Frobenius}}$.
+<p>Given two kernels of the feature representations $K=k(x,x)$ and $L=l(y,y)$, HSIC is defined as<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup><sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p>
+<p>$$
+\operatorname{HSIC}(K, L) = \frac{1}{(n-1)^2} \operatorname{tr}( K H L H ),
+$$</p>
+<p>where</p>
+<ul>
+<li>$x$, $y$ are the representations of features,</li>
+<li>$n$ is the dimension of the representation of the features,</li>
+<li>$H$ is the so-called .</li>
+</ul>
+<p>We can choose different kernel functions $k$ and $l$. For example, if $k$ and $l$ are linear kernels, we have $k(x, y) = l(x, y) = x \cdot y$. In this linear case, HSIC is simply $\parallel\operatorname{cov}(x^T,y^T) \parallel^2_{\text{Frobenius}}$.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Gretton A, Bousquet O, Smola A, Schölkopf B. Measuring Statistical Dependence with Hilbert-Schmidt Norms. Algorithmic Learning Theory. Springer Berlin Heidelberg; 2005. pp. 63–77. doi:10.1007/11564089_7&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>Kornblith S, Norouzi M, Lee H, Hinton G. Similarity of Neural Network Representations Revisited. arXiv [cs.LG]. 2019. Available: <a href=http://arxiv.org/abs/1905.00414>http://arxiv.org/abs/1905.00414</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 </div>
 </div>
@@ -197,7 +215,8 @@ $x$, $y$ are the representations of features, $n$ is the dimension of the repres
 \operatorname{CKA}(K,L) = \frac{\operatorname{HSIC}(K, L)}{\sqrt{\operatorname{HSIC}(K,K) \operatorname{HSIC}(L,L)}}.
 $$</p>
 <h2 id=applications>Applications</h2>
-<figure><img src=../assets/centered-kernel-alignment/cka-cnn-different-number-of-layers.png alt=Kornblith2019><figcaption>
+<figure>
+<img src=../assets/centered-kernel-alignment/cka-cnn-different-number-of-layers.png alt=Kornblith2019> <figcaption>
 <p>Kornblith2019</p>
 </figcaption>
 </figure>
@@ -276,19 +295,6 @@ L Ma
 <ul><li style=list-style:none>
 <div>cards/machine-learning/measurement/centered-kernel-alignment.md</div></li>
 </ul>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<p>
-<strong><i class="fa-solid fa-turn-down"></i> Dynamics Links from: </strong>
-<div>
-</div>
 </p>
 </div>
 </div>

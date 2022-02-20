@@ -10,7 +10,7 @@
 <meta property="og:description" content="Graph A graph $\mathcal G$ has nodes $\mathcal V$ and edges $\mathcal E$,
 $$ \mathcal G = ( \mathcal V, \mathcal E). $$
 Edges
- Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.    Representations of Graph There are different representations of a graph.
+ Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.     Representations of Graph There are different representations of a graph.
 Adjacency Matrix A adjacency matrix of a graph represents the nodes using row and column indices and edges using elements of the matrix.
 For simple graph, the adjacency matrix is rank two and dimension $\lvert \mathcal V \rvert \times \lvert \mathcal V \rvert$.">
 <meta property="og:type" content="article">
@@ -127,11 +127,11 @@ AmNeumarkt
 <meta itemprop=description content="Graph A graph $\mathcal G$ has nodes $\mathcal V$ and edges $\mathcal E$,
 $$ \mathcal G = ( \mathcal V, \mathcal E). $$
 Edges
- Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.    Representations of Graph There are different representations of a graph.
+ Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.     Representations of Graph There are different representations of a graph.
 Adjacency Matrix A adjacency matrix of a graph represents the nodes using row and column indices and edges using elements of the matrix.
 For simple graph, the adjacency matrix is rank two and dimension $\lvert \mathcal V \rvert \times \lvert \mathcal V \rvert$."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="609">
+<meta itemprop=wordCount content="660">
 <meta itemprop=keywords content="Graph,Basics,">
 <section class=section>
 <div class=container>
@@ -182,7 +182,8 @@ $$</p>
 Edges are relations between nodes. For $u\in \mathcal V$ and $v\in \mathcal V$, if there is an edge between them, then $(u, v)\in \mathcal E$.
 </div>
 </article>
-<figure><img src=../assets/what-is-graph/graph-definition.jpg>
+<figure>
+<img src=../assets/what-is-graph/graph-definition.jpg>
 </figure>
 <h2 id=representations-of-graph>Representations of Graph</h2>
 <p>There are different representations of a graph.</p>
@@ -218,9 +219,31 @@ Graph Laplacians
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-Laplacian is a useful representation of graphs. The unnormalized Laplacian is
-$$ \mathbf L = \mathbf D - \mathbf A, $$
-where $\mathbf A$ is the [[adjacency matrix]] Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link and $\mathbf D$ is the degree matrix, i.
+<p>Laplacian is a useful representation of graphs. The unnormalized Laplacian is</p>
+<p>\mathbf L = \mathbf D - \mathbf A,</p>
+<p>where $\mathbf A$ is the and $\mathbf D$ is the degree matrix, i.e., a diagonalized matrix with the diagonal elements being the degrees.</p>
+<h2 id=normalized-laplacian>Normalized Laplacian</h2>
+<p>The symmetric normalized Laplacian is</p>
+<p>\mathbf L_{\text{sym}} = \mathbf D^{-1/2} \mathbf A \mathbf D^{-1/2}.</p>
+<p>The random walk Laplacian is</p>
+<p>\mathbf L_{\text{RW}} = \mathbf D^{-1} \mathbf A.</p>
+<h2 id=diagonalizing-graph-laplacian>Diagonalizing Graph Laplacian</h2>
+<p>The eigenvectors of Graph Laplacian can be used to diagonalize the graph Laplacian $\mathbf L$,</p>
+<p>\begin{equation}
+\mathbf U \mathbf L_D \mathbf U^{\mathrm T} = \mathbf L.\label{eq-laplacian-diag}
+\end{equation}</p>
+<h2 id=laplacians-and-fourier-transform>Laplacians and Fourier Transform</h2>
+<p>The eigen-equation of Laplacian $\nabla^2$ shows that the eigenvectors of the Laplacian (in Hilbert space) have the form $e^{2\pi i \xi x}$. On the other hand, $e^{2\pi i \xi x}$ is also the Fourier basis.</p>
+<p>The eigenvectors of the graph Laplacian (Eq. $\eqref{eq-laplacian-diag}$) can be used to perform Fourier transforms on graph<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. We apply the matrix $\mathbf U^{\mathrm T}$ in $\eqref{eq-laplacian-diag}$ onto a vector of node attributes,</p>
+<p>\mathbf U^{\mathrm T} \mathbf f.</p>
+<p>The above is the Fourier transform of the node attributes on the graph.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></li>
+</ol>
+</section>
 </div>
 </div>
 </div>
@@ -274,11 +297,13 @@ $$</p>
 </li>
 <li>multiplex</li>
 </ul>
-<figure><img src=../assets/what-is-graph/multirelational-graph.jpg>
+<figure>
+<img src=../assets/what-is-graph/multirelational-graph.jpg>
 </figure>
 <h3 id=heterogeneous>Heterogeneous</h3>
 <p>Nodes are subsets without intersections, $\mathcal V = \mathcal V_1\cup \mathcal V_2 \cdots \mathcal V_k$ and $\mathcal V_i \cap \mathcal V_j = \emptyset$ for $\forall i\neq j$.</p>
-<figure><img src=../assets/what-is-graph/heterogeneous-graph-example-hamilton.jpg alt="Heterogeneous graph example. A visualization of the example in Hamilton2020."><figcaption>
+<figure>
+<img src=../assets/what-is-graph/heterogeneous-graph-example-hamilton.jpg alt="Heterogeneous graph example. A visualization of the example in Hamilton2020."> <figcaption>
 <p>Heterogeneous graph example. A visualization of the example in Hamilton2020.</p>
 </figcaption>
 </figure>
@@ -293,7 +318,8 @@ For a website that hosts a movie database and a user database, the relation abou
 </article>
 <h3 id=mutiplex>Mutiplex</h3>
 <p>The nodes can be viewed to exist in different layers and the edges in each layer are different.</p>
-<figure><img src=../assets/what-is-graph/multiplex-example.jpg alt="Multiplex graph example."><figcaption>
+<figure>
+<img src=../assets/what-is-graph/multiplex-example.jpg alt="Multiplex graph example."> <figcaption>
 <p>Multiplex graph example.</p>
 </figcaption>
 </figure>
@@ -416,7 +442,7 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong><i class="fa-solid fa-turn-down"></i> Dynamics Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Dynamic Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/graph/basics/statistics-of-graphs/>
 <div class=media-content>

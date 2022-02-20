@@ -202,7 +202,8 @@ p(x) = \begin{cases}
 0 & \text{else}.
 \end{cases}
 $$</p>
-<figure><img src=../assets/kl-divergence/kl-divergence-two-uniform.png>
+<figure>
+<img src=../assets/kl-divergence/kl-divergence-two-uniform.png>
 </figure>
 <p>We will assume $\Delta_q > \Delta_p$ for simplicity. The KL divergence is</p>
 <p>$$
@@ -233,10 +234,12 @@ D_{\text{KL}} = \mathbb E_p \left[ \frac{ \mu_q^2 - \mu_p^2}{2\sigma^2} + \frac{
 $$</p>
 <p>One could easily see that $\mathbb E_p \left[ x \right]=\mu$ using symmetries. The KL divergence for two Gaussians is symmetric for the distributions.</p>
 <p>As an example, we calculate the KL divergence for the example shown in the figure.</p>
-<figure><img src=../assets/kl-divergence/two-gaussians.png>
+<figure>
+<img src=../assets/kl-divergence/two-gaussians.png>
 </figure>
 <p>To get some intutions, we calculate the integrant $p(x)\log\left(p(x)/q(x)\right)$. The area under curve will be the KL divergence.</p>
-<figure><img src=../assets/kl-divergence/integrants.png>
+<figure>
+<img src=../assets/kl-divergence/integrants.png>
 </figure>
 <h2 id=kl-divergence-is-not-necessarily-symmetric>KL Divergence is not necessarily symmetric</h2>
 <p>Using the uniform distribution example, we realize that</p>
@@ -248,13 +251,16 @@ $$</p>
 <p>$$
 D_{\text{KL}}(p \parallel q) = \mathbb{E}_p \left[ \log\left( \frac{p}{q} \right) \right].
 $$</p>
-<figure><img src=../assets/kl-divergence/guassian-mixture.png>
+<figure>
+<img src=../assets/kl-divergence/guassian-mixture.png>
 </figure>
 <p>We will calculate the integrants and area under curve will be the KL divergence $D_\text{KL}(p\parallel q)$.</p>
-<figure><img src=../assets/kl-divergence/guassian-mixture-integrants.png>
+<figure>
+<img src=../assets/kl-divergence/guassian-mixture-integrants.png>
 </figure>
 <p>The reverse KL divergence $D_\text{KL}(q\parallel p)$ is different.</p>
-<figure><img src=../assets/kl-divergence/guassian-mixture-integrants-d-q-p.png>
+<figure>
+<img src=../assets/kl-divergence/guassian-mixture-integrants-d-q-p.png>
 </figure>
 <p>The fact that KL divergence is not symmetric indicates that it can not be a distance measure.</p>
 </div>
@@ -348,7 +354,7 @@ LM (2021). 'KL Divergence', Datumorphism, 04 April. Available at: https://datumo
 <div class=media-content>
 <div class=content>
 <p>
-<strong><i class="fa-solid fa-turn-down"></i> Dynamics Links from: </strong>
+<strong><i class="fa-solid fa-turn-down"></i> Dynamic Links from: </strong>
 <div>
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/variational-autoencoder/>
 <div class=media-content>

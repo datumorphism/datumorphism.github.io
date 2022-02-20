@@ -169,19 +169,22 @@ This is the notes for a class presentation when I was a student.
 <div class="content blog-post section" itemprop=articleBody>
 <h2 id=what-is-a-neuron>What is a Neuron</h2>
 <p>What a neuron does is to response when a stimulation is given. This response could be strong or weak or even null. If I would draw a figure, of this behavior, it looks like this.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/neuron-response.png><figcaption>
-<h4>Neuron response</h4>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/neuron-response.png> <figcaption>
+<div class="title is-4">Neuron response</div>
 </figcaption>
 </figure>
 <p>Using simple single neuron responses, we could compose complicated responses. To achieve that, we study the transformations of the response first.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/transformation-activation.png><figcaption>
-<h4>transformations</h4>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/transformation-activation.png> <figcaption>
+<div class="title is-4">transformations</div>
 </figcaption>
 </figure>
 <h2 id=artificial-neural-network>Artificial Neural Network</h2>
 <p>A simple network is a collection of neurons that response to stimulations, which could be the responses of other neurons.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/neural-network-simple.png><figcaption>
-<h4>neural network</h4>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/neural-network-simple.png> <figcaption>
+<div class="title is-4">neural network</div>
 </figcaption>
 </figure>
 <p>A given input signal is spreaded onto three different neurons. The neurons respond to this signal separately then summed together with different weights. In the language of math, given input $x$, output $y(x)$ is</p>
@@ -192,8 +195,9 @@ This is the notes for a class presentation when I was a student.
 <li>Increase the number of neurons on one layer.</li>
 <li>One can extend the number of layers.</li>
 </ul>
-<figure><img src=../assets/physicists-crash-course-neural-network/multilayer.png><figcaption>
-<h4>Multilayer</h4>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/multilayer.png> <figcaption>
+<div class="title is-4">Multilayer</div>
 </figcaption>
 </figure>
 <ul>
@@ -209,19 +213,22 @@ This is the notes for a class presentation when I was a student.
 </ol>
 <p>The first task can be done using one neuron. If a set of parameters are properly chosen, a single neuron will finish the task.</p>
 <p>We have a input temperature and a output that tells us which is high temperature which is low temperature. In the following example, $T_1$ is low temperature, $T_2$, $T_3$ are high temperatures.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/one-neuron-classification.png><figcaption>
-<h4>one neuron classification</h4>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/one-neuron-classification.png> <figcaption>
+<div class="title is-4">one neuron classification</div>
 </figcaption>
 </figure>
 <p>Suppose we have only two neurons in the network.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/two-neuron-network.png><figcaption>
-<h4>two neuron classification</h4>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/two-neuron-network.png> <figcaption>
+<div class="title is-4">two neuron classification</div>
 </figcaption>
 </figure>
 <p>Seen from this example, we can expect neural network to be good at classification.</p>
 <p>And how is this going to help us with the identification of habitable places? Suppose we have three room with temperature $T_1$, $T_2$, $T_3$ respectively. Only $T_2$ falls into the region of high output value which corresponds to the habitable temperature in our net.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/two-neuron-classification-result.png><figcaption>
-<h4>two neuron classification</h4>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/two-neuron-classification-result.png> <figcaption>
+<div class="title is-4">two neuron classification</div>
 </figcaption>
 </figure>
 <p>That reminds me of Fourier Analysis. And there is a connection. The activation functions here, which is for a general purpose, are chosen to be universal approximators. These activations can be used to approximate all smooth functions well using a finite number of neurons. Fourier analysis, on the other hand requires infinite to be exact. However in some cases we don&rsquo;t need infinite Fourier terms as we only need a good approximation.</p>
@@ -261,7 +268,8 @@ This is the notes for a class presentation when I was a student.
 </tbody>
 </table>
 <p>This set of data, to have some insight, a human would put them on a plot.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/data-points.png>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/data-points.png>
 </figure>
 <blockquote>
 <p>Data</p>
@@ -273,7 +281,8 @@ plt.show()
 </code></pre></blockquote>
 <p>A well-trained human immediately recognizes the pattern, which is somewhat close to a exponential decay behavior. However, we wouldn&rsquo;t do any numerical calculation of exponential functions. We just see it because we have seen a lot.</p>
 <p>We also expect that if we have one more data point from the same mechanism to be placed on the graph, it should appear near a line of exponential decay.</p>
-<figure><img src=../assets/physicists-crash-course-neural-network/data-fit.png>
+<figure>
+<img src=../assets/physicists-crash-course-neural-network/data-fit.png>
 </figure>
 <blockquote>
 <p>Data</p>
@@ -403,7 +412,8 @@ plt.plot(testTLin,temp14,'r-',label='ANN Result')
 plt.title(&quot;Test the training&quot;)
 plt.legend()
 plt.show()
-</code></pre><figure><img src=../assets/physicists-crash-course-neural-network/fit.png>
+</code></pre><figure>
+<img src=../assets/physicists-crash-course-neural-network/fit.png>
 </figure>
 </div>
 <p><div class="has-text-right is-size-7">
@@ -491,19 +501,6 @@ L Ma
 <ul><li style=list-style:none>
 <div>wiki/machine-learning/neural-networks/physicists-crash-course-neural-network.md</div></li>
 </ul>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<p>
-<strong><i class="fa-solid fa-turn-down"></i> Dynamics Links from: </strong>
-<div>
-</div>
 </p>
 </div>
 </div>

@@ -123,7 +123,7 @@ AmNeumarkt
 <meta itemprop=description content="Local Statistics Node Degree Node Degree   Node degree of a node $u$ $$ d_u = \sum_{v\in \mathcal V} A[u,v], $$ where $A$ is the adjacency matrix.     Node Centrality Importance of a node on a graph:
   Eigenvector Centrality of a Graph   Given a graph with adjacency matrix $\mathbf A$, the eigenvector centrality is $$ \mathbf e_u = \frac{1}{\lambda} \sum_{v\in\mathcal V} \mathbf A[u,v] \mathbf e_v, \qquad \forall u \in \mathcal V. $$ Why is it called Eigenvector Centrality The definition is equivalent to $$ \lambda \mathbf e = \mathbf A\mathbf e. $$ Power Iteration The solution to $\mathbf e$ is the eigenvector that corresponds to the largest eigenvalue $\lambda_1$."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="1267">
+<meta itemprop=wordCount content="1476">
 <meta itemprop=keywords content="Graph,Basics,Statistics,">
 <section class=section>
 <div class=container>
@@ -380,14 +380,15 @@ Graph Global Overlap Measure: Katz Index
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-The Katz index is
-$$ \mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v], $$
-where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$.
-Do not confuse power with contravariant indices
-For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation.
-But here ${}^{i}$ means to the $i$th power.
-The index is proved to be the following
-$$ \mathbf S_{\text{Katz}} = (\mathbf I - \beta \mathbf A)^{-1} - \mathbf I.
+<p>The Katz index is</p>
+<p>\mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v],</p>
+<p>where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$.</p>
+<p>For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation.</p>
+<p>But here ${}^{i}$ means to the $i$th power.</p>
+<p>The index is proved to be the following</p>
+<p>\mathbf S_{\text{Katz}} = (\mathbf I - \beta \mathbf A)^{-1} - \mathbf I.</p>
+<h2 id=parameter-beta>Parameter $\beta$</h2>
+<p>The parameter $\beta$ is the punishment for path length. If $\beta &lt; 1$, each increase in power will make the whole term $\beta^i A^i$ smaller. If a path between $u$ and $v$ is longer, i.e., $i$ is larger, then the weight $\beta^i$ is smaller.</p>
 </div>
 </div>
 </div>
@@ -402,7 +403,33 @@ Graph Global Overlap Measure: Leicht-Holme-Newman Index
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-From Katz Index to LHN Index [[Katz Index]] Graph Global Overlap Measure: Katz Index The Katz index is $$ \mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v], $$ where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$. Do not confuse power with contravariant indices For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation. But here ${}^{i}$ means to the $i$th … has a knob to tune the punishment towards longer paths.
+<h2 id=from-katz-index-to-lhn-index>From Katz Index to LHN Index</h2>
+<p>has a knob to tune the punishment towards longer paths. The Leicht-Holme-Newman Similarity, aka, LHN Similarity, has a better normalization factor.</p>
+<p>The LHN similarity of a graph $\mathcal G$ normalizes the path calculation by the expected number of path in a random graph $\tilde{\mathcal G}$<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p>
+<p>We require $\tilde{\mathcal G}$ to have the <strong>same set of node degrees</strong> as $\mathcal G$. Such a graph is a configuration model.</p>
+<p>The expected number of path different path length is not analytically feasible in general. We have for lower power</p>
+<p>\begin{align}
+\mathbb E [ A[u,v] ] &= \frac{d_u d_v}{2\lvert \mathcal E\rvert} \
+\mathbb E [ A^2[u,v] ] &= \frac{d_u d_v}{2\lvert \mathcal E\rvert} \sum_{u\in \mathcal V} (d_m-1) d_u.
+\end{align}</p>
+<p>However, a iterative method shows us an approximation and we can approximate the LHN similarity using<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>,</p>
+<p>S_{\text{LHN}} = 2\alpha m \lambda_1 \mathbf D^{-1} \left( \mathbf I - \frac{\beta}{\lambda_1} \mathbf A \right)^{-1} \mathbf D^{-1},</p>
+<p>where $\mathbf D$ is the matrix $\mathrm{diag} ({d_1, d_2, \cdots})$, and $\lambda_1$ is the largest eigenvalue of the adjacency matrix $\mathbf A$.</p>
+<h2 id=indications-of-lhn-index>Indications of LHN Index</h2>
+<p>Lue & Zhou wrote an intuitive review of LHN similarity<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. The idea of LHN implements the idea that two nodes $u$ and $v$ are similar if their neighbors $\mathcal N(u)$ and $\mathcal N(v)$ are similar,</p>
+<p>\mathbf S_{\text{LHN}} = \beta \mathbf A \mathbf S_{\text{LHN}} + \alpha \mathbf I,</p>
+<p>where $\alpha$ and $\beta$ are free parameters that controls the punishment of different lengths.</p>
+<p>Moving the matrices around, we get</p>
+<p>\mathbf S_{\text{LHN}} = \alpha ( \mathbf I - \beta \mathbf A)^{-1}.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></li>
+<li id=fn:2 role=doc-endnote>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></li>
+</ol>
+</section>
 </div>
 </div>
 </div>
@@ -417,9 +444,30 @@ Graph Global Overlap Measure: Random Walk Similarity
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-Random Walk Construct a stochastic transfer matrix $P$ by normalizing the adjacency matrix $\mathbf A$ using the node degrees of the target nodes,
-$$ \mathbf P = \mathbf A \mathbf D^{-1}, $$
-where $\mathbf A$ is the [[adjacency matrix]] Graph Adjacency Matrix A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example, $$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$ for the graph Public Domain, Link and $\mathbf D$ is a diagonalized matrix with the diagonal elements being the degrees.
+<h2 id=random-walk>Random Walk</h2>
+<p>Construct a stochastic transfer matrix $P$ by normalizing the adjacency matrix $\mathbf A$ using the node degrees of the target nodes,</p>
+<p>\mathbf P = \mathbf A \mathbf D^{-1},</p>
+<p>where $\mathbf A$ is the and $\mathbf D$ is a diagonalized matrix with the diagonal elements being the degrees.</p>
+<p>Given a random walk associated with $\mathbf P$ that starts from node $u$, we find the probability that visits each node $v$, $\mathbf q_u[v]$<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>,</p>
+<p>\mathbf q_u = c \mathbf P \mathbf q_u + (1-c) \mathbf e_u,</p>
+<p>where $\mathbf e_u$ is the onehot encoding of node $u$ and $c$ is a probability that the walk restarts at $u$.</p>
+<ul>
+<li>If $c=0$, we have a constant solution.</li>
+<li>If $c=1$, we have $\mathbf q_u = \mathbf P \mathbf q_u$, which is the .</li>
+</ul>
+<p>The solution is<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>,</p>
+<p>\mathbf q_u = (1-c) ( \mathbf I - c \mathbf P )^{-1} \mathbf e_u.</p>
+<h2 id=random-walk-similarity>Random Walk Similarity</h2>
+<p>The random walk similarity is defined using $\mathbf q_u$,</p>
+<p>\mathbf S_{\text{RW}}[u, v] = \mathbf q_u[v] + \mathbf q_v[u],</p>
+<p>which is symmetry under permutation of $u$ and $v$.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></li>
+</ol>
+</section>
 </div>
 </div>
 </div>
@@ -521,19 +569,6 @@ L Ma
 <ul><li style=list-style:none>
 <div>wiki/graph/basics/statistics-of-graphs.md</div></li>
 </ul>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<p>
-<strong><i class="fa-solid fa-turn-down"></i> Dynamics Links from: </strong>
-<div>
-</div>
 </p>
 </div>
 </div>
