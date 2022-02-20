@@ -18,6 +18,8 @@ references:
   - link: "https://books.google.de/books?id=qcI_AAAAQBAJ&source=gbs_navlinks_s"
     name: "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning. In Springer Texts in Statistics. Springer Science & Business Media."
 weight: 2
+links:
+  - cards/machine-learning/learning-theories/empirical-risk-minimization.md
 ---
 
 
