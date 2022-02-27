@@ -31,7 +31,6 @@ p(x_1, x_2, \cdots, x_N),
 
 where $x_i$ are the nodes in the sequence.
 
-{{< c "wiki/tools/data-processing-spark.md" "PySpark" >}}
 
 ## Orders
 
