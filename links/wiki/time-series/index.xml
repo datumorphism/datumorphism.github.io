@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wiki/time-series on Datumorphism</title><link>https://datumorphism.leima.is/links/wiki/time-series/</link><description>Recent content in wiki/time-series on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><atom:link href="https://datumorphism.leima.is/links/wiki/time-series/index.xml" rel="self" type="application/rss+xml"/><item><title>Generative Model: Autoregressive Model</title><link>https://datumorphism.leima.is/wiki/machine-learning/generative-models/autoregressive-model/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/generative-models/autoregressive-model/</guid><description>An autoregressive (AR) model is autoregressive,
+$$ \begin{equation} \log p_\theta (x) = \sum_{t=1}^T \log p_\theta ( x_{t} \mid {x_{&amp;lt;t}} ). \end{equation} $$
+In the above example, the likelihood is modeled as
+$$ \begin{align} p_\theta (x) &amp;= \Pi_{t=1}^T p_\theta (x_t \mid x_{1:t-1}) \\ &amp;= p_\theta(x_2 \mid x_{1:1}) p_\theta(x_3 \mid x_{1:2}) \cdots p_\theta(x_T \mid x_{1:T-1}) \end{align} $$
+Taking the log of it
+$$ \ln p_\theta (x) = \sum_{t=1}^T \ln p_\theta (x_t \mid x_{1:t-1}) $$
+Notations and Conventions
+In AR models, we have to mention the preceding nodes (${x_{&amp;lt;t}}$) of a specific node ($x_{t}$). For $t=5$, the relations between ${x_{&amp;lt;5}}$ and $x_5$ is shown in the following illustration.</description></item><item><title>Wavelet Transform</title><link>https://datumorphism.leima.is/wiki/time-series/wavelets/</link><pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/time-series/wavelets/</guid><description>In general, given a complete set of function $\psi(x; \tilde x)$, we can decompose a function $F(\tilde x)$
+$$ F(\tilde x) = \int f(x) \psi(x;\tilde x) dx. $$
+The choice of $\psi(x;\tilde x)$ gives us different properties.
+Fourier Transform Fourier transform is good for stationary analysis since time is not involved in $F(\omega)$.
+$$ F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt $$
+Short-time Fourier Transform STFT is a Fourier transform with a moving time window $\tau$,
+$$ F(\tau,\omega) = \int_{-\infty}^{\infty} f(t) w(t - \tau) e^{-i\omega t} dt. $$
+Moving $\tau$ gives us the ability to investigate Fourier components at different time segments (assuming the window function $w(t-\tau)$ is a step function).</description></item><item><title>State Space Models</title><link>https://datumorphism.leima.is/wiki/time-series/state-space-models/</link><pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/time-series/state-space-models/</guid><description>State space model is an important category of model for sequential data. Through simple assumptions, state space models can achieve quite complicated distributions.
+To model a sequence, we can use the joint probability of all the nodes,
+$$ p(x_1, x_2, \cdots, x_N), $$
+where $x_i$ are the nodes in the sequence.
+[[PySpark]] Data Processing - (Py)Spark Processing Data using (Py)Spark Orders We can introduce different order of dependencies on the past.
+The simplest model for the sequence is assuming i.i.d..
+Zeroth OrderEach node is independent of each other
+To model the dependencies in the sequence, we can assume a node depends on the previous nodes.</description></item><item><title>Box-Cox Transformation</title><link>https://datumorphism.leima.is/cards/statistics/box-cox/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/statistics/box-cox/</guid><description>Box-Cox transformation is a power transformation that involves logs and powers. It transforms data into normal distributions.
+The Box-Cox transformation is defined as
+$$ y_i^{(\lambda)} = \begin{cases} \lambda ^{-1} (y_i^\lambda - 1) &amp; \quad \text{if } \lambda \neq 0\\ \log(y_i) &amp; \quad \text{if } \lambda = 0. \end{cases} $$
+By selecting a proper $\lambda$, we get a Guassian distributed data, with a variable mean. The transformation take $y$ to
+$$ \rho(y^{(\lambda)}) =\frac{ \exp{\left( -(y^{(\lambda)} - \beta X)^{T} (y^{(\lambda)} - \beta X)/(2\sigma^2) \right) }}{(\sqrt{2\pi \sigma^2})^n} \prod_{i=1}^n \left\lvert \frac{d y_i^{(\lambda )}}{ dy_i } \right\rvert. $$
+The term
+$$ \prod_{i=1}^n \left\lvert \frac{d y_i^{(\lambda )}}{ dy_i } \right\rvert = \lvert J \rvert $$</description></item><item><title>Box-Cox Transformation</title><link>https://datumorphism.leima.is/cards/statistics/box-cox/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/statistics/box-cox/</guid><description>Box-Cox transformation is a power transformation that involves logs and powers. It transforms data into normal distributions.
+The Box-Cox transformation is defined as
+$$ y_i^{(\lambda)} = \begin{cases} \lambda ^{-1} (y_i^\lambda - 1) &amp; \quad \text{if } \lambda \neq 0\\ \log(y_i) &amp; \quad \text{if } \lambda = 0. \end{cases} $$
+By selecting a proper $\lambda$, we get a Guassian distributed data, with a variable mean. The transformation take $y$ to
+$$ \rho(y^{(\lambda)}) =\frac{ \exp{\left( -(y^{(\lambda)} - \beta X)^{T} (y^{(\lambda)} - \beta X)/(2\sigma^2) \right) }}{(\sqrt{2\pi \sigma^2})^n} \prod_{i=1}^n \left\lvert \frac{d y_i^{(\lambda )}}{ dy_i } \right\rvert. $$
+The term
+$$ \prod_{i=1}^n \left\lvert \frac{d y_i^{(\lambda )}}{ dy_i } \right\rvert = \lvert J \rvert $$</description></item></channel></rss>

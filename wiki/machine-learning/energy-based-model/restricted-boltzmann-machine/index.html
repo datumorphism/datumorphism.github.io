@@ -122,7 +122,7 @@ AmNeumarkt
 <meta itemprop=name content="Restricted Boltzmann Machine">
 <meta itemprop=description content="Introducing latent variables to Boltzmann machine and restrict the connections within groups."><meta itemprop=datePublished content="2021-06-11T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-06-11T00:00:00+00:00">
-<meta itemprop=wordCount content="1092">
+<meta itemprop=wordCount content="1113">
 <meta itemprop=keywords content="Neural Network,Energy-based Model,Entropy,Restricted Boltzmann Machine,">
 <section class=section>
 <div class=container>
@@ -329,7 +329,16 @@ $$</p>
 \end{align}
 $$</p>
 <p>The calculation of $\langle \cdot \rangle_{\text{model}}$ is easier in RBM.</p>
-<p>For first order Markov chains, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.</p>
+<p>For
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/time-series/state-space-models/>
+[[first order Markov chains]]
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>State Space Models</span>
+<span class=tooltip_content>The state space model is an important category of models for sequential data such as time series</span>
+</span>
+</span>
+, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.</p>
 <p>In this simple situation, the distributions can be sampled using
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/monte-carlo/gibbs-sampling/>
 [[Gibbs sampling]]
@@ -586,6 +595,31 @@ Very useful in calculating the partition function
 </div>
 <div style=font-size:80%>
 Gibbs sampling is a sampling method for Bayesian inference and MCMC
+</div>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong><i class="fa-solid fa-arrow-right-from-bracket"></i> Additional Double Backet Links: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/time-series/state-space-models/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">State Space Models
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+The state space model is an important category of models for sequential data such as time series
 </div>
 </div>
 </div>

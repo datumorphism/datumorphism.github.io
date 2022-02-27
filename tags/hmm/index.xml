@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HMM on Datumorphism</title><link>https://datumorphism.leima.is/tags/hmm/</link><description>Recent content in HMM on Datumorphism</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://datumorphism.leima.is/tags/hmm/index.xml" rel="self" type="application/rss+xml"/><item><title>State Space Models</title><link>https://datumorphism.leima.is/wiki/time-series/state-space-models/</link><pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/time-series/state-space-models/</guid><description>State space model is an important category of model for sequential data. Through simple assumptions, state space models can achieve quite complicated distributions.
+To model a sequence, we can use the joint probability of all the nodes,
+$$ p(x_1, x_2, \cdots, x_N), $$
+where $x_i$ are the nodes in the sequence.
+[[PySpark]] Data Processing - (Py)Spark Processing Data using (Py)Spark Orders We can introduce different order of dependencies on the past.
+The simplest model for the sequence is assuming i.i.d..
+Zeroth OrderEach node is independent of each other
+To model the dependencies in the sequence, we can assume a node depends on the previous nodes.</description></item></channel></rss>

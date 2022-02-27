@@ -4,18 +4,18 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title> Wavelet Transform | Datumorphism | L Ma </title>
-<meta name=description content="Transforms that captures the local patterns">
+<title> State Space Models | Datumorphism | L Ma </title>
+<meta name=description content="The state space model is an important category of models for sequential data such as time series">
 <meta name=author content="L Ma">
-<meta property="og:title" content="Wavelet Transform">
-<meta property="og:description" content="Transforms that captures the local patterns">
+<meta property="og:title" content="State Space Models">
+<meta property="og:description" content="The state space model is an important category of models for sequential data such as time series">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://datumorphism.leima.is/wiki/time-series/wavelets/"><meta property="article:section" content="wiki">
-<meta property="article:published_time" content="2020-12-07T00:00:00+00:00">
-<meta property="article:modified_time" content="2020-12-07T00:00:00+00:00">
+<meta property="og:url" content="https://datumorphism.leima.is/wiki/time-series/state-space-models/"><meta property="article:section" content="wiki">
+<meta property="article:published_time" content="2022-02-27T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-02-27T00:00:00+00:00">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-<link rel=canonical href=https://datumorphism.leima.is/wiki/time-series/wavelets/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=canonical href=https://datumorphism.leima.is/wiki/time-series/state-space-models/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
 <link rel=stylesheet href=/css/bulma.css>
 <link rel=stylesheet href=/css/bulma-divider.min.css>
 <link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
@@ -119,11 +119,11 @@ AmNeumarkt
 </header>
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
-<meta itemprop=name content="Wavelet Transform">
-<meta itemprop=description content="Transforms that captures the local patterns"><meta itemprop=datePublished content="2020-12-07T00:00:00+00:00">
-<meta itemprop=dateModified content="2020-12-07T00:00:00+00:00">
-<meta itemprop=wordCount content="164">
-<meta itemprop=keywords content="Transform,Data,Data Science,Time Series,">
+<meta itemprop=name content="State Space Models">
+<meta itemprop=description content="The state space model is an important category of models for sequential data such as time series"><meta itemprop=datePublished content="2022-02-27T00:00:00+00:00">
+<meta itemprop=dateModified content="2022-02-27T00:00:00+00:00">
+<meta itemprop=wordCount content="215">
+<meta itemprop=keywords content="Machine Learning,Time Series,Sequential Data,HMM,">
 <section class=section>
 <div class=container>
 <article class=post>
@@ -140,63 +140,91 @@ AmNeumarkt
 <a href=https://datumorphism.leima.is/wiki/time-series/>Time Series</a>
 </li>
 <li class=active>
-<a href=https://datumorphism.leima.is/wiki/time-series/wavelets/>Wavelet Transform</a>
+<a href=https://datumorphism.leima.is/wiki/time-series/state-space-models/>State Space Models</a>
 </li>
 </ul>
 </nav>
 <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
-Wavelet Transform
+State Space Models
 </h1>
 <h2 class="title is-6 has-text-centered">
 <i class="fas fa-tags" style=margin-right:.5em></i>
-<a href=/tags/transform><span class="tag is-warning is-small is-light">#Transform</span></a>
-<a href=/tags/data><span class="tag is-warning is-small is-light">#Data</span></a>
-<a href=/tags/data-science><span class="tag is-warning is-small is-light">#Data Science</span></a>
+<a href=/tags/machine-learning><span class="tag is-warning is-small is-light">#Machine Learning</span></a>
 <a href=/tags/time-series><span class="tag is-warning is-small is-light">#Time Series</span></a>
+<a href=/tags/sequential-data><span class="tag is-warning is-small is-light">#Sequential Data</span></a>
+<a href=/tags/hmm><span class="tag is-warning is-small is-light">#HMM</span></a>
 </h2>
 </header>
 <div class=columns>
 <div class="column is-8">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<p>In general, given a complete set of function $\psi(x; \tilde x)$, we can decompose a function $F(\tilde x)$</p>
+<p>State space model is an important category of model for sequential data. Through simple assumptions, state space models can achieve quite complicated distributions.</p>
+<p>To model a sequence, we can use the joint probability of all the nodes,</p>
 <p>$$
-F(\tilde x) = \int f(x) \psi(x;\tilde x) dx.
+p(x_1, x_2, \cdots, x_N),
 $$</p>
-<p>The choice of $\psi(x;\tilde x)$ gives us different properties.</p>
-<h2 id=fourier-transform>Fourier Transform</h2>
-<p>Fourier transform is good for stationary analysis since time is not involved in $F(\omega)$.</p>
-<p>$$
-F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt
-$$</p>
-<h2 id=short-time-fourier-transform>Short-time Fourier Transform</h2>
-<p>STFT is a Fourier transform with a moving time window $\tau$,</p>
-<p>$$
-F(\tau,\omega) = \int_{-\infty}^{\infty} f(t) w(t - \tau) e^{-i\omega t} dt.
-$$</p>
-<p>Moving $\tau$ gives us the ability to investigate Fourier components at different time segments (assuming the window function $w(t-\tau)$ is a step function). It is obvious that the STFT can resolve different things with a different window.</p>
-<h2 id=wavelets>Wavelets</h2>
-<p>There are many different choices of wavelets.</p>
-<p>One of the most used one is the Morlet wavelets or Gabor wavelets,</p>
-<p>$$
-\psi(t;\omega) = e^{i 2\pi ft - \frac{1}{2}(t/\sigma)^2 },
-$$</p>
-<p>where
-$$
-\sigma = \frac{n}{2\pi f}.
-$$</p>
+<p>where $x_i$ are the nodes in the sequence.</p>
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/tools/data-processing-spark/>
+[[PySpark]]
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Data Processing - (Py)Spark</span>
+<span class=tooltip_content>Processing Data using (Py)Spark</span>
+</span>
+</span>
+<h2 id=orders>Orders</h2>
+<p>We can introduce different order of dependencies on the past.</p>
+<p>The simplest model for the sequence is assuming i.i.d..</p>
+<figure>
+<img src=../assets/state-space-models/zero-order.jpg alt="Each node is independent of each other"> <figcaption>
+<div class="title is-4">Zeroth Order</div><p>Each node is independent of each other</p>
+</figcaption>
+</figure>
+<p>To model the dependencies in the sequence, we can assume a node depends on the previous nodes. The first-order model assume that node $x_{i+1}$ only depends on node $x_i$.</p>
+<figure>
+<img src=../assets/state-space-models/first-order.jpg alt="Each node depends on the previous node"> <figcaption>
+<div class="title is-4">First Order</div><p>Each node depends on the previous node</p>
+</figcaption>
+</figure>
+<p>To add more complexities, we introduce the second order model.</p>
+<figure>
+<img src=../assets/state-space-models/second-order.jpg alt="Each node depends on the previous two nodes"> <figcaption>
+<div class="title is-4">Second Order</div><p>Each node depends on the previous two nodes</p>
+</figcaption>
+</figure>
+<h2 id=hidden-states>Hidden States</h2>
+<p>For some quantities, such as the GMV of a company, we expect that the dynamics of them are driven by some other factors, which data we may not have.</p>
+<p>We introduce a latent space $\{z_i\}$ which is described by first order process. The visible states $\{x_i\}$ are determined using $p(x_i\vert z_i)$ <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p>
+<figure>
+<img src=../assets/state-space-models/with-hidden-states.jpg> <figcaption>
+<div class="title is-4">With Hidden States</div>
+</figcaption>
+</figure>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=Bishop2006 href=#Bishop2006 style=text-decoration:none>
+<span class="tag is-link is-light">Bishop2006</span>
+</a>
+<a href=https://link.springer.com/gp/book/9780387310732 style=text-decoration:none>Christpher M. Bishop. Pattern Recognition and Machine Learning. Springer-Verlag New York; 2006.</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
 <i class="fas fa-pencil-alt"></i>
 </span>
-Published: <time datetime=2020-12-07T00:00:00+00:00>2020-12-07</time>
+Published: <time datetime=2022-02-27T00:00:00+00:00>2022-02-27</time>
 by <span itemprop=author>L Ma</span>;
 </div></p>
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
-<a href="https://datumorphism.leima.is/wiki/time-series/predictions-time-series-data/?ref=footer" class=pagination-previous>« Predictions Using Time Series Data</a>
-<a class=pagination-next href="https://datumorphism.leima.is/wiki/time-series/state-space-models/?ref=footer">State Space Models »</a>
+<a href="https://datumorphism.leima.is/wiki/time-series/wavelets/?ref=footer" class=pagination-previous>« Wavelet Transform</a>
 </nav>
 </div>
 <div class="column is-4">
@@ -206,7 +234,7 @@ by <span itemprop=author>L Ma</span>;
 <div class=media-content>
 <div class=content>
 <p>
-LM (2020). 'Wavelet Transform', Datumorphism, 12 April. Available at: https://datumorphism.leima.is/wiki/time-series/wavelets/.
+LM (2022). 'State Space Models', Datumorphism, 02 April. Available at: https://datumorphism.leima.is/wiki/time-series/state-space-models/.
 </p>
 </div>
 </div>
@@ -224,9 +252,8 @@ LM (2020). 'Wavelet Transform', Datumorphism, 12 April. Available at: https://da
 <div>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#fourier-transform>Fourier Transform</a></li>
-<li><a href=#short-time-fourier-transform>Short-time Fourier Transform</a></li>
-<li><a href=#wavelets>Wavelets</a></li>
+<li><a href=#orders>Orders</a></li>
+<li><a href=#hidden-states>Hidden States</a></li>
 </ul>
 </nav>
 </div>
@@ -245,9 +272,11 @@ LM (2020). 'Wavelet Transform', Datumorphism, 12 April. Available at: https://da
 <p>
 <strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
-<li class=has-text-weight-bold><a href="https://www.youtube.com/watch?v=kuuUaqAjeoA" style=text-decoration:none>The Wavelet Transform for Beginners</a></li>
-<li class=has-text-weight-bold><a href="https://www.youtube.com/watch?v=LMqTM7EYlqY" style=text-decoration:none>Parameters of Morlet wavelet (time-frequency trade-off)</a></li>
-<li class=has-text-weight-bold><a href=http://gwyddion.net/documentation/user-guide-en/wavelet-transform.html style=text-decoration:none>Wavelet Transform from Gwyddion Documentation</a></li>
+<li class=has-text-weight-bold>
+<a name=Bishop2006 href=#Bishop2006 style=text-decoration:none>
+<span class="tag is-link is-light">Bishop2006</span>
+</a>
+<a href=https://link.springer.com/gp/book/9780387310732 style=text-decoration:none>Christpher M. Bishop. Pattern Recognition and Machine Learning. Springer-Verlag New York; 2006.</a></li>
 </ol>
 </p>
 </div>
@@ -262,7 +291,7 @@ LM (2020). 'Wavelet Transform', Datumorphism, 12 April. Available at: https://da
 <p>
 <strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
-<div>wiki/time-series/wavelets.md</div></li>
+<div>wiki/time-series/state-space-models.md</div></li>
 </ul>
 </p>
 </div>
@@ -276,14 +305,51 @@ LM (2020). 'Wavelet Transform', Datumorphism, 12 April. Available at: https://da
 <p>
 <strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
 <div>
-<a class=box href=https://datumorphism.leima.is/wiki/time-series/short-time-fourier-transform/>
+<a class=box href=https://datumorphism.leima.is/wiki/time-series/>
 <div class=media-content>
 <div class=content>
-<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Short-Time-Fourier-Transform
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Time Series
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-Some quick start material on regular expression.
+Time series analysis with simple models
+</div>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/bayesian/latent-variable-models/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Latent Variable Models
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Latent variable models brings us new insights on identifying the patterns of some sample data.
+</div>
+</div>
+</div>
+</a>
+</div>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+<strong><i class="fa-solid fa-arrow-right-from-bracket"></i> Additional Double Backet Links: </strong>
+<div>
+<a class=box href=https://datumorphism.leima.is/wiki/tools/data-processing-spark/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Data Processing - (Py)Spark
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Processing Data using (Py)Spark
 </div>
 </div>
 </div>
@@ -304,7 +370,7 @@ Some quick start material on regular expression.
 </section>
 </div>
 <div class=navtools>
-<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/time-series/wavelets.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/wiki/time-series/state-space-models.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
 <i class="fas fa-pencil-alt"></i>
 </a>
 <a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
