@@ -3,10 +3,10 @@ title: "Short-Time-Fourier-Transform"
 description: "Some quick start material on regular expression."
 date: 2018-06-20T15:58:49-04:00
 categories:
-- 'Time Series Data'
+  - 'Time Series'
 tags:
-- 'Short-Time-Fourier-Transform'
-- STFT
+  - 'Short-Time-Fourier-Transform'
+  - STFT
 references:
   - link: https://www.coursera.org/learn/practical-time-series-analysis/lecture/pPtHq/course-introduction
     name: "Practical Time Series Analysis @ Coursera"

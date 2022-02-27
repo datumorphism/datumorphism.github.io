@@ -3,9 +3,9 @@ title: "Predictions Using Time Series Data"
 description: "Seasonalities etc"
 date: 2019-06-21
 categories:
-- 'Time Series Data'
+  - 'Time Series'
 tags:
-- 'Seasonality'
+  - 'Seasonality'
 references:
 - name: "Build Facebook's Prophet in PyMC3; Bayesian time series analyis with Generalized Additive Models"
   link: https://www.ritchievink.com/blog/2018/10/09/build-facebooks-prophet-in-pymc3-bayesian-time-series-analyis-with-generalized-additive-models/

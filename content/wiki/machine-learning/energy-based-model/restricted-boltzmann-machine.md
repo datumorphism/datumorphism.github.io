@@ -194,7 +194,7 @@ Using the results from {{< c "wiki/machine-learning/energy-based-model/maxent-en
 
 The calculation of $\langle \cdot \rangle_{\text{model}}$ is easier in RBM.
 
-For first order Markov chains, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.
+For {{< c "wiki/time-series/state-space-models.md" "first order Markov chains" >}}, the visible units do not depend on themselves as there are not direct connections between the visible units. So are the hidden units. That being said, we have $p(x\mid h)$ and $p(h\mid x)$.
 
 In this simple situation, the distributions can be sampled using {{< c "wiki/monte-carlo/gibbs-sampling.md" "Gibbs sampling" >}}. To calculate $p(h\mid x)$, we will clamp our visible units to the data values then infer $h$ which will be used to infer $x$ based on $p(x\mid h)$. Iterate this process we will be able to sample the model, i.e.,
 
