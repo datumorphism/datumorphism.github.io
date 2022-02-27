@@ -12,7 +12,7 @@ To train a model for the predictions, we need to write down the exact models of 
 To model a sequence, we can use the joint probability of all the nodes,
 $$ p(x_1, x_2, \cdots, x_N), $$
 where $x_i$ are the nodes in the sequence.
-[[PySpark]] Data Processing - (Py)Spark Processing Data using (Py)Spark Orders We can introduce different order of dependencies on the past.
+Orders We can introduce different order of dependencies on the past.
 The simplest model for the sequence is assuming i.i.d..
 Zeroth OrderEach node is independent of each other
-To model the dependencies in the sequence, we can assume a node depends on the previous nodes.</description></item></channel></rss>
+To model the dependencies in the sequence, we can assume a node depends on the previous nodes. The first-order model assume that node $x_{i+1}$ only depends on node $x_i$.</description></item></channel></rss>

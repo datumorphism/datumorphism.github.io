@@ -300,10 +300,10 @@ Use comprehensions Use generators</description></item><item><title>State Space M
 To model a sequence, we can use the joint probability of all the nodes,
 $$ p(x_1, x_2, \cdots, x_N), $$
 where $x_i$ are the nodes in the sequence.
-[[PySpark]] Data Processing - (Py)Spark Processing Data using (Py)Spark Orders We can introduce different order of dependencies on the past.
+Orders We can introduce different order of dependencies on the past.
 The simplest model for the sequence is assuming i.i.d..
 Zeroth OrderEach node is independent of each other
-To model the dependencies in the sequence, we can assume a node depends on the previous nodes.</description></item><item><title>The Python Language: Packaging</title><link>https://datumorphism.leima.is/wiki/programming-languages/python/packaging/</link><pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/programming-languages/python/packaging/</guid><description>The official documentation has pages about building python packages1. Torborg also compiled a series of pages and examples about building a package2. In this note, I only provide some tips.
+To model the dependencies in the sequence, we can assume a node depends on the previous nodes. The first-order model assume that node $x_{i+1}$ only depends on node $x_i$.</description></item><item><title>The Python Language: Packaging</title><link>https://datumorphism.leima.is/wiki/programming-languages/python/packaging/</link><pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/programming-languages/python/packaging/</guid><description>The official documentation has pages about building python packages1. Torborg also compiled a series of pages and examples about building a package2. In this note, I only provide some tips.
 Private Python Packages We can easily setup a private pypi service (e.g., pypicloud).
 Install Packages from Private Pypi To install packages inline, use
 pip install -i https://$PYPI_USER:$PYPI_PWD@your.pypi.url/simple/ durst==0.0.5 To install packages from requirements.txt use,
