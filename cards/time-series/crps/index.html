@@ -4,24 +4,18 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title> Graph Global Overlap Measure: Katz Index | Datumorphism | L Ma </title>
+<title> Continuous Ranked Probability Score - CRPS | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
-<meta property="og:title" content="Graph Global Overlap Measure: Katz Index">
-<meta property="og:description" content="The Katz index is
-$$ \mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v], $$
-where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$.
-Do not confuse power with contravariant indices
- For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation.
-But here ${}^{i}$ means to the $i$th power.
-  The index is proved to be the following
-$$ \mathbf S_{\text{Katz}} = (\mathbf I - \beta \mathbf A)^{-1} - \mathbf I.">
+<meta property="og:title" content="Continuous Ranked Probability Score - CRPS">
+<meta property="og:description" content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.
+f-Divergence   The f-divergence is defined as1 $$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$ where $p$ and $q$ are two densities and $\mu$ is a reference distribution. Requirements on the generating function The generating function $f$ is required to be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence $$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://datumorphism.leima.is/cards/graph/graph-global-overlap-katz-index/"><meta property="article:section" content="cards">
-<meta property="article:published_time" content="2021-09-26T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-09-26T00:00:00+00:00">
+<meta property="og:url" content="https://datumorphism.leima.is/cards/time-series/crps/"><meta property="article:section" content="cards">
+<meta property="article:published_time" content="2022-03-18T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-03-18T00:00:00+00:00">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-140452515-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-<link rel=canonical href=https://datumorphism.leima.is/cards/graph/graph-global-overlap-katz-index/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=canonical href=https://datumorphism.leima.is/cards/time-series/crps/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
 <link rel=stylesheet href=/css/bulma.css>
 <link rel=stylesheet href=/css/bulma-divider.min.css>
 <link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
@@ -125,18 +119,12 @@ AmNeumarkt
 </header>
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
-<meta itemprop=name content="Graph Global Overlap Measure: Katz Index">
-<meta itemprop=description content="The Katz index is
-$$ \mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v], $$
-where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$.
-Do not confuse power with contravariant indices
- For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation.
-But here ${}^{i}$ means to the $i$th power.
-  The index is proved to be the following
-$$ \mathbf S_{\text{Katz}} = (\mathbf I - \beta \mathbf A)^{-1} - \mathbf I."><meta itemprop=datePublished content="2021-09-26T00:00:00+00:00">
-<meta itemprop=dateModified content="2021-09-26T00:00:00+00:00">
-<meta itemprop=wordCount content="253">
-<meta itemprop=keywords content="Graph,Basics,Clustering,">
+<meta itemprop=name content="Continuous Ranked Probability Score - CRPS">
+<meta itemprop=description content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.
+f-Divergence   The f-divergence is defined as1 $$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$ where $p$ and $q$ are two densities and $\mu$ is a reference distribution. Requirements on the generating function The generating function $f$ is required to be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence $$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu."><meta itemprop=datePublished content="2022-03-18T00:00:00+00:00">
+<meta itemprop=dateModified content="2022-03-18T00:00:00+00:00">
+<meta itemprop=wordCount content="221">
+<meta itemprop=keywords content="Time Series,">
 <section class=section>
 <div class=container>
 <article class=post>
@@ -150,59 +138,62 @@ $$ \mathbf S_{\text{Katz}} = (\mathbf I - \beta \mathbf A)^{-1} - \mathbf I."><m
 <a href=https://datumorphism.leima.is/cards/>Cards</a>
 </li>
 <li>
-<a href=https://datumorphism.leima.is/cards/graph/>Graph</a>
+<a href=https://datumorphism.leima.is/cards/time-series/>Time Series</a>
 </li>
 <li class=active>
-<a href=https://datumorphism.leima.is/cards/graph/graph-global-overlap-katz-index/>Graph Global Overlap Measure: Katz Index</a>
+<a href=https://datumorphism.leima.is/cards/time-series/crps/>Continuous Ranked Probability Score - CRPS</a>
 </li>
 </ul>
 </nav>
 <h1 class="post-title has-text-centered is-size-1" itemprop="name headline">
-Graph Global Overlap Measure: Katz Index
+Continuous Ranked Probability Score - CRPS
 </h1>
 <h2 class="title is-6 has-text-centered">
 <i class="fas fa-tags" style=margin-right:.5em></i>
-<a href=/tags/graph><span class="tag is-warning is-small is-light">#Graph</span></a>
-<a href=/tags/basics><span class="tag is-warning is-small is-light">#Basics</span></a>
-<a href=/tags/clustering><span class="tag is-warning is-small is-light">#Clustering</span></a>
+<a href=/tags/time-series><span class="tag is-warning is-small is-light">#Time Series</span></a>
 </h2>
 </header>
 <div class=columns>
 <div class="column is-8">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<p>The Katz index is</p>
-<p>$$
-\mathbf S_{\text{Katz}}[u,v] = \sum_{i=1}^\infty \beta^i \mathbf A^i[u, v],
-$$</p>
-<p>where $\mathbf A^i[u, v]$ is the matrix $\mathbf A$ to the $i$th power. Some for $\beta^i$. The Katz index describes the similarity between of node $u$ and node $v$.</p>
-<article class="message is-warning is-light">
-<div class=message-header>
-<p>Do not confuse power with contravariant indices</p>
-</div>
-<div class=message-body>
-<p>For readers familiar with tensor notations, it might be confusing. We some times use contravariant indices on the top right of the tensor notation.</p>
-<p>But here ${}^{i}$ means to the $i$th power.</p>
-</div>
-</article>
-<p>The index is proved to be the following</p>
-<p>$$
-\mathbf S_{\text{Katz}} = (\mathbf I - \beta \mathbf A)^{-1} - \mathbf I.
-$$</p>
-<h2 id=parameter-beta>Parameter $\beta$</h2>
-<p>The parameter $\beta$ is the punishment for path length. If $\beta &lt; 1$, each increase in power will make the whole term $\beta^i A^i$ smaller. If a path between $u$ and $v$ is longer, i.e., $i$ is larger, then the weight $\beta^i$ is smaller.</p>
-<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<p>The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.</p>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/information/f-divergence/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
 <div class=media-content>
 <div class=content>
 <div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">
-Graph Adjacency Matrix
+f-Divergence
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice and clear examples on wikipedia1, for example,
-$$ \begin{pmatrix} 2 & 1 & 0 & 0 & 1 & 0\\ 1 & 0 & 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0 & 1 & 1\\ 1 & 1 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 \end{pmatrix} $$
-for the graph
-Public Domain, Link
+The f-divergence is defined as1
+$$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$
+where $p$ and $q$ are two densities and $\mu$ is a reference distribution.
+Requirements on the generating function
+The generating function $f$ is required to
+be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence
+$$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu. \end{align} $$
+For more special cases of f-divergence, please refer to wikipedia1.
+</div>
+</div>
+</div>
+</a>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/information/f-divergence/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">
+f-Divergence
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+The f-divergence is defined as1
+$$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$
+where $p$ and $q$ are two densities and $\mu$ is a reference distribution.
+Requirements on the generating function
+The generating function $f$ is required to
+be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence
+$$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu. \end{align} $$
+For more special cases of f-divergence, please refer to wikipedia1.
 </div>
 </div>
 </div>
@@ -212,13 +203,11 @@ Public Domain, Link
 <span class=icon>
 <i class="fas fa-pencil-alt"></i>
 </span>
-Published: <time datetime=2021-09-26T00:00:00+00:00>2021-09-26</time>
+Published: <time datetime=2022-03-18T00:00:00+00:00>2022-03-18</time>
 by <span itemprop=author>L Ma</span>;
 </div></p>
 <div class=is-divider></div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
-<a href="https://datumorphism.leima.is/cards/graph/graph-convolution-operator/?ref=footer" class=pagination-previous>« Graph Convolution Operator</a>
-<a class=pagination-next href="https://datumorphism.leima.is/cards/graph/graph-global-overlap-leicht-holme-newman-similarity/?ref=footer">Graph Global Overlap Measure: Leicht-Holme-Newman... »</a>
 </nav>
 </div>
 <div class="column is-4">
@@ -229,34 +218,13 @@ by <span itemprop=author>L Ma</span>;
 <div class=content>
 <p>
 L Ma
-(2021). 'Graph Global Overlap Measure: Katz Index', Datumorphism, 09 April. Available at: https://datumorphism.leima.is/cards/graph/graph-global-overlap-katz-index/.
+(2022). 'Continuous Ranked Probability Score - CRPS', Datumorphism, 03 April. Available at: https://datumorphism.leima.is/cards/time-series/crps/.
 </p>
 </div>
 </div>
 </article>
 </div>
 <style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
-<div class=is-divider data-content=ToC></div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<details>
-<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
-<div>
-<div>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#parameter-beta>Parameter $\beta$</a></li>
-</ul>
-</nav>
-</div>
-</div>
-</details>
-</div>
-</div>
-</article>
-</div>
 <script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
 <div class=is-divider data-content=REFERENCES></div>
 <div class="box is-size-7">
@@ -266,16 +234,7 @@ L Ma
 <p>
 <strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
-<li class=has-text-weight-bold>
-<a name=Katz1953 href=#Katz1953 style=text-decoration:none>
-<span class="tag is-link is-light">Katz1953</span>
-</a>
-<a href=https://link.springer.com/article/10.1007%2FBF02289026 style=text-decoration:none>Katz L. A new status index derived from sociometric analysis. Psychometrika. 1953;18: 39–43. doi:10.1007/BF02289026</a></li>
-<li class=has-text-weight-bold>
-<a name=Hamilton2020 href=#Hamilton2020 style=text-decoration:none>
-<span class="tag is-link is-light">Hamilton2020</span>
-</a>
-<a href=https://www.morganclaypool.com/doi/10.2200/S01045ED1V01Y202009AIM046 style=text-decoration:none>Hamilton WL. Graph Representation Learning. Morgan & Claypool Publishers; 2020. pp. 1–159. doi:10.2200/S01045ED1V01Y202009AIM046</a></li>
+<li class=has-text-weight-bold><a href=http://dx.doi.org/10.1175/1520-0434%282000%29015%3C0559:DOTCRP%3E2.0.CO;2 style=text-decoration:none>Hersbach H. Decomposition of the Continuous Ranked Probability Score for Ensemble Prediction Systems. Weather Forecast. 2000;15: 559–570. doi:10.1175/1520-0434(2000)015&lt;0559:DOTCRP>2.0.CO;2</a></li>
 </ol>
 </p>
 </div>
@@ -290,7 +249,7 @@ L Ma
 <p>
 <strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
 <ul><li style=list-style:none>
-<div>cards/graph/graph-global-overlap-katz-index.md</div></li>
+<div>cards/time-series/crps.md</div></li>
 </ul>
 </p>
 </div>
@@ -302,53 +261,17 @@ L Ma
 <div class=media-content>
 <div class=content>
 <p>
-<strong><i class="fa-solid fa-turn-down"></i> Dynamic Links from: </strong>
+<strong><i class="fa-solid fa-arrow-right-from-bracket"></i> Additional Double Backet Links: </strong>
 <div>
-<a class=box href=https://datumorphism.leima.is/wiki/graph/basics/statistics-of-graphs/>
+<a class=box href=https://datumorphism.leima.is/cards/information/f-divergence/>
 <div class=media-content>
 <div class=content>
-<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Statistics of Graphs
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">f-Divergence
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-Local Statistics Node Degree Node Degree Node degree of a node $u$ $$ d_u = \sum_{v\in \mathcal V} …
-</div>
-</div>
-</div>
-</a>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-global-overlap-leicht-holme-newman-similarity/>
-<div class=media-content>
-<div class=content>
-<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Graph Global Overlap Measure: Leicht-Holme-Newman Index
-<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
-</div>
-<div style=font-size:80%>
-From Katz Index to LHN Index [[Katz Index]] Graph Global Overlap Measure: Katz Index The Katz …
-</div>
-</div>
-</div>
-</a>
-</div>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<p>
-<strong><i class="fa-solid fa-turn-up"></i> Links to: </strong>
-<div>
-<a class=box href=https://datumorphism.leima.is/cards/graph/graph-adjacency-matrix/>
-<div class=media-content>
-<div class=content>
-<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Graph Adjacency Matrix
-<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
-</div>
-<div style=font-size:80%>
-A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. There are some nice …
+The f-divergence is defined as1
+$$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm …
 </div>
 </div>
 </div>
@@ -369,7 +292,7 @@ A graph $\mathcal G$ can be represented with an adjacency matrix $\mathbf A$. Th
 </section>
 </div>
 <div class=navtools>
-<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/cards/graph/graph-global-overlap-katz-index.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/cards/time-series/crps.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
 <i class="fas fa-pencil-alt"></i>
 </a>
 <a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
