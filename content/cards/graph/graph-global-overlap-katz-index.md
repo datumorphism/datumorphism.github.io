@@ -46,4 +46,4 @@ The index is proved to be the following
 
 The parameter $\beta$ is the punishment for path length. If $\beta < 1$, each increase in power will make the whole term $\beta^i A^i$ smaller. If a path between $u$ and $v$ is longer, i.e., $i$ is larger, then the weight $\beta^i$ is smaller.
 
-{{< e ref="cards/graph/graph-adjacency-matrix.md" isfull="true" truncate=800 >}}
+{{< e "cards/graph/graph-adjacency-matrix.md" >}}

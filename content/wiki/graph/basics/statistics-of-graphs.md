@@ -32,7 +32,7 @@ links:
 
 ### Node Degree
 
-{{< e ref="cards/graph/node-degree.md" >}}
+{{< e "cards/graph/node-degree.md" >}}
 
 
 ### Node Centrality
@@ -62,7 +62,7 @@ Using the statistics of the local statistics, e.g., distribution of node degrees
 
 ### Weisfeiler-Lehmen Kernel
 
-{{< e ref="cards/graph/graph-weisfeiler-lehman-kernel.md" >}}
+{{< e "cards/graph/graph-weisfeiler-lehman-kernel.md" >}}
 
 
 
