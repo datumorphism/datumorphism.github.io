@@ -7,7 +7,7 @@
 <title> Continuous Ranked Probability Score - CRPS | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Continuous Ranked Probability Score - CRPS">
-<meta property="og:description" content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.
+<meta property="og:description" content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without knowledge about the true distributions of the data.
 Definition CRPS is defined as1
 $$ CRPS(P, x_a) = \int_{-\infty}^\infty \lVert P(x) - H(x - x_a) \rVert_2 dx, $$
 where
@@ -124,14 +124,14 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Continuous Ranked Probability Score - CRPS">
-<meta itemprop=description content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.
+<meta itemprop=description content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without knowledge about the true distributions of the data.
 Definition CRPS is defined as1
 $$ CRPS(P, x_a) = \int_{-\infty}^\infty \lVert P(x) - H(x - x_a) \rVert_2 dx, $$
 where
  $x_a$ is the true value of $x$, P(x) is our proposed cumulative distribution for $x$, $H(x)$ is the Heaviside step function $$ H(x) = \begin{cases} 1, &\qquad x=0\\ 0, &\qquad x\leq 0\\ \end{cases} $$
  $\lVert \cdot \rVert_2$ is the L2 norm.  Explain it The formula looks abstract on first sight, but it becomes crystal clear once we understand it."><meta itemprop=datePublished content="2022-03-18T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-03-18T00:00:00+00:00">
-<meta itemprop=wordCount content="594">
+<meta itemprop=wordCount content="596">
 <meta itemprop=keywords content="Time Series,">
 <section class=section>
 <div class=container>
@@ -165,7 +165,7 @@ Continuous Ranked Probability Score - CRPS
 <div class="column is-8">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<p>The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.</p>
+<p>The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without knowledge about the true distributions of the data.</p>
 <h2 id=definition>Definition</h2>
 <p>CRPS is defined as<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
 <p>$$
