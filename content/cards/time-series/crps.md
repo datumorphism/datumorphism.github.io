@@ -12,6 +12,9 @@ references:
   - name: "Gouttes A, Rasul K, Koren M, Stephan J, Naghibi T. Probabilistic Time Series Forecasting with Implicit Quantile Networks. arXiv [cs.LG]. 2021. doi:10.1109/icdmw.2017.19"
     link: "https://arxiv.org/abs/2107.03743"
     key: "Gouttes2021"
+  - name: "Gebetsberger M, Messner JW, Mayr GJ, Zeileis A. Estimation Methods for Nonhomogeneous Regression Models: Minimum Continuous Ranked Probability Score versus Maximum Likelihood. Mon Weather Rev. 2018;146: 4323–4338. doi:10.1175/MWR-D-17-0364.1"
+    link: "https://journals.ametsoc.org/view/journals/mwre/146/12/mwr-d-17-0364.1.xml"
+    key: "Gebetsberger2018"
 ---
 
 
@@ -77,6 +80,10 @@ Compared to {{< c "wiki/machine-learning/basics/kl-divergence.md" >}} or more ge
 
 {{< e "wiki/machine-learning/basics/kl-divergence.md" >}}
 
+## Compared to Likelihood
+
+Gebetsberger et al found that CRPS is more robust but produces similar results if we have found a good assumption about the data distribution[^Gebetsberger2018].
+
 
 ## Applications
 
@@ -88,4 +95,4 @@ One quite interesting application of the CRPS is to write down the loss for an t
 
 [^Hersbach2000]: {{< cite key="Hersbach2000" >}}
 [^Gouttes2021]: {{< cite key="Gouttes2021" >}}
-
+[^Gebetsberger2018]: {{< cite key="Gebetsberger2018" >}}
