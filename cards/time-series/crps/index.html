@@ -8,7 +8,11 @@
 <meta name=author content="L Ma">
 <meta property="og:title" content="Continuous Ranked Probability Score - CRPS">
 <meta property="og:description" content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.
-f-Divergence   The f-divergence is defined as1 $$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$ where $p$ and $q$ are two densities and $\mu$ is a reference distribution. Requirements on the generating function The generating function $f$ is required to be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence $$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu.">
+Definition CRPS is defined as1
+$$ CRPS(P, x_a) = \int_{-\infty}^\infty \lVert P(x) - H(x - x_a) \rVert_2 dx, $$
+where
+ $x_a$ is the true value of $x$, P(x) is our proposed cumulative distribution for $x$, $H(x)$ is the Heaviside step function $$ H(x) = \begin{cases} 1, &\qquad x=0\\ 0, &\qquad x\leq 0\\ \end{cases} $$
+ $\lVert \cdot \rVert_2$ is the L2 norm.  Explain it The formula looks abstract on first sight, but it becomes crystal clear once we understand it.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/cards/time-series/crps/"><meta property="article:section" content="cards">
 <meta property="article:published_time" content="2022-03-18T00:00:00+00:00">
@@ -121,9 +125,13 @@ AmNeumarkt
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Continuous Ranked Probability Score - CRPS">
 <meta itemprop=description content="The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.
-f-Divergence   The f-divergence is defined as1 $$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$ where $p$ and $q$ are two densities and $\mu$ is a reference distribution. Requirements on the generating function The generating function $f$ is required to be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence $$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu."><meta itemprop=datePublished content="2022-03-18T00:00:00+00:00">
+Definition CRPS is defined as1
+$$ CRPS(P, x_a) = \int_{-\infty}^\infty \lVert P(x) - H(x - x_a) \rVert_2 dx, $$
+where
+ $x_a$ is the true value of $x$, P(x) is our proposed cumulative distribution for $x$, $H(x)$ is the Heaviside step function $$ H(x) = \begin{cases} 1, &\qquad x=0\\ 0, &\qquad x\leq 0\\ \end{cases} $$
+ $\lVert \cdot \rVert_2$ is the L2 norm.  Explain it The formula looks abstract on first sight, but it becomes crystal clear once we understand it."><meta itemprop=datePublished content="2022-03-18T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-03-18T00:00:00+00:00">
-<meta itemprop=wordCount content="221">
+<meta itemprop=wordCount content="537">
 <meta itemprop=keywords content="Time Series,">
 <section class=section>
 <div class=container>
@@ -158,6 +166,81 @@ Continuous Ranked Probability Score - CRPS
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
 <p>The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.</p>
+<h2 id=definition>Definition</h2>
+<p>CRPS is defined as<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p>$$
+CRPS(P, x_a) = \int_{-\infty}^\infty \lVert P(x) - H(x - x_a) \rVert_2 dx,
+$$</p>
+<p>where</p>
+<ul>
+<li>$x_a$ is the true value of $x$,</li>
+<li>P(x) is our proposed cumulative distribution for $x$,</li>
+<li>$H(x)$ is the Heaviside step function
+<p>$$
+H(x) = \begin{cases}
+1, &\qquad x=0\\
+  0, &\qquad x\leq 0\\
+\end{cases}
+$$</p>
+</li>
+<li>$\lVert \cdot \rVert_2$ is the L2 norm.</li>
+</ul>
+<h2 id=explain-it>Explain it</h2>
+<p>The formula looks abstract on first sight, but it becomes crystal clear once we understand it.</p>
+<p>Note that the distributions that corresponds to a Heaviside CDF is the delta function $\delta(x-x_a)$. What this score is calculating is the difference between our distribution and a delta function. If we have a model that minimizes CRPS, then we are looking for a distribution that is close to the delta function $\delta(x-x_a)$. In other words, we want our distribution to be large around $x_a$.</p>
+<p>To illustrate what the integrand $\lVert P(x) - H(x - x_a) \rVert_2$ means, we consider several scenarios.</p>
+<figure>
+<img src=../assets/crps/crps-p-reach-1-faster.jpg alt="When the proposed CDF $P(x)$ is reaching 1 faster"> <figcaption>
+<p>When the proposed CDF $P(x)$ is reaching 1 faster</p>
+</figcaption>
+</figure>
+<figure>
+<img src=../assets/crps/crps-p-reach-1-slower.jpg alt="When the proposed CDF $P(x)$ is reaching 1 slower"> <figcaption>
+<p>When the proposed CDF $P(x)$ is reaching 1 slower</p>
+</figcaption>
+</figure>
+<figure>
+<img src=../assets/crps/crps-p-approach-heaviside.jpg alt="When the proposed CDF $P(x)$ is close to the Heaviside function"> <figcaption>
+<p>When the proposed CDF $P(x)$ is close to the Heaviside function</p>
+</figcaption>
+</figure>
+<figure>
+<img src=../assets/crps/crps-dispersed.jpg alt="When the proposed CDF $P(x)$ is dispersed around $x_a$"> <figcaption>
+<p>When the proposed CDF $P(x)$ is dispersed around $x_a$</p>
+</figcaption>
+</figure>
+<p>The shade areas determines the integrand of the integral in CRPS. The only way to get a small score is to choose a distribution that is focused around $x_a$.</p>
+<figure>
+<img src=../assets/crps/crps-p-approach-heaviside-corresponding-density.jpg alt="densities of $P(x)$ and $H(x-x_a)$"> <figcaption>
+<p>densities of $P(x)$ and $H(x-x_a)$</p>
+</figcaption>
+</figure>
+<h2 id=compared-to-f-divergence>Compared to f-Divergence</h2>
+<p>Compared to
+<span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
+[[KL Divergence]]
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>KL Divergence</span>
+<span class=tooltip_content>Kullback–Leibler divergence indicates the differences between two distributions</span>
+</span>
+</span>
+or more generally
+<span class=tooltip><a href=https://datumorphism.leima.is/cards/information/f-divergence/>
+[[f-Divergence]]
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>f-Divergence</span>
+<span class=tooltip_content>The f-divergence is defined as1
+$$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$
+where $p$ and $q$ are two densities and $\mu$ is a reference distribution.
+Requirements on the generating function
+The generating function $f$ is required to
+be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence
+$$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm …</span>
+</span>
+</span>
+, CRPS is comparing our proposed CDF to the Heaviside CDF.</p>
 <a class="box is-light is-light" href=https://datumorphism.leima.is/cards/information/f-divergence/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
 <div class=media-content>
 <div class=content>
@@ -178,26 +261,42 @@ For more special cases of f-divergence, please refer to wikipedia1.
 </div>
 </div>
 </a>
-<a class="box is-light is-light" href=https://datumorphism.leima.is/cards/information/f-divergence/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
+<a class="box is-light is-light" href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/ style=width:90%;margin-left:auto;margin-right:auto;margin-top:2em;margin-bottom:2em>
 <div class=media-content>
 <div class=content>
 <div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">
-f-Divergence
+KL Divergence
 <span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
 </div>
 <div style=font-size:80%>
-The f-divergence is defined as1
-$$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm d\mu, $$
-where $p$ and $q$ are two densities and $\mu$ is a reference distribution.
-Requirements on the generating function
-The generating function $f$ is required to
-be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence
-$$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu. \end{align} $$
-For more special cases of f-divergence, please refer to wikipedia1.
+Kullback–Leibler divergence indicates the differences between two distributions
 </div>
 </div>
 </div>
 </a>
+<h2 id=applications>Applications</h2>
+<p>One quite interesting application of the CRPS is to write down the loss for an the quantile function<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=Hersbach2000 href=#Hersbach2000 style=text-decoration:none>
+<span class="tag is-link is-light">Hersbach2000</span>
+</a>
+<a href=http://dx.doi.org/10.1175/1520-0434%282000%29015%3C0559:DOTCRP%3E2.0.CO;2 style=text-decoration:none>Hersbach H. Decomposition of the Continuous Ranked Probability Score for Ensemble Prediction Systems. Weather Forecast. 2000;15: 559–570. doi:10.1175/1520-0434(2000)015&lt;0559:DOTCRP>2.0.CO;2</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>
+<a name=Gouttes2021 href=#Gouttes2021 style=text-decoration:none>
+<span class="tag is-link is-light">Gouttes2021</span>
+</a>
+<a href=https://arxiv.org/abs/2107.03743 style=text-decoration:none>Gouttes A, Rasul K, Koren M, Stephan J, Naghibi T. Probabilistic Time Series Forecasting with Implicit Quantile Networks. arXiv [cs.LG]. 2021. doi:10.1109/icdmw.2017.19</a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -225,6 +324,30 @@ L Ma
 </article>
 </div>
 <style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
+<div class=is-divider data-content=ToC></div>
+<div class="box is-size-7">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<details>
+<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
+<div>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#definition>Definition</a></li>
+<li><a href=#explain-it>Explain it</a></li>
+<li><a href=#compared-to-f-divergence>Compared to f-Divergence</a></li>
+<li><a href=#applications>Applications</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
 <script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
 <div class=is-divider data-content=REFERENCES></div>
 <div class="box is-size-7">
@@ -234,7 +357,16 @@ L Ma
 <p>
 <strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
 <ol>
-<li class=has-text-weight-bold><a href=http://dx.doi.org/10.1175/1520-0434%282000%29015%3C0559:DOTCRP%3E2.0.CO;2 style=text-decoration:none>Hersbach H. Decomposition of the Continuous Ranked Probability Score for Ensemble Prediction Systems. Weather Forecast. 2000;15: 559–570. doi:10.1175/1520-0434(2000)015&lt;0559:DOTCRP>2.0.CO;2</a></li>
+<li class=has-text-weight-bold>
+<a name=Hersbach2000 href=#Hersbach2000 style=text-decoration:none>
+<span class="tag is-link is-light">Hersbach2000</span>
+</a>
+<a href=http://dx.doi.org/10.1175/1520-0434%282000%29015%3C0559:DOTCRP%3E2.0.CO;2 style=text-decoration:none>Hersbach H. Decomposition of the Continuous Ranked Probability Score for Ensemble Prediction Systems. Weather Forecast. 2000;15: 559–570. doi:10.1175/1520-0434(2000)015&lt;0559:DOTCRP>2.0.CO;2</a></li>
+<li class=has-text-weight-bold>
+<a name=Gouttes2021 href=#Gouttes2021 style=text-decoration:none>
+<span class="tag is-link is-light">Gouttes2021</span>
+</a>
+<a href=https://arxiv.org/abs/2107.03743 style=text-decoration:none>Gouttes A, Rasul K, Koren M, Stephan J, Naghibi T. Probabilistic Time Series Forecasting with Implicit Quantile Networks. arXiv [cs.LG]. 2021. doi:10.1109/icdmw.2017.19</a></li>
 </ol>
 </p>
 </div>
@@ -272,6 +404,18 @@ L Ma
 <div style=font-size:80%>
 The f-divergence is defined as1
 $$ \operatorname{D}_f = \int f\left(\frac{p}{q}\right) q\mathrm …
+</div>
+</div>
+</div>
+</a>
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/basics/kl-divergence/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">KL Divergence
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Kullback–Leibler divergence indicates the differences between two distributions
 </div>
 </div>
 </div>
