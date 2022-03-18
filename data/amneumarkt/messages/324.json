@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 324,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-03-07 08:35:20+00:00",
+    "message": "#ml \n\nI share similar thoughts with the top comment by theXYZT.\n\nIf I may add to her comment, I would say:\nEmbrace the new approach even if it shatters our philosophy.\nBut it's not only about what happened in the history of physics. It's about what we believe in science.\nIn some sense, the purpose of interpretability and parsimony is for human to come up with better ideas and making us happy. If a universal model is working well enough and can be improved gradually already, interpretability is not as important as predictability.\nThis is more or less the first principle of science, if I may say so.\n\nhttps://www.reddit.com/r/MachineLearning/comments/t8fn7m/d_are_we_at_the_end_of_an_era_where_ml_could_be/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547165608184246,
+            "url": "https://www.reddit.com/r/MachineLearning/comments/t8fn7m/d_are_we_at_the_end_of_an_era_where_ml_could_be/",
+            "display_url": "reddit.com/r/MachineLearning/comments/t8fn7m/d_are_we_at_the_end_of_an_era_where_ml_could_be",
+            "hash": 0,
+            "type": "article",
+            "site_name": "reddit",
+            "title": "[D] Are we at the end of an era where ML could be explained...",
+            "description": "Some ML models can be explained rigorously using mathematics, e.g., linear/polynomial/logistic regression and some neural networks. We have full...",
+            "photo": {
+                "_": "Photo",
+                "id": 5950608091630382459,
+                "access_hash": 7675015938773495597,
+                "file_reference": "b'\\x00b4\\xd9\\xe3\\tA\\xc3\\xfa\\x1a\\x9d\\xc7X\\x80`\\x9e\\xe2\\x19\\xdb\\xfb\\x1f'",
+                "date": "2022-01-02 22:54:09+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xaa\\xb2\\xdd(\\xc8A\\x9f~\\xd4\\x97\\xb2\\xed]\\x83\\xa9\\xeb\\xf4\\xaaY\\xacg6\\xb4F\\xf4\\xe9]]\\x96~\\xd7&{~U4Wj\\xdc8\\xda}{U% )b3\\xd0\\x0c\\xd3\\x9d\\xa21\\x8d\\xab\\x86\\xefP\\xa5%\\xad\\xcbp\\x8b\\xd2\\xc6\\xa5\\x15R\\xca]\\xc0\\xa1\\xea:}(\\xae\\x88\\xbb\\xab\\x9c\\xd2\\x8b\\x8b\\xb1^\\xf8\\x9f\\xb4s\\xd3\\x02\\xa6H\\xe1\\x16\\xe2P\\x85\\xf8\\xfc\\xe95\\x08w \\x91z\\xaf_\\xa5Aky\\xe5/\\x96\\xe3\\xe5\\xecGj\\xce\\xd6\\x93\\xb9\\xd0\\xaf*k\\x97\\xa1sz\\x8b\\x7f3\\xca\\xe3\\xfb\\xb8\\xa8\\xde8M\\xb9\\x94\\xa6\\xc2G\\xe5I\\xf6\\xb4\\xff\\x00\\x9f\\x81\\x8f\\xfa\\xe6sP]^y\\xa3b\\x0f\\x93\\xb9=\\xe9\\xbd\\x89\\x84%}\\x07X\\x9c\\xdc~\\x06\\x8a\\x9bO\\x87jy\\x8d\\xd5\\xba}(\\xa7\\x05dMV\\x9c\\x8b\\xbd\\xaa\\x8c\\xfaz\\xb9\\xccGi\\xf4=(\\xa2\\xa9\\xab\\x99\\xc6n/B\\xb7\\xf6|\\xf9\\xc7\\xcb\\xf5\\xcdY\\x83OT\\xf9\\xa5;\\xcf\\xa0\\xe9E\\x14\\x94Q\\xac\\xabM\\xa2\\xf5\\x14QTb\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 256,
+                        "h": 256,
+                        "size": 10494
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 606,
+            "length": 105
+        }
+    ],
+    "views": 133,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1509,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-03-07 08:49:15+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

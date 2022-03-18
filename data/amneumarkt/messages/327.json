@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 327,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-03-18 19:11:14+00:00",
+    "message": "#ml \n\n(WARNING: Promoting of my notes. This is a test.)\n\nI learned something very interesting today: CRPS.\n\nSuppose we would like to approximate the quantile function of some data points. \nIf we assume a parametric model of the quantile function, e.g., Q(x|theta), how do we find the parameters using the given dataset? \nNaturally, we need a loss function to compare our quantile function to the datapoints. CRPS is a robust choice. I have seen it being used in several papers in time series forecasting.\n\nYou can find more details here:\nhttps://datumorphism.leima.is/cards/time-series/crps/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1332579906526813665,
+            "url": "https://datumorphism.leima.is/cards/time-series/crps/",
+            "display_url": "datumorphism.leima.is/cards/time-series/crps",
+            "hash": 0,
+            "type": "article",
+            "site_name": "datumorphism.leima.is",
+            "title": "Continuous Ranked Probability Score - CRPS",
+            "description": "The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.\nf-Divergence   The f-divergence is defined as1 $$ \\operatorname{D}_f = \\int f\\left(\\frac{p}{q}\\right) q\\mathrm d\\mu, $$ where $p$ and $q$ are two densities and $\\mu$ is a reference distribution. Requirements on the generating function The generating function $f$ is required to be convex, and $f(1) =0$. For $f(x) = x \\log x$ with $x=p/q$, f-divergence is reduced to the KL divergence $$ \\begin{align} &\\int f\\left(\\frac{p}{q}\\right) q\\mathrm d\\mu \\\\ =& \\int \\frac{p}{q} \\log \\left( \\frac{p}{q} \\right) \\mathrm d\\mu \\\\ =& \\int p \\log \\left( \\frac{p}{q} \\right) \\mathrm d\\mu.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "L Ma",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 538,
+            "length": 53
+        }
+    ],
+    "views": 3,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1509,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-03-18 19:11:17+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

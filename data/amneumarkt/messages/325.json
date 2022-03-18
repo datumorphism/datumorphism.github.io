@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 325,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-03-15 11:13:09+00:00",
+    "message": "#visualization \n\nPlease click on the link and watch the animation. It's 3D.\n\n------\n\n\"The clever people at @NASA have created this deceptively simple yet highly effective data visualisation showing monthly global temperatures between 1880-2021\".: nextfuckinglevel\nhttps://www.reddit.com/r/nextfuckinglevel/comments/tejc0l/the_clever_people_at_nasa_have_created_this/?utm_source=share&utm_medium=ios_app&utm_name=iossmf",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547165701515819,
+            "url": "https://www.reddit.com/r/nextfuckinglevel/comments/tejc0l/the_clever_people_at_nasa_have_created_this/?utm_source=share&utm_medium=ios_app&utm_name=iossmf",
+            "display_url": "reddit.com/r/nextfuckinglevel/comments/tejc0l/the_clever_people_at_nasa_have_created_this",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "reddit",
+            "title": "The clever people at @NASA have created this deceptively simple...",
+            "description": "Posted in r/nextfuckinglevel by u/rdias002 \u2022 1,001 points and 96 comments",
+            "photo": {
+                "_": "Photo",
+                "id": 5874214792531651988,
+                "access_hash": -1859437663966864311,
+                "file_reference": "b'\\x00b4\\xd9\\xe3\\x00\\xacAJ\"\\xd3y\\x14\\x1f\\x88\\xa7:\\xc5+Q\\x9f'",
+                "date": "2022-03-15 07:31:34+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xc7\\x03=\\xc5X\\xb5\\xb5{\\x86!\\x0e\\xd5\\x1dZ\\xa0\\xc6\\x01\\xcf\\xa5jNM\\xa5\\x84q\\xa7\\x05\\xba\\x9f\\xd4\\xd0\\x03\\x7f\\xb3\\xa2\\xdb\\x819/U.m\\xa4\\xb7lI\\x82\\xa7\\xa3\\no\\xef\\x88\\xdf\\xdb\\xaf\\xde\\xab\\xd1\\xb9\\xb9\\xd3\\xa6W9(\\xa4\\x83\\xfa\\xd0\\x06Y\\x18\\xefE.2\\x06==h\\xa0\\x07\\x126\\x9c\"\\xf4\\x1e\\xb5\\xa39\\xdf\\xa6F\\xec2\\xca\\x06\\r\\x14P\\x81\\x99\\xbbF3W\\xe2\\xf94\\x99]~\\xf3p\\x7f:(\\xa1\\x033\\x8fA\\xf4\\xa2\\x8a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 15639
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 600,
+                        "h": 300,
+                        "sizes": [
+                            2876,
+                            8571,
+                            18383,
+                            24613,
+                            37684
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 264,
+            "length": 154
+        }
+    ],
+    "views": 71,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1509,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-03-15 11:49:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

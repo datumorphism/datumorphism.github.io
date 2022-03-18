@@ -1,0 +1,62 @@
+{
+    "_": "Message",
+    "id": 322,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-03-03 07:29:08+00:00",
+    "message": "#python \n\nI find poetry a great tool to manage Python requirements.\n\nI used to manage Python requirements using requirements.txt(environment.yaml) and install them using pip(conda). The thing is, in this stack, we have to pin the version ranges manually. It is quite tedious, and we easily run into version problems for a large project.\n\nPoetry is the savior here. When developing a package, we add some initial dependencies to the pyproject.yaml, a PEP standard. Whenever a new package is needed, we run poetry add package-name. Poetry tries to figure out the compatible versions. A lock file for the dependencies with restricted versions will be created or updated. To recreate an identical python environment, we only need to run poetry install.\n\nThere's one drawback and may be quite painful at some point. Recreating the lock file for dependencies is extremely slow when the complexity grows in the requirements. But this is not a problem if poetry but rather constraints from pypi. One solution to this problem is to use cache.\n\nhttps://python-poetry.org/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1035,
+            "length": 26
+        }
+    ],
+    "views": 214,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1509,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 105608796
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 542,
+        "read_max_id": 542
+    },
+    "edit_date": "2022-03-03 10:12:11+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "python"
+    ]
+}

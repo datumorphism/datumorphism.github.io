@@ -1,0 +1,77 @@
+{
+    "_": "Message",
+    "id": 321,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-02-20 15:35:09+00:00",
+    "message": "#tool \n\nI have been using Hugo for my public notes. I built a theme called connectome a while ago. This theme has been serving as my note-taking theme.\n\nWhen building my notes website on data science, I have noticed many problems with the connectome theme. And today, I fixed most of the problems. The connectome theme deserves some visibility now.\n\nIf you are using Hugo and would like to build a website for connected notes, like this one I have https://datumorphism.leima.is/ , the Hugo connectome theme can help a bit.\n\nThe Connectome Theme: https://github.com/kausalflow/connectome\nA template one could use to bootstrap a new website: https://github.com/kausalflow/hugo-connectome-theme-demo\nTutorials: https://hugo-connectome.kausalflow.com/projects/tutorials/\nReal-world example: https://datumorphism.leima.is/\n\n\u2014\nIf you would like to know more about how it was done, the idea is quite simple. Before we move on, one FAQ I got is, why Hugo. The answer is simple, speed.\n\nThe key components of the connectome theme are:\n\n- automated backlinks, and\n- a graph visualization of the whole notebook.\n\nBehind the scene, the heart of the theme is a metadata file that describes the connections between the notes.\n\nFor each note, we use the metadata to get all the notes that links to the current note, and build backlinks based on the metadata.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 448,
+            "length": 30
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 546,
+            "length": 40
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 640,
+            "length": 56
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 708,
+            "length": 58
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 787,
+            "length": 30
+        }
+    ],
+    "views": 678,
+    "forwards": 9,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1509,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-02-20 18:35:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "tool"
+    ]
+}

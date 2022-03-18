@@ -23,8 +23,25 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPageEmpty",
-            "id": 4654675257014359556
+            "_": "WebPage",
+            "id": 4654675257014359556,
+            "url": "https://bair.berkeley.edu/blog/2021/03/09/maxent-robust-rl/",
+            "display_url": "bair.berkeley.edu/blog/2021/03/09/maxent-robust-rl",
+            "hash": 0,
+            "type": "article",
+            "site_name": "The Berkeley Artificial Intelligence Research Blog",
+            "title": "Maximum Entropy RL (Provably) Solves Some Robust RL Problems",
+            "description": "The BAIR Blog",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Daniel Seita",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
         }
     },
     "reply_markup": null,
@@ -45,7 +62,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1445,
+        "replies_pts": 1509,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

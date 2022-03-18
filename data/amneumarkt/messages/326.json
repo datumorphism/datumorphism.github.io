@@ -1,0 +1,126 @@
+{
+    "_": "Message",
+    "id": 326,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-03-16 07:57:36+00:00",
+    "message": "#ml \n\nIt\u2019s a lengthy article but also a well written one.\n\nA few comments:\n\n- The author wrote a paper on \u201cThe Next Decade in AI\u201d: https://arxiv.org/abs/2002.06177 \n- Make things work in their own domain. If we are gonna come up with a \u201ctheory of everything\u201d for computing or intelligence, we will hit the \u201cmesoscopic\u201d wall, where the bottom up theories and the top down approaches meet but we can\u2019t really make a connection. In the case of intelligence, the wall is determined by the complexities (maybe MDL?). You can make symbols work for high complexities but not always. Similar thing happens to neural networks. \n- The neural symbolic approach sounds good but it\u2019s almost like patching a bike as wheels of a train.\n\n\nhttps://nautil.us/deep-learning-is-hitting-a-wall-14467/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4935054484563814980,
+            "url": "https://nautil.us/deep-learning-is-hitting-a-wall-14467/",
+            "display_url": "nautil.us/deep-learning-is-hitting-a-wall-14467",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Nautilus | Science Connected",
+            "title": "Deep Learning Is Hitting a Wall",
+            "description": "What would it take for artificial intelligence to make real progress?",
+            "photo": {
+                "_": "Photo",
+                "id": 5860562032095505761,
+                "access_hash": -6321609376063673623,
+                "file_reference": "b'\\x00b4\\xd9\\xe3\\xe1q\\x8d\\xc5\\x15Q]\\x84|\\x7f\\x18\\x8d\\x14\\xd7k\\xdd'",
+                "date": "2022-03-10 02:05:37+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x0c(\\xce(\\xc3\\xde\\x9355\\x05Cu\\x14\\x00\\xeb\\x98\\x84%0\\xc1\\x83(<\\x1e\\xfd\\xea \\xd4\\xfb\\xb6&@\\t$\\x05\\xc0\\xa8\\x01\\xa0\\t\\xc4\\x86\\x8a\\x88\\x1a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 100,
+                        "size": 3102
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 250,
+                        "size": 10605
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 400,
+                        "sizes": [
+                            4193,
+                            12024,
+                            12221
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 131,
+            "length": 32
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 723,
+            "length": 56
+        }
+    ],
+    "views": 57,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1509,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-03-16 09:48:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}
