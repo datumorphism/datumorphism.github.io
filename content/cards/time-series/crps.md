@@ -18,7 +18,7 @@ references:
 ---
 
 
-The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.
+The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without knowledge about the true distributions of the data.
 
 
 ## Definition
