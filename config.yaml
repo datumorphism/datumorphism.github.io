@@ -93,7 +93,7 @@ params:
   netlify:
     identity: false
   localgraph: false
-  nativebacklink: true
+  nativebacklink: false
 
 
 
@@ -127,3 +127,7 @@ outputs:
     - "network"
     - "search"
     - "dates"
+
+
+ignoreErrors:
+  - "error-remote-getjson"
