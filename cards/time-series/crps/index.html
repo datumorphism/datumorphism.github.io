@@ -131,7 +131,7 @@ where
  $x_a$ is the true value of $x$, P(x) is our proposed cumulative distribution for $x$, $H(x)$ is the Heaviside step function $$ H(x) = \begin{cases} 1, &\qquad x=0\\ 0, &\qquad x\leq 0\\ \end{cases} $$
  $\lVert \cdot \rVert_2$ is the L2 norm.  Explain it The formula looks abstract on first sight, but it becomes crystal clear once we understand it."><meta itemprop=datePublished content="2022-03-18T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-03-18T00:00:00+00:00">
-<meta itemprop=wordCount content="537">
+<meta itemprop=wordCount content="594">
 <meta itemprop=keywords content="Time Series,">
 <section class=section>
 <div class=container>
@@ -274,8 +274,10 @@ Kullback–Leibler divergence indicates the differences between two distribution
 </div>
 </div>
 </a>
+<h2 id=compared-to-likelihood>Compared to Likelihood</h2>
+<p>Gebetsberger et al found that CRPS is more robust but produces similar results if we have found a good assumption about the data distribution<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p>
 <h2 id=applications>Applications</h2>
-<p>One quite interesting application of the CRPS is to write down the loss for an the quantile function<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p>
+<p>One quite interesting application of the CRPS is to write down the loss for an the quantile function<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>.</p>
 <section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
@@ -289,11 +291,19 @@ Kullback–Leibler divergence indicates the differences between two distribution
 </li>
 <li id=fn:2 role=doc-endnote>
 <p>
+<a name=Gebetsberger2018 href=#Gebetsberger2018 style=text-decoration:none>
+<span class="tag is-link is-light">Gebetsberger2018</span>
+</a>
+<a href=https://journals.ametsoc.org/view/journals/mwre/146/12/mwr-d-17-0364.1.xml style=text-decoration:none>Gebetsberger M, Messner JW, Mayr GJ, Zeileis A. Estimation Methods for Nonhomogeneous Regression Models: Minimum Continuous Ranked Probability Score versus Maximum Likelihood. Mon Weather Rev. 2018;146: 4323–4338. doi:10.1175/MWR-D-17-0364.1</a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p>
 <a name=Gouttes2021 href=#Gouttes2021 style=text-decoration:none>
 <span class="tag is-link is-light">Gouttes2021</span>
 </a>
 <a href=https://arxiv.org/abs/2107.03743 style=text-decoration:none>Gouttes A, Rasul K, Koren M, Stephan J, Naghibi T. Probabilistic Time Series Forecasting with Implicit Quantile Networks. arXiv [cs.LG]. 2021. doi:10.1109/icdmw.2017.19</a>
-&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -338,6 +348,7 @@ L Ma
 <li><a href=#definition>Definition</a></li>
 <li><a href=#explain-it>Explain it</a></li>
 <li><a href=#compared-to-f-divergence>Compared to f-Divergence</a></li>
+<li><a href=#compared-to-likelihood>Compared to Likelihood</a></li>
 <li><a href=#applications>Applications</a></li>
 </ul>
 </nav>
@@ -367,6 +378,11 @@ L Ma
 <span class="tag is-link is-light">Gouttes2021</span>
 </a>
 <a href=https://arxiv.org/abs/2107.03743 style=text-decoration:none>Gouttes A, Rasul K, Koren M, Stephan J, Naghibi T. Probabilistic Time Series Forecasting with Implicit Quantile Networks. arXiv [cs.LG]. 2021. doi:10.1109/icdmw.2017.19</a></li>
+<li class=has-text-weight-bold>
+<a name=Gebetsberger2018 href=#Gebetsberger2018 style=text-decoration:none>
+<span class="tag is-link is-light">Gebetsberger2018</span>
+</a>
+<a href=https://journals.ametsoc.org/view/journals/mwre/146/12/mwr-d-17-0364.1.xml style=text-decoration:none>Gebetsberger M, Messner JW, Mayr GJ, Zeileis A. Estimation Methods for Nonhomogeneous Regression Models: Minimum Continuous Ranked Probability Score versus Maximum Likelihood. Mon Weather Rev. 2018;146: 4323–4338. doi:10.1175/MWR-D-17-0364.1</a></li>
 </ol>
 </p>
 </div>
