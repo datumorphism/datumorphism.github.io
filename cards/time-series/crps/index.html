@@ -140,7 +140,7 @@ where
  $x_a$ is the true value of $x$, P(x) is our proposed cumulative distribution for $x$, $H(x)$ is the Heaviside step function $$ H(x) = \begin{cases} 1, &\qquad x=0\\ 0, &\qquad x\leq 0\\ \end{cases} $$
  $\lVert \cdot \rVert_2$ is the L2 norm.  Explain it The formula looks abstract on first sight, but it becomes crystal clear once we understand it."><meta itemprop=datePublished content="2022-03-18T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-03-18T00:00:00+00:00">
-<meta itemprop=wordCount content="596">
+<meta itemprop=wordCount content="574">
 <meta itemprop=keywords content="Time Series,">
 <section class=section>
 <div class=container>
@@ -264,8 +264,7 @@ where $p$ and $q$ are two densities and $\mu$ is a reference distribution.
 Requirements on the generating function
 The generating function $f$ is required to
 be convex, and $f(1) =0$. For $f(x) = x \log x$ with $x=p/q$, f-divergence is reduced to the KL divergence
-$$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm d\mu \\ =& \int p \log \left( \frac{p}{q} \right) \mathrm d\mu. \end{align} $$
-For more special cases of f-divergence, please refer to wikipedia1.
+$$ \begin{align} &\int f\left(\frac{p}{q}\right) q\mathrm d\mu \\ =& \int \frac{p}{q} \log \left( \frac{p}{q} \right) \mathrm …
 </div>
 </div>
 </div>

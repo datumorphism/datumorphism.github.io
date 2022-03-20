@@ -140,7 +140,7 @@ Edges
 Adjacency Matrix A adjacency matrix of a graph represents the nodes using row and column indices and edges using elements of the matrix.
 For simple graph, the adjacency matrix is rank two and dimension $\lvert \mathcal V \rvert \times \lvert \mathcal V \rvert$."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="660">
+<meta itemprop=wordCount content="545">
 <meta itemprop=keywords content="Graph,Basics,">
 <section class=section>
 <div class=container>
@@ -231,28 +231,13 @@ Graph Laplacians
 <p>Laplacian is a useful representation of graphs. The unnormalized Laplacian is</p>
 <p>\mathbf L = \mathbf D - \mathbf A,</p>
 <p>where $\mathbf A$ is the and $\mathbf D$ is the degree matrix, i.e., a diagonalized matrix with the diagonal elements being the degrees.</p>
-<h2 id=normalized-laplacian>Normalized Laplacian</h2>
+<p>Normalized Laplacian</p>
 <p>The symmetric normalized Laplacian is</p>
 <p>\mathbf L_{\text{sym}} = \mathbf D^{-1/2} \mathbf A \mathbf D^{-1/2}.</p>
 <p>The random walk Laplacian is</p>
 <p>\mathbf L_{\text{RW}} = \mathbf D^{-1} \mathbf A.</p>
-<h2 id=diagonalizing-graph-laplacian>Diagonalizing Graph Laplacian</h2>
-<p>The eigenvectors of Graph Laplacian can be used to diagonalize the graph Laplacian $\mathbf L$,</p>
-<p>\begin{equation}
-\mathbf U \mathbf L_D \mathbf U^{\mathrm T} = \mathbf L.\label{eq-laplacian-diag}
-\end{equation}</p>
-<h2 id=laplacians-and-fourier-transform>Laplacians and Fourier Transform</h2>
-<p>The eigen-equation of Laplacian $\nabla^2$ shows that the eigenvectors of the Laplacian (in Hilbert space) have the form $e^{2\pi i \xi x}$. On the other hand, $e^{2\pi i \xi x}$ is also the Fourier basis.</p>
-<p>The eigenvectors of the graph Laplacian (Eq. $\eqref{eq-laplacian-diag}$) can be used to perform Fourier transforms on graph<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. We apply the matrix $\mathbf U^{\mathrm T}$ in $\eqref{eq-laplacian-diag}$ onto a vector of node attributes,</p>
-<p>\mathbf U^{\mathrm T} \mathbf f.</p>
-<p>The above is the Fourier transform of the node attributes on the graph.</p>
-<section class=footnotes role=doc-endnotes>
-<hr>
-<ol>
-<li id=fn:1 role=doc-endnote>
-&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></li>
-</ol>
-</section>
+<p>Diagonalizing Graph Laplacian</p>
+<p>The …</p>
 </div>
 </div>
 </div>
