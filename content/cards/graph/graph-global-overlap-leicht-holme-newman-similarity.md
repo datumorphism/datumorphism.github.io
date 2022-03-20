@@ -19,6 +19,8 @@ links:
   - "cards/graph/graph-global-overlap-katz-index.md"
 ---
 
+The LHN index is a normalized similarity index.
+
 ## From Katz Index to LHN Index
 
 {{< c "cards/graph/graph-global-overlap-katz-index.md" "Katz Index" >}} has a knob to tune the punishment towards longer paths. The Leicht-Holme-Newman Similarity, aka, LHN Similarity, has a better normalization factor.
