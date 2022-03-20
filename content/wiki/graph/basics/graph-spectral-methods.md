@@ -11,6 +11,9 @@ references:
   - name: "Hamilton WL. Graph Representation Learning. Morgan & Claypool Publishers; 2020. pp. 1–159. doi:10.2200/S01045ED1V01Y202009AIM046"
     link: "https://www.morganclaypool.com/doi/10.2200/S01045ED1V01Y202009AIM046"
     key: "Hamilton2020"
+  - name: "von Luxburg U. A tutorial on spectral clustering. Stat Comput. 2007;17: 395–416. doi:10.1007/s11222-007-9033-z"
+    link: "https://link.springer.com/article/10.1007/s11222-007-9033-z"
+    key: "Luxburg2007"
 weight: 3
 links:
   - "cards/graph/graph-laplacians.md"
