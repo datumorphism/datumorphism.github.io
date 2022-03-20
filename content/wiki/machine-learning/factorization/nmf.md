@@ -25,7 +25,7 @@ weight: 2
 
 ## Decomposition
 
-To make it easier to understand, we start with a data point $\mathbf P$ in a $k$-dimensional space spanned by $k$ basis vectors $\mathbf V^k$. Naturally, we could write down the component decomposition of the point using the basis vectors $\mathbf V^k$,
+For simplicity, we start with a data point $\mathbf P$ in a $k$-dimensional space spanned by $k$ basis vectors $\mathbf V^k$. Naturally, we could write down the component decomposition of the point using the basis vectors $\mathbf V^k$,
 
 $$
 \mathbf P = P_k \mathbf V^k.
