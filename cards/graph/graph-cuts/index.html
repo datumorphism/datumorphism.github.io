@@ -132,7 +132,7 @@ AmNeumarkt
 <meta itemprop=description content="Cut For a subset of nodes $\mathcal A\subset \mathcal V$, the rest of nodes can be denoted as $\bar {\mathcal A} = \mathcal V \setminus \mathcal A$. In other words, $\mathcal A \cup \bar {\mathcal A} = \mathcal V$ and $\mathcal A \cap \bar {\mathcal A} = \emptyset$. That being said, the nodes can be partitioned into two subsets, $\mathcal A$ and $\bar {\mathcal A}$. The cut of this partition is defined as the total number of edges between them,
 $$ \operatorname{Cut} \left( \mathcal A, \bar{\mathcal A} \right) = \frac{1}{2} \left( \lvert (u, v)\in \mathcal E: u\in \mathcal A, v\in \bar{\mathcal A} \rvert + \lvert (u, v)\in \mathcal E: u\in \bar{\mathcal A}, v\in {\mathcal A} \rvert \right)."><meta itemprop=datePublished content="2021-09-25T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-09-25T00:00:00+00:00">
-<meta itemprop=wordCount content="328">
+<meta itemprop=wordCount content="573">
 <meta itemprop=keywords content="Graph,Heterophily,">
 <section class=section>
 <div class=container>
@@ -177,14 +177,22 @@ $$</p>
 \operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert.
 $$</p>
 <p>For smaller cut value, the proposed patches $\mathcal A_1, \cdots, \mathcal A_k$ are more disconnected from the overall graph.</p>
+<article class="message is-light is-light">
+<div class=message-header>
+<p>Normalization factor $1/2$</p>
+</div>
+<div class=message-body>
+In the case of $K=2$, it is trivial to decide that the normalization is $1/2$ since each node pair of an edge appears twice. Even for arbitrary $K$, one could also prove that the edge appeared twice as we only counts edges not all the possible node pairs.
+</div>
+</article>
 <p>This definition is biased towards smaller graphlets, i.e., smaller subset of nodes will get smaller cut values.</p>
 <h2 id=ratio-cut>Ratio Cut</h2>
 <p>Ratio Cut normalizes the cut values by the size of the patches,</p>
 <p>$$
-\operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert}{ \lvert \mathcal A_k \rvert}.
+\operatorname{RatioCut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert}{ \lvert \mathcal A_k \rvert}.
 $$</p>
 <figure>
-<img src=../assets/graph-cuts/graph-cuts.jpg alt="Graph cuts"> <figcaption>
+<img src=../assets/graph-cuts/graph-cutes-with-example.jpg alt="Graph cuts"> <figcaption>
 <p>Graph cuts</p>
 </figcaption>
 </figure>
@@ -192,8 +200,107 @@ $$</p>
 <h2 id=normalized-cut>Normalized Cut</h2>
 <p>The normalized cut uses the node degrees as punishment, $\operatorname{vol}(\mathcal A_k) = \sum_{u\in\mathcal A_k} d_u$,</p>
 <p>$$
-\operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert}{ \lvert\operatorname{vol}(A_k) \rvert}.
+\operatorname{NCut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k} \rvert}{ \lvert\operatorname{vol}(A_k) \rvert}.
 $$</p>
+<h2 id=examples>Examples</h2>
+<h3 id=barbell-graph>Barbell Graph</h3>
+<p>To illustrate the idea, we use a small barbell graph as an example.</p>
+<figure>
+<img src=../assets/graph-cuts/barbell-graph-1.png alt="A simple barbell graph"> <figcaption>
+<p>A simple <a href=https://en.wikipedia.org/wiki/Barbell_graph>barbell graph</a></p>
+</figcaption>
+</figure>
+<p>Now we propose different partitions of the graph and calculate the cuts.</p>
+<table>
+<thead>
+<tr>
+<th>$A_1$</th>
+<th>$A_2$</th>
+<th>Cut</th>
+<th>RatioCut</th>
+<th>NCut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{0, 1, 2}</code></td>
+<td><code>{3, 4, 5}</code></td>
+<td>1</td>
+<td>0.67</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td><code>{0, 1, 2, 3}</code></td>
+<td><code>{4, 5}</code></td>
+<td>2</td>
+<td>1.50</td>
+<td>0.70</td>
+</tr>
+</tbody>
+</table>
+<div class=card>
+<details>
+<summary class="card-header-title card-toggle card-header">
+Code
+</summary>
+<div class=card-content>
+<div class=content>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#66d9ef>as</span> plt
+<span style=color:#f92672>import</span> networkx <span style=color:#66d9ef>as</span> nx
+<span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+
+nx_draw_style <span style=color:#f92672>=</span> dict(node_color<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;tab:red&#34;</span>, font_size<span style=color:#f92672>=</span><span style=color:#ae81ff>16</span>, font_color<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;whitesmoke&#34;</span>)
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>ratio_cut_size</span>(G, S, T<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>, weight<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+
+    <span style=color:#66d9ef>if</span> T <span style=color:#f92672>is</span> <span style=color:#66d9ef>None</span>:
+        T <span style=color:#f92672>=</span> set(G) <span style=color:#f92672>-</span> set(S)
+    num_cut_edges <span style=color:#f92672>=</span> nx<span style=color:#f92672>.</span>cut_size(G, S, T<span style=color:#f92672>=</span>T, weight<span style=color:#f92672>=</span>weight)
+    norm_S <span style=color:#f92672>=</span> len(S)
+    norm_T <span style=color:#f92672>=</span> len(T)
+    <span style=color:#66d9ef>return</span> num_cut_edges <span style=color:#f92672>*</span> ((<span style=color:#ae81ff>1</span> <span style=color:#f92672>/</span> norm_S) <span style=color:#f92672>+</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>/</span> norm_T))
+
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>compare_cuts</span>(graph, partition):
+
+    <span style=color:#66d9ef>return</span> {
+        <span style=color:#e6db74>&#34;cut&#34;</span>: nx<span style=color:#f92672>.</span>cut_size(G, partition[<span style=color:#ae81ff>1</span>], partition[<span style=color:#ae81ff>2</span>]),
+        <span style=color:#e6db74>&#34;ncut&#34;</span>: nx<span style=color:#f92672>.</span>normalized_cut_size(G, partition[<span style=color:#ae81ff>1</span>], partition[<span style=color:#ae81ff>2</span>]),
+        <span style=color:#e6db74>&#34;ratio_cut&#34;</span>: ratio_cut_size(G, partition[<span style=color:#ae81ff>1</span>], partition[<span style=color:#ae81ff>2</span>])
+    }
+
+
+<span style=color:#75715e># barbell graph</span>
+G_bb <span style=color:#f92672>=</span> nx<span style=color:#f92672>.</span>barbell_graph(<span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>0</span>)
+
+<span style=color:#75715e># visualize the graph</span>
+pos <span style=color:#f92672>=</span> nx<span style=color:#f92672>.</span>spring_layout(G_bb, seed<span style=color:#f92672>=</span>seed)
+nx<span style=color:#f92672>.</span>draw(G_bb, pos<span style=color:#f92672>=</span>pos, with_labels <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>, <span style=color:#f92672>**</span>nx_draw_style)
+plt<span style=color:#f92672>.</span>show()
+
+<span style=color:#75715e># two different partitions</span>
+partition_bb_1 <span style=color:#f92672>=</span> {
+    <span style=color:#ae81ff>1</span>: {<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>},
+    <span style=color:#ae81ff>2</span>: {<span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>5</span>}
+}
+
+partition_bb_2 <span style=color:#f92672>=</span> {
+    <span style=color:#ae81ff>1</span>: {<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>},
+    <span style=color:#ae81ff>2</span>: {<span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>5</span>}
+}
+
+<span style=color:#75715e># calculate the cuts for the two different partitions</span>
+compare_cuts(
+    G_bb, partition_bb_1
+), compare_cuts(
+    G_bb, partition_bb_2
+)
+
+</code></pre></div>
+</div>
+</div>
+</details>
+</div>
 <section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
@@ -250,6 +357,11 @@ L Ma
 <li><a href=#cut>Cut</a></li>
 <li><a href=#ratio-cut>Ratio Cut</a></li>
 <li><a href=#normalized-cut>Normalized Cut</a></li>
+<li><a href=#examples>Examples</a>
+<ul>
+<li><a href=#barbell-graph>Barbell Graph</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
