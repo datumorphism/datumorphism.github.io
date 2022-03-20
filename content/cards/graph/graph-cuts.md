@@ -28,6 +28,13 @@ To generalize this notion, suppose we partition the nodes into $k$ subsets of no
 
 For smaller cut value, the proposed patches $\mathcal A_1, \cdots, \mathcal A_k$ are more disconnected from the overall graph.
 
+
+{{< message title="Normalization factor $1/2$" >}}
+
+In the case of $K=2$, it is trivial to decide that the normalization is $1/2$ since each node pair of an edge appears twice. Even for arbitrary $K$, one could also prove that the edge appeared twice as we only counts edges not all the possible node pairs.
+
+{{< /message >}}
+
 This definition is biased towards smaller graphlets, i.e., smaller subset of nodes will get smaller cut values.
 
 
@@ -38,10 +45,11 @@ Ratio Cut normalizes the cut values by the size of the patches,
 
 
 {{< m >}}
-\operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert}{ \lvert \mathcal A_k \rvert}.
+\operatorname{RatioCut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert}{ \lvert \mathcal A_k \rvert}.
 {{< /m >}}
 
-{{< figure src="../assets/graph-cuts/graph-cuts.jpg" caption="Graph cuts" >}}
+
+{{< figure src="../assets/graph-cuts/graph-cutes-with-example.jpg" caption="Graph cuts" >}}
 
 
 This definition punishes smaller patches using $\frac{1}{ \lvert \mathcal A_k \rvert}$.
@@ -52,10 +60,87 @@ The normalized cut uses the node degrees as punishment, $\operatorname{vol}(\mat
 
 
 {{< m >}}
-\operatorname{Cut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert}{ \lvert\operatorname{vol}(A_k) \rvert}.
+\operatorname{NCut} \left( \mathcal A_1, \cdots, \mathcal A_k \right) = \frac{1}{2} \sum_{k=1}^K \frac{\lvert (u, v)\in \mathcal E: u\in \mathcal A_k, v\in \bar{\mathcal A_k}  \rvert}{ \lvert\operatorname{vol}(A_k) \rvert}.
 {{< /m >}}
 
 
+
+## Examples
+
+### Barbell Graph
+
+To illustrate the idea, we use a small barbell graph as an example.
+
+
+{{< figure src="../assets/graph-cuts/barbell-graph-1.png" caption="A simple [barbell graph](https://en.wikipedia.org/wiki/Barbell_graph)" >}}
+
+
+Now we propose different partitions of the graph and calculate the cuts.
+
+
+| $A_1$  | $A_2$  | Cut |  RatioCut |  NCut |
+|---|---|---|---|---|
+| `{0, 1, 2}`   |  `{3, 4, 5}` | 1  | 0.67 | 0.29 |
+| `{0, 1, 2, 3}`   |  `{4, 5}` | 2  | 1.50 | 0.70 |
+
+
+{{< card title="Code" >}}
+
+```python
+import matplotlib.pyplot as plt
+import networkx as nx
+import numpy as np
+
+nx_draw_style = dict(node_color="tab:red", font_size=16, font_color="whitesmoke")
+
+def ratio_cut_size(G, S, T=None, weight=None):
+
+    if T is None:
+        T = set(G) - set(S)
+    num_cut_edges = nx.cut_size(G, S, T=T, weight=weight)
+    norm_S = len(S)
+    norm_T = len(T)
+    return num_cut_edges * ((1 / norm_S) + (1 / norm_T))
+
+
+def compare_cuts(graph, partition):
+
+    return {
+        "cut": nx.cut_size(G, partition[1], partition[2]),
+        "ncut": nx.normalized_cut_size(G, partition[1], partition[2]),
+        "ratio_cut": ratio_cut_size(G, partition[1], partition[2])
+    }
+
+
+# barbell graph
+G_bb = nx.barbell_graph(3, 0)
+
+# visualize the graph
+pos = nx.spring_layout(G_bb, seed=seed)
+nx.draw(G_bb, pos=pos, with_labels = True, **nx_draw_style)
+plt.show()
+
+# two different partitions
+partition_bb_1 = {
+    1: {0, 1, 2},
+    2: {3, 4, 5}
+}
+
+partition_bb_2 = {
+    1: {0, 1, 2, 3},
+    2: {4, 5}
+}
+
+# calculate the cuts for the two different partitions
+compare_cuts(
+    G_bb, partition_bb_1
+), compare_cuts(
+    G_bb, partition_bb_2
+)
+
+```
+
+{{< /message >}}
 
 
 [^Hamilton2020]: {{< cite key="Hamilton2020" >}}
