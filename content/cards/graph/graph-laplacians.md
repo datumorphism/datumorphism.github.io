@@ -10,6 +10,9 @@ references:
   - name: "Hamilton WL. Graph Representation Learning. Morgan & Claypool Publishers; 2020. pp. 1–159. doi:10.2200/S01045ED1V01Y202009AIM046"
     link: "https://www.morganclaypool.com/doi/10.2200/S01045ED1V01Y202009AIM046"
     key: "Hamilton2020"
+  - name: "Li J, Guo J-M, Shiu WC. Bounds on normalized Laplacian eigenvalues of graphs. J Inequal Appl. 2014;2014: 1–8. doi:10.1186/1029-242X-2014-316"
+    link: "http://dx.doi.org/10.1186/1029-242X-2014-316"
+    key: "Li2014"
 links:
   - "cards/graph/graph-adjacency-matrix.md"
   - "cards/graph/graph-cuts.md"
@@ -34,11 +37,15 @@ The symmetric normalized Laplacian is
 \mathbf L_{\text{sym}} = \mathbf D^{-1/2} \mathbf A \mathbf D^{-1/2}.
 {{< /m >}}
 
+The eigenvalues of normalized Laplacian is bounded ($[0,2]$)[^Li2014].
+
 The random walk Laplacian is
 
 {{< m >}}
 \mathbf L_{\text{RW}} = \mathbf D^{-1} \mathbf A.
 {{< /m >}}
+
+
 
 ## Diagonalizing Graph Laplacian
 
@@ -73,3 +80,5 @@ The above is the Fourier transform of the node attributes on the graph.
 
 
 [^Hamilton2020]: {{< cite key="Hamilton2020" >}}
+
+[^Li2014]: {{< cite key="Li2014" >}}
