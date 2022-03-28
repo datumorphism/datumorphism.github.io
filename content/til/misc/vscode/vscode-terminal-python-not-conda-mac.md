@@ -4,9 +4,11 @@ title: "VSCode Terminal Python Can Not Activate Conda on Mac"
 date: 2021-08-31
 author: Lei Ma
 categories:
-    - misc
+  - "misc"
 tags:
-    - 'VSCode'
+  - "VSCode"
+garden:
+  - "evergreen"
 summary: Enable your key repeat in vscode on mac
 ---
 

@@ -52,7 +52,7 @@ Hadoop:
 - HDFS
   - Divide into blocks
   - Distribute
-- MapReduce
+- {{< c "wiki/algorithms/map-reduce.md" MapReduce >}}
   - Old tech
 - YARN
   - Resource management

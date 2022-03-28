@@ -12,13 +12,13 @@ weight: 2
 
 Dealing with data structure is like dealing with your clothes. Some people randomly drop their clothes somewhere without thinking. But it takes time to retrieve a specific T-shirt. Some people spend more time folding and arranging their clothes. This process makes it easy to find a specific T-shirt. Similar to retrieving clothes, there is always a balance between the computation time (retrieving clothes) and the coding time (folding clothes).
 
-## Keywords
+## Some Useful Data Structures
 
 This section serves as some kind of flashcard keywords. I am using this section to remind myself of the important concepts.
 
 ### Binary Tree
 
-1. Tree; Binary tree
+1. {{< c "wiki/algorithms/data-structure-tree.md" "Tree" >}}; Binary tree
 2. Traverse a tree:
    1. Pre-order traversal: parent->left->right
    2. In-orer traversal: left->parent->right
@@ -26,7 +26,6 @@ This section serves as some kind of flashcard keywords. I am using this section 
    4. Level-order traversal: top->bottom, by each level from left to right of the whole tree
 
 
-## Some Useful Data Structures
 
 ### Array
 
@@ -81,3 +80,8 @@ Queue is First in First out, aka FIFO. The name Queue explains itself quite well
 
 
 {{< figure src="../assets/data-structure/Data_Queue.svg" caption="Queue from Wikipedia" >}}
+
+
+### Graph
+
+{{< e "wiki/algorithms/data-structure-graph.md" >}}
