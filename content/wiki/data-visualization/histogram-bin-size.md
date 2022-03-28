@@ -32,7 +32,7 @@ charts:
       xbins: {size: 1.1}}]
 ---
 
-Histograms are good for understanding the distribution of your data.
+{{< c "wiki/data-visualization/histogram.md" "Histograms" >}} are good for understanding the distribution of your data.
 
 ## The Bin Size Problem
 

@@ -2,11 +2,13 @@
 title: "Principles of Colors"
 date: 2020-11-20
 categories:
-- 'Data Visualization'
+  - "Data Visualization"
 tags:
-- 'Data Visualization'
-- 'Design'
-- 'Color'
+  - "Data Visualization"
+  - "Design"
+  - "Color"
+garden:
+  - "growing"
 weight: 2
 references:
   - name: "The Non-Designer's Design Book by Robin P. Williams"
@@ -18,6 +20,12 @@ references:
   - name: "Saturation @ Wikipedia"
     link: "https://en.wikipedia.org/wiki/Colorfulness#Saturation"
 ---
+
+{{< message class="warning" title="ColorTeller" >}}
+
+I wrote a python package called [colorteller](https://github.com/kausalflow/colorteller-package/) to help us manage and benchmark colors.
+
+{{< /message >}}
 
 ## Basic Concepts of Colors
 

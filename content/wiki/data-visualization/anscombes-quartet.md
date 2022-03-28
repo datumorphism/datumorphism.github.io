@@ -2,9 +2,11 @@
 title: "Anscombe's quartet"
 date: 2019-03-18
 categories:
-- 'Data Visualization'
+  - "Data Visualization"
 tags:
-- 'Data Visualization'
+  - "Data Visualization"
+garden:
+  - "evergreen"
 weight: 3
 references:
 - name: "Anscombe's quartet @ Wikipedia"
@@ -221,7 +223,7 @@ However, we immediately spot the differences between them when we visualize them
 
 There are probably a million different ways to tell them apart. A very simple calculation is the percentile. For example, the medians of the x data are (9.0, 9.0, 9.0, 8.0). The medians of the y data are (7.58, 8.14, 7.11, 7.04).
 
-Here we simply plot the box plots. This tells us that some of the data is quite skewed.
+Here we simply plot the {{< c "wiki/data-visualization/boxplots.md" "box plots" >}}. This tells us that some of the data is quite skewed.
 
 {{< rawhtml >}}
 <div id="boxplot-x">
