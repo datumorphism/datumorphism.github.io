@@ -31,7 +31,7 @@ NoSQL = Not only SQL. The four main types of NoSQL databases are
 - Key-value store: Amazon Dynamo, [memcached](http://memcached.org), Amazon SimpleDB
 - Column-orient store: Google BigTable, Cassandra
 - Graph database: Neo4j, VertexDB
-- Document database: MongoDB
+- Document database: {{< c "wiki/computation/basics-of-mongodb.md" MongoDB >}}
 - Object database: [ZODB](http://www.zodb.org/)
 
 
@@ -62,6 +62,8 @@ NoSQL = Not only SQL. The four main types of NoSQL databases are
 
 
 ### SQL
+
+{{< c "wiki/computation/basics-of-sql.md" SQL >}} is one of the core skills of a data scientist.
 
 [Nice Article about Index](https://www.red-gate.com/simple-talk/sql/learn-sql-server/sql-server-index-basics/)
 
