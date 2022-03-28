@@ -4,9 +4,11 @@ title: "VSCode Setup Tests when Module is in a Different Folder"
 date: 2021-08-31
 author: Lei Ma
 categories:
-    - misc
+  - "misc"
 tags:
-    - 'VSCode'
+  - "VSCode"
+garden:
+  - "evergreen"
 summary: Use .env file
 references:
   - name: "Using Python environments in VS Code"

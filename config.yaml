@@ -59,6 +59,7 @@ taxonomies:
     tag: "tags"
     link: "links"
     categories: "categories"
+    garden: "garden"
 
 params:
   theme_variant: "united" # possible value for the theme_variant `cerulean,cosmo,cyborg,darkly,flatly,journal,litera,lumen,lux,materia,minty,pulse,sandstone,simplex,slate,solar,spacelab,superhero,united,yeti`
@@ -99,6 +100,25 @@ params:
   localgraph: false
   nativebacklink: false
   command: true # command palette enable or disable
+  garden:
+    phases:
+      - name: "seedling"
+        description: "This note was planted but not so much effort has been put into it. This seedling requires some nurturing."
+        icon: '<i class="fa-solid fa-seedling" style="margin-right: 0.5em;"></i>'
+        color: "#17a2b8"
+      - name: "growing"
+        description: "This note is being developed. It is readible but changes are being applied."
+        icon: '<i class="fa-solid fa-leaf" style="margin-right: 0.5em;"></i>'
+        color: "#e95420"
+      - name: "evergreen"
+        description: "This note is mature."
+        icon: '<i class="fa-brands fa-pagelines" style="margin-right: 0.5em;"></i>'
+        color: "#38b44a"
+    default:
+      name: "growing"
+      description: "This note is being developed. It is readible but changes are being applied."
+      icon: '<i class="fa-solid fa-leaf" style="margin-right: 0.5em;"></i>'
+      color: "#e95420"
 
 
 
