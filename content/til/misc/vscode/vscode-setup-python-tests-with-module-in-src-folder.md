@@ -8,7 +8,7 @@ categories:
 tags:
   - "VSCode"
 garden:
-  - "evergreen"
+  - "growing"
 summary: Use .env file
 references:
   - name: "Using Python environments in VS Code"
