@@ -31,12 +31,12 @@
             "type": "article",
             "site_name": "Lesswrong",
             "title": "Utility Maximization = Description Length Minimization - LessWrong",
-            "description": "There\u2019s a useful intuitive notion of \u201coptimization\u201d as pushing the world into a\nsmall set of states, starting from any of a large number of states. Visually:\n\nYudkowsky and Flint both have notable formalizations of this \u201coptimization as\ncompression\u201d idea.\n\nThis post presents a formalization of optimization-as-compression grounded in\ninformation theory. Specifically: to \u201coptimize\u201d a system is to reduce the number\nof bits required to represent the system state using a particular encoding. In\nother words, \u201coptimizing\u201d a system means making it compressible (in the\ninformation-theoretic sense) by a particular model.\n\nThis formalization turns out to be equivalent to expected utility maximization,\nand allows us to interpret any expected utility maximizer as \u201ctrying to make the\nworld look like a particular model\u201d.\n\nCONCEPTUAL EXAMPLE: BUILDING A HOUSE\nBefore diving into the formalism, we\u2019ll walk through a conceptual example, taken\ndirectly from Flint\u2019s Ground of Optimization: building a house. Here\u2019s Flint\u2019s\ndiagram:\u2026",
+            "description": "There\u2019s a useful intuitive notion of \u201coptimization\u201d as pushing the world into a small set of states, starting from any of a large number of states. Visually: \u2026",
             "photo": {
                 "_": "Photo",
                 "id": 5871574594530421757,
                 "access_hash": -1679107565565367398,
-                "file_reference": "b'\\x00b4\\xd9\\xe4C\\x90\\x84=\\x0b\\xdd\\x03b\\xda\\xc0\\xbc\\x81\\xe7V\\x1e]'",
+                "file_reference": "b\"\\x00bB'\\x0c\\xeea\\xb33\\xd3\\xf9\\xc5+c\\xa3K\\xe4\\xff+\\x9d\\xa8\"",
                 "date": "2021-02-18 18:08:11+00:00",
                 "sizes": [
                     {
@@ -103,12 +103,12 @@
             "length": 34
         }
     ],
-    "views": 151,
+    "views": 152,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1509,
+        "replies_pts": 1535,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

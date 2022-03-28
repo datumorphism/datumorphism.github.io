@@ -1,0 +1,85 @@
+{
+    "_": "Message",
+    "id": 333,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-03-19 12:37:03+00:00",
+    "message": "#tool \n\nI drafted a new release of the Hugo Connectome theme.\n\nI like the command palette in VSCode. It is fast and accurate. So I added a command palette to the Hugo Connectome theme to help us navigate the notes and links.\n\nNow we can use the command palette to navigate to backlinks, out links, references, and more.\n\nSee it in action:\nhttps://datumorphism.leima.is/wiki/time-series/state-space-models/\nUse Command+K or Windows+K to activate the command palette.\n\n- Type in search to search for notes.\n- Type in Note ID to copy the current note id to the clipboard.\n- Type in graph to see the graph view of all the notes.\n- Type in references to go to references.\n- Type in backlinks to select from backlinks to navigate to.\n- Type in links to select from all outgoing links to navigate to.\n\nRelease:\nhttps://github.com/kausalflow/connectome/releases/tag/0.1.1",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1332579906110131126,
+            "url": "https://datumorphism.leima.is/wiki/time-series/state-space-models/",
+            "display_url": "datumorphism.leima.is/wiki/time-series/state-space-models",
+            "hash": 0,
+            "type": "article",
+            "site_name": "datumorphism.leima.is",
+            "title": "State Space Models",
+            "description": "The state space model is an important category of models for sequential data such as time series",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "L Ma",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 339,
+            "length": 66
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 804,
+            "length": 59
+        }
+    ],
+    "views": 119,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1535,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-03-20 07:46:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "tool"
+    ]
+}

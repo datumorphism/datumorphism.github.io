@@ -13,7 +13,7 @@
     "silent": false,
     "post": true,
     "from_scheduled": false,
-    "legacy": false,
+    "legacy": true,
     "edit_hide": true,
     "pinned": false,
     "from_id": null,
@@ -57,19 +57,19 @@
             "length": 53
         }
     ],
-    "views": 3,
-    "forwards": 0,
+    "views": 107,
+    "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1509,
+        "replies_pts": 1535,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,
         "max_id": null,
         "read_max_id": null
     },
-    "edit_date": "2022-03-18 19:11:17+00:00",
+    "edit_date": "2022-03-18 19:23:23+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],

@@ -1,19 +1,19 @@
 {
     "_": "Message",
-    "id": 246,
+    "id": 334,
     "peer_id": {
         "_": "PeerChannel",
         "channel_id": 1320526773
     },
-    "date": "2021-07-22 11:00:44+00:00",
-    "message": "#ML \n\nJulia Computing got a lot of investment recently. I need to dive deeper into the Julia Language. \n\nhttps://juliacomputing.com/blog/2021/07/series-a/",
+    "date": "2022-03-22 20:41:41+00:00",
+    "message": "#ml\n\nBeautiful and systematic derivation showing how and why negative sampling works\n\nNegative sampling is a great technique to estimate the softmax especially when the calculation of the partition function is intractable. It's used in word2vec, and many other models such as node2vec. \n\n\n\nGoldberg Y, Levy O. word2vec Explained: deriving Mikolov et al.\u2019s negative-sampling word-embedding method. arXiv [cs.CL]. 2014. Available: http://arxiv.org/abs/1402.3722",
     "out": true,
     "mentioned": false,
     "media_unread": false,
     "silent": false,
     "post": true,
     "from_scheduled": false,
-    "legacy": false,
+    "legacy": true,
     "edit_hide": false,
     "pinned": false,
     "from_id": null,
@@ -30,37 +30,38 @@
         },
         {
             "_": "MessageEntityUrl",
-            "offset": 105,
-            "length": 49
+            "offset": 404,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 429,
+            "length": 30
         }
     ],
-    "views": 213,
+    "views": 72,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
-        "replies": 2,
+        "replies": 1,
         "replies_pts": 1535,
         "comments": true,
         "recent_repliers": [
             {
-                "_": "PeerChannel",
-                "channel_id": 1159907975
-            },
-            {
                 "_": "PeerUser",
-                "user_id": 1090037466
+                "user_id": 576051155
             }
         ],
         "channel_id": 1159907975,
-        "max_id": 367,
+        "max_id": 555,
         "read_max_id": null
     },
-    "edit_date": "2021-07-22 14:58:00+00:00",
+    "edit_date": "2022-03-23 06:25:57+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],
     "ttl_period": null,
     "tags": [
-        "ML"
+        "ml"
     ]
 }
