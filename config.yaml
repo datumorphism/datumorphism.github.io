@@ -104,20 +104,20 @@ params:
     phases:
       - name: "seedling"
         description: "This note was planted but not so much effort has been put into it. This seedling requires some nurturing."
-        icon: '<i class="fa-solid fa-seedling" style="margin-right: 0.5em;"></i>'
+        icon: 'fa-solid fa-seedling'
         color: "#17a2b8"
       - name: "growing"
         description: "This note is being developed. It is readible but changes are being applied."
-        icon: '<i class="fa-solid fa-leaf" style="margin-right: 0.5em;"></i>'
+        icon: 'fa-solid fa-leaf'
         color: "#e95420"
       - name: "evergreen"
         description: "This note is mature."
-        icon: '<i class="fa-brands fa-pagelines" style="margin-right: 0.5em;"></i>'
+        icon: 'fa-brands fa-pagelines'
         color: "#38b44a"
     default:
       name: "growing"
       description: "This note is being developed. It is readible but changes are being applied."
-      icon: '<i class="fa-solid fa-leaf" style="margin-right: 0.5em;"></i>'
+      icon: 'fa-solid fa-leaf'
       color: "#e95420"
 
 
