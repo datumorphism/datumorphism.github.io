@@ -156,11 +156,21 @@ AmNeumarkt
 </li>
 </ul>
 </nav>
-<div class="title is-6 has-text-left" style=margin-bottom:-1em><span title="This note is being developed. It is readible but changes are being applied." style=color:#e95420 class="tag is-warning is-small is-light"><i class="fa-solid fa-leaf" style=margin-right:.5em></i> GROWING</span>
-</div>
 <h1 class="post-title has-text-left is-size-1" itemprop="name headline">
 Logistic Regression
 </h1>
+<div class="title is-6 has-text-left" style=margin-top:1em>
+<i class="fa-solid fa-leaf" style=margin-right:.5em;color:#e95420></i>
+<a class=tooltip><span style=color:#e95420 class="tag is-warning is-small is-light">GROWING</span>
+<span class=tooltiptext>This note is being developed. It is readible but changes are being applied.</span>
+</a>
+</div>
+<div class="title is-6 has-text-left" style=margin-top:1em>
+<i class="fa-solid fa-fingerprint" style=margin-right:.5em></i>
+<a class=tooltip><span title=wiki/machine-learning/linear/logistic-regression.md class="tag is-success is-small is-light" style=color:#e95420><b>wiki/machine-learning/linear/logistic-regression.md</b></span>
+<span class=tooltiptext>Current Note ID: The unique ID of this note.</span>
+</a>
+</div>
 <div class="title is-6 has-text-left" style=margin-top:1em>
 <i class="fas fa-tags" style=margin-right:.5em></i>
 <a href=/tags/unsupervised-learning><span class="tag is-warning is-small is-light">#Unsupervised Learning</span></a>
@@ -172,7 +182,7 @@ Logistic Regression
 </div>
 </header>
 <div class=columns>
-<div class="column is-8">
+<div class="column is-12">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
 <p>In a classification problem, given a list of features values $x$ and their corresponding classes $\{c_i\}$, the posterior for of the classes, aka conditional probability of the classes, is</p>
@@ -321,98 +331,19 @@ $$</p>
 Published: <time datetime=2021-05-27T00:00:00+00:00>2021-05-27</time>
 by <span itemprop=author>L Ma</span>;
 </div></p>
-<div class=is-divider></div>
-<nav class="pagination is-centered" role=navigation aria-label=pagination>
-<a href="https://datumorphism.leima.is/wiki/machine-learning/linear/poisson-regression/?ref=footer" class=pagination-previous>« Poisson Regression</a>
-</nav>
 </div>
-<div class="column is-4">
-<div class=is-divider data-content="Cite Me"></div>
-<div class="box is-size-7 has-text-white has-background-black">
+</div>
+<div id=connectome class=is-divider data-content=CONNECTUME></div>
+<div class=columns>
+<div class="column is-8">
+<div class="box is-size-8">
 <article class=media>
 <div class=media-content>
 <div class=content>
 <p>
-L Ma
-(2021). 'Logistic Regression', Datumorphism, 05 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/linear/logistic-regression/.
-</p>
-</div>
-</div>
-</article>
-</div>
-<style>#TableOfContents>ul{list-style-type:lower-greek;padding-left:0}#TableOfContents>ul>li ul{list-style-type:none;padding-left:1em}</style>
-<div class=is-divider data-content=ToC></div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<details>
-<summary><i class="fa-solid fa-list-ol"></i> Table of Contents</summary>
-<div>
-<div>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#logistic-regression-for-two-classes>Logistic Regression for Two Classes</a></li>
-<li><a href=#relation-to-cross-entropy>Relation to Cross Entropy</a></li>
-<li><a href=#logistic-regression-for-k-classes>Logistic Regression for $K$ Classes</a></li>
-<li><a href=#why-not-non-linear>Why not non-linear</a></li>
-</ul>
-</nav>
-</div>
-</div>
-</details>
-</div>
-</div>
-</article>
-</div>
-<script>const el=document.querySelector('details summary');el.onclick=()=>{(function(f,c,d,e,a,b){a=c.createElement(d),b=c.getElementsByTagName(d)[0],a.async=1,a.src=e,b.parentNode.insertBefore(a,b)})(window,document,'script','/js/smoothscroll.js'),el.onclick=null},document.querySelectorAll('#TableOfContents a').forEach(a=>{a.addEventListener('click',()=>{document.querySelector(a.href.slice(a.href.indexOf('#'))).scrollIntoView({behavior:'smooth'})})})</script>
-<div class=is-divider data-content=REFERENCES></div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content style=width:100%;word-break:break-word>
-<div class=content>
-<p>
-<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
-<ol>
-<li class=has-text-weight-bold><a href="https://play.google.com/store/books/details?id=yPfZBwAAQBAJ" style=text-decoration:none>Hastie T, Tibshirani R, Friedman J. The Elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Science & Business Media; 2013. pp. 567–567. Available: https://play.google.com/store/books/details?id=yPfZBwAAQBAJ</a></li>
-<li class=has-text-weight-bold>
-<a name=friedman2000 href=#friedman2000 style=text-decoration:none>
-<span class="tag is-link is-light">friedman2000</span>
-</a>
-<a href=https://projecteuclid.org/journals/annals-of-statistics/volume-28/issue-2/Additive-logistic-regression--a-statistical-view-of-boosting-With/10.1214/aos/1016218223.full style=text-decoration:none>Friedman J, Hastie T, Tibshirani R. Additive Logistic Regression. The Annals of Statistics. 2000. pp. 337–374. doi:10.1214/aos/1016218223</a></li>
-<li class=has-text-weight-bold>
-<a name=Mehta2019 href=#Mehta2019 style=text-decoration:none>
-<span class="tag is-link is-light">Mehta2019</span>
-</a>
-<a href=https://linkinghub.elsevier.com/retrieve/pii/S0370157319300766 style=text-decoration:none>Mehta P, Wang C-H, Day AGR, Richardson C, Bukov M, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2019;810: 1–124. doi:10.1016/j.physrep.2019.03.001</a></li>
-</ol>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class=is-divider data-content=CONNECTUME></div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content style=width:100%>
-<div class=content>
-<p>
-<strong><i class="fa-solid fa-fingerprint"></i> Current Ref: </strong><br>
-<ul><li style=list-style:none>
-<div>wiki/machine-learning/linear/logistic-regression.md</div></li>
-</ul>
-</p>
-</div>
-</div>
-</article>
-</div>
-<div class="box is-size-7">
-<article class=media>
-<div class=media-content>
-<div class=content>
-<p>
-<strong><i class="fa-solid fa-turn-down"></i> Dynamic Links from: </strong>
-<div>
+<strong><i class="fa-solid fa-turn-down"></i> Dynamic Backlinks: </strong>
+<div class="columns is-multiline is-mobile">
+<div class="column is-half">
 <a class=box href=https://datumorphism.leima.is/wiki/machine-learning/performance/roc/>
 <div class=media-content>
 <div class=content>
@@ -425,6 +356,8 @@ ROC is used to judging the performance of classifiers
 </div>
 </div>
 </a>
+</div>
+<div class="column is-half">
 <a class=box href=https://datumorphism.leima.is/cards/information/cross-entropy/>
 <div class=media-content>
 <div class=content>
@@ -439,6 +372,8 @@ Cross entropy $H(p, q)$ can …
 </div>
 </div>
 </a>
+</div>
+<div class="column is-half">
 <a class=box href=https://datumorphism.leima.is/awesome/curriculum/>
 <div class=media-content>
 <div class=content>
@@ -452,12 +387,29 @@ The path that I follow
 </div>
 </a>
 </div>
+</div>
 </p>
 </div>
 </div>
 </article>
 </div>
-<div class="box is-size-7">
+</div>
+<div class="column is-4">
+<div class="box is-size-8">
+<article class=media>
+<div class=media-content style=width:100%>
+<div class=content>
+<p>
+<strong><i class="fa-solid fa-fingerprint"></i> Current Note ID: </strong><br>
+<ul><li style=list-style:none>
+<div>wiki/machine-learning/linear/logistic-regression.md</div></li>
+</ul>
+</p>
+</div>
+</div>
+</article>
+</div>
+<div class="box is-size-8">
 <article class=media>
 <div class=media-content>
 <div class=content>
@@ -508,11 +460,59 @@ Uni-polar sigmoid function and its properties
 </div>
 </article>
 </div>
+</div>
+</div>
+<div class=columns>
+<div class="column is-8">
 <div id=comments class=is-divider data-content=COMMENTS>
 </div>
 <script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
 </div>
+<div class="column is-4">
+<div class=is-divider data-content=Cite></div>
+<div class="box is-size-8">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+L Ma
+(2021). 'Logistic Regression', Datumorphism, 05 April. Available at: https://datumorphism.leima.is/wiki/machine-learning/linear/logistic-regression/.
+</p>
 </div>
+</div>
+</article>
+</div>
+<div class=is-divider data-content=REFERENCES></div>
+<div class="box is-size-8">
+<article class=media>
+<div class=media-content style=width:100%;word-break:break-word>
+<div class=content>
+<p>
+<strong><i class="fa-solid fa-quote-left"></i> References: </strong><br>
+<ol>
+<li class=has-text-weight-bold><a href="https://play.google.com/store/books/details?id=yPfZBwAAQBAJ" style=text-decoration:none>Hastie T, Tibshirani R, Friedman J. The Elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer Science & Business Media; 2013. pp. 567–567. Available: https://play.google.com/store/books/details?id=yPfZBwAAQBAJ</a></li>
+<li class=has-text-weight-bold>
+<a name=friedman2000 href=#friedman2000 style=text-decoration:none>
+<span class="tag is-link is-light">friedman2000</span>
+</a>
+<a href=https://projecteuclid.org/journals/annals-of-statistics/volume-28/issue-2/Additive-logistic-regression--a-statistical-view-of-boosting-With/10.1214/aos/1016218223.full style=text-decoration:none>Friedman J, Hastie T, Tibshirani R. Additive Logistic Regression. The Annals of Statistics. 2000. pp. 337–374. doi:10.1214/aos/1016218223</a></li>
+<li class=has-text-weight-bold>
+<a name=Mehta2019 href=#Mehta2019 style=text-decoration:none>
+<span class="tag is-link is-light">Mehta2019</span>
+</a>
+<a href=https://linkinghub.elsevier.com/retrieve/pii/S0370157319300766 style=text-decoration:none>Mehta P, Wang C-H, Day AGR, Richardson C, Bukov M, Fisher CK, et al. A high-bias, low-variance introduction to Machine Learning for physicists. Phys Rep. 2019;810: 1–124. doi:10.1016/j.physrep.2019.03.001</a></li>
+</ol>
+</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+<div class=is-divider data-content=Nav></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://datumorphism.leima.is/wiki/machine-learning/linear/poisson-regression/?ref=footer" class=pagination-previous>« Poisson Regression</a>
+</nav>
 </article>
 </div>
 </section>
@@ -524,7 +524,10 @@ Uni-polar sigmoid function and its properties
 <a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
 <i class="far fa-comments"></i>
 </a>
-<a class="button is-primary is-light is-outlined" style=width:35px;height:35px;position:fixed;bottom:100px;right:10px;border-radius:9999px onclick="document.querySelector('ninja-keys').open()"><i class="fa-solid fa-terminal"></i></a>
+<a class="button is-primary is-light is-outlined" href=#connectome alt=Connectome style=position:fixed;bottom:100px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fa-solid fa-brain"></i>
+</a>
+<a class="button is-primary is-light is-outlined" style=width:35px;height:35px;position:fixed;bottom:140px;right:10px;border-radius:9999px onclick="document.querySelector('ninja-keys').open()"><i class="fa-solid fa-terminal"></i></a>
 </div>
 </main>
 <footer>
