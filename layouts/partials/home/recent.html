@@ -7,26 +7,8 @@
                 Updates</h2>
 
             {{ range .Site.RegularPages.ByDate.Reverse | first 4 }}
-            <div class="notification is-primary is-light">
-                <p>
-                    <span class="tag is-large">
-                    {{ .Section | humanize }}: </span><a href="{{ .Permalink }}" class="has-text-primary" style="text-decoration: none;">{{ .Title }}</a></p>
-                <p>
-                    {{ if .Params.tags }}
-                    <div>
-                        <span style="display:block;font-size:80%;" class="has-text-primary" >
-                            <div class="tags is-small has-text-primary" style="display: inline;">
-                                {{ range $tag := .Params.tags }}
-                                <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}"
-                                    style="margin-right: 0.5em;"><span
-                                        class="is-warning is-small has-text-primary">#{{$tag}}</span></a>
-                                {{ end }}
-                            </div>
-                        </span>
-                    </div>
-                    {{ end }}
-                </p>
-            </div>
+            {{ partial "home/card" .}}
+
             {{ end }}
         </div>
 

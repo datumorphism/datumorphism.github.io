@@ -12,7 +12,7 @@ tags:
 references:
 - name: "Schaum's Outline of Theories and Problems of Elements of Statistics II, by Ruth Bernstein and Stephen Bernstein"
   title: ''
-weight: 2
+weight: 3
 published: false
 ---
 

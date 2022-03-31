@@ -1,0 +1,26 @@
+{{ $truncate := 100 }}
+
+<a class="box" href="{{ .Permalink }}">
+    <div class="media-content">
+        <div class="content">
+            <div class="title is-6" style="padding-bottom: 0.8em;border-bottom: 1px dotted #999;">{{ .Section | humanize }}: {{ .Title }}
+            <span style="float: right;"><i class="fa-solid fa-bookmark" style="color: #999;"></i></span>
+            </div>
+            <div style="font-size: 80%;">
+                {{ if .Params.description }}
+                {{ .Params.description | safeHTML | truncate ($truncate) }}
+                {{ else }}
+                {{ .Summary | safeHTML | truncate ($truncate) }}
+                {{ end }}
+            </div>
+            <div>
+                {{ if .Params.tags }}
+                        {{ range $tag := .Params.tags }}
+                        <span href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" style="font-size: 80%;">#{{$tag}}</span>
+                        {{ end }}
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+</a>
