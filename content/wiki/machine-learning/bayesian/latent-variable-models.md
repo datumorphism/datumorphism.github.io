@@ -102,7 +102,7 @@ $$
 
 
 
-To work out the integral $p(y\mid  \theta)$, numerical methods such as **Monte Carlo** can be utilized. Monte Carlo takes a discrete point of view and find a fair multiset sample $\{\cdots, \mathbf z^i, \cdots\}$ of the latent space $\mathbf z$. However, the sample space of $\mathbf z$ is usually quite large. To solve this problem, importance sampling comes to the save. Instead of evaluating
+To work out the integral $p(y\mid  \theta)$, numerical methods such as **Monte Carlo** can be utilized. Monte Carlo takes a discrete point of view and find a fair {{< c "cards/math/multiset-mset-bag.md" "multiset" >}} sample $\{\cdots, \mathbf z^i, \cdots\}$ of the latent space $\mathbf z$. However, the sample space of $\mathbf z$ is usually quite large. To solve this problem, importance sampling comes to the save. Instead of evaluating
 
 $$
 p(y\mid \theta) = \int p( y \mid  \theta, \mathbf z ) p(\mathbf z) d\mathbf z,

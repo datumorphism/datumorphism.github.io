@@ -16,7 +16,5 @@ weight: 3
 published: false
 ---
 
-* ToC
-{:toc}
 
 p value is widely used in

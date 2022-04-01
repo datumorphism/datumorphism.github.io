@@ -20,7 +20,7 @@ links:
 
 The Weisfeiler-Lehman kernel is an iterative integration of neighborhood information.
 
-We initialize the labels for each node using its own node degree. At each step, we take the neighboring node degrees to form a multiset. At step $K$, we have the multisets for each node. Those multisets at each node can be processed to form an representation of the graph which is in turn used to calculate statistics of the graph.
+We initialize the labels for each node using its own node degree. At each step, we take the neighboring node degrees to form a {{< c "cards/math/multiset-mset-bag.md" "multiset" >}}. At step $K$, we have the multisets for each node. Those multisets at each node can be processed to form an representation of the graph which is in turn used to calculate statistics of the graph.
 
 {{< figure src="../assets/graph-weisfeiler-lehman-kernel/weisfeiler-lehman-kernel.png" caption="Iterate $k$ steps" >}}
 

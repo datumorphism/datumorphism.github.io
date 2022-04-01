@@ -8,7 +8,6 @@ categories:
   - "statistics"
 tags:
   - "probability"
-  - "distance"
 references:
   - name: "Kullback–Leibler divergence @ Wikipedia"
     link: "https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence"

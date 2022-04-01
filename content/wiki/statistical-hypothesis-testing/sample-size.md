@@ -15,6 +15,7 @@ references:
   - name: "Caldwell AR. Chapter 1 Introduction to Power Analysis. Available: https://aaroncaldwell.us/SuperpowerBook/introduction-to-power-analysis.html"
     link: "https://aaroncaldwell.us/SuperpowerBook/introduction-to-power-analysis.html"
 weight: 6
+published: false
 ---
 
 

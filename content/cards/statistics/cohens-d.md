@@ -14,5 +14,6 @@ references:
 weight:
 links:
   - "wiki/machine-learning/bayesian/latent-variable-models.md"
+published: false
 ---
 

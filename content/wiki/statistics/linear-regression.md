@@ -3,14 +3,17 @@ title: "Linear Regression"
 description: "Linear regression of multidimensional data"
 date: 2019-01-01
 categories:
-- 'Statistics'
+  - "Statistics"
 tags:
-- 'Statistics'
-- 'Basics'
-- 'Linear Regression'
+  - "Statistics"
+  - "Basics"
+  - "Linear Regression"
 references:
-- name: "The Elements of Statistical Learning by Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie"
-  link: ''
+  - name: "The Elements of Statistical Learning by Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie"
+    link: ""
+  - name: "Shafer G, Vovk V. A tutorial on conformal prediction. arXiv [cs.LG]. 2007. Available: http://arxiv.org/abs/0706.3188"
+    link: "http://arxiv.org/abs/0706.3188"
+    key: "Shafer2007"
 weight: 6
 published: true
 ---
@@ -93,13 +96,40 @@ Solving $- 2 X_{im} ( Y_i - X_{ij}\beta_j ) = 0$, we have
 {{<m>}}
 \begin{align}
 & 0 = X_{im} ( Y_i - X_{ij}\beta_j )  \\
-& X_{im} X_{ij}\beta_j   = X_{im} Y_i \\
-& \beta_j = ( X_{im} X_{ij} )^{-1} X_{im} Y_i
+& X_{im} X_{ij}\beta_j   = X_{im} Y_i
 \end{align}
 {{</m>}}
 
-In the abstract matrix notation,
+Note that it is multiplication and summation on the left since we are using Einstein summation convention. This is better understood in the abstract matrix notation,
 
 $$
 \boldsymbol \beta = ( \mathbf X^T \mathbf X )^{-1} \mathbf X^T \mathbf Y.
 $$
+
+## Scalar $\mathbf X_i$
+
+For scalar $\mathbf X_i = x_i$, we can replace $\mathbf X$ with a vector $\vec x$ for all data points. we have
+
+{{< m >}}
+\beta = \frac{x_j y_j}{x_i x_i}.
+{{< /m >}}
+
+More generally, least square leads to the following result
+
+{{< m >}}
+\begin{align}
+k &= \frac{\sum_j (x_j - \bar x) y_j}{\sum_i (x_i - \bar x)(x_i - \bar x)} \\
+b &= \bar y - k \bar x,
+\end{align}
+{{< /m >}}
+
+where $\bar x$ and $\bar y$ are the mean values. Then the model
+
+{{< m >}}
+y = k x + b
+{{< /m >}}
+
+can be obtained.
+
+
+[^Shafer2007]: {{< cite key="Shafer2007" >}}
