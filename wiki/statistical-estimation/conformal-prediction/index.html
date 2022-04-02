@@ -131,7 +131,7 @@ AmNeumarkt
 <meta itemprop=name content="Conformal Prediction">
 <meta itemprop=description content="Conformal prediction is a method to sequentially predict consistent confidence intervals using nonconformity measures."><meta itemprop=datePublished content="2022-04-01T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-04-01T00:00:00+00:00">
-<meta itemprop=wordCount content="721">
+<meta itemprop=wordCount content="732">
 <meta itemprop=keywords content="Statistics,Basics,Confidence Interval,Conformal Prediction,">
 <section class=section>
 <div class=container>
@@ -240,7 +240,7 @@ In principle, there are a lot of freedom in choosing the nonconformity measure. 
 </article>
 <h2 id=a-conformal-algorithm-example>A Conformal Algorithm Example</h2>
 <figure>
-<img src=../assets/conformal-prediction/three-data-points-conformal-algorithm-old-examples.jpg alt="We have two existing datapoints and try to decide whether the third data point $x_3$ should be included in the predicted region with $\alpha=0.05$ significance level."> <figcaption>
+<img src=../assets/conformal-prediction/three-data-points-conformal-algorithm-old-examples-setup.jpg alt="We have two existing datapoints and try to decide whether the third data point $x_3$ should be included in the predicted region with $\alpha=0.05$ significance level."> <figcaption>
 <p>We have two existing datapoints and try to decide whether the third data point $x_3$ should be included in the predicted region with $\alpha=0.05$ significance level.</p>
 </figcaption>
 </figure>
@@ -276,6 +276,11 @@ $$</p>
 <p>$$
 p_x = \frac{N_{\alpha_i\geq\alpha_3}}{n}.
 $$</p>
+<figure>
+<img src=../assets/conformal-prediction/three-data-points-conformal-algorithm-old-examples.jpg alt="Steps to decide whether to include $x_3=2$ in the predicted region."> <figcaption>
+<p>Steps to decide whether to include $x_3=2$ in the predicted region.</p>
+</figcaption>
+</figure>
 <article class="message is-light is-light">
 <div class=message-header>
 <p>Intuition using Extreme Cases</p>
