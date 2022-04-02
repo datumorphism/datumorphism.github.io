@@ -58,7 +58,7 @@ In principle, there are a lot of freedom in choosing the nonconformity measure. 
 ## A Conformal Algorithm Example
 
 
-{{< figure src="../assets/conformal-prediction/three-data-points-conformal-algorithm-old-examples.jpg" caption="We have two existing datapoints and try to decide whether the third data point $x_3$ should be included in the predicted region with $\alpha=0.05$ significance level." >}}
+{{< figure src="../assets/conformal-prediction/three-data-points-conformal-algorithm-old-examples-setup.jpg" caption="We have two existing datapoints and try to decide whether the third data point $x_3$ should be included in the predicted region with $\alpha=0.05$ significance level." >}}
 
 Given two existing data points
 
@@ -99,10 +99,12 @@ With all $\alpha_i$, count all the data points that leads to $\alpha_i\geq \alph
 p_x = \frac{N_{\alpha_i\geq\alpha_3}}{n}.
 {{< /m >}}
 
+{{< figure src="../assets/conformal-prediction/three-data-points-conformal-algorithm-old-examples.jpg" caption="Steps to decide whether to include $x_3=2$ in the predicted region." >}}
+
+
 {{< message title="Intuition using Extreme Cases" >}}
 
 To get some intuition, let's go to the extreme cases. If the new data point $x_3$ was not $2$ but $1e10$, we can easily see that $\alpha_1\sim\alpha_2\sim 1e10/2$ and $\alpha_3\sim 1e10$. That being said, $\alpha_3$ is always the largest and $p_x$ is minimized. If we have a lot of data points like $x_1$ and $x_2$, and suddenly there is a data point $x_n=1e10$, we have $p_x\to0$. This is an expected result as $1e10$ is so different.
-
 
 {{< /message >}}
 
