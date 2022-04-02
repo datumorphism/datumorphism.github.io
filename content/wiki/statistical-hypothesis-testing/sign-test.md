@@ -11,7 +11,7 @@ tags:
 references:
 - link: "https://www.coursera.org/learn/inferential-statistics/lecture/UvETp/6-02-the-sign-test"
   name: 'The sign test @ inferential statistics'
-weight: 4
+weight: 7
 ---
 
 We have a small dataset, but it doesn't satisfy the t-test conditions. Then we would use as little assumptions as possible.

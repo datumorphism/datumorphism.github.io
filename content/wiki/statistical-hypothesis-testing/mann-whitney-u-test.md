@@ -14,7 +14,7 @@ references:
   name: "What's the difference An Overview of Non-Parametric Tests"
 - link: "https://stats.stackexchange.com/questions/121852/how-to-choose-between-t-test-or-non-parametric-test-e-g-wilcoxon-in-small-sampl"
   name: "How to choose between t-test or non-parametric test e.g. Wilcoxon in small samples"
-weight: 5
+weight: 8
 published: true
 ---
 

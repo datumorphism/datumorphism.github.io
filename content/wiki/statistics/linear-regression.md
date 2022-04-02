@@ -114,7 +114,7 @@ For scalar $\mathbf X_i = x_i$, we can replace $\mathbf X$ with a vector $\vec x
 \beta = \frac{x_j y_j}{x_i x_i}.
 {{< /m >}}
 
-More generally, least square leads to the following result
+More generally, least square leads to the following results[^Shafer2007]
 
 {{< m >}}
 \begin{align}

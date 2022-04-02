@@ -13,10 +13,14 @@ references:
   - name: "Shafer G, Vovk V. A tutorial on conformal prediction. arXiv [cs.LG]. 2007. Available: http://arxiv.org/abs/0706.3188"
     link: "http://arxiv.org/abs/0706.3188"
     key: "Shafer2007"
+links:
+  - "wiki/statistical-hypothesis-testing/neyman-pearson-theory.md"
+garden:
+  - "growing"
 weight: 3
 ---
 
-Conformal prediction is a method to predict a consistent confidence interval in an on-line setting.
+Conformal prediction is a method to predict a consistent confidence interval in an on-line setting. The algorithms is following the {{< c "wiki/statistical-hypothesis-testing/neyman-pearson-theory.md" "Neyman-Pearson hypothesis testing" >}} framework, thus providing solid theoretical support for the predicted region.
 
 {{< message title="on-line" >}}
 
@@ -45,11 +49,86 @@ where $d$ is some kind of {{< c "/tags/distance/" >}}.
 
 {{< message title="Choice of Nonconformity Measure" >}}
 
-In principle, there are a lot of freedom in choosing the nonconformity measure. For example, as long as two nonconformity measures are monotonically related, the predicted regions are the same.
+In principle, there are a lot of freedom in choosing the nonconformity measure. For example, as long as two nonconformity measures are monotonically related, the predicted regions are the same[^Shafer2007]. One could understand this using the following example.
 
 {{< /message >}}
 
 
+
+## A Conformal Algorithm Example
+
+
+{{< figure src="../assets/conformal-prediction/three-data-points-conformal-algorithm-old-examples.jpg" caption="We have two existing datapoints and try to decide whether the third data point $x_3$ should be included in the predicted region with $\alpha=0.05$ significance level." >}}
+
+Given two existing data points
+
+{{< m >}}
+B_3 = \{\{ x_1=1, x_2=4 \}\},
+{{< /m >}}
+
+we will decide if $x_3=2$ should be included in our predicted region of significance level $\alpha=0.05$.
+
+To be able to test if $x_3=2$ falls inside the predicted region, we simply take the average of data points for the point prediction, and we use L1 norm as the nonconformity measure, i.e.,
+
+{{< m >}}
+\begin{align}
+f(B_n) &= \frac{1}{n}\sum_i x_i \\
+A(f(B_n), x) &= \lvert x - f(B_n) \rvert.
+\end{align}
+{{< /m >}}
+
+With the model and nonconformity measure set, we can deicide whether the new data poin $x_3 = 2$ should be included in the predicted region of significance level $\alpha=0.05$.
+
+For $i=1,2,3$,
+
+1. calculate
+
+   {{< m >}}
+   f_i = f(B_3\{\{x_i\}\})
+   {{< /m >}}
+
+2. calculate the nonconformity measure
+
+   {{< m >}}
+   \alpha_i = A(f_i, x_i)
+   {{< /m >}}
+
+With all $\alpha_i$, count all the data points that leads to $\alpha_i\geq \alpha_3$, denoted as $N_{\alpha_i\geq\alpha_3}$, calculate the probability
+
+{{< m >}}
+p_x = \frac{N_{\alpha_i\geq\alpha_3}}{n}.
+{{< /m >}}
+
+{{< message title="Intuition using Extreme Cases" >}}
+
+To get some intuition, let's go to the extreme cases. If the new data point $x_3$ was not $2$ but $1e10$, we can easily see that $\alpha_1\sim\alpha_2\sim 1e10/2$ and $\alpha_3\sim 1e10$. That being said, $\alpha_3$ is always the largest and $p_x$ is minimized. If we have a lot of data points like $x_1$ and $x_2$, and suddenly there is a data point $x_n=1e10$, we have $p_x\to0$. This is an expected result as $1e10$ is so different.
+
+
+{{< /message >}}
+
+This algorithm is basically a hypothesis test procedure using the {{< c "wiki/statistical-hypothesis-testing/neyman-pearson-theory.md" "Neyman-Pearson theory" >}}[^Shafer2007].
+
+## Requires Exchangeability
+
+The algorithm assumes the data points are exchangeabile as we assume no statistical difference between
+
+{{< m >}}
+x_1, x_2, x_3, ..., x_n,
+{{< /m >}}
+
+and
+
+{{< m >}}
+x_2, x_3, ..., x_n, x_1
+{{< /m >}}
+
+and
+
+{{< m >}}
+x_1, x_3, ..., x_n, x_2
+{{< /m >}}
+
+and all the possible permutations of this pattern. Obviously, i.i.d. data satisfies this condition. Note that i.i.d. is a more stringent condition[^Shafer2007].
 
 
 
