@@ -8,7 +8,7 @@
 <meta name=author content="L Ma">
 <meta property="og:title" content="Poisson Regression">
 <meta property="og:description" content="Poisson regression is a generalized linear model for count data.
-To model a dataset that is generated from a Poisson distribution, we only need to model the mean $\mu$ as it is the only parameters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is
+To model a dataset that is generated from a [[Poisson distribution]]  Poisson Process    , we only need to model the mean $\mu$ as it is the only parameters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is
 $$ \mu = \exp\left(\beta X\right). $$
 The $\exp$ makes sure that the mean is positive as this is required for count data.">
 <meta property="og:type" content="article">
@@ -132,11 +132,11 @@ AmNeumarkt
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Poisson Regression">
 <meta itemprop=description content="Poisson regression is a generalized linear model for count data.
-To model a dataset that is generated from a Poisson distribution, we only need to model the mean $\mu$ as it is the only parameters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is
+To model a dataset that is generated from a [[Poisson distribution]]  Poisson Process    , we only need to model the mean $\mu$ as it is the only parameters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is
 $$ \mu = \exp\left(\beta X\right). $$
 The $\exp$ makes sure that the mean is positive as this is required for count data."><meta itemprop=datePublished content="2021-05-07T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-05-07T00:00:00+00:00">
-<meta itemprop=wordCount content="92">
+<meta itemprop=wordCount content="95">
 <meta itemprop=keywords content="Basics,Linear Models,">
 <section class=section>
 <div class=container>
@@ -187,7 +187,16 @@ Poisson Regression
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
 <p>Poisson regression is a generalized linear model for count data.</p>
-<p>To model a dataset that is generated from a Poisson distribution, we only need to model the mean $\mu$ as it is the only parameters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is</p>
+<p>To model a dataset that is generated from a
+<span class=tooltip><a href=https://datumorphism.leima.is/cards/statistics/poisson-process/>
+[[Poisson distribution]]
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Poisson Process</span>
+<span class=tooltip_content> </span>
+</span>
+</span>
+, we only need to model the mean $\mu$ as it is the only parameters. The simplest model we can have for some given features $X$ is a linear model. However, for count data, the effects of the predictors are often multiplicative. The next simplest model we can have is</p>
 <p>$$
 \mu = \exp\left(\beta X\right).
 $$</p>
