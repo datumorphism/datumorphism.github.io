@@ -13,6 +13,9 @@ references:
   - name: "Shafer G, Vovk V. A tutorial on conformal prediction. arXiv [cs.LG]. 2007. Available: http://arxiv.org/abs/0706.3188"
     link: "http://arxiv.org/abs/0706.3188"
     key: "Shafer2007"
+  - name: "Zeni G, Fontana M, Vantini S. Conformal Prediction: a Unified Review of Theory and New Challenges. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2005.07972"
+    link: "http://arxiv.org/abs/2005.07972"
+    key: "Zeni2020"
 links:
   - "wiki/statistical-hypothesis-testing/neyman-pearson-theory.md"
 garden:
