@@ -136,5 +136,11 @@ x_1, x_3, ..., x_n, x_2
 and all the possible permutations of this pattern. Obviously, i.i.d. data satisfies this condition. Note that i.i.d. is a more stringent condition[^Shafer2007].
 
 
+## Bonferroni Correction
+
+For predictions involves multiple variable, we should consider the {{< c "cards/statistics/bonferroni-correction.md" >}}.
+
+
+
 
 [^Shafer2007]: {{< cite key="Shafer2007" >}}
