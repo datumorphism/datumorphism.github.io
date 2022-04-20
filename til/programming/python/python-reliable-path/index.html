@@ -130,7 +130,7 @@ AmNeumarkt
 <meta itemprop=name content="Python Reliable Path to File">
 <meta itemprop=description content="Find the actual path to file"><meta itemprop=datePublished content="2018-12-31T00:00:00+00:00">
 <meta itemprop=dateModified content="2018-12-31T00:00:00+00:00">
-<meta itemprop=wordCount content="132">
+<meta itemprop=wordCount content="205">
 <meta itemprop=keywords content="Python,">
 <section class=section>
 <div class=container>
@@ -179,7 +179,28 @@ Find the actual path to file
 </div>
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" itemprop=articleBody>
-<p>Python <code>os</code> module provides several useful functions.</p>
+<h2 id=using-pathlib>Using <code>pathlib</code></h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> pathlib <span style=color:#f92672>import</span> Path
+
+__location__ <span style=color:#f92672>=</span> Path(__file__)<span style=color:#f92672>.</span>parent<span style=color:#f92672>.</span>resolve()
+</code></pre></div><p>As an example, we could read a file <code>my_file.json</code> located at the same folder as the python script.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>with</span> open(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>join(__location__, <span style=color:#e6db74>&#39;my_file.json&#39;</span>), <span style=color:#e6db74>&#39;r&#39;</span>) <span style=color:#66d9ef>as</span> f:
+    data_from_file <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>loads( f<span style=color:#f92672>.</span>read() )
+</code></pre></div><h3 id=playground>Playground</h3>
+<iframe height=400px width=100% src="https://repl.it/@emptymalei/python-reliable-path?lite=true" scrolling=no frameborder=no allowtransparency=true allowfullscreen sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<h2 id=using-os>Using <code>os</code></h2>
+<p>Python <code>os</code> module provides several useful functions too. This is <strong>NOT</strong> recommended anymore. But if one insists, we can easily make it work.</p>
+<p>The following code will determine the path to the file.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>__location__ <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>realpath(
+  os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>join(
+    os<span style=color:#f92672>.</span>getcwd(),
+    os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>dirname(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>abspath(__file__))
+  )
+)
+</code></pre></div><p>For the same example as above, we could read a file <code>my_file.json</code> located at the same folder as the python script.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>with</span> open(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>join(__location__, <span style=color:#e6db74>&#39;my_file.json&#39;</span>), <span style=color:#e6db74>&#39;r&#39;</span>) <span style=color:#66d9ef>as</span> f:
+    data_from_file <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>loads( f<span style=color:#f92672>.</span>read() )
+</code></pre></div><p>We can understand how it works by breaking it down.</p>
 <ol>
 <li>
 <p><code>os.getcwd()</code>: get current working directory. Current working directory is defined as where the python script is executed.</p>
@@ -203,13 +224,7 @@ os.getcwd:  /Users/datumorphism
 </code></pre></div><p>will return <code>os.path.join("datumorphism", "main.py"): datumorphism/main.py</code>.</p>
 </li>
 </ol>
-<p>The following code will determine the path to the file.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>__location__ <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>realpath(
-    os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>join(os<span style=color:#f92672>.</span>getcwd(), os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>dirname(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>abspath(__file__))))
-</code></pre></div><p>As an example, we could read a file <code>my_file.json</code> located at the same folder as the python script.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>with</span> open(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>join(__location__, <span style=color:#e6db74>&#39;my_file.json&#39;</span>), <span style=color:#e6db74>&#39;r&#39;</span>) <span style=color:#66d9ef>as</span> f:
-    data_from_file <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>loads( f<span style=color:#f92672>.</span>read() )
-</code></pre></div><h2 id=playground>Playground</h2>
+<h3 id=playground-1>Playground</h3>
 <iframe height=400px width=100% src="https://repl.it/@emptymalei/Reliable-Path-to-File?lite=true" scrolling=no frameborder=no allowtransparency=true allowfullscreen sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 </div>
 <p><div class="has-text-right is-size-7">
