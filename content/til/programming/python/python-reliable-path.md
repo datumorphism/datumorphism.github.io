@@ -18,7 +18,54 @@ references:
   link: https://docs.python.org/3.7/library/os.path.html
 ---
 
-Python `os` module provides several useful functions.
+## Using `pathlib`
+
+```python
+from pathlib import Path
+
+__location__ = Path(__file__).parent.resolve()
+```
+
+As an example, we could read a file `my_file.json` located at the same folder as the python script.
+
+```python
+with open(os.path.join(__location__, 'my_file.json'), 'r') as f:
+    data_from_file = json.loads( f.read() )
+```
+
+### Playground
+
+{{< repl url="https://repl.it/@emptymalei/python-reliable-path?lite=true" >}}
+
+
+
+
+
+
+## Using `os`
+
+Python `os` module provides several useful functions too. This is **NOT** recommended anymore. But if one insists, we can easily make it work.
+
+
+The following code will determine the path to the file.
+
+```python
+__location__ = os.path.realpath(
+  os.path.join(
+    os.getcwd(),
+    os.path.dirname(os.path.abspath(__file__))
+  )
+)
+```
+
+For the same example as above, we could read a file `my_file.json` located at the same folder as the python script.
+
+```python
+with open(os.path.join(__location__, 'my_file.json'), 'r') as f:
+    data_from_file = json.loads( f.read() )
+```
+
+We can understand how it works by breaking it down.
 
 1. `os.getcwd()`: get current working directory. Current working directory is defined as where the python script is executed.
 
@@ -36,13 +83,13 @@ Python `os` module provides several useful functions.
 
    will return `__file__:  main.py`.
 
-2. `os.path.abspath` retrieves the absolute path of the file.
+3. `os.path.abspath` retrieves the absolute path of the file.
 
    ```python
    file_absolute_path = os.path.abspath(__file__)
    ```
 
-3. `os.path.join` joins the strings into path, intelligently.
+4. `os.path.join` joins the strings into path, intelligently.
 
    ```python
    print('os.path.join("datumorphism", "main.py"): ', os.path.join("datumorphism", "main.py") )
@@ -51,21 +98,8 @@ Python `os` module provides several useful functions.
    will return `os.path.join("datumorphism", "main.py"):  datumorphism/main.py`.
 
 
-The following code will determine the path to the file.
 
-```python
-__location__ = os.path.realpath(
-    os.path.join(os.getcwd(), os.path.dirname(os.path.abspath(__file__))))
-```
-
-As an example, we could read a file `my_file.json` located at the same folder as the python script.
-
-```python
-with open(os.path.join(__location__, 'my_file.json'), 'r') as f:
-    data_from_file = json.loads( f.read() )
-```
-
-## Playground
+### Playground
 
 {{< repl url="https://repl.it/@emptymalei/Reliable-Path-to-File?lite=true" >}}
 
