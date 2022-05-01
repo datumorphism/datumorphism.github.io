@@ -29,3 +29,4 @@ where ${}^{(i)}$ indicates the $i$th variable, ${}_ t$ denotes time. In a foreca
 
 {{< figure src="../assets/forecasting-problem/time-series-forecasting-problem.jpg" >}}
 
+A model $f$ will use $x^{(i)} _ {t-K:t}$ and $u^{(i)} _ {t-K:t+H}$ to forecast $y^{(i)} _ {t+1:t+H}$.

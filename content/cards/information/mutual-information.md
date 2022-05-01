@@ -49,6 +49,10 @@ D_{\mathrm{KL}} \left(  P_{XY}(x,y) \parallel  P_X(x) P_{Y}(y) \right).
 {{< /m >}}
 
 
+## Conditional Mutual Information
+
+
+{{< figure src="../assets/mutual-information/conditional-mutual-information.jpg" caption="Redraw from [wikipedia](https://en.wikipedia.org/wiki/Conditional_mutual_information#/media/File:VennInfo3Var.svg)" >}}
 
 
 
