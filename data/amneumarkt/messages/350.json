@@ -1,0 +1,108 @@
+{
+    "_": "Message",
+    "id": 350,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-05 05:34:12+00:00",
+    "message": "#ml\n\nCame across this post this morning. I realized the reason I am not writing a lot in Julia is simply because I don't know how to write quality code in Julia.\n\nWhen we build a model in Python, we know all these details about making it quality code. For a new language, I'm just terrified by the amount of details I need to be aware of.\n\nAh I'm getting older.\n\nJAX vs Julia (vs PyTorch) \u00b7 Patrick Kidger\nhttps://kidger.site/thoughts/jax-vs-julia/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8845989604904982767,
+            "url": "https://kidger.site/thoughts/jax-vs-julia/",
+            "display_url": "kidger.site/thoughts/jax-vs-julia",
+            "hash": 0,
+            "type": "article",
+            "site_name": "kidger.site",
+            "title": "Patrick Kidger",
+            "description": "Personal Website. Math, SciML, scuba diving!",
+            "photo": {
+                "_": "Photo",
+                "id": 6025122385486786021,
+                "access_hash": -437722228618001208,
+                "file_reference": "b\"\\x00b\\x7f\\x8f\\xe3g\\xe8l\\xa7B\\xb2\\xddk;O\\x0b\\xf4\\x10\\xae\\x8e'\"",
+                "date": "2022-05-04 17:40:18+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01((O\\xb33\\r\\xca\\xc0\\xd3V\\x07\\x0c\\x0b\\x8f\\x97\\xebVC\\x04\\x9b\\nr\\x0f8\\xa8.\\xe4v\\x93\\xcaJ\\x1aB\\xd4\\xa9xL\\x92`s\\x8a\\x81#\\x90\\xe7\\x19\\xe3\\xb6j\\xe1\\x82lg9\\xc7\\xbdAp\\xde[\\x8c\\x01\\x823M1\\xb5b\\xbbo\\x04g<QN2n\\x1d0(\\xa6#S\\xee\\x0c\\x9e=j \\xe8\\xf7\\x19$\\xef\\xc52Y\\x87\\xff\\x00\\xaa\\xa2\\xb7*&\\xeb\\x8e)45\\xb9{p\\x11\\x9f\\x98\\xe3\\x9a\\xcc\\xb8l\\x88\\xc1\\xea\\x01\\xfeuji\\x8b\\x8f-~\\xefsT\\xe5\\x04\\xb18\\xe0qI!\\xc9\\xdcb\\x8c\\x90=M\\x15b\\xc1\\x04\\x97)\\xecsE2F\\xa1\\xcbb\\x90\\xa8\\xf3\\x0f\\x14QZt'\\xa8\\xf4\\x1b\\x14\\x9e\\xd4\\xb1\\x80U\\xb7\\x7f\\x15\\x14R\\x96\\x96A\\x1d\\xd9b\\xd9\\x12(\\xa6\\x99\\x15\\x86\\x17\\x1c\\xd1E\\x15\\x9b(\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 240,
+                        "h": 240,
+                        "size": 8768
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Patrick Kidger",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 406,
+            "length": 42
+        }
+    ],
+    "views": 89,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 581,
+        "read_max_id": 581
+    },
+    "edit_date": "2022-05-05 05:45:45+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

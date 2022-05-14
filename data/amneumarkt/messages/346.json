@@ -1,0 +1,52 @@
+{
+    "_": "Message",
+    "id": 346,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-04-24 13:16:24+00:00",
+    "message": "#work\n\nI realized something interesting about time management.\n\nIf I open my calendar now, I see these \u201ctiles\u201d of meetings filling up most of my working hours. It looks bad, but it was even worse in the past. The thing is, if I do meetings during my working hours, I will have to work extra hours to do some thinking and analysis. It is rather cruel. \n\nSo what changed? I think I realized the power of Google Docs. Instead of many people talking and nobody listening, someone should write up a draft first and send it out to the colleagues. Then, once people get the link to the docs, everyone can add comments. \n\nThis doesn\u2019t seem to be very different from meetings. Oh, it is very different. The workflow can be async. We are not forced to use our precious focus time to attend meetings. We can read and comment on the document whenever we like: when we are commuting, when we are taking a dump, when we are on a phone/tablet, just, any, time.\n\nApart from the async workflow, I also like the \"think, comment and forget\" idea. I feel people deliver better ideas when we think first, comment next, and forget about it unless there are replies to our comments. No pressure, no useless debates.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        }
+    ],
+    "views": 893,
+    "forwards": 11,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-04-24 13:19:13+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "work"
+    ]
+}

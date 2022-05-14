@@ -1,0 +1,92 @@
+{
+    "_": "Message",
+    "id": 345,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-04-20 08:45:59+00:00",
+    "message": "#ml #statistics\n\nI read about conformal prediction a while ago and realized that I need to understand more about the hypothesis testing theories. As someone from natural science, I mostly work within the Neyman-Pearson ideas. \nSo I explored it a bit and found two nice papers. See the list below. If you have other papers on similar topics, I would appreciate some comments.\n\n1. Perezgonzalez JD. Fisher, Neyman-Pearson or NHST? A tutorial for teaching data testing. Front Psychol. 2015;6: 223. doi:10.3389/fpsyg.2015.00223  https://www.frontiersin.org/articles/10.3389/fpsyg.2015.00223/full\n2. Lehmann EL. The Fisher, Neyman-Pearson Theories of Testing Hypotheses: One Theory or Two? J Am Stat Assoc. 1993;88: 1242\u20131249. doi:10.2307/2291263",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3963697280387073795,
+            "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2015.00223/full",
+            "display_url": "frontiersin.org/articles/10.3389/fpsyg.2015.00223/full",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Frontiers",
+            "title": "Fisher, Neyman-Pearson or NHST? A tutorial for teaching data testing",
+            "description": "Despite frequent calls for the overhaul of null hypothesis significance testing (NHST), this controversial procedure remains ubiquitous in behavioral, social and biomedical teaching and research. Little change seems possible once the procedure becomes well ingrained in the minds and current practice of researchers; thus, the optimal opportunity for such change is at the time the procedure is taught, be this at undergraduate or at postgraduate levels. This paper presents a tutorial for the teaching of data testing procedures, often referred to as hypothesis testing theories. The first procedure introduced is Fisher's approach to data testing\u2014tests of significance; the second is Neyman-Pearson's approach\u2014tests of acceptance; the final procedure is the incongruent combination of the previous two theories into the current approach\u2014NSHT. For those researchers sticking with the latter, two compromise solutions on how to improve NHST conclude the tutorial.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 11
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 525,
+            "length": 66
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 595,
+            "length": 146,
+            "url": "https://sci-hub.wf/10.1080/01621459.1993.10476404"
+        }
+    ],
+    "views": 157,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-04-20 09:11:55+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml",
+        "statistics"
+    ]
+}

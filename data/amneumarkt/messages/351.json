@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 351,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-05 19:48:57+00:00",
+    "message": "#ml \n\nhttps://ts.gluon.ai/\n\nHighly recommended! If you are working on deep learning for forecasting, gluonts is a great package. \nIt simplifies all these tedious data preprocessing, slicing, backrest stuff. We can then spend time on implementing the models themselves (there're a lot of ready-to-use models). \nWhat's even better, we can use pytorch lightning!\n\nSee this repository for a list of transformer based forecasting models.\nhttps://github.com/kashif/pytorch-transformer-ts",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030539334131,
+            "url": "https://github.com/kashif/pytorch-transformer-ts",
+            "display_url": "github.com/kashif/pytorch-transformer-ts",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - kashif/pytorch-transformer-ts: Repository of Transformer based PyTorch Time Series Models",
+            "description": "Repository of Transformer based PyTorch Time Series Models - GitHub - kashif/pytorch-transformer-ts: Repository of Transformer based PyTorch Time Series Models",
+            "photo": {
+                "_": "Photo",
+                "id": 6027176273207471556,
+                "access_hash": -645439780215871337,
+                "file_reference": "b\"\\x00b\\x7f\\x8f\\xe3\\xf8<\\x95j\\x96\\xcf\\xf1'\\xd9Y\\x8b\\x0f)\\xfa\\xf3E\"",
+                "date": "2022-05-05 19:48:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd6w*q\\x8f\\xd0\\x9ag\\x98\\xf9\\xe8?\\xef\\x93\\xfe\\x15)\\x19=h\\xc7\\xbf\\xeb@\\x02\\x9c\\x80\\x7f\\xa5$\\x8cV2GZ\\\\\\x0f\\xf2he\\x0c\\xa5H\\xc84\\x01\\x04R\\xb3\\xcaT\\x90@\\xc8\\xa2\\xa4H\"\\x8d\\xcb\\xa2(c\\xdcQ@\\x15>\\xd9\\'\\xa2\\xfeF\\x8f\\xb6I\\xe8\\xbf\\x91\\xa2\\x8a\\xca\\xec\\xdb\\x95\\x07\\xdb$\\xc7E\\xfdh\\xfbl\\xbe\\x89\\xf9QE\\x17a\\xca\\x847\\xb2\\x7fu?#E\\x14V\\xd0\\xd5\\x18OF\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 8607
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 28204
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4835,
+                            10994,
+                            21404,
+                            29065,
+                            44264
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 20
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 433,
+            "length": 48
+        }
+    ],
+    "views": 109,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-05 20:12:28+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

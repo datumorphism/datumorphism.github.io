@@ -23,62 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 4407690443569122878,
-            "url": "https://www.pnas.org/content/early/2020/12/02/2015954117",
-            "display_url": "pnas.org/content/117/51/32293",
-            "hash": 0,
-            "type": "photo",
-            "site_name": "PNAS",
-            "title": "Face masks considerably reduce COVID-19 cases in Germany",
-            "description": "Mitigating the spread of COVID-19 is the objective of most governments. It is of utmost importance to understand how effective various public health measures are. We study the effectiveness of face masks. We employ public regional data about reported severe acute respiratory syndrome coronavirus 2 infections for Germany. As face masks became mandatory at different points in time across German regions, we can compare the rise in infections in regions with masks and regions without masks. Weighing various estimates, we conclude that 20 d after becoming mandatory face masks have reduced the number of new infections by around 45%. As economic costs are close to zero compared to other public health measures, masks seem to be a cost-effective means to combat COVID-19.\n\nPublic health data, including STATA and Matlab codes and data for replication purposes, have been deposited in FigShare (<https://doi.org/10.6084/m9.figshare.13065920>). All study data are included in the paper and [ SI Appendix ][1].\n\nMay 27, 2021:\u2026",
-            "photo": {
-                "_": "Photo",
-                "id": 5986439826959870832,
-                "access_hash": 2404053245755857552,
-                "file_reference": "b\"\\x00bB'\\r\\xcf4\\n\\x9c\\xaa\\xe4L\\x12<\\xe6\\x81\\x84\\xf8\\x1e*2\"",
-                "date": "2020-12-22 20:38:57+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b\"\\x01\\x14(\\xd7\\x18\\xd828\\xf4\\xa0*\\xff\\x00t~T\\xab\\xf7G\\xd2\\x96\\x80\\x13\\x03\\x8e:t\\xa4\\xc2\\x8f\\xe1\\x1f\\x958\\xd2\\x01\\x8a\\x00M\\xab\\xfd\\xd1\\xf9QN\\xa2\\x80\\x18\\xc7\\x143m#\\x02\\x8a(\\x00S\\x95$\\xd2\\x8eM\\x14P\\x04K)'\\xa0\\xa2\\x8a(\\x03\""
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 158,
-                        "size": 10107
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 394,
-                        "size": 45801
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "y",
-                        "w": 1280,
-                        "h": 631,
-                        "size": 73679
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": null,
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 4407690443569122878
         }
     },
     "reply_markup": null,
@@ -94,7 +40,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1535,
+        "replies_pts": 1660,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

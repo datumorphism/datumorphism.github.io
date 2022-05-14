@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 348,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-03 06:10:01+00:00",
+    "message": "#ml \n\nI heard about information bottleneck so many times but didn't really go back and read the original papers. \n\nI spent some time on it and I found it quite interesting. It is philosophically based on what was described in Vapnik's The Nature of Statistical Learning, where he discussed how generalizations work by enforcing parsimony. \nHere in this information bottleneck paper, the most interesting thing is the quantified generalization gap and complexity gap. With these, we know where to go on the information plane. \n\nIt's a good read.\n\nTishby N, Zaslavsky N. Deep Learning and the Information Bottleneck Principle. arXiv [cs.LG]. 2015. Available: http://arxiv.org/abs/1503.02406,",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 657,
+            "length": 31
+        }
+    ],
+    "views": 92,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-03 06:18:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

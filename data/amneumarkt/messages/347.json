@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 347,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-03 00:46:35+00:00",
+    "message": "#visualization \n\nHmm... Interesting pattern\n\nhttps://www.reddit.com/r/dataisbeautiful/comments/uh02hd/uk_covid_deaths_in_2021_assorted_by_age_group_oc/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547164571650040,
+            "url": "https://www.reddit.com/r/dataisbeautiful/comments/uh02hd/uk_covid_deaths_in_2021_assorted_by_age_group_oc/",
+            "display_url": "reddit.com/r/dataisbeautiful/comments/uh02hd/uk_covid_deaths_in_2021_assorted_by_age_group_oc",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "reddit",
+            "title": "UK COVID deaths in 2021 assorted by age group [OC]",
+            "description": "Posted in r/dataisbeautiful by u/Material-Banana8953 \u2022 23 points and 10 comments",
+            "photo": {
+                "_": "Photo",
+                "id": 6018129564548574712,
+                "access_hash": 4478191094680435052,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe3Y\\xa0G\\x04\\xea\\xdf{\\xc3(+\\xa5J\\x9d\\xce\\x0e\\x11'",
+                "date": "2022-05-02 22:27:51+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd8\\x07\\xa74\\xb4\\x83\\x81PIr\\x00;9>\\xbd\\xbaSI\\xbd\\x82\\xe5\\x8c\\xd4m2\\x0e3\\x93\\xed\\xfe}\\xea\\xb4\\x8e\\xccH'\\x8e\\x7f\\x99\\xa6/\\xf0\\xfe\\x1f\\xfb-R\\x8frnK\\x1c\\xed$\\xaa:.z~\\x14TV\\xdf\\xebW\\xeb\\xfd(\\xa2J\\xcc\\x15\\xd9uNW\\x9eh\\xc0\\xfe\\xe8\\xfc\\xa8\\xa2\\xa0\\xa1\\x08\\x1e\\x83\\xf2\\xa7`z\\n(\\xa6\\x01\\x80:\\x01E\\x14R\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9409
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 600,
+                        "h": 300,
+                        "sizes": [
+                            2765,
+                            6564,
+                            12914,
+                            16798,
+                            23826
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 45,
+            "length": 106
+        }
+    ],
+    "views": 80,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-03 06:18:52+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

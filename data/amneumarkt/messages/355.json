@@ -1,0 +1,417 @@
+{
+    "_": "Message",
+    "id": 355,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-14 07:39:09+00:00",
+    "message": "#health\n\n\nhttps://www.scientificamerican.com/article/to-better-understand-women-rsquo-s-health-we-need-to-destigmatize-menstrual-blood/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 532798824598199201,
+            "url": "https://www.scientificamerican.com/article/to-better-understand-women-rsquo-s-health-we-need-to-destigmatize-menstrual-blood/",
+            "display_url": "scientificamerican.com/article/to-better-understand-women-rsquo-s-health-we-need-to-destigmatize-menstrual-blood",
+            "hash": 740521113,
+            "type": "photo",
+            "site_name": "Scientific American",
+            "title": "To Better Understand Women\u2019s Health, We Need to Destigmatize Menstrual Blood",
+            "description": "Diseases such as endometriosis would have a cure if we could talk about them and study them without shame",
+            "photo": {
+                "_": "Photo",
+                "id": 6051735055119789541,
+                "access_hash": -7298423717158230869,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\xf0l\\x8f[\\xdaT\\x18\\x96\\xee.5q\\x05\\xea\\x00\\xb9'",
+                "date": "2022-05-13 14:31:31+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x19(\\xd2\\xa8\\x9eFI\\x02\\xe0\\x9c\\xf4\\xf4\\xa9h\\xa0\\xd0\\xaf,\\xd2\\xa3\\x81\\xb4\\x0c\\xfe4\\xf7\\x98\\xae\\x03.\\t\\xf4\\xe6\\x9b?\\xfa\\xe8\\xbe\\xb5b\\xa4\\xa7k-\\x04\\x19\\xc0\\xcf^\\xf4QEQ\"R\\xd3h\\xa0\\x04v\\xc3\\xa7 \\n}!\\xe9E\\x00-\\x14\\x94P\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 201,
+                        "size": 6611
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 790,
+                        "h": 497,
+                        "sizes": [
+                            4118,
+                            6876,
+                            9178,
+                            13257,
+                            20832
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Christine N. Metz",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.scientificamerican.com/article/to-better-understand-women-rsquo-s-health-we-need-to-destigmatize-menstrual-blood/",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 6051840221688999425,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Credit: "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "LightFieldStudios/Getty Images"
+                                            },
+                                            "url": "https://www.gettyimages.com/detail/photo/top-view-of-red-paper-cut-female-reproductive-royalty-free-image/1171694049?adppopup=true",
+                                            "webpage_id": 0
+                                        }
+                                    ]
+                                },
+                                "credit": {
+                                    "_": "TextEmpty"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "To Better Understand Women\u2019s Health, We Need to Destigmatize Menstrual Blood"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Diseases such as endometriosis would have a cure if we could talk about them and study them without shame"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Christine N. Metz"
+                        },
+                        "published_date": "2022-05-13 14:30:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Women with endometriosis are often told they are pain-pill seekers, scam artists trying to take advantage of the health system. They are called \u201cdisruptive,\u201d \u201ccrazy,\u201d \u201cfaking it\u201d and \u201cpsychosomatic.\u201d They are told that their pain may be in their heads and to move beyond it. To stop being\u2014well, stop being a woman. We are talking about young teens and women with endometriosis who want a diagnosis, effective treatments and compassionate care. There is no cure, and these women deserve one."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Endometriosis is caused when endometrial-like "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "cells grow as \u201clesions\u201d outside"
+                                    },
+                                    "url": "https://www.cdc.gov/reproductivehealth/womensrh/healthconcerns.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " of the uterus\u2014typically in the pelvic cavity around the ovaries, bladder, intestines and rectum and rarely, in the lungs and other locations. The condition affects approximately one in 10 people with uteruses, and these patients often suffer for years, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "on average seven"
+                                    },
+                                    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4325443/#:~:text=Women%20with%20endometriosis%20typically%20face,than%20women%20without%20the%20disease.",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", before they are definitively diagnosed, which "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "requires surgery"
+                                    },
+                                    "url": "https://pubmed.ncbi.nlm.nih.gov/34690084/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", and it can take even longer before they find treatments."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Why don\u2019t we have better diagnostics and treatments for this disease? Because women\u2019s reproductive health is woefully understudied and underfunded. Let\u2019s be honest, there is an unfair \u201cick\u201d factor, too; one of the best sources of biological material for studying women\u2019s reproductive health is menstrual blood. Because of its stigma, menstrual blood has rarely been studied in detail."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Especially now, as women\u2019s reproductive health has been propelled into the national spotlight, it is time to freely talk about and investigate menstruation and menstrual blood to promote women\u2019s health."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Menstrual blood can help researchers like me understand female reproductive health. It provides the means to explore and define the cellular, metabolic, genetic and epigenetic diversity of healthy uteruses. These profiles could be compared to uteruses in the setting of infertility, dysmenorrhea (painful menstrual cramps), uterine infections (such as the cancer-causing human papillomavirus and chronic endometritis), uterine fibroids, perimenopausal changes, and uterine cancer. And this biological sample can be easily collected without invasive surgery\u2014using menstrual cups or specially designed external menstrual collection pads."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Since 2013, my colleagues and I have focused on studying menstrual blood. We established the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Research OutSmarts Endometriosis (ROSE) study"
+                                    },
+                                    "url": "https://feinstein.northwell.edu/institutes-researchers/institute-molecular-medicine/robert-s-boas-center-for-genomics-and-human-genetics/rose-research-outsmarts-endometriosis",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " at the Feinstein Institutes for Medical Research to learn how menstrual blood could be collected and used to study endometriosis and develop an early, noninvasive diagnostic test these women so desperately need. More than 2,000 participants have joined the ROSE study (including women with diagnosed endometriosis, healthy controls and those waiting for diagnostic results). Teens can participate too. We have made "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "great progress investigating menstrual blood"
+                                    },
+                                    "url": "https://www.medrxiv.org/content/10.1101/2022.02.10.22270810v1.full",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " that one day may lead to an FDA-approved diagnostic and more effective and tolerable treatments that could halt or even prevent disease."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "As a result of chronic pain, many teens and young women with endometriosis miss school, preventing them from achieving their full potential. When older, these people have difficulty getting promoted or keeping their jobs, because of excess sick days. Without a job, they lose their badly needed health insurance, and without insurance their pain goes unchecked. Some have told me they are unable to have or maintain intimate relationships. Their overwhelming pain, which can last days each month, is dismissed, downplayed and misunderstood. I wouldn\u2019t say these girls and women are suffering in silence. They are speaking up, but their suffering is ignored."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Currently, the only medications available for endometriosis are hormones or hormone-based therapies, that can cause weight gain, spark hot flashes and force patients into menopause. These drugs only treat the symptoms; they do not stop disease progression. Some endometriosis patients say these hormonal therapies are worse than the disease."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Does the neglect of this common disorder by pharma companies stem from an unintentional gender bias that is putting women\u2019s health at risk? To treat endometriosis, and other women\u2019s reproductive diseases, we need more buy-in and less stigma."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "With serious efforts by diverse, collaborative researchers from academia and industry, and engaged study participants, menstrual blood will be developed into a clinically useful resource for better understanding uterine health and uterine dysfunction, as well as for diagnostic purposes. It will no longer be considered solely as trash\u2014something to be tossed every month\u2014but as a vital biological specimen for women\u2019s health."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Funding will follow with the ongoing conversation and demand from the public and clinicians. With funding comes more research and more progress. To put the finances in perspective, since 2008, the National Institutes of Health has allocated "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "approximately $176 million"
+                                    },
+                                    "url": "https://report.nih.gov/funding/categorical-spending#/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to fund endometriosis research. Compare that to the $2 billion for ulcerative colitis, which affects about "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "1 percent of Americans"
+                                    },
+                                    "url": "https://www.cdc.gov/ibd/data-statistics.htm#:~:text=In%202015%2C%20an%20estimated%201.3,Crohn's%20disease%20or%20ulcerative%20colitis).&text=This%20was%20a%20large%20increase,%25%20or%202%20million%20adults).",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "While the menstrual blood-based diagnostic and uterine-targeted therapies may take a few years to develop, there are things we can do right now. We need to better educate the health care community and raise awareness of women\u2019s health conditions. Based on the misdiagnosis and underdiagnosis of endometriosis and other uterine-health conditions, improved training is warranted for those attending medical, nursing and physician-assistant schools so trainees become more knowledgeable and understand that pelvic pain is real and that it should be carefully investigated in each patient."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We need to raise the standard of science, improve diagnostic capabilities, provide better treatments and deliver equitable care for all. And to do that, we need to make the conversation about menstruation and menstrual blood commonplace, in the clinic, in our homes and in our society."
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 6051840221688999425,
+                        "access_hash": -6611688803314647528,
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\xb8\\xc1\\xd6\\x99s\\xbbu\\xd8\\xf0\\xa1\\xc3\\xc0u\\xb7?P'",
+                        "date": "2022-05-14 05:16:02+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1b(\\xd2\\xa8\\xda]\\xb2m=OA\\x8e\\xb5%\\x14\\x1a\"\\t.\\x19\\x1c\\r\\x9f\\x9d=\\xa6\\xda\\x06\\xe1\\xb4\\x9fZd\\xff\\x00\\xeb\\xa2\\xfa\\xd4\\xe4\\x03\\xc9\\x00\\xe3\\xa5-Jv\\xb2\\xd0\\x06p3\\xd6\\x8aZ)\\x926\\x96\\x9bK@\\rc\\xf3\\xa7\\x1f\\x8d>\\x9aT7P\\x0e\\r-\\x00-\\x14\\x94P\\x07'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 214,
+                                "size": 6872
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 590,
+                                "h": 394,
+                                "sizes": [
+                                    2926,
+                                    4938,
+                                    6631,
+                                    8919,
+                                    13269
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 10,
+            "length": 125
+        }
+    ],
+    "views": 24,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-14 10:53:51+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "health"
+    ]
+}

@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5984225908757736769,
                 "access_hash": -1182986061467725139,
-                "file_reference": "b'\\x00bB\\'\\rF\\x96\\x9d\\xd4\\xb9~\"\\xf8\\x03\\x0f9K\\x03\\x9c\\xe7\\xea'",
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xc0\\xb5|\\x93\\xfd\\xc82\\x01D-\"\\x96\\xe5\\x7f\\x97\\xe4'",
                 "date": "2022-01-14 12:37:40+00:00",
                 "sizes": [
                     {
@@ -2286,7 +2286,20 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The M/G/1 queue was solved by "
+                                            "text": "The "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "M/G/1 queue"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/M/G/1",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " was solved by "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -4729,7 +4742,7 @@
                         "_": "Photo",
                         "id": 6051866592788195500,
                         "access_hash": -2554579073316836354,
-                        "file_reference": "b\"\\x00bB'\\r\\x95\\xe7\\x08/\\nG\\xf5\\xb0\\xa8\\x92\\xb9\\n\\xae*\\xba\\x8f\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\x93n\\xedf\\xc5\\xd3j\\x9dH\\xdc\\xf5C\\xe6kZ\\x88'",
                         "date": "2018-11-28 16:44:16+00:00",
                         "sizes": [
                             {
@@ -4769,7 +4782,7 @@
                         "_": "Photo",
                         "id": 5802323297763960967,
                         "access_hash": -8065567924986844578,
-                        "file_reference": "b\"\\x00bB'\\rg\\x0eU\\xbe\\xa8\\xaa\\xb5\\xc6\\xe2\\x0e\\xc4\\x8a\\xcc6\\t0\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\x1d\\x801\\xe2\\xbe\\x1b\\xfbXD*)Z\\xff\\xa3\\xd0\\xfd'",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4795,7 +4808,7 @@
                         "_": "Photo",
                         "id": 5802253895387424901,
                         "access_hash": 9111138728311387161,
-                        "file_reference": "b\"\\x00bB'\\r7\\x10I\\xe8\\x98\\xd0\\xf2'\\xcb(%\\xc8)\\xd8.\\x08\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe57\\x9fdMx\\xc7\\x97\\xf5m\\xcb\\xa6r\\xabEiV'",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4828,7 +4841,7 @@
                         "_": "Photo",
                         "id": 5801949511055157376,
                         "access_hash": -6507313646935954140,
-                        "file_reference": "b\"\\x00bB'\\r^Z\\x96\\xe3\\x98^+\\xe3g>{\\xe6C\\xc0i\\xae\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\x1e\\xe4\\r7\\x13JC\\xa9\\xefk\\xdd\\xef\\x16Q\\xf4='",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4868,7 +4881,7 @@
                         "_": "Photo",
                         "id": 5779388932612532333,
                         "access_hash": 7601008317448191084,
-                        "file_reference": "b\"\\x00bB'\\rM|+u\\xb4\\xe7\\xd6.\\x81\\xd0\\xbam\\xc0\\xb8=\\xc4\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5bn\\xfeU\\xfa\\xdb\\xfe~\\x84\\xd2tQ\\xccH\\x88\\xf0'",
                         "date": "2018-12-04 06:41:38+00:00",
                         "sizes": [
                             {
@@ -4908,7 +4921,7 @@
                         "_": "Photo",
                         "id": 6052139937391814790,
                         "access_hash": 5736559714258677917,
-                        "file_reference": "b'\\x00bB\\'\\r\\xb4JD\\x92\\x1b%r\\x10<\\x15\\xde\\xb8\\xa1\\xcf\"\\x80'",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5P\\xcfoc/:\\x9a&\\xdc\\xf6\\xfc#\\t\\x96\\xd8\\xbe'",
                         "date": "2018-11-28 16:44:16+00:00",
                         "sizes": [
                             {
@@ -4950,7 +4963,7 @@
                         "_": "Document",
                         "id": 5783791939354624157,
                         "access_hash": 7355724448567318575,
-                        "file_reference": "b\"\\x00bB'\\r;\\xdf\\x815J\\xcfS\\x19\\xde\\\\\\xaa\\xa4,\\x89\\xcb0\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xbb\\xc8j\\x02\\xdd\\xdb\\xcc\\xe0\\x9dW\\xca\\xd8\\x85\\x87\\xa7\\x82'",
                         "date": "2018-12-05 20:49:03+00:00",
                         "mime_type": "image/png",
                         "size": 611,
@@ -4981,7 +4994,7 @@
                         "_": "Document",
                         "id": 6052021928414150781,
                         "access_hash": -1644849487784732887,
-                        "file_reference": "b\"\\x00bB'\\r\\xf9dX\\xad\\x13\\xb7B!\\x1ep4\\x1cvS\\xf8\\x1b\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5;\\xf8jA\\xacA\\xba\\x1f\\x03\\x02;\\x82\\xad\\x90\\xbf&'",
                         "date": "2018-11-28 16:44:13+00:00",
                         "mime_type": "image/png",
                         "size": 1937,
@@ -5012,7 +5025,7 @@
                         "_": "Document",
                         "id": 6052062906697121899,
                         "access_hash": 8905392207100775079,
-                        "file_reference": "b\"\\x00bB'\\r\\x1b\\x9dGzW\\xd7v\\x9f\\xea\\x12\\xca\\t\\xb4\\xb2\\xd2\\xaf\"",
+                        "file_reference": "b\"\\x00b\\x7f\\x8f\\xe5\\xc8\\x0c'+\\x7f!\\xd3\\x94\\xf4\\x0f3\\xe3\\xcd}\\xe3\\x06\"",
                         "date": "2018-11-28 16:44:13+00:00",
                         "mime_type": "image/png",
                         "size": 3721,
@@ -5043,7 +5056,7 @@
                         "_": "Document",
                         "id": 6052187997619617862,
                         "access_hash": -8391935814479009125,
-                        "file_reference": "b\"\\x00bB'\\r\\xe2\\x8d\\x05I\\xe3\\x87;\\xf3\\x8d\\xd5%`\\xbf\\x8c\\x97\\xbc\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xe5\\xd8$\\xfd\\xc9\\x17\\xa1\\x9d\\xd5\\x9fE\\x0b\\x18)9i'",
                         "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
                         "size": 4566,
@@ -5074,7 +5087,7 @@
                         "_": "Document",
                         "id": 5808769854240457302,
                         "access_hash": -7209788918178847193,
-                        "file_reference": "b\"\\x00bB'\\r\\xf1\\x14ba\\x94\\xdfc\\xcf3\\xc2\\xe4\\x99\\xf3\\x0cl\\xb1\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5<s\\xc2\\x8b\\xdc\\x95\\xc8\\xf4\\x16\\xa0\\x16Oc\\xecZ\\xb8'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 2073,
@@ -5110,7 +5123,7 @@
                         "_": "Document",
                         "id": 5808753378745909822,
                         "access_hash": 2478049422054680784,
-                        "file_reference": "b\"\\x00bB'\\r\\x8e6,\\xeb\\xf9\\x1b|\\x91\\x15\\xa5w\\xd0\\xd7p\\xae\\xa9\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xba:$v\\x16\\xf6\\xa3blN~\\x81\\xf4\\\\\\x9c\\x84'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 8587,
@@ -5146,7 +5159,7 @@
                         "_": "Document",
                         "id": 6031846225051910614,
                         "access_hash": -7368607241992848569,
-                        "file_reference": "b\"\\x00bB'\\r@A\\xfa\\xe63\\x0f\\x10G\\x1a\\x1a\\x00k\\x86Y\\x9f^\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5q\\x08E\\xce<T\\xab\\xc8ET\\xbc\\xae\\xcb&\\xeb\\x80'",
                         "date": "2019-12-15 14:53:06+00:00",
                         "mime_type": "image/png",
                         "size": 7257,
@@ -5182,7 +5195,7 @@
                         "_": "Document",
                         "id": 6052225604353261711,
                         "access_hash": 4362472467059767847,
-                        "file_reference": "b\"\\x00bB'\\r&bT\\x18\\xe2- \\x83\\xdai\\xc1<3\\x9e!\\x7f\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5T\\xd7\\xf1\\xb8\\xc2\\xe2CY>\\xc6\\xcf\\x12\\xdf`\\xa4\\x88'",
                         "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
                         "size": 6478,
@@ -5213,7 +5226,7 @@
                         "_": "Document",
                         "id": 6031508043621990873,
                         "access_hash": -2229679737074352099,
-                        "file_reference": "b\"\\x00bB'\\r\\x12\\xd9\\xc2\\xfe\\n\\xc7\\x15\\xf8\\xf0qb\\x88\\xb5KY\\n\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xaf\\xca\\x86\\xd3\\xa9%\\xf28\\x0c\\xfc\\xfb\\xd8;_\\xabV'",
                         "date": "2019-12-15 14:53:06+00:00",
                         "mime_type": "image/png",
                         "size": 4155,
@@ -5249,7 +5262,7 @@
                         "_": "Document",
                         "id": 5765952852820230685,
                         "access_hash": 3235339794781248046,
-                        "file_reference": "b'\\x00bB\\'\\rY}\\xffue(\\xc4\\xbe\"\\x93U%\\xaa~a\\x91'",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\x86\\xff\\x045\\xea\\xcfv\\xf1k\\xd2\\xc6\\x16\\xef\\x88,x'",
                         "date": "2019-12-23 07:24:12+00:00",
                         "mime_type": "image/png",
                         "size": 1197,
@@ -5285,7 +5298,7 @@
                         "_": "Document",
                         "id": 5808678702149534325,
                         "access_hash": 6730828962423987030,
-                        "file_reference": "b\"\\x00bB'\\r\\xff\\xcaW\\x0cz\\xb1\\x04\\x7f\\x97\\xab\\x94\\x03\\x8d\\xa5g\\x99\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xb5\\x9ag\\xb4\\x81\\x0c\\x003\\x1a\\tT]ds~\\xae'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 1634,
@@ -5321,7 +5334,7 @@
                         "_": "Document",
                         "id": 5808768329527067188,
                         "access_hash": 5496701924312610274,
-                        "file_reference": "b\"\\x00bB'\\r\\x009\\xba\\xc0c\\xd2\\x15\\x13\\xc7\\x94=\\xdaZ\\xd1\\xb4\\xf5\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xfdq\\x03\\xf1\\xe9 &\\x00\\xdd\\\\\\xdf\\x91\\xfa\\xf4\\xb8\\x85'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 3305,
@@ -5357,7 +5370,7 @@
                         "_": "Document",
                         "id": 5808650252286165561,
                         "access_hash": -856757003215215100,
-                        "file_reference": "b\"\\x00bB'\\r\\xc5\\xa01\\xd3b\\xc4*,7\\xcd\\xf8ch\\x97\\xcbD\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\xeeO\\xe6X\\xe5jj\\x7f\\xd4\\x16\\x9db\\xdb\\x90\\x8eW'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 3588,
@@ -5393,7 +5406,7 @@
                         "_": "Document",
                         "id": 5809050165281030752,
                         "access_hash": -6311380251978661830,
-                        "file_reference": "b\"\\x00bB'\\r\\xa0xO\\xbb@Jh\\xde8\\xe1,^\\xec8(a\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5K\\x00\\x06\\xb8\\x17\\xe2\\x1c\\xb53\\xbcn\\xe7.IpE'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 3236,
@@ -5429,7 +5442,7 @@
                         "_": "Document",
                         "id": 5833308488461189725,
                         "access_hash": 7029499975052902886,
-                        "file_reference": "b\"\\x00bB'\\r|\\xc3\\x1aWD\\x83!_J\\xc9\\x06\\x17\\xb4\\x9f\\xc9\\xfa\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\x1a\\x11-y\\xe7\\xe1\\x92D8(0H\\x83\\xaa\\xac\\xf1'",
                         "date": "2020-04-20 20:19:23+00:00",
                         "mime_type": "image/png",
                         "size": 1580,
@@ -5465,7 +5478,7 @@
                         "_": "Document",
                         "id": 5808677018522354326,
                         "access_hash": -4006436480918655378,
-                        "file_reference": "b\"\\x00bB'\\r\\x9c\\xf8T\\xe0q\\xe5\\x85\\xd1tm_\\xbd\\xc4Gu\\x83\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5&\\x82\\x7f\\x00\\x1f\\xe0\\xb9q\\x0eG\\xac\\xe9\\xed\\xde\\xe3~'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 1977,
@@ -5501,7 +5514,7 @@
                         "_": "Document",
                         "id": 5768066758413910465,
                         "access_hash": 5762901830759941541,
-                        "file_reference": "b\"\\x00bB'\\r7\\xf2qx8\\xb0<O\\xf3\\xe2\\x0e\\x10K\\xe3\\xebq\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5,\\xd6\\x9d\\x8c\\xf4O\\x04\\xe9j\\x7f\\x84 \\x8f)\\xe9\\xbd'",
                         "date": "2019-12-23 07:24:13+00:00",
                         "mime_type": "image/png",
                         "size": 1530,
@@ -5537,7 +5550,7 @@
                         "_": "Document",
                         "id": 6025086135506567361,
                         "access_hash": -5547261664658749616,
-                        "file_reference": "b\"\\x00bB'\\r;\\xc6>s\\x81\\x85\\x9e\\xb52\\xc3\\n\\xceb\\x96\\xc8\\xc9\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5\\x96\\xb0\\xef\\xb7Jai\\x7fb\\x99\\xdf\\x0cR\\xa9pa'",
                         "date": "2019-02-25 10:41:39+00:00",
                         "mime_type": "image/png",
                         "size": 1523,
@@ -5573,7 +5586,7 @@
                         "_": "Document",
                         "id": 5901125734302220411,
                         "access_hash": -7784171649926525512,
-                        "file_reference": "b\"\\x00bB'\\ri\\xec~\\x18\\xee\\x96\\xee\\x91@\\xadiF\\xf3E(S\"",
+                        "file_reference": "b\"\\x00b\\x7f\\x8f\\xe5u\\xdes\\xca\\xfe3\\xd0'B\\xeb\\x89M|4g\\xb0\"",
                         "date": "2019-01-14 18:06:44+00:00",
                         "mime_type": "image/png",
                         "size": 1592,
@@ -5604,7 +5617,7 @@
                         "_": "Document",
                         "id": 6027048901201100930,
                         "access_hash": 5055134833548936981,
-                        "file_reference": "b\"\\x00bB'\\rZ\\xd1\\xfc$%t\\xcc\\xc4\\r\\x83\\x9bv+\\xa0\\x9d\\x07\"",
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe5)\\xaa3\\xc9\\x9d?y\\xef\\xa9\\xa6\\x0f\\x8a\\x9d\\xe9g/'",
                         "date": "2019-02-25 10:41:39+00:00",
                         "mime_type": "image/png",
                         "size": 2160,
@@ -5658,7 +5671,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1535,
+        "replies_pts": 1660,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

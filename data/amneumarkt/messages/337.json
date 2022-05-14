@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 337,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-04-04 07:27:45+00:00",
+    "message": "#visualization #fun \n\nThe Dunning-Kruger effect is quite real  \ud83d\ude02\n\n\nInfographic: 50 Cognitive Biases in the Modern World\nhttps://www.visualcapitalist.com/50-cognitive-biases-in-the-modern-world/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2735678534591793763,
+            "url": "https://www.visualcapitalist.com/50-cognitive-biases-in-the-modern-world/",
+            "display_url": "visualcapitalist.com/50-cognitive-biases-in-the-modern-world",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Visual Capitalist",
+            "title": "50 Cognitive Biases in the Modern World",
+            "description": "Our rapidly evolving world forces us to adopt distinct patterns of behavior, and in the process, paves the way for new cognitive biases to emerge.",
+            "photo": {
+                "_": "Photo",
+                "id": 5887362529238297299,
+                "access_hash": 2109382276023852998,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\x97\\x7f\\xa2\\xd6\\xb5\\x86\\x97cV\\xf0\\xb8\\xd85\\xfa z'",
+                "date": "2020-02-02 03:58:36+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01(\\x0c\\xd5\\xdb\\xeeh\\xfcM/\\xe1E\\x00\\x1f\\x9d\\x18\\xf6?\\x9d\\x1f\\x85\\x1f\\xe7\\xad\\x00\\x18\\xfaQ\\xf9QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 99,
+                        "h": 320,
+                        "size": 13172
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 248,
+                        "h": 800,
+                        "size": 65230
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 397,
+                        "h": 1280,
+                        "size": 147511
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 795,
+                        "h": 2560,
+                        "size": 483835
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 15,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 121,
+            "length": 73
+        }
+    ],
+    "views": 150,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-04-04 14:08:43+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization",
+        "fun"
+    ]
+}

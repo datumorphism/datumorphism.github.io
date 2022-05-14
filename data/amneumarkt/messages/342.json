@@ -1,0 +1,138 @@
+{
+    "_": "Message",
+    "id": 342,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-04-15 05:43:19+00:00",
+    "message": "https://refactoring.guru/design-patterns/catalog \u633a\u6709\u8bbe\u8ba1\u611f\u7684 refactoring tutorial #java #refactoring #desginpattern",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2022-04-15 03:42:13+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1311843562
+        },
+        "from_name": null,
+        "channel_post": 902,
+        "post_author": null,
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5481204253104140629,
+            "url": "https://refactoring.guru/design-patterns/catalog",
+            "display_url": "refactoring.guru/design-patterns/catalog",
+            "hash": 0,
+            "type": "article",
+            "site_name": "refactoring.guru",
+            "title": "The Catalog of Design Patterns",
+            "description": "The catalog of design patterns grouped by intent, complexity, and popularity. The catalog contains all classic design patterns and several architectural patterns.",
+            "photo": {
+                "_": "Photo",
+                "id": 5817765113942355397,
+                "access_hash": -7547145314926678335,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\x88\\xb6/n\\xc3\\xd1$g\\xb8\\xf9\\xe5o\\xc5\\\\\\xfa\\xa7'",
+                "date": "2022-02-23 19:47:43+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15((\\xc8PI\\xedE\\x1bw\\x020H\\xfaV(\\xec\\x96\\xc3\\x0b\\x1f/y\\x1dzS\\xea/\\xb3\\xb1\\xc8\\x00\\xe39\\x04\\xd4\\xa4\\x11\\xc1\\xcf\\xe3M\\x93\\x0b\\xf5\\n(\\xa2\\x91\\xa0Q\\xb8\\x8e\\x86\\x8a(\\x01\\xdea\\xe9\\xdc\\xf7\\xc9\\xa6\\xe4\\x9eI\\xcd\\x14PJ\\n(\\xa2\\x82\\x8f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 10151
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 476,
+                        "h": 249,
+                        "sizes": [
+                            1761,
+                            4374,
+                            7689,
+                            10501,
+                            17370
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 48
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 77,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 83,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 96,
+            "length": 14
+        }
+    ],
+    "views": 121,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-04-15 05:52:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

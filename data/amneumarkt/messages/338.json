@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 338,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-04-04 14:08:26+00:00",
+    "message": "#fun \n\nNot bad. \ud83d\ude02\n\n\nThe Big Data Game | Firebolt\nhttps://www.firebolt.io/big-data-game",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8572011268783080687,
+            "url": "https://www.firebolt.io/big-data-game?utm_source=social_org&utm_medium=LinkedIn&utm_campaign=big_data_game",
+            "display_url": "firebolt.io/big-data-game",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "www.firebolt.io",
+            "title": "The Big Data Game | Firebolt",
+            "description": "Play the Big Data Game \u2013 Because even a simple query can send you on an unexpected journey! Help the poor 8-bit data engineer to get the DATA!",
+            "photo": {
+                "_": "Photo",
+                "id": 5898653285294910973,
+                "access_hash": -5270158970358079611,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe37\\xab\\xf23\\n\\x0e\\x15\\xb6\\x1c\\xb3\\xcb\\x8d\\xc7\\xdf\\x822'",
+                "date": "2022-03-23 16:55:12+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(_\\xb4\\xc3\\xfd\\xff\\x00\\xd2\\x8f\\xb4\\xc5\\x9co\\xaa[\\x01\\xe2\\xacZ\\xc2L\\x99\\x18\\xe0}\\x7f\\xa5_\\xb4d{$_\\xf2\\xb9\\xc6\\xe1\\x9a\\xab\\xf6\\x88\\xbf\\xbe*_(\\xb0\\x00B\\xaa\\x0e\\x0e=\\x89\\xfa}\\x7f\\x03Un\\xe2\\xc4\\xc4\\xe1A \\x1c/n(\\xe7a\\xec\\xd1/\\xda\"\\xfe\\xf8\\xa2\\xa9l\\xc7Z(\\xf6\\x8c=\\x92%r\\xceA\\xdb\\x8c{\\xd2\\r\\xea2\\xa1\\x81\\xc7Ph\\xa2\\x92\\xd0\\xb0\\xdd7\\xf7\\x9b\\xfe\\xfa\\xa7\\x16s\\x80\\xd98\\xf54QC\\x12\\x1a\\x03\\x7fv\\x8a(\\xa9\\xb0\\xee\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 15864
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 451,
+                        "size": 56444
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 721,
+                        "sizes": [
+                            11256,
+                            30717,
+                            49518,
+                            66490,
+                            101975
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 50,
+            "length": 37
+        }
+    ],
+    "views": 172,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-04-04 14:08:38+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

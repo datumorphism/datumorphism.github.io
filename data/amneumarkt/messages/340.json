@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 340,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-04-10 09:56:28+00:00",
+    "message": "#fun \n\nEvery chemistry graduate will be in charge of a molecule. Someone got to take care of \u201cTitin\u201d (189,819 characters), and she/he will have to recite the name first in every meeting: https://en.wiktionary.org/wiki/Appendix:Protologisms/Long_words/Titin#Noun\n\nhttps://xkcd.com/2602/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3935343140125521248,
+            "url": "https://xkcd.com/2602/",
+            "display_url": "xkcd.com/2602",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "xkcd",
+            "title": "Linguistics Degree",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5937270525959187933,
+                "access_hash": 3259892648245211086,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\xf2eF\\xbaG\\xed{\\x87G\\xba\\xb0\\xef\\xa2B3Q'",
+                "date": "2022-04-05 05:09:38+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01(\\x1e\\xd3\\xd8\\xe7\\xee\\xe3\\x18\\xe3\\xa7\\xf8R\\x15p\\xa0\\xe4s\\xf4\\xff\\x00\\n\\x98\\x1c >\\xd4\\xd7]\\xca\\x06z\\x11@\\x11\\x8c\\x11\\x92\\xc4\\x1e\\xbc.\\x7f\\xa5+\\xede\\xc0\\x19\\xc1\\xf4\\xa6\\xedC\\xdf\\x91\\xf4\\xa5\\xe3\\xca\\x01Ny\\xe7\\xfc\\x8a\\x00P\\xcd\\xbc\\x03\\xb4.;\\xf7\\xa6\\xc0\\xf3;H\\xb2l\\xf9O\\xcaW5 \\xdapx#\\x00riT\\x85\\x07\\xd39\\xe2\\x80\\x11\\xb6\\x00rH\\xfcM\\x12` \\x02\\x95\\x80g\\\\\\xf2:\\xd3O\\xdc\\xf9\\xbdh\\x01\\xbb\\xd9\\t\\x18\\xe0w\\xdai\\x0b\\xbe\\x08\\xdb\\xed\\xd0\\xd1E\\x00(\\x91\\xf1\\xf7G\\x1e\\xc6\\x94\\x13/\\x1d1\\xech\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 242,
+                        "h": 320,
+                        "size": 25470
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 605,
+                        "h": 800,
+                        "size": 87101
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 629,
+                        "h": 832,
+                        "sizes": [
+                            5519,
+                            17002,
+                            43900,
+                            61367,
+                            85197
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 187,
+            "length": 74
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 263,
+            "length": 22
+        }
+    ],
+    "views": 170,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-04-10 13:04:23+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 341,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-04-15 05:23:41+00:00",
+    "message": "#jobs\n\nI vaguely feel there's a talent shortage in Germany. \"Hiring is hard\". I heard this several times. Our team also need more hires.\n\nSo the company came up with this: Land a job at Zalando within 3 days after the final interviews!\u00a0\n\nhttps://jobs.zalando.com/en/jobs/4004181/?gh_src=%20f46af3281us",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4617731701592064954,
+            "url": "https://jobs.zalando.com/en/jobs/4004181/?gh_src=%20f46af3281us",
+            "display_url": "jobs.zalando.com/en/jobs/4004181/?gh_src=%20f46af3281us",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Zalando Jobs",
+            "title": "Hiring Sprint Pricing Platform - Applied Science  - Zalando Jobs",
+            "description": "Come work as a Hiring Sprint Pricing Platform - Applied Science  at Zalando in Dublin (Ireland),Berlin",
+            "photo": {
+                "_": "Photo",
+                "id": 5793177723252878619,
+                "access_hash": 1071004934207065985,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe3+\\xa2\\x05_c\\xad\\xc5\\xf3;\\x85\\x84\\x96\\x80iV\\xf6'",
+                "date": "2021-11-10 23:51:52+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x1b(\\x81\\x01O\\xe2\\xf9{\\x00j\\xca1a\\xc1l\\x1fz\\xae\\xa8\\xfbx\\x19\\x1e\\xd4\\x8b\\xe6\\xc6K\\x10B\\x8f^(\\x11k\\xcc\\xc6\\x01l\\x1f\\xad1\\xdf-\\x9c\\x9cv\\x03\\xbf\\xebJdB\\x87*2\\xd5\\x03\\xbe8\\x8c\\x0f\\xaei\\x80K1\\x03\\xe7$\\x9fbx\\xa2\\xa6\\x86\\xd6;\\x85\\xdcd9\\xee\\x063E!\\x95ZY#\\x8d\\x97wQ\\xfd\\xe1\\xfd*KX\\xfe\\xd0\\x80l''\\x05\\xb7t\\xfc+VDW@\\x19A\\x06\\x9c\\x88\\xa8\\xa1P\\x00\\x07a@\\x14\\xe5\\x82h\\xd8\\x0bt\\xc0\\xfe\\xf6z\\xfe\\x15R\\xe5f\\x8c\\xe6q\\x8d\\xdd9\\xad\\xaaG\\xe9@\\x18\\xf6fQ\\xf3\\xaa\\x83\\x1f \\x9e\\xe2\\x8a\\xd0\\x97\\xfdQ99\\xfa\\xd1R\\xe3r\\x94\\xac\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 213,
+                        "size": 33753
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 533,
+                        "size": 143187
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 853,
+                        "size": 299161
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1707,
+                        "sizes": [
+                            74833,
+                            223407,
+                            350077,
+                            502812,
+                            819943
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 238,
+            "length": 63
+        }
+    ],
+    "views": 131,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-04-15 05:39:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "jobs"
+    ]
+}

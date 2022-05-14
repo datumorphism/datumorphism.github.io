@@ -1,0 +1,1025 @@
+{
+    "_": "Message",
+    "id": 353,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-11 19:01:19+00:00",
+    "message": "#fun \n\nCould use this\n\nHow to Lie with Statistics - Wikipedia\nhttps://en.wikipedia.org/wiki/How_to_Lie_with_Statistics",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3384953263262161987,
+            "url": "https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics",
+            "display_url": "en.m.wikipedia.org/wiki/How_to_Lie_with_Statistics",
+            "hash": -453718040,
+            "type": "article",
+            "site_name": "Wikipedia",
+            "title": "How to Lie with Statistics",
+            "description": "book by Darrell Huff",
+            "photo": {
+                "_": "Photo",
+                "id": 6015850968433928321,
+                "access_hash": 3836289751632448125,
+                "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\xc4\\x93\\t\\x95\\xb9\\xd8W\\xab \\x1b9\\x15Cp\\x08\\xad'",
+                "date": "2018-11-16 20:04:14+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 61,
+                        "h": 90,
+                        "size": 1675
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 217,
+                        "h": 320,
+                        "size": 30150
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 256,
+                        "h": 378,
+                        "size": 40269
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://en.m.wikipedia.org/wiki/How_to_Lie_with_Statistics",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "How to Lie with Statistics"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "How to Lie with Statistics"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " is a book written by "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Darrell Huff"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Darrell_Huff",
+                                    "webpage_id": 5973540601222232568
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " in 1954 presenting an introduction to "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "statistics"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Statistics",
+                                    "webpage_id": 5973540602716577259
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for the general reader. Not a statistician, Huff was a journalist who wrote many \"how to\" articles as a freelancer."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockTable",
+                        "title": {
+                            "_": "TextPlain",
+                            "text": "How to Lie with Statistics"
+                        },
+                        "rows": [
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextImage",
+                                                    "document_id": 6042994529928216688,
+                                                    "w": 203,
+                                                    "h": 300
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": "\nFirst edition"
+                                                }
+                                            ]
+                                        },
+                                        "colspan": 2,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Author"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Darrell Huff"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Darrell_Huff",
+                                            "webpage_id": 5973540601222232568
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Illustrator"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Irving Geis"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Irving_Geis",
+                                            "webpage_id": 0
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Publisher"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "W. W. Norton & Company"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/W._W._Norton_%26_Company",
+                                            "webpage_id": 5973540602611548460
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Publication date"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "1954"
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "bordered": true,
+                        "striped": false
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The book is a brief, breezy illustrated volume outlining the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "misuse of statistics"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Misuse_of_statistics",
+                                    "webpage_id": 5973540600961876068
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and errors in the interpretation of statistics, and how these errors may create incorrect conclusions."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In the 1960s and 1970s, it became a standard textbook introduction to the subject of statistics for many college students. It has become one of the best-selling statistics books in history, with over one and a half million copies sold in the English-language edition."
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextAnchor",
+                                                "text": {
+                                                    "_": "TextEmpty"
+                                                },
+                                                "name": "back_cite_ref-fiftyyears_1-0"
+                                            },
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "[1]"
+                                                },
+                                                "url": "https://en.m.wikipedia.org/wiki/How_to_Lie_with_Statistics#cite_note-fiftyyears-1",
+                                                "webpage_id": 0
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " It has also been widely translated."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Themes of the book include \""
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Correlation does not imply causation"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+                                    "webpage_id": 5973540602559483120
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\" and \"Using "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "random sampling"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Random_sampling",
+                                    "webpage_id": 5973540601698199068
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\". It also shows how statistical graphs can be used to distort reality, for example by truncating the bottom of a line or bar chart, so that differences seem larger than they are, or by representing one-dimensional quantities on a pictogram by two- or three-dimensional objects to compare their sizes, so that the reader forgets that the images do not scale the same way the quantities do."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The original edition contained illustrations by artist "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Irving Geis"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Irving_Geis",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In a UK edition, these were replaced with cartoons by "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Mel Calman"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Mel_Calman",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockList",
+                                "items": [
+                                    {
+                                        "_": "PageListItemText",
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Lies, damned lies, and statistics"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics",
+                                            "webpage_id": 5973540601079513559
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "See also"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "See_also"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockOrderedList",
+                                "items": [
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/How_to_Lie_with_Statistics#back_cite_ref-fiftyyears_1-0",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "\"Over the last fifty years, How to Lie with Statistics has sold more copies than any other statistical text.\" J. M. Steele. \""
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextConcat",
+                                                                    "texts": [
+                                                                        {
+                                                                            "_": "TextPlain",
+                                                                            "text": "Darrell Huff and Fifty Years of "
+                                                                        },
+                                                                        {
+                                                                            "_": "TextItalic",
+                                                                            "text": {
+                                                                                "_": "TextPlain",
+                                                                                "text": "How to Lie with Statistics"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "url": "http://www-stat.wharton.upenn.edu/~steele/Publications/PDF/TN148.pdf",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". "
+                                                            },
+                                                            {
+                                                                "_": "TextItalic",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "Statistical Science"
+                                                                }
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ", 20 (3), 2005, 205\u2013209."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-fiftyyears-1"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Notes"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "Notes"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockList",
+                                "items": [
+                                    {
+                                        "_": "PageListItemText",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": "Darrell Huff, (1954) "
+                                                },
+                                                {
+                                                    "_": "TextItalic",
+                                                    "text": {
+                                                        "_": "TextPlain",
+                                                        "text": "How to Lie with Statistics"
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " (illust. I. Geis), Norton, New York, "
+                                                },
+                                                {
+                                                    "_": "TextUrl",
+                                                    "text": {
+                                                        "_": "TextPlain",
+                                                        "text": "ISBN"
+                                                    },
+                                                    "url": "https://en.m.wikipedia.org/wiki/ISBN_(identifier)",
+                                                    "webpage_id": 5973540602856553672
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": "\u00a0"
+                                                },
+                                                {
+                                                    "_": "TextUrl",
+                                                    "text": {
+                                                        "_": "TextPlain",
+                                                        "text": "0-393-31072-8"
+                                                    },
+                                                    "url": "https://en.m.wikipedia.org/wiki/Special:BookSources/0-393-31072-8",
+                                                    "webpage_id": 5973540602012777262
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "References"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "References"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Retrieved from \""
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://en.wikipedia.org/w/index.php?title=How_to_Lie_with_Statistics&oldid=1072545378"
+                                    },
+                                    "url": "https://en.wikipedia.org/w/index.php?title=How_to_Lie_with_Statistics&oldid=1072545378",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockRelatedArticles",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "articles": [
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Statistics",
+                                "webpage_id": 5973540602716577259,
+                                "title": "Statistics",
+                                "description": "study of the collection, organization, analysis, interpretation, and presentation of data",
+                                "photo_id": 5880776364393606111,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Darrell_Huff",
+                                "webpage_id": 5973540601222232568,
+                                "title": "Darrell Huff",
+                                "description": "American writer",
+                                "photo_id": null,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Pie_chart",
+                                "webpage_id": 5973540601811429425,
+                                "title": "Pie chart",
+                                "description": "circular statistical graphic",
+                                "photo_id": 6033995663366270292,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Misuse_of_statistics",
+                                "webpage_id": 5973540600961876068,
+                                "title": "Misuse of statistics",
+                                "description": "erroneous use of statistical argument when the statistical reason involved is false or misapplied",
+                                "photo_id": 5892178716585471094,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Statistical_literacy",
+                                "webpage_id": 5973540601086181005,
+                                "title": "Statistical literacy",
+                                "description": "Statistical literacy is the ability to understand and reason with statistics and data. The abilities to understand and reason with data, or arguments that use data, are necessary for citizens to understand material presented in publications such as newspapers, television, and the Internet. However, scientists also need to develop statistical literacy so that they can both produce rigorous and reproducible research and consume it. Numeracy is an element of being statistically literate and in some models of statistical literacy, or for some populations (e.g., students in kindergarten through 12th grade/end of secondary school), it is a prerequisite skill. Being statistically literate is sometimes taken to include having the abilities to both critically evaluate statistical material and appreciate the relevance of statistically-based approaches to all aspects of life in general or to the evaluating, design, and/or production of scientific work.",
+                                "photo_id": null,
+                                "author": null,
+                                "published_date": null
+                            }
+                        ]
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5880776364393606111,
+                        "access_hash": 5928265355509545864,
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe3 \\xd5\\xe6\\x014_\\x10%\"\\xdc\\x03\\x84\\xf2v\\x81\\xe3'",
+                        "date": "2021-05-29 16:52:24+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x19(\\xd9\\xeb\\xd2\\x8aE\\xfb\\xa2\\x86`\\xaaI\\xe8(\\x02\\xa5\\xcd\\xc3$\\xc1W\\xa2\\xf5\\xf7\\xabjC(#\\xa1\\xac\\xa9\\x0e\\xe9\\x0b\\x1e\\xa4\\xd5\\xeb6\\x06\\x10\\xbd\\xd6\\x91MhX\\xa2\\x8a)\\x92\\x06\\xa1\\x99Y\\xd7\\x19\\n*jF\\xe9@\\x14\\x1a\\xd1\\x8bgz~u40\\xbcl\\x08u558}\\xeaC\\xb8\\xb9=\\xc5\\x14\\xb4S\\x11'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 198,
+                                "size": 14090
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 495,
+                                "size": 43155
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 742,
+                                "sizes": [
+                                    9443,
+                                    19837,
+                                    33575,
+                                    44326,
+                                    65307
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6033995663366270292,
+                        "access_hash": -589023476037806489,
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe3K:X\\x0cZ\"f\\xdc\\x18\\x04#2\\xfbS\\x850'",
+                        "date": "2022-01-30 16:38:28+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01'(\\xd9\\xaa\\xf2\\xdc\\x08\\x8f\\xce\\xc1x\\xe9\\xd4\\xd3\\xe6\\n\\x14\\xb6\\xd0[\\xb6k2t,Io\\xbd\\xfc\\xe97b\\xe1\\x0ecB+\\x8d\\xfd\\xb3\\xdf=*`\\xc0\\xfb\\x1a\\xa1br>\\x80\\x8a\\xb7J\\xe4\\xd8\\x9a\\x8aj\\x1c\\x8ez\\x8a*\\x90\\x88\\xae3\\x85\\xce:\\xd4\\x04\\x020j\\xdc\\xab\\xbd0:\\xf6\\xa8\\x95\\x00\\xe7\\xa9\\xf5\\xa3\\x9a\\xc8\\xb4\\xc8\\xa0\\x84\\xc7#7b:\\x1a\\x9e\\x8a+6\\x03\\x93\\xef~\\x14P\\xb9\\x1c\\xed'4U\\xad\\x89d\\x94\\xd6L\\xf284QN\\xc2\\x1b\\xb0\\xfb~t\\xa19\\xe7\\x9a(\\xa4\\x92\\x1bc\\xe8\\xa2\\x8ab?\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 309,
+                                "size": 12628
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 773,
+                                "size": 40526
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 1160,
+                                "sizes": [
+                                    7805,
+                                    16563,
+                                    31928,
+                                    41994,
+                                    62589
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5892178716585471094,
+                        "access_hash": -7724925976051569535,
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\xfaf\\xf4\\xf5\\xe7\\xc6\\xef\\xa6\\xd8rI\\xba\\xc9\\xf1\\xae\\x0e'",
+                        "date": "2021-06-02 21:06:14+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 15,
+                                "h": 20,
+                                "size": 477
+                            },
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x14\\x0f\\xbf=\\xc3\\xc6\\xb2:\"\\x94\\x88|\\xc5\\x8e3\\xec)!\\xba\\x92Y\\x91\\x0c$#\\xa6\\xf0}\\x07l\\xd5{\\xc9g\\x9e\\x19\\xe1\\xf2X|\\xd8\\x18\\x07\\xee\\xfa\\xd5\\xd8\\xa4.\\xc0F\\xa4D\\xa3\\x19*FO\\xb5\\x00ME\\x14P\\x07'"
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6013749350741683242,
+                        "access_hash": -2034014130392973961,
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe3H\\x1c\\xb7|\\xb2\\x1e\\xf0\\xdd\\xdbV\\x7f\\xdf\\x8a!\\x7f\\xb3'",
+                        "date": "2021-07-13 20:21:09+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01(\\x1c\\xd3\\xf3\\x11@\\x1d8\\xedH$\\\\\\xf5?\\x90\\xaa2\\xc9\\x891\\xbb\\xf0\\xfc)\\xbew\\xbdcseM3DH\\xbe\\xa4\\xfe\\x14\\xc7\\xda\\xcd\\x91\\xfc\\xaa\\x81\\x9c\\xfa\\xd5\\xa4$\\xa2\\x9fj.\\x0e\\x16#\\x97\\xaf\\xe1U\\xd5\\xb0\\xa0\\x9c\\xf4\\x15\\xa0a,3\\xedI\\xf6s\\x8e\\x94X\\xa54R\\xea>\\xb5m\\x06#P8\\xe2\\x9d\\xf6n1\\x8f\\xd6\\x9cSh\\x03\\xd0QaNi\\xa2@\\xc7\\x03\\x07\\xb7\\xb5.\\xe3\\x9cg\\xf9QEZ1\\x10\\xb1\\xf5?\\xa55\\xdd\\x01\\x19`\\x0e;\\xd1E&\\x08'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 185,
+                                "h": 270,
+                                "size": 18671
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 532583641742113073,
+                        "access_hash": -6689689126676592079,
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\x00A\\xdd\\xc7\\xfc\\xac\\x04\\xc4\\xb0\\xd4g\\xac\\xbf1\\xd9\\x1c'",
+                        "date": "2017-08-18 18:47:25+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 90,
+                                "h": 50,
+                                "size": 1172
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 178,
+                                "size": 7753
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 325,
+                                "h": 181,
+                                "size": 7971
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [
+                    {
+                        "_": "Document",
+                        "id": 6042994529928216688,
+                        "access_hash": -7085747415029660100,
+                        "file_reference": "b'\\x00b\\x7f\\x8f\\xe3\\x1a&)5\\xd9VnK>\\xeb:\\xda\\xef\\xd0*\\x8f'",
+                        "date": "2018-11-25 22:33:08+00:00",
+                        "mime_type": "image/jpeg",
+                        "size": 257088,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 1024,
+                                "h": 1512
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "1024px-How_to_Lie_with_Statistics.jpg"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 61,
+                                "h": 90,
+                                "size": 2904
+                            }
+                        ],
+                        "video_thumbs": []
+                    }
+                ],
+                "part": false,
+                "rtl": false,
+                "v2": true,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 62,
+            "length": 56
+        }
+    ],
+    "views": 58,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1660,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 456376936
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 589,
+        "read_max_id": 589
+    },
+    "edit_date": "2022-05-11 19:04:06+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}
