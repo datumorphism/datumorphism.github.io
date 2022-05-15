@@ -1,20 +1,20 @@
 {
     "_": "Message",
-    "id": 241,
+    "id": 358,
     "peer_id": {
         "_": "PeerChannel",
         "channel_id": 1320526773
     },
-    "date": "2021-07-04 08:37:02+00:00",
-    "message": "#Academia\n\nThe distill team's thought on interactive publishing and self-publishing in academia.\n\nhttps://distill.pub/2021/distill-hiatus/",
+    "date": "2022-05-15 07:13:07+00:00",
+    "message": "#visualization \n\n\nhttps://anvaka.github.io/map-of-reddit/?x=175273.66777410256&y=370576.01346498774&z=217281.8913341138",
     "out": true,
     "mentioned": false,
     "media_unread": false,
     "silent": false,
     "post": true,
     "from_scheduled": false,
-    "legacy": false,
-    "edit_hide": false,
+    "legacy": true,
+    "edit_hide": true,
     "pinned": false,
     "from_id": null,
     "fwd_from": null,
@@ -24,21 +24,21 @@
         "_": "MessageMediaWebPage",
         "webpage": {
             "_": "WebPage",
-            "id": 6293705993539225903,
-            "url": "https://distill.pub/2021/distill-hiatus/",
-            "display_url": "distill.pub/2021/distill-hiatus",
+            "id": 1181030315048391345,
+            "url": "https://anvaka.github.io/map-of-reddit/?x=175273.66777410256&y=370576.01346498774&z=217281.8913341138",
+            "display_url": "anvaka.github.io/map-of-reddit/?x=175273.66777410256&y=370576.01346498774&z=217281.8913341138",
             "hash": 0,
             "type": "article",
-            "site_name": "Distill",
-            "title": "Distill Hiatus",
-            "description": "After five years, Distill will be taking a break.",
+            "site_name": "anvaka.github.io",
+            "title": "Map of Reddit",
+            "description": "This website shows a map of reddit. Each dot is a subreddit. Two dots within the same cluster are usually close to each other if multiple users frequently leave comments on both subreddits",
             "photo": null,
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": "Editorial Team",
+            "author": "Andrei Kashcha",
             "document": null,
             "cached_page": null,
             "attributes": []
@@ -49,15 +49,15 @@
         {
             "_": "MessageEntityHashtag",
             "offset": 0,
-            "length": 9
+            "length": 14
         },
         {
             "_": "MessageEntityUrl",
-            "offset": 98,
-            "length": 40
+            "offset": 18,
+            "length": 101
         }
     ],
-    "views": 203,
+    "views": 42,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
@@ -69,12 +69,12 @@
         "max_id": null,
         "read_max_id": null
     },
-    "edit_date": "2021-07-04 08:37:11+00:00",
+    "edit_date": "2022-05-15 07:45:45+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],
     "ttl_period": null,
     "tags": [
-        "Academia"
+        "visualization"
     ]
 }

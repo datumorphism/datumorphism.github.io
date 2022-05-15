@@ -1,0 +1,71 @@
+{
+    "_": "Message",
+    "id": 356,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-14 11:46:05+00:00",
+    "message": "#python\n\nThis post is a retro on how I learned Python. \n\nDisclaimer: I can not claim that I am a master of Python. This post is a retrospective of how I learned Python in different stages.\n\nI started using Python back in 2012. Before this, I was mostly a Matlab/C user. \n\nPython is easy to get started, yet it is hard to master. People coming from other languages can easily make it work but will write some \"disgusting\" python code. And this is because Python people talk about \"pythonic\" all the time. Instead of being an actual style guide, it is rather a philosophy of styles.\n\nWhen we get started, we are most likely not interested in [PEP8](https://peps.python.org/pep-0008/) and [PEP257](https://peps.python.org/pep-0257/). Instead, we focus on making things work. After some lectures from the university (or whatever sources), we started to get some sense of styles. Following these lectures, people will probably write code and use Python in some projects. Then we began to realize that Python is strange, sometimes even doesn't make sense. Then we started leaning about the philosophy behind it.  At some point, we will get some peer reviews and probably fight against each other on some philosophies we accumulated throughout the years.\n\nThe attached drawing (in comments) somehow captures this path that I went through. It is not a monotonic path of any sort. This path is most likely to be permutation invariant and cyclic. But the bottom line is that mastering Python requires a lot of struggle, fights, and relearning. And one of the most effective methods is peer review, just as in any other learning task in our life.\n\nPeer review makes us think, and it is very important to find some good reviewers. Don't just stay in a silo and admire our own code. To me, the whole journey helped me building one of the most important philosophies of my life: embrace open source and collaborate.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 647,
+            "length": 33
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 695,
+            "length": 33
+        }
+    ],
+    "views": 80,
+    "forwards": 4,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 3,
+        "replies_pts": 1685,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 595,
+        "read_max_id": 595
+    },
+    "edit_date": "2022-05-14 19:10:57+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "python"
+    ]
+}

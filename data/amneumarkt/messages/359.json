@@ -1,0 +1,3497 @@
+{
+    "_": "Message",
+    "id": 359,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-15 07:49:47+00:00",
+    "message": "\u975e\u5e38\u8be6\u7ec6\u548c\u6df1\u5165\nhttps://zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2022-05-14 02:12:01+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1381813778
+        },
+        "from_name": null,
+        "channel_post": 762,
+        "post_author": "Linghao",
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 9021134775648996548,
+            "url": "https://zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01",
+            "display_url": "zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01?gi=cca178f6d428",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Medium",
+            "title": "The Four Innovation Phases of Netflix\u2019s Trillions Scale Real-time Data Infrastructure",
+            "description": "The blog post will share the four phases of Real-time Data Infrastructure\u2019s iterative journey in Netflix (2015-2021). For each phase, we will go over the evolving business motivations, the team\u2019s unique challenges, the strategy bets, and the use case patterns we discovered along the way.",
+            "photo": {
+                "_": "Photo",
+                "id": 6038384050495925688,
+                "access_hash": -6417051946257469874,
+                "file_reference": "b'\\x00b\\x80\\xfeeD\\xc1\\xcd)w\\xde\\xca\\xa4\\xcd=Hg\\xcd\\xd7\\x11\\x83'",
+                "date": "2022-02-01 19:33:18+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\"(\\xd7$n\\xdb\\x9c\\x1a3\\xf5\\xfc\\xa8 \\xef\\x1d1F8\\xeb@\\x0b\\x9a\\t\\xc5\\x03\\x9e\\x874\\x11\\x91\\xd0P\\x00\\x0eh\\xa4\\xce\\x08P\\xbd{\\x8e\\x82\\x8a\\x00k\\x17\\x12\\x00\\x00\\xdb\\xdc\\xfaS\\xb7\\nu7$v&\\x80\\x14\\x1e8\\xe9@&\\x8e\\xbd\\xa8\\x03\\x1d(\\x01\\x99R\\xfe\\xebES\\x96\\xf6D\\xb8d\\x08\\x98\\x07\\x19#\\x9a(\\x11\\xa1A\\x1cQE\\x03\\x13\\x03\\xd0R\\xd1E\\x000\\xff\\x00\\xadZ(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 274,
+                        "size": 19592
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 684,
+                        "size": 76609
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 1026,
+                        "sizes": [
+                            9811,
+                            27409,
+                            62393,
+                            85106,
+                            121632
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Zhenzhong Xu",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01?gi=cca178f6d428",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The Four Innovation Phases of Netflix\u2019s Trillions Scale Real-time Data Infrastructure"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Zhenzhong Xu"
+                        },
+                        "published_date": "2022-02-01 16:36:52+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "My name is "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Zhenzhong Xu"
+                                    },
+                                    "url": "https://twitter.com/ZhenzhongXu",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". I joined Netflix in 2015 as a founding engineer on the Real-time Data Infrastructure team and later led the Stream Processing Engines team. I developed an interest in real-time data in the early 2010s, and ever since believe there is much value yet to be uncovered."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Netflix was a fantastic place to be surrounded by many amazing colleagues. I can\u2019t be more proud of everyone involved in this journey to turn a shared belief into reality. I want to take a brief moment to share the team\u2019s major accomplishments:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "We grew the streaming data use cases from 0 to over 2000+ across all organizations in Netflix."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "We built and evolved successful products such as "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Keystone"
+                                            },
+                                            "url": "https://netflixtechblog.com/keystone-real-time-stream-processing-platform-a3ee651812a",
+                                            "webpage_id": 4211979583408092644
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "managed Flink Platform"
+                                            },
+                                            "url": "https://conferences.oreilly.com/software-architecture/sa-ny-2018/cdn.oreillystatic.com/en/assets/1/event/281/Building%20stream%20processing%20as%20a%20service%20at%20Netflix%20Presentation.pdf",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Mantis"
+                                            },
+                                            "url": "https://netflixtechblog.com/open-sourcing-mantis-a-platform-for-building-cost-effective-realtime-operations-focused-5b8ff387813a",
+                                            "webpage_id": 4211979582388362072
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", and managed Kafka platform. These products offer solutions in many aspects of the data ecosystem: including data ingestion, movement, analytical & operational processing, and machine learning use cases."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "We were among the first in the industry to scale open-source Kafka & Flink deployment to handle 1 Trillion events a day around 2017 and later scaled another 20x by 2021!"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "A couple of months ago, I left Netflix to pursue a similar but expanded vision in the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "real-time ML space"
+                                    },
+                                    "url": "https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". I think it\u2019s a perfect time to summarize my learnings building the real-time data infrastructure at Netflix. I hope this post will help platform engineers develop their cloud-native, self-serve streaming data platforms and scale use cases across many business functions (not necessarily from our success but maybe more from our failures). I also believe that having an understanding of how data platforms are built can help platform users (e.g., data scientists and ML engineers) make the most out of their platforms."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "What\u2019s In the Post"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "I will share the four phases of Real-time Data Infrastructure\u2019s iterative journey in Netflix (2015\u20132021)."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextBold",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Phase 1: Rescue Netflix Logs From the Failing Batch Pipelines (2015)"
+                                }
+                            },
+                            "url": "https://zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01?gi=cca178f6d428#95d1",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "During Netflix\u2019s global hyper-growth, business and operational decisions are reliant on faster logging data more than ever. In 2015, the Chukwa/Hadoop/Hive-based batch pipelines struggled to scale. In this phase, we built a streaming-first platform from the ground up to replace the failing pipelines."
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextBold",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Phase 2: Scale 100s Data Movement Use Cases (2016)"
+                                }
+                            },
+                            "url": "https://zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01?gi=cca178f6d428#77da",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "After the initial product release, the internal demand for data movement steadily rose. We had to focus on the common use cases. In this phase, we scaled to support 100s of use cases by building out a self-service, fully managed platform with a simple-yet-powerful building block design."
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextBold",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Phase 3: Support Custom Needs and Scale Beyond 1000s Use Cases (2017\u20132019)"
+                                }
+                            },
+                            "url": "https://zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01?gi=cca178f6d428#9b78",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "As Stream Processing gained momentum in Netflix, many teams demanded lower latency and more processing flexibility in Data Engineering, Observability, and Machine Learning spaces. In this phase, we built a new Stream Processing development experience to enable custom use cases, and we also tackled the new engineering and operational challenges."
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextBold",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Phase 4: Expand Stream Processing Responsibilities \u2014 Challenges and Opportunities ahead (2020 \u2014 Present)"
+                                }
+                            },
+                            "url": "https://zhenzhongxu.com/the-four-innovation-phases-of-netflixs-trillions-scale-real-time-data-infrastructure-2370938d7f01?gi=cca178f6d428#dd1c",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "With the fast-paced Data Platform technology evolution in the industry, there are many new challenges: difficulties in coordination, steep learning curve, divisive stream-to-batch boundaries, etc. In this phase, we explored Stream Processing playing a more prominent role in connecting technologies and raising abstractions to make Data Platforms easier to use. There are many more opportunities ahead of us."
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "For each phase, I will go over the evolving business motivations, the team\u2019s unique challenges, the strategy bets, and the use case patterns we discovered along the way."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Acknowledgment"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Many people helped me review this post, without whose feedback I would never dig into many unbiased details. Special thanks to "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Chip Huyen"
+                                    },
+                                    "url": "https://huyenchip.com/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Steven Wu"
+                                    },
+                                    "url": "https://www.linkedin.com/in/stevenzhenwu/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Prashanth Ramdas"
+                                    },
+                                    "url": "https://www.linkedin.com/in/pramdas/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Guanhua Jiang"
+                                    },
+                                    "url": "https://www.linkedin.com/in/garukun/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Scott Shi"
+                                    },
+                                    "url": "https://www.linkedin.com/in/scottrshi/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Goku Mohandas"
+                                    },
+                                    "url": "https://madewithml.com/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "David Sun"
+                                    },
+                                    "url": "https://www.linkedin.com/in/sunzhengdavid/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Astasia Myers"
+                                    },
+                                    "url": "https://astasia.medium.com/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Matt Willian"
+                                    },
+                                    "url": "https://www.linkedin.com/in/matthew-willian-77b9074a/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The Four Phases of Real-time Data Infrastructure at Netflix"
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Phase 1: Rescue Netflix Logs From the Failing Batch Pipelines (2015)"
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Context"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In 2015, Netflix already had about 60MM subscribers and was aggressively expanding its international presence. We all knew that promptly scaling the platform leverage would be the key to sustaining the skyrocketing subscriber growth."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Side note: For those unfamiliar, the platform team provides leverage by centrally managing the foundational infrastructures so the product team can focus on business logic."
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Our team had to figure out how to help Netflix scale the logging practices. At that time, Netflix had ~500 microservices, generating more than 10PB data every day in the ecosystem."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Collecting these data serves two primary purposes for Netflix:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockOrderedList",
+                        "items": [
+                            {
+                                "_": "PageListOrderedItemText",
+                                "num": "",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Gain business "
+                                        },
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "analytics insights"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " (e.g., user retention, average session length, what\u2019s trending, etc.)."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListOrderedItemText",
+                                "num": "",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Gain "
+                                        },
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "operation insights"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " (e.g., measuring "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "streaming plays per second"
+                                            },
+                                            "url": "https://netflixtechblog.com/sps-the-pulse-of-netflix-streaming-ae4db0e05f8a",
+                                            "webpage_id": 4211979582256934325
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " to quickly and easily understand the health of Netflix systems), so developers can alert or perform mitigations."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "You may ask why we need to move the logs from the edge to the data warehouse in the first place? Due to the sheer volume, it was infeasible to do on-demand analytics on the online transactional databases at scale. The reason is that online transactional processing (OLTP) and online analytical processing (OLAP) are built with different assumptions \u2014 OLTP was built for row-oriented access patterns and OLAP for column-oriented access patterns. Underneath the hood, they use different data structures for optimizations."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "For example, let\u2019s say we want to know the average session length across hundreds of millions of Netflix users. Suppose we put this on-demand analytical query on a row-oriented OLTP system. It will result in full table scans at the row-level granularity and potentially lock up the database, and applications may become unresponsive, resulting in unpleasant user experiences. This type of analytics/reporting workload is much better off done on an OLAP system, hence the need to move the logs reliably in a low latency fashion."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6038652997053033903,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: Move data from Edge to Data Warehouse)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "By 2015 logging volume had increased to 500 billion events/day (1PB of data ingestion), up from 45 billion events/day in 2011. The existing logging infrastructure (a simple batch pipeline platform built with Chukwa, Hadoop, and Hive) was failing rapidly against the alarmingly increasing subscriber numbers every week. By estimation, we had about six months to evolve towards a streaming-first solution. The below diagrams show the evolution from the failing batch architecture to the new streaming-based architecture."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6040863930252897574,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: the failing batch pipeline architecture, before migration)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "We decided to replace this failing infrastructure with "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Keystone"
+                                    },
+                                    "url": "https://netflixtechblog.com/keystone-real-time-stream-processing-platform-a3ee651812a",
+                                    "webpage_id": 4211979583408092644
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6040992899530861841,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: the Keystone streaming architecture, after migration)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Another question you may have is why consider a streaming-first architecture? At the time, the value of getting the streaming architecture right outweighs the potential risks. Netflix is a data-driven company, and the immediate importance of a streaming architecture are:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Reduce developer and operation feedback loop. Developers heavily rely on looking at logs to make operational decisions. Access to fresher on-demand logs allows developers to detect issues earlier, hence better productivity."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Better product experience. Many product features, such as personalized recommendation, search, etc., can benefit from fresher data to improve user experiences, leading to higher user retention, engagement, etc."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Challenges"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We had to think through many challenges in building a streaming platform."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 1: Large scale with limited resources"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". We had six months to build out Keystone to handle 500B events per day, and we had to pull it off with six team members."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 2: Immature streaming ecosystem. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Developing and operating streaming-first infrastructure was difficult in 2015 when both transport (Apache Kafka) and processing technologies (Apache Samza, Apache Flink) were relatively nascent. Few technology companies had proven successful streaming-first deployments at the scale we needed, so we had to evaluate technology options and experiment. Given our limited resources, we couldn\u2019t build everything on our own and had to decide what to build and what nascent tools to bet on."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 3: Analytical and operational concerns are different"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Analytical stream processing focuses on correctness and predictability. For example, moving all user clickstreams into the data warehouse requires data consistency (minimum duplicates or losses) and predictability on latency that typically falls in the minutes range. (Keystone is good at this)"
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Operational stream processing focuses more on cost-effectiveness, latency, and availability. For example, understanding the health state of the entire Netflix device ecosystem can benefit from sub-second to seconds level latency, and the data can be sampled or profiled from the source to save cost. (Mantis is good at this)"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 4: Cloud-native resilience for a stateful data platform is hard"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Netflix had already operated on the AWS cloud for a few years. However, we were the first to get a stateful data platform onto the containerized cloud infrastructure. There are hundreds of thousands of physical machines powering the cloud in each data center underneath the hood. At this scale, hardware failures are inevitable. When these failures arise unexpectedly, it could be challenging for the systems to keep up with the availability and consistency expectations. It\u2019s even more challenging in an unbounded low latency stream processing environment where any failure recovery can result in backpressure buildup. Cloud-native resilience for a streaming-first architecture would mean significant engineering challenges."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6040515140253756667,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: How does stream processing help with operational and analytical data)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Stream Processing Patterns Summary in Phase 1"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "I include some observed use cases and their respective stream processing patterns for each innovation phase. So you can get a sense of the evolution over time."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPreformatted",
+                        "text": {
+                            "_": "TextFixed",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "+-----------------------------------------------------------------+\n| "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Pattern"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "               | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Product"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "  | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Example Use Cases            "
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "|\n|-----------------------|----------|------------------------------|\n| Data Routing          | Keystone | Logging, Data Movement (MVP) |\n|-----------------------|----------|------------------------------|\n| RT Alerts / Dashboard | Mantis   | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "SPS Alert"
+                                        },
+                                        "url": "https://netflixtechblog.com/sps-the-pulse-of-netflix-streaming-ae4db0e05f8a",
+                                        "webpage_id": 4211979582256934325
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "                    |\n+-----------------------------------------------------------------+"
+                                    }
+                                ]
+                            }
+                        },
+                        "language": ""
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Strategy Bets"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 1: When building the MVP product, build it for the first few customers. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "When exploring the initial product-market fit, it\u2019s easy to get distracted. We decided only to help a few high-priority high-volume internal customers and worry about scaling the customer base later. This decision not only enabled us to be laser-focused on the core of the product. It also made us conscious about what not to invest in (e.g., we used a spreadsheet instead of a full-fledged control plane to keep customer names, email addresses, and metadata information per pipeline to facilitate customer deployment during the MVP phase)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 2: Co-evolve with technology partners even if not in an ideal maturity state "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "instead of reinventing the wheels on our own. This way, we could co-evolve the ecosystems together. We chose to partner early on."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Streaming partners: Externally, we worked with partners who were leading the stream processing efforts in the industry, e.g., LinkedIn (Kafka and Samza team), Confluent, Data Artisan (builders behind Apache Flink, and later renamed to Veverica). Doing so allowed us to contribute to the OSS for our needs while leveraging the community\u2019s work."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Containerization partners: in 2015, it was still the early days of container virtualization technology. We needed a strategy to deploy quickly. Internally, we partnered up with the newly created container infrastructure "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Titus team"
+                                            },
+                                            "url": "https://netflix.github.io/titus/",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". Titus was built on top of Apache Mesos and provided compute resource management, scheduling, and isolated deployment, via an abstracted API. Titus later evolved to leverage K8S in early 2020, and their team managed to migrate all workloads transparently. Thanks to this partnership, we didn\u2019t have to worry about the low-level compute infrastructure while building the data platform."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "During the collaboration, we stayed in constant communication to share learnings and provide feedback. We had biweekly sync meetings with close partners to align on goals and discuss issues and solutions. When there were blocking issues, the right people would be involved right away."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 3: Decouple concerns "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "versus ignoring them."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Separated concerns between operational and analytics use cases. We evolved Mantis (operations-focused) and Keystone (analytics-focused) separately but created room to interface both systems."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6038582907481730483,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "\uff08Figure: separation of concerns for different stream processing scenarios)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Separated concerns between producers and consumers. We introduced producer/consumer clients equipped with standardized wire protocol and simple schema management to help "
+                                        },
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "decouple the development workflow of producers and consumers. It later proved to be an essential aspect in Data Governance and data quality control."
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Separated component responsibilities. We started with a microservice-oriented single responsibility principle, dividing the entire infrastructure into Messaging (Streaming Transport), Processing (Stream Processing), and Control Plane (the control plane was only a script in this phase, later evolved into a full-fledged system). The separation of component responsibilities enabled the team to align on interfaces early on while unlocking the team\u2019s productivity by focusing on different parts concurrently."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 4: Invest in building a system that expects failures and monitors all operations "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "versus delaying the investment. Due to the elastic, constantly-changing, higher-failure-probability characteristics of the cloud, we need to design the system to monitor, detect, and tolerate all sorts of failures. The failures can range from network blips, instance failure, zone failure, cluster failure, inter-service congestion & backpressure, regional disaster failures, etc. We invested in building the systems with the assumption that failures are constant. We embraced DevOps practices early on: such as design for failure scenarios, rigorous automation, continuous deployment, shadow testing, automated monitoring, alerting, etc. This DevOps foundation enabled us the ultimate engineering agility to ship multiple times a day."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6038238360910278129,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "(reference: "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "What is Chaos Money in DevOps"
+                                        },
+                                        "url": "https://www.quora.com/What-is-Chaos-Monkey-in-DevOps",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " on Quora)"
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Learnings"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Having a psychologically safe environment to fail is essential for any team to lead changes."
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We made many mistakes. We failed miserably on the product launch day and had a company-wide incident that caused massive data loss. After investigation, it turned out that despite correctly estimating the traffic growth, the monstrous Kafka cluster (with over 200 brokers) we built out was too big and eventually hit its scaling limit. When one broker died, the cluster couldn\u2019t recover on its own due to the limitations in Kafka (at the time) regarding broker and partition numbers. It eventually degraded to the point of no recovery."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It was a terrifying experience to fail at this scale, but thanks to the psychologically safe team environment, we communicated transparently with all the stakeholders and turned the quick learnings into permanent solutions. For this particular case, we developed more granular cluster isolation capabilities (smaller Kafka clusters + isolated Zookeeper) to contain the blast radius."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "There were many other failures. As we dug through the root cause, we realized that we wouldn\u2019t be able to fully anticipate all edge scenarios, especially when we were building on a managed cloud where changes often go outside of our control, such as instance terminations or tenant colocation, etc. At the same time, our product is used by many and is too important to fail. It became an operational principle always to prepare our operations for the worst-case scenario."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "After the incident, we adopted a weekly Kafka cluster failover drill. Every week the oncall person would simulate a Kafka cluster failure. The team would ensure the failover automation works to migrate all traffic to a healthy cluster with minimum user impact. If you are interested in learning more about this practice, this "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "video"
+                                    },
+                                    "url": "https://www.youtube.com/watch?v=TrPvC7P8XjA&t=1586s",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " has more details."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Phase 2: Scale 100s Data Movement Use Cases (2016)"
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Context"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "After shipping the initial Keystone MVP and migrating a few internal customers, we gradually gained some trust and words spread to other engineering teams. Streaming gained momentum in Netflix because it\u2019s now easy to move logs for analytical processing and gain on-demand operational insights."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It was time for us to scale for general customers."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6038273661246483927,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "(Figure: evolving Keystone architecture diagram, circa 2016. Keystone includes Kafka and Flink engines as its core components. For more technical design details, please refer to blog posts focused on "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Kafka"
+                                        },
+                                        "url": "https://netflixtechblog.com/kafka-inside-keystone-pipeline-dd5aeabaf6bb",
+                                        "webpage_id": 4211979583258614756
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " and "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Flink"
+                                        },
+                                        "url": "https://netflixtechblog.com/a3ee651812a",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ")"
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Challenges"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 1: Increased operation burden. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "We initially offered white-glove assistance to onboard new customers. However, it quickly became unsustainable given the growing demand. We needed to start evolving the MVP to support more than just a dozen customers. As a result, we need to rebuild some components (e.g., it\u2019s time to turn the spreadsheet into a proper database-backed control plane)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 2: Diverse needs arise"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". As we got more customer requests, we started seeing very diverse needs. There were two major categories:"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "One group preferred a fully managed service that\u2019s simple to use."
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "The other group preferred flexibility and needed complex computation capabilities to solve more advanced business problems, and they are ok with taking pagers and even managing some infrastructures."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We can\u2019t do both well at the same time."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 3: We broke everything we touched"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". No kidding, we broke pretty much all our dependent services at some point due to the scale. We "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "broke aws S3 once"
+                                    },
+                                    "url": "https://www.youtube.com/watch?v=w2AF8Ld-Ofs&t=211s",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". We found many bugs in Kafka and Flink. We broke "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Titus"
+                                    },
+                                    "url": "https://netflix.github.io/titus/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (the managed container infrastructure) multiple times and discovered weird CPU isolation and network issues. We broke "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Spinnaker"
+                                    },
+                                    "url": "https://spinnaker.io/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (the continuous deployment platform) when we started to manage hundreds of customer deployments programmatically."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Luckily those teams were also the best. They worked with us to solve these problems one by one. These efforts are critical to maturing the entire streaming ecosystem."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Stream Processing Patterns Summary in Phase 2"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPreformatted",
+                        "text": {
+                            "_": "TextFixed",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "+-----------------------------------------------------------------+\n| "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Pattern"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "               | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Product"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "  | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Example Use Cases            "
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "|\n|-----------------------|----------|------------------------------|\n| Data Routing          | Keystone | Logging, Data Movement       |\n|                       |          | (+ At scale)                 |\n|-----------------------|----------|------------------------------|\n| RT Data Sampling/     | Mantis   | Cost-effective"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": " RT Insights"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=uODxUJ5Jwis",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "   |\n| Discovery             |          |                              |\n|-----------------------------------------------------------------|\n| RT Alerts / Dashboard | Mantis,  | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "SPS Alert"
+                                        },
+                                        "url": "https://netflixtechblog.com/sps-the-pulse-of-netflix-streaming-ae4db0e05f8a",
+                                        "webpage_id": 4211979582256934325
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",                   |\n|                       | Kafka    | + Infrastructure Health      |\n|                       |          | Monitoring ("
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Cassandra"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=w3WbVMavy2I",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " &      |\n|                       |          | Elasticsearch),              |\n|                       |          | +"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "RT QoE monitoring"
+                                        },
+                                        "url": "https://netflixtechblog.com/how-netflix-uses-druid-for-real-time-insights-to-ensure-a-high-quality-experience-19e1e8568d06",
+                                        "webpage_id": 4211979581503347647
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "           |\n+-----------------------------------------------------------------+"
+                                    }
+                                ]
+                            }
+                        },
+                        "language": ""
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Strategy Bets"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 1: Focus on simplicity first "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "versus exposing infrastructure complexities to users. We decided to first focus on a highly abstracted, fully managed service for the general streaming use cases for two reasons."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockOrderedList",
+                        "items": [
+                            {
+                                "_": "PageListOrderedItemText",
+                                "num": "",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "It\u2019d allow us to address most data movement and simple streaming ETL (e.g., projection, filtering) use cases. Providing such simple, high-level abstraction for data routing would enable engineers across all Netflix organizations to use the data routing as a \u201clego\u201d building block in conjunction with other Platform services."
+                                }
+                            },
+                            {
+                                "_": "PageListOrderedItemText",
+                                "num": "",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "It\u2019d enable our users to focus on business logic."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We\u2019d tackle the more advanced use cases for later."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 2: Invest in a fully-managed multi-tenancy self-service "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "versus continuing with manual white-glove support. We had to focus on automating the control plane and workload deployment. "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Customer workloads need to be "
+                                    }
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "fully isolated"
+                                        }
+                                    },
+                                    "url": "https://www.youtube.com/watch?v=TrPvC7P8XjA&t=1380s",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " We decided that one customer\u2019s workload should not interfere with another customer\u2019s in any way."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6040789786232466794,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: Keystone UI. showing a self-serve drag-n-drop experience powered by a fully managed multi-tenant streaming infrastructure)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 3: Continue to invest in DevOps "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "versus delaying it. We wanted to ship platform changes multiple times a day as needed. "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "We also believe it\u2019s necessary to enable our customers to ship changes anytime they want."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " Deployment should be done automatically and rolled into production safely minutes after the customer initiated it."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Learnings"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Learning 1: Deciding what NOT to work on is hard, but necessary."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " While it\u2019s important to address customer requests, some can be distracting. Prioritization is the first step, but consciously deciding and communicating what to cut is even more critical. Saying no is hard. But be aware "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "saying no is temporary, and saying yes is permanent."
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Learning 2: Pay attention to scaling velocity"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". It\u2019s an exciting time after the initial product-market fit is validated. However, scaling too fast would risk the team being distracted from multiple directions, leaving behind loads of tech debt, and breaking customer trust. Scaling too slowly would leave the team unmotivated, customer needs unfulfilled for too long, also breaking their trust. It\u2019s a delicate balance, but here are some signals you can watch out for:"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Software quality"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". Does the deployment rollback frequency change? How often do the partner teams block the team? Do tests fail more often now? How often do incidents happen due to any system bottleneck?"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Customer sentiment"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". Is the increase in customer support requests sublinear to the number of use cases? SLO violations trends. Do customers show excitement in new feature announcements? When there is an \u201curgent\u201d ask from the customer, what alternatives have they considered?"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Operational overhead"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". Does the team\u2019s operation-to-development time ratio change? Does the RCA-to-incident ratio change? Is the team burned out from operation toil? Does the team\u2019s innovation frequency change (e.g., blog posts, conference talks)?"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Learning 3: Educate your users and be patient in correcting misconceptions. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "There were many stream processing misconceptions around data quality like event losses or duplications, or around processing semantics like correctness guarantees under failure scenarios. Many of these misconceptions came from an old-time when Stream Processing was not mature, but a lot has evolved. Be patient with your users and educate them with data and stories!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Phase 3: Support Custom Needs and Scale Beyond 1000s Use Cases (2017\u20132019)"
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Context"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "A year after initially launching the Keystone product, the number of use cases quickly rose from less than a dozen in 2015 to a few hundred in 2017 across all organizations. We had built a solid operational foundation at this point: customers were rarely notified during their oncalls, and all infrastructure issues were closely monitored and handled by the platform team. We had built a robust delivery platform, helping our customers to introduce changes into production just minutes after the intent."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Keystone product was very good at what it was originally designed to do: a streaming data routing platform that\u2019s easy to use and almost infinitely scalable. However, it was becoming apparent that the full potential of stream processing was far from being realized. To satisfy custom use cases, we constantly stumble upon new needs for more granular control on complex processing capabilities, e.g., streaming joins, windowing, etc."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Meanwhile, Netflix has a unique freedom and responsibility culture where each team is empowered to make its own technical decisions. This culture enables each team to even invest in bespoke solutions. As a central platform team, we noticed such growth. If we don\u2019t have a way to provide the coverage, it would mean high long-term costs to the company."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It was time for the team to expand its scope. Again, we faced some new challenges."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Challenges"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Challenge 1: Custom use cases require a different developer & operation experience."
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Let me first give two examples of custom stream processing use cases."
+                        }
+                    },
+                    {
+                        "_": "PageBlockOrderedList",
+                        "items": [
+                            {
+                                "_": "PageListOrderedItemText",
+                                "num": "",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Compute "
+                                            }
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextBold",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "streaming ground truth for Recommendation"
+                                                }
+                                            },
+                                            "url": "https://www.youtube.com/watch?v=o4C7TDneH00",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "."
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " For the Netflix Recommendation algorithm to provide the best possible experience, it\u2019s necessary to train the model with the latest data. One of the inputs to training the model is the Label dataset. The labels are the direct ground-truth indicator of whether the previous personalized predictions were accurate or not. If the user decides to watch a movie for a recommendation, we have a positive label. As you can guess, the faster we can get this Label dataset, the quicker the entire ML feedback loop. To compute the labels, we\u2019ll need to join together the impressions stream and the user-clicks stream. However, user click-activity can often arrive late. For example, users sometimes take a few minutes to decide or simply leave their devices on without watching for hours. The use case requires the streaming pipeline to emit the labels as soon as all relevant information arrives but is still tolerant of late-arriving information."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListOrderedItemText",
+                                "num": "",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Compute "
+                                            }
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextBold",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "take-fraction for Recommendation"
+                                                }
+                                            },
+                                            "url": "https://www.infoq.com/presentations/netflix-event-stream-flink/",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "."
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " Netflix makes personalized recommendations to optimize the user experience. One of which is an algorithm to select the best-personalized artwork (and the best location to show them) to optimize the user take-fraction. Underneath the hood, a stream processing pipeline computes this take-fraction metric in near-real-time by joining the playback data stream with the impression stream over some custom window. Due to the scale of hundreds of millions of Netflix\u2019s user base, the streaming job needs to constantly checkpoint the internal state ranging between 1\u201310 TB."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6040883747232001435,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: A/B test to select the best artwork to personalize to the user,"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "reference: "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Selecting the best artwork for videos through A/B testing | by Netflix"
+                                    },
+                                    "url": "https://netflixtechblog.com/selecting-the-best-artwork-for-videos-through-a-b-testing-f6155c4595f6",
+                                    "webpage_id": 4211979582160123605
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ")"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "These use cases involve more advanced stream processing capabilities, such as complex event/processing time and window semantics, allowed lateness, large-state checkpoint management. They also require more operational support around observability, troubleshooting, and recovery. A brand new developer experience is necessary, including more flexible programming interfaces and operation capabilities such as custom observability stack, backfill capabilities, and a proper infrastructure to manage 10s of TBs local states. We didn\u2019t have these in Keystone, and we need to build a new product entry point but minimize redundant investment."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 2: Balancing between Flexibility & Simplicity. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "With all the new custom use cases, we had to figure out the proper level of control exposure. We can go all the way to expose the lowest-level API at the tradeoff of much more challenging operations (because we would never be able to fully anticipate how users would use the engine). Or we can choose to go mid-way (e.g., expose limited functionality) at the risk of unsatisfied customers."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 3: Increased operation complexity. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Supporting the custom use cases required us to increase the degree of freedom of the platform. As a result, we needed to improve operation observability in many complex scenarios. At the same time, as the platform integrated with many other data products, the touchpoints of our system increased, demanding operational coordination with other teams to serve our collective customers better."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 4: Central Platform vs. Local Platform. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Our team\u2019s responsibility was to provide a centralized stream processing platform. But due to the previous strategy to focus on simplicity, some teams have already invested in their local stream processing platforms using unsupported technology, e.g. Spark Streaming. We\u2019ll have to convince them to move back to a paved path because they risk losing leverage from the platform and wasting resources on redundant investment. Now is the right time as we expand into custom use cases."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Stream Processing Patterns Summary in Phase 3"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPreformatted",
+                        "text": {
+                            "_": "TextFixed",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "+-----------------------------------------------------------------+\n| "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Pattern"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "               | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Product"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "  | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Example Use Cases            "
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "|\n|-----------------------|----------|------------------------------|\n| "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Stream-to-stream Joins"
+                                        },
+                                        "url": "https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/operators/joining/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "| Flink    | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Take-fraction computation"
+                                        },
+                                        "url": "https://www.infoq.com/presentations/netflix-event-stream-flink/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",   |\n| (ETL)                 |          | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Recsys label computation"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=o4C7TDneH00",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "     |\n|-----------------------|----------|------------------------------|\n| Stream-to-table joins | Flink    | Side input: join streams with|\n| (ETL)                 |          | slow-moving Iceberg table    |\n|-----------------------|----------|------------------------------|\n| "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Streaming Sessionizat-"
+                                        },
+                                        "url": "https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/operators/windows/#session-windows",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "| Flink    | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Personalization Sessionizat-"
+                                        },
+                                        "url": "https://www.infoq.com/articles/netflix-migrating-stream-processing/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " |\n| "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "ion"
+                                        },
+                                        "url": "https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/operators/windows/#session-windows",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " (ETL)             |          | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "ion"
+                                        },
+                                        "url": "https://www.infoq.com/articles/netflix-migrating-stream-processing/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Metrics sessionization"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=AUreuwzU4nA",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "  |\n|-----------------------|----------|------------------------------|\n| RT Observability      | Mantis   | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Distributed tracing"
+                                        },
+                                        "url": "https://netflixtechblog.com/building-netflixs-distributed-tracing-infrastructure-bb856c319304",
+                                        "webpage_id": 4211979582962618697
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",         |\n|                       |          | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Chaos EXPER monitoring"
+                                        },
+                                        "url": "https://netflixtechblog.com/chap-chaos-automation-platform-53e6d528371f",
+                                        "webpage_id": 4211979582754347587
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",      |\n|                       |          | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Application monitoring"
+                                        },
+                                        "url": "https://netflixtechblog.com/telltale-netflix-application-monitoring-simplified-5c08bfa780ba",
+                                        "webpage_id": 4211979582726940534
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "       |\n|-----------------------|----------|------------------------------|\n| RT Anomaly / Fraud    | Mantis,  | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Contextual alert"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=6UwcqiNsZ8U",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",            |\n| Detection             | Flink    | PII detection,               |\n|                       |          | Fraudulent login prevention  |\n|-----------------------|----------|------------------------------|\n| RT DevOps Decision    | Mantis   | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Autoscaling"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=NV0jvA5ZDNc",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",                 |\n| Tool                  |          | Streaming ACA & A/B tests,   |\n|                       |          | CDN placement optimization   |\n|-----------------------|----------|------------------------------|\n| Event Sourced         | Flink    | Content Delivery Network     |\n| Materialized View     |          | snapshotting                 |\n+-----------------------+----------+------------------------------+"
+                                    }
+                                ]
+                            }
+                        },
+                        "language": ""
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Strategy Bets"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 1: Build a new product entry point but refactor existing architecture "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "versus building a new product in isolation. On the analytical processing side, we decided to spin out a new platform from the original architecture to expose the full power of Stream Processing with Apache Flink. We would create a new internal customer segment from scratch, but we also decided it was the right time to refactor the architecture to minimize redundant investment (between the Keystone and Flink platforms). The lower Flink platform supports both Keystone and custom use cases in this new architecture."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6038560973083749886,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: Architecture splitting Flink Platform as a separate product entry point)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 2: Start with streaming ETL and observability use cases "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "versus tackling all custom use cases all at once. There were many opportunities, but we decided to focus on streaming ETL use cases on the analytical side and real-time observability use cases on the operational side. These use cases are the most challenging due to their complexity and scale. With the intent to expose the full power of stream processing, it makes sense for us to tackle and learn from the most difficult ones first."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bet 3: Share operation responsibilities with customers initially "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "and"
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": " "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "gradually co-innovate to lower the burden over time. We were so lucky our early adopters were self-sufficient, and we also offered a white-glove support model whenever customers struggled. We gradually expanded operational investments such as autoscaling, managed deployments, intelligent alerting, backfill solutions, etc."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Learnings"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Learning 1:"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " A new product entry point to support new custom use cases is a necessary evolution step. It\u2019s also an opportunity to re-architect/refactor and "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "fit into the existing product ecosystem"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Do not be lured into building a new system in isolation. Avoid the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "second-system effect"
+                                    },
+                                    "url": "https://en.wikipedia.org/wiki/Second-system_effect",
+                                    "webpage_id": 3384953263937678741
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Learning 2: Simplicity attracts 80% of the use cases. Flexibility helps the bigger use cases"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Retrospectively, these are the observations on the actual customer segments from the past few years. The point I want to convey to the reader here is that prioritizing between supporting either the majority or the higher impact use cases, all depends on the situation. The argument can be made both ways, but you should articulate the reasoning that fits into your business scenarios."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Simplicity and flexibility are NOT two polarizing ends of the spectrum. It\u2019s "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "a closed innovation feedback loop."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " The power of flexibility will drive new co-innovation with a small subset of customers. In the beginning, these innovations may be more expensive, but after it\u2019s proven, the value could eventually become a commodity and go back to the simplified experience. As these new values help growing customers, a small subset of the new users will ask for the power of flexibility again."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Learning 3: Treat your early adopters well. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "They are the most loyal customers and will do the marketing for you for free. Thanks to the endorsement from our early adopters, our use cases exploded to thousands during this phase."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Learning 4: When things break, don\u2019t panic"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Trust all the people around you. A bonus point if you already have a community supporting the product. I remember a time we experienced a slow degradation of the entire platform. Every day, we were getting loads of pages, and we could not figure out the root cause for two weeks. It was terrifying, the team was miserable, and customers were suffering. But the team was able to work together across the team boundaries involving the folks with the right expertise, using data to logically reason through symptoms. Eventually, we found a bug in the Linux Kernel which caused a slow memory leak specific to the streaming workload. We had to trust all the people involved, sometimes even when we didn\u2019t have all the expertise!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Phase 4: Expand Stream Processing Responsibilities \u2014 Challenges and Opportunities ahead (2020 \u2014 Present)"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6038384050495925688,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: how stream processing fits in Netflix \u2014 2021)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Context"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "As stream processing use cases expanded to all organizations in Netflix, we discovered new patterns, and we enjoyed the early success. But it\u2019s not the time for complacency."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Netflix, as a business, continued to explore new frontiers and made heavy investments in Content Production Studio, and more recently in Gaming. A series of new challenges emerged, and we jumped into solving these interesting problem spaces."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Challenges"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 1: Diverse data technologies made coordination difficult"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Since teams are empowered, many teams in Netflix are using various data technologies. For instance, on the transactional side: there are Cassandra, MySQL, Postgres, CockroachDB, Distributed Cache, etc. On the analytical side: there are Hive, Iceberg, Presto, Spark, Pig, Druid, Elasticsearch, etc. Many copies of the same data are often stored across different data stores within the Netflix data ecosystem."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "With many choices available, it\u2019s human nature to put technologies in dividing buckets. Batch vs. streaming. Transactional store vs. analytical store. Online processing vs. offline processing. These are all commonly debated topics in the data world. The overlapping dividing boundaries often add more confusion to the end-users."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Today, coordinating and working with data across technology boundaries are incredibly challenging. "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Frontiers are hard to push with dividing boundaries"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 2: Steeper learning curve. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "With an ever-increasing amount of available data tools and continued deepening specialization, it is challenging for users to learn and decide what technology fits into a specific use case."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 3: ML practices are not leveraging the full power of the Data Platform"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". All previously mentioned challenges add a toll on ML practices. Data Scientists\u2019 feedback loops are long, Data Engineers\u2019 productivity suffers, Product engineers have challenges sharing valuable data. Ultimately, many businesses lose opportunities to adapt to the fast-changing market."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Challenge 4: Scale limits on the Central Platform model. "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "As the central data platform scales use cases at a superlinear rate, it\u2019s unsustainable to have a single point of contact for support. It\u2019s the right time to evaluate a model where the central platform supports local-central platforms for added leverage (this means we\u2019ll prioritize supporting the local platforms that are built on top of our platform)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Opportunities"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "I\u2019ll be relatively brief on this section and expand the details in future blog posts."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Use streams to connect worlds"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". For Stream Processing, besides the strength of low latency processing, it\u2019s increasingly showing an even more critical strength in modern data platforms: connecting various technologies and enabling fluid data exchanges. Technologies such as Change Data Capture (CDC), streaming materialized views, and Data Mesh concepts are gaining popularity. Finally, Martin Kleppmann\u2019s 2015 vision of \u201c"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Turning Database Inside Out\u201d"
+                                    },
+                                    "url": "https://martin.kleppmann.com/2015/11/05/database-inside-out-at-oredev.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " starts to realize its value."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Raise abstraction by combining the best of both simplicity and flexibility"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". There is much value in understanding the deep internals of various data technologies, but not everyone needs to do it. This line of thinking is especially true as cloud-first data infrastructures are becoming commodities. Properly raising data infrastructure abstraction becomes the immediate opportunity to make all the advanced capabilities easily accessible to a broader audience. Technologies such as streaming SQL will lower the barrier of entry, but it\u2019s just the beginning. Data Platform should also raise abstraction to the dividing boundaries (e.g., streaming vs. batch) are invisible to the end-users."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6040884537505983874,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "(Figure: the sweet spot between simplicity and flexibility)"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Machine Learning needs more love from modern Data platforms"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". ML folks are arguably the most impactful to business and the most under-served group among all the developer personas. All ML platforms depend on data storage and processing. So Data Platform has many opportunities to extend helping hands to the ML world: such as data quality, reliability & scalability, dev-to-prod feedback loop, real-time observability, overall efficiency, etc."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Stream Processing Patterns Summary in Phase 4"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPreformatted",
+                        "text": {
+                            "_": "TextFixed",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "+-----------------------------------------------------------------+\n| "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Pattern"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "               | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Product"
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "  | "
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Example Use Cases            "
+                                        }
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "|\n|-----------------------|----------|------------------------------|\n| Streaming Backfill /  | Flink    | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Pipeline Failure mitigation"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=tB4rx_W9Xqw",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", |\n| Restatement           |          | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Avoid cold start"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=tB4rx_W9Xqw",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "             |\n|-----------------------|----------|------------------------------|\n| Data Quality Control  | Keystone,| "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Schema evolution management"
+                                        },
+                                        "url": "https://netflixtechblog.com/data-movement-in-netflix-studio-via-data-mesh-3fddcceb1059",
+                                        "webpage_id": 4211979583304474780
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", |\n|                       | Flink    | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Data Quality SLA"
+                                        },
+                                        "url": "https://netflixtechblog.medium.com/inca-message-tracing-and-loss-detection-for-streaming-data-netflix-de4836fc38c9",
+                                        "webpage_id": 6710240630525526381
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",            |\n|                       |          | Cost reduction via Avro      |\n|                       |          | compression                  |\n|-----------------------|----------|------------------------------|\n| Source/Sink Agnostic  | Keystone,| "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Delta"
+                                        },
+                                        "url": "https://netflixtechblog.com/delta-a-data-synchronization-and-enrichment-platform-e82c36a79aee",
+                                        "webpage_id": 4211979582053317979
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ", "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Data Mesh"
+                                        },
+                                        "url": "https://www.youtube.com/watch?v=TO_IiN06jJ4",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",            |\n| Data Synchronization  | Flink    | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Operational reporting"
+                                        },
+                                        "url": "https://netflixtechblog.com/data-movement-in-netflix-studio-via-data-mesh-3fddcceb1059",
+                                        "webpage_id": 4211979583304474780
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": ",       |\n|                       |          | Notification,                |\n|                       |          | Search Indexing Pipeline     |\n|-----------------------|----------|------------------------------|\n| Near-real-time (NRT)  | Flink    | Customer service recommend-  |\n| Inference             |          | ation, Intent-based in-      |\n|                       |          | session adaptations          |\n|-----------------------|----------|------------------------------|\n| Streaming SQL         | Flink    | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Dynamic feature Engineering"
+                                        },
+                                        "url": "https://youtu.be/lvYgCGrwMK0?t=652",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "  |\n|-----------------------|----------|------------------------------|\n| Intelligent Operation | 4        | "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Auto-diagnosis & remediation"
+                                        },
+                                        "url": "https://netflixtechblog.com/auto-diagnosis-and-remediation-in-netflix-data-platform-5bcc52d853d1",
+                                        "webpage_id": 4211979583364836839
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " |\n+-----------------------+----------+------------------------------+"
+                                    }
+                                ]
+                            }
+                        },
+                        "language": ""
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "What\u2019s the Next Frontier"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Thank you for reaching this far. This blog post describes the high-level iterative journey of building out the stream processing infrastructure at Netflix. I would love to hear your feedback on what\u2019s interesting, so I can follow up with future blog posts."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "By design, I omitted many technical details in this post. But if you are interested in finding out more, please refer to the Appendix section for a complete timeline view of all the stream processing innovations in Netflix."
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 6038652997053033903,
+                        "access_hash": -3255815973918441030,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\x94\\x17\\x90\\xdf\\xf3\\xae\\xaa\\x0bWZS\\xe5.\\xfbn\\xf3'",
+                        "date": "2022-02-01 19:33:18+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x12(\\xd7=\\xfa\\x9f\\xc6\\x90\\x90\\x13,v\\xfdM\\r\\x90\\x1b\\x1dh\\x1c\\xa0\\xcf?\\x85\\x00/\\xcb\\x9cd\\xe7\\xeai\\x8cN\\xc6\\xd8r\\xc0\\xfa\\xe6\\x9f\\x91\\x9c\\xe0\\xfeF\\x98\\xff\\x00\\xea\\xc8S\\xb5\\x8fz\\x049s\\x85\\xcf^\\xf4P\\x84\\xedPNH\\xeah\\xa0c\\xe8\\xa2\\x8a\\x00(\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 142,
+                                "size": 9301
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 354,
+                                "size": 32370
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 531,
+                                "sizes": [
+                                    5071,
+                                    13488,
+                                    26529,
+                                    35137,
+                                    50981
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6040863930252897574,
+                        "access_hash": -3406379121417258141,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\x15\\xad\\x98\\x89\\x97cM\\xa0v\\xfeU\\xba\\x91\\x83\\xf2\\x10'",
+                        "date": "2022-02-01 19:33:18+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x10(\\xd7\\x7f\\xbb\\xdc}(f\\xd8\\xa4\\xf5\\xc5\\x0eH^3\\xf8\\x0c\\xd2\\x90\\x18`\\x80G\\xb8\\xa0\\x03#\\x19\\xa0\\x10h\\x00\\x01\\x81\\xc0\\xa5\\xa0\\x06\\xab\\x86b\\x00<w\\xa2\\x94\\x003\\xefE ?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 128,
+                                "size": 4944
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 319,
+                                "size": 17064
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 860,
+                                "h": 343,
+                                "sizes": [
+                                    1988,
+                                    4352,
+                                    8583,
+                                    11173,
+                                    17091
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6040992899530861841,
+                        "access_hash": -3767393595560138818,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\xa0\\x10\\xad\\xf9T\\xe0=\"\\xe1\\xdax\\xce\\x1d:\\xb9\\''",
+                        "date": "2022-02-01 19:33:18+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x11(\\xd7\\xc9\\xf5S\\xcd#19\\x08FA\\xe74\\xab\\xc8?^\\xd4\\x05\\xc3\\x13\\xeb\\xed@\\x00`\\xc3 \\x8a\\x15\\x83\\x0e\\x1b4cj\\x9cSP\\xb9@@\\\\\\xf7\\xa0\\x07(*9$\\x9a(\\x1b\\xbb\\x81\\xf8QH\\x07QE\\x14\\xc0(\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 136,
+                                "size": 10320
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 341,
+                                "size": 34236
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 960,
+                                "h": 409,
+                                "sizes": [
+                                    3243,
+                                    8492,
+                                    20162,
+                                    27634,
+                                    40199
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6040515140253756667,
+                        "access_hash": -4336975386409676009,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\x13+0\\xe7\\xe0\\xef\\xd0kB\\x16\"\\xa9\\x12Y\\xfe>'",
+                        "date": "2022-02-01 19:33:37+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x1f(\\xd7\\xc9\\xdf\\x8e1\\x8a\\\\\\xf3\\xd6\\x8d\\xa3v\\xee\\xf4\\x98\\x19\\xe9@\\x06\\xe3\\x9cR\\x92@\\xe9\\x9aL\\x7f\\x9cS\\x87\\xb5\\x00\\x03\\x91\\xcd\\x14Q@\\x054\\xab\\x13\\xc3b\\x97'\\xd2\\x9aA'?0\\xc7\\xd2\\x80\\x1d\\x8e)\\x17\\xa7\\x03\\xf3\\xa5\\x19\\xc74\\xb4\\x00\\xc0\\x1bq\\xcfJ*\\x94\\x96.\\xf7%\\xf7.\\x18\\xe6\\x8a\\x00\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 244,
+                                "size": 14816
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 609,
+                                "size": 59048
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 914,
+                                "sizes": [
+                                    8151,
+                                    21804,
+                                    48553,
+                                    66512,
+                                    95793
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6038582907481730483,
+                        "access_hash": 8383634260334669387,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\xa5L \\x07\\x93\\x05\\x83/\\x94\\xa3\\xdc\\xd0\\xad\\\\\\xb8\\x0f'",
+                        "date": "2022-02-01 19:33:37+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x19(\\xd3g\\\\9\\x0c~N\\xa2\\x9c\\x18\\x05\\x07$\\xee\\xe9Nl`\\xfc\\xb9\\xcfoZn\\xe2N60\\xf7\\xe2\\x81\\x89\\x80\\x1b;\\x9b>\\x94\\xa5\\x86\\xd2\\xdb\\xbaQ\\xce6\\xf7\\xcd/!\\x80\\xdaq\\xeb@\\x85Px9\\xa2\\x9dE\\x00Fe\\xc1\\xc6)Cn=?Z}\\x14\\x00\\xce\\xf9\\xe74\\xe1\\xf4\\xa5\\xa2\\x80\\n(\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 204,
+                                "size": 16148
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 511,
+                                "size": 65788
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 767,
+                                "sizes": [
+                                    7590,
+                                    22512,
+                                    47561,
+                                    65038,
+                                    99635
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6038238360910278129,
+                        "access_hash": 4911704216282942707,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\xb1\\xba\\xf6z\\xb4\\x0f\\x808D\"0\\x03\\xe6[\\xceQ'",
+                        "date": "2022-02-01 19:33:37+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd4u\\x90\\xb1\\xda\\xc3\\x1fZcy\\xa82\\xce\\x07\\xae?\\xfdUb\\xa1\\xb9*\\xb1\\xeen\\xc7\\xf3\\xa0\\x06\\xa1\\x91\\x8f\\xcb\"\\x9c\\x1ey\\xff\\x00\\xebT\\x88\\xac\\x00\\xdc\\xe4\\x9a\\xa4\\xf2\\xc9\\xe6\\xb4q\\xa0\\xe3\\x19\\xc1\\xc1\\xab\\xb1\\xee<\\xb14\\x93\\x1d\\x89(\\xa2\\x8ab\\n\\xady\\x04\\x93\\x84\\x11\\xb60sE\\x14\\x98\\x10\\xc9c#\\xec%\\xd4\\x900{f\\xaf\\x0e\\x83\\x8cQE\\x16\\x01s\\xcd\\x14QL\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 181,
+                                "size": 11302
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 548,
+                                "h": 310,
+                                "sizes": [
+                                    1891,
+                                    4729,
+                                    10560,
+                                    14572,
+                                    21811
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6038273661246483927,
+                        "access_hash": 7095526817195093524,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\xa9\\xb3+[SI__\\xc9\\x90s\\x98l@\\xf7j'",
+                        "date": "2022-02-01 19:33:37+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x19(\\xd9\\xa8\\xbc\\xc7?\\xf2\\xcc\\x8f\\xadH:v\\xfc)\\x8a[c|\\xd9`N\\x0e(\\x02Jb0l\\xe0\\xe4\\x8fjT\\xce\\xd1\\xbb\\x93\\xde\\x91\\x18H\\x9b\\x97\\x80h\\x01\\x02\\x9c\\xf2X\\xfdM\\x14\\xb1\\xe0\\x8c\\x86\\xdc(\\xa0\\x05\\x18^\\t\\x14\\xbb\\x87\\xa8\\xfc\\xea\\x0b\\x8f\\xbc?\\x1a\\x8d\\xbe\\xf3P\\x05\\xb2A\\x18\\xcf\\xebH\\xbbT`\\x1f\\xd6\\xaa\\x7f\\x07\\xe3@\\xe8\\x7f\\x1a\\x00\\xb6\\xb9\\xee\\x07\\xd4QI\\x17\\xfa\\xb5\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 201,
+                                "size": 14631
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 502,
+                                "size": 56806
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 753,
+                                "sizes": [
+                                    6995,
+                                    18829,
+                                    43320,
+                                    59897,
+                                    87649
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6040789786232466794,
+                        "access_hash": 5375314570883674999,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\xf5\\x99\\xfa5\\xae\\xcb\\xd2\\x17\\xed\\xaa\\t\\x9a\\xae\\xbb\\xc3\\xab'",
+                        "date": "2022-02-01 19:33:37+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd5\\xf2b\\xff\\x00\\x9ek\\xff\\x00|\\xd2y\\x11u\\xd8\\xbf\\x90\\xa7\\x8a\\x07J\\x00g\\x93\\x0f\\xf7\\x13\\xfe\\xf9\\x14\\xbeL_\\xf3\\xcd?\\xef\\x91O\\xc0\\xf4\\x14w\\xe9@\\x0c\\xf2b\\xff\\x00\\x9ei\\xff\\x00|\\x8a*L\\x0fJ(\\x01\\x05\\x0bE\\x14\\x00\\xb4w\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 181,
+                                "size": 10196
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 453,
+                                "size": 41737
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 680,
+                                "sizes": [
+                                    6260,
+                                    15605,
+                                    33286,
+                                    48537,
+                                    72309
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6040883747232001435,
+                        "access_hash": -6326361096106344127,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\xbbx\\xc7\\x1e\\xa5(\\x19$\\xa8f\\xb2b0\\xd0\\xa5\\x88'",
+                        "date": "2022-02-01 19:33:47+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x14(m\\xbcl\\x9bJ\\xc0\\xca\\xc3\\xb9\\xcdZ\\xb7\\x8aA\\xbbx\\xcf\\xcb\\x81\\x91\\xefO\\xfbf$\\x08H\\x19\\xe7?\\x85+\\xdc\\x9f-\\x8a\\xc8\\xb9\\x00s\\x8e\\x9c\\xd2kK\\x0f^\\xc3.\\x11\\x8c`\\x04\\xceXt\\x06\\xa3gx\\xd5\\x10\\xa3`\\x82N\\xd1\\xeeiV\\xfaC\\xb4y\\x8a\\xc4\\xfa.)\\xff\\x00j\\x91\\xcc{\\\\\\x00\\xcb\\x9eW\\xdc\\xff\\x00\\x85Lc\\xca\\xacSm\\xa2\\xbb\\xb1\\x0b\\xf2$\\x99\\xf7\\x14U\\x89\\xefL(\\x0e\\xf5,OLQTN\\xe5\\x81g\\x00\\xe9\\x18\\xa5\\xfb,8#`\\xc1\\xeb\\xcd\\x14S\\x07'a>\\xc3m\\xff\\x00<\\x87\\xe6i\\xcbm\\n\\x80\\x02\\x00\\x07\\x03\\x9a(\\xa0DKi\\x0c\\xd9i\\x101\\x04\\x8e}(\\xa2\\x8a\\x01l\\x7f\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 157,
+                                "size": 20304
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 638,
+                                "h": 314,
+                                "sizes": [
+                                    3859,
+                                    13018,
+                                    28848,
+                                    40116,
+                                    62708
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6038560973083749886,
+                        "access_hash": 9037324329338677960,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\x10S\\x17\\xfaid\\xb9\\xe3\\x03\\xea\\xb9q\\xa1\\x1d\\r]'",
+                        "date": "2022-02-01 19:33:47+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01($\\xd9\\xa4c\\x81KA\\xa0\\x06\\xab\\x12y\\x00~4\\xeah9\\xecG\\xd6\\x9d@\\x05\\x14Q@\\t\\x93\\x9aL\\x93\\xe9\\x8aF\\xa1;s\\x9f\\xc3\\x14\\x00\\xecc\\xa6)\\x83\\xafN\\xdd1R\\x1e\\x95\\x16FG\\xaf\\xd2\\x80%\\x1d(\\xa1zQ@\\r#4\\x01\\x83E\\x14\\x00\\xe3\\xd2\\xa3\\x11a\\xb7sE\\x14\\x01 \\xe9E\\x14P\\x07'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 287,
+                                "h": 320,
+                                "size": 12636
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 717,
+                                "h": 800,
+                                "size": 45479
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 847,
+                                "h": 945,
+                                "sizes": [
+                                    4745,
+                                    10657,
+                                    26705,
+                                    35659,
+                                    48739
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6040884537505983874,
+                        "access_hash": -1950468919957137986,
+                        "file_reference": "b'\\x00b\\x80\\xfee\\xdf*\\xe7\\xc1\\x8b\\xecNw\\xf5&[|\\xe75\\x9d\\xff'",
+                        "date": "2022-02-01 19:33:47+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01$(\\xd7\\x04\\xf9\\x84q\\x8cqN\\xa6\\xe7\\xf7\\x84{R\\x05m\\xf9\\xdd\\xc7\\xa5\\x008\\xb6;\\x13\\xf4\\xa4\\x0e\\x0f\\xaf\\xe5AP\\xddE3c\\x03\\xc2\\xae=\\xe8\\x02@A\\xf5\\xfc\\xa8\\xa1x\\x1d1\\xedE\\x00 \\x1f\\xbc'\\xd4Q\\xb8g\\x184s\\xbc\\xe7\\xa6)r=E\\x00\\x1e\\xb4\\x1c\\x81\\xc7&\\x8c\\x8fQK\\x91\\xea(\\x01\\xa0\\xb1\\xea1E:\\x8a\\x00\\x08\\x07\\xad&\\xd1\\x8cQE\\x00'\\x96\\xbe\\x94\\xec\\n(\\xa0\\x04\\n\\x178\\x1dh\\xa2\\x8a\\x00\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 293,
+                                "size": 13522
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 733,
+                                "size": 50101
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 1100,
+                                "sizes": [
+                                    7896,
+                                    19352,
+                                    39940,
+                                    53604,
+                                    78385
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": true,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 8,
+            "length": 121
+        }
+    ],
+    "views": 19,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1685,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-15 07:49:50+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}
