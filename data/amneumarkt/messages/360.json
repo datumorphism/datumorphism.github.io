@@ -1,0 +1,137 @@
+{
+    "_": "Message",
+    "id": 360,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-18 16:27:36+00:00",
+    "message": "#ml\n\nFinally... We can now utilize the real power of M1 chips.\n\n\nIntroducing Accelerated PyTorch Training on Mac | PyTorch\nhttps://pytorch.org/blog/introducing-accelerated-pytorch-training-on-mac/\n\n\nI have been following this issue: https://github.com/pytorch/pytorch/issues/47702#issuecomment-1130162835\nThere were even some fights. \ud83d\ude02",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1408097671592668410,
+            "url": "https://pytorch.org/blog/introducing-accelerated-pytorch-training-on-mac/",
+            "display_url": "pytorch.org/blog/introducing-accelerated-pytorch-training-on-mac",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "pytorch.org",
+            "title": "Introducing Accelerated PyTorch Training on Mac",
+            "description": "In collaboration with the Metal engineering team at Apple, we are excited to announce support for GPU-accelerated PyTorch training on Mac. Until now, PyTorch training on Mac only leveraged the CPU, but with the upcoming  PyTorch v1.12 release, developers and researchers can take advantage of Apple silicon GPUs for significantly faster model training. This unlocks the ability to perform machine learning workflows like prototyping and fine-tuning locally, right on Mac.",
+            "photo": {
+                "_": "Photo",
+                "id": 5779446081447374250,
+                "access_hash": 7444140513799508022,
+                "file_reference": "b'\\x00b\\x8f5\\x06\\xd1\\xa9w\\xc6\\xec\\x98+\\xb1\\xd3\\xf1/\\x1c\\x1f\\xbc\\\\6'",
+                "date": "2022-05-18 15:19:27+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xd9\\xa4\\xc7\\xb9\\xa4'\\x07=\\x80\\xaa\\x8bs\\xbe\\xedB7\\xee\\xc8\\xcfJ\\x06\\x95\\xcb\\x98\\xf75\\x18\\x95\\x0c\\xc60N\\xe02EC\\xf6\\x82.\\x98n\\x060\\xb9\\xe2\\xa3\\x81\\xc4\\xb7\\xce\\xc8x+\\xc1\\xfc\\xa8)C\\xb9~\\x8aA\\x9e\\xe74P@0\\xc8#\\xd6\\xaa%\\x88C\\x9d\\xe7\\x80G\\xe7E\\x14\\xd3\\x04\\xda\\x04\\xb1\\t\\x91\\xbc\\xf2\\xa5\\x7f:t\\x16b\\x07\\xdc\\x1c\\x9e1E\\x14\\x9c\\x9e\\xa592\\xd0\\xe3\\xbeh\\xa2\\x8a\\t?\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 8959
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 30058
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "sizes": [
+                            6199,
+                            13466,
+                            27833,
+                            36168,
+                            51558
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 123,
+            "length": 73
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 233,
+            "length": 71
+        }
+    ],
+    "views": 135,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 4,
+        "replies_pts": 1726,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 602,
+        "read_max_id": 602
+    },
+    "edit_date": "2022-05-18 16:31:20+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

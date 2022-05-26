@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 363,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-21 12:23:32+00:00",
+    "message": "#ml\n\nParsimony with cognitive resource limitations \ud83e\udd14\n\nhttps://www.nature.com/articles/s41586-022-04743-9",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126228678191,
+            "url": "https://www.nature.com/articles/s41586-022-04743-9",
+            "display_url": "nature.com/articles/s41586-022-04743-9",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "People construct simplified mental representations to plan",
+            "description": "Nature - Strategically perceiving and conceiving problems facilitates the effective use of limited cognitive resources.",
+            "photo": {
+                "_": "Photo",
+                "id": 5779746711978225217,
+                "access_hash": 2688339588258504520,
+                "file_reference": "b'\\x00b\\x8f5\\x06\\xef\\xdc\\x897\\xe5\\xb8$\\x0c\\xa6}04\\x13ci2'",
+                "date": "2022-05-19 17:29:06+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01(\\x19\\xd5\\x98\\xed\\x85\\x8e3\\x81\\x9cV<\\xb2y\\x8e\\x18\\x0c\\x0fBs[\\x12a\\xd5\\x91\\xba\\x1e*\\xaf\\xd8\"\\xe0\\x02\\xd4\\x015\\x87\\xfcz\\'\\xe3\\xfc\\xea\\xc5E\\x12\\x08c\\x08:\\x0fZ\\x96\\x80\" \\xb3\\x1c\\xaf\\x1d\\x8d\\x18a\\x8c\\x02j@8\\xa6l\\xef\\x8a\\x96\\xec\\x02\\x8c\\x91\\xc8 \\xd3\\xe9\\x06p(\\xe6\\xa9\\x00\\x87\\xee\\xd3p\\xbfO\\xc6\\x8a*ZM\\xea1\\xcb\\xd3\\x8a\\\\\\x9fJ(\\xa6\\xb6\\x13?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 199,
+                        "h": 320,
+                        "size": 18598
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 497,
+                        "h": 800,
+                        "size": 78102
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 795,
+                        "h": 1280,
+                        "size": 159048
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1032,
+                        "h": 1661,
+                        "sizes": [
+                            17142,
+                            48714,
+                            104614,
+                            141560,
+                            217888
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 55,
+            "length": 50
+        }
+    ],
+    "views": 73,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1726,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-21 12:57:49+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

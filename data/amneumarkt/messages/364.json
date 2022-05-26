@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 364,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-21 16:38:35+00:00",
+    "message": "#ml\n\nI have heard about deepeta before but never thought it was a transformer. \n\nAccording to this blog post by uber, they are using an encoder decoder architecture with linear attention.\n\nThis blog post also explains how they made a transformer fast.\n\nDeepETA: How Uber Predicts Arrival Times Using Deep Learning\nhttps://eng.uber.com/deepeta-how-uber-predicts-arrival-times/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5939392536593729715,
+            "url": "https://eng.uber.com/deepeta-how-uber-predicts-arrival-times/",
+            "display_url": "eng.uber.com/deepeta-how-uber-predicts-arrival-times",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Uber Engineering Blog",
+            "title": "DeepETA: How Uber Predicts Arrival Times Using Deep Learning",
+            "description": "At Uber, magical customer experiences depend on accurate arrival time predictions (ETAs). We use ETAs to calculate fares, estimate pickup times, match riders to",
+            "photo": {
+                "_": "Photo",
+                "id": 5777061068928036158,
+                "access_hash": -8810948050040252566,
+                "file_reference": "b'\\x00b\\x8f5\\x06\\xb4<z!o^\\xee\\xa6`\\x91OQ\\xb9\\x07\\xfb\\x8f'",
+                "date": "2022-02-10 17:31:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x18(\\xd4\\x96M\\x83\\x01\\x19\\x89\\xe8\\x07\\x14$\\xa1\\x97\\x18*\\xd8\\xe8h\\xdb 9\\xf32=6\\xd2\\x91!^\\x1c\\x0f}\\xb4\\x01\\x14w\\x1b\\x9f\\x07\\x1c\\x9e0jl\\x9d\\xfe\\xd4\\xd5\\x0f\\x8f\\xbc\\xb9\\x1f\\xecb\\x9c7\\x06\\xe4\\x83\\xf4Z\\x00}\\x14\\x99\\xcd\\x14\\x01\\x1c\\xc1\\x8a\\xae\\xd3\\x8ey\\xa6\\x82\\xfeK\\xe3\\x86\\xc1\\xc7\\x14Q@\\x88m\\xbc\\xc3pZH\\xd8\\x12\\xb8'\\x18\\x14\\xcd\\xac.\\x14\\xf9rn\\x0cr\\xc1N\\x0f4QN\\xe1\\xd0\\xd0\\xa2\\x8a)\\x0c\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 190,
+                        "size": 12510
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 474,
+                        "size": 43136
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1250,
+                        "h": 740,
+                        "sizes": [
+                            7530,
+                            18935,
+                            36930,
+                            49094,
+                            72085
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Xinyu Hu",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 314,
+            "length": 61
+        }
+    ],
+    "views": 73,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1726,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-21 16:49:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 365,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-26 07:00:11+00:00",
+    "message": "#data\n\n\n\nhttps://www.theviolenceproject.org/mass-shooter-database/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8211549773491352237,
+            "url": "https://www.theviolenceproject.org/mass-shooter-database/",
+            "display_url": "theviolenceproject.org/mass-shooter-database",
+            "hash": 0,
+            "type": "article",
+            "site_name": "The Violence Project",
+            "title": "Most Comprehensive Mass Shooter Database - The Violence Project",
+            "description": "Explore the database to learn about the demographics and characteristics of mass shooters, including gender, location, mental health, and gun access.",
+            "photo": {
+                "_": "Photo",
+                "id": 5876296030604078151,
+                "access_hash": -713258591338104925,
+                "file_reference": "b'\\x00b\\x8f5\\x06\\xdc\\x06\\x80\\xde\\x10RF\\x9bya;\\xf2]t\\xb5M'",
+                "date": "2021-09-02 14:11:19+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x18(\\xd9\\xa2\\x8aM\\xc3 g\\xad\\x00-\"\\xb0eV\\x1d\\x08\\xcd@f\\x02\\xe1\\x81\\xe8\\xab\\xfc\\xf1P\\xbd\\xd8\\x86\\xd9\\x02\\xe7qA\\x83\\xdb\\xfc\\xf1@\\x16\\xe5\\x90 \\\\\\xe7\\x96\\x03\\x8a+?\\xcfi%\\x85I\\xe3\\xcc\\xff\\x00\\x0f\\xfe\\xbd\\x14\\x01eg\\x90\\x83\\xfb\\xa7\\xca\\x9ex\\xfb\\xdc\\x1e\\x95]ZA,r\\x18\\xa4\\xda\\xbd\\x82\\xf3\\xd3\\x14Q@\\x10:\\xceq\\x88\\xe4\\xe4`\\xfc\\xb4K\\x14\\xac#\\x02)>U\\xc1\\xf9O\\xa9\\xa2\\x8a\\x00X\\xa1\\x90]#\\x18\\xdc\\r\\xc3\\x9c\\x1fZ(\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 189,
+                        "size": 10155
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 472,
+                        "size": 34369
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 900,
+                        "h": 531,
+                        "sizes": [
+                            5292,
+                            13186,
+                            23294,
+                            30240,
+                            41015
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 9,
+            "length": 57
+        }
+    ],
+    "views": 16,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1726,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-26 07:46:08+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

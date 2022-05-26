@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 362,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-21 06:31:29+00:00",
+    "message": "#github\n\nI have been following an issue on math support for github markdown (github/markup/issues/274).\n\nOne thousand years later ...\n\nMath support in Markdown | The GitHub Blog\nhttps://github.blog/2022-05-19-math-support-in-markdown/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3891914976432891030,
+            "url": "https://github.blog/2022-05-19-math-support-in-markdown/",
+            "display_url": "github.blog/2022-05-19-math-support-in-markdown",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The GitHub Blog",
+            "title": "Math support in Markdown | The GitHub Blog",
+            "description": "We are pleased to announce that math expressions can now be rendered natively in Markdown on GitHub",
+            "photo": {
+                "_": "Photo",
+                "id": 5781846568733879763,
+                "access_hash": -3570160009454712930,
+                "file_reference": "b'\\x00b\\x8f5\\x06\\x87#g\\x0c\\xec\\x14b\\xac\\xafQ\\xfc\\xaa\\xf9\\x93\\xb0\\x08'",
+                "date": "2022-05-19 17:42:48+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xccf\\x05@\\x03\\x9e\\xe7\\xd6\\x84\\xc1\\xcei\\xa6\\x9c\\x87\\xad\\x08B\\xe0\\n\\x1b\\xa5.\\x01\\xef\\x8aS\\xc9<\\nc#\\x14S\\xc7\\'\\x18\\x14Qb\\x90\\t\\x02\\xae\\xc3\\x1a\\xb7^r\\x7f\\xc6\\x93\\xcc\\x8f\\x18\\xf2\\x17>\\xbb\\x8f\\xf8\\xd1E\"H\\xc9\\xc9$\\x0c{S\\xf7\\xf5\\xe3\\xad\\x14S\\x01\\xcay\\xe9E\\x14PR?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 9740
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 36592
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 672,
+                        "size": 73233
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2400,
+                        "h": 1260,
+                        "sizes": [
+                            20312,
+                            42026,
+                            78044,
+                            105201,
+                            163983
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 178,
+            "length": 56
+        }
+    ],
+    "views": 70,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1726,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-21 06:57:38+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "github"
+    ]
+}

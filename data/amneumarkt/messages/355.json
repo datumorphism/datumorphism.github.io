@@ -27,7 +27,7 @@
             "id": 532798824598199201,
             "url": "https://www.scientificamerican.com/article/to-better-understand-women-rsquo-s-health-we-need-to-destigmatize-menstrual-blood/",
             "display_url": "scientificamerican.com/article/to-better-understand-women-rsquo-s-health-we-need-to-destigmatize-menstrual-blood",
-            "hash": 239782905,
+            "hash": -1499065896,
             "type": "photo",
             "site_name": "Scientific American",
             "title": "To Better Understand Women\u2019s Health, We Need to Destigmatize Menstrual Blood",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 6051735055119789541,
                 "access_hash": -7298423717158230869,
-                "file_reference": "b'\\x00b\\x80\\xfeeFF\\x15[\\xd4\\xdf\\xc6f\\xec\\x13\\xf8\\x8e\\xac\\xa3vn'",
+                "file_reference": "b'\\x00b\\x8f5\\x06\\xc9\\x05\\xea\\x83=\"\\x07\\x80s7\\xc6&mF\\xb1\\x01'",
                 "date": "2022-05-13 14:31:31+00:00",
                 "sizes": [
                     {
@@ -84,7 +84,7 @@
                         "_": "PageBlockCover",
                         "cover": {
                             "_": "PageBlockPhoto",
-                            "photo_id": 6051840221688999425,
+                            "photo_id": 5777503953070697865,
                             "caption": {
                                 "_": "PageCaption",
                                 "text": {
@@ -331,15 +331,34 @@
                             "_": "TextPlain",
                             "text": "We need to raise the standard of science, improve diagnostic capabilities, provide better treatments and deliver equitable care for all. And to do that, we need to make the conversation about menstruation and menstrual blood commonplace, in the clinic, in our homes and in our society."
                         }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "This is an opinion and analysis article, and the views expressed by the author or authors are not necessarily those of"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " Scientific American."
+                                }
+                            ]
+                        }
                     }
                 ],
                 "photos": [
                     {
                         "_": "Photo",
-                        "id": 6051840221688999425,
-                        "access_hash": -6611688803314647528,
-                        "file_reference": "b'\\x00b\\x80\\xfeeK\\xa0\\xdc\\\\\\xdb\\xdc\\x9c\\xce\\x11\\xdcf\\xa4\\x02\\xb5&G'",
-                        "date": "2022-05-14 05:16:02+00:00",
+                        "id": 5777503953070697865,
+                        "access_hash": -516849783175109803,
+                        "file_reference": "b'\\x00b\\x8f5\\x06\\xf3\\xdb\\xd7W\\xccH\\x10\\xc4\\x1d\\x8d\\x89f\\x96\\x1fs\\xed'",
+                        "date": "2022-05-18 11:09:18+00:00",
                         "sizes": [
                             {
                                 "_": "PhotoStrippedSize",
@@ -394,12 +413,12 @@
             "length": 125
         }
     ],
-    "views": 52,
+    "views": 82,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1685,
+        "replies_pts": 1726,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,
