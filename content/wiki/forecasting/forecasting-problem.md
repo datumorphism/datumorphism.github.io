@@ -30,3 +30,10 @@ where ${}^{(i)}$ indicates the $i$th variable, ${}_ t$ denotes time. In a foreca
 {{< figure src="../assets/forecasting-problem/time-series-forecasting-problem.jpg" >}}
 
 A model $f$ will use $x^{(i)} _ {t-K:t}$ and $u^{(i)} _ {t-K:t+H}$ to forecast $y^{(i)} _ {t+1:t+H}$.
+
+
+## The Time Delay Embedding Representation
+
+The time delay embedding representation of a time series forecasting problem is a concise representation of the forecasting problem.
+
+For simplicity, we only write down the representation for a problem with time series $y_{1}, \cdots, y_{t}$, and forecasting $y_{t+1}$. To train the model, we have
