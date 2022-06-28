@@ -28,54 +28,11 @@
             "url": "https://github.com/pyscript/pyscript",
             "display_url": "github.com/pyscript/pyscript",
             "hash": 0,
-            "type": "photo",
+            "type": "article",
             "site_name": "GitHub",
             "title": "GitHub - pyscript/pyscript: Home Page: https://pyscript.net  Examples: https://pyscript.net/examples",
             "description": "Home Page: https://pyscript.net  Examples: https://pyscript.net/examples - GitHub - pyscript/pyscript: Home Page: https://pyscript.net  Examples: https://pyscript.net/examples",
-            "photo": {
-                "_": "Photo",
-                "id": 5793050063939939814,
-                "access_hash": 2794771153928828870,
-                "file_reference": "b'\\x00b\\x8f5\\x06(0!.\\xce\\x02\\xa29\\x91=z\\xa0z\\xa4\\xcad'",
-                "date": "2022-05-24 08:00:09+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b\"\\x01\\x14(\\xd7f`xP\\x7f\\x1aig\\xe7\\x08?\\xef\\xaay\\x00\\xd1\\x81\\xfeM\\x00G\\xbeR?\\xd5\\xae\\x7f\\xde\\xa4\\xbb\\x95\\xa1\\xb5\\x92E\\xc6\\xe5\\x19\\x19\\xa9x\\xc5#\\xa2\\xc8\\x85\\\\\\x06S\\xd4\\x1e\\xf4\\x01\\x97\\xa7\\xdf\\xcf=\\xd8\\x8aVB\\xa5I\\xf9E\\x15~+Kx_|q*\\xb7\\xa8\\xa2\\x90\\x15\\xfe\\xd9'\\xa2\\xfeF\\x9f\\x15\\xcb\\xbb`\\x85\\xa2\\x8a\\x8b\\xb3g\\x15b\\xc6\\xf3\\xedU\\x1e\\xf6E\\x90\\xa8T\\xc0\\xf64QN\\x0e\\xefS\\t\\r\\xfbt\\xbdv\\xa7\\xe4h\\xa2\\x8a\\xd4H\""
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 160,
-                        "size": 9185
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 400,
-                        "size": 30168
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "y",
-                        "w": 1200,
-                        "h": 600,
-                        "sizes": [
-                            4605,
-                            10226,
-                            21374,
-                            28946,
-                            44006
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
+            "photo": null,
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -100,12 +57,12 @@
             "length": 36
         }
     ],
-    "views": 114,
+    "views": 126,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1726,
+        "replies_pts": 1750,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

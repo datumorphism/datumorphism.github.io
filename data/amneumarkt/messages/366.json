@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 366,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-05-27 07:06:31+00:00",
+    "message": "#ml\n\nThis is hilarious.\n\nSource:\nhttps://mobile.twitter.com/arankomatsuzaki/status/1529278580189908993\n\nPaper: https://arxiv.org/abs/2205.11916",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5224465435548828677,
+            "access_hash": 5284789117950991656,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01nb\\xba\\xfea\\x88\\xa0L\\xce{*\\x81\\x9b\\xf0\\xa0\\x0c\\x0e\\x1b\\xc9\\xfe%'",
+            "date": "2022-05-27 07:08:28+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x16\\xca\\xd9\\xc0\\xc6NF~\\xed4\\xa3\\x03\\xf7[\\xf2\\xa7\\xed\\xca\\x8c\\xb0\\xe9\\xebG\\x94\\x07R?\\xef\\xaa\\x00a\\xdc\\x00\\xca\\xfe\\x94P\\xeb\\xb7\\xa1\\x07\\xf1\\xa2\\x80-\\xa5\\x8d\\xdb\"\\xb0O\\x95\\x80#\\x95\\xe9\\xf9\\xd2\\xb6\\x9b{\\x8c\\x98\\xcf\\xfd\\xf4\\xbf\\xe3[6\\x98\\xfb$\\x1c\\x7f\\xcb5\\xfeU9*\\xc3\\xbf\\xe0(\\x03\\x99\\x9e\\xd2\\xe2\\x18\\xc4\\x93!\\nN\\x01\\xdc:\\xd1Z\\xda\\xdf\\x16H9\\xff\\x00X;{\\x1a(\\x03\\x0b=)sE\\x14\\x00\\xd3E\\x14P\\x07'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 177,
+                    "h": 320,
+                    "size": 18584
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 443,
+                    "h": 800,
+                    "size": 77759
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 709,
+                    "h": 1280,
+                    "sizes": [
+                        9642,
+                        28634,
+                        69439,
+                        99208,
+                        133727
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 33,
+            "length": 69
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 111,
+            "length": 32
+        }
+    ],
+    "views": 164,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1750,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-05-27 19:34:12+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

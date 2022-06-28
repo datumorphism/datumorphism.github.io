@@ -26,37 +26,57 @@
             "_": "WebPage",
             "id": 881321956810671954,
             "url": "https://deepmind.com/blog/article/FermiNet",
-            "display_url": "deepmind.com/blog/article/FermiNet",
+            "display_url": "deepmind.com/blog/ferminet-quantum-physics-and-chemistry-from-first-principles",
             "hash": 0,
             "type": "photo",
             "site_name": "Deepmind",
-            "title": "FermiNets: Quantum Physics and Chemistry from First Principles",
-            "description": "We\u2019ve developed a new neural network architecture, the Fermionic Neural Network or FermiNet, which is well-suited to modeling the quantum state of large collections of electrons, the fundamental building blocks of chemical bonds.",
+            "title": "FermiNet: Quantum Physics and Chemistry from First Principles",
+            "description": "In an article recently published in Physical Review Research, we show how deep learning can help solve the fundamental equations of quantum mechanics for real-world systems. Not only is this an important fundamental scientific question, but it also could lead to practical uses in the future, allowing researchers to prototype new materials and chemical syntheses in silico before trying to make them in the lab. Today we are also releasing the code from this study so that the computational physics and chemistry communities can build on our work and apply it to a wide range of problems. We\u2019ve developed a new neural network architecture, the Fermionic Neural Network or FermiNet, which is well-suited to modeling the quantum state of large collections of electrons, the fundamental building blocks of chemical bonds. The FermiNet was the first demonstration of deep learning for computing the energy of atoms and molecules from first principles that was accurate enough to be useful, and it remains the most accurate neural\u2026",
             "photo": {
                 "_": "Photo",
-                "id": 5797625746003438478,
-                "access_hash": 4618083867364023360,
-                "file_reference": "b'\\x00b\\x8f5\\x08\\x05\\xfc\\x99\\xfb\\x16\\x84~+\\xf1x\\xe6&V\\x13nl'",
-                "date": "2020-10-19 18:25:53+00:00",
+                "id": 6022981859685805656,
+                "access_hash": -2320436016967358910,
+                "file_reference": "b'\\x00b\\xba\\xfed\\xe0\\x7f\\xef\\xae\\xd2B-&\\x95\\x01^\\xc3\\xab\\x11e\\x88'",
+                "date": "2022-05-04 05:27:01+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
                         "type": "i",
-                        "bytes": "b'\\x01\\x17(\\xa5\\x1a\\x1e\\xc3<U\\xe8\\x14\\x91\\xc9\\xcf\\xf5\\xa8`\\x1b\\xb9#\\xeaj\\xe2\\x1d\\x8a1\\x8f\\xc0T\\xa9I\\xe89r\\xc5]\\x8d\\x92\\x10A\\xc8\\xaa\\xcf\\x0e\\xc1W<\\xce\\xc7\\xe9P\\\\.S#?\\xe1P\\xa0\\xe2\\xf5cUy\\x95\\x91NE\\x19\\xfa\\xd1Mc\\x8e(\\xad\\xacd\\xe4\\xef\\xa9z\\x141\\x8e{\\nRK\\xe7\\x9e(\\xa2\\x946\\xb8\\xe6\\xae\\xc6\\xf4lT\\xbcyc<\\x8a(\\xa2Z\\xc4\\x16\\x92\\xd0\\xcd\\x9b\\x878\\xa2\\x8a*\\x96\\xc1%\\xa9'"
+                        "bytes": "b'\\x01\\x17(\\xa5\\x1a\\x1e\\xc3<U\\xe8\\x14\\x91\\xc9\\xcf\\xf5\\xa8`\\x1b\\xb9#\\xeaj\\xe2\\x1d\\x8a1\\x8f\\xc0RR\\x93\\xd0r\\xe5\\x8a\\xbb\\x1b, \\x83\\x91U\\x9e\\x1d\\x82\\xaey\\x9d\\x8f\\xd2\\xa1\\xb8\\\\\\xa6F\\x7f\\xc2\\xb3Pqz\\xb1\\xaa\\xbc\\xca\\xc8\\xa5\"\\x8c\\xfdh\\xa6\\xb1\\xc7\\x14V\\xd62rw\\xd4\\xbf\\n\\x18\\xc7#\\xa0\\xa0\\x92\\xf9\\xe7\\x8a(\\xa5\\r\\xae9\\xab\\xb1\\xbd\\x1b\\x15/\\x1b\\x06z{\\xd1E\\x12\\xd6 \\xb4\\x96\\x86l\\xdc9\\xc5\\x14QT\\xb6\\t-O'"
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
                         "h": 180,
-                        "size": 26355
+                        "size": 26556
                     },
                     {
                         "_": "PhotoSize",
                         "type": "x",
-                        "w": 512,
-                        "h": 288,
-                        "size": 51482
+                        "w": 800,
+                        "h": 450,
+                        "size": 94284
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 196447
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1920,
+                        "h": 1080,
+                        "sizes": [
+                            40094,
+                            117576,
+                            146509,
+                            196346,
+                            332725
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -87,7 +107,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1726,
+        "replies_pts": 1750,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

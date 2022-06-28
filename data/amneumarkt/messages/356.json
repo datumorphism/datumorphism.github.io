@@ -39,12 +39,12 @@
             "length": 33
         }
     ],
-    "views": 160,
+    "views": 213,
     "forwards": 6,
     "replies": {
         "_": "MessageReplies",
-        "replies": 3,
-        "replies_pts": 1726,
+        "replies": 5,
+        "replies_pts": 1750,
         "comments": true,
         "recent_repliers": [
             {
@@ -53,12 +53,16 @@
             },
             {
                 "_": "PeerUser",
+                "user_id": 662921349
+            },
+            {
+                "_": "PeerUser",
                 "user_id": 1110189407
             }
         ],
         "channel_id": 1159907975,
-        "max_id": 595,
-        "read_max_id": 595
+        "max_id": 612,
+        "read_max_id": null
     },
     "edit_date": "2022-05-14 19:10:57+00:00",
     "post_author": "Markt Mai",

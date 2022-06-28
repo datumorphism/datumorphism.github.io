@@ -26,63 +26,13 @@
             "_": "WebPage",
             "id": 4780667624822047886,
             "url": "https://copilot.github.com/",
-            "display_url": "copilot.github.com",
+            "display_url": "github.com/features/copilot",
             "hash": 0,
-            "type": "photo",
-            "site_name": "GitHub Copilot",
+            "type": "article",
+            "site_name": "GitHub",
             "title": "GitHub Copilot \u00b7 Your AI pair programmer",
             "description": "GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you.",
-            "photo": {
-                "_": "Photo",
-                "id": 5815305416236706938,
-                "access_hash": 2768164808523114790,
-                "file_reference": "b'\\x00b\\x8f5\\x07?\\x1fLl\\xe4X\\xc6\\xe0j\\xba j\\x00\\xb7zG'",
-                "date": "2021-08-13 08:01:11+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b'\\x01\\x15(\\xcd\\x05@\\xe5s\\xf8\\xd0J\\xe3\\x85\\xc1\\xfa\\xd3\\xd2\\x1d\\xe9\\xb84\\x7fB\\xd84\\xbeA#!\\xe3\\xfao\\xe9L\\x08\\xc58\\x0fjVC\\x19\\x00\\x95=\\xf89\\xa0P!0}(\\xa0\\xf5\\xe7\\x14P\\x03\\x92wE\\n6\\xe0z\\x8c\\xe6\\x97\\xedR\\x1e~Q\\xff\\x00\\x01\\xa2\\x8a\\x06#L\\xee\\xbb[\\x18\\xcfa\\x8anq\\xf2\\xe0QE\\x02\\x13\\x14QE\\x00\\x7f'"
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 168,
-                        "size": 11562
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 420,
-                        "size": 43717
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "y",
-                        "w": 1280,
-                        "h": 672,
-                        "size": 80975
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "w",
-                        "w": 2400,
-                        "h": 1260,
-                        "sizes": [
-                            22447,
-                            47245,
-                            81760,
-                            108941,
-                            172597
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
+            "photo": null,
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -112,7 +62,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1726,
+        "replies_pts": 1750,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

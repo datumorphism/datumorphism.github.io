@@ -57,7 +57,7 @@
                 {
                     "_": "PollAnswerVoters",
                     "option": "b'0'",
-                    "voters": 23,
+                    "voters": 24,
                     "chosen": true,
                     "correct": false
                 },
@@ -76,7 +76,7 @@
                     "correct": false
                 }
             ],
-            "total_voters": 32,
+            "total_voters": 33,
             "recent_voters": [],
             "solution": null,
             "solution_entities": []
@@ -84,12 +84,12 @@
     },
     "reply_markup": null,
     "entities": [],
-    "views": 167,
+    "views": 177,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
         "replies": 1,
-        "replies_pts": 1726,
+        "replies_pts": 1750,
         "comments": true,
         "recent_repliers": [
             {

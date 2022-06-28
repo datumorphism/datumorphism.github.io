@@ -46,7 +46,43 @@
             "site_name": "The Berkeley Artificial Intelligence Research Blog",
             "title": "Does GPT-2 Know Your Phone Number?",
             "description": "The BAIR Blog",
-            "photo": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5833787021288648361,
+                "access_hash": 6417686875722284365,
+                "file_reference": "b'\\x00b\\xba\\xfed\\xa1B\\xae\\x97\\xc2\\xb8\\xdcJe\\xf5NT\\xd2%LF'",
+                "date": "2022-06-06 13:53:41+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01('\\xd3 \\x96\\xfb\\xce9\\xed\\xd2\\x949\\x03\\xa1\\xfc\\xaaL\\x0fJd\\x8c\\x10\\x03\\xb4\\x1f\\xad+\\x00o>\\x87\\xfe\\xf9\\xa3\\xcc>\\x87\\xfe\\xf9\\xa8D\\xe3q8N\\x9d3\\xff\\x00\\xd6\\xa9\\xd0\\x86\\x1c\\xa8\\x04Qf\\x02\\x869\\x1e\\xfe\\xd4R\\xe0zQ@\\r2\\xc6\\xa7\\x05\\xc0>\\xf4\\xc7x\\x9c\\x0f\\xde/\\x15B\\xe6K\\xb4\\xbc&$\\x0f\\x17\\xf7I\\x03&\\x83}\\x1cgl\\xaf\\xb5\\xc0\\x19\\x1bs\\x83\\xf9S\\x02\\xea\\xc6\\x18\\x95\\x050\\x07\\xf7=\\xff\\x00\\xfa\\xd52.\\xd1\\xd7&\\xa8\\xc5:\\xce\\x18\\xc4\\xc1\\xb0y8\\xc7\\xf3\\xa9\\x0e\\xfez\\x1e}\\xa8\\xb8\\x8b\\x94T\\x11\\x02\\x18\\x13E+\\x8c\\xa9q`\\xb3\\xdd\\t\\x1dX\\x8eA\\x18\\xeb\\xe9PG\\xa6\\xe2I$\\xf2\\x88Q\\x90\\x91\\xe7\\xf29\\xa2\\x8a`$6,!E\\x9a\\xcc\\xb9\\xde\\x7f\\x8f\\x1bG\\xf5\\xab_\\xd9\\x96\\x9f\\xf3\\xc0\\xff\\x00\\xdfME\\x14\\x01j4\\x08\\xc3h#\\xb7z(\\xa2\\x90\\x1f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 309,
+                        "h": 320,
+                        "size": 20733
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 410,
+                        "h": 425,
+                        "sizes": [
+                            2314,
+                            6292,
+                            15963,
+                            21061,
+                            29129
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -71,7 +107,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1726,
+        "replies_pts": 1750,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

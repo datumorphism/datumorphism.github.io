@@ -1,0 +1,62 @@
+{
+    "_": "Message",
+    "id": 368,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-06-03 19:32:33+00:00",
+    "message": "#data\n\nIf you are building a simple dashboard using python, streamlit is a great tool to get started. One of the problems in the past was to create multipage apps. \n\nTo solve this problem, I created a template for multipage apps a year ago. \nhttps://github.com/emptymalei/streamlit-multipage-template\n\nBut today, streamlit officially introduced multipage support. And it looks great. I haven\u2019t built any dashboards for a while, but to me, this is still the go-to solution for a dashboard.\nhttps://blog.streamlit.io/introducing-multipage-apps/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 242,
+            "length": 58
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 489,
+            "length": 53
+        }
+    ],
+    "views": 165,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1750,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-06-03 19:33:57+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

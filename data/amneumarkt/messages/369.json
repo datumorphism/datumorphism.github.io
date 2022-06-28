@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 369,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-06-10 02:58:57+00:00",
+    "message": "#ml\n\nThis is also like one thousand years later...\n\nPyMC 4.0 Release Announcement \u2014 PyMC project website\nhttps://www.pymc.io/blog/v4_announcement.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 250169793900855877,
+            "url": "https://www.pymc.io/blog/v4_announcement.html",
+            "display_url": "pymc.io/blog/v4_announcement.html",
+            "hash": 0,
+            "type": "article",
+            "site_name": "www.pymc.io",
+            "title": "PyMC 4.0 Release Announcement",
+            "description": "We, the PyMC core development team, are incredibly excited to announce the release of a major rewrite of PyMC3 (now called just PyMC): 4.0. Internally, we have already been using PyMC 4.0 almost ex...",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 105,
+            "length": 45
+        }
+    ],
+    "views": 103,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1750,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-06-10 03:05:43+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}
