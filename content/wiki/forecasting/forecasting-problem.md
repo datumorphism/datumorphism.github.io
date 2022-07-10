@@ -14,8 +14,19 @@ references:
   - name: "Hewamalage H, Ackermann K, Bergmeir C. Forecast Evaluation for Data Scientists: Common Pitfalls and Best Practices. arXiv [cs.LG]. 2022. Available: http://arxiv.org/abs/2203.10716"
     link: "http://arxiv.org/abs/2203.10716"
     key: "Hewamalage2022"
+  - name: "Januschowski T, Gasthaus J, Wang Y, Salinas D, Flunkert V, Bohlke-Schneider M, et al. Criteria for classifying forecasting methods. Int J Forecast. 2020;36: 167–177. doi:10.1016/j.ijforecast.2019.05.008"
+    link: "https://www.sciencedirect.com/science/article/pii/S0169207019301529"
+    key: "Januschowski2019"
 weight: 1
 ---
+
+There are many different types of tasks on time series data:
+
+- classification,
+- anomaly detection,
+- forecasting.
+
+
 
 ## Forecasting Problem
 
@@ -57,4 +68,57 @@ y_{t-p+1} & y_{t-p+2} & \cdots & y_{t} &\Big| &  {\color{red}y_{t+1}} \\
 which indicates that we will use everything on the left, a matrix of shape $(t-p+1,p)$, to predict the vector on the right (in red).
 
 
+## Methods of Forecasting Methods
+
+T. Januschowsk et al proposed a framework to classify the different forecasting methods.[^Januschowski2019]
+
+
+{{< mermaid >}}
+flowchart TB
+
+
+subgraph Objective
+
+
+params_shared["Parameter Shared Accross Series"]
+
+
+params_shared --"True"-->Global
+params_shared --"False"-->Local
+
+uncertainty["Uncertainty in Forecasts"]
+uncertainty --"True"--> Probabilistic["Probabilistic Forecasts:\n forecasts with predictive uncertainty"]
+uncertainty --"False"--> Point["Point Forecasts"]
+
+computational_complexity["Computational Complexity"]
+
+
+
+
+
+end
+
+
+
+subgraph Subjective
+
+
+structural_assumptions["Strong Structural Assumption"] --"Yes"--> model_driven["Model-Driven"]
+structural_assumptions --"No"--> data_driven["Data-Driven"]
+
+model_comb["Model Combinations"]
+
+discriminative_generative["Discriminative or Generative"]
+
+theoretical_guarantees["Theoretical Guarantees"]
+
+predictability_interpretability["Predictability and Interpretibility"]
+
+end
+{{< /mermaid >}}
+
+
+
+
 [^Hewamalage2022]: {{< cite key="Hewamalage2022" >}}
+[^Januschowski2019]: {{< cite key="Januschowski2019" >}}
