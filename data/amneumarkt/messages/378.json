@@ -1,0 +1,132 @@
+{
+    "_": "Message",
+    "id": 378,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-13 19:28:32+00:00",
+    "message": "#ml\n\n1.0!\n\nhttps://modelserving.com/blog/introducing-bentoml-10",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5812033248026474272,
+            "url": "https://modelserving.com/blog/introducing-bentoml-10",
+            "display_url": "modelserving.com/blog/introducing-bentoml-10",
+            "hash": 0,
+            "type": "article",
+            "site_name": "BentoML: Practical Model Serving",
+            "title": "Introducing BentoML 1.0 \u2014 BentoML: Practical Model Serving",
+            "description": "After years working together with our community towards that goal, we decided to embark on a journey towards a 1.0 version. And today, we\u2019re thrilled to announce the general availability of BentoML 1.0!",
+            "photo": {
+                "_": "Photo",
+                "id": 5943745489805618870,
+                "access_hash": 5084175030460356008,
+                "file_reference": "b'\\x00b\\xe2)@\\x04\\x03\\x18\\xf78$\\r\\x10\\x9d\\xf0\\x94\\xa7\\x80n\\x16\\xd0'",
+                "date": "2022-07-13 19:28:30+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\'(\\xd9\\xa4b\\x14d\\xf4\\xa8nf\\xfb<&Ln\\xc1\\x1cT\\x11\\xcb\\xe6e\\xa0\\x90\\x96\\xef\\x1b\\xf5\\xa2\\xd7\\x13v%\\x92iQ\\x83*\\x07\\x8b\\xbe\\xde\\xa2\\xa4\\x8ah\\xe6\\x19F\\x07\\xdb\\xb8\\xa8Q\\xd5\\x9b\\x03\\xf7r\\x7ft\\xf44\\x8d\\n\\xbc\\x99\\xe69\\x7f\\xbc\\xbd\\xeay\\xad\\xa4\\xf44N2Z\\x17(\\xa8-$i`\\x0c\\xe7\\'\\x9a*\\x88j\\xce\\xc4z\\x9f\\xfcy7\\xd4\\x7f:\\x86\\xf6%{\\xe8F\\xed\\x9b\\x81\\xcb\\x0e\\x0f\\xb5[\\xbb\\x84\\xcf\\x03F\\x08\\x04\\xe3\\x93Y\\xf3\\x92\\xf7Q%\\xe2\\xecP\\x08,:\\x1fz\\x04K\\x97d\\x9e)Hv\\x8b\\x18|rsV\"\\xeb\\x17\\xfb\\x83\\xf9UHPF.\\xd06\\xe06\\xe0\\xd5\\xc8\\x81\\xccG\\xfd\\x81S?\\x85z\\x8a?\\x1b\\xf4\\x1ba\\xff\\x00\\x1e\\xab\\xf5?\\xce\\x8a\\x92\\xda#\\x0c!\\t\\xc9\\x1e\\x94U=Y\\xa4\\xb5\\x93h\\x9a\\x91\\xd1]J\\xb0\\x0c\\x0fcE\\x14\\x12W\\x8a\\xce8\\x8c\\x9bs\\xb1\\xf1\\xf2\\xfab\\xac\\x00\\x14`\\x0c\\x01E\\x14\\x00\\xb4QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 310,
+                        "size": 12497
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 776,
+                        "size": 35407
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1119,
+                        "h": 1086,
+                        "sizes": [
+                            8475,
+                            16227,
+                            25316,
+                            31144,
+                            48419
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Tim Liu",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 11,
+            "length": 52
+        }
+    ],
+    "views": 107,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 624,
+        "read_max_id": 624
+    },
+    "edit_date": "2022-07-13 19:29:45+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

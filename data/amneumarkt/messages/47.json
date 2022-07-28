@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5984225908757736769,
                 "access_hash": -1182986061467725139,
-                "file_reference": "b\"\\x00b\\xba\\xfee/$\\xa5\\x81:\\xbd\\xb0\\x97\\x81?P\\x9a\\xeb4',\"",
+                "file_reference": "b'\\x00b\\xe2)C\\x87\\xb4\\x8d@\\xa4N\\x8a-\\xfd\\xd0\\xac@n\\x1f\\x04\\x15'",
                 "date": "2022-01-14 12:37:40+00:00",
                 "sizes": [
                     {
@@ -2559,6 +2559,10 @@
                                             }
                                         },
                                         {
+                                            "_": "TextPlain",
+                                            "text": " "
+                                        },
+                                        {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
@@ -4221,7 +4225,7 @@
                                                 "text": "empirical measure"
                                             },
                                             "url": "https://en.m.wikipedia.org/wiki/Empirical_measure",
-                                            "webpage_id": 0
+                                            "webpage_id": 5973540601431764232
                                         },
                                         {
                                             "_": "TextPlain",
@@ -4329,6 +4333,10 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -4447,61 +4455,6 @@
                                                             "text": "[39]"
                                                         },
                                                         "url": "https://en.m.wikipedia.org/wiki/Queueing_theory#cite_note-39",
-                                                        "webpage_id": 0
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockSubheader",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "Softwarized network services"
-                                        },
-                                        {
-                                            "_": "TextAnchor",
-                                            "text": {
-                                                "_": "TextEmpty"
-                                            },
-                                            "name": "Softwarized_network_services"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockParagraph",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "When we use softwarized network services in a queueing network, we find that measuring the different times of response of our network is a important thing because it might affect all our system. Knowing those data and trying to correct those that can cause an error is a task that we have to solve."
-                                        },
-                                        {
-                                            "_": "TextSuperscript",
-                                            "text": {
-                                                "_": "TextConcat",
-                                                "texts": [
-                                                    {
-                                                        "_": "TextAnchor",
-                                                        "text": {
-                                                            "_": "TextEmpty"
-                                                        },
-                                                        "name": "back_cite_ref-40"
-                                                    },
-                                                    {
-                                                        "_": "TextUrl",
-                                                        "text": {
-                                                            "_": "TextPlain",
-                                                            "text": "[40]"
-                                                        },
-                                                        "url": "https://en.m.wikipedia.org/wiki/Queueing_theory#cite_note-40",
                                                         "webpage_id": 0
                                                     }
                                                 ]
@@ -4742,7 +4695,7 @@
                         "_": "Photo",
                         "id": 6051866592788195500,
                         "access_hash": -2554579073316836354,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\x90\\xc7u\\x1e\\xc6;w\\x10\\xcd\\xb9\\x1e2\\x9f\\x97[9'",
+                        "file_reference": "b'\\x00b\\xe2)Cu\\xa4t\\xb9\\x8f\\xea-\\x87\\x98k#5\\x03\\xef\\xeaP'",
                         "date": "2018-11-28 16:44:16+00:00",
                         "sizes": [
                             {
@@ -4782,7 +4735,7 @@
                         "_": "Photo",
                         "id": 5802323297763960967,
                         "access_hash": -8065567924986844578,
-                        "file_reference": "b'\\x00b\\xba\\xfee/\\xc3\\xfd\\x80\\xd4c6H\\x15\\xf4\\xbb\\xf6\\x06W\\xb8\\xb1'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xe3\\xea\\x8c\\xa0\\x05\\xe8\\xaa\\x91\\x92\\xaf\\xf2\\x13\\x02\\xe4\\xf0\\xd9'",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4808,7 +4761,7 @@
                         "_": "Photo",
                         "id": 5802253895387424901,
                         "access_hash": 9111138728311387161,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\xdb\\x96b\\xaeNTe\\xcc\\xea\\xc1;{v\\xd1]\\x82'",
+                        "file_reference": "b'\\x00b\\xe2)C\\x14\\x99\\x8c\\x917\\x13G\\x0b,Z\\xa4\\xaeY\\x12\\x16\\x80'",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4841,7 +4794,7 @@
                         "_": "Photo",
                         "id": 5801949511055157376,
                         "access_hash": -6507313646935954140,
-                        "file_reference": "b'\\x00b\\xba\\xfeeO\\xb8\\x12L\\x87\\x8d\\xfd\\x89\\x17p\\xa3t\\xe1\\xecgN'",
+                        "file_reference": "b'\\x00b\\xe2)C\\x8a\\\\z\\xef\\x19{_\\xb4\\xe1K\\x8e\\xcc \\xfc\\xb3 '",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4881,7 +4834,7 @@
                         "_": "Photo",
                         "id": 5779388932612532333,
                         "access_hash": 7601008317448191084,
-                        "file_reference": "b'\\x00b\\xba\\xfeemR~\\x96\\x00\\xc0\\x00\\x8c.k\\x1f\\x10\\xc0\\xdb\\x0fO'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xc2\\x1b\\xb7\"\\r>#\\t*\\xb0\\xd0\\xf3\\x98\\xdd\\xe8\\xfb'",
                         "date": "2018-12-04 06:41:38+00:00",
                         "sizes": [
                             {
@@ -4921,7 +4874,7 @@
                         "_": "Photo",
                         "id": 6052139937391814790,
                         "access_hash": 5736559714258677917,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\xfa_\\xb0G\\x0c!\\xea+\\xd8\\xe5\\x7f\\xcd \\xf4\\xbdH'",
+                        "file_reference": "b'\\x00b\\xe2)C1D\\xe3q\\xee\\x91LL\\xf8\\x12\\xfa\\x87\\xa1\\xcc\\x98\\xc5'",
                         "date": "2018-11-28 16:44:16+00:00",
                         "sizes": [
                             {
@@ -4963,7 +4916,7 @@
                         "_": "Document",
                         "id": 5783791939354624157,
                         "access_hash": 7355724448567318575,
-                        "file_reference": "b'\\x00b\\xba\\xfee9\\x13n\\x07\\xe3uF\\xb7P\\xe0\\x10m\\x95 \\xcc4'",
+                        "file_reference": "b'\\x00b\\xe2)C\\x82HB[y\\x9e%\\x8a4A}e\\xae\\x00\\xc8\\x08'",
                         "date": "2018-12-05 20:49:03+00:00",
                         "mime_type": "image/png",
                         "size": 611,
@@ -4994,7 +4947,7 @@
                         "_": "Document",
                         "id": 6052021928414150781,
                         "access_hash": -1644849487784732887,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\x87\\x02\\xc6\\xbf\\xba\\x95LT\\xd7\\xea%\\xcf\\xae\\x85\\xb8('",
+                        "file_reference": "b\"\\x00b\\xe2)C\\xb4g\\xe0\\x8b'_\\x07\\xe8I\\x804B%\\x86\\r\\xe1\"",
                         "date": "2018-11-28 16:44:13+00:00",
                         "mime_type": "image/png",
                         "size": 1937,
@@ -5025,7 +4978,7 @@
                         "_": "Document",
                         "id": 6052062906697121899,
                         "access_hash": 8905392207100775079,
-                        "file_reference": "b'\\x00b\\xba\\xfeeD\\x16h.\\xd2g\\x7f\\xa9\\xbd\\x9c\\x8b4\\x81{T\\xbd'",
+                        "file_reference": "b'\\x00b\\xe2)C\\x9d\\x1cD\\xcb\\xa8\\xf4\\xdd \\x96\\xe1i\\xdd\\xc0t\\xc3\\x91'",
                         "date": "2018-11-28 16:44:13+00:00",
                         "mime_type": "image/png",
                         "size": 3721,
@@ -5056,7 +5009,7 @@
                         "_": "Document",
                         "id": 6052187997619617862,
                         "access_hash": -8391935814479009125,
-                        "file_reference": "b'\\x00b\\xba\\xfeeE\\x07\\xff[\\xcc\\xdez\\xef\\xfe\\xa7\\xbff\\xda\\x91x\\x13'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xf9&\\x07}\\xbe\\x0f\\r\\xf2g)\\xfb\\x02\\xff\\x18H\\xc8'",
                         "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
                         "size": 4566,
@@ -5087,7 +5040,7 @@
                         "_": "Document",
                         "id": 5808769854240457302,
                         "access_hash": -7209788918178847193,
-                        "file_reference": "b'\\x00b\\xba\\xfee!V\\xc3\\x926G{K\\x95\\x9c\\xe7\\xeah\\x1fV\\x14'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xf0$E\\xb4\\xde\\rM?t\\x05\\xa5\\xf1\\x07m\\x1f\\xf4'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 2073,
@@ -5123,7 +5076,7 @@
                         "_": "Document",
                         "id": 5808753378745909822,
                         "access_hash": 2478049422054680784,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\xcd<\\x872\\xe52yXAA\\xac9\\xac<\\x91\\xad'",
+                        "file_reference": "b'\\x00b\\xe2)C&e\\xa2\\xdcMC\\x11+$7\\x1a\\xce\\xee\\xe0\\xd4\\xed'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 8587,
@@ -5159,7 +5112,7 @@
                         "_": "Document",
                         "id": 6031846225051910614,
                         "access_hash": -7368607241992848569,
-                        "file_reference": "b'\\x00b\\xba\\xfeew)\\x05\\x82\\x0b4\\xce\\xbd\\xcd3a\\xa2\\xab\\x0b\\x1dG'",
+                        "file_reference": "b'\\x00b\\xe2)C6\\xeb#\\x9f\\xf4G\\xd2\\xdc\\xf42\\x8a\\xde\\x1c\\x12\\x11\\x80'",
                         "date": "2019-12-15 14:53:06+00:00",
                         "mime_type": "image/png",
                         "size": 7257,
@@ -5195,7 +5148,7 @@
                         "_": "Document",
                         "id": 6052225604353261711,
                         "access_hash": 4362472467059767847,
-                        "file_reference": "b'\\x00b\\xba\\xfeeM\\xf0\\x84\\xc3\\x13m!P(0\\xa2QyF\\x9b\\x89'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xc5\\xc9\\x90\\x0e\\xb1\\xbey\\xd1k5\\x98RQ\\xceJ\\xf2'",
                         "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
                         "size": 6478,
@@ -5226,7 +5179,7 @@
                         "_": "Document",
                         "id": 6031508043621990873,
                         "access_hash": -2229679737074352099,
-                        "file_reference": "b'\\x00b\\xba\\xfeeJR\\xa4\\xea\\xa6\\x97rg\\xde9\\xaf\\xa2\\xb6\\x15\\xee\\x14'",
+                        "file_reference": "b\"\\x00b\\xe2)Ca\\xe6\\xe6\\x9a\\x8f\\x90\\x03\\xbap\\x7f\\xcb\\x93'\\xae\\xfb/\"",
                         "date": "2019-12-15 14:53:06+00:00",
                         "mime_type": "image/png",
                         "size": 4155,
@@ -5262,7 +5215,7 @@
                         "_": "Document",
                         "id": 5765952852820230685,
                         "access_hash": 3235339794781248046,
-                        "file_reference": "b'\\x00b\\xba\\xfeen\\xbc\\xfe\\xfa\\xe0Ub\\xce\\x16\\x0f//\\xc3\\xa8(\\x14'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xf4\\xc3\\xf1\\x97\\xcb\\xdc\\x0b\\x13\\x90\\r\\x11C\\x08\\x8a\\xca\\x99'",
                         "date": "2019-12-23 07:24:12+00:00",
                         "mime_type": "image/png",
                         "size": 1197,
@@ -5298,7 +5251,7 @@
                         "_": "Document",
                         "id": 5808678702149534325,
                         "access_hash": 6730828962423987030,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\xfc\\x98Y\\xec\\xd1\\x11}c\\x15\\x93z\\x8f\\x00@\\xe94'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xfe\\x86.\\xc0\\x06\\xfe\\xd1\\x16;\\xba\\xde\\x86\\xfa8\\t\\xa6'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 1634,
@@ -5334,7 +5287,7 @@
                         "_": "Document",
                         "id": 5808768329527067188,
                         "access_hash": 5496701924312610274,
-                        "file_reference": "b'\\x00b\\xba\\xfee>=v\\xf1\\x94R\\xb7\\x84\\xe3\\x0e\\xea3\\xf5\\x87[0'",
+                        "file_reference": "b'\\x00b\\xe2)C\\x97\\x91H\\xdfe\\x1a9\\x0f+zi\\xbal\\xd5\\r\\xaa'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 3305,
@@ -5370,7 +5323,7 @@
                         "_": "Document",
                         "id": 5808650252286165561,
                         "access_hash": -856757003215215100,
-                        "file_reference": "b\"\\x00b\\xba\\xfee,R'Z\\xf50\\xfc\\x93t[,}\\xfdTKx\"",
+                        "file_reference": "b'\\x00b\\xe2)C\\xa9\\x04c\\xc2r\\x18\\xab\\x0eRQ\\x8f\\x16\\n\\xa2\\x950'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 3588,
@@ -5406,7 +5359,7 @@
                         "_": "Document",
                         "id": 5809050165281030752,
                         "access_hash": -6311380251978661830,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\x893\\xe4\\xb0e\\xf0\\xef\\xff\\xe6W\\xdc\\xfe\\x9d\\x0e9\\xf5'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xa4\\xcb\\x0b\\xa2\\xa0\\x01\\x99QQ\\n\\xee\\x88\\x0fjzR'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 3236,
@@ -5442,7 +5395,7 @@
                         "_": "Document",
                         "id": 5833308488461189725,
                         "access_hash": 7029499975052902886,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\x9aH\\xfd\\\\h\\xf4J\\n\\x1f)\\xf9-\\xfcd\\x98\\xdf'",
+                        "file_reference": "b'\\x00b\\xe2)C?l!\\xa68+\\xa8\\xcaK\\xea\\xe1\\xf5\\x1a\\xac{?'",
                         "date": "2020-04-20 20:19:23+00:00",
                         "mime_type": "image/png",
                         "size": 1580,
@@ -5478,7 +5431,7 @@
                         "_": "Document",
                         "id": 5808677018522354326,
                         "access_hash": -4006436480918655378,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\x1b\\xe0\\xd6\\xe8}\\xb4\\xe3\\x9a\\x03\\x98\\xc8\\xf5@\\xe2Gn'",
+                        "file_reference": "b'\\x00b\\xe2)C\\x17b\\x96\\xd9e@\\xb676\\xbas\\x01\\xb4\\x00\\x07\\xa4'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 1977,
@@ -5514,7 +5467,7 @@
                         "_": "Document",
                         "id": 5768066758413910465,
                         "access_hash": 5762901830759941541,
-                        "file_reference": "b'\\x00b\\xba\\xfeeQ\\xcfK\\xad \\xd7#\\xf27\\x17W\\xc4\\xc1\\x92gX'",
+                        "file_reference": "b'\\x00b\\xe2)C\\xff3\\x9a\\xd9e5S\\x0b\\xa2~-iO+\\xc8\\xd3'",
                         "date": "2019-12-23 07:24:13+00:00",
                         "mime_type": "image/png",
                         "size": 1530,
@@ -5550,7 +5503,7 @@
                         "_": "Document",
                         "id": 6025086135506567361,
                         "access_hash": -5547261664658749616,
-                        "file_reference": "b'\\x00b\\xba\\xfeeJ\\x81\\xaf\\x91\\x08\\x1a\\xaf\\xd6\\xf1x\\x90\\x1a\\xc5\\xe9\\xde\\x19'",
+                        "file_reference": "b'\\x00b\\xe2)C\\x85\\x17S&A\\xed\\xd9WU\\xc1\\xcd@at\\x0b\\x10'",
                         "date": "2019-02-25 10:41:39+00:00",
                         "mime_type": "image/png",
                         "size": 1523,
@@ -5586,7 +5539,7 @@
                         "_": "Document",
                         "id": 5901125734302220411,
                         "access_hash": -7784171649926525512,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\x16\\xa0\\x9c\\xb1\\x85\\xd9\\xa0)5\\xc2\\xd1hL\\x08\\xf3\\xb3'",
+                        "file_reference": "b'\\x00b\\xe2)Cb\\xc4^k\\x00\\xf9\\xb9\\x89\\xcf\\xfe\\x85\\xb4\\xea\\xfa\\xbe\\x94'",
                         "date": "2019-01-14 18:06:44+00:00",
                         "mime_type": "image/png",
                         "size": 1592,
@@ -5617,7 +5570,7 @@
                         "_": "Document",
                         "id": 6027048901201100930,
                         "access_hash": 5055134833548936981,
-                        "file_reference": "b'\\x00b\\xba\\xfee\\x99\\xd8Q\\xc7\\xdc\\xc99\\xf1\\xa5\\xb6h\\x8e\\x96\\xee\\xc8D'",
+                        "file_reference": "b'\\x00b\\xe2)Cd\\xbb\\xb8\\x047\\xfc\\x16\\x9a\\x132|\\x91#\\xb7\\x81\\xc6'",
                         "date": "2019-02-25 10:41:39+00:00",
                         "mime_type": "image/png",
                         "size": 2160,
@@ -5671,7 +5624,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1750,
+        "replies_pts": 1822,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

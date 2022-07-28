@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 375,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-12 19:02:47+00:00",
+    "message": "#ml\n\n\nI was playing with dalle-mini ( https://github.com/borisdayma/dalle-mini ). \n\nSo... in the eyes of Dalle-mini, \n\n1. science == chemistry (? I guess),\n2. scientists are men.\n\nTried several times, same conclusions.\n\nIt is so hard to fight against the bias in ML models.\n\n\n---\n\nUpdate: OpenAI is fixing this.\n\nhttps://openai.com/blog/reducing-bias-and-improving-safety-in-dall-e-2/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5364280137295706809,
+            "access_hash": 1831149704028742395,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01wb\\xe2)@\\xdc\\xfd\"\\xc4S\\xb4\\xff\\'S\\r+4\\xaf%\\xaff'",
+            "date": "2022-07-12 19:02:46+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01( \\xcc\\xf2\\xdf\\xfb\\x8d\\xf9S\\xd5\\x18t\\x8d\\x8f\\xe1\\x9a\\xd9\\x8a\\xe68\\xa3\\x1d:\\nD\\xbb\\x88K&O|\\xfb\\xd5\\xd8\\x8ec\\x1d\\x95\\x8e3\\x1b\\x0f\\xc3\\x14\\x82\\t\\t\\xfb\\xa4{\\x91[3J\\x0b\\xf01\\x83\\xdcs\\xd0\\xd3\\xde\\xedv\\x94\\xe3;}}jzh>e\\xd4lv\\x90|\\xac\\x17\\xb78>\\xd4\\xc6\\x86\\x14g\\xc2\\x13\\x93\\x8e2N1RG\\xe6\\xb4@\\x801\\x8e9\\xa6C#,\\xd2&\\x06s\\x9e\\xbe\\xd5I\\xdc\\x966x@\\xd8c\\xdcwz\\x9c\\xf6\\xa8&3*\\x15*1\\x8e\\xf8\\xabG\\xcd\\xc4d\\xe0\\x9e\\x80\\x83\\xdf\\x06\\xa3\\x96\\xde\\xe5\\xbew \\xe1y\\xf9\\xb1\\xfd)\\xc5\\xa4\\x89hV\\xb9Ql\\x0cs\\x00\\xca\\xbfs\\xaej\\x1f0I)\\x93\\xe5\\x04\\x9c\\x13\\xbb\\xe9E\\x15;3K+\\nn\\x00\\x964\\x0f\\xbb\\x1c\\x91\\xd2\\xa4\\x96w(\\xff\\x00(\\xf9\\xbf\\xdb^\\x05\\x14Q}IQG'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 261,
+                    "h": 320,
+                    "size": 35148
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 653,
+                    "h": 800,
+                    "size": 129896
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 760,
+                    "h": 931,
+                    "sizes": [
+                        13829,
+                        43910,
+                        75338,
+                        99819,
+                        154308
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 38,
+            "length": 40
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 313,
+            "length": 71
+        }
+    ],
+    "views": 99,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-19 05:12:51+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": 13261220537117858,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

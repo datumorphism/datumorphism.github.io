@@ -1,0 +1,659 @@
+{
+    "_": "Message",
+    "id": 382,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-24 06:58:56+00:00",
+    "message": "#career\n\n> so the job of data scientist will only continue to grow in its importance in the business landscape.\n> \n> However, it will also continue to change. We expect to see continued differentiation of responsibilities and roles that all once fell under the data scientist category.\n\nhttps://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4845392232775227033,
+            "url": "https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century",
+            "display_url": "hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century",
+            "hash": 614107526,
+            "type": "photo",
+            "site_name": "Harvard Business Review",
+            "title": "Is Data Scientist Still the Sexiest Job of the 21st Century?",
+            "description": "Ten years ago, the authors posited that being a data scientist was the \u201csexiest job of the 21st century.\u201d A decade later, does the claim stand up? The job has grown in popularity and is generally well-paid, and the field is projected to experience more growth than almost any other by 2029. But the job has changed, in both large and small ways. It\u2019s become better institutionalized, the scope of the job has been redefined, the technology it relies on has made huge strides, and the importance of non-technical expertise, such as ethics and change management, has grown. How it operates in companies \u2014 and how executives need to think about managing data science efforts \u2014 has changed, too, as businesses now need to create and oversee diverse data science teams rather than searching for data scientist unicorns. Finally, companies need to think about what comes next, and how they can begin to think about democratizing data science.",
+            "photo": {
+                "_": "Photo",
+                "id": 5948594323199209076,
+                "access_hash": 1166911800044075727,
+                "file_reference": "b'\\x00b\\xe2)@\\xf3N\\x138\\xb0d\\xc0\\xff\\n\\x15[\\x8e\\x9c]\\xbc\\x14'",
+                "date": "2022-07-15 16:47:58+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xd1\\xf3\\x00\\xeb\\xc5\\x05\\xea\\x17B\\xe8\\xd8\\x07\\xa7\\x15V\\xe26\\x1b\\x19X\\x9c\\xf3\\xf3s\\xc0\\xa4\\x04\\xd7w2\\xc4F\\xcc\\x01\\x8e\\xb8\\xebVc\\x93\\xf7*\\xf2aI\\x039\\xf5\\xa8\\x08x\\x90\\xb2a\\x86@\\t\\x8cu8\\xe2\\xaa\\xde4\\x88W\\xcc\\xc0\\x1d\\x80\\xe6\\x82\\xd5\\x9d\\x91\\xa6\\x1dJ\\xee\\x04\\x11\\xedEf\\xd8\\xcaw62F9\\x18\\xefE\\t\\xb1I$\\xf4f\\xa5&\\xd5\\x19\\xf9G4QA#Dx\\xc7-\\xb4t\\x14\\xac\\x8a\\xe3\\x0c\\xa1\\x87\\xa1\\x14Q@\\x02\\xaa\\xa2\\xe1T(\\xf4\\x03\\x14QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 20573
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 117297
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 675,
+                        "sizes": [
+                            11069,
+                            35853,
+                            74959,
+                            124672,
+                            216756
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Thomas H. Davenport and DJ Patil",
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 5948594323199209076,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextEmpty"
+                                },
+                                "credit": {
+                                    "_": "TextPlain",
+                                    "text": "HBR Staff/StudioM1/Moritz Otto/Getty Images"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Is Data Scientist Still the Sexiest Job of the 21st Century?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Thomas H. Davenport and DJ Patil"
+                            },
+                            "url": "https://hbr.org/search?term=thomas%20h.%20davenport",
+                            "webpage_id": 0
+                        },
+                        "published_date": "2022-07-15 12:15:49+00:00"
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Ten years ago, the authors posited that being a data scientist was the \u201csexiest job of the 21st century.\u201d A decade later, does the claim stand up? The job has grown in popularity and is generally well-paid, and the field is projected to experience more growth than almost any other by 2029. But the job has changed, in both large and small ways. It\u2019s become better institutionalized, the scope of the job has been redefined, the technology it relies on has made huge strides, and the importance of non-technical expertise, such as ethics and change management, has grown. How it operates in companies \u2014 and how executives need to think about managing data science efforts \u2014 has changed, too, as businesses now need to create and oversee diverse data science teams rather than searching for data scientist unicorns. Finally, companies need to think about what comes next, and how they can begin to think about democratizing data science."
+                                }
+                            }
+                        ],
+                        "title": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Summary.\u00a0\u00a0\u00a0"
+                            }
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Ten years ago we published the article \u201c"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextPlain",
+                                                "text": "Data Scientist: Sexiest Job of the 21"
+                                            },
+                                            {
+                                                "_": "TextSuperscript",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "st"
+                                                }
+                                            },
+                                            {
+                                                "_": "TextPlain",
+                                                "text": " Century"
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century",
+                                    "webpage_id": 4845392232575093426
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ".\u201d Most casual readers probably remember only the \u201csexiest\u201d modifier \u2014 a comment on their demand in the marketplace. The role was relatively new at the time, but as more companies attempted to make sense of big data, they realized they needed people who could combine programming, analytics, and experimentation skills. At the time, that demand was largely restricted to the San Francisco Bay Area and a few other coastal cities. Startups and tech firms in those areas seemed to want all the data scientists they could hire. We felt that the need would expand as mainstream companies embraced both business analytics and new forms and volumes of data."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "At the time, we defined the data scientist as \u201ca high-ranking professional with the training and curiosity to make discoveries in the world of big data.\u201d Companies were beginning to analyze voluminous and less-structured data like online clickstreams, social media, and images and speech. Because there wasn\u2019t yet a well-defined career path for people who could program with and analyze such data, data scientists had diverse educational backgrounds. The most common qualification in our informal survey of 35 data scientists at the time was a PhD in experimental physics, but we also found astronomers, psychologists, and meteorologists. Most had PhDs in some scientific field, were exceptional at math, and knew how to code. Given the absence of tools and processes at the time to perform their roles, they were also good at experimentation and invention. It\u2019s not that a science PhD was really required to do the work, but rather that these individuals had the rare ability to unlock the potential of data, wading through complex, messy data sets and building recommendation algorithms."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "A decade later, the job is more in demand than ever with employers and recruiters. AI is \u00a0increasingly popular in business, and companies of all sizes and locations feel they need data scientists to develop AI models. By 2019, postings for data scientists on Indeed had "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "risen by 256%,"
+                                    },
+                                    "url": "https://www.hiringlab.org/2019/01/17/data-scientist-job-outlook/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and the U.S. Bureau of Labor Statistics, predicts data science will see more growth "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "than almost any other field"
+                                    },
+                                    "url": "https://towardsdatascience.com/should-you-become-a-data-scientist-in-2021-b15cd7300970",
+                                    "webpage_id": 359902253903477027
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " between now and 2029. The sought-after job is generally paid quite well; the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "median salary"
+                                    },
+                                    "url": "https://www.salary.com/research/salary/benchmark/data-scientist-v-salary/ca",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for an experienced data scientist in California is approaching $200,000."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Many of the same headaches remain, too. In our research for the original article, many data scientists noted that they spend much of their time cleaning and wrangling data, and that is still the case despite a few advances in using AI itself for data management improvements. In addition, many organizations don\u2019t have "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "data-driven cultures"
+                                    },
+                                    "url": "https://www.amazon.com/dp/B00SXHFTAS/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and don\u2019t take advantage of the insights provided by data scientists. Being hired and paid well doesn\u2019t mean that data scientists will be able to make a difference for their employers. As a result, many are frustrated, leading to high turnover."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Even so, the job has changed \u2014 in both large and small ways. It\u2019s become better institutionalized, its scope has been redefined, the technology it relies on has made huge strides, and the importance of non-technical expertise, such as ethics and change management, has grown. The many executives who recognize that data science is important to their businesses now need to create and oversee diverse data science teams rather than searching for data scientist unicorns. They can also begin to think about democratizing data science \u2014 still with the aid of data scientists, however."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Better Institutionalized"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In 2012, data science was a nascent function even in AI-oriented startups. Today it is quite well-established, at least in firms with a major commitment to data and AI. Banks, insurance companies, retailers, and even health care providers, and even government agencies have substantial data science groups; large financial services firms may have hundreds of data scientists. Data science has also been effective in addressing societal crises, counting and predicting Covid-19 cases and deaths, helping to address weather disasters, and even fighting misinformation and cyber hacks related to the Ukraine invasion."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "One important factor facilitating institutionalization has been the rise of data science-oriented educational offerings. In 2012, there were effectively no degree programs in data science; data scientists were recruited from other quantitatively-oriented fields. Now there are hundreds of degree programs in data science or the related fields of analytics and AI. Most are "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "masters degree"
+                                    },
+                                    "url": "https://www.mastersindatascience.org/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " programs, but there are also "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "undergraduate majors"
+                                    },
+                                    "url": "https://www.discoverdatascience.org/programs/bachelors-in-data-science/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and PhD programs in data science. There are also enormous numbers of certificates, online course offerings, and boot camps in data science-related fields. There are even "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "high school"
+                                    },
+                                    "url": "https://www.mastersindatascience.org/resources/resources-teach-learn-data-science-high-school/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " data science courses and curricula. It\u2019s clear that anyone desiring to be trained in data science capabilities will have plenty of options for doing so. However, it\u2019s unlikely that any single program can inculcate all of the skills necessary to conceive, build, and deploy effective and ethical data science analysis, experiments, and models. Indeed, making sense of the diverse educational choices even at a single institution is a challenge for prospective data scientists and for the companies that wish to employ them."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Data Scientists in Relation to Other Roles"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The data science role is also now supplemented with a variety of other jobs. The assumption in 2012 was that data scientists could do all required tasks in a data science application \u2014 from conceptualizing the use case, to interfacing with business and technology stakeholders, to developing the algorithm and deploying it into production. Now, however, there has been a proliferation of related jobs to handle many of those tasks, including machine learning engineer, data engineer, AI specialist, analytics and AI translators, and data oriented product managers. LinkedIn reported some of these jobs as being more popular than data scientists in its \u201c"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Jobs on the Rise"
+                                    },
+                                    "url": "https://business.linkedin.com/talent-solutions/emerging-jobs-report#all",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u201d reports for 2021 and 2022 for the U.S."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Part of the proliferation is due to the fact that no single job incumbent can possess all the skills needed to successfully deploy a complex AI or analytics system. There is an increasing recognition that many algorithms are "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "never deployed"
+                                    },
+                                    "url": "https://hdsr.mitpress.mit.edu/pub/2fu65ujf/release/3",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", which has led many organizations to try to improve deployment rates. Additionally, the challenges of managing increased data systems and technologies have resulted in a more complex technical environment. There have been some attempts at "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "certification"
+                                    },
+                                    "url": "https://www.dasca.org/data-science-certifications/senior-data-scientist",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " of data scientists and related jobs, but these are not yet widely sought or recognized. Some companies, like "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "TD Bank"
+                                    },
+                                    "url": "https://sloanreview.mit.edu/article/how-large-companies-can-grow-their-data-and-analytics-talent/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", have developed classification structures for the many data science-related careers and skills, but these are not common enough in organizations."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "As a result of this proliferation of skills, companies need to identify all of the different roles required to effectively deploy data science models in their businesses, and ensure that they are present and collaborating on teams."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Changes in Technology"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "One reason why the data scientist job keeps changing is because the technologies data scientists use are changing. Some technology trends are continuations of directions present in 2012, such as the use of open source tools and the move to cloud-based processing and data storage. But some affect the core of data science work. For example, some aspects of data science are increasingly automated (using automated machine learning or "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "AutoML"
+                                    },
+                                    "url": "https://hbr.org/2019/10/the-risks-of-automl-and-how-to-avoid-them",
+                                    "webpage_id": 4845392231730365799
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "), which can both improve the productivity of data science professionals and open up the possibility of \u201ccitizen data scientists\u201d with only some quantitative training. These automated tools haven\u2019t dimmed the appeal of professional data scientists yet, but they may in the future."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Companies should begin to democratize advanced analytics and AI within their organizations, relying on data scientists to ensure that citizen-developed models are accurate and that all relevant data is employed."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Data scientists have realized that their models can \u201cdrift\u201d in turbulent business environments like the Covid-19 pandemic, so there is a new emphasis on monitoring their accuracy after deployment. Machine learning operations, or \u201cMLOps,\u201d tools provide ongoing monitoring of models; automated retraining of drifted models is just beginning to be employed. Some AutoML and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "MLOps"
+                                    },
+                                    "url": "https://hbr.org/2022/03/how-to-scale-ai-in-your-organization",
+                                    "webpage_id": 4845392231441114563
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "tools"
+                                    },
+                                    "url": "https://hbr.org/2021/07/ai-doesnt-have-to-be-too-complicated-or-expensive-for-your-business",
+                                    "webpage_id": 4845392231977671486
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " even test for algorithmic bias."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "These developments mean that coding, which was perhaps the single most common job requirement when we wrote a decade ago, is somewhat less essential in data science. It has migrated to other jobs or is being increasingly automated. (Data cleaning is a notable exception to this trend, however.) The key focus of the job continues to shift towards predictive modeling and the ability to translate business issues and requirements into models. These are collaborative activities, but unfortunately there are as yet no great tools for structuring and supporting collaborative data science activities."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The Ethics of Data Science"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "A major change in data science over the past decade is that the need for an "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "ethical dimension"
+                                    },
+                                    "url": "https://medium.com/@dpatil/ethics-data-science-ff21d0c29346",
+                                    "webpage_id": 3441607287825355574
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to the field is now widely acknowledged, though the topic was rarely mentioned in 2012. The turning point for data science ethics was probably the 2016 U.S. presidential election, in which data scientists in social media ("
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Cambridge Analytica and Facebook in particular"
+                                    },
+                                    "url": "https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html",
+                                    "webpage_id": 1961078289153500903
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ") "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "attempted to influence voters"
+                                    },
+                                    "url": "https://www.theguardian.com/news/2018/may/06/cambridge-analytica-how-turn-clicks-into-votes-christopher-wylie",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and further polarized electoral politics. Since that time, considerable attention has been devoted to issues of algorithmic bias, transparency, and responsible use of analytics and AI."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Some companies have already established responsible AI groups and processes. A key function of them is to educate data scientists about the issues involved in ethical AI. And there is an increased regulation that is being instituted in response to ethical lapses."
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": ". . ."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We have seen both continuity and change in the data science role. It has been remarkably successful in many ways, and some of its challenges \u2014 proliferation of related roles, the need for an ethical perspective \u2014 result in part from the widespread adoption of data science. The amount of data, analytics, and AI in business and society seem unlikely to decline, so the job of data scientist will only continue to grow in its importance in the business landscape."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "However, it will also continue to change. We expect to see continued differentiation of responsibilities and roles that all once fell under the data scientist category. Companies will need detailed skill classification and certification processes for these diverse jobs, and must ensure that all of the needed roles are present on large-scale data science projects. Professional data scientists themselves will focus on algorithmic innovation, but will also need to be responsible for ensuring that amateurs don\u2019t get in over their heads. Most importantly, data scientists must contribute towards appropriate collection of data, responsible analysis, fully-deployed models, and successful business outcomes."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Editor\u2019s note: This post has been updated."
+                            }
+                        }
+                    }
+                ],
+                "photos": [],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": true,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 287,
+            "length": 83
+        }
+    ],
+    "views": 79,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-24 11:32:20+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "career"
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 381,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-21 21:04:46+00:00",
+    "message": "#python \n\nGuidelines for research coding. It is not the highest standard but is easy to follow.\n\nhttps://goodresearch.dev/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4068365934643545230,
+            "url": "https://goodresearch.dev/",
+            "display_url": "goodresearch.dev",
+            "hash": 0,
+            "type": "article",
+            "site_name": "goodresearch.dev",
+            "title": "The Good Research Code Handbook",
+            "description": "This handbook is for grad students, postdocs and PIs who do a lot of programming as part of their research. It will teach you, in a practical manner, how to organize your code so that it is easy to understand and works reliably.",
+            "photo": {
+                "_": "Photo",
+                "id": 5901207717094206740,
+                "access_hash": -2628695658979963001,
+                "file_reference": "b'\\x00b\\xe2)@\\xb3=!\\x8b\\x83nX]\\xbd\\xd2\\xbf\\xd5g\\xda\\xbf\\x06'",
+                "date": "2021-12-17 11:35:21+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01((\\xd3\\x91\\x9e?\\x98\\r\\xcb\\xdcw\\x14\\xe4\\x99$\\\\\\xabT\\x95Bh\\x18\\xcc\\xc7\\n\\xa8}\\x0fZ\\x9dV\\xc5+=\\xcb\\x0fy\\x04gk??CM[\\xfbwm\\xa1\\xb0O\\xa8\\xa6lB:\\x03POh\\xac\\xa4\\xc60\\xde\\x9e\\xb5\\xa2H\\x93N\\x8a\\xcb\\xb0\\xb9\\x93\\xcfX\\x98\\x92\\x08\\xc7=\\xb1E&\\xac\\x06\\xa5A)\\xf9\\xfe\\x95=U\\xcb\\x12w\\x0c\\x1c\\xd2\\x10\\x8a\\xa1F\\x14`R\\xd4\\xc9\\x18\\x18'\\xadD\\xc3\\x0cE0+${54lp\\xd9?\\xa5\\x15e\\x144\\xa8{\\xa98\\xfc\\xa8\\xa1\\xbb\\x8e\\xe5\\x9aL\\x0c\\xe7\\x034QH\\x05\\xa8\\x1a6,N;\\xd1E\\x02\\x15\\x11\\x83\\x82G\\x14QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 288,
+                        "h": 288,
+                        "size": 7687
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 97,
+            "length": 25
+        }
+    ],
+    "views": 90,
+    "forwards": 6,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-22 09:48:11+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "python"
+    ]
+}

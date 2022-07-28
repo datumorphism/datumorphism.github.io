@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 374,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-12 06:00:47+00:00",
+    "message": "#career\n\nhttps://www.microsoft.com/en-us/research/blog/ai4science-to-empower-the-fifth-paradigm-of-scientific-discovery/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 46156072709616445,
+            "url": "https://www.microsoft.com/en-us/research/blog/ai4science-to-empower-the-fifth-paradigm-of-scientific-discovery/",
+            "display_url": "microsoft.com/en-us/research/blog/ai4science-to-empower-the-fifth-paradigm-of-scientific-discovery",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Microsoft Research",
+            "title": "AI4Science to empower the fifth paradigm of scientific discovery - Microsoft Research",
+            "description": "Over the coming decade, deep learning looks set to have a transformational impact on the natural sciences. The consequences are potentially far-reaching and could dramatically improve our ability to model and predict natural phenomena over widely varying scales of space and time. Could this capability represent the dawn of a new paradigm of scientific discovery? [\u2026]",
+            "photo": {
+                "_": "Photo",
+                "id": 5926110611786280473,
+                "access_hash": -8518471850425788895,
+                "file_reference": "b'\\x00b\\xe2)@\\xd5\\x98Lw\\xcf\\xce\\x19\\xa6P\\x13\\x19|\\x0f\\x8aN\\xe7'",
+                "date": "2022-07-07 09:21:52+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xa1\\x10\\xc6N\\x01 p\\x0fJn7\\x1c\\x9aX\\xdb\\n\\xc7<\\x81\\x81B\\x02G\\xa7\\xd6\\x80\\x1d,\\x0207\\x11\\x93\\xdb\\xd2\\xaa\\xb8\\xc3b\\xae\\\\\\x92\\xee\\x0f\\\\\\x81\\x9c\\x1e\\xf8\\xaa\\xee\\xa5\\x9a\\x80#\\xdcq\\x8c\\x0f\\xca\\x8ax\\x8c\\xd1@\\xaeJ\\xa81O\\x08(\\xa2\\x98\\x87m\\x14m\\x1e\\x94Q@\\x85\\xc0\\xa2\\x8a(\\x11'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 10311
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 418,
+                        "size": 42319
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 669,
+                        "size": 88553
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2501,
+                        "h": 1308,
+                        "sizes": [
+                            32698,
+                            67217,
+                            94719,
+                            136460,
+                            250742
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 9,
+            "length": 111
+        }
+    ],
+    "views": 89,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-12 06:01:04+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "career"
+    ]
+}

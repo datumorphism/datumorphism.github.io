@@ -27,16 +27,16 @@
             "id": 2047476602461386797,
             "url": "https://thegradient.pub/transformers-are-graph-neural-networks/",
             "display_url": "thegradient.pub/transformers-are-graph-neural-networks",
-            "hash": 0,
+            "hash": 1622494697,
             "type": "photo",
             "site_name": "The Gradient",
             "title": "Transformers are Graph Neural Networks",
-            "description": "My engineering friends often ask me: deep learning on graphs sounds great, but are there any real applications?  While Graph Neural Networks are used in recommendation systems at Pinterest, Alibaba and Twitter, a more subtle success story is the Transformer architecture, which has taken the NLP world by storm. Through",
+            "description": "My engineering friends often ask me: deep learning on graphs sounds great, but are there any real applications? While Graph Neural Networks are used in recommendation systems at Pinterest, Alibaba and Twitter, a more subtle success story is the Transformer architecture, which has taken the NLP world by storm. Through",
             "photo": {
                 "_": "Photo",
                 "id": 5975513382914206653,
                 "access_hash": 6013831091614861578,
-                "file_reference": "b'\\x00b\\xba\\xfee\\x027#\\xfa\\x1eQ\\xaf\\xe2B\\xd0\\xb1\\x92\\xa3\\xcd X'",
+                "file_reference": "b'\\x00b\\xe2)CQ\\xbejd\\xec)\\x1a\\xbf\\xdaTd\\xa7\\x7f\\x187/'",
                 "date": "2020-09-12 15:17:36+00:00",
                 "sizes": [
                     {
@@ -75,9 +75,2895 @@
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": null,
+            "author": "Chaitanya K. Joshi",
             "document": null,
-            "cached_page": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://thegradient.pub/transformers-are-graph-neural-networks/",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 5975513382914206653,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextEmpty"
+                                },
+                                "credit": {
+                                    "_": "TextEmpty"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Transformers are Graph Neural Networks"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Chaitanya K. Joshi"
+                        },
+                        "published_date": "2020-09-12 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "My engineering friends often ask me: deep learning on graphs sounds great, but are there any real applications?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "While Graph Neural Networks are used in recommendation systems at "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Pinterest"
+                                    },
+                                    "url": "https://medium.com/pinterest-engineering/pinsage-a-new-graph-convolutional-neural-network-for-web-scale-recommender-systems-88795a107f48",
+                                    "webpage_id": 3441607288661681227
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Alibaba"
+                                    },
+                                    "url": "https://arxiv.org/abs/1902.08730",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Twitter"
+                                    },
+                                    "url": "https://blog.twitter.com/en_us/topics/company/2019/Twitter-acquires-Fabula-AI.html",
+                                    "webpage_id": 8724693907630868865
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", a more subtle success story is the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Transformer architecture"
+                                        }
+                                    },
+                                    "url": "https://arxiv.org/abs/1706.03762",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", which has "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "taken"
+                                    },
+                                    "url": "https://openai.com/blog/better-language-models/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "the"
+                                    },
+                                    "url": "https://www.blog.google/products/search/search-language-understanding-bert/",
+                                    "webpage_id": 7122920200767036019
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "NLP"
+                                    },
+                                    "url": "https://www.microsoft.com/en-us/research/project/large-scale-pretraining-for-response-generation/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "world"
+                                    },
+                                    "url": "https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "by"
+                                    },
+                                    "url": "https://blog.einstein.ai/introducing-a-conditional-transformer-language-model-for-controllable-generation/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "storm"
+                                    },
+                                    "url": "https://nv-adlr.github.io/MegatronLM",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Through this post, I want to establish a link between "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Graph Neural Networks (GNNs)"
+                                    },
+                                    "url": "https://graphdeeplearning.github.io/project/spatial-convnets/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and Transformers. I'll talk about the intuitions behind model architectures in the NLP and GNN communities, make connections using equations and figures, and discuss how we can work together to drive future progress. Let's start by talking about the purpose of model architectures\u2014"
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "representation learning"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Representation Learning for NLP"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "At a high level, all neural network architectures build "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "representations"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " of input data as vectors/embeddings, which encode useful statistical and semantic information about the data. These "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "latent"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "hidden"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " representations can then be used for performing something useful, such as classifying an image or translating a sentence. The neural network "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "learns"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to build better-and-better representations by receiving feedback, usually via error/loss functions."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "For Natural Language Processing (NLP), conventionally, "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Recurrent Neural Networks"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (RNNs) build representations of each word in a sentence in a sequential manner, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "i.e."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "one word at a time"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Intuitively, we can imagine an RNN layer as a conveyor belt, with the words being processed on it "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "autoregressively"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " from left to right. In the end, we get a hidden feature for each word in the sentence, which we pass to the next RNN layer or use for our NLP tasks of choice."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "I highly recommend Chris Olah's legendary blog for recaps on "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "RNNs"
+                                    },
+                                    "url": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "representation learning"
+                                    },
+                                    "url": "https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for NLP."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5930126401913073146,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Initially introduced for machine translation, "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Transformers"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " have gradually replaced RNNs in mainstream NLP. The architecture takes a fresh approach to representation learning: Doing away with recurrence entirely, Transformers build features of each word using an "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "attention"
+                                    },
+                                    "url": "https://distill.pub/2016/augmented-rnns/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "mechanism"
+                                    },
+                                    "url": "https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to figure out how important "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "all the other words"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " in the sentence are w.r.t. to the aforementioned word. Knowing this, the word's updated features are simply the sum of linear transformations of the features of all the words, weighted by their importance."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Back in 2017, this idea sounded very radical, because the NLP community was so used to the sequential\u2014one-word-at-a-time\u2014style of processing text with RNNs. The title of the paper probably added fuel to the fire! For a recap, Yannic Kilcher made an excellent "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "video overview"
+                                    },
+                                    "url": "https://www.youtube.com/watch?v=iDulhoQ2pro",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Breaking down the Transformer"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Let's develop intuitions about the architecture by translating the previous paragraph into the language of mathematical symbols and vectors.\nWe update the hidden feature $h$ of the $i$'th word in a sentence $\\mathcal{S}$ from layer $\\ell$ to layer $\\ell+1$ as follows:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "$$\nh_{i}^{\\ell+1} = \\text{Attention} \\left( Q^{\\ell} h_{i}^{\\ell} \\ , K^{\\ell} h_{j}^{\\ell} \\ , V^{\\ell} h_{j}^{\\ell} \\right)\n$$\ni.e., $$\n\\ h_{i}^{\\ell+1} = \\sum_{j \\in \\mathcal{S}} w_{ij} \\left( V^{\\ell} h_{j}^{\\ell} \\right)\n$$"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "$$\n\\text{where} \\ w_{ij} = \\text{softmax}_j \\left ( Q^{\\ell} h^{\\ell}_i \\cdot K^{\\ell} h^{\\ell}_j \\right)\n$$"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "where $j \\in \\mathcal{S}$ denotes the set of words in the sentence and $Q^{\\ell}, K^{\\ell}, V^{\\ell}$ are learnable linear weights (denoting the "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Q"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "uery, "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "K"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "ey and "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "V"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "alue for the attention computation, respectively).\nThe attention mechanism is performed parallelly for each word in the sentence to obtain their updated features in "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "one shot"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u2014another plus point for Transformers over RNNs, which update features word-by-word."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We can understand the attention mechanism better through the following pipeline:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5932822550453268045,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Taking in the features of the word $h_{i}^{\\ell}$ and the set of other words in the sentence $\\{ h_{j}^{\\ell} \\;\\ \\forall j \\in \\mathcal{S} \\}$, we compute the attention weights $w_{ij}$ for each pair $(i,j)$ through the dot-product, followed by a softmax across all $j$ 's. Finally, we produce the updated word feature $h_{i}^{\\ell+1}$ for word $i$ by summing over all $\\{ h_{j}^{\\ell} \\}$ 's weighted by their corresponding $w_{ij}$. Each word in the sentence parallelly undergoes the same pipeline to update its features."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Multi-head Attention"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Getting this straightforward dot-product attention mechanism to work proves to be tricky. Bad random initializations of the learnable weights can de-stabilize the training process.\nWe can overcome this by parallelly performing multiple 'heads' of attention and concatenating the result (with each head now having separate learnable weights):"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "$$\nh_{i}^{\\ell+1} = \\text{Concat} \\left( \\text{head}_1, \\ldots, \\text{head}_K \\right) O^{\\ell},\n$$"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "$$\n\\text{head}_k = \\text{Attention} \\left( Q^{k,\\ell} h_i^{\\ell} \\ , K^{k, \\ell} h_j^{\\ell} \\ , V^{k, \\ell} h_j^{\\ell} \\right),\n$$"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "where $Q^{k,\\ell}, K^{k,\\ell}, V^{k,\\ell}$ are the learnable weights of the $k$'th attention head and $O^{\\ell}$ is a down-projection to match the dimensions of $h_i^{\\ell+1}$ and $h_i^{\\ell}$ across layers."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Multiple heads allow the attention mechanism to essentially 'hedge its bets', looking at different transformations or aspects of the hidden features from the previous layer. We'll talk more about this later."
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Scaling Issues"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "A key issue motivating the final Transformer architecture is that the features for words "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "after"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " the attention mechanism might be at "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "different scales"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "magnitudes"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". This can be due to some words having very sharp or very distributed attention weights $w_{ij}$ when summing over the features of the other words. Additionally, at the individual feature/vector entries level, concatenating across multiple attention heads\u2014each of which might output values at different scales\u2014can lead to the entries of the final vector $h_{i}^{\\ell+1}$ having a wide range of values.\nFollowing conventional ML wisdom, it seems reasonable to add a "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "normalization layer"
+                                    },
+                                    "url": "https://nealjean.com/ml/neural-network-normalization/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " into the pipeline."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Transformers overcome issue (2) with "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "LayerNorm"
+                                        }
+                                    },
+                                    "url": "https://arxiv.org/abs/1607.06450",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", which normalizes and learns an affine transformation at the feature level. Additionally, "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "scaling the dot-product"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " attention by the square-root of the feature dimension helps counteract issue (1)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Finally, the authors propose another 'trick' to control the scale issue: "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "a position-wise 2-layer MLP"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " with a special structure. After the multi-head attention, they project $h_i^{\\ell+1}$ to a (absurdly) higher dimension by a learnable weight, where it undergoes the ReLU non-linearity, and is then projected back to its original dimension followed by another normalization:"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "$$\nh_i^{\\ell+1} = \\text{LN} \\left( \\text{MLP} \\left( \\text{LN} \\left( h_i^{\\ell+1} \\right) \\right) \\right)\n$$"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "To be honest, I'm not sure what the exact intuition behind the over-parameterized feed-forward sub-layer was. I suppose LayerNorm and scaled dot-products didn't completely solve the issues highlighted, so the big MLP is a sort of hack to re-scale the feature vectors independently of each other. According to "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Jannes Muenchmeyer"
+                                    },
+                                    "url": "https://www.gfz-potsdam.de/en/staff/jannes-muenchmeyer/sec24/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", the feed-forward sub-layer ensures that the Transformer is a universal approximator. Thus, projecting to a very high dimensional space, applying a non-linearity, and re-projecting to the original dimension allows the model to represent more functions than maintaining the same dimension across the hidden layer would."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The final picture of a Transformer layer looks like this:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5822314923122863392,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The Transformer architecture is also extremely amenable to very deep networks, enabling the NLP community to "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "scale"
+                                                },
+                                                "url": "https://arxiv.org/abs/1910.10683",
+                                                "webpage_id": 0
+                                            },
+                                            {
+                                                "_": "TextPlain",
+                                                "text": " "
+                                            },
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "up"
+                                                },
+                                                "url": "https://arxiv.org/abs/2001.08361",
+                                                "webpage_id": 0
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " in terms of both model parameters and, by extension, data.\n"
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Residual connections"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " between the inputs and outputs of each multi-head attention sub-layer and the feed-forward sub-layer are key for stacking Transformer layers (but omitted from the diagram for clarity)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "GNNs build representations of graphs"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Let's take a step away from NLP for a moment."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Graph Neural Networks (GNNs) or Graph Convolutional Networks (GCNs) build representations of nodes and edges in graph data. They do so through "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "neighbourhood aggregation"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (or message passing), where each node gathers features from its neighbours to update its representation of the "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "local"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " graph structure around it. Stacking several GNN layers enables the model to propagate each node's features over the entire graph\u2014from its neighbours to the neighbours' neighbours, and so on."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5977883375932910514,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Take the example of this emoji social network: The node features produced by the GNN can be used for predictive tasks such as identifying the most influential members or proposing potential connections."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In their most basic form, GNNs update the hidden features $h$ of node $i$ (for example, \ud83d\ude06) at layer $\\ell$ via a non-linear transformation of the node's own features $h_i^{\\ell}$ added to the aggregation of features $h_j^{\\ell}$ from each neighbouring node $j \\in \\mathcal{N}(i)$:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "$$\nh_{i}^{\\ell+1} = \\sigma \\Big( U^{\\ell} h_{i}^{\\ell} + \\sum_{j \\in \\mathcal{N}(i)} \\left( V^{\\ell} h_{j}^{\\ell} \\right) \\Big),\n$$"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "where $U^{\\ell}, V^{\\ell}$ are learnable weight matrices of the GNN layer and $\\sigma$ is a non-linear function such as ReLU. In the example, $\\mathcal{N}$(\ud83d\ude06) $=$ { \ud83d\ude18, \ud83d\ude0e, \ud83d\ude1c, \ud83e\udd29 }."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The summation over the neighbourhood nodes $j \\in \\mathcal{N}(i)$ can be replaced by other input size-invariant "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "aggregation functions"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " such as simple mean/max or something more powerful, such as a weighted sum via an "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "attention mechanism"
+                                        }
+                                    },
+                                    "url": "https://petar-v.com/GAT/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Does that sound familiar? Maybe a pipeline will help make the connection:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5932377772230028851,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "If we were to do multiple parallel heads of neighbourhood aggregation and replace summation over the neighbours $j$ with the attention mechanism, i.e., a weighted sum, we'd get the "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Graph Attention Network (GAT)"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Add normalization and the feed-forward MLP, and voila, we have a "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Graph Transformer"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Sentences are fully-connected word graphs"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "To make the connection more explicit, consider a sentence as a fully-connected graph, where each word is connected to every other word. Now, we can use a GNN to build features for each node (word) in the graph (sentence), which we can then perform NLP tasks with."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5932700169655135807,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Broadly, this is what Transformers are doing: they are "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "GNNs with multi-head attention"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " as the neighbourhood aggregation function. Whereas standard GNNs aggregate features from their local neighbourhood nodes $j \\in \\mathcal{N}(i)$, Transformers for NLP treat the entire sentence $\\mathcal{S}$ as the local neighbourhood, aggregating features from each word $j \\in \\mathcal{S}$ at each layer."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Importantly, various problem-specific tricks\u2014such as position encodings, causal/masked aggregation, learning rate schedules and extensive pre-training\u2014are essential for the success of Transformers but seldom seem in the GNN community. At the same time, looking at Transformers from a GNN perspective could inspire us to get rid of a lot of the "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "bells and whistles"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " in the architecture."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Lessons"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Are sentences fully connected graphs?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Now that we've established a connection between Transformers and GNNs, let me throw some ideas around. For one, "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "are fully-connected graphs the best input format for NLP?"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Before statistical NLP and ML, linguists like Noam Chomsky focused on developing formal theories of "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "linguistic structure"
+                                    },
+                                    "url": "https://en.wikipedia.org/wiki/Syntactic_Structures",
+                                    "webpage_id": 3384953264161931460
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", such as "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "syntax trees/graphs"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Tree LSTMs"
+                                    },
+                                    "url": "https://arxiv.org/abs/1503.00075",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " already tried this, but maybe Transformers/GNNs are better architectures for bringing together the two worlds of linguistic theory and statistical NLP? For example, a very recent work from MILA and Stanford explores augmenting pre-trained Transformers such as BERT with syntax trees ["
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Sachan et al., 2020"
+                                    },
+                                    "url": "https://arxiv.org/abs/2008.09084",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5932368632539622985,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Source: "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Wikipedia"
+                                        },
+                                        "url": "https://en.wikipedia.org/wiki/Syntactic_Structures#/media/File:Cgisf-tgg.svg",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Long term dependencies"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Another issue with fully-connected graphs is that they make "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "learning very long-term dependencies between words difficult"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". This is simply due to how the number of edges in the graph "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "scales quadratically"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " with the number of nodes, i.e., in an $n$ word sentence, a Transformer/GNN would be doing computations over $n^2$ pairs of words. Things get out of hand for very large $n$."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The NLP community's perspective on the long sequences and dependencies problem is interesting: making the attention mechanism "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "sparse"
+                                    },
+                                    "url": "https://openai.com/blog/sparse-transformer/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "adaptive"
+                                    },
+                                    "url": "https://ai.facebook.com/blog/making-transformer-networks-simpler-and-more-efficient/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " in terms of input size, adding "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "recurrence"
+                                    },
+                                    "url": "https://ai.googleblog.com/2019/01/transformer-xl-unleashing-potential-of.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "compression"
+                                    },
+                                    "url": "https://deepmind.com/blog/article/A_new_model_and_dataset_for_long-range_memory",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " into each layer, and using "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Locality Sensitive Hashing"
+                                    },
+                                    "url": "https://www.pragmatic.ml/reformer-deep-dive/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for efficient attention are all promising new ideas for better transformers. See Maddison May's "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "excellent survey"
+                                    },
+                                    "url": "https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " on long-term context in Transformers for more details."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "It would be interesting to see ideas from the GNN community thrown into the mix, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "e.g."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Binary Partitioning"
+                                    },
+                                    "url": "https://arxiv.org/abs/1911.04070",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for sentence "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "graph sparsification"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " seems like another exciting approach. BP-Transformers recursively sub-divide sentences into two until they can construct a hierarchical binary tree from the sentence tokens. This structural inductive bias helps the model process longer text sequences in a memory-efficient manner."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5932878101560274565,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Source: "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Ye et al., 2019"
+                                        },
+                                        "url": "https://arxiv.org/abs/1911.04070",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Are Transformers learning neural syntax?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "There have been "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "several"
+                                    },
+                                    "url": "https://pair-code.github.io/interpretability/bert-tree/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "interesting"
+                                    },
+                                    "url": "https://arxiv.org/abs/1905.05950",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "papers"
+                                    },
+                                    "url": "https://arxiv.org/abs/1906.04341",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " from the NLP community on what Transformers might be learning. The basic premise is that performing attention on all word pairs in a sentence\u2014with the purpose of identifying which pairs are the most interesting\u2014enables Transformers to learn something like a "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "task-specific syntax"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Different heads in the multi-head attention might also be 'looking' at different syntactic properties."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In graph terms, by using GNNs on full graphs, can we "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "recover the most important edges"
+                                    },
+                                    "url": "https://arxiv.org/abs/2002.04999",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u2014and what they might entail\u2014from how the GNN performs neighborhood aggregation at each layer? I'm "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "not so convinced"
+                                    },
+                                    "url": "https://arxiv.org/abs/1909.07913",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " by this view yet."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5932527902811860432,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Source: "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Clark et al., 2019"
+                                        },
+                                        "url": "https://arxiv.org/abs/1906.04341",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Why multiple heads of attention? Why attention?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "I'm more sympathetic to the optimization view of the multi-head mechanism\u2014having multiple attention heads "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "improves learning"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and overcomes "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "bad random initializations"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". For instance, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "these"
+                                    },
+                                    "url": "https://lena-voita.github.io/posts/acl19_heads.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "papers"
+                                    },
+                                    "url": "https://arxiv.org/abs/1905.10650",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " showed that Transformer heads can be 'pruned' or removed "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "after"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " training without significant performance impact."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Multi-head neighbourhood aggregation mechanisms have also proven effective in GNNs, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "e.g."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", GAT uses the same multi-head attention, and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "MoNet"
+                                    },
+                                    "url": "https://arxiv.org/abs/1611.08402",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " uses multiple "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Gaussian kernels"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for aggregating features. Although invented to stabilize attention mechanisms, could the multi-head trick become standard for squeezing out extra model performance?"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Conversely, GNNs with simpler aggregation functions such as sum or max do not require multiple aggregation heads for stable training. Wouldn't it be nice for Transformers if we didn't have to compute pair-wise compatibilities between each word pair in the sentence?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Could Transformers benefit from ditching attention, altogether? Yann Dauphin and collaborators' "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "recent"
+                                    },
+                                    "url": "https://arxiv.org/abs/1705.03122",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "work"
+                                    },
+                                    "url": "https://arxiv.org/abs/1901.10430",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " suggests an alternative "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "ConvNet architecture"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Transformers, too, might ultimately be doing "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "something"
+                                    },
+                                    "url": "http://jbcordonnier.com/posts/attention-cnn/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "similar"
+                                    },
+                                    "url": "https://twitter.com/ChrSzegedy/status/1232148457810538496",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to ConvNets!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5930285285638254091,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "Source: "
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Wu et al., 2019"
+                                        },
+                                        "url": "https://arxiv.org/abs/1901.10430",
+                                        "webpage_id": 0
+                                    }
+                                ]
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Why is training Transformers so hard?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Reading new Transformer papers makes me feel that training these models requires something akin to "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "black magic"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " when determining the best "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "learning rate schedule, warmup strategy"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "decay settings"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". This could simply be because the models are so huge and the NLP tasks studied are so challenging."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "But "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "recent"
+                                    },
+                                    "url": "https://arxiv.org/abs/1906.01787",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "results"
+                                    },
+                                    "url": "https://arxiv.org/abs/1910.06764",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "suggest"
+                                    },
+                                    "url": "https://arxiv.org/abs/2002.04745",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " that it could also be due to the specific permutation of normalization and residual connections within the architecture."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockEmbed",
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "full_width": false,
+                        "allow_scrolling": false,
+                        "url": null,
+                        "html": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" /><meta name=\"MobileOptimized\" content=\"320\" /><meta name=\"twitter:widgets:csp\" content=\"on\"><script src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script><style>body{margin:0;padding:0;}#tweet{overflow:hidden}.twitter-tweet{margin:0!important}</style></head><body><div id=\"tweet\"></div><script>twttr&&twttr.widgets&&twttr.widgets.createTweet(\"1229335421806501888\",document.getElementById(\"tweet\"));var lastHeight = null, isIframe = false;\ntry { isIframe = (window.parent != null && window != window.parent); }catch(e){}\nfunction postEvent(eventType, eventData) {\n  try {\n    if (typeof window.TelegramWebviewProxy !== 'undefined') {\n      TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));\n    } else if (window.external && 'notify' in window.external) {\n      window.external.notify(JSON.stringify({eventType: eventType, eventData: eventData}));\n    } else if (isIframe) {\n      window.parent.postMessage(JSON.stringify({eventType: eventType, eventData: eventData}), '*');\n    }\n  } catch(e) {}\n}\nfunction checkFrameSize() {\n  var height, style;\n  if (window.getComputedStyle) {\n    style = window.getComputedStyle(document.body);\n    height = style.height;\n    if (height.substr(-2) == 'px') {\n      height = height.slice(0, -2);\n    }\n  } else {\n    height = document.body.offsetHeight;\n  }\n  height = Math.ceil(height);\n  if (height != lastHeight) {\n    lastHeight = height;\n    postEvent('resize_frame', {height: height});\n  }\n  requestAnimationFrame(checkFrameSize);\n}\nwindow.addEventListener('resize', checkFrameSize, false);\ncheckFrameSize();</script></body></html>",
+                        "poster_photo_id": null,
+                        "w": null,
+                        "h": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "I know I'm ranting, but this makes me skeptical: Do we really need multiple heads of expensive pair-wise attention, overparameterized MLP sub-layers, and complicated learning schedules? Do we really need massive models with "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "massive carbon footprints"
+                                    },
+                                    "url": "https://www.technologyreview.com/s/613630/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "? Shouldn't architectures with good "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "inductive biases"
+                                    },
+                                    "url": "https://arxiv.org/abs/1806.01261",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " for the task at hand be easier to train?"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Further Reading"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "To dive deep into the Transformer architecture from an NLP perspective, check out these amazing blog posts: "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The Illustrated Transformer"
+                                    },
+                                    "url": "https://jalammar.github.io/illustrated-transformer/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The Annotated Transformer"
+                                    },
+                                    "url": "http://nlp.seas.harvard.edu/2018/04/03/attention.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Also, this blog isn't the first to link GNNs and Transformers. Here's "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "an excellent talk"
+                                    },
+                                    "url": "https://ipam.wistia.com/medias/1zgl4lq6nh",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " by Arthur Szlam on the history and connection between Attention/Memory Networks, GNNs and Transformers. Similarly, DeepMind's "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "star-studded position paper"
+                                    },
+                                    "url": "https://arxiv.org/abs/1806.01261",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " introduces the "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Graph Networks"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " framework, unifying all these ideas. For a code walkthrough, the DGL team has "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "a nice tutorial"
+                                    },
+                                    "url": "https://docs.dgl.ai/en/latest/tutorials/models/4_old_wines/7_transformer.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " on seq2seq as a graph problem and building Transformers as GNNs."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockSubheader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Final Notes"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The post initially appeared on the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "NTU Graph Deep Learning lab website"
+                                    },
+                                    "url": "https://graphdeeplearning.github.io/post/transformers-are-gnns/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Medium"
+                                    },
+                                    "url": "https://medium.com/@chaitjo/transformers-are-graph-neural-networks-bca9f75412aa?source=friends_link&sk=c54de873b2cec3db70166a6cf0b41d3e",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", and has also been translated to "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Chinese"
+                                    },
+                                    "url": "https://mp.weixin.qq.com/s/DABEcNf1hHahlZFMttiT2g",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Russian"
+                                    },
+                                    "url": "https://habr.com/ru/post/491576/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Do join the discussion on "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Twitter"
+                                    },
+                                    "url": "https://twitter.com/chaitjo/status/1233220586358181888?s=20",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Reddit"
+                                    },
+                                    "url": "https://www.reddit.com/r/MachineLearning/comments/fb86mo/d_transformers_are_graph_neural_networks_blog/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "HackerNews"
+                                    },
+                                    "url": "https://news.ycombinator.com/item?id=22518263",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockEmbed",
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "full_width": false,
+                        "allow_scrolling": false,
+                        "url": null,
+                        "html": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" /><meta name=\"MobileOptimized\" content=\"320\" /><meta name=\"twitter:widgets:csp\" content=\"on\"><script src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script><style>body{margin:0;padding:0;}#tweet{overflow:hidden}.twitter-tweet{margin:0!important}</style></head><body><div id=\"tweet\"></div><script>twttr&&twttr.widgets&&twttr.widgets.createTweet(\"1233783593626951681\",document.getElementById(\"tweet\"));var lastHeight = null, isIframe = false;\ntry { isIframe = (window.parent != null && window != window.parent); }catch(e){}\nfunction postEvent(eventType, eventData) {\n  try {\n    if (typeof window.TelegramWebviewProxy !== 'undefined') {\n      TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));\n    } else if (window.external && 'notify' in window.external) {\n      window.external.notify(JSON.stringify({eventType: eventType, eventData: eventData}));\n    } else if (isIframe) {\n      window.parent.postMessage(JSON.stringify({eventType: eventType, eventData: eventData}), '*');\n    }\n  } catch(e) {}\n}\nfunction checkFrameSize() {\n  var height, style;\n  if (window.getComputedStyle) {\n    style = window.getComputedStyle(document.body);\n    height = style.height;\n    if (height.substr(-2) == 'px') {\n      height = height.slice(0, -2);\n    }\n  } else {\n    height = document.body.offsetHeight;\n  }\n  height = Math.ceil(height);\n  if (height != lastHeight) {\n    lastHeight = height;\n    postEvent('resize_frame', {height: height});\n  }\n  requestAnimationFrame(checkFrameSize);\n}\nwindow.addEventListener('resize', checkFrameSize, false);\ncheckFrameSize();</script></body></html>",
+                        "poster_photo_id": null,
+                        "w": null,
+                        "h": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextBold",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Author Bio"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Chaitanya K. Joshi"
+                                    },
+                                    "url": "https://chaitjo.github.io/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " is a Research Engineer at A*STAR, Singapore, working on Graph Neural Networks and their applications to accelerating scientific discovery. He obtained a BEng in Computer Science from NTU, Singapore in 2019 and was previously a Research Assistant under Dr. Xavier Bresson. His work has been presented at top Machine Learning venues, including NeurIPS, ICLR and INFORMS."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Citation"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\n"
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "For attribution in academic contexts or books, please cite this work as"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Chaitanya K. Joshi, \"Transformers are Graph Neural Networks\", The Gradient, 2020."
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "BibTeX citation:"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "@article{joshi2020transformers,\nauthor = {Joshi, Chaitanya},\ntitle = {Transformers are Graph Neural Networks},\njournal = {The Gradient},\nyear = {2020},\nhowpublished = {\\url{"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "https://thegradient.pub/transformers-are-gaph-neural-networks/"
+                                        },
+                                        "url": "https://thegradient.pub/transformers-are-gaph-neural-networks/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": " } },\n}"
+                                    }
+                                ]
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "If you enjoyed this piece and want to hear more, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "subscribe"
+                                    },
+                                    "url": "https://thegradient.pub/subscribe/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to the Gradient and follow us on "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Twitter"
+                                    },
+                                    "url": "https://twitter.com/gradientpub",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5930126401913073146,
+                        "access_hash": 6501323677930795114,
+                        "file_reference": "b'\\x00b\\xe2)C\\xea\\xb8Z\\x12\\x8e\\xe2\\x04\\xd1\\xf0\\xe14\\xd2d\\x1d\\xf4#'",
+                        "date": "2022-07-09 17:32:25+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x10(\\xd7\\x03\\x19\\xe4\\x9a;S@\\xda['9\\xa5\\xe3\\x8c\\x10>\\x94\\x00\\xecd\\xf54\\x98\\xc0<\\xe7\\xebF\\t$\\xe7\\x02\\x85R3\\xf3\\x13@\\n\\xbd?\\xfa\\xf9\\xa2\\x8c\\x1f\\xef\\x1a(\\x03\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 123,
+                                "size": 10909
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 307,
+                                "size": 36974
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 492,
+                                "size": 69124
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "w",
+                                "w": 2000,
+                                "h": 768,
+                                "size": 105191
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5932822550453268045,
+                        "access_hash": -8989993381953434928,
+                        "file_reference": "b'\\x00b\\xe2)C\\xda}\\x88\\xe4\\xaa\\xa2\\x05?\\xbb\\xbfh\\xe2\\x96)\\xfb*'",
+                        "date": "2022-07-09 17:32:25+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01(\\x1d\\xd9\\xa4c\\xc7\\xe3J:\\n2\\x07S@\\t\\xb8z\\x8aZkr\\xb9\\x14\\x00q@\\x0e\\x1d\\x05E\"\\xab\\x11\\xb9A\\xfa\\xd4\\xa3\\xa0\\xa6 =H\\xe6\\x80\\r\\xaaS\\xa0\\xa7\\x1fjg#p\\x03\\x03\\x1d\\xa9\\xdc\\xed\\x19\\xeb@\\x06\\xdeE;\\x14Q@\\x08\\xc3#\\xd6\\x8e\\xbe\\xb4Q@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 236,
+                                "h": 320,
+                                "size": 9090
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 590,
+                                "h": 800,
+                                "size": 28978
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 944,
+                                "h": 1280,
+                                "size": 51827
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1889,
+                                "h": 2560,
+                                "sizes": [
+                                    23530,
+                                    44150,
+                                    77127,
+                                    97675,
+                                    142001
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5822314923122863392,
+                        "access_hash": 5641148536124533107,
+                        "file_reference": "b'\\x00b\\xe2)Ce\\x07\\xd5+\\x0f\\x8d\\xe4\\x85\\xb6\\xd9\\xf6\\xe6\\xfc\\xb1Iu'",
+                        "date": "2021-11-21 01:28:21+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01(\\x17\\xd9\\xa6\\x86\\x1b\\xc8\\xe6\\x9c:T`~\\xf4\\xfa}h\\x02CE\\x07\\xa5\\x14\\x00\\xd5\\x1cs\\xfc\\xe92\\x9b\\xb1\\x91\\xbb\\xebN\\x07\\n\\t\\xf4\\xa6g\\xf8\\xfbP\\x00I\\xc1\\xe7\\xa7\\xbd\\x14\\xa4\\x82\\xad\\x8a(\\x01pzg\\x8f\\xa5\\x1b~]\\xb9\\xe2\\x8a(\\x016\\xf5\\xe7\\xf4\\xa2\\x8a(\\x03'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 184,
+                                "h": 320,
+                                "size": 9360
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 461,
+                                "h": 800,
+                                "size": 32824
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 737,
+                                "h": 1280,
+                                "size": 59158
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1474,
+                                "h": 2560,
+                                "sizes": [
+                                    21216,
+                                    44420,
+                                    83647,
+                                    105388,
+                                    148235
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5977883375932910514,
+                        "access_hash": 8949021836633711023,
+                        "file_reference": "b'\\x00b\\xe2)Cm\\x13\\x16\\x93\\x1aw\\xb6\\xc3\\xe93\\xf4\\xae\\x1e\\xf3\\xa2\\x89'",
+                        "date": "2020-09-14 02:08:29+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x11(\\xd7\\x18\\xdc@<\\x9eh\\x1b\\xb1\\xce?\\n\\t\\xf9r\\x14\\x93H\\x02\\x86\\xf4&\\x90\\n\\x0e8\\xe7\\xd6\\x94\\xfb\\x7f*L\\x13\\x90\\xc0b\\x93`\\x00\\x01\\xc50\\x14\\x13\\x9e\\x7f\\x95\\x14\\x81A\\xe0\\xff\\x00*)\\x00\\xfak}\\xf5\\xfch\\xa2\\x86\\x03\\xa8\\xa2\\x8a`\\x14QE\\x00\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 134,
+                                "size": 9936
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 334,
+                                "size": 33656
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 534,
+                                "size": 62845
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "w",
+                                "w": 2000,
+                                "h": 835,
+                                "size": 92812
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5932377772230028851,
+                        "access_hash": 8199051592900069029,
+                        "file_reference": "b'\\x00b\\xe2)C\\xc6\\xa3^WU\\xc09\\xd3+\\xd31\\xce\\xe1v*\\x0c'",
+                        "date": "2022-07-09 17:32:25+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01(\\x1c\\xd9\\xcd!=>\\xb4\\xa3\\xa0\\xa8\\xdcd\\xd0\\x04\\x94\\x99\\x14/N)\\x1b\\xad\\x00.p\\xa2\\x9a\\xca[\\xa6G\\xf8\\xd0\\xc7\\n?\\n}\\x0000\\x1c`\\xd2\\xb7Zi\\x03x\\xe3\\xb6)\\xcd\\xd6\\x80\\x06\\x00\\x8cc<\\x8au\\x14P\\x03\\x7f\\x886\\xd3\\x9cR\\xe34Q@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 226,
+                                "h": 320,
+                                "size": 7960
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 566,
+                                "h": 800,
+                                "size": 24720
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 905,
+                                "h": 1280,
+                                "size": 44922
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1811,
+                                "h": 2560,
+                                "sizes": [
+                                    21795,
+                                    38492,
+                                    65279,
+                                    81484,
+                                    120364
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5932700169655135807,
+                        "access_hash": -259853833636954912,
+                        "file_reference": "b'\\x00b\\xe2)C\\xda\\xd1\\x0b\\x1cz~q\\x94\\xa5\\x89k5\\xe0\\xab[\\xc0'",
+                        "date": "2022-07-09 17:32:25+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x10(\\xd7\\xdd\\x93\\x80\\x0f\\xe5H\\xbf.NO\\xe3J\\xdf\\xce\\x8e\\x984\\x00\\xa0\\xe6\\x94\\x9c\\nLd`\\xd2\\x04\\n0\\xbcP\\x02\\x83\\x91\\xdb\\xf0\\xa2\\x81\\x9fO\\xd6\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 132,
+                                "size": 8035
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 331,
+                                "size": 27206
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 529,
+                                "size": 50984
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "w",
+                                "w": 2000,
+                                "h": 827,
+                                "size": 78604
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5932368632539622985,
+                        "access_hash": 4379904142919847014,
+                        "file_reference": "b'\\x00b\\xe2)C\\x11\\xf8\\x17I\\x9a\\xae\\x9f\\xcf\\xbc\\xe3\\xce\\x9e\\x10\\xed\\xb5\\xf4'",
+                        "date": "2022-07-09 17:32:27+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x16(\\xd9\\xa6\\x96%\\x8a\\x808\\xf5\\xa5'\\x1d:\\xd2`\\x01\\xd3&\\x80\\x0c7\\\\\\xe4\\xfat\\x14\\xa0\\xe6\\x912\\x06\\xd69>\\xb4\\x8c\\t?/\\x04w\\xa0\\x07\\xd1H\\xa7#4P\\x03N\\xe2\\xdd\\x07\\x1c\\x8eh\\xcb\\xe7\\x1bW\\xf3\\xff\\x00\\xebQE\\x00\\x1f6\\xec\\xe1\\x7f:E/\\xf3p3\\xd7\\xad\\x14P\\x02\\xa0a\\xc6\\x17\\x199\\xe6\\x8a(\\xa0\\x0f\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 177,
+                                "size": 10110
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 400,
+                                "h": 221,
+                                "sizes": [
+                                    975,
+                                    2325,
+                                    6410,
+                                    8716,
+                                    12053
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5932878101560274565,
+                        "access_hash": 1796375235209691730,
+                        "file_reference": "b'\\x00b\\xe2)C\\xa76\\xac\\xf4\\xf8\\xc6s\\xf5\\xb1Q\\xeev\\xa8\\x15($'",
+                        "date": "2022-07-09 17:32:27+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x14(\\xd8-\\x8e\\xb4\\x9b\\xc7\\xbf\\xe5N\\xa6p\\x1b\\xa7\\x1e\\xb4\\x00\\xed\\xd9\\x1c\\ni'\\xde\\x97w\\xcd\\xedF\\x14\\xf29\\xa0\\x01X\\x9e\\xa0\\xfeX\\xa2\\x95zQ@\\x0b\\x8a0\\x0fj(\\xa0\\x04\\xc0\\xc8\\xa3\\x03#\\x81E\\x14\\x00\\x00\\x07AE\\x14P\\x07\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 162,
+                                "size": 11619
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 406,
+                                "size": 41847
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 649,
+                                "size": 79164
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1437,
+                                "h": 729,
+                                "sizes": [
+                                    7637,
+                                    19128,
+                                    42857,
+                                    58227,
+                                    86369
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5932527902811860432,
+                        "access_hash": 3343606351731295267,
+                        "file_reference": "b'\\x00b\\xe2)C\\x08\\x1c*\\x1f\\x8a\\xe9\\x85\\xb5\\xa6=c\\x8cQ\\xb8\\xd2~'",
+                        "date": "2022-07-09 17:32:27+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x15(\\xd7a\\xb8\\xe3s\\x0cz\\x1a\\x07\\xdd\\xea~\\xb4\\x8d\\x9c\\xf5\\xa5\\x00\\xe3\\xad\\x007\\x1c\\xee\\xdc\\xdf\\x9d9\\xbe\\xefS\\xf5\\xa4\\xed\\x8c\\xfe4\\xac\\x0e:\\xd0\\x00\\xa3o\\x19c\\xf54R&N\\x0eh\\xa0\\x07c\\x93@\\xe8h\\xa2\\x80\\x13o\\x1diO8\\xa2\\x8a\\x00@0\\xc7\\x9a(\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 168,
+                                "size": 16068
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 420,
+                                "size": 67573
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 672,
+                                "size": 129391
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1292,
+                                "h": 678,
+                                "sizes": [
+                                    8372,
+                                    24019,
+                                    61618,
+                                    85643,
+                                    128031
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5930285285638254091,
+                        "access_hash": -1059652278276869316,
+                        "file_reference": "b'\\x00b\\xe2)C\\x92\\x19\\x10\\x93\\x89\\x19\\x001\\xcfE\\x12\\xdb\\xba\\xd8\\xb3a'",
+                        "date": "2022-07-09 17:32:27+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x08(\\xd6*Cg'\\x1fZhRA\\x01\\x8d\\x14Q`\\x1e\\x17\\xe5\\xc1\\xa6\\x9e\\x14\\xaey\\xa2\\x8a@(\\x19*Gj(\\xa2\\x98\\x1f\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 64,
+                                "size": 6838
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 161,
+                                "size": 25406
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 257,
+                                "size": 48208
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1679,
+                                "h": 337,
+                                "sizes": [
+                                    5435,
+                                    15008,
+                                    36324,
+                                    47756,
+                                    66990
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": true,
+                "views": null
+            },
             "attributes": []
         }
     },

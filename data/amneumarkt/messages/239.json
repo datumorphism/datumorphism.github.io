@@ -28,11 +28,54 @@
             "url": "https://copilot.github.com/",
             "display_url": "github.com/features/copilot",
             "hash": 0,
-            "type": "article",
+            "type": "photo",
             "site_name": "GitHub",
             "title": "GitHub Copilot \u00b7 Your AI pair programmer",
             "description": "GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you.",
-            "photo": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5898594972523933247,
+                "access_hash": 1906902588779604469,
+                "file_reference": "b'\\x00b\\xe2)A\\xda\\x14$(\\xcb\\xa4\\x87#j)$?\\xb5\\xaev\\xc8'",
+                "date": "2022-06-28 15:58:43+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xcd\\xa2\\x95\\x1bc\\x86\\xc6qR\\t\\x80\\xcf\\xee\\xd4\\xd5\\x01\\x15\\x14\\xf3\"\\xe3\\xfdZ\\xd1\\xbd\\x7f\\xb8\\r\\x002\\x8a\\t\\xc9\\xe9\\x8a(\\x01(\\xa2\\x8a@\\x14QE\\x00\\x14QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 6659
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 23600
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "sizes": [
+                            5422,
+                            10533,
+                            15696,
+                            22438,
+                            38001
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -57,12 +100,12 @@
             "length": 27
         }
     ],
-    "views": 188,
+    "views": 190,
     "forwards": 2,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1750,
+        "replies_pts": 1822,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

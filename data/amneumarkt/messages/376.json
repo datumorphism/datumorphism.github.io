@@ -1,0 +1,82 @@
+{
+    "_": "Message",
+    "id": 376,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-12 19:02:47+00:00",
+    "message": "",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5364280137295706808,
+            "access_hash": 248820017955251951,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01xb\\xe2)@\\xa4M0P\\x0bUP\\xe8\\xe0\\xa8%+\\xd5=\\xb2\\xe1'",
+            "date": "2022-07-12 19:02:45+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01( \\xcc\\xd8\\xd9\\xc6\\xd3\\x9fLS\\xc2\\x95?\\xea\\xdb>\\xe2\\xb7-\\xd0\\x1728\\xea\\x00\\x19\\xf4\\xc5\\'\\xca\\xea\\xc0\\x81\\xf7\\x8f9\\xfb\\xa7\\x02\\x9d\\xc0\\xc4ds\\xd6&\\x1f\\x86)\\x16\\x17~\\x80\\x81\\xeaG\\x15\\xbeX\\x97Uns\\xfe\\x06\\x99\\x19\\x93\\xca\\xdb\\x800[<\\xf5\\x1c\\xff\\x00\\xf5\\xa8b\\x08K\\xb4\\xa57\\xfc\\xaa\\x01\\xc6\\x07\\xa5G$\\x1f#\\xba\\xe00c\\xbb\\xdcb\\x88d\\x90\\xc8\\x10F\\xa5\\x88\\x199\\xe3\\x14\\xe7\\x9d\\x906\\x139|d\\x1e\\x87\\x02\\x92\\x18\\x0c\\xecW\\xc9\\xdd\\xb4\\x90\\xd8\\xff\\x00d\\xf6\\xa7\\xa9\\x02\\x1d\\xa7\\x06P9\\xe3\\x07\\x9a\\x8ec$f009\\xees\\xda\\xa6\\x92fRc1\\xfc\\xc4\\x1eA\\xa3\\xd4\\x95\\xd8\\x86)\\x10 x\\xde=\\xe4\\x00w55\\xae\"Y\\x0cr\\xedm\\xcd\\xbb*x\\x1c\\n(\\xa7a\\xdc\\x94\\xcb\\x14\\x8e\\xa4\\xc8\\xb8\\r\\xc6O\\xb5:w\\x8c\\xae\\xf1*\\xef\\x03\\xfb\\xc3\\xa5\\x14P\\x07'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 261,
+                    "h": 320,
+                    "size": 30101
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 653,
+                    "h": 800,
+                    "size": 109264
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 760,
+                    "h": 931,
+                    "sizes": [
+                        12738,
+                        37662,
+                        61797,
+                        84379,
+                        131597
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 103,
+    "forwards": 0,
+    "replies": null,
+    "edit_date": "2022-07-12 19:02:50+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": 13261220537117858,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

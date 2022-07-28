@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 379,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-15 06:09:35+00:00",
+    "message": "#ml\n\nThe recommended readings serve as a good curriculum for transformers.\n\nhttps://web.stanford.edu/class/cs25/index.html#course",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7047711652652790664,
+            "url": "https://web.stanford.edu/class/cs25/index.html",
+            "display_url": "web.stanford.edu/class/cs25/index.html",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Stanford CS25",
+            "title": "CS25: Tranformers United!",
+            "description": "Disussing latest breakthroughs with Transformers in diverse domains",
+            "photo": {
+                "_": "Photo",
+                "id": 5889635206888008898,
+                "access_hash": -6292279224548060209,
+                "file_reference": "b'\\x00b\\xe2)@\\xf2_\\x88\\xbc\\xec\\xb9/\\xa4\\xb8n\\x91e\\xab\\xe0, '",
+                "date": "2021-09-06 22:13:18+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x19(\\xb1r\\xf2\\xd9\\xddy\\xe5\\x8b@\\xe7\\x0c=*\\xf4r\\xc7*\\x07F\\x0c\\xbe\\xa2\\x9bs\\x08\\x9e\\x06\\x88\\x9cn\\xef\\x8c\\xd64\\xbee\\x95\\xcb\\xc7\\x13\\x94L\\x8c\\x13@\\x1a\\x97w_g\\xdb\\xb4\\x06=\\xc5\\ry\\n\\xa0m\\xf9\\xe9\\xd2\\xa8\\x00\\xc5L\\xa1\\x8b\\x13\\xe81\\x9a\\x85P\\x18\\x9a_\\xe1,\\x06=\\xfb\\xd0RK\\xa9\\xbc\\x08`\\x08\\xe8h\\xaa\\xbak\\xb3\\xd9\\xa9a\\xc8$QA%\\xba\\xadyk\\x1c\\xf1\\xb1`\\x03\\x81\\xc3w\\xab4\\xd7\\xfb\\x86\\x80\\xbd\\x8c\\xc5w\\x12y(\\x80q\\x92@\\xe9N0l\\xb5\\x91c\\x0e_vq\\xd7\\xb5I\\x17\\xfc~\\xcd\\xfe\\xe7\\xf8T\\xb6\\xff\\x00\\xf1\\xf2\\xff\\x00\\xee\\xff\\x00Zb\\r:'\\x8a\\xd8\\t8$\\xe7n:QV\\xa8\\xa4;\\x9f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 198,
+                        "size": 20023
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 350,
+                        "h": 217,
+                        "sizes": [
+                            1483,
+                            4323,
+                            9610,
+                            14871,
+                            20946
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 76,
+            "length": 53
+        }
+    ],
+    "views": 135,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-15 06:09:44+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

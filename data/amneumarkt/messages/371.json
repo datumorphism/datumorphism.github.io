@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 371,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-06 19:13:09+00:00",
+    "message": "#fun\n\n\ud83d\ude02\ud83d\ude02\ud83d\ude02\n\n[P] No, we don't have to choose batch sizes as powers of 2: MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/vs1wox/p_no_we_dont_have_to_choose_batch_sizes_as_powers/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547164370449925,
+            "url": "https://www.reddit.com/r/MachineLearning/comments/vs1wox/p_no_we_dont_have_to_choose_batch_sizes_as_powers/",
+            "display_url": "reddit.com/r/MachineLearning/comments/vs1wox/p_no_we_dont_have_to_choose_batch_sizes_as_powers",
+            "hash": 0,
+            "type": "article",
+            "site_name": "reddit",
+            "title": "[P] No, we don't have to choose batch sizes as powers of 2",
+            "description": "Prompted by a recent discussion on social media, I did some benchmarks and wrote down my thoughts on why it doesn't really make a difference...",
+            "photo": {
+                "_": "Photo",
+                "id": 5919253464569982534,
+                "access_hash": -4564044828343959029,
+                "file_reference": "b'\\x00b\\xe2)@e\\xf4o\\x0e\\x10\\xca;\\xab;\\xa2\\xfa\\x02f\\xe5\\x03\\xb4'",
+                "date": "2022-07-05 16:33:35+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xa5q\\xc5\\xd4\\xbc\\xe3\\xe7?\\xce\\x9b\\xf3\\x9f\\\\})\\xd7#7R\\xf2\\x07\\xce\\x7f\\x9d3\\xa7\\xf1/\\xe5@\\x06\\xd6\\xc6q\\x9c\\xfbS)\\xe3\\xfd\\xe5\\xfc\\xbf\\xfa\\xd4\\x84\\x03\\xfck\\xf9P\\x03\\xed\\xbf\\xe3\\xe6/\\xf7\\xc7\\xf3\\xa2\\x8ba\\xfe\\x93\\x0f?\\xc6?\\x9d\\x14\\x00\\xeb\\x91\\xfe\\x93/\\xfb\\xe7\\xf9\\xd4tQ@\\x0684\\x1eh\\xa2\\x80$\\xb6Q\\xf6\\x98\\xbf\\xdf\\x1f\\xce\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 11592
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 600,
+                        "h": 300,
+                        "sizes": [
+                            2606,
+                            5794,
+                            12295,
+                            16192,
+                            22521
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 90,
+            "length": 107
+        }
+    ],
+    "views": 133,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-06 21:20:13+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

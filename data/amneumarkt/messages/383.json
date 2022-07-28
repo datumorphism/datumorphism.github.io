@@ -1,0 +1,135 @@
+{
+    "_": "Message",
+    "id": 383,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-27 22:26:49+00:00",
+    "message": "#ml\n\nFotios Petropoulos initiated the forecasting encyclopaedia project. They published this paper recently.\n\nPetropoulos, Fotios, Daniele Apiletti, Vassilios Assimakopoulos, Mohamed Zied Babai, Devon K. Barrow, Souhaib Ben Taieb, Christoph Bergmeir, et al. 2022. \u201cForecasting: Theory and Practice.\u201d International Journal of Forecasting 38 (3): 705\u2013871.\n\nhttps://www.sciencedirect.com/science/article/pii/S0169207021001758\n\nAlso available here: https://forecasting-encyclopedia.com/\n\nThe paper covers many recent advances in forecasting, including deep learning models. There are some important topics missing but I\u2019m sure they will cover them in future releases.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5138479146933585038,
+            "url": "https://forecasting-encyclopedia.com/",
+            "display_url": "forecasting-encyclopedia.com",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Forecasting-Encyclopedia",
+            "title": "Forecasting: theory\u00a0and\u00a0practice",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5982352989484068480,
+                "access_hash": -2667578182212879196,
+                "file_reference": "b'\\x00b\\xe2)@\\x96x\\xd0\\xf5h\\x8b\\x03+W<\\xcf\\xcaZ]\\x16N'",
+                "date": "2022-07-26 09:51:25+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01(\\x1d\\xd6/\\x86 \\xe3\\xf3\\xa6y\\xdc\\xf6\\xa1\\xc9\\x12\\x1f\\x98\\x8a@\\xcc?\\x8c\\xd0\\x03\\xc4\\xb9\\xf4\\xfc\\xe8\\x85\\xd9\\xd4\\x96\\xc7Z#bx'5%\\x00@\\xff\\x00\\xeb\\x0f\\xcb\\x9an\\x7f\\xd9\\xa7\\xbf\\xfa\\xc3@)\\xe8M\\x00,]\\xfeZ\\x96\\x9a\\xb8\\xed\\xfc\\xe9\\xd4\\x00\\xc2\\xb9l\\xed\\x06\\x94\\x03\\xe8\\x05\\x14P\\x03\\xb9\\xa2\\x8a(\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 234,
+                        "h": 320,
+                        "size": 23165
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 586,
+                        "h": 800,
+                        "size": 128025
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 938,
+                        "h": 1280,
+                        "size": 276093
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1876,
+                        "h": 2560,
+                        "sizes": [
+                            42620,
+                            130430,
+                            345357,
+                            483448,
+                            689717
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 355,
+            "length": 67
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 445,
+            "length": 37
+        }
+    ],
+    "views": 25,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1822,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-28 06:12:27+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

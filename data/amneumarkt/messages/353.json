@@ -27,7 +27,7 @@
             "id": 3384953263262161987,
             "url": "https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics",
             "display_url": "en.m.wikipedia.org/wiki/How_to_Lie_with_Statistics",
-            "hash": -453718040,
+            "hash": -131354438,
             "type": "article",
             "site_name": "Wikipedia",
             "title": "How to Lie with Statistics",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 6015850968433928321,
                 "access_hash": 3836289751632448125,
-                "file_reference": "b'\\x00b\\xba\\xfea\\xd1\\x13\\x95\\x95\\x8cB\\x1f\\x8d\\xd7In\\xe45\\xa9]\\x84'",
+                "file_reference": "b'\\x00b\\xe2)@\\x1b\\xa9\\x0c\\xf0m\\xb1\\x03\\xd0\\xcb\\xf3\\x8e+\\x05\\xe3\\xb0f'",
                 "date": "2018-11-16 20:04:14+00:00",
                 "sizes": [
                     {
@@ -685,6 +685,59 @@
                         "open": false
                     },
                     {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Wikiquote has quotations related to "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextBold",
+                                                "text": {
+                                                    "_": "TextUrl",
+                                                    "text": {
+                                                        "_": "TextPlain",
+                                                        "text": "How to Lie with Statistics"
+                                                    },
+                                                    "url": "https://en.wikiquote.org/wiki/Special:Search/How_to_Lie_with_Statistics",
+                                                    "webpage_id": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "External links"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "External_links"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
                         "_": "PageBlockParagraph",
                         "text": {
                             "_": "TextConcat",
@@ -773,7 +826,7 @@
                         "_": "Photo",
                         "id": 5880776364393606111,
                         "access_hash": 5928265355509545864,
-                        "file_reference": "b'\\x00b\\xba\\xfea\\xb74\\x93a\\xb1\\x8fA\\x9bE\\xe9\\x98\\x08\\xbc\\xc6\"\\xa5'",
+                        "file_reference": "b'\\x00b\\xe2)@i\\x91V\\xdbu\\xb8O\\x87\\x152\\x96\\xa9\\xe4\\xc2\\xb5\\xe6'",
                         "date": "2021-05-29 16:52:24+00:00",
                         "sizes": [
                             {
@@ -817,7 +870,7 @@
                         "_": "Photo",
                         "id": 6033995663366270292,
                         "access_hash": -589023476037806489,
-                        "file_reference": "b'\\x00b\\xba\\xfea\\xef\\x19\\x1b\\xf7\\x0e\\xe8\\xb0\\xa2\\x1b\\x94\\xe5=\\n%_\\xe2'",
+                        "file_reference": "b'\\x00b\\xe2)@\\xc3\\xf8w\\x9d\\xdfW\\xd2e\\x86\\xa1b\\x84\\x95\\xbb\\x91\\x1a'",
                         "date": "2022-01-30 16:38:28+00:00",
                         "sizes": [
                             {
@@ -861,7 +914,7 @@
                         "_": "Photo",
                         "id": 5892178716585471094,
                         "access_hash": -7724925976051569535,
-                        "file_reference": "b'\\x00b\\xba\\xfea\\x8b\\x16$\\x8as\\x94\\x11\\xfe\\xc9\\xb6\\xacA\\xf0\\x0c\\xfbo'",
+                        "file_reference": "b'\\x00b\\xe2)@\\x04\\xf9\\xacB\\xf3\\x0c\\xaaS\\x8a\\xac0yK\\xb38@'",
                         "date": "2021-06-02 21:06:14+00:00",
                         "sizes": [
                             {
@@ -885,7 +938,7 @@
                         "_": "Photo",
                         "id": 6013749350741683242,
                         "access_hash": -2034014130392973961,
-                        "file_reference": "b'\\x00b\\xba\\xfea\\xd5\\xe1\\xefr\\xa9b\\x00%\\xad\\xb3\\x12c|S\\xf7\\xfd'",
+                        "file_reference": "b'\\x00b\\xe2)@\\x89\\xf8\\x83$\\xf3r\\x93ZM+i0\\x04\\xcbs\\xed'",
                         "date": "2021-07-13 20:21:09+00:00",
                         "sizes": [
                             {
@@ -907,31 +960,62 @@
                     },
                     {
                         "_": "Photo",
-                        "id": 532583641742113073,
-                        "access_hash": -6689689126676592079,
-                        "file_reference": "b'\\x00b\\xba\\xfeaIw?,\\x0cS\\xdb|\\x0c\\xf7\\xd7/\\x8d\\xa8\\xadk'",
-                        "date": "2017-08-18 18:47:25+00:00",
+                        "id": 5916795600815369806,
+                        "access_hash": -4610731296252905088,
+                        "file_reference": "b\"\\x00b\\xe2)@\\x98^o'\\xd0,;\\r\\x14\\nP\\xe9\\xec\\xf9\\x8f\\xd0\"",
+                        "date": "2022-07-04 12:46:28+00:00",
                         "sizes": [
                             {
-                                "_": "PhotoSize",
-                                "type": "s",
-                                "w": 90,
-                                "h": 50,
-                                "size": 1172
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01((\\xd8\\xcf8\\xc5V\\xbb\\xbd\\x8e\\xd5\\x94H\\xacw\\x0c\\xfc\\xa2\\xac\\x01\\xf3\\x13\\x8f\\xc6\\xb2u\\xcf\\xf5\\x91}\\r](\\xa9\\xca\\xccL\\xd4\\x8d\\xc4\\x91,\\x8a\\x0e\\x18\\x02\\x01\\xa7\\x93\\x85'\\xd2\\xa1\\xb4\\xff\\x00\\x8f8y\\xc7\\xc8\\xbf\\xca\\xb3\\xde\\xf6o\\xb74\\x19\\x1b7\\x11\\xd2\\x85\\x07&\\xd2\\xe8\\x17.Z\\xea\\x11]Jc\\x8d\\\\\\x103\\xc8\\x14Vn\\x8b\\xff\\x00\\x1f\\x8d\\xfe\\xe1\\xfeb\\x8a+AFV@\\x8d\\xbc\\x00\\xc4\\xe0}k#\\\\\\xff\\x00Y\\x0f\\xd0\\xd5\\x9d_\\x8bC\\x8c\\x0f\\x98t\\xebY2\\x9c\\xdbC\\x9fV\\xad\\xa8CU!3z\\xd7\\x1fb\\x87##b\\xff\\x00*\\xc8\\x7f\\xf9\\x0b7\\xfb\\xe6\\xb6-3\\xf68q\\xd7`\\xfeU\\x8e\\xff\\x00\\xf2\\x16o\\xf7\\xcd*?\\x14\\xbecc\\xb4_\\xf8\\xfco\\xf7\\x0f\\xf3\\x14Q\\xa2\\xff\\x00\\xc7\\xe3\\x7f\\xb8\\x7f\\x98\\xa2\\xa7\\x13\\xfc@[\\x1b\\x13C\\x1c\\xe8RE\\xdc\\xa7\\x9e\\xb8\\xa8>\\xc1l\\xca\\xaab8\\x1d9n?Z(\\xac\\x93kf;\\x16Q\\x02F\\x11F\\x00\\x18\\x15\\x0bZA\\xe6\\xf9\\x9e_\\xccNI\\xe6\\x8a)&\\xd0\\x0b\\x05\\xa40\\xb1x\\xd3i#\\x1d\\xe8\\xa2\\x8a.\\xde\\xac\\x0f\""
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "m",
-                                "w": 320,
-                                "h": 178,
-                                "size": 7753
+                                "w": 260,
+                                "h": 260,
+                                "size": 9350
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5768270911550630013,
+                        "access_hash": 7197817268635043889,
+                        "file_reference": "b'\\x00b\\xe2)@\\x11\\xd3\\xe73e\\xa8\\xcb\\x1e\\xc8\\x88\\xed~4\\xc4-\\x90'",
+                        "date": "2018-11-30 18:49:27+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 79,
+                                "h": 90,
+                                "size": 1143
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 281,
+                                "h": 320,
+                                "size": 18196
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "x",
-                                "w": 325,
-                                "h": 181,
-                                "size": 7971
+                                "w": 703,
+                                "h": 800,
+                                "size": 92949
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 1166,
+                                "size": 167381
                             }
                         ],
                         "dc_id": 4,
@@ -944,7 +1028,7 @@
                         "_": "Document",
                         "id": 6042994529928216688,
                         "access_hash": -7085747415029660100,
-                        "file_reference": "b'\\x00b\\xba\\xfea\\x8e\\x07\\xd3-1\\x8c\\x14\\xe6\\x84\\xbc\\x90!Ur\\xbc('",
+                        "file_reference": "b'\\x00b\\xe2)@\\x0f\\x1b\\xe7\\xcb\\xe6x\\xe5vII\\xb0\\x03\\xdd\\x86hY'",
                         "date": "2018-11-25 22:33:08+00:00",
                         "mime_type": "image/jpeg",
                         "size": 257088,
@@ -993,12 +1077,12 @@
             "length": 56
         }
     ],
-    "views": 111,
+    "views": 121,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 2,
-        "replies_pts": 1750,
+        "replies_pts": 1822,
         "comments": true,
         "recent_repliers": [
             {
