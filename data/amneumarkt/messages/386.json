@@ -1,0 +1,404 @@
+{
+    "_": "Message",
+    "id": 386,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-08-12 22:58:40+00:00",
+    "message": "#fun \n\nhttps://physics.aps.org/articles/v15/125",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5873213695835691863,
+            "url": "https://physics.aps.org/articles/v15/125",
+            "display_url": "physics.aps.org/articles/v15/125",
+            "hash": 398414579,
+            "type": "photo",
+            "site_name": "Physics",
+            "title": "Twinkle, Twinkle, Star No More",
+            "description": "New forecasting approaches could help users of ground-based telescopes predict when the atmosphere will most blur incoming light, allowing them to better remove the effect.",
+            "photo": {
+                "_": "Photo",
+                "id": 6029732792360873652,
+                "access_hash": -3226097105655511707,
+                "file_reference": "b'\\x00b\\xf7q\\x16\\x85!u\\xe0F\\x8b\\x130U_c\\xe2\\xccB]\\xc3'",
+                "date": "2022-08-11 18:25:32+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xaf\\x85\\xc9\\xce\\x08=\\xf1NF\\x18\\xc0<\\x0e\\xc2\\x90\\x8d\\xc3\\x18>\\xf4\\xd8\\xd5\\xf7\\xfc\\xb9\"\\x87\\x14\\xce\\x8d\\x98:\\xbe}\\x81\\xe9NYJ\\xfd\\xd4\\x1fZc\\xa3\\x1f\\xbb\\x9c\\xe7\\x9a66\\x06O\\xe0(\\xe5Ov\\x1a\\x923\\xefq\\xbc\\xe7\\xe9EF#\\x03\\xee\\xb9\\xc9\\xe3\\xa5\\x14\\x92H.\\xc9\\x867\\x13\\x81\\x90j3#+|\\xb8\\x1c\\xf6\\xa2\\x8a\\x9a~\\xf3\\xd4r\\xd0\\x95\\x07\\x99\\x82O~\\xd5+\\xa0\\xdc\\xbc\\xf2z\\x9c\\n(\\xac\\xe4\\xf5\\x04\\xf5#\\xc7\\xcd\\x8c\\xfe\\x82\\x8a(\\xa0\\xb3'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 25294
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 500,
+                        "h": 250,
+                        "sizes": [
+                            6285,
+                            15015,
+                            26577,
+                            34664,
+                            55858
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://physics.aps.org/articles/v15/125",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Twinkle, Twinkle, Star No More"
+                        }
+                    },
+                    {
+                        "_": "PageBlockSubtitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "New forecasting approaches could help users of ground-based telescopes predict when the atmosphere will most blur incoming light, allowing them to better remove the effect."
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextEmpty"
+                        },
+                        "published_date": "2022-08-11 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 6029708989652119240,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Predictions of global atmospheric turbulence could help astronomers to better design and operate ground-based telescopes. This map show predictions from a model that can accurately forecast global turbulence a few days in advance."
+                            },
+                            "credit": {
+                                "_": "TextPlain",
+                                "text": "J. Osborn/Durham University"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The turbulent swirling of air in Earth\u2019s atmosphere can cause incoming light from stars to twinkle, much to the frustration of ground-based-telescope operators. Being able to predict the properties of this optical disturbance could help observatory personnel to optimize telescope design, better schedule observations, and even select future telescope locations\u2014factors that could all improve the data that scientists collect. At the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "SPIE Astronomical Telescopes and Instrumentation"
+                                    },
+                                    "url": "https://spie.org/conferences-and-exhibitions/astronomical-telescopes-and-instrumentation?SSO=1",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " conference in Montreal in July 2022, researchers from three different groups presented new tools that could allow atmospheric turbulence to be forecast at various spatial scales up to a few hours in advance. Doing so could help telescope operators better mitigate the effects of turbulence on telescope measurements, improving the data that they collect."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The temperature gradients within the air, the topography of Earth\u2019s surface, and the shear of the wind all contribute to create atmospheric turbulence\u2014small-scale, chaotic air swirls characterized by winds that vary in speed and direction. Air-density variations within these swirls give the atmosphere a refractive index (a parameter that determines how the air bends light) that varies rapidly in space and time. Such a highly inhomogeneous refractive index distorts images of astronomical objects taken from the ground. To correct for these distortions, users can adjust the shapes of some mirrors in the telescopes in such a way that it effectively \u201cundoes\u201d the atmospheric distortions. This method works best when the turbulence is weak, says James Osborn, an atmospheric physicist at Durham University, UK. If the turbulence is strong, as is the case when a big weather front comes through, the data can require an extensive postprocessing that includes making complex on-sky measurements to tease out the details of the site\u2019s turbulence. In extreme cases, the data may have to be thrown out."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Forecasting turbulence could help avoid such data loss. Scientists could \u201csave an hour\u2019s worth of observing time\u201d by better optimizing the configuration of the telescopes\u2019 optical components using forecast data, when available, Osborn says. The three tools presented all make those forecasts: one tool does so on a global scale, another aims for rapid time measurements, and one gleans information from real-time weather parameters."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The tool developed by Osborn and colleagues uses global-scale meteorology models to convert weather data into global atmospheric-turbulence maps. The team started with atmospheric meteorological data from the European Centre for Medium-Range Weather Forecasts that included vertical profiles of air temperature, pressure, and humidity; and measurements of wind speed and velocity taken hourly at "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "fixed weather stations"
+                                    },
+                                    "url": "https://www.ecmwf.int/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". They then plugged this data into a model that calculated how the air\u2019s temperature and density, and thus its refractive index, varied as a function of the horizontal distance between two points. The team tested the model using archived observation data. Comparing their predictions to observations made above Paranal Observatory in Chile and in London for the same time frame, they found that the model could predict global turbulence patterns a few days in advance."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Osborn says that their forecast tool could enable more efficient site selection for future observatories, as it would allow planners to predict conditions at different sites and then use that information to select the location where turbulence was most likely to be low, or at least consistent. The tool could also aid in optimizing observing schedules for exoplanets, for example, which require very calm air conditions because of the faintness of exoplanet signals relative to their bright host stars."
+                        }
+                    },
+                    {
+                        "_": "PageBlockVideo",
+                        "video_id": 6032004743704871739,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "This video shows the time evolution of atmospheric turbulence above the sites of the Very Large Telescope and the Extremely Large Telescope in Chile. The arrows represent the wind speed close to the surface. More intense winds result in stronger disturbances of incoming optical signals."
+                            },
+                            "credit": {
+                                "_": "TextPlain",
+                                "text": "E. Masciadri/INAF"
+                            }
+                        },
+                        "autoplay": true,
+                        "loop": true
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "While Osborn and colleagues opted to make a global-scale model that can predict the properties of the atmosphere above any observatory, Elena Masciadri of the Italian National Institute of Astrophysics (INAF) and her colleagues used atmospheric models that have subkilometer horizontal resolution and are designed to simulate the conditions above specific geographical locations."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The INAF team\u2019s original model has been running at the Large Binocular Telescope at Mount Graham International Observatory in Arizona since 2016, forecasting local atmospheric conditions on timescales of either a day or one to two hours in the future. But the team wanted to improve the accuracy of the predictions. They have now done that by combining statistical and machine-learning techniques with real-time measurements."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The one-to-two-hour outlook of their forecasts means that the information provided by the model is relevant to optimizing data-taking at the Large Binocular Telescope, Masciadri says. She and the team now plan to develop a similar model to predict atmospheric turbulence above the Very Large Telescope in Chile."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In a third approach discussed at the meeting, Ryan Dungee of the University of Hawaii at Hilo presented a model that can identify the height of a turbulent swirl using real-time observations of wind speed and direction. This information could allow observatories to leverage information about the spatial distribution of turbulence to improve performance. To test the model, a research team used wind speed and direction data from local weather stations and balloon launches above the Maunakea Observatory in Hawaii. They then ran their model to map the altitudes of different turbulent layers based on measured winds. They found that they could separate surface layer turbulence (up to 200 m above ground level) from free-atmosphere turbulence (200 m to 2 km above ground level) on 67% of the days that they tested. Dungee says that the data his model provides could help reduce operational costs, as it uses existing wind measurements to determine different turbulent layers and doesn\u2019t need the expensive tools currently used to actively measure those layers. \u201cKnowing which layers contain the most turbulence could lead to cheaper systems overall,\u201d Dungee says."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The forecasts and corrections provided by the three models also offer benefits beyond astronomy, the researchers say. As well as space observations, turbulence can hinder free-space optical communications, which use laser beams to transmit information from the ground to satellites. Turbulence can cause the beams to flicker or spread, distorting the received signal. \u201cBut if you know that the strongest turbulence is always at a certain height above the ground, you can design a system to take this into account,\u201d Osborn says. \u201cSo, it all comes together.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u2013Rachel Berkowitz"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Rachel Berkowitz is a Corresponding Editor for\u00a0"
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Physics Magazine"
+                                        },
+                                        "url": "https://physics.aps.org/",
+                                        "webpage_id": 0
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " based in Vancouver, Canada."
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 6029708989652119240,
+                        "access_hash": 4915285437952042930,
+                        "file_reference": "b'\\x00b\\xf7q\\x16\\xca\\x93\\xd2\\x00\\x90\\xba\\n\\xf9\\xa3QZbQM8\\xb0'",
+                        "date": "2022-08-11 18:25:32+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x10(\\xaf\\xf2\\x91\\xc6M\\n\\xc06\\x00\\xeb\\xd7\\xb5;\\xcah\\xd4c\\xbfn\\xb4\\xd6\\x8dw\\x02\\xc7\\x03\\xebE\\xe0\\xce\\x8dBA\\x93\\x8d\\xc0{R\\x89Y\\x00\\xc6\\x14}9\\xa1\\xe3W\\xe0\\x1c\\x8fQJ`\\nq\\xfc\\xfb\\xd4\\xfb\\xbdCQ\\xa1\\x94\\xe5\\x8e\\x0f\\xb9\\xa2\\x95\\xa2\\x07\\xb2\\x8a)\\xa9@-#'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 133,
+                                "size": 22216
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 759,
+                                "h": 316,
+                                "sizes": [
+                                    8516,
+                                    24241,
+                                    42161,
+                                    55530,
+                                    90777
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [
+                    {
+                        "_": "Document",
+                        "id": 6032004743704871739,
+                        "access_hash": -2183076003048666621,
+                        "file_reference": "b'\\x00b\\xf7q\\x16\\x0c\\x07\\x01m.\\xfe\\x05x\\xd9\\x0f\\x1e\\x19\\x95\\xe8\\xa9H'",
+                        "date": "2022-08-11 18:25:32+00:00",
+                        "mime_type": "video/mp4",
+                        "size": 3108501,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeVideo",
+                                "duration": 13,
+                                "w": 1000,
+                                "h": 720,
+                                "round_message": false,
+                                "supports_streaming": true
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "video1.mp4"
+                            },
+                            {
+                                "_": "DocumentAttributeAnimated"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1d(\\xbd=\\xc0\\x8em\\x99bp\\x0f\\x15\\x1c\\xf7%r\\xa4\\x9c\\xf6\\xc1\\xebKq\\x1e\\xe9\\xf7m\\xe7h\\xa8\\x16\\x1c\\xbeO?Z\\xe6\\x9b\\xf7\\x99\\xa2\\xb18\\x95\\x9a2\\xc3 \\xfdi\\x86\\xe3\\xca\\x8cy\\x84\\x93\\xd4\\x9c\\xd3\\xd10=j9\\xa0Yx9\\x1c\\xf5\\x14\\x93w\\x12\\xb5\\xf5$\\x8aO1\\xd5\\x91\\xce\\xdc\\xf3\\xcd\\x14\\xe8\\xa3\\x11\\xe1Gj*\\xe3q? \\xbb\\x97\\xcbrq\\xc8\\x15\\x04r\\xe1\\xc7\\xeb\\x8e\\xd5\\xa4FM5\\x97\\x83\\xc9\\xfc\\xe9\\xca\\x9d\\xdd\\xc12\\xbeG8<\\x81L\\x8fq$\\xb7\\x1e\\x959\\\\\\x81\\xf30\\xfa5\\x02\\x1c\\x8c\\xf9\\x92\\x7f\\xdfT*^aq\\xa3\\x19\\x14T\\x8b\\x00R\\x0f\\x99!\\xf6-\\xc5\\x15J\\x9d\\xba\\x8a\\xe7'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 230,
+                                "size": 36205
+                            }
+                        ],
+                        "video_thumbs": []
+                    }
+                ],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 7,
+            "length": 40
+        }
+    ],
+    "views": 33,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1844,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-08-12 22:58:57+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

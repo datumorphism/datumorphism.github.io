@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 387,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-08-12 23:02:48+00:00",
+    "message": "#fun \n\n> participants who spent more than six hours working on a tedious and mentally taxing assignment had higher levels of glutamate \u2014 an important signalling molecule in the brain. Too much glutamate can disrupt brain function, and a rest period could allow the brain to restore proper regulation of the molecule\n\nhttps://www.nature.com/articles/d41586-022-02161-5",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126791779004,
+            "url": "https://www.nature.com/articles/d41586-022-02161-5?utm_medium=Social&utm_campaign=nature&utm_source=Facebook",
+            "display_url": "nature.com/articles/d41586-022-02161-5",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "Why thinking hard makes us feel tired",
+            "description": "Nature - Difficult tasks can lead to build-up of a signalling molecule in the brain, triggering fatigue.",
+            "photo": {
+                "_": "Photo",
+                "id": 6029499244924219096,
+                "access_hash": 1341757955192456673,
+                "file_reference": "b'\\x00b\\xf7q\\x16\\x98\\xcb\\xb5P\\x02\\xaf\\\\\\xef\\xabp\\xf8u\\xc3\\x12\\t\\xd2'",
+                "date": "2022-08-11 16:16:11+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xcb;|\\x9e3\\xbf\\xbf\\xd34\\xc0\\x18\\xaeGJ\\x7f\\x06\"s\\xc8\\x1d?\\x1a|\\x002m\\xcf=h\\x02\\x1d\\x8fK\\x1cm#\\x05\\\\d\\xfb\\xd4\\xae\\xa1\\x10\\x1f^\\xd4\\x82&\\t\\x9e\\x05\\x08\\x19\\x11C\\x9cQR\\x10wg\\x1cqE1\\x0c\\x1f\\xea\\xc9\\xf5\\xe2\\x88\\xce\\xd6\\x06\\x8a)\\x0c{9\\xdd\\xd4\\xe2\\x94\\x93\\x8c\\x86lv\\xa2\\x8a\\x060\\x96\\x1d\\xe8\\xa2\\x8a\\x04\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 12829
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 51117
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 576,
+                        "sizes": [
+                            8084,
+                            19619,
+                            30104,
+                            44113,
+                            77881
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 317,
+            "length": 50
+        }
+    ],
+    "views": 34,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1844,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-08-13 07:09:00+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

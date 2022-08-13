@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 384,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-07-29 06:13:26+00:00",
+    "message": "#fun\n\nHmmmm, RStudio is doing some weird stuff recently.\n\nhttps://quarto.org/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 9100558951048184974,
+            "url": "https://quarto.org/",
+            "display_url": "quarto.org",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "quarto.org",
+            "title": null,
+            "description": "Quarto\u00ae is an open-source scientific and technical publishing system built on Pandoc.",
+            "photo": {
+                "_": "Photo",
+                "id": 5894421325169143397,
+                "access_hash": -1018764037701193106,
+                "file_reference": "b'\\x00b\\xf7q\\x16\\xba$n\\xb8L\\xde;\\x02\\xddO\\n\\xa5b\\xba[\\xcb'",
+                "date": "2022-06-27 01:26:10+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01$(\\xd9\\xa2\\x8a(\\x00\\xefE%-\\x00\\x14R\\x13E\\x00-\\x14Q@\\x05%)\\xa2\\x80\\x1b\\xd0\\xd1KE\\x00-\\x14Q@\\tE\\x14P\\x02\\xd1E\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 286,
+                        "size": 8503
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 716,
+                        "size": 34607
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 840,
+                        "h": 752,
+                        "sizes": [
+                            4321,
+                            8724,
+                            12653,
+                            20190,
+                            36104
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 58,
+            "length": 19
+        }
+    ],
+    "views": 125,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1844,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-07-29 06:16:47+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

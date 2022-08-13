@@ -17,8 +17,9 @@ references:
     name: "Hornik, K., Stinchcombe, M., & White, H. (1989). Multilayer feedforward networks are universal approximators. Neural Networks, 2(5), 359–366."
   - link: "https://doi.org/10.1007/BF02551274"
     name: "Cybenko, G. (1989). Approximation by superpositions of a sigmoidal function. Mathematics of Control, Signals, and Systems, 2(4), 303–314."
-  - link:
-    name: "Freitag, K. J. (2007). Neural networks and differential equations."
+  - link: "http://dx.doi.org/10.31979/etd.h2n8-mb9r"
+    name: "Freitag KJ. Neural networks and differential equations. San Jose State University. 2007. doi:10.31979/etd.h2n8-mb9r"
+    key: "Freitag2007"
   - name: "Tensorflow and deep learning - without a PhD by Martin Görner"
     link: "https://www.youtube.com/watch?v=vq2nnJ4g6N0&t=663s"
   - name: "Kolmogorov, A. N. (1957). On the Representation of Continuous Functions of Several Variables by Superposition of Continuous Functions of one Variable and Addition, Doklady Akademii. Nauk USSR, 114, 679-681."
@@ -29,6 +30,9 @@ references:
   - name: "Lippe P. Tutorial 3: Activation Functions — UvA DL Notebooks v1.1 documentation. In: UvA Deep Learning Tutorials [Internet]. [cited 23 Sep 2021]. Available: https://uvadlc-notebooks.readthedocs.io"
     link: "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html"
     key: "Lippe"
+  - name: "Srivastava RK, Greff K, Schmidhuber J. Highway Networks. arXiv [cs.LG]. 2015. Available: http://arxiv.org/abs/1505.00387"
+    link: "http://arxiv.org/abs/1505.00387"
+    key: "Srivastava2015"
 weight: 1
 ---
 
@@ -80,9 +84,16 @@ It means the function is continuous.
 
 {{< /message >}}
 
-
-
 ## Activation Functions
+
+
+Neural networks usually consists of some affine transformations and some activation functions[^Srivastava2015]
+
+{{< m >}}
+\mathbf Y = H(\mathbf X, \mathbf W)
+{{< /m >}}
+
+For example, $H$ can be a combination of a linear transformation $\hat L = \mathbf W \cdot $ and an nonlinear activation function $\sigma(\cdot)$, i.e., $H(\mathbf X, \mathbf W) = \sigma( \mathbf W \mathbf X)$. This is a super simple example and this transformation can be much more complicated.
 
 
 There are many activation functions.
@@ -222,5 +233,8 @@ $$
 at each point.
 
 
-[^Freitag2007]: Freitag, K. J. (2007). Neural networks and differential equations.
 
+
+
+[^Freitag2007]: {{< cite key="Freitag2007" >}}
+[^Srivastava2015]: {{< cite key="Srivastava2015" >}}
