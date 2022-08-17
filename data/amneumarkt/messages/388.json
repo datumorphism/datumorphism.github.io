@@ -1,19 +1,19 @@
 {
     "_": "Message",
-    "id": 194,
+    "id": 388,
     "peer_id": {
         "_": "PeerChannel",
         "channel_id": 1320526773
     },
-    "date": "2021-02-22 18:32:30+00:00",
-    "message": "#fun\n\nCan you predict AI winter using AI?",
+    "date": "2022-08-14 08:30:54+00:00",
+    "message": "#fun \n\nI became a beta tester of DALLE. Played with it for a while and it is quite fun. See the comments for some examples.\nComment if you would like to test some prompts.",
     "out": true,
     "mentioned": false,
     "media_unread": false,
     "silent": false,
     "post": true,
     "from_scheduled": false,
-    "legacy": false,
+    "legacy": true,
     "edit_hide": false,
     "pinned": false,
     "from_id": null,
@@ -29,19 +29,24 @@
             "length": 4
         }
     ],
-    "views": 113,
+    "views": 55,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
-        "replies": 0,
+        "replies": 6,
         "replies_pts": 1863,
         "comments": true,
-        "recent_repliers": [],
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
         "channel_id": 1159907975,
-        "max_id": null,
-        "read_max_id": null
+        "max_id": 644,
+        "read_max_id": 644
     },
-    "edit_date": "2021-02-22 18:33:46+00:00",
+    "edit_date": "2022-08-14 08:32:06+00:00",
     "post_author": "Markt Mai",
     "grouped_id": null,
     "restriction_reason": [],

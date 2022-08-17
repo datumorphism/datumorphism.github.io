@@ -14,6 +14,7 @@ references:
 links:
   - wiki/statistical-estimation/confidence-interval.md
   - wiki/statistical-hypothesis-testing/sign-test.md
+  - wiki/statistical-hypothesis-testing/mann-whitney-u-test.md
 weight: 1
 ---
 

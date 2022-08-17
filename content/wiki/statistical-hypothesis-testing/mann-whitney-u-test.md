@@ -18,4 +18,4 @@ weight: 8
 published: true
 ---
 
-Mann-Whitney U is good at testing heavy-tailed data.
+Mann-Whitney U is good at {{< c "wiki/statistical-hypothesis-testing/hypothesis-testing.md" "hypothesis testing" >}} heavy-tailed data.
