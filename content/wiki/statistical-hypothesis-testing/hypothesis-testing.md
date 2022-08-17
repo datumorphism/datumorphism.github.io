@@ -35,7 +35,7 @@ To explain this method, we have to establish two hypotheses for our statistical 
 
 The hypotheses themselves could be much more general but we always have a null hypothesis and alternative hypothesis.
 
-Hypothesis testing is in fact a conditional probability. To see this, we reformulate our statistical procedures.
+Hypothesis testing is in fact related to conditional probability. To see this, we reformulate our statistical procedures.
 
 1. We get an educated guess of our population mean, $\mu_p = \mu_0$.
 2. We set up the null hypothesis and alternative hypothesis.
@@ -52,7 +52,7 @@ However, the conclusion from hypothesis testing is only about whether the null h
 1. We can NOT determine what mean value to take if the hypothesis is rejected.
 2. We can NOT understand how likely our educated guess $\mu_p = \mu0$ is true. The probability we calculated is about the sample not the hypothesis.
 
-As mentioned, it doesn't have to be related to the mean value. We can do hypothesis test on other statistical measurements.
+As mentioned, it doesn't have to be related to the mean value. We can do hypothesis test on other statistical measurements. The above example also hints that there can be {{< c "wiki/statistical-hypothesis-testing/type-1-error-and-type-2-error.md" "different types of mistakes" >}} from a hypothesis test.
 
 
 ## Choosing a test method
