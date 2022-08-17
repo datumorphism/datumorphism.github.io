@@ -13,6 +13,7 @@ references:
   title: ''
 links:
   - wiki/statistical-estimation/confidence-interval.md
+  - wiki/statistical-hypothesis-testing/sign-test.md
 weight: 1
 ---
 

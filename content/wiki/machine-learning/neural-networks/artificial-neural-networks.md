@@ -1,6 +1,6 @@
 ---
 title: "Artificial Neural Networks"
-description: "Solving PDEs"
+description: "Simple artificial neural networks using multilayer perceptron"
 date: 2018-11-19
 categories:
   - 'Artificial Neural Networks'

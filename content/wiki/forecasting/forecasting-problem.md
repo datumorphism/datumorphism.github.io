@@ -45,6 +45,8 @@ where ${}^{(i)}$ indicates the $i$th variable, ${}_ t$ denotes time. In a foreca
 
 A model $f$ will use $x^{(i)} _ {t-K:t}$ and $u^{(i)} _ {t-K:t+H}$ to forecast $y^{(i)} _ {t+1:t+H}$.
 
+The above formulation is mostly focusing on the point forecasts. Alternative, the {{< c "cards/forecasting/prediction-space.md" "probabilistic view" >}} of a forecasting problem has been a very hot topic in recent years.
+
 
 ## The Time Delay Embedding Representation
 
