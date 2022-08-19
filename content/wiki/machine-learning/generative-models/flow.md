@@ -11,6 +11,7 @@ tags:
 references:
   - name: "Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"
     link: "http://arxiv.org/abs/2006.08218"
+    key: "Liu2020"
 weight: 3
 links:
   - "reading/normalizing-flow-introduction-1908.09257.md"
@@ -18,7 +19,14 @@ links:
 
 Normalizing flow is a method to convert a complicated distribution $p(x)$ to a simpler distribution $\tilde p(z)$ by building up a map $z=f(y)$ for the variable $x$ to $z$. The relations between the two distributions is established using the conservation law for distributions, $\int p(x) \mathrm d x = \int \tilde p (z) \mathrm d z = 1$. One could imagine that changing the variable also brings in the Jacobian.
 
-For a probability density $p(x)$ and a transformation of coordinate $x=g(z)$ or $z=f(x)$, the density can be expressed using the coordinate transformations, i.e.,
+{{< figure src="../assets/generative-flow/generative-flow-illustration.png" caption="Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218" >}}
+
+{{< e "reading/normalizing-flow-introduction-1908.09257.md" >}}
+
+
+## Architecture
+
+For a probability density $p(x)$ and a transformation of coordinate $x=g(z)$ or $z=f(x)$, the density can be expressed using the coordinate transformations, i.e.,[^Liu2020]
 
 {{< m >}}
 \begin{align}
@@ -59,4 +67,27 @@ x_i &= g_i \circ \cdots \circ g_1 (z)\\
 {{< /m >}}
 
 
+## Applications
 
+
+Normalizing flow is good at estimating densities, fast.[^Liu2020]
+
+### Variational Inference
+
+One interesting use case of the normalizing flow model is variational inference. We reiterate section 2.2.2 of Liu2020 here.[^Liu2020]
+
+{{< e "wiki/machine-learning/generative-models/variational-autoencoder.md" >}}
+
+- The variational inference problem: $\ln p(x) = \int \ln p(x, y) dy = $:
+  - $x$ is the observable;
+  - $y$ is the latent variable.
+- Introduce an approximation of the posterior $q(y\vert x, \theta)$, see
+
+
+
+
+
+
+
+
+[^Liu2020]: {{< cite key="Liu2020" >}}

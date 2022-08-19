@@ -27,6 +27,8 @@ references:
     link: "http://arxiv.org/abs/1710.10121"
     key: "Lu2017"
 weight: 1
+garden:
+  - "seedling"
 ---
 
 In {{< c "wiki/machine-learning/neural-networks/artificial-neural-networks.md" "neural networks" >}}, residual connections is a popular architecture to build very deep neural networks.[^He2015] Apart from residual networks, there are many other designs for deep neural networks.[^Srivastava2015][^Zhang2016][^Larsson2016][^Gomez2017][^Lu2017] These methods share similar ideas that the layered structure in deep neural networks can be treated as a dynamical system and these different architectures are different numerical approaches of solving the dynamical system.

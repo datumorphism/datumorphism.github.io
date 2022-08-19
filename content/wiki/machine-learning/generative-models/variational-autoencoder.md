@@ -11,6 +11,7 @@ tags:
 references:
   - name: "Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"
     link: "http://arxiv.org/abs/2006.08218"
+    key: "Liu2020"
   - name: "Doersch C. Tutorial on Variational Autoencoders. arXiv [stat.ML]. 2016. Available: http://arxiv.org/abs/1606.05908"
     link: "http://arxiv.org/abs/1606.05908"
     key: "Doersch2016"
@@ -19,6 +20,8 @@ references:
     key: "Kingma2019"
   - name: "Jordan J. Variational autoencoders. Jeremy Jordan. 19 Mar 2018. Available: https://www.jeremyjordan.me/variational-autoencoders/. Accessed 22 Aug 2021."
     link: "https://www.jeremyjordan.me/variational-autoencoders/"
+  - name: "Courses DS. Ali Ghodsi, Lec : Deep Learning, Variational Autoencoder, Oct 12 2017 [Lect 6.2]. YouTube. 2017. Available: https://youtu.be/uaaqyVS9-rM?t=19m42s"
+    link: "https://youtu.be/uaaqyVS9-rM?t=19m42s"
 weight: 5
 links:
   - "wiki/machine-learning/generative-models/generative.md"
@@ -29,7 +32,85 @@ links:
   - "wiki/machine-learning/basics/kl-divergence.md"
 ---
 
-Variational Auto-Encoder (VAE) is very different from {{< c "wiki/machine-learning/generative-models/autoencoder.md" >}}. In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,
+In an inference problem, $p(z\vert x)$, which is used to infer $z$ from $x$.
+
+{{< m >}}
+p(z\vert x) = \frac{p(x, z)}{p(x)}.
+{{< /m >}}
+
+For example, we have an observable $x$ and a latent space $z$, we would like to find a good latent space for the observable $x$. However, $p(x)$ is something we don't really know. We would like to use some simpler quantities to help us inferring $z$ from $x$ or generating $x$ from $z$.
+
+Now we introduce a simple distribution $q(z\vert x)$. We want to make sure this $q(z\vert x)$ is doing a good job of replacing $p(z\vert x)$, i.e., minimizing the {{< c "wiki/machine-learning/basics/kl-divergence.md" "KL divergence" >}},
+
+{{< m >}}
+\operatorname{min}_{q(z\vert x)} \operatorname{KL} (q(z\vert x) \parallel p(z\vert x)).
+{{< /m >}}
+
+We can reformulate this KL divergence
+
+{{< m >}}
+\begin{align*}
+ & \operatorname{KL} (q(z\vert x) \parallel p(z\vert x)) \\
+=& -\sum_{z} q(z\vert x) \ln \frac{ p(z\vert x) }{ q(z\vert x) } \\
+=& -\sum_{z} q(z\vert x) \left( \ln \frac{ p(x, z) }{ q(z\vert x) } - \ln p(x) \right) \\
+=& -\sum_{z} q(z\vert x) \ln \frac{ p(x, z) }{ q(z\vert x) } + \sum_{z} q(z\vert x) \ln p(x) \\
+=& -\sum_{z} q(z\vert x) \ln \frac{ p(x, z) }{ q(z\vert x) } + \ln p(x) {\color{red}\sum_{z} q(z\vert x)} \\
+=& -\sum_{z} q(z\vert x) \ln \frac{ p(x, z) }{ q(z\vert x) } + \ln p(x)
+\end{align*}
+{{< /m >}}
+
+where we have used ${\color{red}\sum_{z} q(z\vert x)}=1$.
+
+Rewriting the above
+
+{{< m >}}
+\ln p(x) = \operatorname{KL} ( q(z\vert x) \parallel p(z\vert x) ) + {\color{blue}\sum_z q(z) \ln \frac{p(x, z)}{q(z\vert x)}},
+{{< /m >}}
+
+where we define
+
+{{< m >}}
+\mathcal L \equiv {\color{blue}\sum_z q(z) \ln \frac{p(x, z)}{q(z\vert x)}}
+{{< /m >}}
+
+as the so called {{< c "wiki/machine-learning/bayesian/elbo.md" "Evidence Lower Bound (ELBO)" >}}.
+
+We want to minimize $\operatorname{KL} ( q(z\vert x) \parallel p(z\vert x) )$. Since $\ln p(x)$ should be a fixed number given an observation, we can maximize $\mathcal L$. We also know that the KL divergence is non-negative, we get
+
+{{< m >}}
+\mathcal L \leq \ln p(x).
+{{< /m >}}
+
+
+
+
+{{< mermaid >}}
+stateDiagram-v2
+    z --> x: p(x|z)
+    x --> z: q(z|x)
+{{< /mermaid >}}
+
+To map our method to an encoder decoder structure, we rewrite $\mathcal L$,
+
+{{< m >}}
+\begin{align}
+\mathcal L =& \sum_z q(z\vert x) \ln \frac{p(x,z)}{q(z\vert x)} \\
+=& \sum_z q(z\vert x) \ln \frac{p(x\vert z)p(z)}{q(z\vert x)} \\
+=& \sum_z q(z\vert x) \left( \ln p(x\vert z) + \ln\frac{p(z)}{q(z\vert x)} \right) \\
+=& \sum_z q(z\vert x) \ln p(x\vert z) + \sum_z q(z\vert x) \ln \frac{p(z)}{q(z\vert x)} \\
+=& \mathbb E_{q(z\vert x)}\ln p(x\vert z) - \operatorname{KL}( q(z\vert x) \parallel p(z) ).
+\end{align}
+{{< /m >}}
+
+With the above equation, we can map the quantities to an encoder-decoder structure.
+
+{{< figure src="../assets/generative-variational-autoencoder/vae-illustration.jpg" >}}
+
+
+
+## An Alternative View
+
+Variational Auto-Encoder (VAE) is very different from {{< c "wiki/machine-learning/generative-models/autoencoder.md" >}}. In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,[^Kingma2019]
 
 {{< m >}}
 \begin{align}
@@ -147,8 +228,9 @@ Another key component of VAE is the {{< c "cards/statistics/reparametrization-ex
 
 ## Loss Explanation
 
-{{< figure src="../assets/generative-variational-autoencoder/vae-loss-explained.png" caption="VAE Loss Explained [Doersch2016]" >}}
+{{< figure src="../assets/generative-variational-autoencoder/vae-loss-explained.png" caption="VAE Loss Explained " >}}
 
 
 
-[^Doersch2016]: {{< cite "Doersch2016" >}}
+[^Kingma2019]: {{< cite key="Kingma2019" >}}
+[^Doersch2016]: {{< cite key="Doersch2016" >}}
