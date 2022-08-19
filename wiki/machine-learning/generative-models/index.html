@@ -186,10 +186,14 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 <span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/1606.05908>Doersch C. Tutorial on Variational Autoencoders. arXiv [stat.ML]. 2016. Available: http://arxiv.org/abs/1606.05908</a></span>
 <span style=display:block;font-size:90%;padding-left:1em> - <a href=http://arxiv.org/abs/1906.02691>Kingma DP, Welling M. An Introduction to Variational Autoencoders. arXiv [cs.LG]. 2019. Available: http://arxiv.org/abs/1906.02691</a></span>
 <span style=display:block;font-size:90%;padding-left:1em> - <a href=https://www.jeremyjordan.me/variational-autoencoders/>Jordan J. Variational autoencoders. Jeremy Jordan. 19 Mar 2018. Available: https://www.jeremyjordan.me/variational-autoencoders/. Accessed 22 Aug 2021.</a></span>
+<span style=display:block;font-size:90%;padding-left:1em> - <a href="https://youtu.be/uaaqyVS9-rM?t=19m42s">Courses DS. Ali Ghodsi, Lec : Deep Learning, Variational Autoencoder, Oct 12 2017 [Lect 6.2]. YouTube. 2017. Available: https://youtu.be/uaaqyVS9-rM?t=19m42s</a></span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-star"></i> Summary: Variational Auto-Encoder (VAE) is very different from [[Generative Model: Auto-Encoder]] Generative Model: Auto-Encoder Autoencoders (AE) are machines that encodes inputs into a compact latent space. The simplest auto-encoder is rather easy to understand. The loss can be chosen based on the demand, e.g., cross entropy for binary labels. Notation: dot ($\cdot$) We use a single vertically centered dot, i.e., $\cdot$, to indicate that the function or machine can take in arguments. A simple autoencoder can be achieved using two neural nets, e.g., $$ \begin{align} {\color{green}h} &= … . In VAE, we introduce a variational distribution $q$ to help us work out the weighted integral after introducing the latent space variable $z$,</span>
+<i class="far fa-star"></i> Summary: In an inference problem, $p(z\vert x)$, which is used to infer $z$ from $x$.
+$$ p(z\vert x) = \frac{p(x, z)}{p(x)}. $$
+For example, we have an observable $x$ and a latent space $z$, we would like to find a good latent space for the observable $x$. However, $p(x)$ is something we don&rsquo;t really know. We would like to use some simpler quantities to help us inferring $z$ from $x$ or generating $x$ from $z$.
+Now we introduce a simple distribution $q(z\vert x)$. We want to make sure this $q(z\vert x)$ is doing a good job of replacing $p(z\vert x)$, i.e., minimizing the [[KL divergence]] KL Divergence Kullback–Leibler divergence indicates the differences between two distributions ,</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
@@ -273,8 +277,8 @@ Published: <time datetime=2021-08-13T00:00:00+00:00>2021-08-13</time>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
 <i class="far fa-star"></i> Summary: Normalizing flow is a method to convert a complicated distribution $p(x)$ to a simpler distribution $\tilde p(z)$ by building up a map $z=f(y)$ for the variable $x$ to $z$. The relations between the two distributions is established using the conservation law for distributions, $\int p(x) \mathrm d x = \int \tilde p (z) \mathrm d z = 1$. One could imagine that changing the variable also brings in the Jacobian.
-For a probability density $p(x)$ and a transformation of coordinate $x=g(z)$ or $z=f(x)$, the density can be expressed using the coordinate transformations, i.e.,
-$$ \begin{align} p(x) &= \tilde p (f(x)) \lvert \operatorname{det} \operatorname{D} g(f(x)) \rvert^{-1} \\ &= \tilde p(f(x)) \lvert \operatorname{det}\operatorname{D} f(x) \rvert \end{align} $$</span>
+Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218
+Normalizing Flows: An Introduction and Review of Current Methods To generate complicated distributions step by step from a simple and interpretable distribution.</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
