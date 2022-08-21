@@ -1,5 +1,5 @@
 ---
-title: "Neural ODE Basics"
+title: "Neural ODE"
 description: "The concepts and ideas of neural ODE"
 date: 2022-08-13
 categories:
@@ -26,6 +26,12 @@ references:
   - name: "Lu Y, Zhong A, Li Q, Dong B. Beyond Finite Layer Neural Networks: Bridging Deep Architectures and Numerical Differential Equations. arXiv [cs.CV]. 2017. Available: http://arxiv.org/abs/1710.10121"
     link: "http://arxiv.org/abs/1710.10121"
     key: "Lu2017"
+  - name: "msurtsukov. msurtsukov/neural-ode: Jupyter notebook with Pytorch implementation of Neural Ordinary Differential Equations. In: GitHub [Internet]. [cited 21 Aug 2022]. Available: https://github.com/msurtsukov/neural-ode"
+    link: "https://github.com/msurtsukov/neural-ode"
+    key: "msurtsukov2019"
+  - name: "Chen RTQ, Rubanova Y, Bettencourt J, Duvenaud D. Neural Ordinary Differential Equations. arXiv [cs.LG]. 2018. Available: http://arxiv.org/abs/1806.07366"
+    link: "http://arxiv.org/abs/1806.07366"
+    key: "Chen2018"
 weight: 1
 garden:
   - "seedling"
@@ -51,7 +57,24 @@ In the work by Srivastava et al, they showed a comparison of "plain" deep networ
 
 ## Neural ODE
 
+An alternative view of the above approaches as {{< c "wiki/dynamical-system/ordinary-differential-method.md" >}} of dynamical system. For example, a residual connection structure can be reformulated as a first order different equation[^Chen2018], i.e., a residual connection of the following form
 
+{{< m >}}
+h_{t+1} = h_t + f(h_t, \theta_t),
+{{< /m >}}
+
+is a discretized case of the differential equation
+
+{{< m >}}
+\frac{\mathrm d h(t)}{\mathrm d t} = f(h(t), \theta(t), t).
+{{< /m >}}
+
+
+{{< message >}}
+
+For simplicity, we can even assume a set of static parameters $\theta$.
+
+{{< /message >}}
 
 
 
