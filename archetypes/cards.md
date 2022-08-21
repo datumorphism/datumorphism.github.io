@@ -14,4 +14,6 @@ references:
 weight:
 links:
   - ""
+garden:
+  - "seedling"
 ---
