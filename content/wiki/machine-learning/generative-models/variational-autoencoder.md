@@ -114,11 +114,12 @@ Variational Auto-Encoder (VAE) is very different from {{< c "wiki/machine-learni
 
 {{< m >}}
 \begin{align}
-\ln p_\theta(x) &= \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\
+\ln p_\theta(x) &\geq \int \left(\ln p_\theta (x\mid z) \right)p(z) \,\mathrm d z \\
 &=  \int \left(\ln\left(\frac{q_{\phi}(z\mid x)}{q_{\phi}(z\mid x)} p_\theta (x\mid z)\right) \right) p(z) \, \mathrm d z
 \end{align}
 {{< /m >}}
 
+where the first line is obtained from the {{< c "cards/math/jensens-inequality.md" >}} (see derivation in {{< c "wiki/machine-learning/bayesian/elbo.md" >}}).
 
 
 In the above derivation,
