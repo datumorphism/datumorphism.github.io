@@ -37,7 +37,7 @@ garden:
   - "seedling"
 ---
 
-In {{< c "wiki/machine-learning/neural-networks/artificial-neural-networks.md" "neural networks" >}}, residual connections is a popular architecture to build very deep neural networks.[^He2015] Apart from residual networks, there are many other designs for deep neural networks.[^Srivastava2015][^Zhang2016][^Larsson2016][^Gomez2017][^Lu2017] These methods share similar ideas that the layered structure in deep neural networks can be treated as a dynamical system and these different architectures are different numerical approaches of solving the dynamical system.
+In {{< c "wiki/machine-learning/neural-networks/artificial-neural-networks.md" "neural networks" >}}, residual connections is a popular architecture to build very deep neural networks[^He2015]. Apart from residual networks, there are many other designs for deep neural networks[^Srivastava2015][^Zhang2016][^Larsson2016][^Gomez2017][^Lu2017]. These methods share similar ideas that the layered structure in deep neural networks can be treated as a dynamical system and these different architectures are different numerical approaches of solving the dynamical system.
 
 
 {{< figure src="../assets/neural-ode-basics/he2015-residual-block.png" caption="Figure taken from He K, Zhang X, Ren S, Sun J. Deep Residual Learning for Image Recognition. arXiv [cs.CV]. 2015. Available: http://arxiv.org/abs/1512.03385" >}}
@@ -69,12 +69,38 @@ is a discretized case of the differential equation
 \frac{\mathrm d h(t)}{\mathrm d t} = f(h(t), \theta(t), t).
 {{< /m >}}
 
+In the above equation, the variable $t$ is not necessarily physical time. This is an "extrapolated" version of the number of layers. But under some certain problems, $t$ can be the physical time.
 
 {{< message >}}
 
 For simplicity, we can even assume a set of static parameters $\theta$.
 
 {{< /message >}}
+
+
+Given any Jacobian $f(h(t), \theta(t), t)$, we can, at least numerically, perform integration to find out the value of $h(t)$ at any $t=t_N$,
+
+{{< m >}}
+h(t_N) = \int_{t_0}^{t_i} f(h(t), \theta(t), t) \mathrm dt.
+{{< /m >}}
+
+In this formalism, we find out the transformed input $h(t_0)$ by solving this differential equation. In traditional neural networks, we achieve this by stacking many layers of neural networks using skip connections.
+
+In the original Neural ODE paper, the authors used the so-called reverse-model derivative method[^Chen2018].
+
+
+## Time Series and Neural ODE
+
+We can model the data generating process behind time series data using dynamical systems. The simplest continuous formulation is a first order ordinary differential equation. Given time series $\\{y_i\\}$, we can use the following first order differential equation
+
+{{< m >}}
+\frac{\mathrm dy(t)}{\mathrm d t} = f(y(t), \theta, t).
+{{< /m >}}
+
+Generally speaking, finding $f$ requires a lot of hypothesis and explorations. Neural ODE provides a general framework to approximate such a dynamical system.
+
+For example, we can feed some data points $\\{(t_0, y_0), (t_1, y_1), \cdots, (t_m, y_m)\\}$ into the model, and we solve the differential equation for $t=t_{m+1}$. By calculating the loss and applying backpropagation, we can optimize the parameters $\theta$ in the Jacobian $f$. We then feed the next data points $\\{(t_1, y_1), (t_2, y_2), \cdots, (t_{m+1}, y_{m+1})\\}$ and solving for $t=t_{m+2}$ and do the same. By exhausting the whole dataset, we can find an "optimal" Jacobian $f$ which can be used in inference to rebuild the whole dynamics.
+
 
 
 
@@ -84,3 +110,4 @@ For simplicity, we can even assume a set of static parameters $\theta$.
 [^Larsson2016]: {{< cite key="Larsson2016" >}}
 [^Gomez2017]: {{< cite key="Gomez2017" >}}
 [^Lu2017]: {{< cite key="Lu2017" >}}
+[^Chen2018]: {{< cite key="Chen2018" >}}
