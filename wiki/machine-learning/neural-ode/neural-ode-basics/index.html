@@ -128,7 +128,7 @@ AmNeumarkt
 <meta itemprop=name content="Neural ODE">
 <meta itemprop=description content="The concepts and ideas of neural ODE"><meta itemprop=datePublished content="2022-08-13T00:00:00+00:00">
 <meta itemprop=dateModified content="2022-08-13T00:00:00+00:00">
-<meta itemprop=wordCount content="412">
+<meta itemprop=wordCount content="707">
 <meta itemprop=keywords content="Deep Learning,Neural ODE,">
 <section class=section>
 <div class=container>
@@ -187,7 +187,7 @@ Neural ODE
 <span class=tooltip_content>Simple artificial neural networks using multilayer perceptron</span>
 </span>
 </span>
-, residual connections is a popular architecture to build very deep neural networks.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> Apart from residual networks, there are many other designs for deep neural networks.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup><sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup><sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup><sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup><sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup> These methods share similar ideas that the layered structure in deep neural networks can be treated as a dynamical system and these different architectures are different numerical approaches of solving the dynamical system.</p>
+, residual connections is a popular architecture to build very deep neural networks<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. Apart from residual networks, there are many other designs for deep neural networks<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup><sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup><sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup><sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup><sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup>. These methods share similar ideas that the layered structure in deep neural networks can be treated as a dynamical system and these different architectures are different numerical approaches of solving the dynamical system.</p>
 <figure>
 <img src=../assets/neural-ode-basics/he2015-residual-block.png alt="Figure taken from He K, Zhang X, Ren S, Sun J. Deep Residual Learning for Image Recognition. arXiv [cs.CV]. 2015. Available: http://arxiv.org/abs/1512.03385"> <figcaption>
 <p>Figure taken from He K, Zhang X, Ren S, Sun J. Deep Residual Learning for Image Recognition. arXiv [cs.CV]. 2015. Available: <a href=http://arxiv.org/abs/1512.03385>http://arxiv.org/abs/1512.03385</a></p>
@@ -217,7 +217,7 @@ The degradation problem
 <span class=tooltip_content>Solving ODEs Using Finite Difference Methods</span>
 </span>
 </span>
-of dynamical system. For example, a residual connection structure can be reformulated as a first order different equation[^Chen2018], i.e., a residual connection of the following form</p>
+of dynamical system. For example, a residual connection structure can be reformulated as a first order different equation<sup id=fnref:7><a href=#fn:7 class=footnote-ref role=doc-noteref>7</a></sup>, i.e., a residual connection of the following form</p>
 <p>$$
 h_{t+1} = h_t + f(h_t, \theta_t),
 $$</p>
@@ -225,11 +225,25 @@ $$</p>
 <p>$$
 \frac{\mathrm d h(t)}{\mathrm d t} = f(h(t), \theta(t), t).
 $$</p>
+<p>In the above equation, the variable $t$ is not necessarily physical time. This is an &ldquo;extrapolated&rdquo; version of the number of layers. But under some certain problems, $t$ can be the physical time.</p>
 <article class="message is-light is-light">
 <div class=message-body>
 For simplicity, we can even assume a set of static parameters $\theta$.
 </div>
 </article>
+<p>Given any Jacobian $f(h(t), \theta(t), t)$, we can, at least numerically, perform integration to find out the value of $h(t)$ at any $t=t_N$,</p>
+<p>$$
+h(t_N) = \int_{t_0}^{t_i} f(h(t), \theta(t), t) \mathrm dt.
+$$</p>
+<p>In this formalism, we find out the transformed input $h(t_0)$ by solving this differential equation. In traditional neural networks, we achieve this by stacking many layers of neural networks using skip connections.</p>
+<p>In the original Neural ODE paper, the authors used the so-called reverse-model derivative method<sup id=fnref:7><a href=#fn:7 class=footnote-ref role=doc-noteref>7</a></sup>.</p>
+<h2 id=time-series-and-neural-ode>Time Series and Neural ODE</h2>
+<p>We can model the data generating process behind time series data using dynamical systems. The simplest continuous formulation is a first order ordinary differential equation. Given time series $\{y_i\}$, we can use the following first order differential equation</p>
+<p>$$
+\frac{\mathrm dy(t)}{\mathrm d t} = f(y(t), \theta, t).
+$$</p>
+<p>Generally speaking, finding $f$ requires a lot of hypothesis and explorations. Neural ODE provides a general framework to approximate such a dynamical system.</p>
+<p>For example, we can feed some data points $\{(t_0, y_0), (t_1, y_1), \cdots, (t_m, y_m)\}$ into the model, and we solve the differential equation for $t=t_{m+1}$. By calculating the loss and applying backpropagation, we can optimize the parameters $\theta$ in the Jacobian $f$. We then feed the next data points $\{(t_1, y_1), (t_2, y_2), \cdots, (t_{m+1}, y_{m+1})\}$ and solving for $t=t_{m+2}$ and do the same. By exhausting the whole dataset, we can find an &ldquo;optimal&rdquo; Jacobian $f$ which can be used in inference to rebuild the whole dynamics.</p>
 <section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
@@ -280,6 +294,14 @@ For simplicity, we can even assume a set of static parameters $\theta$.
 </a>
 <a href=http://arxiv.org/abs/1710.10121 style=text-decoration:none>Lu Y, Zhong A, Li Q, Dong B. Beyond Finite Layer Neural Networks: Bridging Deep Architectures and Numerical Differential Equations. arXiv [cs.CV]. 2017. Available: http://arxiv.org/abs/1710.10121</a>
 &#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:7 role=doc-endnote>
+<p>
+<a name=Chen2018 href=#Chen2018 style=text-decoration:none>
+<span class="tag is-link is-light">Chen2018</span>
+</a>
+<a href=http://arxiv.org/abs/1806.07366 style=text-decoration:none>Chen RTQ, Rubanova Y, Bettencourt J, Duvenaud D. Neural Ordinary Differential Equations. arXiv [cs.LG]. 2018. Available: http://arxiv.org/abs/1806.07366</a>
+&#160;<a href=#fnref:7 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
