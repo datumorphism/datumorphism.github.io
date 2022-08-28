@@ -19,7 +19,7 @@ garden:
 ---
 
 
-Over-smoothing is the problem that the representations on each node of the graph neural networks becomes way too similar to each other.[^Hamilton2020] In Chapter 7 of Hamilton2020, the author interprets this phenomenon using the lower pass filter theory in signal processing, i.e., multiplying a signal by $\mathbf A^n$ is similar to a low-pass filter when $n$ is large, with $\mathfb A$ being the adjacency matrix.
+Over-smoothing is the problem that the representations on each node of the graph neural networks becomes way too similar to each other.[^Hamilton2020] In Chapter 7 of Hamilton2020, the author interprets this phenomenon using the lower pass filter theory in signal processing, i.e., multiplying a signal by $\mathbf A^n$ is similar to a low-pass filter when $n$ is large, with $\mathbf A$ being the adjacency matrix.
 
 
 [^Hamilton2020]: {{< cite key="Hamilton2020" >}}

@@ -31,11 +31,6 @@ menu:
       identifier: amneumarkt
       url: /amneumarkt/
     - name:
-      weight: 4
-      identifier: search
-      url: /
-      pre: '<i class="fas fa-search"></i>'
-    - name:
       weight: 5
       identifier: tags
       url: /tags/
