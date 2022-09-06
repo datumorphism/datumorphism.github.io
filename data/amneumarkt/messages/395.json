@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 395,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-08-23 19:29:32+00:00",
+    "message": "#fun \n\nSome results from the stable difussion model. See comments for some examples.\n\nhttps://huggingface.co/CompVis/stable-diffusion",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4352412042604191596,
+            "url": "https://huggingface.co/CompVis/stable-diffusion",
+            "display_url": "huggingface.co/CompVis/stable-diffusion",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "huggingface.co",
+            "title": "CompVis/stable-diffusion \u00b7 Hugging Face",
+            "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "photo": {
+                "_": "Photo",
+                "id": 6024993265884966458,
+                "access_hash": 8102926227341834802,
+                "file_reference": "b'\\x00c\\x16\\xe4\\xe7\\x9a\\xb9a L\\x19\\xa6\\x90j\\xec\\xa8\\xb6\\x1bW\\x1f\\xea'",
+                "date": "2022-08-10 15:51:44+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x16(j@1\\xd0\\xd2\\x98y\\xfb\\xa6\\xa5\\x1d)\\x0f\\xd6\\x85=D\\xe9\\x90\\xf9x\\xedHPS\\xc9\\xf7\\xa4&\\xbaTL\\xb9H]E\\x14\\x928\\x14T\\xb4\\x8aQ,\\xac\\x9c\\x0e)\\x1eN8\\x14Q\\\\\\x91\\xdc\\xe9{\\x10\\x99MF\\xf2\\x9cQEu\\xdd\\xd8\\xe7+;\\x93E\\x14VL\\xa3'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 173,
+                        "size": 6370
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 432,
+                        "size": 23898
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 648,
+                        "sizes": [
+                            7866,
+                            10963,
+                            15543,
+                            21401,
+                            40025
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 86,
+            "length": 47
+        }
+    ],
+    "views": 101,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 6,
+        "replies_pts": 1918,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 659,
+        "read_max_id": 659
+    },
+    "edit_date": "2022-08-23 19:30:49+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

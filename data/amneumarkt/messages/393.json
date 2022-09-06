@@ -1,0 +1,103 @@
+{
+    "_": "Message",
+    "id": 393,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-08-20 08:06:17+00:00",
+    "message": "#ml\n\n\nhttps://ai.googleblog.com/2022/08/optformer-towards-universal.html?m=1\n\nI find this work counter intuitive. They took some descriptions of the optimization in machine learning and trained a transformer to \"guesstimate\" the hyperparameters of a model. \nI understand that human being has some \"feeling\" of the hyperparameters after working with the data and model for a while. But it is usually hard to extrapolate such knowledge when we have completely new data and models.\nI guess our brain is doing some statistics based on our historical experiments. And we call this intuition. My \"intuition\" is that there is little generalizable knowledge in this problem. \ud83d\ude48 It would have been so great if they investigated the saliency maps.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5998674136466538404,
+            "url": "https://ai.googleblog.com/2022/08/optformer-towards-universal.html?m=1",
+            "display_url": "ai.googleblog.com/2022/08/optformer-towards-universal.html?m=1",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Google AI Blog",
+            "title": "OptFormer: Towards Universal Hyperparameter Optimization with Transformers",
+            "description": "Posted by Yutian Chen, Staff Research Scientist, DeepMind, and Xingyou (Richard) Song, Research Scientist, Google Research, Brain Team    On...",
+            "photo": {
+                "_": "Photo",
+                "id": 6052060235683704560,
+                "access_hash": -7757792604882629891,
+                "file_reference": "b'\\x00c\\x16\\xe4\\xe7\\xc1\\x90T\\xda\\xac\\x11p\\n\\x1e\\xa0\\xdbL\\x18\\x1d#\\xbb'",
+                "date": "2022-08-18 19:28:45+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 72,
+                        "h": 72,
+                        "size": 1218
+                    },
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xa6:\\xb1?+b\\x97\\xcdO\\xef\\xaf\\xe7G\\x9a\\x9f\\xdf_\\xce\\x93W\\x01\\x9b$\\xfe\\xf7\\xe9NU`yl\\x8a_2?\\xef\\xaf\\xe7G\\x99\\x1f\\xf7\\xd7\\xf3\\xa3\\x94c\\xa8\\xa6\\xf9\\xa9\\xfd\\xf5\\xfc\\xe8\\xa6#7\\xcb\\x93\\xfey\\xbf\\xfd\\xf2j@8\\x1b\\xa1rF?\\x84\\xd6\\x85\\x15\\\\\\xe3\\xb9\\x9eA$\\x93\\x0b\\xfbpi6q\\xfe\\xa5\\xf3\\x8fCZ4Q\\xcc\\x172\\xfc\\xb9?\\xe7\\x9b\\xff\\x00\\xdf&\\x8a\\xd4\\xa2\\x9f;\\x0b\\x85\\x14QP \\xa2\\x8a(\\x00\\xa2\\x8a(\\x03'"
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 70
+        }
+    ],
+    "views": 117,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1918,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-08-21 07:03:21+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

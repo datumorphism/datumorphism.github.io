@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 394,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-08-23 06:49:13+00:00",
+    "message": "#visualization\n\nHmm not so many contributions from wild animals.\n\nSource: https://www.weforum.org/agenda/2021/08/total-biomass-weight-species-earth\n\nData from this paper: https://www.pnas.org/doi/10.1073/pnas.1711842115#T1",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5197333044808237221,
+            "access_hash": -4606508218789222130,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x8ac\\x16\\xe4\\xe7\\x00\\x02\\x9e\\xd1\\x96\\x8e\\xf2wr\\xf16\\xc2\\xa1\\x95\\xbc\\xc1'",
+            "date": "2022-08-23 06:49:13+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\r\\xb9st-\\xd8.\\xd2Ks\\xf7\\x8dO\\x13\\xf9\\x91\\x87\\x04\\x8c\\xf6\\xaaZ\\x82n\\x96>\\x87\\xda\\xad\\xc06\\xc2\\xa3==*o\\xa9m%\\x14\\xc2T\\x0eA\\xf4\\xa9\\x06\\x00\\xc5WI\\x1fs\\x00\\xbb\\x94t9\\xefQ\\xa3\\xcc\\xc5\\xbc\\xc0A\\x07\\xa0\\xa1\\xfb\\xba\\x90\\xe5\\xa5\\x89\\xf6\\x8c\\xe4R\\x81\\x8f\\xff\\x00]\\x14U\\x05\\x8f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 104,
+                    "h": 320,
+                    "size": 12134
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 260,
+                    "h": 800,
+                    "size": 51865
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 416,
+                    "h": 1280,
+                    "sizes": [
+                        8081,
+                        22773,
+                        41463,
+                        72040,
+                        99173
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 74,
+            "length": 73
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 171,
+            "length": 51
+        }
+    ],
+    "views": 104,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1918,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-08-23 08:16:37+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

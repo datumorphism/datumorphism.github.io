@@ -26,18 +26,18 @@
             "_": "WebPage",
             "id": 5939392536593729715,
             "url": "https://eng.uber.com/deepeta-how-uber-predicts-arrival-times/",
-            "display_url": "eng.uber.com/deepeta-how-uber-predicts-arrival-times",
+            "display_url": "uber.com/en-GB/blog/deepeta-how-uber-predicts-arrival-times",
             "hash": 0,
-            "type": "article",
-            "site_name": "Uber Engineering Blog",
-            "title": "DeepETA: How Uber Predicts Arrival Times Using Deep Learning",
-            "description": "At Uber, magical customer experiences depend on accurate arrival time predictions (ETAs). We use ETAs to calculate fares, estimate pickup times, match riders to",
+            "type": "photo",
+            "site_name": "Uber Blog",
+            "title": "DeepETA: How Uber Predicts Arrival Times Using Deep Learning | Uber Blog",
+            "description": "At Uber, magical customer experiences depend on accurate arrival time predictions (ETAs). We use ETAs to calculate fares, estimate pickup times, match riders to drivers, plan deliveries, and more. Traditional routing engines compute ETAs by dividing up the road network into small road segments represented by weighted edges in a graph. They use shortest-path algorithms to find the best path through the graph and add up the weights to derive an ETA. But as we all know, the map is not the terrain: a road graph is just a model, and it can\u2019t perfectly capture conditions on the ground. Moreover, we may not know which route a particular rider and driver will choose to their destination. By training machine learning (ML) models on top of the road graph prediction using historical data in combination with real-time signals, we can refine ETAs that better predict real-world outcomes.",
             "photo": {
                 "_": "Photo",
-                "id": 5777061068928036158,
-                "access_hash": -8810948050040252566,
-                "file_reference": "b'\\x00b\\xfdd\\xc8\\x9d\\xca\\x8a~@\\xf3nm]\\x9c\\xa0WX\\xc0\\x87\\xd8'",
-                "date": "2022-02-10 17:31:02+00:00",
+                "id": 6031687204344016348,
+                "access_hash": -3370545766230347819,
+                "file_reference": "b'\\x00c\\x16\\xe4\\xe7\\xaf\\xb5\\xc6\\x97}\\x9bP\"\\xfd\\x16k\\x08\\xa1g\\xc1\\xff'",
+                "date": "2022-08-12 02:18:09+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
@@ -81,7 +81,7 @@
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": "Xinyu Hu",
+            "author": null,
             "document": null,
             "cached_page": null,
             "attributes": []
@@ -100,12 +100,12 @@
             "length": 61
         }
     ],
-    "views": 184,
+    "views": 189,
     "forwards": 2,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1863,
+        "replies_pts": 1918,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,
