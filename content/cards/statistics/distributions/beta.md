@@ -28,7 +28,8 @@ references:
 
 ## Interact
 
-{% include extras/vue.html %}
+{{< rawhtml >}}
+<script src="/assets/js/vue.min.js"></script>
 
 <div id="app">
 <div class="columns">
@@ -81,4 +82,9 @@ references:
 </div>
 
 
+<script src="/assets/js/stdlib-flat.min.js"></script>
+<script src="/assets/js/apps/beta.js"></script>
+
+
+{{< /rawhtml >}}
 
