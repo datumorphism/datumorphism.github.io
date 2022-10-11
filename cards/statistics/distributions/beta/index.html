@@ -7,8 +7,7 @@
 <title> Beta Distribution | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Beta Distribution">
-<meta property="og:description" content="Beta Distribution Interact {% include extras/vue.html %}
-((makeGraph))">
+<meta property="og:description" content="Beta Distribution Interact  Alpha    Beta     mode ((beta_mode))   median ((beta_median))   mean ((beta_mean))    ((makeGraph))     ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/cards/statistics/distributions/beta/"><meta property="article:section" content="cards">
 <meta property="article:published_time" content="2020-03-14T00:00:00+00:00">
@@ -124,10 +123,9 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Beta Distribution">
-<meta itemprop=description content="Beta Distribution Interact {% include extras/vue.html %}
-((makeGraph))"><meta itemprop=datePublished content="2020-03-14T00:00:00+00:00">
+<meta itemprop=description content="Beta Distribution Interact  Alpha    Beta     mode ((beta_mode))   median ((beta_median))   mean ((beta_mean))    ((makeGraph))     "><meta itemprop=datePublished content="2020-03-14T00:00:00+00:00">
 <meta itemprop=dateModified content="2020-03-14T00:00:00+00:00">
-<meta itemprop=wordCount content="8">
+<meta itemprop=wordCount content="12">
 <meta itemprop=keywords content="Statistics,Distributions,">
 <section class=section>
 <div class=container>
@@ -178,8 +176,51 @@ Beta Distribution
 <p><img src=../assets/beta/beta-1.png alt></p>
 <p><img src=../assets/beta/beta-2.png alt></p>
 <h2 id=interact>Interact</h2>
-<p>{% include extras/vue.html %}</p>
-<p>((makeGraph))</p>
+<script src=/assets/js/vue.min.js></script>
+<div id=app>
+<div class=columns>
+<div class="column has-text-centered">
+<div class=field>
+<label class=label>Alpha</label>
+<div class=control>
+<input v-model=alpha class=input type=number>
+</div>
+</div>
+</div>
+<div class="column has-text-centered">
+<div class=field>
+<label class=label>Beta</label>
+<div class=control>
+<input v-model=beta class=input type=number>
+</div>
+</div>
+</div>
+</div>
+<div class="field is-grouped is-grouped-multiline">
+<div class=control>
+<div class="tags has-addons">
+<span class="tag is-dark">mode</span>
+<span class="tag is-primary">((beta_mode))</span>
+</div>
+</div>
+<div class=control>
+<div class="tags has-addons">
+<span class="tag is-dark">median</span>
+<span class="tag is-primary">((beta_median))</span>
+</div>
+</div>
+<div class=control>
+<div class="tags has-addons">
+<span class="tag is-dark">mean</span>
+<span class="tag is-primary">((beta_mean))</span>
+</div>
+</div>
+</div>
+((makeGraph))
+<div id=beta-chart></div>
+</div>
+<script src=/assets/js/stdlib-flat.min.js></script>
+<script src=/assets/js/apps/beta.js></script>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
