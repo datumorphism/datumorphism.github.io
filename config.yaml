@@ -72,6 +72,7 @@ params:
   author: "L Ma" # Default author name and the name to be shown in the footer
   authorURL: "https://leima.is"
   editURL: "https://github.com/datumorphism/datumorphism.github.io/edit/hugo/content/"
+  hypothesis: false
   comments:
     use: "giscus"
     giscus:
