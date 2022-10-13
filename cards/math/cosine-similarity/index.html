@@ -138,6 +138,7 @@ In principle, we could also use word set for a sentence to remove the effect of 
 <h1 class="post-title has-text-left is-size-1" itemprop="name headline">
 Cosine Similarity
 </h1>
+<div class=is-divider data-content=META></div>
 <div class="title is-6 has-text-left" style=margin-top:1em>
 <i class="fa-solid fa-leaf" style=margin-right:.5em;color:#e95420></i>
 <a class=tooltip><span style=color:#e95420 class="tag is-warning is-small is-light">GROWING</span>
@@ -159,7 +160,7 @@ Cosine Similarity
 <div class=columns>
 <div class="column is-12">
 <div class=is-divider data-content=ARTICLE></div>
-<div class="content blog-post section" itemprop=articleBody>
+<div class="content blog-post section" id=content-limited itemprop=articleBody>
 <p>As simple as the inner product of two vectors</p>
 <p>$$
 d_{cos} = \frac{\vec A}{\vert \vec A \vert} \cdot \frac{\vec B }{ \vert \vec B \vert}
@@ -236,7 +237,7 @@ by <span itemprop=author>L Ma</span>;
 <span style=font-weight:700><i class="fa-solid fa-quote-left"></i> References: </span>
 </div>
 <div class="columns is-mobile">
-<div class="column content blog-post section">
+<div class="column content blog-post section" id=content-limited>
 <section class=footnotes>
 <ol>
 <li class=has-text-weight-bold style=margin-bottom:.5em><a href=https://en.wikipedia.org/wiki/Cosine_similarity style=text-decoration:none>Cosine Similarity</a></li>
@@ -249,8 +250,22 @@ by <span itemprop=author>L Ma</span>;
 </div>
 <div id=connectome class=is-divider data-content=CONNECTUME></div>
 <div class=is-size-8>
-<div class="notification is-white">
-No backlinks identified. Reference this note using the Note ID <code>cards/math/cosine-similarity.md</code> in other notes to connect them.
+<div style=margin-bottom:1em><span style=font-weight:700><i class="fa-solid fa-wand-magic-sparkles"></i> Similar Articles: </span></div>
+<div class="columns is-multiline is-mobile">
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/cards/math/jaccard-similarity/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Jaccard Similarity
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Jaccard index is the ratio of the size of the intersect of the set and the size of the union of the …
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 </div>
 <div class=is-size-8 style=margin-top:2em>
@@ -282,13 +297,13 @@ Jaccard index is the ratio of the size of the intersect of the set and the size 
 <div class="column is-12">
 <div id=comments class=is-divider data-content=COMMENTS>
 </div>
-<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=preferred_color_scheme data-input-position=top data-loading=lazy crossorigin=anonymous async></script>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-strict=1 data-reactions-enabled=1 data-emit-metadata=1 data-input-position=bottom data-theme=light_protanopia data-lang=en data-loading=lazy crossorigin=anonymous async></script>
 </div>
 </div>
 <div class=columns>
 <div class="column is-12">
 <div class=is-divider data-content=Cite></div>
-<div class="box is-size-8">
+<div class="box is-size-8 citethis">
 <article class=media>
 <div class=media-content>
 <div class=content>

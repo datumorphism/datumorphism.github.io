@@ -134,6 +134,7 @@ AmNeumarkt
 <h1 class="post-title has-text-left is-size-1" itemprop="name headline">
 Over-Smoothing in Graph Neural Networks
 </h1>
+<div class=is-divider data-content=META></div>
 <div class="title is-6 has-text-left" style=margin-top:1em>
 <i class="fa-solid fa-seedling" style=margin-right:.5em;color:#17a2b8></i>
 <a class=tooltip><span style=color:#17a2b8 class="tag is-warning is-small is-light"><b>SEEDLING</b></span>
@@ -156,7 +157,7 @@ Over-Smoothing in Graph Neural Networks
 <div class=columns>
 <div class="column is-12">
 <div class=is-divider data-content=ARTICLE></div>
-<div class="content blog-post section" itemprop=articleBody>
+<div class="content blog-post section" id=content-limited itemprop=articleBody>
 <p>Over-smoothing is the problem that the representations on each node of the graph neural networks becomes way too similar to each other.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> In Chapter 7 of Hamilton2020, the author interprets this phenomenon using the lower pass filter theory in signal processing, i.e., multiplying a signal by $\mathbf A^n$ is similar to a low-pass filter when $n$ is large, with $\mathbf A$ being the adjacency matrix.</p>
 <section class=footnotes role=doc-endnotes>
 <hr>
@@ -187,7 +188,7 @@ by <span itemprop=author>L Ma</span>;
 <span style=font-weight:700><i class="fa-solid fa-quote-left"></i> References: </span>
 </div>
 <div class="columns is-mobile">
-<div class="column content blog-post section">
+<div class="column content blog-post section" id=content-limited>
 <section class=footnotes>
 <ol>
 <li class=has-text-weight-bold style=margin-bottom:.5em>
@@ -204,8 +205,36 @@ by <span itemprop=author>L Ma</span>;
 </div>
 <div id=connectome class=is-divider data-content=CONNECTUME></div>
 <div class=is-size-8>
-<div class="notification is-white">
-No backlinks identified. Reference this note using the Note ID <code>cards/graph/graph-neural-networks-over-smoothing.md</code> in other notes to connect them.
+<div style=margin-bottom:1em><span style=font-weight:700><i class="fa-solid fa-wand-magic-sparkles"></i> Similar Articles: </span></div>
+<div class="columns is-multiline is-mobile">
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/reading/stemgnn/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">StemGNN
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+What problem is StemGNN solving: intra-series temporal pattern: DFT Each series inter-series …
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/reading/popularity-vs-similarity/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Popularity versus similarity in growing networks
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Introduce geometry into the manifold of complex networks
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 </div>
 <div class=is-size-8 style=margin-top:2em>
@@ -218,13 +247,13 @@ No backlinks identified. Reference this note using the Note ID <code>cards/graph
 <div class="column is-12">
 <div id=comments class=is-divider data-content=COMMENTS>
 </div>
-<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=preferred_color_scheme data-input-position=top data-loading=lazy crossorigin=anonymous async></script>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-strict=1 data-reactions-enabled=1 data-emit-metadata=1 data-input-position=bottom data-theme=light_protanopia data-lang=en data-loading=lazy crossorigin=anonymous async></script>
 </div>
 </div>
 <div class=columns>
 <div class="column is-12">
 <div class=is-divider data-content=Cite></div>
-<div class="box is-size-8">
+<div class="box is-size-8 citethis">
 <article class=media>
 <div class=media-content>
 <div class=content>

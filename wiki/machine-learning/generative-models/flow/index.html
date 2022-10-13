@@ -137,6 +137,7 @@ AmNeumarkt
 <h1 class="post-title has-text-left is-size-1" itemprop="name headline">
 Generative Model: Normalizing Flow
 </h1>
+<div class=is-divider data-content=META></div>
 <div class="title is-6 has-text-left" style=margin-top:1em>
 <i class="fa-solid fa-leaf" style=margin-right:.5em;color:#e95420></i>
 <a class=tooltip><span style=color:#e95420 class="tag is-warning is-small is-light">GROWING</span>
@@ -160,7 +161,7 @@ Generative Model: Normalizing Flow
 <div class=columns>
 <div class="column is-12">
 <div class=is-divider data-content=ARTICLE></div>
-<div class="content blog-post section" itemprop=articleBody>
+<div class="content blog-post section" id=content-limited itemprop=articleBody>
 <p>Normalizing flow is a method to convert a complicated distribution $p(x)$ to a simpler distribution $\tilde p(z)$ by building up a map $z=f(y)$ for the variable $x$ to $z$. The relations between the two distributions is established using the conservation law for distributions, $\int p(x) \mathrm d x = \int \tilde p (z) \mathrm d z = 1$. One could imagine that changing the variable also brings in the Jacobian.</p>
 <figure>
 <img src=../assets/generative-flow/generative-flow-illustration.png alt="Liu X, Zhang F, Hou Z, Wang Z, Mian L, Zhang J, et al. Self-supervised Learning: Generative or Contrastive. arXiv [cs.LG]. 2020. Available: http://arxiv.org/abs/2006.08218"> <figcaption>
@@ -269,7 +270,7 @@ by <span itemprop=author>L Ma</span>;
 <span style=font-weight:700><i class="fa-solid fa-quote-left"></i> References: </span>
 </div>
 <div class="columns is-mobile">
-<div class="column content blog-post section">
+<div class="column content blog-post section" id=content-limited>
 <section class=footnotes>
 <ol>
 <li class=has-text-weight-bold style=margin-bottom:.5em>
@@ -286,8 +287,68 @@ by <span itemprop=author>L Ma</span>;
 </div>
 <div id=connectome class=is-divider data-content=CONNECTUME></div>
 <div class=is-size-8>
-<div class="notification is-white">
-No backlinks identified. Reference this note using the Note ID <code>wiki/machine-learning/generative-models/flow.md</code> in other notes to connect them.
+<div style=margin-bottom:1em><span style=font-weight:700><i class="fa-solid fa-wand-magic-sparkles"></i> Similar Articles: </span></div>
+<div class="columns is-multiline is-mobile">
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/generative/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">An Introduction to Generative Models
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Discriminative model:
+The conditional probability of class label on data (posterior) $p(C_k\mid x)$ …
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/autoencoder/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Generative Model: Auto-Encoder
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Autoencoders (AE) are machines that encodes inputs into a compact latent space.
+The simplest …
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/autoregressive-model/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Generative Model: Autoregressive Model
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+An autoregressive (AR) model is autoregressive,
+$$ \begin{equation} \log p_\theta (x) = \sum_{t=1}^T …
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/wiki/machine-learning/generative-models/variational-autoencoder/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Variational Auto-Encoder
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+In an inference problem, $p(z\vert x)$, which is used to infer $z$ from $x$.
+$$ p(z\vert x) = …
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 </div>
 <div class=is-size-8 style=margin-top:2em>
@@ -337,13 +398,13 @@ $$ p(z\vert x) = …
 <div class="column is-12">
 <div id=comments class=is-divider data-content=COMMENTS>
 </div>
-<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=preferred_color_scheme data-input-position=top data-loading=lazy crossorigin=anonymous async></script>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-strict=1 data-reactions-enabled=1 data-emit-metadata=1 data-input-position=bottom data-theme=light_protanopia data-lang=en data-loading=lazy crossorigin=anonymous async></script>
 </div>
 </div>
 <div class=columns>
 <div class="column is-12">
 <div class=is-divider data-content=Cite></div>
-<div class="box is-size-8">
+<div class="box is-size-8 citethis">
 <article class=media>
 <div class=media-content>
 <div class=content>

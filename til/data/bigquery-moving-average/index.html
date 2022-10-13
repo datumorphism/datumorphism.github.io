@@ -127,6 +127,7 @@ AmNeumarkt
 <h1 class="post-title has-text-left is-size-1" itemprop="name headline">
 Calculate Moving Average Using SQL/BigQquery
 </h1>
+<div class=is-divider data-content=META></div>
 <div class="title is-6 has-text-left" style=margin-top:1em>
 <i class="fa-solid fa-leaf" style=margin-right:.5em;color:#e95420></i>
 <a class=tooltip><span style=color:#e95420 class="tag is-warning is-small is-light">GROWING</span>
@@ -155,7 +156,7 @@ Snippet for calculating moving avg using sql/biguqery
 </p>
 </div>
 <div class=is-divider data-content=ARTICLE></div>
-<div class="content blog-post section" itemprop=articleBody>
+<div class="content blog-post section" id=content-limited itemprop=articleBody>
 <p>Calculate moving avg using sql/biguqery</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-SQL data-lang=SQL><span style=color:#66d9ef>AVG</span>(users) OVER (<span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> <span style=color:#66d9ef>day</span> <span style=color:#66d9ef>ROWS</span> <span style=color:#66d9ef>BETWEEN</span> <span style=color:#ae81ff>6</span> PRECEDING <span style=color:#66d9ef>AND</span> <span style=color:#ae81ff>0</span> FOLLOWING) <span style=color:#66d9ef>AS</span> moving_avg
 </code></pre></div><p>What about moving average for different categories? For example, we have <code>date</code>, <code>categories</code>, <code>fee</code>. We would like to calculate the moving avg for each category.</p>
@@ -175,7 +176,7 @@ by <span itemprop=author>L Ma</span>;
 <span style=font-weight:700><i class="fa-solid fa-quote-left"></i> References: </span>
 </div>
 <div class="columns is-mobile">
-<div class="column content blog-post section">
+<div class="column content blog-post section" id=content-limited>
 <section class=footnotes>
 <ol>
 <li class=has-text-weight-bold style=margin-bottom:.5em><a href=https://cloud.google.com/bigquery/docs/information-schema-tables style=text-decoration:none>Getting table metadata using INFORMATION_SCHEMA</a></li>
@@ -188,8 +189,64 @@ by <span itemprop=author>L Ma</span>;
 </div>
 <div id=connectome class=is-divider data-content=CONNECTUME></div>
 <div class=is-size-8>
-<div class="notification is-white">
-No backlinks identified. Reference this note using the Note ID <code>til/data/bigquery-moving-average.md</code> in other notes to connect them.
+<div style=margin-bottom:1em><span style=font-weight:700><i class="fa-solid fa-wand-magic-sparkles"></i> Similar Articles: </span></div>
+<div class="columns is-multiline is-mobile">
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/til/data/bigquery-meta-tables/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">BigQuery Meta Tables
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Meta tables are very useful when it comes to get bigquery table information programmatically.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/til/data/bigquery-generate-continuous-dates-as-a-column/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Generate a Column of Continuous Dates in BigQuery
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Generate a table with a column of continuous dates
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/til/data/bigquery-get-current-user/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Get Current User in BigQuery
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+BigQuery Current User
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://datumorphism.leima.is/til/data/bigquery-materialize-query-results-for-performance/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Materialize the Query Result for Performance
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Materialize the query result for multistage queries to make your query faster and lower the costs.
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 </div>
 <div class=is-size-8 style=margin-top:2em>
@@ -202,13 +259,13 @@ No backlinks identified. Reference this note using the Note ID <code>til/data/bi
 <div class="column is-12">
 <div id=comments class=is-divider data-content=COMMENTS>
 </div>
-<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-reactions-enabled=1 data-emit-metadata=1 data-theme=preferred_color_scheme data-input-position=top data-loading=lazy crossorigin=anonymous async></script>
+<script src=https://giscus.app/client.js data-repo=datumorphism/comments data-repo-id="MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI=" data-category=Comments data-category-id=DIC_kwDOCeOS-s4B-Zxx data-mapping=pathname data-strict=1 data-reactions-enabled=1 data-emit-metadata=1 data-input-position=bottom data-theme=light_protanopia data-lang=en data-loading=lazy crossorigin=anonymous async></script>
 </div>
 </div>
 <div class=columns>
 <div class="column is-12">
 <div class=is-divider data-content=Cite></div>
-<div class="box is-size-8">
+<div class="box is-size-8 citethis">
 <article class=media>
 <div class=media-content>
 <div class=content>
