@@ -80,6 +80,7 @@ params:
       repo_id: "MDEwOlJlcG9zaXRvcnkxNjU5MDkyNDI="
       category: "Comments"
       category_id: "DIC_kwDOCeOS-s4B-Zxx"
+      theme: "light_protanopia"
     utterances: # comment system: utterances (https://utteranc.es/) parameters
       repo: "datumorphism/comments"  # repo="[ENTER REPO HERE]", the comments will appear as issues in this repository on github.
       term: pathname               # issue-term="pathname"
