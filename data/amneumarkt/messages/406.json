@@ -1,0 +1,110 @@
+{
+    "_": "Message",
+    "id": 406,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-09-15 15:16:49+00:00",
+    "message": "#python\n\nFaster conda\n\nhttps://www.anaconda.com/blog/a-faster-conda-for-a-growing-community",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2267617638344190071,
+            "url": "https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community",
+            "display_url": "anaconda.com/blog/a-faster-conda-for-a-growing-community",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Anaconda",
+            "title": "Anaconda | A Faster Solver for Conda: Libmamba",
+            "description": "New version available!   conda install conda-libmamba-solver=22.8  Or update if you've already installed:  conda update conda-libmamba-solver   Introducing conda-libmamba-solver  The conda team is pleased to announce the availability of 'libmamba' as a new, much faster dependency solver for conda!\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 6050000949189127642,
+                "access_hash": 4351203217217588822,
+                "file_reference": "b'\\x00cP6k?\\xde \\x87\\xb8\\x88\\x9b\\x11\\xf6\"\\x05\\x11Jy\\xd3\\x10'",
+                "date": "2022-05-13 07:59:08+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1b(\\xcd\\x88\\x80\\xdc\\x8a\\x98\\xa4\\x7f+\\x86\\x03\\x9f\\xbb\\xd6\\xab\\xf1SF\\x86N\\x00\\xe7\\xbdZ!\\x8ar\\xe3j\\xe7h\\xa2[]\\x8b\\x92x\\xeb\\x9a\\x97\\xcbh\\x10\\xb7*}*\\x19\\x19\\xdb\\xab\\x12=M1\\x15\\xc8\\x19\\xe2\\x8aS\\xc1\\xa2\\xa4\\xa1*\\xdc\\x13\\x18\\x82\\x98\\xd4s\\xc6\\x7f\\xcf\\xd6\\xa9\\xd1B`\\xd1bI\\ts\\xc8\\x00\\xf1\\xc7j\\x06\\x10\\x00\\xfc\\x91\\xce>\\xbf\\xe4T\\x1d\\xeaY\\x89\\x12>=qN\\xe2\\xb0\\xe9Hq\\xbdv\\x81\\xe9EA\\x92:\\x1e\\xd4Qp\\xb1'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 213,
+                        "size": 24813
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 627,
+                        "h": 418,
+                        "size": 47307
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 23,
+            "length": 68
+        }
+    ],
+    "views": 195,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1978,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-09-16 09:09:03+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "python"
+    ]
+}

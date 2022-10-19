@@ -1,0 +1,133 @@
+{
+    "_": "Message",
+    "id": 409,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-10-03 19:13:31+00:00",
+    "message": "#ml \n\nAmazon has been updating their Machine Learning University website. It is getting more and more interesting. \nThey have added an article about linear regression recently. There is a section in this article about interpreting linear models and it is just fun.\n\nhttps://mlu-explain.github.io/\n\n( Time machine: https://t.me/amneumarkt/293 )",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8832449196198789812,
+            "url": "https://mlu-explain.github.io/",
+            "display_url": "mlu-explain.github.io",
+            "hash": 0,
+            "type": "article",
+            "site_name": "mlu-explain.github.io",
+            "title": null,
+            "description": "Visual explanations of core machine learning concepts.",
+            "photo": {
+                "_": "Photo",
+                "id": 5768473874525170894,
+                "access_hash": 7475262629720558124,
+                "file_reference": "b'\\x00cP6k\\x9e\\x17\\xf0\\x1c\\x94\\xfd\\x86\\xb0\\xaa\\x95T\\xc7R\\xeea\\xd1'",
+                "date": "2021-11-02 16:17:47+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd5f`p?\\x95\\x01\\xdb\\xb8'\\xf0\\xff\\x00\\xeb\\xd3\\xf1\\xcfJ1\\xec(\\x01\\x03g\\xb1\\xa6rY\\x86\\xec`\\xd4\\x80})\\x9b_{\\x10T/\\xa1\\x14\\x0c0}I\\xa2\\x9a\\x15\\xc3\\x00O\\x1e\\xd4P\\x04\\xd4QE\\x02\\n(\\xa2\\x80\\n(\\xa2\\x80?\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 157,
+                        "size": 10453
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 393,
+                        "size": 43129
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1204,
+                        "h": 591,
+                        "sizes": [
+                            6917,
+                            16128,
+                            35248,
+                            48624,
+                            73049
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 266,
+            "length": 30
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 314,
+            "length": 27
+        }
+    ],
+    "views": 692,
+    "forwards": 11,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1978,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 741673389
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 693,
+        "read_max_id": 693
+    },
+    "edit_date": "2022-10-03 19:14:08+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

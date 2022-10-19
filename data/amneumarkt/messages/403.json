@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 403,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-09-07 16:50:41+00:00",
+    "message": "#visualization \n\n> Tracking of an Eagle over a 20 year period.\nSource:\nhttps://twitter.com/Loca1ion/status/1566346534651924480?s=20&t=AKXn9U-L3fyhrJzeAXySlA",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5244990074939096608,
+            "access_hash": -8675502873817798255,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x93cP6k\\x96\\x1e)\\x15n#C\\xc8\\xef\\xaf<\\xe3X\\x8c\\xab\\xff'",
+            "date": "2022-09-07 16:50:40+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01((\\xd2\\xc8'\\x8ain\\xddI\\xfc)\\x08$\\xe4t\\xa6\\x9d\\xc3\\xa68\\xa2\\xc2OQegU\\xc8\\xc7\\xd2\\x926wPI\\xc1\\xe7#\\x1d)\\x84\\x929\\xeb\\xd0\\x9a\\x9d@P\\x00\\x03mS\\xd1\\x14\\x9e\\x80\\xb9=zQM\\xf3\\tl(\\x07\\xde\\x8a\\x80\\x1b\\xf3\\x8e0i\\xf22\\xa4`\\x91\\xcfaR\\xb0\\xc885T\\xe6Yq\\x81\\xf2\\xf5\\x14\\xfe-E\\x15m\\x05\\x8d\\x1aC\\x97\\xf9G\\xf7}jR\\x0f!@\\xc0\\xa0\\xa3\\x03\\x95\\xe8\\x7fJn\\xf6\\\\\\x86\\xc6h\\xd6[\\x03\\x92[\\x8cdpw\\x83\\xf9\\n*|\\x820>\\xb4R\\x00\\x90\\xb0\\x07n:T?7\\x98\\x1f\\x189\\xe7\\x1e\\x94QN \\xc7\\xb4\\x87\\xb0\\xc5G\\x9a(\\xadb\\x92F\\x12m\\x8a\\xa7\\x19\\xa2\\x8a+9ni\\x1d\\x8f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 320,
+                    "size": 45941
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 800,
+                    "size": 217301
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 960,
+                    "h": 960,
+                    "sizes": [
+                        15931,
+                        50291,
+                        119405,
+                        167302,
+                        201763
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 71,
+            "length": 85
+        }
+    ],
+    "views": 171,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 1978,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 662,
+        "read_max_id": null
+    },
+    "edit_date": "2022-09-07 17:38:01+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

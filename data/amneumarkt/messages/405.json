@@ -1,0 +1,113 @@
+{
+    "_": "Message",
+    "id": 405,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-09-10 07:34:32+00:00",
+    "message": "#fun\n\nGermany is so small. \nMy GitHub profile ranks 102 in Germany by public contributions.\n\nhttps://github.com/gayanvoice/top-github-users",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5251588458965744998,
+            "access_hash": -7682892028214560583,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x95cP6k-\\xa3\\x83\\x0e\\xa77\\xe1\\xe9\\xdf\\x8d\\xb3\\xe9t\\xc4\\xf9]'",
+            "date": "2022-09-10 07:34:32+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xcd\\x0cz\\x12qFNx\\xcf\\xe1Bu\\xed\\xf9\\xd2\\x13\\xcf\\xff\\x00^\\x98\\x08I\\xcf$\\xd1E\\x14\\x00\\xab\\xf5\\xc7\\xd0Q\\xde\\x95\\t\\x1d\\t\\x19\\xe3\\x8aL\\x1d\\xd4\\x08C\\xd6\\x8a\\x0fZ(\\x01\\xc8:\\xfd\\x0fl\\xd2\\x1eM\\x14P1(\\xa2\\x8a\\x04\\x7f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 12820
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 48139
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        7175,
+                        19209,
+                        43138,
+                        65090,
+                        82431
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 93,
+            "length": 46
+        }
+    ],
+    "views": 178,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 1978,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1090037466
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 668,
+        "read_max_id": null
+    },
+    "edit_date": "2022-09-10 07:38:58+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

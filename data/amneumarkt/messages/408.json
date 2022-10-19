@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 408,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-10-02 08:43:00+00:00",
+    "message": "#showerthoughts \n\nI've never thought about dark mode in LaTeX. It sounds weird at first, but now thinking about this, it's actually a great style.\n\nThis is a dark style from Dracula.\nhttps://draculatheme.com/latex",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3791153499284093125,
+            "url": "https://draculatheme.com/latex",
+            "display_url": "draculatheme.com/latex",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Draculatheme",
+            "title": "Dark theme for LaTeX and 275+ apps \u2014 Dracula",
+            "description": "Dracula is a color scheme for code editors and terminal emulators, including LaTeX and 275+ other apps. Check the instructions to learn how to install it.",
+            "photo": {
+                "_": "Photo",
+                "id": 5818063949176876778,
+                "access_hash": -1896093348829269823,
+                "file_reference": "b'\\x00cP6k\\xe1\\xba@\\x0b\\x80:\\xd5\\xe6\\xb8\\x9f\\x8b\\x98\\xbf\\xe7\\xd7\\x1f'",
+                "date": "2022-09-06 19:31:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xa6L\\x8f+*\\x97''\\x80i\\x1f\\xcdC\\x86\\xde\\xa7\\xd0\\x9a\\xb3k \\x8eI\\x8f\\x1b\\xbb~t\\xcb\\xa9\\xc4\\x8a\\xa0\\xf2T\\xf0}\\xa8\\xbe\\xb6']\\xed\\xa1\\x06\\xf9?\\xbc\\xdf\\x9d&\\xf9?\\xbc\\xdf\\x9d\\x05\\xb8\\xe3 \\xfa\\xe6\\x93'\\xd6\\x98\\xc7\\xc6\\xef\\xe6/\\xce\\xddGz)\\xb1\\xff\\x00\\xac_\\xa8\\xa2\\x98\\x99#\\xc3'\\x98\\xc7\\x1d\\xcfzo\\x92\\xf9\\xe9E\\x14X./\\x91'\\xf7\\x7f\\x95'\\x91'\\xf7\\x7fZ(\\xa2\\xc1qR\\x19<\\xc5\\xf9{\\xfa\\xd1E\\x14\\t\\xb3\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 8614
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 27458
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 50425
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1686,
+                        "h": 948,
+                        "sizes": [
+                            9254,
+                            19028,
+                            32586,
+                            40542,
+                            62818
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 15
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 183,
+            "length": 30
+        }
+    ],
+    "views": 132,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 1978,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-10-02 09:00:12+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "showerthoughts"
+    ]
+}
