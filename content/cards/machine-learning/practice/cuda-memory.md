@@ -29,8 +29,6 @@ references:
   - name: "Gao Y. What is the disadvantage of using pin_memory? In: PyTorch Forums [Internet]. 6 Apr 2017 [cited 19 Oct 2022]. Available: https://discuss.pytorch.org/t/what-is-the-disadvantage-of-using-pin-memory/1702"
     link: "https://discuss.pytorch.org/t/what-is-the-disadvantage-of-using-pin-memory/1702/2"
     key: "smth-pinned-memory"
-links:
-  - ""
 garden:
   - "seedling"
 ---
