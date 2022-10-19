@@ -8,6 +8,7 @@ tags:
 - 'Python'
 - 'Programming Language'
 - 'Basics'
+- 'Parallel'
 references:
 - name: "An introduction to parallel programming using Python's multiprocessing module"
   link: http://sebastianraschka.com/Articles/2014_multiprocessing.html
