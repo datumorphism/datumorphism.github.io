@@ -1,30 +1,11 @@
 ---
 title: About
+tags:
+  - "meta"
 ---
 
-Datumorphism is my notebook about programming, data scraping, statistics, machine learning, and data visualization.
+Datumorphism is my notebook about machine learning, programming, data, statistics, and data visualization. Most of the topics are here because I need them in my work or personal projects.
 
-{{< rawhtml >}}
-<div class="columns">
-  <div class="column">
-    <div class="notification is-success">
-      <a class="button is-success is-inverted is-centered" style="display:block;" href="http://enkipro.com/team/#/join/Datumorphism">Join our Enki Team</a>
-      Learn, practice, and play together. Programmers are unstoppable.
-    </div>
-  </div>
-  <div class="column">
-    <div class="notification is-success">
-      <a class="button is-success is-inverted is-centered" style="display:block;" href="http://intelligence.leima.is/">Intelligence Notebook</a>
-      Notes about neuroscience, machine intelligence, and collective intelligence.
-    </div>
-  </div>
+To organize the notes more elegantly, I created a [hugo](https://gohugo.io/) theme called [connectome](https://github.com/kausalflow/connectome) to host them. The essence of the theme is to enable bi-directional connections between them.
 
-  <div class="column">
-    <div class="notification is-success">
-      <a class="button is-success is-inverted is-centered" style="display:block;" href="https://leima.is/">Lei Ma</a>
-      Visit this page if you would like to know more about me.
-    </div>
-  </div>
-
-</div>
-{{< /rawhtml >}}
+This website is mostly designed to be a reference book for myself.

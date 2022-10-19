@@ -5,7 +5,7 @@ date: 2022-09-06T08:09:26+02:00
 authors:
   - "L Ma"
 categories:
-  - "cards"
+  - "ML Practice"
 tags:
   - "Machine Learning"
   - "PyTorch Lightning"

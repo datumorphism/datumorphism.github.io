@@ -12,12 +12,13 @@ date: 2018-08-08
 published: true
 ---
 
-**This is a post of no analysis at all. Everything in this post is meant for fun.**
+{{< message class="warning" >}}
+This is a joke. Everything in this post is meant for fun.
+{{< /message >}}
 
-I moved to Germany a few weeks ago and one of the most astonishing things I noticed is that everyone is drinking so much. Yet the life expectance of Germany is pretty high. So I performed this "analysis" for fun.
+I moved to Germany a few weeks ago. One of the most interesting things here is beer. People are drinking so much, yet the life expectance of Germany is pretty high. So I came up with this broken joke "analysis" for fun.
 
 {{< figure src="../assets/ruthless/beer-life-expectancy.png" caption="Life expectancy vs beer consumption (L) per capita per year. Data obtained from [wikipediaList of countries by life expectancy](https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy) and [List of countries by beer consumption per capita](https://en.wikipedia.org/wiki/List_of_countries_by_beer_consumption_per_capita)." >}}
-
 
 As you might be curious about the life expectancy vs the life expectancy, I also made one plot about it.
 
