@@ -34,29 +34,29 @@
             "description": "A Tensorflow implementation of AnimeGAN for fast photo animation  ! This is the Open source of the paper \u300cAnimeGAN: a novel lightweight GAN for photo animation\u300d, which uses the GAN framwork to tran...",
             "photo": {
                 "_": "Photo",
-                "id": 5804285943199411981,
-                "access_hash": -2529403501952182628,
-                "file_reference": "b'\\x00c\\x16\\xe4\\xe9*\\xa8\\xfb\\xddZ\\x9b\\x8a\\x8e_\\x1d\\xa2o;]j\\xc0'",
-                "date": "2022-09-01 20:14:50+00:00",
+                "id": 5905503732362227353,
+                "access_hash": 4410528368899565047,
+                "file_reference": "b\"\\x00cP6mB\\x05'[\\x87\\x10\\nK\\xc4{\\x15\\xc6A\\xdfA\\xb3\"",
+                "date": "2022-10-05 19:32:24+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
                         "type": "i",
-                        "bytes": "b'\\x01\\x14(\\xd4yB62\\xbd3\\xc9\\xc54\\xdc\\x01\\x9f\\xb9\\xc79\\xddR0\\x05\\xb9P\\x7f\\nM\\xaaO\\xdd\\\\\\xfd(\\x01U\\xd9\\x80!A\\x04z\\xd2H\\xcc\\xb0\\xb3\\x0e\\x18\\np\\xc8\\x1d\\x80\\xa5\\x1d9\\xa0\\n\\xb6\\xd3\\xca\\xf2m\\x90\\x0eFF\\x05\\x15eUW\\xa0\\x03<\\xd1@\\x19\\xff\\x00\\xda\\x12\\xff\\x00u?#\\xfe4\\xbfo\\x97?u?#E\\x15vD\\\\O\\xb7\\xcb\\x8f\\xba\\x9f\\x91\\xff\\x00\\x1a_\\xb7\\xcb\\xfd\\xd4\\xfc\\x8d\\x14Qd\\x17\\x0f\\xb7K\\xc7\\xca\\x9f\\x91\\xa2\\x8a(\\xb2\\x0b\\x9f'"
+                        "bytes": "b'\\x01\\x14(\\xd4yB62\\xbd3\\xc9\\xc54\\xdc\\x01\\x9f\\xb9\\xc79\\xddR0\\x05\\xb9P\\x7f\\nM\\xaaO\\xdd\\\\\\xfd(\\x01U\\xd9\\x80!A\\x04z\\xd2H\\xcc\\xb0\\xb3\\x0e\\x18\\nw q\\x80)GNh\\x02\\xad\\xb4\\xf2\\xbc\\x9bd\\x03\\x91\\x91\\x81EYUU\\xe8\\x00\\xcf4P\\x06\\x7f\\xf6\\x84\\xbf\\xddO\\xc8\\xff\\x00\\x8d/\\xdb\\xe5\\xcf\\xddO\\xc8\\xd1E]\\x91\\x17\\x13\\xed\\xf2\\xe3\\xee\\xa7\\xe4\\x7f\\xc6\\x97\\xed\\xf2\\xff\\x00u?#E\\x14Y\\x05\\xc3\\xed\\xd2\\xf1\\xf2\\xa7\\xe4h\\xa2\\x8a,\\x82\\xe7'"
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
                         "h": 160,
-                        "size": 12377
+                        "size": 12356
                     },
                     {
                         "_": "PhotoSize",
                         "type": "x",
                         "w": 800,
                         "h": 400,
-                        "size": 43834
+                        "size": 43839
                     },
                     {
                         "_": "PhotoSizeProgressive",
@@ -64,11 +64,11 @@
                         "w": 1200,
                         "h": 600,
                         "sizes": [
-                            5905,
-                            14828,
-                            31360,
-                            43585,
-                            66164
+                            5901,
+                            14809,
+                            31302,
+                            43494,
+                            66024
                         ]
                     }
                 ],
@@ -100,7 +100,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 4,
-        "replies_pts": 1918,
+        "replies_pts": 1978,
         "comments": true,
         "recent_repliers": [
             {

@@ -25,9 +25,9 @@
         "webpage": {
             "_": "WebPage",
             "id": 3384953263262161987,
-            "url": "https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics",
+            "url": "http://en.wikipedia.org/wiki/How_to_Lie_with_Statistics",
             "display_url": "en.m.wikipedia.org/wiki/How_to_Lie_with_Statistics",
-            "hash": -131354438,
+            "hash": 1284497162,
             "type": "article",
             "site_name": "Wikipedia",
             "title": "How to Lie with Statistics",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 6015850968433928321,
                 "access_hash": 3836289751632448125,
-                "file_reference": "b'\\x00c\\x16\\xe4\\xe7\\xa1\\xb5\\x81\\xe8$k,\\xd5\\xe25\\x988E\\x87J\\xf8'",
+                "file_reference": "b'\\x00cP6k\\xf7L\\x03\\xda\\xf7\\xc4B\\t\\xa1\\xa43\\x93\\t0\\xba\\xe3'",
                 "date": "2018-11-16 20:04:14+00:00",
                 "sizes": [
                     {
@@ -810,11 +810,11 @@
                             },
                             {
                                 "_": "PageRelatedArticle",
-                                "url": "https://en.m.wikipedia.org/wiki/Statistical_literacy",
-                                "webpage_id": 5973540601086181005,
-                                "title": "Statistical literacy",
-                                "description": "Statistical literacy is the ability to understand and reason with statistics and data. The abilities to understand and reason with data, or arguments that use data, are necessary for citizens to understand material presented in publications such as newspapers, television, and the Internet. However, scientists also need to develop statistical literacy so that they can both produce rigorous and reproducible research and consume it. Numeracy is an element of being statistically literate and in some models of statistical literacy, or for some populations (e.g., students in kindergarten through 12th grade/end of secondary school), it is a prerequisite skill. Being statistically literate is sometimes taken to include having the abilities to both critically evaluate statistical material and appreciate the relevance of statistically-based approaches to all aspects of life in general or to the evaluating, design, and/or production of scientific work.",
-                                "photo_id": null,
+                                "url": "https://en.m.wikipedia.org/wiki/Degrees_of_freedom_(statistics)",
+                                "webpage_id": 5973540602786842555,
+                                "title": "Degrees of freedom (statistics)",
+                                "description": "number of values in the final calculation of a statistic that are free to vary;number of independent ways by which a dynamic system can move,without violating constraint;minimum number of independent coordinates that specify the position of the syste",
+                                "photo_id": 5907659621261224166,
                                 "author": null,
                                 "published_date": null
                             }
@@ -826,7 +826,7 @@
                         "_": "Photo",
                         "id": 5880776364393606111,
                         "access_hash": 5928265355509545864,
-                        "file_reference": "b'\\x00c\\x16\\xe4\\xe7I\\xa3uU]Ie\\xb5\\xcb\\xc9\\x00\\xc0m\\x18\\xf6\\x84'",
+                        "file_reference": "b'\\x00cP6k)\\xfc\\xe0q\\x82\\xa5\\xf0K\\xbf\\xc8\\x9f\\x8ee\\x83\\xc5\\x12'",
                         "date": "2021-05-29 16:52:24+00:00",
                         "sizes": [
                             {
@@ -870,7 +870,7 @@
                         "_": "Photo",
                         "id": 6033995663366270292,
                         "access_hash": -589023476037806489,
-                        "file_reference": "b'\\x00c\\x16\\xe4\\xe7:\\n4wR\\x0eVO\\x87l\\xda\\x8c\\x07\\xa7\\x8dr'",
+                        "file_reference": "b'\\x00cP6k\\x87\\xfcEjQ\\x1a\\x11\\x15\\xdcf\\xecFX~\\x8aL'",
                         "date": "2022-01-30 16:38:28+00:00",
                         "sizes": [
                             {
@@ -914,7 +914,7 @@
                         "_": "Photo",
                         "id": 5892178716585471094,
                         "access_hash": -7724925976051569535,
-                        "file_reference": "b'\\x00c\\x16\\xe4\\xe7\\x11\\xc0\\x1b\\xe10\\x1dB\\xc95\\xa6p\\xeeM\\x1826'",
+                        "file_reference": "b'\\x00cP6kn\\xad\\xfa\\xb3\\x91w/\\xa5\\xbf+2\\x0b:\\x82\\x95|'",
                         "date": "2021-06-02 21:06:14+00:00",
                         "sizes": [
                             {
@@ -936,9 +936,33 @@
                     },
                     {
                         "_": "Photo",
+                        "id": 5907659621261224166,
+                        "access_hash": 8865205098813901658,
+                        "file_reference": "b'\\x00cP6k\\x95\\xbc\\xdb\\xb2\\xe7\\x82\\xa4Qg\\xeewK\\x12o^ '",
+                        "date": "2019-04-23 06:05:58+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x08(\\xd0\"U\\x91\\xdc+\\x15\\xdb\\x90\\xa4\\xf4#\\xdb\\xde\\xa7\\x07$\\xf0x4Q@\\x06O\\xf7O\\x7fJ\\x8a]\\xef\\xb0\\xaa\\xbf\\x1c\\x90\\x1b\\x1dx\\xc7\\xf9\\xf4\\xa2\\x8a\\x00\\x91\\x18\\x9c\\x8d\\xac0q\\xcd\\x14Q@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 147,
+                                "h": 30,
+                                "size": 1733
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
                         "id": 6013749350741683242,
                         "access_hash": -2034014130392973961,
-                        "file_reference": "b'\\x00c\\x16\\xe4\\xe7\\xd7\\x00^3\\xb0\\tt\\xab,\\xdc:\\xc2\\xbd]\\x06\\x97'",
+                        "file_reference": "b'\\x00cP6k\\xf4b\\xbc\\xc0f\\xbf\\xc5\\xa5\\x84L\\x9c\\x85g\\x86\\x90\\xe5'",
                         "date": "2021-07-13 20:21:09+00:00",
                         "sizes": [
                             {
@@ -962,7 +986,7 @@
                         "_": "Photo",
                         "id": 5916795600815369806,
                         "access_hash": -4610731296252905088,
-                        "file_reference": "b'\\x00c\\x16\\xe4\\xe7\\xa2\\xa0\\x8aaUH8\\x0b6\\xc8x\\xb5U.\\x14l'",
+                        "file_reference": "b'\\x00cP6kR\\xb0\\xe7\\xee\\xca\\xba\\x9b\\x12a\\x15\\xa0qR\\xc9\\xe8h'",
                         "date": "2022-07-04 12:46:28+00:00",
                         "sizes": [
                             {
@@ -981,46 +1005,6 @@
                         "dc_id": 4,
                         "has_stickers": false,
                         "video_sizes": []
-                    },
-                    {
-                        "_": "Photo",
-                        "id": 5768270911550630013,
-                        "access_hash": 7197817268635043889,
-                        "file_reference": "b'\\x00c\\x16\\xe4\\xe7f\\x8e\\x99\\xc4\\xdf\\xccL\\x013\\x1d\\x00\\xd1\\x14\\xb3\\xc1&'",
-                        "date": "2018-11-30 18:49:27+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoSize",
-                                "type": "s",
-                                "w": 79,
-                                "h": 90,
-                                "size": 1143
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "m",
-                                "w": 281,
-                                "h": 320,
-                                "size": 18196
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "x",
-                                "w": 703,
-                                "h": 800,
-                                "size": 92949
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "y",
-                                "w": 1024,
-                                "h": 1166,
-                                "size": 167381
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
                     }
                 ],
                 "documents": [
@@ -1028,7 +1012,7 @@
                         "_": "Document",
                         "id": 6042994529928216688,
                         "access_hash": -7085747415029660100,
-                        "file_reference": "b\"\\x00c\\x16\\xe4\\xe7\\xdb\\xa1Hw\\x07\\xc5\\r^6j\\xc5\\x97\\x97'\\x827\"",
+                        "file_reference": "b'\\x00cP6k#\\xdc\\x91k\\x172A5n\\x18\\xe4\\x8b\\xb6\\xef\\x9d\\xad'",
                         "date": "2018-11-25 22:33:08+00:00",
                         "mime_type": "image/jpeg",
                         "size": 257088,
@@ -1077,12 +1061,12 @@
             "length": 56
         }
     ],
-    "views": 130,
+    "views": 139,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 2,
-        "replies_pts": 1918,
+        "replies_pts": 1978,
         "comments": true,
         "recent_repliers": [
             {
