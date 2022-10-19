@@ -33,7 +33,7 @@ garden:
   - "seedling"
 ---
 
-[CUDA](https://en.wikipedia.org/wiki/CUDA) is widely used in deep learning. Though many of deep learning professionals are not exposed to CUDA directly, most people are already using CUDA as frameworks like PyTorch is providing GPU support through CUDA.
+[CUDA](https://en.wikipedia.org/wiki/CUDA) is widely used in deep learning. Though many of deep learning professionals are not exposed to CUDA directly, most people are already using CUDA as frameworks like PyTorch are providing GPU support through CUDA.
 
 To optimize the computational efficiency of our models, knowledge about the data transfer inside the devices is crucial. In this note, we build up the fundamentals of memory transfer for CUDA.
 
