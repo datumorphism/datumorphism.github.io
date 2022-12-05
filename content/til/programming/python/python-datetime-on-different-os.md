@@ -33,7 +33,7 @@ datetime.datetime(197,9,18).strftime('%Y-%m')
 '197-09'
 ```
 
-This is a difference between linux and mac.
+There is a difference between linux and mac.
 
 There is another example: https://repl.it/@emptymalei/Strange-Datetime-Parser-in-Python
 
