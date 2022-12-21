@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 419,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-11-23 22:42:02+00:00",
+    "message": "#data\n\nPlayed with polars a bit. It's actually quite fast.\n\nhttps://www.pola.rs/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 265432097823032462,
+            "url": "https://www.pola.rs/",
+            "display_url": "pola.rs",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "www.pola.rs",
+            "title": "Polars, lightning-fast DataFrame library",
+            "description": "Polars is a blazingly fast DataFrame library completely written in Rust, using the Apache Arrow memory model. It exposes bindings for the popular Python and soon JavaScript languages. Polars supports a full lazy execution API allowing query optimization.",
+            "photo": {
+                "_": "Photo",
+                "id": 5862987022170434922,
+                "access_hash": -3693210585806786980,
+                "file_reference": "b'\\x00c\\xa2\\xaevj\\xf32\\xd9\\xef/d5\\xcb0\\xe0-\\x9b\\x08\\x93,'",
+                "date": "2021-12-04 20:01:15+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xa2\\x91\\x98*\\x92z\\x01\\x9a\\xcf\\x97R\\xeb\\xe5(\\xc63\\x96\\xef\\xc1\\xff\\x00\\n\\x00\\xd1\\xa2\\xb3WR\\x90ctjrq\\xc1\\xf7\\xab\\x11]\\x97PY1\\x91\\x9e;Rn\\xc3J\\xe5\\xaa)\\xa8\\xea\\xfd\\r\\x14\\x08\\xab\\x7f.\\xd5X\\xf1\\x92\\xd89\\xfa\\x11Y\\x9dT\\x15<\\xec\\x1d;pkN[Fk\\xaf3*\\xc8H%[\\xb7O\\xf0\\xa5\\x92\\xcc\\x03\\xbe\\xdc\\x88\\xe4\\x1d3\\xd3\\xa1\\xff\\x00\\x1a`e\\xe3\\xe69\\xe0n\\xef\\xd7\\xadh\\xda[\\x87\\xb5\\x8d\\x8buZ\\x99\\xa0\\xf3\\xe2\\x0b8\\x1b\\xc1\\xea\\xbd\\xb9\\xa5\\xb6\\x8eHcX\\xd8\\xa9\\n1\\xc5&\\xae4\\xc7G\\x0e\\xc7\\xdd\\xb8\\xfd(\\xa9h\\xa1+\\t\\xbb\\x85\\x14QL\\x02\\x8a(\\xa0\\x02\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 10813
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 628,
+                        "h": 628,
+                        "sizes": [
+                            3625,
+                            7611,
+                            13279,
+                            16824,
+                            24361
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 60,
+            "length": 20
+        }
+    ],
+    "views": 164,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-11-23 22:42:20+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

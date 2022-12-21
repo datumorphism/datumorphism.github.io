@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 418,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-11-21 21:47:04+00:00",
+    "message": "#dev\n\nhttps://www.kite.com/blog/product/kite-is-saying-farewell/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 336281281701650841,
+            "url": "https://www.kite.com/blog/product/kite-is-saying-farewell/",
+            "display_url": "kite.com/blog/product/kite-is-saying-farewell",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Code Faster with Kite",
+            "title": "Kite is saying farewell",
+            "description": "From 2014 to 2021, Kite was a startup using AI to help developers write code. We have stopped working on Kite, and are no longer supporting the Kite software. Thank you to everyone who used our product, and thank you to our team members and investors who made this journey possible. Our journey at Kite [\u2026]",
+            "photo": {
+                "_": "Photo",
+                "id": 6031726039438307141,
+                "access_hash": 1796498027879633978,
+                "file_reference": "b'\\x00c\\xa2\\xaev\\xfb\\x91\\x9c=+\\xa0&t94:N\\x86\\xee\\x05\\xcc'",
+                "date": "2022-11-17 04:32:29+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1b(e\\xc2\\x05>\\xc2\\x99\\x1a\\xee\\x07(A\\x18\\xa9|\\xf1#\\x13\\xb7i\\xcf\\x19\\xf5\\xa0L<\\xc6\\x0c\\xfc\\x0cd\\xe3\\xd6\\x9f3C\\xe5@\\xc8\\x87\\xe4-\\x83T.!\\xd9&\\x13\\x90y\\x18\\xab\\xeb\"\\xbd\\xc0\\\\\\xb7\\xb7\\x1e\\xd9\\x14O\\xe5l\\xc8Rv\\xfaqC\\x95\\xc1D\\xcdD`\\x0b\\x10A^q\\xebEYk\\x9c\\xb0.2\\x08<}h\\xa0,\\x85w\\xda\\xed\\x9eA\\xf9\\x86;v\\xa8X\\x9c\\xee\\xcf\\xca\\xe3<\\xfbQ/2\\x9c\\xfaS\\x94\\x03mq\\x9f\\xe1\\xc6=\\xb9\\xa9\\x1d\\xcb\\x9b\\xa2E\\xc0\\xcf\\x99\\xb4\\x11\\xc7\\xb5@\\xef\\x98\\xc0@C0\\xf9\\x8f\\xd6\\xab\\x02LL\\xc4\\xf3\\x81\\xcdL\\xfd\\x07\\xd0\\x7f!I\\xe84E\\xb0\\x89\\xbee;A\\xef\\xe9EX\\x90\\x93o\\x8c\\xf1E=\\xc3c'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 213,
+                        "size": 23377
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 533,
+                        "size": 95593
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 853,
+                        "size": 202908
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1706,
+                        "sizes": [
+                            67025,
+                            162869,
+                            212418,
+                            327442,
+                            608597
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 58
+        }
+    ],
+    "views": 143,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-11-21 23:05:12+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "dev"
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 417,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-11-12 08:10:54+00:00",
+    "message": "#ml\n\nDiffusion Models for Handwriting Generation\n\nhttps://github.com/tcl9876/Diffusion-Handwriting-Generation",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5438136047025373632,
+            "access_hash": -3744556233663943951,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xa1c\\xa2\\xaev;\\n\\xa3\\xdf\\xe8#\\xb5\\xd7{\\xe2\\xec\\xec1\\xbe\\x9a\\xf9'",
+            "date": "2022-11-12 08:10:54+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x14(\\xd8\\xedI\\xdf\\xff\\x00\\xafK\\xd8Q@\\x0b\\xda\\x98FI\\xe4\\xfe\\xb4\\xee\\xd4\\x86\\x80\\x01\\xf7z\\xd1@\\xe9E\\x00;\\xb5\\x18\\xa2\\x8a\\x00(\\xc5\\x14P\\x00zQE\\x14\\x01'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 156,
+                    "size": 10962
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 389,
+                    "size": 35274
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 623,
+                    "sizes": [
+                        6124,
+                        14188,
+                        28247,
+                        39632,
+                        53669
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 50,
+            "length": 59
+        }
+    ],
+    "views": 187,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-11-12 08:11:28+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

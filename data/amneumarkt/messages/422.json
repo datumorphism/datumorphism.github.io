@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 422,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-12-07 22:23:03+00:00",
+    "message": "#ml \n\nIn his MinT paper, Hyndman said he confused these two quantities in his previous paper. \ud83d\ude02\n\nMinT is a simple method to make forecasts with hierarchical structure coherent. Here coherent means the sum of the lower level forecasts equals the higher level forecasts.\n\nFor example, our time series has a strucutre like sales of coca cola + sales of spirit = sales of beverages. If this relations holds for our forecasts, we have coherent forecasts.\n\nThis may sound trivial, the problem is in fact hard. There are many trivial methods such as only forecasting lower levels (coca cola, spirit) then use the sum as the higher level (sales of beverages). These are usually too naive to be effective.\n\nMinT is a reconciliation method that combines high level forecasts and the lower level forecasts to find an optimal combination/reconciliation.\n\nhttps://robjhyndman.com/papers/MinT.pdf",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5226774964017938336,
+            "access_hash": -2847354212923127324,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xa6c\\xa2\\xaev\\xf4(\\xd64@\\xd2\\x86_\\x14\\x90P\\xbf\\xa0\\xe2c\\xbd'",
+            "date": "2022-12-07 22:23:03+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x16(\\xd7\\xd9\\xces\\xfc\\xe9<\\xbf\\x7f\\xe7\\xfe4\\x16 \\xe3\\x14\\x9b\\xcf\\xa0\\xfd?\\xc6\\x80\\x1c\\x01\\x03\\x19\\xfd\\r/=\\xc8\\xa6g\\xd3\\x14\\xbb\\x8f\\xb5\\x00>\\x8a`bOj(\\x00*\\xdc\\xe3\\x1f\\x9d&\\xd6\\xf6\\xfc\\xe8\\xa2\\x90\\x06\\xd6\\xf6\\xfc\\xe8\\nO^>\\x86\\x8a(\\x01\\xc10z\\x9a(\\xa2\\x98\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 174,
+                    "size": 17945
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 435,
+                    "size": 69619
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1240,
+                    "h": 674,
+                    "sizes": [
+                        6343,
+                        18411,
+                        45387,
+                        65272,
+                        97315
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 844,
+            "length": 39
+        }
+    ],
+    "views": 142,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 2,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 708,
+        "read_max_id": 708
+    },
+    "edit_date": "2022-12-07 22:36:49+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

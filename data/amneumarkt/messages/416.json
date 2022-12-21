@@ -1,0 +1,99 @@
+{
+    "_": "Message",
+    "id": 416,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-11-09 22:01:07+00:00",
+    "message": "#misc\n\nCpdespace is out of beta.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5431718747409859066,
+            "access_hash": -7504999672643916955,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xa0c\\xa2\\xaevx\\x1f]r\\x11\\xdco\\xcd\\x9et\\x8d\\xd3\\x1c\\x81\\x81\\x06'",
+            "date": "2022-11-09 22:01:07+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x08\\xd6R=\\xc1\\xa2\\x9a\\x0f\\xcd\\xf8\\xd1@\\x0b\\x96\\xcf\\x04QG9\\xe0-\\x14\\x00\\xf0(\\xa2\\x8a\\x00'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 61,
+                    "h": 320,
+                    "size": 8596
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 152,
+                    "h": 800,
+                    "size": 43896
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 244,
+                    "h": 1280,
+                    "sizes": [
+                        4767,
+                        13197,
+                        41406,
+                        60956,
+                        83527
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        }
+    ],
+    "views": 175,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-11-10 07:18:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

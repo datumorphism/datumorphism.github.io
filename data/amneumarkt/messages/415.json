@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 415,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-11-08 16:25:05+00:00",
+    "message": "#misc\n\nHmm Twitter\n\nhttps://layoffs.fyi/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2261008220056880270,
+            "url": "https://layoffs.fyi/",
+            "display_url": "layoffs.fyi",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Layoffs.fyi",
+            "title": "Layoffs.fyi - Tech Layoff Tracker and Startup Layoff Lists",
+            "description": "[LIVE] Tracking all tech startup layoffs \u2014 and lists of employees laid off \u2014 since COVID-19 was declared a pandemic. This page is constantly being updated.",
+            "photo": {
+                "_": "Photo",
+                "id": 5932746959028858482,
+                "access_hash": 8291312980895035017,
+                "file_reference": "b'\\x00c\\xa2\\xaev\\x95f/\\x92\\xeb\\xd5\\xf6\\xdf\\x8ah\\xfb\\xaeV\\xe5\\\\\\x13'",
+                "date": "2022-07-09 17:40:23+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd6;\\xb3\\xc3\\xe3\\xf0\\xa5\\x07\\x1dN\\x7f\\n\\x18\\x0fJN{\\x01\\xf9\\xd0\\x02\\xff\\x00\\xc0\\xbfJ9\\xfe\\xf7\\xe9H\\x0b\\xe3\\xa0\\xfc\\xe9Al\\xf2\\x06=\\x8d\\x008t\\xf5\\xa2\\x8a(\\x004\\xcd\\xbf(\\xe6\\x8a(\\x01\\x07\\xdf#\\xb5\\x0czb\\x8a(\\x01\\xc9\\xf7E\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 12942
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 54687
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "sizes": [
+                            6144,
+                            17236,
+                            40056,
+                            55665,
+                            80573
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 20,
+            "length": 20
+        }
+    ],
+    "views": 201,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-11-08 16:26:46+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

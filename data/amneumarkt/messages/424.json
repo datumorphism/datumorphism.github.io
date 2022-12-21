@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 424,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-12-17 10:06:38+00:00",
+    "message": "#fun\n\nDenmark...\n\nI thought French was complicated, now we all know Danish leads the race.\n\nhttps://www.reddit.com/r/europe/comments/zo258s/how_to_say_number_92_in_european_countries/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547165198186539,
+            "url": "https://www.reddit.com/r/europe/comments/zo258s/how_to_say_number_92_in_european_countries/",
+            "display_url": "reddit.com/r/europe/comments/zo258s/how_to_say_number_92_in_european_countries",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "reddit",
+            "title": "How to say number \"92\" in European countries",
+            "description": "Posted in r/europe by u/trollrepublic \u2022 1,493 points and 350 comments",
+            "photo": {
+                "_": "Photo",
+                "id": 5833468227341102985,
+                "access_hash": -4026963610306028354,
+                "file_reference": "b'\\x00c\\xa2\\xaevk\\x18\\x02\\xc6(\\xc1G\\xbe\\xedX\\xd0\\xbd\\xc3\\x8c*\\xd3'",
+                "date": "2022-12-17 09:14:59+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd4G\\xfe\\xf1'\\xd3\\x8f\\xfe\\xb56\\x7f3\\x04\\xa8\\xc8\\x18\\xc0\\x1ds\\x9a\\x93\\xcaLc\\x1cU)\\xa5\\x0f\\x1bA\\x1cy\\xe7\\nz\\xd2b\\xd3fM3\\xc6\\xeb\\x9e\\xa3\\x1c\\xe3\\xbf\\xe3T\\xe5\\x7f:L\\xb7\\x19\\xe8;T\\xd1A$H\\x03\\xe3i<\\x85\\x1c\\xd4f&.\\x02\\xfc\\xd9\\xe7\\x83\\xda\\xa1_\\xa95R\\xbd\\x91\\\\\\xa6\\x17v8\\x06\\x8a\\xba\\xf7\\x11\\xb7\\xc9\\x1cJ\\xe3\\xb0>\\xbfJ)\\xd9\\x18\\xb8\\xae\\xe5\\xd5\\xe9L\\x16\\xf1,\\x9e`@\\x1b\\xd6\\x8a*\\x8e\\x86I\\xefI\\xb4d\\x1cr:QE0\\x11cE9U\\x00\\xfb\\n(\\xa2\\x80?\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 18015
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 600,
+                        "h": 300,
+                        "sizes": [
+                            3241,
+                            10021,
+                            18953,
+                            24699,
+                            37787
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 92,
+            "length": 91
+        }
+    ],
+    "views": 70,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-12-17 14:12:56+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

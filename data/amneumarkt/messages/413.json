@@ -1,0 +1,120 @@
+{
+    "_": "Message",
+    "id": 413,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-11-03 06:59:31+00:00",
+    "message": "#ml #forecasting\n\n\nLiu, Yong, Haixu Wu, Jianmin Wang, and Mingsheng Long. 2022. \u201cNon-Stationary Transformers: Exploring the Stationarity in Time Series Forecasting.\u201d ArXiv [Cs.LG], May. https://doi.org/10.48550/ARXIV.2205.14415.\n\nhttps://github.com/thuml/Nonstationary_Transformers",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5411298724832985839,
+            "access_hash": -8656586497367941263,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x9dc\\xa2\\xaevR\\xba\\xfdD\\x19\\x18I\\xb4\\xbf\\xe0\\xcc\\x97\\xb0\\xb2\\xad`'",
+            "date": "2022-11-03 06:59:31+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x15(\\xd8,\\x07SH[\\xd2\\x93g\\xcd\\xedC)\\xec8\\xa0\\x08\\xae\\xa4h\\xed\\xd9\\x91\\x80a\\x8f\\xe7U%\\xba\\x9dl\"\\x91\\\\of\\xc1<{\\xd5\\xab\\xc4g\\xb5eD\\x0cx\\xe3>\\xf5NX%:|)\\xe5\\x02\\xe1\\xb2W=:\\xfb\\xd5 \\'\\x9ayV\\xe2\\xdd\\x15\\x80W\\xc6\\xe1\\xc74Sg\\x89\\xda\\xe6\\xd9\\x84y\\x0b\\xb7\\'\\xd3\\x9a)\\x01d\\xb1\\xe7\\xebJX\\xe6\\x8a)\\x00\\x9b\\x8eirF=\\xe8\\xa2\\x80\\x05$\\x9ct\\xa2\\x8a(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 167,
+                    "size": 19586
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 418,
+                    "size": 72518
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 669,
+                    "sizes": [
+                        11298,
+                        31229,
+                        62908,
+                        87132,
+                        114831
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 4,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 166,
+            "length": 13
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 186,
+            "length": 41
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 230,
+            "length": 51
+        }
+    ],
+    "views": 157,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-11-03 07:05:25+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml",
+        "forecasting"
+    ]
+}

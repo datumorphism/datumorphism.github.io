@@ -34,10 +34,10 @@
             "description": "At Uber, magical customer experiences depend on accurate arrival time predictions (ETAs). We use ETAs to calculate fares, estimate pickup times, match riders to drivers, plan deliveries, and more. Traditional routing engines compute ETAs by dividing up the road network into small road segments represented by weighted edges in a graph. They use shortest-path algorithms to find the best path through the graph and add up the weights to derive an ETA. But as we all know, the map is not the terrain: a road graph is just a model, and it can\u2019t perfectly capture conditions on the ground. Moreover, we may not know which route a particular rider and driver will choose to their destination. By training machine learning (ML) models on top of the road graph prediction using historical data in combination with real-time signals, we can refine ETAs that better predict real-world outcomes.",
             "photo": {
                 "_": "Photo",
-                "id": 6031687204344016348,
-                "access_hash": -3370545766230347819,
-                "file_reference": "b'\\x00cP6kJ\\x0fe\\x17\\x85\\xafF\\x98=1\\xd7\\xc3\\x1ca\\xaf<'",
-                "date": "2022-08-12 02:18:09+00:00",
+                "id": 5781916250283290462,
+                "access_hash": 8818259935224795548,
+                "file_reference": "b'\\x00c\\xa2\\xaev\\xce\\x9d*j\\xc5\\x87N6.K\\x97\\xc8\\x95\\xd8\"\\x0f'",
+                "date": "2022-11-30 14:16:24+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
@@ -49,14 +49,14 @@
                         "type": "m",
                         "w": 320,
                         "h": 190,
-                        "size": 12510
+                        "size": 12515
                     },
                     {
                         "_": "PhotoSize",
                         "type": "x",
                         "w": 800,
                         "h": 474,
-                        "size": 43136
+                        "size": 43204
                     },
                     {
                         "_": "PhotoSizeProgressive",
@@ -64,11 +64,11 @@
                         "w": 1250,
                         "h": 740,
                         "sizes": [
-                            7530,
-                            18935,
-                            36930,
-                            49094,
-                            72085
+                            7550,
+                            18958,
+                            36992,
+                            49202,
+                            72470
                         ]
                     }
                 ],
@@ -100,12 +100,12 @@
             "length": 61
         }
     ],
-    "views": 203,
+    "views": 228,
     "forwards": 2,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 1978,
+        "replies_pts": 2097,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

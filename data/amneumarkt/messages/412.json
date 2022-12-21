@@ -1,0 +1,82 @@
+{
+    "_": "Message",
+    "id": 412,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-10-29 06:17:51+00:00",
+    "message": "#ml\n\nhttps://arxiv.org/abs/2210.10101v1\n\nBernstein, Jeremy. 2022. \u201cOptimisation & Generalisation in Networks of Neurons.\u201d ArXiv [Cs.NE], October. https://doi.org/10.48550/ARXIV.2210.10101.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 34
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 122,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 129,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 129,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 134,
+            "length": 1
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 146,
+            "length": 41
+        }
+    ],
+    "views": 190,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-10-29 06:17:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

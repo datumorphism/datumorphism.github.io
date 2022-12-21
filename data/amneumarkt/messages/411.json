@@ -1,0 +1,153 @@
+{
+    "_": "Message",
+    "id": 411,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-10-21 21:27:20+00:00",
+    "message": "#ml \n\n\ud83d\ude31\ud83d\ude31\ud83d\ude31 Fancy \n\nVideo: https://fb.watch/giO0tV4N4T\nPress: https://research.facebook.com/publications/dressing-avatars-deep-photorealistic-appearance-for-physically-simulated-clothing/\n\n\nXiang, Donglai, Timur Bagautdinov, Tuur Stuyck, Fabian Prada, Javier Romero, Weipeng Xu, Shunsuke Saito, et al. 2022. \u201cDressing Avatars: Deep Photorealistic Appearance for Physically Simulated Clothing.\u201d ArXiv [Cs.GR], June. https://arxiv.org/abs/2206.15470",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7338967318202885143,
+            "url": "https://research.facebook.com/publications/dressing-avatars-deep-photorealistic-appearance-for-physically-simulated-clothing/",
+            "display_url": "research.facebook.com/publications/dressing-avatars-deep-photorealistic-appearance-for-physically-simulated-clothing",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Meta Research",
+            "title": "Dressing Avatars: Deep Photorealistic Appearance for Physically Simulated Clothing - Meta Research",
+            "description": "At Meta, research permeates everything we do. We believe the most\n      interesting research questions are derived from real world problems.",
+            "photo": {
+                "_": "Photo",
+                "id": 5898837968888638845,
+                "access_hash": 4434352382044231644,
+                "file_reference": "b'\\x00c\\xa2\\xaev)Ce\\xf8\\x99O\\x80\\x8e\\x965\\xd5\\xfe\\x0c\\x16\\xa1\\xcb'",
+                "date": "2021-12-16 21:10:42+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(p\\xe3\\x9e\\xddi\\xc7/\\x1b\\x0ezqL\\xde\\\\r\\n\\xf2*e\\xe194\\x81hQe\\xe4\\x1c\\x91\\xce9\\xab\\x84\\x84M\\xe78\\xc75\\x9f,\\xeb\\xe6\\x16\\x0b\\x90z\\n\\x04\\xc7\\x18s\\x9c\\xf5\\x14$Se\\xb5\\x92G?(\\x00{\\xd1H\\x8a\\n)\\x0c\\xd84UY\\x11v)\\x1c\\xd3\\xf3\\x8bv\\xf6\\x06\\x8a*FR\\x8a5d\\x88\\x91\\xc95\\x11\\x01\\xaeX\\x0e\\x05\\x14P\\x05\\xe8~o\\xbd\\xc9\\x1d\\r\\x14QLG'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 13425
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 419,
+                        "size": 51253
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 628,
+                        "sizes": [
+                            12218,
+                            29317,
+                            35920,
+                            51140,
+                            93010
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 28,
+            "length": 27
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 63,
+            "length": 125
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 395,
+            "length": 7
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 402,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 402,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 407,
+            "length": 1
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 416,
+            "length": 32
+        }
+    ],
+    "views": 238,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-10-21 21:29:20+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

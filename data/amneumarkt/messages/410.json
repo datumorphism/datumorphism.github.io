@@ -1,0 +1,122 @@
+{
+    "_": "Message",
+    "id": 410,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-10-19 17:55:01+00:00",
+    "message": "#ml \n\nhttps://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/\n\nI find this post very useful. I have always wondered what happens after my dataloader prepared everything for the GPU. I didn\u2019t know that CUDA has to copy the data again to create page-locked memory.\n\nI used to set pin_memory=True in a PyTorch DataLoader and benchmark it. To be honest, I have only observed very small improvements in most of my experiments. So I stopped caring about pin_memory. \n\nAfter some digging, I also realized that performance from setting pin_memory=True in DataLoader is ticky. If we don\u2019t use multiprocessing nor reuse the page-locked memory, it is hard to expect any  performance gain.\n\n\n(some other notes: https://datumorphism.leima.is/cards/machine-learning/practice/cuda-memory/)",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1499860833006973882,
+            "url": "https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/",
+            "display_url": "developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "NVIDIA Technical Blog",
+            "title": "How to Optimize Data Transfers in CUDA C/C++ | NVIDIA Technical Blog",
+            "description": "In the previous three posts of this CUDA C & C++ series we laid the groundwork for the major thrust of the series: how to optimize CUDA C/C++ code. In this and the following post we begin our\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 5797275942392015686,
+                "access_hash": -7228769660621518259,
+                "file_reference": "b'\\x00c\\xa2\\xaev\\x9a\\xd0\\xee\\x94\\xc8\\x9eUu\\x05D2{p\\x9b\\x18\\xba'",
+                "date": "2020-10-19 19:58:22+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xc8\\x11\\xb1\\x19\\xa9\\xa3\\xb6\\xdd\\xcb:\\xa8\\xfc\\xe9-\\xce\\xef\\x96\\xac\\x82\\x88p\\x07>\\xfc\\xd0D\\x9b\\x1am\\xa0\\xd9\\xc3\\xb1>\\xb8\\xa8\\r\\xb3\\x03\\xd4c\\xd6\\xad<\\x92\\x8c\\x12:\\xfbP\\xac\\xaf\\xf7\\x80\\xcf\\xb5.bSh\\xa7%\\xbc\\x882T\\x95\\xfe\\xf68\\xa2\\xac]\\xbe\\xd8D}\\xdb\\x9czQT\\xecjV\\x85\\xb6\\xc8\\r\\\\\\xd8_\\xe7^\\xdc\\xd6x\\xebW`\\x9c\\xaa\\x15\\xf5\\xa6\\xbc\\xcc\\xe6\\x9e\\xe8\\xbed\\xc8Y3\\xf2\\x8e\\xd5MJ\\xa9-\\xd4v\\xf7\\xa7\\x95\\x060s\\xc1\\xaa\\x93?aP\\xb7&\\x08\\x8ey\\x0c\\x92\\x964Tf\\x8af\\xc1NV\\xc1\\xa2\\x8a\\x00\\x99\\xae?v\\x14\\x1a\\x80\\x9c\\xd1E\\x02J\\xc3h\\xa2\\x8a\\x06\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 318,
+                        "size": 30702
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 794,
+                        "size": 186257
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 1191,
+                        "size": 358937
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 70
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 714,
+            "length": 74
+        }
+    ],
+    "views": 189,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-10-19 17:57:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

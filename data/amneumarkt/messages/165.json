@@ -27,7 +27,7 @@
             "id": 3384953263841741307,
             "url": "https://en.wikipedia.org/wiki/Dependent_and_independent_variables",
             "display_url": "en.m.wikipedia.org/wiki/Dependent_and_independent_variables",
-            "hash": -822741727,
+            "hash": 1615683229,
             "type": "article",
             "site_name": "Wikipedia",
             "title": "Dependent and independent variables",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 6038578737068484731,
                 "access_hash": -4819427319779273452,
-                "file_reference": "b'\\x00cP6m\\xaeb\\xc6\\xab\\x8d\\x86Q\\x12\\xfbb\\xf4\\nHo\\xf7\\xf7'",
+                "file_reference": "b'\\x00c\\xa2\\xaex\\x1b\\x82\\xceK\\xbeu\\xb7:\\xe4C\\xca\\xc2\\xb2\\x0b\\xb1Q'",
                 "date": "2018-11-24 17:52:25+00:00",
                 "sizes": [
                     {
@@ -217,7 +217,7 @@
                                         "text": "time"
                                     },
                                     "url": "https://en.m.wikipedia.org/wiki/Time",
-                                    "webpage_id": 0
+                                    "webpage_id": 5973540601116764949
                                 },
                                 {
                                     "_": "TextPlain",
@@ -487,7 +487,7 @@
                                             "text": "graphed"
                                         },
                                         "url": "https://en.m.wikipedia.org/wiki/Graph_of_a_function",
-                                        "webpage_id": 0
+                                        "webpage_id": 5973540600913287834
                                     },
                                     {
                                         "_": "TextPlain",
@@ -2154,7 +2154,7 @@
                                                 "text": "reliability theory"
                                             },
                                             "url": "https://en.m.wikipedia.org/wiki/Reliability_theory",
-                                            "webpage_id": 0
+                                            "webpage_id": 5973540602114419461
                                         },
                                         {
                                             "_": "TextPlain",
@@ -4938,7 +4938,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": "\n"
+                                            "text": "\n\n"
                                         },
                                         {
                                             "_": "TextImage",
@@ -5000,9 +5000,9 @@
                                     "_": "TextUrl",
                                     "text": {
                                         "_": "TextPlain",
-                                        "text": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1112125671"
+                                        "text": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1114117815"
                                     },
-                                    "url": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1112125671",
+                                    "url": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1114117815",
                                     "webpage_id": 0
                                 },
                                 {
@@ -5018,16 +5018,6 @@
                             "_": "TextEmpty"
                         },
                         "articles": [
-                            {
-                                "_": "PageRelatedArticle",
-                                "url": "https://en.m.wikipedia.org/wiki/Dummy_variable_(statistics)",
-                                "webpage_id": 5973540602529586928,
-                                "title": "Dummy variable (statistics)",
-                                "description": "one that takes the value 0 or 1 to indicate the absence or presence of some categorical effect that may be expected to shift the outcome",
-                                "photo_id": 5781944408088881295,
-                                "author": null,
-                                "published_date": null
-                            },
                             {
                                 "_": "PageRelatedArticle",
                                 "url": "https://en.m.wikipedia.org/wiki/Analysis_of_covariance",
@@ -5067,6 +5057,16 @@
                                 "photo_id": 6022635784105994382,
                                 "author": null,
                                 "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Controlling_for_a_variable",
+                                "webpage_id": 5973540602375044613,
+                                "title": "Controlling for a variable",
+                                "description": "In causal models, controlling for a variable means binning data according to measured values of the variable. This is typically done so that the variable can no longer act as a confounder in, for example, an observational study or experiment.",
+                                "photo_id": null,
+                                "author": null,
+                                "published_date": null
                             }
                         ]
                     }
@@ -5074,49 +5074,9 @@
                 "photos": [
                     {
                         "_": "Photo",
-                        "id": 5781944408088881295,
-                        "access_hash": -7560060926838151045,
-                        "file_reference": "b'\\x00cP6m]d\\xb4\\xb9\\xfe1\\xabxM(!\\xc8]f\\x12\\x93'",
-                        "date": "2018-12-04 12:28:36+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoSize",
-                                "type": "s",
-                                "w": 90,
-                                "h": 71,
-                                "size": 851
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "m",
-                                "w": 320,
-                                "h": 252,
-                                "size": 8586
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "x",
-                                "w": 800,
-                                "h": 631,
-                                "size": 33648
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "y",
-                                "w": 1024,
-                                "h": 808,
-                                "size": 47632
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
-                    },
-                    {
-                        "_": "Photo",
                         "id": 6040982986746341468,
                         "access_hash": 6669575396885464016,
-                        "file_reference": "b'\\x00cP6m\\xaaD{2-\\xa8\\xf0\\xa3\\x0eXbn4\\x12z\\xf5'",
+                        "file_reference": "b'\\x00c\\xa2\\xaex\\xf1li7\\xb0z\\xea\\xe0g\\xa3[\\xd2\\xadY\\x10\\xaf'",
                         "date": "2018-11-24 16:22:47+00:00",
                         "sizes": [
                             {
@@ -5149,7 +5109,7 @@
                         "_": "Photo",
                         "id": 5829334729340594270,
                         "access_hash": 7572184656575086078,
-                        "file_reference": "b'\\x00cP6m5\\xec\\xfa\\x9e}tp\\x85y\\xfa\\x97\\x01\\xb0\\xb1\\x17S'",
+                        "file_reference": "b'\\x00c\\xa2\\xaex\\xd0\\x0c\\x9dg\\x8c\\x8c\\xc8\\xc6\\xc2\\xaeM\\xca\\x1ey\\x05\\r'",
                         "date": "2018-12-20 11:20:32+00:00",
                         "sizes": [
                             {
@@ -5175,7 +5135,7 @@
                         "_": "Photo",
                         "id": 5786530698721601662,
                         "access_hash": -6782450868183919927,
-                        "file_reference": "b'\\x00cP6m\\xf6w9j\\xed\\xce\\xb4F4\\xbe;\\x1e\\xc7>\\xab\\xec'",
+                        "file_reference": "b'\\x00c\\xa2\\xaexm\\x90\\x03\\xe1 \\xaa!\\xde\"\\x83e\\x7f^\\xd43\\x81'",
                         "date": "2018-12-05 23:02:06+00:00",
                         "sizes": [
                             {
@@ -5199,35 +5159,9 @@
                     },
                     {
                         "_": "Photo",
-                        "id": 532581713301791073,
-                        "access_hash": 9192883650449458428,
-                        "file_reference": "b'\\x00cP6m*\\x8a]r\\xce4Zc\\xaaO3\\xa0\\xe6\\x8a\\x82\\xcc'",
-                        "date": "2017-08-15 00:42:46+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoSize",
-                                "type": "s",
-                                "w": 90,
-                                "h": 59,
-                                "size": 1418
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "x",
-                                "w": 300,
-                                "h": 198,
-                                "size": 16224
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
-                    },
-                    {
-                        "_": "Photo",
                         "id": 6022635784105994382,
                         "access_hash": 4858838517008615071,
-                        "file_reference": "b'\\x00cP6m\\x11\\n\\xf4\\x1d\\xf3\\xdctQA\\xaf0\\x18\\xab\\xcbO)'",
+                        "file_reference": "b'\\x00c\\xa2\\xaexu\\xacZz\\x99\\x08\\xc0\\xfe\\xe8\\xe1\\xc3\\x08#7\\x17\\xc6'",
                         "date": "2018-11-18 18:08:34+00:00",
                         "sizes": [
                             {
@@ -5246,7 +5180,7 @@
                         "_": "Photo",
                         "id": 5792828357728120426,
                         "access_hash": -2009087467650776914,
-                        "file_reference": "b'\\x00cP6m\\x16\\x01\\x9c\\xbafp/\\x81\\xb9\\xd8l\\x80\\x18\\xdc\\xf9\\xaa'",
+                        "file_reference": "b'\\x00c\\xa2\\xaex&\\xc9\\x1c\\xe6t\\xdffZ\\x01#\\xcd\\x88[J\\xf1\\xa8'",
                         "date": "2022-05-23 20:22:00+00:00",
                         "sizes": [
                             {
@@ -5281,9 +5215,28 @@
                     },
                     {
                         "_": "Photo",
+                        "id": 5786151508943939642,
+                        "access_hash": -4381867894133175662,
+                        "file_reference": "b'\\x00c\\xa2\\xaex\\x812xt=\\x10\\xdcH[\\xceJ&\\xdf\\xad\\xc98'",
+                        "date": "2018-12-05 22:15:54+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 28,
+                                "h": 32,
+                                "size": 672
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
                         "id": 5819906146549475987,
                         "access_hash": 3372474960882542284,
-                        "file_reference": "b'\\x00cP6m\\x1c\\xdc\\x17#\\xf8\\x9a\\xaf]\\xed]\\xa0\\xe9\\x02\\x80O\\xcc'",
+                        "file_reference": "b'\\x00c\\xa2\\xaex\\xda\\x1d\\xe6\\xcaY\\x1a./>\\xf9P\\xae\\x0c\\x7f\\xaf\\x93'",
                         "date": "2020-04-16 07:46:45+00:00",
                         "sizes": [
                             {
@@ -5321,7 +5274,7 @@
                         "_": "Photo",
                         "id": 6047487426953324709,
                         "access_hash": 1687258111593729069,
-                        "file_reference": "b'\\x00cP6m\\x8e\\x99\\xd1\\xdd\\xc6\\xee\\xd0\\xaf\\xbeb\\xf9\\x0b\\xc8\\xbd!h'",
+                        "file_reference": "b'\\x00c\\xa2\\xaexP\\x88\\xd2\\x19\\xfe`?\\xad] \\x17f7\\xa9\\xea\\x86'",
                         "date": "2018-11-27 10:56:49+00:00",
                         "sizes": [
                             {
@@ -5340,7 +5293,7 @@
                         "_": "Photo",
                         "id": 6049574849778657423,
                         "access_hash": 7833985559555398104,
-                        "file_reference": "b'\\x00cP6m\\xa0\\xbf\\xbbD]\\xe3\\x18\\x89\\x84\\x0c\\xe5\\xce\\xca\\x8c\\xf2h'",
+                        "file_reference": "b'\\x00c\\xa2\\xaex\\xde\\xe7\\x96\\x04\\xdc)i\\xd8\\xf3\\xae\\xb9\\xc2\\xf4u\\xd1m'",
                         "date": "2018-11-28 10:47:14+00:00",
                         "sizes": [
                             {
@@ -5387,7 +5340,7 @@
                         "_": "Photo",
                         "id": 5790756104727276297,
                         "access_hash": 5298946089070689009,
-                        "file_reference": "b'\\x00cP6mk\\x9c\\xb5\\x92\\xca\\x10\\xbeLU_\\x93\\xaa\\x0eP \\t'",
+                        "file_reference": "b\"\\x00c\\xa2\\xaexL\\xd2#\\x12'\\x90\\x07\\xf3l\\xb8=\\x04S-\\x81\\x9c\"",
                         "date": "2020-04-05 22:23:02+00:00",
                         "sizes": [
                             {
@@ -5427,7 +5380,7 @@
                         "_": "Document",
                         "id": 5979751196624159328,
                         "access_hash": 6897110464365002689,
-                        "file_reference": "b'\\x00cP6mO\\xccU\\x7f\\xe8:\\xd8\\xc4\\x06\\xa1\\xf2\\xbd\\x1d@\\x1fX'",
+                        "file_reference": "b'\\x00c\\xa2\\xaexw\\xd6G4\\xb4\\x16\\x97\\x1bAwr}\\xcdV:6'",
                         "date": "2020-09-13 23:20:13+00:00",
                         "mime_type": "image/png",
                         "size": 6763,
@@ -5450,7 +5403,7 @@
                         "_": "Document",
                         "id": 6043257141408563304,
                         "access_hash": 6760166739348032980,
-                        "file_reference": "b'\\x00cP6m\\xec\\x8e\\xc9\\x08\\x1b*\\xa9bii\\x98V\\xa0Hk\\xbe'",
+                        "file_reference": "b'\\x00c\\xa2\\xaex\\x19\\xf1.`$\\xa6JB\\xaa\\xbd\\xae\\x7f\\x95]\\x83\\x13'",
                         "date": "2018-11-25 19:19:09+00:00",
                         "mime_type": "image/png",
                         "size": 454,
@@ -5481,7 +5434,7 @@
                         "_": "Document",
                         "id": 6024747253996978290,
                         "access_hash": -1008716719873727098,
-                        "file_reference": "b'\\x00cP6m\\xe5\\xe9\\xa5\\x8e~r$@\\xe52\\x95\\xb8\\x00fk\\xd0'",
+                        "file_reference": "b'\\x00c\\xa2\\xaex\\xa4Q\\xb6\\xebg\\x00\\x027\\xc3\\xcb\\xca1\\x03k\\x80\\xb8'",
                         "date": "2019-02-24 09:46:01+00:00",
                         "mime_type": "image/png",
                         "size": 25667,
@@ -5540,7 +5493,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 2,
-        "replies_pts": 1978,
+        "replies_pts": 2097,
         "comments": true,
         "recent_repliers": [
             {

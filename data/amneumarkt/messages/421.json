@@ -1,0 +1,135 @@
+{
+    "_": "Message",
+    "id": 421,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-12-02 22:54:47+00:00",
+    "message": "#ml\n\nThis is amazing\n\ncompiled_model = torch.compile(model)\n\nhttps://pytorch.org/get-started/pytorch-2.0/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1408097671395928333,
+            "url": "https://pytorch.org/get-started/pytorch-2.0/",
+            "display_url": "pytorch.org/get-started/pytorch-2.0",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "pytorch.org",
+            "title": "PyTorch 2.0",
+            "description": "Overview",
+            "photo": {
+                "_": "Photo",
+                "id": 5788433145895432099,
+                "access_hash": 9139646012086137974,
+                "file_reference": "b'\\x00c\\xa2\\xaev%\\x82\\x15e\\xbb\\x88\\xc14\\xab\\xc5\\x14\\xb2>\\x00\\xf5,'",
+                "date": "2022-12-02 23:36:08+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd4\\x03\\x9ap\\x15Z;\\xebv\\xfe<\\x1fz\\x94\\xdc\\xc7\\xc6\\x18\\x10{\\x83\\xd2\\xaa\\xcc\\xab2\\\\\\xfb\\x1f\\xca\\x82*\\x12\\x01\\x8b;\\xd4/\\\\\\x81\\xc5\"^\\xc2\\xc1\\x89uP\\x0e\\x01\\'\\x19\\xa5aY\\x92\\x91ET\\x97S\\xb6N\\x8c\\\\\\xfa(\\xa2\\x9d\\x87fc\\x1a\\x9a\\xdf\\xef/\\xd6\\x8a*\\xe1\\xf1\\x1d=\\r\"q\\xa5\\x93\\xf5\\xff\\x00\\xd0\\xab\\x1d\\xbb\\xfdh\\xa2\\xaa=L\\xd7R\\x06\\xebE\\x14V\\x0fs6\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 7308
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 419,
+                        "size": 22777
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 670,
+                        "size": 41830
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1920,
+                        "h": 1005,
+                        "sizes": [
+                            13603,
+                            20685,
+                            29303,
+                            35409,
+                            58433
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityCode",
+            "offset": 22,
+            "length": 37
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 61,
+            "length": 44
+        }
+    ],
+    "views": 132,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-12-02 22:55:28+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 414,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-11-03 19:55:24+00:00",
+    "message": "#visualization\n\nWhat is going on with trolli? Was ist passiert? \n\nhttps://www.visualcapitalist.com/gen-z-favorite-brands-compared-with-older-generations/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5413550524646670816,
+            "access_hash": -3642683432478558369,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\x9ec\\xa2\\xaevh.\\x9e`\\\\\\x86\\xfd\\x8b\"\\xcf\\x95\\x02\\x92\\x1f?K'",
+            "date": "2022-11-03 19:55:24+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x16\\xa0P\\x84V\\xd8\\x07Ni\\xe5B\";\\xe1\\xb7g\\xe5\\x1e\\x94<\\x84\\xdb\\xa0<d\\xff\\x00*G\\xc7\\x96\\x98 \\x9e\\xe3\\x1d+\\xa6.\\xe8mXa9\\xed\\x8a)(\\xab\\x01\\xccIT\\xe0q\\xc0\"\\x95\\xc0\\x11\\xa1\\xe7\\x9a\\x8f\\xd2\\x9eO\\x00q\\xfa\\xd4$\\'v6\\x8a(\\xab\\x01\\t\\xc1\\x19\\xa5.\\xb8\\x18?\\xa5\\x14VJL\\x04\\xc8\\xa2\\x8a*\\xb9\\x98\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 177,
+                    "h": 320,
+                    "size": 16671
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 443,
+                    "h": 800,
+                    "size": 63588
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 709,
+                    "h": 1280,
+                    "sizes": [
+                        10015,
+                        26325,
+                        56596,
+                        82391,
+                        110347
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 66,
+            "length": 87
+        }
+    ],
+    "views": 200,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-11-04 23:29:27+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

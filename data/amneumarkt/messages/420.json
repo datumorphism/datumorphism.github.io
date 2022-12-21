@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 420,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-12-02 07:49:31+00:00",
+    "message": "#ml\n\nYou spent 10k euros on GPU then realized the statistical baseline model is better. \ud83e\udd23 \n\nhttps://github.com/Nixtla/statsforecast/tree/main/experiments/m3",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193029489216373,
+            "url": "https://github.com/Nixtla/statsforecast/tree/main/experiments/m3",
+            "display_url": "github.com/Nixtla/statsforecast/tree/main/experiments/m3",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "statsforecast/experiments/m3 at main \u00b7 Nixtla/statsforecast",
+            "description": "Lightning \u26a1\ufe0f fast forecasting with statistical and econometric models. - statsforecast/experiments/m3 at main \u00b7 Nixtla/statsforecast",
+            "photo": {
+                "_": "Photo",
+                "id": 5837984952388530130,
+                "access_hash": 8446367158791654214,
+                "file_reference": "b'\\x00c\\xa2\\xaev\\x89\\xfd\\x83x\\xd8m\\x10\\xa8\\x8f\\xd5\\x9c\\xb4);\\x13\\xb2'",
+                "date": "2022-12-18 17:44:54+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd5yB62\\xbd:\\x13BL\\x8c9t\\x07\\xd05+('\\xa2\\x93\\xef@E\\xce6\\xa8\\xfc(\\x01U\\xd5\\xbe\\xeb\\x03\\xf44\\xeahP>\\xee\\x07\\xd0S\\xbf\\x1a\\x00@s\\xd8\\x8f\\xad\\x14\\xb4P\\x06o\\xdb\\xe5\\xfe\\xea~G\\xfch\\xfb|\\xbf\\xddO\\xc8\\xff\\x00\\x8d\\x14U\\xd9\\x11p\\xfb|\\xb9\\xfb\\xa9\\xfa\\xff\\x00\\x8d\\x1fo\\x97\\xfb\\xa9\\xf9\\x1f\\xf1\\xa2\\x8a,\\x82\\xe2\\xfd\\xba_\\xee\\xa7\\xe4h\\xa2\\x8a,\\x82\\xe7\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 8841
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 30860
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4604,
+                            10422,
+                            22011,
+                            29922,
+                            45560
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 93,
+            "length": 64
+        }
+    ],
+    "views": 134,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-12-02 08:33:32+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

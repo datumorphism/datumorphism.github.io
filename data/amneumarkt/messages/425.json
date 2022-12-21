@@ -1,0 +1,135 @@
+{
+    "_": "Message",
+    "id": 425,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-12-17 21:56:32+00:00",
+    "message": "#visualization \n\nVisualizations of energy consumption and prices in Germany. Given the low temperature atm, it maybe interesting to watch them evolve.\n\nhttps://www.zeit.de/wirtschaft/energiemonitor-deutschland-gaspreis-spritpreis-energieversorgung",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5758788616380791986,
+            "url": "https://www.zeit.de/wirtschaft/energiemonitor-deutschland-gaspreis-spritpreis-energieversorgung",
+            "display_url": "zeit.de/wirtschaft/energiemonitor-deutschland-gaspreis-spritpreis-energieversorgung",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "ZEIT ONLINE",
+            "title": "Energiemonitor: Die wichtigsten Daten zur Energieversorgung \u2013 t\u00e4glich aktualisiert",
+            "description": "Ukraine-Krieg und Klimakrise: Deutschland muss sich so schnell wie m\u00f6glich von Kohle, \u00d6l und Gas l\u00f6sen. Wie gelingt die Energiewende? Die wichtigsten Zahlen und Grafiken",
+            "photo": {
+                "_": "Photo",
+                "id": 5907979033684061971,
+                "access_hash": 5525874079913437174,
+                "file_reference": "b'\\x00c\\xa2\\xaevqFj?K\\x1b\\xb2,\\x9d(\\xe3\\x14\\xfdx\\xd6\\xa1'",
+                "date": "2022-10-06 14:13:43+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xd7>\\xddh\\xe7h\\xe9\\x9a>\\x94s\\x80{\\xfaP\\x00G#\\x14c\\xe6\\xf6\\xa0\\xe7\"\\x83\\x9ep3@\\tE\\'sE\\x00:\\x8c\\xfbQE\\x00\\x04\\xfb~\\xb4\\x9b\\xbd\\xa8\\xa2\\x80\\x12\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 9080
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 33763
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 62226
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1300,
+                        "h": 731,
+                        "sizes": [
+                            7614,
+                            17931,
+                            29138,
+                            40132,
+                            63948
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "https://www.zeit.de/autoren/W/Rina_Wahls/index",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 152,
+            "length": 95
+        }
+    ],
+    "views": 62,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 713,
+        "read_max_id": 713
+    },
+    "edit_date": "2022-12-18 06:33:47+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

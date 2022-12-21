@@ -1,0 +1,91 @@
+{
+    "_": "Message",
+    "id": 426,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-12-18 09:25:42+00:00",
+    "message": "#data \n\nhttps://evidence.dev/\n\nI like the idea. My last dashboarding tool for work was streamlit. Streamlit is lightweight and fast. But it requires Python code and a Python server. \n\nEvidence is mostly markdown and SQL. For many lightweight dashboarding tasks, this is just sweet.\n\nEvidence is built on node. I could run a server and provide live updates but I can already build a static website by running npm run build.\n\nPlayed with it a bit. Nothing to complain about at this point.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6297087342859158670,
+            "url": "https://evidence.dev/",
+            "display_url": "evidence.dev",
+            "hash": 0,
+            "type": "article",
+            "site_name": "evidence.dev",
+            "title": "Evidence - Business Intelligence for Modern Data Teams",
+            "description": "Evidence enables analysts to build a trusted, version-controlled reporting system by writing SQL and markdown. Evidence reports are publication-quality, highly customizable, and fit for human consumption.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 8,
+            "length": 21
+        },
+        {
+            "_": "MessageEntityTextUrl",
+            "offset": 83,
+            "length": 13,
+            "url": "https://t.me/amneumarkt/368"
+        },
+        {
+            "_": "MessageEntityCode",
+            "offset": 408,
+            "length": 13
+        }
+    ],
+    "views": 59,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2022-12-18 16:30:45+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

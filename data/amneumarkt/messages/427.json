@@ -1,0 +1,132 @@
+{
+    "_": "Message",
+    "id": 427,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2022-12-18 19:18:28+00:00",
+    "message": "#ml\n\nGPT writing papers... Both fancy and scary.\n\nhttps://huggingface.co/stanford-crfm/pubmedgpt?text=Neuroplasticity",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4352412041839780917,
+            "url": "https://huggingface.co/stanford-crfm/pubmedgpt?text=Neuroplasticity",
+            "display_url": "huggingface.co/stanford-crfm/pubmedgpt?text=Neuroplasticity",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "huggingface.co",
+            "title": "stanford-crfm/pubmedgpt \u00b7 Hugging Face",
+            "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "photo": {
+                "_": "Photo",
+                "id": 5828805172757901252,
+                "access_hash": 8618972842968507259,
+                "file_reference": "b'\\x00c\\xa2\\xaev\\xf3\\xa3\\x8e\\xf91\\x9fa.o\\x982\\xd7\\x8c\\t\\xfd\\x95'",
+                "date": "2022-12-15 19:33:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x16(j@\\x08\\xe8\\x7f*V\\x84\\x01\\xd0\\xfeU(\\xe9H\\xdd:\\xd0\\xa7\\xa8\\x9d=\\x08v\\x0fJB\\x82\\x9ei\\t\\xae\\x95\\x13.R\\x17QE$\\x8e\\x05\\x15-\"\\x94K+\\'\\x03\\x8aG\\x93\\x8e\\x05\\x14W$w:^\\xc4&SQ\\xbc\\xa7\\x14Q]wv9\\xca\\xce\\xe4\\xd1E\\x15\\x93('"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 173,
+                        "size": 5805
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 432,
+                        "size": 23439
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 648,
+                        "sizes": [
+                            7736,
+                            10599,
+                            14811,
+                            20552,
+                            38747
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 50,
+            "length": 67
+        }
+    ],
+    "views": 51,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 3,
+        "replies_pts": 2097,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 719,
+        "read_max_id": 719
+    },
+    "edit_date": "2022-12-18 19:25:34+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}
