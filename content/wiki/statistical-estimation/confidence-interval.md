@@ -67,8 +67,9 @@ We must have $z_{\alpha/2} \sigma_{\bar x} \to 0$ as sample size $n\to \infty$. 
 In fact, $\sigma_{\bar x} = \sigma_p / \sqrt{n}$ if our population is infinite. This is part of the central limit theorem.
 {{< /message >}}
 
-{{< figure src="../assets/gaussian-alpha.png" caption="The definition of $\alpha$ for a [normal distribution](/wiki/distributions/normal-distribution). In a probability distribution, the area under the curve should be 1. Or the integral of the curve from $-\infty$ to $\infty$ should be 1. $\alpha$ is the sum of the two red areas. In this example, we actually have $\alpha=0.05$." >}}
+{{< figure src="../assets/gaussian-alpha.png" caption="The definition of $\alpha$ for a [normal distribution](/cards/statistics/distributions/normal-distribution). In a probability distribution, the area under the curve should be 1. Or the integral of the curve from $-\infty$ to $\infty$ should be 1. $\alpha$ is the sum of the two red areas. In this example, we actually have $\alpha=0.05$." >}}
 
+{{< e "/cards/statistics/distributions/normal-distribution" >}}
 
 The confidence level is a **weird measurement of our statistical confidence**.
 
