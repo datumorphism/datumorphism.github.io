@@ -17,10 +17,16 @@ menu:
       identifier: about
       url: /about/
   topleft:
+    - name: "Hologram"
+      weight: 5
+      identifier: holo
+      url: /hologram/
+      pre: '<i class="fa-solid fa-brush"></i>&nbsp;'
     - name: "Deep Learning Book"
       weight: 6
       identifier: pe
       url: "https://dl.leima.is"
+      pre: '<i class="fa-solid fa-feather-pointed"></i>&nbsp;'
   topright:
     - name: Blog
       weight: 2
