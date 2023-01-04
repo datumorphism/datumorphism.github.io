@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 430,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-01-01 09:42:29+00:00",
+    "message": "#ml \n\nTop-10 Things in 2022 | Anima on AI\nhttps://anima-ai.org/2022/12/31/top-10-things-in-2022/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 42,
+            "length": 54
+        }
+    ],
+    "views": 75,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2118,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-01-01 11:50:04+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

@@ -27,7 +27,7 @@
             "id": 881321956810671954,
             "url": "https://deepmind.com/blog/article/FermiNet",
             "display_url": "deepmind.com/blog/ferminet-quantum-physics-and-chemistry-from-first-principles",
-            "hash": 0,
+            "hash": -532351594,
             "type": "photo",
             "site_name": "Deepmind",
             "title": "FermiNet: Quantum Physics and Chemistry from First Principles",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 6022981859685805656,
                 "access_hash": -2320436016967358910,
-                "file_reference": "b'\\x00c\\xa2\\xaey\\xc4\\x13%\\xf5\\xa2a\\xfd\\xcb/\\xa4\\xa4\\xf5\\x02\\\\Qo'",
+                "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xe5K\\xa27\\xdc\\xd7\\xb7TD\\x89\\x85-\\x07\\xd5\\x84\\x1b'",
                 "date": "2022-05-04 05:27:01+00:00",
                 "sizes": [
                     {
@@ -88,9 +88,784 @@
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": null,
+            "author": "David Pfau, James Spencer, Alexander Matthews, Matthew Foulkes *",
             "document": null,
-            "cached_page": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.deepmind.com/blog/ferminet-quantum-physics-and-chemistry-from-first-principles",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 6022981859685805656,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextEmpty"
+                                },
+                                "credit": {
+                                    "_": "TextEmpty"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "FermiNet: Quantum Physics and Chemistry from First Principles"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "David Pfau, James Spencer, Alexander Matthews, Matthew Foulkes *"
+                        },
+                        "published_date": "2020-10-19 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In an "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "article"
+                                    },
+                                    "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033429",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " recently published in Physical Review Research, we show how deep learning can help solve the fundamental equations of quantum mechanics for real-world systems. Not only is this an important fundamental scientific question, but it also could lead to practical uses in the future, allowing researchers to prototype new materials and chemical syntheses in silico before trying to make them in the lab. Today we are also releasing the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "code"
+                                    },
+                                    "url": "https://github.com/deepmind/ferminet",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " from this study so that the computational physics and chemistry communities can build on our work and apply it to a wide range of problems. We\u2019ve developed a new neural network architecture, the Fermionic Neural Network or FermiNet, which is well-suited to modeling the quantum state of large collections of electrons, the fundamental building blocks of chemical bonds. The FermiNet was the first demonstration of deep learning for computing the energy of atoms and molecules from first principles that was accurate enough to be useful, and it remains the most accurate neural network method to date. We hope the tools and ideas developed in our AI research at DeepMind can help solve fundamental problems in the natural sciences, and the FermiNet joins our work on "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "protein folding"
+                                    },
+                                    "url": "https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "glassy dynamics"
+                                    },
+                                    "url": "https://deepmind.com/blog/article/Towards-understanding-glasses-with-graph-neural-networks",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "lattice quantum chromodynamics"
+                                    },
+                                    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.121601",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and many other projects in bringing that vision to life."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "A Brief History of Quantum Mechanics"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Mention \u201cquantum mechanics\u201d and you are more likely to inspire confusion than anything else. The phrase conjures up images of Schr\u00f6dinger\u2019s cat, which can paradoxically be both alive and dead, and fundamental particles that are also, somehow, waves. \u00a0In quantum systems, a particle such as an electron doesn\u2019t have an exact location, as it would in a classical description. Instead, its position is described by a probability cloud - it\u2019s smeared out in all places it\u2019s allowed to be. This counterintuitive state of affairs led Richard Feynman to declare: \u201cIf you think you understand quantum mechanics, you don\u2019t understand quantum mechanics.\u201d Despite this spooky weirdness, the meat of the theory can be reduced down to just a few straightforward equations. The most famous of these, the Schr\u00f6dinger equation, describes the behavior of particles at the quantum scale in the same way that Newton\u2019s laws describe the behavior of objects at our more familiar human scale. While the interpretation of this equation can cause endless head-scratching, the math is much easier to work with, leading to the common exhortation from professors to \u201cshut up and calculate\u201d when pressed with thorny philosophical questions from students."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "These equations are sufficient to describe the behavior of all the familiar matter we see around us at the level of atoms and nuclei. Their counterintuitive nature leads to all sorts of exotic phenomena: superconductors, superfluids, lasers and semiconductors are only possible because of quantum effects. But even the humble covalent bond - the basic building block of chemistry - is a consequence of the quantum interactions of electrons. Once these rules were worked out in the 1920s, scientists realised that, for the first time, they had a detailed theory of how chemistry works. In principle, they could just set up these equations for different molecules, solve for the energy of the system, and figure out which molecules were stable and which reactions would happen spontaneously. But when they sat down to actually calculate the solutions to these equations, they found that they could do it exactly for the simplest atom (hydrogen) and virtually nothing else. Everything else was too complicated."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The heady optimism of those days was nicely summed up by Paul Dirac:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "The underlying physical laws necessary for the mathematical theory of a large part of physics and the whole of chemistry are thus completely known, and the difficulty is only that the exact application of these laws leads to equations much too complicated to be soluble. It therefore becomes desirable that approximate practical methods of applying quantum mechanics should be developed\n"
+                                    },
+                                    {
+                                        "_": "TextBold",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "Paul Dirac, 1929"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Many took up Dirac\u2019s charge, and soon physicists built mathematical techniques that could approximate the qualitative behavior of molecular bonds and other chemical phenomena. These methods started from an approximate description of how electrons behave that may be familiar from introductory chemistry. In this description, each electron is assigned to a particular orbital, which gives the probability of a single electron being found at any point near an atomic nucleus. The shape of each orbital then depends on the average shape of all other orbitals. As this \u201cmean field\u201d description treats each electron as being assigned to just one orbital, it is a very incomplete picture of how electrons actually behave. Nevertheless, it is enough to estimate the total energy of a molecule with only about 0.5% error."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5851305003183091554,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Figure 1 - Atomic orbitals. The surface denotes the area of high probability of finding an electron. In the blue region the wavefunction is positive, while in the purple region it is negative."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Unfortunately, 0.5% error still isn\u2019t enough to be useful to the working chemist. The energy in molecular bonds is just a tiny fraction of the total energy of a system, and correctly predicting whether a molecule is stable can often depend on just 0.001% of the total energy of a system, or about 0.2% of the remaining \u201ccorrelation\u201d energy. For instance, while the total energy of the electrons in a "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "butadiene"
+                                    },
+                                    "url": "https://en.wikipedia.org/wiki/Butadiene",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " molecule is almost 100,000 kilocalories per mole, the difference in energy between different possible shapes of the molecule is just 1 kilocalorie per mole. That means that if you want to correctly predict butadiene\u2019s natural shape, then the same level of precision is needed as measuring the width of a football field down to the millimeter."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "With the advent of digital computing after World War II, scientists developed a whole menagerie of computational methods that went beyond this mean field description of electrons. While these methods come in a bewildering alphabet soup of abbreviations, they all generally fall somewhere on an axis that trades off accuracy with efficiency. At one extreme, there are methods that are essentially exact, but scale worse than exponentially with the number of electrons, making them impractical for all but the smallest molecules. At the other extreme are methods that scale linearly, but are not very accurate. These computational methods have had an enormous impact on the practice of chemistry - the 1998 Nobel Prize in chemistry was awarded to the originators of many of these algorithms."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Fermionic Neural Networks"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Despite the breadth of existing computational quantum mechanical tools, we felt a new method was needed to address the problem of efficient representation. There\u2019s a reason that the largest quantum chemical calculations only run into the tens of thousands of electrons for even the most approximate methods, while classical chemical calculation techniques like molecular dynamics can handle millions of atoms. The state of a classical system can be described easily - we just have to track the position and momentum of each particle. Representing the state of a quantum system is far more challenging. A probability has to be assigned to every possible configuration of electron positions. This is encoded in the wavefunction, which assigns a positive or negative number to every configuration of electrons, and the wavefunction squared gives the probability of finding the system in that configuration. The space of all possible configurations is enormous - if you tried to represent it as a grid with 100 points along each dimension, then the number of possible electron configurations for the silicon atom would be larger than the number of atoms in the universe!"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "This is exactly where we thought deep neural networks could help. In the last several years, there have been huge advances in representing complex, high-dimensional probability distributions with neural networks. We now know how to train these networks efficiently and scalably. We surmised that, given these networks have already proven their mettle at fitting high-dimensional functions in artificial intelligence problems, maybe they could be used to represent quantum wavefunctions as well. We were not the first people to think of this - researchers such as "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Giuseppe Carleo and Matthias Troyer"
+                                    },
+                                    "url": "https://science.sciencemag.org/content/355/6325/602.abstract",
+                                    "webpage_id": 5444295160091181340
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and others have shown how modern deep learning could be used for solving idealised quantum problems. We wanted to use deep neural networks to tackle more realistic problems in chemistry and condensed matter physics, and that meant including electrons in our calculations."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "There is just one wrinkle when dealing with electrons. Electrons must obey the Pauli exclusion principle, which means that they can\u2019t be in the same space at the same time. This is because electrons are a type of particle known as fermions, which include the building blocks of most matter - protons, neutrons, quarks, neutrinos, etc. Their wavefunction must be antisymmetric - if you swap the position of two electrons, the wavefunction gets multiplied by -1. That means that if two electrons are on top of each other, the wavefunction (and the probability of that configuration) will be zero."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "This meant we had to develop a new type of neural network that was antisymmetric with respect to its inputs, which we have dubbed the Fermionic Neural Network, or FermiNet. In most quantum chemistry methods, antisymmetry is introduced using a function called the determinant. The determinant of a matrix has the property that if you swap two rows, the output gets multiplied by -1, just like a wavefunction for fermions. So you can take a bunch of single-electron functions, evaluate them for every electron in your system, and pack all of the results into one matrix. The determinant of that matrix is then a properly antisymmetric wavefunction. The major limitation of this approach is that the resulting function - known as a Slater determinant - is not very general. Wavefunctions of real systems are usually far more complicated. The typical way to improve on this is to take a large linear combination of Slater determinants - sometimes millions or more - and add some simple corrections based on pairs of electrons. Even then, this may not be enough to accurately compute energies."
+                        }
+                    },
+                    {
+                        "_": "PageBlockVideo",
+                        "video_id": 5849130379180508119,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Figure 2 - Illustration of a Slater determinant. Each curve is a slice through one of the orbitals from Figure 1. When electrons 1 and 2 swap positions, the rows of the Slater determinant swap, and the wavefunction is multiplied by -1. This guarantees that the Pauli exclusion principle is obeyed."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "autoplay": true,
+                        "loop": true
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Deep neural networks can often be far more efficient at representing complex functions than linear combinations of basis functions. In the FermiNet, this is achieved by making each function going into the determinant a function of all electrons (1). This goes far beyond methods that just use one- and two-electron functions. The FermiNet has a separate stream of information for each electron. Without any interaction between these streams, the network would be no more expressive than a conventional Slater determinant. To go beyond this, we average together information from across all streams at each layer of the network, and pass this information to each stream at the next layer. That way, these streams have the right symmetry properties to create an antisymmetric function. This is similar to how "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "graph neural networks"
+                                    },
+                                    "url": "https://deepmind.com/blog/article/traffic-prediction-with-advanced-graph-neural-networks",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " aggregate information at each layer. Unlike the Slater determinants, FermiNets are "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextItalic",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "universal"
+                                                }
+                                            },
+                                            {
+                                                "_": "TextPlain",
+                                                "text": " function approximators"
+                                            }
+                                        ]
+                                    },
+                                    "url": "https://arxiv.org/abs/2007.15298",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", at least in the limit where the neural network layers become wide enough. That means that, if we can train these networks correctly, they should be able to fit the nearly-exact solution to the Schr\u00f6dinger equation."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockVideo",
+                        "video_id": 5849520658563728255,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Fig 3 - Illustration of the FermiNet. A single stream of the network (blue, purple or pink) functions very similarly to a conventional orbital. The FermiNet introduces symmetric interactions between streams, making the wavefunction far more general and expressive. Just like a conventional Slater determinant, swapping two electron positions still leads to swapping two rows in the determinant, and multiplying the overall wavefunction by -1."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "autoplay": true,
+                        "loop": true
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We fit the FermiNet by minimising the energy of the system. To do that exactly, we would need to evaluate the wavefunction at all possible configurations of electrons, so we have to do it approximately instead. We pick a random selection of electron configurations, evaluate the energy locally at each arrangement of electrons, add up the contributions from each arrangement and minimise this instead of the true energy. This is known as a Monte Carlo method, because it\u2019s a bit like a gambler rolling dice over and over again. While it is approximate, if we need to make it more accurate we can always roll the dice again. Since the wavefunction squared gives the probability of observing an arrangement of particles in any location, it is most convenient to generate samples from the wavefunction itself - essentially, simulating the act of observing the particles. While most neural networks are trained from some external data, in our case the inputs used to train the neural network are generated by the neural network itself. It\u2019s a bit like pulling yourself up by your own bootstraps, and it means that we don\u2019t need any training data other than the positions of the atomic nuclei that the electrons are dancing around. The basic idea, known as variational quantum Monte Carlo (or VMC for short), has been around since the \u201860s, and it is generally considered a cheap but not very accurate way of computing the energy of a system. By replacing the simple wavefunctions based on Slater determinants with the FermiNet, we have dramatically increased the accuracy of this approach on every system we\u2019ve looked at."
+                        }
+                    },
+                    {
+                        "_": "PageBlockVideo",
+                        "video_id": 5849572022077621132,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Fig 4 - Simulated electrons sampled from the FermiNet move around the bicyclobutane molecule."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "autoplay": true,
+                        "loop": true
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "To make sure that the FermiNet really does represent an advance in the state of the art, we started by investigating simple, well-studied systems, like atoms in the first row of the periodic table (hydrogen through neon). These are small systems - 10 electrons or fewer - and simple enough that they can be treated by the most accurate (but exponential scaling) methods. The FermiNet outperforms comparable VMC calculations by a wide margin - often cutting the error relative to the exponentially-scaling calculations by half or more. On larger systems, the exponentially-scaling methods become intractable, so instead we use the \u201ccoupled cluster\u201d method as a baseline. This method works well on molecules in their stable configuration, but struggles when bonds get stretched or broken, which is critical for understanding chemical reactions. While it scales much better than exponentially, the particular coupled cluster method we used still scales as the number of electrons raised to the seventh power, so it can only be used for medium-sized molecules. We applied the FermiNet to progressively larger molecules, starting with lithium hydride and working our way up to bicyclobutane, the largest system we looked at, with 30 electrons. On the smallest molecules, the FermiNet captured an astounding 99.8% of the difference between the coupled cluster energy and the energy you get from a single Slater determinant. On bicyclobutane, the FermiNet still captured 97% or more of this correlation energy - a huge accomplishment for a supposedly \u201ccheap but inaccurate\u201d approach."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5851636243945860984,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Fig 5 - Graphic depiction of the fraction of correlation energy that the FermiNet captures on molecules. The purple bar indicates 99% of correlation energy. Left to right: lithium hydride, nitrogen, ethene, ozone, ethanol and bicyclobutane."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "While coupled cluster methods work well for stable molecules, the real frontier in computational chemistry is in understanding how molecules stretch, twist and break. There, coupled cluster methods often struggle, so we have to compare against as many baselines as possible to make sure we get a consistent answer. We looked at two benchmark stretched systems - the nitrogen molecule (N2) and the hydrogen chain with 10 atoms, (H10). Nitrogen is an especially challenging molecular bond, because each nitrogen atom contributes 3 electrons. The hydrogen chain, meanwhile, is of "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "interest for understanding how electrons behave in materials"
+                                    },
+                                    "url": "https://www.simonsfoundation.org/2020/09/14/infinitely-long-chains-of-hydrogen-atoms-have-surprising-properties-including-a-metallic-phase/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", for instance predicting whether or not a material will conduct electricity. On both systems, coupled cluster did well at equilibrium, but had problems as the bonds were stretched. Conventional VMC calculations did poorly across the board. But the FermiNet was among the best methods investigated, no matter the bond length."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Conclusions"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "We think the FermiNet is the start of great things to come for the fusion of deep learning and computational quantum chemistry. Most of the systems we\u2019ve looked at so far are well-studied and well-understood. But just as the first good results with deep learning in other fields led to a burst of follow-up work and rapid progress, we hope that the FermiNet will inspire lots of work on scaling up and many ideas for new, even better network architectures. Already, since we first put our work on arXiv last year, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "other"
+                                    },
+                                    "url": "https://www.nature.com/articles/s41467-020-15724-9",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "groups"
+                                    },
+                                    "url": "https://www.nature.com/articles/s41557-020-0544-y",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " have shared their approaches to applying deep learning to first-principles calculations on the many-electron problem. We have also just scratched the surface of computational quantum physics, and look forward to applying the FermiNet to tough problems in material science and condensed matter physics as well. Mostly, we hope that by releasing the source code used in our experiments, we can inspire other researchers to build on our work and try out new applications we haven\u2019t even dreamed of."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Notes"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Read the paper "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "here"
+                                    },
+                                    "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033429",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and view the code "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "here"
+                                    },
+                                    "url": "https://github.com/deepmind/ferminet",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". With thanks to Jim Kynvin, Adam Cain and Dominic Barlow for the figures."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Footnotes"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "(1) The FermiNet also has streams for every pair of electrons, and information from these streams is passed back to the single-electron streams. For simplicity, we chose not to visualise this in the blog post, but details can be found in the paper."
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5851305003183091554,
+                        "access_hash": 6920577555765543213,
+                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xd9A\"\\x14\\xbd%\\xf2]\\xcf\\xd6\\x04f\\xa6\\xd6JU'",
+                        "date": "2022-12-23 12:09:01+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x0b(\\xd0I\\xd9\\xa4\\x00\\x81\\x83\\x9e;\\x8a\\xae$\\x90\\xa7\\x98d`\\xddz\\xf0?\\n\\xd0\\xc0\\x1c\\xe3\\x9a\\x8f\\xc8\\x8c\\xbe\\xe2\\x83=i\\xdd\\x12\\xe2\\xfb\\x90\\\\\\xcf\"F\\xa4|\\xa4\\xa6\\xee\\x9d\\xea+{\\xb9L33\\xfc\\xe5\\x00 \\xe2\\xaf\\xb2+\\xf0\\xca\\x18{\\x8a\\x11\\x15\\x06\\x11B\\x8f@1M5m\\x8aF|7n\\xf7(\\x06Hn\\x084U\\xe5\\x89\\x15\\x8b\\x05\\x00\\xf4\\xcd\\x146\\x9e\\xc0\\x8f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 87,
+                                "size": 6482
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 217,
+                                "size": 20574
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 348,
+                                "size": 41229
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1600,
+                                "h": 435,
+                                "sizes": [
+                                    8246,
+                                    16709,
+                                    24173,
+                                    32719,
+                                    54550
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5851636243945860984,
+                        "access_hash": -9213683669473235168,
+                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c19\\x11\\x9c_\\xb4Q\\xee$\\x8cL\\t\\xfe\\x13\\xfa\\t'",
+                        "date": "2022-12-23 12:08:59+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x12(\\xbb\\xe5/\\xfc\\xfc\\xbf\\xe6)D`t\\xba\\x93\\xf3\\x15gb\\x8f\\xe1\\x1f\\x95&\\xd5\\xe3\\x81\\xf9Us\\x11fW\\xf2\\xc7\\xfc\\xfd\\xc9\\xff\\x00}\\n<\\xb1\\xff\\x00?R~b\\xac\\xed\\\\\\xe3h\\xfc\\xa8\\xda\\xbf\\xdd\\x1f\\x95\\x1c\\xcc,\\xca\\xe21\\x91\\xfe\\x95!\\xfch\\xab\\x18L\\xe3\\x03?J)s\\x0e\\xccu\\x06\\x8a)\\x14\\x14QE\\x00\\x1d\\xe8\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 145,
+                                "size": 9233
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 362,
+                                "size": 31626
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 580,
+                                "size": 63283
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1600,
+                                "h": 725,
+                                "sizes": [
+                                    7953,
+                                    19798,
+                                    36614,
+                                    48525,
+                                    77449
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [
+                    {
+                        "_": "Document",
+                        "id": 5849130379180508119,
+                        "access_hash": 1244106554876558512,
+                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8cE(\\xce\\xeb\\x1a\\\\\\xc4\\x9c\\x10\\x17\\xb7\\xc3\\x18T.m'",
+                        "date": "2022-12-23 12:09:01+00:00",
+                        "mime_type": "video/mp4",
+                        "size": 34699,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeVideo",
+                                "duration": 8,
+                                "w": 320,
+                                "h": 184,
+                                "round_message": false,
+                                "supports_streaming": true
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "62275ec6f3af2be16725b398_Fig 2.gif.mp4"
+                            },
+                            {
+                                "_": "DocumentAttributeAnimated"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd9\\xa2\\x98\\xaf\\x97e\\xc66\\xf7\\xf5\\xa7dz\\xd0\\x03]\\x8a\\xab\\x11\\xd4t\\xe35\\x19\\x98\\xe3\\xa1\\xff\\x00\\xbeMH\\xc00 \\x8c\\x8e\\xf4\\x9b#?\\xfe\\xba`4\\xce\\xa2u\\x88\\xabe\\x86s\\x8e(\\xa9A\\x1d\\xa8\\xa4\\x02\\x04\\xc3\\xb3g9\\xedF>n\\x9cQE\\x00\"\\xee\\xdc\\xd9P\\x07c\\x9e\\xb4\\xe5\\xfb\\xa3#\\x06\\x8a(\\x01h\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 183,
+                                "size": 10368
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5849520658563728255,
+                        "access_hash": -3035163989342707185,
+                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x06\\x08E\\x05\\x91\\xea\\xfbj\\xbc\\xb7\\x87\\xa6\\x8f\\xf4\\x93\\x98'",
+                        "date": "2022-12-23 12:09:01+00:00",
+                        "mime_type": "video/mp4",
+                        "size": 40544,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeVideo",
+                                "duration": 8,
+                                "w": 320,
+                                "h": 170,
+                                "round_message": false,
+                                "supports_streaming": true
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "62275ef038d03f8c2771b096_Fig 3.gif.mp4"
+                            },
+                            {
+                                "_": "DocumentAttributeAnimated"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x15(\\xd6\\xdd\\xcb\\x0c\\x1e(\\xdf\\xf7x<\\xd3\\xe8\\xa0C<\\xce\\t\\xdax\\xa7\\x83\\x91\\x9a)\\xac\\x81\\x8erG\\xd0\\xd0\\x1a\\x8e\\xa2\\x8001E\\x03\\n(\\xa2\\x80\\n(\\xa2\\x80\\n(\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 169,
+                                "size": 3407
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5849572022077621132,
+                        "access_hash": 3315491668975780235,
+                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x86$V\\xee\\x1a;W\\xda\\x8fq^\\x80\\x01\\x11\\xf8('",
+                        "date": "2022-12-23 12:09:01+00:00",
+                        "mime_type": "video/mp4",
+                        "size": 313761,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeVideo",
+                                "duration": 5,
+                                "w": 320,
+                                "h": 320,
+                                "round_message": false,
+                                "supports_streaming": true
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "62275f06cc5567a588e39ae1_Fig 4.gif.mp4"
+                            },
+                            {
+                                "_": "DocumentAttributeAnimated"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01((\\xd9\\xa2\\x8ai?0\\xa0\\x07QFi\\xacy\\x14\\x00\\xea(\\xa2\\x80\\x11\\xb3\\x8e)\\x8d\\x1e\\xec\\x12NGLT\\x94P\\x05vg\\x0c\\xab\\x8c\\xe7\\xbd<G\\x92\\x18\\x93\\x9e\\xd8\\xa72\\xe5\\x94\\xfa\\x1ax\\x14\\xee\\x03Fs\\x83\\xf9\\xd1N\\xa2\\x90\\x05\\x14Q@\\x05\\x14Q@\\x05\\x14Q@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 320,
+                                "size": 15383
+                            }
+                        ],
+                        "video_thumbs": []
+                    }
+                ],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
             "attributes": []
         }
     },
@@ -107,7 +882,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2097,
+        "replies_pts": 2118,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,
