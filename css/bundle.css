@@ -89,6 +89,7 @@ body {
     max-width: 1000px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    padding-left: 1em;
 }
 
 .blog-post>ol {
@@ -96,7 +97,7 @@ body {
     max-width: 1000px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: 1em
+    padding-left: 1em;
 }
 
 .blog-post>h1 {
