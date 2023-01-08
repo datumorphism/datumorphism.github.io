@@ -15,4 +15,6 @@ references:
 
 ## 2 Variables
 
+2-Variable {{< c "cards/statistics/distributions/normal-distribution.md" "Gaussian" >}}
+
 {{< figure src="../assets/multivariate-normal-distribution/multivariate_gaussian_cov_mat.png" >}}

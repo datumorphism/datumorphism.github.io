@@ -15,7 +15,6 @@ charts:
   data:
   layout:
 weight: 2
-published: false
 ---
 
 ## Visualization
