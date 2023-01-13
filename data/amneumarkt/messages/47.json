@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5984225908757736769,
                 "access_hash": -1182986061467725139,
-                "file_reference": "b'\\x00c\\xb5\\xe6\\x8cq^\\x90\\x99\\x0e|\\x96\\xb34\\xde\\xbd\\x17\\xfd\\xb21\\xa7'",
+                "file_reference": "b'\\x00c\\xc1>q\\xfe{F\\xa8r%!u\\xa1\\xa2\\xf6\\x839\\\\B\\x12'",
                 "date": "2022-01-14 12:37:40+00:00",
                 "sizes": [
                     {
@@ -264,7 +264,7 @@
                                 },
                                 {
                                     "_": "TextPlain",
-                                    "text": " when he created models to describe the system of Copenhagen Telephone Exchange company, a Danish company."
+                                    "text": ", who created models to describe the system of incoming calls at the Copenhagen Telephone Exchange Company."
                                 },
                                 {
                                     "_": "TextSuperscript",
@@ -292,7 +292,7 @@
                                 },
                                 {
                                     "_": "TextPlain",
-                                    "text": " The ideas have since seen applications including "
+                                    "text": " These ideas have since seen applications in "
                                 },
                                 {
                                     "_": "TextUrl",
@@ -330,6 +330,10 @@
                                     "webpage_id": 5973540602866175997
                                 },
                                 {
+                                    "_": "TextPlain",
+                                    "text": ","
+                                },
+                                {
                                     "_": "TextSuperscript",
                                     "text": {
                                         "_": "TextConcat",
@@ -355,7 +359,20 @@
                                 },
                                 {
                                     "_": "TextPlain",
-                                    "text": " and, particularly in "
+                                    "text": " "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "project management"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Project_management",
+                                    "webpage_id": 5973540601978896259
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", and particularly "
                                 },
                                 {
                                     "_": "TextUrl",
@@ -368,7 +385,7 @@
                                 },
                                 {
                                     "_": "TextPlain",
-                                    "text": ", in the design of factories, shops, offices and hospitals, as well as in project management."
+                                    "text": ", where it is applied in the design of factories, shops, offices, and hospitals."
                                 },
                                 {
                                     "_": "TextSuperscript",
@@ -481,7 +498,29 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "A queue, or queueing node can be thought of as nearly a "
+                                            "text": "A "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "queue"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " or "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "queueing node"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " can be thought of as nearly a "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -494,7 +533,40 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ". Jobs or \"customers\" arrive to the queue, possibly wait some time, take some time being processed, and then depart from the queue."
+                                            "text": ". "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Jobs"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " (also called "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "customers"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " or "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "requests"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", depending on the field) arrive to the queue, possibly wait some time, take some time being processed, and then depart from the queue."
                                         }
                                     ]
                                 }
@@ -518,8 +590,24 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextPlain",
-                                    "text": "The queueing node is not quite a pure black box, however, since some information is needed about the inside of the queuing node. The queue has one or more \"servers\" which can each be paired with an arriving job until it departs, after which that server will be free to be paired with another arriving job."
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "However, the queueing node is not quite a pure black box since some information is needed about the inside of the queuing node. The queue has one or more "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "servers"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " which can each be paired with an arriving job. When the job is completed and departs, that server will again be free to be paired with another arriving job."
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -583,7 +671,29 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "An analogy often used is that of the cashier at a supermarket. There are other models, but this is one commonly encountered in the literature. Customers arrive, are processed by the cashier, and depart. Each cashier processes one customer at a time, and hence this is a queueing node with only one server. A setting where a customer will leave immediately if the cashier is busy when the customer arrives, is referred to as a queue with no buffer (or no \"waiting area\", or similar terms). A setting with a waiting zone for up to "
+                                            "text": "An analogy often used is that of the cashier at a supermarket. (There are other models, but this one is commonly encountered in the literature.) Customers arrive, are processed by the cashier, and depart. Each cashier processes one customer at a time, and hence this is a queueing node with only one server. A setting where a customer will leave immediately if the cashier is busy when the customer arrives, is referred to as a queue with no "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "buffer"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " (or no "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "waiting area"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "). A setting with a waiting zone for up to "
                                         },
                                         {
                                             "_": "TextItalic",
@@ -636,7 +746,18 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The behaviour of a single queue (also called a \"queueing node\") can be described by a "
+                                            "text": "The behaviour of a single queue (also called a "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "queueing node"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ") can be described by a "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -649,7 +770,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ", which describes the arrivals and departures from the queue, along with the number of jobs (also called \"customers\" or \"requests\", or any number of other things, depending on the field) currently in the system. An arrival increases the number of jobs ("
+                                            "text": ", which describes the arrivals and departures from the queue, along with the number of jobs currently in the system. If "
                                         },
                                         {
                                             "_": "TextItalic",
@@ -660,7 +781,18 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ") by 1, and a departure (a job completing its service) decreases "
+                                            "text": " denotes the number of jobs in the system (either being serviced or waiting if the queue has a buffer of waiting jobs), then an arrival increases "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "k"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " by 1 and a departure decreases "
                                         },
                                         {
                                             "_": "TextItalic",
@@ -677,8 +809,94 @@
                                 }
                             },
                             {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "The system transitions between values of "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "k"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " by \"births\" and \"deaths\", which occur at the arrival rates "
+                                        },
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5786116126547116129,
+                                            "w": 18,
+                                            "h": 22
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " and the departure rates "
+                                        },
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5783781352260239509,
+                                            "w": 19,
+                                            "h": 19
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " for each job "
+                                        },
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5840543146122936435,
+                                            "w": 7,
+                                            "h": 19
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". For a queue, these rates are generally considered not to vary with the number of jobs in the queue, so a single "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "average"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Average",
+                                            "webpage_id": 5973540601860496304
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " rate of arrivals/departures per unit time is assumed. Under this assumption, this process has an arrival rate of "
+                                        },
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5905702017661142058,
+                                            "w": 204,
+                                            "h": 24
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " and a departure rate of "
+                                        },
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5905839697132782591,
+                                            "w": 206,
+                                            "h": 24
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
                                 "_": "PageBlockPhoto",
-                                "photo_id": 5801949511055157376,
+                                "photo_id": 532581567272952977,
                                 "caption": {
                                     "_": "PageCaption",
                                     "text": {
@@ -686,207 +904,53 @@
                                         "texts": [
                                             {
                                                 "_": "TextPlain",
-                                                "text": "A birth\u2013death process. The values in the circles represent the state of the birth-death process. For a queueing system, "
+                                                "text": "A birth\u2013death process. The values in the circles represent the state of the system, which evolves based on arrival rates "
                                             },
                                             {
                                                 "_": "TextItalic",
                                                 "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "k"
+                                                    "_": "TextConcat",
+                                                    "texts": [
+                                                        {
+                                                            "_": "TextPlain",
+                                                            "text": "\u03bb"
+                                                        },
+                                                        {
+                                                            "_": "TextSubscript",
+                                                            "text": {
+                                                                "_": "TextPlain",
+                                                                "text": "i"
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             },
                                             {
                                                 "_": "TextPlain",
-                                                "text": " is the number of jobs in the system (either being serviced or waiting if the queue has a buffer of waiting jobs). The system transitions between values of "
+                                                "text": " and departure rates "
                                             },
                                             {
                                                 "_": "TextItalic",
                                                 "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "k"
+                                                    "_": "TextConcat",
+                                                    "texts": [
+                                                        {
+                                                            "_": "TextPlain",
+                                                            "text": "\u03bc"
+                                                        },
+                                                        {
+                                                            "_": "TextSubscript",
+                                                            "text": {
+                                                                "_": "TextPlain",
+                                                                "text": "i"
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             },
                                             {
                                                 "_": "TextPlain",
-                                                "text": " by \"births\" and \"deaths\" which occur at rates given by various values of "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bb"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextItalic",
-                                                    "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "i"
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": " and "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bc"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextItalic",
-                                                    "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "i"
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": ", respectively. Further, for a queue, the arrival rates and departure rates are generally considered not to vary with the number of jobs in the queue, so a single average rate of arrivals/departures per unit time to the queue is assumed. Under this assumption, this process has an arrival rate of "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bb"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": " = "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bb"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "1"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": ", "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bb"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "2"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": ", ..., "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bb"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextItalic",
-                                                    "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "k"
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": " and a departure rate of "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bc"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": " = "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bc"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "1"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": ", "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bc"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "2"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": ", ..., "
-                                            },
-                                            {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "\u03bc"
-                                                }
-                                            },
-                                            {
-                                                "_": "TextSubscript",
-                                                "text": {
-                                                    "_": "TextItalic",
-                                                    "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "k"
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "_": "TextPlain",
-                                                "text": " (see next figure)."
+                                                "text": "."
                                             }
                                         ]
                                     },
@@ -1071,10 +1135,19 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextImage",
-                                    "document_id": 5808753378745909822,
-                                    "w": 467,
-                                    "h": 51
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5905557255788430223,
+                                            "w": 461,
+                                            "h": 51
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -1087,10 +1160,19 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextImage",
-                                    "document_id": 6031846225051910614,
-                                    "w": 349,
-                                    "h": 64
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 6051756340521467975,
+                                            "w": 343,
+                                            "h": 64
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -1110,7 +1192,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " leads to:"
+                                            "text": " leads to"
                                         }
                                     ]
                                 }
@@ -1119,8 +1201,8 @@
                                 "_": "PageBlockParagraph",
                                 "text": {
                                     "_": "TextImage",
-                                    "document_id": 6031508043621990873,
-                                    "w": 240,
+                                    "document_id": 6052017951274434693,
+                                    "w": 234,
                                     "h": 65
                                 }
                             },
@@ -1182,20 +1264,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Single queueing nodes are usually described using "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "Kendall's notation"
-                                            },
-                                            "url": "https://en.m.wikipedia.org/wiki/Kendall%27s_notation",
-                                            "webpage_id": 5973540601997737527
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": " in the form A/S/"
+                                            "text": "Single queueing nodes are usually described using Kendall's notation in the form A/S/"
                                         },
                                         {
                                             "_": "TextItalic",
@@ -1228,7 +1297,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " the distribution of service times for jobs and "
+                                            "text": " the distribution of service times for jobs, and "
                                         },
                                         {
                                             "_": "TextItalic",
@@ -1411,13 +1480,15 @@
                                                 {
                                                     "_": "TextItalic",
                                                     "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "\u03bb"
+                                                        "_": "TextImage",
+                                                        "document_id": 5784304011125456998,
+                                                        "w": 11,
+                                                        "h": 19
                                                     }
                                                 },
                                                 {
                                                     "_": "TextPlain",
-                                                    "text": ": the arrival rate (the reciprocal of the expected time between each customer arriving, e.g. 10 customers per second);"
+                                                    "text": ": the arrival rate (the reciprocal of the expected time between each customer arriving, e.g. 10 customers per second)"
                                                 }
                                             ]
                                         }
@@ -1430,13 +1501,15 @@
                                                 {
                                                     "_": "TextItalic",
                                                     "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "\u03bc"
+                                                        "_": "TextImage",
+                                                        "document_id": 5783903050158571699,
+                                                        "w": 12,
+                                                        "h": 19
                                                     }
                                                 },
                                                 {
                                                     "_": "TextPlain",
-                                                    "text": ": the reciprocal of the mean service time (the expected number of consecutive service completions per the same unit time, e.g. per 30 seconds);"
+                                                    "text": ": the reciprocal of the mean service time (the expected number of consecutive service completions per the same unit time, e.g. per 30 seconds)"
                                                 }
                                             ]
                                         }
@@ -1455,7 +1528,7 @@
                                                 },
                                                 {
                                                     "_": "TextPlain",
-                                                    "text": ": the parameter characterizing the number of customers in the system;"
+                                                    "text": ": the parameter characterizing the number of customers in the system"
                                                 }
                                             ]
                                         }
@@ -1466,21 +1539,10 @@
                                             "_": "TextConcat",
                                             "texts": [
                                                 {
-                                                    "_": "TextItalic",
-                                                    "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "P"
-                                                    }
-                                                },
-                                                {
-                                                    "_": "TextSubscript",
-                                                    "text": {
-                                                        "_": "TextItalic",
-                                                        "text": {
-                                                            "_": "TextPlain",
-                                                            "text": "n"
-                                                        }
-                                                    }
+                                                    "_": "TextImage",
+                                                    "document_id": 5783791939354624157,
+                                                    "w": 23,
+                                                    "h": 22
                                                 },
                                                 {
                                                     "_": "TextPlain",
@@ -1495,7 +1557,7 @@
                                                 },
                                                 {
                                                     "_": "TextPlain",
-                                                    "text": " customers in the system in steady state."
+                                                    "text": " customers in the system in steady state"
                                                 }
                                             ]
                                         }
@@ -1512,21 +1574,10 @@
                                             "text": "Further, let "
                                         },
                                         {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "E"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
+                                            "_": "TextImage",
+                                            "document_id": 5786159578731249794,
+                                            "w": 25,
+                                            "h": 22
                                         },
                                         {
                                             "_": "TextPlain",
@@ -1544,21 +1595,10 @@
                                             "text": ", and "
                                         },
                                         {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "L"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
+                                            "_": "TextImage",
+                                            "document_id": 5784260168099299474,
+                                            "w": 24,
+                                            "h": 22
                                         },
                                         {
                                             "_": "TextPlain",
@@ -1573,7 +1613,17 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ". Then for all "
+                                            "text": ". Then "
+                                        },
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5905519472961127324,
+                                            "w": 161,
+                                            "h": 24
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " for all "
                                         },
                                         {
                                             "_": "TextItalic",
@@ -1584,133 +1634,27 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ", |"
+                                            "text": ". That is, the number of times the system leaves a state differs by at most 1 from the number of times it enters that state, since it will either return into that state at some time in the future ("
                                         },
                                         {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "E"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
+                                            "_": "TextImage",
+                                            "document_id": 5802272895866503264,
+                                            "w": 77,
+                                            "h": 22
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " \u2212 "
+                                            "text": ") or not ("
                                         },
                                         {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "L"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
+                                            "_": "TextImage",
+                                            "document_id": 5905727727335375788,
+                                            "w": 124,
+                                            "h": 24
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": "| \u2208 {0, 1}. That is, the number of times the system leaves a state differs by at most 1 from the number of times it enters that state, since it will either return into that state at some time in the future ("
-                                        },
-                                        {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "E"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": " = "
-                                        },
-                                        {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "L"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": ") or not (|"
-                                        },
-                                        {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "E"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": " \u2212 "
-                                        },
-                                        {
-                                            "_": "TextItalic",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "L"
-                                            }
-                                        },
-                                        {
-                                            "_": "TextSubscript",
-                                            "text": {
-                                                "_": "TextItalic",
-                                                "text": {
-                                                    "_": "TextPlain",
-                                                    "text": "n"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "| = 1)."
+                                            "text": ")."
                                         }
                                     ]
                                 }
@@ -1827,9 +1771,13 @@
                                         },
                                         {
                                             "_": "TextImage",
-                                            "document_id": 5768066758413910465,
-                                            "w": 100,
+                                            "document_id": 5905780357864621028,
+                                            "w": 94,
                                             "h": 51
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
                                         }
                                     ]
                                 }
@@ -1873,7 +1821,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ", and is a modification of "
+                                            "text": " and is a modification of "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -1938,10 +1886,19 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextImage",
-                                    "document_id": 6025086135506567361,
-                                    "w": 102,
-                                    "h": 51
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextImage",
+                                            "document_id": 5802274424874860630,
+                                            "w": 97,
+                                            "h": 51
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -1999,7 +1956,20 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The two-stage one-box model is common in epidemiology."
+                                            "text": "The two-stage one-box model is common in "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "epidemiology"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Epidemiology",
+                                            "webpage_id": 5973540602845868193
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -2241,14 +2211,14 @@
                                         "_": "PageListItemText",
                                         "text": {
                                             "_": "TextPlain",
-                                            "text": "M stands for Markov or memoryless and means arrivals occur according to a Poisson process;"
+                                            "text": "M stands for \"Markov\" or \"memoryless\", and means arrivals occur according to a Poisson process"
                                         }
                                     },
                                     {
                                         "_": "PageListItemText",
                                         "text": {
                                             "_": "TextPlain",
-                                            "text": "D stands for deterministic and means jobs arriving at the queue which require a fixed amount of service;"
+                                            "text": "D stands for \"deterministic\", and means jobs arriving at the queue require a fixed amount of service"
                                         }
                                     },
                                     {
@@ -2276,7 +2246,7 @@
                                                 },
                                                 {
                                                     "_": "TextPlain",
-                                                    "text": " = 1, 2, ...)."
+                                                    "text": " = 1, 2, 3, ...)"
                                                 }
                                             ]
                                         }
@@ -2287,7 +2257,7 @@
                                 "_": "PageBlockParagraph",
                                 "text": {
                                     "_": "TextPlain",
-                                    "text": "If there are more jobs at the node than there are servers, then jobs will queue and wait for service"
+                                    "text": "If the node has more jobs than servers, then jobs will queue and wait for service."
                                 }
                             },
                             {
@@ -2437,7 +2407,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "After the 1940s queueing theory became an area of research interest to mathematicians."
+                                            "text": "After the 1940s, queueing theory became an area of research interest to mathematicians."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -2465,7 +2435,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " In 1953 "
+                                            "text": " In 1953, "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -2530,7 +2500,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ". In 1957 Pollaczek studied the GI/G/1 using an "
+                                            "text": ". In 1957, Pollaczek studied the GI/G/1 using an "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -2539,7 +2509,7 @@
                                                 "text": "integral equation"
                                             },
                                             "url": "https://en.m.wikipedia.org/wiki/Integral_equation",
-                                            "webpage_id": 5973540602864930059
+                                            "webpage_id": 0
                                         },
                                         {
                                             "_": "TextPlain",
@@ -2610,7 +2580,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ": "
+                                            "text": ", now known as "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -2807,7 +2777,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Systems with coupled orbits are an important part in queueing theory in the application to wireless networks and signal processing. "
+                                            "text": "Systems with coupled orbits are an important part in queueing theory in the application to wireless networks and signal processing."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -2931,14 +2901,14 @@
                             "texts": [
                                 {
                                     "_": "TextPlain",
-                                    "text": "Overview of the development of the theory"
+                                    "text": "History"
                                 },
                                 {
                                     "_": "TextAnchor",
                                     "text": {
                                         "_": "TextEmpty"
                                     },
-                                    "name": "Overview_of_the_development_of_the_theory"
+                                    "name": "History"
                                 }
                             ]
                         },
@@ -2954,7 +2924,7 @@
                                     "_": "PageCaption",
                                     "text": {
                                         "_": "TextPlain",
-                                        "text": "First in first out (FIFO) queue example."
+                                        "text": "First in first out (FIFO) queue example"
                                     },
                                     "credit": {
                                         "_": "TextEmpty"
@@ -2976,7 +2946,7 @@
                                     "_": "TextUrl",
                                     "text": {
                                         "_": "TextPlain",
-                                        "text": "First in first out"
+                                        "text": "First in, first out"
                                     },
                                     "url": "https://en.m.wikipedia.org/wiki/FIFO_(computing_and_electronics)",
                                     "webpage_id": 5973540601105330624
@@ -3063,7 +3033,7 @@
                                     "_": "TextUrl",
                                     "text": {
                                         "_": "TextPlain",
-                                        "text": "Last in first out"
+                                        "text": "Last in, first out"
                                     },
                                     "url": "https://en.m.wikipedia.org/wiki/LIFO_(computing)",
                                     "webpage_id": 5973540602905794867
@@ -3225,7 +3195,29 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " Priority queues can be of two types, non-preemptive (where a job in service cannot be interrupted) and preemptive (where a job in service can be interrupted by a higher-priority job). No work is lost in either model."
+                                            "text": " Priority queues can be of two types: "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "non-preemptive"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " (where a job in service cannot be interrupted) and "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "preemptive"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " (where a job in service can be interrupted by a higher-priority job). No work is lost in either model."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -3273,7 +3265,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The next job to be served is the one with the smallest size"
+                                            "text": "The next job to be served is the one with the smallest size."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -3316,7 +3308,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The next job to be served is the one with the original smallest size"
+                                            "text": "The next job to be served is the one with the smallest original size."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -3414,14 +3406,14 @@
                                         "_": "PageListItemText",
                                         "text": {
                                             "_": "TextPlain",
-                                            "text": "Several parallel servers\u2013Single queue: customers line up and there are several servers"
+                                            "text": "Several parallel servers (single queue): customers line up and there are several servers"
                                         }
                                     },
                                     {
                                         "_": "PageListItemText",
                                         "text": {
                                             "_": "TextPlain",
-                                            "text": "Several servers\u2013Several queues: there are many counters and customers can decide going where to queue"
+                                            "text": "Several parallel servers (several queues): there are many counters and customers can decide for which to queue"
                                         }
                                     }
                                 ]
@@ -3440,7 +3432,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Server failures occur according to a stochastic process (usually Poisson) and are followed by the setup periods during which the server is unavailable. The interrupted customer remains in the service area until server is fixed."
+                                            "text": "Server failures occur according to a stochastic (random) process (usually Poisson) and are followed by setup periods during which the server is unavailable. The interrupted customer remains in the service area until server is fixed."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -3473,7 +3465,7 @@
                                 "_": "PageBlockParagraph",
                                 "text": {
                                     "_": "TextPlain",
-                                    "text": "Customer's behavior of waiting"
+                                    "text": "Customer waiting behavior"
                                 }
                             },
                             {
@@ -3483,7 +3475,7 @@
                                         "_": "PageListItemText",
                                         "text": {
                                             "_": "TextPlain",
-                                            "text": "Balking: customers deciding not to join the queue if it is too long"
+                                            "text": "Balking: customers decide not to join the queue if it is too long"
                                         }
                                     },
                                     {
@@ -3505,8 +3497,24 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextPlain",
-                                    "text": "Arriving customers not served (either due to the queue having no buffer, or due to balking or reneging by the customer) are also known as dropouts and the average rate of dropouts is a significant parameter describing a queue."
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Arriving customers not served (either due to the queue having no buffer, or due to balking or reneging by the customer) are also known as "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "dropouts"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". The average rate of dropouts is a significant parameter describing a queue."
+                                        }
+                                    ]
                                 }
                             }
                         ],
@@ -3534,8 +3542,24 @@
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
-                                    "_": "TextPlain",
-                                    "text": "Networks of queues are systems in which a number of queues are connected by what's known as customer routing. When a customer is serviced at one node it can join another node and queue for service, or leave the network."
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Queue networks are systems in which multiple queues are connected by "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "customer routing"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". When a customer is serviced at one node, it can join another node and queue for service, or leave the network."
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -3657,7 +3681,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The simplest non-trivial network of queues is called "
+                                            "text": "The simplest non-trivial networks of queues are called "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -3813,7 +3837,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " which allows average metrics such as throughput and sojourn times to be computed."
+                                            "text": " (which allows average metrics such as throughput and sojourn times) can be computed."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -3841,7 +3865,18 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " If the total number of customers in the network remains constant the network is called a closed network and has also been shown to have a product\u2013form stationary distribution in the "
+                                            "text": " If the total number of customers in the network remains constant, the network is called a "
+                                        },
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "closed network"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " and has been shown to also have a product\u2013form stationary distribution by the "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -3894,6 +3929,10 @@
                                             "webpage_id": 5973540601707373788
                                         },
                                         {
+                                            "_": "TextPlain",
+                                            "text": ","
+                                        },
+                                        {
                                             "_": "TextSuperscript",
                                             "text": {
                                                 "_": "TextConcat",
@@ -3919,7 +3958,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " where a network with very general service time, regimes and customer routing is shown to also exhibit a product-form stationary distribution. The "
+                                            "text": " where a network with very general service time, regimes, and customer routing is shown to also exhibit a product\u2013form stationary distribution. The "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -3981,7 +4020,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Networks of customers have also been investigated, "
+                                            "text": "Networks of customers have also been investigated, such as "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -3994,7 +4033,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " where customers of different classes experience different priority levels at different service nodes."
+                                            "text": ", where customers of different classes experience different priority levels at different service nodes."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -4035,7 +4074,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " first proposed by "
+                                            "text": ", first proposed by "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -4076,7 +4115,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " these networks do not assume exponential time distributions like the classic Jackson Network."
+                                            "text": " these networks do not assume exponential time distributions like the classic Jackson network."
                                         }
                                     ]
                                 }
@@ -4107,7 +4146,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "In discrete time networks where there is a constraint on which service nodes can be active at any time, the max-weight scheduling algorithm chooses a service policy to give optimal throughput in the case that each job visits only a single-person service node."
+                                            "text": "In discrete-time networks where there is a constraint on which service nodes can be active at any time, the max-weight scheduling algorithm chooses a service policy to give optimal throughput in the case that each job visits only a single-person service node."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -4174,20 +4213,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": ", which affects the characteristics of the larger network. See also "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "Stochastic scheduling"
-                                            },
-                                            "url": "https://en.m.wikipedia.org/wiki/Stochastic_scheduling",
-                                            "webpage_id": 5973540601073925554
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": " for more about scheduling of queueing systems."
+                                            "text": ", which affects the characteristics of the larger network."
                                         }
                                     ]
                                 }
@@ -4240,7 +4266,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " (proportion of queues in different states) as the number of queues ("
+                                            "text": " (proportion of queues in different states) as the number of queues "
                                         },
                                         {
                                             "_": "TextItalic",
@@ -4251,7 +4277,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " above) goes to infinity. The impact of other queues on any given queue in the network is approximated by a differential equation. The deterministic model converges to the same stationary distribution as the original model."
+                                            "text": " approaches infinity. The impact of other queues on any given queue in the network is approximated by a differential equation. The deterministic model converges to the same stationary distribution as the original model."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -4306,7 +4332,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "In a system with high occupancy rates (utilisation near 1) a heavy traffic approximation can be used to approximate the queueing length process by a "
+                                            "text": "In a system with high occupancy rates (utilisation near 1), a heavy traffic approximation can be used to approximate the queueing length process by a "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -4445,7 +4471,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Fluid models are continuous deterministic analogs of queueing networks obtained by taking the limit when the process is scaled in time and space, allowing heterogeneous objects. This scaled trajectory converges to a deterministic equation which allows the stability of the system to be proven. It is known that a queueing network can be stable, but have an unstable fluid limit."
+                                            "text": "Fluid models are continuous deterministic analogs of queueing networks obtained by taking the limit when the process is scaled in time and space, allowing heterogeneous objects. This scaled trajectory converges to a deterministic equation which allows the stability of the system to be proven. It is known that a queueing network can be stable but have an unstable fluid limit."
                                         },
                                         {
                                             "_": "TextSuperscript",
@@ -4706,7 +4732,7 @@
                         "_": "Photo",
                         "id": 6051866592788195500,
                         "access_hash": -2554579073316836354,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xf0\\x12\\xcd\\xe1\\r\"H\\xc0\\x11s\\x82\\x88\\xa5\\xd5\\xcd\\xb4'",
+                        "file_reference": "b'\\x00c\\xc1>q\\x0e%m\\xd9\\xb9\\xa5X\\xf4k;\\xe7W\\xaa\\x0b\\x8aT'",
                         "date": "2018-11-28 16:44:16+00:00",
                         "sizes": [
                             {
@@ -4746,7 +4772,7 @@
                         "_": "Photo",
                         "id": 5802323297763960967,
                         "access_hash": -8065567924986844578,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xe3\\x88\\xa1pD<\\xf0M\\x86\\r\\x8c\\xdf\\x9a\\xcc\\xb2k'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xe9\\xe3\\xee\\x13\\xfe\\x8b=,\\xd9\\nj\\xf5\\x83\\xb9\\xcd\\xb4'",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4772,7 +4798,7 @@
                         "_": "Photo",
                         "id": 5802253895387424901,
                         "access_hash": 9111138728311387161,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8cBxL\\xc7\\xb1]\\xefR\\x1e\\x80\\x9f\\xba\\xb0\\xd6\\xd3\\xb6'",
+                        "file_reference": "b'\\x00c\\xc1>q6\\x99\\xe5\\xc2\\xf1\\xdf-\\x95EKn\\xe4\\xc9\\xc9l\\xd5'",
                         "date": "2018-12-11 12:29:05+00:00",
                         "sizes": [
                             {
@@ -4803,38 +4829,31 @@
                     },
                     {
                         "_": "Photo",
-                        "id": 5801949511055157376,
-                        "access_hash": -6507313646935954140,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xf0\\xd9bJn\\xcc\\xf1$\\x17~\\xa7\\xee\\xf2\\xc0E+'",
-                        "date": "2018-12-11 12:29:05+00:00",
+                        "id": 532581567272952977,
+                        "access_hash": -3608331118328180296,
+                        "file_reference": "b'\\x00c\\xc1>q[!\\xb9dj$\\'P\\xd8\\xb7\"\\xcf\\x83\\xf9&x'",
+                        "date": "2017-09-19 17:14:30+00:00",
                         "sizes": [
                             {
                                 "_": "PhotoSize",
                                 "type": "s",
                                 "w": 90,
                                 "h": 19,
-                                "size": 586
+                                "size": 661
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "m",
                                 "w": 320,
                                 "h": 69,
-                                "size": 6215
+                                "size": 6195
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "x",
-                                "w": 800,
-                                "h": 172,
-                                "size": 21031
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "y",
-                                "w": 1024,
-                                "h": 220,
-                                "size": 27428
+                                "w": 643,
+                                "h": 138,
+                                "size": 15842
                             }
                         ],
                         "dc_id": 4,
@@ -4845,7 +4864,7 @@
                         "_": "Photo",
                         "id": 5779388932612532333,
                         "access_hash": 7601008317448191084,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x01\\xd2\\x7fHV\\xd96\\xb0!>\\x81\\x8f\\xd9\\xbb\\x82:'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xd2\\x8b\\x9c\\xdc\\xbd\\xac\\xbaq\\xdc\\x9e\\x93\\x8dz7H\\x99'",
                         "date": "2018-12-04 06:41:38+00:00",
                         "sizes": [
                             {
@@ -4885,7 +4904,7 @@
                         "_": "Photo",
                         "id": 6052139937391814790,
                         "access_hash": 5736559714258677917,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xd0\\xd2C\\xe5\\xe5\\x1a\\xc7\\xf4t^\\x05\\x03y\\xe0@\\x06'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xff\\x05\\xe9\\xa4\\xe8!_)\\xa6\\xebR\\xa2v\\xb5}\\x83'",
                         "date": "2018-11-28 16:44:16+00:00",
                         "sizes": [
                             {
@@ -4925,9 +4944,174 @@
                 "documents": [
                     {
                         "_": "Document",
+                        "id": 5786116126547116129,
+                        "access_hash": -438369784423038911,
+                        "file_reference": "b'\\x00c\\xc1>q\\x03\\r#\\xdd|\\xdcn~s\\x9a\\xe7@\\x97&\\xb7\\xfa'",
+                        "date": "2018-12-06 13:08:54+00:00",
+                        "mime_type": "image/png",
+                        "size": 479,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 25,
+                                "h": 30
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "72fde940918edf84caf3d406cc7d31949166820f.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 25,
+                                "h": 30,
+                                "size": 643
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5783781352260239509,
+                        "access_hash": 8157302838628549005,
+                        "file_reference": "b'\\x00c\\xc1>q\\xe4\\xb7\\x97lL\\x9a\\xc2\\xc2<\\xc1U\\x85j\\x04Rt'",
+                        "date": "2018-12-05 18:55:32+00:00",
+                        "mime_type": "image/png",
+                        "size": 526,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 26,
+                                "h": 26
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "dea0a0293841cce9eef98b55e53a92b82ae59ee4.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 26,
+                                "h": 26,
+                                "size": 636
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5840543146122936435,
+                        "access_hash": 4193318382369112690,
+                        "file_reference": "b\"\\x00c\\xc1>q'\\xea\\xaf\\r\\xb0\\xcb\\xb5\\xa2\\r\\xd7\\xe5\\xc5AV;\\xc6\"",
+                        "date": "2018-12-24 12:49:20+00:00",
+                        "mime_type": "image/png",
+                        "size": 283,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 9,
+                                "h": 26
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "add78d8608ad86e54951b8c8bd6c8d8416533d20.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 9,
+                                "h": 26,
+                                "size": 420
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5905702017661142058,
+                        "access_hash": 7433299227059380340,
+                        "file_reference": "b'\\x00c\\xc1>q?q^\\xdb\\xf9Tf9\\x97|\\xd4\\xda\\x9d\\xbfC\\t'",
+                        "date": "2023-01-11 00:07:55+00:00",
+                        "mime_type": "image/png",
+                        "size": 2961,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 279,
+                                "h": 34
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "51d649c6a53479477273095ca7d04d5fe906bfce.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x05(\\xd7U }\\xe3\\xde\\x98Q\\xc1_\\xde\\x13\\xfeE\\x14P\\x02\\xed;J\\xee<c\\x9e\\xf4\\xe5\\xce\\xdeO\\xe9E\\x14\\x00\\xd2\\x18\\x9c\\xee\\xc6x\\xc6(\\xa2\\x8a\\x00'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 279,
+                                "h": 34,
+                                "size": 3275
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5905839697132782591,
+                        "access_hash": 8964538861739221082,
+                        "file_reference": "b'\\x00c\\xc1>q\\xf3\\xb0\\x858E\\x19Vgs(\\x85tZ\\xfe\\xe96'",
+                        "date": "2023-01-11 00:07:55+00:00",
+                        "mime_type": "image/png",
+                        "size": 3190,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 281,
+                                "h": 34
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "fd14f9b6b1c5a8ca77e65b070ba29f05b971d6f5.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x05(\\xd7P\\xdbW-\\x93\\xf4\\xebQ\\xb2\\xba\\xe3\\xf7\\x84\\xfe\\x14Q@\\x0e!\\xf1\\x8d\\xfd\\x0f\\\\S\\x97;FH\\xfc\\xa8\\xa2\\x80\\x1aC\\x12~n\\x0f\\x18\\xc5\\x14Q@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 281,
+                                "h": 34,
+                                "size": 3303
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
                         "id": 5783791939354624157,
                         "access_hash": 7355724448567318575,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x86z\\xef\\xf7\\xb2\\xd6\\x9e\\x0c\\xd5\\x04\\x19,Z\\xff\\x9f6'",
+                        "file_reference": "b'\\x00c\\xc1>q&qb\\xfa\\x00\\xf5\\xb7\\x0e\\x81\\xe9\\x16.V{\\xb9\\xeb'",
                         "date": "2018-12-05 20:49:03+00:00",
                         "mime_type": "image/png",
                         "size": 611,
@@ -4958,7 +5142,7 @@
                         "_": "Document",
                         "id": 6052021928414150781,
                         "access_hash": -1644849487784732887,
-                        "file_reference": "b\"\\x00c\\xb5\\xe6\\x8c\\x1c\\xdfp\\xf3\\x8a\\xff\\x93{\\x07]'\\x0b \\xe9\\xb3^\"",
+                        "file_reference": "b'\\x00c\\xc1>q(\\x17\\xd7\\'\"\\xe8\\x18\\xb7^\\xc3A\\x94\\x93I\\x9b*'",
                         "date": "2018-11-28 16:44:13+00:00",
                         "mime_type": "image/png",
                         "size": 1937,
@@ -4989,7 +5173,7 @@
                         "_": "Document",
                         "id": 6052062906697121899,
                         "access_hash": 8905392207100775079,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8cD\\x0e{CH\\x11\\x17\\x97W\\x02x\\xba\\x1b\\xa5\\x86N'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xa8\\xa7s>jg\\xe1\\xec\\xc0]%5\\x1f\\x84a\\x85'",
                         "date": "2018-11-28 16:44:13+00:00",
                         "mime_type": "image/png",
                         "size": 3721,
@@ -5020,7 +5204,7 @@
                         "_": "Document",
                         "id": 6052187997619617862,
                         "access_hash": -8391935814479009125,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xbbR\\x84b1[\\xff\\xd6ZR\\x02\\x04\\xe9\\x06zK'",
+                        "file_reference": "b'\\x00c\\xc1>qD\\xe1x\\xb2\\xc2\\xca\\xa2\\xdb+\\xd5v{\\xb8\\xb5\\xc9\\xd2'",
                         "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
                         "size": 4566,
@@ -5051,7 +5235,7 @@
                         "_": "Document",
                         "id": 5808769854240457302,
                         "access_hash": -7209788918178847193,
-                        "file_reference": "b\"\\x00c\\xb5\\xe6\\x8c'+\\x97\\x9d\\xe7\\x94d\\x7f6\\xd3\\x05\\x95\\x90\\x03\\x12\\x0b\"",
+                        "file_reference": "b'\\x00c\\xc1>q\\r\\x89Z[\\x82\\x7f\\x8d\\xa8J\\xc11\\xe2XHlf'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 2073,
@@ -5085,72 +5269,67 @@
                     },
                     {
                         "_": "Document",
-                        "id": 5808753378745909822,
-                        "access_hash": 2478049422054680784,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c.T\\xa2e\\x80\\x83\\x06n\\xc5\\xb8T\\xe1\\xb09#\\xde'",
-                        "date": "2020-10-23 16:52:45+00:00",
+                        "id": 5905557255788430223,
+                        "access_hash": 3375775351164714301,
+                        "file_reference": "b'\\x00c\\xc1>q\\x1f0\\xb7\"\\x8f+Me?\\xcaP\\xb6\\x9aDqD'",
+                        "date": "2023-01-11 00:07:55+00:00",
                         "mime_type": "image/png",
-                        "size": 8587,
+                        "size": 8553,
                         "dc_id": 4,
                         "attributes": [
                             {
                                 "_": "DocumentAttributeImageSize",
-                                "w": 638,
+                                "w": 630,
                                 "h": 70
                             },
                             {
                                 "_": "DocumentAttributeFilename",
-                                "file_name": "6b9b9b3bd4ab8f9ebf826b61279971b3e4544f5c.png"
+                                "file_name": "97f411f6bc8dbeb0d88db374f3efb34e9ef4ed5f.png"
                             }
                         ],
                         "thumbs": [
                             {
                                 "_": "PhotoStrippedSize",
                                 "type": "i",
-                                "bytes": "b'\\x01\\x04(\\xd6<\\x15\\x1e\\xb4\\xa7\\xef\\xe3\\xda\\x8a(\\x01J\\xf1\\x8c\\x9aN\\xaf\\x8fl\\xd1E\\x004\\x1c\\xc8G\\xa7z(\\xa2\\x80?'"
+                                "bytes": "b'\\x01\\x04(\\xd6n\\n\\x8c\\x9a\\x0f\\xfa\\xc03\\xda\\x8a(\\x01\\xd8\\xed\\x93I\\xfcx\\xe7\\xa5\\x14P\\x033\\x99J\\xd1E\\x14\\x01'"
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "m",
                                 "w": 320,
-                                "h": 35,
-                                "size": 3820
+                                "h": 36,
+                                "size": 3819
                             }
                         ],
                         "video_thumbs": []
                     },
                     {
                         "_": "Document",
-                        "id": 6031846225051910614,
-                        "access_hash": -7368607241992848569,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x10M\\x1da\\x10\\xe6\\xfb\\x17\\x0e\\xef)\\x0cb\\x17\\xb9\\xbd'",
-                        "date": "2019-12-15 14:53:06+00:00",
+                        "id": 6051756340521467975,
+                        "access_hash": -414008791683441800,
+                        "file_reference": "b'\\x00c\\xc1>q\\xb6J&\\x0f\\xd2\\xb2\\x9d\\xc4Sc8;\\xfbc\\xf5E'",
+                        "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
-                        "size": 7257,
+                        "size": 7295,
                         "dc_id": 4,
                         "attributes": [
                             {
                                 "_": "DocumentAttributeImageSize",
-                                "w": 476,
+                                "w": 469,
                                 "h": 88
                             },
                             {
                                 "_": "DocumentAttributeFilename",
-                                "file_name": "8ee2356f827bb07544fdf7902347772ee10e86ca.png"
+                                "file_name": "55649d575f6f927af2f10ec5bc4c33c61b44ba14.png"
                             }
                         ],
                         "thumbs": [
                             {
-                                "_": "PhotoStrippedSize",
-                                "type": "i",
-                                "bytes": "b'\\x01\\x07(\\xd7\\xc3m\\xeb\\xcf\\xb5 \\x0eOR(\\xa2\\x80\\x0c1<\\x1cP\\xfb\\xf6\\x9c\\x11\\xd0\\xd1E\\x00\\x0b\\xbb\\x8c\\xe6\\x8a(\\xa0\\x0f'"
-                            },
-                            {
                                 "_": "PhotoSize",
-                                "type": "m",
-                                "w": 320,
-                                "h": 59,
-                                "size": 5078
+                                "type": "s",
+                                "w": 90,
+                                "h": 17,
+                                "size": 975
                             }
                         ],
                         "video_thumbs": []
@@ -5159,7 +5338,7 @@
                         "_": "Document",
                         "id": 6052225604353261711,
                         "access_hash": 4362472467059767847,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c}\\xdcO\\xb2J\\xf7\\x82\\xd9+^\\xb15!\\xa2\\xec\\xa1'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xf5\\x07\\xe5\\xef|\\xa4[\\x05\\x07\\xd9x\\xae-kU\\x0f'",
                         "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
                         "size": 6478,
@@ -5188,36 +5367,31 @@
                     },
                     {
                         "_": "Document",
-                        "id": 6031508043621990873,
-                        "access_hash": -2229679737074352099,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c3\\x8f\\x13\\x07\\xa4\\xeaB\\x19\\xe6\\xabe\\xd8\\xbe\\xcaM\\xcd'",
-                        "date": "2019-12-15 14:53:06+00:00",
+                        "id": 6052017951274434693,
+                        "access_hash": 4573575545273517643,
+                        "file_reference": "b'\\x00c\\xc1>q\\xc7\\xea\\xda\\xfc\\x84\\xc4n\\xb4\\x13\\xa7\\xac\\xd3\\xb1u^\\xe5'",
+                        "date": "2018-11-28 16:44:06+00:00",
                         "mime_type": "image/png",
-                        "size": 4155,
+                        "size": 4047,
                         "dc_id": 4,
                         "attributes": [
                             {
                                 "_": "DocumentAttributeImageSize",
-                                "w": 328,
+                                "w": 320,
                                 "h": 90
                             },
                             {
                                 "_": "DocumentAttributeFilename",
-                                "file_name": "f869a5079ca1fb0e336634309b65c1a10097aacd.png"
+                                "file_name": "8f069108a04b258551e4e7cc8da2e06c16ee6bf2.png"
                             }
                         ],
                         "thumbs": [
                             {
-                                "_": "PhotoStrippedSize",
-                                "type": "i",
-                                "bytes": "b'\\x01\\x0b(\\xd7]\\xfd\\xf1H[\\x00\\x9c\\x8a}&\\x06\\x0f\\x14\\x00\\xdc\\x97\\x04z\\x8fCH\\xb2n\\xe9\\xcf\\xe0i\\xc1@\\xff\\x00\\xf5\\xd0#Q\\xd0P\\x02\\x07\\xcb\\x11\\xc6h\\xa5\\x03\\xe6=z\\xfa\\xd1@\\x1f'"
-                            },
-                            {
                                 "_": "PhotoSize",
-                                "type": "m",
-                                "w": 320,
-                                "h": 88,
-                                "size": 5175
+                                "type": "s",
+                                "w": 90,
+                                "h": 25,
+                                "size": 1036
                             }
                         ],
                         "video_thumbs": []
@@ -5226,7 +5400,7 @@
                         "_": "Document",
                         "id": 5765952852820230685,
                         "access_hash": 3235339794781248046,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c@\\xd8\\xcf\\x02\\xa5\\x98\\x88@b\\xaf<z6\\xe4j\\x8c'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xc7\\x0e\\xbdp\\x8c\\xf4H \\xb9\\x8360\\x1a\\x05\\x1f\\xe9'",
                         "date": "2019-12-23 07:24:12+00:00",
                         "mime_type": "image/png",
                         "size": 1197,
@@ -5260,9 +5434,236 @@
                     },
                     {
                         "_": "Document",
+                        "id": 5784304011125456998,
+                        "access_hash": 3563804145223265413,
+                        "file_reference": "b'\\x00c\\xc1>q\\xbc\\xa5\\xb68\\x9fc\\xf7z\\x05c~e\\xfe\\xa2v\\x1d'",
+                        "date": "2018-12-05 19:58:44+00:00",
+                        "mime_type": "image/png",
+                        "size": 366,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 16,
+                                "h": 26
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "b43d0ea3c9c025af1be9128e62a18fa74bedda2a.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 16,
+                                "h": 26,
+                                "size": 526
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5783903050158571699,
+                        "access_hash": -2402825667402893823,
+                        "file_reference": "b'\\x00c\\xc1>q\\x88\\rH\\xe5\\xa2\\\\\\xea\\x94n\\x08\\x83m\\xd9\\x082\\xeb'",
+                        "date": "2018-12-05 19:57:56+00:00",
+                        "mime_type": "image/png",
+                        "size": 400,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 16,
+                                "h": 26
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "9fd47b2a39f7a7856952afec1f1db72c67af6161.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 16,
+                                "h": 26,
+                                "size": 516
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5786159578731249794,
+                        "access_hash": 2019274528655560105,
+                        "file_reference": "b\"\\x00c\\xc1>q\\x00\\x7fK\\xb5\\x86$\\x01\\xfa\\xae\\xcf\\xc3\\xc5\\x80\\xfd'\\x16\"",
+                        "date": "2018-12-06 17:55:47+00:00",
+                        "mime_type": "image/png",
+                        "size": 644,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 35,
+                                "h": 30
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "ad6b82f2a00af6c9efd4c16d4e99329605645c0c.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 35,
+                                "h": 30,
+                                "size": 768
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5784260168099299474,
+                        "access_hash": -1972993401453302122,
+                        "file_reference": "b'\\x00c\\xc1>qy\\xf4-\\x17\\xee\\xce(Z\\xf8H\\xceg\\xb1\\x1f\\x144'",
+                        "date": "2018-12-05 21:41:41+00:00",
+                        "mime_type": "image/png",
+                        "size": 549,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 33,
+                                "h": 30
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "ebec334cb04f246db1139e2ca6be0b957d2ef520.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 33,
+                                "h": 30,
+                                "size": 729
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5905519472961127324,
+                        "access_hash": 8376488989819289510,
+                        "file_reference": "b'\\x00c\\xc1>q\\x8d\\x96\\xb5-\\xfb\\xed\\xe9\\x19\\x8c\\xf9\\xab\\xdb6\\xb5rB'",
+                        "date": "2023-01-11 00:07:55+00:00",
+                        "mime_type": "image/png",
+                        "size": 2525,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 220,
+                                "h": 34
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "dfaafc34f6462bc71ab4a5194a0bb972f8fb7332.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x06(\\xd4Up\\xdb\\xb2\\x08\\xe3\\x83\\xe9Ou,\\x8c\\x01\\xc6F>\\x94Q@\\x08\\x03g\\x92\\x07\\x1cb\\x91\\x81\\xc2\\x8c\\xd1E\\x00!V\\xc2\\xe5\\xb3\\x81\\x83\\xef\\xc8\\xe6\\x8a(\\xa0\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 220,
+                                "h": 34,
+                                "size": 2695
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5802272895866503264,
+                        "access_hash": 8384663760597184724,
+                        "file_reference": "b'\\x00c\\xc1>q$x \\xda\\xe4\\x9d5\\xed\\x03Ga\\x8dW\\x863\\xc6'",
+                        "date": "2018-12-11 12:29:17+00:00",
+                        "mime_type": "image/png",
+                        "size": 1161,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 105,
+                                "h": 30
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "89b7c47a5be1ac22f494b768c0f1b56e09544dc5.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 90,
+                                "h": 26,
+                                "size": 1157
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
+                        "id": 5905727727335375788,
+                        "access_hash": 5475322798202647388,
+                        "file_reference": "b'\\x00c\\xc1>q\\x8e\\xea\\xfd.h\\xfb\\x15!$\\xec.:m\\xf1 \\xf3'",
+                        "date": "2023-01-11 00:07:56+00:00",
+                        "mime_type": "image/png",
+                        "size": 1538,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 169,
+                                "h": 34
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "d65367f17e71d4151a16ec5b659c183aeb415c2e.png"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x08(\\xd1\"O3v\\x18\\xa8\\x03\\x8c\\xf5\\xeb\\xff\\x00\\xd6\\xa9\\xf2J\\x82\\x06=\\x8d\\x14P\\x04m\\xbcJHV \\x0e9\\xff\\x00>\\xd4\\xe0X\\x82@\\xc1\\xe3\\x83E\\x14\\x00\\x8d\\xbfh\\xfe\\xf6\\xe1\\x9czf\\x8a(\\xa0\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 169,
+                                "h": 34,
+                                "size": 1800
+                            }
+                        ],
+                        "video_thumbs": []
+                    },
+                    {
+                        "_": "Document",
                         "id": 5808678702149534325,
                         "access_hash": 6730828962423987030,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c7\\x1c\\x99\\xafmmi\\xd1sI^\\x9e\\x0548:'",
+                        "file_reference": "b'\\x00c\\xc1>q\\x06X\\x8e\\xa5\\x02nl\\x82\\xf2\\xfd$\\xee\\xc4\\xae\\x128'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 1634,
@@ -5298,7 +5699,7 @@
                         "_": "Document",
                         "id": 5808768329527067188,
                         "access_hash": 5496701924312610274,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xf7\\tIl\\x18\\xdbz\\x91\\x05\\x85\\x83\\x14p\\x03Ab'",
+                        "file_reference": "b'\\x00c\\xc1>q\\x87Z\\xfe\\x87\\x11o\\x11\\xec\\xf4\\xa4\\x80\\xbd\\xe9\\xc1\\x18\\xae'",
                         "date": "2020-10-23 16:52:45+00:00",
                         "mime_type": "image/png",
                         "size": 3305,
@@ -5334,7 +5735,7 @@
                         "_": "Document",
                         "id": 5808650252286165561,
                         "access_hash": -856757003215215100,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xd4\\xfc\\xf3\\x03u\\xa3<\\x84\\xe6\\x15\\xfe\\xbfN\\x00\\xe5\\xc4'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xda\\x8d`\\xbaB\\x0b0\\x14\\xebY\\xd0\\xfd\\x04\\x0f\\xc5\\x83'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 3588,
@@ -5370,7 +5771,7 @@
                         "_": "Document",
                         "id": 5809050165281030752,
                         "access_hash": -6311380251978661830,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xb1/\\xa2\\x1e\\x18\\xf9Cq\\xb2\\xf1\\x83\\x15\\xcd\\x95P~'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xc6\\x8e\\x8a\\xcd\\x00\\x8b\\x07^^\\x07Q\\xb4qoz~'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 3236,
@@ -5406,7 +5807,7 @@
                         "_": "Document",
                         "id": 5833308488461189725,
                         "access_hash": 7029499975052902886,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xaaB\\x15\\x06\\xb4\\x9a\\x06\\xc5\\x80\\xd56\\xef\\x99\\x08]:'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xa4\\xedy!\\x02\\x95\\xbbV\\xc9%\\xe2{FG\\xe9S'",
                         "date": "2020-04-20 20:19:23+00:00",
                         "mime_type": "image/png",
                         "size": 1580,
@@ -5442,7 +5843,7 @@
                         "_": "Document",
                         "id": 5808677018522354326,
                         "access_hash": -4006436480918655378,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x1f\\xf4\\x04\\xe2\\x9bRGV$S\\xe4\\x8d-N\\xeao'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xc30\\xce\\xe2L\\x16\\x95\\t\\xa5q\\x17\\xd6\\xc8|\\xefx'",
                         "date": "2020-10-23 16:52:38+00:00",
                         "mime_type": "image/png",
                         "size": 1977,
@@ -5476,72 +5877,67 @@
                     },
                     {
                         "_": "Document",
-                        "id": 5768066758413910465,
-                        "access_hash": 5762901830759941541,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x83F\\xcb2\\xa7\\xd0G\\xf5q~z\\x19\\x95\\xbbu\\x80'",
-                        "date": "2019-12-23 07:24:13+00:00",
+                        "id": 5905780357864621028,
+                        "access_hash": -4597625618053741296,
+                        "file_reference": "b'\\x00c\\xc1>q\\xc7r\\x8d\\xd3~\\x1a\\xce\\x84\\x10\\xf9`\\x97pI\\xc7U'",
+                        "date": "2023-01-11 00:07:56+00:00",
                         "mime_type": "image/png",
-                        "size": 1530,
+                        "size": 1490,
                         "dc_id": 4,
                         "attributes": [
                             {
                                 "_": "DocumentAttributeImageSize",
-                                "w": 137,
+                                "w": 129,
                                 "h": 70
                             },
                             {
                                 "_": "DocumentAttributeFilename",
-                                "file_name": "665c20bde83d78b4472e9ae3f89b88663f317c27.png"
+                                "file_name": "dd6b4bc487c1cb0f02f86e51abae727c5c4a5ee5.png"
                             }
                         ],
                         "thumbs": [
                             {
                                 "_": "PhotoStrippedSize",
                                 "type": "i",
-                                "bytes": "b\"\\x01\\x14(\\xd9\\xa2\\xa2\\x8a6\\x01\\x8b\\xb7\\xcc\\xde\\x9d\\xba\\xff\\x00\\x8f\\xe9OT\\xdb\\x9f\\x99\\x8f\\xd4\\xd0\\x03\\x10\\xb7\\x9c\\xf9\\r\\xb4\\xf23\\xea8?\\xd2\\xa5\\xa8\\x93n\\xfc\\x07bFx&\\x9f\\xb3\\xe7\\xdd\\x9c\\xfd{}(\\x01C\\x02\\xc5A\\x19\\x1dG\\xa5\\x14\\xcf-\\x84\\xcd a\\xc8\\x03\\x18\\xf4'\\xfch\\xa0\\t(\\xa2\\x8a\\x00bF\\xa8I\\x03\\x9fS\\xf9\\xd3\\xe8\\xa2\\x80\\n(\\xa2\\x80?\""
+                                "bytes": "b'\\x01\\x16(\\xd9\\xa2\\xa1\\x84JK;\\x927\\x0e\\x01\\xed\\xc9\\xfe\\x98\\xa7\\xa2\\xb0?3\\xe7\\xf0\\xa0\\x06\\x97ar\\xa0\\x03\\xb4\\x8d\\xa7\\xeb\\xd4\\x7f_\\xd2\\xa5\\xa8\\xf0\\xdb\\xbf\\xd6\\xf7\\xe9\\x81J\\xea\\xc4\\x82\\x0eGu\\xce(\\x01\\xf9\\xa2\\xa3\\x91Ih\\xc8\\x03\\xe5l\\x9f\\xc8\\xd1@\\x12QE\\x14\\x01\\x08\\x84\\x99\\x8c\\x85\\xbf\\x8b \\x0f\\xa6?\\xcf\\xd6\\xa6\\xa2\\x8a\\x00(\\xa2\\x8a\\x00'"
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "m",
-                                "w": 137,
+                                "w": 129,
                                 "h": 70,
-                                "size": 1759
+                                "size": 1683
                             }
                         ],
                         "video_thumbs": []
                     },
                     {
                         "_": "Document",
-                        "id": 6025086135506567361,
-                        "access_hash": -5547261664658749616,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\xabh\\xbbJ\\x8f\\xc4\\xf4\\r\\x9d\\xe9\\x1e.#!\\ro'",
-                        "date": "2019-02-25 10:41:39+00:00",
+                        "id": 5802274424874860630,
+                        "access_hash": 5614607634007398531,
+                        "file_reference": "b'\\x00c\\xc1>q\\x03\\xed\\x9fC\\xd6\\xd1\\xa6\\xb6\\xf5\\xe4e\\x8b\\x91@\\x84\\xfe'",
+                        "date": "2018-12-11 12:29:04+00:00",
                         "mime_type": "image/png",
-                        "size": 1523,
+                        "size": 1461,
                         "dc_id": 4,
                         "attributes": [
                             {
                                 "_": "DocumentAttributeImageSize",
-                                "w": 140,
+                                "w": 132,
                                 "h": 70
                             },
                             {
                                 "_": "DocumentAttributeFilename",
-                                "file_name": "c16a67c6c7edafed630f39dd35120b23d90a552d.png"
+                                "file_name": "2e05024fcce4a8c1c414acc00b1ca517bea6c8e7.png"
                             }
                         ],
                         "thumbs": [
                             {
-                                "_": "PhotoStrippedSize",
-                                "type": "i",
-                                "bytes": "b'\\x01\\x14(\\xd8\\x0c\\x18\\xb0\\x07\\x95\\xe0\\xfbR\\xd4QF\\xc8\\xccK\\x82\\x18\\x92~\\\\\\x7f\\x9e)\\xea\\x9bNw1\\xfa\\x9a\\x00f[\\xed\\x19\\x00\\xec\\xc6\\xd3\\xf5\\xeb\\xfe5 \\xdd\\x9e@\\xc7\\xd6\\x9ac\\xc9\\xce\\xf7\\xfc\\xe9\\x80+6\\xd1+\\x93\\xf5\\xa0\\x07B\\xd26K\\x80\\x07a\\x8c\\x11E(B\\xbd\\x1d\\x8f\\xd7\\x9a(\\x01\\xf4QE\\x00\\x14\\xc4\\x89\\x11\\x89Q\\xc9\\xcf?S\\x9a(\\xa0\\x07\\xd1E\\x14\\x01'"
-                            },
-                            {
                                 "_": "PhotoSize",
-                                "type": "m",
-                                "w": 140,
-                                "h": 70,
-                                "size": 1884
+                                "type": "s",
+                                "w": 90,
+                                "h": 48,
+                                "size": 1262
                             }
                         ],
                         "video_thumbs": []
@@ -5550,7 +5946,7 @@
                         "_": "Document",
                         "id": 5901125734302220411,
                         "access_hash": -7784171649926525512,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c9+\\xa7:`\\x8d\\x15\\xd6\\xf8\\xba\\xd4\\x9dU/\\xab$'",
+                        "file_reference": "b\"\\x00c\\xc1>q\\\\\\xa7\\xa5@\\x8fI\\xba\\x9f\\xfa`\\xe9\\t\\x06'/\\xb7\"",
                         "date": "2019-01-14 18:06:44+00:00",
                         "mime_type": "image/png",
                         "size": 1592,
@@ -5581,7 +5977,7 @@
                         "_": "Document",
                         "id": 6027048901201100930,
                         "access_hash": 5055134833548936981,
-                        "file_reference": "b'\\x00c\\xb5\\xe6\\x8c\\x0b\\xee\\xd1\\xbf\\xde0\\xc7X\\x0f`\\xbb\\\\\\x1a[&w'",
+                        "file_reference": "b'\\x00c\\xc1>q\\xdd\\x9dYA\\xda\\xafy7\\xc2\\x1b>x\\x19\\xcb\\x01\\xe6'",
                         "date": "2019-02-25 10:41:39+00:00",
                         "mime_type": "image/png",
                         "size": 2160,
