@@ -53,7 +53,7 @@ $$
 
 This simulates an information diffusion process. The information in the original data is gradually smeared.
 
-If the chosen diffusion process is revertible, the reverse process of it can be modelled by a similar Makov process
+If the chosen diffusion process is revertible, the reverse process of it can be modeled by a similar Markov process
 
 $$
 p_\theta (\mathbf x^0, \mathbf x^1, \mathbf x^2, \mathbf x^3, \mathbf x^4, \mathbf x^5) = p_\theta (\mathbf x^0 \vert \mathbf x^1) p_\theta (\mathbf x^1 \vert \mathbf x^2)
@@ -82,7 +82,19 @@ prior["prior distribution"]
 {{< /mermaid >}}
 
 
-### Optimization
+### The Reverse Process: A Gaussian Example
+
+With Eq \ref{eq-guassian-noise}, the reverse process is
+
+$$
+\begin{equation}
+p_\theta (\mathbf x^{n-1} \vert \mathbf x^n) = \mathcal N ( \mathbf x^{n-1} ; \mu_\theta(\mathbf x^n, n), \Sigma_\theta(\mathbf x^n, n)\mathbf I).
+\label{eqn-guassian-reverse-process}
+\end{equation}
+$$
+
+
+## Optimization
 
 We have to find $p_\theta$. A natural loss function is the negative log-likelihood
 
@@ -106,7 +118,7 @@ $$
 q(\mathbf x^n \vert \mathbf x^0) = \mathcal N (\mathbf x^n ; \sqrt{\bar \alpha_n} \mathbf x^0, (1 - \bar \alpha_n)\mathbf I),
 $$
 
-with $\alpha_n = 1 - \beta_n$ and $\bar \alpha_n = \Pi _{i=1}^n \alpha_i$.
+with $\alpha_n = 1 - \beta _ n$, $\bar \alpha _ n = \Pi _ {i=1}^n \alpha_i$, and $\Sigma_\theta$ in Eq \ref{eqn-guassian-reverse-process}.
 
 
 
