@@ -12,7 +12,9 @@ tags:
 references:
   - name: "Rasul K, Seward C, Schuster I, Vollgraf R. Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2101.12072"
     link: "http://arxiv.org/abs/2101.12072"
-weight:
+    key: "Rasul2021"
+garden:
+  - "seedling"
 links:
   - ""
 ---
@@ -43,7 +45,10 @@ $$
 with each step being simple diffusion process, e.g.,
 
 $$
+\begin{equation}
 q(\mathbf x^n \vert \mathbf x^{n-1}) \equiv \mathcal N (\mathbf x^n ; \sqrt{ 1 - \beta_n} \mathbf x ^{n -1}, \beta_n\mathbf I).
+\label{eq-guassian-noise}
+\end{equation}
 $$
 
 This simulates an information diffusion process. The information in the original data is gradually smeared.
@@ -84,3 +89,25 @@ We have to find $p_\theta$. A natural loss function is the negative log-likeliho
 $$
 \mathbb E_{q(\mathbf x^0)} \left( - \log ( p_\theta (\mathbf x^0) ) \right).
 $$
+
+It has been proven that the above loss have an upper bound[^Rasul2021]
+
+$$
+\begin{align}
+&\operatorname{min}_\theta \mathbb E_{q(\mathbf x^0)} \\
+\leq & \operatorname{min}_\theta \mathbb E_{q(\mathbf x^{0:N})} \left[ -\log p(\mathbf x^N) - \sum_{n=1}^{N} \log \frac{p_\theta (\mathbf x^{n-1}\vert \mathbf x^n)}{q(\mathbf x^n \vert \mathbf x^{n-1})} \right] \\
+=& \operatorname{min}_\theta \mathbb E_{\mathbf x^0, \epsilon} \left[ \frac{\beta_n^2}{2\Sigma_\theta \alpha_n (1 - \bar \alpha_n)} \lVert \epsilon - \epsilon_\theta ( \sqrt{ \bar \alpha_n} \mathbf x^0 + \sqrt{1-\bar \alpha_n} \epsilon , n ) \rVert \right]
+\end{align}
+$$
+
+where the second step assumes a Gaussian noise in Eq \ref{eq-guassian-noise}, which is equivalent to[^Rasul2021]
+
+$$
+q(\mathbf x^n \vert \mathbf x^0) = \mathcal N (\mathbf x^n ; \sqrt{\bar \alpha_n} \mathbf x^0, (1 - \bar \alpha_n)\mathbf I),
+$$
+
+with $\alpha_n = 1 - \beta_n$ and $\bar \alpha_n = \Pi _{i=1}^n \alpha_i$.
+
+
+
+[^Rasul2021]: {{< cite key="Rasul2021" >}}
