@@ -114,7 +114,7 @@ It has been proven that the above loss have an upper bound[^Rasul2021]
 \end{align}
 {{< /m >}}
 
-where the second step assumes a Gaussian noise in Eq \ref{eq-guassian-noise}, which is equivalent to[^Rasul2021]
+where $\epsilon$ is a sample from $\mathcal N(0, \mathbf I)$. The second step assumes a Gaussian noise in Eq \ref{eq-guassian-noise}, which is equivalent to[^Rasul2021]
 
 $$
 q(\mathbf x^n \vert \mathbf x^0) = \mathcal N (\mathbf x^n ; \sqrt{\bar \alpha_n} \mathbf x^0, (1 - \bar \alpha_n)\mathbf I),
