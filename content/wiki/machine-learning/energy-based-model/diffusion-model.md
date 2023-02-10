@@ -92,13 +92,13 @@ $$
 
 It has been proven that the above loss have an upper bound[^Rasul2021]
 
-$$
+{{< m >}}
 \begin{align}
 &\operatorname{min}_\theta \mathbb E_{q(\mathbf x^0)} \\
 \leq & \operatorname{min}_\theta \mathbb E_{q(\mathbf x^{0:N})} \left[ -\log p(\mathbf x^N) - \sum_{n=1}^{N} \log \frac{p_\theta (\mathbf x^{n-1}\vert \mathbf x^n)}{q(\mathbf x^n \vert \mathbf x^{n-1})} \right] \\
 =& \operatorname{min}_\theta \mathbb E_{\mathbf x^0, \epsilon} \left[ \frac{\beta_n^2}{2\Sigma_\theta \alpha_n (1 - \bar \alpha_n)} \lVert \epsilon - \epsilon_\theta ( \sqrt{ \bar \alpha_n} \mathbf x^0 + \sqrt{1-\bar \alpha_n} \epsilon , n ) \rVert \right]
 \end{align}
-$$
+{{< /m >}}
 
 where the second step assumes a Gaussian noise in Eq \ref{eq-guassian-noise}, which is equivalent to[^Rasul2021]
 
