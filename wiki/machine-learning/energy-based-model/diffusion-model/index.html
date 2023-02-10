@@ -114,7 +114,7 @@ flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5  and the reverse process
 flowchart LR x5 -- x4 -- x3 -- x2 -- x1 -- x0  Diffusion model assumes each step is Markovian,
 $$ q(\mathbf x^1, \mathbf x^2, \mathbf x^3, \mathbf x^4, \mathbf x^5 \vert \mathbf x^0) = q(\mathbf x^5\vert \mathbf x^4) q(\mathbf x^4\vert \mathbf x^3) q(\mathbf x^3\vert \mathbf x^2)q(\mathbf x^2\vert \mathbf x^1)q(\mathbf x^1\vert \mathbf x^0), $$"><meta itemprop=datePublished content="2023-02-10T00:00:00+00:00">
 <meta itemprop=dateModified content="2023-02-10T00:00:00+00:00">
-<meta itemprop=wordCount content="333">
+<meta itemprop=wordCount content="488">
 <meta itemprop=keywords content="Machine Learning,Diffusion Model,">
 <section class=section>
 <div class=container>
@@ -144,9 +144,9 @@ Diffusion Models for Forecasting
 </h1>
 <div class=is-divider data-content=META></div>
 <div class="title is-6 has-text-left" style=margin-top:1em>
-<i class="fa-solid fa-leaf" style=margin-right:.5em;color:#e95420></i>
-<a class=tooltip><span style=color:#e95420 class="tag is-warning is-small is-light">GROWING</span>
-<span class=tooltiptext>This note is being developed. It is readible but changes are being applied.</span>
+<i class="fa-solid fa-seedling" style=margin-right:.5em;color:#17a2b8></i>
+<a class=tooltip><span style=color:#17a2b8 class="tag is-warning is-small is-light"><b>SEEDLING</b></span>
+<span class=tooltiptext>This note was planted but not so much effort has been put into it. This seedling requires some nurturing.</span>
 </a>
 </div>
 <div class="title is-6 has-text-left" style=margin-top:1em>
@@ -182,7 +182,10 @@ q(\mathbf x^1, \mathbf x^2, \mathbf x^3, \mathbf x^4, \mathbf x^5 \vert \mathbf 
 $$</p>
 <p>with each step being simple diffusion process, e.g.,</p>
 <p>$$
+\begin{equation}
 q(\mathbf x^n \vert \mathbf x^{n-1}) \equiv \mathcal N (\mathbf x^n ; \sqrt{ 1 - \beta_n} \mathbf x ^{n -1}, \beta_n\mathbf I).
+\label{eq-guassian-noise}
+\end{equation}
 $$</p>
 <p>This simulates an information diffusion process. The information in the original data is gradually smeared.</p>
 <p>If the chosen diffusion process is revertible, the reverse process of it can be modelled by a similar Makov process</p>
@@ -212,6 +215,32 @@ prior --"sampling"--> noise
 <p>$$
 \mathbb E_{q(\mathbf x^0)} \left( - \log ( p_\theta (\mathbf x^0) ) \right).
 $$</p>
+<p>It has been proven that the above loss have an upper bound<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p>$$
+\begin{align}
+&\operatorname{min}<em>\theta \mathbb E</em>{q(\mathbf x^0)} \
+\leq & \operatorname{min}<em>\theta \mathbb E</em>{q(\mathbf x^{0:N})} \left[ -\log p(\mathbf x^N) - \sum_{n=1}^{N} \log \frac{p_\theta (\mathbf x^{n-1}\vert \mathbf x^n)}{q(\mathbf x^n \vert \mathbf x^{n-1})} \right] \
+=& \operatorname{min}<em>\theta \mathbb E</em>{\mathbf x^0, \epsilon} \left[ \frac{\beta_n^2}{2\Sigma_\theta \alpha_n (1 - \bar \alpha_n)} \lVert \epsilon - \epsilon_\theta ( \sqrt{ \bar \alpha_n} \mathbf x^0 + \sqrt{1-\bar \alpha_n} \epsilon , n ) \rVert \right]
+\end{align}
+$$</p>
+<p>where the second step assumes a Gaussian noise in Eq \ref{eq-guassian-noise}, which is equivalent to<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p>$$
+q(\mathbf x^n \vert \mathbf x^0) = \mathcal N (\mathbf x^n ; \sqrt{\bar \alpha_n} \mathbf x^0, (1 - \bar \alpha_n)\mathbf I),
+$$</p>
+<p>with $\alpha_n = 1 - \beta_n$ and $\bar \alpha_n = \Pi _{i=1}^n \alpha_i$.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>
+<a name=Rasul2021 href=#Rasul2021 style=text-decoration:none>
+<span class="tag is-link is-light">Rasul2021</span>
+</a>
+<a href=http://arxiv.org/abs/2101.12072 style=text-decoration:none>Rasul K, Seward C, Schuster I, Vollgraf R. Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2101.12072</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 <p><div class="has-text-right is-size-7">
 <span class=icon>
@@ -231,7 +260,11 @@ by <span itemprop=author>L Ma</span>;
 <div class="column content blog-post section" id=content-limited>
 <section class=footnotes>
 <ol>
-<li class=has-text-weight-bold style=margin-bottom:.5em><a href=http://arxiv.org/abs/2101.12072 style=text-decoration:none>Rasul K, Seward C, Schuster I, Vollgraf R. Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2101.12072</a></li>
+<li class=has-text-weight-bold style=margin-bottom:.5em>
+<a name=Rasul2021 href=#Rasul2021 style=text-decoration:none>
+<span class="tag is-link is-light">Rasul2021</span>
+</a>
+<a href=http://arxiv.org/abs/2101.12072 style=text-decoration:none>Rasul K, Seward C, Schuster I, Vollgraf R. Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting. arXiv [cs.LG]. 2021. Available: http://arxiv.org/abs/2101.12072</a></li>
 </ol>
 </section>
 </div>
