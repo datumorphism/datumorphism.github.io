@@ -14,9 +14,11 @@ references:
     link: "http://arxiv.org/abs/2101.12072"
     key: "Rasul2021"
 garden:
-  - "seedling"
+  - "growing"
 links:
-  - ""
+  - "cards/math/jensens-inequality.md"
+  - "wiki/machine-learning/bayesian/elbo.md"
+  - "wiki/machine-learning/generative-models/variational-autoencoder.md"
 ---
 
 ## Objective
