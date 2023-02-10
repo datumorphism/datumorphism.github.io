@@ -28,11 +28,54 @@
             "url": "https://github.com/soumith/ganhacks",
             "display_url": "github.com/soumith/ganhacks",
             "hash": 0,
-            "type": "article",
+            "type": "photo",
             "site_name": "GitHub",
             "title": "GitHub - soumith/ganhacks: starter from \"How to Train a GAN?\" at NIPS2016",
             "description": "starter from \"How to Train a GAN?\" at NIPS2016. Contribute to soumith/ganhacks development by creating an account on GitHub.",
-            "photo": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5988963184670781340,
+                "access_hash": 2733828901816350377,
+                "file_reference": "b'\\x00c\\xe6LC1\\xab\\x07|\\x9b\\xfb\\xe5\\xa7|\\x84\\xa5y\\x97k\\xbb\\r'",
+                "date": "2023-02-07 19:23:56+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd7$\\x83\\x80\\x06>\\xb4\\xd6w\\x03\\x84\\x07\\xdbuIG\\x14\\x01\\x0e\\xf9\\x7f\\xe7\\x9a\\xff\\x00\\xdft\\x93\\xca\\xf1\\xda\\xbc\\x98\\x01\\xc0\\xfa\\xd4\\xfcR2\\xab\\xa9V\\x00\\xa9\\xea(\\x036\\xca\\xfai\\xae\\xc4n\\xcaT\\xaex\\x18\\xa2\\xae\\xc7k\\x04O\\xba8\\xd5[\\x18\\xc8\\xa2\\x80&\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xc5\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 8044
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 28021
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4782,
+                            10043,
+                            19392,
+                            26472,
+                            41025
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -57,7 +100,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2118,
+        "replies_pts": 2173,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

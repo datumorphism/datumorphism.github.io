@@ -31,12 +31,12 @@
             "type": "photo",
             "site_name": "Anaconda",
             "title": "Anaconda | A Faster Solver for Conda: Libmamba",
-            "description": "New version available!   conda install conda-libmamba-solver=22.8  Or update if you've already installed:  conda update conda-libmamba-solver   Introducing conda-libmamba-solver  The conda team is pleased to announce the availability of 'libmamba' as a new, much faster dependency solver for conda!\u2026",
+            "description": "conda 22.11 update: The libmamba solver's experimental flag has been removed. To use the new solver, update conda in your base environment:   conda update -n base conda  To install and set the new solver, run the following commands:  conda install -n base conda-libmamba-solverconda config --set\u2026",
             "photo": {
                 "_": "Photo",
                 "id": 6050000949189127642,
                 "access_hash": 4351203217217588822,
-                "file_reference": "b'\\x00c\\xc1>n\\xa3\\xc6yf\\xad\\x82\\xbb`\\x1au\\xabD\\x7f\\xb8\\t\\n'",
+                "file_reference": "b'\\x00c\\xe6LB\\xc7\\t\\xe9V\\xff\\x82B\\xd0\\xabH\\x1a\\x99\\x90\\xaa\\xe9\\t'",
                 "date": "2022-05-13 07:59:08+00:00",
                 "sizes": [
                     {
@@ -87,12 +87,12 @@
             "length": 68
         }
     ],
-    "views": 263,
+    "views": 268,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2118,
+        "replies_pts": 2173,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

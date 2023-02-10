@@ -25,9 +25,9 @@
         "webpage": {
             "_": "WebPage",
             "id": 7937820126309515856,
-            "url": "https://www.nature.com/articles/s41586-020-2649-2?ref=brianlovin.com",
+            "url": "https://www.nature.com/articles/s41586-020-2649-2",
             "display_url": "nature.com/articles/s41586-020-2649-2",
-            "hash": 0,
+            "hash": -1624460094,
             "type": "photo",
             "site_name": "Nature",
             "title": "Array programming with NumPy",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5989051669587012424,
                 "access_hash": -7446608148123921536,
-                "file_reference": "b'\\x00c\\xc1>q\\xda\\xd9&\\xdc\\xb0\\xea?\\x88\\xb4\\x85`p\\xa4% ?'",
+                "file_reference": "b'\\x00c\\xe6LF\\x81Wk\\x192v\\xf3\\xef\\x07,5\\x11\\xb4\\x04\\xe3w'",
                 "date": "2020-09-16 16:54:42+00:00",
                 "sizes": [
                     {
@@ -84,7 +84,91 @@
             "duration": null,
             "author": null,
             "document": null,
-            "cached_page": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.nature.com/articles/s41586-020-2649-2",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Array programming with NumPy"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5991472003917393977,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextUrl",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "AiiDA 1.0, a scalable computational infrastructure for automated reproducible workflows and data provenance"
+                            },
+                            "url": "https://doi.org/10.1038/s41597-020-00638-4",
+                            "webpage_id": 0
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "08 September 2020"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Sebastiaan P. Huber, Spyros Zoupanos, \u2026 Giovanni Pizzi"
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5991472003917393977,
+                        "access_hash": -6678288728550409591,
+                        "file_reference": "b\"\\x00c\\xe6LF\\x92\\xdd\\xa9\\xb8\\xaf,?#\\x06*7\\x8c\\x13'\\xbd\\xd4\"",
+                        "date": "2023-02-08 18:23:46+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x16(\\xd5R\\xc4\\x1c\\x9f\\xca\\xa3-\\xce1R\\x87\\xc8\\xfb\\xa4T\\x06\"\\\\0${R\\x06)E\\\\\\x10?SO^\\x00\\xc60*\\x16\\xf2\\xf9\\xf9\\xcf^i\\xd0\\xf9e\\xc6\\xd7\\xdc}\\rV\\x81fM\\xbc\\xed\\xceW\\xf3\\xa2\\x87S\\x8c\\x0f\\xe5EC\\x18\\xaa\\x84\\x0cq\\xf9S2=\\xbf*(\\xa6\\x84\\xc6\\x15C\\xfc\\x0b\\xcf\\xb5\\x11l\\x0e0\\x80\\x1f\\\\QE\\x03,\\xd1E\\x14\\xc4\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 136,
+                                "h": 75,
+                                "size": 4275
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
             "attributes": []
         }
     },

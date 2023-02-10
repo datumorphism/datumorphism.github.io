@@ -1,0 +1,139 @@
+{
+    "_": "Message",
+    "id": 432,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-01-16 19:55:40+00:00",
+    "message": "#data \n\nJust got my ticket.\n\nI have been reviewing proposals for PyData this year. I saw some really cool proposals so I finally decided to attend the conference.\n\nhttps://2023.pycon.de/blog/pyconde-pydata-berlin-tickets/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4027070519252477127,
+            "url": "https://2023.pycon.de/blog/pyconde-pydata-berlin-tickets/",
+            "display_url": "2023.pycon.de/blog/pyconde-pydata-berlin-tickets",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "2023.pycon.de",
+            "title": "PyConDE & PyData Berlin 2023 Tickets",
+            "description": "Tickets for PyConDE & PyData Berlin 2023",
+            "photo": {
+                "_": "Photo",
+                "id": 5921424510408568591,
+                "access_hash": -6022156374901200050,
+                "file_reference": "b'\\x00c\\xe6LB\\xa1\\x1b\\xc9\\xa8L\\x07\\x11E\\xae\\xa9\\x86\\xcd\\xac\\x94\\xe7\\xb5'",
+                "date": "2023-01-16 05:22:16+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd9\\xa6\\x19>b\\x00\\xce:\\xd3\\xe9\\x8e\\xb9\\xe4('\\x18\\xa0\\x00\\xca\\x81\\xc2\\x13\\xf3\\x11\\x901O\\xc8\\xa8wK\\x9c\\xf9C>\\xbb\\xaaE\\xdcFX\\x00}(\\x01\\xd4QE\\x00\\x14\\x85\\x15\\xb9#4Q@\\t\\xe5\\xa7\\xf7E(E\\x07 sE\\x14\\x00\\xb4QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 7670
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 24003
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 640,
+                        "size": 46812
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2108,
+                        "h": 1054,
+                        "sizes": [
+                            11263,
+                            22924,
+                            40099,
+                            52160,
+                            79114
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 164,
+            "length": 57
+        }
+    ],
+    "views": 160,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 4,
+        "replies_pts": 2173,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 570819366
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 728,
+        "read_max_id": null
+    },
+    "edit_date": "2023-01-16 19:57:46+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

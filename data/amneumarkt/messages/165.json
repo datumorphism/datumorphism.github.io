@@ -27,7 +27,7 @@
             "id": 3384953263841741307,
             "url": "https://en.wikipedia.org/wiki/Dependent_and_independent_variables",
             "display_url": "en.m.wikipedia.org/wiki/Dependent_and_independent_variables",
-            "hash": 1615683229,
+            "hash": -1647279484,
             "type": "article",
             "site_name": "Wikipedia",
             "title": "Dependent and independent variables",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 6038578737068484731,
                 "access_hash": -4819427319779273452,
-                "file_reference": "b'\\x00c\\xc1>p\\xf3i\\x88AM\\xd0\\xbcA0;\\xe8\\x83\\xa3\\x81\\xfbb'",
+                "file_reference": "b'\\x00c\\xe6LE\\x9fk\\x01\\n\\xab\\xda\\xbdC\\x8a\\x04-l\\x906\\x9d~'",
                 "date": "2018-11-24 17:52:25+00:00",
                 "sizes": [
                     {
@@ -1313,7 +1313,7 @@
                                                 "text": "linear regression"
                                             },
                                             "url": "https://en.m.wikipedia.org/wiki/Linear_regression",
-                                            "webpage_id": 0
+                                            "webpage_id": 5973540601841066516
                                         },
                                         {
                                             "_": "TextPlain",
@@ -5030,6 +5030,16 @@
                             },
                             {
                                 "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Regression_analysis",
+                                "webpage_id": 5973540601486832737,
+                                "title": "Regression analysis",
+                                "description": "set of statistical processes for estimating the relationships among variables",
+                                "photo_id": 6043125836124629115,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
                                 "url": "https://en.m.wikipedia.org/wiki/Instrumental_variables_estimation",
                                 "webpage_id": 5973540602853278673,
                                 "title": "Instrumental variables estimation",
@@ -5057,16 +5067,6 @@
                                 "photo_id": 6022635784105994382,
                                 "author": null,
                                 "published_date": null
-                            },
-                            {
-                                "_": "PageRelatedArticle",
-                                "url": "https://en.m.wikipedia.org/wiki/Controlling_for_a_variable",
-                                "webpage_id": 5973540602375044613,
-                                "title": "Controlling for a variable",
-                                "description": "In causal models, controlling for a variable means binning data according to measured values of the variable. This is typically done so that the variable can no longer act as a confounder in, for example, an observational study or experiment.",
-                                "photo_id": null,
-                                "author": null,
-                                "published_date": null
                             }
                         ]
                     }
@@ -5076,7 +5076,7 @@
                         "_": "Photo",
                         "id": 6040982986746341468,
                         "access_hash": 6669575396885464016,
-                        "file_reference": "b'\\x00c\\xc1>p8qs\\x9c\\xa1[\\xca\\x98\\xc0v\\xde2\\xffNT\\xf6'",
+                        "file_reference": "b'\\x00c\\xe6LEr\\x08\\xfc#2\\x1f\\xdc\\x14\\xb4b\\x8a=bk\\x0c6'",
                         "date": "2018-11-24 16:22:47+00:00",
                         "sizes": [
                             {
@@ -5107,9 +5107,42 @@
                     },
                     {
                         "_": "Photo",
+                        "id": 6043125836124629115,
+                        "access_hash": 7261088970504252585,
+                        "file_reference": "b'\\x00c\\xe6LE\\xe1\\xb9a\\xc5V\\x84\\x8c<S\\xe7\\xcb!SI\\x0e\\x18'",
+                        "date": "2018-11-25 15:20:26+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 90,
+                                "h": 74,
+                                "size": 1165
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 263,
+                                "size": 12367
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 494,
+                                "h": 406,
+                                "size": 22289
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
                         "id": 5829334729340594270,
                         "access_hash": 7572184656575086078,
-                        "file_reference": "b'\\x00c\\xc1>p\\x9d\\x05\\x8d\\x84B\\x9a\\x11\\n\\xf4\\x92\\xc6\\x8f-;\\xb3\\xbc'",
+                        "file_reference": "b'\\x00c\\xe6LEL\\xdc\\xca\\x12\\xc7\\xaa*\\x9c\\xd5\\xb8\\xe3\\xc10\\xe4\\xa4\\xd6'",
                         "date": "2018-12-20 11:20:32+00:00",
                         "sizes": [
                             {
@@ -5135,7 +5168,7 @@
                         "_": "Photo",
                         "id": 5786530698721601662,
                         "access_hash": -6782450868183919927,
-                        "file_reference": "b'\\x00c\\xc1>p\\xb5\\xce\\xec\\x1b\\xe3\\xd2\\xde\\x16\\x00\\x1b\\xa5\\x01\\xf8\\x0c\\x12\\xa4'",
+                        "file_reference": "b'\\x00c\\xe6LE\\xb8I\\xd4\\xb2>_f\\x13x\\xf6M\\xa7\\xa0!\\xf9\\xb1'",
                         "date": "2018-12-05 23:02:06+00:00",
                         "sizes": [
                             {
@@ -5161,7 +5194,7 @@
                         "_": "Photo",
                         "id": 6022635784105994382,
                         "access_hash": 4858838517008615071,
-                        "file_reference": "b'\\x00c\\xc1>p\\x01\\x94\\xd4\\xe1\\xd9\\x1c[\\xf9K\\xbf#\\xdc\\xf6\\xad\\xc9\\xaa'",
+                        "file_reference": "b'\\x00c\\xe6LEC\\xbc\\x12x\\x94IGr:?X\\xaf1\\xd1U\\xa0'",
                         "date": "2018-11-18 18:08:34+00:00",
                         "sizes": [
                             {
@@ -5180,7 +5213,7 @@
                         "_": "Photo",
                         "id": 5792828357728120426,
                         "access_hash": -2009087467650776914,
-                        "file_reference": "b'\\x00c\\xc1>pU@\\xde\\xeb\\xa3>NK\\xc1\\x0b\\x90\\x9bH6\\x17\\x06'",
+                        "file_reference": "b'\\x00c\\xe6LE\\x88\\xafH9\\x8f\\x16]\\xea\\x02\\x08|\\x10`\\x99\\x1c;'",
                         "date": "2022-05-23 20:22:00+00:00",
                         "sizes": [
                             {
@@ -5217,7 +5250,7 @@
                         "_": "Photo",
                         "id": 5786151508943939642,
                         "access_hash": -4381867894133175662,
-                        "file_reference": "b'\\x00c\\xc1>p\\xccN4\\x8b0\\xda\\x1d\\xe1\\x02\\xfcA1\\x83\\xdd)\\xba'",
+                        "file_reference": "b'\\x00c\\xe6LE\\x11\\xa7W\\x81\\xf4\\xa7\\x00|\\xf3\\xfd\\xb7\\xba\\x99\\xf9\\xe9X'",
                         "date": "2018-12-05 22:15:54+00:00",
                         "sizes": [
                             {
@@ -5234,47 +5267,9 @@
                     },
                     {
                         "_": "Photo",
-                        "id": 5819906146549475987,
-                        "access_hash": 3372474960882542284,
-                        "file_reference": "b'\\x00c\\xc1>p\\x8a\\xfe\\xb3\\xb0e\\x81\\x1e{\\x9f\\xafmiU\\xa5\\xcf}'",
-                        "date": "2020-04-16 07:46:45+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoStrippedSize",
-                                "type": "i",
-                                "bytes": "b'\\x01\\x10(\\xd9\\xa0\\xf4\\xa8\\xc3\\xaf\\xb5\\x01\\xd4q\\xba\\x80\\x1f\\xdf\\xa0\\xa5\\x1d)\\x9b\\xd79\\xddFC\\x0e\\t?\\x85\\x00>\\x8ao\\xe1\\xfaQ@\\x1f'"
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "m",
-                                "w": 320,
-                                "h": 130,
-                                "size": 5268
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "x",
-                                "w": 800,
-                                "h": 324,
-                                "size": 22108
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "y",
-                                "w": 1024,
-                                "h": 415,
-                                "size": 30294
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
-                    },
-                    {
-                        "_": "Photo",
                         "id": 6047487426953324709,
                         "access_hash": 1687258111593729069,
-                        "file_reference": "b'\\x00c\\xc1>p\\x82\\xca\\xb7\\xb4\\x11\\xc9\\xd0.W\\x1eX\\x97<+\\xfd\\xac'",
+                        "file_reference": "b'\\x00c\\xe6LE\\xea\\xcc\\xe5\\x0cZ\\xe45\\xd2V\\xdaW\\xc6\\x01\\x00\\x8d\\xb6'",
                         "date": "2018-11-27 10:56:49+00:00",
                         "sizes": [
                             {
@@ -5293,7 +5288,7 @@
                         "_": "Photo",
                         "id": 6049574849778657423,
                         "access_hash": 7833985559555398104,
-                        "file_reference": "b'\\x00c\\xc1>p\\xb54\\x04\\x90\\x98\\x04\\x9c\\x8f\\xa04\\xd1 |\\xf6/\\xff'",
+                        "file_reference": "b'\\x00c\\xe6LEM\\xe5\\xf5\\x9b\\x10,\\n\\xce\\xa6e\\x0b\\x08\\xccL`\\xa5'",
                         "date": "2018-11-28 10:47:14+00:00",
                         "sizes": [
                             {
@@ -5340,7 +5335,7 @@
                         "_": "Photo",
                         "id": 5790756104727276297,
                         "access_hash": 5298946089070689009,
-                        "file_reference": "b'\\x00c\\xc1>p1O\\xb9\\x87\\xc9a\\x1d\\xaeB/\\x81\\xdf\\x8e}\\x99\\xf9'",
+                        "file_reference": "b'\\x00c\\xe6LE=\\xa9\\x8c\\xf0h\\xfd\\xbf3\\r\\xbaP\\xda\\xbe\\x9b\\x01\\xaa'",
                         "date": "2020-04-05 22:23:02+00:00",
                         "sizes": [
                             {
@@ -5380,7 +5375,7 @@
                         "_": "Document",
                         "id": 5979751196624159328,
                         "access_hash": 6897110464365002689,
-                        "file_reference": "b'\\x00c\\xc1>ph\\xb3\\xc1J\\xf2\\xaa\\x07\\\\\\x7f\\x05\\x98\\x13a\\x81\\x7f\\x81'",
+                        "file_reference": "b'\\x00c\\xe6LEYq\\xc15\\x11\\x08\\\\\\xd5\\x02\\xb3\\x9a;\\x06\\xc5\\xeb\\xae'",
                         "date": "2020-09-13 23:20:13+00:00",
                         "mime_type": "image/png",
                         "size": 6763,
@@ -5403,7 +5398,7 @@
                         "_": "Document",
                         "id": 6043257141408563304,
                         "access_hash": 6760166739348032980,
-                        "file_reference": "b'\\x00c\\xc1>pD\\x0e\\x97\\xd6\\x9e\\x07\\xc8\\xda9\\xe9Y\\xb0\\xc4S\\x08\\x1f'",
+                        "file_reference": "b'\\x00c\\xe6LEw[\\xea\\xb0.\\xe4A\\xd0\\x15\\x13\\x00}&d{\\x08'",
                         "date": "2018-11-25 19:19:09+00:00",
                         "mime_type": "image/png",
                         "size": 454,
@@ -5434,7 +5429,7 @@
                         "_": "Document",
                         "id": 6024747253996978290,
                         "access_hash": -1008716719873727098,
-                        "file_reference": "b'\\x00c\\xc1>p\\x8a\\x8a\\x10\\xb3V\\x03\\xaf\"\\xb8\\xfcga\\xd7j\\xc2|'",
+                        "file_reference": "b'\\x00c\\xe6LE\\xd5\\xc5b\\x9e\\xab.\\xe0i\\xd9\\xc2U\\x10\\xfb\\xb9\\xb0\\xc4'",
                         "date": "2019-02-24 09:46:01+00:00",
                         "mime_type": "image/png",
                         "size": 25667,
@@ -5493,7 +5488,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 2,
-        "replies_pts": 2118,
+        "replies_pts": 2173,
         "comments": true,
         "recent_repliers": [
             {

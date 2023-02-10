@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 434,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-01-26 21:35:32+00:00",
+    "message": "#ml\n\ngoogle-research/tuning_playbook: A playbook for systematically maximizing the performance of deep learning models.\nhttps://github.com/google-research/tuning_playbook",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030097019249,
+            "url": "https://github.com/google-research/tuning_playbook",
+            "display_url": "github.com/google-research/tuning_playbook",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - google-research/tuning_playbook: A playbook for systematically maximizing the performance of deep learning models.",
+            "description": "A playbook for systematically maximizing the performance of deep learning models. - GitHub - google-research/tuning_playbook: A playbook for systematically maximizing the performance of deep learni...",
+            "photo": {
+                "_": "Photo",
+                "id": 5988985084709023658,
+                "access_hash": -5307904891498401999,
+                "file_reference": "b'\\x00c\\xe6LBF\\xca\\xe9\\xebH\\xc8v\\xb1b\\x19\\x90\\x14Wm\\xddR'",
+                "date": "2023-02-08 09:41:00+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd5w \\xf0?CI\\xe6\\x9e\\xc3<g\\xa1\\xff\\x00\\n\\x90\\x8c\\x9e\\xb4\\x98\\xf7\\xfdh\\x00BJ\\xe4\\xff\\x00,P\\xed\\xb5\\x0bz\\nP=\\xe8\\xe3\\x14\\x01\\x14n\\xdb\\xf6\\xbb\\x02H\\xc8\\xc0\\xe2\\x8a\\x91cD\\xce\\xd5\\x03>\\x94P\\x03\\xa8\\xa2\\x8a\\x001F:\\xd1E\\x00\\x18\\xa2\\x8a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9500
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 32749
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4799,
+                            11524,
+                            24666,
+                            33683,
+                            51276
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 120,
+            "length": 50
+        }
+    ],
+    "views": 122,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2173,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-01-26 21:40:26+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

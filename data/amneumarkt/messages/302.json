@@ -27,7 +27,7 @@
             "id": 2047476603143217818,
             "url": "https://thegradient.pub/how-to-train-your-decision-making-ais/",
             "display_url": "thegradient.pub/how-to-train-your-decision-making-ais",
-            "hash": 0,
+            "hash": 122188706,
             "type": "photo",
             "site_name": "The Gradient",
             "title": "How to Train your Decision-Making AIs",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5883046220249804009,
                 "access_hash": 5715723567544594276,
-                "file_reference": "b'\\x00c\\xc1>o \\x86\\xc0\\x16b\\x8bT\\xcd\\xda\\x14A>\\xa6&\\x960'",
+                "file_reference": "b'\\x00c\\xe6LCP\\xcb\\xf1C\\xd0\\xb1\\xc5\\xb8\\xb8d\\t\\n\\x90\\x10\\x95\\x0e'",
                 "date": "2021-12-11 04:49:33+00:00",
                 "sizes": [
                     {
@@ -81,9 +81,1563 @@
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": null,
+            "author": "Ruohan Zhang",
             "document": null,
-            "cached_page": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://thegradient.pub/how-to-train-your-decision-making-ais/",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "How to Train your Decision-Making AIs"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Ruohan Zhang"
+                        },
+                        "published_date": "2021-12-10 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The combination of deep learning and decision learning has led to several impressive stories in decision-making AI research, including AIs that can play a variety of games (Atari video games, board games, complex real-time strategy game Starcraft II), control robots (in simulation and in the real world), and even fly a weather balloon. These are examples of sequential decision tasks, in which the AI agent needs to make a sequence of decisions to achieve its goal."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Today, the two main approaches for training such agents are reinforcement learning (RL) and imitation learning (IL). In reinforcement learning, humans provide rewards for completing discrete tasks, with the rewards typically being delayed and sparse. For example, 100 points are given for solving the first room of Montezuma\u2019s revenge (Fig.1). In the imitation learning setting, humans can transfer knowledge and skills through step-by-step action demonstrations (Fig.2), and the agent then learns to mimic human actions."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975498079945731606,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975505218181377532,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 1"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Left: Montezuma\u2019s Revenge, one of the most difficult Atari 2600 games for both humans and AIs. The player controls the little person (\u201cagent\u201d). Right: In a typical reinforcement learning setting, the agent needs to learn to play the game without any human guidance purely based on the score provided by the environment."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975396186141601281,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 2"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In standard imitation learning, a human trainer demonstrates a sequence of actions, and the agent learns to imitate the trainer's actions."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But, success stories about RL and IL are often based on the fact that we can train AIs in simulated environments with a large amount of training data. What if we don\u2019t have a simulator for the learning agent to fool around in? What if these agents need to learn quickly and safely? What if the agents need to adapt to individual human needs? These concerns lead to the key questions we ask, which are: How do humans transfer their knowledge and skills to artificial decision-making agents more efficiently? What kind of knowledge and skills should humans provide and in what format?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Human guidance"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "For humans, there are many diverse and creative ways of teaching and learning from other people (or animals). In daily social learning settings, we use many learning signals and learning methods, which we\u2019ll refer to as "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "human guidance"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Recently, a lot of research has explored alternative ways in which humans may guide learning agents."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "My colleagues and I "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "reviewed five types of human guidance to train AIs"
+                                    },
+                                    "url": "https://arxiv.org/abs/2107.05825",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ": evaluation, preference, goals, attention, and demonstrations without action labels [1]. (Fig 3). They don\u2019t replace imitation or reinforcement learning methods, but rather work with them to widen the communication pipeline between humans and learning agents."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975229833468292632,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 3"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". The author is training his dog Twinkle. How is training dogs different from training AIs using reinforcement learning or imitation learning? It is infeasible to demonstrate the correct actions in most cases. In addition to providing a large piece of treat at the end of the training like in RL, I also provide "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "evaluative feedback"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (\u201cgood girl!\u201d \u201cbad dog!\u201d) immediately after observing the desired action, using clicker training. I clearly indicate my "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "preference"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ": pee on the pee pad, not on the floor. I indicate behavior "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "goals "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "to her by pointing to the toy I want her to retrieve. I train her to "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "pay attention to "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "me and the objects I am pointing to. She watches me do things like opening the treat jar -- while she doesn\u2019t have hands but she can "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "imitate from observation "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "to do that with her teeth."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Training AIs via evaluative feedback"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5977904150689721797,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 4"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". While learning from evaluative feedback, a human trainer watches the agent's learning process, and provides positive feedback for a desirable action (jumping over the skull), and negative feedback for an undesirable action (running into the skull)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The first type of guidance is human "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "evaluative feedback"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In this setting, a human trainer watches an agent trying to learn and provides positive feedback for desirable actions and negative feedback for undesirable actions (Fig 4)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The benefit of human evaluative feedback is that it is instantaneous and frequent, while the true reward is delayed and sparse. For example, in games like chess or Go, the reward (win or lose) is not revealed until the end of the game. In addition, it does not require the trainers to be experts in "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "performing"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " the task -- they just need to be good at "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "judging"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " the performance. This is akin to a sports coach who provides guidance in the form of feedback to professional athletes based on their performance. Although the coach typically can not explicitly demonstrate the skill to be performed at the same skill or performance level as the athlete, their feedback is useful to the athlete. Finally, this method is particularly useful for tasks that require safe learning, since we block catastrophic actions when human trainers provide negative feedback."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "While evaluative feedback has traditionally been communicated through button presses by humans, recent work has also explored inferring feedback from signals humans naturally emit such as gestures, facial expressions, and even brain waves."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In the context of reinforcement learning, researchers have different interpretations of the nature of human feedback. While it is intuitive to think of feedback as additional reward signals, more likely interpretations include the feedback being a form of policy gradient, value function, or advantage function. Different learning algorithms have been developed depending on the interpretations, such as Advise, TAMER, and COACH ["
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "2"
+                                    },
+                                    "url": "https://www.cc.gatech.edu/social-machines/papers/nips2013.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "3"
+                                    },
+                                    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4640845",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "4"
+                                    },
+                                    "url": "http://proceedings.mlr.press/v70/macglashan17a/macglashan17a.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Training AIs using preference"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975698581904010790,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 5"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In learning from human preference, the learning agent presents two learned behavior trajectories to the human trainer, and the human tells the agent which trajectory is preferable. Here the human trainer prefers trajectory 1."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The second type of guidance is human "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "preference"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". The learning agent presents two of its learned behavior trajectories to the human trainer, and the human tells the agent which trajectory is preferable (Fig. 5). The motivation is that sometimes the evaluation can only be provided at the end of a trajectory, instead of at every time step. For example, in Fig. 5, moving right is a better choice than moving down from the starting position, but this is only clear when we see trajectory 1 is shorter and safer than trajectory 2. Additionally, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "ranking"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " behavior trajectories is easier than "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "rating"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " them. Typically, preference learning is formalized as an inverse reinforcement learning problem in which the goal is to learn the unobserved reward function from human preference. \u00a0A particularly interesting research question is to determine which trajectories should be selected to query humans for their preference, such that the agent can gain useful information from humans. This is known as the preference elicitation problem."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Training AIs by providing high-level goals"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975387385753611848,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 6"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In hierarchical imitation, the basic idea is to have the human trainer specify high-level goals. For example, the red goal is to reach the bottom of the ladder. An agent will learn to accomplish each high-level goal by performing a sequence of low-level actions potentially learned through reinforcement learning itself."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Many decision-making tasks are hierarchically structured, meaning that they can be solved using a divide-and-conquer strategy. \u00a0In "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "hierarchical imitation"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", the idea is to have the human trainer specify high-level goals. For example, in Fig. 6, the first goal is to reach the bottom of this ladder. The agent will then try to accomplish each goal by performing a sequence of low-level actions."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Behavioral psychology studies with non-human primates have shown that fine-grained, low-level actions are mostly learned without imitation. In contrast, coarse, high-level \u201cprogram\" learning is pervasive in imitation learning ["
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "5"
+                                    },
+                                    "url": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.932.9690&rep=rep1&type=pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]. Program-level imitation (e.g., imitating human high-level goals in Fig. 6) is defined as imitating the high-level structural organization of a complex process by observing the behavior of another individual, while furnishing the exact details of actions by individual learning ["
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "5"
+                                    },
+                                    "url": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.932.9690&rep=rep1&type=pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "] (perhaps through reinforcement learning)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "When training AIs we can be more flexible and not just replicate the learning seen in non-human primates. We can let human trainers provide both high-level and low-level demonstrations, and do imitation learning at both levels. Alternatively, like conventional imitation learning, humans can provide only low-level action demonstrations, and agents must then extract task hierarchy on their own. A promising combination is to learn goal selection using imitation learning at a high level and let a reinforcement learning agent learn to perform low-level actions to achieve high-level goals. The motivation for this combination is that humans are good at specifying high-level abstract goals while the agents are good at executing low-level fine-grained controls."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The choice that is suitable for a particular task domain depends on at least two factors. The first concern is the relative effort in specifying goals vs. providing demonstrations. High-level goals are often clear and easy to be specified in tasks such as navigation. On the contrary, in tasks like Tetris, providing low-level demonstration is easier, since high-level goals are not easy to specify. The second concern is safety. Only providing high-level goals requires the agents to learn low-level policies by themselves through trial-and-error, which is suitable for simulated agents but not for physical robots. Therefore in robotic tasks, low-level action demonstrations are often required."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Training AIs to attend to the right things"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975593887781203496,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 7"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In learning attention from humans, the agent has access to human attention information in addition to the action demonstrations. The eye movement data indicated by the red circles here can be recorded using an eye tracker. This data reveals the current behavioral goal (such as the object of interest, e.g., the skull and the ladder) when taking an action."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "We are surrounded by a complex world full of information. Humans have developed strategies for selecting information, known as selective attention."
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": " Attention "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "was not a main research focus in the pre-deep RL era since in general we do not include irrelevant features in the hand-crafted feature set. As deep RL agents migrate from a simple digital world to the complex real world, the same challenge awaits AI agents: How do they select important information from a world full of information to ensure that resources are devoted to the key components?"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Human selective attention is developed through evolution and is refined in a lifelong learning process. Given the amount of training data required during this process, it may be easier for AI agents to learn attention directly from humans. Learning to attend can help select important state features in high-dimensional state space, and help the agent infer the target or goal of an observed action by the human teachers."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The first step is to use eye-tracking datasets to train an agent to imitate human gaze behaviors, i.e., learning to attend to certain features of a given image. The problem is formalized as a visual saliency prediction problem in computer vision research and is well-studied. Next, knowing where humans would look provides useful information on what action they will take. Therefore it is intuitive to leverage learned attention models to guide the learning process. The challenge here is how to use human attention in decision learning. The most popular way is to treat the predicted gaze distribution of an image as a filter or a mask. This mask can be applied to the image to highlight the important visual features. Experimental results so far have shown that including gaze information leads to higher accuracy in recognizing or predicting human actions, manipulating objects, driving, cooking, and playing video games."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Attention data can often be collected in parallel with demonstration data, and has the potential to be combined with other types of learning as well. In the future, when decision-making AIs are ready to work alongside and collaborate with humans, understanding and utilizing human attention would be even more important."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Training AIs by without action labels"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5975597907870592610,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Fig 8"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In imitation from observation, the setting is very much like standard imitation learning (Fig 2), except that the agent does not have access to the action labels demonstrated by the human trainer."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The last type of learning paradigm, "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "imitation from observation"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", is different from the previous four. The setting is very much like standard imitation learning, except the agent does not have access to labels for the actions demonstrated by the human trainer. While this makes imitation from observation a very challenging problem, it enables us to utilize a large amount of human demonstration data that do not have action labels, such as Youtube videos."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In order to make imitation from observation possible, the first step is action label inference. A straightforward solution is to interact with the environment, collect state action data, and then learn an inverse dynamics model. Applying this learned model on two consecutive demonstrated states (for example, the first image and the second image) would output the missing action (\u201cgo left\u201d) that had resulted in that state transition. After retrieving the actions, the learning problem can be treated as a conventional imitation learning problem ["
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "6"
+                                    },
+                                    "url": "https://arxiv.org/pdf/1805.01954.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "]."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "However, in practice, there are other challenges as well. For example, embodiment mismatch may arise when the teacher has different physical characteristics than that of the learning agent. Furthermore, viewpoint mismatch arises when there may be a difference in the point of view present in the demonstration video and that with which the agent sees itself. As an example, both of these challenges are present when a robot watches human videos to learn how to cook."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Why do we need human guidance?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The most efficient method to teach a learning agent is often agent-dependent and task-dependent, since each of these five learning paradigms offers their unique advantages compared to standard imitation and reinforcement learning methods. For example, teaching a robot with many joints to sweep the floor through evaluative feedback might require a lot less human effort than through demonstration. Including attention information might be most useful in a visually rich environment."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In addition to their unique advantages, there are at least two good reasons that they are important. The first one is to build "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "human-centered AIs."
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " Decision-leaning agents can be trained in the factory, but they need to adapt to individual human needs when they are brought home by the customers. Evaluative feedback, preference, goals, attention, and observation are natural signals for ordinary customers to communicate with the agents about human needs."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "As an example, let\u2019s look at household robots that are being developed by the Stanford Vision and Learning Lab ("
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://behavior.stanford.edu/"
+                                    },
+                                    "url": "https://behavior.stanford.edu/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "). Although these robots may acquire general household skills like food preparation and cleaning, it is up to individual humans to decide how much dressing they want in their salad, and how should the bedroom be rearranged. These needs are difficult to demonstrate or provide reward functions for. For other human-centered AI applications, such as autonomous driving, cooking, and customer service, using human guidance to widen the communication channel between humans and AIs is also likely to be important."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The second reason that we need these guidance signals is that they allow us to build "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "large-scale human-AI training systems"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", such as crowd-sourcing platforms. Providing demonstrations to AIs often requires humans to be experts in the demonstrated tasks, and the necessary hardware, which could be expensive in some cases (e.g., teleoperation devices like VR). In contrast, providing guidance may require less expertise with minimum hardware requirements. For example, the trainer can monitor the learning process of an agent from home, and use a mouse and keyboard to provide feedback, indicate preferences, select goals, and direct attention."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Future challenge: a lifelong learning paradigm"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The learning frameworks discussed here are often inspired by real-life biological learning scenarios that correspond to different learning stages and strategies in "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "lifelong learning"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Imitation and reinforcement learning correspond to learning completely by imitating others and learning completely through self-generated experience, where the former may be used more often in the early stages of learning and the latter could be more useful in the late stages. The other learning strategies discussed are often mixed with these two to allow an agent to utilize signals from all possible sources."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "For example, it is widely known that children learn largely by imitation and observation at their early stage of learning. Then the children gradually learn to develop joint attention with adults through gaze following. Later children begin to adjust their behaviors based on the evaluative feedback and preference received when interacting with other people. Once they develop the ability to reason abstractly about task structure, hierarchical imitation becomes feasible. At the same time, learning through trial and error (in other words, \u00a0reinforcement) is always one of the most common types of learning. \u00a0Our ability to learn from all types of resources continues to develop through a lifetime."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "We have compared these learning strategies within an imitation and reinforcement learning framework. Under this framework, it is possible to develop a unified learning paradigm that accepts multiple types of human guidance. For humans, our ability to learn from all types of resources continues to develop through a lifetime. In the long term, perhaps human guidance can play a role in allowing AI to do so as well."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "If you'd like to read more on this topic, take a look "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "at the original survey paper"
+                                    },
+                                    "url": "https://link.springer.com/article/10.1007/s10458-021-09514-w",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "References"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "[1] Zhang, Ruohan, Faraz Torabi, Garrett Warnell, and Peter Stone. \"Recent advances in leveraging human guidance for sequential decision-making tasks.\" Autonomous Agents and Multi-Agent Systems 35, no. 2 (2021): 1-39."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "[2] Griffith, Shane, Kaushik Subramanian, Jonathan Scholz, Charles L. Isbell, and Andrea L. Thomaz. \"Policy Shaping: Integrating Human Feedback with Reinforcement Learning.\" Advances in Neural Information Processing Systems 26 (2013): 2625-2633."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "[3] Knox, W. Bradley, and Peter Stone. \"Tamer: Training an agent manually via evaluative reinforcement.\" In 2008 7th IEEE International Conference on Development and Learning, pp. 292-297. IEEE, 2008."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "[4] MacGlashan, James, Mark K. Ho, Robert Loftin, Bei Peng, Guan Wang, David L. Roberts, Matthew E. Taylor, and Michael L. Littman. \"Interactive learning from policy-dependent human feedback.\" In International Conference on Machine Learning, pp. 2285-2294. PMLR, 2017."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "[5] Byrne, Richard W., and Anne E. Russon. \"Learning by imitation: A hierarchical approach.\" Behavioral and brain sciences 21, no. 5 (1998): 667-684."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "[6] Torabi, Faraz, Garrett Warnell, and Peter Stone. \"Behavioral cloning from observation.\" In Proceedings of the 27th International Joint Conference on Artificial Intelligence, pp. 4950-4957. 2018."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bio"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\n\nRuohan Zhang is a first-year postdoctoral scholar at Stanford Vision and Learning Lab, working with Prof. Jiajun Wu and Fei-Fei Li. His research interests include reinforcement learning, robotics, and computational neuroscience, with the goal of developing human-inspired and human-centered AIs. He obtained his Ph.D. in Computer Science from The University of Texas at Austin. His dissertation focused on the attention mechanisms of humans and machines in visuomotor tasks. His research has been recognized by The University of Texas Graduate Fellowship (2014-2017; 2019), and Google AR/VR research award (2017-2018). He is a member of the UT Austin Villa Robot Soccer team and won the 2nd (2016) and 4th (2017) places with the team in the world RoboCup competition."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Citation"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "For attribution in academic contexts or books, please cite this work as"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Ruohan Zhang and Dhruva Bansal, \"How to Train your Decision-Making AIs\", The Gradient, 2021."
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "BibTeX citation:"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "@article{kartha2021explain,\nauthor = {Zhang, Ruohan \u00a0and Bansa, Dhruva },\ntitle = {How to Train your Decision-Making AIs},\njournal = {The Gradient},\nyear = {2021},\nhowpublished = {\\url{"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "https://thegradient.pub/"
+                                        },
+                                        "url": "https://thegradient.pub/its-all-training-data/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "how-to-train-your-decision-making-ais} },\n}"
+                                    }
+                                ]
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5975498079945731606,
+                        "access_hash": 4141891751734936625,
+                        "file_reference": "b'\\x00c\\xe6LCF\\x10\\xc3\\xd7,W\\x89u\\xd9\\xb9\\x02d\\x1e\\xb8\\xb8\\x1f'",
+                        "date": "2022-04-18 08:44:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1a(\\xc7\\xdb\\xee8\\xa0c\\xd4T\\xd2\\xaaB\\xce\\x9c\\x9e\\x83\\xfa\\xd49^\\xc0\\xfet\\x00\\xb9\\x1e\\x8b\\xfa\\xd2\\x1f\\x98\\xe4\\x91\\xf9T\\xbb\\x17\\xc8\\xce9\\xc6\\xec\\xfe8\\xa8\\xc6\\xdd\\xb9 \\xfet\\x00\\x9bq\\xdcsEK\\x12\\xac\\xae\\x89\\xc8\\xe3\\x19\\xcf\\xe3E\\x02rH\\xbb*\\xab\\x158\\x04\\xee\\x198\\xedT|\\x89\\x7f\\xbai\\x9b\\x9b\\xfb\\xc7\\xf3\\xa3s\\x7fx\\xfet\\xec$\\xacJ\\xb0\\xca\\xc4)\\xf9A\\xeez\\no\\x91.xSL\\xdc\\xdf\\xde?\\x9d\\x1b\\x9b\\xfb\\xc7\\xf3\\xa0z\\x9a1*\\xa9c\\x80\\x0e\\xe3\\x8e;QY\\xdb\\x9b\\xfb\\xc7\\xf3\\xa2\\x82\\x1c\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 210,
+                                "size": 7458
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 525,
+                                "size": 29851
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 840,
+                                "sizes": [
+                                    5988,
+                                    9766,
+                                    14138,
+                                    15154,
+                                    22142
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5975505218181377532,
+                        "access_hash": 1436955450902316190,
+                        "file_reference": "b\"\\x00c\\xe6LC'3\\xfbG\\x9eA\\xaf\\xee\\xd2\\x08\\xb7}6\\xf9w\\xa9\"",
+                        "date": "2022-04-18 08:44:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1b(\\xca9#\\x18^;\\xe6\\x9b\\x83\\xed\\xf9\\xd4\\x92\\xc6\\xb13\\xae\\xec\\x9e\\x9d?\\x1a\\x8c\\x15\\x07$n\\xf64\\x00\\xa0\\x12p\\x00\\xcf\\xd6\\xa4\\x90\\x13\\x961\\xed\\xcf\\xbe\\x05\\x1bW\\xcb\\xde\\x14\\x7f{\\x1f\\x8e1Li7\\xaf<s\\xda\\x81\\\\\\x9e)\"[7FL\\xca\\xc7\\x86\\xe3\\xa5\\x15\\x0cH%\\x95\\x13${\\xfe\\xb4PW5\\x8b\\xd3\"\\x16S\\xb5I,2}\\xab?c\\xe7;\\x0e~\\x94\\xe3#\\xe7\\xef\\xb7\\xe7G\\x98\\xff\\x00\\xdfo\\xce\\x99\\x9a\\xd0TYX\\x84\\x03\\x19\\xe3\\x91\\x81L\\xd8\\xe0\\xfd\\xd3\\xf9S\\xbc\\xc7\\xfe\\xfb~ty\\x8f\\xfd\\xf6\\xfc\\xe8\\xb1E\\xe8Q\\x03\\x13\\xb4\\x02\\x18\\xe0\\xfbQTD\\x8f\\x91\\xf3\\xb7\\xe7E\\x048\\xdc'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 212,
+                                "size": 14982
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 530,
+                                "size": 53646
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 985,
+                                "h": 653,
+                                "sizes": [
+                                    6510,
+                                    19085,
+                                    37277,
+                                    46736,
+                                    65824
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5975396186141601281,
+                        "access_hash": 8189617603440656361,
+                        "file_reference": "b'\\x00c\\xe6LC \\xae\\x03\\x05\\x0f\\xf0S\\xac\\xebc\\xf9\\xb4g\\xd8MO'",
+                        "date": "2022-04-18 08:44:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x11(\\xce\\x90\\xcb\\x1c\\xac\\xa5\\xdf\\xf3\\xa7Csqo.\\xe5s\\xb8\\x8ca\\xb9\\xae\\x8b\\xec\\xb0g>L\\x7f\\xf7\\xc8\\xa8%\\xd2\\xed\\xe5}\\xc7#\\xd8t\\x14\\x0bS2=b\\xe1d\\r \\x0e\\x9d\\xc0\\x18\\xcdZ\\x8f[F\\x91U\\xe1(\\xa4\\xf2\\xdb\\xb3\\x8f\\xd2\\xa2}5&g\\xfb;\\r\\xb1\\xb6\\xdes\\x9c\\xf7\\xedQ\\\\i\\x92\\xc6\\x0e\\x06\\xe3\\xd4\\x91\\xd2\\x80\\xb9\\xa4\\xfa\\x85\\xa3\\x94\\x02\\xe7i\\x0c\\x0f\\x00\\xf3\\xedEeE\\xa7\\xcd\\xe6\\xa9h\\x9bfs\\xc04P\\x17::(\\xa2\\x81\\x91\\xc5\\xf7\\xa5\\xff\\x00\\x7f\\xfa\\n{}\\xd3\\xf4\\xa2\\x8a\\x00Z(\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 135,
+                                "size": 10523
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 337,
+                                "size": 35203
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 539,
+                                "size": 63496
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1381,
+                                "h": 582,
+                                "sizes": [
+                                    6911,
+                                    18950,
+                                    36625,
+                                    46470,
+                                    66993
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5975229833468292632,
+                        "access_hash": 7506356941834863880,
+                        "file_reference": "b\"\\x00c\\xe6LCAg\\xcb\\xc9\\x0c\\xbe\\xabr-t'!A\\xa7\\xac/\"",
+                        "date": "2022-04-18 08:44:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x15(\\x92$\\xf2\\xe3\\x0b\\xe9K$\\x8b\\x1f\\xde\\xe6\\xaa\\xcd,\\xb9\\x03\\x05\\x07\\xb1\\xa8\\x1b\\xccb0\\xd9\\xf75\\x91e\\xed\\x90\\xcb\\x9c(?N)\\x92\\xc0\\x88\\x99\\x03\\xf0\\xa6\\xc0\\xec\\x06\\xd6\\xfc\\xc5X \\x11\\xc9\\xa1\\x01\\x9c\\xf1\\x82\\t \\x81\\xf4\\xa2\\x96I\\nH\\xc0t\\xcd\\x14\\xee\\xca\\xb2-g#\\x9a_\\xc0QE\\x04\\x00\\xc0\\xe8\\x05!cE\\x14\\x01\\x9a\\xecI\\xa2\\x8a)\\xa2\\x8f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 166,
+                                "size": 8716
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 416,
+                                "size": 31551
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 665,
+                                "size": 62290
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1539,
+                                "h": 799,
+                                "sizes": [
+                                    14765,
+                                    25359,
+                                    28878,
+                                    41530,
+                                    81366
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5977904150689721797,
+                        "access_hash": 4121053743838929708,
+                        "file_reference": "b'\\x00c\\xe6LC\\xfd(\\x1e\\xc3\\xd0\\x9f\\xc1E\\x8e\\x91/\\x0c\\x14\\x85]\\x15'",
+                        "date": "2022-04-18 08:44:38+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x12(\\xcd\\x91\\xe4W \\xbb\\xe4\\x1e\\x9b\\xa9\\xa6Y\\x062\\xee3\\xcf\\xde\\xab\\xd76\\x13;\\xee1\\xec\\xdcq\\xd5y?\\x9dC%\\x84\\x882\\xe7\\x01@\\xea\\xcb\\xd3\\xf3\\xa0W!\\xdd/\\x96\\x1bs\\xed\\xce3\\xba\\x9a$\\x90\\xe7\\x0e\\xfc\\x0c\\xfd\\xea\\xd3\\xfb\\x14\\xc6\\x10\\x82\\x01\\x8c\\xe7\\xaa\\xff\\x00\\x8dV]>\\\\\\x12:`\\xe7\\x0c\\xbf\\xe3@\\\\\\xaf\\x0c\\x924\\xa8\\x03\\xb9%\\x87\\x1b\\xa8\\xab\\x96\\xb6n\\xb3|\\xa8\\x1d\\x94\\x82y^?Z(\\x13f\\xd4\\xca\\xac\\xd1d\\x03\\x87\\xc8\\xc8\\xf65\\x1d\\xd4h\\xd1>\\xe4S\\xf2\\x8e\\xa3\\xde\\x8a((\\xb3P\\xc2\\x89\\xe4\\xb2\\xed]\\xa5\\x9b#\\x1cu4Q@\\r\\x85Ug\\x9bj\\x81\\xc2\\xf4\\x1e\\xd4QE\\x00\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 142,
+                                "size": 12776
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 355,
+                                "size": 39527
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 568,
+                                "size": 73868
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1348,
+                                "h": 598,
+                                "sizes": [
+                                    7461,
+                                    20490,
+                                    39506,
+                                    50323,
+                                    71663
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5975698581904010790,
+                        "access_hash": 8757324724063423029,
+                        "file_reference": "b'\\x00c\\xe6LC,\\x0650\\x0f\\xbd\\xae*~&\\x8f\\n\\xf8\\xe6\\x84\\xd4'",
+                        "date": "2022-04-18 08:44:49+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x11(\\xcd\\x92IU\\xc82>A\\xe9\\xbe\\x91\\xa5\\x98c2?#?z\\xb4.\\xb4\\xe9Hi_\\xcbU\\x1c\\x92\\x0f\\xff\\x00Z\\x9a4\\x89\\x9dA\\x0c\\xa7\\xd0\\xee\\xed\\xf9P\"\\x9e\\xe9\\xbc\\xb0\\xdec\\xed\\xc9\\x19\\xdf\\xdf\\x14\\xd1,\\xc78\\x91\\xf8\\x19\\xfb\\xd5\\xa55\\xab\\xc3\\x00\\x12yAwc\\xaf\\x7f\\xca\\xa1:\\\\\\xb1\\xca\\x88]\\x03>p7\\x1eq\\xd7\\xb5\\x01\\xa9V)%i\\x94y\\x8eN\\xe1\\xc6\\xfa+F\\r.x\\\\6#<\\xf7o\\xfe\\xb5\\x14\\t\\xdc\\xd3\\xbb\\xff\\x00\\x8fI\\x7f\\xdd5*}\\xc5\\xfaQE\\x05\\x10\\xdd\\xff\\x00\\xa9\\x1f\\xef\\xaf\\xf3\\xa2o\\xf8\\xfa\\xb7\\xfa\\xb7\\xf2\\xa2\\x8a\\x00\\x9e\\x8a(\\xa0\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 140,
+                                "size": 12670
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 351,
+                                "size": 42231
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 561,
+                                "size": 72403
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1349,
+                                "h": 591,
+                                "sizes": [
+                                    7566,
+                                    22065,
+                                    42803,
+                                    53863,
+                                    76739
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5975387385753611848,
+                        "access_hash": 1777635682463869207,
+                        "file_reference": "b'\\x00c\\xe6LC\\xafh\\x0f\\t\\xfc\\xa9\\x84B\\xed\\x11\\x00x&\\x9eJ\\x91'",
+                        "date": "2022-04-18 08:44:49+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x1f(\\xcc\\x91\\x9f\\xcc|9\\xea\\x7f\\x8a\\x9a\\x1d\\xc1\\xfb\\xf9\\xff\\x00\\x81T\\x97\\x08\\xb1\\xcd \\xc9<\\xd4\\x04\\x83\\xda\\x80$\\xf3\\x1f\\xd4\\x7f\\xdfG\\xfci\\x0b\\xb99/\\xfa\\xd3\\xb6/\\x91\\x9cs\\x8c\\xe7\\xf1\\xc5G\\x81\\xb7<\\xd0\\x04\\x91\\xb3\\xf9\\x89\\x97=G\\xf1QKn\\x82K\\x88\\xd7\\x91\\xcf\\xff\\x00^\\x8a\\x04\\xdd\\x8b\\xd3*3\\x1f\\x94\\x12[\\x93\\x8a\\xa1\\xf6w\\xc9\\xe3\\xe9Z\\xf0X\\x87\\xba\\x9f\\xcd\\x88ya\\xbe_\\x9c\\xf4\\xfc\\xe9\\xd7V1\\xa4jb\\x83,\\\\\\x0f\\xbez~t\\xf4\\x12M\\x19\\x0b\\x0c\\xa4\\x85$\\x01\\xd2\\x9b\\xe4I\\xbb\\x81\\xc6k|i\\xf6\\xfd\\xe1\\x1f\\xf7\\xf1\\xa9\\x7f\\xb3\\xad\\xb1\\xfe\\xab\\x9f\\xf7\\xda\\x95\\xd0\\xec\\xcc\\xd8\\x11\\x15\\xf3\\xb4\\x03\\xbb\\x83\\x8a+G\\xec\\x10+\\x02\\xb0\\x8e\\x0f\\x04\\xc8\\xd4S'\\x91\\xb3\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 249,
+                                "size": 20560
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 622,
+                                "size": 67792
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 955,
+                                "h": 743,
+                                "sizes": [
+                                    7760,
+                                    22856,
+                                    43103,
+                                    54639,
+                                    79855
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5975593887781203496,
+                        "access_hash": 1616977860816278168,
+                        "file_reference": "b'\\x00c\\xe6LC\\xae\\x17\\xc9\\xf8\\xe6\\x93:\\xf3\\xbb\\x08\\x93c\\xab,\\r\\xf4'",
+                        "date": "2022-04-18 08:44:49+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x14(\\x82\\xee\\xf2\\xea;\\xb9\\x10L\\xc0\\x068\\x1d\\xaa8\\xb5;\\xa4p\\xc6M\\xe3\\xfb\\xad\\xd2\\xb6\\xa4\\xb0\\x82I7\\xb2d\\x92I\\xe4\\xd5K\\x8d*2\\xe1\\x95\\xc2( \\x01\\x8f\\xeb@\\x88\\xa2\\xd6\\xe42\\x814j#\\xef\\xb4\\x1c\\xd5\\xb4\\xd5\\xed]\\xd5F\\xf0X\\xe3$p*\\x85\\xc6\\x95\"\\x9cG\\x86\\xc0\\xc99\\x02\\xab\\xdcY\\xbc\\x1f|\\x00\\xc7\\xa0\\xe3\\xa5\\x01szI\\xd0\\x85\\xd9q\\x12\\x9d\\xc39a\\xc8\\xee(\\xaer8I\\x90\\x03\\xc0\\xf5\\xe2\\x8a\\x02\\xe7WL\\x92$\\x996H\\xa1\\x979\\xc1\\xa2\\x8a\\x06 \\x89U\\xf7\\x0c\\xe7\\x18\\xa9\\x08\\xc8\\xc5\\x14P\\x00\\x06\\x06\\x05\\x14Q@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 155,
+                                "size": 11522
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 387,
+                                "size": 38469
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 619,
+                                "size": 69078
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1388,
+                                "h": 671,
+                                "sizes": [
+                                    7505,
+                                    20155,
+                                    38931,
+                                    50060,
+                                    73292
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5975597907870592610,
+                        "access_hash": 7044751524523159634,
+                        "file_reference": "b'\\x00c\\xe6LC\\x15\\x06J\\xd3\\xf6m\\xa44\\xd6\\x10\\x99\\x14z\\xb4\\xe7\\x0c'",
+                        "date": "2022-04-18 08:44:49+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x10(\\xce\\x98H\\x932\\xeeb3\\xd4f\\x96)\\xee-\\xe5\\xdc\\x8eC\\x11\\x8ey\\xfeu\\xd2\\x98\\x90\\xb0;G\\x15\\x04\\xbat\\x12\\xbe\\xf6\\x1c\\xe6\\x81\\x191j\\xb7I(i[\\xccA\\xd5p\\x06\\x7f\\x1cU\\xa4\\xd7\\x01p\\x1a\\x02\\xab\\x9eN\\xec\\xe3\\xf4\\xa4}:9\\xcb\\xf9E\\xd0F\\xdbq\\xb3\\x93\\xf8\\xe6\\xa2\\xb9\\xd2\\xa4@|\\xac\\xbfr\\xc7\\x02\\x80-\\xbe\\xa7k!@\\x1eE\\xc3\\x03\\xc0\\xeb\\xedEQ\\x8fL\\xb8\\x12+4D\\xa8\\xc1\\xe0\\x8f\\xf1\\xa2\\x80\\xb9'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 133,
+                                "size": 11039
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 333,
+                                "size": 36716
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 533,
+                                "size": 68163
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1382,
+                                "h": 576,
+                                "sizes": [
+                                    7210,
+                                    20619,
+                                    38829,
+                                    49595,
+                                    72431
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
             "attributes": []
         }
     },
@@ -105,12 +1659,12 @@
             "length": 62
         }
     ],
-    "views": 262,
+    "views": 263,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2118,
+        "replies_pts": 2173,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

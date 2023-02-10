@@ -23,68 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 7364193029984217837,
-            "url": "https://github.com/pyscript/pyscript",
-            "display_url": "github.com/pyscript/pyscript",
-            "hash": 0,
-            "type": "photo",
-            "site_name": "GitHub",
-            "title": "GitHub - pyscript/pyscript: Home Page: https://pyscript.net  Examples: https://pyscript.net/examples",
-            "description": "Home Page: https://pyscript.net  Examples: https://pyscript.net/examples - GitHub - pyscript/pyscript: Home Page: https://pyscript.net  Examples: https://pyscript.net/examples",
-            "photo": {
-                "_": "Photo",
-                "id": 5896652994471112524,
-                "access_hash": -3926931275839473807,
-                "file_reference": "b'\\x00c\\xc1>nP\\xf9K\\x87\\xfb\\xe8\\x10D\\x13\\x05z\\xd9\\xc9\\x8eb\\xc0'",
-                "date": "2023-01-07 23:42:07+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b'\\x01\\x14(\\xd7f`xP\\x7f\\x1aig\\xe7\\x08?\\xef\\xaay\\x00\\xd1\\x81\\x9f\\xfe\\xbd\\x00G\\xbeR?\\xd5\\xae\\x7f\\xde\\xa4\\xbb\\x95\\xa1\\xb5\\x92E\\xc6\\xe5\\x19\\x19\\xa9\\xb8\\xa6\\xba\\xa4\\x88U\\xc0e<\\x10h\\x03/O\\xbf\\x9e{\\xb1\\x14\\xac\\x85J\\x93\\xf2\\x8a*\\xfcV\\x96\\xf0\\xbe\\xf8\\xe2UoQE *}\\xbe_\\xee\\xa7\\xe4\\x7f\\xc6\\x8f\\xb7\\xcb\\x91\\xf2\\xa7\\xe4\\x7f\\xc6\\x8a+K\".\\x1fo\\x97?u?_\\xf1\\xa9\\xe0\\xb8y\\x03n\\x0b\\xc7\\xa5\\x14T\\xcfH\\xe84\\xf5\\x1f$\\xcc\\xa8X\\x01\\x90(\\xa2\\x8a\\xc96Y'"
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 160,
-                        "size": 9534
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 400,
-                        "size": 31585
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "y",
-                        "w": 1200,
-                        "h": 600,
-                        "sizes": [
-                            4697,
-                            10614,
-                            22511,
-                            30537,
-                            46302
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": null,
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 7364193029984217837
         }
     },
     "reply_markup": null,
@@ -100,12 +40,12 @@
             "length": 36
         }
     ],
-    "views": 180,
+    "views": 181,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2118,
+        "replies_pts": 2173,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

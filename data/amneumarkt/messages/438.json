@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 438,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-02-10 10:28:28+00:00",
+    "message": "#data\n\nIn physics, people claim that more is different. In the data world, more is very different. I'm no expert in big data, but I learned the scaling problem only when I started working for corporates. \n\nI like the following from the author.\n\n> data sizes increase much faster than compute sizes.\n\nIn deep learning, many models are following a scaling law of performance and dataset size. Indeed, more data brings in better performance. But the increase in performance becomes really slow. Business doesn't need a perfect model. We also know computation costs money. At some point, we simply have to cut the dataset, even if we have all the data in the world.\n\nSo ..., data hoarding is probably fine, but our models might not need that much.\n\nhttps://motherduck.com/blog/big-data-is-dead/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7735812292433449150,
+            "url": "https://motherduck.com/blog/big-data-is-dead/?utm_source=substack&utm_medium=email",
+            "display_url": "motherduck.com/blog/big-data-is-dead",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "MotherDuck",
+            "title": "MotherDuck: Big Data is Dead",
+            "description": "Big data is dead. Long live easy data.",
+            "photo": {
+                "_": "Photo",
+                "id": 5989106159837097867,
+                "access_hash": 5045132532253119360,
+                "file_reference": "b'\\x00c\\xe6LB\\x02\\xc6\\t\\x94\\x96\\xc7\\xe5\\x1aVI\\x064N{];'",
+                "date": "2023-02-07 16:24:19+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd6g*@\\x0b\\x9c\\xfb\\xd2y\\x9f6\\x02\\xe7\\x9cu\\xa7\\x95\\x04\\x8fjo\\x96\\xbb\\xb3\\x8ez\\xd0\\x05\\x1dR\\xe5\\xe1U\\x8e>\\xad\\xd4\\xf7\\x1e\\x95b\\xd6B\\xb6\\xaagp\\\\}\\xe2x\\xc5:\\xe9\\xa3H\\xc4\\x92 m\\x84\\x101\\xce}\\xaa\\x08\\xe7K\\xa2q\\x19R\\x07S\\xdcT\\xca\\\\\\xaa\\xe3C\\xda\\xefl\\xea\\x812\\xa4\\xe3p=\\xe8\\xa6[\\xa0\\x81\\xb6\\x15%s\\x90z\\xe2\\x8a\\x85V,\\xa6\\x97D\\\\ \\x96\\xcex\\x1d\\xa9\\xd4QZ\"\\n\\x9a\\x9a\\x83f\\xd9\\xecA\\xaazZ\\xeew*pv\\xf7\\xe7\\xbf\\xff\\x00Z\\x8a)1\\xa2\\xf2\\x86\\x13\\x05$\\x11\\x8fJ(\\xa2\\x92\\x84{\\x15#'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 12454
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 418,
+                        "size": 41695
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 535,
+                        "size": 46428
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "MotherDuck",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 745,
+            "length": 45
+        }
+    ],
+    "views": 21,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2173,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-02-10 10:49:37+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

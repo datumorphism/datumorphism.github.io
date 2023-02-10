@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 437,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-02-08 13:50:27+00:00",
+    "message": "#fun\n\nThe authors got some styles.\n\n\nSource: \nhttps://twitter.com/mraginsky/status/1181712367966674945",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5413501153997604598,
+            "access_hash": 2723179768951586937,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xb5c\\xe6LB\\xad\\x86$\\xac\\x8d\\x1f\\x12\\xf2\\xc0\\x1d\\x06\\xba\\x8e(\\x1c\\xb6'",
+            "date": "2023-02-08 13:50:27+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01$(\\xd5\\xe0\\x1e\\xb4\\xa0\\xfb\\xd2R\\xf3\\xeb@\\x07\\xe3E\\x06\\x934\\x00\\xa0\\xf3E\\x03\\xef\\x0e\\x94P\\x02\\xfc\\xb4`u\\xfe\\x94\\xbb\\x87\\xbd&\\xefs@\\x00\\x18\\xa3\\xf0\\xfd(\\xcf\\xd6\\x80~\\xb4\\x00\\xbcv\\x1f\\xa5\\x14g\\xd8\\xd1@\\x01\\x14`QE\\x00\\x18\\xa3\\x14Q@\\x0bE\\x14P\\x07'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 291,
+                    "size": 36679
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 728,
+                    "size": 167981
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 900,
+                    "h": 819,
+                    "sizes": [
+                        9611,
+                        28773,
+                        77183,
+                        119280,
+                        167759
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 46,
+            "length": 56
+        }
+    ],
+    "views": 58,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2173,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 737,
+        "read_max_id": 737
+    },
+    "edit_date": "2023-02-08 13:51:07+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

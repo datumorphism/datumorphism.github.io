@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 435,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-02-07 13:59:19+00:00",
+    "message": "#data\n\nThis is gold.\n\nhttps://youtu.be/pjq3QOxl9Ok",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5127856300741705018,
+            "url": "https://youtu.be/pjq3QOxl9Ok",
+            "display_url": "youtube.com/watch?v=pjq3QOxl9Ok",
+            "hash": 0,
+            "type": "video",
+            "site_name": "YouTube",
+            "title": "So You Wanna Be a Pandas Expert? (Tutorial) - James Powell | PyData Global 2021",
+            "description": "So You Wanna Be a Pandas Expert? | (Pre-recorded Tutorial)\nSpeaker: James Powell\n\nSo\u2026 you want to be a Pandas expert.\n\nWhat\u2019s it going to take? Should you memorize the Pandas API? Should you read through the source code, line-by-line, file-by-file? Should you try to write your own Pandas from scratch? Or could it be much simpler than that? Could there be an idea, a small, tiny idea, sitting there in plain sight; an idea so obvious that you may have overlooked it; yet an idea that unlocks the complexity of the tool?\n\nIn this talk, we\u2019ll discuss what Pandas really is, how it distinguishes itself from NumPy, and what the index and index-alignment are all about. And, through the lens of index alignment, we will see how to unlock the power of Pandas, how to understand the vagaries of the API, and how to create a simple framework for understanding all the many details of the tool, and motivate how deliberate, fluent use of indexing in Pandas is the one thing sitting between you and Pandas effective use for every day tasks.\n\nJames Powell's Bio\nJames serves as lead instructor for Don't Use This Code. Don't Use This Code provides consulting, coaching, and training services to a number of clients in the financial services and tech industry, helping them develop greater expertise in the use of Python for data analysis, computational simulation, and automation.\n\nIf you are interested in developing your staff's expertise in Python, Pandas, or with data analysis and software development in general, please reach out to us at info@dutc.io\n\nPyData Global 2021\nWebsite: https://pydata.org/global2021/\nLinkedIn: https://www.linkedin.com/company/pydata-global\nTwitter: https://twitter.com/PyData\n\nwww.pydata.org\n\nPyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States. PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization. PyData communities approach data science using many languages, including (but not limited to) Python, Julia, and R. \n\nPyData conferences aim to be accessible and community-driven, with novice to advanced level presentations. PyData tutorials and talks bring attendees the latest project features along with cutting-edge use cases.\n\n00:00 Welcome!\n00:10 Help us add time stamps or captions to this video! See the description for details.\n\nWant to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",
+            "photo": {
+                "_": "Photo",
+                "id": 5964090006857428377,
+                "access_hash": 1446933797957385202,
+                "file_reference": "b'\\x00c\\xe6LB.\\xb9\\xa2y\\xa3\\x800\\x9eJ\\x11=\\x8b\\xce\\x02qu'",
+                "date": "2022-01-07 18:47:11+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\xafqtL\\xc8\\x9c(_\\xbd\\xdf\\x9a\\xaeQ\\x18\\xee3.I\\xf44E,i1b\\x9b\\xc1\\x1d\\xe9\\x9f\\xc5\\x9d\\xbczP\\x92[\\x03m\\xeeJ\\x90\\x022d\\x0b\\xc6z\\x1aX\\xc7\\x96\\xe4\\xa4\\xc1pz\\xe3\\xad4c\\xfey\\x8f\\xce\\x86\\x19\\xed@\\x89\\x06.$-' uaEB%h\\xc1P~S\\xd4QT\\x9aD4\\xdb!\\x153NX\\xc7\\xb8/\\xc81\\xd3\\xad\\x14R,]\\xe1\\x98\\x9d\\xa0{\\n<\\xdc+&\\x01\\xfa\\x8a(\\xa0\\x08\\t\\xa2\\x8a(\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 17521
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 89240
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 166186
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": "https://www.youtube.com/embed/pjq3QOxl9Ok",
+            "embed_type": "iframe",
+            "embed_width": 1280,
+            "embed_height": 720,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 22,
+            "length": 28
+        }
+    ],
+    "views": 70,
+    "forwards": 4,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2173,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-02-07 13:59:32+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}
