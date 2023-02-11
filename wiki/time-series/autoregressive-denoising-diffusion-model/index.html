@@ -109,7 +109,7 @@ AmNeumarkt
 <meta itemprop=name content="Autoregressive Denoising Diffusion Model">
 <meta itemprop=description content="TimeGrad"><meta itemprop=datePublished content="2023-02-10T00:00:00+00:00">
 <meta itemprop=dateModified content="2023-02-10T00:00:00+00:00">
-<meta itemprop=wordCount content="533">
+<meta itemprop=wordCount content="555">
 <meta itemprop=keywords content="Diffusion Model,">
 <section class=section>
 <div class=container>
@@ -156,6 +156,7 @@ Autoregressive Denoising Diffusion Model
 <div class="column is-12">
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" id=content-limited itemprop=articleBody>
+<h2 id=autoregressive>Autoregressive</h2>
 <p>In an multivariate
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/forecasting/forecasting-problem/>
 [[forecasting problem]]
@@ -165,7 +166,7 @@ Autoregressive Denoising Diffusion Model
 <span class=tooltip_content>Forecasting time series</span>
 </span>
 </span>
-, we are given an input sequence $\mathbf x_{t-K: t}$, to forecast $\mathbf x_{t+1:t+H}$.</p>
+, given an input sequence $\mathbf x_{t-K: t}$, we forecast $\mathbf x_{t+1:t+H}$.</p>
 <p>To apply the
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/diffusion-model/>
 [[denoising diffusion model]]
@@ -178,14 +179,15 @@ a latent space with a simple and manageable distribution, e.g., normal distribut
 flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5 and the reverse process is …</span>
 </span>
 </span>
-, we reformulate our problem into</p>
+in our multivariate forecasting problem, we define our forecasting task as an autoregressive problem</p>
 <p>$$
 q(\mathbf x^0_{t - K:t} \vert \mathbf x^0_{1:t_0 - 1}) = \Pi_{t=t_0}^T q(\mathbf x^0_t \vert \mathbf x^0_{1:t-1}).
 $$</p>
 <figure>
 <img src=../assets/autoregressive-denoising-diffusion-model/ar-denoising-diffusion-model-problem.jpg>
 </figure>
-<p>Time dynamics can be captured by some RNN, meanwhile, we need to capture the diffusion process. Note that in
+<h2 id=time-dynamics>Time Dynamics</h2>
+<p>Time dynamics can be easily captured by some RNN, meanwhile, we need a model for the diffusion process at each time step. Note that in
 <span class=tooltip><a href=https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/diffusion-model/>
 [[denoising diffusion model]]
 </a>
@@ -201,7 +203,7 @@ flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5 and the reverse process is …</sp
 <p>$$
 \operatorname{min}_\theta \mathbb E_{q(\mathbf x^0)} \left[ -\log p_\theta (\mathbf x^0) \right]
 $$</p>
-<p>This is the denoising model for a single time step,</p>
+<p>The above loss becomes that of the denoising model for a single time step. Explicitly,</p>
 <p>$$
 \operatorname{min}_\theta \mathbb E_{q(\mathbf x^0_t )} \left[ -\log p_\theta (\mathbf x^0_t) \right].
 $$</p>
@@ -209,8 +211,8 @@ $$</p>
 <p>$$
 \operatorname{min}_\theta \mathbb E_{q(\mathbf x^0_t )} \left[ -\log p_\theta (\mathbf x^0_t \vert \mathbf h_{t-1}) \right].
 $$</p>
-<p>Such a model has two optimization dimensions, along time $t$ and along diffusion step $n$ for each time $t$.</p>
-<p>It is proven that for each time step $t$, the loss is<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p>Apart from the usual time dimension $t$, the autoregressive denoising diffusion model has another dimension to optimize: the diffusion step $n$ for each time $t$.</p>
+<p>The loss for each time step $t$ is<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
 <p>$$
 \mathcal L_t = \mathbb E_{\mathbf x^0_t, \epsilon, n} \left[ \lVert \epsilon - \epsilon_\theta ( \sqrt{\bar \alpha_n} \mathbf x^0_t + \sqrt{1-\bar \alpha_n}\epsilon, \mathbf h_{t-1}, n ) \rVert^2 \right].
 $$</p>
