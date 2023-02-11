@@ -66,7 +66,6 @@ See Rasul et al., (2021)[^Rasul2021].
 
 ## How to Forecast
 
-
 After training, we obtain the time dynamics encoding $\mathbf h_T$, with which the denoising steps can be calculated using the reverse process
 
 {{< m >}}
