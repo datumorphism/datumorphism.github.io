@@ -7,10 +7,11 @@
 <title> Diffusion Models for Forecasting | Datumorphism | L Ma </title>
 <meta name=author content="L Ma">
 <meta property="og:title" content="Diffusion Models for Forecasting">
-<meta property="og:description" content="Objective Given input $\mathbf x^0$ from a very complicated and unknown distribution $q(\mathbf x^0)$, we find a latent space with simple and manageable distribution, and the transformations from $\mathbf x^0$ to $\mathbf x^n$ as well as from $\mathbf x^n$ to $\mathbf x^0$. For example, with $N=5$, we have the forward process
-flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5  and the reverse process
-flowchart LR x5 -- x4 -- x3 -- x2 -- x1 -- x0  Diffusion model assumes each step is Markovian,
-$$ q(\mathbf x^1, \mathbf x^2, \mathbf x^3, \mathbf x^4, \mathbf x^5 \vert \mathbf x^0) = q(\mathbf x^5\vert \mathbf x^4) q(\mathbf x^4\vert \mathbf x^3) q(\mathbf x^3\vert \mathbf x^2)q(\mathbf x^2\vert \mathbf x^1)q(\mathbf x^1\vert \mathbf x^0), $$">
+<meta property="og:description" content="Objective In a denoising diffusion model, given
+ an input $\mathbf x^0$ drawn from a complicated and unknown distribution $q(\mathbf x^0)$,  we find
+ a latent space with a simple and manageable distribution, e.g., normal distribution, and the transformations from $\mathbf x^0$ to $\mathbf x^n$, as well as the transformations from $\mathbf x^n$ to $\mathbf x^0$.  An Example For example, with $N=5$, the forward process is
+flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5  and the reverse process is
+flowchart LR x5 -- x4 -- x3 -- x2 -- x1 -- x0  The joint distribution we are searching for is">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://datumorphism.leima.is/wiki/machine-learning/energy-based-model/diffusion-model/"><meta property="article:section" content="wiki">
 <meta property="article:published_time" content="2023-02-10T00:00:00+00:00">
@@ -109,12 +110,13 @@ AmNeumarkt
 <main>
 <div class=container itemscope itemtype=http://schema.org/BlogPosting>
 <meta itemprop=name content="Diffusion Models for Forecasting">
-<meta itemprop=description content="Objective Given input $\mathbf x^0$ from a very complicated and unknown distribution $q(\mathbf x^0)$, we find a latent space with simple and manageable distribution, and the transformations from $\mathbf x^0$ to $\mathbf x^n$ as well as from $\mathbf x^n$ to $\mathbf x^0$. For example, with $N=5$, we have the forward process
-flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5  and the reverse process
-flowchart LR x5 -- x4 -- x3 -- x2 -- x1 -- x0  Diffusion model assumes each step is Markovian,
-$$ q(\mathbf x^1, \mathbf x^2, \mathbf x^3, \mathbf x^4, \mathbf x^5 \vert \mathbf x^0) = q(\mathbf x^5\vert \mathbf x^4) q(\mathbf x^4\vert \mathbf x^3) q(\mathbf x^3\vert \mathbf x^2)q(\mathbf x^2\vert \mathbf x^1)q(\mathbf x^1\vert \mathbf x^0), $$"><meta itemprop=datePublished content="2023-02-10T00:00:00+00:00">
+<meta itemprop=description content="Objective In a denoising diffusion model, given
+ an input $\mathbf x^0$ drawn from a complicated and unknown distribution $q(\mathbf x^0)$,  we find
+ a latent space with a simple and manageable distribution, e.g., normal distribution, and the transformations from $\mathbf x^0$ to $\mathbf x^n$, as well as the transformations from $\mathbf x^n$ to $\mathbf x^0$.  An Example For example, with $N=5$, the forward process is
+flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5  and the reverse process is
+flowchart LR x5 -- x4 -- x3 -- x2 -- x1 -- x0  The joint distribution we are searching for is"><meta itemprop=datePublished content="2023-02-10T00:00:00+00:00">
 <meta itemprop=dateModified content="2023-02-10T00:00:00+00:00">
-<meta itemprop=wordCount content="544">
+<meta itemprop=wordCount content="581">
 <meta itemprop=keywords content="Machine Learning,Diffusion Model,">
 <section class=section>
 <div class=container>
@@ -166,21 +168,32 @@ Diffusion Models for Forecasting
 <div class=is-divider data-content=ARTICLE></div>
 <div class="content blog-post section" id=content-limited itemprop=articleBody>
 <h2 id=objective>Objective</h2>
-<p>Given input $\mathbf x^0$ from a very complicated and unknown distribution $q(\mathbf x^0)$, we find a latent space with simple and manageable distribution, and the transformations from $\mathbf x^0$ to $\mathbf x^n$ as well as from $\mathbf x^n$ to $\mathbf x^0$. For example, with $N=5$, we have the forward process</p>
+<p>In a denoising diffusion model, given</p>
+<ul>
+<li>an input $\mathbf x^0$ drawn from a complicated and unknown distribution $q(\mathbf x^0)$,</li>
+</ul>
+<p>we find</p>
+<ul>
+<li>a latent space with a simple and manageable distribution, e.g., normal distribution, and</li>
+<li>the transformations from $\mathbf x^0$ to $\mathbf x^n$, as well as</li>
+<li>the transformations from $\mathbf x^n$ to $\mathbf x^0$.</li>
+</ul>
+<h3 id=an-example>An Example</h3>
+<p>For example, with $N=5$, the forward process is</p>
 <div class=mermaid align=center>
 flowchart LR
 x0 --> x1 --> x2 --> x3 --> x4 --> x5
 </div>
-<p>and the reverse process</p>
+<p>and the reverse process is</p>
 <div class=mermaid align=center>
 flowchart LR
 x5 --> x4 --> x3 --> x2 --> x1 --> x0
 </div>
-<p>Diffusion model assumes each step is Markovian,</p>
+<p>The joint distribution we are searching for is</p>
 <p>$$
 q(\mathbf x^1, \mathbf x^2, \mathbf x^3, \mathbf x^4, \mathbf x^5 \vert \mathbf x^0) = q(\mathbf x^5\vert \mathbf x^4) q(\mathbf x^4\vert \mathbf x^3) q(\mathbf x^3\vert \mathbf x^2)q(\mathbf x^2\vert \mathbf x^1)q(\mathbf x^1\vert \mathbf x^0),
 $$</p>
-<p>with each step being simple diffusion process, e.g.,</p>
+<p>A diffusion model assumes a simple diffusion process, e.g.,</p>
 <p>$$
 \begin{equation}
 q(\mathbf x^n \vert \mathbf x^{n-1}) \equiv \mathcal N (\mathbf x^n ; \sqrt{ 1 - \beta_n} \mathbf x ^{n -1}, \beta_n\mathbf I).
@@ -198,18 +211,6 @@ p(\mathbf x^5).
 $$</p>
 <p>This reverse process is the denoising process.</p>
 <p>As long as our model estimates $p_\theta (\mathbf x^n \vert \mathbf x^{n-1})$ nicely, we can go $\mathbf x^0 \to \mathbf x^N$ and $\mathbf x^N \to \mathbf x^0$.</p>
-<p>In summary,</p>
-<ul>
-<li>forward: perturbs data to noise, step by step</li>
-<li>reverse: converts noise to data, step by step</li>
-</ul>
-<div class=mermaid align=center>
-flowchart LR
-prior["prior distribution"]
-data --"forward Markov chain"--> noise
-noise --"reverse Markov chain"--> data
-prior --"sampling"--> noise
-</div>
 <h3 id=the-reverse-process-a-gaussian-example>The Reverse Process: A Gaussian Example</h3>
 <p>With Eq \ref{eq-guassian-noise}, the reverse process is</p>
 <p>$$
@@ -218,12 +219,24 @@ p_\theta (\mathbf x^{n-1} \vert \mathbf x^n) = \mathcal N ( \mathbf x^{n-1} ; \m
 \label{eqn-guassian-reverse-process}
 \end{equation}
 $$</p>
+<h3 id=summary>Summary</h3>
+<ul>
+<li>Forward: perturbs data to noise, step by step;</li>
+<li>Reverse: converts noise to data, step by step.</li>
+</ul>
+<div class=mermaid align=center>
+flowchart LR
+prior["prior distribution"]
+data --"forward Markov chain"--> noise
+noise --"reverse Markov chain"--> data
+prior --"sampling"--> noise
+</div>
 <h2 id=optimization>Optimization</h2>
-<p>We have to find $p_\theta$. A natural loss function is the negative log-likelihood</p>
+<p>The forward chain is predefined. To close the loop, we have to find $p_\theta$. A natural choice for our loss function is the negative log-likelihood,</p>
 <p>$$
 \mathbb E_{q(\mathbf x^0)} \left( - \log ( p_\theta (\mathbf x^0) ) \right).
 $$</p>
-<p>It has been proven that the above loss have an upper bound<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p>(Ho et al., 2020) proved that the above loss has an upper bound related to the diffusion process defined in Eq \ref{eq-guassian-noise}<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
 <p>$$
 \begin{align}
 &\operatorname{min}_\theta \mathbb E_{q(\mathbf x^0)} \\
@@ -231,7 +244,7 @@ $$</p>
 =& \operatorname{min}_\theta \mathbb E_{\mathbf x^0, \epsilon} \left[ \frac{\beta_n^2}{2\Sigma_\theta \alpha_n (1 - \bar \alpha_n)} \lVert \epsilon - \epsilon_\theta ( \sqrt{ \bar \alpha_n} \mathbf x^0 + \sqrt{1-\bar \alpha_n} \epsilon , n ) \rVert \right]
 \end{align}
 $$</p>
-<p>where $\epsilon$ is a sample from $\mathcal N(0, \mathbf I)$. The second step assumes a Gaussian noise in Eq \ref{eq-guassian-noise}, which is equivalent to<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p>where $\epsilon$ is a sample from $\mathcal N(0, \mathbf I)$. The second step assumes the Gaussian noise in Eq \ref{eq-guassian-noise}, which is equivalent to<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
 <p>$$
 q(\mathbf x^n \vert \mathbf x^0) = \mathcal N (\mathbf x^n ; \sqrt{\bar \alpha_n} \mathbf x^0, (1 - \bar \alpha_n)\mathbf I),
 $$</p>

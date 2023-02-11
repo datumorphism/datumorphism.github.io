@@ -168,10 +168,11 @@ Published: <time datetime=2023-02-10T00:00:00+00:00>2023-02-10</time>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
-<i class="far fa-star"></i> Summary: Objective Given input $\mathbf x^0$ from a very complicated and unknown distribution $q(\mathbf x^0)$, we find a latent space with simple and manageable distribution, and the transformations from $\mathbf x^0$ to $\mathbf x^n$ as well as from $\mathbf x^n$ to $\mathbf x^0$. For example, with $N=5$, we have the forward process
-flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5 and the reverse process
-flowchart LR x5 -- x4 -- x3 -- x2 -- x1 -- x0 Diffusion model assumes each step is Markovian,
-$$ q(\mathbf x^1, \mathbf x^2, \mathbf x^3, \mathbf x^4, \mathbf x^5 \vert \mathbf x^0) = q(\mathbf x^5\vert \mathbf x^4) q(\mathbf x^4\vert \mathbf x^3) q(\mathbf x^3\vert \mathbf x^2)q(\mathbf x^2\vert \mathbf x^1)q(\mathbf x^1\vert \mathbf x^0), $$</span>
+<i class="far fa-star"></i> Summary: Objective In a denoising diffusion model, given
+an input $\mathbf x^0$ drawn from a complicated and unknown distribution $q(\mathbf x^0)$, we find
+a latent space with a simple and manageable distribution, e.g., normal distribution, and the transformations from $\mathbf x^0$ to $\mathbf x^n$, as well as the transformations from $\mathbf x^n$ to $\mathbf x^0$. An Example For example, with $N=5$, the forward process is
+flowchart LR x0 -- x1 -- x2 -- x3 -- x4 -- x5 and the reverse process is
+flowchart LR x5 -- x4 -- x3 -- x2 -- x1 -- x0 The joint distribution we are searching for is</span>
 </div>
 <div style=margin-left:2em>
 <span style=display:block;font-size:90%>
