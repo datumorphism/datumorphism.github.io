@@ -17,9 +17,11 @@ links:
   - "wiki/forecasting/forecasting-problem.md"
 ---
 
-In an multivariate {{< c "wiki/forecasting/forecasting-problem.md" "forecasting problem" >}}, we are given an input sequence $\mathbf x_{t-K: t}$, to forecast $\mathbf x_{t+1:t+H}$.
+## Autoregressive
 
-To apply the {{< c "wiki/machine-learning/energy-based-model/diffusion-model.md" "denoising diffusion model" >}}, we reformulate our problem into
+In an multivariate {{< c "wiki/forecasting/forecasting-problem.md" "forecasting problem" >}}, given an input sequence $\mathbf x_{t-K: t}$, we forecast $\mathbf x_{t+1:t+H}$.
+
+To apply the {{< c "wiki/machine-learning/energy-based-model/diffusion-model.md" "denoising diffusion model" >}} in our multivariate forecasting problem, we define our forecasting task as an autoregressive problem
 
 $$
 q(\mathbf x^0_{t - K:t} \vert \mathbf x^0_{1:t_0 - 1}) = \Pi_{t=t_0}^T q(\mathbf x^0_t \vert \mathbf x^0_{1:t-1}).
@@ -27,13 +29,16 @@ $$
 
 {{< figure src="../assets/autoregressive-denoising-diffusion-model/ar-denoising-diffusion-model-problem.jpg" >}}
 
-Time dynamics can be captured by some RNN, meanwhile, we need to capture the diffusion process. Note that in {{< c "wiki/machine-learning/energy-based-model/diffusion-model.md" "denoising diffusion model" >}}, we minimize
+
+## Time Dynamics
+
+Time dynamics can be easily captured by some RNN, meanwhile, we need a model for the diffusion process at each time step. Note that in {{< c "wiki/machine-learning/energy-based-model/diffusion-model.md" "denoising diffusion model" >}}, we minimize
 
 {{< m >}}
 \operatorname{min}_\theta \mathbb E_{q(\mathbf x^0)} \left[ -\log p_\theta (\mathbf x^0) \right]
 {{< /m >}}
 
-This is the denoising model for a single time step,
+The above loss becomes that of the denoising model for a single time step. Explicitly,
 
 {{< m >}}
 \operatorname{min}_\theta \mathbb E_{q(\mathbf x^0_t )} \left[ -\log p_\theta (\mathbf x^0_t) \right].
@@ -45,9 +50,9 @@ To include the time dynamics, we use the RNN state of the previous time step $\m
 \operatorname{min}_\theta \mathbb E_{q(\mathbf x^0_t )} \left[ -\log p_\theta (\mathbf x^0_t \vert \mathbf h_{t-1}) \right].
 {{< /m >}}
 
-Such a model has two optimization dimensions, along time $t$ and along diffusion step $n$ for each time $t$.
+Apart from the usual time dimension $t$, the autoregressive denoising diffusion model has another dimension to optimize: the diffusion step $n$ for each time $t$.
 
-It is proven that for each time step $t$, the loss is[^Rasul2021]
+The loss for each time step $t$ is[^Rasul2021]
 
 {{< m >}}
 \mathcal L_t = \mathbb E_{\mathbf x^0_t, \epsilon, n} \left[ \lVert \epsilon - \epsilon_\theta ( \sqrt{\bar \alpha_n} \mathbf x^0_t + \sqrt{1-\bar \alpha_n}\epsilon, \mathbf h_{t-1}, n ) \rVert^2  \right].
