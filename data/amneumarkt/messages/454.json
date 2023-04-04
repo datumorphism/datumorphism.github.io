@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 454,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-20 12:47:29+00:00",
+    "message": "#misc \n\nhttps://twitter.com/MushtaqBilalPhD/status/1637715463399456768?t=dCY5NP4Ddd_HtTj9PUugxQ&s=19\n\n\n(Fact check needed)",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5242637248904677174,
+            "access_hash": 2922227983563841004,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xc6d+\\xb0\\xf9\\x01\\x1b\\xe0\\xdf\\x8d\\x13\\xfc\\xac\\xb4\\xacT\\xc3n\\xefU\\x14'",
+            "date": "2023-03-20 12:47:28+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x1e\\xd79\\xc1\\xe3'\\xebJ\\xbd9\\x18?Z\\x80.$rI;\\x8f\\xb7\\x14|\\x99\\xe8q\\xf5\\x14\\x01`\\xf3H\\x06=j5uQ\\x80\\xb8\\xa7\\x16%A\\x03\\x14\\x00\\xd2\\x06\\x7f\\xd6s\\x9fS\\xfe4\\x98\\\\\\xff\\x00\\xad\\x1f\\x9f\\xff\\x00^\\x9d\\x95\\xce9\\xcf\\xfb\\xdf\\xfdz\\\\\\x7f\\xb2\\xdf\\xf7\\xd7\\xff\\x00^\\x80\\x13\\x11\\x7fx\\x7f\\xdfT\\xab\\xb7\\xb3g\\xfe\\x05\\x9avO\\xf7O\\xe9K@\\r\\xff\\x00\\x80\\x9f\\xd2\\x8es\\xd1\\xa8\\xa2\\x80\\x17'\\xfb\\xa7\\xf4\\xa5\\xa2\\x8a\\x00\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 243,
+                    "h": 320,
+                    "size": 21365
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 607,
+                    "h": 800,
+                    "size": 78589
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 971,
+                    "h": 1280,
+                    "sizes": [
+                        11076,
+                        29531,
+                        63872,
+                        90909,
+                        123775
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 8,
+            "length": 92
+        }
+    ],
+    "views": 203,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-20 13:09:54+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

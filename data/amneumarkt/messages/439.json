@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 439,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-02-11 07:37:45+00:00",
+    "message": "#misc \n\n\u8c46\u74e3 for research papers.\n\nhttps://42papers.com/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 295323549784769678,
+            "url": "https://42papers.com/",
+            "display_url": "42papers.com",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "42Papers",
+            "title": "Top Trending Computer Science & AI Papers",
+            "description": "Stay on top of the latest research, Paper summaries and more",
+            "photo": {
+                "_": "Photo",
+                "id": 5966629870127656783,
+                "access_hash": 7541268027227916393,
+                "file_reference": "b'\\x00d+\\xb0\\xf9G\\xa3+_.\\xee{^w/\\xb0\\nOZ\\x83$'",
+                "date": "2022-10-26 12:39:13+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01!(\\xd8'\\x1di\\xa5\\xff\\x00*y\\xe4Sv\\x9f_\\xe7@\\t\\xbc\\xfbQ\\xbe\\x8d\\xa7\\xd7\\x9e\\xfc\\x9a]\\xa7\\xb9\\xfdM\\x02\\x1c\\x0ezQ@\\xa2\\x81\\x85\\x14R\\x13\\x8e\\xc4\\xd0\\x04\\x1c\\x0b\\xee?\\x89y\\xab\\x15\\t#\\xed \\xe3\\x90\\x87\\x8f\\xc6\\xa5\\x07'\\xa1\\xa0\\x05\\xa2\\x8a(\\x00\\xa2\\x8a(\\x01?\\x8a\\x96\\x8a(\\x00\\xa2\\x8a(\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 268,
+                        "size": 12872
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 671,
+                        "size": 45953
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 940,
+                        "h": 788,
+                        "sizes": [
+                            5572,
+                            13596,
+                            25654,
+                            33983,
+                            52593
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 33,
+            "length": 21
+        }
+    ],
+    "views": 220,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-02-11 08:10:19+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

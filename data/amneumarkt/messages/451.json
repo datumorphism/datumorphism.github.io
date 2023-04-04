@@ -1,0 +1,133 @@
+{
+    "_": "Message",
+    "id": 451,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-16 14:53:52+00:00",
+    "message": "#dl \n\nhttps://github.com/Lightning-AI/lightning/releases/tag/2.0.0\n\nYou can compile (torch 2.0) LightningModule now. \n\nimport torch \nimport lightning as L \nmodel = LitModel() \n# This will compile forward and {training,validation,test,predict}_step \ncompiled_model = torch.compile(model) \ntrainer = L.Trainer()\ntrainer.fit(compiled_model)",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193031158336994,
+            "url": "https://github.com/Lightning-AI/lightning/releases/tag/2.0.0",
+            "display_url": "github.com/Lightning-AI/lightning/releases/tag/2.0.0",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "Release Lightning 2.0: Fast, Flexible, Stable \u00b7 Lightning-AI/lightning",
+            "description": "Lightning AI is excited to announce the release of Lightning 2.0 \u26a1\n\nHighlights\nBackward Incompatible Changes\n\nPyTorch\nFabric\n\n\nFull Changelog\n\nPyTorch\nFabric\nApp\n\n\nContributors\n\nOver the last coupl...",
+            "photo": {
+                "_": "Photo",
+                "id": 5856187474760544390,
+                "access_hash": 3709784103171573328,
+                "file_reference": "b'\\x00d+\\xb0\\xf9\\xa8\\x88\\x0f\\xc7BVD\\xa9\\x06\\x0f1%!\\x83Xi'",
+                "date": "2023-04-01 17:15:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd5yB\\xb6;\\xfe\\x1f\\xe3J\\x19\\xb1\\xf7\\x1b\\xf4\\xff\\x00\\x1a\\x19\\x80\\xea\\xc0\\x1fsN\\xfc(\\x017\\x1f\\xee7\\xe9J\\xc7\\nO\\xa0\\xa5\\xa2\\x80+[\\\\\\x99\\x99\\x81P1\\xc8\\xc1\\xa2\\xa7\\xda\\xa0\\xe4\\x0eh\\xa6\\xec\\x06c]\\xb3\\x9d\\xcd\\x1cd\\xfa\\xe0\\xff\\x00\\x8d?\\xed\\xf2\\xff\\x00u?_\\xf1\\xa2\\x8a\\xab\".\\xc5\\xfb|\\xbf\\xddO\\xc8\\xd1\\xf6\\xf9\\x7f\\xba\\x9f\\x91\\xa2\\x8a,\\x82\\xe1\\xf6\\xf9\\x7f\\xba\\x9f\\x91\\xa2\\x8a(\\xb0\\\\'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9088
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 30638
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4605,
+                            10147,
+                            21637,
+                            29443,
+                            44796
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 60
+        },
+        {
+            "_": "MessageEntityCode",
+            "offset": 119,
+            "length": 218
+        }
+    ],
+    "views": 194,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 755,
+        "read_max_id": 755
+    },
+    "edit_date": "2023-03-17 07:07:13+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "dl"
+    ]
+}

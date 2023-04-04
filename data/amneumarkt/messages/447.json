@@ -1,0 +1,69 @@
+{
+    "_": "Message",
+    "id": 447,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-11 12:42:20+00:00",
+    "message": "Great thread on how a communication failure contributed to SVB\u2019s collapse.\nhttps://twitter.com/lulumeservey/status/1634232322693144576",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2023-03-11 10:10:02+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1381813778
+        },
+        "from_name": null,
+        "channel_post": 838,
+        "post_author": "Linghao Zhang",
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 75,
+            "length": 59
+        }
+    ],
+    "views": 118,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1041240576
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 752,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-11 12:42:31+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

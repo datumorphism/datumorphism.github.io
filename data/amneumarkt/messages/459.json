@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 459,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-29 12:12:33+00:00",
+    "message": "#ai\n\nA lot of big names signed it. (Not sure how they verify the signee though)\n\nPersonally, I'm not buying it. \n\nhttps://futureoflife.org/open-letter/pause-giant-ai-experiments/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5322621505622522789,
+            "url": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/",
+            "display_url": "futureoflife.org/open-letter/pause-giant-ai-experiments",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Future of Life Institute",
+            "title": "Pause Giant AI Experiments: An Open Letter - Future of Life Institute",
+            "description": "We call on all AI labs to immediately pause for at least 6 months the training of AI systems more powerful than GPT-4.",
+            "photo": {
+                "_": "Photo",
+                "id": 5847115825226559548,
+                "access_hash": 855720540700026455,
+                "file_reference": "b'\\x00d+\\xb0\\xf9\\x99\\xb5I\\xec\\xf0\\xf0\\xe4{\\x8c\\xa7\\xdf{$\\x88\\xb2\\xa3'",
+                "date": "2023-03-29 02:07:12+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\x85\\xb8\\x1c\\x0c\\xd2\\x8by\\xddw\\x08\\x98\\x8faR\\xc1\\xff\\x00\\x1f1\\xff\\x00\\xbc+S`\\xf4\\xfd+G+\\x19\\xa8\\xa6b\\x9b[\\x8f\\xf9\\xe2\\xff\\x00\\x95'\\xd9\\xae?\\xe7\\x8b\\xff\\x00\\xdf5\\xb8\\x11{\\x8apP\\x0f\\x00\\xfet\\xb9\\xd8r#\\x9ceeb\\xac\\n\\x91\\xd8\\xd1V5\\x1f\\xf8\\xfe\\x93\\xf0\\xfeB\\x8a\\xd1j\\x8c\\xde\\x8cq\\xa6\\x92\\xff\\x00\\xdf?\\x9d\\x14R(aw\\xfe\\xfb~t\\x86I?\\xe7\\xa3~tQN\\xc4\\xb60\\x92NX\\x92}M\\x14QLG\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 10696
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 449,
+                        "size": 44478
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 719,
+                        "size": 89373
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1367,
+                        "h": 768,
+                        "sizes": [
+                            10722,
+                            24054,
+                            44782,
+                            61601,
+                            98697
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 114,
+            "length": 64
+        }
+    ],
+    "views": 112,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-29 12:13:08+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ai"
+    ]
+}

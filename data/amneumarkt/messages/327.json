@@ -31,7 +31,7 @@
             "type": "article",
             "site_name": "datumorphism.leima.is",
             "title": "Continuous Ranked Probability Score - CRPS",
-            "description": "The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without assuming the distributions of the data.\nf-Divergence   The f-divergence is defined as1 $$ \\operatorname{D}_f = \\int f\\left(\\frac{p}{q}\\right) q\\mathrm d\\mu, $$ where $p$ and $q$ are two densities and $\\mu$ is a reference distribution. Requirements on the generating function The generating function $f$ is required to be convex, and $f(1) =0$. For $f(x) = x \\log x$ with $x=p/q$, f-divergence is reduced to the KL divergence $$ \\begin{align} &\\int f\\left(\\frac{p}{q}\\right) q\\mathrm d\\mu \\\\ =& \\int \\frac{p}{q} \\log \\left( \\frac{p}{q} \\right) \\mathrm d\\mu \\\\ =& \\int p \\log \\left( \\frac{p}{q} \\right) \\mathrm d\\mu.",
+            "description": "The Continuous Ranked Probability Score, known as CRPS, is a score to measure how a proposed distribution approximates the data, without knowledge about the true distributions of the data.\nDefinition CRPS is defined as1\n$$ CRPS(P, x_a) = \\int_{-\\infty}^\\infty \\lVert P(x) - H(x - x_a) \\rVert_2 dx, $$\nwhere\n $x_a$ is the true value of $x$, P(x) is our proposed cumulative distribution for $x$, $H(x)$ is the Heaviside step function $$ H(x) = \\begin{cases} 1, &\\qquad x=0\\\\ 0, &\\qquad x\\leq 0\\\\ \\end{cases} $$\n $\\lVert \\cdot \\rVert_2$ is the L2 norm.  Explain it The formula looks abstract on first sight, but it becomes crystal clear once we understand it.",
             "photo": null,
             "embed_url": null,
             "embed_type": null,
@@ -62,7 +62,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2173,
+        "replies_pts": 2300,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

@@ -27,7 +27,7 @@
             "id": 2047476603280489854,
             "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/",
             "display_url": "thegradient.pub/how-can-we-improve-peer-review-in-nlp",
-            "hash": 0,
+            "hash": -976222090,
             "type": "photo",
             "site_name": "The Gradient",
             "title": "How Can We Improve Peer Review in NLP?",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5873878191649696617,
                 "access_hash": -3366608730298905980,
-                "file_reference": "b'\\x00c\\xe6LF!\\x94\\xa8\\xf2r7\\x87_\\xfe\\t\\xc1\\xdeG+\\x99\\x8f'",
+                "file_reference": "b'\\x00d+\\xb0\\xfc\\xbdm\\x1a\\x06\\x87\"u\\r\\xaaI\\xf7Ei\\x9e\\xa1\\x03'",
                 "date": "2020-11-14 09:55:35+00:00",
                 "sizes": [
                     {
@@ -68,9 +68,1571 @@
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": null,
+            "author": "Anna Rogers",
             "document": null,
-            "cached_page": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "How Can We Improve Peer Review in NLP?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Anna Rogers"
+                        },
+                        "published_date": "2020-11-14 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Have your conference or journal reviewers ever completely misunderstood your paper or raised unreasonable objections? Ours certainly have, and it is not an enjoyable experience. The million dollar question is whether this is an inevitable occupational hazard of academic life, or there is something that we can do about the infamous Reviewer #2."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "This may be an unpopular opinion, but our new "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "position paper"
+                                    },
+                                    "url": "https://arxiv.org/abs/2010.03863",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " argues that the bad reviews are a consequence of the goals and the organization of peer review as we currently have it, and not simply because Reviewer #2 is evil incarnate. This is good news: if we understand what is wrong in our reviewing system, we can fix it. This piece focuses on NLP, but many problems and potential solutions are applicable to other fields."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Why is peer review so difficult?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The NLP community can actually answer this question because "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "peer review is fundamentally an annotation task"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ": we present the reviewers with papers and review forms, and collect their annotations (scores and comments). Then area chairs receive the reviews, and provide their own annotations (acceptance recommendations). For any annotation task, we know that the quality of annotations and the inter-annotator agreement heavily depends on how clear each decision is, whether all annotators interpret the instructions in the same way, and whether they have the incentive to do the best job they can, or just the minimum possible amount of effort."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In the case of peer review, do we have a clear decision boundary? No. Taking citation counts as a proxy, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "(Anderson, 2009)"
+                                    },
+                                    "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefAnderson",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " argues that research paper merit is Zipf-distributed: many papers are clear rejects, while a few are clear accepts. In between those two extremes, decisions are very difficult, and any differences between the best rejected and the worst accepted paper are tiny, even given the best possible set of reviewers. Yet, the fundamental goal of peer review in a top conference is to rank all papers by merit so as to only accept the top 20-25% and reject the rest:"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5824521630074908993,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "If the paper merit is Zipf-distributed, for many papers the acceptance decisions would be very difficult. And this prediction bears out: NeurIPS 2014 conducted an experiment where 10% of submissions were reviewed by two independent sets of reviewers. These reviewers disagreed on "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "57%"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " of accepted papers "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "(Price, 2014)"
+                                    },
+                                    "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefPrice",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In other words, if you simply re-ran the reviewer assignment with the same reviewer pool, "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "over half of accepted NeurIPS papers would have been rejected"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "An exacerbating factor is that papers in an interdisciplinary area such as NLP are a mixed bag of contribution types (experiments, data, theory), methodology (deep learning, proofs, model analysis, theoretical arguments), different language material, and goals and interests of the authors (applications, basic research, meta-research etc). In such a field, we will have a lot of apples-to-oranges comparisons with no correct answers. Suppose you were assigned a paper with a stronger evaluation, and a paper with a more original model: which one would you rank higher, and how much higher? How does either of these empirical papers compare to a theoretical work or a position paper?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5824797852306616299,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "How the reviewers cope"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "So, the peer review process, as it is currently formulated, is an annotation task that is objectively very difficult, if at all possible. And we do not even have the incentives to spend a lot of time on it: peer review is currently invisible service work that is not often budgeted for as part of a paid research job."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "What do humans do when they have to reason under high uncertainty, and quickly? They rely on biases and heuristics "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "(Kahneman, 2013)"
+                                    },
+                                    "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefKahneman",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". In this case, the heuristics power much of the \"review-to-reject\" thinking: if you can only find a reason to justify a low score, you can move on to the other items on your overflowing to-do list. Some of the more famous Reviewer #2 heuristics in NLP include:"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Non-native writing"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": papers with non-native English and/or unconventional writing style may even be perceived as worse than papers with weaker content "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "(K. W. Church, 2020)"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefChurch2",
+                                            "webpage_id": 0
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "No SOTA results"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": claiming state-of-the-art performance is often viewed as a proof of a valid research contribution, and the lack of such results - as evidence of no contribution. In reality, such results are neither necessary nor sufficient "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "(Rogers, 2020a)"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefRogers1",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Untrendy topic"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": the main track of a top conference is more likely to welcome a paper on a \"scientifically sexy\" topic "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "(Smith, 2010)"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefSmith",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". In NLP, it is currently easier to publish on Transformers than something \"niche\" like historical text normalization."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "No deep learning"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": the \"mainstream\" NLP papers currently focus on deep learning experiments, making theoretical work, linguistic resources "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "(Rogers, 2020b)"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefRogers2",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", and cross-disciplinary efforts look like suspicious outliers - even though \"computational linguistics\" is not just about deep learning."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Work not-on-English"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": English is the \"default\" language to study "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "(Bender, 2019)"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefBender",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", and work on other languages is easily accused of being \"niche\" and non-generalizable - even though English only workis equally non-generalizable."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Not-top-people"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": where the paper can be deanonymized from a preprint, the famous authors and labs with borderline papers are more likely to get accepted, while underrepresented communities are at disadvantage "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "(Rogers, 2020c)"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefRogers3",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Simplicity"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": a solution that seems too simple may look like the authors did not work hard enough, even though the goal is to solve the problem rather than solve it in a complex way."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Obvious follow-up questions"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": if it is easy to think of something to add, the paper may be perceived as lacking substance, even if the amount of work is comparable with the papers that do not easily provoke follow-up questions. That would explain why short papers are significantly harder to publish (e.g. EMNLP 2020 accepted 24.6% long vs 16.7% short papers)."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Novelty"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": absurd as it may sound, genuinely novel work is easier to object to, and thus harder to publish than then the 'safe', incremental papers ("
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Bhattacharya & Packalen, 2020"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefBhattacharya",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "; "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "K. Church, 2017"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefChurch",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "; "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Smith, 2010"
+                                            },
+                                            "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefSmith",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ")."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "\"I'd do it differently\""
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": A reviewer may consciously or unconsciously take a dislike to a study for not matching their own methodological choices and interests, even if the study is still sound and valid."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "What can we do to improve peer review?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "If the system is so broken - can we just get rid of it? Unfortunately, no. Most hiring and grant committees on the planet consist largely of non-experts, and these non-experts need some kind of \"research excellency\" metric. This is the role played by the selectivity of top conferences and journals. If they simply increase the acceptance rate, they will lose their status, and our field will not be able to compete with other fields for research resources. And no, we cannot just take citation counts as a proxy for paper merit, because they are heavily influenced by the current status of the authors and their institutions."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "EMNLP 2020 experimented with a \"soft acceptance rate increase\": establishing a companion volume called \"Findings of EMNLP\". It accepted roughly 15% submissions that \"narrowly missed acceptance to the main conference, but were judged to be solid, well-executed research, and worthy of publication\". \"Findings\" gives the authors the option to publish quickly and move on, but its very existence is likely to impact how the reviewers approach the non-mainstream papers, exacerbating the above biases rather than addressing the core problem. Furthermore, no matter how respected the \"Findings\" may become in the field, in the eyes of most hiring/grant committees it will always be second-tier, and continue marginalizing \"untrendy\" researchers and even whole subfields."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Since the acceptance rates are a necessary evil, we cannot solve the fundamental problem of the mismatch between the Zipf distribution of the paper merit, and the target accept-reject distribution. What we "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "can"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " do is reduce the number of papers rejected due to reviewer biases. The decisions around acceptance threshold will still be difficult and arbitrary to some degree, but at least we would be getting higher-quality feedback that would help us improve the papers, and that in the long run would surely be better for the field. Reducing biases would also help us to accept a more diverse selection of papers, which is also good for an interdisciplinary field."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "How can we do it? The biases and heuristics are a coping mechanism for what is fundamentally a poorly defined annotation task with poor incentives. Fundamentally, we need to reduce the need to resort to heuristics, and this can be done in two complementary ways:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Improving the incentives"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": increasing the visibility and value of peer review in researcher profiles (publons provide a great "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "example"
+                                            },
+                                            "url": "https://publons.com/researcher/?is_core_collection=1&is_last_twelve_months=1&order_by=num_reviews",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "), providing perks like free membership and conference registration."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextItalic",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Reducing the uncertainty"
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ": improving paper-to-reviewer matching, offering fine-grained tracks and review forms tailored for different paper types. As for the questions like \"does stronger evaluation count for more or less than a more original model?\", these are apples-to-oranges comparisons that should be defined in the editorial policies, and pre-announced in CFPs, so that the authors would know what to expect and send their work to better-matching venues. The program chairs should then try to make consistent decisions based on reviewers' answers to clear questions, rather than something ambiguous like the \"overall recommendation\" (which everyone has a different formula for)."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Many authors are also calling for measures to disincentivize the bad reviews e.g. by making the *ACL reviews public. However, this does not address the core problem (high-uncertainty decision-making), and public negative reviews can have repercussions for junior researchers."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "What holds us back?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "At this point, the reader may join the disappointed reviewers of our paper and say that we are not proposing anything new. It is obvious that something like improved paper-to-reviewer matching would improve review quality, isn't it? Well, this is precisely what holds us back. "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "With respect to peer review, we need implementation rather than conceptual innovation"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "but as researchers we tend to only value and reward the latter."
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "You might ask \u2014 aren't the conference organizers already doing all that? Well, so far it has not been systematic. Each of the major *ACL conferences are organized by a new set of people each year, and they all introduce new policies, usually changing many things at once. While this brings a lot of diversity, we have no way to test which changes are more successful: the organizers typically do some analysis, but each of them only has access to their own data, and they may not necessarily be asking the same questions. For example, ACL 2020 handled the increased reviewer load by forcing all authors to register as reviewers, and EMNLP 2020 - by requiring the senior authors to mentor junior reviewers. These two different recruitment strategies were accompanied by different review forms and policies. The end result is that we ran two very large-scale experiments with ourselves as the guinea pigs, but we do not really know what worked better and should be used next year. And even if there was such a conclusion, we have no mechanism to ensure that the more successful policy would be kept."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Better review forms, better mechanisms for matching papers and reviewers, and more consistent editorial policies are not going to materialize out of thin air. This is difficult meta-research work which will take many systematic experiments, and which each field has to perform for itself. This should be good news: we are researchers in a fast-growing field, and many young minds are looking for new avenues. But this is actually bad news, because such work is currently very hard to publish "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "within"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " NLP. Without publication incentives, without recognizing such work as main-track-worthy research it is either not going to be done, or it will be taken to outside venues such as "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "PEERE"
+                                    },
+                                    "url": "https://www.peere.org/conference/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": " "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "and have little impact on the practices in the field that it should help to improve. In a way,"
+                                },
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": " NLP peer review\u2026 prevents research on NLP peer review."
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The ACL anthology currently lists only "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "four"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " studies of peer review from the meta-research perspective, as opposed to thousands dedicated to all kinds of text analysis. Think about it. The researchers in NLP are not studying the highly frustrating process that governs their own careers, even though they are experts in text analysis, and the data for that frustrating process is textual, structured, abundant, and regularly collected from themselves. Numerous annotation experiments are run every year with themselves as subjects - and no one seems to be checking the results!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Of these four studies, one contributed an actionable insight: ACL reviewers appear to converge to the mean after rebuttals "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "(Gao et al., 2019)"
+                                    },
+                                    "url": "https://thegradient.pub/how-can-we-improve-peer-review-in-nlp/#RefGao",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". This could be countered by letting the reviewers to interact only with the authors during the rebuttal, but not with each other. Yet, to our knowledge, there was no serious discussion of this finding in the context of design of the peer review process for subsequent ACL conferences."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "First steps forward"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Large-scale changes happen when enough people are paying enough attention to a given problem: for instance, climate change is not going to be seriously addressed until enough voters put it ahead of anything else. The core mechanisms in the academic world are not so different. We all have known about the above problems with peer review for a long time, but what we mostly do with that knowledge is complain when we get bad reviews. The cycle could be sketched as follows:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5824306903184945186,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextEmpty"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "If we want to change things, first of all we must complain talk and think about peer review a lot more, and not only when we're bitter with disappointment. We "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "are"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " the peer reviewers, maybe even part-time reviewers #2! Share your frustration, your insights about what could be done better in the process. Even more importantly, share the good practices when you see them. Talk and think about how this could be done at scale, what studies and experiments would convince the community to adopt better practices, and how we need such studies and experiments to be conducted. We need to persuade a whole lot of the other peer reviewers (ourselves) that meta-research on this process is valid, main-track-worthy research, and not a suspicious outlier among the torrent of deep learning papers."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "The second thing to do would be to create the mechanisms for enabling this work. Let us stress that the current lack of systematic testing of different peer review strategies is "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "not"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " the fault of conference organizers. It's just that it would require a lot of work on top of the gazillion things they are already doing as unpaid volunteers. Also, it is a long-term rather than per-conference project, which requires long-term strategies and mechanisms that are not currently in place. We need to regularly collect and regularly publish our peer review corpora, to develop mechanisms for running systematic experiments on peer review forms and policies, and for the subsequent implementation of the successful ones. None of this is likely to happen without ACL, and so we should keep all the above in mind during elections and business meetings. We need new roles for systematic development, testing, and implementation of peer review policies, as well as incentivizing good peer review work by increasing its prestige and visibility. There is already a committee working on the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "rolling review reform"
+                                    },
+                                    "url": "https://www.aclweb.org/adminwiki/index.php?title=ACL_Rolling_Review_Proposal",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", which aims at decreasing the volume of reviews, but this is orthogonal to our topic."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "And the third thing is the practical research to be done by us as NLP researchers, especially those who work in the areas of annotation and scholarly document processing. Can we develop methods to better match papers to reviewers (not only by topics, but also the core methodology and target language)? What can we do for the papers for which we cannot find reviewers who are working in that area? Can we help the area chairs to flag shallow, heuristic-based reviews, as well as the rude and one-liner reviews? When does that happen, and do certain types of papers get disproportionately affected? What kinds of tracks and review forms would improve the reviewer agreement and make the job easier for the chairs? Can we detect and normalize the cases where the reviewers' comments do not match their numeric scores? These are all legitimate and interesting NLP topics, and doing such research + implementing its results is the best possible response to Reviewer #2."
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Acknowledgements"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "This paper builds on numerous conversations, blog and Twitter posts. We would like to thank (in alphabetical order) Emily M. Bender, Trevor Cohn, Leon Derczynski, Matt Gardner, Yoav Goldberg, Yang Liu, Tal Linzen, Ani Nenkova, Graham Neubig, Ted Pedersen, Ehud Reiter, Joseph M. Rogers, Anna Rumshisky, Amanda Stent, Nathan Schneider, Karin Vespoor, Bonnie Webber, and many others. We also thank the anonymous reviewers for helping us to formulate the problem. Many of the discussion points previously appeared on the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Hacking Semantics blog"
+                                    },
+                                    "url": "https://hackingsemantics.xyz/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "To cite our paper:"
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "@inproceedings{rogers-augenstein-2020-improve, \ntitle = \"What Can We Do to Improve Peer Review in {NLP}?\", \nauthor = \"Rogers, Anna \u00a0and Augenstein, Isabelle\", \nbooktitle = \"Findings of the Association for Computational Linguistics: EMNLP 2020\", \nmonth = nov, \nyear = \"2020\", \naddress = \"Online\", \npublisher = \"Association for Computational Linguistics\", \nurl = \"https://www.aclweb.org/anthology/2020.findings-emnlp.112\", \npages = \"1256--1262\"}"
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockHeader",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "References"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefAnderson"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Anderson, T. (2009). Conference reviewing considered harmful. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "ACM SIGOPS Operating Systems Review"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "43"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "(2), 108. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1145/1531793.1531815"
+                                    },
+                                    "url": "https://doi.org/10.1145/1531793.1531815",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefBender"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Bender, E. M. (2019, September 15). The #BenderRule: On Naming the Languages We Study and Why It Matters. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The Gradient"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://thegradient.pub/the-benderrule-on-naming-the-languages-we-study-and-why-it-matters/"
+                                    },
+                                    "url": "https://thegradient.pub/the-benderrule-on-naming-the-languages-we-study-and-why-it-matters/",
+                                    "webpage_id": 2047476601775792598
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefBhattacharya"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Bhattacharya, J., & Packalen, M. (2020). "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Stagnation and Scientific Incentives"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". National Bureau of Economic Research. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3539319"
+                                    },
+                                    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3539319",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefChurch"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Church, K. (2017). Emerging trends: Inflation. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Natural Language Engineering"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "23"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "(5), 807\u2013812. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1017/S1351324917000286"
+                                    },
+                                    "url": "https://doi.org/10.1017/S1351324917000286",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefChurch2"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Church, K. W. (2020). Emerging trends: Reviewing the reviewers (again). "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Natural Language Engineering"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "26"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "(2), 245\u2013257. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1017/S1351324920000030"
+                                    },
+                                    "url": "https://doi.org/10.1017/S1351324920000030",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefGao"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Gao, Y., Eger, S., Kuznetsov, I., Gurevych, I., & Miyao, Y. (2019). Does My Rebuttal Matter? Insights from a Major NLP Conference. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", 1274\u20131290. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.18653/v1/N19-1129"
+                                    },
+                                    "url": "https://doi.org/10.18653/v1/N19-1129",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefKahneman"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Kahneman, D. (2013). "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Thinking, fast and slow"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (1st pbk. ed). Farrar, Straus and Giroux."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Price, E. (2014). The NIPS experiment. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Moody Rd"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "http://blog.mrtz.org/2014/12/15/the-nips-experiment.html"
+                                    },
+                                    "url": "http://blog.mrtz.org/2014/12/15/the-nips-experiment.html",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefRogers1"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Rogers, A. (2020a, April 3). Peer review in NLP: Reject-if-not-SOTA. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Hacking Semantics"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://hackingsemantics.xyz/2020/reviewing-models/"
+                                    },
+                                    "url": "https://hackingsemantics.xyz/2020/reviewing-models/",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefRogers2"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Rogers, A. (2020b, April 16). Peer review in NLP: Resource papers. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Hacking Semantics"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://hackingsemantics.xyz/2020/reviewing-data/"
+                                    },
+                                    "url": "https://hackingsemantics.xyz/2020/reviewing-data/",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefRogers3"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Rogers, A. (2020c, July 15). Should the reviewers know who the authors are? "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Hacking Semantics"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://hackingsemantics.xyz/2020/anonymity/"
+                                    },
+                                    "url": "https://hackingsemantics.xyz/2020/anonymity/",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "RefSmith"
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Smith, R. (2010). Classical peer review: An empty gun. "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Breast Cancer Research"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "12"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "(4), S13. "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://doi.org/10.1186/bcr2742"
+                                    },
+                                    "url": "https://doi.org/10.1186/bcr2742",
+                                    "webpage_id": 0
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5824521630074908993,
+                        "access_hash": 7098275348380009839,
+                        "file_reference": "b'\\x00d+\\xb0\\xfc}v\\x9b\\xa9\\xe6j\\xd1\\x1f+O\\xeb\\xffh\\x0c?o'",
+                        "date": "2023-03-21 21:13:19+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01 (\\xd6,w\\xe0g R\\x16c\\xf7F\\x0f\\xa1\\xa7\\xff\\x00\\x18\\xfaSs\\xb6C\\xe9\\x81\\xfdh\\x00M\\xff\\x00\\xc5O\\xa6\\xef_\\xef\\x01\\xf5\\xa5\\xdc=E\\x00-\\x14g4P\\x03K.\\xe0\\xbb\\x80n\\xc2\\x93r\\xe4\\xfc\\xe3\\xf3\\x14\\xd6\\x03\\xed\\n|\\xbc\\x9c}\\xefJL\\x9d\\xc7\\xe4=z\\xe4\\xd0\\x03\\xf7\\xaf\\xfc\\xf4\\x1f\\x98\\xa4f\\x1cm\\x91y\\xf5\\xa6\\xf3\\x8f\\xb8s\\xfe\\xf1\\xa3,\\x0eB~\\xa6\\x80\\x1c\\x80\\xe7;\\x94\\x8faEH(\\xa0\\x0f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 252,
+                                "size": 14788
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 623,
+                                "h": 490,
+                                "sizes": [
+                                    2777,
+                                    7708,
+                                    17283,
+                                    22903,
+                                    32167
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5824797852306616299,
+                        "access_hash": 3056242107003854279,
+                        "file_reference": "b'\\x00d+\\xb0\\xfc\\x8f\\xce\\xa2\\x9f\\xd1\\xf4\\xe9\\x95\\xbeK\\xc1q\\x13\\xbb\\xd8\\xf2'",
+                        "date": "2023-03-21 21:13:19+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01&(\\xd8\\xc8\\xdd\\x8aB\\xea\\x0e\\t\\xc5&>|\\xff\\x00\\x9e\\xf4\\xa5\\x14\\xf2\\x7f\\x9d\\x00#0\\x03=G\\xb506\\x0b\\x87\\xday\\xe0\\x01\\xce)\\xc7\\x80q\\x900y\\xa6gp\\xcf*\\x08\\x1f9\\xc6z\\xd2\\x02q\\xd3\\x8a(\\xa2\\x98\\r#$\\xf0H\\xc55C\\x05\\x00\\xe4\\x91\\xdc\\xff\\x00\\xfa\\xe9\\xa5\\xdf\\xed\\x1br\\x9b=;\\xd3\\xf2\\xd8\\xea\\x9f\\x9d\\x00\\x07~\\x7f\\xfa\\xdf\\xfdzB\\xc7\\xa1\\xc7\\xe5\\xff\\x00\\xd7\\xa5\\x04\\xe7\\x92\\xb8\\xfa\\xd2\\x92rpG\\xe3@\\x026G\\xf5\\xa2\\x90\\x17?\\xdd\\xfc\\xe8\\xa0\\x08\\xf9\\xfbOE\\xfa\\xf7\\xe9O\\xda\\xdf\\xddJ(\\xa8\\x8fQ\\xb1U}U\\x7f\\nS\\xd5\\xb0\\x07\\xe3E\\x15b\\x04\\x18\\xec\\xa3\\xe9E\\x14P\\x07'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 304,
+                                "size": 18404
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 609,
+                                "h": 578,
+                                "sizes": [
+                                    3474,
+                                    9516,
+                                    20803,
+                                    27337,
+                                    38885
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5824306903184945186,
+                        "access_hash": 9175279609444052219,
+                        "file_reference": "b'\\x00d+\\xb0\\xfc\\xbd\\xec\\x1f\\xcd\\x81xETZ\\x9a\\x1cH\\xe1He<'",
+                        "date": "2023-03-21 21:13:19+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x1d(\\xd8'\\x1d\\x89\\xa4-\\x8e\\xa0\\xd2\\xf5\\xef\\x8ak\\x06\\xed\\x93\\xf5\\xc5\\x00(bO\\x02\\x9aQ\\xf3\\xc3q\\xf5\\xa1H\\x19&\\xa4\\xa0\\x06\\xa8+\\xd4\\xe7\\xf1\\xa2\\x9dE\\x00\\x14\\xd78Zu!\\x00\\xf5\\xe6\\x80#\\xc7\\xcas\\x96\\x1e\\x839\\xfet\\xdd\\xab\\xff\\x00<\\xe5\\xfc\\xcf\\xf8\\xd4\\xa4\\x05\\xfb\\xa0\\x0e})\\xd4\\x00\\xd4\\xc0^\\x01\\x1e\\xc6\\x8au\\x14\\x01\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 232,
+                                "size": 11960
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 687,
+                                "h": 498,
+                                "sizes": [
+                                    2629,
+                                    6721,
+                                    16268,
+                                    22174,
+                                    31270
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
             "attributes": []
         }
     },
@@ -87,7 +1649,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2173,
+        "replies_pts": 2300,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

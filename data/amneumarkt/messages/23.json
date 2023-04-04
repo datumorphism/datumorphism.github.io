@@ -27,7 +27,7 @@
             "id": 7937820126309515856,
             "url": "https://www.nature.com/articles/s41586-020-2649-2",
             "display_url": "nature.com/articles/s41586-020-2649-2",
-            "hash": -1624460094,
+            "hash": 960156576,
             "type": "photo",
             "site_name": "Nature",
             "title": "Array programming with NumPy",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5989051669587012424,
                 "access_hash": -7446608148123921536,
-                "file_reference": "b'\\x00c\\xe6LF\\x81Wk\\x192v\\xf3\\xef\\x07,5\\x11\\xb4\\x04\\xe3w'",
+                "file_reference": "b'\\x00d+\\xb0\\xfc\\r\\xbbv\\x88\\xab\\x85Eb\\xf1?\\xcb\\x07\\x95&\\xcf\\r'",
                 "date": "2020-09-16 16:54:42+00:00",
                 "sizes": [
                     {
@@ -97,7 +97,7 @@
                     },
                     {
                         "_": "PageBlockPhoto",
-                        "photo_id": 5991472003917393977,
+                        "photo_id": 5772922833578602497,
                         "caption": {
                             "_": "PageCaption",
                             "text": {
@@ -116,46 +116,46 @@
                             "_": "TextUrl",
                             "text": {
                                 "_": "TextPlain",
-                                "text": "AiiDA 1.0, a scalable computational infrastructure for automated reproducible workflows and data provenance"
+                                "text": "SciPy 1.0: fundamental algorithms for scientific computing in Python"
                             },
-                            "url": "https://doi.org/10.1038/s41597-020-00638-4",
-                            "webpage_id": 0
+                            "url": "https://doi.org/10.1038/s41592-019-0686-2",
+                            "webpage_id": 753763745708482789
                         }
                     },
                     {
                         "_": "PageBlockParagraph",
                         "text": {
                             "_": "TextPlain",
-                            "text": "08 September 2020"
+                            "text": "03 February 2020"
                         }
                     },
                     {
                         "_": "PageBlockParagraph",
                         "text": {
                             "_": "TextPlain",
-                            "text": "Sebastiaan P. Huber, Spyros Zoupanos, \u2026 Giovanni Pizzi"
+                            "text": "Pauli Virtanen, Ralf Gommers, \u2026 SciPy 1.0 Contributors"
                         }
                     }
                 ],
                 "photos": [
                     {
                         "_": "Photo",
-                        "id": 5991472003917393977,
-                        "access_hash": -6678288728550409591,
-                        "file_reference": "b\"\\x00c\\xe6LF\\x92\\xdd\\xa9\\xb8\\xaf,?#\\x06*7\\x8c\\x13'\\xbd\\xd4\"",
-                        "date": "2023-02-08 18:23:46+00:00",
+                        "id": 5772922833578602497,
+                        "access_hash": -5546682583121931615,
+                        "file_reference": "b'\\x00d+\\xb0\\xfc\\x8d\\xb9\\xc9(\\xe7\\xaa\\x0c>\\x93=\\xef>\\xf2\\xa6\\xa2\\x96'",
+                        "date": "2023-03-04 17:21:50+00:00",
                         "sizes": [
                             {
                                 "_": "PhotoStrippedSize",
                                 "type": "i",
-                                "bytes": "b'\\x01\\x16(\\xd5R\\xc4\\x1c\\x9f\\xca\\xa3-\\xce1R\\x87\\xc8\\xfb\\xa4T\\x06\"\\\\0${R\\x06)E\\\\\\x10?SO^\\x00\\xc60*\\x16\\xf2\\xf9\\xf9\\xcf^i\\xd0\\xf9e\\xc6\\xd7\\xdc}\\rV\\x81fM\\xbc\\xed\\xceW\\xf3\\xa2\\x87S\\x8c\\x0f\\xe5EC\\x18\\xaa\\x84\\x0cq\\xf9S2=\\xbf*(\\xa6\\x84\\xc6\\x15C\\xfc\\x0b\\xcf\\xb5\\x11l\\x0e0\\x80\\x1f\\\\QE\\x03,\\xd1E\\x14\\xc4\\x7f'"
+                                "bytes": "b'\\x01\\x16(\\xd5\\x12\\x12\\xc4\\x05\\x04\\xafQ\\x9e\\x94\\xf5$\\x8eF\\r \\xdd\\x93\\x9e?\\x1aM\\xbf6rs\\xf5\\xa0\\x07\\xd3\\n\\x9e\\xcc\\xdfN)\\xd8>\\xa6\\x98v\\xf9\\xa1r\\xdb\\x88\\xcf\\xb5\\x00&\\xf2\\x1dQ\\x89\\x05\\xbar;QO;\\xb3\\xed\\xf5\\xa2\\x80#\\xdeI\\xc6\\xe6\\xf4\\xed\\xfe{\\xd3\\xd5X1%\\xcb\\x02\\x07\\x07\\xb5\\x14P\\x02\\xb2\\xee\\x18\\xef\\xefM\\xf2\\xcf\\xfb?\\x91\\xff\\x00\\x1a(\\xa0\\x07\"\\xed\\x1d\\xbf\\n(\\xa2\\x80?'"
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "m",
                                 "w": 136,
                                 "h": 75,
-                                "size": 4275
+                                "size": 3333
                             }
                         ],
                         "dc_id": 4,

@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 443,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-03 22:43:58+00:00",
+    "message": "#dl\n\nhttps://github.com/lllyasviel/ControlNet",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193029872510444,
+            "url": "https://github.com/lllyasviel/ControlNet",
+            "display_url": "github.com/lllyasviel/ControlNet",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - lllyasviel/ControlNet: Let us control diffusion models!",
+            "description": "Let us control diffusion models! Contribute to lllyasviel/ControlNet development by creating an account on GitHub.",
+            "photo": {
+                "_": "Photo",
+                "id": 5844887381445030142,
+                "access_hash": 7883783313172888268,
+                "file_reference": "b'\\x00d+\\xb0\\xf9\\xfa\\x06\\xe6\\x00)\\x06+A\\x1b\\xd8#\\x8d\\xf04U>'",
+                "date": "2023-03-29 04:29:26+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x14(\\xd4y67\\xf0\\xfe'\\x14\\x82u-\\xcb \\x1f\\xefT\\x85T\\x9e@\\xcf\\xd2\\x8d\\x8b\\x9e\\x8b\\xf9P\\x02\\x82\\x18\\x02\\x0eA\\xa6\\xc8\\xc5cb1\\x90;\\xd3\\xc7N)\\x0e\\x08\\xc1\\xc1\\x14\\x01R\\xde\\xe5\\xa5\\x98!+\\xd3\\xb7\\xad\\x15a!\\x8a6\\xdc\\x88\\x03\\x1e\\xf4R\\x02\\x8f\\xdb\\xe5\\xfe\\xea~G\\xfch\\xfe\\xd0\\x97?u?#\\xfe4QZY\\x11p\\xfb|\\xbf\\xddO\\xd7\\xfci?\\xb4%\\xe7\\xe5O\\xc8\\xff\\x00\\x8d\\x14Qd\\x17\\x1d\\xf6\\xe9z\\xedO\\xc8\\xd1E\\x14Y\\x05\\xcf\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 9052
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 30217
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            4947,
+                            11194,
+                            21694,
+                            29578,
+                            44644
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 40
+        }
+    ],
+    "views": 149,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-03 22:44:02+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "dl"
+    ]
+}

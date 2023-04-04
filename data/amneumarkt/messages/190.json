@@ -28,37 +28,41 @@
             "url": "https://www.lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price",
             "display_url": "lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price",
             "hash": 0,
-            "type": "article",
+            "type": "photo",
             "site_name": "Lesswrong",
             "title": "Your Cheerful Price - LessWrong",
-            "description": "There's a concept I draw on often in social interactions. I've been calling it the \"happy price\", but that is originally terminology by Michael Ellsberg with subtly different implications. So I now f\u2026",
+            "description": "There's a concept I draw on often in social interactions. \u00a0I've been calling it the \"happy price\", but that is originally terminology by Michael Ellsberg with subtly different implications. \u00a0So I now\u2026",
             "photo": {
                 "_": "Photo",
-                "id": 532583255195174784,
-                "access_hash": -4743205828943081197,
-                "file_reference": "b'\\x00c\\xe6LEPq\\\\\\xcc\"ep+\\xde\\xe0\\x94CxirU'",
-                "date": "2017-11-16 10:41:45+00:00",
+                "id": 5826849188816727572,
+                "access_hash": -7868905744976597328,
+                "file_reference": "b'\\x00d+\\xb0\\xfb\\xd1\\xc3\\x02\\x07\\xfdB\\x07\\xc6\\xd7X\\xeb\\x93\\x7f<\\xf4\\xc3'",
+                "date": "2022-06-03 23:14:46+00:00",
                 "sizes": [
                     {
-                        "_": "PhotoSize",
-                        "type": "s",
-                        "w": 90,
-                        "h": 35,
-                        "size": 944
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x11(\\xd2\\xf3z\\x95\\xe8zb\\x9a\\xb3d\\xfc\\xc7\\xa7QU\\xff\\x00x[y#\\x8e\\xd58 \\x9f\\x9b\\x19\\x1e\\x82\\x80,\\x0c0\\xe0\\xd3%p\\x88rEVI\\x8a\\xc6B\\x9e\\t\\xe2\\x93\\x1b\\xc8\\xc9\\xeb\\xda\\x80\\xf5'W\\\\\\x95\\xder;QM\\x08\\x10g\\xf3\\xf5\\xa2\\x80\\xd0\\xa8\\x9d*i\\x7f\\xd5\\xaf\\xe3E\\x14\\x01\\x17\\xfc\\xb3\\x15<?\\xfb/\\xf54QB\\xd8oro\\xf9eE\\x14P#\""
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
-                        "h": 126,
-                        "size": 18234
+                        "h": 136,
+                        "size": 18950
                     },
                     {
-                        "_": "PhotoSize",
+                        "_": "PhotoSizeProgressive",
                         "type": "x",
                         "w": 696,
-                        "h": 274,
-                        "size": 64375
+                        "h": 295,
+                        "sizes": [
+                            4306,
+                            13189,
+                            29172,
+                            45051,
+                            72284
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -94,7 +98,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2173,
+        "replies_pts": 2300,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

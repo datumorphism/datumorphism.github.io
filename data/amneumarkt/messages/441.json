@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 441,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-02-17 18:35:41+00:00",
+    "message": "#fun\n\nhttps://xkcd.com/2739",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3935343140504276850,
+            "url": "https://xkcd.com/2739/",
+            "display_url": "xkcd.com/2739",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "xkcd",
+            "title": "Data Quality",
+            "description": null,
+            "photo": {
+                "_": "Photo",
+                "id": 6018149415887417146,
+                "access_hash": -8188218220147915858,
+                "file_reference": "b'\\x00d+\\xb0\\xf9\\x87\\xd7_9\\xd3CC\\xce<\\r\\x1b\\xb0\\x87\\x993\\x81'",
+                "date": "2023-02-17 15:18:10+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x0c(\\xd6\\x0c\\x80\\x00q\\x9a\\tS\\xc6}\\xa9\\x9b\\x03rs\\xf9\\xd3\\xff\\x00\\x01\\xeb@\\r\\x18\\xc8\\xeb\\x8ap)\\x8e\\xb4\\xcc\\x0e8\\xfdM @\\x01\\xeb\\xd0\\x7f:\\x00\\x90\\xb2\\x91\\x81\\x8a)\\xb8\\n09\\xeb\\xc9\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 100,
+                        "size": 10182
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 251,
+                        "size": 42176
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 401,
+                        "size": 75644
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1343,
+                        "h": 421,
+                        "sizes": [
+                            5177,
+                            15421,
+                            39031,
+                            54212,
+                            75783
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 21
+        }
+    ],
+    "views": 179,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-02-17 18:36:03+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

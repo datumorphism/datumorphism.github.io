@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 455,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-25 06:09:03+00:00",
+    "message": "#agi\n\nhttp://arxiv.org/abs/2303.12712\n\nThis is crazy.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5256134716208301838,
+            "access_hash": -2400070840285765249,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xc7d+\\xb0\\xf9\\x16\\x96\\x96\\x96\\xd3,\\xb3,\\x12\\x9d\\xed\\xf0\\xb7\\xd5\\x96\\xe3'",
+            "date": "2023-03-25 06:09:03+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xd16\\x90\\x7f\\xcf<\\xfe&\\x90Z\\xc1\\x9f\\xf5_\\xa9\\xa9\\x899\\xe34\\x9f7\\xbd\\x003\\xecv\\xff\\x00\\xf3\\xcf\\xf54T\\xe3\\xa5\\x14\\x00\\xd2\\x0ex\\xcd8f\\x90\\xb6\\x0e)A\\xa0\\x02\\x8a(\\xa0\\n\\xa6\\xf6\\xd4\\xb0\\xc4\\xf1\\xff\\x00\\xdfT\\xef\\xb6\\xdb\\x0e\\xb3\\xc7\\xf9\\xd1E\\x00\\x1fn\\xb5\\xff\\x00\\x9f\\x88\\xff\\x00\\xef\\xaa(\\xa2\\x80?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 12445
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 66635
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        7654,
+                        23118,
+                        61200,
+                        98676,
+                        141191
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 31
+        }
+    ],
+    "views": 168,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-25 06:09:15+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "agi"
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 445,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-09 00:11:16+00:00",
+    "message": "#ml\n\nReleasing the Skynet\n\nhttps://github.com/internet-explorer-ssl/internet-explorer",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7364193030586732992,
+            "url": "https://github.com/internet-explorer-ssl/internet-explorer",
+            "display_url": "github.com/internet-explorer-ssl/internet-explorer",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "GitHub",
+            "title": "GitHub - internet-explorer-ssl/internet-explorer: Internet Explorer explores the web in a self-supervised manner to progressively find relevant examples that improve performance on a desired target dataset.",
+            "description": "Internet Explorer explores the web in a self-supervised manner to progressively find relevant examples that improve performance on a desired target dataset. - GitHub - internet-explorer-ssl/interne...",
+            "photo": {
+                "_": "Photo",
+                "id": 5837949059346837711,
+                "access_hash": 574511971770017549,
+                "file_reference": "b'\\x00d+\\xb0\\xf9\\xb1pKr\\xf4\\xe1\\xce2\\xf9f\\x93\\xbe\\xfd$\\xbb#'",
+                "date": "2023-03-25 21:39:57+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd6g!\\xb0\\x07\\xe8i\\xbea\\xc7O\\xfct\\xff\\x00\\x85<\\xe7<\\x7f:0\\x7f\\xc9\\xa0\\x04V,:~`\\x8aWm\\xa8[\\x04\\xe0g\\x02\\x8c\\x1f_\\xd6\\x9c3\\xde\\x80*Y\\xdd\\x9b\\x96ue\\nW\\xd0\\xe7\\x8a*\\xca\\xaa\\xaev\\xa8\\x19\\xe4\\xe0u\\xa2\\x9b\\xb5\\xf4BC\\xa8\\xa2\\x8aC\\n(\\xa2\\x80\\x0cQE\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 10489
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 37866
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 600,
+                        "sizes": [
+                            5162,
+                            12929,
+                            28546,
+                            39100,
+                            59818
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 27,
+            "length": 58
+        }
+    ],
+    "views": 143,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1090037466
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 746,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-09 06:05:48+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

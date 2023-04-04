@@ -1,0 +1,180 @@
+{
+    "_": "Message",
+    "id": 450,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-11 20:55:12+00:00",
+    "message": "#ml\n\nhttps://mlcontests.com/state-of-competitive-machine-learning-2022/\n\nQuote from the report:\n\nSuccessful competitors have mostly converged on a common set of tools \u2014\u00a0Python, PyData, PyTorch, and gradient-boosted decision trees.\n\nDeep learning still has not replaced gradient-boosted decision trees when it comes to tabular data, though it does often seem to add value when ensembled with boosting methods.\nTransformers continue to dominate in NLP, and start to compete with convolutional neural nets in computer vision.\n\nCompetitions cover a\u00a0broad range of research areas\u00a0including computer vision, NLP, tabular data, robotics, time-series analysis, and many others.\nLarge ensembles remain common among winners, though single-model solutions do win too.\n\nThere are\u00a0several active machine learning competition platforms, as well as dozens of purpose-built websites for individual competitions.\nCompetitive machine learning\u00a0continues to grow in popularity, including in academia.\n\nAround\u00a050% of winners are solo winners;\u00a050% of winners are first-time winners; 30% have won more than once before.\n\nSome competitors are able to\u00a0invest significantly into hardware\u00a0used to train their solutions, though others who use free hardware like Google Colab are also still able to win competitions.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7342093500466489552,
+            "url": "https://mlcontests.com/state-of-competitive-machine-learning-2022/",
+            "display_url": "mlcontests.com/state-of-competitive-machine-learning-2022",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "ML Contests",
+            "title": "The State of Competitive Machine Learning | ML Contests",
+            "description": "A review of competitive machine learning in 2022.  We summarise the state of the competitive landscape and analyse the 200+ competitions that took place in 2022. Plus a deep dive analysis of 67 winning solutions to figure out the best strategies to win at competitive ML.",
+            "photo": {
+                "_": "Photo",
+                "id": 5781639705929035793,
+                "access_hash": 3314305515319295518,
+                "file_reference": "b'\\x00d+\\xb0\\xf9\\x82\\xcc\\xa6\\x9f\\xcf\\xcc\\xd2=\\x1fB\\xaf\\xfa\\xbe\\x84\\xc2\\xf9'",
+                "date": "2023-03-07 11:08:47+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xd6\\'\\x00\\x9ag\\x99\\xfe\\xc9\\xa77*j!\\x19$g\\xf3\\xdb\\xff\\x00\\xd7\\xa9V\\xea\"E\\x907@i\\xf5\\x18\\x8b\\x1c\\x82\\xb9\\xff\\x00v\\x94\\x07\\x07\\x96\\x04}(v\\xe8\\x03\\xe8\\xa2\\x8a\\x90\\x10\\xe4\\x8e)\\xa00\\xceH\\xfc\\xa8\\xa2\\x98\\x0f\\xa2\\x8a)\\x00QE\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 8398
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 30581
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 56138
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1600,
+                        "h": 900,
+                        "sizes": [
+                            8771,
+                            16196,
+                            32817,
+                            41684,
+                            64556
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Harald Carlens",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 66
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 169,
+            "length": 60
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 232,
+            "length": 98
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 409,
+            "length": 40
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 545,
+            "length": 29
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 670,
+            "length": 43
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 768,
+            "length": 53
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 925,
+            "length": 54
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 989,
+            "length": 31
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 1022,
+            "length": 73
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 1127,
+            "length": 34
+        }
+    ],
+    "views": 181,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-11 20:56:41+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

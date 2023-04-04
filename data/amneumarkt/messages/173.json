@@ -23,48 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 4517412131382428577,
-            "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231220304689",
-            "display_url": "sciencedirect.com/science/article/abs/pii/S0925231220304689",
-            "hash": 0,
-            "type": "article",
-            "site_name": "Sciencedirect",
-            "title": "Sarcasm Detection with Sentiment Semantics Enhanced Multi-level Memory Network",
-            "description": "Sarcasm detection is a challenging natural language processing task for sentiment analysis. Existing deep learning based sarcasm detection models have\u2026",
-            "photo": {
-                "_": "Photo",
-                "id": 5946000098527914846,
-                "access_hash": -2790492857957442678,
-                "file_reference": "b'\\x00c\\xe6LE\\xf6e{\\xf2\\x05\\xca\\x89\\xae\\xd9\\x93\\x08\\xab|\\xa8e\\xdd'",
-                "date": "2020-05-28 16:48:11+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b'\\x01(\\x1e\\x90\\x03\\x93\\x9e\\x94\\xb4\\xb9\\xe2\\x97uN\\xa3\\x1bF)sA9\\xa3P\\x12\\x8a(\\xa6\\x01KIE\\x00\\x14\\xb9\\xa2\\x8aL\\x02\\x8a(\\xa6\\x80'"
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 113,
-                        "h": 150,
-                        "size": 2298
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": null,
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 4517412131382428577
         }
     },
     "reply_markup": null,
@@ -80,12 +40,12 @@
             "length": 71
         }
     ],
-    "views": 117,
+    "views": 118,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 2,
-        "replies_pts": 2173,
+        "replies_pts": 2300,
         "comments": true,
         "recent_repliers": [
             {

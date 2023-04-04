@@ -27,7 +27,7 @@
             "id": 3384953263841741307,
             "url": "https://en.wikipedia.org/wiki/Dependent_and_independent_variables",
             "display_url": "en.m.wikipedia.org/wiki/Dependent_and_independent_variables",
-            "hash": -1647279484,
+            "hash": -648192205,
             "type": "article",
             "site_name": "Wikipedia",
             "title": "Dependent and independent variables",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 6038578737068484731,
                 "access_hash": -4819427319779273452,
-                "file_reference": "b'\\x00c\\xe6LE\\x9fk\\x01\\n\\xab\\xda\\xbdC\\x8a\\x04-l\\x906\\x9d~'",
+                "file_reference": "b'\\x00d+\\xb0\\xfb\\x82gFi\\x04!\\ns\\xb7\\x91BQV\\x86\\x84\\xa8'",
                 "date": "2018-11-24 17:52:25+00:00",
                 "sizes": [
                     {
@@ -167,7 +167,7 @@
                                 },
                                 {
                                     "_": "TextPlain",
-                                    "text": ". Dependent variables receive this name because, in an experiment, their values are studied under the supposition or demand that they depend, by some law or rule (e.g., by a "
+                                    "text": ". Dependent variables are studied under the supposition or demand that they depend, by some law or rule (e.g., by a "
                                 },
                                 {
                                     "_": "TextUrl",
@@ -957,26 +957,29 @@
                                         }
                                     ]
                                 }
-                            },
-                            {
-                                "_": "PageBlockSubheader",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "Modeling"
-                                        },
-                                        {
-                                            "_": "TextAnchor",
-                                            "text": {
-                                                "_": "TextEmpty"
-                                            },
-                                            "name": "Modeling"
-                                        }
-                                    ]
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In pure mathematics"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "In_pure_mathematics"
                                 }
-                            },
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
@@ -1304,7 +1307,7 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The "
+                                            "text": "In statistics, more specifically in "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -1317,7 +1320,7 @@
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": " model is now discussed. To use linear regression, a "
+                                            "text": ", a "
                                         },
                                         {
                                             "_": "TextUrl",
@@ -1691,18 +1694,10 @@
                                                     }
                                                 ]
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockParagraph",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
+                                        },
                                         {
                                             "_": "TextPlain",
-                                            "text": "Expectation of "
+                                            "text": " Expectation of "
                                         },
                                         {
                                             "_": "TextItalic",
@@ -1826,69 +1821,6 @@
                                                     }
                                                 ]
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockSubheader",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "Simulation"
-                                        },
-                                        {
-                                            "_": "TextAnchor",
-                                            "text": {
-                                                "_": "TextEmpty"
-                                            },
-                                            "name": "Simulation"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockParagraph",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "In "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "simulation"
-                                            },
-                                            "url": "https://en.m.wikipedia.org/wiki/Simulation",
-                                            "webpage_id": 5973540602131839704
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": ", the dependent variable is changed in response to changes in the independent variables."
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockSubheader",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "Statistics"
-                                        },
-                                        {
-                                            "_": "TextAnchor",
-                                            "text": {
-                                                "_": "TextEmpty"
-                                            },
-                                            "name": "Statistics"
                                         }
                                     ]
                                 }
@@ -2118,26 +2050,29 @@
                                         }
                                     ]
                                 }
-                            },
-                            {
-                                "_": "PageBlockSubheader",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "Statistics synonyms"
-                                        },
-                                        {
-                                            "_": "TextAnchor",
-                                            "text": {
-                                                "_": "TextEmpty"
-                                            },
-                                            "name": "Statistics_synonyms"
-                                        }
-                                    ]
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "In modeling and statistics"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "In_modeling_and_statistics"
                                 }
-                            },
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
                             {
                                 "_": "PageBlockParagraph",
                                 "text": {
@@ -2409,6 +2344,23 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " From the Economics community, the independent variables are also called \""
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "exogenous"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Exogenous_and_endogenous_variables",
+                                            "webpage_id": 5973540601521049707
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "\"."
                                         }
                                     ]
                                 }
@@ -2556,31 +2508,6 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "From the Economics community, the independent variables are also called "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "exogenous"
-                                            },
-                                            "url": "https://en.m.wikipedia.org/wiki/Exogenous_and_endogenous_variables",
-                                            "webpage_id": 5973540601521049707
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "."
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockParagraph",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
                                             "text": "Depending on the context, a dependent variable is sometimes called a \"response variable\", \"regressand\", \"criterion\", \"predicted variable\", \"measured variable\", \"explained variable\", \"experimental variable\", \"responding variable\", \"outcome variable\", \"output variable\", \"target\" or \"label\"."
                                         },
                                         {
@@ -2685,44 +2612,6 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Variables may also be referred to by their form: "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "continuous"
-                                            },
-                                            "url": "https://en.m.wikipedia.org/wiki/Continuous_variable",
-                                            "webpage_id": 5973540601413009576
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": " or "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "categorical"
-                                            },
-                                            "url": "https://en.m.wikipedia.org/wiki/Categorical_variable",
-                                            "webpage_id": 5973540602310851121
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": ", which in turn may be binary/dichotomous, nominal categorical, and ordinal categorical, among others."
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageBlockParagraph",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
                                             "text": "An example is provided by the analysis of trend in sea level by "
                                         },
                                         {
@@ -2740,6 +2629,281 @@
                                         }
                                     ]
                                 }
+                            },
+                            {
+                                "_": "PageBlockTable",
+                                "title": {
+                                    "_": "TextPlain",
+                                    "text": "Synonym pairs"
+                                },
+                                "rows": [
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "independent"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "dependent"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "input"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "output"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "regressor"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "regressand"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "predictor"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "predicted"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "explanatory"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "explained"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "exogenous"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "endogenous"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "manipulated"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "measured"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_": "PageTableRow",
+                                        "cells": [
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "exposure"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            },
+                                            {
+                                                "_": "PageTableCell",
+                                                "header": false,
+                                                "align_center": false,
+                                                "align_right": false,
+                                                "valign_middle": true,
+                                                "valign_bottom": false,
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "outcome"
+                                                },
+                                                "colspan": null,
+                                                "rowspan": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "bordered": true,
+                                "striped": false
                             }
                         ],
                         "title": {
@@ -2747,14 +2911,14 @@
                             "texts": [
                                 {
                                     "_": "TextPlain",
-                                    "text": "Mathematics"
+                                    "text": "Synonyms"
                                 },
                                 {
                                     "_": "TextAnchor",
                                     "text": {
                                         "_": "TextEmpty"
                                     },
-                                    "name": "Mathematics"
+                                    "name": "Synonyms"
                                 }
                             ]
                         },
@@ -3164,31 +3328,13 @@
                                     {
                                         "_": "PageListItemText",
                                         "text": {
-                                            "_": "TextConcat",
-                                            "texts": [
-                                                {
-                                                    "_": "TextUrl",
-                                                    "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "Latent variable"
-                                                    },
-                                                    "url": "https://en.m.wikipedia.org/wiki/Latent_variable",
-                                                    "webpage_id": 5973540602615964941
-                                                },
-                                                {
-                                                    "_": "TextPlain",
-                                                    "text": " versus "
-                                                },
-                                                {
-                                                    "_": "TextUrl",
-                                                    "text": {
-                                                        "_": "TextPlain",
-                                                        "text": "observable variable"
-                                                    },
-                                                    "url": "https://en.m.wikipedia.org/wiki/Observable_variable",
-                                                    "webpage_id": 5973540602641368245
-                                                }
-                                            ]
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Latent and observable variables"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Latent_and_observable_variables",
+                                            "webpage_id": 5973540600982862345
                                         }
                                     }
                                 ]
@@ -4913,7 +5059,7 @@
                                     "texts": [
                                         {
                                             "_": "TextImage",
-                                            "document_id": 6024747253996978290,
+                                            "document_id": 5775237897804317620,
                                             "w": 40,
                                             "h": 33
                                         },
@@ -4942,7 +5088,7 @@
                                         },
                                         {
                                             "_": "TextImage",
-                                            "document_id": 6024747253996978290,
+                                            "document_id": 5775237897804317620,
                                             "w": 40,
                                             "h": 33
                                         },
@@ -5000,9 +5146,9 @@
                                     "_": "TextUrl",
                                     "text": {
                                         "_": "TextPlain",
-                                        "text": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1114117815"
+                                        "text": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1142691497"
                                     },
-                                    "url": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1114117815",
+                                    "url": "https://en.wikipedia.org/w/index.php?title=Dependent_and_independent_variables&oldid=1142691497",
                                     "webpage_id": 0
                                 },
                                 {
@@ -5030,16 +5176,6 @@
                             },
                             {
                                 "_": "PageRelatedArticle",
-                                "url": "https://en.m.wikipedia.org/wiki/Regression_analysis",
-                                "webpage_id": 5973540601486832737,
-                                "title": "Regression analysis",
-                                "description": "set of statistical processes for estimating the relationships among variables",
-                                "photo_id": 6043125836124629115,
-                                "author": null,
-                                "published_date": null
-                            },
-                            {
-                                "_": "PageRelatedArticle",
                                 "url": "https://en.m.wikipedia.org/wiki/Instrumental_variables_estimation",
                                 "webpage_id": 5973540602853278673,
                                 "title": "Instrumental variables estimation",
@@ -5050,21 +5186,31 @@
                             },
                             {
                                 "_": "PageRelatedArticle",
-                                "url": "https://en.m.wikipedia.org/wiki/Omitted-variable_bias",
-                                "webpage_id": 5973540603031548647,
-                                "title": "Omitted-variable bias",
-                                "description": "In statistics, omitted-variable bias (OVB) occurs when a statistical model leaves out one or more relevant variables. The bias results in the model attributing the effect of the missing variables to those that were included.",
-                                "photo_id": 5786530698721601662,
+                                "url": "https://en.m.wikipedia.org/wiki/Omnibus_test",
+                                "webpage_id": 5973540601977078728,
+                                "title": "Omnibus test",
+                                "description": "kind of statistical test",
+                                "photo_id": 5792894577533890149,
                                 "author": null,
                                 "published_date": null
                             },
                             {
                                 "_": "PageRelatedArticle",
-                                "url": "https://en.m.wikipedia.org/wiki/Poisson_regression",
-                                "webpage_id": 5973540601772372832,
-                                "title": "Poisson regression",
-                                "description": "statistical model for count data",
-                                "photo_id": 6022635784105994382,
+                                "url": "https://en.m.wikipedia.org/wiki/Controlling_for_a_variable",
+                                "webpage_id": 5973540602375044613,
+                                "title": "Controlling for a variable",
+                                "description": "In causal models, controlling for a variable means binning data according to measured values of the variable. This is typically done so that the variable can no longer act as a confounder in, for example, an observational study or experiment.",
+                                "photo_id": null,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Variance_inflation_factor",
+                                "webpage_id": 5973540600916361677,
+                                "title": "Variance inflation factor",
+                                "description": "measure of collinearity in statistical regression models",
+                                "photo_id": 5786151508943939642,
                                 "author": null,
                                 "published_date": null
                             }
@@ -5076,7 +5222,7 @@
                         "_": "Photo",
                         "id": 6040982986746341468,
                         "access_hash": 6669575396885464016,
-                        "file_reference": "b'\\x00c\\xe6LEr\\x08\\xfc#2\\x1f\\xdc\\x14\\xb4b\\x8a=bk\\x0c6'",
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xdb!\\xbd\\x1aY=x\\x9fA\\xf4<\\x94\\xa3\\x8b=\\xa4'",
                         "date": "2018-11-24 16:22:47+00:00",
                         "sizes": [
                             {
@@ -5107,42 +5253,9 @@
                     },
                     {
                         "_": "Photo",
-                        "id": 6043125836124629115,
-                        "access_hash": 7261088970504252585,
-                        "file_reference": "b'\\x00c\\xe6LE\\xe1\\xb9a\\xc5V\\x84\\x8c<S\\xe7\\xcb!SI\\x0e\\x18'",
-                        "date": "2018-11-25 15:20:26+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoSize",
-                                "type": "s",
-                                "w": 90,
-                                "h": 74,
-                                "size": 1165
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "m",
-                                "w": 320,
-                                "h": 263,
-                                "size": 12367
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "x",
-                                "w": 494,
-                                "h": 406,
-                                "size": 22289
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
-                    },
-                    {
-                        "_": "Photo",
                         "id": 5829334729340594270,
                         "access_hash": 7572184656575086078,
-                        "file_reference": "b'\\x00c\\xe6LEL\\xdc\\xca\\x12\\xc7\\xaa*\\x9c\\xd5\\xb8\\xe3\\xc10\\xe4\\xa4\\xd6'",
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xa6\\xc8\\xda\\x9fD\\x86]\\x90\\xa4\\x16\\xd2\\xb3\\xb8+\\xb8\\x1e'",
                         "date": "2018-12-20 11:20:32+00:00",
                         "sizes": [
                             {
@@ -5166,24 +5279,50 @@
                     },
                     {
                         "_": "Photo",
-                        "id": 5786530698721601662,
-                        "access_hash": -6782450868183919927,
-                        "file_reference": "b'\\x00c\\xe6LE\\xb8I\\xd4\\xb2>_f\\x13x\\xf6M\\xa7\\xa0!\\xf9\\xb1'",
-                        "date": "2018-12-05 23:02:06+00:00",
+                        "id": 532581713301791073,
+                        "access_hash": 9192883650449458428,
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xf8\\x03\\x94\\xe5\\xc0\\x9a\\xf5\\xd6\\x98\\xa9\\x84D\\x9e\\x93\\x1c\\xa1'",
+                        "date": "2017-08-15 00:42:46+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 90,
+                                "h": 59,
+                                "size": 1418
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 300,
+                                "h": 198,
+                                "size": 16224
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 6015955361909024933,
+                        "access_hash": -2718272528736063896,
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xb5C\\x0b\\xdb\\xfe\\xe8\\xc7\\x86z\\xa5\\xf3\\xb74\\xf0\\x93,'",
+                        "date": "2018-11-16 22:46:50+00:00",
                         "sizes": [
                             {
                                 "_": "PhotoSize",
                                 "type": "s",
                                 "w": 90,
                                 "h": 11,
-                                "size": 615
+                                "size": 661
                             },
                             {
                                 "_": "PhotoSize",
                                 "type": "x",
-                                "w": 237,
-                                "h": 30,
-                                "size": 2542
+                                "w": 273,
+                                "h": 34,
+                                "size": 3593
                             }
                         ],
                         "dc_id": 4,
@@ -5192,28 +5331,9 @@
                     },
                     {
                         "_": "Photo",
-                        "id": 6022635784105994382,
-                        "access_hash": 4858838517008615071,
-                        "file_reference": "b'\\x00c\\xe6LEC\\xbc\\x12x\\x94IGr:?X\\xaf1\\xd1U\\xa0'",
-                        "date": "2018-11-18 18:08:34+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoSize",
-                                "type": "x",
-                                "w": 85,
-                                "h": 28,
-                                "size": 1231
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
-                    },
-                    {
-                        "_": "Photo",
-                        "id": 5792828357728120426,
-                        "access_hash": -2009087467650776914,
-                        "file_reference": "b'\\x00c\\xe6LE\\x88\\xafH9\\x8f\\x16]\\xea\\x02\\x08|\\x10`\\x99\\x1c;'",
+                        "id": 5792894577533890149,
+                        "access_hash": 4360079150926255798,
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\x84\\xed8U\\xf2\\xe4(p\\x7f\\xa0\\xd6O\\xf3\\xde\\xc8\\xfc'",
                         "date": "2022-05-23 20:22:00+00:00",
                         "sizes": [
                             {
@@ -5250,7 +5370,7 @@
                         "_": "Photo",
                         "id": 5786151508943939642,
                         "access_hash": -4381867894133175662,
-                        "file_reference": "b'\\x00c\\xe6LE\\x11\\xa7W\\x81\\xf4\\xa7\\x00|\\xf3\\xfd\\xb7\\xba\\x99\\xf9\\xe9X'",
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xa2\\xcdc(i\\xff\\x8bP\\x9f\\x9c^\\x82<\\rJ\\xd4'",
                         "date": "2018-12-05 22:15:54+00:00",
                         "sizes": [
                             {
@@ -5267,9 +5387,47 @@
                     },
                     {
                         "_": "Photo",
+                        "id": 5819906146549475987,
+                        "access_hash": 3372474960882542284,
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xfb\\xb8u\\xb8S8\\xd2\\xbaU`n\\x11\\xe6Wf\\xc2'",
+                        "date": "2020-04-16 07:46:45+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x10(\\xd9\\xa0\\xf4\\xa8\\xc3\\xaf\\xb5\\x01\\xd4q\\xba\\x80\\x1f\\xdf\\xa0\\xa5\\x1d)\\x9b\\xd79\\xddFC\\x0e\\t?\\x85\\x00>\\x8ao\\xe1\\xfaQ@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 130,
+                                "size": 5268
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 324,
+                                "size": 22108
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 415,
+                                "size": 30294
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
                         "id": 6047487426953324709,
                         "access_hash": 1687258111593729069,
-                        "file_reference": "b'\\x00c\\xe6LE\\xea\\xcc\\xe5\\x0cZ\\xe45\\xd2V\\xdaW\\xc6\\x01\\x00\\x8d\\xb6'",
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xd8d\\xf2,S[\\x18Up\\xe6\\x8f^\\xd1\\xb7\\xd4k'",
                         "date": "2018-11-27 10:56:49+00:00",
                         "sizes": [
                             {
@@ -5288,7 +5446,7 @@
                         "_": "Photo",
                         "id": 6049574849778657423,
                         "access_hash": 7833985559555398104,
-                        "file_reference": "b'\\x00c\\xe6LEM\\xe5\\xf5\\x9b\\x10,\\n\\xce\\xa6e\\x0b\\x08\\xccL`\\xa5'",
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\x81\\xc6\\x9d\\xd2\\xd8\\xe1\\x98\\x13P\\x06HTnQ\\xe6\\xde'",
                         "date": "2018-11-28 10:47:14+00:00",
                         "sizes": [
                             {
@@ -5335,7 +5493,7 @@
                         "_": "Photo",
                         "id": 5790756104727276297,
                         "access_hash": 5298946089070689009,
-                        "file_reference": "b'\\x00c\\xe6LE=\\xa9\\x8c\\xf0h\\xfd\\xbf3\\r\\xbaP\\xda\\xbe\\x9b\\x01\\xaa'",
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xe5O(\\x8b3`\\x84\\x10\\xdf\\xe4f\\xf1X\\xee\\xf3\\xb2'",
                         "date": "2020-04-05 22:23:02+00:00",
                         "sizes": [
                             {
@@ -5375,7 +5533,7 @@
                         "_": "Document",
                         "id": 5979751196624159328,
                         "access_hash": 6897110464365002689,
-                        "file_reference": "b'\\x00c\\xe6LEYq\\xc15\\x11\\x08\\\\\\xd5\\x02\\xb3\\x9a;\\x06\\xc5\\xeb\\xae'",
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\x95\\x08\\xf5)\\xfe\\xbc pB\\x1f\\x95p\\x11\\x83^\\x10'",
                         "date": "2020-09-13 23:20:13+00:00",
                         "mime_type": "image/png",
                         "size": 6763,
@@ -5398,7 +5556,7 @@
                         "_": "Document",
                         "id": 6043257141408563304,
                         "access_hash": 6760166739348032980,
-                        "file_reference": "b'\\x00c\\xe6LEw[\\xea\\xb0.\\xe4A\\xd0\\x15\\x13\\x00}&d{\\x08'",
+                        "file_reference": "b\"\\x00d+\\xb0\\xfb'\\xe2\\xff\\xf9\\xe8\\xfd\\xd5\\xba\\x93\\x15\\x98\\x0bp\\x9e\\x06\\xf1\"",
                         "date": "2018-11-25 19:19:09+00:00",
                         "mime_type": "image/png",
                         "size": 454,
@@ -5427,12 +5585,12 @@
                     },
                     {
                         "_": "Document",
-                        "id": 6024747253996978290,
-                        "access_hash": -1008716719873727098,
-                        "file_reference": "b'\\x00c\\xe6LE\\xd5\\xc5b\\x9e\\xab.\\xe0i\\xd9\\xc2U\\x10\\xfb\\xb9\\xb0\\xc4'",
-                        "date": "2019-02-24 09:46:01+00:00",
+                        "id": 5775237897804317620,
+                        "access_hash": 5501476934194621908,
+                        "file_reference": "b'\\x00d+\\xb0\\xfb\\xdf\\x94K\\x1b#\\xdf\\x11\\xeb\\x8b\\x14`\\xcb\\x0e\\xfe\\xd0H'",
+                        "date": "2023-03-05 00:32:35+00:00",
                         "mime_type": "image/png",
-                        "size": 25667,
+                        "size": 25648,
                         "dc_id": 4,
                         "attributes": [
                             {
@@ -5488,7 +5646,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 2,
-        "replies_pts": 2173,
+        "replies_pts": 2300,
         "comments": true,
         "recent_repliers": [
             {

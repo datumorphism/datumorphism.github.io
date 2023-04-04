@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 458,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-28 09:27:50+00:00",
+    "message": "#dl\n\nI am experimenting with torch 2.0 and searching for potential training time improvements in lightning. The following article provides a very good introduction.\n\nhttps://lightning.ai/pages/community/tutorial/how-to-speed-up-pytorch-model-training/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1276026087032680997,
+            "url": "https://lightning.ai/pages/community/tutorial/how-to-speed-up-pytorch-model-training/",
+            "display_url": "lightning.ai/pages/community/tutorial/how-to-speed-up-pytorch-model-training",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Lightning AI",
+            "title": "How to Speed Up PyTorch Model Training",
+            "description": "Learn how to improve the training performance of your PyTorch model without compromising its accuracy.",
+            "photo": {
+                "_": "Photo",
+                "id": 5831339190577639530,
+                "access_hash": 6250539563921553531,
+                "file_reference": "b'\\x00d+\\xb0\\xf9\\x87Zh\\x91\\xf1\\x14\\xbf\\x8am\\xc8\\x8b@\\x9b\\x0c1r'",
+                "date": "2023-03-23 21:06:05+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd79\\xf4\\xfdj\\xbc\\xdb\\xf7\\x8c\\x12\\x06;n\\xa9\\xdb\\x00\\xe3\\xa5@\\xea\\x1e`\\x08\\x07\\x8fO\\xfe\\xbdTw&[\\rU\\x99\\x8f\\x0c\\x7f\\x12\\xd4\\xef&\\x7f\\xef\\x8f\\xfb\\xe8\\xd4\\xc9\\n\\'*\\xb84\\xfa\\x1c\\xbb\\tG\\xb9\\x14)\"\\xe7y\\x07\\xf1&\\x8a\\x9a\\x8a\\x96\\xcaJ\\xc2\\x10=\\x05\\x1bFs\\x81\\x9a(\\xa0c<\\xd3\\xcf\\x14\\xa2L\\x91\\xc5\\x14P\\x03\\xe8\\xa2\\x8a\\x00'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 166,
+                        "size": 10413
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 414,
+                        "size": 40045
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 662,
+                        "size": 74171
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1690,
+                        "h": 874,
+                        "sizes": [
+                            12270,
+                            24913,
+                            53871,
+                            70194,
+                            96272
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Olya Surits",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 166,
+            "length": 85
+        }
+    ],
+    "views": 117,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-28 09:32:34+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "dl"
+    ]
+}

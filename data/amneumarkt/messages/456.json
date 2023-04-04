@@ -1,0 +1,99 @@
+{
+    "_": "Message",
+    "id": 456,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-03-26 07:26:51+00:00",
+    "message": "#misc\n\nThis is how generative AI is changing our lives. Now thinking about it, those competitive advantages from our satisfying technical skills are fading away.\n\nWhat shall we invest into for a better career? Just integrated whatever is coming into our workflow? Or fundamentally change the way we are thinking?",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5260396874249128508,
+            "access_hash": -8930714094703459415,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xc8d+\\xb0\\xf9\\xbe\\xf9\\xb5a\\xba\\xf2\\xaa\\x04\\x1b\\xd5N\\x88)O0\\xf7'",
+            "date": "2023-03-26 07:26:50+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\r\\xce ``g\\xeb\\xc55\\x8e\\x00\\x18\\xe3\\xebO\\x00c\\xa51\\xc7=(\\x01\\xdf6:\\x1ak\\x12:\\x83\\xf9\\xd3\\xb2=O\\xe5Mb\\x0fs\\xf9P\\x00v\\x9f\\xee\\xd3N=\\x07\\xebE\\x14\\x01'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 106,
+                    "h": 320,
+                    "size": 14909
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 266,
+                    "h": 800,
+                    "size": 78630
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 425,
+                    "h": 1280,
+                    "sizes": [
+                        7498,
+                        23334,
+                        73441,
+                        116163,
+                        146497
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        }
+    ],
+    "views": 130,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2300,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-03-26 07:35:06+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}
