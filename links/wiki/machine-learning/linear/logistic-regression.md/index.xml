@@ -2,7 +2,7 @@
 ROC Space. The color boxes are indicating the confusion matrices. Green is the fraction of true positive. Orange is the fraction of false positive. Refer to Confusion Matrix for more details.
 AUC: Area under Curve TPR = TP Rate FPR = FP Rate The ROC curve is defined by the relation $f(TPR, FPR)$. Area under the ROC curve is
 $$ \int TPR(FPR) d(FPR) \sim \sum_i TPR_i *\Delta FPR. $$
-If AUC = 1, we have TP Rate = 1 for all FP Rate.</description></item><item><title>Cross Entropy</title><link>https://datumorphism.leima.is/cards/information/cross-entropy/</link><pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/information/cross-entropy/</guid><description>Cross entropy is1
+If AUC = 1, we have TP Rate = 1 for all FP Rate. This is the best performance a model could have.</description></item><item><title>Cross Entropy</title><link>https://datumorphism.leima.is/cards/information/cross-entropy/</link><pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/cards/information/cross-entropy/</guid><description>Cross entropy is1
 $$ H(p, q) = \mathbb E_{p} \left[ -\log q \right]. $$
 Cross entropy $H(p, q)$ can also be decomposed,
 $$ H(p, q) = H(p) + \operatorname{D}_{\mathrm{KL}} \left( p \parallel q \right), $$

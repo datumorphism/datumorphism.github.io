@@ -2,6 +2,6 @@
 Hyperplane A hyperplane is defined to be of the following form
 $$ \begin{equation} \boldsymbol{\beta} \cdot \mathbf x = \beta_0. \end{equation} $$
 where $\boldsymbol\beta$ is the normal vector to the plane and is required to be constant.
-It is straight forward to show that the distance $d$ from an arbitrary point $\mathbf x'$ to the hyperplane is
-$$ \begin{equation} d = \boldsymbol\beta \cdot \mathbf x' - \beta_0. \end{equation} $$
+It is straight forward to show that the distance $d$ from an arbitrary point $\mathbf x&amp;rsquo;$ to the hyperplane is
+$$ \begin{equation} d = \boldsymbol\beta \cdot \mathbf x&amp;rsquo; - \beta_0. \end{equation} $$
 A Few Key Concepts in SVM Though the concept of SVM is simple, one might find the algorithm to be quite complicated at first glance.</description></item><item><title>Unsupervised Learning</title><link>https://datumorphism.leima.is/wiki/machine-learning/unsupervised/</link><pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/unsupervised/</guid><description/></item></channel></rss>

@@ -4,4 +4,4 @@ PySpark PySpark provides
 SparkContext SparkSession A spark dataframe is immutable. This makes it tricky to update a dataframe.
 Useful Commands Get Session In pyspark, we can also get or create the session using the following method.
 pyspark.sql.SparkSession.builder.getOrCreate() List all Tables A pyspark.sql.SparkSession has property catalog and can be used to list the tables.
-pyspark.sql.SparkSession.catalog.listTables() Run SQL Query Given a SQL query query, we can query the table using .</description></item></channel></rss>
+pyspark.sql.SparkSession.catalog.listTables() Run SQL Query Given a SQL query query, we can query the table using .sql() method of the session.</description></item></channel></rss>

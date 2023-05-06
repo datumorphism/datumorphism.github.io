@@ -2,4 +2,4 @@
 This is why we need a centralized log service, for example cloudwatch.
 Sending logs to CloudWatch First of all, send your logs to awslogs. The easies way is to use boto.
 Retrieving and Analyzing Logs First of all, we need this: awslogs. With the logs sent to cloudwatch, we then could read out the logs using the following command:
-awslogs get etl-tools --start='1d ago' --timestamp --output text | grep error This will print out the logs 1 day ago.</description></item><item><title>Tools</title><link>https://datumorphism.leima.is/wiki/tools/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/tools/</guid><description/></item></channel></rss>
+awslogs get etl-tools --start=&amp;#39;1d ago&amp;#39; --timestamp --output text | grep error This will print out the logs 1 day ago.</description></item><item><title>Tools</title><link>https://datumorphism.leima.is/wiki/tools/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/tools/</guid><description/></item></channel></rss>

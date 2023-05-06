@@ -13,4 +13,4 @@ Jaccard distance $d_J(A,B)$ is defined as
 $$ d_J(A,B) = 1 - J(A,B). $$
 Properties If the two sets are the same, $A=B$, we have $J(A,B)=1$ or $d_J(A,B)=0$. We have maximum similarity.
 If the two sets have nothing in common, we have $J(A,B)=0$ or $d_J(A,B)=1$. We have minimum similarity.
-Examples Sentence One Word Set: (( sentenceOneWords )) Sentence Two Word Set: (( sentenceTwoWords )) Intersect: (( intersectWords )) Union: (( unionWords )) Jaccard Index: (( jaccardIndex )) Jaccard Distance: (( jaccardDistance )) Vue.</description></item></channel></rss>
+Examples Sentence One Word Set: (( sentenceOneWords )) Sentence Two Word Set: (( sentenceTwoWords )) Intersect: (( intersectWords )) Union: (( unionWords )) Jaccard Index: (( jaccardIndex )) Jaccard Distance: (( jaccardDistance ))</description></item></channel></rss>

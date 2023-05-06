@@ -2,7 +2,8 @@
 Line magics are magics start with one %; Cell magics are magics that can be used in the whole cell even with line breaks, where the cell should start with %%. %env can be used when setting environment variables inside the notebook.
 %env MONGO_URI=localhost:27072 %%bash is a cell magic that allows bash commands in the cell.
 %%bash ls pip install datahubxyz %%time enables timing of functions.
-%%time for i in range(1000): i*i %timeit is the corresponding line magic which times the function of the corresponding line.</description></item><item><title>The Python Language: Basics</title><link>https://datumorphism.leima.is/wiki/programming-languages/python/basics/</link><pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/programming-languages/python/basics/</guid><description>Numbers, Arithmetics Two types of numbers exist,
+%%time for i in range(1000): i*i %timeit is the corresponding line magic which times the function of the corresponding line.
+Documentation ?</description></item><item><title>The Python Language: Basics</title><link>https://datumorphism.leima.is/wiki/programming-languages/python/basics/</link><pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/programming-languages/python/basics/</guid><description>Numbers, Arithmetics Two types of numbers exist,
 int float, 15 digits, other digits are float error It is worth noting that in Python 2, we have
 print(1.0/3) # will give us float numbers # 0.333333333333 while
 print(1/3) # will only give us int # 0 However, this was changed in Python 3.

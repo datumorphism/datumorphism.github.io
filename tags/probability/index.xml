@@ -3,4 +3,5 @@ $$ D_\text{KL}(p(x) \parallel q(x) ) = \int_{-\infty}^\infty p(x) \log\left(\fra
 Connection to Entropy
 Notice that this expression is quite similar to entropy,
 $$ H(p(x)) = \int_{-\infty}^{\infty} p(x) \log p(x) , dx. $$
-The entropy describes the lower bound of the number of bits (if we use $\log_2$) of how the information can be compressed. By looking at the expression of the KL divergence, we intuitively interpret it as the information loss if we use distribution $q(x)$ to approximate distribution $p(x)$, Kurt2017</description></item></channel></rss>
+The entropy describes the lower bound of the number of bits (if we use $\log_2$) of how the information can be compressed. By looking at the expression of the KL divergence, we intuitively interpret it as the information loss if we use distribution $q(x)$ to approximate distribution $p(x)$, Kurt2017
+$$ D_\text{KL}(p(x) \parallel q(x) ) = \mathbb E_{p(x)} \left[\log p(x)- \log q(x)\right] .</description></item></channel></rss>

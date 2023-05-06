@@ -2,4 +2,4 @@
 ROC Space. The color boxes are indicating the confusion matrices. Green is the fraction of true positive. Orange is the fraction of false positive. Refer to Confusion Matrix for more details.
 AUC: Area under Curve TPR = TP Rate FPR = FP Rate The ROC curve is defined by the relation $f(TPR, FPR)$. Area under the ROC curve is
 $$ \int TPR(FPR) d(FPR) \sim \sum_i TPR_i *\Delta FPR. $$
-If AUC = 1, we have TP Rate = 1 for all FP Rate.</description></item></channel></rss>
+If AUC = 1, we have TP Rate = 1 for all FP Rate. This is the best performance a model could have.</description></item></channel></rss>
