@@ -1,0 +1,728 @@
+{
+    "_": "Message",
+    "id": 473,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-05-01 17:22:55+00:00",
+    "message": "#misc \n\n\u2018The Godfather of AI\u2019 Quits Google and Warns of Danger Ahead - The New York Times\nhttps://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1961078288359091544,
+            "url": "https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html?utm_source=artifact",
+            "display_url": "nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html",
+            "hash": 666335081,
+            "type": "photo",
+            "site_name": "NY Times",
+            "title": "\u2018The Godfather of A.I.\u2019 Leaves Google and Warns of Danger Ahead",
+            "description": "For half a century, Geoffrey Hinton nurtured the technology at the heart of chatbots like ChatGPT. Now he worries it will cause serious harm.",
+            "photo": {
+                "_": "Photo",
+                "id": 5946023467444973578,
+                "access_hash": -7218510614096993586,
+                "file_reference": "b'\\x00dV{!\\xc2 \\x804\\x85I!\\x82\\xc2\\xc3\\x9a\\n\\x0cU\\xaf\\xe9'",
+                "date": "2023-05-01 09:03:28+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xcdN\\xb5d\\x0f\\x96\\xab\\xc7\\xd6\\xad\\xa8\\xe2\\x81\\x902\\xbe\\xdd\\xc4\\xd4{\\x8fCV$\\xdd\\x90\\xb9\\xe0\\x8a\\xad\\xde\\x90\\xda\\n)(\\xa6!\\xf0\\x8c\\xb8\\xab.\\xeb\\x12\\xe5\\xa8\\xa2\\x81\\x04\\x83\\xe5\\x0c:\\xe35U\\xb2\\x07=\\xe8\\xa2\\x91]\\x06\\xd1E\\x14\\xc4\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 6068
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 449,
+                        "size": 36597
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 719,
+                        "size": 96340
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1439,
+                        "sizes": [
+                            34858,
+                            59684,
+                            66360,
+                            178097,
+                            465489
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html?utm_source=artifact",
+                "blocks": [
+                    {
+                        "_": "PageBlockCover",
+                        "cover": {
+                            "_": "PageBlockPhoto",
+                            "photo_id": 5944147739262693687,
+                            "caption": {
+                                "_": "PageCaption",
+                                "text": {
+                                    "_": "TextPlain",
+                                    "text": "Dr. Geoffrey Hinton is leaving Google so that he can freely share his concern that artificial intelligence could cause the world serious harm.\nCredit...Chloe Ellingson for The New York Times"
+                                },
+                                "credit": {
+                                    "_": "TextEmpty"
+                                }
+                            },
+                            "url": null,
+                            "webpage_id": null
+                        }
+                    },
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u2018The Godfather of A.I.\u2019 Leaves Google and Warns of Danger Ahead"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextEmpty"
+                        },
+                        "published_date": "2023-05-01 09:00:21+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Geoffrey Hinton was an artificial intelligence pioneer. In 2012, Dr. Hinton and two of his graduate students at the University of Toronto "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "created technology"
+                                    },
+                                    "url": "https://www.nytimes.com/2017/11/28/technology/artificial-intelligence-research-toronto.html",
+                                    "webpage_id": 1961078287925432016
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " that became the intellectual foundation for the A.I. systems that the tech industry\u2019s biggest companies believe is a key to their future."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "On Monday, however, he officially joined a growing chorus of critics who say those companies are racing toward danger with their aggressive campaign to create products based on generative artificial intelligence, the technology that powers popular chatbots like ChatGPT."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Dr. Hinton said he has quit his job at Google, where he has worked for more than a decade and became one of the most respected voices in the field, so he can freely speak out about the risks of A.I. A part of him, he said, now regrets his life\u2019s work."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cI console myself with the normal excuse: If I hadn\u2019t done it, somebody else would have,\u201d Dr. Hinton said during a lengthy interview last week in the dining room of his home in Toronto, a short walk from where he and his students made their breakthrough."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Dr. Hinton\u2019s journey from A.I. groundbreaker to doomsayer marks a remarkable moment for the technology industry at perhaps its most important inflection point in decades. Industry leaders believe the new A.I. systems could be as important as the introduction of the web browser in the early 1990s and could lead to breakthroughs in areas ranging from drug research to education."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But gnawing at many industry insiders is a fear that they are releasing something dangerous into the wild. Generative A.I. can already be a tool for misinformation. Soon, it could be a risk to jobs. Somewhere down the line, tech\u2019s biggest worriers say, it could be a risk to humanity."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cIt is hard to see how you can prevent the bad actors from using it for bad things,\u201d Dr. Hinton said."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "After the San Francisco start-up OpenAI released "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "a new version of ChatGPT in March"
+                                    },
+                                    "url": "https://www.nytimes.com/2023/03/14/technology/openai-gpt4-chatgpt.html",
+                                    "webpage_id": 1961078288694594146
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", more than 1,000 technology leaders and researchers "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "signed an open letter"
+                                    },
+                                    "url": "https://www.nytimes.com/2023/03/29/technology/ai-artificial-intelligence-musk-risks.html",
+                                    "webpage_id": 1961078289697429116
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " calling for a six-month moratorium on the development of new systems because A.I. technologies pose \u201cprofound risks to society and humanity.\u201d"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Several days later, 19 current and former leaders of the Association for the Advancement of Artificial Intelligence, a 40-year-old academic society, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "released their own letter"
+                                    },
+                                    "url": "https://aaai.org/working-together-on-our-future-with-ai/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " warning of the risks of A.I. That group included Eric Horvitz, chief scientific officer at Microsoft, which has deployed OpenAI\u2019s technology across a wide range of products, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "including its Bing search engine"
+                                    },
+                                    "url": "https://www.nytimes.com/2023/02/07/technology/microsoft-ai-chatgpt-bing.html",
+                                    "webpage_id": 1961078287895904425
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Dr. Hinton, often called \u201cthe Godfather of A.I.,\u201d did not sign either of those letters and said he did not want to publicly criticize Google or other companies until he had quit his job. He notified the company last month that he was resigning, and on Thursday, he talked by phone with Sundar Pichai, the chief executive of Google\u2019s parent company, Alphabet. He declined to publicly discuss the details of his conversation with Mr. Pichai."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Google\u2019s chief scientist, Jeff Dean, said in a statement: \u201cWe remain committed to a responsible approach to A.I. We\u2019re continually learning to understand emerging risks while also innovating boldly.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Dr. Hinton, a 75-year-old British expatriate, is a lifelong academic whose career was driven by his personal convictions about the development and use of A.I. In 1972, as a graduate student at the University of Edinburgh, Dr. Hinton embraced an idea called a neural network. A "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "neural network"
+                                    },
+                                    "url": "https://www.nytimes.com/2018/03/06/technology/google-artificial-intelligence.html",
+                                    "webpage_id": 1961078287940239400
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " is a mathematical system that learns skills by analyzing data. At the time, few researchers believed in the idea. But it became his life\u2019s work."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In the 1980s, Dr. Hinton was a professor of computer science at Carnegie Mellon University, but left the university for Canada because he said he was reluctant to take Pentagon funding. At the time, most A.I. research in the United States was funded by the Defense Department. Dr. Hinton is deeply opposed to the use of artificial intelligence on the battlefield \u2014 what he calls \u201crobot soldiers.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "In 2012, Dr. Hinton and two of his students in Toronto, Ilya Sutskever and Alex Krishevsky, built a neural network that could analyze thousands of photos and teach itself to identify common objects, such as flowers, dogs and cars."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Google "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "spent $44 million"
+                                    },
+                                    "url": "https://www.wired.com/story/secret-auction-race-ai-supremacy-google-microsoft-baidu/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to acquire a company started by Dr. Hinton and his two students. And their "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "system"
+                                    },
+                                    "url": "https://www.nytimes.com/2019/03/27/technology/turing-award-ai.html",
+                                    "webpage_id": 1961078288137832133
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " led to the creation of increasingly powerful technologies, including new chatbots like "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "ChatGPT"
+                                    },
+                                    "url": "https://www.nytimes.com/2022/12/10/technology/ai-chat-bot-chatgpt.html",
+                                    "webpage_id": 1961078287799424236
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Google Bard"
+                                    },
+                                    "url": "https://www.nytimes.com/2023/03/21/technology/google-bard-guide-test.html",
+                                    "webpage_id": 1961078287838106308
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". Mr. Sutskever went on to become chief scientist at OpenAI. In 2018, Dr. Hinton and two other longtime collaborators "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "received the Turing Award"
+                                    },
+                                    "url": "https://www.nytimes.com/2019/03/27/technology/turing-award-ai.html",
+                                    "webpage_id": 1961078288137832133
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", often called \u201cthe Nobel Prize of computing,\u201d for their work on neural networks."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5945897272715882765,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Ilya Sutskever, OpenAI\u2019s chief scientist, worked with Dr. Hinton on his research in Toronto.\nCredit...Jim Wilson/The New York Times"
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Around the same time, Google, OpenAI and other companies began building neural networks that learned from huge amounts of digital text. Dr. Hinton thought it was a powerful way for machines to understand and generate language, but it was inferior to the way humans handled language."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Then, last year, as Google and OpenAI built systems using much larger amounts of data, his view changed. He still believed the systems were inferior to the human brain in some ways but he thought they were eclipsing human intelligence in others. \u201cMaybe what is going on in these systems,\u201d he said, \u201cis actually a lot better than what is going on in the brain.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "As companies improve their A.I. systems, he believes, they become increasingly dangerous. \u201cLook at how it was five years ago and how it is now,\u201d he said of A.I. technology. \u201cTake the difference and propagate it forwards. That\u2019s scary.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Until last year, he said, Google acted as a \u201cproper steward\u201d for the technology, careful not to release something that might cause harm. But now that Microsoft has augmented its Bing search engine with a chatbot \u2014 challenging Google\u2019s core business \u2014 "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Google is racing to deploy the same kind of technology"
+                                    },
+                                    "url": "https://www.nytimes.com/2023/04/07/technology/ai-chatbots-google-microsoft.html",
+                                    "webpage_id": 1961078288108727609
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". The tech giants are locked in a competition that might be impossible to stop, Dr. Hinton said."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "His immediate concern is that the internet will be flooded with false "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "photos"
+                                    },
+                                    "url": "https://www.nytimes.com/2023/04/08/business/media/ai-generated-images.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "videos"
+                                    },
+                                    "url": "https://www.nytimes.com/2023/04/04/technology/runway-ai-videos.html",
+                                    "webpage_id": 1961078288497687121
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "text"
+                                    },
+                                    "url": "https://www.nytimes.com/interactive/2019/06/07/technology/ai-text-disinformation.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", and the average person will \u201cnot be able to know what is true anymore.\u201d"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "He is also worried that A.I. technologies will in time upend the job market. Today, chatbots like ChatGPT tend to complement human workers, but they could replace paralegals, personal assistants, translators and others who handle rote tasks. \u201cIt takes away the drudge work,\u201d he said. \u201cIt might take away more than that.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Down the road, he is worried that future versions of the technology pose a threat to humanity because they "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "often learn unexpected behavior from the vast amounts of data they analyze"
+                                    },
+                                    "url": "https://www.nytimes.com/2017/08/13/technology/artificial-intelligence-safety-training.html",
+                                    "webpage_id": 1961078288183344912
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". This becomes an issue, he said, as individuals and companies allow A.I. systems not only to generate their own computer code but actually run that code on their own. And he fears a day when truly autonomous weapons \u2014 those killer robots \u2014 become reality."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "\u201cThe idea that this stuff could actually get smarter than people \u2014 a few people believed that,\u201d he said. \u201cBut most people thought it was way off. And I thought it was way off. I thought it was 30 to 50 years or even longer away. Obviously, I no longer think that.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Many other experts, including many of his students and colleagues, say this threat is hypothetical. But Dr. Hinton believes that the race between Google and Microsoft and others will escalate into a global race that will not stop without some sort of global regulation."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But that may be impossible, he said. Unlike with nuclear weapons, he said, there is no way of knowing whether companies or countries are working on the technology in secret. The best hope is for the world\u2019s leading scientists to collaborate on ways of controlling the technology. \u201cI don\u2019t think they should scale this up more until they have understood whether they can control it,\u201d he said."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Dr. Hinton said that when people used to ask him how he could work on technology that was potentially dangerous, he would paraphrase Robert Oppenheimer, who led the U.S. effort to build the atomic bomb: \u201cWhen you see something that is technically sweet, you go ahead and do it.\u201d"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "He does not say that anymore."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Audio produced by Adrienne Hurst."
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5944147739262693687,
+                        "access_hash": 5452143723536579040,
+                        "file_reference": "b'\\x00dV{!\\xdd\\x94\\xe1\\x8a\\xe9N\\xa9=\\x93\\xdc\\x0fa\\\\\\x1a\\xbbv'",
+                        "date": "2023-05-01 09:03:28+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01(\\x1b\\xcaARl\\xa5\\x88d\\xd4\\xad\\x91\\xd1s\\x8a\\x06W+M\\xc5JX\\x1e\\xd8\\xa6P\\x04\\xb6\\xe3&\\xa7\\x93!x<g\\x9a\\xa6\\xb2\\x98\\xc6\\x17\\xa9\\xefOK\\x83\\xb5\\x83\\xf3\\x9e\\xf4\\x81\\r4\\x94\\xd7|\\x9e\\x06\\x05\\x1b\\xa8\\x064\\xd2QE1\\x05\\x14Q@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 213,
+                                "h": 320,
+                                "size": 5579
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 533,
+                                "h": 800,
+                                "size": 25981
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 600,
+                                "h": 900,
+                                "sizes": [
+                                    5336,
+                                    8269,
+                                    9604,
+                                    13971,
+                                    30175
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5945897272715882765,
+                        "access_hash": 2022408402805622451,
+                        "file_reference": "b'\\x00dV{!{\\x00\\x19.J\\x92c\\xbb\\x8a\\x13j\\x9e\\xeb\\x96\\xde\\x89'",
+                        "date": "2023-05-01 09:03:28+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1e(\\xa7 \\x1b\\x14\\xe7\\x93\\xd3\\xe9J\\xff\\x00%\\xb0\\xf5\\xcf\\x14\\xf2\\xc3\\xec\\xea\\xa0\\xa9\\xf5\\xe7\\x9aYW\\xcc\\x89p@$\\xe0\\xd2+\\xa0\\xdbp\\x11<\\xc0\\x19\\x9b\\x04\\xfbU\\xa8\\xf9\\xbaG\\xcf\\xdeS\\xda\\xa07\\x1eP\\x1bFOb\\x7f\\xc2\\x92;\\x81\\x1bFTgo\\x1c\\x9e\\xb4\\xc5\\xb1vA\\xf3\\xb5\\x14\\x8e\\xe1\\x8eA\\x1c\\xf3E 1ii\\xef\\x19^\\xa4S\\x7f\\x88Ph=@0\\x16\\x1fx7?J\\x92\\xde?2U\\x18\\xc8\\xcf?J`\\x94!\\xe5\\x01\\x04`\\x8aU\\x9bydA\\xb1:\\xe2\\x99\\x9b\\xd7P\\xb8\\x08\\'}\\x9fw<QQ\\xe7\"\\x8a\\x93d\\x8f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 240,
+                                "size": 18958
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 600,
+                                "size": 85150
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 768,
+                                "sizes": [
+                                    12236,
+                                    30433,
+                                    43215,
+                                    64892,
+                                    118609
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 90,
+            "length": 90
+        }
+    ],
+    "views": 92,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 783,
+        "read_max_id": 783
+    },
+    "edit_date": "2023-05-01 17:23:18+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

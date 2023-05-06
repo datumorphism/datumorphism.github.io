@@ -1,0 +1,99 @@
+{
+    "_": "Message",
+    "id": 474,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-05-04 20:36:56+00:00",
+    "message": "#ai\n\nNew Bing can deal with this kind of imposed misinformation. The references can be used to confirm the answer. This is more reliable than chatGPT.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5377365506782252199,
+            "access_hash": -1591819134262993517,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xdadV{!\\x15\\xf3\"\\xce\\xae\\xbc\\xa4t\\x84\\xc7d\\xd16\\x9a\\xc0\\xc5'",
+            "date": "2023-05-04 20:36:56+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01(\\x13l\\xbalQ\\x9d\\xaftA\\xc7M\\x99\\xa8\\xfe\\xc1n\\xbc\\xfd\\xaf\\xff\\x00!\\x9a\\xd7\\x96\\x05\\x91\\xb2\\xc8\\t\\xe9\\xde\\x9a,\\xe3=Q\\x7f3OA\\xe8f\\xae\\x95\\x1c\\x8b\\xbdnI\\x07\\xbf\\x97Ek$(\\x8a\\x14\\x0c\\x01\\xf5\\xa2\\x90\\x08\\xc9\\x96'4\\xaa\\x9f0\\xc5\\x0c\\xb9cJ\\x83\\xe6\\x14\\x08}\\x14Q@\\x15E\\xdd\\xb3g3 9\\xfe\\xf8\\xa7\\x0b\\xabU<\\xdc \\xfa\\xb0\\xa2\\x8a\\x00_\\xb6\\xda\\xff\\x00\\xcf\\xc4\\x7f\\xf7\\xd5\\x14Q@\\x1f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 17689
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 73621
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        8908,
+                        26199,
+                        64275,
+                        94015,
+                        123282
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        }
+    ],
+    "views": 62,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-05-05 06:21:45+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ai"
+    ]
+}

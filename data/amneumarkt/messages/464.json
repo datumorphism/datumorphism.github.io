@@ -1,0 +1,57 @@
+{
+    "_": "Message",
+    "id": 464,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-04-11 19:59:12+00:00",
+    "message": "#ts\n\nI love the last paragraph, especially this sentence:\n> Unfortunately, I can\u2019t continue my debate with Clive Granger. I rather hoped he would come to accept my point of view.\n\nRob J Hyndman - The difference between prediction intervals and confidence intervals\nhttps://robjhyndman.com/hyndsight/intervals/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 265,
+            "length": 44
+        }
+    ],
+    "views": 146,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-04-11 20:00:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ts"
+    ]
+}

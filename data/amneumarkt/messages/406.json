@@ -25,38 +25,44 @@
         "webpage": {
             "_": "WebPage",
             "id": 2267617638344190071,
-            "url": "https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community",
+            "url": "https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community/",
             "display_url": "anaconda.com/blog/a-faster-conda-for-a-growing-community",
             "hash": 0,
             "type": "photo",
             "site_name": "Anaconda",
             "title": "Anaconda | A Faster Solver for Conda: Libmamba",
-            "description": "conda 22.11 update: The libmamba solver's experimental flag has been removed. To use the new solver, update conda in your base environment:   conda update -n base conda  To install and set the new solver, run the following commands:  conda install -n base conda-libmamba-solverconda config --set\u2026",
+            "description": "conda 22.11 update: The libmamba solver's experimental flag has been removed. To use the new solver, update conda in your base environment: conda update -n base conda To install and set the new solver, run the following commands: conda install -n base conda-libmamba-solverconda config --set\u2026",
             "photo": {
                 "_": "Photo",
-                "id": 6050000949189127642,
-                "access_hash": 4351203217217588822,
-                "file_reference": "b'\\x00d+\\xb0\\xf9s8\\x0f\\xc8\\t[\\n2{$]\\xd1\\xa8\\xc9\\xf1\\x92'",
-                "date": "2022-05-13 07:59:08+00:00",
+                "id": 5934736808787161286,
+                "access_hash": -5590677847452375082,
+                "file_reference": "b'\\x00dV{!\\xb6\\xa4\\x82\\xb6z>\\x1c%at\\xd9\\x1e\\x96Vt;'",
+                "date": "2023-04-28 10:55:11+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
                         "type": "i",
-                        "bytes": "b'\\x01\\x1b(\\xcd\\x88\\x80\\xdc\\x8a\\x98\\xa4\\x7f+\\x86\\x03\\x9f\\xbb\\xd6\\xab\\xf1SF\\x86N\\x00\\xe7\\xbdZ!\\x8ar\\xe3j\\xe7h\\xa2[]\\x8b\\x92x\\xeb\\x9a\\x97\\xcbh\\x10\\xb7*}*\\x19\\x19\\xdb\\xab\\x12=M1\\x15\\xc8\\x19\\xe2\\x8aS\\xc1\\xa2\\xa4\\xa1*\\xdc\\x13\\x18\\x82\\x98\\xd4s\\xc6\\x7f\\xcf\\xd6\\xa9\\xd1B`\\xd1bI\\ts\\xc8\\x00\\xf1\\xc7j\\x06\\x10\\x00\\xfc\\x91\\xce>\\xbf\\xe4T\\x1d\\xeaY\\x89\\x12>=qN\\xe2\\xb0\\xe9Hq\\xbdv\\x81\\xe9EA\\x92:\\x1e\\xd4Qp\\xb1'"
+                        "bytes": "b'\\x01\\x1b(\\xcc\\x88\\x80\\xdc\\x8c\\xd4\\xe5\"\\xf9\\\\0\\x1c\\xfd\\xde\\xb5_\\x8a\\x9a42p\\x07=\\xebDC\\x06\\x06A\\xb1s\\xb4R\\xcbk\\xb1rO\\x1dsRym\\x02\\x16\\xc9S\\xe9QH\\xce\\xddX\\x91\\xeah\\x11\\\\\\x81\\x9e(\\xa5<\\x1a*J\\x12\\xad\\xc11\\x88)\\x8dG<g\\xdf\\xfc\\x9a\\xa7Fz\\xd0\\x984X\\x92B\\\\\\xf2\\x00<q\\xda\\x94a\\x00\\x0f\\xd4s\\x8f\\xaf\\xf9\\x15_\\xbdK9\"I1\\xeb\\x8aw\\x15\\x87JC\\x8d\\xeb\\xb4\\x0fA\\xda\\x8a\\x83$t=\\xa8\\xa2\\xe1c'"
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
                         "h": 213,
-                        "size": 24813
+                        "size": 25915
                     },
                     {
-                        "_": "PhotoSize",
+                        "_": "PhotoSizeProgressive",
                         "type": "x",
-                        "w": 627,
-                        "h": 418,
-                        "size": 47307
+                        "w": 500,
+                        "h": 333,
+                        "sizes": [
+                            3268,
+                            10597,
+                            21647,
+                            31468,
+                            51048
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -87,12 +93,12 @@
             "length": 68
         }
     ],
-    "views": 283,
+    "views": 284,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2300,
+        "replies_pts": 2419,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

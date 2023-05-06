@@ -1,0 +1,52 @@
+{
+    "_": "Message",
+    "id": 472,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-04-28 06:26:55+00:00",
+    "message": "#coding  \n\nI had some discussions with serval people about writing good code during machine learning experimentation. \n\nWhenever it comes to the part of writing formal code, opinions diverge. So, should we write good code that is easy to read with typing and tests, even in experiments?\n\nThe spirit of experimentation is fast and reliable. So naturally, the question comes down to what kind of coding style allows us to develop and run experiments, fast.\n\nMy experience with running experiments is that we will never run the code just once. Instead, we always come back to it and run it with different configurations or parameters. In this circumstance, how good shall my code be?\n\nFor typing and tests, I type most of my args but only write tests needed to develop and debug a function or class. \n- Typing is important because people spend time figuring out what to put in there as an argument for a function. With typing, it is much faster. \n- Here is an example for tests: If I need to know the shape of the tensor deep in a method of a class, I would spend some seconds writing a simple test that allows me to put breakpoints in the method to investigate inside.\n\nBut, the above is a bit trivial. How about the design of the functions and classes? I suggest taking your time writing those that are repeated in every experiment. We will hit some ceiling in development speed real quick, if we always use the first and most naive design for these. In practice, I would say, design it twice and write it once. \nOne such example is data preprocessing. When dealing with the same data and problems, data transformations are usually quite similar in each experiment but a bit different in details. Finding the patterns and writing some slightly generic functions would be helpful. There is always the risk of over-engineering. I prefer to improve things little by little. I might generalize a function a little bit in one experiment. And also, don't hesitate to throw away your code to rewrite. Rewriting will take little time, and it usually brings in improvements.\n\nThat's my five cents on code quality for developing and running machine learning experiments.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 7
+        }
+    ],
+    "views": 124,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-04-28 06:34:01+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "coding"
+    ]
+}

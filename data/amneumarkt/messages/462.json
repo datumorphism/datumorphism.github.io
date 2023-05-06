@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 462,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-04-04 19:48:39+00:00",
+    "message": "#ai\n\nThe performance is not too bad. But\u2026given this is about academic topics, it sounds terrible to have this level of hallucination.\n\nhttps://bair.berkeley.edu/blog/2023/04/03/koala/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4654675257984008982,
+            "url": "https://bair.berkeley.edu/blog/2023/04/03/koala/",
+            "display_url": "bair.berkeley.edu/blog/2023/04/03/koala",
+            "hash": 0,
+            "type": "article",
+            "site_name": "The Berkeley Artificial Intelligence Research Blog",
+            "title": "Koala: A Dialogue Model for Academic Research",
+            "description": "The BAIR Blog",
+            "photo": {
+                "_": "Photo",
+                "id": 5862977805170618550,
+                "access_hash": -5020149857921981614,
+                "file_reference": "b'\\x00dV{!\\x82\\xe6\\x1f\\x13Y<TZ\\xb3e\\x83\\xe9_d\\xd0\\xc9'",
+                "date": "2023-04-03 22:37:07+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x0b(\\xd4\\xcb\\xf9\\x9e\\xdfJ%/\\x8f\\x93\\x83\\xf4\\xa7\\xe0g\\xa0\\xebN\\xa0\\x08r\\xfe_\\xfb_JtE\\xf6\\xfc\\xdc\\x90=)\\xdbT\\x7f\\x08\\xfc\\xa9\\xd8\\xc6\\x00\\xa0\\x08Q\\xa4\\xf3\\x0ezv\\xe2\\x8a\\x97j\\x8e\\x80~TP\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 87,
+                        "size": 8236
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 217,
+                        "size": 28903
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 347,
+                        "size": 49038
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1600,
+                        "h": 434,
+                        "sizes": [
+                            5899,
+                            15852,
+                            31369,
+                            43279,
+                            63006
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Daniel Seita",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 135,
+            "length": 48
+        }
+    ],
+    "views": 155,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-04-04 20:11:06+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ai"
+    ]
+}

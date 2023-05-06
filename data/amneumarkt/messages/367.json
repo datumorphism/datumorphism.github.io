@@ -25,70 +25,20 @@
         "webpage": {
             "_": "WebPage",
             "id": 5419609602842592398,
-            "url": "https://higharc.com/",
+            "url": "https://www.higharc.com/",
             "display_url": "higharc.com",
             "hash": 0,
             "type": "article",
             "site_name": "Higharc",
-            "title": null,
-            "description": "The intelligent homebuilding platform. Design, sell in 3D, and get permit-ready construction documents \u2014 all in one place.",
-            "photo": {
-                "_": "Photo",
-                "id": 5923608870645771240,
-                "access_hash": -550196661573088211,
-                "file_reference": "b'\\x00d+\\xb0\\xf9\\xcbMZ\\xaf\\xa3\\x1a\\xff`\\xca(\\xa9\\xbe\\xe1\\x1f\\x80\\xa9'",
-                "date": "2021-03-07 19:42:39+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b'\\x01\\x15(\\xcc\\xa2\\x8ar\\x00\\\\\\x06;G\\xad\\x00;\\xc9\\x93\\x19\\xdb\\xc63\\xd4t\\xa8\\xea\\xc9D\\xc8\"e\\xce1\\x9cv\\xc6*\\xbb\\x00\\x0f\\x07#\\xd6\\x80\\x12\\x8a(\\xa0\\x02\\x8a(\\xa0\\x02\\x8a(\\xa0\\x02\\x8a(\\xa0\\x0f'"
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 168,
-                        "size": 3185
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 420,
-                        "size": 8710
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "y",
-                        "w": 1280,
-                        "h": 672,
-                        "size": 16346
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "w",
-                        "w": 2400,
-                        "h": 1260,
-                        "sizes": [
-                            10653,
-                            13685,
-                            18442,
-                            21583,
-                            34803
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
+            "title": "Higharc \u2013 The intelligent homebuilding platform.",
+            "description": "Design, sell in 3D, and get permit-ready construction documents \u2014 all in one place.",
+            "photo": null,
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": "Higharc, Inc.",
+            "author": null,
             "document": null,
             "cached_page": null,
             "attributes": []
@@ -107,12 +57,12 @@
             "length": 20
         }
     ],
-    "views": 275,
+    "views": 276,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2300,
+        "replies_pts": 2419,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

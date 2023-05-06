@@ -1,0 +1,108 @@
+{
+    "_": "Message",
+    "id": 470,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-04-21 07:16:13+00:00",
+    "message": "#ai\n\nAI Frontiers: AI for health and the future of research with Peter Lee\n\nhttps://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5ibHVicnJ5LmNvbS9mZWVkcy9taWNyb3NvZnRyZXNlYXJjaC54bWw/episode/aHR0cHM6Ly9ibHVicnJ5LmNvbS9taWNyb3NvZnRyZXNlYXJjaC85NTE3NTgwMC9haS1mcm9udGllcnMtYWktZm9yLWhlYWx0aC1hbmQtdGhlLWZ1dHVyZS1vZi1yZXNlYXJjaC13aXRoLXBldGVyLWxlZS8?ep=14\n\n----\n\nA very cool discussion on the topic of large language models.\n\nThey mentioned the early stage test of Davinci from OpenAI. The model was able to reason for AP in biology and many of the reasoning was surprising to them. Then Ashley asked the person from OpenAI why is Davinci reason like that and the person replied they don't know. \n\nNot everyone expected that kind of reasoning in LLM. In hindsight, \"It is just a language model\" is a very good question. Nowadays with GPT models, it seems that this question is not a question anymore because it is becoming a fact. What is in the training texts and what is language? Karpathy even made a joke about this:\n> The hottest new programming language is English\nhttps://twitter.com/karpathy/status/1617979122625712128?lang=en",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2389870381435435666,
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5ibHVicnJ5LmNvbS9mZWVkcy9taWNyb3NvZnRyZXNlYXJjaC54bWw/episode/aHR0cHM6Ly9ibHVicnJ5LmNvbS9taWNyb3NvZnRyZXNlYXJjaC85NTE3NTgwMC9haS1mcm9udGllcnMtYWktZm9yLWhlYWx0aC1hbmQtdGhlLWZ1dHVyZS1vZi1yZXNlYXJjaC13aXRoLXBldGVyLWxlZS8?ep=14",
+            "display_url": "podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5ibHVicnJ5LmNvbS9mZWVkcy9taWNyb3NvZnRyZXNlYXJjaC54bWw/episode/aHR0cHM6Ly9ibHVicnJ5LmNvbS9taWNyb3NvZnRyZXNlYXJjaC85NTE3NTgwMC9haS1mcm9udGllcnMtYWktZm9yLWhlYWx0aC1hbmQtdGhlLWZ1dHVyZS1vZi1yZXNlYXJjaC13aXRoLXBldGVyLWxlZS8?hl=en",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Google Podcasts",
+            "title": "Microsoft Research Podcast - 137 - AI Frontiers: AI for health and the future of research with Peter Lee",
+            "description": "Powerful new large-scale AI models like GPT-4 are showing dramatic improvements in reasoning, problem-solving, and language capabilities. This marks a phase change for artificial intelligence\u2014and a signal of accelerating progress to come.\n\nIn this new Microsoft Research Podcast series, AI scientist and engineer Ashley Llorens hosts conversations with his collaborators and colleagues about what these new models\u2014and the models that will come next\u2014mean for our approach to creating, understanding, and deploying AI, its applications in areas such as health care and education, and its potential to benefit humanity.\n\nThe second episode features Peter Lee, head of Microsoft Research. Lee was among a group within Microsoft to have early access to GPT-4 for evaluation and experimentation. Here, he applies his philosophy of tackling research from what will be inevitably true at a future point in time to this current moment. He also explores the differences that may make integrating today\u2019s AI advancements into health care\u2026",
+            "photo": {
+                "_": "Photo",
+                "id": 6047714549118905177,
+                "access_hash": -3751106578077812458,
+                "file_reference": "b\"\\x00dV{!+4\\x00'\\x84'\\xe2\\xdb\\xd2\\xee\\x01\\xb9\\xea\\xc6y\\xe0\"",
+                "date": "2020-07-01 13:37:25+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xcd\\xab\\xd6\\xdao\\x9fn\\xb2\\xf9\\xbbs\\x9e6\\xe6\\xa8\\xd5\\xabE\\xdd\\x14\\x99f\\x01YN\\x07C\\x93\\x8a\\xd5\\x8cr\\xe9\\xb2\\xbc\\x02De-\\xddz~\\xb5X\\xaf\\x96F\\xe1\\xb8\\x1a\\x92(fy\\x00\\x8d\\x1f\\x04\\xf1\\xd8T\\xfa\\x92\\x95\\xd9\\x91\\x80I#\\xf2\\x14\\x80\\xa6X\\x1e\\x88\\x07\\xd34Sh\\xaa\\x18V\\xc6\\x9e\\x91\\x9b\\x1c\\x10~|\\xef\\xf7\\xedX\\xf5\\xa9cu\\nZyn\\xfbXg\\xa8\\xa9\\x90\\x85\\x8a\\xf9g\\x8d\\xa1`#P\\xbf\\x7f\\xb0\\xfc*\\x85\\xd8q9\\xdf\\x9e~\\xeeI<g\\x1d\\xea\\x10@`H\\xc8\\xf4\\xa9\\xe5uxF_$\\x1c\\x81\\x8eE\\x16\\xb0\\x10QE\\x15C\\x1c\\xa7\\x19\\xf9A\\xa5\\x04q\\xf2\\x8a(\\xa4\\x03\\xfe^\\xbb\\x93\\xd3\\x18?\\xe1L,9\\xf9\\x01\\xf7\\xa2\\x8a\\x00i\\xe7\\xb6(\\xa2\\x8a\\x00'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 225,
+                        "h": 225,
+                        "size": 11837
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Microsoft Research Podcast",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 76,
+            "length": 274
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 1066,
+            "length": 63
+        }
+    ],
+    "views": 121,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-04-21 07:18:30+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ai"
+    ]
+}

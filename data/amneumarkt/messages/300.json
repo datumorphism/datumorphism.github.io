@@ -25,7 +25,7 @@
         "webpage": {
             "_": "WebPage",
             "id": 2267617637680070984,
-            "url": "https://www.anaconda.com/blog/apple-silicon-transition",
+            "url": "https://www.anaconda.com/blog/apple-silicon-transition/",
             "display_url": "anaconda.com/blog/apple-silicon-transition",
             "hash": 0,
             "type": "photo",
@@ -34,29 +34,35 @@
             "description": "Even if you are not a Mac user, you have likely heard Apple is switching from Intel CPUs to their own custom CPUs, which they refer to collectively as \"Apple Silicon.\" The last time Apple changed its computer architecture this dramatically was 15 years ago when they switched from PowerPC to Intel\u2026",
             "photo": {
                 "_": "Photo",
-                "id": 6011189228110720432,
-                "access_hash": -232733096121593535,
-                "file_reference": "b'\\x00d+\\xb0\\xfa\\x0b^|\\x99\\xd2\\xaa\\xdd \\xf8\\x8b\\x01l\\xaa(\\xbdI'",
-                "date": "2022-04-30 13:58:55+00:00",
+                "id": 5954988090688909480,
+                "access_hash": -1827968326365994017,
+                "file_reference": "b'\\x00dV{\"{\\x95z)0\\xb3\\xcb]xs\\x9d0ny\\xa9\\xed'",
+                "date": "2023-05-04 23:34:27+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
                         "type": "i",
-                        "bytes": "b\"\\x01\\x15(\\xc9S\\x81\\xf2\\xf0}\\xaa\\xdc\\x08\\xed\\x8c<`\\x91\\x9eO5U6\\xe4v>\\xfc\\xd5\\xe5\\x9f\\xce\\xb5e\\x9b\\xe5\\xf4!M1\\x00\\xda\\xaeRb\\xa7\\x1e\\xfc\\x1a\\x93\\xc9\\x8c\\xf3\\x19\\xc7\\xfb\\xa6\\xa0\\x03<1\\x05{\\x8a\\xb2-a\\xf2\\xf7\\xc7)V\\xee\\x10\\xff\\x00Jb\\xb8\\x92F\\xd0\\xc3\\xe64\\x9dq\\x85+\\xce=h\\xa7\\xb9\\x92%F\\nd'\\xa9'\\xad\\x14\\xae\\xc6b\\xe6\\xacB\\xee\\xa8J61\\xdb\\xad\\x14P\\x80\\x9e)\\xbc\\xe1\\xb9\\x91r;\\xd4\\xc4\\xf9H\\xa7\\xefr8=(\\xa2\\x98\\x87I;<\\x80\\x90>n\\x80v\\xa2\\x8a(\\x03\""
+                        "bytes": "b'\\x01\\x1b(\\xca\\r\\xc7<\\x81\\xd8T\\xca#~\\xa3\\xf0\\x02\\xa1Q\\xcf<\\xaf\\xb0\\xad\\x18\\xd8-\\xb9{v,Tc\\x05i\\x88\\x868\\xb7\\x1f\\x91\\x8a\\xfe5)Ic\\xfe\\xeb\\x8f\\xc8\\xd4l\\xed$\\xa5\\x95\\x8a\\xb1\\xe7\\xa5M\\xfe\\x92\\xa01M\\xeb\\xea8\\xa6!\\x01;K4l\\x00\\xeaqEK#\\xac\\xb0\\xa2H|\\x95=\\x06q\\xcf\\xd6\\x8a.\\x161\\xc1\\xc1\\xeb\\x8a\\x9e7P\\xa7;\\xc6z\\xb2\\x9f\\xe7UiA \\xf0jJ4\\x97k\\x7f\\xab\\x93+\\xfa\\x8a\\x9e9\\x9f`I\\x1b\\n{\\xb5Q\\xb7\\xf9\\x94\\xb1\\x00\\x91\\xdf\\x14\\xaa\\xec\\xf08c\\x90\\x0f\\x19\\xfa\\xd5\\x13b\\xf4\\xc6&\"0\\x01\\xc7r:\\xd1YnJI\\x858\\x04r(\\xa1\\x0c'"
                     },
                     {
                         "_": "PhotoSize",
                         "type": "m",
                         "w": 320,
-                        "h": 167,
-                        "size": 20207
+                        "h": 212,
+                        "size": 22618
                     },
                     {
-                        "_": "PhotoSize",
+                        "_": "PhotoSizeProgressive",
                         "type": "x",
-                        "w": 800,
-                        "h": 418,
-                        "size": 49805
+                        "w": 500,
+                        "h": 332,
+                        "sizes": [
+                            3347,
+                            10521,
+                            19161,
+                            26929,
+                            42519
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -92,7 +98,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2300,
+        "replies_pts": 2419,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

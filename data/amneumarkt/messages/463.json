@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 463,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-04-07 04:45:33+00:00",
+    "message": "#data\n\nQuite useful.\n\nI use pyarrow a lot and also a bit of polars. Mostly because pandas is slow. With the new 2.0 release, all three libraries are seamlessly connected to each other.\n\nhttps://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2660422347075134165,
+            "url": "https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i",
+            "display_url": "datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i",
+            "hash": 0,
+            "type": "article",
+            "site_name": "datapythonista blog",
+            "title": "pandas 2.0 and the Arrow revolution (part I)",
+            "description": "Introduction At the time of writing this post, we are in the process of releasing pandas 2.0. The project has a large number of users,...",
+            "photo": {
+                "_": "Photo",
+                "id": 5806317746198260711,
+                "access_hash": 2886601664701772110,
+                "file_reference": "b'\\x00dV{!\\xda\\xe3\\x8e\\xd6\\x81\\xcaC\\xcf(\\x8aXC\\xad\\xfc\\xaaL'",
+                "date": "2020-10-23 00:36:17+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1b(\\xc8\\x0bJ\\x14R\\xf6\\xa3\\x90zP\\x00\\x14\\x1aB\\xb4\\xbc\\xe7\\xda\\x97\\x9e\\xb4\\x00\\xc2(\\xa7\\x1e\\x94P\\x02t\\xa5\\xc94\\xd1\\xd6\\x80I4\\x00\\xf1\\xcd\\x19\\xc7\\x1di\\x83\\x83@$\\xf3@\\n\\xc7\\xa8\\xa2\\x808\\xa2\\x80?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 213,
+                        "size": 18143
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 532,
+                        "size": 106318
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 798,
+                        "size": 182220
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "/blog/author/marc-garcia.html",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 186,
+            "length": 72
+        }
+    ],
+    "views": 187,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-04-07 04:45:57+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "data"
+    ]
+}

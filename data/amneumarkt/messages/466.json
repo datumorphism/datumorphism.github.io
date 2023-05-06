@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 466,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-04-16 09:05:15+00:00",
+    "message": "#tools\n\ngpt-based toolkit for researchers\n\nhttps://huggingface.co/spaces/qingxu98/gpt-academic",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4352412042072289313,
+            "url": "https://huggingface.co/spaces/qingxu98/gpt-academic",
+            "display_url": "huggingface.co/spaces/qingxu98/gpt-academic",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "huggingface.co",
+            "title": "academic-chatgpt - a Hugging Face Space by qingxu98",
+            "description": "Discover amazing ML apps made by the community",
+            "photo": {
+                "_": "Photo",
+                "id": 5842542187567493250,
+                "access_hash": -8273552462141659743,
+                "file_reference": "b'\\x00dV{!hRi^\\xf3q!M\\xa8\\xb0\\xd3\\xa1(+\\x1a\\x9c'",
+                "date": "2023-03-27 14:14:48+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x16(\\x86\\x8a\\x14\\x80y\\x19\\x15&\\xe8\\xbf\\xe7\\x99\\xff\\x00\\xbe\\xab\\xba\\xe6\\x04tT\\xdejcn\\xc3\\xb7\\x1e\\xb4\\xcd\\xd1\\xff\\x00\\xcf3\\xff\\x00}T\\xc6M\\xee\\x86\\xd5\\x86QJ\\xc4\\x13\\xc0\\xc0\\xf4\\xa2\\xa8\\x91(\\xa2\\x8a`\\x14QE\\x00\\x14QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 173,
+                        "size": 4998
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 432,
+                        "size": 19420
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 648,
+                        "sizes": [
+                            4455,
+                            8444,
+                            13812,
+                            17307,
+                            27301
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 43,
+            "length": 51
+        }
+    ],
+    "views": 132,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2419,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 772,
+        "read_max_id": 772
+    },
+    "edit_date": "2023-04-16 14:11:02+00:00",
+    "post_author": "Markt Mai",
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "tools"
+    ]
+}
