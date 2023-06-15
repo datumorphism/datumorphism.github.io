@@ -1,0 +1,129 @@
+{
+    "_": "Message",
+    "id": 485,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-06-12 21:25:27+00:00",
+    "message": "#visualization \n\nThis is a great post. I certainly don\u2019t agree with the author that this is \u201cthe greatest statistical graphics ever created\u201d. But I can\u2019t prove myself either.\n\nAlso, just like coding, \u201cdesign it twice (or even more times)\u201d is a great way to produce the best charts. That being said, we should keep making different versions and start to compare them with each other.\n\nhttps://nightingaledvs.com/defying-chart-design-rules-for-clearer-data-insights/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4975475741517726888,
+            "url": "https://nightingaledvs.com/defying-chart-design-rules-for-clearer-data-insights/",
+            "display_url": "nightingaledvs.com/defying-chart-design-rules-for-clearer-data-insights",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Nightingale",
+            "title": "Defying Chart Design Rules for Clearer Data Insights",
+            "description": "Sir David MacKay, a UK scientist, challenged conventional chart design and created an insightful data visualization about sustainable energy.",
+            "photo": {
+                "_": "Photo",
+                "id": 5783794426596929774,
+                "access_hash": 3582220089622978132,
+                "file_reference": "b'\\x00d\\x8bi\\xac\\x96\\x99\\xc5\\xf3\\xfe\\x93P\\x1f8\\x13\\x9d\\xa1#\\x97\\xee\\xb1'",
+                "date": "2023-06-12 21:20:10+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x1c(\\xd8\\x07?JC\\x9e\\x9f\\x91\\xa6\\xb2\\x96D \\xe3\\x185\\x12\\xe5~Y_{\\x93\\x90\\x17\\x8a\\x00\\x93,\\x0f\\xbd;;\\x86A\\xfa\\x8ahp\\xc4\\xa8+\\x9fJp\\x04\\x1c\\xd0\\x02\\xa9\\xc9\\xf7\\xa2\\x8c\\x0c\\xe6\\x8a\\x000\\x075\\x13\\xc3\\x99\\x16L) \\xf0v\\x8c\\x8f\\xc7\\xf4\\xa9\\xe8\\xa0\\x08\\xc2\\xf5a\\xc3\\x1cg<\\xd3\\x875\\x1f\\x9a\\xde\\xd4\\xf8\\xd8\\xb09\\xa0\\x07w\\xa2\\x8e\\xf4P\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 227,
+                        "size": 25531
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 568,
+                        "size": 100100
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 909,
+                        "size": 192065
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 2560,
+                        "h": 1818,
+                        "size": 420536
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Satya Amaran",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 384,
+            "length": 80
+        }
+    ],
+    "views": 58,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2478,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 796,
+        "read_max_id": null
+    },
+    "edit_date": "2023-06-12 21:25:51+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

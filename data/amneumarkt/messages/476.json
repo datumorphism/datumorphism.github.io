@@ -1,0 +1,99 @@
+{
+    "_": "Message",
+    "id": 476,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-05-11 05:55:01+00:00",
+    "message": "#misc \n\nWhat a joke. A pay walled article about publishing fees.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5397616054244591667,
+            "access_hash": -62867752494772965,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xdcd\\x8bi\\xac\\x8f\\xa0\\xd6d\\xb7^iOC#\\x98A\\xd0\\xfd\\x17G'",
+            "date": "2023-05-11 05:55:01+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x08\\xd5G\\\\\\xe0\\x0cQJ\\xb8\\x1d\\t\\xa2\\x80\\x19\\x99\\x03cju\\xf5?\\xe1E/\\x967\\xee\\xe79\\xcf\\xde4P!\\xe0s\\xcf\\xf2\\xa2\\x8a(\\x19'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 62,
+                    "h": 320,
+                    "size": 7725
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 154,
+                    "h": 800,
+                    "size": 33487
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 247,
+                    "h": 1280,
+                    "sizes": [
+                        4256,
+                        11723,
+                        30465,
+                        45804,
+                        62686
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        }
+    ],
+    "views": 158,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2478,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-05-11 05:57:15+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

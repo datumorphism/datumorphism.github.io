@@ -34,10 +34,10 @@
             "description": null,
             "photo": {
                 "_": "Photo",
-                "id": 6018132828723718839,
-                "access_hash": 6693176266268375771,
-                "file_reference": "b'\\x00dV{#D\\xbd\\xa2\\xdf\\x08\\x9fG,\\x9bC/\\x8f6\"\\x96\\xc0'",
-                "date": "2019-12-10 23:41:05+00:00",
+                "id": 6029448813418229856,
+                "access_hash": 5034506469699548098,
+                "file_reference": "b'\\x00d\\x8bi\\xae\\x85d\\x17\\xfe\\x7f\\xb5UL\\xc0R\\xce\\xdb` \\xb4\\xaf'",
+                "date": "2023-05-29 15:53:42+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
@@ -66,11 +66,17 @@
                         "size": 30541
                     },
                     {
-                        "_": "PhotoSize",
+                        "_": "PhotoSizeProgressive",
                         "type": "w",
                         "w": 2100,
                         "h": 500,
-                        "size": 52482
+                        "sizes": [
+                            7098,
+                            14519,
+                            24750,
+                            31808,
+                            49324
+                        ]
                     }
                 ],
                 "dc_id": 4,
@@ -101,12 +107,12 @@
             "length": 38
         }
     ],
-    "views": 107,
+    "views": 108,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2419,
+        "replies_pts": 2478,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

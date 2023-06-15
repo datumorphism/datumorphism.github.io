@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 481,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-05-24 21:41:52+00:00",
+    "message": "#misc \n\nHnmmm...\n\nhttps://blog.pypi.org/posts/2023-05-24-pypi-was-subpoenaed/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6800740493438968448,
+            "url": "https://blog.pypi.org/posts/2023-05-24-pypi-was-subpoenaed/",
+            "display_url": "blog.pypi.org/posts/2023-05-24-pypi-was-subpoenaed",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "blog.pypi.org",
+            "title": "PyPI was subpoenaed - The Python Package Index",
+            "description": "The PSF received three subpoenas from the US Department of Justice for PyPI user data in March and April of 2023.",
+            "photo": {
+                "_": "Photo",
+                "id": 6013724951032475690,
+                "access_hash": 6010959097147818132,
+                "file_reference": "b'\\x00d\\x8bi\\xac\\xeb\\x8c\\xe8\\x14D{\\xcfL\\xfb{\\x0b\\x85B\\xd9\\x03\\x0e'",
+                "date": "2023-05-24 17:28:48+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\x89P\\x95\\x07nA\\xef\\x9a_-\\x80\\xce\\xc3\\x81\\xefH\\xae\\x00\\xc1@\\x7f\\x1a<\\xc5\\xff\\x00\\x9ec\\xf35\\xd2@\\xca)X\\x82xP\\xbfJJ`H\\xeb\\x18O\\x95\\xf77\\x1d\\xa8\\xa8\\xe8\\xa5o0\\x178\\xec(\\xdd\\xec(\\xa2\\x80\\r\\xde\\xc2\\x93\\xad\\x14S\\x00\\xa2\\x8a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 9445
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 34620
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "sizes": [
+                            5193,
+                            11956,
+                            25581,
+                            33432,
+                            51553
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Ee Durbin",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 18,
+            "length": 59
+        }
+    ],
+    "views": 159,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2478,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-05-24 21:41:59+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

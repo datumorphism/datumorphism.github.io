@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 480,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-05-23 07:36:18+00:00",
+    "message": "#timeseries\n\nFinding a suitable forecasting metric to evaluate the forecasting models is often the key to a forecasting project. Right? We use metrics when developing models, we also use metrics to monitor models. \n\nThere are a bunch of metrics people choose from or adapt from. To be faster when choosing and adapting metrics, I created a page on the properties of different metrics for time series forecasting problems. For reproducibility, I also included all the code used to write this page.\n\nhttps://dl.leima.is/time-series/timeseries-metrics.forecasting/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7971846329930517358,
+            "url": "https://dl.leima.is/time-series/timeseries-metrics.forecasting/",
+            "display_url": "dl.leima.is/time-series/timeseries-metrics.forecasting",
+            "hash": 0,
+            "type": "article",
+            "site_name": "dl.leima.is",
+            "title": "Time Series Forecasting Metrics - Time Series with Deep Learning Quick Bite",
+            "description": null,
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Lei Ma",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 11
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 498,
+            "length": 63
+        }
+    ],
+    "views": 133,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2478,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-05-23 07:40:01+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "timeseries"
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 482,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-06-08 10:56:42+00:00",
+    "message": "#ml \n\nhttps://www.kdnuggets.com/2023/06/ten-years-ai-review.html",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 8206482400523952482,
+            "url": "https://www.kdnuggets.com/2023/06/ten-years-ai-review.html",
+            "display_url": "kdnuggets.com/2023/06/ten-years-ai-review.html",
+            "hash": 0,
+            "type": "article",
+            "site_name": "KDnuggets",
+            "title": "Ten Years of AI in Review - KDnuggets",
+            "description": "From image classification to chatbot therapy.",
+            "photo": {
+                "_": "Photo",
+                "id": 6051821542876229937,
+                "access_hash": -1175816424677619415,
+                "file_reference": "b'\\x00d\\x8bi\\xac\\xbf\\x98\\xdfC#\\xfe$\\x13\\x97\\x9c\\xd5\\xca\\x87\\xc9[\\x18'",
+                "date": "2023-06-06 16:02:21+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x16(\\xd6-\\xce\\x07Z]\\xd8\\x1f7\\x06\\x98\\xcd\\xf3\\xf1\\xd7\\xa5)\\x1e\\xbc\\xf0(\\x00 \\x96\\xc8\\xce>\\xb4o\\xcf\\x18\\xe6\\x85\\xe7\\x8c\\x91H~\\\\rph\\x01\\xc8X\\xf5\\xa2\\x84\\xe7\\x9c\\xe74P\\x02\\x90=9\\xa6\\x85`F[4Q@\\x0ea\\x95\\xe2\\x91W\\x0b\\x83\\x8a(\\xa0\\x04\\x08C\\xe7w\\x1e\\x94QE\\x00\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 178,
+                        "size": 15391
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 444,
+                        "size": 57760
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 568,
+                        "sizes": [
+                            5995,
+                            16814,
+                            39104,
+                            52467,
+                            76753
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "https://www.facebook.com/kdnuggets",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 58
+        }
+    ],
+    "views": 450,
+    "forwards": 6,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2478,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-06-08 11:02:30+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

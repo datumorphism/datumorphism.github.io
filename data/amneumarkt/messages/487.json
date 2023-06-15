@@ -1,0 +1,82 @@
+{
+    "_": "Message",
+    "id": 487,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-06-13 06:22:51+00:00",
+    "message": "",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5206195611039289623,
+            "access_hash": -7028376310156118620,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xe7d\\x8bi\\xac$\\xcc\\xd2g*\\xf9bK\\xc1\\x82\\xe3\\x8d\\x15]\\x06\\xd8'",
+            "date": "2023-06-13 06:22:51+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xb7\\xfd\\x99fF<\\x9f\\xfcx\\xff\\x00\\x8dU\\xbf\\xd3\\xa1H\\xd4\\xc2\\x9b\\x0ey9&\\xb5\\xb6\\xf3\\xce*\\xae\\xa3\\xc4I\\xfe\\xf5\\x00a\\x9b&\\'\\xef\\x8f\\xca\\x8a\\xb9\\x9fqE\\x00m\\xed\\x1e\\x82\\xa9\\xea \\x08\\x93\\x00\\x0f\\x9a\\xae\\xd5MG\\xfdR\\x7f\\xbd@\\x19\\xf4QE\\x00m\\xd5[\\xe5i#P\\x80\\xb6\\x1b\\xb5\\x14P\\x05/\"o\\xf9\\xe6\\xdf\\x95\\x14Q@\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 7969
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 26772
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        5544,
+                        11682,
+                        22997,
+                        33364,
+                        44606
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [],
+    "views": 49,
+    "forwards": 2,
+    "replies": null,
+    "edit_date": "2023-06-13 06:22:54+00:00",
+    "post_author": null,
+    "grouped_id": 13493098974096906,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

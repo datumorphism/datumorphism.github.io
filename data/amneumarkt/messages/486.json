@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 486,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-06-13 06:22:51+00:00",
+    "message": "#forecasting\n\nCreated some sections on forecasting with trees. This first draft provides some first steps to applying trees to forecasting problems as well as some useful theories about tree-based models.\n\nhttps://dl.leima.is/trees/tree.basics/\n\nhttps://dl.leima.is/notebooks/tree_darts_random_forest/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5206195611039289622,
+            "access_hash": 368489452596034566,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xe6d\\x8bi\\xac\\xfd\\xb7\\xef-^\\x83\\x9a7\\xb7\\xcd\\xad\\xa3kn\\xa4\\xb7'",
+            "date": "2023-06-13 06:22:51+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13A\\xa3\\x1d\\xb82)\\xaa\\xf7zs\\xdb*\\xb2\\x9d\\xd98\\xc0\\x15\\xd0m\\xfa~UWP\\x18\\x89q\\xeb@\\x1c\\xe9\\x86R\\x7f\\xd5\\xb7\\xe5Ei\\xd1@\\x1b;s\\xe9\\xf9UMG\\x88S\\xfd\\xea\\xbbT\\xf5/\\xf5I\\xfe\\xf5\\x00g\\xd1@\\xe9\\xde\\x8a\\x00\\xdc\\xaa\\xb7\\xc8\\xd2F\\xa1\\x01l\\x1e\\xd4Q@\\x14\\xbc\\x89\\xbf\\xe7\\x9b~TQE\\x00\\x7f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 8645
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 28709
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        5635,
+                        12233,
+                        24429,
+                        35466,
+                        47088
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 12
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 206,
+            "length": 38
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 246,
+            "length": 55
+        }
+    ],
+    "views": 49,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2478,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-06-13 06:28:23+00:00",
+    "post_author": null,
+    "grouped_id": 13493098974096906,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "forecasting"
+    ]
+}

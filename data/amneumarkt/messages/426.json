@@ -31,8 +31,58 @@
             "type": "article",
             "site_name": "evidence.dev",
             "title": "Evidence - Business Intelligence as Code",
-            "description": "Evidence enables analysts to build a trusted, version-controlled reporting system by writing SQL and markdown. Evidence reports are publication-quality, highly customizable, and fit for human consumption.",
-            "photo": null,
+            "description": "Evidence is an open source publishing tool for modern data teams. Build polished data products with just SQL and markdown.",
+            "photo": {
+                "_": "Photo",
+                "id": 6016143906678354042,
+                "access_hash": 5012188343925978792,
+                "file_reference": "b'\\x00d\\x8bi\\xac\\xe3\\x1f\\x01E\\x0f\\xb4f\\xe7\\xdajy\\xf4\\n\\xcd\\xabB'",
+                "date": "2023-05-25 14:39:14+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x15(\\xc5\\xa2\\x96\\xac\\xfd\\xa2\\x10\\xc4\\x8bp3\\xdb=\\xb1@\\x15ij\\xc9\\x9e\\x1eq\\x00\\xcex'\\xe9@\\x9a\\x00x\\x83\\x1d0wt\\xa0\\n\\xb4QE\\x00\\x14QE\\x00\\x14QE\\x00\\x14QE\\x00\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 167,
+                        "size": 4311
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 418,
+                        "size": 13247
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 669,
+                        "size": 21699
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2400,
+                        "h": 1254,
+                        "sizes": [
+                            11207,
+                            15923,
+                            24395,
+                            29861,
+                            46047
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -68,12 +118,12 @@
             "length": 13
         }
     ],
-    "views": 192,
+    "views": 196,
     "forwards": 2,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2419,
+        "replies_pts": 2478,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

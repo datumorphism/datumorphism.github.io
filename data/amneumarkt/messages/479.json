@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 479,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-05-16 20:24:06+00:00",
+    "message": "#visualization \n\n\nhttps://yougov.co.uk/topics/society/articles-reports/2023/05/16/where-world-are-men-most-likely-sit-down-wee",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5413810606391282062,
+            "access_hash": -4945372790661987208,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xdfd\\x8bi\\xac\\xfa\\xa4\\xc94\\xb57\\xabH\\x0f\\x8fJ#V\\xce\"\\xd3'",
+            "date": "2023-05-16 20:24:06+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01!(\\xd2e\\t\\xcb1\\x00\\xfa\\xb1\\xa4\\xdd\\x1e\\x7f\\xd6\\x8f\\xfb\\xf8j\\x1dH\\x7f\\xa3\\xf6\\xfb\\xc3\\xb7\\xd6\\xa8D\\x8b\\x8e@$\\xff\\x00\\xb1R\\xdd\\x8da\\x0eesTl?\\xf2\\xd3\\xff\\x00\\x1f4\\xe0\\x17 \\xef\\xff\\x00\\xc7\\x89\\xaaQ\\xc4\\x80g\\x03\\xe9\\xb6\\xac\\x05H\\xd7q\\xc0\\x03\\xda\\x84\\xdb\\x13\\x82]K;\\x80\\xc6XsEf\\x99L\\xb3\\xa1\\xe3\\x00\\x8c\\x0cQZ\\xb8[ryI\\xf5\\x1c}\\x98s\\xfc~\\xb8\\xaa\\xb1'\\x1bw~\\xb5jY\\xad\\xa7M\\xad6\\x179\\xc84\\xd5\\x16\\xcb\\xc8\\x98\\xfe\\xb5\\x93W4\\x84\\xd4U\\x87F\\xbd\\xb3\\xd3\\xde\\x92\\xed\\x80\\x88\\x0c\\xf5>\\xb4\\xf15\\xb2\\x9cy\\xdc\\xd3eky1\\x99\\x88\\x03\\x8e*\\xa1\\xa3\\xbb%\\xc96T\\x88\\x8f59\\xee?\\x8a\\x8a\\x9d~\\xc8\\xa48\\xb88\\x07\\xd6\\x8a\\xd6SLNH\\xc9_\\xbbR/AE\\x15\\x91\\x03O\\xde\\x14\\x1e\\xf4Q@\\x10\\xf6\\xa2\\x8a)\\x0c\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 264,
+                    "size": 29069
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 660,
+                    "size": 105620
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1240,
+                    "h": 1023,
+                    "sizes": [
+                        13510,
+                        43780,
+                        94185,
+                        126353,
+                        168913
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 18,
+            "length": 108
+        }
+    ],
+    "views": 162,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2478,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-05-17 05:59:27+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}
