@@ -1,4 +1,4 @@
-[{{ range $i, $hit := .Site.AllRegularPages }}
+[{{ range $i, $hit := .Site.RegularPages }}
 	{{ if $i }}, {{ end }}{
 		"type": {{ $hit.Section | jsonify }},
 		"title": {{ $hit.Params.title | jsonify }},
