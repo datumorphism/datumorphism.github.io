@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 488,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-06-17 09:40:36+00:00",
+    "message": "#ml\n\nYes, Transformers are Effective for Time Series Forecasting (+ Autoformer)\nhttps://huggingface.co/blog/autoformer",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4352412041491394289,
+            "url": "https://huggingface.co/blog/autoformer",
+            "display_url": "huggingface.co/blog/autoformer",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "huggingface.co",
+            "title": "Yes, Transformers are Effective for Time Series Forecasting (+ Autoformer)",
+            "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "photo": {
+                "_": "Photo",
+                "id": 5822504271051075803,
+                "access_hash": 7523557917172010685,
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8\\x1eb\\x0f\\x1c\\x98\\x1a\\xdf\\xde\\x01VM\\x83%f.\\xdc'",
+                "date": "2023-06-25 23:12:19+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x12(\\xd6i\\x02\\x1c\\x1a7\\x8d\\xa1\\xbb\\x1acD\\x1c\\xe74\\xe4]\\xbd\\xc9\\xac\\xd3\\x9f6\\xabA\\xe9a|\\xd5\\xf7\\xfc\\x8d5\\xa6E8$\\xe7\\xd8\\x1aqPs\\xd7\\x9fzB\\x83\\xdf\\xf35\\xa8\\x86,\\xca\\xc7\\x03?\\x95\\x14\\xbb\\x06{\\xfef\\x8ac$\\x14QE!\\x05\\x06\\x8a(\\x01(\\xa2\\x8a\\x06\\x7f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 145,
+                        "size": 8222
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 362,
+                        "size": 27880
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 580,
+                        "size": 49318
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1300,
+                        "h": 589,
+                        "sizes": [
+                            6108,
+                            12783,
+                            23025,
+                            30116,
+                            47501
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 80,
+            "length": 38
+        }
+    ],
+    "views": 143,
+    "forwards": 4,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-06-17 10:38:35+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

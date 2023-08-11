@@ -27,7 +27,7 @@
             "id": 7937820126367139419,
             "url": "https://www.nature.com/articles/s41567-019-0732-0",
             "display_url": "nature.com/articles/s41567-019-0732-0",
-            "hash": -1894251799,
+            "hash": 0,
             "type": "photo",
             "site_name": "Nature",
             "title": "The ergodicity problem in economics",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5993427777405168276,
                 "access_hash": 1789072997660430278,
-                "file_reference": "b'\\x00d\\x8bi\\xaf+\\xb5P\\xfdG):\\x84\\x06\\xac\\x92\\xaa\\xcf\\xc9\\\\\\xf7'",
+                "file_reference": "b'\\x00d\\xd6\\t\\xfb\\x14r\\xc0\\xdc\\xca\\xc3\\x94\\xd5\\xcdO\\xbel\\x8d\\x7f\\xdf\\xb9'",
                 "date": "2019-12-02 17:06:37+00:00",
                 "sizes": [
                     {
@@ -84,91 +84,7 @@
             "duration": null,
             "author": null,
             "document": null,
-            "cached_page": {
-                "_": "Page",
-                "url": "https://www.nature.com/articles/s41567-019-0732-0",
-                "blocks": [
-                    {
-                        "_": "PageBlockTitle",
-                        "text": {
-                            "_": "TextPlain",
-                            "text": "The ergodicity problem in economics"
-                        }
-                    },
-                    {
-                        "_": "PageBlockPhoto",
-                        "photo_id": 6020492208878235423,
-                        "caption": {
-                            "_": "PageCaption",
-                            "text": {
-                                "_": "TextEmpty"
-                            },
-                            "credit": {
-                                "_": "TextEmpty"
-                            }
-                        },
-                        "url": null,
-                        "webpage_id": null
-                    },
-                    {
-                        "_": "PageBlockHeader",
-                        "text": {
-                            "_": "TextUrl",
-                            "text": {
-                                "_": "TextPlain",
-                                "text": "Maximum entropy approach to multivariate time series randomization"
-                            },
-                            "url": "https://doi.org/10.1038/s41598-020-67536-y",
-                            "webpage_id": 753763745572907263
-                        }
-                    },
-                    {
-                        "_": "PageBlockParagraph",
-                        "text": {
-                            "_": "TextPlain",
-                            "text": "30 June 2020"
-                        }
-                    },
-                    {
-                        "_": "PageBlockParagraph",
-                        "text": {
-                            "_": "TextPlain",
-                            "text": "Riccardo Marcaccioli & Giacomo Livan"
-                        }
-                    }
-                ],
-                "photos": [
-                    {
-                        "_": "Photo",
-                        "id": 6020492208878235423,
-                        "access_hash": 3450563513180728579,
-                        "file_reference": "b'\\x00d\\x8bi\\xaf/R\\x0e\\xadN[\\xd6 Z\\xf5\\x84}\\x9b\\xf1w9'",
-                        "date": "2022-11-13 17:35:06+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoStrippedSize",
-                                "type": "i",
-                                "bytes": "b'\\x01\\x16(\\xd7\\xdd\\xec\\x7f*d\\xa3|d\\x0e\\x0f\\xbf\\x14\\xe2\\x069&\\x97\\x809\\xe6\\x80*y/\\xed\\xf9\\xd4\\xf1|\\x91\\x80\\xdf\\xa5?\\x03?s\\xf9R\\x8c\\x1aIX\\x03x\\xf7\\xfc\\xa8\\xa5\\xda=(\\xa6\\x05h\\xa4f\\x90\\x02r)\\xaf3\\x07e\\x18\\x00{QE9\\xeeaA\\xb9E\\xb7\\xe6K\\xe61\\xb7\\xdf\\xc6\\x7f\\xfa\\xf5\\x1cs;\\xb0\\x07\\x04\\x13\\x8e\\x94QPl6y\\xde9J\\xa9\\xc0\\x14QEsJr\\xbb\\xd4\\xec\\x8c#\\xca\\xb4?'"
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "m",
-                                "w": 136,
-                                "h": 76,
-                                "size": 3542
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
-                    }
-                ],
-                "documents": [],
-                "part": false,
-                "rtl": false,
-                "v2": false,
-                "views": null
-            },
+            "cached_page": null,
             "attributes": []
         }
     },
@@ -185,12 +101,12 @@
             "length": 49
         }
     ],
-    "views": 171,
+    "views": 172,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2478,
+        "replies_pts": 2539,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

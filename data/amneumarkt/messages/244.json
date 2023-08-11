@@ -23,64 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 7722253677464552590,
-            "url": "https://codingcompetitions.withgoogle.com/",
-            "display_url": "codingcompetitions.withgoogle.com",
-            "hash": 0,
-            "type": "article",
-            "site_name": "Coding Competitions",
-            "title": "Google\u2019s Coding Competitions - Code Jam, Hash Code and Kick Start",
-            "description": "Google's Coding Competitions (Code Jam, Hash Code, and Kick Start) enthrall, challenge, and test coders around the world. Try your hand at one, or all three.",
-            "photo": {
-                "_": "Photo",
-                "id": 5786381762140678247,
-                "access_hash": 2253785516931391160,
-                "file_reference": "b'\\x00d\\x8bi\\xae\\x9d\\xba!\\xa9\\xf0\\xc2\\xf7\\x0b\\x84\\x86!`\\xbc\\xfbq\\xc3'",
-                "date": "2018-12-06 00:05:45+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoSize",
-                        "type": "s",
-                        "w": 90,
-                        "h": 47,
-                        "size": 1230
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 168,
-                        "size": 13637
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 420,
-                        "size": 60745
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "y",
-                        "w": 1200,
-                        "h": 630,
-                        "size": 115061
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": null,
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 7722253677464552590
         }
     },
     "reply_markup": null,
@@ -101,7 +45,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2478,
+        "replies_pts": 2539,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

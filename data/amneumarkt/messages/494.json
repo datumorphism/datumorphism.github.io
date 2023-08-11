@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 494,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-08-05 21:48:24+00:00",
+    "message": "#visualization \n\nhttps://climate.copernicus.eu/record-breaking-north-atlantic-ocean-temperatures-contribute-extreme-marine-heatwaves",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1896799816534388761,
+            "url": "https://climate.copernicus.eu/record-breaking-north-atlantic-ocean-temperatures-contribute-extreme-marine-heatwaves",
+            "display_url": "climate.copernicus.eu/record-breaking-north-atlantic-ocean-temperatures-contribute-extreme-marine-heatwaves",
+            "hash": 0,
+            "type": "article",
+            "site_name": "climate.copernicus.eu",
+            "title": "Record-breaking North Atlantic Ocean temperatures contribute to extreme marine heatwaves",
+            "description": "Global average sea surface temperatures last month reached unprecedented levels for June. The north Atlantic Ocean recorded exceptionally warm sea surface temperatures, with several extreme marine heatwaves. These were related to short term changes in atmospheric circulation and longer-term changes in the ocean, according to analysis from C3S.",
+            "photo": {
+                "_": "Photo",
+                "id": 5860759437382365466,
+                "access_hash": 6999648997007771079,
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8\\xaa\\xb61\\x13\\xb4B\\xd6\\xab4\\x90\\xe3)I{L\\n'",
+                "date": "2023-07-09 07:25:12+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((lh\\rL\\xb1\\xfbR$\\x89\\xebR\\x89\\x13\\xd6\\xb3u\\r=\\x98\\x82*_&\\x9c%_QRg\\xe4\\xdd\\x91\\x8a\\x8fl\\x1e\\xce\\xdb\\x90\\x18\\xa8\\xa7\\x99W\\xd4QT\\xaa\\xdc=\\x932\\x018\\xea)A9\\xfb\\xdcP\\xa4g\\xef\\xfe\\x03\\x15 \\xc0\\xc7\\xcd\\xcf\\xb5jf\\n\\xc7<n?\\x86*A)\\xf2\\xf1\\xb5\\x8d3v\\xee\\xb9\\xff\\x00\\xbe\\xb9\\xa4Y\\\\\\x02\\x00$\\x9aVL|\\xcd\\x0eR\\xed\\x93\\xe5\\xfe\\x19\\xa2\\xa3\\xc3\\xba\\xfc\\xdb\\x81>\\xa2\\x8av\\x0b\\xb2\\x1d\\xe0\\x0e\\xd9\\xf7\\xa5\\x0c\\xc4\\x03\\x85\\xc5\\x14S$z\\xb4g\\xab\\x00~\\x86\\x9cn6\\x82\\x03\\xb1\\xfch\\xa2\\x8b\\\\6!i\\x19\\xf3\\x92F}\\xcd\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 31875
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 400,
+                        "h": 400,
+                        "sizes": [
+                            6025,
+                            12193,
+                            20206,
+                            27597,
+                            42114
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 17,
+            "length": 115
+        }
+    ],
+    "views": 61,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-08-06 08:48:49+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

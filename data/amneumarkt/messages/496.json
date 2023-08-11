@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 496,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-08-11 09:23:28+00:00",
+    "message": "#misc\n\nhttps://avi-loeb.medium.com/we-have-discovered-spherules-from-the-path-of-the-first-recognized-interstellar-meteor-im1-d6cd94946b53\n\nWhen I was doing my PhD, I spent a lot of hours on Loeb's papers. I was always hoping to see some evidence that there is already a party going on in the universe but we, as human beings, haven't found the way to chime in. I even wrote some stories on this idea, e.g.,\nhttps://blog.leima.is/stories/dream-a-new-world/\n\nI don't know. It is quite shameful to believe in something like this as an adult. But then again,  who knows. At least I can have some fun.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 251329731176519533,
+            "url": "https://avi-loeb.medium.com/we-have-discovered-spherules-from-the-path-of-the-first-recognized-interstellar-meteor-im1-d6cd94946b53",
+            "display_url": "avi-loeb.medium.com/we-have-discovered-spherules-from-the-path-of-the-first-recognized-interstellar-meteor-im1-d6cd94946b53",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Medium",
+            "title": "We Have Discovered Spherules from the Path of the First Recognized Interstellar Meteor, IM1",
+            "description": "Diary of an Interstellar Voyage, Report 20 (June 21, 2023)",
+            "photo": {
+                "_": "Photo",
+                "id": 5806414073724776730,
+                "access_hash": -7913008154004818900,
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8T\\xcd\\xa1kVH\\x00\\xc2O/Jcx\\x08\\xda\\x9a'",
+                "date": "2023-06-21 12:27:11+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x1e(v\\x9e\\x9b\\xadP\\xfb\\x9f\\xe7V\\x9a.A\\xc2\\x95\\xc79\\x15\\x06\\x97\\xff\\x00\\x1e\\x83\\xfd\\xe3W\\x86(\\x02\\x94Kop\\t\\x11'\\x1e\\xc2\\xa3\\x92\\xd2\\x1cs\\x10\\x15ji!\\xb6\\x89\\xf6\\x05\\x07\\xd0\\n\\xaa\\xf7\\x80${\\x87\\xcc\\xdc{R\\x19RKh\\x81\\xfb\\x9f\\xad\\x15b`3\\xc5\\x15B\\x1d\\xa5>-X\\x1e\\xcf\\xfe\\x15,\\xd7\\x19\\x8b*p;V0\\x90\\xa9!K\\x0e\\xe7\\r\\x8aB\\xfe\\xa8\\xa7\\xeb\\x93R2\\xf0\\x98\\x990@\\xcf\\xa9<U\\xa7\\x9e\\x00N^.9\\x18\\xc5co\\xe3\\xb7\\xe0\\xa2\\x8c\\xe6\\x92V\\x1b\\xd4\\xbf5\\xc4D\\xf0\\xff\\x00\\x904U\\x10\\xb9\\xa2\\x9d\\xc5c\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 240,
+                        "size": 16723
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 600,
+                        "size": 69284
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 936,
+                        "h": 702,
+                        "sizes": [
+                            10083,
+                            23385,
+                            31575,
+                            46581,
+                            87190
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "https://avi-loeb.medium.com",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 7,
+            "length": 131
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 408,
+            "length": 48
+        }
+    ],
+    "views": 13,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-08-11 09:24:24+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 492,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-07-13 18:35:18+00:00",
+    "message": "#fun\n\nBard is now available in Europe.\nhttps://bard.google.com/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6631698070112994446,
+            "url": "https://bard.google.com/",
+            "display_url": "bard.google.com/?hl=en",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Google",
+            "title": "\u200eTry Bard, an AI experiment by Google",
+            "description": "Bard is your creative and helpful collaborator to supercharge your imagination, boost productivity, and bring ideas to life.",
+            "photo": {
+                "_": "Photo",
+                "id": 5881103928664371250,
+                "access_hash": 396270652792813518,
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8\\xa9ou\\xd6\\xa5T\\x90E.\\x85?\\xedP\\xf2\"\\xc7'",
+                "date": "2023-04-09 15:10:31+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xd3\\x92Y\\x12M\\xab\\te\\xc7Pi\\xa6y@\\x07\\xc8b;\\x8e\\xf5+}\\xee\\x8d\\xf8Sz\\x1c\\x90\\xfc{\\xd0\\x03\\xa3fpK!\\\\\\x1c\\x0c\\xd3\\xe9\\x8a\\xb9\\x1f\\xc4=\\xb3K\\xb0z\\x9f\\xce\\x80\\x1dE\\x00`b\\x8a\\x001E\\x14P\\x01E\\x14P\\x01E\\x14P\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 7876
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 27583
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "sizes": [
+                            4836,
+                            10290,
+                            18161,
+                            25073,
+                            37818
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 39,
+            "length": 24
+        }
+    ],
+    "views": 163,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-07-13 19:23:53+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

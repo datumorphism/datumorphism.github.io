@@ -1,0 +1,2569 @@
+{
+    "_": "Message",
+    "id": 495,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-08-05 22:05:04+00:00",
+    "message": "#tools \n\nCreator of vim died.\n\nhttps://en.wikipedia.org/wiki/Bram_Moolenaar",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3384953264480551625,
+            "url": "https://en.wikipedia.org/wiki/Bram_Moolenaar",
+            "display_url": "en.m.wikipedia.org/wiki/Bram_Moolenaar",
+            "hash": 965573638,
+            "type": "article",
+            "site_name": "Wikipedia",
+            "title": "Bram Moolenaar",
+            "description": "Software programmer",
+            "photo": {
+                "_": "Photo",
+                "id": 5786215980698019976,
+                "access_hash": -4626398234649686736,
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8i\"\\x15\\x90|>\\x0b$\\xcd\\xe0x\\xc4\\x80\\xb1\\x0b\\xda'",
+                "date": "2018-12-06 16:56:03+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 68,
+                        "h": 90,
+                        "size": 1359
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 242,
+                        "h": 320,
+                        "size": 14088
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 604,
+                        "h": 800,
+                        "size": 66813
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 966,
+                        "h": 1280,
+                        "size": 167417
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "w",
+                        "w": 1200,
+                        "h": 1590,
+                        "size": 221117
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Bram Moolenaar"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextBold",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Bram Moolenaar"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (born 1961 in "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Lisse"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Lisse",
+                                    "webpage_id": 5973540602948582260
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " \u2013 3 August 2023"
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextAnchor",
+                                                "text": {
+                                                    "_": "TextEmpty"
+                                                },
+                                                "name": "back_cite_ref-1"
+                                            },
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "[1]"
+                                                },
+                                                "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-1",
+                                                "webpage_id": 0
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ") was a Dutch "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "computer programmer"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Programmer",
+                                    "webpage_id": 5973540601873614329
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and an active member of the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "open-source software"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Open-source_software",
+                                    "webpage_id": 5973540602641676951
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " community. He was the original author, maintainer, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "release manager"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Release_manager",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "benevolent dictator for life"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Benevolent_dictator_for_life",
+                                    "webpage_id": 5973540601328665579
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " of "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Vim"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Vim_(text_editor)",
+                                    "webpage_id": 5973540601290580145
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ","
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextAnchor",
+                                                "text": {
+                                                    "_": "TextEmpty"
+                                                },
+                                                "name": "back_cite_ref-RehmanPaul2003_2-0"
+                                            },
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "[2]"
+                                                },
+                                                "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-RehmanPaul2003-2",
+                                                "webpage_id": 0
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " a "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "vi"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Vi",
+                                    "webpage_id": 5973540602296410913
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "-derivative text editor that is very popular among programmers and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "power users"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Power_user",
+                                    "webpage_id": 5973540601928093665
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ". From July 2006 until September 2021 Moolenaar was employed by "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Google"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Google",
+                                    "webpage_id": 5973540602559047073
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " working in the "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Z\u00fcrich"
+                                    },
+                                    "url": "https://en.m.wikipedia.org/wiki/Z%C3%BCrich",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " office."
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextAnchor",
+                                                "text": {
+                                                    "_": "TextEmpty"
+                                                },
+                                                "name": "back_cite_ref-3"
+                                            },
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "[3]"
+                                                },
+                                                "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-3",
+                                                "webpage_id": 0
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " He was able to spend part of his time maintaining Vim."
+                                },
+                                {
+                                    "_": "TextSuperscript",
+                                    "text": {
+                                        "_": "TextConcat",
+                                        "texts": [
+                                            {
+                                                "_": "TextAnchor",
+                                                "text": {
+                                                    "_": "TextEmpty"
+                                                },
+                                                "name": "back_cite_ref-:0_4-0"
+                                            },
+                                            {
+                                                "_": "TextUrl",
+                                                "text": {
+                                                    "_": "TextPlain",
+                                                    "text": "[4]"
+                                                },
+                                                "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-:0-4",
+                                                "webpage_id": 0
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockTable",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "rows": [
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Bram Moolenaar"
+                                            }
+                                        },
+                                        "colspan": 2,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextImage",
+                                            "document_id": 5786342153496035479,
+                                            "w": 220,
+                                            "h": 291
+                                        },
+                                        "colspan": 2,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Born"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": "1961\n"
+                                                },
+                                                {
+                                                    "_": "TextUrl",
+                                                    "text": {
+                                                        "_": "TextPlain",
+                                                        "text": "Lisse"
+                                                    },
+                                                    "url": "https://en.m.wikipedia.org/wiki/Lisse",
+                                                    "webpage_id": 5973540602948582260
+                                                }
+                                            ]
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Died"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "August 3, 2023 (aged\u00a062)"
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Known\u00a0for"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextUrl",
+                                                    "text": {
+                                                        "_": "TextPlain",
+                                                        "text": "Vim"
+                                                    },
+                                                    "url": "https://en.m.wikipedia.org/wiki/Vim_(text_editor)",
+                                                    "webpage_id": 5973540601290580145
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": ", "
+                                                },
+                                                {
+                                                    "_": "TextUrl",
+                                                    "text": {
+                                                        "_": "TextPlain",
+                                                        "text": "ICCF Holland"
+                                                    },
+                                                    "url": "https://en.m.wikipedia.org/wiki/ICCF_Holland",
+                                                    "webpage_id": 5973540600995281983
+                                                }
+                                            ]
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Awards"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "NLUUG Awards"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/NLUUG#NLUUG_Awards",
+                                            "webpage_id": 0
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            },
+                            {
+                                "_": "PageTableRow",
+                                "cells": [
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": true,
+                                        "align_center": true,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextBold",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Website"
+                                            }
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    },
+                                    {
+                                        "_": "PageTableCell",
+                                        "header": false,
+                                        "align_center": false,
+                                        "align_right": false,
+                                        "valign_middle": true,
+                                        "valign_bottom": false,
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "www\u200b.moolenaar\u200b.net"
+                                            },
+                                            "url": "http://www.moolenaar.net/",
+                                            "webpage_id": 0
+                                        },
+                                        "colspan": null,
+                                        "rowspan": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "bordered": true,
+                        "striped": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Moolenaar was an advocate of the "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "ICCF"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/ICCF_Holland",
+                                            "webpage_id": 5973540600995281983
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " charity, encouraging people to support orphans in "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Uganda"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Uganda",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ". He pioneered a methodology called "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "charityware"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Charityware",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " through "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Vim"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Vim_(text_editor)",
+                                            "webpage_id": 5973540601290580145
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-5"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[5]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-5",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " The software itself is available for free, but it encourages the user to donate to the programmer's favorite charity."
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-6"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[6]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-6",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " A number of other applications have been licensed this way since the inception of this concept."
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-7"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[7]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-7",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " The opening "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "splash screen"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Splash_screen",
+                                            "webpage_id": 5973540602803451826
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " for Vim encourages support of ICCF."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Moolenaar has been a member of the Dutch Unix user group, "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "NLUUG"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/NLUUG",
+                                            "webpage_id": 5973540602044045652
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", which presented him with an award"
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-8"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[8]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-8",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " during its 25th anniversary, for his creation of Vim and his contributions to open source software in general."
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Charity work and awards"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "Charity_work_and_awards"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockPhoto",
+                                "photo_id": 5905895725437397057,
+                                "caption": {
+                                    "_": "PageCaption",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "The opening screen of Vim"
+                                    },
+                                    "credit": {
+                                        "_": "TextEmpty"
+                                    }
+                                },
+                                "url": null,
+                                "webpage_id": null
+                            },
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "The Vim editor started as \"Vi IMitation\" on the "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Amiga"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Amiga",
+                                            "webpage_id": 5973540602025626856
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " in 1988, but was later relabeled \"Vi IMproved\""
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-9"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[9]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-9",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " and ported to many other platforms. As "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "vi"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Vi",
+                                            "webpage_id": 5973540602296410913
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " was a popular editor amongst programmers and system administrators, initially there was doubt whether Bram's 'improved' version could achieve the quality and fan following of the original. But since its first release for Unix systems in 1992, Vim has effectively eclipsed the original Vi, having won several awards"
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-10"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[10]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-10",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " and has been referred to as one of the most popular text editors."
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-11"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[11]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-11",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-12"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[12]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-12",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-13"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[13]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-13",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Vim"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "Vim"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockParagraph",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Other software tools that Moolenaar has developed include a software build tool written in "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Python"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Python_(programming_language)",
+                                            "webpage_id": 5973540601106336435
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", called A-A-P,"
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-14"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[14]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-14",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " which is similar to "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "make"
+                                            },
+                                            "url": "https://en.m.wikipedia.org/wiki/Make_(software)",
+                                            "webpage_id": 5973540602979218194
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", and a programming language called Zimbu"
+                                        },
+                                        {
+                                            "_": "TextSuperscript",
+                                            "text": {
+                                                "_": "TextConcat",
+                                                "texts": [
+                                                    {
+                                                        "_": "TextAnchor",
+                                                        "text": {
+                                                            "_": "TextEmpty"
+                                                        },
+                                                        "name": "back_cite_ref-15"
+                                                    },
+                                                    {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "[15]"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#cite_note-15",
+                                                        "webpage_id": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": " which puts an emphasis on readability of programs. Amongst all of Moolenaar's contributions to the field of computer science, the Vim editor remains his most prominent and widely used application."
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Other software"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "Other_software"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockOrderedList",
+                                "items": [
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-1",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "https://groups.google.com/g/vim_announce/c/tWahca9zkt4"
+                                                        },
+                                                        "url": "https://groups.google.com/g/vim_announce/c/tWahca9zkt4",
+                                                        "webpage_id": 0
+                                                    },
+                                                    "name": "cite_note-1"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-RehmanPaul2003_2-0",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "Rehman, Rafeeq Ur; Paul, Christopher (2003). "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextItalic",
+                                                                    "text": {
+                                                                        "_": "TextPlain",
+                                                                        "text": "The Linux development platform: configuring, using, and maintaining a complete programming environment"
+                                                                    }
+                                                                },
+                                                                "url": "https://archive.org/details/ost-computer-science-0130091154",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Prentice Hall PTR. pp.\u00a0"
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "37"
+                                                                },
+                                                                "url": "https://archive.org/details/ost-computer-science-0130091154/page/n59",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "\u2013. "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "ISBN"
+                                                                },
+                                                                "url": "https://en.m.wikipedia.org/wiki/ISBN_(identifier)",
+                                                                "webpage_id": 5973540602856553672
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "\u00a0"
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\u2066978-0-13-009115-4\u2069"
+                                                                },
+                                                                "url": "https://en.m.wikipedia.org/wiki/Special:BookSources/978-0-13-009115-4",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Retrieved 30 March 2011."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-RehmanPaul2003-2"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-3",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "Archived at "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "Ghostarchive"
+                                                                },
+                                                                "url": "https://ghostarchive.org/varchive/youtube/20211211/ayc_qpB-93o",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": " and the "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "Wayback Machine"
+                                                                },
+                                                                "url": "https://web.archive.org/web/20161215143438/https://www.youtube.com/watch?v=ayc_qpB-93o",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ": Moolenaar, Bram. "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"Vim 25 presentation on 2016 November 2\""
+                                                                },
+                                                                "url": "https://www.youtube.com/watch?v=ayc_qpB-93o",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". "
+                                                            },
+                                                            {
+                                                                "_": "TextItalic",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "youtube.com"
+                                                                }
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Retrieved 18 April 2020."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-3"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-:0_4-0",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"Yahoo! Groups\""
+                                                                },
+                                                                "url": "https://groups.yahoo.com/neo/groups/vimannounce/conversations/topics/152",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". "
+                                                            },
+                                                            {
+                                                                "_": "TextItalic",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "groups.yahoo.com"
+                                                                }
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Retrieved 31 March 2018."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-:0-4"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-5",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "Marshall, Wayne (1 January 2001). "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"Algorithms in Africa\""
+                                                                },
+                                                                "url": "https://web.archive.org/web/20120721132048/http://www.linuxjournal.com/article/4657?page=0,3",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". "
+                                                            },
+                                                            {
+                                                                "_": "TextItalic",
+                                                                "text": {
+                                                                    "_": "TextUrl",
+                                                                    "text": {
+                                                                        "_": "TextPlain",
+                                                                        "text": "Linux Journal"
+                                                                    },
+                                                                    "url": "https://en.m.wikipedia.org/wiki/Linux_Journal",
+                                                                    "webpage_id": 5973540601523376138
+                                                                }
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Archived from "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "the original"
+                                                                },
+                                                                "url": "http://www.linuxjournal.com/article/4657?page=0,3",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": " on 21 July 2012. Retrieved 30 March 2011."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-5"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-6",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "Moolenaar, Bram. "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"The Vim license, provided in the Vim reference manual\""
+                                                                },
+                                                                "url": "https://vimdoc.sourceforge.net/htmldoc/uganda.html#license",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". "
+                                                            },
+                                                            {
+                                                                "_": "TextItalic",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "vimdoc.sourceforge.net"
+                                                                }
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Retrieved 31 March 2018."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-6"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-7",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"charityware . info | for developers and users who care\""
+                                                                },
+                                                                "url": "https://web.archive.org/web/20090428055416/http://charityware.info/",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". "
+                                                            },
+                                                            {
+                                                                "_": "TextItalic",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "charityware.info"
+                                                                }
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Archived from "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "the original"
+                                                                },
+                                                                "url": "http://charityware.info/",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": " on 28 April 2009. Retrieved 31 March 2018."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-7"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-8",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"NLUUG Award\""
+                                                                },
+                                                                "url": "http://www.moolenaar.net/#Award",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". 2008. Retrieved 9 November 2011."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-8"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-9",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"The continuing story of Vim\""
+                                                                },
+                                                                "url": "http://moolenaar.net/vimstory.pdf",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": " (PDF). Moolenaar.net. Retrieved 13 November 2012."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-9"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-10",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"Vim\""
+                                                                },
+                                                                "url": "http://www.moolenaar.net/vim.html#awards",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Moolenaar.net. Retrieved 10 February 2012."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-10"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-11",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "Jacob Gube. "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"The 15 Most Popular Text Editors for Developers\""
+                                                                },
+                                                                "url": "http://sixrevisions.com/web-development/the-15-most-popular-text-editors-for-developers/",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Sixrevisions.com. Retrieved 10 February 2012."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-11"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-12",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"14 Most Popular Text Editors for Linux | TuxArena Blog\""
+                                                                },
+                                                                "url": "http://tuxarena.blogspot.com/2009/04/14-most-popular-text-editors-for-linux.html",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Tuxarena.blogspot.com. Retrieved 10 February 2012."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-12"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-13",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"Best Text Editors\""
+                                                                },
+                                                                "url": "https://lifehacker.com/385929/best-text-editors",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Lifehacker.com. 1 May 2008. Retrieved 10 February 2012."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-13"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-14",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"Homepage of the A-A-P project\""
+                                                                },
+                                                                "url": "http://www.a-a-p.org/",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". "
+                                                            },
+                                                            {
+                                                                "_": "TextItalic",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "www.a-a-p.org"
+                                                                }
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ". Retrieved 31 March 2018."
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-14"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "_": "PageListOrderedItemText",
+                                        "num": "",
+                                        "text": {
+                                            "_": "TextConcat",
+                                            "texts": [
+                                                {
+                                                    "_": "TextBold",
+                                                    "text": {
+                                                        "_": "TextUrl",
+                                                        "text": {
+                                                            "_": "TextPlain",
+                                                            "text": "^"
+                                                        },
+                                                        "url": "https://en.m.wikipedia.org/wiki/Bram_Moolenaar#back_cite_ref-15",
+                                                        "webpage_id": 0
+                                                    }
+                                                },
+                                                {
+                                                    "_": "TextPlain",
+                                                    "text": " "
+                                                },
+                                                {
+                                                    "_": "TextAnchor",
+                                                    "text": {
+                                                        "_": "TextConcat",
+                                                        "texts": [
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": "Moolenaar, B., "
+                                                            },
+                                                            {
+                                                                "_": "TextUrl",
+                                                                "text": {
+                                                                    "_": "TextPlain",
+                                                                    "text": "\"the Zimbu programming language\""
+                                                                },
+                                                                "url": "http://www.zimbu.org/",
+                                                                "webpage_id": 0
+                                                            },
+                                                            {
+                                                                "_": "TextPlain",
+                                                                "text": ", Retrieved on 16 March 2014"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "name": "cite_note-15"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "References"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "References"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockDetails",
+                        "blocks": [
+                            {
+                                "_": "PageBlockList",
+                                "items": [
+                                    {
+                                        "_": "PageListItemText",
+                                        "text": {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Official website"
+                                            },
+                                            "url": "http://www.moolenaar.net/",
+                                            "webpage_id": 0
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "title": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "External links"
+                                },
+                                {
+                                    "_": "TextAnchor",
+                                    "text": {
+                                        "_": "TextEmpty"
+                                    },
+                                    "name": "External_links"
+                                }
+                            ]
+                        },
+                        "open": false
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Retrieved from \""
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "https://en.wikipedia.org/w/index.php?title=Bram_Moolenaar&oldid=1168872004"
+                                    },
+                                    "url": "https://en.wikipedia.org/w/index.php?title=Bram_Moolenaar&oldid=1168872004",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockRelatedArticles",
+                        "title": {
+                            "_": "TextEmpty"
+                        },
+                        "articles": [
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Editor_war",
+                                "webpage_id": 5973540601950116913,
+                                "title": "Editor war",
+                                "description": "rivalry between users of Emacs and vim",
+                                "photo_id": 5874161869944629650,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Integrated_development_environment",
+                                "webpage_id": 5973540602629269445,
+                                "title": "Integrated development environment",
+                                "description": "software application used to develop software",
+                                "photo_id": 5858199400650746689,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Vim_(text_editor)",
+                                "webpage_id": 5973540601290580145,
+                                "title": "Vim (text editor)",
+                                "description": "improved version of the Vi keyboard-oriented text editor",
+                                "photo_id": 532580497826073551,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/Vi",
+                                "webpage_id": 5973540602296410913,
+                                "title": "vi",
+                                "description": "keyboard-oriented text editor",
+                                "photo_id": 5784214556002856155,
+                                "author": null,
+                                "published_date": null
+                            },
+                            {
+                                "_": "PageRelatedArticle",
+                                "url": "https://en.m.wikipedia.org/wiki/NLUUG",
+                                "webpage_id": 5973540602044045652,
+                                "title": "NLUUG",
+                                "description": "Association for professional users of open systems and open standards",
+                                "photo_id": 5777232274914388582,
+                                "author": null,
+                                "published_date": null
+                            }
+                        ]
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5874161869944629650,
+                        "access_hash": 5965774498964986971,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8B\\xfa\\\\{\\x98p\\x8bYR\\xa4\\x1a\\x7fY\"\\xf5`'",
+                        "date": "2019-07-18 15:11:17+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x1b(a\\xed\\xf5\\xa9\\xb61\\x8f\\x7f\\x18\\xaa\\xa9!r\\x061\\xcd[\\xde\\x0c!==\\xa9\\xd3Z\\x0em\\xad\\x86\\xe2\\xa4\\xf2\\x80\\x19$\\xe3\\x19\\xa8%\\x94D\\xc8\\t\\x00\\x1e\\xb5a\\xe4\\x0c\\x07\\xa6*\\x1a\\xd5\\x83o\\xa1Fo\\xf8\\xf8_\\xf7h\\xa6\\xdc\\xb6.\\x06?\\xbbE\"\\xb7\\x1e\\xa4\\tW\\'\\x02\\x9fq&\\x15J?9\\xecj\\x06\\xe7\\xad@\\x879\\xa6\\x9d\\x901\\xd3\\xab\\xcd)|\\xe0\\x1e\\x99\\xf4\\xab\\xf1|\\xb0 \\xcep\\x00\\xaa\\xb6\\xe07^j\\xc9\\x893\\xd0\\xfef\\xa7\\x9bP\\xe5\\xd0\\xa9s\\xff\\x00\\x1f\\x1f\\xf0\\x1a*2I\\x91\\xb2s\\x8e\\x94Sb?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 212,
+                                "size": 16728
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 531,
+                                "size": 82322
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 680,
+                                "size": 131144
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5858199400650746689,
+                        "access_hash": 6187524022019484997,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8\\x1f\\xe5\\x16\\xcb_\\x02\\xa7\\xb3\\xa2l:(\\xf5\\xc2>\\xd3'",
+                        "date": "2020-04-29 17:20:02+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01 (\\xcb\\x08\\xe4\\x02\\x15\\x88\\xf5\\x14\\xdc\\xfb\\x9f\\xce\\x9c\\t\\xc7\\xff\\x00Z\\x9bLBd\\xfa\\xd2d\\xfa\\x9aSIHa\\x93\\xeah\\xa2\\x8a\\x00\\\\\\xd1\\x9a_1\\xff\\x00\\xbch\\xf3\\x1f\\xfb\\xc6\\x80\\x1b\\x9a)\\xdec\\xff\\x00x\\xd2o\\x7f\\xef\\x1f\\xce\\x80\\x12\\x8a]\\xef\\xfd\\xe3\\xf9\\xd1@\\x1f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 261,
+                                "size": 13415
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 652,
+                                "size": 63251
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 834,
+                                "size": 94256
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 532580497826073551,
+                        "access_hash": -8266335953342762518,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8\\xf9\\x91\\xee\\x01+\\x8dF\\x1c\\xbb>n\\xa8d\\xa1\\x84N'",
+                        "date": "2017-09-04 18:06:34+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 90,
+                                "h": 90,
+                                "size": 2284
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 320,
+                                "size": 22341
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 799,
+                                "h": 800,
+                                "size": 69863
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1200,
+                                "h": 1202,
+                                "size": 112801
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5784214556002856155,
+                        "access_hash": -1724721960412910738,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8}\\xc6 \\xd5\\x10\\xfc)\\xa3\\x9d\\xca\\x9d\\xaa\\xec\\xe5\\x96M'",
+                        "date": "2021-11-07 02:14:22+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x18(\\xa0\\xd7s\\xee8\\x95\\x87>\\xb4\\xcf\\xb5\\xdc\\x7f\\xcfv\\xa8_\\xef\\xb7\\xd6\\x92\\x80&\\xfb\\\\\\xf9\\xcf\\x9a\\xd9\\xa3\\xed\\x97\\x1f\\xf3\\xd9\\xbf:\\x86\\x8a\\x00\\x9c]\\xdc\\x12?z\\xd4T+\\xf7\\x87\\xd6\\x8a`:E`\\xe7 \\xf5\\xf4\\xa6\\xed>\\x86\\x8a)\\x00m>\\x86\\x8d\\xa7\\xd0\\xd1E\\x00*\\x83\\xb8pz\\xd1E\\x14\\xc0'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 188,
+                                "size": 5105
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "x",
+                                "w": 730,
+                                "h": 430,
+                                "sizes": [
+                                    2075,
+                                    4093,
+                                    9137,
+                                    11619,
+                                    16489
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5777232274914388582,
+                        "access_hash": 4400123519043204654,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8A\\xf4\\xb6\\xc4P\\xeeHJ\\x11W\\x99\\xe9\\xed\\xfd\\xda\\x0c'",
+                        "date": "2019-12-26 23:48:19+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x10(\\xbds9V*\\xa7\\x18\\xa8f\\xba\\x96\\xdfgq\\xe5\\x96l\\xf5\\xeb\\xc7\\xf3\\x15b[p[=\\x89\\xe4\\xd5\\x8c\\xfdi\\x833\\xbe\\xdf&\\xc92Wx\\x8d\\x19F:\\xe4d\\xd4\\xdfk\\xf9\\xb7\\xee\\x1eO\\x98\\x17wlm\\xff\\x00\\x1a\\xb9E\\x17\\x11\\x99\\xf6\\xe9B\\xc6\\\\\\x84\\x0c7}\\xdc\\xee\\xf9\\xb1\\x81\\xf8QZtQt\\x16?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 283,
+                                "h": 115,
+                                "size": 6710
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5966617758319880679,
+                        "access_hash": -2904537428532501100,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8S\\\\\\x1cU\\x13t\\x9dHk4\\xa98\\xad\\xeb\\x19K'",
+                        "date": "2019-08-18 17:26:06+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01($\\xd9\\xa8\\xd8d\\x9f\\xaf\\xa6{S\\xc9\\x03\\xbf4\\xcc\\xab9\\\\t\\xf5\\x1dh\\x01\\xa1Nq\\x9f\\xfcr\\xa5O\\xb8\\xbfJF\\n\\x06p8\\xa4WR\\x80\\xf2\\x01\\x1d\\xc6(\\x01\\xf4Q\\xd6\\x8a\\x00a\\x04\\x0c\\x0c\\xfdF)\\x00' \\xe4\\xff\\x00\\xbd\\x8f\\xe9RTo\\xbf#f2\\x0f9\\xf4\\xa0\\x070=}\\xba\\xfaSF\\xe3\\xce_\\xf4\\xa1\\x8b\\x92\\xb8\\xdb\\xb7?7|\\x8a\\x93\\xad\\x004\\x03\\xf4\\xfaQN\\xa2\\x80\\nc.A\\x1e\\xbc\\xf4\\xcd\\x14P\\x02*\\xed<c\\xf0\\\\S\\xc0\\xc0\\xa2\\x8a\\x00Z(\\xa2\\x80?\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 291,
+                                "h": 320,
+                                "size": 13829
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 727,
+                                "h": 800,
+                                "size": 44866
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1163,
+                                "h": 1280,
+                                "size": 82902
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "w",
+                                "w": 1200,
+                                "h": 1321,
+                                "size": 84089
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5905895725437397057,
+                        "access_hash": -5263091070502304798,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8c\\x07\\x08V;\\x82\\xed\\xd5\\x0b\\x1d>G\\xd1\\x8e\\xd3B'",
+                        "date": "2019-01-14 23:16:53+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x19(\\xd8\\x00\\x00\\x00\\xe8)h\\xa6\\x9c\\xfb\\xd0\\x02\\xee\\x1e\\xff\\x00\\x95-0-(\\xcf\\x19\\xcd\\x00:\\x8a(\\xa0\\x02\\x9b\\xb4S\\xa8\\xa0\\x04\\xc7\\xb9\\xa3o\\xb9\\xa5\\xa4o\\xbah\\x01h\\xa6\\x8f\\xb9E\\x00\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 204,
+                                "size": 7844
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 511,
+                                "size": 30020
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1024,
+                                "h": 654,
+                                "size": 39095
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [
+                    {
+                        "_": "Document",
+                        "id": 5786342153496035479,
+                        "access_hash": 2813136325317251473,
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf834\\x16p\\xbe\\x88\\x96\\x1c^\\xe9\\xbd&\\x87\\x9b\\x1e\\x14'",
+                        "date": "2018-12-06 16:56:03+00:00",
+                        "mime_type": "image/jpeg",
+                        "size": 161607,
+                        "dc_id": 4,
+                        "attributes": [
+                            {
+                                "_": "DocumentAttributeImageSize",
+                                "w": 1024,
+                                "h": 1357
+                            },
+                            {
+                                "_": "DocumentAttributeFilename",
+                                "file_name": "1024px-Bram_Moolenaar_in_2007.jpg"
+                            }
+                        ],
+                        "thumbs": [
+                            {
+                                "_": "PhotoSize",
+                                "type": "s",
+                                "w": 68,
+                                "h": 90,
+                                "size": 2246
+                            }
+                        ],
+                        "video_thumbs": []
+                    }
+                ],
+                "part": false,
+                "rtl": false,
+                "v2": true,
+                "views": null
+            },
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 6
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 31,
+            "length": 44
+        }
+    ],
+    "views": 61,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 816,
+        "read_max_id": 816
+    },
+    "edit_date": "2023-08-06 08:48:41+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "tools"
+    ]
+}

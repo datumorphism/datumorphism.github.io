@@ -27,7 +27,7 @@
             "id": 7937820126309515856,
             "url": "https://www.nature.com/articles/s41586-020-2649-2",
             "display_url": "nature.com/articles/s41586-020-2649-2",
-            "hash": 960156576,
+            "hash": 0,
             "type": "photo",
             "site_name": "Nature",
             "title": "Array programming with NumPy",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5989051669587012424,
                 "access_hash": -7446608148123921536,
-                "file_reference": "b\"\\x00d\\x8bi\\xb0E\\x85\\xce\\xd5'\\xb6\\xff\\xe1\\xd2\\xe6f\\x11[\\xa7Q\\x15\"",
+                "file_reference": "b'\\x00d\\xd6\\t\\xfc\\xe8B|\\xc0\\xac\\xd5:BS\\xfa\\xb8\\x82\\x80M\\xb0\\x9c'",
                 "date": "2020-09-16 16:54:42+00:00",
                 "sizes": [
                     {
@@ -84,91 +84,7 @@
             "duration": null,
             "author": null,
             "document": null,
-            "cached_page": {
-                "_": "Page",
-                "url": "https://www.nature.com/articles/s41586-020-2649-2",
-                "blocks": [
-                    {
-                        "_": "PageBlockTitle",
-                        "text": {
-                            "_": "TextPlain",
-                            "text": "Array programming with NumPy"
-                        }
-                    },
-                    {
-                        "_": "PageBlockPhoto",
-                        "photo_id": 5772922833578602497,
-                        "caption": {
-                            "_": "PageCaption",
-                            "text": {
-                                "_": "TextEmpty"
-                            },
-                            "credit": {
-                                "_": "TextEmpty"
-                            }
-                        },
-                        "url": null,
-                        "webpage_id": null
-                    },
-                    {
-                        "_": "PageBlockHeader",
-                        "text": {
-                            "_": "TextUrl",
-                            "text": {
-                                "_": "TextPlain",
-                                "text": "SciPy 1.0: fundamental algorithms for scientific computing in Python"
-                            },
-                            "url": "https://doi.org/10.1038/s41592-019-0686-2",
-                            "webpage_id": 753763745708482789
-                        }
-                    },
-                    {
-                        "_": "PageBlockParagraph",
-                        "text": {
-                            "_": "TextPlain",
-                            "text": "03 February 2020"
-                        }
-                    },
-                    {
-                        "_": "PageBlockParagraph",
-                        "text": {
-                            "_": "TextPlain",
-                            "text": "Pauli Virtanen, Ralf Gommers, \u2026 SciPy 1.0 Contributors"
-                        }
-                    }
-                ],
-                "photos": [
-                    {
-                        "_": "Photo",
-                        "id": 5772922833578602497,
-                        "access_hash": -5546682583121931615,
-                        "file_reference": "b'\\x00d\\x8bi\\xb0\\xb8\\xf7QG\\xf1\\xf2\\nI\\xfaF\\x1b\\n\\x9e\\x05\\xe6\\t'",
-                        "date": "2023-03-04 17:21:50+00:00",
-                        "sizes": [
-                            {
-                                "_": "PhotoStrippedSize",
-                                "type": "i",
-                                "bytes": "b'\\x01\\x16(\\xd5\\x12\\x12\\xc4\\x05\\x04\\xafQ\\x9e\\x94\\xf5$\\x8eF\\r \\xdd\\x93\\x9e?\\x1aM\\xbf6rs\\xf5\\xa0\\x07\\xd3\\n\\x9e\\xcc\\xdfN)\\xd8>\\xa6\\x98v\\xf9\\xa1r\\xdb\\x88\\xcf\\xb5\\x00&\\xf2\\x1dQ\\x89\\x05\\xbar;QO;\\xb3\\xed\\xf5\\xa2\\x80#\\xdeI\\xc6\\xe6\\xf4\\xed\\xfe{\\xd3\\xd5X1%\\xcb\\x02\\x07\\x07\\xb5\\x14P\\x02\\xb2\\xee\\x18\\xef\\xefM\\xf2\\xcf\\xfb?\\x91\\xff\\x00\\x1a(\\xa0\\x07\"\\xed\\x1d\\xbf\\n(\\xa2\\x80?'"
-                            },
-                            {
-                                "_": "PhotoSize",
-                                "type": "m",
-                                "w": 136,
-                                "h": 75,
-                                "size": 3333
-                            }
-                        ],
-                        "dc_id": 4,
-                        "has_stickers": false,
-                        "video_sizes": []
-                    }
-                ],
-                "documents": [],
-                "part": false,
-                "rtl": false,
-                "v2": false,
-                "views": null
-            },
+            "cached_page": null,
             "attributes": []
         }
     },

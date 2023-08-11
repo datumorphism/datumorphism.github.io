@@ -23,8 +23,68 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPageEmpty",
-            "id": 3190302584010681428
+            "_": "WebPage",
+            "id": 3190302584010681428,
+            "url": "https://www.interviewquery.com/blog-data-science-interview-report/",
+            "display_url": "interviewquery.com/p/data-science-interview-report",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Interview Query",
+            "title": "The 2021 Data Science Interview Report",
+            "description": "We analyzed over 10,000 data science interview experiences. Here are our findings.",
+            "photo": {
+                "_": "Photo",
+                "id": 5952826940454974023,
+                "access_hash": 1106891324114598932,
+                "file_reference": "b'\\x00d\\xd6\\t\\xfa\\x80\\x9f)\\xe4\\xe3\\xfb2i\\xbf\\xad\\xb4\\xe9\\xa7}\\xf7f'",
+                "date": "2023-08-09 07:57:48+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\x02\\xb9\\xe8\\xa4\\x8f\\xa5X\\xb4\\x89\\\\\\xb8u\\xce)\\xf6l<\\xa6\\x00e\\x81\\xe9\\xf9Tl\\x82K\\xdd\\x9c\\xa8c\\xce>\\x94\\xeeb\\xa3\\xb3\\x1a\\xf1\\xa7\\xda\\xf6}\\xd4\\xff\\x00\\xebS\\xe5\\x86\\x05\\x8c\\x95\\x90\\x12;n\\x15!\\xb4\\x8bnAf\\xfcj\\x10\\x12\\x0b\\x92\\x0eJ\\x8f\\xc6\\x80j\\xdb\\x95\\xe8\\xabr\\xcf\\x1b\\xa9\\n1\\xc7\\xa5\\x14\\xeeCIu*\\xd2\\xa9\\x00\\xfc\\xc4\\x8fB(\\xa2\\x81'f;*\\x07\\xfa\\xd9?\\xcf\\xe3Lb\\t\\xe0\\x96\\xf74QI\\x17)6\\x82\\x8a(\\xa6A\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 182,
+                        "size": 13016
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 454,
+                        "size": 51085
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 726,
+                        "sizes": [
+                            9724,
+                            27204,
+                            46974,
+                            67187,
+                            105860
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
         }
     },
     "reply_markup": null,
@@ -45,7 +105,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2478,
+        "replies_pts": 2539,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

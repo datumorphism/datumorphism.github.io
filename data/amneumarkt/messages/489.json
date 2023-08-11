@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 489,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-06-18 10:56:53+00:00",
+    "message": "#ml \n\nA family tree shows how transformers are evolving. \n\n(HTML is probably the worst name for a model.)\n\nhttps://arxiv.org/abs/2302.07730",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5221992573768419367,
+            "access_hash": -769091095843702561,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xe9d\\xd6\\t\\xf8\\xe5)\\xc2\\xfe\\xf9\\xabL\\xe7\\x81\\xf7\\r\\x95T\\x7fC\\xd2'",
+            "date": "2023-06-18 10:56:45+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01\\x17(\\xd6b\\xd9\\xe38\\x1c\\x9e3\\x9ac\\x97%Jp;\\x83\\x8aw\\x1b\\x88\\xc1\\xf7<\\xd36J&\\x04H<\\xb09R9\\xfc\\xe9\\x0c~\\t'\\x04\\xe3\\xe8i\\xa4\\x94B\\t$\\xfd(*0H\\\\\\xf7\\xe9\\x91H\\xe4\\x18z\\x00\\x0fcE\\x80vr\\xa8K\\x11\\x9fSE 8\\xd8\\xa3q\\xfac\\x06\\x8a`9\\xd5\\x9b\\xfb\\xbe\\xd9\\x14\\xe2\\x0e\\xd3\\xdb\\xe9E\\x14\\xc9\\xb6\\xacE\\x00`\\x91\\x92;\\xd2\\x14\\xcf\\xdd\\xc0\\xcfZ(\\xa447\\xcbm\\xeaHS\\x8e\\xf4QE\\x00\\x7f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 185,
+                    "size": 18299
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 463,
+                    "size": 65350
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 741,
+                    "sizes": [
+                        8866,
+                        24704,
+                        49703,
+                        66210,
+                        94522
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 107,
+            "length": 32
+        }
+    ],
+    "views": 188,
+    "forwards": 4,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-06-18 11:26:28+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

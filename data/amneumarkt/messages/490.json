@@ -1,0 +1,135 @@
+{
+    "_": "Message",
+    "id": 490,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-06-23 11:53:03+00:00",
+    "message": "#ml\n\nHand-Crafted Transformers\n\n\nHandCrafted.ipynb - Colaboratory\nhttps://colab.research.google.com/github/newhouseb/handcrafted/blob/main/HandCrafted.ipynb",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1682420655714187189,
+            "url": "https://colab.research.google.com/github/newhouseb/handcrafted/blob/main/HandCrafted.ipynb",
+            "display_url": "colab.research.google.com/github/newhouseb/handcrafted/blob/main/HandCrafted.ipynb?hl=en",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Google",
+            "title": "HandCrafted.ipynb",
+            "description": "Run, share, and edit Python notebooks",
+            "photo": {
+                "_": "Photo",
+                "id": 5802226158488629371,
+                "access_hash": -6826889235886222629,
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8\\x8c\\nd\\r\\xca\\xf9\\r\\x89\\x056\\xba\\x8d\\xab\\xbf\\xa0\\xae'",
+                "date": "2023-06-19 06:41:12+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01(\\x13\\x86By9?x\\xf7\\xa8\\xf77\\xa9\\xa9\\x1c|\\x8f\\xfe\\xfdEZ\\xa1\\x13\\xa1;\\x07&\\x8aj}\\xc1E0\\x15\\xbe\\xe4\\x9f\\xefT8\\xc5L\\xdfvN\\x7f\\x8a\\xa3<~u(\\x07\\xa7\\xdc\\x14P\\x9fpQT\\x03\\xd9\\x1bc\\xf0z\\xfaTE\\x1b\\xfb\\xa7\\xaf\\xa5\\x14T $D}\\xa3\\xe4?\\x95\\x14QL\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 152,
+                        "h": 320,
+                        "size": 12394
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 381,
+                        "h": 800,
+                        "size": 37983
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 610,
+                        "h": 1280,
+                        "size": 68750
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 745,
+                        "h": 1564,
+                        "sizes": [
+                            11130,
+                            24274,
+                            47470,
+                            56753,
+                            81436
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 5,
+            "length": 25
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 66,
+            "length": 90
+        }
+    ],
+    "views": 172,
+    "forwards": 5,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-06-24 07:17:42+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ml"
+    ]
+}

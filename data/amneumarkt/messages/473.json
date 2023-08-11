@@ -27,7 +27,7 @@
             "id": 1961078288359091544,
             "url": "https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html",
             "display_url": "nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html",
-            "hash": -2141842644,
+            "hash": 2041163984,
             "type": "photo",
             "site_name": "NY Times",
             "title": "\u2018The Godfather of A.I.\u2019 Leaves Google and Warns of Danger Ahead",
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5946023467444973578,
                 "access_hash": -7218510614096993586,
-                "file_reference": "b'\\x00d\\x8bi\\xac\\x9aG\\xfaX\\xadXi\\x7fo\\xe5\\xefj\\x90\\xd9\\x9eL'",
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8\\x9f\\x88t\\xb21T\\xa7$\\x9b\\xfbqE8\\x98S&'",
                 "date": "2023-05-01 09:03:28+00:00",
                 "sizes": [
                     {
@@ -594,18 +594,21 @@
                         "_": "PageBlockHeader",
                         "text": {
                             "_": "TextPlain",
-                            "text": "The Age of Artificial Intelligence"
-                        }
-                    },
-                    {
-                        "_": "PageBlockSubheader",
-                        "text": {
-                            "_": "TextPlain",
-                            "text": "As A.I. systems continue to evolve and expand, so does their impact on our lives."
+                            "text": "Explore Our Coverage of Artificial Intelligence"
                         }
                     },
                     {
                         "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Latest News"
+                            }
+                        }
                     },
                     {
                         "_": "PageBlockList",
@@ -617,24 +620,53 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Few people are as involved in so many A.I. efforts as Reid Hoffman, a Silicon Valley investor. His mission? Showing how "
+                                            "text": "The safety measures put in place by A.I. companies to prevent their systems from generating hate speech and other harmful material "
                                         },
                                         {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
-                                                "text": "new technologies"
+                                                "text": "can be easily circumvented"
                                             },
-                                            "url": "https://www.nytimes.com/2023/05/25/technology/reid-hoffman-artificial-intelligence.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
-                                            "webpage_id": 0
+                                            "url": "https://www.nytimes.com/2023/07/27/business/ai-chatgpt-safety-research.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "webpage_id": 1961078288764700619
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", new research shows."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Seven leading A.I. companies in the United States have "
                                         },
                                         {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
-                                                "text": "\u00a0can improve humanity"
+                                                "text": "agreed to voluntary safeguards"
                                             },
-                                            "url": "https://www.nytimes.com/2023/05/25/technology/reid-hoffman-artificial-intelligence.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "url": "https://www.nytimes.com/2023/07/21/us/politics/ai-regulation-biden.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "webpage_id": 1961078289401470568
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "\u00a0on the technology\u2019s development. "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "Our columnist sizes up their potential impact"
+                                            },
+                                            "url": "https://www.nytimes.com/2023/07/22/technology/ai-regulation-white-house.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
                                             "webpage_id": 0
                                         },
                                         {
@@ -651,15 +683,58 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "The pop singer Grimes has \u201copen-sourced\u201d her voice using new A.I. tools and invited everyone to use her sound to generate new songs. "
+                                            "text": "Google "
                                         },
                                         {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
-                                                "text": "She has been impressed by the results"
+                                                "text": "appears to be testing a product that uses A.I. technology to produce news stories"
                                             },
-                                            "url": "https://www.nytimes.com/2023/05/24/arts/music/grimes-ai-songs.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "url": "https://www.nytimes.com/2023/07/19/business/google-artificial-intelligence-news-articles.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": ", pitching it to news organizations including The New York Times, The Washington Post and The Wall Street Journal\u2019s owner, News Corp."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "The Age of A.I."
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockList",
+                        "items": [
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "To many people, chatbots and other technology feel like a ticking time bomb, sure to explode their work. But for call center workers, "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "the threat is already here"
+                                            },
+                                            "url": "https://www.nytimes.com/2023/07/19/business/call-center-workers-battle-with-ai.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
                                             "webpage_id": 0
                                         },
                                         {
@@ -676,42 +751,54 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Tens of millions of American jobs\u00a0could be automated by generative A.I. The "
+                                            "text": "Can Wikipedia help teach A.I. chatbots to get their facts right \u2014 "
                                         },
                                         {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
-                                                "text": "companies"
+                                                "text": "without destroying itself in the process"
                                             },
-                                            "url": "https://www.nytimes.com/2023/05/24/business/artificial-intelligence-regulation-openai.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "url": "https://www.nytimes.com/2023/07/18/magazine/wikipedia-ai-chatgpt.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "webpage_id": 1961078288013043100
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "?"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "Fed up with A.I. companies "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "harvesting their online content"
+                                            },
+                                            "url": "https://www.nytimes.com/2023/07/18/podcasts/the-daily/ai-scraping.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
                                             "webpage_id": 0
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": "\u00a0behind "
+                                            "text": "\u00a0without consent, fan fiction writers, actors, social media companies and news organizations "
                                         },
                                         {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
-                                                "text": "these new technologies"
+                                                "text": "are pushing back"
                                             },
-                                            "url": "https://www.nytimes.com/2023/05/25/technology/microsoft-ai-rules-regulation.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
-                                            "webpage_id": 0
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "\u00a0are looking to "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "the government to regulate the industry"
-                                            },
-                                            "url": "https://www.nytimes.com/2023/05/23/business/jobs-protections-artificial-intelligence.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
-                                            "webpage_id": 1961078288714484568
+                                            "url": "https://www.nytimes.com/2023/07/15/technology/artificial-intelligence-models-chat-data.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "webpage_id": 1961078287840464164
                                         },
                                         {
                                             "_": "TextPlain",
@@ -727,40 +814,15 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Amid those making pledges and sweeping plans aimed at reining in A.I., New\u00a0York City has emerged as a modest pioneer in its regulation "
+                                            "text": "Many ads are easier to make with A.I. But the increased reliance on the fast-improving technology "
                                         },
                                         {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
-                                                "text": "with a focused approach"
+                                                "text": "also poses a threat to an industry already in flux"
                                             },
-                                            "url": "https://www.nytimes.com/2023/05/25/technology/ai-hiring-law-new-york.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
-                                            "webpage_id": 0
-                                        },
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "."
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "_": "PageListItemText",
-                                "text": {
-                                    "_": "TextConcat",
-                                    "texts": [
-                                        {
-                                            "_": "TextPlain",
-                                            "text": "The financial services industry is looking at how to incorporate tools like ChatGPT into its products. But humans "
-                                        },
-                                        {
-                                            "_": "TextUrl",
-                                            "text": {
-                                                "_": "TextPlain",
-                                                "text": "will still be necessary to provide personal advice"
-                                            },
-                                            "url": "https://www.nytimes.com/2023/05/20/business/ai-financial-advice-chatgpt.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "url": "https://www.nytimes.com/2023/07/18/business/media/ai-advertising.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
                                             "webpage_id": 0
                                         },
                                         {
@@ -777,20 +839,45 @@
                                     "texts": [
                                         {
                                             "_": "TextPlain",
-                                            "text": "Meta has "
+                                            "text": "Many Black artists are finding "
                                         },
                                         {
                                             "_": "TextUrl",
                                             "text": {
                                                 "_": "TextPlain",
-                                                "text": "publicly released its latest A.I. technology"
+                                                "text": "evidence of racial bias in A.I."
                                             },
-                                            "url": "https://www.nytimes.com/2023/05/18/technology/ai-meta-open-source.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
-                                            "webpage_id": 1961078289919153235
+                                            "url": "https://www.nytimes.com/2023/07/04/arts/design/black-artists-bias-ai.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "webpage_id": 1961078287842272584
                                         },
                                         {
                                             "_": "TextPlain",
-                                            "text": "\u00a0so people can build their own chatbots. Rivals like Google say that approach can be dangerous."
+                                            "text": ", both in the large data sets that teach machines how to generate images and in the programs that run the algorithms."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "_": "PageListItemText",
+                                "text": {
+                                    "_": "TextConcat",
+                                    "texts": [
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "An advanced version of ChatGPT can analyze images and is already helping the blind. But its ability to put a name to a face is "
+                                        },
+                                        {
+                                            "_": "TextUrl",
+                                            "text": {
+                                                "_": "TextPlain",
+                                                "text": "complicating the path to the feature\u2019s wide release"
+                                            },
+                                            "url": "https://www.nytimes.com/2023/07/18/technology/openai-chatgpt-facial-recognition.html?action=click&pgtype=Article&state=default&module=styln-artificial-intelligence&variant=show&region=BELOW_MAIN_CONTENT&block=storyline_flex_guide_recirc",
+                                            "webpage_id": 0
+                                        },
+                                        {
+                                            "_": "TextPlain",
+                                            "text": "."
                                         }
                                     ]
                                 }
@@ -803,16 +890,25 @@
                             "_": "TextConcat",
                             "texts": [
                                 {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Cade Metz"
+                                    },
+                                    "url": "https://www.nytimes.com/by/cade-metz",
+                                    "webpage_id": 0
+                                },
+                                {
                                     "_": "TextPlain",
-                                    "text": "Cade Metz is a technology reporter and the author of \u201cGenius Makers: The Mavericks Who Brought A.I. to Google, Facebook, and The World.\u201d He covers artificial intelligence, driverless cars, robotics, virtual reality and other emerging areas. "
+                                    "text": " is a technology reporter and the author of \u201cGenius Makers: The Mavericks Who Brought A.I. to Google, Facebook, and The World.\u201d He covers artificial intelligence, driverless cars, robotics, virtual reality and other emerging areas. "
                                 },
                                 {
                                     "_": "TextUrl",
                                     "text": {
                                         "_": "TextPlain",
-                                        "text": "@cademetz\n"
+                                        "text": "More about Cade Metz\n"
                                     },
-                                    "url": "https://twitter.com/cademetz",
+                                    "url": "https://www.nytimes.com/by/cade-metz",
                                     "webpage_id": 0
                                 },
                                 {
@@ -863,7 +959,7 @@
                         "_": "Photo",
                         "id": 5944147739262693687,
                         "access_hash": 5452143723536579040,
-                        "file_reference": "b'\\x00d\\x8bi\\xac{\\xf6x\\xe0nF\\xb6Q\\xac=Y\\x1d\\xea|\\x9c\\x7f'",
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8Z.pO\\xd4Dz\\\\\\xc9\\xb9\\x98\\xe0)2\\xeb\\xce'",
                         "date": "2023-05-01 09:03:28+00:00",
                         "sizes": [
                             {
@@ -907,7 +1003,7 @@
                         "_": "Photo",
                         "id": 5945897272715882765,
                         "access_hash": 2022408402805622451,
-                        "file_reference": "b'\\x00d\\x8bi\\xacY1U54RS|\\xa6^\\nZ\\xb1\\xcd\\x15&'",
+                        "file_reference": "b'\\x00d\\xd6\\t\\xf8\\xe1\\xd6\\xaf\\x82^\\x1d\\x8d7`\\xd6\\x0bb\\x08\\xe4R8'",
                         "date": "2023-05-01 09:03:28+00:00",
                         "sizes": [
                             {
@@ -970,12 +1066,12 @@
             "length": 90
         }
     ],
-    "views": 148,
+    "views": 159,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 1,
-        "replies_pts": 2478,
+        "replies_pts": 2539,
         "comments": true,
         "recent_repliers": [
             {

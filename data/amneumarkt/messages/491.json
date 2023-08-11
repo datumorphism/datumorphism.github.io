@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 491,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-07-13 05:48:46+00:00",
+    "message": "https://github.blog/2023-07-12-no-cyber-resilience-without-open-source-sustainability/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3891914977600171512,
+            "url": "https://github.blog/2023-07-12-no-cyber-resilience-without-open-source-sustainability/",
+            "display_url": "github.blog/2023-07-12-no-cyber-resilience-without-open-source-sustainability",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The GitHub Blog",
+            "title": "No cyber resilience without open source sustainability - The GitHub Blog",
+            "description": "Have your say to protect open source in the EU.",
+            "photo": {
+                "_": "Photo",
+                "id": 5892396213729341626,
+                "access_hash": 254787382865669352,
+                "file_reference": "b'\\x00d\\xd6\\t\\xf8\\x9a\\xfd\\xac\\xb5*\\x9c\\xc4\\x08Ti\\xda\\xff\\xa4\\xbf\\x1d\\x1f'",
+                "date": "2023-07-19 01:43:48+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xa1\\x0cbIU\\x0e@&\\xb4m`[{\\x9d\\xc9\\xb9\\x8f\\xdd\\xe4\\x8a\\xb3\\xf6\\x0bh\\xbetB\\x18r94\\xd7\\x0c\"a\\x11\\xda\\xe4\\xe78\\xa6\\x88oR\\xc2JY\\xc0 R\\\\\\x1c\\xa3\\xc6z2\\x90MS2Km\\x03HHg\\x07\\x8c\\xd4\\t\\xa8\\xc94\\xc8\\x8e\\xb1\\x85f\\x00\\xf5\\xf5\\xa5$\\xfa\\x15M\\xf7$\\x83L\\x82h\\xf7\\x89$\\xc1\\xa2\\xb4\\xa1H\\xe3M\\xb1\\x11\\xb4z\\x1c\\xd1B\\xb8\\xdd\\x88<\\xf7\\xf5\\xa3\\xce\\x7f_\\xd2\\x8a*.avP\\xd5Y\\x9f\\xca\\xc9\\xe9\\x9f\\xe9Y\\xd4QV\\xb65\\x8e\\xc5\\x9b[\\xd9m\\x95\\x960\\xa41\\x19\\xdc(\\xa2\\x8a\\n?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 9195
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 30923
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 672,
+                        "size": 55689
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2400,
+                        "h": 1260,
+                        "sizes": [
+                            17715,
+                            36058,
+                            64397,
+                            81690,
+                            118665
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Mike Linksvayer",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 0,
+            "length": 86
+        }
+    ],
+    "views": 135,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2539,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-07-13 05:48:49+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}
