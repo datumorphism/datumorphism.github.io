@@ -7,4 +7,10 @@ Kolmogorov&amp;rsquo;s theorem shows that one can use a finite number of careful
 Neuron response Using simple single neuron responses, we could compose complicated responses. To achieve that, we study the transformations of the response first.
 transformations Artificial Neural Network A simple network is a collection of neurons that response to stimulations, which could be the responses of other neurons.
 neural network A given input signal is spreaded onto three different neurons. The neurons respond to this signal separately then summed together with different weights.</description></item><item><title>Deep Autoregressive Network</title><link>https://datumorphism.leima.is/wiki/machine-learning/neural-networks/deep-autoregressive-networks/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/neural-networks/deep-autoregressive-networks/</guid><description>There are two levels of autoregressiveness in the DARN network:
-Inlayer autoregressive connections of the nodes, Intralayer autoregressive connections of nodes. The network is trained on MDL loss.</description></item></channel></rss>
+Inlayer autoregressive connections of the nodes, Intralayer autoregressive connections of nodes. The network is trained on MDL loss.</description></item><item><title>Layer Norm</title><link>https://datumorphism.leima.is/wiki/machine-learning/neural-networks/layer-norm/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/neural-networks/layer-norm/</guid><description>Layer norm is a normalization method to enable better training1.
+Layer normalization (LayerNorm) is a technique to normalize the distributions of intermediate layers. It enables smoother gradients, faster training, and better generalization accuracy.
+Quote from Xu et al. 20191
+The key of layer norm is to normalize the input to the layer using the mean and standard deviation.
+Layer norm plays two roles in neural networks:
+Projects the key vectors onto a hyperplane. Scales the key vectors to have the same length. Xu et al. 2019
+Xu2019 Xu J, Sun X, Zhang Z, Zhao G, Lin J. Understanding and Improving Layer Normalization.</description></item></channel></rss>
