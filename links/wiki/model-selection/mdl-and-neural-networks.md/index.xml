@@ -5,4 +5,6 @@ Quote from Xu et al. 20191
 The key of layer norm is to normalize the input to the layer using the mean and standard deviation.
 Layer norm plays two roles in neural networks:
 Projects the key vectors onto a hyperplane. Scales the key vectors to have the same length. Xu et al. 2019
-Xu2019 Xu J, Sun X, Zhang Z, Zhao G, Lin J. Understanding and Improving Layer Normalization.</description></item></channel></rss>
+Xu2019 Xu J, Sun X, Zhang Z, Zhao G, Lin J. Understanding and Improving Layer Normalization.</description></item><item><title>Batch Norm</title><link>https://datumorphism.leima.is/wiki/machine-learning/neural-networks/batch-norm/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>https://datumorphism.leima.is/wiki/machine-learning/neural-networks/batch-norm/</guid><description>Batch norm is a normalization method to relieve the internal covariate shift1.
+David Page created a colab notebook to provide some real examples of how batch norm helps with the internal covariance shift.
+Rohrer-Batch-Normalization 1.Rohrer B. Batch normalization [Internet]. E2EML School. [cited 2023 Oct 22]. Available from: https://e2eml.school/batch_normalization.html &amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item></channel></rss>
