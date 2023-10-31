@@ -16,6 +16,9 @@ references:
     link: "https://www.youtube.com/watch?v=qr4FVhBTq0I"
   - name: "Redis with Python for Data Science"
     link: "https://www.youtube.com/watch?v=Koh6piVaYh0"
+  - name: "Full Stack Book. FastAPI Redis Tutorial. YouTube. 2022. Available: https://www.youtube.com/watch?v=reNPNDustQU"
+    link: "https://www.youtube.com/watch?v=reNPNDustQU"
+    key: "fsb_fastapi"
 weight:
 links:
   - "wiki/computation/basics-of-mongodb.md"
@@ -88,7 +91,8 @@ Redis can be used as a handy data storage for data science projects. It can also
 ### Test
 
 Invoke the command line
-```
+
+```sh
 redis-cli
 ```
 
@@ -103,7 +107,7 @@ redis-cli
 
 [redis on pypi](https://pypi.org/project/redis/)
 
-```
+```python
 import redis
 
 r \= redis.Redis(host\='localhost', port\=6379, db\=0)
@@ -118,3 +122,13 @@ r.get('test')
 
 )
 ```
+
+### FastAPI
+
+The youtube channel Full Stack Book made a short video on how to integrate redis into FastAPI[^fsb_fastapi].
+
+{{< youtube reNPNDustQU >}}
+
+
+[^fsb_fastapi]: {{< cite key="fsb_fastapi" >}}
+
