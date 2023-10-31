@@ -27,16 +27,16 @@
             "id": 2047476603417220021,
             "url": "https://thegradient.pub/systems-for-machine-learning/",
             "display_url": "thegradient.pub/systems-for-machine-learning",
-            "hash": 0,
+            "hash": 1552554794,
             "type": "photo",
             "site_name": "The Gradient",
-            "title": "Machine Learning Systems",
+            "title": "Systems for Machine Learning",
             "description": "On the field of Machine Learning Systems and how it addresses the new challenges of ML with a lens shaped by traditional systems research",
             "photo": {
                 "_": "Photo",
                 "id": 5820024885215341700,
                 "access_hash": -2425647880242350867,
-                "file_reference": "b'\\x00d\\xd6\\t\\xfa\\xd5\\x8a\\xe5\\x03T\\xb40\\xc6\\xa5\\x1c_7\\xb9\\xdc\\x104'",
+                "file_reference": "b'\\x00eA\\x7f\\x94I\\xbb\\xb7\\xf0\\x9f\\xd9\\xd1P?\\x0bi\\x80\\x8f\\x03q\\xd4'",
                 "date": "2021-08-14 08:42:36+00:00",
                 "sizes": [
                     {
@@ -88,9 +88,1264 @@
             "embed_width": null,
             "embed_height": null,
             "duration": null,
-            "author": null,
+            "author": "Kabir Nagrecha",
             "document": null,
-            "cached_page": null,
+            "cached_page": {
+                "_": "Page",
+                "url": "https://thegradient.pub/systems-for-machine-learning/",
+                "blocks": [
+                    {
+                        "_": "PageBlockTitle",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Systems for Machine Learning"
+                        }
+                    },
+                    {
+                        "_": "PageBlockAuthorDate",
+                        "author": {
+                            "_": "TextPlain",
+                            "text": "Kabir Nagrecha"
+                        },
+                        "published_date": "2021-08-14 00:00:00+00:00"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Over the past decade, machine learning (ML) has become a critical component of countless applications and services in a variety of domains. Fields ranging from "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "healthcare"
+                                    },
+                                    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6616181/",
+                                    "webpage_id": 5222865856669583270
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " to "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "autonomous vehicles"
+                                    },
+                                    "url": "https://arxiv.org/pdf/1910.07738.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " have been transformed by the use of ML techniques."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Machine learning\u2019s increasing importance to real-world applications brought awareness of a new field focused on ML in practice - "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "machine learning systems"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " (or, as some call it, MLOps). This field acts as a bridging point between the domains of computer systems and machine learning, considering the new challenges of machine learning with a lens shaped by traditional systems research.\n\nSo what are these \u201cML challenges\u201d?"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "To describe the problems of a typical ML system and break down its components, I\u2019ll use the architecture proposed in D. Sculley\u2019s \u00a0\u201c"
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Hidden Technical Debt in Machine Learning Systems"
+                                    },
+                                    "url": "https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "\u201d (2015)."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5890077781793026555,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "ML system architecture from D. Sculley's \u201cHidden Technical Debt in Machine Learning Systems\u201d. Note the relative importance of data management versus ML code."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "I\u2019ll primarily focus on challenges in data collection, verification, and serving tasks. I\u2019ll also discuss some of the problems in model training, as it\u2019s become an increasingly expensive part of system development in recent years."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Data Collection"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "While researchers may be content to use readily available datasets such as "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "CIFAR"
+                                    },
+                                    "url": "https://www.cs.toronto.edu/~kriz/cifar.html",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "SQuAD"
+                                    },
+                                    "url": "https://arxiv.org/abs/1606.05250",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", industry practitioners often need to manually label and generate custom datasets for model training. But creating such datasets, particularly when domain expertise is required, can be tremendously expensive."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "This is certainly a major challenge for machine learning system developers."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Fittingly, one of the most successful solutions to this problem borrows research from both systems and machine learning. Combining data management techniques with work on self-supervised learning, SnorkelAI uses a \u201cweakly-supervised data programming\u201d approach."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "SnorkelAI"
+                                    },
+                                    "url": "https://arxiv.org/pdf/1711.10160.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " reimagines dataset creation as a programming problem, where users can specify functions for weakly supervised labeling that can then be combined and weighted to produce high quality labels. Expert-labelled data (high quality) and auto-labelled data (low quality) can be merged and tracked to ensure that model training is accurately weighted to account for varying levels of label quality."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5889963282259882702,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "SnorkelAI combines labels from different sources to allow models to aggregate and improve mixed-quality labels at large scales."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The technique is reminiscent of data fusion from database management systems - the application to machine learning is a pivot and redesign rather than a revolutionary creation made solely for ML. By identifying a shared problem in both systems and ML - combining \u00a0data sources - we can apply traditional systems techniques to a machine learning setting."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Data Verification"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Data verification serves as a natural follow-up to data collection. Data quality is a critical problem for machine learning pipelines. To use the common phrase, \u201cgarbage in, garbage out.\u201d To produce high quality models for their system, the maintainer has to ensure that the data they\u2019re feeding in is also high quality."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The problem cannot easily be solved by adjusting our approach to machine learning - we need to adjust the system. Fortunately, while data validation for ML is a new problem, data validation is not."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "To quote the TensorFlow Data Validation (TFDV) "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "paper"
+                                    },
+                                    "url": "https://mlsys.org/Conferences/2019/doc/2019/167.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ":"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "\u201cData validation is neither a new problem nor unique to ML, and so we borrow solutions from related fields (e.g., database systems). However, we argue that the problem acquires unique challenges in the context of ML and hence we need to rethink existing solutions\u201d"
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Once again, by identifying a parallel challenge between machine learning systems and traditional computer systems, we\u2019re able to reuse existing solutions with some ML-oriented modifications."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "TFDV\u2019s solution uses a \u201cbattle-tested\u201d solution from data management systems - schemas. A database enforces properties to ensure that data inputs and updates adhere to a specified format. Similarly, TFDV\u2019s data schemas enforce rules upon the data being inputted to the model."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5889757892628820528,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "TensorFlow Data Validation\u2019s schema-based system for ML data validation enables users to protect against anomalies in data feeds in production systems."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Of course, there are some differences, reflecting how machine learning systems differ from the traditional paradigm. ML schemas need to evolve and adapt over time to account for distribution shifts, and also need to account for changes that could be made to the model itself over the system\u2019s lifecycle."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "It\u2019s evident that machine learning presents a new type of systems challenge. But these systems bring in as much of the old as they do of the new. Before we look to reinvent the wheel, we should leverage what\u2019s already available."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Model Training"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "ML practitioners may be surprised at the inclusion of model training as an area for system optimizations. After all, if there\u2019s one area of machine learning applications that truly relies on ML techniques, it\u2019s training. But even here, systems research has a role to play."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Let\u2019s take the example of model parallelism. With the rise of Transformers, various applied ML domains have seen a dramatic increase in model sizes. A few years back, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "BERT-Large"
+                                    },
+                                    "url": "https://arxiv.org/pdf/1810.04805.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " pushed boundaries at 345M parameters, and now "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Megatron-LM"
+                                    },
+                                    "url": "https://arxiv.org/pdf/1909.08053.pdf%5C",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " boasts over a trillion parameters."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The sheer memory costs of these models can reach hundreds of gigabytes. No single GPU can hold them. The traditional solution, model parallelism, takes a relatively simplistic approach - partitioning the model across different devices to distribute memory costs."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5889626951960867471,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Traditional model parallelism can suffer from the sequential nature of neural network architectures. Opportunities for efficient parallel compute are limited."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But this technique is problematic: the model is sequential by its very nature, and training it requires passing data backwards and forwards through layers. Only one layer, and only one device, can be used at a time. This translates to terrible device under-utilization,,."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "But how can systems research help?"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Consider a deep neural network. Broken down to its lowest components, it can be considered a series of operators transforming data. Training simply refers to the process wherein we pass data through the operators, produce gradients, and feed the gradients back through the operators to update them."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Broken down at this level, the model starts to resemble other staged operations - a CPU\u2019s instruction pipeline, for example. Two systems, "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "GPipe "
+                                    },
+                                    "url": "https://arxiv.org/pdf/1811.06965.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Hydra"
+                                    },
+                                    "url": "https://adalabucsd.github.io/papers/TR_2021_SystemX.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", attempt to use this parallel to apply system optimizations for scalability and parallelism."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "GPipe embraces this CPU instruction parallel to turn model training into a pipelining problem. Each partition of the model is considered a different stage of the pipe, and minibatches are staged out through the partitions to maximize utilization."
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5891929879065244004,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Pipeline parallelism, the state-of-the-art in sequential model parallelism, parallelizes training across minibatches. But synchronization overheads can be expensive, particularly in transitions between forward and backward passes."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Note, however, that stages are reused in reverse order for backpropagation. This means that backprop can\u2019t start until the forward pipeline is fully clear. Nevertheless, this technique can speed up model parallel training to a great degree - as much as 5X with 8 GPUs!"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Hydra takes an alternate approach, detaching scalability and parallelism into two different steps. A common concept in database management systems is \u201cspilling\u201d, where excess data is sent to a lower level of the memory hierarchy. Hydra exploits sequential compute in model parallelism, and makes the observation that inactive model partitions "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "do not need to be on a GPU!"
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " Instead, it spills unneeded data down to DRAM, swapping model partitions on and off of the GPU in order to simulate traditional model parallel execution."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockPhoto",
+                        "photo_id": 5892293203233714433,
+                        "caption": {
+                            "_": "PageCaption",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Hydra\u2019s model spilling technique offloads the cost of deep learning training to DRAM rather than GPU memory, while maintaining the speedup advantages of GPU execution."
+                            },
+                            "credit": {
+                                "_": "TextEmpty"
+                            }
+                        },
+                        "url": null,
+                        "webpage_id": null
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "This enables us to train models only using one GPU at a time. Introducing a degree of task parallelism on top, then, is trivial. Each model, regardless of its size, only needs one GPU at a time, so the system can fully utilize every GPU simultaneously. The result is near-optimal speedups of >7.4X with 8 GPUs."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "But model parallelism is only the beginning of what systems research has to offer to model training. Other promising contributions include data parallelism (eg "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "PyTorch DDP"
+                                    },
+                                    "url": "https://arxiv.org/pdf/2006.15704.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "), model selection (eg "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Cerebro"
+                                    },
+                                    "url": "https://adalabucsd.github.io/papers/2021_Cerebro_CIDR.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Model Selection Management Systems"
+                                    },
+                                    "url": "http://pages.cs.wisc.edu/~arun/vision/SIGMODRecord15.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "), distributed execution frameworks ("
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Spark"
+                                    },
+                                    "url": "http://spark.apache.org/",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " or "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Ray"
+                                    },
+                                    "url": "https://github.com/ray-project/ray",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "), and many more - model training is an area ripe for optimizations with systems research."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Model Serving"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "At the end of the day, we build machine learning models to be used. Model serving and prediction is one of the most critical aspects of machine learning practice, and it\u2019s one of the spaces where systems research has had the biggest impact."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Prediction can be split into two primary settings: offline deployment and online deployment. Offline deployment is relatively straightforward - it involves a single large batch job of predictions run at irregular intervals. Common settings include business intelligence, insurance evaluations, and healthcare analytics. Online deployment belongs in web applications where rapid, low-latency predictions are needed for users who need fast responses to their queries."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Both settings have their own needs and demands. Generally, offline deployment requires high throughput training procedures to get through many samples quickly. Online deployment, on the other hand, will generally need extremely fast turnaround times on a single prediction, rather than many at once."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Systems research has reshaped how we approach both tasks. Consider "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Krypton"
+                                    },
+                                    "url": "https://adalabucsd.github.io/papers/2020_Krypton_TODS.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": ", a tool that reimagines video analytics as a \u201cmulti-query optimization\u201d (MQO) task."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "MQO "
+                                    },
+                                    "url": "http://daslab.seas.harvard.edu/reading-group/papers/mqo.pdf",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "is not a new area - it\u2019s been part of relational database design for decades. The general idea is simple: different queries may share related components, which can then be saved and reused. Krypton makes the observation that CNN inference is often done on batches of related images, such as in video analytics."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Typically, videos are produced at high frame rates, such that consecutive frames tend to be relatively similar. Most of the information in frame 1 is still present in frame 2. There\u2019s a clear parallel to MQO here - we have a series of tasks with shared information between them."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Krypton runs a regular inference pass on the first frame, and then "
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "materializes, "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "or saves,"
+                                },
+                                {
+                                    "_": "TextItalic",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": " "
+                                    }
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": "intermediate data that the CNN produced while predicting. Subsequent images are compared to the first frame to determine what patches of the image have changed sufficiently to be worth recomputing. Once the patch is identified, Krypton computes the \u201cchange field\u201d of the patch through the CNN to determine what neuron outputs have changed throughout the model\u2019s entire state. These neurons are rerun with the changed data. The rest of the data is simply reused from the base frame!"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "The result is end-to-end speedups of more than >4X speedups on inferencing workloads with only minor accuracy loss from data staleness. This sort of runtime improvement can be critical to long-running streaming applications such as video analytics on security footage."
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Krypton is not alone in its focus on model inference. Other works such as "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "Clipper"
+                                    },
+                                    "url": "https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "TensorFlow Extended"
+                                    },
+                                    "url": "https://www.tensorflow.org/tfx/guide/serving",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " address the same problem of efficient prediction serving by leveraging systems optimizations and model management techniques to offer efficient and robust predictions."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Conclusion"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextPlain",
+                            "text": "Machine learning has revolutionized the way we use and interact with data. It\u2019s improved efficiency in businesses, fundamentally changed the advertising landscape, and overhauled healthcare technologies. But for machine learning to continue to grow its impact and reach, the development pipeline has to improve. Systems research is filling this need, by bringing decades of work in database systems, distributed computing, and application deployment to the machine learning space. Machine learning is novel and exciting - but many of its problems are not. By identifying the parallels and \u201ctwisting\u201d old solutions, we can use systems to redesign ML."
+                        }
+                    },
+                    {
+                        "_": "PageBlockDivider"
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Author Bio"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextConcat",
+                            "texts": [
+                                {
+                                    "_": "TextPlain",
+                                    "text": "Kabir Nagrecha is a PhD student at the University of California San Diego, advised by Arun Kumar. He previously received his B.Sc. from UC San Diego at the age of 17, and is currently interning in Apple's Siri group. His research focuses on enabling scalability in deep learning by use of systems techniques. You can find an updated list of his publications at "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "kabirnagrecha.com"
+                                    },
+                                    "url": "https://thegradient.pub/p/3ee604ca-02b0-457a-9a50-80e0363c4b9b/www.kabirnagrecha.com",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " and follow "
+                                },
+                                {
+                                    "_": "TextUrl",
+                                    "text": {
+                                        "_": "TextPlain",
+                                        "text": "@KabirNagrecha"
+                                    },
+                                    "url": "https://twitter.com/KabirNagrecha",
+                                    "webpage_id": 0
+                                },
+                                {
+                                    "_": "TextPlain",
+                                    "text": " on Twitter."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextBold",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Citation"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "For attribution in academic contexts or books, please cite this work as"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "Kabir Nagrecha, \"Systems for Machine Learning\", The Gradient, 2021."
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    },
+                    {
+                        "_": "PageBlockParagraph",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextPlain",
+                                "text": "BibTeX citation:"
+                            }
+                        }
+                    },
+                    {
+                        "_": "PageBlockBlockquote",
+                        "text": {
+                            "_": "TextItalic",
+                            "text": {
+                                "_": "TextConcat",
+                                "texts": [
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "@article{nagrecha2021systems,\nauthor = {Nagrecha, Kabir},\ntitle = {Systems for Machine Learning},\njournal = {The Gradient},\nyear = {2021},\nhowpublished = {\\url{"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "https://thegradient.pub/"
+                                        },
+                                        "url": "https://thegradient.pub/its-all-training-data/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "systems-for-machine-learning"
+                                    },
+                                    {
+                                        "_": "TextUrl",
+                                        "text": {
+                                            "_": "TextPlain",
+                                            "text": "/"
+                                        },
+                                        "url": "https://thegradient.pub/its-all-training-data/",
+                                        "webpage_id": 0
+                                    },
+                                    {
+                                        "_": "TextPlain",
+                                        "text": "} },\n}"
+                                    }
+                                ]
+                            }
+                        },
+                        "caption": {
+                            "_": "TextEmpty"
+                        }
+                    }
+                ],
+                "photos": [
+                    {
+                        "_": "Photo",
+                        "id": 5890077781793026555,
+                        "access_hash": 3680674855979476167,
+                        "file_reference": "b'\\x00eA\\x7f\\x94H\\xfeql2xhnT\\\\\\x83\\x80\\xbf43\\x1a'",
+                        "date": "2023-10-23 23:47:41+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd9\\xa2\\x90\\xff\\x00\\x9e*&8\\x05zg=\\xa8\\x02P\\xcaz0?\\x8d.EP\\x8a2\\xa3.J\\x93\\xc6*\\xda\\x83\\xe5\\xe0\\x10F:\\xd0\\x04\\x80\\x83\\xd0\\xd1LD\\xd9\\x9es\\x9a(\\x01\\xf4\\x85\\x14\\x9c\\x91E\\x14\\x00\\x864?\\xc2)B\\x800\\x07\\x14Q@\\x0bE\\x14P\\x07'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 6565
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 22697
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 720,
+                                "size": 44026
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1600,
+                                "h": 900,
+                                "sizes": [
+                                    7829,
+                                    15183,
+                                    29342,
+                                    37294,
+                                    52198
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5889963282259882702,
+                        "access_hash": -7974828531405364309,
+                        "file_reference": "b'\\x00eA\\x7f\\x940i\\x0e\\x18*\\xf9\\x13\\xcdI\\xa6F5\\xc6OJ\\xa7'",
+                        "date": "2023-10-23 23:47:41+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b\"\\x01\\x12(\\xd5\\x9d\\x99c,\\x9c\\xb0\\xe8(\\xc9\\x03'q\\xcf\\xa5\\x136\\xd5\\xdd\\xd4\\x0e\\xd8\\xa8\\xd2BT\\xb0B{`\\x01E\\x848\\xcaOE`>\\x94\\xd8\\xe5.H\\xe4~4\\xe5%\\x81\\xf9\\x19@\\xfe\\xf5\\nT\\x9c\\x0e\\xb4\\xec!\\xe1\\xb8\\xc1\\xa2\\x8d\\xb8\\x04\\x9fJ)\\x0cq\\x00\\xf5\\x00\\xd2\\x00\\x01\\xe0\\x0e\\x94Q@\\xc3'\\xd6\\x90\\x80z\\xf3E\\x14\\x00`zQE\\x14\\x01\""
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 147,
+                                "size": 12528
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 368,
+                                "size": 44662
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "y",
+                                "w": 966,
+                                "h": 444,
+                                "sizes": [
+                                    4517,
+                                    13524,
+                                    27985,
+                                    37493,
+                                    56521
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5889757892628820528,
+                        "access_hash": -4223513850690124724,
+                        "file_reference": "b'\\x00eA\\x7f\\x94\\xde\\xc4\\r\\xd6\\x8e\\x8ac\\x9fn\\x9e\\x91\\x9e\\xffs|c'",
+                        "date": "2023-10-23 23:47:41+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x0b(\\xd7\\xceI\\x1c\\x8a\\x01\\x00\\xe3w?ZZL\\x0e\\xb8\\x19\\xfaP\\x02d\\x92G4\\x023\\xd5\\x87\\xe3N\\xc7~\\xf4\\x84\\x0e(\\x01q\\x81\\xd4\\xd1E\\x14\\x01'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 89,
+                                "size": 8795
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 222,
+                                "size": 30096
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 355,
+                                "size": 58806
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1600,
+                                "h": 444,
+                                "sizes": [
+                                    5908,
+                                    16434,
+                                    37367,
+                                    48318,
+                                    70828
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5889626951960867471,
+                        "access_hash": 460807122526114124,
+                        "file_reference": "b'\\x00eA\\x7f\\x94\\x14\\xa2o\\xa3\\x1aF^3\\xac1`M\\x18\\xfaG*'",
+                        "date": "2023-10-23 23:47:41+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x17(\\xd5\\x94\\x90F3F\\xe2zs\\xf4\\xa4\\x93\\xa6x\\xa0\\x9e\\x06@9\\xa4>\\x82y\\x8d\\x9aqr\\x07jf\\xe1\\x9e\\x82\\x9e\\x1b\\x96\\x1c\\x00\\xb8\\xedTH\\xe4b\\xc3&\\x8aM\\xdc\\x12;s\\xd2\\x8a@6@J\\xe3\\x07\\xad.\\t\\x03\\x821E\\x14\\x0f\\xa0\\xdd\\x9c\\xe3\\r\\xfaS\\x82\\x9c\\xb1\\xf5\\xc5\\x14S\\x10\\xa1>S\\x8e2=h\\xa2\\x8aC?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 180,
+                                "size": 21878
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 450,
+                                "size": 85973
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 720,
+                                "size": 167655
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1600,
+                                "h": 900,
+                                "sizes": [
+                                    15629,
+                                    50828,
+                                    103165,
+                                    135913,
+                                    203780
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5891929879065244004,
+                        "access_hash": -8600995855560899256,
+                        "file_reference": "b'\\x00eA\\x7f\\x94c\\xf5Q\\x0f\\x0e\\x89\\xf1R\\x8ci\\xc3@@1-\\n'",
+                        "date": "2023-10-23 23:47:58+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x0c(\\xd8\\xc8\\xe9\\x9a7\\n;\\x9aM\\xa0\\xf7=(\\x01\\t\\xe7\\xabR\\x86\\xfa\\xd27\\x07\\xa5;h\\xa0\\x05\\x074R\\x01\\x81E\\x00\\x7f'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 94,
+                                "size": 6475
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 236,
+                                "size": 23398
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 378,
+                                "size": 41246
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1600,
+                                "h": 472,
+                                "sizes": [
+                                    5452,
+                                    14375,
+                                    30846,
+                                    38925,
+                                    54002
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    },
+                    {
+                        "_": "Photo",
+                        "id": 5892293203233714433,
+                        "access_hash": 5333687823635737841,
+                        "file_reference": "b'\\x00eA\\x7f\\x94\\x13\\xcb\\xa7z\\x06\\x90\\xfdT \\xaf\\xae\\xa8\\xbe\\xd2\\xe0\\xb4'",
+                        "date": "2023-10-23 23:47:58+00:00",
+                        "sizes": [
+                            {
+                                "_": "PhotoStrippedSize",
+                                "type": "i",
+                                "bytes": "b'\\x01\\x08(\\xd5\\xcbyy=sN=1\\xd3\\xdcQE\\x00.N:R)8\\xef\\xf8\\xd1E\\x00\\x19\\xf9\\xba\\x1a(\\xa2\\x80?'"
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "m",
+                                "w": 320,
+                                "h": 66,
+                                "size": 6512
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "x",
+                                "w": 800,
+                                "h": 165,
+                                "size": 25055
+                            },
+                            {
+                                "_": "PhotoSize",
+                                "type": "y",
+                                "w": 1280,
+                                "h": 264,
+                                "size": 51761
+                            },
+                            {
+                                "_": "PhotoSizeProgressive",
+                                "type": "w",
+                                "w": 1600,
+                                "h": 330,
+                                "sizes": [
+                                    4790,
+                                    14549,
+                                    33358,
+                                    43756,
+                                    65179
+                                ]
+                            }
+                        ],
+                        "dc_id": 4,
+                        "has_stickers": false,
+                        "video_sizes": []
+                    }
+                ],
+                "documents": [],
+                "part": false,
+                "rtl": false,
+                "v2": false,
+                "views": null
+            },
             "attributes": []
         }
     },
@@ -112,7 +1367,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2539,
+        "replies_pts": 2585,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

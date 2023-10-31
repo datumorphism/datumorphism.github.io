@@ -1,0 +1,141 @@
+{
+    "_": "Message",
+    "id": 498,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-08-16 09:18:36+00:00",
+    "message": "#timeseries #ai\n\nhttps://lu.ma/timegpt\n\nAnd demo:\n\nhttps://github.com/Nixtla/nixtla",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7390790971986315003,
+            "url": "https://lu.ma/timegpt",
+            "display_url": "lu.ma/timegpt",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "lu.ma",
+            "title": "TimeGPT Launch Announcement \u00b7 Luma",
+            "description": "Introducing TimeGPT Beta\nWe recognize that the essence of knowledge lies in uncertainty reduction - the continuous pursuit to anticipate and plan for what's next. Whether it's a bank...",
+            "photo": {
+                "_": "Photo",
+                "id": 5973032609804038568,
+                "access_hash": 2007844567338167893,
+                "file_reference": "b'\\x00eA\\x7f\\x92Ou\\xd0\\xcc\\xaf\\xc8\\x16\\xd7x\\xb1\\x07\\x035\\xf1R\\x15'",
+                "date": "2023-08-16 00:38:41+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xca\\xe7\\xae(\\xdeq\\x8a\\x10|\\xa4\\xd2q\\xcf\\x14\\x08\\xb3\\x15\\xa3\\xcd\\x1f\\x98\\x19\\x00>\\xa6\\x9d5\\x84\\x91Ddb\\xbbG\\xa3\\x7f\\x9fZ\\xd5\\xd2A\\xfe\\xcfN:\\x93\\xfc\\xe9\\xda\\xa7\\x16.02\\xc4\\x01\\xf9\\xd03\\x9f*(\\xa6\\xbfZ(\\x10\\x01J\\x1b\\xd8~TQ@\\xc9\\xd2\\xf6\\xe2\\x18\\xc2G&\\xd5\\x1d\\x85\\x12\\xdd\\xcf:bG,\\x01\\xcd\\x14P\\x04;FO\\x14QE\\x02?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 13803
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 59187
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 640,
+                        "size": 123485
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 2000,
+                        "h": 1000,
+                        "sizes": [
+                            24250,
+                            63643,
+                            94519,
+                            143332,
+                            247744
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 11
+        },
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 12,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 17,
+            "length": 21
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 51,
+            "length": 32
+        }
+    ],
+    "views": 242,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2585,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-08-16 09:23:06+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "timeseries",
+        "ai"
+    ]
+}

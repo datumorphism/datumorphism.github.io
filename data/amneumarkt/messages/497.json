@@ -1,0 +1,80 @@
+{
+    "_": "Message",
+    "id": 497,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-08-14 16:14:00+00:00",
+    "message": "#ai \n\nPlotting Progress in AI - Contextual AI\nhttps://contextual.ai/plotting-progress-in-ai/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2212092726987838974,
+            "url": "https://contextual.ai/plotting-progress-in-ai/",
+            "display_url": "contextual.ai/plotting-progress-in-ai",
+            "hash": 0,
+            "type": "article",
+            "site_name": "Contextual AI",
+            "title": "Plotting Progress in AI - Contextual AI",
+            "description": "The last few years have seen relentless progress in what AI can do, yet our ability to gauge these abilities has never been worse. A key culprit? Static benchmarks. We recognized this problem back in 2021 and argued that benchmarks should be as dynamic as the models they evaluate. To make this possible, we introduced [\u2026]",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Douwe Kiela",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 46,
+            "length": 46
+        }
+    ],
+    "views": 219,
+    "forwards": 4,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2585,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-08-15 07:07:51+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ai"
+    ]
+}

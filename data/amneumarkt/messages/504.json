@@ -1,0 +1,109 @@
+{
+    "_": "Message",
+    "id": 504,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-10-18 16:41:19+00:00",
+    "message": "#misc \n\n4090 ??? Why?\n\nhttps://www.sec.gov/Archives/edgar/data/1045810/000104581023000217/nvda-20231017.htm",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5296375407265828462,
+            "access_hash": -3241692169920620159,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xf8eA\\x7f\\x92\\x8f\\xae\\xe9I\\xa9p\\xb3}\\xce\\x84\\x08R\\xff\\xa8\\xaf/'",
+            "date": "2023-10-18 16:41:19+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xd6\\xde\\xbe\\x86\\x97r\\xfa\\xd48\\xe6\\x94\\x01@\\x13\\x0cc\\x8a)\\x17\\xee\\x8e\\xb4P\\x04[\\x9f8\\xe3\\x18\\xebK\\x96\\xfe\\xf57#\\xb0?\\x9d.G\\xa1\\xfc\\xe8\\x01\\xe1_\\x1fx~\\xb4R\\x8cc\\xff\\x00\\xae(\\xa0\\x00\\x83\\xeai\\x06OsE\\x14\\x80v>\\xbf\\x9d\\x14Q@\\x1f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 21684
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 108015
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        10223,
+                        33885,
+                        98087,
+                        140638,
+                        187544
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 23,
+            "length": 84
+        }
+    ],
+    "views": 96,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2585,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 829,
+        "read_max_id": 829
+    },
+    "edit_date": "2023-10-18 16:44:14+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

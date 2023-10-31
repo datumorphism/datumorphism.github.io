@@ -30,9 +30,52 @@
             "hash": 0,
             "type": "photo",
             "site_name": "GitHub",
-            "title": "GitHub - observablehq/plot: A concise API for exploratory data visualization",
-            "description": "A concise API for exploratory data visualization. Contribute to observablehq/plot development by creating an account on GitHub.",
-            "photo": null,
+            "title": "GitHub - observablehq/plot: Observable Plot: a concise API for exploratory data visualization",
+            "description": "Observable Plot: a concise API for exploratory data visualization - GitHub - observablehq/plot: Observable Plot: a concise API for exploratory data visualization",
+            "photo": {
+                "_": "Photo",
+                "id": 5795413618802667791,
+                "access_hash": -7763103095809441219,
+                "file_reference": "b'\\x00eA\\x7f\\x93\\xcdjr\\xea\\x8e\\xb0>.\\xa0\\xbd\\xad\\xac\\xceE\\xfa\\x08'",
+                "date": "2023-09-21 15:40:20+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x14(\\xd9=)\\x9b\\xc5<\\xf4\\xa6\\x08\\xc0\\x07\\x1dM\\x00)p1\\xefAqLu\\xc68$\\xfb\\n^\\x80p\\xdc{S\\xd0J\\xe4\\x94QE!\\x85\\x14Q@\\x05\\x14Q@\\x05\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 160,
+                        "size": 4294
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 400,
+                        "size": 12030
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 640,
+                        "sizes": [
+                            4281,
+                            7641,
+                            11378,
+                            14254,
+                            22241
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -67,7 +110,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2539,
+        "replies_pts": 2585,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

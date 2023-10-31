@@ -13,7 +13,7 @@
     "silent": false,
     "post": true,
     "from_scheduled": false,
-    "legacy": false,
+    "legacy": true,
     "edit_hide": false,
     "pinned": false,
     "from_id": null,
@@ -36,7 +36,7 @@
                 "_": "Photo",
                 "id": 5806414073724776730,
                 "access_hash": -7913008154004818900,
-                "file_reference": "b'\\x00d\\xd6\\t\\xf8T\\xcd\\xa1kVH\\x00\\xc2O/Jcx\\x08\\xda\\x9a'",
+                "file_reference": "b'\\x00eA\\x7f\\x92\\x8e\\xee\\x00xG\\xff<\\xd9\\\\\\xf7R~U\\xf7a\\xe9'",
                 "date": "2023-06-21 12:27:11+00:00",
                 "sizes": [
                     {
@@ -105,19 +105,24 @@
             "length": 48
         }
     ],
-    "views": 13,
-    "forwards": 1,
+    "views": 207,
+    "forwards": 3,
     "replies": {
         "_": "MessageReplies",
-        "replies": 0,
-        "replies_pts": 2539,
+        "replies": 1,
+        "replies_pts": 2585,
         "comments": true,
-        "recent_repliers": [],
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1110189407
+            }
+        ],
         "channel_id": 1159907975,
-        "max_id": null,
+        "max_id": 818,
         "read_max_id": null
     },
-    "edit_date": "2023-08-11 09:24:24+00:00",
+    "edit_date": "2023-08-11 21:47:37+00:00",
     "post_author": null,
     "grouped_id": null,
     "restriction_reason": [],

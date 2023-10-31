@@ -1,0 +1,116 @@
+{
+    "_": "Message",
+    "id": 502,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-10-16 10:04:15+00:00",
+    "message": "#llm\n\nYou probably heard of the famous ChatDev (https://github.com/OpenBMB/ChatDev ) that works like a whole company with all sorts of employees solving different parts of a complicated problem. If not, checkout the video demo in the GitHub repo.\n\nNow, Microsoft joined the game. They built a framework for such models. The screenshot attached is a demo from the documentation. I tried it, and it is super easy to get started.\n\nhttps://github.com/microsoft/autogen",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5289869137402777536,
+            "access_hash": -4996981335200998930,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xf6eA\\x7f\\x92\\x91\\xed\\xea\\x17\\x15\\xe3\\xcd\\x12BJ\\xe9\\x1c\\xca\\x8b\\xe1\\xcc'",
+            "date": "2023-10-16 10:04:15+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01\\x16(\\xd7\\xdcwc\\x8ac\\xee\\x1fu\\xa9\\xd8_3;y\\xf5\\xa6\\xb8\\x00d\\x12>\\x94\\x00\\xa8\\xc7v\\x0bg\\xf0\\xa1\\x89\\\\ri\\xb1\\xb78\\xe4\\xd0@\\xecH?S@\\x87\\xa3\\x13E53\\x9e\\x9f\\xad\\x14\\x00\\xfc|\\xf9\\xa4\\xf2\\xfd\\xcf\\xe7E\\x14\\x0cP\\xb84\\x8c\\xa4\\xf2(\\xa2\\x80\\x15\\x14\\x8fJ(\\xa2\\x80?'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 176,
+                    "size": 13513
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 439,
+                    "size": 57245
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 1280,
+                    "h": 702,
+                    "size": 101038
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "w",
+                    "w": 2188,
+                    "h": 1200,
+                    "sizes": [
+                        23605,
+                        51894,
+                        96331,
+                        128807,
+                        192169
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 48,
+            "length": 34
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 428,
+            "length": 36
+        }
+    ],
+    "views": 99,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2585,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-10-16 10:05:44+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "llm"
+    ]
+}

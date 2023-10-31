@@ -25,19 +25,19 @@
         "webpage": {
             "_": "WebPage",
             "id": 6631698070112994446,
-            "url": "https://bard.google.com/",
+            "url": "http://bard.google.com/",
             "display_url": "bard.google.com/?hl=en",
             "hash": 0,
             "type": "photo",
             "site_name": "Google",
-            "title": "\u200eTry Bard, an AI experiment by Google",
-            "description": "Bard is your creative and helpful collaborator to supercharge your imagination, boost productivity, and bring ideas to life.",
+            "title": "\u200eBard - Chat Based AI Tool from Google, Powered by PaLM 2",
+            "description": "Discover more about Bard, a collaborative AI tool developed by Google and powered by PaLM 2 to help bring your ideas to life.",
             "photo": {
                 "_": "Photo",
-                "id": 5881103928664371250,
-                "access_hash": 396270652792813518,
-                "file_reference": "b'\\x00d\\xd6\\t\\xf8\\xa9ou\\xd6\\xa5T\\x90E.\\x85?\\xedP\\xf2\"\\xc7'",
-                "date": "2023-04-09 15:10:31+00:00",
+                "id": 5822358611530199521,
+                "access_hash": 5479225040686508392,
+                "file_reference": "b'\\x00eA\\x7f\\x92\\xcb\\x02\\xca\\xf8\\xe5\\xaa\\xa6\\x1b%\\xc4T\\x85\\x9f\\x13\\xf6?'",
+                "date": "2023-09-30 22:46:55+00:00",
                 "sizes": [
                     {
                         "_": "PhotoStrippedSize",
@@ -49,7 +49,7 @@
                         "type": "m",
                         "w": 320,
                         "h": 168,
-                        "size": 7876
+                        "size": 7880
                     },
                     {
                         "_": "PhotoSize",
@@ -100,12 +100,12 @@
             "length": 24
         }
     ],
-    "views": 163,
+    "views": 222,
     "forwards": 1,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2539,
+        "replies_pts": 2585,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

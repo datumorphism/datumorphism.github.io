@@ -1,0 +1,135 @@
+{
+    "_": "Message",
+    "id": 501,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-10-13 07:22:57+00:00",
+    "message": "#ai \n\nhttps://www.stateof.ai/2023-report-launch",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 513868690798650119,
+            "url": "https://www.stateof.ai/2023-report-launch",
+            "display_url": "stateof.ai/2023-report-launch",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "www.stateof.ai",
+            "title": "State of AI Report 2023",
+            "description": "The State of AI Report analyses the most interesting developments in AI. Read and download here.",
+            "photo": {
+                "_": "Photo",
+                "id": 5856366643616264778,
+                "access_hash": 2708336299893211022,
+                "file_reference": "b'\\x00eA\\x7f\\x92F0\\x8a4\\xc7xa\\x9c# TO\\x0c\\x16W\\xbe'",
+                "date": "2023-10-12 18:02:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x16(\\xc9\\x03$\\x0fZ\\x91\\xad\\xa5PIN\\x05EOF%\\x80$\\x90{\\x1c\\xd7@\\x87}\\x9eO\\xee\\xf7\\x03\\xafsJm\\xa5\\x19\\xcat\\xf7\\x14\\xe2\\xbf7\\xf0\\xff\\x00\\xe3\\xd5\\x13\\xb3n#'\\x1e\\x994\\x80i\\x18$\\x1e\\xa2\\x8aN\\xb4S\\x01H\\x02\\x90\\x1ct\\xa2\\x8a\\x00]\\xc7\\xd4\\xd2\\x13\\x9e\\xb4Q@\\n0z\\x93E\\x14P\\x07\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 179,
+                        "size": 8577
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 448,
+                        "size": 32551
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 717,
+                        "size": 58122
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "w",
+                        "w": 1564,
+                        "h": 876,
+                        "sizes": [
+                            11747,
+                            19532,
+                            37124,
+                            46977,
+                            67909
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Nathan Benaich and Air Street Capital",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 6,
+            "length": 41
+        }
+    ],
+    "views": 112,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 1,
+        "replies_pts": 2585,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 825,
+        "read_max_id": 825
+    },
+    "edit_date": "2023-10-13 09:17:51+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ai"
+    ]
+}

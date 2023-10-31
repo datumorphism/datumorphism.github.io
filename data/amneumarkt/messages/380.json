@@ -23,8 +23,68 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPageEmpty",
-            "id": 6658618839952267598
+            "_": "WebPage",
+            "id": 6658618839952267598,
+            "url": "https://arxiv.org/abs/2205.02302",
+            "display_url": "arxiv.org/abs/2205.02302",
+            "hash": 0,
+            "type": "article",
+            "site_name": "arXiv.org",
+            "title": "Machine Learning Operations (MLOps): Overview, Definition, and Architecture",
+            "description": "The final goal of all industrial machine learning (ML) projects is to develop ML products and rapidly bring them into production. However, it is highly challenging to automate and operationalize...",
+            "photo": {
+                "_": "Photo",
+                "id": 5937092525334572201,
+                "access_hash": 7653077906152661335,
+                "file_reference": "b'\\x00eA\\x7f\\x93\\x9b\\xbc]\\xcfsD@~\\xa0\\r\\xd0E=|\\xd2\\xe7'",
+                "date": "2021-06-18 01:36:59+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xd9\\xa2\\x8aF8\\x04\\x80I\\x1d\\x85\\x00-\\x15\\x1a\\xca\\x8e\\x9b\\xc1\\xf9G\\xafjr\\xb8n\\x99\\xe9\\x9e\\x94\\x00\\xea(\\xa2\\x80 \\x9c\\xb6\\xec(n\\x9dF\\x7f\\xa5#d\\xb4`\\xf9\\x83#\\xe6\\xc6j\\xc5\\x14\\x01E\\xc7\\xfag\\x07\\xf7y\\x1eg\\xa6{g\\xf4\\xab\\x04\\x93+/\\xce\\x01\\\\g\\x07\\x19\\xa7\\xach\\xa9\\xb0/\\xcb\\xe9J\\x8a\\x11B\\x8c\\xe0z\\xd06\\xc6DdbK\\x8201\\x8fS\\xdc\\xd1R\\xd1@\\x82\\x8a(\\xa0\\x02\\x8a(\\xa0\\x02\\x8a(\\xa0\\x0f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 7465
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 800,
+                        "size": 20961
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1000,
+                        "h": 1000,
+                        "sizes": [
+                            4883,
+                            8188,
+                            12131,
+                            15250,
+                            24221
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
         }
     },
     "reply_markup": null,
@@ -40,12 +100,12 @@
             "length": 32
         }
     ],
-    "views": 210,
+    "views": 211,
     "forwards": 0,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2539,
+        "replies_pts": 2585,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

@@ -28,11 +28,54 @@
             "url": "https://www.higharc.com/",
             "display_url": "higharc.com",
             "hash": 0,
-            "type": "article",
+            "type": "photo",
             "site_name": "Higharc",
             "title": "Higharc \u2013 The intelligent homebuilding platform.",
             "description": "Design, sell in 3D, and get permit-ready construction documents \u2014 all in one place.",
-            "photo": null,
+            "photo": {
+                "_": "Photo",
+                "id": 5788309983413252527,
+                "access_hash": 609211429174143118,
+                "file_reference": "b'\\x00eA\\x7f\\x93\\x0eT[\\xd4ZY]\\xd7\\x13~\\x03\\x12\\xa0\\x15T\\x13'",
+                "date": "2023-09-19 22:50:07+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xce\\xa5\\xc1\\xf44\\xb0\\xb0\\x8eds\\xd1X\\x1a\\xb8\\xda\\x84\\x8cd\\r&Q\\x94\\x8d\\xbbzq\\xc5\\x00R\\x14\\x13R\\xa4\\xd1`\\x07\\x84\\x11\\xdc\\x8e\\xbd(\\xf3b9\\xcc\\x03$\\xe7\\xefP\\x049\\xa2\\x94\\xfb\\x0cQ@\\r\\xa5\\x02\\x8a(\\x01E\\x14Q@\\x05\\x14Q@\\x1f'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 8280
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 420,
+                        "size": 36166
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 630,
+                        "sizes": [
+                            7539,
+                            14684,
+                            19048,
+                            32147,
+                            65033
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
             "embed_url": null,
             "embed_type": null,
             "embed_width": null,
@@ -62,7 +105,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2539,
+        "replies_pts": 2585,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

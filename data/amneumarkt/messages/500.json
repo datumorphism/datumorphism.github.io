@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 500,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-10-13 06:33:40+00:00",
+    "message": "#statistics\n\nhttps://www.nature.com/articles/d41586-023-03200-5",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 7937820126122099134,
+            "url": "https://www.nature.com/articles/d41586-023-03200-5",
+            "display_url": "nature.com/articles/d41586-023-03200-5",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Nature",
+            "title": "C. R. Rao, statistician who transformed data analytics (1920\u20132023)",
+            "description": "Nature - Pioneer of powerful tools for sifting data and optimizing device designs.",
+            "photo": {
+                "_": "Photo",
+                "id": 5851524901213680282,
+                "access_hash": 5083165240243728302,
+                "file_reference": "b'\\x00eA\\x7f\\x92U\\x01\\x01\\xf0\\xd4\\xf6M\\xe2aU\\xd4\\xeb\\xa2\\xf4g\\xd4'",
+                "date": "2023-10-10 16:52:55+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x17(\\x81#\\x8e\\x1c6\\xfc\\xb0\\xcfj-P$\\xe8\\xe5\\xf2\\x01\\xcfJSy\\xbe\\xdeDPC`r[$\\xe0\\xd3\\xc3f%bN\\xdcc?\\x8d\\x00[\\x928\\xae\\x1eS\\x88\\xdbp\\xe1\\x8fQ\\xc5K\\r\\xccQ\\xc0\\xb1\\xbc\\x85\\x99W\\x04\\xed<\\xd4Q\\x04E\\x18\\x19'\\xbei\\xa5\\x81\\x89\\xcf\\x19S\\xd6\\x80)yk\\xe7y\\xbb\\xc8\\xf9\\xb7`\\xad\\x14\\xe9\\xee\\x19\\x08\\n:\\xf7<Q@\\x12\\xcf\\xa6\\xc5\\x14%\\x91\\x9b9\\x1c\\x9adhf\\x83\\r\\x95\\x03\\xa8\\x06\\x8a(\\x02O,E\\x06K\\xb1\\xc7\\xa5I\\x15\\xab\\xc9n\\xdeP\\xd8\\xae8$\\xd1E\\x00C&\\x919\\x19\\x12\\x86a\\xd7u\\x14Q@\\x1f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 19694
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 85048
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1024,
+                        "h": 576,
+                        "sizes": [
+                            8787,
+                            28591,
+                            45777,
+                            75031,
+                            124555
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 11
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 13,
+            "length": 50
+        }
+    ],
+    "views": 105,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2585,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-10-13 06:33:43+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "statistics"
+    ]
+}

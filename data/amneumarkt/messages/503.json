@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 503,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-10-17 01:05:44+00:00",
+    "message": "#misc \n\nThinking about the past few days, I realized I never used stackoverflow during work. Our company pays for our github copilot services so I completely switched to the copilot chats. \nSo sad but I think I can totally live in a world without stackoverflow nowadays.\n\nhttps://www.theverge.com/2023/10/16/23919004/stack-overflow-layoff-ai-profitability",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1337119303614494931,
+            "url": "https://www.theverge.com/2023/10/16/23919004/stack-overflow-layoff-ai-profitability?utm_source=substack&utm_medium=email",
+            "display_url": "theverge.com/2023/10/16/23919004/stack-overflow-layoff-ai-profitability",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "The Verge",
+            "title": "Stack Overflow lays off over 100 people as the AI coding boom continues",
+            "description": "Stack Overflow just doubled its staff last year.",
+            "photo": {
+                "_": "Photo",
+                "id": 5867369812957704801,
+                "access_hash": 3336483047928450738,
+                "file_reference": "b'\\x00eA\\x7f\\x92\\xb4Y\\xd299\\x87\\xa2w\\x8fW\\xeb!\\xba\\x8f-\\x95'",
+                "date": "2023-10-16 14:25:05+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x15(\\xb8\\xd6\\xc5\\x0eW\\x91O\\x8eFP\\x01\\xe4U\\x81MdS\\xcfz\\xcf\\x92\\xda\\xa3N{\\xe8\\xc7\\x06\\x07\\xa5.)\\x8a\\xb8\\xa70$u\\xc5Y\\x01EE,\\xe1F\\x17\\x93EK\\x9aE(\\xb6J)h\\xa2\\xa8\\x90\\xa8]\\x8bq\\xda\\x8a)Ka\\xc7q\\x89\\x18v9\\xe8(\\xa2\\x8a\\x94\\x90\\xdbw?'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 168,
+                        "size": 4971
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 419,
+                        "size": 16240
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 628,
+                        "sizes": [
+                            5579,
+                            8292,
+                            10814,
+                            13017,
+                            25841
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": "Wes Davis",
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 272,
+            "length": 83
+        }
+    ],
+    "views": 111,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2585,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-10-17 01:06:36+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}
