@@ -31,7 +31,7 @@ links:
 
 ## What is Machine Learning
 
-Abu-Mostafa, Magdon-Ismail, and Lin summarized machine learning problem using the following chart [^Abu-Mostafa2012] [^Deckert2017]. Utilimately, we need to find an approximation $g$ of the true map $f$ from features $\mathcal X$ to targets $\mathcal Y$ on a specific probability distribution of features $P$. This process is done by using an algorithm to select some hypothesis that works.
+Abu-Mostafa, Magdon-Ismail, and Lin summarized machine learning problem using the following chart [^Abu-Mostafa2012] [^Deckert2017]. Ultimately, we need to find an approximation $g$ of the true map $f$ from features $\mathcal X$ to targets $\mathcal Y$ on a specific probability distribution of features $P$. This process is done by using an algorithm to select some hypothesis that works.
 
 {{< figure src="../assets/overview/abu-mostafa-magdon-lin-ml-framework.png" caption="From the book *Learning From Data* by Abu-Mostafa, Magdon-Ismail, and Lin. I am using a version by Deckert." >}}
 
