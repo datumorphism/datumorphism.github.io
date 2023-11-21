@@ -6,8 +6,11 @@ categories:
 tags:
 - 'Data Warehouse'
 references:
-- name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
-  link: ''
+  - name: "Data Mining by Jiawei Han, Micheline Kamber, Jian Pei"
+    link: ''
+  - name: "Huyen C. Designing machine learning systems: An iterative process for production-ready applications. Sebastopol, CA: O’Reilly Media; 2022. Available: https://books.google.com/books?hl=en&lr=&id=EzhwEAAAQBAJ&oi=fnd&pg=PP1&dq=Designing+Machine+Learning+Systems+Huyen&ots=X4CpX2Dl8f&sig=OMCmdJMMGCITWJXU5pvLqcQO1dU"
+    link: "https://books.google.com/books?hl=en&lr=&id=EzhwEAAAQBAJ&oi=fnd&pg=PP1&dq=Designing+Machine+Learning+Systems+Huyen&ots=X4CpX2Dl8f&sig=OMCmdJMMGCITWJXU5pvLqcQO1dU"
+    key: "Huyen2022"
 weight: 1
 ---
 
@@ -35,6 +38,7 @@ The purpose of the data warehouse should be clear. In most cases, it is for the 
 | history | usually no need to record the history | history is crucial |
 | query | short and frequent read and write | read-only and but complicated analysis |
 
+However, OLAP and OLTP are due to tech limitations in the past and these concepts are becoming obsolete[^Huyen2022].
 
 ## Scope of Data Warehouse
 
@@ -90,3 +94,5 @@ Others would say, we divide them into 100 euros segments
 
 
 [^1]: In fact, this is not always the case. Sometimes, data products can be delivered using some assist of data warehouse if data product doesn't rely on the performance of the data source.
+
+[^Huyen2022]: {{< cite key="Huyen2022" >}}
