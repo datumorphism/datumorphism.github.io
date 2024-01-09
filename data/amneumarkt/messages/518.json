@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 518,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-12-20 08:35:09+00:00",
+    "message": "#visualization \n\nSource: https://www.statista.com/statistics/520952/netherlands-number-of-live-born-children-by-marital-status-of-the-mother/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5192674706099130902,
+            "access_hash": 7489246298018855754,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x02\\x06e\\x9d\\xac=\\xc9\\x06\\x1aB\\xcc\\x9a\\x8f\\x8a;?!P\\xf3I\\xb5i'",
+            "date": "2023-12-20 08:35:08+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xa4\\xb06\\xd1\\x98\\xcf>\\xa0\\xff\\x00\\x853\\xca\\x93#\\x10\\xb8\\xfc\\rt\\xbb\\xce\\xecc\\x9aP\\xccO\\xdd\\xa7q\\x1c\\xb9\\x86\\\\\\xff\\x00\\xabo\\xfb\\xe4\\xd1]]\\x14\\\\,T\\x9d\\xcaM\\x95\\xc08\\xc6qDR\\xcc\\xcc;\\x8e\\xfcSn\\x7f\\xd6\\x9e\\x9d)l\\x98\\xb3>\\x07\\xc9\\xfdj\\xb4\\xe5\\x17R\\xe5\\x14QPP\\xc6Ec\\x92\\xaa~\\xa2\\x84UQ\\xf2\\x05\\x1fJ(\\xa2\\xe0>\\x8a(\\xa0\\x0f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 13541
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 52348
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        7929,
+                        24469,
+                        54410,
+                        73006,
+                        96529
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 25,
+            "length": 116
+        }
+    ],
+    "views": 88,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-12-20 12:48:01+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

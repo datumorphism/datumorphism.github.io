@@ -1,0 +1,104 @@
+{
+    "_": "Message",
+    "id": 513,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-12-01 15:08:59+00:00",
+    "message": "#misc\n\nBackground: https://www.reddit.com/r/MapPorn/s/7SA4Ri7bZW\n\nSomeone made a visualization of \"the percentage of workforce who are women by country\". \n\nThe visualization itself is terrible, especially the color scheme. However, it sparked a lot of discussions and this one is top.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5427378395194446615,
+            "access_hash": 3698238949993712003,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x02\\x01e\\x9d\\xac=\\xdc\\x9c\\x87\\x17\\xa9\\xd5\\x18&\\x8eu\\x9b\\x8b\\x1c\\x90\\x12\\x87'",
+            "date": "2023-12-01 15:08:59+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x13\\xca\\x07\\x0b\\xd3\\x9f\\\\\\xd3\\x07\\x14\\xfd\\xab\\xb4\\x1c\\x91\\xf8\\xd2`\\x7f|P\\x021\\x04\\xf4\\x14SOZ(\\x01\\xd8\\xe0\\x1d\\xa7\\xebM\\xe3\\xde\\x9e\\x0bm\\xe3\\xa5\\x1b\\x9e\\x80\\x19\\xf8\\xd1A\\xeb\\xcd\\x14\\x00\\xf1\\xb7\\x189\\xcf\\xb5!P;\\xe3\\xea(\\xa2\\x80\\x13\\xf2\\xa2\\x8a(\\x03'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 148,
+                    "h": 320,
+                    "size": 14155
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 369,
+                    "h": 800,
+                    "size": 54703
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 591,
+                    "h": 1280,
+                    "sizes": [
+                        7301,
+                        19398,
+                        47899,
+                        68961,
+                        93356
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 19,
+            "length": 45
+        }
+    ],
+    "views": 107,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-12-01 23:18:27+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

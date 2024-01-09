@@ -23,68 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 7364193029451030521,
-            "url": "https://github.com/porn-vault/porn-vault",
-            "display_url": "github.com/porn-vault/porn-vault",
-            "hash": 0,
-            "type": "photo",
-            "site_name": "GitHub",
-            "title": "GitHub - porn-vault/porn-vault: \ud83d\udc8b Manage your ever-growing porn collection. Using Vue & GraphQL",
-            "description": "\ud83d\udc8b Manage your ever-growing porn collection. Using Vue & GraphQL - GitHub - porn-vault/porn-vault: \ud83d\udc8b Manage your ever-growing porn collection. Using Vue & GraphQL",
-            "photo": {
-                "_": "Photo",
-                "id": 5840118490277720407,
-                "access_hash": -4395360406919186584,
-                "file_reference": "b'\\x00eA\\x7f\\x95\\xfb4\\xa6\\x86\\xc7N\\x99\\xf6^\\x8c\\x1cS\\xd7R\\xa2\\xb2'",
-                "date": "2023-07-01 18:00:25+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b\"\\x01\\x14(\\xd5i6\\xb6>_\\xc5\\xa9w1\\x19U\\x04\\x11\\x90sC(-\\x92\\x14\\xfdE(\\xcfN\\x05\\x007t\\x99\\xff\\x00V1\\xeb\\xba\\x9e\\xc7\\nO\\xa0\\xa3\\xf1\\xa5\\xcf\\x1dh\\x01\\xaa\\xc7v\\r\\x14\\xa0\\x01\\xd0\\x01\\x9a(\\x11@\\xdfK\\xfd\\xd4\\xfc\\x8d\\x1fn\\x97\\xfb\\xa9\\xf9\\x1a(\\xad,\\x89\\xbb\\x15od'\\xee\\xaf\\xe4i\\xff\\x00j\\x7fE\\xfc\\xa8\\xa2\\xa2B\\xbb\\x13\\xedO\\xd7\\x0b\\xf9QE\\x15 \\x9b?\""
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 160,
-                        "size": 9853
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 400,
-                        "size": 31878
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "y",
-                        "w": 1200,
-                        "h": 600,
-                        "sizes": [
-                            4939,
-                            11492,
-                            23529,
-                            31741,
-                            48138
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": null,
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 7364193029451030521
         }
     },
     "reply_markup": null,
@@ -100,7 +40,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2585,
+        "replies_pts": 2698,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

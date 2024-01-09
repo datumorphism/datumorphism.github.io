@@ -23,75 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 6233452128338927667,
-            "url": "https://research.google/pubs/pub49953/",
-            "display_url": "research.google/pubs/pub49953",
-            "hash": 0,
-            "type": "article",
-            "site_name": "Google Research",
-            "title": "\"Everyone wants to do the model work, not the data work\": Data Cascades in High-Stakes AI \u2013 Google Research",
-            "description": null,
-            "photo": {
-                "_": "Photo",
-                "id": 6029448813418229856,
-                "access_hash": 5034506469699548098,
-                "file_reference": "b'\\x00eA\\x7f\\x94\\xe8\\x15\\x9a4p\\xa6\\x86\\x1c\\xca\\x1d\\xe3\\xc9\\x05\\xb0\\xc8\\x1b'",
-                "date": "2023-05-29 15:53:42+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b'\\x01\\t(\\xd5;\\xc18\\x04\\x8f\\xc2\\x86g\\xc8\\x01z\\xd4\\x94P\\x04d\\xcb\\xd7h\\xe9\\xd34n\\x93\\xfb\\x83\\xf3\\xa9(\\xa0\\x06\\x02\\xf9\\x19\\x00\\x0e\\xf4S\\xe8\\xa0\\x0f'"
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 320,
-                        "h": 76,
-                        "size": 5698
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 800,
-                        "h": 191,
-                        "size": 17547
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "y",
-                        "w": 1280,
-                        "h": 305,
-                        "size": 30541
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "w",
-                        "w": 2100,
-                        "h": 500,
-                        "sizes": [
-                            7098,
-                            14519,
-                            24750,
-                            31808,
-                            49324
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": null,
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 6233452128338927667
         }
     },
     "reply_markup": null,
@@ -112,7 +45,7 @@
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2585,
+        "replies_pts": 2698,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

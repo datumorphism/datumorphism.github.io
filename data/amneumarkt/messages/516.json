@@ -1,0 +1,117 @@
+{
+    "_": "Message",
+    "id": 516,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-12-07 14:35:19+00:00",
+    "message": "#ai \n\nLooks like Gemini is a handy tool for researchers.\n\nhttps://www.youtube.com/watch?v=sPiOP_CB54A",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 1503448449914292774,
+            "url": "https://www.youtube.com/watch?v=sPiOP_CB54A",
+            "display_url": "youtube.com/watch?v=sPiOP_CB54A",
+            "hash": 0,
+            "type": "video",
+            "site_name": "YouTube",
+            "title": "Gemini: Unlocking insights in scientific literature",
+            "description": "Introducing Gemini \u2014 Google\u2019s newest and most capable AI model. \n\nWatch Google DeepMind Research Scientist Sebastian Nowozin and Software Engineer Taylor Applebaum use Gemini to read, understand and filter 200,000 scientific papers to extract crucial scientific information. All in a lunch break.\n\nCheck out more Gemini demos: https://goo.gle/4164rNO\nFind out more about Gemini:  https://deepmind.google/gemini\nRead the blog post: https://goo.gle/3uRyug7\n\nSubscribe to our Channel: https://www.youtube.com/google \nTweet with us on Twitter: https://twitter.com/google \nFollow us on Instagram: https://www.instagram.com/google \nJoin us on Facebook: https://www.facebook.com/Google",
+            "photo": {
+                "_": "Photo",
+                "id": 6018025763778966111,
+                "access_hash": -7567589311453567732,
+                "file_reference": "b'\\x00e\\x9d\\xac=Wm\\x80\\xeeZ\\x89\\xbb\\xcb\\xc5\\xf4\\xde\\xa4\\x83\\xf4\\xd9M'",
+                "date": "2023-12-06 15:07:02+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\\x17(\\xa3\\nF\\xd1\\xfc\\xc8Kz\\x8f\\xff\\x00]I\\xe5C\\xfd\\xc3\\xfe\\x7f\\x1a\\x86\\xdaC\\x19\\xca\\x9ei\\xd7/\\xbbf3\\xc0\\xe6\\x90\\r\\xba\\x8dc\\x98\\xaa\\x03\\x8cT\\x152\\x02[\\xbfNi]Q\\x06H9\\xa6\\x04#\\x189\\x1c\\xf6\\xa2\\x95\\x8a\\x91\\xc2\\xe3\\xf1\\xa2\\x80\\x1f\\x19\\x84\\x01\\xbf~}\\xb1S\\x9b\\x8bb0RL}h\\xa2\\x90\\xd1\\x05\\xc3\\xa4\\x92f5\\xda\\xb8\\xc6**(\\xa6 \\xa2\\x8a(\\x03'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 180,
+                        "size": 11568
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 450,
+                        "size": 41736
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1280,
+                        "h": 720,
+                        "size": 75689
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": "https://www.youtube.com/embed/sPiOP_CB54A",
+            "embed_type": "iframe",
+            "embed_width": 1280,
+            "embed_height": 720,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 58,
+            "length": 43
+        }
+    ],
+    "views": 149,
+    "forwards": 3,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-12-07 14:35:22+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "ai"
+    ]
+}

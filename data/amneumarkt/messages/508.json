@@ -1,0 +1,119 @@
+{
+    "_": "Message",
+    "id": 508,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-16 10:25:22+00:00",
+    "message": "#hp\n\nhttps://ppc.cs.aalto.fi/",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 5557005168554968206,
+            "url": "https://ppc.cs.aalto.fi//",
+            "display_url": "ppc.cs.aalto.fi",
+            "hash": 0,
+            "type": "article",
+            "site_name": "ppc.cs.aalto.fi",
+            "title": "Programming Parallel Computers",
+            "description": "Aalto University \u00b7 This is a practical hands-on course on algorithm engineering for modern parallel computers. You will learn how to design programs that make the best possible use of the computing power of multicore CPUs and GPUs.",
+            "photo": {
+                "_": "Photo",
+                "id": 532581129186604078,
+                "access_hash": 1306032095925398485,
+                "file_reference": "b'\\x00e\\x9d\\xac=\\xdf\\xf0fro\\xff\\x91\\x01?\\\\\\xe8\\xa5\\xf8\\xdd?\\x9c'",
+                "date": "2018-03-27 18:54:30+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoSize",
+                        "type": "s",
+                        "w": 90,
+                        "h": 90,
+                        "size": 1738
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 10995
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 800,
+                        "size": 30402
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "y",
+                        "w": 1200,
+                        "h": 1200,
+                        "size": 44255
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 5,
+            "length": 24
+        }
+    ],
+    "views": 123,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-16 15:39:18+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "hp"
+    ]
+}

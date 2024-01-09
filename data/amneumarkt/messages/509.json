@@ -1,0 +1,131 @@
+{
+    "_": "Message",
+    "id": 509,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-18 06:45:58+00:00",
+    "message": "#misc \n\nOpenAI announces leadership transition\nhttps://openai.com/blog/openai-announces-leadership-transition",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 4631693974768830821,
+            "url": "https://openai.com/blog/openai-announces-leadership-transition",
+            "display_url": "openai.com/blog/openai-announces-leadership-transition",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Openai",
+            "title": "OpenAI announces leadership transition",
+            "description": "Chief technology officer Mira Murati appointed interim CEO to lead OpenAI; Sam Altman departs the company. Search process underway to identify permanent successor.",
+            "photo": {
+                "_": "Photo",
+                "id": 5963912968305488600,
+                "access_hash": 3868256678079263894,
+                "file_reference": "b'\\x00e\\x9d\\xac=\\x03L\\x96;\\xf5\\xbb\\xaeYL\\x9cn\\x83:LGx'",
+                "date": "2023-11-17 20:31:41+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xc5\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xa2\\x8a(\\x00\\xabK\\xe4\\x9bc\\x907\\x00~\\xb9\\xaa\\xb4P\\x05\\xa6\\x16\\xa4d3\\x0e\\xbc\\x0f\\xd2\\x9b/\\x90\\x10\\x88\\xf7n\\xcf\\x19\\xf4\\xaa\\xf4P\\x01E\\x14P\\x01E\\x14P\\x01E\\x14P\\x01E\\x14P\\x07'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 4221
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 800,
+                        "size": 15784
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1000,
+                        "h": 1000,
+                        "sizes": [
+                            2879,
+                            9132,
+                            13947,
+                            17663
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 47,
+            "length": 62
+        }
+    ],
+    "views": 104,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 7,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 154488756
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 862,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-18 06:47:03+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

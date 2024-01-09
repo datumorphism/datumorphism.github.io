@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 505,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-09 19:13:37+00:00",
+    "message": "#visualization \n\nhttps://www.reddit.com/r/dataisbeautiful/s/V05LnvCzqC",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547163867415912,
+            "url": "https://www.reddit.com/r/dataisbeautiful/s/V05LnvCzqC",
+            "display_url": "reddit.com/r/dataisbeautiful/comments/17r9q6s/oc_most_costcompetitive_technologies_for_energy/?share_id=miqvdOZJ0KMZUVDtcq56W",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Reddit",
+            "title": "From the dataisbeautiful community on Reddit: [OC] Most cost-competitive technologies for energy storage",
+            "description": "Explore this post and more from the dataisbeautiful community",
+            "photo": {
+                "_": "Photo",
+                "id": 5937289312146141670,
+                "access_hash": -7690685364368847311,
+                "file_reference": "b'\\x00e\\x9d\\xac=\\xcc\\x16\\xd6G\\x04\\x1d:\\x8f\\xaa#Y\\xd8\\xc7\\x15\\xc2\\xa9'",
+                "date": "2023-11-09 10:16:38+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01%(t\\x9a|j\\xaa\\n\\x81\\x8e\\xa7=i\\xa9a\\x13\\x1c\\x01\\x93\\xf5\\xab\\xf7\\x00\\xbck\\x9fZH\\x13\\r\\x9ae\\xa8\\xae[\\x94\\x9bK\\x01\\x87\\xcb\\xda\\xa1\\x9e\\xc7\\xca\\x8c6\\x07P+Q%\\xfd\\xe6\\xd92\\x07@\\xdd\\xa9\\xd3\\xc0\\x92G\\x86-\\x80s\\xd6\\x86\\xacBi\\x99\\x90X\\x87C\\x94\\x04\\x9e\\xfe\\x94V\\x9cH\\xa9\\x80\\xa4\\xf5\\xf5\\xa2\\xa7R\\xaf\\xd8\\x90\\x01\\xb4f\\x90\\xb2\\xa8\\xc0\\xa6\\\\\\xb6\\xc4\\\\\\x1csT\\xday;5'$\\x8a\\x8d7%\\xa1,\\xec0\\xc7$\\xe5q\\xb7\\x1c}i\\x96\\x97a\\xbfq??\\xddcQ\\xa4\\xfb\\xce$\\x00\\x8f\\xa5>kE#t|\\x8a\\xd22\\x8c\\xb43\\x9d9\\xc1\\xdc\\xd0\\x11\\xa2\\x9c\\x81\\xcd\\x15Z\\xdep\\xbba\\x91\\xb2\\xfd\\xa8\\xa4\\xd5\\x81\\x11\\xdcA\\xbaf%\\xff\\x00\\x02)`\\xb7X\\xc33a\\xb0:b\\x8a*A1\\xe4\\xc6\\x0f\\xfa\\x94\\xfc\\xaaTeb\\x06\\xc0(\\xa2\\x80lx\\x86<\\xee\\x08\\xa1\\x87p\\x06h\\xa2\\x8a`\\x7f\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 294,
+                        "size": 24681
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 734,
+                        "size": 88625
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1120,
+                        "h": 1027,
+                        "sizes": [
+                            14407,
+                            37658,
+                            63298,
+                            89927,
+                            120893
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 17,
+            "length": 53
+        }
+    ],
+    "views": 148,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-09 23:09:14+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

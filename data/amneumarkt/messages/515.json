@@ -1,0 +1,87 @@
+{
+    "_": "Message",
+    "id": 515,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-12-04 08:36:17+00:00",
+    "message": "\ud83d\udc4d impressive step by step visualization of how GPTs work\nhttps://bbycroft.net/llm",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": {
+        "_": "MessageFwdHeader",
+        "date": "2023-12-04 02:00:16+00:00",
+        "imported": false,
+        "from_id": {
+            "_": "PeerChannel",
+            "channel_id": 1381813778
+        },
+        "from_name": null,
+        "channel_post": 869,
+        "post_author": "Linghao Zhang",
+        "saved_from_peer": null,
+        "saved_from_msg_id": null,
+        "psa_type": null
+    },
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 6998634748247473073,
+            "url": "https://bbycroft.net/llm?utm_source=tldrnewsletter",
+            "display_url": "bbycroft.net/llm",
+            "hash": 0,
+            "type": "article",
+            "site_name": "bbycroft.net",
+            "title": "LLM Visualization",
+            "description": "A 3D animated visualization of an LLM with a walkthrough.",
+            "photo": null,
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityUrl",
+            "offset": 58,
+            "length": 24
+        }
+    ],
+    "views": 119,
+    "forwards": 2,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-12-04 08:36:21+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": []
+}

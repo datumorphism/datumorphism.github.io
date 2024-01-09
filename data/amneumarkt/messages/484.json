@@ -23,74 +23,8 @@
     "media": {
         "_": "MessageMediaWebPage",
         "webpage": {
-            "_": "WebPage",
-            "id": 4703674223867411134,
-            "url": "https://twitter.com/armin_kekic/status/1667181047480479751?s=20",
-            "display_url": "twitter.com/armin_kekic/status/1667181047480479751?s=20",
-            "hash": 0,
-            "type": "photo",
-            "site_name": "Twitter",
-            "title": null,
-            "description": "Glad we can finally share this publicly: new paper on how @ZalandoTech uses deep-learning based forecasting for algorithmic pricing. A rare insight into how the machine learning is used to solve real-world problems. \ud83e\uddf5 1/\n\n\ud83d\udcc3: https://t.co/Li9aJCiZ3g",
-            "photo": {
-                "_": "Photo",
-                "id": 5775286165103030510,
-                "access_hash": -8259695257086523543,
-                "file_reference": "b'\\x00eA\\x7f\\x92\\xfd\\xc5){\\x0fV\\x1c\\xb4]q\\xa8\\x86\\x84q\\xaam'",
-                "date": "2023-06-10 19:44:11+00:00",
-                "sizes": [
-                    {
-                        "_": "PhotoStrippedSize",
-                        "type": "i",
-                        "bytes": "b'\\x01($\\xd6\\xc7\\xb1\\xfd(*{g\\xf2\\x14I\\x8e\\x01\\x00\\xfdM;\\xa2\\xf0:P\\x036\\xb7\\xf9\\x02\\x97o\\xb1\\xfd(\\x8f\\x18\\xe0\\x00{\\xe0\\xd267r\\xa3\\xf14\\x00\\xec{\\x1f\\xd2\\x8au\\x14\\x01\\x1b\\x82{~\\x7f\\xfe\\xbaR\\t^\\x01\\xcf\\xd7\\xff\\x00\\xafN*\\x1b\\xa8\\xcd&6\\x8c(4\\x00\\xd4R3\\xc0\\x1e\\xd9\\xa4*\\xdb\\xb9\\x03\\x1fZ\\x11Hl\\x94\\xc7\\xd0\\xd3\\xd9\\x15\\xba\\x8c\\xd0\\x02\\x80q\\xff\\x00\\xd74R\\xd1@\\x11H\\xec\\x1b\\x00\\xf6\\xa6\\xf9\\x8f\\xebE\\x14\\x00\\x81\\xd8t?\\x9d.\\xf7\\xf5\\xfd(\\xa2\\x80&^Tg\\xad\\x14Q@\\x1f'"
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "m",
-                        "w": 283,
-                        "h": 320,
-                        "size": 28253
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "x",
-                        "w": 707,
-                        "h": 800,
-                        "size": 119424
-                    },
-                    {
-                        "_": "PhotoSize",
-                        "type": "y",
-                        "w": 1132,
-                        "h": 1280,
-                        "size": 242477
-                    },
-                    {
-                        "_": "PhotoSizeProgressive",
-                        "type": "w",
-                        "w": 1268,
-                        "h": 1434,
-                        "sizes": [
-                            14387,
-                            134277,
-                            191569,
-                            258943
-                        ]
-                    }
-                ],
-                "dc_id": 4,
-                "has_stickers": false,
-                "video_sizes": []
-            },
-            "embed_url": null,
-            "embed_type": null,
-            "embed_width": null,
-            "embed_height": null,
-            "duration": null,
-            "author": "Armin Keki\u0107",
-            "document": null,
-            "cached_page": null,
-            "attributes": []
+            "_": "WebPageEmpty",
+            "id": 4703674223867411134
         }
     },
     "reply_markup": null,
@@ -106,12 +40,12 @@
             "length": 63
         }
     ],
-    "views": 128,
+    "views": 138,
     "forwards": 2,
     "replies": {
         "_": "MessageReplies",
         "replies": 0,
-        "replies_pts": 2585,
+        "replies_pts": 2698,
         "comments": true,
         "recent_repliers": [],
         "channel_id": 1159907975,

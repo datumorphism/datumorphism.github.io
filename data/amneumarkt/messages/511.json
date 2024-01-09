@@ -1,0 +1,128 @@
+{
+    "_": "Message",
+    "id": 511,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-20 09:57:30+00:00",
+    "message": "#fun\n\nI was digging into my google drive files and found this funny story in one of my slide decks. \n\nJust in case, Guido is the creator of Python.\n\nI do not have any reference for this screenshot as I didn't include one in my slide. So I would call this unverified.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5393411285556778410,
+            "access_hash": -5509341546201082770,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xffe\\x9d\\xac=N\\xb8\\xa8\\xfd=\\xaew\\xaer\\x91%$\\xca{\\xef\\x95'",
+            "date": "2023-11-20 09:57:30+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b\"\\x01%(\\xd4_3\\xcc}\\xcc6\\xff\\x00\\x0f\\xb5<g\\xd6\\x8d\\xc0\\x1eH\\xa5\\xde\\xbe\\xb4\\x00\\xb4Sw\\xaf\\xad\\x1b\\xd7\\xd6\\x80\\x1dE `N\\x01\\xa2\\x80\\x1aH\\x04\\xf0h\\x0c\\x07@i\\xdc\\x7f\\x91F\\x07\\xa5\\x00&\\xf1\\xe8iw\\x7f\\xb2ip=(\\xa0\\x04\\x07'\\xa1\\xa2\\x96\\x8a\\x00N}h\\xc1\\xf5\\xfd(\\xa2\\x80\\x16\\x8a(\\xa0\\x02\\x8a(\\xa0\\x0f\""
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 320,
+                    "h": 296,
+                    "size": 14467
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 800,
+                    "h": 739,
+                    "size": 58749
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "y",
+                    "w": 1148,
+                    "h": 1060,
+                    "sizes": [
+                        7329,
+                        18003,
+                        30444,
+                        41423,
+                        67106
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 116,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUnderline",
+            "offset": 116,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityBold",
+            "offset": 129,
+            "length": 17
+        },
+        {
+            "_": "MessageEntityUnderline",
+            "offset": 129,
+            "length": 17
+        }
+    ],
+    "views": 137,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 3,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1926801217
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 855,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-20 15:44:22+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}

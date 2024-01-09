@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 512,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-26 10:40:15+00:00",
+    "message": "#misc \n\nMy recent experience sort of supports this idea.\n\nhttps://www.reddit.com/r/MachineLearning/s/e3HPle3UIN",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": false,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547163704270223,
+            "url": "https://www.reddit.com/r/MachineLearning/s/e3HPle3UIN",
+            "display_url": "reddit.com/r/MachineLearning/comments/17yp1l5/comment/k9urpkz/?share_id=r5ThrH1EtaqBj4vZczZy0",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Reddit",
+            "title": "mcjoness's comment on \"[D] Skill Creep in ML/DL Roles - is the field getting not just more competitive, but more difficult?\"",
+            "description": "Explore this conversation and more from the MachineLearning community",
+            "photo": {
+                "_": "Photo",
+                "id": 5988690321103499716,
+                "access_hash": 543666838703212469,
+                "file_reference": "b'\\x00e\\x9d\\xac=\\xe1\\xcc\\xd7\\x9c\\xcfk\"\\x05\\xbc\\xa7\\r}\\x12\\xc3\\xb2\\x98'",
+                "date": "2023-11-26 10:40:05+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01\"(\\xd6\\xf9\\x83\\x1c\\xb8\\xc1<\\x0cR\\xe1\\xbf\\xbd\\xfaSd\\x00\\x95\\xce89\\x14n\\xe7\\xa0\\xa4\\x04\\x83\\xa7<\\xd1Q\\xef\\xf6\\x14y\\x87\\xd0S\\x01YX\\xba\\x90\\xd8\\x03\\xa8\\xa2\\x95[w\\xa5\\x14X`\\xf8\\xe3$\\nn\\x07\\xf7\\x859\\x80b2E\\x18N\\x9cs\\xef@\\x84\\xc2\\x7f{\\xf5\\xa3\\t\\xfd\\xef\\xd6\\x97b\\xfaQ\\xb1}(\\x00P\\xb9\\xe0\\xe6\\x8a]\\xa34P\\x02\\xd1E\\x14\\x00QE\\x14\\x00QE\\x14\\x01'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 272,
+                        "size": 22447
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 679,
+                        "size": 80452
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1120,
+                        "h": 951,
+                        "sizes": [
+                            9360,
+                            25371,
+                            56021,
+                            79113,
+                            112081
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 5
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 58,
+            "length": 53
+        }
+    ],
+    "views": 120,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-26 10:41:05+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "misc"
+    ]
+}

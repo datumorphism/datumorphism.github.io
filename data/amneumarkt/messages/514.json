@@ -1,0 +1,123 @@
+{
+    "_": "Message",
+    "id": 514,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-12-01 15:12:47+00:00",
+    "message": "#visualization \n\nFinland vs UK, and\nTurkiye/Turkey is such a nice example of data quality issues.\n\nhttps://www.reddit.com/r/MapPorn/s/QYGauVmzOP",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 2294547164328594537,
+            "url": "https://www.reddit.com/r/MapPorn/s/QYGauVmzOP",
+            "display_url": "reddit.com/r/MapPorn/comments/187rgrj/did_google_auto_generate_roast_your_country/?share_id=qxnMntY22O3W2Rmmswpo2",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Reddit",
+            "title": "From the MapPorn community on Reddit: Did Google auto generate roast your country?",
+            "description": "Explore this post and more from the MapPorn community",
+            "photo": {
+                "_": "Photo",
+                "id": 6002584338442596835,
+                "access_hash": -2889403533480945271,
+                "file_reference": "b'\\x00e\\x9d\\xac=\\xf3>\"\\x00y\\x07U\\xd6X_\\x1eeGZ\\xcf-'",
+                "date": "2023-11-30 20:21:28+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b'\\x01((\\xa9\\x1aE$j\\x04,X}\\xe2;\\xd3\\xbe\\xcb\\x9e\\x91\\xb0\\xfc\\r[\\xd1\\xd7+0\\x1f\\xec\\xff\\x00Z\\xbd\\xc1\\x98\\xa8c\\xb8rF)\\x92\\xd1\\x8d\\xf63\\xfd\\xc3\\xf9R\\x1bLuF\\xff\\x00\\xbeMo\\xcb \\x8a2\\xe7\\xb5Vk\\xbd\\xf11\\xdb\\x82:t<\\xd0Kin\\xccY\\x168\\xa3e1\\x92\\xcd\\xd0\\x9e1EIzs\\xb4\\xfdh\\xa4\\xd0\\xe16\\xd5\\xcb\\xda\\'I\\xbf\\xe0?\\xd6\\xb4\\x9d\\xd51\\x9e\\xe7\\x15\\x99\\xa3\\x12\\x04\\xd8\\x19\\xfb\\xbf\\xd6\\xae]\"\\x88\\xd9\\xc8$\\x81\\x8c\\x83\\xce3AM\\xd9\\x11\\xdc\\xee{\\x85^\\x19\\x01\\x19\\x00\\xd5I\\xf2\\x1d\\xc2\\x1d\\xcc\\x0fSJ\\xf3H\\xe7;\\x88\\xf6\\xcd5T\\xc8\\xe1W\\xef\\x9e\\xe4U\\x1c\\xd2i\\xbd\\n\\x97e\\xb6\\xa6\\xe1\\xcf4T\\xda\\x8c-\\x10\\x8bw|\\xff\\x00J)3h&\\x96\\xc2\\xd8]\\x8bm\\xf9\\x00\\xee\\xc5J\\xb2\\xac\\x92\\xef\\x9am\\xa8z\\x8cu\\xfd(\\xa2\\x84\\x13\\xd4\\x9eI\\xad\\x19HI\\x15Oo\\x94\\xd4j`F%f]\\xd8\\xf9Xd`\\xf7\\xa2\\x8a\\xab\\x12\\xca\\x97\\xdb@LK\\xe61\\xceN:t\\xa2\\x8a*Yq\\xd8'"
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 320,
+                        "size": 32084
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "x",
+                        "w": 800,
+                        "h": 800,
+                        "size": 123176
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "y",
+                        "w": 1120,
+                        "h": 1120,
+                        "sizes": [
+                            17499,
+                            49564,
+                            87763,
+                            126633,
+                            176721
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 14
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 99,
+            "length": 45
+        }
+    ],
+    "views": 134,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-12-01 23:18:32+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "visualization"
+    ]
+}

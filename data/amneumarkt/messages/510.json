@@ -1,0 +1,130 @@
+{
+    "_": "Message",
+    "id": 510,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-20 09:53:34+00:00",
+    "message": "#research \n\nhttps://clarivate.com/highly-cited-researchers/\n\nUpdate:\nI got the full list of researchers as a csv file:\nhttps://drive.google.com/file/d/1iequOfuGECEcDWt9AhljJzxHQYdArguN/view?usp=sharing",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaWebPage",
+        "webpage": {
+            "_": "WebPage",
+            "id": 3843762072592069393,
+            "url": "https://clarivate.com/highly-cited-researchers/",
+            "display_url": "clarivate.com/highly-cited-researchers",
+            "hash": 0,
+            "type": "photo",
+            "site_name": "Clarivate",
+            "title": "Highly Cited Researchers - Clarivate",
+            "description": "Highly Cited Researchers have demonstrated significant and broad influence reflected in their publication of multiple highly cited papers over the last decade.",
+            "photo": {
+                "_": "Photo",
+                "id": 6027485669766573830,
+                "access_hash": -8735382916401219460,
+                "file_reference": "b'\\x00e\\x9d\\xac=\\x85\\x8b8\\xe7\\xc5\\xee%\\xf7=\\x93\\xd9Tx\\x8b\\tu'",
+                "date": "2022-11-15 10:14:51+00:00",
+                "sizes": [
+                    {
+                        "_": "PhotoStrippedSize",
+                        "type": "i",
+                        "bytes": "b\"\\x01\\x13(\\xc6\\xa3\\xadY\\x16\\xc1\\x97!\\xff\\x00\\n\\x1d#\\x88\\x0c\\xf2h\\x02 \\xa4\\x80\\x00\\xe6\\xa5kg\\t\\x92:SVv\\x1d\\x02\\x8fjy\\xbbm\\xbbv\\x8c}i\\x81\\x161\\xda\\x8a_;'\\xee\\x83\\xf8Q@\\x08X\\x82@8\\xa8\\xc9'\\x92h\\xa2\\x90\\n\\xb4\\xd3E\\x14\\x00\\xe4\\xebE\\x14S\\x03\""
+                    },
+                    {
+                        "_": "PhotoSize",
+                        "type": "m",
+                        "w": 320,
+                        "h": 149,
+                        "size": 14208
+                    },
+                    {
+                        "_": "PhotoSizeProgressive",
+                        "type": "x",
+                        "w": 800,
+                        "h": 372,
+                        "sizes": [
+                            4933,
+                            13949,
+                            23427,
+                            36557,
+                            57887
+                        ]
+                    }
+                ],
+                "dc_id": 4,
+                "has_stickers": false,
+                "video_sizes": []
+            },
+            "embed_url": null,
+            "embed_type": null,
+            "embed_width": null,
+            "embed_height": null,
+            "duration": null,
+            "author": null,
+            "document": null,
+            "cached_page": null,
+            "attributes": []
+        }
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 9
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 12,
+            "length": 47
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 119,
+            "length": 82
+        }
+    ],
+    "views": 108,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 5,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 397753427
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 851,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-20 11:17:51+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "research"
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "_": "Message",
+    "id": 506,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-13 08:30:51+00:00",
+    "message": "#dl\n\nGoogle & USC benchmarked a prompt based forecasting method, and the results are amazing.\n\nCao D, Jia F, Arik SO, Pfister T, Zheng Y, Ye W, et al. TEMPO: Prompt-based Generative Pre-trained Transformer for time series forecasting. arXiv [cs.LG]. 2023. Available: http://arxiv.org/abs/2310.04948",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": true,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": {
+        "_": "MessageMediaPhoto",
+        "photo": {
+            "_": "Photo",
+            "id": 5372817385523892070,
+            "access_hash": -8491928702656067922,
+            "file_reference": "b'\\x04N\\xb5\\xa3\\xb5\\x00\\x00\\x01\\xfae\\x9d\\xac=\\xd4*O?@\\x07\\xcf\\x7f:\\xb3\\x03\\x01\\x0b\\xf0\\x83\\\\'",
+            "date": "2023-11-13 08:30:51+00:00",
+            "sizes": [
+                {
+                    "_": "PhotoStrippedSize",
+                    "type": "i",
+                    "bytes": "b'\\x01(\\x1c\\xd5a\\x8e\\x80S2s\\xd1\\x7fZ\\x91\\xea>s\\xf8\\x8f\\xe5@\\n3\\xc7\\x0b\\xdb\\xd6\\x9f\\x18\\x0c\\xb9 g\\xda\\x98\\xb9\\xe3\\xf0\\xa7\\xc5\\xfe\\xacP\\x00\\xff\\x00\\x8d3\\xbfS\\xd4S\\xde\\x99\\x8ez\\x1e\\xa3\\xf9P\\x02\\x8e\\xdc\\x9e\\xd4\\xf8\\xfe\\xe0\\xa6\\x01\\xd3\\x83\\xda\\x9d\\x17\\xfa\\xb1@\\x03\\x8fl\\xd36\\xf3\\xf7{\\x8a(\\xa0\\x05\\x0b\\xd3\\xe5\\xf4\\xa7\\xc40\\x83\\x8cQE\\x00\\x7f'"
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "m",
+                    "w": 227,
+                    "h": 320,
+                    "size": 31352
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "x",
+                    "w": 567,
+                    "h": 800,
+                    "size": 186130
+                },
+                {
+                    "_": "PhotoSize",
+                    "type": "y",
+                    "w": 908,
+                    "h": 1280,
+                    "size": 443092
+                },
+                {
+                    "_": "PhotoSizeProgressive",
+                    "type": "w",
+                    "w": 1178,
+                    "h": 1661,
+                    "sizes": [
+                        24591,
+                        90241,
+                        320752,
+                        459592,
+                        627584
+                    ]
+                }
+            ],
+            "dc_id": 2,
+            "has_stickers": false,
+            "video_sizes": []
+        },
+        "ttl_seconds": null
+    },
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 3
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 267,
+            "length": 31
+        }
+    ],
+    "views": 144,
+    "forwards": 1,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 0,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [],
+        "channel_id": 1159907975,
+        "max_id": null,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-13 12:06:38+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "dl"
+    ]
+}

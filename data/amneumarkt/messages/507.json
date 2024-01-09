@@ -1,0 +1,75 @@
+{
+    "_": "Message",
+    "id": 507,
+    "peer_id": {
+        "_": "PeerChannel",
+        "channel_id": 1320526773
+    },
+    "date": "2023-11-15 15:41:07+00:00",
+    "message": "#fun \n\nThere are normal and professional contests, and then this:\n\nThe International Obfuscated C Code Contest\n\nhttps://ioccc.org/\n\nAlright, someone please host a Python version of it. It could go completely wild.",
+    "out": true,
+    "mentioned": false,
+    "media_unread": false,
+    "silent": false,
+    "post": true,
+    "from_scheduled": false,
+    "legacy": true,
+    "edit_hide": false,
+    "pinned": false,
+    "from_id": null,
+    "fwd_from": null,
+    "via_bot_id": null,
+    "reply_to": null,
+    "media": null,
+    "reply_markup": null,
+    "entities": [
+        {
+            "_": "MessageEntityHashtag",
+            "offset": 0,
+            "length": 4
+        },
+        {
+            "_": "MessageEntityItalic",
+            "offset": 67,
+            "length": 43
+        },
+        {
+            "_": "MessageEntityUrl",
+            "offset": 112,
+            "length": 18
+        }
+    ],
+    "views": 125,
+    "forwards": 0,
+    "replies": {
+        "_": "MessageReplies",
+        "replies": 3,
+        "replies_pts": 2698,
+        "comments": true,
+        "recent_repliers": [
+            {
+                "_": "PeerUser",
+                "user_id": 1926801217
+            },
+            {
+                "_": "PeerChannel",
+                "channel_id": 1159907975
+            },
+            {
+                "_": "PeerUser",
+                "user_id": 1487544003
+            }
+        ],
+        "channel_id": 1159907975,
+        "max_id": 838,
+        "read_max_id": null
+    },
+    "edit_date": "2023-11-15 15:44:10+00:00",
+    "post_author": null,
+    "grouped_id": null,
+    "restriction_reason": [],
+    "ttl_period": null,
+    "tags": [
+        "fun"
+    ]
+}
