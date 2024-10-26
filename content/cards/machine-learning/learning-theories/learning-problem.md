@@ -17,7 +17,7 @@ published: true
 ---
 
 
-The learning problem posed by Vapnik:[^Vapnik2000]
+The learning problem proposed by Vapnik:[^Vapnik2000]
 
 - Given a sample: $\\{z_i\\}$ in the probability space $Z$;
 - Assuming a probability measure on the probability space $Z$;
