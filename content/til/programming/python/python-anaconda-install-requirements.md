@@ -20,6 +20,10 @@ links:
   - til/programming/jupyter-notebook-add-new-kernels-in-conda-env.md
 ---
 
+I highly recommend **switching** to [pyenv](https://github.com/pyenv/pyenv) + [Poetry](https://python-poetry.org/) or [uv](https://docs.astral.sh/uv/)
+
+--- 
+
 It is quite common to use `requirements.txt` to specify the python package requirements for the project. What is usually done is
 
 ```bash
