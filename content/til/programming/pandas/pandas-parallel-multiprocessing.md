@@ -24,7 +24,6 @@ A piece of demo code is shown below.
 
 
 ```python
-from multiprocessing import Pool
 from multiprocessing.dummy import Pool as ThreadPool
 
 import pandas as pd
@@ -38,7 +37,10 @@ def nice_func(name, age):
 
 # Apply to dataframe
 def apply_to_df(df_chunks):
-    df_chunks['tupled'] = df_chunks.apply( lambda x: nice_func( x['host_name'], x['host_country']), axis=1 )
+    df_chunks['tupled'] = df_chunks.apply(
+        lambda x: nice_func( x['host_name'], x['host_country']),
+        axis=1
+    )
     return df_chunks
     print('finished chunk')
 
